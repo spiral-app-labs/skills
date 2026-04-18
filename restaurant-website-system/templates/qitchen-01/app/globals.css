@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Satoshi loaded via Fontshare CDN — see app/layout.tsx <link> tag.
+   Forum loaded via next/font/google — see app/layout.tsx. */
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Default headings to display font, weight 400, uppercase — qitchen's discipline. */
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Reset list margins — menu uses bare div lists, not <ul>. */
+* { box-sizing: border-box; }
+
+/* UI labels are always uppercase in qitchen — locked in audit §4.
+   This rule fires whenever the text-ui-label utility is applied. */
+.text-ui-label {
+  text-transform: uppercase;
+  font-family: theme('fontFamily.body');
+}
+
+/* Item-name and section headings are display + uppercase via h2/h3 rules above,
+   but if used on non-heading elements, ensure uppercase. */
+.text-item-name,
+.text-section-h2,
+.text-section-title,
+.text-page-title {
+  text-transform: uppercase;
+  font-family: theme('fontFamily.display');
+}

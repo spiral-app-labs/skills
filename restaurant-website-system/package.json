@@ -1,0 +1,14 @@
+{
+  "name": "restaurant-website-system-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Capture/analysis tooling for the restaurant-website-system. Not the templates themselves — those have their own package.json each.",
+  "type": "module",
+  "scripts": {
+    "shoot": "node scripts/shoot-template.mjs",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

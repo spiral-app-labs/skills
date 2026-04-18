@@ -1,0 +1,110 @@
+{
+  "url": "https://1776-restaurant-redesign.vercel.app/menu",
+  "dims": {
+    "scrollHeight": 3175,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(13, 27, 42)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "The Menu",
+      "fontFamily": "\"Cormorant Garamond\", serif",
+      "fontSize": "100px",
+      "fontWeight": "400",
+      "letterSpacing": "6px",
+      "lineHeight": "95px",
+      "color": "rgb(245, 240, 232)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Nosh",
+      "fontFamily": "\"Cormorant Garamond\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "1.92px",
+      "lineHeight": "48px",
+      "color": "rgb(245, 240, 232)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Lump Crab Cakes",
+      "fontFamily": "\"Cormorant Garamond\", serif",
+      "fontSize": "24px",
+      "fontWeight": "400",
+      "letterSpacing": "0.48px",
+      "lineHeight": "32px",
+      "color": "rgb(245, 240, 232)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Chef Jill Vedaa",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "10px",
+      "fontWeight": "500",
+      "letterSpacing": "3px",
+      "lineHeight": "15px",
+      "color": "rgb(201, 169, 110)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "",
+      "fontFamily": "\"DM Sans\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "24px",
+      "color": "rgb(245, 240, 232)",
+      "backgroundColor": "rgb(5, 12, 22)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "1776",
+      "fontFamily": "\"Cormorant Garamond\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "letterSpacing": "2.4px",
+      "lineHeight": "30px",
+      "color": "rgb(245, 240, 232)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+      "transform 0.3s",
+      "opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+      "0.25s",
+      "0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "0.3s",
+      "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -273.102, 0)",
+      "matrix(1, 0, 0, 1, 0, 20)",
+      "matrix(1, 0, 0, 1, 0, 30)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2",
+    "https://fonts.gstatic.com/s/dmsans/v17/rP2Hp2ywxg089UriCZOIHTWEBlw.woff2",
+    "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3ZmX5slCNuHLi8bLeY9MK7whWMhyjYrEtImSqn7B6D.woff2"
+  ],
+  "imgUrls": []
+}
