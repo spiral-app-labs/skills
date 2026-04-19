@@ -1,0 +1,53 @@
+{
+  "url": "https://bramble.framer.website/reserve-table",
+  "dims": {
+    "scrollHeight": 900,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Page Not Found",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(51, 51, 51)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": null,
+    "p": null,
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Back to Home",
+      "fontFamily": "Inter, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "30px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(0, 153, 255)",
+      "textTransform": "none"
+    },
+    "navLink": null
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": []
+  },
+  "fontUrls": [
+    "https://framerusercontent.com/assets/1ZFS7N918ojhhd0nQWdj3jz4w.woff2",
+    "https://framerusercontent.com/assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2"
+  ],
+  "imgUrls": []
+}

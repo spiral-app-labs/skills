@@ -1,0 +1,103 @@
+{
+  "url": "https://bamzi.framer.website/news",
+  "dims": {
+    "scrollHeight": 2239,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "News & insights",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "80px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": {
+      "selector": "h3",
+      "text": "Timeless recipes tosavor & enjoy",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "57.6px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "About",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "lineHeight": "19.2px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Load More",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(15, 26, 26)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -720, 0)",
+      "matrix(1, 0, 0, 1, 0, 50)",
+      "matrix(1, 0, 0, 1, -65.9297, 0)",
+      "matrix(1, 0, 0, 1, -59.5, -8)",
+      "matrix(1, 0, 0, 1, -6, 0)",
+      "matrix(0.001, 0, 0, 0.001, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/prata/v20/6xKhdSpbNNCT-vWNAG_5LWwJ.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+    "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/snsxiaMZlvkHUrSovLPcy6eUPM.png",
+    "https://framerusercontent.com/images/CnWHrNyYWHGWYPUqTrWoVfybewk.png",
+    "https://framerusercontent.com/images/o9zx1kHE8jT24De2qBUIWAYbEs.png",
+    "https://framerusercontent.com/images/nlrFSyV6LQ6Gr5Zs2Fbe8RD2pgM.png",
+    "https://framerusercontent.com/images/LzJtKbf58xt7hgPRApyX3hjxPSQ.png",
+    "https://framerusercontent.com/images/ZlZCK1MqxiIdKwtHuOJrb39Q.png",
+    "https://framerusercontent.com/images/nRtTIRBfwl7sUGlDywq2MHNvQwg.png",
+    "https://framerusercontent.com/images/PST9YZJ44VASwqMrLiUj6LbXmHk.png"
+  ]
+}

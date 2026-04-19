@@ -13,7 +13,8 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 | Slug | Name | Source | Vibe | Best-fit restaurant types | Quality | Originality | Mobile | Conversion | Difficulty | Reusability | Disposition |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | `qitchen-01` | Qitchen | [Framer](https://qitchen-template.framer.website) | editorial-quiet / dark fine-dining w/ image-led split-page layout | sushi-omakase, modern Japanese, fine dining tasting, editorial bistro | 8 | 8 | 8 | 9 | 5 | 8 | **recreated** → [`templates/qitchen-01/`](../templates/qitchen-01/) |
-| `1776-redesign-01` | 1776 Restaurant Redesign | [Live](https://1776-restaurant-redesign.vercel.app) | editorial-warm fine dining / italic-serif display / navy + amber / multi-section narrative | modern upscale destination, farm-to-table, wine-forward, chef-driven elevated-neighborhood | 9 | 9 | 8 | 10 | 6 | 9 | recreate as starter kit |
+| `1776-redesign-01` | 1776 Restaurant Redesign | [Live](https://1776-restaurant-redesign.vercel.app) | editorial-warm fine dining / italic-serif display / navy + amber / multi-section narrative | modern upscale destination, farm-to-table, wine-forward, chef-driven elevated-neighborhood | 9 | 9 | 8 | 10 | 6 | 9 | **recreated** → [`templates/1776-redesign-01/`](../templates/1776-redesign-01/) |
+| `bramble-01` | Bramble | [Framer](https://bramble.framer.website) | light-mode / retro-warm / music-forward / polaroid-scrapbook / day-bar-night-cocktails | cocktail bar with food, music-forward venue, neighborhood day/night hybrid, small-plates Soho-class | 9 | 9 | 7 | 7 | 6 | 8 | **recreated** → [`templates/bramble-01/`](../templates/bramble-01/) |
 
 **Disposition values:**
 - `ignored` — not worth pursuing
@@ -69,8 +70,8 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 3.
 
 ### Best for moody / cocktail / nightlife
-1.
-2.
+1. `bramble-01` — WARM retro cocktail bar (note: light-mode, not moody-speakeasy)
+2. _(need a moody-speakeasy template — `bramble-01` is warm, not moody)_
 3.
 
 ### Best for warm / rustic / Italian / family
@@ -108,7 +109,7 @@ Track which restaurant archetypes have ≥1 strong template available. Empty cel
 | Steakhouse | | |
 | Sushi / omakase | `qitchen-01` | solid (1 strong) |
 | Neighborhood bistro | | |
-| Cocktail bar / speakeasy | | |
+| Cocktail bar / speakeasy | `bramble-01` (warm-retro only) | weak (need a moody-speakeasy template — bramble fills warm-retro lane only) |
 | Brunch / cafe | | |
 | Bakery | | |
 | Pizza / fast casual | | |

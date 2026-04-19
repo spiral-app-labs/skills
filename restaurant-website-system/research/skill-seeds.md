@@ -140,8 +140,8 @@ Proposed narrow skills, each with a clear scope, trigger, and artifact contract.
 - **Inputs needed:** completed audit, source URL, screenshots, any HTML exports.
 - **Outputs / artifacts:** fully built `templates/[slug]/` directory + updates to `template-inventory.md` and `pattern-library.md`.
 - **Backed by:** code (the Next.js scaffold) + instructions.
-- **Promotion status:** drafted (executed once on `qitchen-01`; needs 1 more execution before promoting).
-- **Notes:** this is the workhorse skill — all other code-based skills depend on the template catalog this builds. Reference recreation: `templates/qitchen-01/`. Stack: Next.js 14 + TypeScript + Tailwind v3 + Framer Motion. Pattern: `theme.ts` (locked tokens) → `tailwind.config.ts` (consumes theme) → `content.example.ts` (placeholder schema) → `components/*.tsx` (template-specific) → `app/*/page.tsx` (compositions).
+- **Promotion status:** drafted (executed twice — `qitchen-01` and `1776-redesign-01`. Ready for promotion to `~/skills/restaurant-template-recreation/SKILL.md`).
+- **Notes:** this is the workhorse skill — all other code-based skills depend on the template catalog this builds. Reference recreations: `templates/qitchen-01/` and `templates/1776-redesign-01/`. Stack: Next.js 14 + TypeScript + Tailwind v3 + Framer Motion. Pattern: `theme.ts` (locked tokens) → `tailwind.config.ts` (consumes theme) → `content.example.ts` (placeholder schema) → `components/*.tsx` (template-specific) → `app/*/page.tsx` (compositions). Both recreations followed identical structural patterns despite very different design languages — confirms the template-pattern is mature.
 
 ### restaurant-template-analysis ✅ PROMOTED
 - **What it does:** turn an opaque rendered restaurant website into a complete, ground-truthed audit with measurable design tokens, structural insights, and motion behavior — using a four-pass capture pipeline (full-page screenshots, scroll-position frames, hover states, page-load videos with frame extraction, computed-style + asset metadata).

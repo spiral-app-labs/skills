@@ -10,14 +10,16 @@ The token system that templates use. **Every template's `theme.ts` must conform 
 
 ### Display family categories
 - **Editorial serif** — high-contrast, large-display optimized (e.g., Canela, GT Sectra, Romain). For: editorial-luxury, fine dining, modern destination.
-- **Classical narrow serif** — Bodoni-influenced, narrow proportions, free or low-cost (e.g., **Forum** [Google Fonts, used by qitchen-01], Cormorant). For: editorial fine dining when budget matters, single-font display systems.
+- **Classical narrow serif (uppercase-led)** — Bodoni-influenced, narrow proportions, free or low-cost (e.g., **Forum** [Google Fonts, used by `qitchen-01`]). For: editorial fine dining with single-font display discipline + uppercase-everywhere treatment.
+- **Garamond / italic-pairing serif** — humanist garamond with strong italics (e.g., **Cormorant Garamond** [Google Fonts, used by `1776-redesign-01`], EB Garamond, Playfair Display). For: warm fine dining, italic-on-serif emphasis pattern, mixed-case display.
+- **Delicate transitional serif at weight 300** — e.g., **Crimson Pro at weight 300** (Google Fonts, used by `bramble-01`). The light weight gives a retro-but-refined character — neither heavy-classical nor modern-geometric. Use for retro hospitality, music-forward venues, cocktail-bar-with-food.
 - **Refined sans serif** — geometric or grotesque, clean (e.g., Söhne, GT America, Untitled Sans). For: modern minimal, contemporary upscale.
 - **Classic serif** — traditional, warm (e.g., Lyon, Caslon, Tiempos). For: warm-rustic, steakhouse, hotel restaurant.
 - **Hand-lettered display** — distinctive personality (e.g., custom logotypes). For: brunch/cafe/bakery, vibrant social.
 - **Art deco / noir display** — stylized for atmosphere (e.g., Domaine, Recoleta). For: moody cocktail, speakeasy.
 
 ### Body family categories
-- **Neutral sans** — readable at small sizes (e.g., Inter, GT America, Söhne, **Satoshi** [Fontshare, used by qitchen-01]).
+- **Neutral sans** — readable at small sizes (e.g., Inter, GT America, Söhne, **Satoshi** [Fontshare, used by `qitchen-01`], **DM Sans** [Google Fonts, used by `1776-redesign-01`]).
 - **Warm humanist** — slightly more character (e.g., Tiempos Text, Lyon Text).
 - **Geometric mono** — for menus and prices (e.g., JetBrains Mono, GT America Mono).
 
@@ -32,6 +34,8 @@ The token system that templates use. **Every template's `theme.ts` must conform 
 
 ### Base palettes
 - **Editorial warm-dark monochrome** — confirmed in `qitchen-01`. Three colors do almost everything. Canvas `#0A0B0A` (warm near-black, G channel one notch above R/B), surface `~#16-18`, primary text `#EFE7D2` (warm cream). **No accent** — warmth comes from photography only.
+- **Editorial deep-navy + amber** — confirmed in `1776-redesign-01`. Canvas `#0D1B2A` (deep navy with cool blue cast), surface elevated `#050C16` (near-black with navy undertone, deeper than canvas — inverse of qitchen's surface > canvas), primary text `#F5F0E8` (warm cream), brand accent `#C9A96E` (muted amber/champagne). The accent does heavy work: eyebrows, primary CTA fill, italic display emphasis, footer badges. Use for warm fine-dining and Wine-Spectator-class restaurants.
+- **Retro-warm light-mode (section-switching)** — confirmed in `bramble-01`. **First light-mode palette in catalog.** Multiple backgrounds per page: cream `~#F5F2E8` (warm pale), near-black `~#171717` (dark sections), pure white `#FFFFFF` (body/browser). Cream-on-dark text is `#FCFFE2` (pale butter-yellow, NOT pure white). No brand accent. Warmth comes from photography + section-bg-switching + Crimson Pro's delicate weight-300 character. Use for retro cocktail bars, music-forward neighborhood venues, hospitality-driven single-page sites.
 - **Editorial monochrome (light variant)** — off-white canvas, warm-gray neutrals, one muted accent.
 - **Earth/warm rustic** — terracotta, cream, deep red, olive, warm brown.
 - **Dark moody** — black, deep burgundy, forest green, gold/copper accent.

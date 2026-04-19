@@ -1,0 +1,112 @@
+{
+  "url": "https://bamzi.framer.website/",
+  "dims": {
+    "scrollHeight": 7983,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Delicious food & wonderful eating experience",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "80px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Delicious food and wonderful eating experience",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "96px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "96px",
+      "color": "rgb(15, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Immerse yourself in anasian experience.",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "57.6px",
+      "color": "rgb(15, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "About",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "lineHeight": "19.2px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -720, 0)",
+      "matrix(1, 0, 0, 1, -585, 0)",
+      "matrix(1, 0, 0, 1, -100, 0)",
+      "matrix(1, 0, 0, 1, 100, 0)",
+      "matrix(1, 0, 0, 1, 0, 50)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(1, 0, 0, 1, -280.797, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/prata/v20/6xKhdSpbNNCT-vWNAG_5LWwJ.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+    "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/gK0S9F3CepOn3QRt7pdkVJK3Bn8.png",
+    "https://framerusercontent.com/images/h61bDeMmqnRn5wJ7Bx2N2SKBYA.png?width=3510&height=2604",
+    "https://framerusercontent.com/images/NRy8NYx3ql6v9tEvBvWbug63WU4.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/jWlIAhX7hWE1gBbss2nU3Y3PA.png?width=600&height=300",
+    "https://framerusercontent.com/images/AOY3tQ1TWlDE5D1B41kD3XVQYNI.png?width=919&height=799",
+    "https://framerusercontent.com/images/7YJTjIOt7p99thUch6cFVdyG4Po.png?width=600&height=300",
+    "https://framerusercontent.com/images/G83gGuoNc1mo47t8eBtvAIIV6E.png?scale-down-to=2048&width=2480&height=1748",
+    "https://framerusercontent.com/images/5F2MTBDJWaOQIF0K2dQekYSIeE.png?width=1160&height=1466",
+    "https://framerusercontent.com/images/biZPSC2xDiSkeOV5QSvN68zcXE4.png?scale-down-to=2048&width=2320&height=2932",
+    "https://framerusercontent.com/images/o9zx1kHE8jT24De2qBUIWAYbEs.png",
+    "https://framerusercontent.com/images/nlrFSyV6LQ6Gr5Zs2Fbe8RD2pgM.png",
+    "https://framerusercontent.com/images/snsxiaMZlvkHUrSovLPcy6eUPM.png",
+    "https://framerusercontent.com/images/PST9YZJ44VASwqMrLiUj6LbXmHk.png",
+    "https://framerusercontent.com/images/brlPMl9sVULMbw1IAg4y724o2yc.png?width=3200&height=1400",
+    "https://framerusercontent.com/images/Hf2K9T3Q8Rfgevajnjd5jM8nE.png?scale-down-to=2048&width=2272&height=2600",
+    "https://framerusercontent.com/images/EWWOpikC37nhNwM8Z6SLv6FQQ.png"
+  ]
+}

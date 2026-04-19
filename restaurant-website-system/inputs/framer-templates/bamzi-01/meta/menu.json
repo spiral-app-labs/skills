@@ -1,0 +1,100 @@
+{
+  "url": "https://bamzi.framer.website/menu",
+  "dims": {
+    "scrollHeight": 4255,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Since from 1998",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "80px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": {
+      "selector": "h3",
+      "text": "Famous sushi’s",
+      "fontFamily": "Prata, \"Prata Placeholder\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "57.6px",
+      "color": "rgb(15, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "About",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "lineHeight": "19.2px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "book a seat",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(221, 89, 3)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "background, box-shadow"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -720, 0)",
+      "matrix(1, 0, 0, 1, -100, 0)",
+      "matrix(1, 0, 0, 1, 100, 0)",
+      "matrix(1, 0, 0, 1, 0, 50)",
+      "matrix(1, 0, 0, 1, -50, 0)",
+      "matrix(0, 0, 0, 0, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/prata/v20/6xKhdSpbNNCT-vWNAG_5LWwJ.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+    "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/CnWHrNyYWHGWYPUqTrWoVfybewk.png",
+    "https://framerusercontent.com/images/09EnY7BCeYyE43aQ04FqmpcvC4.png?scale-down-to=512",
+    "https://framerusercontent.com/images/PST9YZJ44VASwqMrLiUj6LbXmHk.png",
+    "https://framerusercontent.com/images/hoIZvAiFlmaNcrjaKP4DTPOfHF4.png"
+  ]
+}

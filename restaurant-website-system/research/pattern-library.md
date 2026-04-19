@@ -31,6 +31,55 @@ These divergences map directly to the **ceremonial vs warm** axis of fine-dining
 
 ---
 
+## ⭐ Standalone signature patterns (cross-cutting)
+
+These don't fit cleanly into the section-archetype categories below — they're cross-cutting design moves that recur.
+
+- **🌟 Hero slideshow with static wordmark overlay** (NEW from `bramble-01`)
+  - Where it works: `bramble-01` — cycles 3-4 hero images at ~1s intervals while wordmark stays anchored
+  - When to use it: any multi-service / multi-concept venue where a single photo can't communicate positioning (day/night, food/bar, restaurant/retail, etc.)
+  - When NOT to use it: single-register ceremonial brands (would feel unsettled), tasting menu fine dining (too much motion)
+  - Complexity: 4/10 (image preloading + crossfade + interval timer)
+  - Reuse potential: 9/10 for multi-service venues
+  - Status: observed (1 template) — **strong future shared candidate**
+
+- **🌟 Polaroid strip (scrapbook credibility)** (NEW from `bramble-01`)
+  - Where it works: `bramble-01` — 5+ square photos with thin white borders, slight rotations (±3-8°), partial horizontal bleed
+  - When to use it: hospitality-driven venues; restaurants where "real people enjoy this place" is part of the positioning
+  - When NOT to use it: fine dining (too informal), brands where guest privacy is a concern
+  - Complexity: 3/10 (CSS rotation + drop shadow + responsive horizontal scroll)
+  - Reuse potential: 9/10
+  - Status: observed (1 template) — **strong future shared candidate**
+
+- **🌟 Italic-on-serif display emphasis (paired upright + italic words in display headings)**
+  - Where it works: `1776-redesign-01` — used 7+ times across every page ("Signature *Selections*", "More than a *meal*", "Voices of *Experience*", etc.)
+  - When to use it: any editorial template — adds personality to display headlines without custom illustration or weird fonts
+  - When NOT to use it: lively casual (too formal), minimalist Scandinavian (too decorative)
+  - Complexity: 1/10 (trivially `<span style="italic">word</span>` inside an h1/h2)
+  - Reuse potential: 10/10 — lowest-effort highest-impact pattern observed
+  - Status: observed (1 template) — **promote IMMEDIATELY** as `<DisplayHeading>` primitive with `upright` + `italic` props
+
+- **🌟 Marquee strip with diamond-bullet separators**
+  - Where it works: `1776-redesign-01` ("Gluten Free ◆ Fine Dining ◆ Crystal Lake ◆ Farm to Table" repeating)
+  - When to use it: restaurants with 3-5 memorable positioning attributes; solves "what to say in one line about ourselves"
+  - Complexity: 3/10 (CSS animation OR JS scroll-loop)
+  - Reuse potential: 9/10
+  - Status: observed (1 template) — **strong shared candidate**
+
+- **🌟 Tiny eyebrow line with location/established date in tracked-out small caps amber**
+  - Where it works: `1776-redesign-01` ("CRYSTAL LAKE, ILLINOIS · EST. 1776" above hero title)
+  - When to use it: restaurants where heritage / location is part of the brand
+  - Complexity: 1/10
+  - Reuse potential: 9/10
+
+- **🌟 Tag pills (small dark-elevated rounded-pill labels in caps tracked-out small font)**
+  - Where it works: `1776-redesign-01` (ENTREE / SIDE / FEATURE on Featured cards; Wine Spectator + Gluten-Free badges in footer)
+  - When to use it: any contextual labeling — dish categories, accolades, dietary
+  - Complexity: 1/10
+  - Reuse potential: 10/10
+
+---
+
 ## How to add a pattern
 
 When you spot a pattern repeating across audits, add it here using this schema:
@@ -64,6 +113,14 @@ When you spot a pattern repeating across audits, add it here using this schema:
   - Complexity: 3/10
   - Reuse potential: 9/10 — this is the canonical fine-dining hero
   - Status: observed (1 template)
+
+- **Hero slideshow with static wordmark overlay**
+  - Where it works: `bramble-01`
+  - When to use it: multi-concept venues (day/night, food/bar/music)
+  - When NOT to use it: ceremonial, single-register brands
+  - Complexity: 4/10
+  - Reuse potential: 9/10 for dual/multi-service venues
+  - Status: observed (1 template) — see standalone section above
 
 - **Fullbleed video loop hero** — TBD
 - **Moody overlay hero (dark with text overlay)** — TBD
@@ -149,6 +206,12 @@ _(populated as audits land)_
   - Where it works: `qitchen-01` About page (TRIP ADVISOR / MICHELIN GUIDE / START DINING)
   - Complexity: 1/10 / Reuse potential: 8/10
   - Status: observed (1 template)
+
+- **Polaroid strip (scrapbook guest-photo credibility)**
+  - Where it works: `bramble-01`
+  - When to use it: hospitality-driven warm venues; places where "real people enjoy this" is part of brand
+  - Complexity: 3/10 / Reuse potential: 9/10
+  - Status: observed (1 template) — see standalone section
 
 - **Compact star + review-count badge (e.g., "4.9★ 1,902 REVIEWS")**
   - Where it works: `1776-redesign-01` (inline on home, near "More than a meal")
@@ -237,12 +300,21 @@ _(populated as audits land)_
 
 ## 9. Mobile nav archetypes
 
-- **Floating header pill (upper-left, fixed across pages)**
+- **Floating header pill — upper-left**
   - Where it works: `qitchen-01`
-  - When to use it: minimal fine-dining, editorial, when the nav should "stay out of the way"
-  - When NOT to use it: lively casual where bigger CTA targets matter; multi-location with complex nav
-  - Complexity: 2/10
-  - Reuse potential: 6/10 — strong pattern, evaluate after 2nd template
+  - When to use it: minimal fine-dining, editorial, "stay out of the way"
+  - Status: observed (1 template)
+
+- **Floating header pill — center-top**
+  - Where it works: `1776-redesign-01`
+  - When to use it: warm fine dining, traditional-formal register
+  - Status: observed (1 template)
+
+- **Top triptych header (button-center-button)**
+  - Where it works: `bramble-01` — "RESERVE" | address | "MENU"
+  - When to use it: single-page or small-site designs; when nav minimal but both sides actionable; hospitality-casual
+  - Complexity: 1/10
+  - Reuse potential: 7/10
   - Status: observed (1 template)
 
 - **Full-screen hamburger overlay** —
@@ -253,6 +325,20 @@ _(populated as audits land)_
 ---
 
 ## 10. Animation / motion archetypes
+
+- **Image slideshow with static overlay (cycling photos, fixed wordmark)**
+  - Where it works: `bramble-01` — hero cycles through 3-4 scenes at ~1s intervals
+  - When to use it: multi-concept venues where one photo can't communicate positioning
+  - Complexity: 4/10
+  - Reuse potential: 9/10 for multi-service venues
+  - Status: observed (1 template)
+
+- **Section-level background switching (cream → dark → photo → dark → cream)**
+  - Where it works: `bramble-01` — intentional alternation as structural rhythm
+  - When to use it: templates wanting multi-register brand rhythm (day/night, food/bar)
+  - Complexity: 1/10 (just per-section bg classes)
+  - Reuse potential: 7/10
+  - Status: observed (1 template)
 
 - **Staged page-load reveal (~2s, opacity + lift)**
   - Where it works: `qitchen-01` — header pill (~0.3s) → hero image fade (~0.5–1s) → display headline fade-up (~1–1.5s) → thumbnail nav cards fade in (~1.5–2s).

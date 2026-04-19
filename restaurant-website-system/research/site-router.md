@@ -66,13 +66,23 @@ For each route, specify:
 - **Include sections:** hero, welcome, menu preview, gallery, hours/location, reservation
 - **Avoid:** clichéd Italian flag colors, fake rusticity, cold whitespace
 
-### Route 2.4 — Cocktail / speakeasy / bar-led
-- **If:** bar-led, cocktail-focused, atmosphere-as-product, often nighttime
+### Route 2.4a — Warm / retro cocktail bar (hospitality-forward)
+- **If:** bar-led with food program, music-forward, neighborhood-casual-cool, day/night dual-concept, Soho-class independent
+- **And goals:** signal warmth + hospitality + real-place-character, drive reservations + walk-ins
+- **And tone:** retro, warm, scrapbook, hospitality-driven, light-mode
+- **Then use:** `bramble-01`
+- **With modifiers:** photo-library (needs real guest + interior + food + drink shots); opening-times (with BAR/KITCHEN split if applicable); menu-delivery (external PDF or embed)
+- **Include sections:** hero-slideshow, polaroid strip, opening times marquee + schedule, dual-service menus split, gift-cards/careers inline, mailing list
+- **Avoid:** dark mode (breaks the warmth), moody-speakeasy register, ceremonial framing, single-CTA discipline
+- **Disambiguation from 2.4b:** if brief wants WARM + MUSIC + DAY-NIGHT → 2.4a (bramble). If brief wants MOODY + SECRETIVE + DARK → 2.4b (moody-speakeasy template, TBD).
+
+### Route 2.4b — Moody / speakeasy / dark-cocktail (atmosphere-forward)
+- **If:** speakeasy, cocktail-only, atmosphere-as-product, nighttime-primary, exclusivity-signaling
 - **And goals:** signal exclusivity, drive deliberate visits
-- **And tone:** moody, dark, atmospheric
-- **Then use:** _TBD_
+- **And tone:** moody, dark, atmospheric, art-deco-adjacent
+- **Then use:** _TBD — no template yet for this lane_
 - **With modifiers:** speakeasy-secret vs upscale-bar; cocktail-only vs cocktail-and-food
-- **Include sections:** hero, atmosphere, cocktail menu, gallery, hours
+- **Include sections:** hero (dark moody), atmosphere, cocktail menu, gallery, hours
 - **Avoid:** edgelord aesthetic, low-contrast unreadable type
 
 ### Route 2.5 — Brunch / cafe / bakery / daytime

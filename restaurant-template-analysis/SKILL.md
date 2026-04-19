@@ -128,7 +128,99 @@ This is the audit's quality discipline. If the claim came from a `meta/*.json` v
 
 ---
 
-## What to look for during analysis (the good-eye checklist)
+## The designer-eye lens (read this BEFORE the technical checklist)
+
+The capture pipeline gives you data. Data alone produces shallow audits. To produce world-class recreations, you also need to look at the captured artifacts the way a senior designer would. This section is the bottle for that thinking.
+
+### What world-class designers actually notice
+
+Pure programmer-thinking sees: "this is a div with these properties." Designer-thinking sees: "this design is making a deliberate choice to *exclude* something — and the absence is what's communicating."
+
+Train yourself to notice the *absences* and *disciplines* as much as the elements:
+
+- **What's NOT there?**
+  - Qitchen has no brand accent color. That's not a blank — it's a discipline. The absence of accent is what signals "we don't need to convince you with hue, the typography and photography do the work."
+  - Qitchen has no scroll on most pages. That's not laziness — it's editorial restraint signaling "we have less to say than we have substance."
+  - 1776 has no Instagram embed, no newsletter signup, no "follow us." That's intentional — those would dilute the warm-fine-dining register.
+- **What's repeated relentlessly?**
+  - 1776 uses the italic-on-serif emphasis 7+ times across every page. ONE pattern, used everywhere. That's a discipline-as-brand decision. A weaker template would use 3 different emphasis patterns and feel inconsistent.
+  - Qitchen uses uppercase for nearly every text element including UI labels and section headers. That's not a typography choice — that's a worldview.
+- **What's the design *assuming* about the viewer?**
+  - Qitchen assumes you already know what kind of restaurant you're looking for and you'll act deliberately. That's why single CTA, no urgency, no upsell, no "join our list."
+  - 1776 assumes you might be on the fence and benefits from multiple proof points (4.9★, Wine Spectator badge, gluten-free callout, testimonials, story timeline). That's why the rich, multi-section homepage.
+  - These assumptions ARE the brand positioning. Recreating without understanding them produces components that work but don't *cohere*.
+- **What's the design saying without words?**
+  - The centered floating header pill (1776) signals tradition / formality / "we have nothing to hide."
+  - The upper-left floating header pill (qitchen) signals editorial / modern / "we're confident the work speaks for itself."
+  - These are 100-pixel decisions that carry brand weight.
+
+### The narrative lens — what story is the design telling?
+
+Every world-class restaurant site tells a *story* through its design. Before writing the audit, ask:
+
+1. **What's the opening sentence?** (The hero — not the words, the visual move.)
+   - Qitchen: "We exist. Here is one perfect dish, one perfect headline, one perfect action. The rest is for inside."
+   - 1776: "We're refined and we're warm. Here are the dishes you might love, here are the awards we've earned, here's where to find us, here are voices saying what they thought, here's the story of how we got here."
+2. **What's the middle?** (The sections — what arc do they walk you through?)
+   - Qitchen: there is no middle. The page IS the opening. That IS the story.
+   - 1776: signature dishes → marquee positioning → "we're more than a meal" manifesto → reviews → quote-on-photo → reservation. A classic five-act conversion arc.
+3. **What's the closing?** (The footer — what's the last thing you see?)
+   - Qitchen: a single line. "We don't beg. We're done." (The discipline reinforces the brand.)
+   - 1776: hours, address, phone, badges. "Here's how to find us, when we're open, what makes us safe to choose. Now go book." (Service reinforces the warmth.)
+4. **What does the design *promise* about the actual restaurant experience?**
+   - Qitchen promises: "When you arrive, every dish will be deliberate. The space will be quiet. You'll feel small in the best way."
+   - 1776 promises: "When you arrive, you'll be greeted. The food will be excellent. You'll relax."
+   - These promises are encoded in the design. Mismatches between promise and reality are why some good-looking restaurant sites convert poorly — the site signals fine dining and the actual restaurant is casual, or vice versa.
+
+### Cohesion testing — the most important diagnostic
+
+The single biggest difference between an okay restaurant site and a world-class one is **cohesion** — every element supports the same story. Testing for cohesion as you analyze:
+
+For each element you note (a button style, a photo treatment, a heading size, a section pattern), ask:
+
+> **"Could this element be from a different template? Would it feel out of place if dropped into a sibling section?"**
+
+If yes, the design is loose. If no, the design is cohesive — it's making the same world over and over again.
+
+Examples of cohesion-critical elements you'll spot during audits:
+- A button that uses a different border-radius than the cards on the same page (incoherent).
+- A photo with brighter daylight than the photos two scroll-screens up (incoherent).
+- A heading that uses a different display font than the page title (incoherent).
+- An italic emphasis on one heading and not the others (incoherent — should be all-or-nothing).
+- A reserve button on five places, but the colors slightly differ across them (incoherent).
+
+When auditing, flag every cohesion-break you find. Most templates have at least one — qitchen and 1776 both have very few, which is part of why they're catalog-worthy.
+
+### Reading the design language
+
+Each template has a *design language* — its specific dialect of editorial / warm / playful / etc. To articulate it (which you must, in audit §2):
+
+- Pick 3-5 adjectives. Make sure they pull in the same direction (don't say "warm AND minimalist" — those fight). Examples that work: "ceremonial / restrained / dark / quiet / Japanese-influenced." "Refined / welcoming / dark-warm / confident / classical-American."
+- Identify the 1-2 design moves doing the most semantic work. These are the moves you must preserve in recreation. Removing them changes the brand.
+  - Qitchen: floating-pill nav + uppercase Forum at hero scale + image-left-with-overlay + single-CTA-discipline.
+  - 1776: italic-on-serif emphasis + amber accent + multi-section narrative + multi-channel CTA.
+- Identify what the language is in *opposition* to. Every design language defines itself partly by what it's not.
+  - Qitchen is in opposition to: warm, busy, accented, conversion-optimized.
+  - 1776 is in opposition to: ceremonial, monastic, single-viewport, minimal.
+  - Knowing the opposition helps you route briefs correctly — if a brief leans toward what the template opposes, route elsewhere.
+
+### When to override the data with judgment
+
+The capture pipeline gives you `meta.computed.h1.fontSize = "115.2px"`. The data says one thing. Designer-judgment sometimes says: "but on a smaller viewport that becomes 56px and the line breaks weirdly — the *intent* is `clamp(56px, 9vw, 115px)`." Always recover the *intent* from the *measurement*, not just the measurement.
+
+Same for color: `rgb(13, 27, 42)` is the data. The intent is "deep cool navy that reads as serious without being cold." A token name like `canvas` captures the intent; the hex captures the measurement. Always name tokens by intent in `theme.ts` so future swaps preserve meaning.
+
+### The three questions to answer before writing any audit section
+
+1. **What is this design choosing to BE?** (The positive identity.)
+2. **What is this design choosing to NOT be?** (The opposition / discipline.)
+3. **What's the smallest set of elements that, if changed, would shift the answer to #1 or #2?** (The cohesion-critical core — the locked items in the personalization manifest.)
+
+If you can answer these for the audit's subject template, the audit will be world-class. If you can only answer them with hand-waving, do another pass through the captures.
+
+---
+
+## What to look for during analysis (the good-eye technical checklist)
 
 When opening the captured artifacts for a new template, deliberately look for these — they're the high-leverage reusable patterns:
 
@@ -227,9 +319,22 @@ The script handles dependency installation transparently.
 
 ---
 
+## Session-handoff brief
+
+If you're a fresh agent picking this up cold, here's the minimum you need to know:
+
+1. **Read `restaurant-website-system/README.md` first** — the catalog-and-fork mental model and the two-phase operating mode are the foundation. Without that, this skill makes less sense.
+2. **Read the existing audits in `research/template-audits/`** as worked examples. `qitchen-01.md` and `1776-redesign-01.md` are the canonical references for what a good audit looks like.
+3. **Run the pipeline on a new template before writing anything** — the captures change what you'd write.
+4. **Use the designer-eye lens (above) before the technical checklist.** The technical checklist tells you what's there; the designer-eye lens tells you what it MEANS.
+5. **The three questions** at the end of the designer-eye section are the test for whether you understand the template well enough to recreate it. If you can't answer them, capture more / look harder before writing.
+6. **Cohesion is the goal.** Every audit decision, every recreation choice, every personalization-manifest entry should serve cohesion. Fragmented audits produce fragmented templates produce fragmented restaurant sites.
+
+When in doubt, the audits and the system README contain enough context to act independently. Don't try to recover conversation history — the artifacts are designed to be the source of truth.
+
 ## Lineage
 
-This skill was promoted from `restaurant-website-system/research/skill-seeds.md` after being executed once on `qitchen-01` and proving its value (it caught the sticky-left-image pattern that a screenshot-only audit missed, and produced exact ground-truth color and typography values that an eyeball-audit would have gotten wrong).
+This skill was promoted from `restaurant-website-system/research/skill-seeds.md` after being executed once on `qitchen-01` and once on `1776-redesign-01`. The qitchen pass caught the sticky-left-image pattern and produced exact ground-truth values that an eyeball-audit would have gotten wrong (Forum vs Canela, `#0A0B0A` vs `#000`). The 1776 pass uncovered the italic-on-serif emphasis pattern as the highest-leverage cross-template insight — a designer-eye observation, not a technical one. Both proves the value of pairing the technical pipeline with deliberate designer-eye reading.
 
 Future improvements (track in skill-seeds, promote when earned):
 - `restaurant-template-fork` — once N templates exist, the parallel skill for forking one for a real restaurant

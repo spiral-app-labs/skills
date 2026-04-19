@@ -138,3 +138,32 @@ The 5,581-line `skills/agency-website-design/SKILL.md` is treated as **Input Zer
 ## 8. Quality bar
 
 Every artifact (audit, template, kit, skill) must be useful to a cold-start agent that has never seen this conversation. If it requires context from chat to understand, it's not done.
+
+---
+
+## 9. Storage policy
+
+**What's committed:**
+- All markdown (audits, READMEs, research/, source.md per input)
+- `inputs/*/*/meta/*.json` — small text files with ground-truth design tokens (font names, colors, sizes, animation declarations). These preserve enough design info to re-recreate a template even if every screenshot is wiped.
+- All template source code (`templates/*/`)
+- Template `public/placeholder/` images — small (~2MB per template), runtime-needed
+- Scripts, configs, package.jsons
+
+**What's `.gitignore`d (regenerable, big):**
+- `inputs/*/*/screenshots/` (~30MB per template)
+- `inputs/*/*/scroll-frames/` (~10–125MB per template)
+- `inputs/*/*/videos/` (~5–10MB per template)
+- `inputs/*/*/motion-frames/` (~15MB per template)
+- `templates/*/recreation-screenshots/`
+- All `node_modules/` and `.next/` build outputs
+
+**To regenerate captures after a fresh clone or `git clean`:**
+```
+./scripts/regenerate-captures.sh              # all templates
+./scripts/regenerate-captures.sh qitchen-01   # one template
+./scripts/regenerate-captures.sh --force      # recapture even if present
+```
+The script reads each `inputs/*/*/source.md` for the URL + sub-page list and re-runs the pipeline.
+
+**Templates run without captures.** A template's `templates/[slug]/` directory is fully self-contained — `npm install && npm run dev` works regardless of whether `inputs/` has screenshots present.
