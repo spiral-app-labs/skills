@@ -1,0 +1,144 @@
+{
+  "url": "https://www.alinearestaurant.com/gallery",
+  "dims": {
+    "scrollHeight": 2841,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Our 20th Anniversary Tour",
+      "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "37px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "lineHeight": "37px",
+      "color": "rgb(26, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": {
+      "selector": "h3",
+      "text": "Alinea",
+      "fontFamily": "\"Cormorant Garamond\"",
+      "fontSize": "35.2px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "46.9146px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "1723 N Halsted St,",
+      "fontFamily": "adobe-garamond-pro",
+      "fontSize": "19.2px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "lineHeight": "34.56px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "0\n              \n            \n          \n        \n      \n\n      \n\n\n\n\n\n\n\n\n\n\n\n\n  \n",
+      "fontFamily": "sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Skip to Content",
+      "fontFamily": "adobe-garamond-pro",
+      "fontSize": "14.4px",
+      "fontWeight": "500",
+      "letterSpacing": "0.288px",
+      "lineHeight": "normal",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(168, 166, 161)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [
+      "0.8s both tmpl-anim-fade-up"
+    ],
+    "transitions": [
+      "all",
+      "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+      "padding 0.14s ease-in-out",
+      "opacity 0.1s linear",
+      "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+      "transform 0.25s cubic-bezier(0.2, 0.6, 0.3, 1), width 0.25s cubic-bezier(0.2, 0.6, 0.3, 1)",
+      "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "visibility 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+      "background-color 0.17s ease-in-out, opacity 0.17s ease-in-out",
+      "fill 0.17s ease-in-out",
+      "opacity 0.25s ease-out",
+      "opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1)",
+      "opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+      "color 0.1s ease-in-out",
+      "opacity 1s cubic-bezier(0.33, 0, 0.2, 1)",
+      "background 0.17s ease-out, opacity 0.17s ease-out"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, 20)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(0, -1, 1, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 55)",
+      "matrix(1, 0, 0, 1, 0, 215.047)",
+      "matrix(1, 0, 0, 1, 1440, 0)",
+      "matrix(0, 1, -1, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, 480, 0)",
+      "matrix(1, 0, 0, 1, 960, 0)",
+      "matrix(1, 0, 0, 1, 360, 0)",
+      "matrix(1, 0, 0, 1, 720, 0)",
+      "matrix(1, 0, 0, 1, 1080, 0)",
+      "matrix(1, 0, 0, 1, 205.333, 0)",
+      "matrix(1, 0, 0, 1, 513.333, 0)",
+      "matrix(1, 0, 0, 1, 975.291, 0)",
+      "matrix(1, 0, 0, 1, 719.935, 0)",
+      "matrix(2, 0, 0, 2, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2"
+  ],
+  "imgUrls": [
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/1620244320230-O6DATSVJNH1QEPDLQ8YJ/alinea_logo_grey.png?format=1500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/61006ddd-51bf-4d90-801f-aa57b4ffabb5/20171102_alinea_0280.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/e1928fbb-c21b-43b5-b94a-8e8200950910/20171102_alinea_0064.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/70e1b74b-fa7e-4685-bdcd-e901e1450b70/20171102_alinea_0385.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/b7bb3423-6f26-48cb-8f5f-ba1a32f47e19/20171102_alinea_0016-Edit.jpg?format=750w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/19c7af90-bbae-4378-a3be-f0e6ba750ac3/20171102_alinea_0084.jpg?format=750w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/6fe7ea5e-024d-46f9-ad51-a0f831f684ee/20171102_alinea_0101.jpg?format=750w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/ae7dbcde-3c8f-4ca0-a6a5-598895133a60/20180127_alineaFood_0048-Edit.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/e73dcc18-ce4f-463f-b874-4bbb0225b7f3/20180127_alineaFood_0094.jpg?format=750w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/235e955a-8a0f-4ac6-a2c8-bcabca57e2cc/20180831_alinea_0048.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/0b252182-7f4e-4edb-a88f-8a01e7f3d6df/SDP01643.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/2780160c-1f61-44e5-9cb5-3206933b0e7a/20Anniversary_1.jpg?format=1500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/2780160c-1f61-44e5-9cb5-3206933b0e7a/20Anniversary_1.jpg",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/c0ee3714-b825-4963-8e66-32516b78158c/SDP01682.jpg?format=750w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/ba5350da-f4f8-41bb-a446-b9bf3acebf4f/SDP01739.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/be8ee6d5-aefb-443a-b2bd-67c454d4abaf/SDP01977.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/a2052a9b-a59c-44ed-b512-7b34748389d6/20171102_alinea_0322.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/460dcba8-19bb-458f-b403-c68acfe5ada8/20180831_alinea_0028.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/30b77bc0-b73d-47b0-b565-d33002a06ac1/SDP01372.jpg?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/f9349cd3-1569-4998-b043-1432f186c710/20180831_alinea_0080.jpg?format=500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/1620247398733-WSWMNV56T04FQVD7H40K/20171102_alinea_0272.jpg?format=1500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/571c1030-989d-49e1-a91b-ab33e6dff688/SDP03264.jpg?format=1500w"
+  ]
+}

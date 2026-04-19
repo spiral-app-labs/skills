@@ -1,0 +1,111 @@
+{
+  "url": "https://www.alinearestaurant.com/shop",
+  "dims": {
+    "scrollHeight": 1932,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": null,
+    "h2": {
+      "selector": "h2",
+      "text": "Merchandise",
+      "fontFamily": "futura-pt",
+      "fontSize": "47.104px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "61.1975px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Mailing List",
+      "fontFamily": "futura-pt",
+      "fontSize": "36.736px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "48.9617px",
+      "color": "rgb(92, 89, 81)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "No results match your search. Try removing a few filters.",
+      "fontFamily": "Lato",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "0.32px",
+      "lineHeight": "28.8px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Skip to Content\n      \n      \n\n\n\n    @supports (-webkit-backdrop-filter: none) o",
+      "fontFamily": "sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Skip to Content",
+      "fontFamily": "Poppins",
+      "fontSize": "14.272px",
+      "fontWeight": "500",
+      "letterSpacing": "0.28544px",
+      "lineHeight": "normal",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(92, 89, 81)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "transform 0.14s ease-in-out",
+      "opacity 0.1s linear",
+      "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+      "transform 0.25s cubic-bezier(0.2, 0.6, 0.3, 1), width 0.25s cubic-bezier(0.2, 0.6, 0.3, 1)",
+      "opacity 0.1s ease-in-out",
+      "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "none",
+      "background-color 0.15s cubic-bezier(0.33, 1, 0.68, 1)",
+      "padding 0.075s cubic-bezier(0.33, 1, 0.68, 1), opacity 0.2s cubic-bezier(0.33, 1, 0.68, 1)",
+      "opacity 1s, transform 1s",
+      "background-color 0.17s ease-in-out",
+      "fill 0.17s ease-in-out"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, 20)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 70)",
+      "matrix(2, 0, 0, 2, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2",
+    "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+    "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2"
+  ],
+  "imgUrls": [
+    "https://images.squarespace-cdn.com/content/v1/612e5d009c9df1241bfd46d5/7c81f4da-14aa-4464-9e15-19c3552421cf/TAG+no+background.png?format=1500w",
+    "https://images.squarespace-cdn.com/content/v1/612e5d009c9df1241bfd46d5/1632787104085-DPTK8TCJN357R4AMNRWL/Shirt4-AIR.png?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/612e5d009c9df1241bfd46d5/1632787102475-SAQW59GIDXGDZZONVGNN/Shirt2-TAG_Skyline.png?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/612e5d009c9df1241bfd46d5/1632787100837-TRG4L36BYXIN38VZCAT7/Shirt1-TAG_Restaurants.png?format=1000w",
+    "https://images.squarespace-cdn.com/content/v1/612e5d009c9df1241bfd46d5/1671183120828-DGX45J2L7AOKJI68HTZ4/AV_apron-1.jpg?format=1000w"
+  ]
+}

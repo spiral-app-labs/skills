@@ -1,0 +1,122 @@
+{
+  "url": "https://www.alinearestaurant.com/private-events",
+  "dims": {
+    "scrollHeight": 4614,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Our Spaces",
+      "fontFamily": "\"Cormorant Garamond\"",
+      "fontSize": "64px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "78.848px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "The Beginning of a New Train of Thought",
+      "fontFamily": "\"Cormorant Garamond\"",
+      "fontSize": "44.8px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "58.2042px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Alinea",
+      "fontFamily": "\"Cormorant Garamond\"",
+      "fontSize": "35.2px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "46.9146px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "An event at Alinea includes our Chef’s Tasting menu as well as a carefully curat",
+      "fontFamily": "adobe-garamond-pro",
+      "fontSize": "19.2px",
+      "fontWeight": "300",
+      "letterSpacing": "normal",
+      "lineHeight": "34.56px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "0\n              \n            \n          \n        \n      \n\n      \n\n\n\n\n\n\n\n\n\n\n\n\n  \n",
+      "fontFamily": "sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Skip to Content",
+      "fontFamily": "adobe-garamond-pro",
+      "fontSize": "14.4px",
+      "fontWeight": "500",
+      "letterSpacing": "0.288px",
+      "lineHeight": "normal",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(168, 166, 161)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "background 0.14s ease-in-out 0.14s, transform 0.14s ease-in-out",
+      "padding 0.14s ease-in-out",
+      "opacity 0.1s linear",
+      "opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+      "transform 0.25s cubic-bezier(0.2, 0.6, 0.3, 1), width 0.25s cubic-bezier(0.2, 0.6, 0.3, 1)",
+      "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "visibility 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1)"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, 20)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(0, -1, 1, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 55)",
+      "matrix(1, 0, 0, 1, 0, 215.047)",
+      "matrix(1, 0, 0, 1, 1440, 0)",
+      "matrix(0, 1, -1, 0, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2"
+  ],
+  "imgUrls": [
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/1620244320230-O6DATSVJNH1QEPDLQ8YJ/alinea_logo_grey.png?format=1500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/0824f12d-ecd7-4083-9dc3-87a71369a5a1/Alinea+11%3A02%3A2017.jpg?format=2500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/6d6579b9-fb90-4137-a451-64d576971c39/20231116_exclusiveresorts_alinea-10.jpg?format=2500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/1620245226427-NEB5P6BD9JN6EGUSLBVB/20160429_gilsonAlinea_0006.jpg?format=2500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/14b56bae-41d6-4457-89a9-cc599a04c96f/AL_EVENTS_SALON-13.jpg?format=2500w",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/666d17fb-2209-4c84-8796-305552d5da91/P1010230.jpg?format=2500w",
+    "https://tripleseat-static-production.s3.amazonaws.com/images/icons/icon_calendar.png",
+    "https://tripleseat-static-production.s3.amazonaws.com/images/icons/icon_clock.png",
+    "https://images.squarespace-cdn.com/content/v1/6091adceeec0df416e2b512e/2780160c-1f61-44e5-9cb5-3206933b0e7a/20Anniversary_1.jpg?format=1500w"
+  ]
+}

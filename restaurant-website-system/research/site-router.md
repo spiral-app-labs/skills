@@ -48,14 +48,24 @@ For each route, specify:
 - **Avoid:** single-CTA discipline (this brief wants warmth, not ceremony — use multi-channel); minimal footer; one-viewport-per-page constraint
 - **Disambiguation from Route 2.2:** if the brief wants ceremony / restraint / "trust us" → use 2.2 (qitchen). If brief wants "we're refined AND welcoming" → use 2.1 (1776).
 
-### Route 2.2 — Fine dining / tasting menu
-- **If:** $$$$, prix fixe / omakase, single seating, ceremonial booking
+### Route 2.2a — Dark ceremonial fine dining / tasting menu (sushi-leaning)
+- **If:** $$$$, prix fixe / omakase, single seating, ceremonial booking, Japanese or Japanese-influenced cuisine
 - **And goals:** convey gravitas, drive deliberate booking
-- **And tone:** still, sparse, ceremonial
-- **Then use:** `qitchen-01` (canonical for sushi/Japanese; for non-Japanese fine dining use qitchen-01 with light-mode + accent swap until a non-Japanese editorial template lands)
+- **And tone:** still, sparse, ceremonial, dark-mode, Bodoni-narrow typographic discipline
+- **Then use:** `qitchen-01`
 - **With modifiers:** photo-led vs typography-only
 - **Include sections:** hero (often text-only), experience, reservation, chef
 - **Avoid:** menu prices visible, multiple CTAs, any visual busyness
+
+### Route 2.2b — Light-mode Michelin-ceremonial / ticketed tasting-menu
+- **If:** $$$$+, 3-Michelin or World's-50-Best class, ticketed reservation (Tock/Resy), multi-tier dining concept (chef's table + main room + semi-private), prose-forward
+- **And goals:** convey museum-quiet gravitas, let photography + prose carry the persuasion, convert via embedded booking widget
+- **And tone:** light-mode, editorial-quiet, Garamond-warm, prose-heavy, no-accent
+- **Then use:** `alinea-01`
+- **With modifiers:** warm-gray strip color hue-swap; display-font swap within Garamond family (Cormorant / EB / Libre Caslon) at weight 500; with/without campaign modal (opt-in); Tock/Resy/OpenTable platform
+- **Include sections:** hero wordmark on dark photo, Tock widget strip, editorial prose block, 3-card dining-tier selector, gallery preview → full gallery page, private-events page with "Our Spaces" + form, warm-gray strip header/footer pair
+- **Avoid:** dark mode (that's 2.2a), accent color, uppercase text, tightening line-height below 1.6×, replacing the embedded widget with a form
+- **Disambiguation from 2.2a:** if cuisine is Japanese/omakase and tone is ceremonial-Bodoni → 2.2a (qitchen). If cuisine is avant-garde/modernist/chef-driven and tone is Michelin-light-Garamond → 2.2b (alinea).
 
 ### Route 2.3 — Italian neighborhood / family-warm
 - **If:** $$ Italian, family-friendly, mix walk-in and reservation

@@ -100,6 +100,45 @@ These don't fit cleanly into the section-archetype categories below — they're 
   - Complexity: 1/10 (just design discipline)
   - Reuse potential: 10/10
 
+- **🌟 Embedded Tock / Resy / OpenTable reservation widget in-page** (NEW from `alinea-01`)
+  - Where it works: `alinea-01` — Tock widget embedded directly on home (twice) with party-size / date / time / book-now strip. Not a form, not a link-out.
+  - When to use it: any restaurant using Tock / Resy / OpenTable / SevenRooms — the entire ticketed-reservation universe
+  - When NOT to use it: phone-only reservation restaurants; walk-in-primary venues; places that use contact forms
+  - Complexity: 3/10 (iframe wrapper + config) OR 1/10 (placeholder form for template previews)
+  - Reuse potential: 10/10 — applies to a huge swath of modern fine-dining and upscale-casual restaurants
+  - Status: observed (1 template) — **promote IMMEDIATELY** as `<TockWidgetEmbed>` primitive with platform + venue-id props
+
+- **🌟 Three-card dining-experience selector (no tabs, no accordion)** (NEW from `alinea-01`)
+  - Where it works: `alinea-01` — The Kitchen Table / The Gallery / The Salon as 3 equal-weight photo cards with label overlay (gradient scrim for legibility). Each links to its own detail.
+  - When to use it: any restaurant with multi-tier dining (chef's table + main room + semi-private; omakase vs à la carte; lunch vs dinner tasting)
+  - When NOT to use it: single-dining-room restaurants (forcing three cards would be artificial)
+  - Complexity: 2/10 (3-col photo grid + overlay + hover)
+  - Reuse potential: 9/10 for any multi-tier dining brand
+  - Status: observed (1 template) — **promote IMMEDIATELY** as `<DiningTierCards>` primitive with tier-count + aspect-ratio props
+
+- **🌟 Editorial prose block at 1.8× line-height** (NEW from `alinea-01`)
+  - Where it works: `alinea-01` — H2 + 3 paragraphs of body copy at 19.2px / 34.56 LH / weight 300-400 Garamond. Treats long-form prose as the persuasion mechanism, not below-the-fold filler.
+  - When to use it: any restaurant with a real story to tell — awards, history, philosophy, chef journey
+  - When NOT to use it: restaurants where the visuals alone should do the talking (omakase tasting bars) — a forced 200-word prose block would read as overreach
+  - Complexity: 1/10 (just CSS line-height + font-weight discipline)
+  - Reuse potential: 8/10
+  - Status: observed (1 template) — shared candidate, promote after 2nd appearance
+
+- **🌟 Warm-gray strip header/footer pair** (NEW from `alinea-01`)
+  - Where it works: `alinea-01` — `#A8A6A1` full-width strip at top (nav) and bottom (attribution) bookending a pure white canvas
+  - When to use it: light-mode editorial templates where the canvas whiteness needs a neutral frame for the nav and footer to not float
+  - When NOT to use it: dark-mode templates (no need for a frame); templates where the canvas is already a warm cream (bramble, qitchen)
+  - Complexity: 1/10
+  - Reuse potential: 7/10 for future light-mode templates
+
+- **🌟 Time-sensitive campaign modal** (NEW from `alinea-01`)
+  - Where it works: `alinea-01` — 20th-Anniversary tour modal overlays every page load, dismissable, typographic (half-black poster + half-white body)
+  - When to use it: genuine seasonal moments — anniversary, new-menu launch, special-event booking — NOT as a default newsletter popup
+  - When NOT to use it: always-on default state (would feel nagging within a week)
+  - Complexity: 3/10 (modal + session dismissal + campaign asset swapping)
+  - Reuse potential: 8/10 opt-in
+  - Status: observed (1 template) — shared candidate, opt-in by default, promote after 2nd appearance
+
 ---
 
 ## How to add a pattern

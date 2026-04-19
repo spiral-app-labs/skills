@@ -16,6 +16,7 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 | `1776-redesign-01` | 1776 Restaurant Redesign | [Live](https://1776-restaurant-redesign.vercel.app) | editorial-warm fine dining / italic-serif display / navy + amber / multi-section narrative | modern upscale destination, farm-to-table, wine-forward, chef-driven elevated-neighborhood | 9 | 9 | 8 | 10 | 6 | 9 | **recreated** → [`templates/1776-redesign-01/`](../templates/1776-redesign-01/) |
 | `bramble-01` | Bramble | [Framer](https://bramble.framer.website) | light-mode / retro-warm / music-forward / polaroid-scrapbook / day-bar-night-cocktails | cocktail bar with food, music-forward venue, neighborhood day/night hybrid, small-plates Soho-class | 9 | 9 | 7 | 7 | 6 | 8 | **recreated** → [`templates/bramble-01/`](../templates/bramble-01/) |
 | `bamzi-01` | Bamzi | [Framer](https://bamzi.framer.website) | accessible-casual / pan-asian / dark-green canvas + saturated orange accent / multi-page chef-forward | modern asian / sushi, accessible-casual neighborhood restaurant with strong brand-color identity, multi-cuisine chef-driven | 9 | 8 | 7 | 8 | 6 | 8 | **recreated** → [`templates/bamzi-01/`](../templates/bamzi-01/) |
+| `alinea-01` | Alinea | [Live](https://www.alinearestaurant.com) | light-mode Michelin-ceremonial / Cormorant Garamond 500 / white + black + warm-gray strip / no accent / prose-heavy + Tock-widget | world-class Michelin / tasting-menu destination, chef-driven avant-garde, any Tock/Resy ticketed-reservation restaurant, multi-tier dining concepts | 10 | 9 | 8 | 9 | 5 | 7 | **recreated** → [`templates/alinea-01/`](../templates/alinea-01/) |
 
 **Disposition values:**
 - `ignored` — not worth pursuing
@@ -36,9 +37,9 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 ## 2. Rankings
 
 ### Best overall
-1. `1776-redesign-01` — strongest pattern density + most reusable signature (italic-on-serif)
-2. `qitchen-01` — most disciplined / cohesion-driven
-3.
+1. `alinea-01` — highest-caliber reference (3-Michelin), first light-mode ceremonial, first Tock-widget pattern
+2. `1776-redesign-01` — strongest pattern density + most reusable signature (italic-on-serif)
+3. `qitchen-01` — most disciplined / cohesion-driven
 
 ### Most reusable across restaurant types
 1. `1776-redesign-01` — italic-serif emphasis + multi-channel CTA + rich footer transfer to many archetypes
@@ -56,9 +57,9 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 3.
 
 ### Best for upscale / fine dining
-1. `1776-redesign-01` — warm-welcoming fine dining (most common upscale brief)
-2. `qitchen-01` — ceremonial fine dining (tasting menu / omakase)
-3.
+1. `alinea-01` — Michelin-caliber light-mode ceremonial (3-star / World's 50 Best class)
+2. `qitchen-01` — dark-mode ceremonial fine dining (tasting menu / omakase)
+3. `1776-redesign-01` — warm-welcoming dark-upscale (Wine Spectator class)
 
 ### Best for neighborhood / approachable
 1. `bamzi-01` — accessible-casual pan-asian with strong brand-color identity; hue-swap the orange for other cuisines
@@ -103,8 +104,9 @@ Track which restaurant archetypes have ≥1 strong template available. Empty cel
 
 | Archetype | Templates available | Coverage strength |
 |---|---|---|
-| Fine dining / tasting menu | `qitchen-01` | weak (1 ok template — Japanese-leaning) |
-| Modern upscale | `1776-redesign-01` | solid (1 strong) |
+| Fine dining / tasting menu | `qitchen-01` (dark ceremonial), `alinea-01` (light Michelin), `1776-redesign-01` (warm-upscale) | strong (3 complementary templates across registers) |
+| Modern upscale | `1776-redesign-01`, `alinea-01` | solid (2 strong) |
+| Ticketed-reservation (Tock / Resy / OpenTable embed) | `alinea-01` | solid (1 strong — template for the whole ticketed universe) |
 | Italian (warm/family) | | |
 | Italian (modern/upscale) | | |
 | Steakhouse | | |
