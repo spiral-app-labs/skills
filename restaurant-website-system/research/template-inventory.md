@@ -15,6 +15,7 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 | `qitchen-01` | Qitchen | [Framer](https://qitchen-template.framer.website) | editorial-quiet / dark fine-dining w/ image-led split-page layout | sushi-omakase, modern Japanese, fine dining tasting, editorial bistro | 8 | 8 | 8 | 9 | 5 | 8 | **recreated** → [`templates/qitchen-01/`](../templates/qitchen-01/) |
 | `1776-redesign-01` | 1776 Restaurant Redesign | [Live](https://1776-restaurant-redesign.vercel.app) | editorial-warm fine dining / italic-serif display / navy + amber / multi-section narrative | modern upscale destination, farm-to-table, wine-forward, chef-driven elevated-neighborhood | 9 | 9 | 8 | 10 | 6 | 9 | **recreated** → [`templates/1776-redesign-01/`](../templates/1776-redesign-01/) |
 | `bramble-01` | Bramble | [Framer](https://bramble.framer.website) | light-mode / retro-warm / music-forward / polaroid-scrapbook / day-bar-night-cocktails | cocktail bar with food, music-forward venue, neighborhood day/night hybrid, small-plates Soho-class | 9 | 9 | 7 | 7 | 6 | 8 | **recreated** → [`templates/bramble-01/`](../templates/bramble-01/) |
+| `bamzi-01` | Bamzi | [Framer](https://bamzi.framer.website) | accessible-casual / pan-asian / dark-green canvas + saturated orange accent / multi-page chef-forward | modern asian / sushi, accessible-casual neighborhood restaurant with strong brand-color identity, multi-cuisine chef-driven | 9 | 8 | 7 | 8 | 6 | 8 | **recreated** → [`templates/bamzi-01/`](../templates/bamzi-01/) |
 
 **Disposition values:**
 - `ignored` — not worth pursuing
@@ -60,8 +61,8 @@ Master ranked list of all templates analyzed. One row per template. Update whene
 3.
 
 ### Best for neighborhood / approachable
-1.
-2.
+1. `bamzi-01` — accessible-casual pan-asian with strong brand-color identity; hue-swap the orange for other cuisines
+2. `bramble-01` — hospitality-driven cocktail-bar-with-food
 3.
 
 ### Best for playful / modern
@@ -107,8 +108,9 @@ Track which restaurant archetypes have ≥1 strong template available. Empty cel
 | Italian (warm/family) | | |
 | Italian (modern/upscale) | | |
 | Steakhouse | | |
-| Sushi / omakase | `qitchen-01` | solid (1 strong) |
-| Neighborhood bistro | | |
+| Sushi / omakase | `qitchen-01` (fine-dining ceremonial), `bamzi-01` (accessible-casual) | solid (2 templates, different registers) |
+| Neighborhood bistro | `bamzi-01` (with accent-hue-swap) | weak (1 template, needs cuisine-agnostic variant) |
+| Pan-asian / fusion | `bamzi-01` | solid (1 strong) |
 | Cocktail bar / speakeasy | `bramble-01` (warm-retro only) | weak (need a moody-speakeasy template — bramble fills warm-retro lane only) |
 | Brunch / cafe | | |
 | Bakery | | |

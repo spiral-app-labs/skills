@@ -78,6 +78,28 @@ These don't fit cleanly into the section-archetype categories below — they're 
   - Complexity: 1/10
   - Reuse potential: 10/10
 
+- **🌟 Eyebrow-with-accent-dot label** (NEW from `bamzi-01`)
+  - Where it works: `bamzi-01` — every section starts with one ("• POPULAR CATEGORY", "• OUR MISSION", "• TESTIMONIALS", etc.)
+  - When to use it: any accent-led template — unifying micro-pattern that threads the brand through every section
+  - Complexity: 1/10 (accent-colored dot + uppercase tracked-out text)
+  - Reuse potential: 10/10
+  - Status: observed (1 template) — **promote IMMEDIATELY** as `<EyebrowDotLabel>` primitive; trivial to port to any future accented template
+
+- **🌟 Dot-leader menu row** (NEW from `bamzi-01`)
+  - Where it works: `bamzi-01` — "Philadelphia roll ............. $51.75" on home + menu page (4× across 4 categories)
+  - When to use it: any restaurant with a proper menu page; classic pattern, well-executed
+  - When NOT to use it: minimalist templates where decorative typography breaks the discipline
+  - Complexity: 3/10 (flex row with dotted-border spacer between name and price)
+  - Reuse potential: 9/10
+  - Status: observed (1 template) — **strong shared candidate**
+
+- **🌟 Single-accent discipline across every section** (NEW from `bamzi-01`)
+  - Where it works: `bamzi-01` — `#DD5903` orange on CTA fills, eyebrow dots, timeline nodes, star ratings, pin icons, form submit buttons, the menu button in the header
+  - When to use it: any template where the brand identity lives in a single color
+  - When NOT to use it: no-accent templates (qitchen), muted-accent templates (1776's amber is already this — bamzi is a saturation-level escalation)
+  - Complexity: 1/10 (just design discipline)
+  - Reuse potential: 10/10
+
 ---
 
 ## How to add a pattern
@@ -121,6 +143,14 @@ When you spot a pattern repeating across audits, add it here using this schema:
   - Complexity: 4/10
   - Reuse potential: 9/10 for dual/multi-service venues
   - Status: observed (1 template) — see standalone section above
+
+- **Dark-canvas centered-title hero with flanking botanical/decorative SVG**
+  - Where it works: `bamzi-01` — leaves flanking the "Delicious food & wonderful eating experience" hero
+  - When to use it: restaurants with a cuisine identity that has a clear visual motif (asian leaves, olive branches for Italian, chili/agave for Mexican, wheat for bakery)
+  - When NOT to use it: minimalist brands, fine-dining where decoration breaks restraint, cuisines without an obvious motif
+  - Complexity: 3/10 (decorative SVG assets + centered flexbox layout)
+  - Reuse potential: 7/10 via asset-swap
+  - Status: observed (1 template)
 
 - **Fullbleed video loop hero** — TBD
 - **Moody overlay hero (dark with text overlay)** — TBD

@@ -94,11 +94,20 @@ For each route, specify:
 - **Include sections:** hero, what we do, menu, hours/location, gallery
 - **Avoid:** reservation as primary CTA, formal language, dark mode
 
-### Route 2.6 — Lively casual / neighborhood
-- **If:** $-$$, walk-in friendly, neighborhood regulars, kid/group friendly
+### Route 2.6 — Accessible-casual / accent-driven / pan-asian
+- **If:** $$ to $$-$$$, modern asian / sushi / pan-asian primary, OR any cuisine that wants a strong brand-color identity without going fine-dining
+- **And goals:** signal "we take food seriously, we're welcoming, we have a full site"; drive reservations + walk-ins + menu-browsing
+- **And tone:** warm, approachable, chef-forward, accent-color-led
+- **Then use:** `bamzi-01` (primary: pan-asian; hue-swap the accent for other cuisines)
+- **With modifiers:** accent-color (hue-swap within saturated-warm family); botanical-decor (asset-swap per cuisine — olive/chili/wheat/etc.); chef-count (2-4 on `/about`); with/without blog (`/news` removable)
+- **Include sections:** dark-leaf hero, mission split, category strip, big-headline, featured menu × 2, chef testimonial (dark), blog grid, dark footer. About page: stat + timeline + chef grid + values. Menu page: 2×2 category grid + testimonial row + inline reservation.
+- **Avoid:** muted accent (destroys brand), minimalist editorial register (too decorated for that), fine-dining ceremony (wrong register), moody palette (wrong register)
+
+### Route 2.7 — Lively casual / neighborhood (non-accent-led)
+- **If:** $-$$, walk-in friendly, neighborhood regulars, kid/group friendly, NO strong brand-color commitment
 - **And goals:** drive reservations + walk-ins + online orders
-- **And tone:** approachable, friendly, warm
-- **Then use:** _TBD_
+- **And tone:** approachable, friendly, warm, casual-without-accent-identity
+- **Then use:** _TBD — no template yet for this specific lane (bamzi-01 fills it only if a saturated accent is acceptable)_
 - **With modifiers:** kid-friendly emphasis, bar-and-grill vs cafe-and-counter
 - **Include sections:** hero, quick info, menu, specials, reviews, multiple CTAs
 - **Avoid:** trying to look fancier than it is, reservation-only signaling
