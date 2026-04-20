@@ -1,0 +1,133 @@
+{
+  "url": "https://heavenpalate.framer.website/",
+  "dims": {
+    "scrollHeight": 5869,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(2, 17, 12)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "A haven for discerning palates",
+      "fontFamily": "\"Playfair Display\", \"Playfair Display Placeholder\", serif",
+      "fontSize": "128px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "lineHeight": "128px",
+      "color": "rgb(255, 237, 191)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "ENJOY OUR EXQUISITE FLAVORS",
+      "fontFamily": "Merriweather, \"Merriweather Placeholder\", serif",
+      "fontSize": "44px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "lineHeight": "61.6px",
+      "color": "rgb(255, 237, 191)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Exquisite Elegance, Culinary Delight! having best feeling",
+      "fontFamily": "Merriweather, \"Merriweather Placeholder\", serif",
+      "fontSize": "32px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "lineHeight": "44.8px",
+      "color": "rgb(255, 237, 191)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Get template",
+      "fontFamily": "Inter, \"Inter Placeholder\", sans-serif",
+      "fontSize": "13px",
+      "fontWeight": "700",
+      "letterSpacing": "-0.4px",
+      "lineHeight": "22.75px",
+      "color": "rgb(35, 31, 32)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 0, 0, 1)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, -110, 0, 1)",
+      "matrix(1, 0, 0, 1, -22.6016, 0)",
+      "matrix(1, 0, 0, 1, -20, 0)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 20, 0, 1)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0.116667, 1, -0.000833333, 0, -120, 0, 1)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 300, 0, 1)",
+      "matrix(1, 0, 0, 1, 0, -9.60156)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 320, 0, 1)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 280, 0, 1)",
+      "matrix(1, 0, 0, 1, 0, -490)",
+      "matrix(-1, 0, 0, -1, 0, 0)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 30, 0, 1)",
+      "matrix(0, -1, 1, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, -219.422)",
+      "matrix(1, 0, 0, 1, 0, -2.5)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiunDXbtM.woff2",
+    "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
+    "https://fonts.gstatic.com/s/merriweathersans/v26/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjU.woff2",
+    "https://fonts.gstatic.com/s/merriweather/v31/u-4e0qyriQwlOrhSvowK_l5UcA6zuSYEqOzpPe3HOZJ5eX1WtLaQwmYiSeqqJ-k.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/pInmzyLGnaA2Y9GVrZ6o2FwcLs.png",
+    "https://framerusercontent.com/images/PzbeWTitqiNzqlbT1K3cdeQPmE.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/fLwK6j7U6E521wMPTuo0VK3RBUo.png",
+    "https://framerusercontent.com/images/QH8YYvfYC2LJd1N2FLTV2oElSI.png",
+    "https://framerusercontent.com/images/PzbeWTitqiNzqlbT1K3cdeQPmE.png?scale-down-to=512",
+    "https://framerusercontent.com/images/Y7S7mmjshb600gAFVpWLq4KAmY.png",
+    "https://framerusercontent.com/images/fLwK6j7U6E521wMPTuo0VK3RBUo.png?scale-down-to=512",
+    "https://framerusercontent.com/images/T84Kw2FPjMahSIZ60kvbFINCFQ.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/c1aPErEjP8hKDyK2tV6NK5TR7Q.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/U881zGzxFlGaorCJC5RQB4NFC6E.jpg",
+    "https://framerusercontent.com/images/U881zGzxFlGaorCJC5RQB4NFC6E.jpg?scale-down-to=512",
+    "https://framerusercontent.com/images/DY7CX247dK06cEJ7tlcr58P3s.png",
+    "https://framerusercontent.com/images/T84Kw2FPjMahSIZ60kvbFINCFQ.jpg?scale-down-to=512",
+    "https://framerusercontent.com/images/PzNUlyxVJHgXQuro1JuMJCa5Hs.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/DY7CX247dK06cEJ7tlcr58P3s.png?scale-down-to=512",
+    "https://framerusercontent.com/images/iMooFY3jTCQ1TzCRoGRt2jJOYs.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/vIxsWu78p1VvatxicJYet0ftjw8.png",
+    "https://framerusercontent.com/images/vIxsWu78p1VvatxicJYet0ftjw8.png?scale-down-to=512",
+    "https://framerusercontent.com/images/RaNW5PEM2c7qIHDj8J5TQBBXWh8.jpg?scale-down-to=1024",
+    "https://framerusercontent.com/images/VvDSc3hsRh5mgeFv7WA32w6850.jpg?scale-down-to=1024",
+    "https://framerusercontent.com/images/VvDSc3hsRh5mgeFv7WA32w6850.jpg?scale-down-to=512",
+    "https://framerusercontent.com/images/XANKl7hWhj4cKEseWGDTWJUkEo.jpg?scale-down-to=1024",
+    "https://framerusercontent.com/images/11C0kRPAlmywnm3cT86miykQOfA.png",
+    "https://framerusercontent.com/images/2tlIS9m8fc2YFVyylESRMgvqkTg.jpg?scale-down-to=1024",
+    "https://framerusercontent.com/images/11C0kRPAlmywnm3cT86miykQOfA.png?scale-down-to=512",
+    "https://framerusercontent.com/images/2tlIS9m8fc2YFVyylESRMgvqkTg.jpg?scale-down-to=512",
+    "https://framerusercontent.com/images/VdESYncYJ3kOPkId3U8jZfek2A.png"
+  ]
+}
