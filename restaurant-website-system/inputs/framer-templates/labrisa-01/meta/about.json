@@ -1,0 +1,116 @@
+{
+  "url": "https://labrisa.framer.website/about",
+  "dims": {
+    "scrollHeight": 6753,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(250, 247, 237)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "From Coastto Cuisine",
+      "fontFamily": "\"Imbue Variable\", \"Imbue Variable Placeholder\", serif",
+      "fontSize": "150px",
+      "fontWeight": "400",
+      "letterSpacing": "-1.5px",
+      "lineHeight": "150px",
+      "color": "rgb(69, 45, 38)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "La Brisa isn’t just a restaurant — it’s a love letter to the Riviera.",
+      "fontFamily": "\"Imbue Variable\", \"Imbue Variable Placeholder\", serif",
+      "fontSize": "75px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "75px",
+      "color": "rgb(69, 45, 38)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Make Reservation",
+      "fontFamily": "Imbue, \"Imbue Placeholder\", serif",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "letterSpacing": "-0.4px",
+      "lineHeight": "40px",
+      "color": "rgb(69, 45, 38)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "La Brisa",
+      "fontFamily": "Imbue, serif",
+      "fontSize": "20px",
+      "fontWeight": "900",
+      "letterSpacing": "12px",
+      "lineHeight": "24px",
+      "color": "rgb(69, 45, 38)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "La Brisa",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "color 0.4s cubic-bezier(0.44, 0, 0.56, 1)"
+    ],
+    "transforms": [
+      "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "matrix(1.1, 0, 0, 1.1, 0, 0)",
+      "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+      "matrix(-0.707107, 0.707107, -0.707107, -0.707107, 0, 0)",
+      "matrix(0.35, 0, 0, 0.35, 0, 0)",
+      "matrix(1.5, 0, 0, 1.5, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 10)",
+      "matrix(0.984808, -0.173648, 0.173648, 0.984808, 0, 0)",
+      "matrix(0.984808, 0.173648, -0.173648, 0.984808, 0, 0)",
+      "matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0)",
+      "matrix(0.965926, -0.258819, 0.258819, 0.965926, 0, 0)",
+      "matrix(0.999391, 0.0348995, -0.0348995, 0.999391, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, -10)",
+      "matrix(0.999848, 0.0174524, -0.0174524, 0.999848, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/imbue/v29/RLpXK5P16Ki3fXhj5cvGrqjocPk4n-gVX3M93TnrnvhoP2GQTOwHNQ.woff2",
+    "https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2",
+    "https://fonts.gstatic.com/s/labelleaurore/v23/RrQIbot8-mNYKnGNDkWlocovHeI4HO2E.woff2",
+    "https://fonts.gstatic.com/s/imbue/v29/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_U1vM.woff2",
+    "https://fonts.gstatic.com/s/imbue/v29/RLpxK5P16Ki3fVJvzTQ.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/ZCJ4TNGrhW4qIi2YADHpphWJmU.jpeg?scale-down-to=2048&width=2304&height=1728",
+    "https://framerusercontent.com/images/DzEtVOts0i6MAFlEIt7tWH5F7M.jpg?width=2880&height=1800",
+    "https://framerusercontent.com/images/5AuNu07ibivkOAc26NbeFl737Gw.jpeg?scale-down-to=4096&width=4728&height=3544",
+    "https://framerusercontent.com/images/sIffYCTX0Gmxqr7tyjXPwtLBM.png?width=400&height=400",
+    "https://framerusercontent.com/images/hMeXPOVVQL2HJc9EnknfPWhzFA.png?width=890&height=890",
+    "https://framerusercontent.com/images/TR6ukL1Zv93MPw9i1cWMZqyaXI.jpeg?scale-down-to=2048&width=2304&height=1728",
+    "https://framerusercontent.com/images/jmAyhVWEUcnr8pc9t5BByVyR8.jpeg?scale-down-to=1024&width=2048&height=2048",
+    "https://framerusercontent.com/images/lPy41T3Z3gFmbG6OGIN3yUXD8.jpg?width=1600&height=1200",
+    "https://framerusercontent.com/images/3Uk2ueosr6rgn1f6TZjukeYpmM.png?width=400&height=400",
+    "https://framerusercontent.com/images/e5HCN1f7ca4yjbELz2N8XTcjfFM.jpeg?width=2048&height=1536"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "saladify-01",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bright-light fast-casual health / meal-kit hybrid template with spring-green + deep-forest-green + deep-red-brown palette, Passion One + Bricolage Grotesque typography, ingredient-burst hero, 4-up dish carousel, color-tile menu grid, and How-It-Works 3-step flow. Recreation of saladify.framer.website. Dual-archetype: ships as meal-kit (70%); flips to fast-casual storefront with 3 documented content edits. See research/template-audits/saladify-01.md.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "framer-motion": "11.11.7"
+  },
+  "devDependencies": {
+    "@types/node": "20.16.5",
+    "@types/react": "18.3.10",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.2"
+  }
+}

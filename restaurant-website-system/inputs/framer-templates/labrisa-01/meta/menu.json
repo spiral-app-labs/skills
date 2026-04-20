@@ -1,0 +1,121 @@
+{
+  "url": "https://labrisa.framer.website/menu",
+  "dims": {
+    "scrollHeight": 6020,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(250, 247, 237)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Our Menu",
+      "fontFamily": "\"Imbue Variable\", \"Imbue Variable Placeholder\", serif",
+      "fontSize": "150px",
+      "fontWeight": "400",
+      "letterSpacing": "-1.5px",
+      "lineHeight": "150px",
+      "color": "rgb(250, 247, 237)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Starters",
+      "fontFamily": "\"Imbue Variable\", \"Imbue Variable Placeholder\", serif",
+      "fontSize": "50px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "50px",
+      "color": "rgb(69, 45, 38)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Make Reservation",
+      "fontFamily": "Imbue, \"Imbue Placeholder\", serif",
+      "fontSize": "40px",
+      "fontWeight": "400",
+      "letterSpacing": "-0.4px",
+      "lineHeight": "40px",
+      "color": "rgb(69, 45, 38)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "La Brisa",
+      "fontFamily": "Imbue, serif",
+      "fontSize": "20px",
+      "fontWeight": "900",
+      "letterSpacing": "12px",
+      "lineHeight": "24px",
+      "color": "rgb(250, 247, 237)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "La Brisa",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "color 0.4s cubic-bezier(0.44, 0, 0.56, 1)"
+    ],
+    "transforms": [
+      "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+      "matrix(1.1, 0, 0, 1.1, 0, 0)",
+      "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+      "matrix(-0.707107, 0.707107, -0.707107, -0.707107, 0, 0)",
+      "matrix(0.866025, 0.5, -0.5, 0.866025, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(1, 0, 0, 1, 100, 0)",
+      "matrix(1, 0, 0, 1, 0, 5)",
+      "matrix(1, 0, 0, 1, 0, 10)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/imbue/v29/RLpXK5P16Ki3fXhj5cvGrqjocPk4n-gVX3M93TnrnvhoP2GQTOwHNQ.woff2",
+    "https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2",
+    "https://fonts.gstatic.com/s/imbue/v29/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_U1vM.woff2",
+    "https://fonts.gstatic.com/s/labelleaurore/v23/RrQIbot8-mNYKnGNDkWlocovHeI4HO2E.woff2",
+    "https://fonts.gstatic.com/s/imbue/v29/RLpxK5P16Ki3fVJvzTQ.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/4uEHM0uSAhR7qVN3OtUfGSe4.jpg?width=3408&height=2272",
+    "https://framerusercontent.com/images/5AuNu07ibivkOAc26NbeFl737Gw.jpeg?scale-down-to=4096&width=4728&height=3544",
+    "https://framerusercontent.com/images/a5B89m9RkUtdJwjZUpvHjSXGnk.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/PRS6Sl1LlswRRax3tJQhggCIto.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/sBCZ5aQwQIM32zmdugewRXtBjBg.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/uQUjYWpKaGMPWIS7ctD2wHvru4M.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/nrlGgT7hqyWYHDgePzlmhO1JVj0.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/uU4fFgktlawGKGnD8FqE5kyyc.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/PRbpkbHsmVGxK6j9sODTWjixsg.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/w2Xw91yqDptYMccOta3PwVhsI.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/GOM9py1OnFUUmnA50622nAVE5A.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/cZVtsF875TOk0EUoturCL8imc.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/96rTbF8taviqYsndJH0KsyzMsg.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/f2gzjbJFrj9l6XNxhUB3ofCMc.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/VZKsjP7Z3JltvNP2AcgLXGvvItc.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/8FZyquucUbumUheEaD5AaYOQ.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/n3QGpIYVDPL7oc7dGfqEmt33os.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/hTSAgZNbK4pIKGljpr1QnDRD5s.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/FknvLQJkMZpcV8WvVvtOFO6zq4.png?scale-down-to=512&width=2048&height=2048",
+    "https://framerusercontent.com/images/m58lUDP4etAq52BVqVXl6yCGnng.png?scale-down-to=512&width=2048&height=2048"
+  ]
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+
+* { box-sizing: border-box; }
+
+/* Hide scrollbars on horizontal dish carousel */
+.dish-scroll::-webkit-scrollbar { display: none; }
+.dish-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* Subtle float animation for ingredient burst PNGs */
+@keyframes saladify-float {
+  0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  50%      { transform: translateY(-10px) rotate(var(--rot, 0deg)); }
+}
+.ingredient-float {
+  animation: saladify-float 6s ease-in-out infinite;
+}
+
+/* Badge sticker — rotated circular with drop shadow (audit §4) */
+.badge-sticker {
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+}

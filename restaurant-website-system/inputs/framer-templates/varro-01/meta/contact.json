@@ -1,0 +1,71 @@
+{
+  "url": "https://varro.framer.website/contact",
+  "dims": {
+    "scrollHeight": 2341,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(28, 34, 37)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": null,
+    "h2": {
+      "selector": "h2",
+      "text": "Kitchen Not Found",
+      "fontFamily": "Belleza, \"Belleza Placeholder\", sans-serif",
+      "fontSize": "88px",
+      "fontWeight": "400",
+      "letterSpacing": "-0.88px",
+      "lineHeight": "88px",
+      "color": "rgb(240, 237, 224)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "h3": null,
+    "p": {
+      "selector": "p",
+      "text": "Reserve a Table",
+      "fontFamily": "Belleza, \"Belleza Placeholder\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "400",
+      "letterSpacing": "-0.22px",
+      "lineHeight": "24.2px",
+      "color": "rgb(240, 237, 224)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "color 0.2s cubic-bezier(0.6, 0.1, 0.5, 0.9)"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, 50)",
+      "matrix(1, 0, 0, 1, -59.5, -8)",
+      "matrix(1, 0, 0, 1, -6, 0)",
+      "matrix(0.001, 0, 0, 0.001, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/belleza/v18/0nkoC9_pNeMfhX4BhcH4ag.woff2",
+    "https://framerusercontent.com/assets/KwK0fH9Qx1gAi2nY6HV637MnF0.woff2",
+    "https://framerusercontent.com/assets/soAoqUg4XLlllNDBOZtgbSkDFLM.woff2"
+  ],
+  "imgUrls": []
+}

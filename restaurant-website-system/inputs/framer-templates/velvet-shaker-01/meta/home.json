@@ -1,0 +1,111 @@
+{
+  "url": "https://velvet-shaker.framer.website/",
+  "dims": {
+    "scrollHeight": 8965,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(15, 16, 10)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Cocktail bar located in",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "26px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "31.2px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Nestled in the heart of Hong Kong, Velvet Shaker is more than just a bar—it’s a ",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "42px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "50.4px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Romantic",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "35px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "42px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "home",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "19.2px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "home",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, -4.5)",
+      "matrix(1.25867, 0, 0, 1.25867, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(1, 0, 0, 1, -168, 30)",
+      "matrix(1, 0, 0, 1, 0, -381.328)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/intertight/v8/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/1SJvfCpNmDwjBpXrbPreANX0aW8.png",
+    "https://framerusercontent.com/images/VNMuXSmJI8Gz65cjSk8fceYAA.jpg",
+    "https://framerusercontent.com/images/7x303YPR2PqfUbbggqWUYg0OUtI.png",
+    "https://framerusercontent.com/images/yBqv6NMEc4Cw4etThQAJDWRka8.png",
+    "https://framerusercontent.com/images/LSV9eo7Gho5XxJXiw14ojI2WAG0.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/BKZoXxGEHX8arzF1nSF6UGlipMQ.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/j5auX5GdrDkjLO8JbminqJOTI.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/tbo7WvMxoXZCZMypIyHZT8CaT4.jpg?scale-down-to=1024",
+    "https://framerusercontent.com/images/Y1OV0BFtwAnh5O2BpAgyob3MPg.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/tIWdo0C43s7ZflnGLxZfFp0XnH8.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/W05qxnWFyhJzCa6jj8Am7u2mO0.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/DjBy4o3yFkXuhG0r94aLddigU.png",
+    "https://framerusercontent.com/images/7nTfmDfuIWWH1Edh1D6g70I4Zc.png",
+    "https://framerusercontent.com/images/8Wt5Snu0vVNvFrNUIL0wNlEX5Ik.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/JYUNcM9GPF4ETOEEjtJRjQVjGjo.png",
+    "https://framerusercontent.com/images/eeTsxytX7fQuC47YH7dXgi8l0s0.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/JATm5jxKSrBBMF1k8HMf3E7yRJQ.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/4WxPtxaZPYIMzuTh02VmErOGws.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/BaKcvnMdgm7tQZxOZKWsEyVfw.png?scale-down-to=1024"
+  ]
+}

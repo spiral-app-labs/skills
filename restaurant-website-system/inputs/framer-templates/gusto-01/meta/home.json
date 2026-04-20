@@ -1,0 +1,104 @@
+{
+  "url": "https://gusto-template.framer.website/",
+  "dims": {
+    "scrollHeight": 1509,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(15, 17, 12)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": null,
+    "h2": null,
+    "h3": {
+      "selector": "h3",
+      "text": "“The Best Pasta Outside of Italy”",
+      "fontFamily": "\"Sorts Mill Goudy\", \"Sorts Mill Goudy Placeholder\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "52.8px",
+      "color": "rgb(255, 252, 244)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Menu",
+      "fontFamily": "Figtree, \"Figtree Placeholder\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "16.8px",
+      "color": "rgb(255, 252, 244)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(14, 16, 17, 0.2)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Gusto",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(158, 158, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(0, -1, 1, 0, 0, 0)",
+      "matrix(-1, 0, 0, -1, 0, 0)",
+      "matrix(0, 1, -1, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, -3012, 0)",
+      "matrix(1, 0, 0, 1, -35, 0)",
+      "matrix(1, 0, 0, 1, 0, 20)",
+      "matrix(1, 0, 0, 1, -59.5, -8)",
+      "matrix(1, 0, 0, 1, -6, 0)",
+      "matrix(0.001, 0, 0, 0.001, 0, 0)",
+      "matrix(1, 0, 0, 1, 4.5, 3.75)",
+      "matrix(1, 0, 0, 1, 4.5, 13.456)",
+      "matrix(1, 0, 0, 1, 13.324, 3.75)",
+      "matrix(1, 0, 0, 1, 8.25, 6)",
+      "matrix(1, 0, 0, 1, 6, 10.875)",
+      "matrix(1, 0, 0, 1, 3, 3)",
+      "matrix(1, 0, 0, 1, 8.25, 8.25)",
+      "matrix(1, 0, 0, 1, 15.75, 6)",
+      "matrix(1, 0, 0, 1, 2.251, 2.25)",
+      "matrix(1, 0, 0, 1, 3.75, 3)",
+      "matrix(1, 0, 0, 1, 3, 5.25)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/sortsmillgoudy/v16/Qw3AZR9MED_6PSuS_50nEaVrfzgEbH80jbs_.woff2",
+    "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/mog84CXYoOXyUEFK8pjBHInR78.jpg?width=2400&height=1600",
+    "https://framerusercontent.com/images/YXwPB5PLFrAu03WUqr48o7ubodY.webp?width=2400&height=1600",
+    "https://framerusercontent.com/images/Z2UeqcGNHB0ZOzl1pgEfAlJwIc.webp?width=2400&height=1600",
+    "https://framerusercontent.com/images/kk7iqO2bJxTozyLhSDgJSoBX4.webp?scale-down-to=1024&width=1200&height=800",
+    "https://framerusercontent.com/images/qO0HYIO3OQHFfjXP6LclPmUAykg.webp?width=176&height=70",
+    "https://framerusercontent.com/images/nUd8TPTbAYGHCjuFfFuKoSfSLu4.webp?scale-down-to=1024&width=1200&height=800"
+  ]
+}

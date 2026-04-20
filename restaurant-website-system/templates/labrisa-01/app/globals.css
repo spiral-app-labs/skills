@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.ink');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 400;
+  margin: 0;
+  color: theme('colors.ink');
+}
+
+/* Wordmark / eyebrow label discipline — Imbue weight 900 + 12px tracked uppercase.
+   This is the only structural body pattern in the source meta. See audit §4. */
+.label-wordmark {
+  font-family: theme('fontFamily.display');
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+.label-eyebrow {
+  font-family: theme('fontFamily.display');
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+/* Editorial prose — Imbue at 18px with generous 1.67× line-height. */
+.prose-editorial p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: theme('colors.ink');
+}
+.prose-editorial p + p { margin-top: 1.2em; }
+
+/* La Belle Aurore script caption — used under vignette photos + inside Bienvenue lockup. */
+.script-caption {
+  font-family: theme('fontFamily.script');
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Form inputs use Geist (utility sans) per source meta. */
+input, textarea, select, button[type='submit'] {
+  font-family: theme('fontFamily.sans');
+}
+
+* { box-sizing: border-box; }

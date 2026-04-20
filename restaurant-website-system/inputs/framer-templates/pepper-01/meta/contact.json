@@ -1,0 +1,130 @@
+{
+  "url": "https://pepper.framer.website/contact",
+  "dims": {
+    "scrollHeight": 4010,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Contact Us",
+      "fontFamily": "Gabarito, sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "800",
+      "letterSpacing": "normal",
+      "lineHeight": "96px",
+      "color": "rgb(26, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Maps & Delivery Info",
+      "fontFamily": "Gabarito, sans-serif",
+      "fontSize": "50px",
+      "fontWeight": "800",
+      "letterSpacing": "normal",
+      "lineHeight": "60px",
+      "color": "rgb(26, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "New York",
+      "fontFamily": "Gabarito, sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "800",
+      "letterSpacing": "normal",
+      "lineHeight": "39.2px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Pepper",
+      "fontFamily": "\"Cherry Bomb One\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "43.2px",
+      "color": "rgb(255, 0, 60)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Send Message",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 0, 60)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Pepper",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "background, box-shadow"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -5, -5)",
+      "matrix(1, 0, 0, 1, -4, -4)",
+      "matrix(1, 0, 0, 1, -3, -3)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(0, 0, 0, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, -59.5156, -19.6016)",
+      "matrix(1, 0, 0, 1, -62.5312, 0)",
+      "matrix(1, 0, 0, 1, -45.7031, -19.6016)",
+      "matrix(1, 0, 0, 1, -72.2656, -19.6016)",
+      "matrix(1, 0, 0, 1, -36.1797, -19.6016)",
+      "matrix(1, 0, 0, 1, -62.5547, -19.6016)",
+      "matrix(1, 0, 0, 1, -3672, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/cherrybombone/v11/y83DW4od1h6KlV3c6JJhRhGOdhr6C9BE.woff2",
+    "https://framerusercontent.com/assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2",
+    "https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+    "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+    "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
+    "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+    "https://framerusercontent.com/assets/8mwKwShtYEXIZ5diRBT74yn9jdQ.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/pebU74xcJF0VEsgm3JfH7G6NYAQ.png?width=896&height=1344",
+    "https://framerusercontent.com/images/cJlMf5sDtI0CbOfCJQMyUerrZWc.png?width=896&height=1312",
+    "https://framerusercontent.com/images/th2iELXOzEME2cqduvrTZtJsM.png?width=896&height=1344",
+    "https://framerusercontent.com/images/kkPG2fhb0mhNAuKO3iShcfcA3s.png?width=896&height=1344",
+    "https://framerusercontent.com/images/tRpVH2v58wxByRcqFLIcTnQZM.png?width=896&height=1344",
+    "https://framerusercontent.com/images/1sTKk5XcAglkinbs8sX8Vw9FSDg.png?width=896&height=1344",
+    "https://framerusercontent.com/images/BnAT4P7n1oSmxE65vwU6fOQThfE.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/Q694D2vHnG6nwl4QxNJsU5YrQBM.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/UzisP2M2Vuyv2kbTHeytJuts6Y.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/I3stRxu1PzybEmpFdYfiffYx0.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/mJkaydBoAz7wuW9AAzPckH7tC1A.png?scale-down-to=512&width=1024&height=1024",
+    "https://framerusercontent.com/images/TselH8OEkb2YNE35eIM1vVAfb6s.png?width=1024&height=1024"
+  ]
+}

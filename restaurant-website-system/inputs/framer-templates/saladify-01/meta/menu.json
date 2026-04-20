@@ -1,0 +1,122 @@
+{
+  "url": "https://saladify.framer.website/menu",
+  "dims": {
+    "scrollHeight": 3624,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Crafted With Care. Served With Flavor.",
+      "fontFamily": "\"Passion One\", sans-serif",
+      "fontSize": "88px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "96.8px",
+      "color": "rgb(51, 22, 18)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Best Selling Item",
+      "fontFamily": "\"Passion One\", sans-serif",
+      "fontSize": "72px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "74.057px",
+      "color": "rgb(51, 22, 18)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Grilled Chicken Salad",
+      "fontFamily": "\"Passion One\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "400",
+      "letterSpacing": "0.36px",
+      "lineHeight": "43.9999px",
+      "color": "rgb(51, 22, 18)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Order Now",
+      "fontFamily": "\"Bricolage Grotesque\", \"Bricolage Grotesque Placeholder\", sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "letterSpacing": "normal",
+      "lineHeight": "20px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "background, box-shadow",
+      "color 0.4s cubic-bezier(0.44, 0, 0.56, 1)"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, 60)",
+      "matrix(1, 0, 0, 1, -9, -9)",
+      "matrix(0, 0, 0, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, -6.04, 0)",
+      "matrix(1, 0, 0, 1, -39.3047, -39.3047)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2",
+    "https://fonts.gstatic.com/s/passionone/v20/PbynFmL8HhTPqbjUzux3JEuR9ls.woff2",
+    "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvZvlyMgvs-wJDtw.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/9Xl7zrAzjOuuwfOc3tHzxoNX4.png?scale-down-to=1024&width=2224&height=2000",
+    "https://framerusercontent.com/images/0UaM2wQfBBn88ZHIh9X09rhIyZk.png?scale-down-to=1024&width=2000&height=2232",
+    "https://framerusercontent.com/images/tFnneY7TirnJb3nn2aKLpkBOInc.png?scale-down-to=1024&width=2120&height=2056",
+    "https://framerusercontent.com/images/8BH97mSm0tJjlAQIyIFKs2qo4.png?scale-down-to=1024&width=1360&height=1320",
+    "https://framerusercontent.com/images/seVLrxbBaMbMNgQMHkAJXDS4Tc.png?scale-down-to=1024&width=1360&height=1320",
+    "https://framerusercontent.com/images/wafB5W4sPrJUz7SHATONe18e1o.png?scale-down-to=512&width=624&height=368",
+    "https://framerusercontent.com/images/scp5A7p1k9uK8z4k4QyckvgC4.png?scale-down-to=512&width=604&height=552",
+    "https://framerusercontent.com/images/apsFMu9QzDJGYwIDtLCY8wQqKo.png?scale-down-to=1024&width=1232&height=1216",
+    "https://framerusercontent.com/images/ALi5BRsYhighlbrkDKcEF1zsQqc.png?scale-down-to=512&width=624&height=600",
+    "https://framerusercontent.com/images/H1yNZFeIGiGQGUOyRyivZDBJN5k.png?scale-down-to=512&width=624&height=560",
+    "https://framerusercontent.com/images/O0TMB66g8uUWcAZvzvdYz5Vxu4.png?scale-down-to=512&width=624&height=464",
+    "https://framerusercontent.com/images/xS1JADaNcqt8EXLk9PCNXLvWNw8.png?scale-down-to=1024&width=1248&height=1216",
+    "https://framerusercontent.com/images/OfVjCNH2HvJ3TLCh3udw7ypAe4g.png?scale-down-to=1024&width=1246&height=1216",
+    "https://framerusercontent.com/images/HFIdfGP2Qbo51MzGP4ugyvhDbE.png?scale-down-to=1024&width=1247&height=1216",
+    "https://framerusercontent.com/images/CvTETuOeQVs1omoNH0hiULdTQs.png?scale-down-to=1024&width=1232&height=1216"
+  ]
+}

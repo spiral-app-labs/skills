@@ -1,0 +1,97 @@
+{
+  "url": "https://velvet-shaker.framer.website/menu",
+  "dims": {
+    "scrollHeight": 5395,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(15, 16, 10)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Cocktails",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "102px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "122.4px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Can’t find your drink?",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "42px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "50.4px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Peach Blossom",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "26px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "31.2px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "home",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "19.2px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "home",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "color 0.4s cubic-bezier(0.44, 0, 0.56, 1)"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, -4.5)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/intertight/v8/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/wmKW7jJkD1ff91Kg75Ok9MIWgOY.jpg",
+    "https://framerusercontent.com/images/pvnBROrpDpn6w3rMpx8AEkR19s.jpg",
+    "https://framerusercontent.com/images/JATm5jxKSrBBMF1k8HMf3E7yRJQ.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/4WxPtxaZPYIMzuTh02VmErOGws.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/BaKcvnMdgm7tQZxOZKWsEyVfw.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/eeTsxytX7fQuC47YH7dXgi8l0s0.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/JsxTuJPAkJLucOk3ZB6ijrO1A4.png",
+    "https://framerusercontent.com/images/9sH22HdzNchiR1zsQOStfEQsjQ.png"
+  ]
+}

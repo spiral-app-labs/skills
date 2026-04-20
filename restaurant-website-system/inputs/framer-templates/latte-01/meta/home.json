@@ -1,0 +1,110 @@
+{
+  "url": "https://lattetemplate.framer.website/",
+  "dims": {
+    "scrollHeight": 7204,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 251, 240)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Brewed to perfection",
+      "fontFamily": "Poppins, \"Poppins Placeholder\", sans-serif",
+      "fontSize": "58px",
+      "fontWeight": "600",
+      "letterSpacing": "normal",
+      "lineHeight": "69.6px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Our Menu",
+      "fontFamily": "Poppins, \"Poppins Placeholder\", sans-serif",
+      "fontSize": "42px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "50.4px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Coffee",
+      "fontFamily": "Poppins, \"Poppins Placeholder\", sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "33.6px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Menu",
+      "fontFamily": "Poppins, \"Poppins Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "20.8px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0.6, 0, 1, -0.000833333, -720, 0, 0, 1)",
+      "matrix(1, 0, 0, 1, -22.7109, -10.3984)",
+      "matrix(1, 0, 0, 1, -22.7109, 0)",
+      "matrix(1, 0, 0, 1, -21.9297, -10.3984)",
+      "matrix(1, 0, 0, 1, -21.9297, 0)",
+      "matrix(-1, 0, 0, -1, 0, 0)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 120, 0, 1)",
+      "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.000833333, 0, 40, 0, 1)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2",
+    "https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrJJfecg.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2",
+    "https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2",
+    "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/PRDfIQEwfBAD6WhfpVujpWW5c.png",
+    "https://framerusercontent.com/images/rgN0P1vQKsq9ZG5BJOPaR9KY.png",
+    "https://framerusercontent.com/images/ffAQuLErAZ9FhPrK3M7QLPo5g.png",
+    "https://framerusercontent.com/images/wGH7yhEM7Dvwg5tG7oiMVQd0M.png",
+    "https://framerusercontent.com/images/HxZ5ZF3EmNZV8ft3wsqxeOgQE.png",
+    "https://framerusercontent.com/images/V5tIwQyz2S0O66AuNJHLQeGtQ.png",
+    "https://framerusercontent.com/images/7MaKWyyvDSoo5ueFYsJkDl3I.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/WdPcmK6WsWeWHrhqIJCvdYtA.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/nuDSHnIFowt4cHh6TTY0cDBAVI.jpg?scale-down-to=2048",
+    "https://framerusercontent.com/images/i6aEvR24jRpFkZDao1hmf0YYo.png"
+  ]
+}

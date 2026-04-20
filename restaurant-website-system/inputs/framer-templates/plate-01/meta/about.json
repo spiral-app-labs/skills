@@ -1,0 +1,103 @@
+{
+  "url": "https://plate-template.framer.website/about",
+  "dims": {
+    "scrollHeight": 8187,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(249, 248, 246)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "A place for good food & vibes",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "80px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Bite started with a simple idea: create a place we’d want to visit ourselves. A ",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "36px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Simple, seasonal food",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "28px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Bite is a modern restaurant and café shaped by Nordic simplicity and urban warmt",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "20.8px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Open in Maps",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgb(249, 248, 246)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix3d(1.0115, 0, 0, 0, 0, 1.0115, 0, 0, 0, 0, 1, -0.000833333, 0, -50.9722, 0, 1)",
+      "matrix(1, 0, 0, 1, 0, 32)"
+    ]
+  },
+  "fontUrls": [
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/H2CH5X247WOB4WHOIRWQAUKL2TT7SHCU/S3EAO5FK5CWWN2B4UGQLSNLG4LKJ4PPJ/7GATDCIWKUNWWA7R3JOEWHUIADJRXY63.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/RFRIJEFDDNYP2G3SPLVDDAM6LQXTHLSW/F4KOPAGTNOYCQKYEBAKSIKS536ETV6GN/AEP5JZTJJB3JMLBFSBTZLRSVGYD73SDZ.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/QVSEREMQIHTDJ6PBN6SDKDQRKHAIJM4G/5FQFK3HFEC5ZJORN7EUWWXKPUKR4HDO2/S3LPGNCYQN366TZLSH3ASTPTKANFMFDS.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/NWFQAWEPGN3FR4FYMX6PY5M2HVOQSZWU/IIWY67X24KIURE4HBNGWYFMHSEMIVC2G/QAJFELFQRETRXRXDQOALZZUXNPM2U5VX.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/TkdxxqFRnyZjiBqjPuhuCFCZV8.png?width=2912&height=1632",
+    "https://framerusercontent.com/images/I0TTKwbCLQOdEn7dsME77Gdqs6c.png?width=992&height=1200",
+    "https://framerusercontent.com/images/NSVVhPGHRFStsVeqSOtAZDA2vQ.png?width=992&height=1200",
+    "https://framerusercontent.com/images/m0Txqb5C5FbaCY644l6fISWFEw.png?width=992&height=1200",
+    "https://framerusercontent.com/images/mFVKMdCbMc6KgkmZUtNZiM5uU.png?scale-down-to=1024&width=992&height=1200",
+    "https://framerusercontent.com/images/DyKEBtuJW7Or8gbVbxyb4laQEj8.png?scale-down-to=1024&width=992&height=1200",
+    "https://framerusercontent.com/images/VW8FnIjXVa3c59A0W49xZJBwd44.png?scale-down-to=1024&width=992&height=1200",
+    "https://framerusercontent.com/images/d9IbPk28Bq3fFaLkYnCSOu9vr4.png?scale-down-to=1024&width=992&height=1200",
+    "https://framerusercontent.com/images/BWpNT8dDxWZNwR0du1Tal8bkOE.png?scale-down-to=1024&width=992&height=1200",
+    "https://framerusercontent.com/images/zUenvJfjB6E7JJPorgKVOO27LU.png?scale-down-to=1024&width=992&height=1200",
+    "https://framerusercontent.com/images/b6cJJHVpEDVD3V53QxItatc9a8.png?width=992&height=1200"
+  ]
+}

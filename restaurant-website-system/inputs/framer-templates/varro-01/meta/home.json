@@ -1,0 +1,121 @@
+{
+  "url": "https://varro.framer.website/",
+  "dims": {
+    "scrollHeight": 15648,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(28, 34, 37)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "From Italy’s Heartland",
+      "fontFamily": "Belleza, \"Belleza Placeholder\", sans-serif",
+      "fontSize": "120px",
+      "fontWeight": "400",
+      "letterSpacing": "-2.4px",
+      "lineHeight": "120px",
+      "color": "rgb(240, 237, 224)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "About our Restaurant",
+      "fontFamily": "Belleza, \"Belleza Placeholder\", sans-serif",
+      "fontSize": "88px",
+      "fontWeight": "400",
+      "letterSpacing": "-0.88px",
+      "lineHeight": "88px",
+      "color": "rgb(240, 237, 224)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Meats & Fish",
+      "fontFamily": "Belleza, \"Belleza Placeholder\", sans-serif",
+      "fontSize": "58px",
+      "fontWeight": "400",
+      "letterSpacing": "-1.16px",
+      "lineHeight": "58px",
+      "color": "rgb(240, 237, 224)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Reserve a Table",
+      "fontFamily": "Belleza, \"Belleza Placeholder\", sans-serif",
+      "fontSize": "22px",
+      "fontWeight": "400",
+      "letterSpacing": "-0.22px",
+      "lineHeight": "24.2px",
+      "color": "rgb(240, 237, 224)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "uppercase"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Reserve a Table",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(167, 128, 100)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(-0.33356, 0.942729, -0.942729, -0.33356, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 50)",
+      "matrix(-1, 0, 0, -1, 0, 0)",
+      "matrix(1, 0, 0, 1, -20, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/belleza/v18/0nkoC9_pNeMfhX4BhcH4ag.woff2",
+    "https://framerusercontent.com/assets/KwK0fH9Qx1gAi2nY6HV637MnF0.woff2",
+    "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+    "https://framerusercontent.com/assets/soAoqUg4XLlllNDBOZtgbSkDFLM.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/LeBysyrbLUyfHHvmL6ikjVDK8.png?width=1526&height=853",
+    "https://framerusercontent.com/images/7IBR9kbMXmCkUrFBYGVUrota4Wc.jpg?width=2592&height=2365",
+    "https://framerusercontent.com/images/CoiSeVKh7QYbbVcp3CuAU3o2E.jpg?width=2500&height=2527",
+    "https://framerusercontent.com/images/Luo0IDcck1y7GG2QDhovMMBfXfY.jpg?scale-down-to=4096&width=3264&height=4476",
+    "https://framerusercontent.com/images/8YE8VLYeae4mlawLuZob3CQjQ.jpg?width=1400&height=1778",
+    "https://framerusercontent.com/images/832aDsd7AMnCPtfHbMcK5Pi0MS0.jpg?width=1400&height=1867",
+    "https://framerusercontent.com/images/Fx5j0U7GlFA20Qx39c8xU6bjtJQ.jpg?width=1400&height=1842",
+    "https://framerusercontent.com/images/l7HdAptHQMZG7q74EYGRyUXP2o.jpg?width=1400&height=1718",
+    "https://framerusercontent.com/images/HC0VGaeNWMyCLwItd5Mzt8c0BWM.jpg?width=1400&height=1726",
+    "https://framerusercontent.com/images/AUzCO6wd0gwRfrlHNcwudtK8.jpg?width=1400&height=1590",
+    "https://framerusercontent.com/images/f6UjAKosqcYFd431nfRVRFDbWI.jpg?scale-down-to=2048&width=2561&height=3261",
+    "https://framerusercontent.com/images/JkUzVUt6rI4Y3EK9t4KU6zPlo4.jpg?scale-down-to=2048&width=2488&height=3372",
+    "https://framerusercontent.com/images/VXRPiyzZb1hIvkDZaW1gFhnDdQc.jpg?scale-down-to=2048&width=2333&height=3500",
+    "https://framerusercontent.com/images/jHMStNDRJsVh75bklm081Xsbpqw.jpg?scale-down-to=2048&width=3542&height=4427",
+    "https://framerusercontent.com/images/bJSfSEwY8JU80gP8Yogm7NQ7Tk.jpg?scale-down-to=1024&width=3374&height=4000",
+    "https://framerusercontent.com/images/u5CUKqzHphT7gKFmbtsS0uuVg.jpg?scale-down-to=1024&width=2838&height=2920"
+  ]
+}

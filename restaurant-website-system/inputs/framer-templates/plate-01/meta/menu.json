@@ -1,0 +1,87 @@
+{
+  "url": "https://plate-template.framer.website/menu",
+  "dims": {
+    "scrollHeight": 2854,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(249, 248, 246)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": null,
+    "h2": {
+      "selector": "h2",
+      "text": "We couldn't find your dish",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "36px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": null,
+    "p": {
+      "selector": "p",
+      "text": "Take a better look on our offerings from the home page.",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "20.8px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Open in Maps",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgb(249, 248, 246)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix3d(1.00102, 0, 0, 0, 0, 1.00102, 0, 0, 0, 0, 1, -0.000833333, 0, -113.889, 0, 1)",
+      "matrix(1, 0, 0, 1, 0, 12)",
+      "matrix(1, 0, 0, 1, 0, 32)",
+      "matrix(1, 0, 0, 1, 0, 24)",
+      "matrix3d(1.02, 0, 0, 0, 0, 1.02, 0, 0, 0, 0, 1, -0.000833333, 0, 40, 0, 1)",
+      "matrix(1, 0, 0, 1, -117.516, 0)",
+      "matrix(1, 0, 0, 1, -135.383, 0)",
+      "matrix(1, 0, 0, 1, -2, 0)",
+      "matrix(1, 0, 0, 1, -59.5, -8)",
+      "matrix(1, 0, 0, 1, -6, 0)",
+      "matrix(0.001, 0, 0, 0.001, 0, 0)",
+      "matrix(1, 0, 0, 1, 3.75, 3.75)",
+      "matrix(1, 0, 0, 1, 3.75, 12)",
+      "matrix(1, 0, 0, 1, 12, 3.75)"
+    ]
+  },
+  "fontUrls": [
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/H2CH5X247WOB4WHOIRWQAUKL2TT7SHCU/S3EAO5FK5CWWN2B4UGQLSNLG4LKJ4PPJ/7GATDCIWKUNWWA7R3JOEWHUIADJRXY63.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/RFRIJEFDDNYP2G3SPLVDDAM6LQXTHLSW/F4KOPAGTNOYCQKYEBAKSIKS536ETV6GN/AEP5JZTJJB3JMLBFSBTZLRSVGYD73SDZ.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/QVSEREMQIHTDJ6PBN6SDKDQRKHAIJM4G/5FQFK3HFEC5ZJORN7EUWWXKPUKR4HDO2/S3LPGNCYQN366TZLSH3ASTPTKANFMFDS.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/NWFQAWEPGN3FR4FYMX6PY5M2HVOQSZWU/IIWY67X24KIURE4HBNGWYFMHSEMIVC2G/QAJFELFQRETRXRXDQOALZZUXNPM2U5VX.woff2",
+    "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2",
+    "https://fonts.gstatic.com/s/googlesanstext/v25/5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmhjtjm4DZw.woff2",
+    "https://fonts.gstatic.com/s/googlesanstext/v25/5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEp2i0VBuxM.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/tIqqePjrWHiNOVBVbJMVAKTLxg.jpg?width=1610&height=902",
+    "https://framerusercontent.com/images/b6cJJHVpEDVD3V53QxItatc9a8.png?width=992&height=1200"
+  ]
+}

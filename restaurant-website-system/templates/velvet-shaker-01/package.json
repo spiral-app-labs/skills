@@ -1,0 +1,28 @@
+{
+  "name": "velvet-shaker-01",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dark-modernist cocktail bar / speakeasy template. Two-token palette (canvas #0F100A + ink #E6E0C6, no accent). Inter Tight only — first serif-free template in the catalog. Weight-locked hierarchy (all 500, size-only). Wordmark-bookend pattern: small nav wordmark + massive 102px footer echo on every page. Non-sticky minimal text nav. Recreation of velvet-shaker.framer.website. See research/template-audits/velvet-shaker-01.md.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "framer-motion": "11.11.7"
+  },
+  "devDependencies": {
+    "@types/node": "20.16.5",
+    "@types/react": "18.3.10",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "typescript": "5.6.2"
+  }
+}

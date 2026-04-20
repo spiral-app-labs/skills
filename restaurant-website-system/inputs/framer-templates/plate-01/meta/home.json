@@ -1,0 +1,118 @@
+{
+  "url": "https://plate-template.framer.website/",
+  "dims": {
+    "scrollHeight": 10086,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(249, 248, 246)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Better food on every plate",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "80px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Starters",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "36px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "Our Minimalist Approach to Ingredients",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "28px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "28px",
+      "color": "rgb(30, 30, 28)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Freshly made, locally loved — crafted with good ingredients and better company.",
+      "fontFamily": "Urbanist, \"Urbanist Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "20.8px",
+      "color": "rgb(84, 84, 84)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(176, 89, 39)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Open in Maps",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgb(249, 248, 246)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -212.5, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix3d(1.01248, 0, 0, 0, 0, 1.01248, 0, 0, 0, 0, 1, -0.000833333, 0, -45.1389, 0, 1)",
+      "matrix3d(1.02, 0, 0, 0, 0, 1.02, 0, 0, 0, 0, 1, -0.000833333, 0, 24, 0, 1)"
+    ]
+  },
+  "fontUrls": [
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/RFRIJEFDDNYP2G3SPLVDDAM6LQXTHLSW/F4KOPAGTNOYCQKYEBAKSIKS536ETV6GN/AEP5JZTJJB3JMLBFSBTZLRSVGYD73SDZ.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/H2CH5X247WOB4WHOIRWQAUKL2TT7SHCU/S3EAO5FK5CWWN2B4UGQLSNLG4LKJ4PPJ/7GATDCIWKUNWWA7R3JOEWHUIADJRXY63.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/NWFQAWEPGN3FR4FYMX6PY5M2HVOQSZWU/IIWY67X24KIURE4HBNGWYFMHSEMIVC2G/QAJFELFQRETRXRXDQOALZZUXNPM2U5VX.woff2",
+    "https://framerusercontent.com/third-party-assets/fontshare/wf/QVSEREMQIHTDJ6PBN6SDKDQRKHAIJM4G/5FQFK3HFEC5ZJORN7EUWWXKPUKR4HDO2/S3LPGNCYQN366TZLSH3ASTPTKANFMFDS.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/JDRyCorPsaJpuEOTNz0kgSvMvk.png?width=2912&height=1632",
+    "https://framerusercontent.com/images/mMZrigKmzjJkiRsRq3fBSweroo.jpg?width=520&height=629",
+    "https://framerusercontent.com/images/pdPOZsZdYgE86u2b26GVhpigkzc.jpg?width=520&height=629",
+    "https://framerusercontent.com/images/TAjYjeNoUZUaHMBStsvcJfascM.jpg?width=520&height=629",
+    "https://framerusercontent.com/images/SbzzoIWmnBo4ySzw2xqln0kQFk.jpg?width=678&height=820",
+    "https://framerusercontent.com/images/kuzS5CcY8tERg2J7zLZIhI1cIE.jpg?width=678&height=820",
+    "https://framerusercontent.com/images/nYHIHNr1MmQNqlOebRjjxF17A.jpg?width=678&height=820",
+    "https://framerusercontent.com/images/kP1MQngBtVbUXlBUbnbOQ0ASgs.jpg?width=678&height=820",
+    "https://framerusercontent.com/images/31CkgkHTzMaDmMXfQoneWYrv3Fg.jpg?width=678&height=820",
+    "https://framerusercontent.com/images/lJHMnr43Aq8VBi75xMAPfACoTDU.png?width=2912&height=1632",
+    "https://framerusercontent.com/images/f8cGyIEl8JcV5NwGEZRUlF3qKes.png?width=2912&height=1632",
+    "https://framerusercontent.com/images/LQa39PUuaODTU70ErzZZB7qWsQ.png?width=2912&height=1632",
+    "https://framerusercontent.com/images/b6cJJHVpEDVD3V53QxItatc9a8.png?width=992&height=1200"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "url": "https://gusto-template.framer.website/menu",
+  "dims": {
+    "scrollHeight": 3089,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(15, 17, 12)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Menu",
+      "fontFamily": "\"Sorts Mill Goudy\", \"Sorts Mill Goudy Placeholder\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "52.8px",
+      "color": "rgb(255, 252, 244)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "selector": "h2",
+      "text": "Pasta",
+      "fontFamily": "Figtree, \"Figtree Placeholder\", sans-serif",
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "18px",
+      "color": "rgb(255, 252, 244)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "selector": "h3",
+      "text": "“Authentic slice of Italy in Prague!”",
+      "fontFamily": "\"Sorts Mill Goudy\", \"Sorts Mill Goudy Placeholder\", serif",
+      "fontSize": "48px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "52.8px",
+      "color": "rgb(255, 252, 244)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "Menu",
+      "fontFamily": "Figtree, \"Figtree Placeholder\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "16.8px",
+      "color": "rgb(255, 252, 244)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": null,
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Gusto",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(158, 158, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(0, -1, 1, 0, 0, 0)",
+      "matrix(-1, 0, 0, -1, 0, 0)",
+      "matrix(0, 1, -1, 0, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 20)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/sortsmillgoudy/v16/Qw3AZR9MED_6PSuS_50nEaVrfzgEbH80jbs_.woff2",
+    "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DQ.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/gtfNF6fHZZkq8OHRrEbbPyCBcVA.webp?scale-down-to=2048&width=2400&height=1920",
+    "https://framerusercontent.com/images/qO0HYIO3OQHFfjXP6LclPmUAykg.webp?width=176&height=70",
+    "https://framerusercontent.com/images/mVqw1rjt6F91PSGNsC8zKonm8o.webp",
+    "https://framerusercontent.com/images/uwGE8fC6f08ayCjPB1cy30RL6ao.webp",
+    "https://framerusercontent.com/images/PhFzFfQZYWHbrb7BQYQjDVHrWA.webp",
+    "https://framerusercontent.com/images/PNsfkdFqgf8iePP8cCPsfU18.webp",
+    "https://framerusercontent.com/images/MOYvm5O7ZD12cQyfHab7wtChxI.webp",
+    "https://framerusercontent.com/images/RLy4c1OAAQFSNdTpdRqb7I70A.webp",
+    "https://framerusercontent.com/images/aB7zlTyT6BNxkchnCegaZBq7ek.webp",
+    "https://framerusercontent.com/images/s8CEWT9odyjC5gzwY3OWeaFBM.webp",
+    "https://framerusercontent.com/images/KMprshjYryx62d80Y2GLVRh4.webp",
+    "https://framerusercontent.com/images/zEwFEw5mkEb9bBm5mrrAEhJ2Cg.webp",
+    "https://framerusercontent.com/images/IOTcHFA48Y4VTXtici2TjqRc.webp",
+    "https://framerusercontent.com/images/sSNA5zvdEhFBTQ8eZq1445IXx88.webp",
+    "https://framerusercontent.com/images/Gzv1sOw0f4knVLVLR7x2gYFxsEs.webp",
+    "https://framerusercontent.com/images/TIUWhtQU5Hzczz7tf5nJxm0pPv4.webp"
+  ]
+}

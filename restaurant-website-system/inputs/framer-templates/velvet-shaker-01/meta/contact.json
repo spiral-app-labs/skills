@@ -1,0 +1,100 @@
+{
+  "url": "https://velvet-shaker.framer.website/contact",
+  "dims": {
+    "scrollHeight": 3362,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(15, 16, 10)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Join us in Hong Kong",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "102px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "122.4px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": {
+      "selector": "h3",
+      "text": "What are Velvet Shaker’s opening hours?",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "26px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "31.2px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "p": {
+      "selector": "p",
+      "text": "home",
+      "fontFamily": "\"Inter Tight\", \"Inter Tight Placeholder\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "19.2px",
+      "color": "rgb(230, 224, 198)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Submit",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(230, 224, 198)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "home",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all",
+      "color 0.4s cubic-bezier(0.44, 0, 0.56, 1)",
+      "background, box-shadow",
+      "box-shadow, background"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -720, 0)",
+      "matrix(1, 0, 0, 1, 0, -4.5)",
+      "matrix(1, 0, 0, 1, -168, 0)",
+      "matrix(1, 0, 0, 1, 0, -481)",
+      "matrix(0, -1, 1, 0, 0, -1.16406)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/intertight/v8/NGSwv5HMAFg6IuGlBNMjxLsH8ag.woff2",
+    "https://framerusercontent.com/assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/eeTsxytX7fQuC47YH7dXgi8l0s0.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/JATm5jxKSrBBMF1k8HMf3E7yRJQ.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/4WxPtxaZPYIMzuTh02VmErOGws.png?scale-down-to=1024",
+    "https://framerusercontent.com/images/BaKcvnMdgm7tQZxOZKWsEyVfw.png?scale-down-to=1024"
+  ]
+}

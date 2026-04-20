@@ -1,0 +1,99 @@
+{
+  "url": "https://pepper.framer.website/menu",
+  "dims": {
+    "scrollHeight": 1466,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(255, 255, 255)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "404",
+      "fontFamily": "Gabarito, sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "800",
+      "letterSpacing": "normal",
+      "lineHeight": "96px",
+      "color": "rgb(26, 26, 26)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": null,
+    "p": {
+      "selector": "p",
+      "text": "Pepper",
+      "fontFamily": "\"Cherry Bomb One\", sans-serif",
+      "fontSize": "36px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "43.2px",
+      "color": "rgb(255, 0, 60)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "Remix Template",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(255, 0, 60)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "Pepper",
+      "fontFamily": "sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "lineHeight": "normal",
+      "color": "rgb(0, 0, 238)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [],
+    "transitions": [
+      "all"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, -5, -5)",
+      "matrix(1, 0, 0, 1, -4, -4)",
+      "matrix(1, 0, 0, 1, -3, -3)",
+      "matrix(1, 0, 0, 1, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 6.958)",
+      "matrix(1, 0, 0, 1, 0, 13.916)",
+      "matrix(1, 0, 0, 1, 0, -56.063)",
+      "matrix(1, 0, 0, 1, 0, -70.542)",
+      "matrix(1, 0, 0, 1, 0, 10.437)",
+      "matrix(1, 0, 0, 1, -59.5, -8)",
+      "matrix(1, 0, 0, 1, -6, 0)",
+      "matrix(0.001, 0, 0, 0.001, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://fonts.gstatic.com/s/cherrybombone/v11/y83DW4od1h6KlV3c6JJhRhGOdhr6C9BE.woff2",
+    "https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2",
+    "https://framerusercontent.com/assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2",
+    "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
+    "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+    "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"
+  ],
+  "imgUrls": [
+    "https://framerusercontent.com/images/kP2NqpJxzs3mxd89TNdxyZvyms.png?scale-down-to=512&width=1200&height=1200",
+    "https://framerusercontent.com/images/WSIxf52atDWJJfphIQ7KE7eYvM.png?scale-down-to=512&width=1200&height=1200",
+    "https://framerusercontent.com/images/NeeY359LTfhcwSN6JhuBh0Y8Bac.png?scale-down-to=512&width=1200&height=1200",
+    "https://framerusercontent.com/images/Okjb0nB1GOkYPwcntjxG2t9dOU.png?scale-down-to=512&width=1200&height=1200",
+    "https://framerusercontent.com/images/PhZZgLMJNd9CBnmdNFn6oZ4geIo.png?scale-down-to=512&width=1200&height=1200",
+    "https://framerusercontent.com/images/bvrc0x9pG8w1OtGBtKBKRFnW4cM.png?scale-down-to=512&width=1200&height=1200"
+  ]
+}
