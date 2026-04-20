@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { theme } from '../theme';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
+import type { HoursConfig } from '../lib/hours';
 
 /**
  * FloatingHeaderPill — 1776's centered floating header pill.
@@ -52,6 +54,15 @@ export function FloatingHeaderPill() {
           </Link>
         ))}
       </nav>
+
+      {/* Aliveness retrofit (2026-04-20): LiveOpenStatus text variant near the
+          reservation CTA — reduces friction for diners scanning for "are they
+          open right now?" per aliveness-patterns.md §1.1. */}
+      <LiveOpenStatus
+        hours={content.brand.hoursConfig as unknown as HoursConfig}
+        variant="text"
+        className="hidden lg:inline-flex ml-2 px-2 text-nav-link text-text/70"
+      />
 
       <Link
         href={content.nav.cta.href}

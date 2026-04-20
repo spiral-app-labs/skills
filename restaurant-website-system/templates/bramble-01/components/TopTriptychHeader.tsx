@@ -4,15 +4,20 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { theme } from '../theme';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
 
 /**
  * TopTriptychHeader — button-center-button top header.
  *
  * LEFT: RESERVE outlined button.
- * CENTER: address in tracked-out small caps.
+ * CENTER: address in tracked-out small caps + LiveOpenStatus dot underneath.
  * RIGHT: MENU outlined button (scrolls to #menus).
  *
  * Different tone from floating pills — suits single-page / small-site designs.
+ *
+ * Aliveness retrofit (2026-04-20): LiveOpenStatus dot stacked under the address
+ * label — hospitality-warm register loves the visible live indicator, and the
+ * dot variant stays quiet enough not to fight the triptych symmetry.
  */
 export function TopTriptychHeader() {
   return (
@@ -29,9 +34,16 @@ export function TopTriptychHeader() {
         Reserve
       </Link>
 
-      <p className="hidden sm:block text-address text-text-cream">
-        {content.brand.addressShort}
-      </p>
+      <div className="hidden sm:flex flex-col items-center gap-1">
+        <p className="text-address text-text-cream">
+          {content.brand.addressShort}
+        </p>
+        <LiveOpenStatus
+          hours={content.brand.hoursConfig}
+          variant="dot"
+          className="text-address text-text-cream/80"
+        />
+      </div>
 
       <Link
         href="#menus"

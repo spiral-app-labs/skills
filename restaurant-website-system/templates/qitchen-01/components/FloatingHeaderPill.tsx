@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { theme } from '../theme';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
+import type { HoursConfig } from '../lib/hours';
 
 /**
  * FloatingHeaderPill — qitchen-01's nav primitive.
@@ -51,6 +53,17 @@ export function FloatingHeaderPill() {
           </Link>
         ))}
       </nav>
+
+      {/* Aliveness retrofit (2026-04-20): LiveOpenStatus text variant — ceremonial
+          register discipline, no dot, subtle low-opacity per audit §12.4. */}
+      {/* content.example.ts uses top-level `as const` → everything is readonly.
+          HoursConfig expects mutable arrays; unknown-cast widens cleanly here.
+          Forks that drop the `as const` will no longer need this cast. */}
+      <LiveOpenStatus
+        hours={content.brand.hoursConfig as unknown as HoursConfig}
+        variant="text"
+        className="hidden lg:inline-flex px-3 text-ui-label text-text/60"
+      />
 
       {/* Primary CTA */}
       <Link

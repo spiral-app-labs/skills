@@ -18,6 +18,23 @@ export const content = {
     // Wordmark image — replace with restaurant's logo SVG/PNG.
     // The original qitchen wordmark is a custom serif logotype with a flourished Q.
     logoText: 'QITCHEN',
+    address: { line1: '45 Spring St', line2: 'New York, NY 10012' },
+    // Powers <LiveOpenStatus /> — see shared/lib/hours.ts HoursConfig schema.
+    // Fork rule: update timezone + ranges to match real venue. Add closures array for holidays.
+    // Ceremonial sushi — dinner-only five nights a week. Closed Sun/Mon.
+    hoursConfig: {
+      timezone: 'America/New_York',
+      ranges: [
+        { day: 2 as const, open: '17:30', close: '22:00' }, // Tuesday
+        { day: 3 as const, open: '17:30', close: '22:00' }, // Wednesday
+        { day: 4 as const, open: '17:30', close: '22:00' }, // Thursday
+        { day: 5 as const, open: '17:30', close: '23:00' }, // Friday
+        { day: 6 as const, open: '17:30', close: '23:00' }, // Saturday
+      ],
+      closures: [],
+    },
+    // Primary location lat/lng — powers <LiveMapEmbed />. Fork rule: replace with real coords.
+    geo: { lat: 40.7223, lng: -74.0030 }, // NYC SoHo placeholder
   },
 
   nav: {

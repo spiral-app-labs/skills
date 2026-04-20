@@ -1,12 +1,14 @@
 import { StickyTopNav } from '../../components/StickyTopNav';
 import { PageHeroBanner } from '../../components/PageHeroBanner';
 import { SiteFooter } from '../../components/SiteFooter';
+import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 import { content } from '../../content.example';
 
 // /contact — rebuilt; source 404s (audit §3 "both 404").
 
 export default function ContactPage() {
   const { contactPage } = content;
+  const b = content.brand;
   return (
     <>
       <StickyTopNav />
@@ -26,6 +28,21 @@ export default function ContactPage() {
                 <p className="mt-2 font-display text-xl text-accent-brown break-words">{c.value}</p>
               </a>
             ))}
+          </div>
+        </section>
+
+        {/* Aliveness retrofit (2026-04-20): interactive map between the
+            channels row and the form/visit split per aliveness-patterns.md §2.1. */}
+        <section className="bg-canvas pb-16">
+          <div className="mx-auto max-w-shell px-6 md:px-10">
+            <LiveMapEmbed
+              address={`${b.address.line1}, ${b.address.line2}`}
+              lat={b.geo.lat}
+              lng={b.geo.lng}
+              zoom={15}
+              mapLabel={`${b.name} — ${b.address.line2}`}
+              aspectRatio="16/9"
+            />
           </div>
         </section>
 

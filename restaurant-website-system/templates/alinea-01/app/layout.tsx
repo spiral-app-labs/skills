@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, EB_Garamond } from 'next/font/google';
 import { content } from '../content.example';
+import { AskConcierge } from '../components/AskConcierge';
 import './globals.css';
 
 // Cormorant Garamond — weight 500 is the signature. Going to 400 reads too light,
@@ -34,7 +35,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${ebGaramond.variable}`}>
-      <body className="font-body bg-canvas text-text antialiased">{children}</body>
+      <body className="font-body bg-canvas text-text antialiased">
+        {children}
+        <AskConcierge />
+      </body>
     </html>
   );
 }

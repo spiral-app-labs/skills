@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
+import type { HoursConfig } from '../lib/hours';
 
 /**
  * WarmGrayStripHeader — full-bleed warm-gray nav strip.
@@ -14,8 +16,16 @@ export function WarmGrayStripHeader() {
   return (
     <header className="sticky top-0 z-40 bg-strip-warm text-text-strip">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 h-[88px] flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-4">
           <span className="font-display text-[28px] leading-none italic">{content.brand.name}</span>
+          {/* Aliveness retrofit (2026-04-20): LiveOpenStatus text variant ONLY —
+              Michelin discipline forbids visible dots/pulses per audit §12.4.
+              Shown lg+ only; restrained opacity. */}
+          <LiveOpenStatus
+            hours={content.brand.hoursConfig as unknown as HoursConfig}
+            variant="text"
+            className="hidden lg:inline-flex text-nav-label opacity-70"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">

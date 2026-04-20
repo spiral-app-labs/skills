@@ -1,9 +1,14 @@
 'use client';
 // InlineContactBlock — address + phone + email + hours on home.
 // Two-location variant per audit §11 (Milan + Zürich).
+//
+// Aliveness retrofit (2026-04-20): LiveMapEmbed sits below the two-location
+// grid, geolocated to the primary (Milan) venue. v1 shows one map; a fork
+// with meaningful traffic to both can instance a second for Zürich.
 
 import { motion } from 'framer-motion';
 import { content } from '../content.example';
+import { LiveMapEmbed } from './LiveMapEmbed';
 
 export function InlineContactBlock() {
   const { eyebrow, heading, locations } = content.contact;
@@ -57,6 +62,23 @@ export function InlineContactBlock() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-16"
+        >
+          <LiveMapEmbed
+            address={`${content.brand.address.line1}, ${content.brand.address.line2}`}
+            lat={content.brand.geo.lat}
+            lng={content.brand.geo.lng}
+            zoom={15}
+            mapLabel={`${content.brand.name} — ${locations[0].name}`}
+            aspectRatio="21/9"
+          />
+        </motion.div>
       </div>
     </section>
   );

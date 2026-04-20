@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
+import type { HoursConfig } from '../lib/hours';
 
 /**
  * SplitHeader — logo-left / center-nav / right-orange-CTA.
@@ -54,13 +56,24 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
           </div>
         </nav>
 
-        <Link
-          href={content.nav.cta.href}
-          className="inline-flex items-center gap-2 bg-accent text-text-white px-5 py-2.5 rounded-pill text-button font-semibold hover:brightness-110 transition"
-        >
-          <span aria-hidden>☰</span>
-          {content.nav.cta.label}
-        </Link>
+        <div className="flex items-center gap-4">
+          {/* Aliveness retrofit (2026-04-20): LiveOpenStatus dot variant — dark
+              canvas with orange accent matches bamzi's register per
+              aliveness-patterns.md §1.1. */}
+          <LiveOpenStatus
+            hours={content.brand.hoursConfig as unknown as HoursConfig}
+            variant="dot"
+            className="hidden lg:inline-flex text-nav-label text-text-white/80"
+          />
+
+          <Link
+            href={content.nav.cta.href}
+            className="inline-flex items-center gap-2 bg-accent text-text-white px-5 py-2.5 rounded-pill text-button font-semibold hover:brightness-110 transition"
+          >
+            <span aria-hidden>☰</span>
+            {content.nav.cta.label}
+          </Link>
+        </div>
       </div>
     </header>
   );

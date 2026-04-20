@@ -27,6 +27,23 @@ export const content = {
       { label: 'X / Twitter', href: '#' },
       { label: 'Instagram',   href: '#' },
     ],
+    // Aliveness retrofit (2026-04-20): hoursConfig + geo for LiveOpenStatus/LiveMapEmbed.
+    // Parsed from home.hero.sidebar.hours (Mon–Thu 16:00–22:00, Fri 16:00–23:00,
+    // Sat 17:00–23:00, Sun 17:00–22:00).
+    hoursConfig: {
+      timezone: 'Europe/Prague',
+      ranges: [
+        { day: 1 as const, open: '16:00', close: '22:00' }, // Mon
+        { day: 2 as const, open: '16:00', close: '22:00' }, // Tue
+        { day: 3 as const, open: '16:00', close: '22:00' }, // Wed
+        { day: 4 as const, open: '16:00', close: '22:00' }, // Thu
+        { day: 5 as const, open: '16:00', close: '23:00' }, // Fri
+        { day: 6 as const, open: '17:00', close: '23:00' }, // Sat
+        { day: 0 as const, open: '17:00', close: '22:00' }, // Sun
+      ],
+      closures: [],
+    },
+    geo: { lat: 50.0875, lng: 14.4214 }, // Old Town Square area, Prague
   },
 
   nav: {

@@ -4,11 +4,16 @@ import { PageDisplayHeading } from '../../components/PageDisplayHeading';
 import { ContactFormPanel } from '../../components/ContactFormPanel';
 import { ContactInteriorStrip } from '../../components/ContactInteriorStrip';
 import { LowChromeFaqAccordion } from '../../components/LowChromeFaqAccordion';
+import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 import Link from 'next/link';
 
 // /contact — 102px "Join us in Hong Kong" + booking-left / form-right / interior-strip / FAQ.
+// Aliveness retrofit (2026-04-20): interactive LiveMapEmbed sits between the
+// interior photo strip and the FAQ — styled with a white-ring to hold up on
+// the dark modernist canvas per aliveness-patterns.md §2.1.
 export default function ContactPage() {
   const c = content.contact;
+  const b = content.brand;
   return (
     <WordmarkBookendLayout>
       <PageDisplayHeading eyebrow={c.eyebrow} heading={c.h1} />
@@ -65,6 +70,21 @@ export default function ContactPage() {
       </section>
 
       <ContactInteriorStrip photos={c.interiorStrip} />
+
+      <section className="w-full">
+        <div className="mx-auto max-w-shell px-5 md:px-10 pb-12 md:pb-16">
+          <LiveMapEmbed
+            address={`${b.address.line1}, ${b.address.line2}`}
+            lat={b.geo.lat}
+            lng={b.geo.lng}
+            zoom={15}
+            mapLabel={`${b.name} — ${b.address.line2}`}
+            aspectRatio="16/9"
+            className="ring-1 ring-white/10"
+          />
+        </div>
+      </section>
+
       <LowChromeFaqAccordion heading={c.faqHeading} faqs={c.faqs} />
     </WordmarkBookendLayout>
   );

@@ -14,6 +14,23 @@ export const content = {
       { label: 'Facebook',  href: '#', icon: 'facebook' },
       { label: 'Instagram', href: '#', icon: 'instagram' },
     ],
+    // Powers <LiveOpenStatus /> — see shared/lib/hours.ts HoursConfig schema.
+    // Fork rule: update timezone + ranges to match real venue. Add closures array for holidays.
+    // Real Alinea operates Wed-Sun evenings in Chicago (America/Chicago).
+    // Closed Mon/Tue (omitted from ranges).
+    hoursConfig: {
+      timezone: 'America/Chicago',
+      ranges: [
+        { day: 0 as const, open: '17:00', close: '21:30' }, // Sunday
+        { day: 3 as const, open: '17:00', close: '21:30' }, // Wednesday
+        { day: 4 as const, open: '17:00', close: '21:30' }, // Thursday
+        { day: 5 as const, open: '17:00', close: '22:00' }, // Friday
+        { day: 6 as const, open: '17:00', close: '22:00' }, // Saturday
+      ],
+      closures: [],
+    },
+    // Primary location lat/lng — powers <LiveMapEmbed />. Real Alinea address.
+    geo: { lat: 41.9133, lng: -87.6480 }, // Chicago (1723 N Halsted St)
   },
 
   nav: {

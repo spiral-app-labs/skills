@@ -4,11 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
 
 /**
  * RivieraHero — 150px Imbue H1 + warm-graded chef-hands photo + upper-right
  * intro card with CTA. Audit §4: H1 is 150px weight 400 with -1.5px
  * letter-spacing; responsive ramp 150 → 96 → 72 → 56 (via `text-hero-h1` token).
+ *
+ * Aliveness retrofit (2026-04-20): LiveOpenStatus text-variant sits quietly
+ * above the intro card body — ceremonial-discipline register gets only the
+ * label, no dot/pill chroma. H1 dimensions untouched.
  */
 export function RivieraHero() {
   const { hero } = content;
@@ -41,6 +46,11 @@ export function RivieraHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.44, 0, 0.56, 1], delay: 0.2 }}
           >
+            <LiveOpenStatus
+              hours={content.brand.hoursConfig}
+              variant="text"
+              className="label-eyebrow text-ink-muted mb-4"
+            />
             <p className="text-body text-ink mb-6 max-w-sm">{hero.intro}</p>
             <Link
               href={hero.cta.href}

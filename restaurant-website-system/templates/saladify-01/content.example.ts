@@ -23,6 +23,24 @@ export const content = {
       { day: 'Sat',     hours: '11am – 9pm' },
       { day: 'Sun',     hours: '11am – 7pm' },
     ],
+    // hoursConfig powers LiveOpenStatus (pure TZ-aware computation). Mirrors
+    // the display-string `brand.hours` block (fast-casual 10/11am to 7/9pm).
+    // day: 0=Sun..6=Sat.
+    hoursConfig: {
+      timezone: 'America/New_York',
+      ranges: [
+        { day: 0 as const, open: '11:00', close: '19:00' }, // Sun
+        { day: 1 as const, open: '10:00', close: '21:00' }, // Mon
+        { day: 2 as const, open: '10:00', close: '21:00' }, // Tue
+        { day: 3 as const, open: '10:00', close: '21:00' }, // Wed
+        { day: 4 as const, open: '10:00', close: '21:00' }, // Thu
+        { day: 5 as const, open: '10:00', close: '21:00' }, // Fri
+        { day: 6 as const, open: '11:00', close: '21:00' }, // Sat
+      ],
+      closures: [],
+    },
+    // Flatiron, NYC — generic NYC default. Fork swap with real coords.
+    geo: { lat: 40.7440, lng: -73.9925 },
     social: [
       { label: 'Instagram', href: '#' },
       { label: 'Facebook',  href: '#' },

@@ -2,11 +2,15 @@
 
 import Link from 'next/link';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
 
 // Thin sticky top header with wordmark left, nav center, Order Now right.
 // Sits over the spring-green hero section (transparent on top, but we give it
 // an accent-green text color so it reads against the green bg).
-
+//
+// Aliveness retrofit (2026-04-20): LiveOpenStatus "dot" variant sits next to
+// the wordmark — tiny green dot reinforces the fast-casual "we're fresh and
+// ready" tone per aliveness-patterns.md §1.1.
 export function StickyTopNav() {
   return (
     <header className="sticky top-0 z-40 bg-canvas-green/80 backdrop-blur-sm">
@@ -15,6 +19,11 @@ export function StickyTopNav() {
           <span className="h-8 w-8 rounded-full bg-accent-green grid place-items-center text-canvas-green font-display text-xl leading-none">S</span>
           <span className="font-display text-2xl text-accent-green leading-none">{content.brand.wordmark}</span>
         </Link>
+        <LiveOpenStatus
+          hours={content.brand.hoursConfig}
+          variant="dot"
+          className="hidden lg:inline-flex text-xs text-accent-green"
+        />
         <nav className="hidden md:flex items-center gap-10">
           {content.nav.primary.map((item) => (
             <Link

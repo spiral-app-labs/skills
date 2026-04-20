@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Prata, Inter } from 'next/font/google';
 import { content } from '../content.example';
+import { AskConcierge } from '../components/AskConcierge';
 import './globals.css';
 
 // Prata — single weight 400 is the only option on Google Fonts. That's the discipline.
@@ -26,7 +27,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${prata.variable} ${inter.variable}`}>
-      <body className="font-body bg-bg-white text-text-dark antialiased">{children}</body>
+      <body className="font-body bg-bg-white text-text-dark antialiased">
+        {children}
+        <AskConcierge restaurantName={content.brand.name} />
+      </body>
     </html>
   );
 }

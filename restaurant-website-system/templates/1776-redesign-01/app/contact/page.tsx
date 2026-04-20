@@ -4,8 +4,13 @@ import { PageHero } from '../../components/PageHero';
 import { QuoteOnPhotoOverlay } from '../../components/QuoteOnPhotoOverlay';
 import { RichFooter } from '../../components/RichFooter';
 import { DH } from '../../components/DisplayHeading';
+import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 import { content } from '../../content.example';
 import { theme } from '../../theme';
+
+// Aliveness retrofit (2026-04-20): LiveMapEmbed added between the
+// address-detail section and the closing quote. Decorated with a rounded
+// border matching the dark warm-upscale register per aliveness-patterns.md §2.1.
 
 export default function ContactPage() {
   const c = content.contact;
@@ -75,6 +80,18 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="px-6 md:px-12 pb-20 max-w-[1100px] mx-auto">
+          <LiveMapEmbed
+            address={content.brand.addressFull}
+            lat={content.brand.geo.lat}
+            lng={content.brand.geo.lng}
+            zoom={15}
+            mapLabel={`${content.brand.name} — ${content.brand.location}`}
+            aspectRatio="16/9"
+            className="rounded-card overflow-hidden border border-border/40"
+          />
         </section>
 
         <QuoteOnPhotoOverlay

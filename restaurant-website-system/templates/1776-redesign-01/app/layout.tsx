@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
 import { content } from '../content.example';
+import { AskConcierge } from '../components/AskConcierge';
 import './globals.css';
 
 // Display: Cormorant Garamond. CRITICAL: must include style: ['normal', 'italic']
@@ -28,7 +29,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AskConcierge />
+      </body>
     </html>
   );
 }

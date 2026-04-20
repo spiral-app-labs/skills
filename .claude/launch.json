@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "1776-concierge-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/templates/1776-redesign-01", "run", "dev"],
+      "port": 3020
+    }
+  ]
+}

@@ -13,11 +13,33 @@ export const content = {
       'Serious upscale Italian heritage restaurant. Chef-driven kitchen across pasta, pizza, meats, and fish. Two locations: Milan and Zürich.',
     email: 'hello@varro.example',
     phone: '+39 02 1234 5678',
+    address: {
+      line1: 'P.za del Duomo',
+      line2: '20122 Milano MI, Italy',
+    },
     social: [
       { label: 'Instagram', href: '#' },
       { label: 'Facebook',  href: '#' },
       { label: 'X',         href: '#' },
     ],
+    // Aliveness retrofit (2026-04-20): Milan primary-location hoursConfig + geo.
+    // Parsed from contact.locations[0] (Milan): Tue–Thu 18:00–23:00,
+    // Fri/Sat 12:00–15:00 & 18:00–24:00 (lunch + dinner), Sun 12:00–22:00, Mon closed.
+    hoursConfig: {
+      timezone: 'Europe/Rome',
+      ranges: [
+        { day: 2 as const, open: '18:00', close: '23:00' }, // Tue
+        { day: 3 as const, open: '18:00', close: '23:00' }, // Wed
+        { day: 4 as const, open: '18:00', close: '23:00' }, // Thu
+        { day: 5 as const, open: '12:00', close: '15:00' }, // Fri lunch
+        { day: 5 as const, open: '18:00', close: '24:00' }, // Fri dinner
+        { day: 6 as const, open: '12:00', close: '15:00' }, // Sat lunch
+        { day: 6 as const, open: '18:00', close: '24:00' }, // Sat dinner
+        { day: 0 as const, open: '12:00', close: '22:00' }, // Sun
+      ],
+      closures: [],
+    },
+    geo: { lat: 45.4642, lng: 9.1900 }, // Milan Duomo
   },
 
   nav: {

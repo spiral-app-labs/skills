@@ -8,19 +8,39 @@ import { TheJournalBlogBlock } from '../components/TheJournalBlogBlock';
 import { NewsletterBand } from '../components/NewsletterBand';
 import { SignOffBand } from '../components/SignOffBand';
 import { CreamFooter } from '../components/CreamFooter';
+import { ScrollRevealScrapbook } from '../components/ScrollReveal';
+
+// Aliveness retrofit (2026-04-20): below-hero sections wrap in
+// ScrollRevealScrapbook — scrapbook-drift is the signature labrisa motion per
+// the audit (motion intensity 3). Hero stays unwrapped; RivieraHero handles its
+// own entry choreography.
 
 export default function Home() {
   return (
     <main>
       <CreamStripNav />
       <RivieraHero />
-      <BrandIllustrationLockup />
-      <JournalVignetteStrip />
-      <CenterDishPhoto />
-      <ServiceTypeSelector />
-      <TheJournalBlogBlock />
-      <NewsletterBand />
-      <SignOffBand />
+      <ScrollRevealScrapbook>
+        <BrandIllustrationLockup />
+      </ScrollRevealScrapbook>
+      <ScrollRevealScrapbook>
+        <JournalVignetteStrip />
+      </ScrollRevealScrapbook>
+      <ScrollRevealScrapbook>
+        <CenterDishPhoto />
+      </ScrollRevealScrapbook>
+      <ScrollRevealScrapbook>
+        <ServiceTypeSelector />
+      </ScrollRevealScrapbook>
+      <ScrollRevealScrapbook>
+        <TheJournalBlogBlock />
+      </ScrollRevealScrapbook>
+      <ScrollRevealScrapbook>
+        <NewsletterBand />
+      </ScrollRevealScrapbook>
+      <ScrollRevealScrapbook>
+        <SignOffBand />
+      </ScrollRevealScrapbook>
       <CreamFooter />
     </main>
   );

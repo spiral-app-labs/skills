@@ -20,6 +20,25 @@ export const content = {
       { days: 'Saturday', time: '10 AM – 11 PM' },
       { days: 'Sunday',   time: '10 AM – 8 PM' },
     ],
+    // Powers <LiveOpenStatus /> — see shared/lib/hours.ts HoursConfig schema.
+    // Fork rule: update timezone + ranges to match real venue. Add closures array for holidays.
+    hoursConfig: {
+      timezone: 'America/New_York',
+      ranges: [
+        { day: 0 as const, open: '10:00', close: '20:00' }, // Sunday
+        { day: 1 as const, open: '09:00', close: '22:00' }, // Monday
+        { day: 2 as const, open: '09:00', close: '22:00' }, // Tuesday
+        { day: 3 as const, open: '09:00', close: '22:00' }, // Wednesday
+        { day: 4 as const, open: '09:00', close: '22:00' }, // Thursday
+        { day: 5 as const, open: '09:00', close: '22:00' }, // Friday
+        { day: 6 as const, open: '10:00', close: '23:00' }, // Saturday
+      ],
+      closures: [
+        // { date: '2025-12-25', label: 'Closed for Christmas · reopens Dec 26' },
+      ],
+    },
+    // Primary location lat/lng — powers <LiveMapEmbed />. Fork rule: replace with real coords.
+    geo: { lat: 40.7484, lng: -73.9857 }, // Manhattan placeholder (Empire State Building)
     social: [
       { label: 'Instagram', href: '#' },
       { label: 'Trip Advisor', href: '#' },

@@ -15,6 +15,22 @@ export const content = {
     menuPdfUrl: '#menus', // replace with real PDF URL when forking
     reservationUrl: '/reserve',
     giftCardUrl: '#gift-cards',
+    // Aliveness retrofit (2026-04-20): hours config for LiveOpenStatus + geo for LiveMapEmbed.
+    // Parsed from the `hours` array below. Late-night close (past midnight) uses 25/26:00.
+    hoursConfig: {
+      timezone: 'Europe/London',
+      ranges: [
+        // Mon — closed (no range)
+        { day: 2 as const, open: '12:00', close: '24:00' }, // Tue — bar hours drive the pill
+        { day: 3 as const, open: '12:00', close: '24:00' }, // Wed
+        { day: 4 as const, open: '12:00', close: '24:00' }, // Thu
+        { day: 5 as const, open: '12:00', close: '25:00' }, // Fri — 1am
+        { day: 6 as const, open: '12:00', close: '25:00' }, // Sat — 1am
+        { day: 0 as const, open: '12:00', close: '23:00' }, // Sun
+      ],
+      closures: [],
+    },
+    geo: { lat: 51.5154, lng: -0.1372 }, // Soho, London
   },
 
   hero: {

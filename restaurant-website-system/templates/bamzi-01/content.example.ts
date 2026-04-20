@@ -18,6 +18,24 @@ export const content = {
       { label: 'Facebook',  href: '#' },
       { label: 'Twitter',   href: '#' },
     ],
+    // Powers <LiveOpenStatus /> — see shared/lib/hours.ts HoursConfig schema.
+    // Fork rule: update timezone + ranges to match real venue. Add closures array for holidays.
+    // From content.about.hours: Mon-Fri 11-23, Sat 11-00, Sun 12-22.
+    hoursConfig: {
+      timezone: 'America/New_York',
+      ranges: [
+        { day: 0 as const, open: '12:00', close: '22:00' }, // Sunday
+        { day: 1 as const, open: '11:00', close: '23:00' }, // Monday
+        { day: 2 as const, open: '11:00', close: '23:00' }, // Tuesday
+        { day: 3 as const, open: '11:00', close: '23:00' }, // Wednesday
+        { day: 4 as const, open: '11:00', close: '23:00' }, // Thursday
+        { day: 5 as const, open: '11:00', close: '23:00' }, // Friday
+        { day: 6 as const, open: '11:00', close: '24:00' }, // Saturday
+      ],
+      closures: [],
+    },
+    // Primary location lat/lng — powers <LiveMapEmbed />. Fork rule: replace with real coords.
+    geo: { lat: 40.7208, lng: -73.9871 }, // NYC LES placeholder
   },
 
   nav: {

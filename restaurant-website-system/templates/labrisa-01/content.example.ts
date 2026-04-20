@@ -26,6 +26,22 @@ export const content = {
       { day: 'Saturday',  range: '12:00 pm — 12:00 am' },
       { day: 'Sunday',    range: '12:00 pm — 10:00 pm' },
     ],
+    // Aliveness retrofit (2026-04-20): hoursConfig + geo for LiveOpenStatus/LiveMapEmbed.
+    // Parsed from the `hours` array above — Mon closed (no range), late closes
+    // on Fri/Sat go past midnight (24:00).
+    hoursConfig: {
+      timezone: 'Europe/Paris',
+      ranges: [
+        { day: 2 as const, open: '18:00', close: '23:00' }, // Tue
+        { day: 3 as const, open: '18:00', close: '23:00' }, // Wed
+        { day: 4 as const, open: '18:00', close: '23:00' }, // Thu
+        { day: 5 as const, open: '18:00', close: '24:00' }, // Fri
+        { day: 6 as const, open: '12:00', close: '24:00' }, // Sat
+        { day: 0 as const, open: '12:00', close: '22:00' }, // Sun
+      ],
+      closures: [],
+    },
+    geo: { lat: 43.2673, lng: 6.6407 }, // Saint-Tropez, France
   },
 
   nav: {

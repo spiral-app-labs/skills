@@ -9,6 +9,8 @@ import { content } from '../content.example';
 import { BookATableButton } from './BookATableButton';
 import { OpeningHoursTable } from './OpeningHoursTable';
 import { HeritageStamp } from './HeritageStamp';
+import { LiveMapEmbed } from './LiveMapEmbed';
+import { LiveOpenStatus } from './LiveOpenStatus';
 
 export function ContactPage() {
   const c = content.contact;
@@ -62,6 +64,9 @@ export function ContactPage() {
                 {b.email}
               </a>
             </p>
+            <div className="mt-4">
+              <LiveOpenStatus hours={b.hoursConfig} variant="pill" />
+            </div>
             <div className="mt-6">
               <BookATableButton label="Book a Table" href="#book" />
             </div>
@@ -75,11 +80,13 @@ export function ContactPage() {
           </div>
 
           <div className="overflow-hidden rounded-card">
-            <iframe
-              src={b.mapEmbed}
-              loading="lazy"
-              className="h-64 w-full border-0"
-              title={`Map of ${b.name}`}
+            <LiveMapEmbed
+              address={`${b.address.line1}, ${b.address.line2}, ${b.address.country}`}
+              lat={b.geo.lat}
+              lng={b.geo.lng}
+              zoom={15}
+              mapLabel={b.name}
+              aspectRatio="16/10"
             />
             <p className="bg-surface px-4 py-3 font-body text-body-sm text-ink-muted">
               {c.mapCaption}{' '}

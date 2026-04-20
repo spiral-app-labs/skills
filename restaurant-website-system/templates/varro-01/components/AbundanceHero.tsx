@@ -2,10 +2,15 @@
 // AbundanceHero — massive display headline + 3-photo horizontal strip.
 // Signature move. Signals multi-discipline craft + table generosity.
 // Counterpart to FullBleedHero / PageHeroSplit.
+//
+// Aliveness retrofit (2026-04-20): LiveOpenStatus text-variant sits under the
+// headline as a small live line — "Open now · closes in 2h 4m" is visible when
+// the customer is deciding to scroll down to the inline reservation form.
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { content } from '../content.example';
+import { LiveOpenStatus } from './LiveOpenStatus';
 
 export function AbundanceHero() {
   const { eyebrow, headline, photos } = content.hero;
@@ -23,6 +28,11 @@ export function AbundanceHero() {
           <h1 className="font-display text-hero-display text-ink max-w-5xl">
             {headline}
           </h1>
+          <LiveOpenStatus
+            hours={content.brand.hoursConfig}
+            variant="text"
+            className="mt-6 text-eyebrow text-ink-muted"
+          />
         </motion.div>
 
         <motion.div

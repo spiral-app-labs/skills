@@ -18,10 +18,28 @@ export const content = {
       { label: 'Twitter',   href: '#' },
     ],
     hours: [
-      { days: 'Mon–Thu', time: '11:00 AM – 9:00 PM' },
-      { days: 'Fri–Sat', time: '11:00 AM – 10:00 PM' },
-      { days: 'Sun',     time: '12:00 PM – 8:00 PM' },
+      { days: 'Tue–Fri', time: '7:00 AM – 4:00 PM' },
+      { days: 'Sat',     time: '7:00 AM – 5:00 PM' },
+      { days: 'Sun',     time: '8:00 AM – 3:00 PM' },
+      { days: 'Mon',     time: 'Closed' },
     ],
+    // hoursConfig powers LiveOpenStatus (pure TZ-aware computation). Cafe
+    // register — early open, mid-afternoon close, closed Mondays. day: 0=Sun..6=Sat.
+    hoursConfig: {
+      timezone: 'America/New_York',
+      ranges: [
+        { day: 0 as const, open: '08:00', close: '15:00' }, // Sun
+        // Mon closed — SKIP
+        { day: 2 as const, open: '07:00', close: '16:00' }, // Tue
+        { day: 3 as const, open: '07:00', close: '16:00' }, // Wed
+        { day: 4 as const, open: '07:00', close: '16:00' }, // Thu
+        { day: 5 as const, open: '07:00', close: '16:00' }, // Fri
+        { day: 6 as const, open: '07:00', close: '17:00' }, // Sat
+      ],
+      closures: [],
+    },
+    // Burlington, VT (City Hall Park) — fork should swap with real coords.
+    geo: { lat: 44.4759, lng: -73.2121 },
   },
 
   nav: {

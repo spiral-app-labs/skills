@@ -389,14 +389,66 @@ Explicit list of things fork-agents must REJECT, with why:
 
 ---
 
-## Part 9 — Ethan's agency pitch as strategic output
+## Part 10 — The aliveness principle
+
+A static restaurant website feels **dated, amateur, and abandoned**. An alive site feels **cared-for, current, and premium**. Aliveness is simultaneously:
+
+- A **conversion lever** — "Opens in 1h 39m" kills the friction of "can I visit right now?"
+- A **trust signal** — "someone is running this place today, not a ghost from 2018"
+- A **register signal** — real-time data = current operation; static = frozen in time
+- A **retention driver** — regulars notice when a site updates seasonally (hero photos change, hours update for holidays, menu stamps refresh)
+
+### 10.1 The four aliveness categories
+
+1. **Time-aware** — `LiveOpenStatus` ("Open · closes in 1h 39m"), `DayPartGreeting`, `SeasonalMenuStamp`
+2. **Live data** — `LiveMapEmbed` (interactive, not static image), `LiveReviewsCarousel` (real Google/Yelp data), `LiveReservationAvailability` (real Tock/Resy), `LiveOrderActivity` (takeout social-proof)
+3. **Scroll + ambient motion** — `ScrollRevealSection`, `ParallaxHero`, `KenBurnsEffect`, `HorizontalMarquee` (already across 3 templates), `LoopingBackgroundVideo`, `VerticalReviewTicker`
+4. **Engagement on demand** — `DishHoverReveal`, `InstagramEmbedGrid`, `GalleryLightbox`, `BeforeAfterPlating`
+
+### 10.2 The aliveness minimum-viable set
+
+Every template fork, regardless of register, must ship with:
+- `LiveOpenStatus` (text-only for upscale, emoji-dotted for casual)
+- `LiveMapEmbed` replacing any static address
+- `ScrollReveal` on every major section
+- Hover states on every clickable element
+- `prefers-reduced-motion` respected throughout
+
+**Skipping these is not an option.** A site missing these feels amateur regardless of how gorgeous the typography is.
+
+### 10.3 Register-matched aliveness
+
+Different registers need different aliveness patterns:
+
+- **Upscale ceremonial** (alinea, qitchen, varro): restrained motion, press-quote rotations over user-review carousels, KenBurns on hero, styled Mapbox cartography. No loud marquees, no emoji dots.
+- **Warm destination** (1776, gusto, labrisa): hero video loops (kitchen action, coastal atmosphere), marquees already present, LiveReviewsCarousel for neighborhood trust, seasonal menu stamps.
+- **Casual / takeout** (pepper, plate, saladify, latte): urgency-copy LiveOpenStatus ("closing in 38 min"), DayPartGreeting ("lunch rush starts at 12"), InstagramEmbedGrid, LiveOrderActivity for takeout velocity.
+- **Modernist cocktail** (velvet-shaker, bramble): ambient LoopingBackgroundVideo (cocktail pour, bar action), no live reviews (discipline), scroll-reveal with architectural restraint.
+
+### 10.4 What breaks aliveness (anti-patterns)
+
+- **Fake "X people are viewing this" counters** — Fiverr-tier trust collapse
+- **Autoplay sound** — universally hated
+- **Hero video >4s load on 4G** — kills mobile conversion; use poster + progressive load
+- **Static hours only** — the customer has to do mental math to know if you're open
+- **Static address string** — customer opens Google Maps themselves; amateur signal
+- **Over-animation** — if 8 things move at once, nothing feels special
+- **Hardcoded "testimonials"** labeled "recent" — trust collapse when detected
+
+### 10.5 Implementation
+
+Full pattern catalog + implementation code + register-matched matrix in `research/aliveness-patterns.md`. **Treat the aliveness pass as the mandatory last step of every fork** — not optional, not Phase 2. A template that ships without it is incomplete.
+
+---
+
+## Part 11 — Ethan's agency pitch as strategic output
 
 Connecting all the above back to the agency GTM (per `project_agency_pitch_and_gtm.md`):
 
 **The 3-outcome pitch:**
-1. **Increase reservations** → means: matching the RIGHT template (§1.1 conversion model) + first-viewport conversion floor (§5.1) + mobile path (§5.4)
-2. **Improve first impression** → means: aesthetic-to-bill match (§1.2) + photography fidelity (§2.3, §5.2) + typography register (§2.1)
-3. **Feel premium** → means: restraint over saturation (§2.2) + menu-access friction (§1.3) + photography tier (§5.2)
+1. **Increase reservations** → means: matching the RIGHT template (§1.1 conversion model) + first-viewport conversion floor (§5.1) + mobile path (§5.4) + aliveness (§10 — LiveOpenStatus kills friction)
+2. **Improve first impression** → means: aesthetic-to-bill match (§1.2) + photography fidelity (§2.3, §5.2) + typography register (§2.1) + aliveness (§10 — current-feeling beats static every time)
+3. **Feel premium** → means: restraint over saturation (§2.2) + menu-access friction (§1.3) + photography tier (§5.2) + register-matched aliveness (§10.3 — KenBurns + styled maps + press quotes, not casual emoji dots)
 
 **"We already built yours" (speculative outbound):**
 - Register-LIFT match uses §1.2 + §2.1 + §2.3 as the matching algorithm

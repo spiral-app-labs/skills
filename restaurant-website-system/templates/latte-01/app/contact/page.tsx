@@ -8,6 +8,7 @@ import { LatteNav } from '../../components/LatteNav';
 import { LatteFooter } from '../../components/LatteFooter';
 import { content } from '../../content.example';
 import { PillButton } from '../../components/PillButton';
+import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 
 export default function ContactPage() {
   const c = content.contact;
@@ -81,6 +82,21 @@ export default function ContactPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+        {/* Aliveness retrofit (2026-04-20): interactive map surface below the
+            address block — replaces the static "placeholder address" feel per
+            aliveness-patterns.md §2.1. */}
+        <section className="w-full bg-canvas pb-16 md:pb-24">
+          <div className="max-w-page mx-auto px-5 md:px-10">
+            <LiveMapEmbed
+              address={`${b.address.line1}, ${b.address.line2}`}
+              lat={b.geo.lat}
+              lng={b.geo.lng}
+              zoom={15}
+              mapLabel={`${b.name} — ${b.address.line2}`}
+              aspectRatio="16/9"
+            />
           </div>
         </section>
       </main>

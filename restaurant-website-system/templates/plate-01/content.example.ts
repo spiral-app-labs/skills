@@ -43,6 +43,24 @@ export const content = {
       { label: 'Facebook',  href: '#' },
       { label: 'Twitter',   href: '#' },
     ],
+    // hoursConfig powers LiveOpenStatus (pure TZ-aware computation). Mirrors
+    // the display-string `home.hours` block (~11:30 open, late close, 7 days).
+    // day: 0=Sun..6=Sat.
+    hoursConfig: {
+      timezone: 'America/New_York',
+      ranges: [
+        { day: 0 as const, open: '10:00', close: '21:00' }, // Sun
+        { day: 1 as const, open: '11:30', close: '22:00' }, // Mon
+        { day: 2 as const, open: '11:30', close: '22:00' }, // Tue
+        { day: 3 as const, open: '11:30', close: '22:00' }, // Wed
+        { day: 4 as const, open: '11:30', close: '23:00' }, // Thu
+        { day: 5 as const, open: '11:30', close: '23:00' }, // Fri
+        { day: 6 as const, open: '10:00', close: '23:00' }, // Sat
+      ],
+      closures: [],
+    },
+    // Union Square, NYC — generic NYC default. Fork swap with real coords.
+    geo: { lat: 40.7260, lng: -73.9897 },
   },
 
   nav: {

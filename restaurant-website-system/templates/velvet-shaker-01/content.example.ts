@@ -16,6 +16,29 @@ export const content = {
     description:
       "A modern cocktail bar in the heart of Hong Kong — sensory drinks, modern design, global influences. Open nightly in Central.",
     city: 'Hong Kong',
+    // Address mirrors contact.visit.address (single-line for LiveMapEmbed label).
+    address: {
+      line1: '2F, 21 Wyndham Street',
+      line2: 'Lan Kwai Fong, Central, Hong Kong',
+    },
+    // hoursConfig powers LiveOpenStatus (pure TZ-aware computation). Mirrors
+    // contact.visit.hours — evening-only with crosses-midnight close at 02:00
+    // (hours lib handles the wrap). day: 0=Sun..6=Sat.
+    hoursConfig: {
+      timezone: 'Asia/Hong_Kong',
+      ranges: [
+        { day: 0 as const, open: '16:00', close: '02:00' }, // Sun
+        { day: 1 as const, open: '18:00', close: '02:00' }, // Mon
+        { day: 2 as const, open: '18:00', close: '02:00' }, // Tue
+        { day: 3 as const, open: '18:00', close: '02:00' }, // Wed
+        { day: 4 as const, open: '18:00', close: '02:00' }, // Thu
+        { day: 5 as const, open: '18:00', close: '02:00' }, // Fri
+        { day: 6 as const, open: '16:00', close: '02:00' }, // Sat
+      ],
+      closures: [],
+    },
+    // Central, Hong Kong — fork swap with real coords.
+    geo: { lat: 22.2783, lng: 114.1747 },
   },
 
   nav: {

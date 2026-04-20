@@ -23,7 +23,7 @@ export const content = {
     address: '397 W Virginia St',
     addressFull: '397 W Virginia St, Crystal Lake, IL 60014',
     phone: '(815) 356-1776',
-    email: 'contact@1776restaurant.example',
+    email: 'info@1776restaurant.com',
     reservationUrl: 'https://www.opentable.com/1776-restaurant',
     hours: [
       { days: 'Wednesday & Thursday', time: '4:00 PM – 10:00 PM' },
@@ -31,6 +31,21 @@ export const content = {
       { days: 'Sunday – Tuesday', time: 'Closed' },
     ],
     rating: { stars: 4.9, count: 1902 },
+    // Powers <LiveOpenStatus /> — see shared/lib/hours.ts HoursConfig schema.
+    // Fork rule: update timezone + ranges to match real venue. Add closures array for holidays.
+    // 1776 is in Crystal Lake, IL — America/Chicago. Sun/Mon/Tue closed (omitted from ranges).
+    hoursConfig: {
+      timezone: 'America/Chicago',
+      ranges: [
+        { day: 3 as const, open: '16:00', close: '22:00' }, // Wednesday
+        { day: 4 as const, open: '16:00', close: '22:00' }, // Thursday
+        { day: 5 as const, open: '16:00', close: '22:30' }, // Friday
+        { day: 6 as const, open: '16:00', close: '22:30' }, // Saturday
+      ],
+      closures: [],
+    },
+    // Primary location lat/lng — powers <LiveMapEmbed />. Fork rule: replace with real coords.
+    geo: { lat: 42.2411, lng: -88.3162 }, // Crystal Lake, IL (placeholder; forks replace)
   },
 
   nav: {

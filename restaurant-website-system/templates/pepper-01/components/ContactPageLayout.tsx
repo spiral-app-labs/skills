@@ -1,9 +1,15 @@
 // ContactPageLayout — page H1 + multi-city address blocks + message form +
 // delivery-info accordion reused from home. Per audit §11.
+//
+// Aliveness retrofit (2026-04-20): interactive LiveMapEmbed replaces the
+// static location tiles as the primary map surface. The city tiles still
+// render below as a quick visual finder.
 
 'use client';
 
 import { NumberedAccordion } from './NumberedAccordion';
+import { LiveMapEmbed } from './LiveMapEmbed';
+import { LiveOpenStatus } from './LiveOpenStatus';
 import { content } from '../content.example';
 
 export function ContactPageLayout() {
@@ -13,6 +19,20 @@ export function ContactPageLayout() {
       <section className="max-w-content mx-auto px-5 md:px-10 pt-16 md:pt-24 pb-10">
         <h1 className="text-hero-h1 font-extrabold text-ink">{c.title}</h1>
         <p className="mt-4 max-w-[720px] text-body text-ink-soft">{c.subtitle}</p>
+        <div className="mt-6">
+          <LiveOpenStatus hours={content.brand.hoursConfig} variant="pill" />
+        </div>
+      </section>
+
+      <section className="max-w-content mx-auto px-5 md:px-10 pb-12">
+        <LiveMapEmbed
+          address={`${content.brand.address.line1}, ${content.brand.address.line2}`}
+          lat={content.brand.geo.lat}
+          lng={content.brand.geo.lng}
+          zoom={15}
+          mapLabel={`${content.brand.name} — ${content.brand.address.line2}`}
+          aspectRatio="16/9"
+        />
       </section>
 
       <section className="max-w-content mx-auto px-5 md:px-10 pb-12">

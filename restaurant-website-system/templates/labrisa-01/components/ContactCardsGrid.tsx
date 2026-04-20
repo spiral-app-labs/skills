@@ -1,15 +1,19 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { content } from '../content.example';
+import { LiveMapEmbed } from './LiveMapEmbed';
 
 /**
  * ContactCardsGrid — 2 Call/Write cards + cocoa Opening Hours band + inset map.
  * Audit §3: card labels at 40px Imbue; hours band at 75px Imbue on cocoa.
+ *
+ * Aliveness retrofit (2026-04-20): the static Unsplash harbor placeholder
+ * is replaced with LiveMapEmbed — the contact page's primary map surface
+ * now geolocates to Saint-Tropez (brand.geo) with a Get-Directions CTA.
  */
 export function ContactCardsGrid() {
-  const { cards, hours, map } = content.contactPage;
+  const { cards, hours } = content.contactPage;
 
   return (
     <>
@@ -52,8 +56,15 @@ export function ContactCardsGrid() {
 
       <section className="w-full bg-canvas py-24 md:py-32">
         <div className="max-w-shell mx-auto px-6 md:px-12">
-          <div className="relative w-full aspect-[21/9] overflow-hidden border border-hairline">
-            <Image src={map.src} alt={map.alt} fill sizes="100vw" className="object-cover" style={{ filter: 'sepia(0.15) saturate(0.9)' }} />
+          <div className="border border-hairline">
+            <LiveMapEmbed
+              address={`${content.brand.address.line1}, ${content.brand.address.line2}`}
+              lat={content.brand.geo.lat}
+              lng={content.brand.geo.lng}
+              zoom={15}
+              mapLabel={content.brand.name}
+              aspectRatio="21/9"
+            />
           </div>
           <p className="text-body text-ink-muted text-center mt-6">
             {content.brand.address.line1}, {content.brand.address.line2}
