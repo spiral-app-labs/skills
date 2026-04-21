@@ -26,9 +26,9 @@ export const content = {
     email: 'info@1776restaurant.com',
     reservationUrl: 'https://www.opentable.com/1776-restaurant',
     hours: [
-      { days: 'Wednesday & Thursday', time: '4:00 PM – 10:00 PM' },
-      { days: 'Friday & Saturday', time: '4:00 PM – 10:30 PM' },
-      { days: 'Sunday – Tuesday', time: 'Closed' },
+      { days: 'Wednesday & Thursday', time: '4:00 PM to 10:00 PM' },
+      { days: 'Friday & Saturday', time: '4:00 PM to 10:30 PM' },
+      { days: 'Sunday to Tuesday', time: 'Closed' },
     ],
     rating: { stars: 4.9, count: 1902 },
     // Powers <LiveOpenStatus /> — see shared/lib/hours.ts HoursConfig schema.

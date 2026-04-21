@@ -22,12 +22,21 @@ const SUGGESTED_CHIPS = [
 
 const MARKER_RE = /\{\{([a-z_]+)(?::([a-z0-9-]+))?(?:\|([^}]+))?\}\}/gi;
 
+function stripDashes(s: string): string {
+  // Belt-and-suspenders: replace em/en dashes with commas even if the prompt
+  // rule fails. Keeps output typographically clean.
+  return s.replace(/\s*[—–]\s*/g, ', ');
+}
+
 function parseResponse(raw: string): Block[] {
   // Hide any trailing unclosed marker so it doesn't flash as raw text mid-stream.
-  let text = raw;
+  let text = stripDashes(raw);
   const lastOpen = text.lastIndexOf('{{');
   const lastClose = text.lastIndexOf('}}');
   if (lastOpen > lastClose) text = text.slice(0, lastOpen);
+
+  // Strip surrounding quotes that Haiku sometimes wraps the whole response in.
+  text = text.replace(/^\s*["']+/, '').replace(/["']+\s*$/, '');
 
   const out: Block[] = [];
   let lastEnd = 0;
@@ -47,7 +56,7 @@ function parseResponse(raw: string): Block[] {
     lastEnd = m.index + m[0].length;
   }
   if (lastEnd < text.length) {
-    const tail = text.slice(lastEnd);
+    const tail = text.slice(lastEnd).replace(/["']+\s*$/, '');
     if (tail.trim()) out.push({ type: 'text', text: tail });
   }
   return out;
@@ -163,10 +172,10 @@ function ReserveButton() {
       href={content.brand.reservationUrl}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex items-center gap-2 rounded-pill bg-accent px-4 py-2.5 text-button font-medium uppercase tracking-[2px] text-canvas hover:bg-accent-hover"
+      className="group inline-flex items-center gap-2 rounded-pill bg-accent px-5 py-3 text-button font-semibold uppercase tracking-[2px] text-canvas shadow-[0_6px_20px_-6px_rgba(201,169,110,0.6)] transition-all hover:-translate-y-[1px] hover:bg-accent-hover hover:shadow-[0_10px_28px_-6px_rgba(201,169,110,0.8)]"
     >
       Reserve on OpenTable
-      <span aria-hidden>→</span>
+      <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
     </a>
   );
 }
@@ -373,7 +382,7 @@ export function AskConcierge() {
         ...next,
         {
           role: 'assistant',
-          content: `Sorry — I hit a snag (${msg}). Please call us directly. {{call}}`,
+          content: `Sorry, I hit a snag (${msg}). Please call us directly. {{call}}`,
         },
       ]);
     } finally {
@@ -461,7 +470,7 @@ export function AskConcierge() {
               {messages.map((m, i) =>
                 m.role === 'user' ? (
                   <div key={i} className="flex justify-end">
-                    <div className="max-w-[85%] rounded-card bg-accent px-4 py-2.5 text-body-sm text-canvas">
+                    <div className="max-w-[85%] rounded-card border border-border/60 bg-surface px-4 py-2.5 text-body-sm text-text">
                       {m.content}
                     </div>
                   </div>
@@ -517,7 +526,7 @@ export function AskConcierge() {
               </button>
             </div>
             <p className="mt-2 text-[11px] leading-tight text-text-subtle">
-              AI concierge — for allergy or large-party questions, please call{' '}
+              AI concierge, for allergy or large-party questions, please call{' '}
               {content.brand.phone}.
             </p>
           </form>

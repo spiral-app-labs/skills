@@ -51,17 +51,29 @@ When the AI is confident the intent is "complete enough" (party size + date at m
 
 Each supported platform gets a URL builder module. Each builder knows which fields that platform supports as deeplink params vs. which must be passed as free-text "special request."
 
-**OpenTable** (verify exact schema; historically supports):
-- `covers` (party size)
-- `dateTime` (combined date + time, ISO 8601)
-- `ref` (referral attribution — we use this to track chat-originated bookings)
-- Special requests: **not a URL param** — must be pasted into a visible field by the diner. For now, show the text in the button preview and auto-copy it to clipboard on tap with a small toast: "Special request copied — paste it in the notes field on OpenTable."
+**OpenTable (VERIFIED):** the working deeplink pattern is the `restref/client/` endpoint, not params appended to the slug URL. Format:
 
-**Resy:** `party_size`, `date`, `time`. No deeplink for special requests — clipboard-copy fallback.
+```
+https://www.opentable.com/restref/client/?restref=<NUMERIC_ID>&datetime=<YYYY-MM-DDTHH:MM>&covers=<N>
+```
 
-**Tock:** Different schema. Typically widget-based embed on our own page (like alinea's TockWidgetEmbed). For Tock, the handoff instead pre-populates the embedded widget state via window messaging — out of scope for MVP, use clipboard fallback.
+Confirmed params:
+- `restref` — **numeric restaurant ID** (NOT the slug). Must be looked up and stored per-client during onboarding (see "Onboarding" section below).
+- `datetime` — lowercase, one word. Format must be strictly `YYYY-MM-DDTHH:MM`. Any other format silently fails.
+- `covers` — integer, 1–20.
 
-**Native form (future):** Full control — every field goes to the form.
+NOT supported as URL params:
+- Special requests / notes. Clipboard-copy fallback on tap with a small toast: "Special request copied, paste it in the notes field on OpenTable."
+- Occasion / birthday flag. Rolled into the special-request text.
+- Referral / attribution tracking. Not documented publicly; we instrument on our side (log tap events with intent snapshot) to measure chat-originated bookings.
+
+Source: verified via the Webflow community thread on custom OpenTable integrations.
+
+**Resy:** similar URL pattern — `https://resy.com/cities/<city>/<venue>?party_size=N&date=YYYY-MM-DD&seats=N`. URL-based, no auth. Clipboard-copy fallback for special requests.
+
+**Tock** (alinea): widget-based on our own page via the existing `TockWidgetEmbed`. Handoff here is not a URL redirect — either postMessage into the embedded iframe, or punt and rely on the widget being visible on the page with the special-request text clipboard-copied. Start with clipboard fallback in v1; postMessage is a Phase 2 upgrade.
+
+**Native form (future):** Full control, every field goes to the form.
 
 ### System prompt additions
 
@@ -103,12 +115,42 @@ Add example turns in the prompt showing the tool-call + marker pattern.
 - Pre-booking payment / deposits (relevant for tasting-menu restaurants like alinea) — Phase 3
 - Multi-restaurant support / group bookings — not a common enough case
 
-## Open questions
+## Onboarding: capturing the OpenTable `restref` per client
 
-1. **OpenTable referral attribution scheme** — do we use `ref=` or is there a newer UTM pattern? Need to verify against their current deeplink docs.
-2. **Clipboard fallback UX** — is a toast enough? Should we instead open a modal with copy-to-clipboard button + explicit instructions before redirecting? Verify with a user test.
-3. **When to show the Reserve button** — immediately after first mention of "book a table"? Or wait until we have ≥2 intent fields? I lean toward: show immediately with whatever we have, enrich as the conversation continues.
-4. **Does the button update in-place or append?** If the diner continues the conversation after Reserve shows, intent changes. Do we re-render the button? I'd say yes, in-place update.
+Every new client site needs their numeric OpenTable restaurant ID stored in `content.ts`:
+
+```ts
+brand: {
+  // ...existing fields
+  reservationPlatform: 'opentable',          // 'opentable' | 'resy' | 'tock' | 'native'
+  reservationUrl: 'https://www.opentable.com/1776-restaurant', // human-friendly fallback link
+  reservationRestref: '123456',              // numeric ID, required for deeplink pre-fill
+}
+```
+
+How to find the numeric ID:
+
+1. Open the client's OpenTable widget-builder page (any restaurant's "Book now" widget generator embeds the numeric ID in the generated HTML).
+2. Inspect the generated iframe/script and look for `rid=` or `restref=` in the query string.
+3. Paste the number into `content.ts`.
+
+This is a 30-second manual step during client onboarding. We add it to the new-client checklist. Never guess or scrape — if the number isn't verified, the Reserve button should gracefully degrade to the slug URL (existing behavior).
+
+## Acceptance criteria (must pass before merging)
+
+1. **Desktop Chrome:** party size + date + time all pre-fill on OpenTable's page.
+2. **Mobile Safari:** same three fields pre-fill. If Mobile Safari drops any param silently, we either fix it or explicitly document the gap.
+3. **Clipboard fallback:** on Reserve tap, special-request text lands in clipboard and toast appears.
+4. **Graceful degrade:** if `reservationRestref` is missing from content.ts, Reserve opens the plain slug URL without errors.
+5. **Intent preview:** the button shows "4 guests · Sat Mar 22 · 7:00 PM · birthday + gluten-free" before tap. If any field is missing, the preview hides it rather than showing "undefined."
+6. **Tool-call robustness:** if Haiku emits `update_reservation_intent` with partial fields over multiple turns, each call merges cleanly into running state.
+
+## Open questions (remaining)
+
+1. **Clipboard fallback UX** — is a toast enough? Should we instead open a modal with copy-to-clipboard button + explicit instructions before redirecting? Verify with a user test.
+2. **When to show the Reserve button** — immediately after first mention of "book a table"? Or wait until we have ≥2 intent fields? Lean: show immediately with whatever we have, enrich as the conversation continues.
+3. **Does the button update in-place or append?** If the diner continues the conversation after Reserve shows, intent changes. Lean: in-place update.
+4. **Tock postMessage integration** — Phase 2. For v1 alinea gets the clipboard fallback and the widget already lives on the page.
 
 ## Success metrics
 

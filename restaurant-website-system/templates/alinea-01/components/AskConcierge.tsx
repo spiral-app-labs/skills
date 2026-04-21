@@ -27,8 +27,14 @@ const SUGGESTED_CHIPS = [
 
 const MARKER_RE = /\{\{([a-z_]+)(?::([a-z0-9-]+))?(?:\|([^}]+))?\}\}/gi;
 
+function stripDashes(s: string): string {
+  // Belt-and-suspenders: replace em/en dashes with commas even if the prompt
+  // rule fails. Keeps output typographically clean.
+  return s.replace(/\s*[—–]\s*/g, ', ');
+}
+
 function parseResponse(raw: string): Block[] {
-  let text = raw;
+  let text = stripDashes(raw);
   const lastOpen = text.lastIndexOf('{{');
   const lastClose = text.lastIndexOf('}}');
   if (lastOpen > lastClose) text = text.slice(0, lastOpen);
@@ -124,18 +130,18 @@ function HoursCard() {
       <div className="mt-3 space-y-1 text-body-sm font-body text-text-muted">
         <div className="flex justify-between gap-4">
           <span>Sunday</span>
-          <span className="text-text">5:00pm – 9:30pm</span>
+          <span className="text-text">5:00pm to 9:30pm</span>
         </div>
         <div className="flex justify-between gap-4">
-          <span>Wednesday – Thursday</span>
-          <span className="text-text">5:00pm – 9:30pm</span>
+          <span>Wednesday, Thursday</span>
+          <span className="text-text">5:00pm to 9:30pm</span>
         </div>
         <div className="flex justify-between gap-4">
-          <span>Friday – Saturday</span>
-          <span className="text-text">5:00pm – 10:00pm</span>
+          <span>Friday, Saturday</span>
+          <span className="text-text">5:00pm to 10:00pm</span>
         </div>
         <div className="flex justify-between gap-4">
-          <span>Monday – Tuesday</span>
+          <span>Monday, Tuesday</span>
           <span className="text-text-muted/80">Closed</span>
         </div>
       </div>
@@ -369,7 +375,7 @@ export function AskConcierge() {
         ...next,
         {
           role: 'assistant',
-          content: `Apologies — our system couldn't complete that (${msg}). Please reach our hospitality team at hospitality@example.com.`,
+          content: `Apologies, our system couldn't complete that (${msg}). Please reach our hospitality team at hospitality@example.com.`,
         },
       ]);
     } finally {
@@ -510,7 +516,7 @@ export function AskConcierge() {
               </button>
             </div>
             <p className="mt-2 text-[11px] leading-tight text-text-muted">
-              AI concierge — for allergies or private-event inquiries, please
+              AI concierge, for allergies or private-event inquiries, please
               reach hospitality@example.com or book through Tock.
             </p>
           </form>

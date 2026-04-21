@@ -88,7 +88,8 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
             };
             if (parsed.error) throw new Error(parsed.error);
             if (parsed.text) {
-              assistantText += parsed.text;
+              // Strip em/en dashes on the way in so they never render.
+              assistantText += parsed.text.replace(/\s*[—–]\s*/g, ', ');
               setMessages([
                 ...nextMessages,
                 { role: 'assistant', content: assistantText },
@@ -105,7 +106,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
         ...nextMessages,
         {
           role: 'assistant',
-          content: `Sorry — I hit a snag (${msg}). Please call us directly.`,
+          content: `Sorry, I hit a snag (${msg}). Please call us directly.`,
         },
       ]);
     } finally {
@@ -181,7 +182,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
             {messages.length === 0 && (
               <div className="space-y-4">
                 <p className="font-display text-section-h3 leading-tight text-text-dark">
-                  Hello — how can I help?
+                  Hello, how can I help?
                 </p>
                 <p className="text-body-sm text-text-muted">
                   Menu, hours, directions, or a table tonight. Ask anything.
@@ -261,7 +262,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
               </button>
             </div>
             <p className="mt-2 text-[11px] leading-tight text-text-muted">
-              AI concierge — confirm with the restaurant for allergy or time-sensitive
+              AI concierge, confirm with the restaurant for allergy or time-sensitive
               questions.
             </p>
           </form>
