@@ -26,7 +26,7 @@ export function BrandStoryParagraph({
             <StickyColumn top={96} className="grid grid-cols-3 md:grid-cols-1 gap-3 md:gap-4">
               {thumbnails.slice(0, 3).map((t, i) => (
                 <div key={i} className="relative aspect-square overflow-hidden">
-                  <CurtainImage src={t.src} alt={t.alt} from="bottom" delay={i * 0.1} />
+                  <CurtainImage src={t.src} alt={t.alt} from="top" delay={i * 0.1} />
                 </div>
               ))}
             </StickyColumn>

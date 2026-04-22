@@ -37,7 +37,7 @@ export function OccasionsStaircase({ eyebrow, items }: Props) {
             <div key={it.heading} className={i === 1 ? 'md:mt-20' : i === 2 ? 'md:mt-10' : ''}>
               <h3 className="text-h3-large mb-6">{it.heading}</h3>
               <div className="relative aspect-[4/3] overflow-hidden mb-6">
-                <CurtainImage src={it.photo.src} alt={it.photo.alt} from="bottom" delay={i * 0.1} />
+                <CurtainImage src={it.photo.src} alt={it.photo.alt} from="top" delay={i * 0.1} />
               </div>
               <p className="text-body text-ink/75 leading-relaxed">{it.body}</p>
             </div>

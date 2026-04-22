@@ -11,7 +11,7 @@ export function MenuPhotoStrip({ photos }: { photos: ReadonlyArray<Photo> }) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {photos.map((p, i) => (
             <div key={i} className="relative aspect-[4/3] overflow-hidden">
-              <CurtainImage src={p.src} alt={p.alt} from="bottom" delay={i * 0.08} />
+              <CurtainImage src={p.src} alt={p.alt} from="top" delay={i * 0.08} />
             </div>
           ))}
         </div>
