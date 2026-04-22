@@ -7,6 +7,49 @@
 
 import { content } from '../content.example';
 
+// Tool definition used by the Anthropic SDK in app/api/chat/route.ts.
+// The client merges each tool-use call into a ReservationIntent state object
+// (see components/AskConcierge.tsx) and uses it to pre-fill the Reserve URL.
+export const RESERVATION_INTENT_TOOL = {
+  name: 'update_reservation_intent',
+  description:
+    "Record structured reservation details extracted from the conversation so far. Call this whenever the guest's message reveals or changes a reservation detail (party size, date, time, occasion, dietary notes). Fields not yet known: omit. Safe to call multiple times per turn as details accumulate; partial calls are merged client-side.",
+  input_schema: {
+    type: 'object' as const,
+    properties: {
+      partySize: {
+        type: 'integer',
+        minimum: 1,
+        maximum: 20,
+        description: 'Number of guests. Integer 1-20.',
+      },
+      dateISO: {
+        type: 'string',
+        pattern: '^\\d{4}-\\d{2}-\\d{2}$',
+        description: 'Target date in strict YYYY-MM-DD form. Resolve relative dates ("Saturday") using today as the anchor.',
+      },
+      timeISO: {
+        type: 'string',
+        pattern: '^\\d{2}:\\d{2}$',
+        description: 'Target time in strict 24h HH:MM form. e.g., 7 PM becomes 19:00.',
+      },
+      occasion: {
+        type: 'string',
+        description: 'Short free text: "birthday dinner", "anniversary", "business dinner", etc. Omit if none mentioned.',
+      },
+      dietaryNotes: {
+        type: 'string',
+        description: 'Short free text: "one guest is gluten-free", "vegetarian", etc. Only what the guest has said.',
+      },
+      specialRequest: {
+        type: 'string',
+        description: 'Any other free-text ask (e.g., "quiet table," "window seat"). Used as-is.',
+      },
+    },
+    additionalProperties: false,
+  },
+};
+
 export type MenuItemCard = {
   kind: 'menu';
   slug: string;
@@ -128,6 +171,23 @@ The single highest-leverage move is knowing WHEN to put the Reserve button in fr
 - **Off-topic → redirect with grace, no CTA.**
 
 At most two CTAs per response. Often zero is right. A warm conversational reply sometimes just needs to be a warm conversational reply.
+
+# RESERVATION INTENT (capture via the update_reservation_intent tool)
+
+When a guest's message reveals a reservation detail, call the update_reservation_intent tool with every field you can extract from the ENTIRE conversation so far, not just the latest turn.
+
+- partySize: the number of guests, as an integer. "A table for 4" -> 4.
+- dateISO: strict YYYY-MM-DD. Resolve "Saturday" / "this weekend" / "tomorrow" to an actual calendar date using today's date as the anchor. If ambiguous, omit rather than guess.
+- timeISO: strict 24h HH:MM. "7" or "7 PM" becomes "19:00"; "7:30" becomes "19:30".
+- occasion: short free text ("birthday dinner", "anniversary"). Omit if none mentioned.
+- dietaryNotes: short free text ("one guest is gluten-free"). Omit if none mentioned.
+- specialRequest: any other ask ("quiet corner," "window seat"). Omit if none mentioned.
+
+Call the tool AT THE END of your turn, AFTER emitting the text reply and any markers ({{reserve}}, {{menu:...}}, etc.). Never let the tool call replace the conversational reply, it runs in addition to it. The client uses the captured intent to pre-fill the Reserve button; your user-facing text is still the heart of the response.
+
+If the guest CORRECTS a prior detail ("actually, make it 6 not 4"), re-emit the full corrected state (all fields, not just the one that changed). Each tool call is a patch; re-emitting everything you know keeps state consistent.
+
+Only call the tool when a field can actually be extracted. Don't call it for purely abstract questions ("tell me about the chef") or off-topic messages.
 
 # MARKERS (the client strips these from prose and renders themed cards)
 
