@@ -1,6 +1,6 @@
 # PRD 01 — Smart Reservation Handoff
 
-**Status:** draft, not built
+**Status:** shipped 2026-04-21, initial targets 1776 + kit scaffold (framework-only; OpenTable `restref` pending)
 **Feature lead:** chat concierge
 **Targeted template:** all forks that ship the concierge (1776, alinea, bamzi initially)
 **Dependencies:** existing AskConcierge component + marker system
