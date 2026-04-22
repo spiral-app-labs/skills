@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/templates/1776-redesign-01", "run", "dev"],
       "port": 3020
+    },
+    {
+      "name": "walnut-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/ethantalreja/agency-forks/walnut-speakeasy-01", "run", "dev", "--", "--port", "3111"],
+      "port": 3111
     }
   ]
 }

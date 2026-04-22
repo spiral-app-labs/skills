@@ -84,6 +84,27 @@ export const content = {
     numberedEyebrow: { number: '03', label: 'OCCASIONS' },
     occasionLabel: 'Romantic',
 
+    // 3-up "occasions" cards — replaces the original NumberedEyebrow's single
+    // label. Mirrors the Framer source's full Romantic / Business / Parties
+    // staircase (frame-022 in /tmp/vs-vid).
+    occasions: [
+      {
+        heading: 'Romantic',
+        body: 'A cozy evening designed for connection. Soft lighting and refined details create the perfect setting for a romantic night out.',
+        photo: { src: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1000&q=80', alt: 'Romantic table for two' },
+      },
+      {
+        heading: 'Business',
+        body: 'Plan meetings or team dinners in a calm, upscale space. Great service and a private feel help you make a strong first impression.',
+        photo: { src: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=1000&q=80', alt: 'Quiet upscale interior' },
+      },
+      {
+        heading: 'Parties',
+        body: 'Celebrate freely with great drinks, music, and atmosphere. Perfect for birthdays, get-togethers, and spontaneous fun with friends.',
+        photo: { src: 'https://images.unsplash.com/photo-1574870111867-089730e5a72b?w=1000&q=80', alt: 'Celebration at the bar' },
+      },
+    ],
+
     brandStory: {
       paragraph:
         "Velvet Shaker began its journey in 2022, inspired by the vibrant nightlife of Hong Kong and a passion for innovative mixology. What started as a small dream has become a destination for design-literate drinkers looking for a quieter, more deliberate bar.",

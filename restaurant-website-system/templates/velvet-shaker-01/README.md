@@ -31,6 +31,25 @@ npm run typecheck
 - `ThreeColFooter` — canonical minimalist footer.
 - `LowChromeFaqAccordion` — borderless FAQ; shares ancestry with plate's FAQAccordion.
 - `AsymmetricMiniGallery` — 2-photo offset gallery.
+- **`ScrollFillDivider`** (added 2026-04-22) — 1px line, fills L→R with easeOutExpo on scroll-into-view. Shooting-star feel. Used inside `NumberedEyebrow`.
+- **`CurtainImage`** (added 2026-04-22) — `clip-path` reveal from any direction on scroll-into-view. Used by 4 image components.
+- **`StickyColumn`** (added 2026-04-22) — `position: sticky` wrapper for image columns. Used by `BrandStoryParagraph`.
+
+## Motion (added 2026-04-22, corrects original audit understatement)
+
+This template uses **scroll-triggered choreography on every section** — not flashy, but load-bearing for the "magazine catalogue" feel. Original audit said "minimal motion" because the static capture methodology missed mid-animation states. Corrected in audit §4. Three primitives carry it:
+
+| Primitive | What it does | Used by |
+|---|---|---|
+| `ScrollFillDivider` | Shooting-star L→R fill on a 1px line, easeOutExpo, ~1.1s, once-only | `NumberedEyebrow` |
+| `CurtainImage` | clip-path reveal from `bottom`/`top`/`left`/`right`, ~1.0s, once-only, stagger-friendly | `CocktailPhotoRow`, `MenuPhotoStrip`, `AsymmetricMiniGallery`, `BrandStoryParagraph` |
+| `StickyColumn` | `position: sticky` wrapper, default top:80 | `BrandStoryParagraph` (pins thumbnails while text scrolls) |
+
+All three honor `prefers-reduced-motion` (render in final state, no animation).
+
+## Reservation handoff (concierge-kit)
+
+The catalog template stays no-CTA per audit §12.4. Reservation-heavy forks (e.g., `walnut-speakeasy-01`) integrate `concierge-kit` per `research/chat-concierge/concierge-kit/RECIPE.md` — floating widget, not a banner CTA, so it doesn't break the wordmark-bookend discipline. Document the deviation in fork notes.
 
 ## Locked — do not touch per audit §12.4
 - Two-token palette.

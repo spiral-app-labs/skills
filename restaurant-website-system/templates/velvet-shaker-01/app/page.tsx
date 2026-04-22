@@ -1,26 +1,30 @@
 import { content } from '../content.example';
 import { WordmarkBookendLayout } from '../components/WordmarkBookendLayout';
-import { HomeIntroBlock } from '../components/HomeIntroBlock';
+import { MassiveWordmarkHero } from '../components/MassiveWordmarkHero';
 import { CocktailPhotoRow } from '../components/CocktailPhotoRow';
 import { EditorialParagraphBlock } from '../components/EditorialParagraphBlock';
 import { AsymmetricMiniGallery } from '../components/AsymmetricMiniGallery';
 import { NoPriceNamedList } from '../components/NoPriceNamedList';
-import { NumberedEyebrow } from '../components/NumberedEyebrow';
+import { OccasionsStaircase } from '../components/OccasionsStaircase';
 import { BrandStoryParagraph } from '../components/BrandStoryParagraph';
 import { EventsPreviewGrid } from '../components/EventsPreviewGrid';
 import { ScrollRevealSubtle } from '../components/ScrollReveal';
 
-// Home page — note the deliberate small-h1 + massive-wordmark-at-bottom bookend.
-// The wordmark echo lives in WordmarkBookendLayout, NOT here.
+// Home page — corrected 2026-04-22.
 //
-// Aliveness retrofit (2026-04-20): below-hero sections wrapped in
-// ScrollRevealSubtle (intensity 1 — modernist restraint). HomeIntroBlock is
-// the hero-analogue here and stays unwrapped per aliveness-patterns.md §3.1.
+// Original recreation used a small h1 (HomeIntroBlock) and punted the display
+// moment to the footer wordmark echo. Re-investigation of the source via
+// scroll-video capture (frame-002 in /tmp/vs-vid) revealed the source ACTUALLY
+// leads with a massive wordmark hero. The "bookend" is two massive wordmarks
+// (top hero + footer echo), not small + big. Replaced HomeIntroBlock with
+// MassiveWordmarkHero. Replaced single-label NumberedEyebrow with
+// OccasionsStaircase (3 cards, mirroring the source's Romantic / Business /
+// Parties row).
 export default function HomePage() {
   const h = content.home;
   return (
     <WordmarkBookendLayout>
-      <HomeIntroBlock />
+      <MassiveWordmarkHero />
       <ScrollRevealSubtle>
         <CocktailPhotoRow photos={h.cocktailPhotoRow} />
       </ScrollRevealSubtle>
@@ -34,7 +38,10 @@ export default function HomePage() {
         <NoPriceNamedList items={h.cocktailsNoPrice} />
       </ScrollRevealSubtle>
       <ScrollRevealSubtle>
-        <NumberedEyebrow number={h.numberedEyebrow.number} label={h.numberedEyebrow.label} displayLabel={h.occasionLabel} />
+        <OccasionsStaircase
+          eyebrow={{ number: h.numberedEyebrow.number, label: h.numberedEyebrow.label }}
+          items={h.occasions}
+        />
       </ScrollRevealSubtle>
       <ScrollRevealSubtle>
         <BrandStoryParagraph paragraph={h.brandStory.paragraph} thumbnails={h.brandStory.thumbnails} />
