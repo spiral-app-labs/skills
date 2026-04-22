@@ -25,6 +25,8 @@ export const content = {
     phone: '(815) 356-1776',
     email: 'info@1776restaurant.com',
     reservationUrl: 'https://www.opentable.com/1776-restaurant',
+    reservationPlatform: 'opentable' as const,
+    reservationRestref: '', // numeric OpenTable restaurant ID; empty = graceful fallback to slug URL. Lookup via https://www.otrestaurant.com/marketing/reservationwidget when available.
     hours: [
       { days: 'Wednesday & Thursday', time: '4:00 PM to 10:00 PM' },
       { days: 'Friday & Saturday', time: '4:00 PM to 10:30 PM' },
