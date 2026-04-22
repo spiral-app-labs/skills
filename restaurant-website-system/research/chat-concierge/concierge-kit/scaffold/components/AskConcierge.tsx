@@ -5,7 +5,7 @@
 // tokens come from ../lib/concierge-voice.ts. This file should never need
 // hand-edits per fork.
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 // @ts-expect-error — each template supplies its own content shape.
 import { content } from '../content';
 import { computeOpenStatus } from '../lib/hours';
@@ -18,6 +18,15 @@ import {
   type PrivateSpaceCard,
 } from '../lib/concierge-kb';
 import { VOICE } from '../lib/concierge-voice';
+import {
+  buildReservationUrl,
+  buildSpecialRequest,
+  copyToClipboard,
+  formatIntentPreview,
+  mergeIntent,
+  type ReservationConfig,
+  type ReservationIntent,
+} from '../lib/concierge-reserve';
 import { THEME } from './concierge-theme';
 
 type ChatMessage = { role: 'user' | 'assistant'; content: string };
@@ -166,12 +175,46 @@ function MapCard() {
   );
 }
 
-function ReserveButton() {
-  const url = (content as any).brand?.reservationUrl ?? '#reserve';
+function ReserveButton({
+  intent,
+  config,
+  onToast,
+}: {
+  intent: ReservationIntent;
+  config: ReservationConfig;
+  onToast: (message: string) => void;
+}) {
+  const url = useMemo(() => buildReservationUrl(intent, config), [intent, config]);
+  const preview = useMemo(() => formatIntentPreview(intent), [intent]);
+  const special = useMemo(() => buildSpecialRequest(intent), [intent]);
+
+  const handleClick = useCallback(async () => {
+    if (!special) return;
+    const ok = await copyToClipboard(special);
+    onToast(
+      ok
+        ? 'Special request copied, paste it in the notes field on OpenTable.'
+        : 'Mention your special request in the notes field of the reservation platform.',
+    );
+  }, [special, onToast]);
+
   return (
-    <a href={url} target="_blank" rel="noreferrer" className={THEME.cta.primaryClasses}>
-      Reserve <span aria-hidden>→</span>
-    </a>
+    <div className="flex flex-col gap-1">
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        onClick={handleClick}
+        className={THEME.cta.primaryClasses}
+      >
+        Reserve <span aria-hidden>→</span>
+      </a>
+      {preview && (
+        <p className="text-[11px] leading-tight tracking-[1px] text-text-muted">
+          {preview}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -208,8 +251,20 @@ function CtaRow({ children }: { children: React.ReactNode }) {
   return <div className="flex flex-wrap gap-2">{children}</div>;
 }
 
-function renderCtaButton(block: Extract<Block, { type: 'marker' }>, i: number) {
-  if (block.kind === 'reserve') return <ReserveButton key={i} />;
+function renderCtaButton(
+  block: Extract<Block, { type: 'marker' }>,
+  i: number,
+  ctx: { intent: ReservationIntent; config: ReservationConfig; onToast: (m: string) => void },
+) {
+  if (block.kind === 'reserve')
+    return (
+      <ReserveButton
+        key={i}
+        intent={ctx.intent}
+        config={ctx.config}
+        onToast={ctx.onToast}
+      />
+    );
   if (block.kind === 'call') return <CallButton key={i} />;
   if (block.kind === 'page' && block.id)
     return <PageLinkButton key={i} path={block.id} label={block.label ?? block.id} />;
@@ -234,7 +289,10 @@ function renderRichBlock(block: Extract<Block, { type: 'marker' }>, i: number) {
   return null;
 }
 
-function renderBlocks(blocks: Block[]) {
+function renderBlocks(
+  blocks: Block[],
+  ctx: { intent: ReservationIntent; config: ReservationConfig; onToast: (m: string) => void },
+) {
   const out: React.ReactNode[] = [];
   let i = 0;
   while (i < blocks.length) {
@@ -255,7 +313,11 @@ function renderBlocks(blocks: Block[]) {
         blocks[i].type === 'marker' &&
         CTA_KINDS.has((blocks[i] as Extract<Block, { type: 'marker' }>).kind)
       ) {
-        const btn = renderCtaButton(blocks[i] as Extract<Block, { type: 'marker' }>, i);
+        const btn = renderCtaButton(
+          blocks[i] as Extract<Block, { type: 'marker' }>,
+          i,
+          ctx,
+        );
         if (btn) ctaButtons.push(btn);
         i++;
       }
@@ -269,7 +331,17 @@ function renderBlocks(blocks: Block[]) {
   return out;
 }
 
-function AssistantBubble({ text }: { text: string }) {
+function AssistantBubble({
+  text,
+  intent,
+  config,
+  onToast,
+}: {
+  text: string;
+  intent: ReservationIntent;
+  config: ReservationConfig;
+  onToast: (m: string) => void;
+}) {
   const blocks = useMemo(() => parseResponse(text), [text]);
   if (blocks.length === 0) {
     return (
@@ -280,7 +352,7 @@ function AssistantBubble({ text }: { text: string }) {
       </div>
     );
   }
-  return <div className="space-y-3">{renderBlocks(blocks)}</div>;
+  return <div className="space-y-3">{renderBlocks(blocks, { intent, config, onToast })}</div>;
 }
 
 // ---- Main component --------------------------------------------------------
@@ -291,8 +363,32 @@ export function AskConcierge() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [streaming, setStreaming] = useState(false);
+  const [intent, setIntent] = useState<ReservationIntent>({});
+  const [toast, setToast] = useState<string | null>(null);
+  const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const showToast = useCallback((message: string) => {
+    setToast(message);
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => setToast(null), 4000);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    };
+  }, []);
+
+  const reservationConfig: ReservationConfig = useMemo(
+    () => ({
+      platform: ((content as any).brand?.reservationPlatform ?? 'opentable') as ReservationConfig['platform'],
+      fallbackUrl: (content as any).brand?.reservationUrl ?? '#reserve',
+      restref: (content as any).brand?.reservationRestref,
+    }),
+    [],
+  );
 
   useEffect(() => {
     const onScroll = () => {
@@ -347,11 +443,25 @@ export function AskConcierge() {
           const payload = line.slice(6).trim();
           if (!payload) continue;
           try {
-            const parsed = JSON.parse(payload) as { text?: string; done?: boolean; error?: string };
+            const parsed = JSON.parse(payload) as {
+              text?: string;
+              done?: boolean;
+              error?: string;
+              tool_use?: { name: string; input: unknown };
+            };
             if (parsed.error) throw new Error(parsed.error);
             if (parsed.text) {
               acc += parsed.text;
               setMessages([...next, { role: 'assistant', content: acc }]);
+            }
+            if (
+              parsed.tool_use &&
+              parsed.tool_use.name === 'update_reservation_intent' &&
+              parsed.tool_use.input &&
+              typeof parsed.tool_use.input === 'object'
+            ) {
+              const patch = parsed.tool_use.input as Partial<ReservationIntent>;
+              setIntent((prev) => mergeIntent(prev, patch));
             }
           } catch { /* ignore malformed frame */ }
         }
@@ -427,7 +537,12 @@ export function AskConcierge() {
                   </div>
                 ) : (
                   <div key={i} className="max-w-full">
-                    <AssistantBubble text={m.content} />
+                    <AssistantBubble
+                      text={m.content}
+                      intent={intent}
+                      config={reservationConfig}
+                      onToast={showToast}
+                    />
                   </div>
                 ),
               )}
@@ -475,6 +590,16 @@ export function AskConcierge() {
               AI concierge, confirm with the restaurant for allergy or time-sensitive questions.
             </p>
           </form>
+
+          {toast && (
+            <div
+              role="status"
+              aria-live="polite"
+              className="pointer-events-none absolute inset-x-4 bottom-[84px] mx-auto max-w-sm rounded-card border border-accent/60 bg-surface px-4 py-2.5 text-body-sm text-text shadow-lg"
+            >
+              {toast}
+            </div>
+          )}
         </div>
       </div>
     </>

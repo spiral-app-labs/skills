@@ -9,6 +9,49 @@
 import { content } from '../content';
 import { VOICE } from './concierge-voice';
 
+// Tool definition used by the Anthropic SDK in app/api/chat/route.ts.
+// The client merges each tool-use call into a ReservationIntent state object
+// (see components/AskConcierge.tsx) and uses it to pre-fill the Reserve URL.
+export const RESERVATION_INTENT_TOOL = {
+  name: 'update_reservation_intent',
+  description:
+    "Record structured reservation details extracted from the conversation so far. Call this whenever the guest's message reveals or changes a reservation detail (party size, date, time, occasion, dietary notes). Fields not yet known: omit. Safe to call multiple times per turn as details accumulate; partial calls are merged client-side.",
+  input_schema: {
+    type: 'object' as const,
+    properties: {
+      partySize: {
+        type: 'integer',
+        minimum: 1,
+        maximum: 20,
+        description: 'Number of guests. Integer 1-20.',
+      },
+      dateISO: {
+        type: 'string',
+        pattern: '^\\d{4}-\\d{2}-\\d{2}$',
+        description: 'Target date in strict YYYY-MM-DD form. Resolve relative dates ("Saturday") using today as the anchor.',
+      },
+      timeISO: {
+        type: 'string',
+        pattern: '^\\d{2}:\\d{2}$',
+        description: 'Target time in strict 24h HH:MM form. e.g., 7 PM becomes 19:00.',
+      },
+      occasion: {
+        type: 'string',
+        description: 'Short free text: "birthday dinner", "anniversary", "business dinner", etc. Omit if none mentioned.',
+      },
+      dietaryNotes: {
+        type: 'string',
+        description: 'Short free text: "one guest is gluten-free", "vegetarian", etc. Only what the guest has said.',
+      },
+      specialRequest: {
+        type: 'string',
+        description: 'Any other free-text ask (e.g., "quiet table," "window seat"). Used as-is.',
+      },
+    },
+    additionalProperties: false,
+  },
+};
+
 // ---- Card types -------------------------------------------------------------
 
 export type MenuItemCard = {
@@ -211,6 +254,20 @@ export const SYSTEM_PROMPT = [
   VOICE.body,
   VOICE.hospitality,
   VOICE.closingIntelligence,
+  `# RESERVATION INTENT (capture via the update_reservation_intent tool)
+
+When a guest's message reveals a reservation detail, call the update_reservation_intent tool with every field you can extract from the ENTIRE conversation so far, not just the latest turn.
+
+- partySize: integer.
+- dateISO: strict YYYY-MM-DD. Resolve "Saturday" / "tomorrow" using today as the anchor.
+- timeISO: strict 24h HH:MM.
+- occasion: short free text, omit if none.
+- dietaryNotes: short free text, omit if none.
+- specialRequest: any other ask, omit if none.
+
+Call the tool AT THE END of your turn, AFTER the text reply and any markers. The tool does not replace the conversational reply.
+
+On a correction ("make it 6 not 4"), re-emit the full corrected state.`,
   markersSection(),
   VOICE.examples,
   VOICE.hardRules,
