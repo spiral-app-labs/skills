@@ -1,5 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
-import { SYSTEM_PROMPT } from '../../../lib/concierge-kb';
+import { SYSTEM_PROMPT, RESERVATION_INTENT_TOOL } from '../../../lib/concierge-kb';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -30,10 +30,15 @@ export async function POST(req: Request) {
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
     async start(controller) {
+      // Per-block accumulator for streaming tool_use JSON.
+      // Anthropic streams tool inputs as input_json_delta chunks; we stitch
+      // them into a complete string and JSON.parse at content_block_stop.
+      const toolBuffers: Record<number, { name: string; jsonStr: string }> = {};
+
       try {
         const claudeStream = client.messages.stream({
           model: 'claude-haiku-4-5',
-          max_tokens: 512,
+          max_tokens: 600,
           system: [
             {
               type: 'text',
@@ -41,19 +46,56 @@ export async function POST(req: Request) {
               cache_control: { type: 'ephemeral' },
             },
           ],
+          tools: [RESERVATION_INTENT_TOOL],
           messages: body.messages!,
         });
 
         for await (const event of claudeStream) {
-          if (
-            event.type === 'content_block_delta' &&
-            event.delta.type === 'text_delta'
-          ) {
-            controller.enqueue(
-              encoder.encode(
-                `data: ${JSON.stringify({ text: event.delta.text })}\n\n`,
-              ),
-            );
+          if (event.type === 'content_block_start') {
+            if (event.content_block.type === 'tool_use') {
+              toolBuffers[event.index] = {
+                name: event.content_block.name,
+                jsonStr: '',
+              };
+            }
+            continue;
+          }
+
+          if (event.type === 'content_block_delta') {
+            if (event.delta.type === 'text_delta') {
+              controller.enqueue(
+                encoder.encode(
+                  `data: ${JSON.stringify({ text: event.delta.text })}\n\n`,
+                ),
+              );
+            } else if (event.delta.type === 'input_json_delta') {
+              const buf = toolBuffers[event.index];
+              if (buf) buf.jsonStr += event.delta.partial_json;
+            }
+            continue;
+          }
+
+          if (event.type === 'content_block_stop') {
+            const buf = toolBuffers[event.index];
+            if (buf) {
+              delete toolBuffers[event.index];
+              let input: unknown = {};
+              try {
+                input = buf.jsonStr.trim() === '' ? {} : JSON.parse(buf.jsonStr);
+              } catch {
+                input = null;
+              }
+              if (input !== null) {
+                controller.enqueue(
+                  encoder.encode(
+                    `data: ${JSON.stringify({
+                      tool_use: { name: buf.name, input },
+                    })}\n\n`,
+                  ),
+                );
+              }
+            }
+            continue;
           }
         }
 
