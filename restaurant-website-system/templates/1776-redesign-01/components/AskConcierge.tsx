@@ -1,9 +1,18 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { content } from '../content.example';
 import { computeOpenStatus } from '../lib/hours';
 import { resolveMenuSlug, type MenuItemCard } from '../lib/concierge-kb';
+import {
+  buildReservationUrl,
+  buildSpecialRequest,
+  copyToClipboard,
+  formatIntentPreview,
+  mergeIntent,
+  type ReservationConfig,
+  type ReservationIntent,
+} from '../lib/concierge-reserve';
 
 type ChatMessage = { role: 'user' | 'assistant'; content: string };
 
@@ -166,17 +175,49 @@ function CtaRow({ children }: { children: React.ReactNode }) {
   return <div className="flex flex-wrap gap-2">{children}</div>;
 }
 
-function ReserveButton() {
+function ReserveButton({
+  intent,
+  config,
+  onToast,
+}: {
+  intent: ReservationIntent;
+  config: ReservationConfig;
+  onToast: (message: string) => void;
+}) {
+  const url = useMemo(() => buildReservationUrl(intent, config), [intent, config]);
+  const preview = useMemo(() => formatIntentPreview(intent), [intent]);
+  const special = useMemo(() => buildSpecialRequest(intent), [intent]);
+
+  const handleClick = useCallback(async () => {
+    if (!special) return;
+    const ok = await copyToClipboard(special);
+    onToast(
+      ok
+        ? 'Special request copied, paste it in the notes field on OpenTable.'
+        : 'Mention your special request in the OpenTable notes field.',
+    );
+  }, [special, onToast]);
+
   return (
-    <a
-      href={content.brand.reservationUrl}
-      target="_blank"
-      rel="noreferrer"
-      className="group inline-flex items-center gap-2 rounded-pill bg-accent px-5 py-3 text-button font-semibold uppercase tracking-[2px] text-canvas shadow-[0_6px_20px_-6px_rgba(201,169,110,0.6)] transition-all hover:-translate-y-[1px] hover:bg-accent-hover hover:shadow-[0_10px_28px_-6px_rgba(201,169,110,0.8)]"
-    >
-      Reserve on OpenTable
-      <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
-    </a>
+    <div className="flex flex-col gap-1">
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        onClick={handleClick}
+        className="group inline-flex items-center gap-2 rounded-pill bg-accent px-5 py-3 text-button font-semibold uppercase tracking-[2px] text-canvas shadow-[0_6px_20px_-6px_rgba(201,169,110,0.6)] transition-all hover:-translate-y-[1px] hover:bg-accent-hover hover:shadow-[0_10px_28px_-6px_rgba(201,169,110,0.8)]"
+      >
+        Reserve on OpenTable
+        <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
+          →
+        </span>
+      </a>
+      {preview && (
+        <p className="text-[11px] leading-tight tracking-[1px] text-text-muted">
+          {preview}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -213,8 +254,20 @@ function PageLinkButton({ path, label }: { path: string; label: string }) {
 
 const CTA_KINDS = new Set(['reserve', 'call', 'page']);
 
-function renderCtaButton(block: Block & { type: 'marker' }, i: number) {
-  if (block.kind === 'reserve') return <ReserveButton key={i} />;
+function renderCtaButton(
+  block: Block & { type: 'marker' },
+  i: number,
+  ctx: { intent: ReservationIntent; config: ReservationConfig; onToast: (m: string) => void },
+) {
+  if (block.kind === 'reserve')
+    return (
+      <ReserveButton
+        key={i}
+        intent={ctx.intent}
+        config={ctx.config}
+        onToast={ctx.onToast}
+      />
+    );
   if (block.kind === 'call') return <CallButton key={i} />;
   if (block.kind === 'page' && block.id) {
     return <PageLinkButton key={i} path={block.id} label={block.label ?? block.id} />;
@@ -234,7 +287,10 @@ function renderRichBlock(block: Block & { type: 'marker' }, i: number) {
 }
 
 /** Group consecutive CTA markers into a single CtaRow. Menu/hours/map render individually. */
-function renderBlocks(blocks: Block[]) {
+function renderBlocks(
+  blocks: Block[],
+  ctx: { intent: ReservationIntent; config: ReservationConfig; onToast: (m: string) => void },
+) {
   const out: React.ReactNode[] = [];
   let i = 0;
   while (i < blocks.length) {
@@ -252,7 +308,11 @@ function renderBlocks(blocks: Block[]) {
     if (CTA_KINDS.has(b.kind)) {
       const ctaButtons: React.ReactNode[] = [];
       while (i < blocks.length && blocks[i].type === 'marker' && CTA_KINDS.has((blocks[i] as Extract<Block, { type: 'marker' }>).kind)) {
-        const btn = renderCtaButton(blocks[i] as Extract<Block, { type: 'marker' }>, i);
+        const btn = renderCtaButton(
+          blocks[i] as Extract<Block, { type: 'marker' }>,
+          i,
+          ctx,
+        );
         if (btn) ctaButtons.push(btn);
         i++;
       }
@@ -269,7 +329,17 @@ function renderBlocks(blocks: Block[]) {
   return out;
 }
 
-function AssistantBubble({ text }: { text: string }) {
+function AssistantBubble({
+  text,
+  intent,
+  config,
+  onToast,
+}: {
+  text: string;
+  intent: ReservationIntent;
+  config: ReservationConfig;
+  onToast: (m: string) => void;
+}) {
   const blocks = useMemo(() => parseResponse(text), [text]);
   if (blocks.length === 0) {
     return (
@@ -286,7 +356,7 @@ function AssistantBubble({ text }: { text: string }) {
       </div>
     );
   }
-  return <div className="space-y-3">{renderBlocks(blocks)}</div>;
+  return <div className="space-y-3">{renderBlocks(blocks, { intent, config, onToast })}</div>;
 }
 
 // ---- Main component ---------------------------------------------------------
@@ -297,6 +367,31 @@ export function AskConcierge() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [streaming, setStreaming] = useState(false);
+  const [intent, setIntent] = useState<ReservationIntent>({});
+  const [toast, setToast] = useState<string | null>(null);
+  const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const showToast = useCallback((message: string) => {
+    setToast(message);
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => setToast(null), 4000);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    };
+  }, []);
+
+  const reservationConfig: ReservationConfig = useMemo(
+    () => ({
+      platform: content.brand.reservationPlatform,
+      fallbackUrl: content.brand.reservationUrl,
+      restref: content.brand.reservationRestref,
+    }),
+    [],
+  );
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -365,11 +460,21 @@ export function AskConcierge() {
               text?: string;
               done?: boolean;
               error?: string;
+              tool_use?: { name: string; input: unknown };
             };
             if (parsed.error) throw new Error(parsed.error);
             if (parsed.text) {
               acc += parsed.text;
               setMessages([...next, { role: 'assistant', content: acc }]);
+            }
+            if (
+              parsed.tool_use &&
+              parsed.tool_use.name === 'update_reservation_intent' &&
+              parsed.tool_use.input &&
+              typeof parsed.tool_use.input === 'object'
+            ) {
+              const patch = parsed.tool_use.input as Partial<ReservationIntent>;
+              setIntent((prev) => mergeIntent(prev, patch));
             }
           } catch {
             /* ignore malformed frame */
@@ -476,7 +581,12 @@ export function AskConcierge() {
                   </div>
                 ) : (
                   <div key={i} className="max-w-full">
-                    <AssistantBubble text={m.content} />
+                    <AssistantBubble
+                      text={m.content}
+                      intent={intent}
+                      config={reservationConfig}
+                      onToast={showToast}
+                    />
                   </div>
                 ),
               )}
@@ -530,6 +640,16 @@ export function AskConcierge() {
               {content.brand.phone}.
             </p>
           </form>
+
+          {toast && (
+            <div
+              role="status"
+              aria-live="polite"
+              className="pointer-events-none absolute inset-x-4 bottom-[84px] mx-auto max-w-sm rounded-card border border-accent/60 bg-surface px-4 py-2.5 text-body-sm text-text shadow-lg"
+            >
+              {toast}
+            </div>
+          )}
         </div>
       </div>
     </>
