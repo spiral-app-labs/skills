@@ -40,17 +40,24 @@ Also replace `<<RESTAURANT_NAME>>` in `trigger.labelHtml`.
 
 ## 4. Add reservation fields to `content.ts`
 
-Under the `brand` object, add:
+Under the `brand` object, add all three:
 
 ```ts
-reservationPlatform: 'opentable', // 'opentable' | 'resy' | 'tock' | 'native'
+reservationPlatform: 'opentable' as const, // 'opentable' | 'resy' | 'tock' | 'native'
 reservationUrl: 'https://www.opentable.com/<slug>',
-reservationRestref: '123456', // numeric ID; see PRD 01 for how to find it
+reservationRestref: '123456', // numeric OpenTable restaurant ID
 ```
 
-The `reservationRestref` unlocks PRD 01's smart reservation handoff later. If
-you don't have it yet, leave it empty and the Reserve button will fall back
-to the slug URL.
+**Finding `reservationRestref` (30 seconds):**
+
+1. Open OpenTable's public widget builder: `https://www.otrestaurant.com/marketing/reservationwidget`.
+2. Type the restaurant name and step through the wizard. The generated embed code / preview URL contains the numeric ID (look for `rid=<NUMBER>`).
+3. Copy the number into `reservationRestref`.
+4. Confirm by opening `https://www.opentable.com/restref/client/?restref=<ID>&datetime=2026-05-09T19:00&covers=4` — the reservation form should load with 4 guests / that date / 7:00 PM pre-filled.
+
+If you can't find or verify the ID, leave `reservationRestref: ''`. The Reserve button gracefully falls back to the plain `reservationUrl` slug (the diner just gets an unprefilled OpenTable form — same as before PRD 01). Pre-fill is an upgrade, not a requirement.
+
+**Other platforms:** Resy / Tock / native-form pre-fill is not implemented in v1. Set `reservationPlatform` accurately so future upgrades pick up automatically, but the button will use the fallback URL until those builders land.
 
 ## 5. Mount `<AskConcierge />` in `app/layout.tsx`
 
@@ -101,11 +108,18 @@ Start the dev server (`npm run dev`) and run through these in the chat:
 7. "Do you do private events?" — emits {{private_space:...}} or {{call}} depending on content.
 8. "What's the cheapest thing?" — should pick a real menu item by price, not invent.
 
-## 10. Verify Reserve tap
+## 10. Verify Reserve tap (PRD 01 acceptance)
 
-Desktop + mobile Safari: Reserve button opens the correct platform URL. If
-`reservationRestref` is populated, confirm party size / date / time pre-fill
-on OpenTable (see PRD 01 acceptance criteria).
+Desktop + mobile Safari, run through the PRD 01 acceptance list:
+
+1. Say "I'd like to book for 4 on Saturday at 7 for my wife's birthday, she's gluten-free."
+2. Confirm the Reserve button shows a preview line: "4 guests · <weekday> <month> <day> · 7:00 PM · birthday dinner; one guest is gluten-free".
+3. Confirm the button's `href` starts with `https://www.opentable.com/restref/client/?restref=<ID>&datetime=...&covers=4`.
+4. Tap Reserve. Confirm the toast appears ("Special request copied, paste it in the notes field on OpenTable.") and the clipboard contains the combined birthday + gluten-free text.
+5. Confirm OpenTable opens with party size, date, time pre-filled.
+6. Follow up with "Actually make it 6" and confirm the same button updates in-place (new href + preview, not a second button).
+
+If `reservationRestref` is empty, steps 3–5 fall back to the plain slug URL and that's OK — document the gap in the client handoff.
 
 ---
 
