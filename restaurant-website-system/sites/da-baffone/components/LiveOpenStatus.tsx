@@ -6,7 +6,7 @@
 // Variants:
 //   - "dot"        → emoji-style colored dot + label (casual templates)
 //   - "text"       → text-only label, no dot (upscale/ceremonial templates)
-//   - "pill"       → rounded pill with bg tint matching state (sidebar / hero overlay)
+//   - "pill"       → rounded pill with bg tint matching state (sidebar / hero)
 //
 // Respects prefers-reduced-motion (no pulse animation when reduced).
 //

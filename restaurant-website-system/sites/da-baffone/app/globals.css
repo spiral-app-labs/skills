@@ -18,16 +18,16 @@ h1, h2, h3, h4 {
 
 *, *::before, *::after { box-sizing: border-box; }
 
-/* Testimonial overlay card — dark editorial panel on hero photography. */
-.gusto-overlay-card {
-  background-color: theme('colors.surface');
-}
-
 /* Chip label pill on photo cards — small cream-text pill, translucent dark bg. */
 .gusto-chip {
   background-color: rgba(14, 16, 17, 0.78);
   color: theme('colors.ink');
   border: 1px solid rgba(255, 252, 244, 0.1);
+}
+
+/* Direct photo typography keeps copy readable without adding a floating card. */
+.gusto-photo-copy {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.7);
 }
 
 /* Opening hours row — hairline divider between days. */

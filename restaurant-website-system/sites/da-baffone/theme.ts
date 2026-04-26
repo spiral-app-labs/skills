@@ -21,7 +21,6 @@ export const theme = {
     // CANVAS
     canvas:        '#0F110C', // warm-black — all 4 pages. NOT navy (1776), NOT pure black (qitchen).
     surface:       '#17190F', // very subtle elevation on sidebar cards + hours-table container
-    overlay:       '#17190F', // testimonial-overlay card bg on hero photos
     buttonBgDark:  'rgba(14,16,17,0.28)', // semi-translucent dark button variant
     // TEXT
     ink:           '#FFFCF4', // warm cream primary — tablecloth cream, load-bearing

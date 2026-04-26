@@ -35,9 +35,9 @@ export function PhotoCardWithChip({
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, 400px"
-        className="object-cover transition duration-700 group-hover:scale-[1.04] group-hover:blur-[1px]"
+        className="object-cover transition duration-700 group-hover:scale-[1.05]"
       />
-      <span className="gusto-chip absolute left-4 top-4 inline-flex items-center rounded-chip px-3 py-1.5 font-body text-chip uppercase transition duration-500 group-hover:translate-y-1 group-hover:border-ink/25">
+      <span className="gusto-chip absolute left-4 top-4 inline-flex items-center rounded-chip px-3 py-1.5 font-body text-chip uppercase transition duration-500 group-hover:translate-x-1 group-hover:border-ink/25">
         {chip}
       </span>
     </div>

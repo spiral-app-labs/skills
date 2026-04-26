@@ -16,8 +16,8 @@ export function ContactPage() {
 
   return (
     <section className="mx-auto w-full max-w-shell px-4 pt-4 md:px-6 md:pt-6">
-      {/* HERO — dining-room photo + title overlay */}
-      <div className="relative mb-10 overflow-hidden rounded-card">
+      {/* HERO — dining-room photo + title copy */}
+      <div className="group relative mb-10 overflow-hidden rounded-card">
         <div className="relative aspect-[16/9] md:aspect-[21/9]">
           <Image
             src={c.heroPhoto}
@@ -25,10 +25,11 @@ export function ContactPage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover transition duration-700 group-hover:scale-[1.02]"
           />
-          <div className="gusto-overlay-card absolute left-6 bottom-6 right-6 max-w-xl rounded-card p-7 md:left-10 md:bottom-10 md:p-9">
-            <h1 className="font-display text-page-title text-ink">
+          <div className="absolute inset-0 bg-gradient-to-t from-canvas/95 via-canvas/35 to-canvas/0" />
+          <div className="gusto-photo-copy absolute inset-x-0 bottom-0 max-w-2xl p-7 md:p-10">
+            <h1 className="font-display text-page-title text-ink transition-transform duration-500 group-hover:translate-x-2">
               {c.heroTitle}
             </h1>
             <p className="mt-4 font-body text-body text-ink-muted">

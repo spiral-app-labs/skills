@@ -43,9 +43,6 @@ const config: Config = {
       maxWidth: {
         shell: `${t.layout.maxWidth}px`,
       },
-      backdropBlur: {
-        card: '14px',
-      },
     },
   },
   plugins: [],

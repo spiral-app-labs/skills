@@ -12,18 +12,19 @@ export function AboutHeritageSplit() {
   return (
     <section className="mx-auto w-full max-w-shell px-4 pt-4 md:px-6 md:pt-6">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
-        {/* LEFT — heritage dining-room photo with manifesto card overlay */}
+        {/* LEFT — heritage dining-room photo with manifesto copy */}
         <div className="md:col-span-6">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-card md:min-h-[640px]">
+          <div className="group relative aspect-[4/5] overflow-hidden rounded-card md:min-h-[640px]">
             <Image
               src={a.hero.leftPhoto}
               alt={a.hero.leftAlt}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover transition duration-700 group-hover:scale-[1.025]"
             />
-            <div className="gusto-overlay-card absolute left-6 bottom-6 right-6 rounded-card p-7 md:left-8 md:bottom-8 md:p-9">
-              <h2 className="font-display text-manifesto text-ink">
+            <div className="absolute inset-0 bg-gradient-to-t from-canvas/95 via-canvas/35 to-canvas/0" />
+            <div className="gusto-photo-copy absolute inset-x-0 bottom-0 p-7 md:p-9">
+              <h2 className="font-display text-manifesto text-ink transition-transform duration-500 group-hover:translate-x-2">
                 {a.manifesto.heading}
               </h2>
               <p className="mt-5 font-body text-body text-ink-muted">
@@ -38,7 +39,7 @@ export function AboutHeritageSplit() {
                 </Link>
                 <Link
                   href="/menu"
-                  className="inline-flex items-center justify-center rounded-button border border-ink/25 bg-transparent px-5 py-3 font-body text-button font-medium text-ink transition-colors hover:border-ink/60"
+                  className="inline-flex items-center justify-center rounded-button border border-ink/25 bg-canvas/25 px-5 py-3 font-body text-button font-medium text-ink transition-colors hover:border-ink/60"
                 >
                   View Menu
                 </Link>

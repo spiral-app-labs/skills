@@ -32,7 +32,7 @@ function ImagePanel({
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover transition duration-700 group-hover:scale-[1.04] group-hover:blur-[1px]"
+        className="object-cover transition duration-700 group-hover:scale-[1.04]"
       />
       <div className="absolute inset-0 bg-canvas/10 transition-colors duration-700 group-hover:bg-canvas/0" />
     </div>
@@ -46,7 +46,7 @@ export function ScrollableHomePage() {
     <>
       <section className="mx-auto w-full max-w-shell px-4 pt-4 md:px-6 md:pt-6">
         <div className="grid grid-cols-1 gap-3 md:grid-cols-12">
-          <div className="relative overflow-hidden rounded-card md:col-span-8">
+          <div className="group relative overflow-hidden rounded-card md:col-span-8">
             <div className="relative min-h-[590px]">
               <Image
                 src={home.hero.mainPhoto}
@@ -54,45 +54,43 @@ export function ScrollableHomePage() {
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 66vw"
-                className="object-cover"
+                className="object-cover transition duration-700 group-hover:scale-[1.025]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/35 to-canvas/5" />
-              <div className="absolute left-5 right-5 bottom-5 md:left-8 md:right-8 md:bottom-8">
-                <div className="gusto-overlay-card max-w-2xl rounded-card p-7 md:p-9">
-                  <div className="mb-5 flex flex-wrap items-center gap-3">
-                    <span className="rounded-pill border border-ink/15 px-3 py-1 font-body text-chip uppercase text-ink-muted">
-                      Family-owned since {brand.since}
-                    </span>
-                    <span className="rounded-pill border border-ink/15 px-3 py-1 font-body text-chip uppercase text-ink-muted">
-                      Downtown {brand.city}
-                    </span>
-                  </div>
-                  <h1 className="font-display text-[clamp(42px,7vw,78px)] leading-[0.98] text-ink">
-                    Southern Italian warmth, one table at a time.
-                  </h1>
-                  <p className="mt-5 max-w-xl font-body text-body text-ink-muted">
-                    {brand.description}
-                  </p>
-                  <div className="mt-6 flex flex-wrap items-center gap-3">
-                    <Link
-                      href={brand.reservationUrl}
-                      className="inline-flex items-center justify-center rounded-button bg-ink px-5 py-3 font-body text-button font-medium text-canvas transition-opacity hover:opacity-90"
-                    >
-                      Call to Reserve
-                    </Link>
-                    <Link
-                      href="/menu"
-                      className="inline-flex items-center justify-center rounded-button border border-ink/25 bg-transparent px-5 py-3 font-body text-button font-medium text-ink transition-colors hover:border-ink/60"
-                    >
-                      View Menu
-                    </Link>
-                    <Link
-                      href="/cinematic"
-                      className="font-body text-button text-ink-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
-                    >
-                      View cinematic version
-                    </Link>
-                  </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-canvas/95 via-canvas/45 to-canvas/0" />
+              <div className="gusto-photo-copy absolute inset-x-0 bottom-0 p-7 md:p-10 md:pr-32">
+                <div className="mb-5 flex flex-wrap items-center gap-3">
+                  <span className="rounded-pill border border-ink/20 bg-canvas/40 px-3 py-1 font-body text-chip uppercase text-ink-muted">
+                    Family-owned since {brand.since}
+                  </span>
+                  <span className="rounded-pill border border-ink/20 bg-canvas/40 px-3 py-1 font-body text-chip uppercase text-ink-muted">
+                    Downtown {brand.city}
+                  </span>
+                </div>
+                <h1 className="max-w-2xl font-display text-[clamp(42px,7vw,78px)] leading-[0.98] text-ink transition-transform duration-500 group-hover:translate-x-2">
+                  Southern Italian warmth, one table at a time.
+                </h1>
+                <p className="mt-5 max-w-xl font-body text-body text-ink-muted">
+                  {brand.description}
+                </p>
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <Link
+                    href={brand.reservationUrl}
+                    className="inline-flex items-center justify-center rounded-button bg-ink px-5 py-3 font-body text-button font-medium text-canvas transition-opacity hover:opacity-90"
+                  >
+                    Call to Reserve
+                  </Link>
+                  <Link
+                    href="/menu"
+                    className="inline-flex items-center justify-center rounded-button border border-ink/25 bg-canvas/25 px-5 py-3 font-body text-button font-medium text-ink transition-colors hover:border-ink/60"
+                  >
+                    View Menu
+                  </Link>
+                  <Link
+                    href="/cinematic"
+                    className="font-body text-button text-ink-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
+                  >
+                    View cinematic version
+                  </Link>
                 </div>
               </div>
             </div>
@@ -201,12 +199,12 @@ export function ScrollableHomePage() {
                   alt={dish.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition duration-700 group-hover:scale-[1.04] group-hover:blur-[1px]"
+                  className="object-cover transition duration-700 group-hover:scale-[1.05]"
                 />
               </div>
               <div className="p-6">
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-body text-[16px] font-medium text-ink">
+                  <h3 className="font-body text-[16px] font-medium text-ink transition duration-300 group-hover:translate-x-1 group-hover:font-semibold group-hover:text-accent-warm">
                     {dish.name}
                   </h3>
                   <p className="font-body text-[15px] font-medium text-ink">

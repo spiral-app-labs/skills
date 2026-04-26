@@ -21,12 +21,12 @@ export function MenuDishRow({ name, desc, price, photo }: Props) {
             alt={name}
             fill
             sizes="80px"
-            className="object-cover transition duration-500 group-hover:scale-[1.05] group-hover:blur-[1px]"
+            className="object-cover transition duration-500 group-hover:scale-[1.08]"
           />
         </div>
       )}
       <div className="min-w-0 flex-1">
-        <h4 className="font-body text-[15px] font-medium text-ink transition-colors group-hover:text-accent-warm">
+        <h4 className="font-body text-[15px] font-medium text-ink transition duration-300 group-hover:translate-x-1 group-hover:font-semibold group-hover:text-accent-warm">
           {name}
         </h4>
         <p className="mt-1 font-body text-body-sm italic text-ink-muted line-clamp-2">
