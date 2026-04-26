@@ -1,7 +1,7 @@
 // HeroMultiCardAsymmetric — the template's signature hero composition:
-// one large atmospheric food photo (left ~60%) with direct testimonial copy,
-// two stacked secondary photo-cards (middle column), and a right-rail
-// hours/reservation sidebar. Asymmetric 3-column grid.
+// one large atmospheric food photo (left ~60%) with testimonial-overlay card
+// baked in, two stacked secondary photo-cards (middle column), and a
+// right-rail hours/reservation sidebar. Asymmetric 3-column grid.
 //
 // Mobile reflow: stacks to big-card / chip-cards / sidebar, with a sticky
 // phone-first call bar handled at the layout level.
@@ -19,7 +19,7 @@ export function HeroMultiCardAsymmetric() {
   return (
     <section className="relative mx-auto w-full max-w-shell px-4 pt-4 md:px-6 md:pt-6">
       <div className="grid grid-cols-1 gap-3 md:grid-cols-12">
-        {/* BIG LEFT CARD — atmospheric food photo + testimonial copy */}
+        {/* BIG LEFT CARD — atmospheric food photo + testimonial overlay */}
         <div className="group relative overflow-hidden rounded-card md:col-span-7 md:row-span-2">
           <div className="relative aspect-[4/5] md:aspect-auto md:h-full md:min-h-[640px]">
             <Image
@@ -30,7 +30,6 @@ export function HeroMultiCardAsymmetric() {
               sizes="(max-width: 768px) 100vw, 55vw"
               className="object-cover transition duration-700 group-hover:scale-[1.025]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-canvas/95 via-canvas/30 to-canvas/0" />
             <HeroTestimonialCard
               quote={h.testimonial.quote}
               body={h.testimonial.body}

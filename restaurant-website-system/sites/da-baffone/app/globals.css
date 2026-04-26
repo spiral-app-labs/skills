@@ -18,6 +18,13 @@ h1, h2, h3, h4 {
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Gusto hero card — frosted only behind the cinematic testimonial copy. */
+.gusto-overlay-card {
+  background-color: theme('colors.canvas' / 0.72);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+}
+
 /* Chip label pill on photo cards — small cream-text pill, translucent dark bg. */
 .gusto-chip {
   background-color: rgba(14, 16, 17, 0.78);
