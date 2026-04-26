@@ -8,7 +8,7 @@ import { content } from '../content.example';
 
 export function TopNavBar() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-divider bg-canvas/85 backdrop-blur-card">
+    <header className="sticky top-0 z-40 w-full border-b border-divider bg-canvas">
       <nav className="mx-auto max-w-shell px-4 py-4 md:px-8">
         <div className="flex items-center justify-between">
           <Link

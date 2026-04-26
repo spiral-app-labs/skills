@@ -3,7 +3,7 @@ import { content } from '../content.example';
 
 export function MobileCallBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-divider bg-canvas/92 px-4 py-3 backdrop-blur-card md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-divider bg-canvas px-4 py-3 md:hidden">
       <div className="mx-auto flex max-w-shell items-center gap-3">
         <Link
           href={content.brand.reservationUrl}
