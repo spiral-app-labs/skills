@@ -52,14 +52,6 @@ export function TopNavBar() {
                 </Link>
               </li>
             ))}
-          <li>
-            <Link
-              href="/cinematic"
-              className="text-nav-label text-ink-muted transition-colors hover:text-ink"
-            >
-              Alt
-            </Link>
-          </li>
         </ul>
       </nav>
     </header>

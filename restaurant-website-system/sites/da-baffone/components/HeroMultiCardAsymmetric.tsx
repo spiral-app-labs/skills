@@ -35,6 +35,8 @@ export function HeroMultiCardAsymmetric() {
               body={h.testimonial.body}
               rating={h.testimonial.rating}
               reviewCount={h.testimonial.reviewCount}
+              ratingLabel={h.testimonial.ratingLabel}
+              reviewLabel={h.testimonial.reviewLabel}
               primaryCta={h.testimonial.primaryCta}
               secondaryCta={h.testimonial.secondaryCta}
             />

@@ -94,11 +94,13 @@ export const content = {
         },
       ],
       testimonial: {
-        quote: 'Voted Best Italian Restaurant in McHenry County',
+        quote: 'Locally loved Southern Italian in Crystal Lake',
         body:
-          'Family recipes, a warm brick dining room, and more than 1,200 public reviews across Facebook and Yelp.',
+          'Family recipes, a warm brick dining room, and a strong public review footprint across Facebook, Yelp, and Tripadvisor.',
         rating: 4.6,
         reviewCount: 1200,
+        ratingLabel: 'Local proof',
+        reviewLabel: 'Reviews + press signals',
         primaryCta: { label: 'Call to Reserve', href: telHref },
         secondaryCta: { label: 'View Menu', href: '/menu' },
       },
@@ -108,7 +110,7 @@ export const content = {
         hoursHeading: 'Opening Hours',
         hours: [
           { day: 'Monday', time: 'Closed' },
-          { day: 'Tuesday', time: 'Closed' },
+          { day: 'Tuesday', time: '4:00 PM - 8:00 PM' },
           { day: 'Wednesday', time: '4:00 PM - 8:00 PM' },
           { day: 'Thursday', time: '4:00 PM - 8:00 PM' },
           { day: 'Friday', time: '4:00 PM - 9:00 PM' },
@@ -119,14 +121,14 @@ export const content = {
     },
 
     proof: {
-      eyebrow: 'Best of the Fox',
-      heading: 'Already loved locally. Now the site shows it.',
+      eyebrow: 'Local Proof',
+      heading: 'Already loved locally. Clear from the first glance.',
       body:
-        'Da Baffone has been recognized for Italian food, wine bar, martinis, date night, bartender, conversation, and catering. The redesign moves that proof out of old posts and into the first few seconds.',
+        'Da Baffone has first-party award imagery, a long-running family story, and public review surfaces guests already trust. Those signals now sit beside the menu, hours, and reservation path guests need most.',
       stats: [
         { value: '2010', label: 'Established in Crystal Lake' },
-        { value: '1,200+', label: 'Public reviews across Facebook and Yelp' },
-        { value: 'Best Italian', label: 'Best of the Fox winner' },
+        { value: 'Public', label: 'Facebook, Yelp, and Tripadvisor surfaces' },
+        { value: 'Award', label: 'First-party Best of the Fox imagery' },
       ],
     },
 
@@ -181,7 +183,7 @@ export const content = {
       themes: [
         'Guests describe the room as cozy, intimate, and suited for a special dinner.',
         'Positive reviews repeatedly point to sauces, pasta, seafood, wine, and desserts.',
-        'The most important fix is clarity: make reservations, hours, and the call-first flow impossible to miss.',
+        'Reservations, hours, and the call-first flow are easy to find before guests have to search.',
       ],
     },
   },
@@ -196,6 +198,8 @@ export const content = {
           'Dinner is the heart of Da Baffone: antipasti, pasta, chicken, veal, seafood, dessert, and a wine list built for long tables.',
         rating: 4.6,
         reviewCount: 1200,
+        ratingLabel: 'Local favorite',
+        reviewLabel: 'Reviews + press signals',
       },
     },
     sections: [
@@ -318,12 +322,12 @@ export const content = {
             price: '',
             photo: '/images/da-baffone/cocktails-wide.jpg',
           },
-          {
-            name: 'Martinis & Cocktails',
-            desc: 'A Best of the Fox-recognized bar program for date night',
-            price: '',
-            photo: '/images/da-baffone/cocktails-wide.jpg',
-          },
+	          {
+	            name: 'Martinis & Cocktails',
+	            desc: 'A date-night bar program built around Italian wine, martinis, and cocktails',
+	            price: '',
+	            photo: '/images/da-baffone/cocktails-wide.jpg',
+	          },
           {
             name: 'Catering',
             desc: 'Catering orders require advance reservation by phone',
@@ -343,7 +347,7 @@ export const content = {
       leftPhoto: '/images/da-baffone/brick-dining-room.jpg',
       leftAlt: 'Da Baffone brick dining room',
       rightPhoto: '/images/da-baffone/best-of-fox-2017.jpg',
-      rightAlt: 'Best of the Fox award for Da Baffone',
+      rightAlt: 'Local award imagery for Da Baffone',
     },
     manifesto: {
       heading: 'From Santo Stefano del Sole to Crystal Lake',

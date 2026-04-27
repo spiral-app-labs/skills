@@ -70,7 +70,6 @@ export function FooterMinimalRich() {
               <li><Link href="/menu" className="hover:text-ink">Menu</Link></li>
               <li><Link href="/about" className="hover:text-ink">About</Link></li>
               <li><Link href="/contact" className="hover:text-ink">Visit</Link></li>
-              <li><Link href="/cinematic" className="hover:text-ink">Cinematic Version</Link></li>
               <li><Link href={content.brand.reservationUrl} className="hover:text-ink">Call to Reserve</Link></li>
             </ul>
           </div>

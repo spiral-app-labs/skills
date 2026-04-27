@@ -35,10 +35,12 @@ export function MenuStickyTestimonial() {
                   {m.hero.testimonial.body}
                 </p>
                 <div className="mt-5 border-t border-ink/25 pt-4">
-                  <StarRating
-                    rating={m.hero.testimonial.rating}
-                    reviewCount={m.hero.testimonial.reviewCount}
-                  />
+	                  <StarRating
+	                    rating={m.hero.testimonial.rating}
+	                    reviewCount={m.hero.testimonial.reviewCount}
+	                    ratingLabel={m.hero.testimonial.ratingLabel}
+	                    reviewLabel={m.hero.testimonial.reviewLabel}
+	                  />
                 </div>
               </div>
             </div>

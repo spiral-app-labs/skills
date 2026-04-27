@@ -1,14 +1,16 @@
-// StarRating — inline 5-star glyph + numeric rating + review count.
+// StarRating — inline star glyphs + a rating/proof label.
 // Used inside HeroTestimonialCard. Uses the warm-ochre accent so stars read
 // against varied photography (lavender would disappear).
 
 type Props = {
   rating: number;
   reviewCount: number;
+  ratingLabel?: string;
+  reviewLabel?: string;
   className?: string;
 };
 
-export function StarRating({ rating, reviewCount, className = '' }: Props) {
+export function StarRating({ rating, reviewCount, ratingLabel, reviewLabel, className = '' }: Props) {
   const full = Math.floor(rating);
   const hasHalf = rating - full >= 0.4;
   const totalStars = 5;
@@ -16,7 +18,7 @@ export function StarRating({ rating, reviewCount, className = '' }: Props) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <span className="font-body text-[15px] font-medium text-ink">
-        {rating.toFixed(1)}
+        {ratingLabel ?? rating.toFixed(1)}
       </span>
       <span className="flex items-center gap-0.5">
         {Array.from({ length: totalStars }).map((_, i) => {
@@ -47,7 +49,7 @@ export function StarRating({ rating, reviewCount, className = '' }: Props) {
         })}
       </span>
       <span className="font-body text-body-sm text-ink-muted">
-        ({reviewCount.toLocaleString()} Reviews)
+        {reviewLabel ?? `(${reviewCount.toLocaleString()} Reviews)`}
       </span>
     </div>
   );

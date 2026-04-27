@@ -1,4 +1,4 @@
-// HeroTestimonialCard — pull-quote + review body + 4.8★ + review count +
+// HeroTestimonialCard — pull-quote + review body + proof line +
 // dual CTA, overlaid bottom-left on hero photography. The frosted background
 // matches Gusto's signature hero treatment and keeps the quote readable.
 'use client';
@@ -12,6 +12,8 @@ type Props = {
   body?: string;
   rating: number;
   reviewCount: number;
+  ratingLabel?: string;
+  reviewLabel?: string;
   primaryCta:   { label: string; href: string };
   secondaryCta?: { label: string; href: string };
 };
@@ -21,6 +23,8 @@ export function HeroTestimonialCard({
   body,
   rating,
   reviewCount,
+  ratingLabel,
+  reviewLabel,
   primaryCta,
   secondaryCta,
 }: Props) {
@@ -42,7 +46,12 @@ export function HeroTestimonialCard({
       )}
 
       <div className="mt-6 flex items-center gap-4 border-t border-divider pt-5">
-        <StarRating rating={rating} reviewCount={reviewCount} />
+        <StarRating
+          rating={rating}
+          reviewCount={reviewCount}
+          ratingLabel={ratingLabel}
+          reviewLabel={reviewLabel}
+        />
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-3">

@@ -12,6 +12,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "/Users/ethantalreja/agency-forks/walnut-speakeasy-01", "run", "dev", "--", "--port", "3111"],
       "port": 3111
+    },
+    {
+      "name": "black-bear-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/ethantalreja/agency-forks/black-bear-bistro-01", "run", "dev", "--", "--port", "3112"],
+      "port": 3112
     }
   ]
 }

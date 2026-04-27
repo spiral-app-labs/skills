@@ -85,12 +85,6 @@ export function ScrollableHomePage() {
                   >
                     View Menu
                   </Link>
-                  <Link
-                    href="/cinematic"
-                    className="font-body text-button text-ink-muted underline-offset-4 transition-colors hover:text-ink hover:underline"
-                  >
-                    View cinematic version
-                  </Link>
                 </div>
               </div>
             </div>
@@ -259,7 +253,12 @@ export function ScrollableHomePage() {
               {home.reviews.heading}
             </h2>
             <div className="mt-6">
-              <StarRating rating={home.hero.testimonial.rating} reviewCount={home.hero.testimonial.reviewCount} />
+              <StarRating
+                rating={home.hero.testimonial.rating}
+                reviewCount={home.hero.testimonial.reviewCount}
+                ratingLabel={home.hero.testimonial.ratingLabel}
+                reviewLabel={home.hero.testimonial.reviewLabel}
+              />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-3 md:col-span-8">
