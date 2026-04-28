@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Urbanist } from 'next/font/google';
 import { content } from '../content.example';
+import { AskConcierge } from '../components/AskConcierge';
 import './globals.css';
 
 // Urbanist — sole typeface. Geometric-humanist sans with slightly rounded
@@ -22,7 +23,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={urbanist.variable}>
-      <body className="font-body bg-canvas text-ink antialiased">{children}</body>
+      <body className="font-body bg-canvas text-ink antialiased">
+        {children}
+        <AskConcierge />
+      </body>
     </html>
   );
 }

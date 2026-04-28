@@ -36,6 +36,41 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid theme('colors.divider');
 }
 
+/* Review carousel - desktop marquee, mobile swipe/snap fallback. */
+.review-marquee-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.review-marquee-track {
+  animation: review-marquee 62s linear infinite;
+}
+
+.review-marquee:hover .review-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes review-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .review-marquee-track {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-marquee-track {
+    animation: none;
+  }
+}
+
 /* Wordmark footer — the massive lowercase brand-memory moment.
    Rendered as live text; scales responsively with clamp().
    Urbanist 700 at this size has enough presence without a custom display cut. */

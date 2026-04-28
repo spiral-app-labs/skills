@@ -2,6 +2,7 @@ import { SiteHeader } from '../components/SiteHeader';
 import { PlateHero } from '../components/PlateHero';
 import { InlineMenuHomepage } from '../components/InlineMenuHomepage';
 import { TaglineBanner } from '../components/TaglineBanner';
+import { ReviewsCarousel } from '../components/ReviewsCarousel';
 import { LatestUpdatesGrid } from '../components/LatestUpdatesGrid';
 import { FAQAccordion } from '../components/FAQAccordion';
 import { ContactCtaClosing } from '../components/ContactCtaClosing';
@@ -22,6 +23,7 @@ export default function HomePage() {
         <PlateHero />
         <InlineMenuHomepage />
         <TaglineBanner />
+        <ReviewsCarousel />
         <LatestUpdatesGrid />
         <FAQAccordion />
         <ContactCtaClosing />

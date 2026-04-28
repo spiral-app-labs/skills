@@ -195,3 +195,23 @@ Observational — template-hunting happens in a separate session, not here.
 5. Template-hunting: the three gaps above — especially "family heritage
    casual Latin" — are the most concrete template #14 candidates surfaced
    from real leads so far. Worth a separate session.
+
+## 2026-04-28 addendum - next 5 audit packets
+
+New build-ready audit packets live in
+`next-5-mchenry-county-audits-2026-04-28.md`. They should be treated as the
+next bench after the already-built sites and the existing Vine & Plate /
+Grounds Coffee Bar deep-research queue.
+
+Recommended order from that packet:
+
+1. **Galati's Hideaway** - `pepper-01`; ready, but keep the register casual
+   Italian / pizza / catering / parties.
+2. **Bistro Wasabi** - `bamzi-01`; ready after photo-tone check; preserve Tock
+   reservations and Toast carry-out.
+3. **Addison's Steakhouse** - warmed-down `1776-redesign-01`; conditional on
+   one photo/review-tone pass.
+4. **Port Edward** - `labrisa-01`; conditional, lead with seafood heritage and
+   private events rather than rating claims.
+5. **Cafe Olympic** - `latte-01`; ready but lower-ticket cafe/diner economics,
+   useful as a category proof asset.

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { content } from '../content.example';
 import { BookATableButton } from './BookATableButton';
+import { ConciergeEntrance } from './ConciergeEntrance';
 import { LiveMapEmbed } from './LiveMapEmbed';
 import { LiveOpenStatus } from './LiveOpenStatus';
 import { OpeningHoursTable } from './OpeningHoursTable';
@@ -59,10 +60,10 @@ export function ScrollableHomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-canvas/95 via-canvas/45 to-canvas/0" />
               <div className="gusto-photo-copy absolute inset-x-0 bottom-0 p-7 md:p-10 md:pr-32">
                 <div className="mb-5 flex flex-wrap items-center gap-3">
-                  <span className="rounded-pill border border-ink/20 bg-canvas/40 px-3 py-1 font-body text-chip uppercase text-ink-muted">
+                  <span className="rounded-pill border border-ink/25 bg-canvas/75 px-3.5 py-1.5 font-body text-chip font-medium uppercase text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
                     Family-owned since {brand.since}
                   </span>
-                  <span className="rounded-pill border border-ink/20 bg-canvas/40 px-3 py-1 font-body text-chip uppercase text-ink-muted">
+                  <span className="rounded-pill border border-ink/25 bg-canvas/75 px-3.5 py-1.5 font-body text-chip font-medium uppercase text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
                     Downtown {brand.city}
                   </span>
                 </div>
@@ -113,9 +114,13 @@ export function ScrollableHomePage() {
         </div>
       </section>
 
+      <div className="pt-6">
+        <ConciergeEntrance surfaceId="home_ribbon" variant="ribbon" />
+      </div>
+
       <ScrollRevealStandard as="section" className="mx-auto max-w-shell px-4 pt-24 md:px-6">
-        <div className="grid grid-cols-1 gap-10 rounded-card border border-divider bg-surface/60 p-6 md:grid-cols-12 md:p-10">
-          <div className="md:col-span-5">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:items-start">
+          <div className="md:col-span-4">
             <SectionEyebrow>{home.proof.eyebrow}</SectionEyebrow>
             <h2 className="mt-3 font-display text-manifesto text-ink">
               {home.proof.heading}
@@ -124,19 +129,22 @@ export function ScrollableHomePage() {
               {home.proof.body}
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-3 md:col-span-7 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 md:col-span-8 sm:grid-cols-2 xl:grid-cols-4">
             {home.proof.stats.map((stat) => (
-              <div
+              <article
                 key={stat.label}
-                className="rounded-card border border-divider bg-canvas/55 p-5"
+                className="rounded-card border border-divider bg-surface p-5 transition-colors hover:border-accent-warm/50"
               >
-                <p className="font-display text-[34px] leading-none text-ink">
+                <p className="font-display text-[30px] leading-none text-ink">
                   {stat.value}
                 </p>
-                <p className="mt-3 font-body text-body-sm text-ink-muted">
+                <p className="mt-3 font-body text-[11px] font-medium uppercase tracking-[0.16em] text-accent-warm">
                   {stat.label}
                 </p>
-              </div>
+                <p className="mt-4 font-body text-body-sm text-ink-muted">
+                  {stat.body}
+                </p>
+              </article>
             ))}
           </div>
         </div>
@@ -247,7 +255,7 @@ export function ScrollableHomePage() {
 
       <ScrollRevealStandard as="section" className="mx-auto max-w-shell px-4 pt-24 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-4">
+          <div className="md:col-span-4 md:sticky md:top-24">
             <SectionEyebrow>{home.reviews.eyebrow}</SectionEyebrow>
             <h2 className="mt-3 font-display text-manifesto text-ink">
               {home.reviews.heading}
@@ -263,12 +271,20 @@ export function ScrollableHomePage() {
           </div>
           <div className="grid grid-cols-1 gap-3 md:col-span-8">
             {home.reviews.themes.map((theme) => (
-              <p
-                key={theme}
-                className="rounded-card border border-divider bg-surface p-6 font-body text-body text-ink-muted"
+              <article
+                key={theme.title}
+                className="group rounded-card border border-divider bg-surface p-6 transition-colors hover:border-accent-warm/50 md:p-7"
               >
-                {theme}
-              </p>
+                <p className="font-body text-[11px] font-medium uppercase tracking-[0.16em] text-accent-warm">
+                  {theme.label}
+                </p>
+                <h3 className="mt-3 font-display text-[32px] leading-none text-ink transition-transform duration-300 group-hover:translate-x-1">
+                  {theme.title}
+                </h3>
+                <p className="mt-4 font-body text-body text-ink-muted">
+                  {theme.body}
+                </p>
+              </article>
             ))}
           </div>
         </div>

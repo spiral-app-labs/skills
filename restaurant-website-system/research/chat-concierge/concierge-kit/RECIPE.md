@@ -11,13 +11,22 @@ cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/l
       <TARGET_TEMPLATE>/lib/
 cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/lib/concierge-voice.ts \
       <TARGET_TEMPLATE>/lib/
+cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/lib/concierge-config.ts \
+      <TARGET_TEMPLATE>/lib/
+cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/lib/concierge-analytics.ts \
+      <TARGET_TEMPLATE>/lib/
 cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/components/AskConcierge.tsx \
+      <TARGET_TEMPLATE>/components/
+cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/components/ConciergeEntrance.tsx \
       <TARGET_TEMPLATE>/components/
 cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/components/concierge-theme.ts \
       <TARGET_TEMPLATE>/components/
 mkdir -p <TARGET_TEMPLATE>/app/api/chat
 cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/app/api/chat/route.ts \
       <TARGET_TEMPLATE>/app/api/chat/
+mkdir -p <TARGET_TEMPLATE>/app/api/concierge-events
+cp -r restaurant-website-system/research/chat-concierge/concierge-kit/scaffold/app/api/concierge-events/route.ts \
+      <TARGET_TEMPLATE>/app/api/concierge-events/
 ```
 
 ## 2. Fill in `lib/concierge-voice.ts`
@@ -38,7 +47,19 @@ value. Budget: 5 minutes.
 
 Also replace `<<RESTAURANT_NAME>>` in `trigger.labelHtml`.
 
-## 4. Add reservation fields to `content.ts`
+## 4. Fill in `lib/concierge-config.ts`
+
+Replace the restaurant name, public tenant/site IDs, privacy notice, and the
+three default entrance surfaces:
+
+- `home_ribbon` — visible homepage "Ask the host" ribbon/card.
+- `menu_card` — embedded menu-page "Not sure what to order?" card.
+- `visit_card` — contact/hours "Planning a visit?" card.
+
+Use stable UUIDs per client. In production, configure these with
+`NEXT_PUBLIC_CONCIERGE_TENANT_ID` and `NEXT_PUBLIC_CONCIERGE_SITE_ID`.
+
+## 5. Add reservation fields to `content.ts`
 
 Under the `brand` object, add all three:
 
@@ -59,7 +80,7 @@ If you can't find or verify the ID, leave `reservationRestref: ''`. The Reserve 
 
 **Other platforms:** Resy / Tock / native-form pre-fill is not implemented in v1. Set `reservationPlatform` accurately so future upgrades pick up automatically, but the button will use the fallback URL until those builders land.
 
-## 5. Mount `<AskConcierge />` in `app/layout.tsx`
+## 6. Mount `<AskConcierge />` in `app/layout.tsx`
 
 ```tsx
 import { AskConcierge } from '../components/AskConcierge';
@@ -68,21 +89,44 @@ import { AskConcierge } from '../components/AskConcierge';
 <AskConcierge />
 ```
 
-## 6. Add the Anthropic SDK dependency
+## 7. Add embedded entrances to key pages
+
+```tsx
+import { ConciergeEntrance } from '../components/ConciergeEntrance';
+
+<ConciergeEntrance surfaceId="home_ribbon" />
+<ConciergeEntrance surfaceId="menu_card" />
+<ConciergeEntrance surfaceId="visit_card" />
+```
+
+All entrances open the same panel and send `surface_id`, `page_type`,
+`prompt_id`, `tenant_id`, and `site_id` into tracking.
+
+## 8. Add the Anthropic SDK dependency
 
 ```bash
 cd <TARGET_TEMPLATE>
 npm install @anthropic-ai/sdk
 ```
 
-## 7. Add `ANTHROPIC_API_KEY` to env
+## 9. Add env
 
 ```bash
 echo 'ANTHROPIC_API_KEY=sk-ant-...' >> <TARGET_TEMPLATE>/.env.local
 echo 'ANTHROPIC_API_KEY=sk-ant-placeholder' >> <TARGET_TEMPLATE>/.env.example
 ```
 
-## 8. Typecheck
+For logging, add these when Supabase is ready. The concierge works without
+them, but analytics/reporting will no-op:
+
+```bash
+echo 'SUPABASE_URL=https://...' >> <TARGET_TEMPLATE>/.env.local
+echo 'SUPABASE_SERVICE_ROLE_KEY=...' >> <TARGET_TEMPLATE>/.env.local
+echo 'NEXT_PUBLIC_CONCIERGE_TENANT_ID=<uuid>' >> <TARGET_TEMPLATE>/.env.local
+echo 'NEXT_PUBLIC_CONCIERGE_SITE_ID=<uuid>' >> <TARGET_TEMPLATE>/.env.local
+```
+
+## 10. Typecheck
 
 ```bash
 cd <TARGET_TEMPLATE>
@@ -95,7 +139,7 @@ If you get a type error on `import { content } from '../content'` in
 `concierge-kb.ts`, confirm your content file is named `content.ts` (not
 `content.example.ts`). If it's the example file, update the two imports.
 
-## 9. Smoke-test 8 prompts
+## 11. Smoke-test 8 prompts
 
 Start the dev server (`npm run dev`) and run through these in the chat:
 
@@ -108,7 +152,20 @@ Start the dev server (`npm run dev`) and run through these in the chat:
 7. "Do you do private events?" — emits {{private_space:...}} or {{call}} depending on content.
 8. "What's the cheapest thing?" — should pick a real menu item by price, not invent.
 
-## 10. Verify Reserve tap (PRD 01 acceptance)
+## 12. Verify tracking and Reserve tap
+
+Before configuring Supabase, use DevTools network to confirm:
+
+1. Embedded entrances POST to `/api/concierge-events`.
+2. Starter prompt clicks include `surfaceId`, `pageType`, `promptId`,
+   `tenantId`, and `siteId`.
+3. Chat POSTs to `/api/chat` include `context`.
+4. CTA clicks POST `cta_click` events.
+
+After configuring Supabase, confirm rows land in `events`, `messages`,
+`visitor_sessions`, and `conversations`.
+
+## 13. Verify Reserve tap (PRD 01 acceptance)
 
 Desktop + mobile Safari, run through the PRD 01 acceptance list:
 

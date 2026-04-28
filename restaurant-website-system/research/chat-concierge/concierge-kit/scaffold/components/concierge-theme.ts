@@ -55,6 +55,15 @@ export type ConciergeTheme = {
     /** Tertiary link-style button — used for {{page}}. */
     pageClasses: string;
   };
+  entrance: {
+    shellClasses: string;
+    eyebrowClasses: string;
+    titleClasses: string;
+    bodyClasses: string;
+    promptWrapperClasses: string;
+    promptButtonClasses: string;
+    primaryButtonClasses: string;
+  };
 };
 
 export const THEME: ConciergeTheme = {
@@ -109,5 +118,16 @@ export const THEME: ConciergeTheme = {
       'inline-flex items-center gap-2 rounded-pill border border-accent px-4 py-2.5 text-button font-medium uppercase tracking-[2px] text-accent hover:bg-accent/10',
     pageClasses:
       'inline-flex items-center gap-2 rounded-pill border border-border/80 bg-surface px-4 py-2.5 text-button font-medium uppercase tracking-[2px] text-text hover:border-accent hover:text-accent',
+  },
+  entrance: {
+    shellClasses: 'border-y border-border/60 bg-surface px-5 py-4 md:px-8',
+    eyebrowClasses: 'mb-2 text-[10px] uppercase tracking-[3px] text-accent',
+    titleClasses: 'font-display text-[26px] leading-tight text-text',
+    bodyClasses: 'mt-2 max-w-2xl text-body-sm text-text-muted',
+    promptWrapperClasses: 'mt-4 flex flex-wrap gap-2',
+    promptButtonClasses:
+      'rounded-pill border border-border/60 bg-canvas px-3 py-1.5 text-body-sm text-text-muted hover:border-accent hover:text-accent',
+    primaryButtonClasses:
+      'rounded-pill bg-accent px-4 py-2 text-button font-semibold uppercase tracking-[2px] text-canvas hover:bg-accent-hover',
   },
 };

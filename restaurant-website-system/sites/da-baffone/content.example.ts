@@ -122,13 +122,30 @@ export const content = {
 
     proof: {
       eyebrow: 'Local Proof',
-      heading: 'Already loved locally. Clear from the first glance.',
+      heading: 'They already earned the trust. The site should show it sooner.',
       body:
-        'Da Baffone has first-party award imagery, a long-running family story, and public review surfaces guests already trust. Those signals now sit beside the menu, hours, and reservation path guests need most.',
+        'Da Baffone has the pieces guests look for before choosing dinner: a long-running family story, county-level recognition, a strong public review footprint, and a clear phone-first reservation path.',
       stats: [
-        { value: '2010', label: 'Established in Crystal Lake' },
-        { value: 'Public', label: 'Facebook, Yelp, and Tripadvisor surfaces' },
-        { value: 'Award', label: 'First-party Best of the Fox imagery' },
+        {
+          value: '2010',
+          label: 'Established downtown',
+          body: 'A family-owned Crystal Lake dining room with 15+ years of local memory.',
+        },
+        {
+          value: 'Best Italian',
+          label: 'McHenry County proof',
+          body: 'Best Italian and Best Wine Bar signals belong near the first decision point.',
+        },
+        {
+          value: '1,200+',
+          label: 'Public review footprint',
+          body: 'Facebook, Yelp, and Tripadvisor give new guests confidence before they call.',
+        },
+        {
+          value: 'Call-first',
+          label: 'Reservation path',
+          body: 'Phone reservations, to-go orders, catering, and urgent questions stay clear.',
+        },
       ],
     },
 
@@ -179,11 +196,26 @@ export const content = {
 
     reviews: {
       eyebrow: 'What People Come Back For',
-      heading: 'The signal is remarkably consistent.',
+      heading: 'Cozy room, serious food, easy next step.',
       themes: [
-        'Guests describe the room as cozy, intimate, and suited for a special dinner.',
-        'Positive reviews repeatedly point to sauces, pasta, seafood, wine, and desserts.',
-        'Reservations, hours, and the call-first flow are easy to find before guests have to search.',
+        {
+          label: 'The room',
+          title: 'Warm, intimate, date-night ready',
+          body:
+            'Guests consistently describe the brick dining room as cozy, welcoming, and suited for a special dinner without feeling stiff.',
+        },
+        {
+          label: 'The food',
+          title: 'Sauces, seafood, pasta, wine',
+          body:
+            'The strongest review themes point to Southern Italian sauces, pasta, seafood, desserts, martinis, and wine.',
+        },
+        {
+          label: 'The decision',
+          title: 'Everything needed before calling',
+          body:
+            'Menu highlights, live hours, map, phone, and reservation context sit together so guests do not have to hunt.',
+        },
       ],
     },
   },

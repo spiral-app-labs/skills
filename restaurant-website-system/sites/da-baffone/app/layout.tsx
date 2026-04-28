@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Sorts_Mill_Goudy, Figtree } from 'next/font/google';
 import { content } from '../content.example';
+import { AskConcierge } from '../components/AskConcierge';
 import { MobileCallBar } from '../components/MobileCallBar';
 import './globals.css';
 
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${sortsMillGoudy.variable} ${figtree.variable}`}>
       <body className="bg-canvas pb-20 font-body text-ink antialiased md:pb-0">
         {children}
+        <AskConcierge />
         <MobileCallBar />
         <script
           type="application/ld+json"

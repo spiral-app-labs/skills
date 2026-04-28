@@ -1,1 +1,9 @@
 .vercel
+
+# env files \u2014 NEVER commit (server-side secrets)
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local

@@ -22,10 +22,14 @@ doesn't (parser, streaming, cards, prompt structure).
 ```
 scaffold/
 ├── lib/concierge-voice.ts      REPLACE per fork (the voice — ~60 lines)
+├── lib/concierge-config.ts     REPLACE per fork (tenant/site IDs + entrance prompts)
+├── lib/concierge-analytics.ts  COPY verbatim (event logging + redaction)
 ├── lib/concierge-kb.ts          COPY verbatim (the prompt builder)
 ├── components/concierge-theme.ts  REPLACE per fork (~25 lines of classes)
+├── components/ConciergeEntrance.tsx COPY verbatim (embedded entrance cards)
 ├── components/AskConcierge.tsx    COPY verbatim (parser + cards + streaming)
 └── app/api/chat/route.ts        COPY verbatim (Anthropic proxy)
+└── app/api/concierge-events/route.ts COPY verbatim (frontend event ingest)
 examples/
 ├── voice-warm-finedining.ts    1776-style filled-in voice
 └── voice-editorial.ts          alinea-style filled-in voice
@@ -39,6 +43,12 @@ RECIPE.md                        The 10-step integration checklist
 - **Voice and theme are the only things that differ.** If you find yourself
   editing `concierge-kb.ts` or `AskConcierge.tsx` in a fork, stop — that's a
   signal the kit needs to evolve.
+- **Entrances are distributed, panel is shared.** Home/menu/contact surfaces
+  open the same concierge panel and pass surface/page/prompt context into
+  analytics.
+- **Reports are the product.** Event and message logging exists so monthly
+  owner reports can say what guests asked, what the site failed to answer, and
+  what to improve next.
 - **Introspection over configuration.** The kit reads whatever's in
   `content.ts` and auto-composes the prompt. A template with no menu gets no
   menu section. A template with tiers gets tiers.

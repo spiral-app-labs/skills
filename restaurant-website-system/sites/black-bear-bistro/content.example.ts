@@ -196,6 +196,83 @@ export const content = {
     trustIcons: ['Chef-owned', 'Small dining room', 'Special occasion favorite'],
   },
 
+  reviews: {
+    eyebrow: 'Google review themes',
+    heading: 'The kind of dinner people tell friends about',
+    items: [
+      {
+        label: 'Hidden-gem diner',
+        quote:
+          'Phenomenal preparation, delightfully unpretentious atmosphere, great wine selection, and one of the most flavorful appetizers I have ever had.',
+      },
+      {
+        label: 'Special-occasion guest',
+        quote:
+          'Amazing from beginning to end. Excellent service, exciting menu choices, and every dish was delicious, filling, and beautiful.',
+      },
+      {
+        label: 'Cozy bistro regular',
+        quote:
+          'The food was delicious and the presentation was artistic. Algonquin is so fortunate to have this wonderful, cozy bistro.',
+      },
+      {
+        label: 'Friday-night diner',
+        quote:
+          'Make reservations. The appetizers were delicious, dinner was outstanding, and the chef does an incredible job in a small, charming room.',
+      },
+      {
+        label: 'Wild-game regular',
+        quote:
+          'The mixed grill was cooked to perfection, the blueberry merlot reduction paired beautifully, and the menu felt creative and unique.',
+      },
+      {
+        label: 'Main Street regular',
+        quote:
+          'The food has a ton of flavor. You can tell how much the chef cares, and it feels like a true hidden gem in Algonquin.',
+      },
+      {
+        label: 'Birthday guest',
+        quote:
+          'A birthday celebration turned out amazing. Warm service, creative drinks, and a filet with tamarind glaze that stood out.',
+      },
+      {
+        label: 'Food-lover table',
+        quote:
+          'Every dish feels made with care. The printed menu has so much to explore, from game options to fresh local produce.',
+      },
+      {
+        label: 'Sauce enthusiast',
+        quote:
+          'Every sauce was spot on. The bison, poblano, soup, drinks, and service made it a new favorite place.',
+      },
+      {
+        label: 'Date-night diner',
+        quote:
+          'The meal was filling, delicious, and fun to look at. Definitely worth a stop for a special occasion or date night.',
+      },
+      {
+        label: 'Fox River regular',
+        quote:
+          'Possibly the best restaurant along the Fox River. Unique menu, personal service, and special options made to perfection.',
+      },
+      {
+        label: 'Vegetarian-friendly guest',
+        quote:
+          'Even better than we remembered. Nothing disappointed, the vegetarian options were strong, and the service was top notch.',
+      },
+      {
+        label: 'First-time guest',
+        quote:
+          'A quiet little restaurant you might walk right past, with wonderful wild game dishes and generous, accommodating service.',
+      },
+      {
+        label: 'Algonquin local',
+        quote:
+          'One of the best meals I have ever had. Calamari, seafood paella, scallops, and gluten-free adjustments were all handled beautifully.',
+      },
+    ],
+  },
+
   blog: {
     heading: 'Tonight at Black Bear',
     cta: { label: 'Download dinner PDF', href: 'https://www.theblackbearbistro.com/s/Dinner_Menu_12_5_2025.pdf' },

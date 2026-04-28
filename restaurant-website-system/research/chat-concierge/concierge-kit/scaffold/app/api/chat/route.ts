@@ -1,5 +1,10 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { SYSTEM_PROMPT, RESERVATION_INTENT_TOOL } from '../../../lib/concierge-kb';
+import {
+  logConciergeMessage,
+  logConciergeServerEvent,
+  type ConciergeTrackingContext,
+} from '../../../lib/concierge-analytics';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -9,6 +14,7 @@ const client = new Anthropic();
 export async function POST(req: Request) {
   let body: {
     messages?: Array<{ role: 'user' | 'assistant'; content: string }>;
+    context?: ConciergeTrackingContext;
   };
 
   try {
@@ -27,6 +33,9 @@ export async function POST(req: Request) {
     });
   }
 
+  const requestContext = body.context;
+  const latestUserMessage = [...body.messages].reverse().find((m) => m.role === 'user');
+
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
     async start(controller) {
@@ -36,6 +45,22 @@ export async function POST(req: Request) {
       const toolBuffers: Record<number, { name: string; jsonStr: string }> = {};
 
       try {
+        if (requestContext && latestUserMessage) {
+          await logConciergeMessage({
+            context: requestContext,
+            role: 'user',
+            text: latestUserMessage.content,
+          });
+          await logConciergeServerEvent({
+            eventName: 'query_submitted',
+            context: requestContext,
+            properties: {
+              query_length: latestUserMessage.content.length,
+            },
+          });
+        }
+
+        let assistantText = '';
         const claudeStream = client.messages.stream({
           model: 'claude-haiku-4-5',
           max_tokens: 600,
@@ -63,6 +88,7 @@ export async function POST(req: Request) {
 
           if (event.type === 'content_block_delta') {
             if (event.delta.type === 'text_delta') {
+              assistantText += event.delta.text;
               controller.enqueue(
                 encoder.encode(
                   `data: ${JSON.stringify({ text: event.delta.text })}\n\n`,
@@ -97,6 +123,21 @@ export async function POST(req: Request) {
             }
             continue;
           }
+        }
+
+        if (requestContext && assistantText.trim()) {
+          await logConciergeMessage({
+            context: requestContext,
+            role: 'assistant',
+            text: assistantText,
+          });
+          await logConciergeServerEvent({
+            eventName: 'answer_completed',
+            context: requestContext,
+            properties: {
+              response_length: assistantText.length,
+            },
+          });
         }
 
         controller.enqueue(

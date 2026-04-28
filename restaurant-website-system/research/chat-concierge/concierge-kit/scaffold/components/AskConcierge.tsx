@@ -27,6 +27,13 @@ import {
   type ReservationConfig,
   type ReservationIntent,
 } from '../lib/concierge-reserve';
+import { CONCIERGE_CONFIG, getSurface, type ConciergeSurface } from '../lib/concierge-config';
+import {
+  buildClientContext,
+  trackConciergeEvent,
+  type ConciergeTrackingContext,
+} from '../lib/concierge-analytics';
+import { CONCIERGE_OPEN_EVENT, type ConciergeOpenDetail } from './ConciergeEntrance';
 import { THEME } from './concierge-theme';
 
 type ChatMessage = { role: 'user' | 'assistant'; content: string };
@@ -179,16 +186,19 @@ function ReserveButton({
   intent,
   config,
   onToast,
+  onCtaClick,
 }: {
   intent: ReservationIntent;
   config: ReservationConfig;
   onToast: (message: string) => void;
+  onCtaClick: (ctaType: string, destination: string) => void;
 }) {
   const url = useMemo(() => buildReservationUrl(intent, config), [intent, config]);
   const preview = useMemo(() => formatIntentPreview(intent), [intent]);
   const special = useMemo(() => buildSpecialRequest(intent), [intent]);
 
   const handleClick = useCallback(async () => {
+    onCtaClick('reserve', url);
     if (!special) return;
     const ok = await copyToClipboard(special);
     onToast(
@@ -196,7 +206,7 @@ function ReserveButton({
         ? 'Special request copied, paste it in the notes field on OpenTable.'
         : 'Mention your special request in the notes field of the reservation platform.',
     );
-  }, [special, onToast]);
+  }, [onCtaClick, onToast, special, url]);
 
   return (
     <div className="flex flex-col gap-1">
@@ -218,16 +228,25 @@ function ReserveButton({
   );
 }
 
-function CallButton() {
+function CallButton({ onCtaClick }: { onCtaClick: (ctaType: string, destination: string) => void }) {
   const phone = (content as any).brand?.phone ?? '';
+  const href = `tel:+${phone.replace(/[^0-9]/g, '')}`;
   return (
-    <a href={`tel:+${phone.replace(/[^0-9]/g, '')}`} className={THEME.cta.outlineClasses}>
+    <a href={href} onClick={() => onCtaClick('call', href)} className={THEME.cta.outlineClasses}>
       Call {phone}
     </a>
   );
 }
 
-function PageLinkButton({ path, label }: { path: string; label: string }) {
+function PageLinkButton({
+  path,
+  label,
+  onCtaClick,
+}: {
+  path: string;
+  label: string;
+  onCtaClick: (ctaType: string, destination: string) => void;
+}) {
   const validPaths: Record<string, string> = {
     menu: '/menu',
     about: '/about',
@@ -239,7 +258,7 @@ function PageLinkButton({ path, label }: { path: string; label: string }) {
   const href = validPaths[path] ?? null;
   if (!href) return null;
   return (
-    <a href={href} className={THEME.cta.pageClasses}>
+    <a href={href} onClick={() => onCtaClick('page', href)} className={THEME.cta.pageClasses}>
       {label} <span aria-hidden>→</span>
     </a>
   );
@@ -254,7 +273,12 @@ function CtaRow({ children }: { children: React.ReactNode }) {
 function renderCtaButton(
   block: Extract<Block, { type: 'marker' }>,
   i: number,
-  ctx: { intent: ReservationIntent; config: ReservationConfig; onToast: (m: string) => void },
+  ctx: {
+    intent: ReservationIntent;
+    config: ReservationConfig;
+    onToast: (m: string) => void;
+    onCtaClick: (ctaType: string, destination: string) => void;
+  },
 ) {
   if (block.kind === 'reserve')
     return (
@@ -263,11 +287,19 @@ function renderCtaButton(
         intent={ctx.intent}
         config={ctx.config}
         onToast={ctx.onToast}
+        onCtaClick={ctx.onCtaClick}
       />
     );
-  if (block.kind === 'call') return <CallButton key={i} />;
+  if (block.kind === 'call') return <CallButton key={i} onCtaClick={ctx.onCtaClick} />;
   if (block.kind === 'page' && block.id)
-    return <PageLinkButton key={i} path={block.id} label={block.label ?? block.id} />;
+    return (
+      <PageLinkButton
+        key={i}
+        path={block.id}
+        label={block.label ?? block.id}
+        onCtaClick={ctx.onCtaClick}
+      />
+    );
   return null;
 }
 
@@ -291,7 +323,12 @@ function renderRichBlock(block: Extract<Block, { type: 'marker' }>, i: number) {
 
 function renderBlocks(
   blocks: Block[],
-  ctx: { intent: ReservationIntent; config: ReservationConfig; onToast: (m: string) => void },
+  ctx: {
+    intent: ReservationIntent;
+    config: ReservationConfig;
+    onToast: (m: string) => void;
+    onCtaClick: (ctaType: string, destination: string) => void;
+  },
 ) {
   const out: React.ReactNode[] = [];
   let i = 0;
@@ -336,11 +373,13 @@ function AssistantBubble({
   intent,
   config,
   onToast,
+  onCtaClick,
 }: {
   text: string;
   intent: ReservationIntent;
   config: ReservationConfig;
   onToast: (m: string) => void;
+  onCtaClick: (ctaType: string, destination: string) => void;
 }) {
   const blocks = useMemo(() => parseResponse(text), [text]);
   if (blocks.length === 0) {
@@ -352,7 +391,7 @@ function AssistantBubble({
       </div>
     );
   }
-  return <div className="space-y-3">{renderBlocks(blocks, { intent, config, onToast })}</div>;
+  return <div className="space-y-3">{renderBlocks(blocks, { intent, config, onToast, onCtaClick })}</div>;
 }
 
 // ---- Main component --------------------------------------------------------
@@ -360,6 +399,15 @@ function AssistantBubble({
 export function AskConcierge() {
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeSurface, setActiveSurface] = useState<ConciergeSurface>(() =>
+    getSurface('floating_pill'),
+  );
+  const [activeContext, setActiveContext] = useState<ConciergeTrackingContext>(() =>
+    buildClientContext({
+      surfaceId: 'floating_pill',
+      pageType: 'sitewide',
+    }),
+  );
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [streaming, setStreaming] = useState(false);
@@ -390,6 +438,28 @@ export function AskConcierge() {
     [],
   );
 
+  const openFromContext = useCallback((context: ConciergeTrackingContext) => {
+    const surface = getSurface(context.surfaceId);
+    setActiveSurface(surface);
+    setActiveContext(context);
+    setOpen(true);
+  }, []);
+
+  useEffect(() => {
+    const handler = (event: Event) => {
+      const detail = (event as CustomEvent<ConciergeOpenDetail>).detail;
+      if (!detail) return;
+      openFromContext(detail);
+      if (detail.promptText) {
+        setTimeout(() => {
+          void send(detail.promptText!, detail);
+        }, 0);
+      }
+    };
+    window.addEventListener(CONCIERGE_OPEN_EVENT, handler);
+    return () => window.removeEventListener(CONCIERGE_OPEN_EVENT, handler);
+  });
+
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > window.innerHeight * 0.35) setVisible(true);
@@ -413,9 +483,21 @@ export function AskConcierge() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, streaming]);
 
-  async function send(userMessage: string) {
+  const trackCtaClick = useCallback(
+    (ctaType: string, destination: string) => {
+      trackConciergeEvent({
+        eventName: 'cta_click',
+        context: activeContext,
+        properties: { cta_type: ctaType, destination },
+      });
+    },
+    [activeContext],
+  );
+
+  async function send(userMessage: string, contextOverride?: ConciergeTrackingContext) {
     if (!userMessage.trim() || streaming) return;
     setInput('');
+    const requestContext = contextOverride ?? activeContext;
     const next: ChatMessage[] = [...messages, { role: 'user', content: userMessage.trim() }];
     setMessages(next);
     setStreaming(true);
@@ -426,7 +508,7 @@ export function AskConcierge() {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ messages: next }),
+        body: JSON.stringify({ messages: next, context: requestContext }),
       });
       if (!res.body) throw new Error('No response body');
       const reader = res.body.getReader();
@@ -478,14 +560,29 @@ export function AskConcierge() {
   }
 
   const emptyHeading = (content as any).brand?.tagline ?? 'How can we help?';
-  const emptySub = 'Ask about the menu, hours, directions, or a table tonight.';
+  const emptySub = activeSurface.body ?? 'Ask about the menu, hours, directions, or a table tonight.';
+  const starterPrompts =
+    activeSurface.prompts.length > 0
+      ? activeSurface.prompts
+      : VOICE.suggestedChips.map((text, i) => ({ id: `suggested_${i + 1}`, text }));
 
   return (
     <>
       <button
         type="button"
         aria-label="Ask the concierge"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          const context = buildClientContext({
+            surfaceId: 'floating_pill',
+            pageType: 'sitewide',
+          });
+          trackConciergeEvent({
+            eventName: 'entry_click',
+            context,
+            properties: { label: CONCIERGE_CONFIG.surfaces.floating_pill.label },
+          });
+          openFromContext(context);
+        }}
         className={`${THEME.trigger.pillClasses} ${
           visible && !open ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'
         }`}
@@ -500,7 +597,17 @@ export function AskConcierge() {
           open ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
       >
-        <div className={THEME.panel.backdropClasses} onClick={() => setOpen(false)} />
+        <div
+          className={THEME.panel.backdropClasses}
+          onClick={() => {
+            trackConciergeEvent({
+              eventName: 'conversation_closed',
+              context: activeContext,
+              properties: { close_reason: 'backdrop' },
+            });
+            setOpen(false);
+          }}
+        />
         <div
           role="dialog"
           aria-label="Concierge"
@@ -513,7 +620,14 @@ export function AskConcierge() {
             <button
               type="button"
               aria-label="Close"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                trackConciergeEvent({
+                  eventName: 'conversation_closed',
+                  context: activeContext,
+                  properties: { close_reason: 'button' },
+                });
+                setOpen(false);
+              }}
               className="text-text-muted hover:text-text"
             >
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
@@ -542,6 +656,7 @@ export function AskConcierge() {
                       intent={intent}
                       config={reservationConfig}
                       onToast={showToast}
+                      onCtaClick={trackCtaClick}
                     />
                   </div>
                 ),
@@ -551,14 +666,25 @@ export function AskConcierge() {
 
           {messages.length === 0 && (
             <div className={THEME.chips.wrapperClasses}>
-              {VOICE.suggestedChips.map((chip) => (
+              {starterPrompts.map((chip) => (
                 <button
-                  key={chip}
+                  key={chip.id}
                   type="button"
-                  onClick={() => send(chip)}
+                  onClick={() => {
+                    const context = {
+                      ...activeContext,
+                      promptId: chip.id,
+                      promptText: chip.text,
+                    };
+                    trackConciergeEvent({
+                      eventName: 'starter_prompt_click',
+                      context,
+                    });
+                    send(chip.text, context);
+                  }}
                   className={THEME.chips.chipClasses}
                 >
-                  {chip}
+                  {chip.text}
                 </button>
               ))}
             </div>
@@ -587,7 +713,7 @@ export function AskConcierge() {
               </button>
             </div>
             <p className={THEME.composer.footnoteClasses}>
-              AI concierge, confirm with the restaurant for allergy or time-sensitive questions.
+              {CONCIERGE_CONFIG.privacyNotice}
             </p>
           </form>
 
