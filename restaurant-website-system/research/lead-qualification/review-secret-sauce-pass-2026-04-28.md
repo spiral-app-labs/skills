@@ -14,6 +14,7 @@ Purpose: run the new review-plus-website synthesis across the recent restaurant 
 | Vine & Plate | Uses website content, audit OpenTable proof, wine-program surfaces, and prototype content. Fresh Google packet still recommended. | Wine bar + provisions, shared plates, bottle nights, wine dinners, Vine Club, Off The Vine, Toast/reservation/gift-card preservation. | Existing `pitch-doc.md` updated with secret-sauce framing. |
 | Grounds Coffee Bar | User pasted representative Google reviews in the build thread on 2026-04-28. | Cozy/laptop-friendly cafe, friendly baristas, balanced seasonal lattes, nitro cold brew, pastries, local goods, pup cups, roaster bridge. | Existing `pitch-doc.md` updated; source notes now include formal `Secret Sauce`. |
 | Shirley's Piano Bar | User pasted representative Google reviews after first build. | Attentive bartenders, Jess, good drinks, request-led music, sing-alongs, birthdays, after-dinner groups, intimate room energy. | Existing `pitch-doc.md` updated; source notes now include formal `Secret Sauce`. |
+| Bistro Wasabi | User pasted representative Google reviews in the build thread on 2026-04-29; old site captured with the restaurant-template-analysis workflow. | Fresh sushi, martinis/wine, steaks and non-sushi entrees, elevated strip-mall atmosphere, long-running consistency, Tock/Toast preservation. | Added `sites/bistro-wasabi/audit.md`; source notes now include formal `Secret Sauce`. |
 
 ## Sales Pattern
 

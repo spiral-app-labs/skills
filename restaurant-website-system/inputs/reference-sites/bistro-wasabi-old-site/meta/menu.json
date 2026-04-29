@@ -1,0 +1,101 @@
+{
+  "url": "https://thebistrowasabi.com/menu",
+  "dims": {
+    "scrollHeight": 8647,
+    "clientHeight": 900,
+    "scrollWidth": 1440,
+    "clientWidth": 1440
+  },
+  "computed": {
+    "bodyBg": "rgb(13, 16, 21)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "h1": {
+      "selector": "h1",
+      "text": "Come and Experience",
+      "fontFamily": "\"Great Vibes\", Georgia, \"Times New Roman\", serif",
+      "fontSize": "100px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "80px",
+      "color": "rgb(27, 112, 254)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "h2": null,
+    "h3": null,
+    "p": {
+      "selector": "p",
+      "text": "LOCATIONS",
+      "fontFamily": "Montserrat, Helvetica, Arial, Lucida, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "34.2px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    },
+    "buttonAny": {
+      "selector": "button, a[role=button], [class*=button]",
+      "text": "847-515-2700\n\t\t\t\t\n\t\t\t\t\t\t\t\t\tthebistrowasabi@gmail.com\n\t\t\t\t\n\t\t\t\t\t\t\t\t \n\n\t\t\t\n\t\t\t\t\n\t\t",
+      "fontFamily": "Montserrat, Helvetica, Arial, Lucida, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "34.2px",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(13, 16, 21)",
+      "textTransform": "none"
+    },
+    "navLink": {
+      "selector": "nav a, header a",
+      "text": "",
+      "fontFamily": "Montserrat, Helvetica, Arial, Lucida, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "letterSpacing": "normal",
+      "lineHeight": "23px",
+      "color": "rgb(27, 112, 254)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "animations": {
+    "animations": [
+      "0.2s linear",
+      "2.2s ease-out infinite fullwidth-header-bounce"
+    ],
+    "transitions": [
+      "all",
+      "none",
+      "background-color 0.4s, transform 0.4s, opacity 0.4s ease-in-out, -webkit-transform 0.4s",
+      "background-color 0.4s, color 0.4s ease-in-out",
+      "background-color 0.4s, color 0.4s, transform 0.4s, opacity 0.4s ease-in-out, -webkit-transform 0.4s",
+      "0.4s ease-in-out",
+      "opacity 0.4s ease-in-out, background-color 0.4s ease-in-out",
+      "opacity 0.2s ease-in-out, background-color 0.2s ease-in-out",
+      "opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1)"
+    ],
+    "transforms": [
+      "matrix(1, 0, 0, 1, 0, 0)"
+    ]
+  },
+  "fontUrls": [
+    "https://thebistrowasabi.com/wp-content/themes/Divi/core/admin/fonts/modules/all/modules.woff",
+    "https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w3aXo.woff2",
+    "https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw3aXo.woff2",
+    "https://fonts.gstatic.com/s/greatvibes/v21/RWmMoKWR9v4ksMfaWd_JN9XLiaQ.woff2",
+    "https://fonts.gstatic.com/s/mulish/v18/1Ptwg83HX_SGhgqk2hAjQlW_mEuZ0FsSKeOfGZQ6DzNVwd6k.woff2",
+    "https://fonts.gstatic.com/s/mulish/v18/1Ptyg83HX_SGhgqO0yLcmjzUAuWexZNR8aevG547LTdNwA.woff2",
+    "https://fonts.gstatic.com/s/mulish/v18/1Ptyg83HX_SGhgqO0yLcmjzUAuWexc1R8aevG547LTdNwA.woff2",
+    "https://fonts.gstatic.com/s/mulish/v18/1Ptwg83HX_SGhgqk2hAjQlW_mEuZ0FsSd-OfGZQ6DzNVwd6k.woff2",
+    "https://fonts.gstatic.com/s/opensanscondensed/v24/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMR7eS2Ao.woff2"
+  ],
+  "imgUrls": [
+    "https://thebistrowasabi.com/wp-content/uploads/2019/08/bistro_logo_300.png",
+    "https://thebistrowasabi.com/wp-content/uploads/2019/04/Discover-Menu-1-1.jpg",
+    "https://thebistrowasabi.com/wp-content/uploads/2019/07/starters-1.jpg",
+    "https://thebistrowasabi.com/wp-content/themes/Zara/assets/img/zara-footer.jpg",
+    "https://s3.amazonaws.com/menupro/css_mobile/powered-by.png"
+  ]
+}

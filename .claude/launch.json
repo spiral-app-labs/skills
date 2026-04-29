@@ -24,6 +24,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/sites/cucina-bella", "run", "dev", "--", "--port", "3108"],
       "port": 3108
+    },
+    {
+      "name": "galatis-hideaway",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/galatis-hideaway", "run", "dev", "--", "--port", "3018"],
+      "port": 3018
     }
   ]
 }

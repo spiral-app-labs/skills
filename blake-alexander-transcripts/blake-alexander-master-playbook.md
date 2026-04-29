@@ -300,3 +300,275 @@ Sell local businesses without websites a monthly website subscription ($197–$3
 ---
 
 *Source: Blake Alexander YouTube channel — 21 video transcripts, synthesized April 2026*
+
+---
+
+---
+
+# Restaurant Agency Amendment
+## Applying Blake's Playbook to a Premium Restaurant Website + AI Concierge Agency
+> **Goal: $200K gross by July 1, 2026 (9 weeks from April 29)**
+> This section amends, overrides, and extends the Blake Alexander playbook for a restaurant-specific agency with a higher-value offer, a speculative demo-first workflow, and a built-in AI concierge product.
+
+---
+
+## Where This Model Diverges From Blake's
+
+Blake's model works because he calls owner-operated trades (plumbers, locksmiths, roofers) where the owner picks up the phone every time. He builds a $5 Framer template in 5 minutes and sells it for $297/month. His moat is volume and churn optimization, not product quality.
+
+This agency is the opposite in almost every dimension:
+
+| | Blake's Model | Restaurant Agency |
+|--|--|--|
+| Lead type | No-website local trades | Bad-website restaurants |
+| Demo build time | 5 seconds (Tenji generator) | 15 min (OpenClaw) / 30 min manual |
+| Demo quality | Framer template, name swapped | Full Next.js build, real content, real brand |
+| Outreach | Cold call (owner picks up) | Email-first (gatekeeper problem) |
+| Price | $197–397/month | $3,000 upfront + $500/month |
+| Product moat | Volume + domain lock-in | Design quality + AI concierge + audit |
+| Close mechanism | Demo call surprises them | Demo already built before first contact |
+| Target | Businesses with NO website | Businesses with BAD website |
+
+The core Blake principle that **does** carry over completely: **never sell on the cold contact — only book the demo meeting. The demo IS the close.**
+
+---
+
+## Updated Pricing Structure
+
+**Default package (lead with this):**
+- $3,000 upfront — website redesign + AI concierge setup, configured before the pitch
+- 3 months free hosting/maintenance
+- $500/month after month 3
+
+**Why this pricing:**
+- $3,000 is high enough to be taken seriously (at $900 they wonder what the catch is)
+- The speculative demo justifies the price — they've seen the finished product before paying
+- 3 months free removes the "I need to think about it" stall — deploy it as a live concession on the call, not a default offer
+- $500/month after month 3 is the real business: 40 clients = $20K/month recurring without closing a single new deal
+
+**What not to do:**
+- Don't lead with a website-only tier. It anchors low and doesn't serve the $200K goal.
+- Don't split the AI concierge into an upsell. It's already configured for their restaurant before they see the demo — that's the wow moment. Bundling it in at $3,000 makes the price feel like a bargain, not a barrier.
+- Don't obsess over the monthly fee for the 9-week sprint. At $500/month, 1.5 months of MRR adds $750 per deal. The $3,000 upfront is the only number that matters right now.
+
+**The one-time fee trap (from Blake, directly applicable):**
+Blake made $128K in month 1 on one-time fees and called it his biggest mistake — next month he had $0 recurring and had to grind just as hard. The $500/month after 3 free months is what separates a sprint from a business. Close 40 clients in 9 weeks and month 4 starts with $20K/month already in the bank whether or not you pitch anyone.
+
+---
+
+## The $200K Math — What Needs To Be True
+
+**Revenue per close:** $3,000 upfront + ~$750 avg MRR collected in sprint = **~$3,750 effective revenue per close**
+
+**Closes needed:** $200K ÷ $3,750 = **~54 closes**
+
+**Over 9 weeks:** 54 ÷ 9 = **6 closes/week**
+
+**At 40% demo close rate:** 6 ÷ 0.4 = **15 demos/week = 3 demos/day**
+
+**Demo production at 15 min with OpenClaw:** 3 demos/day = **45 min of build time**
+
+This is achievable solo. The bottleneck is not building demos — it's getting 3 qualified demo meetings per day. That means sending roughly 15–20 cold emails per day (aiming for a 20% reply rate), which requires a qualified lead pipeline of 15–20 restaurant leads per day with owner contact info ready.
+
+**If close rate is lower (30%):** need 20 demos/week = 4/day → increase email volume to 25–30/day.
+
+**Conservative scenario (25% close rate, 10 demos/week):**
+- 25 closes × $3,750 = $93,750 — good money for 9 weeks, not $200K
+
+**The lever:** demo close rate. Every 5% improvement in close rate is worth ~$19K toward the goal. The audit-first opening (see below) is the highest-leverage way to increase it.
+
+---
+
+## Lead Qualification — What Makes a Good Restaurant Lead
+
+Unlike Blake (who targets no-website businesses), this model targets restaurants with **bad** websites because the pitch depends on a visible before/after contrast.
+
+**Qualify IN if the restaurant has:**
+- Broken or non-existent mobile menu
+- Photos that don't match the actual food/vibe quality
+- No clear reservation or order CTA above the fold
+- Slow load time or outdated design
+- Strong Google reviews or food quality that the current site undersells
+- Average check $30+ per person (mid-tier, neighborhood, premium, fine dining)
+
+**Qualify OUT if:**
+- Website is already strong (you can't show a meaningful gap)
+- Restaurant is fast food / QSR (wrong price point, wrong owner profile)
+- New restaurant with no reviews (nothing to work with)
+- Chain or franchise (no individual owner making the call)
+
+**How to build the qualified lead list (AI-assisted):**
+Use a prompt like: *"List independent restaurants in [city/neighborhood] that are mid-tier to upscale, have been open 2+ years, and show up prominently on Google Maps. Include their website URL, Google review count, and price tier."* Then filter by running the website audit — which the existing audit skill handles — to identify which ones have the specific problems above.
+
+**Finding the owner's contact info (in order of reliability):**
+1. Restaurant website — About or Contact page, often has a direct owner email
+2. Google Maps listing — sometimes lists a direct email
+3. Instagram bio — many restaurant owners list their email or are the ones posting
+4. LinkedIn — search "[restaurant name] [city] owner/founder"
+5. Local press (opening coverage, food blogs) — often names the owner
+6. info@ or contact@ — gets monitored by owner or a manager who will forward
+
+Target: **owner name + direct email** before building the demo. Generic info@ works but a named email converts better.
+
+---
+
+## Cold Outreach — Email First, Not Cold Calls
+
+**The gatekeeper problem:** Calling a restaurant gets you a host, a server, or front-of-house staff. "Can I speak to the owner?" gets "they're not available." Blake doesn't have this problem because his leads (locksmiths, plumbers) answer their own phones. Restaurant owners don't.
+
+**The solution: email-first with the Vercel link as the pitch.**
+
+The demo does the selling asynchronously. By the time they reply, they've already seen the finished product — you're not pitching anymore, you're just scheduling.
+
+**The cold email template:**
+
+> **Subject: rebuilt [Restaurant Name]'s site**
+>
+> Hey [Owner name] —
+>
+> Noticed [specific problem: e.g., "your menu doesn't load on mobile" / "the photos don't match how good the food actually is"]. Rebuilt it.
+>
+> [Vercel preview URL]
+>
+> Worth 10 min if you like it. Text me: [number]
+>
+> — Ethan
+
+**Rules for the email:**
+- One specific problem only — not a list. Specificity signals you actually looked.
+- The link IS the pitch. Don't explain the product in the email.
+- Personal number to text — restaurant owners are busy, text converts better than email reply chains
+- Sign as Ethan, not as the agency name
+- No "I'm from X company," no bullet points, no feature list
+- Total word count: under 60 words
+
+**Send from: ethan@ethantalreja.com**
+- Personal domain signals a real person, not a corporate agency
+- Restaurant owners buy from people — the personal email matches the "I personally rebuilt your site" energy
+- Won't trigger spam filters the way a new .ai domain might
+- Save spiralapplabs.ai for follow-ups once they've responded, or when they ask for the agency site
+
+**If you do need to call (backup):**
+- Call between 2–4pm Tuesday or Wednesday (post-lunch lull, slowest service days)
+- Ask for the owner by name if you have it
+- If you don't: *"I sent an email about the website to whoever handles marketing — is that the owner or someone else I should talk to?"* This frames it as a follow-up, not a cold pitch — front-of-house usually just transfers you
+
+**Daily email volume needed to hit the $200K math:**
+- Target 20% reply rate on cold emails
+- Need 3 demos/day → need 15 emails/day minimum
+- To be safe: send 20–25 emails/day with qualified leads
+- That's 100–125 emails/week — very manageable with a good lead pipeline
+
+---
+
+## The Demo Production Pipeline
+
+**Current throughput:**
+- By hand: 30 minutes per demo
+- With OpenClaw + 2 agents: 15 minutes per demo
+
+**At 15 min/demo:** 3 demos/day = 45 minutes of build time. The bottleneck is NOT building — it's booking demo meetings.
+
+**What OpenClaw needs as input to produce a 15-min demo:**
+The quality of the input determines whether 15 minutes is real or whether it becomes 45 minutes of cleanup. A clean input should include:
+- Restaurant name + city
+- Current website URL (for the audit)
+- Their Google Maps URL (reviews, photos, hours)
+- Instagram URL if they have one (additional photos, tone/vibe)
+- Price tier (casual / neighborhood / premium / fine dining)
+- Revenue model (dine-in, delivery, reservations, private events)
+
+If this input can be generated automatically from a restaurant name + Google Maps search, the pipeline holds at scale. If it requires manual prep per restaurant, factor in an extra 15–20 min per lead.
+
+**The stress test:** Before scaling outreach, run a sprint — try to produce 10 demos in one day and see what breaks. That's the real number, not the theoretical one.
+
+---
+
+## The Demo Call — Audit-First, Then the Fix
+
+**The biggest difference from Blake's approach:** your demo call opens with the audit, not the product.
+
+Blake opens by screen-sharing the new site. You open by naming the specific wounds first:
+
+> *"I pulled up your current site before this call. Three things stood out: the menu is impossible to find on mobile, the photos on the homepage don't match how good the food actually is based on your reviews, and there's no way for someone to book a table or even find your hours without scrolling. Here's what we built to fix all three."*
+
+Then you show the demo. This sequence — name the problem, then show the solution — does two things: it positions you as someone who did real homework (not a vendor pitching a template), and it makes the "before" feel urgent before they've even seen the "after." The gap between what they have and what you're showing them becomes emotional, not just aesthetic.
+
+**The AI concierge reveal:**
+Show it live on the demo. Pull up the chat widget and ask it a question about their menu in front of them — *"What's good here if I don't eat gluten?"* The concierge answers accurately because it's already trained on their real menu. This is the moment where the price stops feeling like a price. They're not buying a website anymore — they're buying something that already knows their restaurant.
+
+**ROI framing for restaurants:**
+> *"What's your average table spend?"*
+> If they say $60–80/person: *"One extra table a week — that's it. One booking that would have bounced off your current site. That covers the entire cost of this. Everything else is pure upside."*
+
+**The 3-months-free close:**
+Hold this back. Don't mention it upfront. If they say "I need to think about it" or "what happens after we sign" — that's when you deploy it: *"Look, I'll tell you what — the first three months are on me. You pay nothing until you've had time to see what the site actually does for your bookings. After that it's $500/month, and honestly if it hasn't paid for itself by then, tell me."*
+
+**Never end the call without attempting to close or getting a specific next step.** A "I'll think about it" with no follow-up date is a dead lead.
+
+---
+
+## Conviction — The Real Bottleneck
+
+From our conversation: the issue isn't the product. You believe in the website and the AI concierge. The conviction gap is usually one of two things: not sure the owner will say yes, or not sure the price is justified.
+
+Both collapse after the first few closes. But to get there faster, internalize this:
+
+**Your demo is incomparably stronger than Blake's.** He converts 1 in 50 cold calls showing a Framer plumbing template with a name swapped. You're showing a restaurant owner a fully-built, content-accurate, visually stunning version of their *own restaurant* — with an AI that already knows their menu answering questions in their brand voice. The perceived gap between what they have and what you're showing them is not incremental. It's the difference between their actual broken mobile site and something that looks like a Michelin-star restaurant's web presence.
+
+**The "tell me to f*** off" principle (from Blake, video 9 and 12):**
+The moment you stop needing their approval, your close rate goes up. Blake's phrase: *"If you don't like it, tell me to piss off — that's completely fine."* The restaurant version: *"You don't have to commit to anything. Look at it, and if it's not right, just tell me."* Non-desperation is a closing tactic.
+
+**The specific problem opener builds conviction on their side before yours:**
+When you open with the three specific things wrong with their current site, you're not asking them to imagine a benefit — you're showing them a loss they're already experiencing. Loss aversion closes faster than aspiration.
+
+---
+
+## Churn Optimization — Restaurant-Specific
+
+**The domain ownership rule applies here too.** Register their domain in your account. This is the single highest-leverage churn reduction tactic. A restaurant owner who cancels your service loses their domain (and all the SEO + Google indexing built on it). This makes canceling expensive, not just inconvenient.
+
+**Additional retention levers specific to restaurants:**
+- The AI concierge becomes stickier every month. It logs every conversation, improving with use. A client who cancels after 6 months loses all that conversation history and training.
+- Monthly reports on concierge conversations create genuine dependency — the owner is getting insights they can't get anywhere else (what guests are confused about, what dietary questions they're asking, which menu items people research before visiting).
+- Tie the monthly report delivery to a quick 15-minute check-in call. This keeps the relationship warm and surfaces upsell opportunities (new location, seasonal menu update, private events page).
+
+**Target churn: under 10%** — restaurants are stickier than trades because the product is more deeply embedded in how they operate.
+
+---
+
+## Scaling With a Team (When Ready)
+
+**Do it yourself first.** This is the most important rule. You need to understand every objection before you can train someone else to handle it. The first 10–15 closes solo are the curriculum for your eventual sales team.
+
+**Commission structure when you do hire:**
+- $150–300 per close is reasonable for someone doing demos only (you've already warmed the lead with the email)
+- $300+ if they're also doing outreach and lead qualification
+- Don't overthink this until you have someone to pay
+
+**What salespeople can run independently:**
+A non-technical person can show a demo call effectively because the product is visual and the audit script is learnable. The demo is a before/after walkthrough, not a technical pitch. The AI concierge demo is especially salesperson-friendly — ask it a question about the menu, it answers. That's the close.
+
+**What stays with you longer:**
+- OpenClaw demo production (quality control)
+- Lead qualification (knowing what makes a good vs bad restaurant lead)
+- Pricing negotiation and objection handling on larger deals
+
+---
+
+## Tools — Restaurant Agency Additions
+
+| Tool | Purpose | Cost |
+|------|---------|------|
+| OpenClaw | Demo production (15 min/site with 2 agents) | Internal |
+| Vercel | Demo hosting + preview URLs for pitching | Free tier |
+| ethan@ethantalreja.com | Cold outreach email (personal, not agency) | — |
+| Cal.com | Demo call booking link in email follow-ups | Free |
+| Namecheap | Domain registration (register in YOUR name) | $6–16/year |
+| Google Meet | Demo calls with screen share | Free |
+| Stripe or Fanbase | Recurring billing after 3-month free period | % per transaction |
+| spiralapplabs.ai | Agency email for follow-ups + credibility | — |
+
+---
+
+*Restaurant agency amendments added April 2026, based on agency-specific context and strategy session.*
