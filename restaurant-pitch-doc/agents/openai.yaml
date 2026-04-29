@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Pitch Doc"
+  short_description: "One-minute restaurant redesign pitch docs"
+  default_prompt: "Use $restaurant-pitch-doc to create a one-minute pre-call pitch doc from the restaurant audit and prototype notes."

@@ -59,3 +59,12 @@
 - Confirm motion behavior — the home has a lot of dense text, scroll reveals may or may not animate.
 - Check /menu structure vs home menu — is there a reason to route users there?
 - Whether "plate" wordmark at footer is SVG or text-with-custom-font (affects recreation cost).
+
+## Prospect Secret Sauce - Black Bear Bistro
+
+- Owner/site claim: Chef Santiago Suarez and Estela Suarez run a small, reservation-recommended New American bistro in downtown Algonquin with wild game, seafood, vegetarian, vegan, and gluten-free options.
+- Review-confirmed strengths: adventurous menu, artistic plating, flavorful sauces, chef care, accommodating service, and a cozy hidden-gem room that feels personal rather than corporate.
+- Named items or experiences: Bistro Jambalaya, Mixed Grill of Elk, Quail & Wild Boar, Roasted Poblano Stuffed with Seafood, Pan Seared Duck Breast, Baked Crimini Mushrooms, bison/poblano/soup/drinks/service mentions, date nights, birthdays, and special-occasion dinners.
+- Guest language worth echoing: "hidden gem," "cozy bistro," "small charming room," "creative and unique," "chef cares," and "worth a stop."
+- Risks / do-not-overclaim: Do not freeze any Google review count without a fresh capture. Verify exact chef-history wording, TableAgent preference, hours, and which specials should stay evergreen.
+- Website/pitch implications: Lead with the owner-operated, adventurous-but-warm dinner experience, then make reservations, menu, pickup ordering, hours, and location obvious. The owner should feel that the redesign notices what guests already notice: the food is creative, the room is small, and the service feels cared for.

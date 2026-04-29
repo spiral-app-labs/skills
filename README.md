@@ -13,6 +13,7 @@ Each skill is a directory with a `SKILL.md` file (the agent reads this to know h
 | `agency-website-design` | Full design system for restaurant websites (Next.js 14 + Tailwind + Framer Motion) — *being superseded by `restaurant-website-system/` (catalog-and-fork architecture). Mined as Input Zero during pattern abstraction.* | Forge, Evan |
 | `agency-overnight` | Overnight restaurant website build workflow | Forge |
 | `restaurant-template-analysis` | Deep-capture pipeline (full-page screenshots, scroll-position frames, page-load videos, computed-style metadata) for analyzing Framer/restaurant templates before audit. Backed by `restaurant-website-system/scripts/shoot-template.sh`. | Any agent building or auditing restaurant templates |
+| `restaurant-pitch-doc` | Create one-minute restaurant redesign pitch docs from audits, revenue leaks, standard-practice gaps, and prototype fixes. | Forge, Evan |
 | `agent-foundation-files` | Build IDENTITY/SOUL/AGENTS files for new agents | Donna |
 | `amazon-narrative-memo` | Write Amazon-style 6-pagers and narrative memos | Donna |
 | `codex-subagent-recovery` | Recovery protocol when a coding sub-agent fails silently | Donna |

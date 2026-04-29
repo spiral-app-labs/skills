@@ -98,10 +98,10 @@ export const content = {
   },
 
   hero: {
-    eyebrow: 'A cozy corner for creative dinner',
+    eyebrow: 'Chef-owned dinner on Main Street',
     headline: 'The Black Bear Bistro',
     subcopy:
-      'Chef Santiago Suarez serves expressive New American dinners, wild game specials, seafood, vegetarian plates, and warm owner-led hospitality in downtown Algonquin.',
+      'Chef Santiago Suarez cooks New American plates with wild game, seafood, vegetarian options, and sauces that make regulars tell friends.',
     cta: { label: 'Book table', href: 'https://tableagent.com/chicago/the-black-bear-bistro/' },
     secondaryCta: { label: 'Our menu', href: '#menu' },
     utilityCta: { label: 'Order pickup', href: 'https://theblackbearbistro.square.site/' },
@@ -197,8 +197,25 @@ export const content = {
   },
 
   reviews: {
-    eyebrow: 'Google review themes',
+    eyebrow: 'Why guests come back',
     heading: 'The kind of dinner people tell friends about',
+    summary: [
+      {
+        title: 'Chef-owned care',
+        body:
+          'Guests notice when Santiago and Estela are close to the room: service feels personal, and the menu feels made by someone paying attention.',
+      },
+      {
+        title: 'Adventure without stiffness',
+        body:
+          'Wild game, seafood, sauces, vegan dishes, and specials make dinner feel interesting without turning the room formal.',
+      },
+      {
+        title: 'Small room, book ahead',
+        body:
+          'The cozy Main Street space is part of the appeal. Book ahead when dinner is the plan.',
+      },
+    ],
     items: [
       {
         label: 'Hidden-gem diner',

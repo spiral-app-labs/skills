@@ -69,6 +69,68 @@ mkdir -p /Users/ethantalreja/skills/restaurant-website-system/inputs/framer-temp
 
 Write `source.md` first (see existing examples). It captures URL, vibe first-impression, and likely archetype match — gives the auditor 30 seconds of orientation.
 
+### 1.5 Collect reviews and identify the restaurant's secret sauce
+
+For live restaurant-site audits, do not rely on the website alone. The old site
+often shows what the owner *meant* to communicate; Google reviews show what
+guests actually experienced and remembered. Collect both before writing copy,
+proof sections, personalization notes, or pitch docs.
+
+**How to collect review context:**
+
+- First ask the user for pasted Google reviews if they have them.
+- If the user does not provide reviews and browsing/browser tooling is
+  available, manually scrape or capture representative Google reviews yourself.
+- Capture a balanced review packet when possible: recent reviews, high-signal
+  older reviews, repeat themes, and any named dishes/drinks/events.
+- Record provenance in `source.md`: pasted by user, scraped manually, captured
+  via browser, source URL if available, and capture date.
+
+**What to extract from reviews plus website content:**
+
+- What are they known for? Named dishes, drinks, specials, happy hours, patio,
+  brunch, music, catering, value, portions, speed, or service rituals.
+- Why do people like them? Food quality, price/value, staff warmth, owner
+  presence, room/vibe, consistency, convenience, kid-friendliness, accessibility,
+  late hours, local products, or community feeling.
+- What does the website claim is special, and do reviews confirm it?
+- What do reviews praise that the website currently hides?
+- What operational details matter to guests: parking, wait time, wheelchair
+  access, outdoor seating, laptop seating, vegetarian options, pup cups, or
+  "open later" requests.
+- What language do real guests use that the new site can echo without sounding
+  generic?
+
+**Required synthesis:**
+
+Write a short "secret sauce" note in the audit/source notes before build:
+
+```md
+## Secret Sauce
+
+- Owner/site claim:
+- Review-confirmed strengths:
+- Named items or experiences:
+- Guest language worth echoing:
+- Risks / do-not-overclaim:
+- Website/pitch implications:
+```
+
+Use this synthesis to shape the redesigned site and the pitch docs. The goal is
+not just to point out leaks; it is to make the owner feel accurately seen. If
+the restaurant is beloved for staff, value, atmosphere, Wednesday happy hour,
+seasonal drinks, generous portions, or a specific dish, the new site should make
+that obvious.
+
+Keep claims honest:
+
+- Do not invent or freeze a rating count unless it was captured with a date.
+- Prefer paraphrased themes and short attributed excerpts over long quotes.
+- Mark any review-derived menu item, event, or proof claim as owner-confirm
+  needed when it is not also present on the official site.
+- Do not cherry-pick a single quote as the whole story if the review packet says
+  something more nuanced.
+
 ### 2. Run the capture pipeline
 
 ```bash

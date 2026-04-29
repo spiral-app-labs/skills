@@ -68,7 +68,7 @@ export function ScrollableHomePage() {
                   </span>
                 </div>
                 <h1 className="max-w-2xl font-display text-[clamp(42px,7vw,78px)] leading-[0.98] text-ink transition-transform duration-500 group-hover:translate-x-2">
-                  Southern Italian warmth, one table at a time.
+                  A warm Southern Italian room, family-owned since 2010.
                 </h1>
                 <p className="mt-5 max-w-xl font-body text-body text-ink-muted">
                   {brand.description}

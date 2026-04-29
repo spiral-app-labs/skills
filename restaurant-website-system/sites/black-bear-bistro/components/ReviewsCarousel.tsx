@@ -16,6 +16,17 @@ export function ReviewsCarousel() {
             {content.reviews.heading}
           </h2>
         </div>
+        <div className="mb-10 grid gap-4 md:grid-cols-3">
+          {content.reviews.summary.map((item) => (
+            <article
+              key={item.title}
+              className="rounded-card border border-divider bg-canvas-alt/70 p-5 transition-colors hover:border-accent/50"
+            >
+              <h3 className="text-[22px] font-medium leading-tight text-ink">{item.title}</h3>
+              <p className="mt-3 text-body-sm leading-relaxed text-ink-muted">{item.body}</p>
+            </article>
+          ))}
+        </div>
       </div>
 
       <div className="review-marquee relative overflow-hidden">

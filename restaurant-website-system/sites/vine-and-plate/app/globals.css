@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.bg-cream');
+  color: theme('colors.text-dark');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 300;
+  margin: 0;
+}
+
+.text-address,
+.text-hero-wordmark,
+.text-page-title,
+.text-section-h1,
+.text-tagline-h2,
+.text-body-h3,
+.text-marquee-item {
+  text-transform: uppercase;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@keyframes vp-ken-burns {
+  0%   { transform: scale(1.02) translate3d(0, 0, 0); }
+  100% { transform: scale(1.075) translate3d(-1.2%, -0.8%, 0); }
+}
+
+.animate-vp-ken-burns {
+  animation: vp-ken-burns 72s ease-out infinite alternate both;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.vp-link-rail {
+  position: relative;
+  display: inline-flex;
+}
+
+.vp-link-rail::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.25rem;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0.65;
+  transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), opacity 520ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.vp-link-rail:hover::after,
+.vp-link-rail:focus-visible::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.vp-soft-button {
+  transition:
+    transform 360ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 260ms ease,
+    border-color 260ms ease,
+    opacity 260ms ease;
+}
+
+.vp-soft-button:hover,
+.vp-soft-button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-vp-ken-burns,
+  .animate-marquee {
+    animation: none !important;
+  }
+}

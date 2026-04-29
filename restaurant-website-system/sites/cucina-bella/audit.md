@@ -95,3 +95,7 @@ The case is not "your site is broken." It isn't. The case is sharper:
 - **Photo bank is sufficient but small.** Nine real food photos + one bar/wine shot + one brick-dining-room-with-people shot = enough for hero, story, signature dishes, wine, and menu hero. Two of the original "interior" assets on the current site are decorative pizza illustrations, not photographs — discarded. If the owner has additional warm-graded interior shots, those should be added to elevate the hero.
 - **Multi-location handling.** The deep-research doc described this as a "multi-location wrapper" — incorrect. The three venues run separate sites that cross-link. The build mirrors that pattern with a low-weight `SisterVenues` module before the visit/contact block, plus a "Family" column in the footer.
 - **Toast Tables URL drift.** Captured deep-link from current homepage. If the owner re-creates their Toast venue, the URL will change. Validate before deploy.
+
+## Secret Sauce
+
+The redesign should not just expose Tripadvisor proof. It should echo why guests like Cucina Bella: Sannicandro family roots, bold garlic/red sauce, big portions, fair value, warm service, catering/event care, and the brick-room family-table feel. The pitch should say the site is hiding the restaurant's generosity, not that the restaurant needs a new personality.

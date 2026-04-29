@@ -79,3 +79,7 @@
 - **Photography is already good.** Squarespace + actual restaurant photography meets plate-01's Tier-3 floor (bright daylight, dish close-ups). Don't insist on a re-shoot — use what they have.
 - **Square ordering stays.** Don't try to migrate `theblackbearbistro.square.site` — embed or link to it from the new site. Migrating ordering is unnecessary scope and a switching-cost spike that would weaken the pitch.
 - **Plate-01's hero photography expects bright + dish-led.** Black Bear's Filet Mignon hero photo is darker / steakhouse-leaning. Audit the photo set for bright daylight options before locking the hero — or accept a slightly warmer hero treatment than canonical plate-01.
+
+## Secret Sauce
+
+The sales angle should make Black Bear feel seen as a chef-owned hidden gem, not merely a site with PDF friction. Review themes in the prototype point to adventurous dishes, wild game, sauces, artistic plating, accommodating service, and a cozy small room. The new site should make those strengths obvious before it asks for the reservation, pickup order, or menu download.

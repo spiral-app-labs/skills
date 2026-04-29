@@ -222,7 +222,7 @@ export function ReviewCarousel() {
               data-review-card
               className={`snap-start shrink-0 basis-[85%] rounded-card border border-divider bg-surface p-7 md:basis-[42%] lg:basis-[32%] md:p-9 transform-gpu transition-[opacity,transform,border-color] duration-700 ease-out ${
                 isActive
-                  ? 'opacity-100 scale-100 border-divider'
+                  ? 'opacity-100 scale-100 border-divider animate-glow-pulse'
                   : 'opacity-60 scale-[0.97] border-divider/50'
               }`}
             >

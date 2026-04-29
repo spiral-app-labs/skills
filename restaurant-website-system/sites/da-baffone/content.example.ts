@@ -12,7 +12,7 @@ export const content = {
     legalName: 'Da Baffone Cucina Italiana',
     tagline: 'Southern Italian cooking in downtown Crystal Lake',
     description:
-      'Family-owned Southern Italian restaurant in downtown Crystal Lake, serving old-world recipes, wine, and date-night dinners since 2010.',
+      'Family-owned Southern Italian restaurant in downtown Crystal Lake, serving old-world recipes, wine, martinis, and date-night dinners since 2010.',
     since: '2010',
     city: 'Crystal Lake',
     address: {
@@ -96,11 +96,11 @@ export const content = {
       testimonial: {
         quote: 'Locally loved Southern Italian in Crystal Lake',
         body:
-          'Family recipes, a warm brick dining room, and a strong public review footprint across Facebook, Yelp, and Tripadvisor.',
+          'Family recipes, a warm brick dining room, local award proof, and the kind of dinner guests choose for conversation.',
         rating: 4.6,
         reviewCount: 1200,
         ratingLabel: 'Local proof',
-        reviewLabel: 'Reviews + press signals',
+        reviewLabel: 'Public reviews + local awards',
         primaryCta: { label: 'Call to Reserve', href: telHref },
         secondaryCta: { label: 'View Menu', href: '/menu' },
       },
@@ -122,9 +122,9 @@ export const content = {
 
     proof: {
       eyebrow: 'Local Proof',
-      heading: 'They already earned the trust. The site should show it sooner.',
+      heading: 'A family room with a local reputation.',
       body:
-        'Da Baffone has the pieces guests look for before choosing dinner: a long-running family story, county-level recognition, a strong public review footprint, and a clear phone-first reservation path.',
+        'For more than a decade, Da Baffone has paired Southern Italian recipes with a brick-walled room, a serious wine-and-martini bar, and the simple comfort of calling when you are ready for dinner.',
       stats: [
         {
           value: '2010',
@@ -134,12 +134,12 @@ export const content = {
         {
           value: 'Best Italian',
           label: 'McHenry County proof',
-          body: 'Best Italian and Best Wine Bar signals belong near the first decision point.',
+          body: 'Best Italian and Best Wine Bar recognition helps first-time guests choose the room with confidence.',
         },
         {
-          value: '1,200+',
-          label: 'Public review footprint',
-          body: 'Facebook, Yelp, and Tripadvisor give new guests confidence before they call.',
+          value: 'Local proof',
+          label: 'Public reviews',
+          body: 'Public reviews and local press help new guests feel confident before dinner.',
         },
         {
           value: 'Call-first',
@@ -153,7 +153,7 @@ export const content = {
       eyebrow: 'The Giangrande Family',
       heading: 'Old-world recipes, brought to Main Street.',
       body:
-        'Da Baffone is rooted in the belief that food is a tradition that brings family and friends together. The menu focuses on Southern Italian cooking, fresh ingredients, and recipes connected to the family\'s sister restaurant in Santo Stefano del Sole, Italy.',
+        'Da Baffone is rooted in the belief that food is a tradition that brings family and friends together. The menu focuses on Southern Italian cooking, house sauces, fresh ingredients, and recipes connected to the family\'s sister restaurant in Santo Stefano del Sole, Italy.',
       quote: 'Good food, good wine, and good friends come together.',
       photo: '/images/da-baffone/olive-oils-wide.jpg',
       photoAlt: 'Olive oil bottles with peppers in the Da Baffone dining room',
@@ -185,10 +185,10 @@ export const content = {
     },
 
     wine: {
-      eyebrow: 'Wine Bar & Date Night',
-      heading: 'A small room with a serious wine-and-martini reputation.',
+      eyebrow: 'Wine, Martinis & Dinner',
+      heading: 'A small room made for a slower dinner.',
       body:
-        'The brick walls, white tablecloths, bar seating, and Italian wine list are part of why the restaurant has been recognized for wine bar, martinis, date night, and conversation.',
+        'Brick walls, white tablecloths, bar seating, Italian wine, and a proper martini make the room feel special without making dinner feel stiff.',
       photo: '/images/da-baffone/cocktails-wide.jpg',
       photoAlt: 'Cocktails and Da Baffone menu at the bar',
       badges: ['Wine Bar', 'Martinis', 'Date Night', 'Conversation'],
@@ -196,7 +196,7 @@ export const content = {
 
     reviews: {
       eyebrow: 'What People Come Back For',
-      heading: 'Cozy room, serious food, easy next step.',
+      heading: 'Cozy room, serious food, no stiffness.',
       themes: [
         {
           label: 'The room',
@@ -211,10 +211,10 @@ export const content = {
             'The strongest review themes point to Southern Italian sauces, pasta, seafood, desserts, martinis, and wine.',
         },
         {
-          label: 'The decision',
-          title: 'Everything needed before calling',
+          label: 'The welcome',
+          title: 'Call-first hospitality',
           body:
-            'Menu highlights, live hours, map, phone, and reservation context sit together so guests do not have to hunt.',
+            'Reservations, to-go orders, catering, and urgent questions stay phone-first, with hours and location close enough to make the call simple.',
         },
       ],
     },

@@ -77,3 +77,7 @@ The fork is justified — but **not** for the usual reason ("the site looks date
 - **Owner-operator emotional attachment** to 15 years of family-business WordPress content. Polarized review thread includes owner-conduct complaints about table-time limits — not a site problem, but a tell that the owner is opinionated. Pitch must lead with *"you've already earned this; your site is hiding it"* — NOT *"your site looks dated."* The first preserves their pride; the second triggers it.
 - **Photography tier check before hero lock.** gusto-01 is Tier-2 acceptable (good phone + warm grading). Confirm Da Baffone has 15–20 usable warm-graded shots of dish + interior + brick wall before locking the hero treatment. If Tier-3 only, plan to insist on a shoot OR stage the hero as wordmark + mood rather than dish-led.
 - **Reservation-provider verification.** Do not pitch OpenTable. If the owner confirms a different booking provider later, wire that link in; otherwise keep v1 phone-first.
+
+## Secret Sauce
+
+The site should sell what Da Baffone has already earned: family-owned Southern Italian cooking, a cozy brick room, sauces, pasta, seafood, desserts, wine, martinis, and local award proof. The pitch should start from pride - "you have the reputation" - and frame the rebuild as making the website act like a warmer, clearer host.

@@ -4,8 +4,22 @@
 // Visual register matches the site: warm-black canvas, cream ink, italic
 // Sorts Mill Goudy display, ochre accent. Sits bottom-right, lifts above the
 // MobileCallBar on small screens.
+//
+// Animation upgrades:
+//   #6 Launcher \u2192 dialog morph: both anchor bottom-right; AnimatePresence
+//      cross-fades + scales between them. Looks like the bubble grows into
+//      the panel and back.
+//   #7 Streaming word reveal: each word in the assistant's reply renders as
+//      a motion.span keyed by index. New words appear with a 0.35s
+//      opacity/y fade as they arrive from the stream \u2014 typewriter feel
+//      without forcing per-character timing.
 'use client';
 
+import {
+  AnimatePresence,
+  motion,
+  useReducedMotion,
+} from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 type Role = 'user' | 'assistant';
@@ -23,6 +37,34 @@ const GREETING: Message = {
   content:
     'Hi \u2014 welcome to Cucina Bella. Ask me about the menu, hours, reservations, or catering. I\u2019ll point you in the right direction.',
 };
+
+const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
+// ----- Word-by-word streaming reveal --------------------------------------
+function AssistantContent({ content }: { content: string }) {
+  const prefersReducedMotion = useReducedMotion();
+  if (prefersReducedMotion) {
+    return <span className="whitespace-pre-wrap">{content}</span>;
+  }
+  // Split keeping whitespace runs as their own tokens so layout (newlines,
+  // spaces) is preserved exactly. Each token gets a stable index key so
+  // already-rendered words stay put while new ones fade in.
+  const tokens = content.split(/(\s+)/);
+  return (
+    <span className="whitespace-pre-wrap">
+      {tokens.map((tok, i) => (
+        <motion.span
+          key={i}
+          initial={{ opacity: 0, y: 3 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.32, ease }}
+        >
+          {tok}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
 
 export function Concierge() {
   const [open, setOpen] = useState(false);
@@ -59,8 +101,6 @@ export function Concierge() {
       setError(null);
 
       try {
-        // Send only user/assistant turns, skip the local greeting which is
-        // a UI hint (the system prompt covers that role on the server).
         const wireMessages = next.filter((m) => m !== GREETING);
         const resp = await fetch('/api/concierge', {
           method: 'POST',
@@ -76,7 +116,6 @@ export function Concierge() {
         const reader = resp.body.getReader();
         const decoder = new TextDecoder();
         let assistantText = '';
-        // Stream chunks into the last assistant message.
         // eslint-disable-next-line no-constant-condition
         while (true) {
           const { done, value } = await reader.read();
@@ -84,7 +123,6 @@ export function Concierge() {
           assistantText += decoder.decode(value, { stream: true });
           setMessages([...next, { role: 'assistant', content: assistantText }]);
         }
-        // Flush trailing bytes.
         const trailing = decoder.decode();
         if (trailing) {
           assistantText += trailing;
@@ -120,30 +158,36 @@ export function Concierge() {
   );
 
   return (
-    <>
-      {/* Floating launcher \u2014 sits above MobileCallBar on small screens.
-          On mobile (with mobile call bar visible at 64px), bottom-24 ~ 96px.
-          On desktop, bottom-6 ~ 24px. */}
-      {!open && (
-        <button
+    <AnimatePresence mode="wait" initial={false}>
+      {!open ? (
+        <motion.button
+          key="launcher"
           type="button"
           aria-label="Open Cucina Bella concierge"
           onClick={() => setOpen(true)}
-          className="fixed bottom-24 right-4 z-50 inline-flex items-center gap-2 rounded-full border border-divider bg-surface/95 px-5 py-3 font-body text-button text-ink shadow-2xl backdrop-blur-card transition hover:border-accent-warm/60 hover:text-accent-warm md:bottom-6 md:right-6"
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.85 }}
+          transition={{ duration: 0.22, ease }}
+          style={{ transformOrigin: 'bottom right' }}
+          className="fixed bottom-24 right-4 z-50 inline-flex items-center gap-2 rounded-full border border-divider bg-surface/95 px-5 py-3 font-body text-button text-ink shadow-2xl backdrop-blur-card transition-colors hover:border-accent-warm/60 hover:text-accent-warm md:bottom-6 md:right-6"
         >
           <span aria-hidden="true" className="font-display text-[20px] italic leading-none text-accent-warm">
             CB
           </span>
           <span>Ask the host</span>
-        </button>
-      )}
-
-      {/* Chat panel */}
-      {open && (
-        <div
-          className="fixed bottom-20 right-3 z-50 flex h-[min(75vh,640px)] w-[min(94vw,420px)] flex-col overflow-hidden rounded-card border border-divider bg-canvas/95 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] backdrop-blur-card md:bottom-6 md:right-6"
+        </motion.button>
+      ) : (
+        <motion.div
+          key="dialog"
           role="dialog"
           aria-label="Cucina Bella concierge"
+          initial={{ opacity: 0, scale: 0.85, y: 12 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.9, y: 8 }}
+          transition={{ duration: 0.28, ease }}
+          style={{ transformOrigin: 'bottom right' }}
+          className="fixed bottom-20 right-3 z-50 flex h-[min(75vh,640px)] w-[min(94vw,420px)] flex-col overflow-hidden rounded-card border border-divider bg-canvas/95 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.7)] backdrop-blur-card md:bottom-6 md:right-6"
         >
           {/* Header */}
           <div className="flex items-center justify-between border-b border-divider px-5 py-4">
@@ -188,6 +232,8 @@ export function Concierge() {
                       <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-warm [animation-delay:120ms]" />
                       <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-warm [animation-delay:240ms]" />
                     </span>
+                  ) : m.role === 'assistant' ? (
+                    <AssistantContent content={m.content} />
                   ) : (
                     <span className="whitespace-pre-wrap">{m.content}</span>
                   )}
@@ -201,7 +247,7 @@ export function Concierge() {
             </div>
           </div>
 
-          {/* Suggested questions \u2014 only show before any user turn */}
+          {/* Suggested questions */}
           {messages.filter((m) => m.role === 'user').length === 0 && !loading ? (
             <div className="flex flex-wrap gap-2 border-t border-divider px-5 py-3">
               {SUGGESTED_QUESTIONS.map((q) => (
@@ -248,8 +294,8 @@ export function Concierge() {
           <p className="border-t border-divider px-5 py-2 font-body text-stamp uppercase tracking-[0.12em] text-ink-quiet">
             Replies are AI-generated. Confirm anything time-sensitive at (847) 458-2504.
           </p>
-        </div>
+        </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 }

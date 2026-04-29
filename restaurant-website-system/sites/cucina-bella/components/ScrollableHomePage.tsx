@@ -19,6 +19,7 @@ import Link from 'next/link';
 import { content } from '../content.example';
 import { HeritageStamp } from './HeritageStamp';
 import { HeroHoursSidebar } from './HeroHoursSidebar';
+import { HeroPhoto } from './HeroPhoto';
 import { HeroTestimonialCard } from './HeroTestimonialCard';
 import { LiveMapEmbed } from './LiveMapEmbed';
 import { OpeningHoursTable } from './OpeningHoursTable';
@@ -26,6 +27,7 @@ import { PhotoCardWithChip } from './PhotoCardWithChip';
 import { ReviewCarousel } from './ReviewCarousel';
 import { ScrollRevealStandard } from './ScrollReveal';
 import { SisterVenues } from './SisterVenues';
+import { StatCounter } from './StatCounter';
 
 function SectionEyebrow({ children }: { children: string }) {
   return (
@@ -69,16 +71,13 @@ export function ScrollableHomePage() {
           Mirrors templates/gusto-01/components/HeroMultiCardAsymmetric.tsx. */}
       <section className="relative mx-auto w-full max-w-shell px-4 pt-4 md:px-6 md:pt-6">
         <div className="grid grid-cols-1 gap-3 md:grid-cols-12">
-          {/* BIG LEFT CARD \u2014 main photo + testimonial overlay */}
+          {/* BIG LEFT CARD \u2014 main photo (Ken Burns + parallax via HeroPhoto)
+              + testimonial overlay */}
           <div id="book" className="relative overflow-hidden rounded-card md:col-span-7 md:row-span-2">
             <div className="relative aspect-[4/5] md:aspect-auto md:h-full md:min-h-[640px]">
-              <Image
+              <HeroPhoto
                 src={home.hero.mainPhoto}
                 alt={home.hero.mainPhotoAlt}
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 55vw"
-                className="object-cover"
               />
               <HeroTestimonialCard
                 quote={home.hero.testimonial.quote}
@@ -151,9 +150,10 @@ export function ScrollableHomePage() {
                 key={stat.label}
                 className="rounded-card border border-divider bg-canvas/55 p-5"
               >
-                <p className="font-display text-[34px] leading-none text-ink">
-                  {stat.value}
-                </p>
+                <StatCounter
+                  value={stat.value}
+                  className="font-display text-[34px] leading-none text-ink tabular-nums"
+                />
                 <p className="mt-3 font-body text-body-sm text-ink-muted">
                   {stat.label}
                 </p>

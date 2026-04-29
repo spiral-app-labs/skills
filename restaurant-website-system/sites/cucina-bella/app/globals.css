@@ -48,3 +48,51 @@ h1, h2, h3, h4 {
 
 /* Custom scrollbar restraint — keep the editorial register */
 html { scroll-behavior: smooth; }
+
+/* ---------------------------------------------------------------- *
+ *  Animation primitives
+ * ---------------------------------------------------------------- */
+
+/* #2 — Hero Ken Burns: slow scale on the main hero photograph.
+   Pauses if the user prefers reduced motion (handled below).         */
+@keyframes ken-burns {
+  0%   { transform: scale(1)    translate3d(0, 0, 0); }
+  100% { transform: scale(1.06) translate3d(-1.5%, -1%, 0); }
+}
+.animate-ken-burns {
+  animation: ken-burns 42s ease-out infinite alternate both;
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* #5 — Active carousel-card glow: warm-ochre breathing shadow on
+   whichever review card is currently centered.                       */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(198, 154, 78, 0); }
+  50%      { box-shadow: 0 0 36px 4px rgba(198, 154, 78, 0.18); }
+}
+.animate-glow-pulse {
+  animation: glow-pulse 3.6s ease-in-out infinite;
+}
+
+/* ---------------------------------------------------------------- *
+ *  #9 — prefers-reduced-motion respect
+ *  Global safety net: even if a particular component forgets to
+ *  guard its animation, this strips animation/transition for users
+ *  who have set the OS preference. framer-motion's useReducedMotion
+ *  hook catches the rest at the React level.
+ * ---------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-ken-burns,
+  .animate-glow-pulse {
+    animation: none !important;
+  }
+}

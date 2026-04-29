@@ -215,3 +215,20 @@ Recommended order from that packet:
    private events rather than rating claims.
 5. **Cafe Olympic** - `latte-01`; ready but lower-ticket cafe/diner economics,
    useful as a category proof asset.
+
+## 2026-04-28 addendum - Shirley's Piano Bar
+
+New audit packet:
+
+- `shirleys-piano-bar-audit-2026-04-28.md`
+
+Recommended handling:
+
+- **Shirley's Piano Bar** - conditional `velvet-shaker-01` fork, modified for
+  piano-bar warmth and live-music/event conversion.
+- Important: Shirley's is **not** a no-menu prospect. They have a page-native
+  cocktail menu. The pitch is atmosphere + event path, not missing menu.
+- This lead validates the existing catalog gap for a small entertainment venue /
+  cocktail lounge without a food program. `velvet-shaker-01` is the best
+  current fit; `bramble-01` is the warm alternate but assumes food/kitchen
+  structure that must be removed.
