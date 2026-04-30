@@ -22,7 +22,7 @@ export function FloatingHeaderPill() {
 
   return (
     <motion.header
-      className="fixed top-6 left-6 z-50 flex items-center gap-1 rounded-pill bg-surface/90 backdrop-blur-sm border border-border/40 pl-3 pr-1 py-1"
+      className="fixed top-6 left-5 z-50 flex max-w-[calc(100vw-2.5rem)] items-center gap-1 rounded-pill bg-surface/90 backdrop-blur-sm border border-border/40 pl-3 pr-1 py-1 md:left-6 md:max-w-none"
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -32,14 +32,18 @@ export function FloatingHeaderPill() {
     >
       <Link
         href="/locations"
-        aria-label="View locations and guest actions"
-        className="grid place-items-center w-9 h-9 rounded-md hover:bg-surface-hover transition-colors"
+        aria-label="View locations and dining options"
+        className="grid place-items-center w-11 h-11 md:w-9 md:h-9 rounded-md hover:bg-surface-hover transition-colors"
       >
         <span className="block w-4 h-px bg-text relative before:content-[''] before:absolute before:top-[-5px] before:left-0 before:w-4 before:h-px before:bg-text after:content-[''] after:absolute after:top-[5px] after:left-0 after:w-4 after:h-px after:bg-text" />
       </Link>
 
       {/* Wordmark */}
-      <Link href="/" className="px-2 font-display text-text" style={{ fontSize: '20px', letterSpacing: '0.02em' }}>
+      <Link
+        href="/"
+        className="inline-flex items-center min-h-11 md:min-h-0 whitespace-nowrap px-1.5 font-display text-[18px] leading-none text-text min-[380px]:px-2 min-[380px]:text-[20px]"
+        style={{ letterSpacing: '0.02em' }}
+      >
         {content.brand.logoText}
       </Link>
 
@@ -72,7 +76,7 @@ export function FloatingHeaderPill() {
         href={content.nav.cta.href}
         target={ctaIsExternal ? '_blank' : undefined}
         rel={ctaIsExternal ? 'noopener noreferrer' : undefined}
-        className="ml-1 px-4 py-2 rounded-pill bg-surface-hover hover:bg-border text-ui-label text-text border border-border/60 transition-colors"
+        className="ml-1 shrink-0 inline-flex items-center justify-center min-h-11 md:min-h-0 rounded-pill border border-border/60 bg-surface-hover px-3 py-2 text-ui-label text-text transition-colors hover:bg-border min-[380px]:px-4"
       >
         {content.nav.cta.label}
       </a>

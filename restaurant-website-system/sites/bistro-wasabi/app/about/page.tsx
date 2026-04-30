@@ -14,7 +14,7 @@ export default function AboutPage() {
         imageAlt="Restaurant interior"
         title={content.about.pageTitle}
       >
-        <div className="px-8 md:px-10 py-12 md:py-16 space-y-10">
+        <div className="px-6 md:px-10 py-12 md:py-16 pb-28 md:pb-16 space-y-10">
           <header className="space-y-3">
             <h2 className="text-section-h2 text-text">{content.about.headline}</h2>
             <p className="text-body text-text-muted leading-relaxed">{content.about.intro}</p>

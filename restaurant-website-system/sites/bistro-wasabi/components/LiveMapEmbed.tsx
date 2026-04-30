@@ -16,10 +16,10 @@ import type { CSSProperties } from 'react';
 export type LiveMapEmbedProps = {
   /** Full street address, used as alt text + directions fallback */
   address: string;
-  /** Latitude (required for Google Maps embed) */
-  lat: number;
-  /** Longitude (required for Google Maps embed) */
-  lng: number;
+  /** Latitude. If omitted, the address string is used as the map query. */
+  lat?: number;
+  /** Longitude. If omitted, the address string is used as the map query. */
+  lng?: number;
   /** Map zoom level, 1-20. Default 15 (neighborhood scale). */
   zoom?: number;
   /** Optional display label for the marker (shown on hover) */
@@ -49,10 +49,12 @@ export function LiveMapEmbed({
   hideCta = false,
 }: LiveMapEmbedProps) {
   const apiKey = process.env.NEXT_PUBLIC_GMAPS_KEY;
+  const query = lat != null && lng != null ? `${lat},${lng}` : address;
+  const encodedQuery = encodeURIComponent(query);
   const src = apiKey
-    ? `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${lat},${lng}&zoom=${zoom}`
-    : `https://maps.google.com/maps?q=${lat},${lng}&z=${zoom}&output=embed`;
-  const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+    ? `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodedQuery}&zoom=${zoom}`
+    : `https://maps.google.com/maps?q=${encodedQuery}&z=${zoom}&output=embed`;
+  const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${encodedQuery}`;
 
   return (
     <div
@@ -72,7 +74,7 @@ export function LiveMapEmbed({
           href={directionsHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bottom-4 right-4 bg-white/95 hover:bg-white px-4 py-2 rounded-full text-sm font-medium text-black shadow-md transition-shadow hover:shadow-lg"
+          className="absolute bottom-4 right-4 bg-text hover:bg-text/90 px-4 py-2 rounded-full text-ui-label text-canvas shadow-md transition-shadow hover:shadow-lg"
         >
           {ctaLabel}
         </a>

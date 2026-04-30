@@ -58,16 +58,19 @@ export function ScrollableHomePage() {
                 className="object-cover transition duration-700 group-hover:scale-[1.025]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-canvas/95 via-canvas/45 to-canvas/0" />
-              <div className="gusto-photo-copy absolute inset-x-0 bottom-0 p-7 md:p-10 md:pr-32">
-                <div className="mb-5 flex flex-wrap items-center gap-3">
-                  <span className="rounded-pill border border-ink/25 bg-canvas/75 px-3.5 py-1.5 font-body text-chip font-medium uppercase text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
+              <div className="gusto-photo-copy absolute inset-x-0 bottom-0 p-6 md:p-10 md:pr-32">
+                <div className="mb-4 flex flex-wrap items-center gap-2 md:mb-5 md:gap-3">
+                  <span className="rounded-pill border border-accent-warm/60 bg-accent-warm/15 px-3 py-1.5 font-body text-chip font-semibold uppercase tracking-[0.08em] text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
+                    4× Best Italian · Best of the Fox
+                  </span>
+                  <span className="rounded-pill border border-ink/25 bg-canvas/75 px-3 py-1.5 font-body text-chip font-medium uppercase text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
                     Family-owned since {brand.since}
                   </span>
-                  <span className="rounded-pill border border-ink/25 bg-canvas/75 px-3.5 py-1.5 font-body text-chip font-medium uppercase text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
+                  <span className="hidden rounded-pill border border-ink/25 bg-canvas/75 px-3 py-1.5 font-body text-chip font-medium uppercase text-ink shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md md:inline-block">
                     Downtown {brand.city}
                   </span>
                 </div>
-                <h1 className="max-w-2xl font-display text-[clamp(42px,7vw,78px)] leading-[0.98] text-ink transition-transform duration-500 group-hover:translate-x-2">
+                <h1 className="max-w-2xl font-display text-[clamp(34px,7vw,78px)] leading-[0.98] text-ink transition-transform duration-500 group-hover:translate-x-2">
                   A warm Southern Italian room, family-owned since 2010.
                 </h1>
                 <p className="mt-5 max-w-xl font-body text-body text-ink-muted">

@@ -57,7 +57,7 @@ export function HeroSlideshow() {
       };
 
   return (
-    <section className="relative w-full h-[94vh] min-h-[640px] overflow-hidden bg-bg-dark">
+    <section className="relative w-full h-[94vh] min-h-[640px] overflow-hidden overflow-x-hidden bg-bg-dark">
       {/* Cycling images */}
       <AnimatePresence mode="sync" initial={false}>
         <motion.div
@@ -123,13 +123,17 @@ export function HeroSlideshow() {
               View Menus
             </a>
           </motion.div>
-          <motion.div variants={child} className="flex flex-wrap justify-center gap-2 md:gap-3">
-            {content.proof.map((item) => (
-              <span key={item} className="rounded-button border border-text-cream/30 px-3 py-1.5 text-address text-text-cream/85">
-                {item}
+          <motion.p
+            variants={child}
+            className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[10px] md:text-[11px] uppercase tracking-[0.18em] text-text-cream/70"
+          >
+            {content.proof.map((item, idx) => (
+              <span key={item} className="flex items-center gap-x-3">
+                {idx > 0 && <span aria-hidden className="text-text-cream/40">·</span>}
+                <span>{item}</span>
               </span>
             ))}
-          </motion.div>
+          </motion.p>
         </div>
         <motion.h1
           variants={child}

@@ -41,7 +41,7 @@ export function SiteHeader() {
           />
           <Link
             href={content.nav.cta.href}
-            className="bg-accent hover:bg-accent-dark text-white text-button font-medium px-5 py-2.5 rounded-button transition-colors"
+            className="bg-accent hover:bg-accent-dark text-white text-button font-medium px-5 py-3 min-h-[44px] inline-flex items-center rounded-button transition-colors"
           >
             {content.nav.cta.label}
           </Link>

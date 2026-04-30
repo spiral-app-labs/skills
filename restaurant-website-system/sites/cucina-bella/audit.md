@@ -42,6 +42,129 @@
 
 > **Correction note for the deep-research doc.** The 2026-04-27 deep-research finding describes Cucina Bella as a "multi-location family wrapper." That is not how the current sites are structured: Algonquin, Galena, and Bella's Woodfire each run on their own separate website and link to each other via small sister-venue buttons. The build mirrors that pattern (standalone Algonquin site + slim sister-venues module).
 
+### Mobile state (back-filled 2026-04-29)
+
+WebFetch-derived; live-device capture not available this pass. Findings inferred from rendered DOM + observed-on-desktop layout patterns + Block 1 verbatim findings above.
+
+1. **Hero CTA pair likely usable; hero copy is a wall on small viewports.** *"Experience authentic Italian flavors crafted with passion and tradition"* is centered over a background photo with no condensed mobile composition signal in the HTML — on a 390-wide viewport this is the kind of hero that pushes the *View Menu / Make an RSVP* button pair below the first fold once the navigation eats ~64px and the heading wraps to 3–4 lines.
+2. **Address, phone, and hours are not on the homepage at all** (Block 1 verbatim finding) — so they are not on mobile homepage either. A diner deciding tonight has zero of the four basics in the first viewport. This is a Principle 5.4 floor-fail regardless of breakpoint.
+3. **Reservation is one tap once the RSVP button is in view, but the button is below a copy-heavy hero** — phone tap-target sufficient (it is the deep-link to Toast Tables); friction is *finding* it, not pressing it.
+4. **Menu page is a JS shell** (Block 1 anti-pattern #5) — on mobile this means a phone diner sees section labels (*Antipasti, Pollo & Vitello*, etc.) but waits for client-side hydration to read items + prices. Slow LTE = blank menu = bounce.
+5. **No sticky call-to-call bar, no sticky reserve bar.** Once the hero scrolls past, no persistent conversion surface. Principle 5.4 + 1.1 violation on mobile specifically.
+6. **No Google Maps embed on contact page surfaced in HTML** — phone user trying to navigate must copy the address out and paste into Maps.
+
+**Net mobile state:** Below the floor on three of four Principle 5.4 checks (hero CTA above fold, hours/phone/address visible without zoom, sticky conversion surface). The reservation deep-link is the one thing that works. Recommend live-device capture pass before pitch deck (not blocking for the build because the failures are diagnosable from the rendered HTML).
+
+---
+
+## External trust signals (back-filled 2026-04-29)
+
+These do not currently live on cucinabellaalgonquin.com. The rebuild surfaces them as a press strip below hero or in the proof block. Verified via WebSearch + WebFetch 2026-04-29.
+
+```
+[
+  {
+    source: "Tripadvisor",
+    year: 2026,
+    claim: "4.5 stars / 428 reviews / #2 of 121 in Algonquin / Travelers' Choice",
+    url: "https://www.tripadvisor.com/Restaurant_Review-g29247-d929918-Reviews-Cucina_Bella-Algonquin_Illinois.html"
+  },
+  {
+    source: "Yelp",
+    year: 2026,
+    claim: "509 reviews / 208 photos (live count, April 2026)",
+    url: "https://www.yelp.com/biz/cucina-bella-algonquin"
+  },
+  {
+    source: "Northwest Herald (Shaw Local)",
+    year: 2025,
+    claim: "Feature: 'Algonquin's Cucina Bella celebrates 20 years of serving up Italian family recipes' — confirms founding year 2005, owner Tony Colatorti, Bari/Sannicandro family heritage, Suprema sauce origin story",
+    url: "https://www.shawlocal.com/northwest-herald/2025/07/24/algonquins-cucina-bella-celebrates-20-years-of-serving-up-italian-family-recipes/"
+  },
+  {
+    source: "Best of the Fox (Northwest Herald reader poll)",
+    year: 2018,
+    claim: "Voted Best Italian Restaurant in McHenry County",
+    url: "https://huntleyvoice.com/22383/thevoice/cucina-bella-the-go-to-place-for-italian-food/"
+  },
+  {
+    source: "Huntley Voice",
+    year: 2018,
+    claim: "Student-press feature: 'Cucina Bella: The Go-to Place for Italian Food'",
+    url: "https://huntleyvoice.com/22383/thevoice/cucina-bella-the-go-to-place-for-italian-food/"
+  },
+  {
+    source: "McHenry Life",
+    claim: "Local dining-directory listing (low-weight)",
+    url: "https://mchenrylife.com/dining-entertainment/restaurants/algonquin/cucina-bella/"
+  }
+]
+```
+
+**Net upgrade vs existing audit:** existing audit named only Tripadvisor 4.5/428/#2. This pass adds (a) **founding year 2005 verified** by Northwest Herald — `since` field can now be filled, removing the placeholder caveat from Block 5; (b) **owner name verified** as Tony Colatorti; (c) **the "award-winning" claim is real** — Best of the Fox / Best Italian in McHenry County 2018 — but it is 7+ years old, so frame as "voted Best Italian, Best of the Fox 2018" with the year visible rather than evergreen "award-winning"; (d) **Travelers' Choice on Tripadvisor** is a current-year Tripadvisor honor; (e) **a 20-year heritage feature** in regional press is the highest-leverage proof asset and was not in the prior pass.
+
+Owner-response signal: deferred — Tripadvisor + Yelp owner-reply cadence not captured this pass. Add to pre-pitch checklist.
+
+---
+
+## Owner voice — verbatim phrase bank (back-filled 2026-04-29)
+
+Formalized from existing strong material in `content.example.ts` + augmented via Northwest Herald 2025 feature + current site About copy. Fork uses these as seed copy for hero sub, About paragraph, footer tagline, "Letter from chef" component, and 404 voice.
+
+```
+[
+  {
+    phrase: "From Sannicandro, Italy — where Tony's parents started a family of eight children — is where the inspiration to bring authentic Italian food to Algonquin comes from.",
+    source: "current site About section (cucinabellaalgonquin.com)",
+    tone: "heritage"
+  },
+  {
+    phrase: "A taste of home, made for a table that keeps growing.",
+    source: "fork content.example.ts (story.quote, derived from review themes + heritage signal)",
+    tone: "warm"
+  },
+  {
+    phrase: "Nonna's meat lasagna — Tony's favorite.",
+    source: "fork content.example.ts menu (Specials Della Casa); echoes review-pattern of named-dish + named-person",
+    tone: "specific"
+  },
+  {
+    phrase: "Bold garlic, the kind regulars come back for.",
+    source: "fork content.example.ts hero testimonial body, distilled from Betty Torres + Mark Halverson reviews",
+    tone: "proud"
+  },
+  {
+    phrase: "I peeked in the window and I saw the brick, and I was like, 'All right, this is it.'",
+    source: "Tony Colatorti, Northwest Herald 2025 (founding-of-Algonquin story)",
+    tone: "specific"
+  },
+  {
+    phrase: "I think it's the best sauce. It's like a pink. Not a vodka, but the blend on it is just amazing. Lots of people try to duplicate it.",
+    source: "Tony Colatorti, Northwest Herald 2025 (Suprema sauce origin)",
+    tone: "proud"
+  },
+  {
+    phrase: "Hopefully, it can stay and be a staple in Algonquin for as long as possible.",
+    source: "Tony Colatorti, Northwest Herald 2025 (closing line)",
+    tone: "warm"
+  },
+  {
+    phrase: "Just like Nonna's — you won't leave dissatisfied and hungry.",
+    source: "current site offering copy (cucinabellaalgonquin.com)",
+    tone: "playful"
+  }
+]
+```
+
+**Use map for the fork:**
+- Hero sub → Sannicandro line, condensed (already in fork as testimonial body).
+- Story section → "table that keeps growing" + "I peeked in the window and saw the brick."
+- Suprema build-your-own pasta description → quote Tony's "best sauce / pink blend" line directly.
+- Footer tagline → *"A taste of home, made for a table that keeps growing."*
+- 404 / empty-state voice → *"Just like Nonna's — you won't leave dissatisfied."*
+
+This is the antidote to the *"Experience authentic Italian flavors crafted with passion and tradition"* generic-filler hero. Every prose block now sounds like Tony or a regular wrote it.
+
 ---
 
 ## Where it breaks the strategic principles
@@ -86,6 +209,40 @@ The case is not "your site is broken." It isn't. The case is sharper:
 
 ---
 
+## Photography inventory + tier gate (back-filled 2026-04-29)
+
+Per Principle 5.2, photography is 40–60% of register fidelity, and tier-mismatch is the single biggest fork-risk in the system. The existing audit flagged this implicitly ("Photo bank is sufficient but small"); this subsection makes the verdict explicit.
+
+| Source | Dish shots | Interior shots | Chef / owner portrait | Exterior | Detail / process |
+|---|---|---|---|---|---|
+| Current site (cucinabellaalgonquin.com) | 9 (`algonquinfood1-9.jpg`, 500×500 / 1000×500, warm-graded) | 1 brick dining room (`food9.jpg`) + 1 wine bar | 0 | 0 | 0 |
+| Google Maps / Tripadvisor | uncatalogued this pass | uncatalogued | uncatalogued | uncatalogued | uncatalogued |
+| Yelp | 208 photos listed (uncatalogued) | — | — | — | — |
+| Instagram / Facebook | not captured this pass | — | — | — | — |
+| Owner-supplied | 0 | 0 | 0 | 0 | 0 |
+| Unsplash CC0 stock-pad (currently in fork) | 8 (carbonara, pappardelle-mushroom, red-sauce-pasta, tiramisu, panna-cotta, dessert-martini, cocktails, bar) | 0 | 0 | 0 | 0 |
+| **Total first-party usable** | **~9** | **2** | **0** | **0** | **0** |
+
+**Quality assessment of the 9 first-party shots:** Warm-graded, low-to-mid-resolution (500×500 / 1000×500 — adequate for cards, not for full-bleed hero), reasonable composition, register-correct (red-sauce-Italian-American, not date-night-trattoria). Two of the 11 original "interior" assets on the current site are decorative pizza illustrations — not photographs — and have already been discarded.
+
+**Tier ladder verdict (Principle 5.2):**
+- **Tier-1** (≥30 usable + chef portrait + process): BLOCKED. Inventory is ~9 dish + 2 interior + 0 portrait + 0 process.
+- **Tier-2** (15–20 usable, consistent warm grading): **CONDITIONAL** — only with current Unsplash stock-pad in place (8 generic Italian shots filling pasta/dessert/bar slots). This is the existing fork's posture.
+- **Tier-3** (8–12 bright daylight signature shots): satisfied with first-party alone, but mismatches gusto-01's warm-low-light register.
+
+**Verdict: Tier-2 with stock-pad caveat (current posture is correct).** The fork ships at Tier-2 by leaning on warm-graded Unsplash CC0 for items where first-party shots don't exist (carbonara, tiramisu, dessert martinis, etc.). This is honest stock-padding, not register-shifting — all stock shots are red-sauce / Italian-American / warm-toned, register-consistent with first-party. **However**, hero remains a stock shot (`hero-dinner.jpg`), which is the single highest-risk slot for stock-pad detection.
+
+**Recommended owner ask (pre-pitch, in Block 5 risks):**
+1. Hero photograph — one warm-light, brick-wall-visible, plated-dish-with-glass shot (the 1776/gusto signature composition). Replaces stock `hero-dinner.jpg`.
+2. Tony portrait — 1 owner shot, behind the bar or in dining room. Unlocks an About-page anchor and Owner-Voice quote attribution.
+3. Suprema sauce process shot — 1 detail shot. Powers the Northwest-Herald-derived Suprema story (single most ownable signature on the property).
+4. Nonna's meat lasagna — 1 signature dish hero (currently mapped to stock `red-sauce-pasta.jpg`). This is Tony's favorite and a review-anchor; deserves first-party.
+5–6. Two more dining-room shots in service (people, candles, plates mid-meal) — replace the 0-count "in-service interior" gap.
+
+Four to six additional first-party shots moves this from Tier-2-with-stock-pad to clean Tier-2 and unlocks the Tier-1.5 hero treatment gusto-01 was designed for. Template hypothesis (gusto-01) does NOT need to be reduced — the verdict supports the existing build — but the pre-pitch ask is real, not optional.
+
+---
+
 ## Risks to flag before fork
 
 - **Walnut over-shoot risk.** gusto-01 is a date-night-trattoria template by default. Cucina Bella is family-casual. **Mitigation:** conservative softening locked at the plan level (copy + photo + composition; palette + type stays). Register sanity check is a verification step before the pitch is sent.
@@ -99,3 +256,7 @@ The case is not "your site is broken." It isn't. The case is sharper:
 ## Secret Sauce
 
 The redesign should not just expose Tripadvisor proof. It should echo why guests like Cucina Bella: Sannicandro family roots, bold garlic/red sauce, big portions, fair value, warm service, catering/event care, and the brick-room family-table feel. The pitch should say the site is hiding the restaurant's generosity, not that the restaurant needs a new personality.
+
+---
+
+> Audit upgraded 2026-04-29 — added Mobile state (Block 1), External Trust signals + Owner Voice phrase bank (Block 2), Photography Tier Gate (Block 5) per the five-block standard at `restaurant-website-audit/SKILL.md`.

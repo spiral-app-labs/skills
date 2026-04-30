@@ -46,8 +46,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-eyebrow text-ink mb-2">Phone / Email</h3>
-                <div className="text-body text-ink-muted">{info.phone}</div>
-                <div className="text-body text-ink-muted">{info.email}</div>
+                <a href={b.phoneHref} className="block text-body text-ink-muted hover:text-accent transition-colors">{info.phone}</a>
+                <a href={`mailto:${info.email}`} className="block text-body text-ink-muted hover:text-accent transition-colors">{info.email}</a>
               </div>
               <div>
                 <h3 className="text-eyebrow text-ink mb-2">Hours</h3>

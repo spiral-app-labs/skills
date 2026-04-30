@@ -92,7 +92,7 @@ export function HeroTestimonialCard({
       {body && (
         <motion.p
           variants={child}
-          className="mt-5 font-body text-body-sm leading-relaxed text-ink-muted"
+          className="mt-5 font-body text-body leading-relaxed text-ink/90"
         >
           {body}
         </motion.p>

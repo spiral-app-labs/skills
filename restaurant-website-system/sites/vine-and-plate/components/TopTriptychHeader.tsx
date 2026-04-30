@@ -24,7 +24,7 @@ export function TopTriptychHeader() {
 
   return (
     <motion.header
-      className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 md:px-10 h-16 md:h-20 text-text-cream bg-bg-dark/30 backdrop-blur-[2px]"
+      className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 md:px-10 h-16 md:h-20 text-text-cream bg-bg-dark/75 backdrop-blur-md border-b border-text-cream/10 shadow-[0_2px_24px_rgba(0,0,0,0.25)]"
       initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: theme.motion.easing }}
@@ -33,25 +33,25 @@ export function TopTriptychHeader() {
         href={content.brand.reservationUrl}
         target="_blank"
         rel="noreferrer"
-        className="vp-soft-button px-4 py-2 rounded-button border border-text-cream/60 hover:bg-text-cream/10 text-button text-text-cream"
+        className="vp-soft-button px-4 py-2 rounded-button bg-text-cream/15 border border-text-cream/85 hover:bg-text-cream/25 text-button text-text-cream font-medium transition-colors"
       >
         Reserve
       </Link>
 
       <div className="hidden sm:flex flex-col items-center gap-1">
-        <p className="text-address text-text-cream">
+        <p className="text-address text-text-cream font-medium tracking-[0.08em]">
           {content.brand.addressShort}
         </p>
         <LiveOpenStatus
           hours={content.brand.hoursConfig}
           variant="dot"
-          className="text-address text-text-cream/80"
+          className="text-address text-text-cream/90"
         />
       </div>
 
       <Link
         href={content.brand.menuUrl}
-        className="vp-soft-button px-4 py-2 rounded-button border border-text-cream/60 hover:bg-text-cream/10 text-button text-text-cream flex items-center gap-2"
+        className="vp-soft-button px-4 py-2 rounded-button bg-text-cream/15 border border-text-cream/85 hover:bg-text-cream/25 text-button text-text-cream font-medium flex items-center gap-2 transition-colors"
       >
         Menus
         <span className="flex flex-col gap-0.5">

@@ -21,7 +21,7 @@ const config: Config = {
         body:    ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       fontSize: {
-        'hero-wordmark': [`clamp(72px, 14vw, ${t.type.heroWordmark.size}px)`, { lineHeight: '0.9' }],
+        'hero-wordmark': [`clamp(44px, 13vw, ${t.type.heroWordmark.size}px)`, { lineHeight: '0.95' }],
         'page-title':    [`${t.type.pageTitle.size}px`,    { lineHeight: `${t.type.pageTitle.lineHeight}px` }],
         'section-h1':    [`${t.type.sectionH1.size}px`,    { lineHeight: `${t.type.sectionH1.lineHeight}px` }],
         'section-label': [`${t.type.sectionLabel.size}px`, { lineHeight: `${t.type.sectionLabel.lineHeight}px` }],

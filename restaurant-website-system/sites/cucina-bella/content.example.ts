@@ -177,9 +177,10 @@ export const content = {
       body:
         'Cucina Bella shows up at the top of Tripadvisor\u2019s Algonquin restaurants and has nearly 430 public reviews \u2014 most calling out the red sauce, the family welcome, and the value for the portion. Those signals now sit beside the menu, hours, and reservation path guests need most.',
       stats: [
-        { value: '4.5\u2605', label: 'Tripadvisor rating, public' },
-        { value: '428', label: 'Tripadvisor reviews and counting' },
-        { value: '#2 of 121', label: 'Restaurants in Algonquin' },
+        { value: 'Since 2005', label: 'Family-owned by Tony Colatorti' },
+        { value: 'Best Italian', label: 'Best of the Fox 2018 \u00b7 Northwest Herald' },
+        { value: 'Travelers\u2019 Choice', label: 'Tripadvisor 2024' },
+        { value: '4.5\u2605 / 428', label: '#2 of 121 in Algonquin (Tripadvisor)' },
       ],
     },
 

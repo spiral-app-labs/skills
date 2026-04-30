@@ -101,11 +101,11 @@ export const content = {
     eyebrow: 'Chef-owned dinner on Main Street',
     headline: 'The Black Bear Bistro',
     subcopy:
-      'Chef Santiago Suarez cooks New American plates with wild game, seafood, vegetarian options, and sauces that make regulars tell friends.',
+      'Chef Santiago Suarez plates wild game, seafood, and vegan dishes alongside sauces regulars order by name — in a 25-seat Main Street dining room.',
     cta: { label: 'Book table', href: 'https://tableagent.com/chicago/the-black-bear-bistro/' },
     secondaryCta: { label: 'Our menu', href: '#menu' },
     utilityCta: { label: 'Order pickup', href: 'https://theblackbearbistro.square.site/' },
-    highlights: ['4.83/5 on TableAgent', '1,537 guest votes', 'Dinner Tue-Sun'],
+    highlights: ['#11 of 86 in Algonquin · Tripadvisor', '4.83/5 on TableAgent · 1,537 votes', 'Dinner Tue–Sun'],
     photos: [
       { src: images.filet, alt: 'Dinner plate with wine bottles at The Black Bear Bistro' },
       { src: images.poblano, alt: 'Roasted poblano dish from The Black Bear Bistro' },
@@ -217,6 +217,11 @@ export const content = {
       },
     ],
     items: [
+      {
+        label: 'Northwest Herald · Mystery Diner, 2021',
+        quote:
+          'The food is a wow.',
+      },
       {
         label: 'Hidden-gem diner',
         quote:

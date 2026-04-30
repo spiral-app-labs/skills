@@ -10,6 +10,7 @@ Scrollable qitchen-01-inspired fork for Bistro Wasabi.
 - Lake in the Hills Tock, Toast carry-out, Toast gift cards, and Uber Eats preserved
 - Phone, email, published hours, and Hoffman Estates location preserved
 - No formal omakase claim
+- Final seller materials in `pitch-doc.md` and `pitch-battle-card.md`
 
 ## Run
 

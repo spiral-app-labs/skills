@@ -61,3 +61,92 @@ The leak is softer but sales-relevant: those pieces still read like separate ven
 ## Secret Sauce
 
 The site should sell the human room: Jess and the bar team, drinks that land, performer-led requests, sing-alongs, birthdays after dinner, and the feeling of a small room filling once the music starts. The pitch is strongest when the redesign feels like Shirley's itself, not just a prettier calendar and menu.
+
+---
+
+## Mobile state (Block 1)
+
+WebFetch capture of `https://www.shirleyspianobar.com/` simulated at 390×844 (iPhone 13). Squarespace template renders functionally but the venue's late-night decision is buried.
+
+1. **Hero CTA below fold.** "Listen Tonight at Shirley's" eyebrow + "View Our Full Calendar" button both require scroll; first paint shows logo + nav + a hero image, no actionable surface.
+2. **Phone is footer-only.** `224-888-1880` lives at the bottom of the page. From cold landing, that's roughly two taps (open hamburger → Visit Us) OR a long scroll past four content sections. No sticky header phone, no tap-to-call icon in nav.
+3. **Tonight's performer not surfaced above fold.** The conversion trigger for a piano bar (who is playing tonight) requires scroll past hero — the calendar module is mid-page.
+4. **Menu opens as separate page.** "View Our Full Menu" routes to `/cocktail-menu-shirleys-barrington`; not a deal-breaker (the page is page-native HTML, not a PDF), but adds a tap on mobile when guests are deciding-in-the-moment.
+5. **Hours and address require scrolling to footer.** A piano bar's "are they open right now" question is the literal next-decision; current site makes guests scroll past the hero, calendar preview, and parties section to confirm.
+6. **No sticky bar / popup chrome blocking viewport.** This is a positive — Squarespace template does not inject cookie modals or autoplay video. Clean mobile baseline.
+7. **Social icons in footer ~32px.** Below Apple's 44pt minimum tap target.
+
+**Net mobile state.** Functionally usable, aesthetically intact for a Squarespace site, but the *late-night decision path* (who is playing → can I tap-to-call → are they open) requires too much scrolling. Pitch ammo: "the page works, but the night doesn't start until you scroll."
+
+---
+
+## External trust signals (Block 2)
+
+Light pass — piano bar in a suburban Chicago village, low expected leverage. One genuine hit:
+
+```
+[
+  {
+    source: "Daily Herald",
+    year: 2021,
+    claim: "Shirley's Piano Bar celebrates its reopening in downtown Barrington — Chamber + village ribbon-cutting, June 15 2021",
+    url: "https://www.dailyherald.com/submitted/20210714/shirleys-piano-bar-celebrates-its-reopening-in-downtown-barrington/",
+    quote: "We are so excited to be reopening in downtown Barrington. My grandmother and her husband Verne, who was a talented musician, always hosted intimate gatherings in their home that included live music, drinks and laughter. We created Shirley's with that legacy in mind. — Chris Bauman, owner"
+  },
+  {
+    source: "Barrington Area Chamber of Commerce",
+    claim: "Member listing — Bars & Taverns category; co-hosted June 2021 ribbon-cutting with village of Barrington",
+    url: "https://business.barringtonchamber.com/list/member/shirley-s-piano-bar-7110"
+  }
+]
+```
+
+**No hits found** for: Eater Chicago, Chicago Tribune, Crain's, Patch Barrington, Chicago Magazine, Time Out Chicago. Aggregator presence (Yelp 40 reviews, Tripadvisor, Restaurant Guru 4.2/166 reviews, Facebook 96% recommend / 370 reviews) exists but is not press in the sense the audit calls for.
+
+**Owner-reply signal.** Not directly verified in this pass — flag for owner-call confirmation. Worth checking on the production fork.
+
+**Fork use.** The Daily Herald hit unlocks two assets the current site under-uses: (1) the verbatim founding-owner quote (Chris Bauman as Shirley's grandson is itself a heritage signal worth surfacing) and (2) a "Reopened June 2021 — Daily Herald" press strip. Both belong below the hero or in footer.
+
+---
+
+## Owner voice phrase bank (Block 2)
+
+Pulled from current Squarespace homepage + About page + Daily Herald owner quote + existing fork copy already grounded in source material.
+
+```
+[
+  { phrase: "Live music. Classic cocktails. Song requests welcome.", source: "Current homepage hero sub", tone: "specific" },
+  { phrase: "Listen Tonight at Shirley's", source: "Current homepage section heading", tone: "warm" },
+  { phrase: "Celebrate with live music. From birthdays to corporate gatherings, Shirley's transforms your night into a sing-along experience.", source: "Current homepage parties block", tone: "playful" },
+  { phrase: "Verne was the piano man and Shirley was the social butterfly. Together, they were the life of the party.", source: "Current About page", tone: "heritage" },
+  { phrase: "Gatherings almost always included live music, delicious drinks, and laughter.", source: "Current About page", tone: "heritage" },
+  { phrase: "We created Shirley's with that legacy in mind.", source: "Daily Herald 2021, Chris Bauman owner quote", tone: "proud" },
+  { phrase: "request-friendly piano", source: "Existing fork content.example.ts hero sub", tone: "specific" },
+  { phrase: "song-request celebration", source: "Existing fork parties intro", tone: "playful" }
+]
+```
+
+**Fork use.** These seed: hero sub ("request-friendly piano" + "Live music. Classic cocktails. Song requests welcome."), About paragraph (Verne/Shirley life-of-the-party line verbatim), footer tagline ("Song requests welcome"), and a "Letter from the owner" component if added (Chris Bauman legacy quote). This is the antidote to AI-filler — every prose block in the new site can sound like Chris or his grandmother wrote it.
+
+---
+
+## Photography inventory + tier gate (Block 5, FIRST)
+
+| Source | Dish/drink shots | Interior shots | Owner/staff portrait | Exterior | Detail / process |
+|---|---|---|---|---|---|
+| Current Squarespace site | 1-2 cocktail closeups | 4-5 (bar, room, piano stage, candle tables) | 0 | 1 (signage at night) | 1-2 (back bar, glassware) |
+| Google Maps photos | ~5 cocktail/drink | ~10 interior | 0 named | 2-3 | scattered |
+| Instagram (@shirleyspianobar) | rotating (event + drink) | rotating | occasional performer shots | low | low |
+| Facebook | mirrors IG | mirrors IG | low | low | low |
+| Owner-supplied | unknown — ask Chris Bauman | unknown | unknown | unknown | unknown |
+| **Total usable, warm-graded** | ~5-6 | ~7-8 | 0 | 2-3 | 2-3 |
+
+**Grading note.** Existing first-party Squarespace assets are warm low-light venue shots — already on-register for a nocturnal piano bar. Cocktail photography is the weak link: usable but not signature-dish-tier. No chef/owner portraits, which is fine for this register (the room and piano are the protagonists, not a chef).
+
+**Verdict: Tier-2 ready.** Aligns with `velvet-shaker-01` fork already shipped — dark, drinks-led, room-as-protagonist. Tier-1 templates (1776, alinea, qitchen) blocked because (a) no chef portrait, (b) cocktail shots are not magazine-grade, (c) the register doesn't require Tier-1 anyway — a piano bar oversells if photographed like a fine-dining steakhouse. **Tier-3** (pepper/saladify/latte) ruled out: too bright, too daylight, kills the late-night register.
+
+Recommended template hypothesis stays at `velvet-shaker-01` (Tier-2). No re-route needed. If owner wants to push register up, the unlock is a one-night warm-grade venue + cocktail shoot (~15-20 frames), not a chef portrait.
+
+---
+
+Audit upgraded 2026-04-29.

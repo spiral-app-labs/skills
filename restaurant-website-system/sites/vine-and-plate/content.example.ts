@@ -13,7 +13,7 @@ export const content = {
     name: 'Vine & Plate',
     siteUrl: 'https://www.thevineandplate.com',
     wordmark: 'VINE & PLATE',
-    tagline: 'Wine bar, shared plates, bottles to go',
+    tagline: 'A love letter to wine and food',
     description:
       'A Crystal Lake wine bar pairing generous shared plates, by-the-glass pours, bottle nights, lunch, specials, Toast ordering, and reservations.',
     address: '414 W Virginia St, Crystal Lake, IL 60014',

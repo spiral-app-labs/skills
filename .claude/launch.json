@@ -30,6 +30,42 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/sites/galatis-hideaway", "run", "dev", "--", "--port", "3018"],
       "port": 3018
+    },
+    {
+      "name": "black-bear-bistro-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/black-bear-bistro", "run", "dev", "--", "--port", "3120"],
+      "port": 3120
+    },
+    {
+      "name": "vine-and-plate-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/vine-and-plate", "run", "dev", "--", "--port", "3121"],
+      "port": 3121
+    },
+    {
+      "name": "bistro-wasabi",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/bistro-wasabi", "run", "dev", "--", "--port", "3122"],
+      "port": 3122
+    },
+    {
+      "name": "da-baffone-site",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/da-baffone", "run", "dev", "--", "--port", "3123"],
+      "port": 3123
+    },
+    {
+      "name": "grounds-coffee-bar",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/grounds-coffee-bar", "run", "dev", "--", "--port", "3124"],
+      "port": 3124
+    },
+    {
+      "name": "shirleys-piano-bar",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/shirleys-piano-bar", "run", "dev", "--", "--port", "3125"],
+      "port": 3125
     }
   ]
 }

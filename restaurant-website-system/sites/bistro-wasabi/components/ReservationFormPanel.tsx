@@ -7,7 +7,7 @@ import { theme } from '../theme';
 export function ReservationFormPanel() {
   return (
     <motion.div
-      className="px-8 md:px-10 py-12 md:py-16 space-y-10"
+      className="px-6 md:px-10 py-12 md:py-16 pb-28 md:pb-16 space-y-10"
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -28,17 +28,17 @@ export function ReservationFormPanel() {
       </header>
 
       <section className="space-y-4">
-        <p className="text-ui-label text-text-muted">Primary actions</p>
+        <p className="text-ui-label text-text-muted">Dinner options</p>
         <div className="grid grid-cols-1 gap-2">
-          <ProviderLink href={links.tock} label="Reserve Lake in the Hills on Tock" primary />
-          <ProviderLink href={links.carryOut} label="Order Lake in the Hills carry-out on Toast" />
-          <ProviderLink href={links.giftCards} label="Buy Toast gift card" />
-          <ProviderLink href={links.delivery} label="Order delivery on Uber Eats" />
+          <ProviderLink href={links.tock} label="Reserve a table" primary />
+          <ProviderLink href={links.carryOut} label="Order carry-out" />
+          <ProviderLink href={links.giftCards} label="Buy a gift card" />
+          <ProviderLink href={links.delivery} label="Start delivery" />
         </div>
       </section>
 
       <section className="space-y-4">
-        <p className="text-ui-label text-text-muted">Location handoff</p>
+        <p className="text-ui-label text-text-muted">Locations</p>
         <div className="space-y-5">
           {content.locations.map((location) => (
             <article key={location.name} className="border-t border-border/60 pt-5 space-y-3">
@@ -46,7 +46,7 @@ export function ReservationFormPanel() {
                 <h3 className="text-item-name text-text">{location.name}</h3>
                 <p className="text-body text-text-muted leading-relaxed">{location.address}</p>
               </div>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 min-[520px]:grid-cols-2 gap-2">
                 {location.actions.slice(0, 4).map((action) => (
                   <ProviderLink
                     key={`${location.name}-${action.label}`}
@@ -79,7 +79,7 @@ function ProviderLink({
   const external = href.startsWith('http');
 
   return (
-    <a
+    <motion.a
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
@@ -88,8 +88,11 @@ function ProviderLink({
           ? 'border-text/70 bg-text text-canvas hover:bg-text/90'
           : 'border-border/70 bg-surface text-text hover:bg-surface-hover'
       } ${compact ? 'py-3' : 'py-3.5'}`}
+      whileHover={{ y: -1 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ duration: theme.motion.transitionDuration }}
     >
       {label}
-    </a>
+    </motion.a>
   );
 }

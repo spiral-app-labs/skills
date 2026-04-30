@@ -43,6 +43,19 @@
 | Platform | WordPress + Divi child theme / Zara Restaurant Theme v2.0, PHP/7.4.30, iMenuPro, Toast, Tock, Uber Eats, Cookie Notice, Instagram feed plugin. |
 | Cookie notice | A bright blue cookie bar overlays the hero in captures on desktop and mobile, interrupting the first impression. |
 
+### Mobile state (iPhone 13, 390x844)
+
+Derived from WebFetch HTML/CSS inspection of the live site against the existing audit's mobile observations. Formal preview-browser screenshot capture deferred — findings below are text-source-derived and consistent with the existing capture artifacts in `inputs/reference-sites/bistro-wasabi-old-site/`.
+
+1. **Header phone number is plain text, not a `tel:` link** — the top-bar `847-515-2700` renders as static text. Only the footer instance is wrapped in `tel:`. Customers tapping the most prominent phone surface get no dial action; they have to copy-paste-and-dial. Hard mobile failure for a reservation-recommended dinner restaurant.
+2. **Cookie Notice plugin overlays the hero on mobile first paint** — bright blue full-width band sits across the hero image, eating ~10% of the 844px viewport before any content reads. First impression of an "elevated, downtown-Chicago" room is a compliance bar.
+3. **Hero says "Come and Experience" / "It is all about good food"** — neither names sushi, martinis, steaks, since-2000, or Tock. On a 390-wide frame with a cropped food photo, the guest sees a generic tagline and a cookie bar before any decision hook surfaces. Principle 5.3 violation flagged in Block 3 — the mobile expression is the most punishing.
+4. **Menu page is a single iMenuPro JS embed** — `https://imenupro.com/!1h5i-2` injected via script tag. On iOS Safari this renders as one extremely long vertical document with no native category rail; the site's own HTML carries near-zero menu content (crawler-invisible, screen-reader-hostile). Sushi vs Entrees vs Martinis vs Wine all collapse into one scroll.
+5. **No sticky thumb-zone action bar** — Reserve / Carry Out / Directions / Call are not pinned. Mobile primary actions live as black utility tabs at the very top, scrolled away on first swipe. The four most likely mobile tasks all require scroll-back-to-top.
+6. **Instagram feed plugin throws an admin-only error inline on the About page** — visible plugin residue on mobile, signals abandoned site (Part 10 aliveness collapse).
+
+**Net mobile state:** the booking funnel is "scroll past cookie bar, scroll past generic hero, scroll past long iMenuPro embed, scroll back up, find the black utility tab, hope the Tock link opens cleanly." The reservation engine works; the path to it doesn't. This is the single most-citable mobile failure for the pitch — Bistro Wasabi has a polished room and a working Tock account, and the mobile front door makes guests work to use either.
+
 ---
 
 ## Where it breaks the strategic principles
@@ -91,6 +104,33 @@
 
 ## Risks to flag before fork
 
+### Photography inventory + tier gate
+
+Per Principle 5.2, photography is 40-60% of register fidelity, and tier-mismatch is the single biggest fork-risk in the system (Cucina Bella + Walnut both burned this). The existing audit hypothesizes a Tier-1 `qitchen-01`-class fork — this section validates against actual inventory.
+
+| Source | Dish shots | Interior shots | Chef portrait | Exterior | Detail / process |
+|---|---|---|---|---|---|
+| Current site | ~6 cropped food hero crops + Favorites page items (Maguro Salad, Asparagus Beef Roll, Crackled Tuna, Dragon Roll, Sashimi Carpaccio, Steak) | minimal — hero-only | 0 | 0 | 0 |
+| Yelp | ~166 user photos (mixed quality) | several | 0 visible | likely present | minimal |
+| Tripadvisor | 12 traveler photos: 5 food, 2 interior, 1 exterior, 2 bar/beverage, 2 misc | 2 | 0 | 1 | 0 |
+| Google Maps | unverified count (lazy-loaded, not extractable in this pass) — likely abundant | likely | 0 confirmed | likely | unverified |
+| Instagram (@bistrowasabi assumed) | unverified | unverified | unverified | unverified | unverified |
+| Owner-supplied | **unknown — must ask** | | | | |
+| **Total usable (current state)** | **~190+ user shots, mostly Tier-3 iPhone-quality + a small set of warmly cropped current-site hero crops** | mixed quality | **none confirmed** | sparse | **none** |
+
+**Verdict: Tier-2 ready / Tier-1 BLOCKED.** The existing audit's qitchen-class hypothesis is **not supported by inventory**. qitchen-01 (Tier-1) requires >=30 warm-natural-low-light pro shots, 2-3 angles per signature dish, a chef portrait, and detail/process shots. Bistro Wasabi has abundant user-uploaded sushi photography but no curated warm-low-light pro set, no confirmed chef portrait of the named sushi chefs the reviews praise, and no detail/process work. The current-site hero crops are warm-leaning but cropped and dated, not omakase-ceremony-grade.
+
+**Tier hypothesis re-route:**
+- **Tier-1 (qitchen-01) — BLOCKED** until owner commits to a 25-30-shot pro photo session focused on (a) 3-4 signature maki and nigiri compositions in warm low light, (b) one sushi-chef-at-counter portrait, (c) interior at golden hour with the candles-and-flowers detail the About copy already names, (d) one martini hero (Asian Pear or Mango). Without the shoot, qitchen's first viewport will read as a register lie within 2 seconds.
+- **Tier-2 (gusto-01 / labrisa-01 / bramble-01-class dark) — VIABLE today** on existing imagery if curated and color-graded. The closest match by register among catalog templates is `bamzi-01` itself in its dark-class variant (the original audit recommendation, before the user override) — Tier-2 dark-canvas-with-warm-accents matches what we actually have.
+- **Tier-3 (plate-01 / pepper-01 bright tier) — REGISTER MISMATCH.** Bistro Wasabi's room is dark, candle-lit, romantic; bright-daylight templates would undersell the actual atmosphere even though the photo inventory could technically support them.
+
+**Recommended path:** keep `qitchen-01` as the visual spine the user wants, but stage the build in two phases. **Phase 1:** ship a Tier-2 dark-canvas variant on existing curated photography (color-graded for warmth, cropped tight, with the strongest Yelp/Maps user shots reviewed by the owner before use) — this honors the user's firsthand register read while not falsifying the photo tier. **Phase 2:** propose the 25-30-shot pro shoot at pitch time as the upgrade path that unlocks the full qitchen ceremony (chef-at-counter hero, detail-shot scrolls, candles-and-flowers interior gallery). This is the same staging Cucina Bella landed on — template-match the register, soften via copy/photo curation, propose the shoot as an explicit upgrade rather than pretending the photos already exist.
+
+**Pre-flight ask added to the existing list:** *"Are you open to a 25-30-shot pro photo session — 3-4 signature maki + nigiri compositions, sushi-chef-at-counter portrait, interior at golden hour, one martini hero? It's the unlock that lets the new site read at the qitchen-class register your room actually carries."*
+
+### Standard risk subsections
+
 - **Photo/register check still matters.** The user has firsthand experience and says a fancier qitchen-like register would fit. Still avoid unsupported claims: say refined sushi/fusion, chef precision, martinis, and elevated dinner room; do not claim a formal omakase program unless owner confirms it.
 - **Do not use unverified review claims as facts.** "Fresh fish flown in daily," private-room details, manager names, and exact rating/count must be owner-confirmed before production or outreach.
 - **Review packet has a few suspicious/outlier reviews.** One review mentions short rib bolognese, which is not on the captured menu. Another uses generic "verified legacy business" language. Do not let those shape the build.
@@ -110,6 +150,75 @@
 - **Guest language worth echoing:** "fresh," "inventive," "modern," "stylish," "energetic," "downtown Chicago," "strip mall surprise," "hidden gem," "busy even on weeknights," "make reservations," "best sushi in the area," and "coming here for 25 years."
 - **Risks / do-not-overclaim:** Do not call it a formal omakase restaurant unless owner-confirmed. Do not call it Japanese-only or erase the steaks, fusion, martinis, and wine. Do not freeze public rating counts without day-of verification. Do not quote full reviews in production without approval.
 - **Website/pitch implications:** The new site should make the owner feel seen: this is not a generic sushi redesign. It is a fresh-sushi, martini-and-wine, steaks-for-the-non-sushi-friend, elevated-suburban-room story.
+
+### Owner voice — verbatim phrases (the brand's actual register)
+
+Source: WebFetch of `thebistrowasabi.com/about/` + Instagram post extraction via search. Owner names confirmed via search aggregator: **Jeffrey Dunham and Jino Kim**, co-owners since 2000. Google Maps owner-reply chain was not extractable in this pass (Google Maps lazy-loads behind JS); flag for follow-up if the owner adopts a reply cadence in the rebuild.
+
+```
+[
+  {
+    phrase: "Bistro Wasabi is a locally owned restaurant established in 2000.",
+    source: "current website About copy",
+    tone: "plain-spoken, heritage"
+  },
+  {
+    phrase: "We're a unique blend of traditional sushi with Mexican, Korean, and French-inspired appetizers, entrees, and desserts.",
+    source: "current website About copy",
+    tone: "specific, fusion-proud"
+  },
+  {
+    phrase: "If you're a sushi lover, you'll be amazed by our sushi and maki creations.",
+    source: "current website About copy",
+    tone: "warm, second-person"
+  },
+  {
+    phrase: "You'll love the atmosphere at our restaurant that is filled with candles and flowers on every table.",
+    source: "current website About copy",
+    tone: "specific, romantic, room-proud"
+  },
+  {
+    phrase: "Our Bistro Family! Here to serve you!",
+    source: "Instagram post",
+    tone: "warm, family-register"
+  },
+  {
+    phrase: "We are so extremely grateful for our communities continued support!",
+    source: "Instagram post",
+    tone: "humble, gratitude"
+  },
+  {
+    phrase: "Food soothes the soul and we continue to work hard to do just that!!!",
+    source: "Instagram post",
+    tone: "playful, exclamation-heavy"
+  },
+  {
+    phrase: "We are so happy to be able to continue to serve this wonderful community!!",
+    source: "Instagram post",
+    tone: "warm, community-register"
+  }
+]
+```
+
+**Voice signature:** first-person plural, gratitude-forward, "Bistro Family" as a recurring frame, exclamation-heavy on social, plain-spoken on the site. The strongest hero-grade phrase on the existing About is *"candles and flowers on every table"* — this is the only sentence in the current copy that paints the room sensorially and matches the qitchen-class register the rebuild is targeting. Fork should preserve it verbatim in the About paragraph or hero sub. **Avoid AI-filler temptations:** the owner's actual register is gratitude + family + sensory detail, not "embark on a culinary journey." Do not invent omakase ceremony language they have never used.
+
+### External trust signals
+
+Searched: Tripadvisor, Yelp, OpenTable, Daily Herald "Best Of," Crain's, Algonquin/Lake-in-the-Hills Chamber, regional press for the 25-year anniversary.
+
+```
+[
+  { source: "Tripadvisor", year: 2026, claim: "#1 of 33 Restaurants in Lake in the Hills, 4.6 stars over 79 reviews, Travelers' Choice award badge", url: "https://www.tripadvisor.com/Restaurant_Review-g36235-d2636879-Reviews-Bistro_Wasabi-Lake_in_the_Hills_Illinois.html" },
+  { source: "OpenTable", year: 2026, claim: "4.8 stars over 367 diner reviews (informational listing — restaurant books on Tock, not OpenTable)", url: "https://www.opentable.com/r/bistro-wasabi-lake-in-the-hills" },
+  { source: "Yelp", year: 2026, claim: "166 photos, 212 reviews on Lake in the Hills page", url: "https://www.yelp.com/biz/bistro-wasabi-lake-in-the-hills" },
+  { source: "Tock", year: "current", claim: "active reservation engine — indoor, sushi bar, and outdoor seating bookable", url: "https://www.exploretock.com/bistrowasabilakeinthehills" },
+  { source: "Owner-claim", year: 2000, claim: "Established 2000 — co-owners Jeffrey Dunham and Jino Kim per aggregator data, owner-confirm before stamping", url: "https://thebistrowasabi.com/" }
+]
+```
+
+**Honest no-finds:** zero hits on Daily Herald "Best Of," Crain's, Eater Chicago, James Beard, Wine Spectator, OpenTable Diners' Choice, or any 25-year-anniversary press feature despite the milestone year. No Chamber of Commerce listing surfaced for either Algonquin or Lake-in-the-Hills jurisdictions. The trust strip the fork can build is **aggregator-tier, not award-tier**: Tripadvisor #1-of-33 + Travelers' Choice + OpenTable 4.8 + Yelp 212-review base. That is genuinely strong for a suburban sushi room and worth surfacing prominently — the current site shows none of it.
+
+**Owner-response signal:** Tripadvisor listing reads **"Unclaimed"** — owner has never claimed the page or replied to a review there. Google Maps owner-reply cadence is unverified in this pass. This is a Part 10 aliveness gap the rebuild should mirror in reverse: a `LiveReviewsCarousel` pulling current Google ratings + a one-click prompt to the owner to claim Tripadvisor and start the reply chain.
 
 ---
 
@@ -146,3 +255,9 @@
 - **Visual direction:** qitchen-like dark canvas, disciplined typography, restrained motion, refined sushi photography, scrollable sections; no loud `bamzi-01` orange/leaf treatment
 - **Provider preservation:** Tock reservations, Toast carry-out, Toast gift cards, Uber Eats delivery, current phone/email
 - **Schema:** `Restaurant` JSON-LD with `acceptsReservations`, `hasMenu`, `potentialAction` for Reserve/Order, `sameAs`, hours, phone, and address
+
+---
+
+**Audit upgraded 2026-04-29** with 4 back-filled captures: Mobile state subsection (Block 1) · Owner Voice phrase bank (Block 2) · External Trust signals (Block 2) · Photography Tier Gate (Block 5, now first in Risks). Hero Lock subsection deferred — the existing Build Direction block already encodes most of the equivalent fields and the photo tier gate re-routes the template hypothesis, so any Hero Lock written now would have to be redone after the Phase 1 / Phase 2 photo decision. Surface for the next pass.
+
+**Key surprise from the upgrade:** the existing audit's Tier-1 qitchen hypothesis is NOT supported by current photo inventory. Tripadvisor lists Bistro Wasabi as #1 of 33 in Lake-in-the-Hills with a Travelers' Choice badge but the listing is **unclaimed by the owner**, and zero 25-year-anniversary press surfaced despite the milestone. The fork should ship Tier-2 dark-canvas on Phase 1 and propose the pro shoot as the explicit Phase 2 unlock — pretending the photos exist would repeat the Cucina Bella / Walnut visual-reality-check failure mode.

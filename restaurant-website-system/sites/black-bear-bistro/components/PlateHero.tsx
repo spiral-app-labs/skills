@@ -24,7 +24,7 @@ export function PlateHero() {
         className="mx-auto max-w-[760px] text-center"
       >
         <div className="text-eyebrow text-accent">{eyebrow}</div>
-        <h1 className="mt-3 font-display text-[56px] md:text-[92px] leading-none font-medium text-ink whitespace-pre-line">
+        <h1 className="mt-3 font-display text-[40px] sm:text-[56px] md:text-[92px] leading-[1.05] font-medium text-ink whitespace-pre-line">
           {headline}
         </h1>
         <p className="mx-auto mt-5 max-w-[58ch] text-body text-ink-muted">{subcopy}</p>
@@ -79,13 +79,14 @@ export function PlateHero() {
         </div>
       </motion.div>
 
-      <div className="mx-auto mt-6 grid max-w-[760px] gap-3 sm:grid-cols-3">
-        {highlights.map((label) => (
-          <div key={label} className="rounded-card border border-divider bg-white/60 px-4 py-3 text-center text-body-sm text-ink">
-            {label}
-          </div>
+      <p className="mx-auto mt-6 flex max-w-[760px] flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-[11px] uppercase tracking-[0.18em] text-ink-muted sm:text-[12px]">
+        {highlights.map((label, idx) => (
+          <span key={label} className="flex items-center gap-x-3">
+            {idx > 0 && <span aria-hidden className="text-divider">·</span>}
+            <span>{label}</span>
+          </span>
         ))}
-      </div>
+      </p>
     </section>
   );
 }

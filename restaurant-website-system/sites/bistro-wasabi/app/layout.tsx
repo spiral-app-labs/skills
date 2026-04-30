@@ -14,7 +14,7 @@ const forum = Forum({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://thebistrowasabi.com'),
-  title: `${content.brand.name} — ${content.brand.tagline}`,
+  title: `${content.brand.name} — Sushi, martinis, steaks`,
   description: content.brand.description,
   openGraph: {
     title: `${content.brand.name} — Sushi, martinis, steaks`,
@@ -49,12 +49,12 @@ const structuredData = {
     {
       '@type': 'ReserveAction',
       target: links.tock,
-      name: 'Reserve on Tock',
+      name: 'Reserve a table',
     },
     {
       '@type': 'OrderAction',
       target: links.carryOut,
-      name: 'Order carry-out on Toast',
+      name: 'Order carry-out',
     },
   ],
   department: [

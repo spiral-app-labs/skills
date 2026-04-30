@@ -127,19 +127,19 @@ export const content = {
         'For more than a decade, Da Baffone has paired Southern Italian recipes with a brick-walled room, a serious wine-and-martini bar, and the simple comfort of calling when you are ready for dinner.',
       stats: [
         {
-          value: '2010',
-          label: 'Established downtown',
-          body: 'A family-owned Crystal Lake dining room with 15+ years of local memory.',
+          value: 'Since 2010',
+          label: 'Family-owned in Crystal Lake',
+          body: 'Camille and the Giangrande family have run the brick room on Virginia Street for 15+ years.',
         },
         {
-          value: 'Best Italian',
-          label: 'McHenry County proof',
-          body: 'Best Italian and Best Wine Bar recognition helps first-time guests choose the room with confidence.',
+          value: '4× Best Italian',
+          label: 'Best of the Fox · Northwest Herald',
+          body: 'Readers’ choice winner four times — 2013, 2014, 2016, 2017. The award the website never named.',
         },
         {
-          value: 'Local proof',
-          label: 'Public reviews',
-          body: 'Public reviews and local press help new guests feel confident before dinner.',
+          value: '"You walk inside my house"',
+          label: 'Camille Giangrande, Northwest Quarterly 2016',
+          body: '"It’s like you walk inside my house when you come here. I know about 80 percent of my customers."',
         },
         {
           value: 'Call-first',

@@ -17,7 +17,7 @@ import { content, links } from '../content';
  */
 export function MenuList() {
   return (
-    <div className="px-8 md:px-10 py-12 md:py-16 space-y-16">
+    <div className="px-6 md:px-10 py-12 md:py-16 pb-28 md:pb-16 space-y-14">
       <motion.header
         className="space-y-5"
         initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ export function MenuList() {
       >
         <div className="flex items-center justify-center gap-4">
           <span className="block w-8 h-px bg-text-muted/40" />
-          <h2 className="text-section-h2 text-text">Current range</h2>
+          <h2 className="text-section-h2 text-text">Explore the menu</h2>
           <span className="block w-8 h-px bg-text-muted/40" />
         </div>
         <p className="text-body text-text-muted leading-relaxed text-center">
@@ -50,14 +50,34 @@ export function MenuList() {
             Carry Out
           </a>
         </div>
+        <nav
+          aria-label="Menu sections"
+          className="sticky top-0 z-20 -mx-6 md:-mx-10 flex gap-2 overflow-x-auto border-y border-border/55 bg-canvas/92 px-6 py-3 backdrop-blur md:px-10"
+        >
+          {content.menu.sections.map((section) => (
+            <a
+              key={section.title}
+              href={`#${sectionId(section.title)}`}
+              className="shrink-0 rounded-pill border border-border/70 bg-surface px-3 py-2 text-ui-label text-text transition-colors hover:bg-surface-hover"
+            >
+              {section.title}
+            </a>
+          ))}
+        </nav>
       </motion.header>
-      {content.menu.sections.map((section) => (
+      {content.menu.sections.map((section, sectionIndex) => (
         <motion.section
           key={section.title}
+          id={sectionId(section.title)}
+          className="scroll-mt-24"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing }}
+          transition={{
+            duration: theme.motion.revealDuration,
+            ease: theme.motion.easing,
+            delay: sectionIndex * 0.03,
+          }}
         >
           {/* Section header — centered with thin divider */}
           <header className="text-center mb-8">
@@ -71,9 +91,17 @@ export function MenuList() {
           {/* Items */}
           <ul className="space-y-5">
             {section.items.map((item, i) => (
-              <li
+              <motion.li
                 key={item.name + i}
-                className="flex items-center gap-4"
+                className="flex items-center gap-4 rounded-card border border-transparent p-2 transition-colors hover:border-border/55 hover:bg-surface/35"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{
+                  duration: theme.motion.revealDuration,
+                  ease: theme.motion.easing,
+                  delay: i * 0.03,
+                }}
               >
                 {/* Thumbnail */}
                 <div className="relative shrink-0 w-20 h-12 rounded-sm overflow-hidden bg-surface">
@@ -82,7 +110,7 @@ export function MenuList() {
                     alt={item.name}
                     fill
                     sizes="80px"
-                    loading="eager"
+                    priority={sectionIndex === 0}
                     className="object-cover"
                   />
                 </div>
@@ -94,11 +122,15 @@ export function MenuList() {
                   </div>
                   <p className="text-body text-text-muted">{item.description}</p>
                 </div>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </motion.section>
       ))}
     </div>
   );
+}
+
+function sectionId(title: string) {
+  return title.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
