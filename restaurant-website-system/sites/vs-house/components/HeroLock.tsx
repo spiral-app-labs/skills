@@ -13,6 +13,7 @@
 
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import { content } from '../content';
 import { LiveOpenStatus } from './LiveOpenStatus';
 
@@ -26,15 +27,37 @@ const HOURS = {
 };
 
 export function HeroLock() {
+  const [scrollY, setScrollY] = useState(0);
+  const reduced = useRef(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    reduced.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced.current) return;
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => setScrollY(window.scrollY));
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
+  const parallax = `translate3d(0, ${Math.min(scrollY * 0.35, 240)}px, 0) scale(${1 + Math.min(scrollY, 600) * 0.0004})`;
+
   return (
     <section className="relative min-h-[100svh] w-full overflow-hidden bg-bg-darker">
-      {/* Hero photo */}
+      {/* Hero photo with parallax */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 will-change-transform"
         style={{
           backgroundImage: `url(${content.photos.heroRoom})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center 40%',
+          transform: parallax,
         }}
         aria-hidden
       />
@@ -56,7 +79,7 @@ export function HeroLock() {
             {content.hero.eyebrow}
           </p>
 
-          <h1 className="font-display text-text-white text-hero-h1 leading-[1.02] tracking-tight">
+          <h1 className="font-display text-text-white text-hero-h1 leading-[1.02] tracking-tight whitespace-nowrap motion-safe:animate-[fadeUp_0.8s_cubic-bezier(0.22,1,0.36,1)_both]">
             {content.hero.h1}
           </h1>
 

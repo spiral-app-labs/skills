@@ -1,35 +1,39 @@
-// PressStrip — Audit Block 2 External Trust + Block 4 reason #2.
-// "Four press-grade signals justify a press strip below the hero."
+// PressStrip — continuous-scroll marquee of press + ratings.
+// Per restaurant-fork-improvement §1.2.
 import { content } from '../content';
+
+const ITEMS = [
+  ...content.press.map((p) => ({ source: p.source, quote: p.quote })),
+  { source: 'Designer', quote: 'Hatsumi Kuzuu — recognized Dallas restaurant designer' },
+  { source: 'Facebook', quote: '96% recommended · 16 reviews' },
+];
 
 export function PressStrip() {
   return (
-    <section className="bg-bg-darker py-10 lg:py-12 border-y border-border-dark">
-      <div className="max-w-[1240px] mx-auto px-5 lg:px-10">
-        <p className="text-center text-eyebrow text-gold font-body uppercase tracking-[0.3em] mb-8">
-          As Featured In
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10">
-          {content.press.map((p) => (
-            <a
-              key={p.source}
-              href={p.url}
-              target="_blank"
-              rel="noreferrer"
-              className="text-center group"
+    <section className="bg-bg-darker py-10 lg:py-12 border-y border-border-dark overflow-hidden">
+      <p className="text-center text-eyebrow text-gold font-body uppercase tracking-[0.4em] mb-8">
+        As Featured In
+      </p>
+
+      <div className="group relative">
+        {/* Edge fades */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-bg-darker to-transparent z-10" aria-hidden />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-bg-darker to-transparent z-10" aria-hidden />
+
+        <div className="flex w-max motion-safe:animate-[marquee_42s_linear_infinite] group-hover:[animation-play-state:paused]">
+          {[...ITEMS, ...ITEMS].map((item, idx) => (
+            <div
+              key={idx}
+              className="flex items-center gap-4 px-8 lg:px-12 border-r border-border-dark/60 shrink-0"
+              style={{ minHeight: 56 }}
             >
-              <div className="text-text-white font-display text-xl lg:text-2xl group-hover:text-gold transition leading-tight">
-                {p.source}
-              </div>
-              <div className="mt-2 text-text-muted-dark text-bodySm leading-snug">
-                {p.quote}
-              </div>
-              {p.year && (
-                <div className="mt-1 text-text-muted-dark/60 text-eyebrow tracking-widest">
-                  {p.year}
-                </div>
-              )}
-            </a>
+              <span className="font-display text-xl lg:text-2xl text-text-white">
+                {item.source}
+              </span>
+              <span className="text-bodySm text-text-muted-dark max-w-[260px] truncate">
+                {item.quote}
+              </span>
+            </div>
           ))}
         </div>
       </div>

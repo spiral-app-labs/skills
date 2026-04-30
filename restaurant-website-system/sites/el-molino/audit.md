@@ -1,7 +1,7 @@
-# El Molino Mexican Restaurant  -  Pre-Fork Audit
+# El Molino Mexican Restaurant - Pre-Fork Audit
 
 > **Current site:** https://thenewmolino.com/  
-> **Legacy indexed domain:** https://www.elmolino1984.com/  -  browser reported `net::ERR_NAME_NOT_RESOLVED` on 2026-04-30; Google Maps still shows `elmolino1984.com` as the menu domain.  
+> **Legacy indexed domain:** https://www.elmolino1984.com/ - browser reported `net::ERR_NAME_NOT_RESOLVED` on 2026-04-30; Google Maps still shows `elmolino1984.com` as the menu domain.  
 > **Address:** 2112 Elgin Rd, Carpentersville, IL 60110  
 > **Phone:** (847) 551-1602  
 > **Run date:** 2026-04-30  
@@ -19,13 +19,13 @@
 
 El Molino is not a weak lead because nobody loves the restaurant. It is a strong lead because the public story is unusually rich and the live site only tells the safest 15% of it.
 
-The best pitch is: **a 40-year Carpentersville Mexican landmark has a new Zepeda-family chapter, a six-month remodel, Puebla family recipes, a new back-room bar, house salsas, handmade tortillas, and fresh Google praise for Daniel/Juan-level hospitality  -  but the current site is a one-page announcement plus a PDF menu.**
+The best pitch is: **a 40-year Carpentersville Mexican landmark has a new Zepeda-family chapter, a six-month remodel, Puebla family recipes, a new back-room bar, house salsas, handmade tortillas, and fresh Google praise for Daniel/Juan-level hospitality - but the current site is a one-page announcement plus a PDF menu.**
 
-This should **not** be forced into `bamzi-01`, `gusto-01`, or `plate-01` as-is. The audit confirms the original catalog-gap call: this wants **template #14, heritage Latin casual**  -  muted cream/wood/terracotta, family-history first, menu-readable, bar/gathering secondary, Google-review proof in hero or just below hero.
+This should **not** be forced into `bamzi-01`, `gusto-01`, or `plate-01` as-is. The audit confirms the original catalog-gap call: this wants **template #14, heritage Latin casual** - muted cream/wood/terracotta, family-history first, menu-readable, bar/gathering secondary, Google-review proof in hero or just below hero.
 
 ---
 
-## Block 1  -  Verbatim Findings
+## Block 1 - Verbatim Findings
 
 | Field | Verbatim / Observed |
 |---|---|
@@ -70,15 +70,15 @@ The in-app browser viewport captured at 505 x 957, close enough to reveal the mo
 
 ---
 
-## Block 2  -  Secret Sauce
+## Block 2 - Secret Sauce
 
 Guests are responding to the **new room**, **authentic Mexican food**, **margaritas/bar**, and a surprisingly strong **named-service pattern** around Daniel and Juan. The deeper story from Shaw Local makes the review pattern sharper: the Zepeda family is not just repainting a restaurant; they are trying to preserve a 40-year local landmark while bringing in Puebla-family recipes, a brighter cream-and-wood room, and a new back-room bar.
 
 ### 1. New Room / Renovation
 
-- *"The atmosphere has changed from what used to be a more cantina vibe to an upscale restaurant."*  -  Kate, Google, 4 days ago
-- *"The interior is beautifully redone, very tasteful with great seating."*  -  Olivia, Google, a week ago
-- *"Very beautifully remodel."*  -  Susan, Google, a month ago
+- *"The atmosphere has changed from what used to be a more cantina vibe to an upscale restaurant."* - Kate, Google, 4 days ago
+- *"The interior is beautifully redone, very tasteful with great seating."* - Olivia, Google, a week ago
+- *"Very beautifully remodel."* - Susan, Google, a month ago
 - Shaw Local confirms the design pivot: red/green/yellow moved to muted white/cream while keeping wood beams.
 
 ### 2. Family / Heritage Story
@@ -90,10 +90,10 @@ Guests are responding to the **new room**, **authentic Mexican food**, **margari
 
 ### 3. Named Staff
 
-- *"Ask for Daniel; he's very friendly and provides excellent service."*  -  Gregorio, Google, 4 days ago
-- *"Daniel, our waiter, was: attentive, friendly..."*  -  Alex, Google, 4 days ago
-- *"Daniel was an awesome server."*  -  Kelsey, Google, 5 days ago
-- *"Gracias Juan, por hacernos sentir como en casa."*  -  Laura, Google, 3 weeks ago
+- *"Ask for Daniel; he's very friendly and provides excellent service."* - Gregorio, Google, 4 days ago
+- *"Daniel, our waiter, was: attentive, friendly..."* - Alex, Google, 4 days ago
+- *"Daniel was an awesome server."* - Kelsey, Google, 5 days ago
+- *"Gracias Juan, por hacernos sentir como en casa."* - Laura, Google, 3 weeks ago
 
 ### 4. Signature Dishes / Food Signals
 
@@ -105,10 +105,10 @@ Guests are responding to the **new room**, **authentic Mexican food**, **margari
 
 ### 5. Vibe / Ambiance / Room
 
-- *"Authentic Mexican food in a great atmosphere."*  -  Sherry, Google, 3 days ago
-- *"Beautiful portraits of angels and the Virgin Mary..."*  -  Mjf 1240, Google, 3 days ago
-- *"Very nice for a date night or just going for a drink at the bar."*  -  Monica, Google, a week ago
-- *"A beautiful looking restaurant, easy parking..."*  -  Mark, Google, a month ago
+- *"Authentic Mexican food in a great atmosphere."* - Sherry, Google, 3 days ago
+- *"Beautiful portraits of angels and the Virgin Mary..."* - Mjf 1240, Google, 3 days ago
+- *"Very nice for a date night or just going for a drink at the bar."* - Monica, Google, a week ago
+- *"A beautiful looking restaurant, easy parking..."* - Mark, Google, a month ago
 
 ### 6. Bar / Margaritas / Second Register
 
@@ -127,11 +127,11 @@ Guests are responding to the **new room**, **authentic Mexican food**, **margari
 
 The positive reviews call prices fair or reasonable, but the negative reviews cluster around pricing clarity and surprise upcharges. This is important: the rebuild should not hide pricing in a PDF. It should make pricing and add-ons explicit.
 
-- Positive: *"prices were very fair"*  -  Olivia, Google, a week ago
+- Positive: *"prices were very fair"* - Olivia, Google, a week ago
 - Negative: George and Grace both describe confusion over menu pricing / upcharges.
 - Richard says the food is good but mentions feeling nickel-and-dimed.
 
-### Owner Voice  -  Verbatim Phrase Bank
+### Owner Voice - Verbatim Phrase Bank
 
 ```json
 [
@@ -187,39 +187,39 @@ Owner-response signal: no owner replies were visible in the browser-collected Go
 
 ---
 
-## Block 3  -  Per-Principle Violations
+## Block 3 - Per-Principle Violations
 
-**Principle 1.1  -  BROKEN conversion surface.** El Molino is a dine-in, bar, group, and takeout restaurant. The current site gives only a PDF menu button. Google Maps has Reserve/Order paths, but the owned site does not. The CTA does not match revenue reality.
+**Principle 1.1 - BROKEN conversion surface.** El Molino is a dine-in, bar, group, and takeout restaurant. The current site gives only a PDF menu button. Google Maps has Reserve/Order paths, but the owned site does not. The CTA does not match revenue reality.
 
-**Principle 1.2  -  UNDERSELLS aesthetic-to-bill clarity.** The navy/gold/cream site styling hints at the new restrained room, but the page does not explain the $$ family-heritage Mexican register. It neither sells the bar/date-night upside nor the everyday family-restaurant accessibility.
+**Principle 1.2 - UNDERSELLS aesthetic-to-bill clarity.** The navy/gold/cream site styling hints at the new restrained room, but the page does not explain the $$ family-heritage Mexican register. It neither sells the bar/date-night upside nor the everyday family-restaurant accessibility.
 
-**Principle 1.3  -  BROKEN menu-access relationship.** A PDF menu is the wrong friction here. This is not a Michelin restaurant hiding price as a register signal. Reviews show guests care about item choices, tortillas, sauces, margaritas, and pricing clarity. The menu needs HTML sections and clear add-ons.
+**Principle 1.3 - BROKEN menu-access relationship.** A PDF menu is the wrong friction here. This is not a Michelin restaurant hiding price as a register signal. Reviews show guests care about item choices, tortillas, sauces, margaritas, and pricing clarity. The menu needs HTML sections and clear add-ons.
 
-**Principle 3.1  -  HIDDEN trust strategy.** The restaurant has 4.3 stars from 886 Google reviews, 30 fresh written reviews collected in browser, and repeated named-service praise. None appears on the current site. For a neighborhood/family restaurant, review proof should appear in or just below the hero.
+**Principle 3.1 - HIDDEN trust strategy.** The restaurant has 4.3 stars from 886 Google reviews, 30 fresh written reviews collected in browser, and repeated named-service praise. None appears on the current site. For a neighborhood/family restaurant, review proof should appear in or just below the hero.
 
-**Principle 3.2  -  HIDDEN heritage.** "Since 1984" is a free trust lift, and El Molino actually has it. The current site mentions new ownership but not the 40-year Carpentersville landmark, the first-Mexican-restaurant history, or the continuity Lorena Zepeda described.
+**Principle 3.2 - HIDDEN heritage.** "Since 1984" is a free trust lift, and El Molino actually has it. The current site mentions new ownership but not the 40-year Carpentersville landmark, the first-Mexican-restaurant history, or the continuity Lorena Zepeda described.
 
-**Principle 4.2  -  WEAK hours signal.** The current site does not show hours in the captured DOM. Google Maps does, but the site asks the customer to leave to answer a basic "can I go now?" question.
+**Principle 4.2 - WEAK hours signal.** The current site does not show hours in the captured DOM. Google Maps does, but the site asks the customer to leave to answer a basic "can I go now?" question.
 
-**Principle 4.3  -  WEAK phone/order split.** Phone is present only near the bottom. Reserve/order exists on Google Maps but not the current site. The rebuild should carry phone, menu, directions, reserve/order in a simple mobile action model.
+**Principle 4.3 - WEAK phone/order split.** Phone is present only near the bottom. Reserve/order exists on Google Maps but not the current site. The rebuild should carry phone, menu, directions, reserve/order in a simple mobile action model.
 
-**Principle 5.1  -  BROKEN first-viewport floor.** The first viewport lacks rating, hours, address hint, real positioning, HTML menu path, and the stronger family story. It is visually tidy but commercially underloaded.
+**Principle 5.1 - BROKEN first-viewport floor.** The first viewport lacks rating, hours, address hint, real positioning, HTML menu path, and the stronger family story. It is visually tidy but commercially underloaded.
 
-**Principle 5.2  -  PHOTO-TIER CONSTRAINED.** Current-site photos are mostly interiors. They are useful for the room, but the fork cannot credibly lead with food unless the owner supplies new dish/process/bar photos.
+**Principle 5.2 - PHOTO-TIER CONSTRAINED.** Current-site photos are mostly interiors. They are useful for the room, but the fork cannot credibly lead with food unless the owner supplies new dish/process/bar photos.
 
-**Principle 5.3  -  WEAK copy.** The phrase *"no direct relation to the previous ownership"* is understandable but defensive. The stronger story is not rupture; it is stewardship: new Zepeda-family chapter, Puebla recipes, keeping the history, adding a new style of Mexican.
+**Principle 5.3 - WEAK copy.** The phrase *"no direct relation to the previous ownership"* is understandable but defensive. The stronger story is not rupture; it is stewardship: new Zepeda-family chapter, Puebla recipes, keeping the history, adding a new style of Mexican.
 
-**Principle 5.4  -  BROKEN mobile menu path.** The PDF menu requires zoom/pan behavior. The browser screenshot shows the two-page menu shrunk inside the PDF viewer, not a readable mobile menu.
+**Principle 5.4 - BROKEN mobile menu path.** The PDF menu requires zoom/pan behavior. The browser screenshot shows the two-page menu shrunk inside the PDF viewer, not a readable mobile menu.
 
-**Principle 8, anti-pattern 5  -  BROKEN.** PDF menu with no preview. In this register, that loses customers.
+**Principle 8, anti-pattern 5 - BROKEN.** PDF menu with no preview. In this register, that loses customers.
 
-**Principle 8, anti-pattern 3  -  WEAK.** The current copy leans generic where the source material is specific. "Fresh vision" is fine; "Puebla family recipes, house salsas, and a back-room bar in a 1984 Carpentersville landmark" is better.
+**Principle 8, anti-pattern 3 - WEAK.** The current copy leans generic where the source material is specific. "Fresh vision" is fine; "Puebla family recipes, house salsas, and a back-room bar in a 1984 Carpentersville landmark" is better.
 
-**Principle 10  -  DEAD aliveness layer.** No LiveOpenStatus, no LiveMapEmbed, no review carousel, no seasonal/menu stamp, no motion. The current site reads like an announcement page rather than an operating restaurant page.
+**Principle 10 - DEAD aliveness layer.** No LiveOpenStatus, no LiveMapEmbed, no review carousel, no seasonal/menu stamp, no motion. The current site reads like an announcement page rather than an operating restaurant page.
 
 ---
 
-## Block 4  -  So Why Are We Rebuilding It?
+## Block 4 - So Why Are We Rebuilding It?
 
 1. **To fix the split-domain trust problem.** Google still points part of the experience at `elmolino1984.com`, which did not resolve in browser, while the current site lives at `thenewmolino.com`. A rebuild gives El Molino one canonical home.
 2. **To turn a defensive ownership note into a warm continuity story.** The site currently says there is no direct relation to previous ownership. The pitch should say: new Zepeda-family chapter, same Carpentersville landmark, Puebla recipes, history preserved.
@@ -245,7 +245,7 @@ Owner-response signal: no owner replies were visible in the browser-collected Go
 
 ---
 
-## Block 5  -  Risks Before Fork
+## Block 5 - Risks Before Fork
 
 ### Photography Inventory + Tier Gate
 

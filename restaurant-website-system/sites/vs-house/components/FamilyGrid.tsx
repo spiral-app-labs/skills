@@ -27,7 +27,7 @@ export function FamilyGrid() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {content.heritage.family.map((member, idx) => (
             <ScrollReveal key={member.name} delay={idx * 0.08}>
-              <article className="bg-bg-white border border-border-light p-6 lg:p-8 h-full">
+              <article className="bg-bg-white border border-border-light p-6 lg:p-8 h-full transition-all duration-500 ease-out hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_24px_60px_-30px_rgba(200,67,28,0.35)]">
                 <div className="text-eyebrow text-accent font-body uppercase tracking-widest mb-3">
                   {member.role}
                 </div>
@@ -42,9 +42,6 @@ export function FamilyGrid() {
           ))}
         </div>
 
-        <p className="mt-8 text-center text-bodySm text-text-muted/70 italic">
-          Names and roles pending family signoff before publishing.
-        </p>
       </div>
     </section>
   );

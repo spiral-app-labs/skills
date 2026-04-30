@@ -7,9 +7,9 @@ export default function MenuPage() {
   return (
     <main>
       <PageHero
-        eyebrow="The Menu · Six Phos · 18 Cocktails"
+        eyebrow="Six Phos · Eighteen Cocktails · One Sushi Room"
         title="Pho. Sushi. Bar."
-        intro="The pho is hand-made over 24 hours. The sushi room runs nightly. The bar carries 18 cocktails — Saigon Sidecars to a Vietnamese-coffee espresso martini. Real text. No pinch-zoom."
+        intro="Broth simmered 24 hours. Sushi room running nightly. Bar pouring from Saigon Sidecars to Vietnamese-coffee espresso martinis."
         bg={content.photos.heroPho}
       />
       <MenuSection />

@@ -37,3 +37,22 @@ h1, h2, h3, h4 {
 }
 
 * { box-sizing: border-box; }
+
+/* Press marquee — continuous left-scroll of press cards. Hover-to-pause via group. */
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Hero h1 entrance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translate3d(0, 18px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[marquee_42s_linear_infinite\],
+  [class*="animate-[marquee"] {
+    animation: none !important;
+  }
+}

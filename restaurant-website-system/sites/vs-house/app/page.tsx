@@ -3,7 +3,7 @@ import { PressStrip } from '../components/PressStrip';
 import { HeritageBlock } from '../components/HeritageBlock';
 import { SignatureRow } from '../components/SignatureRow';
 import { RoomGallery } from '../components/RoomGallery';
-import { ReviewWall } from '../components/ReviewWall';
+import { ReviewCarousel } from '../components/ReviewCarousel';
 import { VisitFooter } from '../components/VisitFooter';
 
 export default function HomePage() {
@@ -14,7 +14,7 @@ export default function HomePage() {
       <HeritageBlock />
       <SignatureRow />
       <RoomGallery />
-      <ReviewWall />
+      <ReviewCarousel />
       <VisitFooter />
     </main>
   );

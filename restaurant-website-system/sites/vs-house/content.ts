@@ -14,9 +14,9 @@ export const content = {
     name: "V's House",
     wordmark: "V's House",
     subline: 'Bar · Sushi · Pho',
-    eyebrow: 'Third Generation on Bedford-Euless Road', // AUDIT Hero Lock
+    eyebrow: 'Third Generation on Bedford-Euless Road',
     sub:
-      "A Vu family kitchen since 1982 — pho hand-made over 24 hours, an upscale-Vietnamese room designed by Hatsumi Kuzuu, and a cocktail bar that runs from Saigon Sidecars to a Vietnamese-coffee espresso martini.", // AUDIT Hero Lock
+      "A Vu family kitchen since 1982. Pho hand-made over 24 hours. A Saigon-coded bar in a room by Hatsumi Kuzuu.",
     tagline: 'Welcome Home', // OWNER — preserved as secondary copy
     hashtag: '#OneHouseVsHouse',
   },
@@ -102,37 +102,27 @@ export const content = {
   },
 
   // ───────────── HERITAGE ─────────────
-  // Per audit Block 5 risk #2 — surfaces the family arc. PENDING_OWNER_SIGNOFF.
   heritage: {
     title: 'Three generations. One stretch of road.',
     intro:
-      "V's House is the third chapter of a Vu-family kitchen on Bedford-Euless Road. " +
-      "The story starts in 1982, when our grandparents — among the Vietnamese expats who " +
-      "settled in Haltom City through the '70s and '80s — opened Quan Vu, a local favorite " +
-      "that fed the neighborhood for years.",
+      "Forty-four years on the same corridor. The grandparents started it in 1982. The parents kept it going. The brothers took it from there.",
     timeline: [
       {
         year: '1982',
-        title: 'Quan Vu opens in Haltom City',
-        body:  "Our grandparents — refugees of the Vietnam War — open the family's first " +
-               "kitchen in Haltom City. A local favorite, it thrives for years on the same " +
-               "Bedford-Euless corridor where our family still cooks today.",
+        title: 'Quan Vu opens in Haltom City.',
+        body:  "Refugees of the Vietnam War, the grandparents open the family's first kitchen. It runs for years.",
         tag:   null,
       },
       {
         year: '2012',
-        title: 'Pho V Noodle House opens in Bedford',
-        body:  "Rex and Ann Vu — our parents — open Pho V Noodle House & Sushi at 3504 Harwood " +
-               "Road in Bedford. It's still there, thirteen years later.",
+        title: 'Pho V opens in Bedford.',
+        body:  "Rex and Ann Vu open Pho V Noodle House on Harwood Road. Thirteen years in, still pouring.",
         tag:   null,
       },
       {
         year: '2021',
-        title: "V's House opens",
-        body:  "Brothers Alex and Ryan Vu — with sister Victoria on the line — open V's House " +
-               "a few blocks from the original Quan Vu. The room is designed by Hatsumi Kuzuu, " +
-               "the menu is built around a 24-hour pho program, and the bar runs from " +
-               "Saigon Sidecars to a Vietnamese-coffee espresso martini.",
+        title: "V's House opens.",
+        body:  "Alex and Ryan Vu open V's House a few blocks from the original Quan Vu. Sister Victoria runs the line. Hatsumi Kuzuu designs the room.",
         tag:   null,
       },
     ],
@@ -156,9 +146,7 @@ export const content = {
     h1:      "V's House",
     sub:     "Bar · Sushi · Pho",
     pitch:
-      "A Vu family kitchen since 1982 — pho hand-made over 24 hours, an upscale-Vietnamese " +
-      "room designed by Hatsumi Kuzuu, and a cocktail bar that runs from Saigon Sidecars " +
-      "to a Vietnamese-coffee espresso martini.",
+      "A Vu family kitchen on Bedford-Euless Road since 1982. Pho hand-made over 24 hours. A Saigon-coded bar that pours past midnight.",
     primaryCta:   { label: 'Reserve a table', href: 'https://tables.toasttab.com/restaurants/vs-house/findTime' },
     secondaryCta: { label: '(682) 777-3690', href: 'tel:+16827773690' },
   },
@@ -166,10 +154,10 @@ export const content = {
   // ───────────── SIGNATURES (homepage feature row) ─────────────
   // Audit Block 2 §4 — review-mention counts shown for proof
   signatures: [
-    { name: 'Beef Deluxe Pho', meta: '24-hour broth · cited in 28 Google reviews', img: '/images/vs-house/food-pho-deluxe.jpg', anchor: 'pho' },
-    { name: 'Banh Khot',       meta: 'Coconut-rice cakes · 22 review mentions',     img: '/images/vs-house/food-banh-khot.jpg', anchor: 'small-plates' },
-    { name: 'Shaken Beef',     meta: '"Legit." · 26 review mentions',                img: '/images/vs-house/food-shaken-beef.jpg', anchor: 'mains' },
-    { name: 'Ca Phe Ruou Da',  meta: 'Vietnamese-coffee espresso martini',           img: '/images/vs-house/cocktail-espresso.jpg', anchor: 'cocktails' },
+    { name: 'Beef Deluxe Pho', meta: '24-hour broth · 28 mentions',                   img: '/images/vs-house/food-pho-deluxe.jpg',    anchor: 'pho' },
+    { name: 'Banh Khot',       meta: 'Coconut-rice cakes · 22 mentions',              img: '/images/vs-house/food-banh-khot.jpg',     anchor: 'small-plates' },
+    { name: 'Shaken Beef',     meta: '“Legit.” · 26 mentions',              img: '/images/vs-house/food-shaken-beef.jpg',   anchor: 'mains' },
+    { name: 'Ca Phe Ruou Da',  meta: 'Vietnamese-coffee espresso martini · 14 mentions', img: '/images/vs-house/cocktail-espresso.jpg', anchor: 'cocktails' },
   ],
 
   // ───────────── MENU (real text, not a PNG) ─────────────

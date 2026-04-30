@@ -7,9 +7,9 @@ export default function ContactPage() {
   return (
     <main>
       <PageHero
-        eyebrow="Visit · 8743 W Bedford-Euless Rd"
+        eyebrow="8743 W Bedford-Euless Rd · NRH, TX"
         title="Come on in."
-        intro="Reservations on Toast. Phone always works. Patio is strung with fairy lights."
+        intro="Reserve on Toast. Or call. Or walk up — the patio's lit."
         bg={content.photos.patioLights}
       />
       <ContactPanel />

@@ -11,11 +11,14 @@ export function SignatureRow() {
         <div className="flex items-end justify-between mb-12 lg:mb-16">
           <div className="max-w-[640px]">
             <p className="text-eyebrow text-accent font-body uppercase tracking-[0.3em] mb-5">
-              Cited in 1,872 reviews
+              Most-ordered · Most-cited
             </p>
             <h2 className="font-display text-section-h2 text-text-white leading-[1.05] tracking-tight">
-              The dishes guests come back for.
+              Four dishes guests name on the way out.
             </h2>
+            <p className="mt-5 text-text-muted-dark text-body leading-relaxed">
+              Pulled from 1,872 reviews across Google, Yelp, and OpenTable. Numbers in parentheses are review-mention counts, not editorial picks.
+            </p>
           </div>
           <Link
             href="/menu"
@@ -30,22 +33,28 @@ export function SignatureRow() {
             <ScrollReveal key={sig.name} delay={idx * 0.08}>
               <Link
                 href={`/menu#${sig.anchor}`}
-                className="block group"
+                className="block group transition-transform duration-500 ease-out hover:-translate-y-1"
               >
                 <div className="relative aspect-[4/5] overflow-hidden bg-bg-dark">
                   <img
                     src={sig.img}
                     alt={sig.name}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.07]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bg-darker/85 via-transparent to-transparent" aria-hidden />
+                  <span className="absolute top-4 left-4 inline-flex items-center justify-center w-8 h-8 border border-text-white/40 text-text-white/85 text-eyebrow font-body tracking-widest">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
                 </div>
-                <div className="mt-4">
-                  <h3 className="font-display text-2xl text-text-white group-hover:text-gold transition leading-tight">
+                <div className="mt-4 flex items-baseline justify-between gap-3">
+                  <h3 className="font-display text-2xl text-text-white group-hover:text-gold transition-colors leading-tight">
                     {sig.name}
                   </h3>
-                  <p className="mt-1 text-text-muted-dark text-bodySm">{sig.meta}</p>
+                  <span className="text-eyebrow text-text-muted-dark/80 tracking-widest font-body opacity-0 group-hover:opacity-100 group-hover:text-gold transition-opacity">
+                    See →
+                  </span>
                 </div>
+                <p className="mt-1 text-text-muted-dark text-bodySm">{sig.meta}</p>
               </Link>
             </ScrollReveal>
           ))}

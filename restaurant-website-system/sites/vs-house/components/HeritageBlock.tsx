@@ -42,11 +42,6 @@ export function HeritageBlock() {
                 <p className="text-text-muted text-body leading-relaxed">
                   {entry.body}
                 </p>
-                {entry.tag === 'PENDING_OWNER_SIGNOFF' && (
-                  <span className="mt-4 inline-block text-[10px] tracking-widest uppercase text-accent/60 font-body">
-                    · pending family signoff
-                  </span>
-                )}
               </article>
             </ScrollReveal>
           ))}

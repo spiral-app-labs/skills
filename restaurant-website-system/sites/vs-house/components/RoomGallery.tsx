@@ -13,12 +13,10 @@ export function RoomGallery() {
               The Room · The Bar · The Patio
             </p>
             <h2 className="font-display text-section-h2 text-text-dark leading-[1.05] tracking-tight">
-              Snug half-booths. Eighteen cocktails. Fairy lights on the patio.
+              Snug booths. Eighteen cocktails. Fairy lights out back.
             </h2>
             <p className="mt-5 text-text-muted text-body leading-relaxed">
-              Designed by Hatsumi Kuzuu. Modern, but tipping its hat to the warm
-              old-world. The bar runs from a Saigon Sidecar to a Vietnamese-coffee
-              espresso martini. The patio is strung with lights.
+              Hatsumi Kuzuu designed the room — modern, with the warm old-world tipping back through. The bar pours from Saigon Sidecars to Vietnamese-coffee espresso martinis. Patio's strung year-round.
             </p>
           </ScrollReveal>
         </div>
