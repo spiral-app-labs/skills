@@ -31,12 +31,65 @@ If any of (1)(2)(3) are missing, **stop and get them** before opening Block 1. I
 
 ### How to get reviews + owner replies
 
-Priority order:
+Priority order — **try every step**, don't bail at the first 403:
 
 1. **Ask the user to paste them.** Phrasing: *"Before I run the audit, I need (a) 20+ recent Google reviews, (b) the restaurant's IG and FB handles, and (c) the URL of their Google Maps listing. The reviews ideally include any owner replies — those are gold for capturing brand voice."*
-2. **Scrape via WebFetch.** Google Maps place URL → Yelp page → Tripadvisor → OpenTable diner reviews.
-3. **Localhost browser (preview tools).** When WebFetch returns insufficient text (Google Maps lazy-loads), open the page locally, scroll to expand, capture rendered DOM with `preview_snapshot`.
-4. **Last resort: proceed with explicit flag** — only if user waives. Audit will be much weaker.
+2. **Scrape via WebFetch first.** Try the live site, then aggregator pages: Restaurantji → Wanderboat → res-discover → Wheree → Trip.com → Foursquare → Tripadvisor (auto-redirects). WebFetch's server-side fingerprint clears some bot gates that headless Chromium does not.
+3. **WebSearch for verbatim snippets.** Queries that surface review prose: *`"<name>" "<city>" review "the <signature dish>" OR "the broth"`*, *`"<name>" "<city>" Google review "5 stars" OR "loved" OR "recommend"`*, *`"<name>" "<city>" "we went" OR "had dinner" OR "happy hour"`*. Google's search-result snippets surface 1–4 sentences of review prose verbatim, which is enough to source named-staff and signature-dish quotes when direct scraping is blocked. **Especially valuable** for finding NAMED STAFF (e.g. surfaced "Neilla is exceptional" for V's House) — those names go straight into Block 2 category 2.
+4. **Local-browser scrape via Playwright.** See the technique block below — Playwright + Chromium are already installed at `~/Library/Caches/ms-playwright/` and v1.59 is on PATH (`npx playwright`). Works reliably for the **target restaurant's own site** (live screenshots, mobile-viewport captures, deep-link page pulls). Gets blocked by **Yelp, Google Maps SPA, Google SERP, and Restaurantji** which all run aggressive bot detection (DataDome / reCAPTCHA / consent gates).
+5. **Last resort: proceed with explicit flag** — only if user waives. Audit will be much weaker.
+
+---
+
+### Live-browser technique (Playwright) — installed and ready
+
+**Use it for: live-target-site mobile/desktop screenshots, deep-link sub-page pulls, and any non-bot-walled aggregator (Wanderboat, res-menu, etc).**
+
+**Don't use it for: Yelp, Google Maps direct, Google SERP, or Restaurantji direct** — all four return DataDome / reCAPTCHA / "verifying you are human" gates to headless Chromium even with stealth flags. Fall back to WebSearch snippets + WebFetch on aggregators for those sources.
+
+Drop a Node ESM script in `restaurant-website-system/sites/<slug>/scrapes/`. Set `package.json` to `{"type":"module"}`. Reference snippet (live-site capture, iPhone 13 + desktop):
+
+```js
+import { chromium, devices } from 'playwright';
+const browser = await chromium.launch({ headless: true });
+
+// iPhone 13 mobile capture
+const m = await browser.newContext({ ...devices['iPhone 13'] });
+const mp = await m.newPage();
+await mp.goto('https://restaurant.example/', { waitUntil: 'networkidle', timeout: 60000 });
+await mp.waitForTimeout(2000);
+await mp.screenshot({ path: 'screenshots/mobile-home.png', fullPage: true });
+await mp.screenshot({ path: 'screenshots/mobile-home-fold.png', fullPage: false });
+
+// Desktop capture
+const d = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+const dp = await d.newPage();
+await dp.goto('https://restaurant.example/', { waitUntil: 'networkidle' });
+await dp.screenshot({ path: 'screenshots/desktop-home.png', fullPage: true });
+
+await browser.close();
+```
+
+**After capturing**: full-page mobile screenshots are routinely 1170×11000+ on iPhone 13 viewports — load them at full resolution and you'll exhaust the read window. **Always downscale before reading**: `sips -Z 600 input.png --out input-thumb.png` (matches the existing rule in `feedback_restaurant_template_images.md`).
+
+Stable selector contract for live target sites: most restaurant sites are Squarespace / WordPress / Wix / Webflow with predictable layouts. Mobile-screenshot inspection beats DOM scraping for findings; only fall to DOM scraping if you need to count something exactly (photos, menu items).
+
+### Bot-block matrix (treat as cached knowledge)
+
+| Source | WebFetch | Playwright headless | Pull strategy |
+|---|---|---|---|
+| Target restaurant site | ✅ usually | ✅ usually | Either; Playwright for screenshots, WebFetch for text |
+| Wanderboat | ✅ | ✅ | WebFetch is cheaper |
+| Restaurantji | ⚠️ first call only (later 429) | ❌ "verifying you are human" page | First WebFetch call wins; don't retry many times |
+| res-menu, res-discover, Wheree, Trip.com | ✅ | ✅ | WebFetch |
+| Foursquare | ↪ redirects to login wall | ❌ login wall | Skip — not worth it |
+| Yelp | ❌ 403 | ❌ DataDome CAPTCHA | WebSearch snippets only |
+| Google Maps (direct) | ⚠️ landing-page only | ❌ Maps SPA hides reviews behind a JS-only Reviews tab that headless can't reach | WebSearch snippets only |
+| Google SERP / Knowledge Panel | ⚠️ partial | ❌ reCAPTCHA gate | WebSearch is the right tool |
+| TripAdvisor | ⚠️ wrong-page redirects common | not tested | Verify URL belongs to the right business before trusting output |
+| Fort Worth / Dallas Observer / local press | usually 403 in WebFetch | not tested | WebSearch surfaces the byline + headline; the press feature itself only matters for the External Trust strip — usually you don't need the article body |
+
+Outcome: for review packets, **WebSearch + WebFetch (aggregators) covers Yelp + Google indirectly**. Direct Yelp/Google scraping is not worth the time investment unless the user provides a paid bot-bypass.
 
 ---
 
@@ -224,6 +277,7 @@ End with a one-line **status footer**: qualified pre-fork status + recommended t
 2. `restaurant-website-system/research/template-inventory.md` — Block 5 template hypothesis
 3. `restaurant-website-system/research/aliveness-patterns.md` — Part 10 violations
 4. `restaurant-website-system/research/lead-qualification/review-secret-sauce-pass-2026-04-28.md` — origin of Secret Sauce pattern (background only)
+5. `~/skills/agency-website-design/SKILL.md` Section 2.7 (mobile-quality bar) + Section 2.8 (ReviewWall mandate) — what the BUILD must do with the audit's outputs. The audit's review packet is the source for the build's ReviewWall component (verbatim, anonymized). The audit's mobile-failure screenshots feed the build's mobile-quality verification step.
 
 ---
 

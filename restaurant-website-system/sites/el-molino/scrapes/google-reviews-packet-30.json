@@ -1,0 +1,316 @@
+{
+  "collectedAt": "2026-04-30T18:26:07.952Z",
+  "sort": "Newest",
+  "note": "First 30 newest unique Google reviews with written text from browser-collected Maps review snapshots; longest expanded text kept where duplicates appeared.",
+  "count": 30,
+  "reviews": [
+    {
+      "name": "Sherry",
+      "rating": 4,
+      "date": "3 days ago",
+      "new": true,
+      "text": "Service was great.Food was sooo delicious. Music a tad too loud but we were seated right under a speaker. Authentic Mexican food in a great atmosphere.",
+      "price": "$30–40",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 4",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Mjf 1240",
+      "rating": 5,
+      "date": "3 days ago",
+      "new": true,
+      "text": "El Molino has an extremely endearing atmosphere, from the beautiful portraits of angels and the Virgin Mary which feels like home for many Hispanics. To the wonderful music playing over their speakers that feels like Saturday morning cleaning with your mother. The food itself certainly was authentic, very filling and cooked perfectly. Staff was extremely friendly and attentive, ensuring that the experience was as pleasant as the decor around me. Definitely a must visit if you’ve never been here before. My friend loved the margaritas.",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Erika Medina",
+      "rating": 5,
+      "date": "3 days ago",
+      "new": true,
+      "text": "I got fajitas and a mango margarita it was delicious. Food was hot our server was really nice. Not to mention the margaritas were amazing. It has a great atmosphere and looks very lovely from the inside. I think the renovations look very elegant",
+      "food": "Food: 5",
+      "service": "Service: 4",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Isidro Guzman",
+      "rating": 5,
+      "date": "3 days ago",
+      "new": true,
+      "text": "It was a great experience and amazing food and staff are very helpful",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Gregorio Villegas",
+      "rating": 5,
+      "date": "4 days ago",
+      "new": true,
+      "text": "Excellent service and delicious food, 10/10. I highly recommend it. Ask for Daniel; he's very friendly and provides excellent service. Clean and beautiful restaurant.",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Stephanie Arreguin",
+      "rating": 5,
+      "date": "4 days ago",
+      "new": true,
+      "text": "Excellent food, our waiter Daniel was very friendly. The restaurant is very clean and nice, and the service was great. Everything was delicious, 10/10, I highly recommend it.",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Ajit Kaur",
+      "rating": 5,
+      "date": "4 days ago",
+      "new": true,
+      "text": "the waiter was kind and cooperative",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Alex Czerchlanski",
+      "rating": 5,
+      "date": "4 days ago",
+      "new": true,
+      "text": "\"The food was authentic, delicious, and plentiful. Daniel, our waiter, was: attentive, friendly, and provided a great first time experience. We look forward to going back soon! Great job service team!\"",
+      "price": "$30–40",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Kate Christerson",
+      "rating": 5,
+      "date": "4 days ago",
+      "new": true,
+      "text": "It's been awhile since enjoying a meal at El Molino. The atmosphere has changed from what used to be a more cantina vibe to an upscale restaurant. Dinner was delicious, had the Michaca Chimmichanga! The husband had tacos, with home made fresh corn tortillas, I thought he licked the plate thats how clean it was. Will definitely come back in the future.",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Kelsey Kozar",
+      "rating": 5,
+      "date": "5 days ago",
+      "new": true,
+      "text": "Went to celebrate my birthday with a friend. Daniel was an awesome server. He checked on us and brought us everything we asked for in a timely manner. The food was great, especially the enchiladas! Had such a great time celebrating!",
+      "price": "$20–30",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Camille Buda",
+      "rating": 5,
+      "date": "5 days ago",
+      "new": true,
+      "text": "Great environment and daniel was amazing!!",
+      "food": "Food: 5…",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Grace Hersh",
+      "rating": 1,
+      "date": "Edited a week ago",
+      "new": true,
+      "text": "Have been going to El Molino for almost 30 years before they closed to \"remodel\". Went to check it out. I am pretty sure they are under new management after the experience. There's some new paint and they reupholstered, but while the cosmetic changes are okay to good, everything substantial is dismal now. The food is not the same and it's definitely not as good as under previous management. The chimichanga wasn't crispy, it was soggy. They put the lettuce and sour cream inside so you didn't have options. And it just doesn't taste as good. The service was ridiculously slow. It took almost an hour to get 2 chimichangas. They don't check in on you while you're waiting. After the food was dropped, no check in for the 3-bite rule. Getting the waiter to come back was a job because anytime he came by, he never even looked our way in multiple passes. It took 40 minutes to get the check. And then when we did get it, the total was a ridiculous 61 dollars and change for 2 glasses of water and 2 chimichangas! The menu shows the price of a chimichanga dinner at $16. Add $2 for Suizas. For the choices of fillings it says, same options as the Burrito which is listed right above it in the menu. There was a large choice of fillings including \"steak\" and \"skirt steak\"along with chicken, carnitas, Al pastor, Machaca beef, etc. We ordered the skirt steak filling. There is no additional pricing on the menu, no mention from the waiter when we ordered either. But that's where 2 waters and 2 chimichangas turned into $62! They charged us $8 per plate for the skirt steak. I immediately got up to ask for a manager. Some young guy came and kept insisting... Did you order the steak or the arrachera (skirt steak fajitas)? I said we did order the skirt steak. He said, well that's special option, we don't serve that unless you special ordered it. I said it's in the menu. He argued with me that it's not a regular option. He said that's why it's an upcharge. I insisted it's on the menu as a regular option with no mention of an upcharge. The Suizas showed the upcharge on the menu. All the meat options are listed one after another under the burritos. The chimichanga says, \"Same options as the burrito\". This young man kept insisting that I didn't read the menu correctly and the don't offer the skirt steak as a regular option. I finally told him to stop arguing with me and get a menu. And sure enough, there it is plain as day on the menu. And he said, well the menus are new. It should have been listed differently. If you didn't properly proofread your menu before okaying the final printing, that doesn't mean you can charge me whatever you see fit. He kept insisting on the upcharge. If we had been told it was $8 extra per plate, I'm sure we wouldn't have ordered it or been surprised at the cost of the bill. That surcharge is half the price of the entire dinner. That's usurious!!! The waiter had the surcharges removed by an older gentleman while this young guy( I'm pretty sure he's the son of the new owner who clearly has zero idea how to run a business and treat a customer, ESPECIALLY WHEN HE HAD NO IDEA WHAT HE WAS TAKING ABOUT AND WAS 100 PERCENT IN THE WRONG BOTH FOR ARGUING WITH THE CUSTOMER AND WRITING ABOUT THE MENU HERE), kept arguing with me. The older gentleman came up after I paid the bill and laid the same lame excuse about these being new menus. Will NEVER be going back. I'll be surprised if they survive a year in business. Dismal service, dismal treatment, poor management and mediocre food. ZERO stars... Do NOT RECOMMEND anymore. Used to be one of my fave places. NEW BUT DEFINITELY NOT IMPROVED. 🤬👎👎👎",
+      "price": "$20–30",
+      "food": "Food: 2",
+      "service": "Service: 1",
+      "atmosphere": "Atmosphere: 3",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Monica Lagunes",
+      "rating": 5,
+      "date": "a week ago",
+      "new": true,
+      "text": "First time at this restaurant and it was great! Very nice for a date night or just going for a drink at the bar. Drinks are just right and the food is wonderful. Prices are reasonable not to bad. Host is very nice and waiters are as nice too. Really enjoyed the live calming music on Saturday night and also enjoyed every single song after that. Highly recommend!!",
+      "price": "$40–50",
+      "food": "Food: 5",
+      "service": "Service: 4",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Olivia Gustafson",
+      "rating": 5,
+      "date": "a week ago",
+      "new": true,
+      "text": "First time back since the renovation and WOW! The food was already top notch before but today’s experience was next level. The interior is beautifully redone, very tasteful with great seating. I had three tacos, pork, carne asada, and al pastor, and my boyfriend got the steak quesadilla. The salsas they bring out are to die for, the tortillas are homemade, and the meats were incredible. We skipped drinks this time but definitely won’t next time, the options looked so good. Our waiter was fantastic too, very attentive and gave great recommendations. On top of everything, the prices were very fair. We will absolutely be back soon and I cannot wait!!",
+      "price": "$20–30",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "tim martin",
+      "rating": 5,
+      "date": "a week ago",
+      "new": true,
+      "text": "Great food!! Service top notch! Always good",
+      "price": "$50–60…",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Marisol Dominguez Hernandez",
+      "rating": 5,
+      "date": "2 weeks ago",
+      "new": true,
+      "text": "Excellent service!!! Delicious food!!!",
+      "food": "Food: 5…",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Arath Hernandez",
+      "rating": 5,
+      "date": "2 weeks ago",
+      "new": true,
+      "text": "A place with delicious food, excellent service, and a wonderful atmosphere.",
+      "food": "Food: 5…",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "Kelly Hernandez-Jusino",
+      "rating": 5,
+      "date": "2 weeks ago",
+      "new": true,
+      "text": "Food was perfect! service was amazing!",
+      "food": "Food: 5…",
+      "sourceFile": "google-reviews-snapshot-00.txt"
+    },
+    {
+      "name": "George Papadakis",
+      "rating": 1,
+      "date": "2 weeks ago",
+      "new": true,
+      "text": "Real disappointment. They apparently think it's legal to charge more than the listed item pricing. State and local laws usually require restaurants to honor the posted or advertised price, often enforced by the Department of Consumer Affairs or Weights and Measures. While service charges or mandatory gratuities are legal, they should ideally be disclosed, especially in areas with strict transparent pricing laws. El Molino doesn't disclose and clearly decides what they want to charge after the ordering.",
+      "price": "$40–50",
+      "food": "Food: 3",
+      "service": "Service: 2",
+      "atmosphere": "Atmosphere: 3",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Laura Ruiz",
+      "rating": 5,
+      "date": "3 weeks ago",
+      "new": true,
+      "text": "We had dinner here yesterday, and we have found the best mexican food in town. Service is awesome and the margaritas and tequila are 10/10! They make their own fresh tortillas every morning. You can tell they are home made! Highly recommend their shrimp and papas fritas. Gracias Juan, por hacernos sentir como en casa😊. Hasta pronto!",
+      "price": "$30–40",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Jeff Bomer (Boomer)",
+      "rating": 5,
+      "date": "Edited 4 weeks ago",
+      "text": "The steak was great! The nachos SUCK! They had lettuce on them as well. You would think a mexican resturant could get Nachos right.",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Susan Grossenbach",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "Very beautifully remodel. But even better, the authentic delicious food.",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Suahilee Santana",
+      "rating": 1,
+      "date": "a month ago",
+      "text": "Ordered nachos el molino & was very disappointed the meat had nothing but fat & was very chewy. Guacamole had no flavor at all. the price they charged me was not worthy at all. Very, very disappointed",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Mark Obrien",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "What a find! My wife and I live in Chicago, and our friends live in Huntley. We had a taste for Mexican and El Molino didn't disappoint. Every aspect of this restaurant was fantastic. A beautiful looking restaurant, easy parking, beautiful bar areas and a wonderful staff. We enjoyed both breakfast and lunch because we went on a Saturday and both menus were offered. Everything we had was so tasty. If you want a Bloody Mary, the bar tender knows how to make a great one! We will definitely be back! Well worth the trip!",
+      "price": "$40–50",
+      "food": "Food: 5",
+      "service": "Service: 5",
+      "atmosphere": "Atmosphere: 5",
+      "sourceFile": "google-reviews-snapshot-02.txt"
+    },
+    {
+      "name": "George Chris",
+      "rating": 2,
+      "date": "a month ago",
+      "text": "\"WOW! WOW! WOW! This was a scam we’ve never seen. Been coming to el molino for at least 30 years. First time since new owners opened it in November. We were received warmly. Food was good. Service also very good. But then the bill came and they had padded on an additional 10-20% on several items. Increased the total almost $25. On a party of 4. Figured it had to be a mistake, right? Nope, instead the waitress insisted that the small print at the bottom of the menu allows them to change the prices on the menu at their discretion. We asked for the manager who repeatedly argued that the menu prices didn’t reflect what the price could be. Finally after repeated requests the bill was corrected. Please note: None of our meals were marked MP. Nowhere in the menu is it clear that prices may not be what is printed unless you happen to look for the fine print below allergies, etc. And never have we had to fight to pay what was clearly marked for all. Imagine if this was how it was everywhere you shopped and ate. Ridiculous. Strongly suggest avoiding El Molino or at the very least verifying the prices shown are what you’ll be getting charged…before you order.\"",
+      "price": "$60–70",
+      "food": "Food: 4",
+      "service": "Service: 1",
+      "atmosphere": "Atmosphere: 3",
+      "sourceFile": "google-reviews-snapshot-02.txt"
+    },
+    {
+      "name": "Stephanie Doubek",
+      "rating": 1,
+      "date": "a month ago",
+      "text": "Food was barely warm, too much mole on the enchiladas. The beef enchiladas was not edible, the mole chicken was just wings and legs, so just bones in sauce. Bartender was cordial, but not friendly or a bartender. Sadly, after 25+ years, with so many happy memories, this was a terrible experience. I don’t think we will be back. And 8$ for draft Pacifico and Dos XX? That is expensive and not the advertised price. The hostess was a delight! Keep her!",
+      "price": "$20–30",
+      "food": "Food: 1",
+      "service": "Service: 1",
+      "atmosphere": "Atmosphere: 2",
+      "sourceFile": "google-reviews-snapshot-02.txt"
+    },
+    {
+      "name": "Richard Beech",
+      "rating": 4,
+      "date": "Edited a month ago",
+      "text": "It's good Mexican food. They did seem to nickel and dime me for items like sour cream and tortilla shells. Don't know if I would recommend. They also added a 3% charge for miscellaneous. If you can put up with that it's good",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Randy Harbin",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "The place was packed so we ate at the bar. Niagara Modelo on tap! Chips and salsa were outstanding. Very spicy red sauce just the way I like it. I had the carne asada with the Chipotle sauce. The steak was done perfectly as ordered. Best Mexican food I've had in a while. We will be back!",
+      "sourceFile": "google-reviews-snapshot-01.txt"
+    },
+    {
+      "name": "Kristi Harbin",
+      "rating": 4,
+      "date": "a month ago",
+      "text": "1st time here busy place. Sat at the bar. Variety on the menu. Food was tasty and hot. Definitely will be back.",
+      "price": "$10–20",
+      "food": "Food: 5",
+      "service": "Service: 4",
+      "atmosphere": "Atmosphere: 4",
+      "sourceFile": "google-reviews-snapshot-03.txt"
+    },
+    {
+      "name": "Phil Blaze",
+      "rating": 4,
+      "date": "a month ago",
+      "text": "Food was better than average, place is beautiful. After dinner we walked to bar to finish our drinks. It was the owner's birthday and the bartender asked if we wanted a shot of tequila with her for her birthday. Not wanting another drink, but being polite, we said sure. We say Happy Birthday, do our shots, and next thing you know we received a bill for $50 for 2 shots! It's not even the money, it was the way it was handled. Shaddy!",
+      "price": "$50–60",
+      "food": "Food: 3",
+      "service": "Service: 3",
+      "atmosphere": "Atmosphere: 4",
+      "sourceFile": "google-reviews-snapshot-03.txt"
+    }
+  ]
+}

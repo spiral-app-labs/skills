@@ -66,6 +66,18 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/sites/shirleys-piano-bar", "run", "dev", "--", "--port", "3125"],
       "port": 3125
+    },
+    {
+      "name": "cafe-olympic",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/cafe-olympic", "run", "dev", "--", "--port", "3126"],
+      "port": 3126
+    },
+    {
+      "name": "vs-house",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/vs-house", "run", "dev", "--", "--port", "3127"],
+      "port": 3127
     }
   ]
 }

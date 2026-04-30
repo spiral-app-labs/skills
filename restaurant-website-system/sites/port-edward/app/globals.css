@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.ink');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 400;
+  margin: 0;
+  color: theme('colors.ink');
+}
+
+.label-wordmark {
+  font-family: theme('fontFamily.display');
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.label-eyebrow {
+  font-family: theme('fontFamily.display');
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+/* Editorial prose — Imbue at 18px with generous 1.67× line-height. */
+.prose-editorial p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: theme('colors.ink');
+}
+.prose-editorial p + p { margin-top: 1.2em; }
+
+.script-caption {
+  font-family: theme('fontFamily.script');
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Form inputs use Geist (utility sans) per source meta. */
+input, textarea, select, button[type='submit'] {
+  font-family: theme('fontFamily.sans');
+}
+
+* { box-sizing: border-box; }
+
+::selection {
+  background: theme('colors.accent');
+  color: theme('colors.ink-on-dark');
+}
+
+a, button {
+  text-underline-offset: 4px;
+}
+
+@keyframes river-current {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.river-current {
+  animation: river-current 28s linear infinite;
+}
+
+.review-carousel {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+}
+
+@keyframes review-carousel {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.review-carousel-track {
+  animation: review-carousel 52s linear infinite;
+}
+
+.review-carousel:hover .review-carousel-track,
+.review-carousel:focus-within .review-carousel-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .river-current {
+    animation: none;
+  }
+
+  .review-carousel {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .review-carousel-track {
+    animation: none;
+  }
+}

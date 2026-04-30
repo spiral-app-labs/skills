@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings default to display font / weight 400. NOT auto-uppercase —
+   1776 uses mixed case for everything except hero page titles (caps via .text-page-title). */
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 400;
+  margin: 0;
+}
+
+.text-page-title, .text-page-title-md { text-transform: uppercase; }
+.text-eyebrow, .text-button, .text-micro { text-transform: uppercase; }
+.text-eyebrow { color: theme('colors.accent'); font-weight: 500; }
+
+.text-button { font-family: theme('fontFamily.body'); font-weight: 500; }
+
+* {
+  box-sizing: border-box;
+  letter-spacing: 0 !important;
+}
+
+.text-page-title {
+  font-size: 80px;
+  line-height: 76px;
+}
+
+.text-page-title-md {
+  font-size: 72px;
+  line-height: 68px;
+}
+
+.text-section-h1 {
+  font-size: 46px;
+  line-height: 50px;
+}
+
+.text-section-h2 {
+  font-size: 38px;
+  line-height: 42px;
+}
+
+@media (min-width: 768px) {
+  .text-page-title {
+    font-size: 115px;
+    line-height: 109px;
+  }
+
+  .text-page-title-md {
+    font-size: 100px;
+    line-height: 95px;
+  }
+
+  .text-section-h1 {
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  .text-section-h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.1) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+@keyframes ken-burns-slow {
+  0% {
+    transform: scale(1.01) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.07) translate3d(1.2%, -1%, 0);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 14s ease-in-out infinite alternate;
+}
+
+.animate-ken-burns-slow {
+  animation: ken-burns-slow 18s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ken-burns,
+  .animate-ken-burns-slow {
+    animation: none;
+  }
+}

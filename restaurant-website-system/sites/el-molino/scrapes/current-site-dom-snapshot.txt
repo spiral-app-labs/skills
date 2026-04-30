@@ -1,0 +1,30 @@
+- img "Logo de El Molino Mexican Restaurant"
+- paragraph: THE NEW EL MOLINO RESTAURANT
+- paragraph:
+  - text: We're thrilled to announce that El Molino Restaurant** is now under new ownership and a new administration, and we're excited to bring a fresh vision to your dining experience. This is a completely new chapter for the restaurant, with no direct relation to the previous ownership.
+  - text: We are committed to providing the great food you love, along with new and exciting changes. We can't wait to welcome you back to El Molino and share our passion for food and hospitality with you. Thank you for your continued support!
+  - text: Sincerely,
+  - text: The New Team at El Molino Restaurant
+- heading "The Restaurant" [level=2]
+- img "1"
+- img "2"
+- img "3"
+- img "4"
+- img "5"
+- img "6"
+- img "7"
+- img "8"
+- img "9"
+- img "10"
+- separator
+- paragraph: "📍 Address: 2112 Elgin Rd. Carpentersville, IL 60110"
+- paragraph:
+  - text: "📞 Contact:"
+  - link "(847) 551-1602":
+    - /url: tel:+18475511602
+- paragraph:
+  - text: "📧 Email:"
+  - link "info@thenewmolino":
+    - /url: mailto:info@thenewmolino
+- link "Our Menu":
+  - /url: menu/menu.pdf

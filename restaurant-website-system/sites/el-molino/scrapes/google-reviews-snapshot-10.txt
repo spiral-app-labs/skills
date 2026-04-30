@@ -1,0 +1,3455 @@
+- generic "Google Maps":
+  - application "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key."
+  - search:
+    - button "Back":
+      - generic: 
+    - combobox: El Molino Mexican Restaurant
+    - button "Search":
+      - generic: 
+    - button "Close":
+      - generic: 
+  - main "El Molino Mexican Restaurant":
+    - tablist:
+      - tab "Overview of El Molino Mexican Restaurant":
+        - generic: Overview
+      - tab "Menu":
+        - generic: Menu
+      - tab "Reviews for El Molino Mexican Restaurant" [selected]:
+        - generic: Reviews
+      - tab "About El Molino Mexican Restaurant":
+        - generic: About
+    - link "Reserve a table":
+      - /url: https://www.google.com/maps/reserve/v/dine/c/L2watVgb8bQ?source=pa&opi=79508299&hl=en-US&gei=qp3zaZ64NKPmwN4PjsOl2QY&sourceurl=https://www.google.com/search?tbm%3Dmap%26authuser%3D0%26hl%3Den%26gl%3Dus%26q%3DEl%2BMolino%2BMexican%2BRestaurant%2B2112%2BElgin%2BRd%2BCarpentersville%2BIL%26pb%3D!1sEl%2BMolino%2BMexican%2BRestaurant%2B2112%2BElgin%2BRd%2BCarpentersville%2BIL!7i20!10b1!12m52!1m5!18b1!30b1!31m1!1b1!34e1!2m4!5m1!6e2!20e3!39b1!6m25!49b1!63m0!66b1!74i150000!85b1!91b1!114b1!149b1!206b1!209b1!212b1!216b1!222b1!223b1!232b1!234b1!235b1!244b1!246b1!250b1!253b1!260b1!266b1!272b1!273b1!10b1!12b1!13b1!14b1!16b1!17m1!3e1!20m3!5e2!6b1!14b1!46m1!1b0!96b1!99b1!19m4!2m3!1i360!2i120!4i8!20m57!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m33!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!1m3!1e9!2b1!3e2!2b1!9b0!15m8!1m7!1m2!1m1!1e2!2m2!1i195!2i195!3i20!22m5!1sqZ3zaaqDJraup84PipLbgAI!7e81!14m1!3sqZ3zaaqDJraup84PipLbgAI!15i9937!24m107!1m25!13m9!2b1!3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m14!3b1!4b1!5b1!6b1!13b1!14b1!17b1!21b1!22b1!32b1!33m1!1b1!34b1!36e2!10m1!8e3!11m1!3e1!17b1!20m2!1e3!1e6!24b1!25b1!26b1!27b1!29b1!30m1!2b1!36b1!37b1!39m3!2m2!2i1!3i1!43b1!52b1!54m1!1b1!55b1!56m1!1b1!61m2!1m1!1e1!65m5!3m4!1m3!1m2!1i224!2i298!72m22!1m8!2b1!5b1!7b1!12m4!1b1!2b1!4m1!1e1!4b1!8m10!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_google_review_posts__and__hotel_and_vr_partner_review_posts!6m1!1e1!9b1!89b1!90m2!1m1!1e2!98m3!1b1!2b1!3b1!103b1!113b1!114m3!1b1!2m1!1b1!117b1!122m1!1b1!126b1!127b1!128m1!1b0!26m4!2m3!1i80!2i92!4i8!30m28!1m6!1m2!1i0!2i0!2m2!1i530!2i768!1m6!1m2!1i974!2i0!2m2!1i1024!2i768!1m6!1m2!1i0!2i0!2m2!1i1024!2i20!1m6!1m2!1i0!2i748!2m2!1i1024!2i768!34m19!2b1!3b1!4b1!6b1!8m6!1b1!3b1!4b1!5b1!6b1!7b1!9b1!12b1!14b1!20b1!23b1!25b1!26b1!31b1!37m1!1e81!42b1!49m10!3b1!6m2!1b1!2b1!7m2!1e3!2b1!8b1!9b1!10e2!50m3!2e2!3m1!3b1!61b1!67m5!7b1!10b1!14b1!15m1!1b0!69i777!77b1
+      - generic: 
+      - text: Reserve a table
+    - link "Order online":
+      - /url: https://www.google.com/searchviewer/42?cvd=CLw_EiUKI-ICIDIeEhciFdLX29IPDwoLL2cvMXRkanJyMmQYADoDCPAN&hl=en-US&gl=us&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=qp3zaZ64NKPmwN4PjsOl2QY&ei=qp3zaZ64NKPmwN4PjsOl2QY&fo_s=OA,SOE&opi=79508299&ebb=1&cs=0&foub=mcpp
+      - generic: 
+      - text: Order online
+    - button "Information":
+      - generic: 
+    - table:
+      - rowgroup:
+        - img "5 stars, 525 reviews": "5"
+        - img "4 stars, 206 reviews": "4"
+        - img "3 stars, 64 reviews": "3"
+        - img "2 stars, 37 reviews": "2"
+        - img "1 stars, 54 reviews": "1"
+    - generic: "4.3"
+    - img "4.3 stars"
+    - generic: 886 reviews
+    - button "Write a review":
+      - generic: 
+      - generic: Write a review
+    - button "Search reviews":
+      - generic: 
+    - button "Sort reviews":
+      - generic: 
+      - generic: Sort
+    - radiogroup "Refine reviews":
+      - radio "All reviews" [checked]:
+        - generic: All
+      - radio "mole sauce, mentioned in 7 reviews":
+        - generic: mole sauce
+        - generic: "7"
+      - radio "skirt steak, mentioned in 6 reviews":
+        - generic: skirt steak
+        - generic: "6"
+      - radio "chiles rellenos, mentioned in 5 reviews":
+        - generic: chiles rellenos
+        - generic: "5"
+      - radio "carne asada tacos, mentioned in 11 reviews":
+        - generic: carne asada tacos
+        - generic: "11"
+      - radio "margaritas, mentioned in 64 reviews":
+        - generic: margaritas
+        - generic: "64"
+      - radio "machaca beef, mentioned in 4 reviews":
+        - generic: machaca beef
+        - generic: "4"
+      - radio "fried ice cream, mentioned in 7 reviews":
+        - generic: fried ice cream
+        - generic: "7"
+      - radio "chicken flauta, mentioned in 2 reviews":
+        - generic: chicken flauta
+        - generic: "2"
+      - radio "chipotle based sauce, mentioned in 2 reviews":
+        - generic: chipotle based sauce
+        - generic: "2"
+      - radio "cheese enchilada, mentioned in 3 reviews":
+        - generic: cheese enchilada
+        - generic: "3"
+    - generic "Sherry":
+      - button "Photo of Sherry"
+      - button "Sherry Local Guide · 16 reviews":
+        - generic: Sherry
+        - generic: Local Guide · 16 reviews
+      - button "Actions for Sherry's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 days ago
+      - generic: New
+      - text: Service was great.Food was sooo delicious. Music a tad too loud but we were seated right under a speaker. Authentic Mexican food in a great atmosphere.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Price per person
+      - generic: $30–40
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 4"
+      - generic: Noise level
+      - generic: Loud, but you can still talk
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Sherry's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mjf 1240":
+      - button "Photo of Mjf 1240"
+      - button "Mjf 1240 3 reviews":
+        - generic: Mjf 1240
+        - generic: 3 reviews
+      - button "Actions for Mjf 1240's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 days ago
+      - generic: New
+      - text: El Molino has an extremely endearing atmosphere, from the beautiful portraits of angels and the Virgin Mary which feels like home for many Hispanics. To the wonderful music playing over their speakers that feels like Saturday morning cleaning with your mother. The food itself certainly was authentic, very filling and cooked perfectly. Staff was extremely friendly and attentive, ensuring that the experience was as pleasant as the decor around me. Definitely a must visit if you’ve never been here before. My friend loved the margaritas.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mjf 1240's review.":
+        - generic: 
+        - generic: Share
+    - generic "Erika Medina":
+      - button "Photo of Erika Medina"
+      - button "Erika Medina 4 reviews · 1 photo":
+        - generic: Erika Medina
+        - generic: 4 reviews · 1 photo
+      - button "Actions for Erika Medina's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 days ago
+      - generic: New
+      - text: I got fajitas and a mango margarita it was delicious. Food was hot our server was really nice. Not to mention the margaritas were amazing. It has a great atmosphere and looks very lovely from the inside. I think the renovations look very elegant
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Tacos
+      - generic: Noise level
+      - generic: Moderate noise
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Erika Medina's review.":
+        - generic: 
+        - generic: Share
+    - generic "Isidro Guzman":
+      - button "Photo of Isidro Guzman"
+      - button "Isidro Guzman 2 reviews":
+        - generic: Isidro Guzman
+        - generic: 2 reviews
+      - button "Actions for Isidro Guzman's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 days ago
+      - generic: New
+      - text: It was a great experience and amazing food and staff are very helpful
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Loud, but you can still talk
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Isidro Guzman's review.":
+        - generic: 
+        - generic: Share
+    - generic "Gregorio Villegas":
+      - button "Photo of Gregorio Villegas"
+      - button "Gregorio Villegas 4 reviews · 1 photo":
+        - generic: Gregorio Villegas
+        - generic: 4 reviews · 1 photo
+      - button "Actions for Gregorio Villegas's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 days ago
+      - generic: New
+      - text: Excellent service and delicious food, 10/10. I highly recommend it. Ask for Daniel; he's very friendly and provides excellent service. Clean and beautiful restaurant.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Gregorio Villegas's review.":
+        - generic: 
+        - generic: Share
+    - generic "Stephanie Arreguin":
+      - button "Photo of Stephanie Arreguin"
+      - button "Stephanie Arreguin 1 review":
+        - generic: Stephanie Arreguin
+        - generic: 1 review
+      - button "Actions for Stephanie Arreguin's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 days ago
+      - generic: New
+      - text: Excellent food, our waiter Daniel was very friendly. The restaurant is very clean and nice, and the service was great. Everything was delicious, 10/10, I highly recommend it.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Stephanie Arreguin's review.":
+        - generic: 
+        - generic: Share
+    - generic "Ajit Kaur":
+      - button "Photo of Ajit Kaur"
+      - button "Ajit Kaur 2 reviews":
+        - generic: Ajit Kaur
+        - generic: 2 reviews
+      - button "Actions for Ajit Kaur's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 days ago
+      - generic: New
+      - text: the waiter was kind and cooperative
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Ajit Kaur's review.":
+        - generic: 
+        - generic: Share
+    - generic "Alex Czerchlanski":
+      - button "Photo of Alex Czerchlanski"
+      - button "Alex Czerchlanski 2 reviews":
+        - generic: Alex Czerchlanski
+        - generic: 2 reviews
+      - button "Actions for Alex Czerchlanski's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 days ago
+      - generic: New
+      - text: "The food was authentic, delicious, and plentiful. Daniel, our waiter, was: attentive, friendly, and provided a great first time experience. We look forward to going back soon! Great job service team!"
+      - generic: Price per person
+      - generic: $30–40
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area, Outdoor patio / terrace
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Alex Czerchlanski's review.":
+        - generic: 
+        - generic: Share
+    - generic "Kate Christerson":
+      - button "Photo of Kate Christerson"
+      - button "Kate Christerson Local Guide · 19 reviews · 6 photos":
+        - generic: Kate Christerson
+        - generic: Local Guide · 19 reviews · 6 photos
+      - button "Actions for Kate Christerson's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 days ago
+      - generic: New
+      - text: It's been awhile since enjoying a meal at El Molino. The atmosphere has changed from what used to be a more cantina vibe to an upscale restaurant. Dinner was delicious, had the Michaca Chimmichanga! The husband had tacos, with home made fresh corn tortillas, I thought he licked the plate thats how clean it was. Will definitely come back in the future.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Kate Christerson's review.":
+        - generic: 
+        - generic: Share
+    - generic "Kelsey Kozar":
+      - button "Photo of Kelsey Kozar"
+      - button "Kelsey Kozar 4 reviews":
+        - generic: Kelsey Kozar
+        - generic: 4 reviews
+      - button "Actions for Kelsey Kozar's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 5 days ago
+      - generic: New
+      - text: Went to celebrate my birthday with a friend. Daniel was an awesome server. He checked on us and brought us everything we asked for in a timely manner. The food was great, especially the enchiladas! Had such a great time celebrating!
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Loud, but you can still talk
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Kelsey Kozar's review.":
+        - generic: 
+        - generic: Share
+    - generic "Camille Buda":
+      - button "Photo of Camille Buda"
+      - button "Camille Buda 1 review":
+        - generic: Camille Buda
+        - generic: 1 review
+      - button "Actions for Camille Buda's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 5 days ago
+      - generic: New
+      - text: Great environment and daniel was amazing!!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Camille Buda's review.":
+        - generic: 
+        - generic: Share
+    - generic "Grace Hersh":
+      - button "Photo of Grace Hersh"
+      - button "Grace Hersh 3 reviews":
+        - generic: Grace Hersh
+        - generic: 3 reviews
+      - button "Actions for Grace Hersh's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited a week ago
+      - generic: New
+      - text: Have been going to El Molino for almost 30 years before they closed to "remodel". Went to check it out. I am pretty sure they are under new management after the experience. There's some new paint and they reupholstered, but while the cosmetic changes are okay to good, everything substantial is dismal now. The food is not the same and it's definitely not as good as under previous management. The chimichanga wasn't crispy, it was soggy. They put the lettuce and sour cream inside so you didn't have options. And it just doesn't taste as good. The service was ridiculously slow. It took almost an hour to get 2 chimichangas. They don't check in on you while you're waiting. After the food was dropped, no check in for the 3-bite rule. Getting the waiter to come back was a job because anytime he came by, he never even looked our way in multiple passes. It took 40 minutes to get the check. And then when we did get it, the total was a ridiculous 61 dollars and change for 2 glasses of water and 2 chimichangas! The menu shows the price of a chimichanga dinner at $16. Add $2 for Suizas. For the choices of fillings it says, same options as the Burrito which is listed right above it in the menu. There was a large choice of fillings including "steak" and "skirt steak"along with chicken, carnitas, Al pastor, Machaca beef, etc. We ordered the skirt steak filling. There is no additional pricing on the menu, no mention from the waiter when we ordered either. But that's where 2 waters and 2 chimichangas turned into $62! They charged us $8 per plate for the skirt steak. I immediately got up to ask for a manager. Some young guy came and kept insisting... Did you order the steak or the arrachera (skirt steak fajitas)? I said we did order the skirt steak. He said, well that's special option, we don't serve that unless you special ordered it. I said it's in the menu. He argued with me that it's not a regular option. He said that's why it's an upcharge. I insisted it's on the menu as a regular option with no mention of an upcharge. The Suizas showed the upcharge on the menu. All the meat options are listed one after another under the burritos. The chimichanga says, "Same options as the burrito". This young man kept insisting that I didn't read the menu correctly and the don't offer the skirt steak as a regular option. I finally told him to stop arguing with me and get a menu. And sure enough, there it is plain as day on the menu. And he said, well the menus are new. It should have been listed differently. If you didn't properly proofread your menu before okaying the final printing, that doesn't mean you can charge me whatever you see fit. He kept insisting on the upcharge. If we had been told it was $8 extra per plate, I'm sure we wouldn't have ordered it or been surprised at the cost of the bill. That surcharge is half the price of the entire dinner. That's usurious!!! The waiter had the surcharges removed by an older gentleman while this young guy( I'm pretty sure he's the son of the new owner who clearly has zero idea how to run a business and treat a customer, ESPECIALLY WHEN HE HAD NO IDEA WHAT HE WAS TAKING ABOUT AND WAS 100 PERCENT IN THE WRONG BOTH FOR ARGUING WITH THE CUSTOMER AND WRITING ABOUT THE MENU HERE), kept arguing with me. The older gentleman came up after I paid the bill and laid the same lame excuse about these being new menus. Will NEVER be going back. I'll be surprised if they survive a year in business. Dismal service, dismal treatment, poor management and mediocre food. ZERO stars... Do NOT RECOMMEND anymore. Used to be one of my fave places. NEW BUT DEFINITELY NOT IMPROVED. 🤬👎👎👎
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 2"
+      - generic: "Service: 1"
+      - generic: "Atmosphere: 3"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Grace Hersh's review.":
+        - generic: 
+        - generic: Share
+    - generic "Monica Lagunes":
+      - button "Photo of Monica Lagunes"
+      - button "Monica Lagunes 1 review · 1 photo":
+        - generic: Monica Lagunes
+        - generic: 1 review · 1 photo
+      - button "Actions for Monica Lagunes's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a week ago
+      - generic: New
+      - text: First time at this restaurant and it was great! Very nice for a date night or just going for a drink at the bar. Drinks are just right and the food is wonderful. Prices are reasonable not to bad. Host is very nice and waiters are as nice too. Really enjoyed the live calming music on Saturday night and also enjoyed every single song after that. Highly recommend!!
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Seating type
+      - generic: Bar area, Outdoor patio / terrace, Booth seating
+      - button "Photo 1 on Monica Lagunes's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Monica Lagunes's review.":
+        - generic: 
+        - generic: Share
+    - generic "Olivia Gustafson":
+      - button "Photo of Olivia Gustafson"
+      - button "Olivia Gustafson Local Guide · 20 reviews · 2 photos":
+        - generic: Olivia Gustafson
+        - generic: Local Guide · 20 reviews · 2 photos
+      - button "Actions for Olivia Gustafson's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a week ago
+      - generic: New
+      - text: First time back since the renovation and WOW! The food was already top notch before but today’s experience was next level. The interior is beautifully redone, very tasteful with great seating. I had three tacos, pork, carne asada, and al pastor, and my boyfriend got the steak quesadilla. The salsas they bring out are to die for, the tortillas are homemade, and the meats were incredible. We skipped drinks this time but definitely won’t next time, the options looked so good. Our waiter was fantastic too, very attentive and gave great recommendations. On top of everything, the prices were very fair. We will absolutely be back soon and I cannot wait!!
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Olivia Gustafson's review.":
+        - generic: 
+        - generic: Share
+    - generic "Cassie Wolfe":
+      - button "Photo of Cassie Wolfe"
+      - button "Cassie Wolfe 9 reviews":
+        - generic: Cassie Wolfe
+        - generic: 9 reviews
+      - button "Actions for Cassie Wolfe's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a week ago
+      - generic: New
+    - generic "tim martin":
+      - button "Photo of tim martin"
+      - button "tim martin Local Guide · 17 reviews · 13 photos":
+        - generic: tim martin
+        - generic: Local Guide · 17 reviews · 13 photos
+      - button "Actions for tim martin's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a week ago
+      - generic: New
+      - text: Great food!! Service top notch! Always good
+      - generic: Price per person
+      - generic: $50–60
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Reservation
+      - generic: Reservations not required
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - generic: Group size
+      - generic: 2 people
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share tim martin's review.":
+        - generic: 
+        - generic: Share
+    - generic "Marisol Dominguez Hernandez":
+      - button "Photo of Marisol Dominguez Hernandez"
+      - button "Marisol Dominguez Hernandez 1 review":
+        - generic: Marisol Dominguez Hernandez
+        - generic: 1 review
+      - button "Actions for Marisol Dominguez Hernandez's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 weeks ago
+      - generic: New
+      - text: Excellent service!!! Delicious food!!!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Marisol Dominguez Hernandez's review.":
+        - generic: 
+        - generic: Share
+    - generic "Arath Hernandez":
+      - button "Photo of Arath Hernandez"
+      - button "Arath Hernandez 2 reviews":
+        - generic: Arath Hernandez
+        - generic: 2 reviews
+      - button "Actions for Arath Hernandez's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 weeks ago
+      - generic: New
+      - text: A place with delicious food, excellent service, and a wonderful atmosphere.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Arath Hernandez's review.":
+        - generic: 
+        - generic: Share
+    - generic "Kelly Hernandez-Jusino":
+      - button "Photo of Kelly Hernandez-Jusino"
+      - button "Kelly Hernandez-Jusino 9 reviews":
+        - generic: Kelly Hernandez-Jusino
+        - generic: 9 reviews
+      - button "Actions for Kelly Hernandez-Jusino's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 weeks ago
+      - generic: New
+      - text: Food was perfect! service was amazing!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Kelly Hernandez-Jusino's review.":
+        - generic: 
+        - generic: Share
+    - generic "Luis Torres":
+      - button "Photo of Luis Torres"
+      - button "Luis Torres Local Guide · 25 reviews · 16 photos":
+        - generic: Luis Torres
+        - generic: Local Guide · 25 reviews · 16 photos
+      - button "Actions for Luis Torres's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 weeks ago
+      - generic: New
+      - generic: Price per person
+      - generic: $60–70
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Luis Torres's review.":
+        - generic: 
+        - generic: Share
+    - generic "George Papadakis":
+      - button "Photo of George Papadakis"
+      - button "George Papadakis Local Guide · 28 reviews · 10 photos":
+        - generic: George Papadakis
+        - generic: Local Guide · 28 reviews · 10 photos
+      - button "Actions for George Papadakis's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 weeks ago
+      - generic: New
+      - text: Real disappointment. They apparently think it's legal to charge more than the listed item pricing. State and local laws usually require restaurants to honor the posted or advertised price, often enforced by the Department of Consumer Affairs or Weights and Measures. While service charges or mandatory gratuities are legal, they should ideally be disclosed, especially in areas with strict transparent pricing laws. El Molino doesn't disclose and clearly decides what they want to charge after the ordering.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 3"
+      - generic: "Service: 2"
+      - generic: "Atmosphere: 3"
+      - generic: Wait time
+      - generic: No wait
+      - generic: Seating type
+      - generic: Indoor dining area
+      - button "1 like":
+        - generic: 
+        - generic: "1"
+      - button "Share George Papadakis's review.":
+        - generic: 
+        - generic: Share
+    - generic "Laura Ruiz":
+      - button "Photo of Laura Ruiz"
+      - button "Laura Ruiz Local Guide · 11 reviews · 18 photos":
+        - generic: Laura Ruiz
+        - generic: Local Guide · 11 reviews · 18 photos
+      - button "Actions for Laura Ruiz's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 weeks ago
+      - generic: New
+      - text: We had dinner here yesterday, and we have found the best mexican food in town. Service is awesome and the margaritas and tequila are 10/10! They make their own fresh tortillas every morning. You can tell they are home made! Highly recommend their shrimp and papas fritas. Gracias Juan, por hacernos sentir como en casa😊. Hasta pronto!
+      - generic: Price per person
+      - generic: $30–40
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Chips and Salsa, Tacos, Chips, Guacamole, Enchilada, Steak Tacos, Quesadilla
+      - generic: Noise level
+      - generic: Very quiet
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area, Outdoor patio / terrace, Booth seating, Counter seating, Private dining room
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Laura Ruiz's review.":
+        - generic: 
+        - generic: Share
+    - generic "Jeff Bomer (Boomer)":
+      - button "Photo of Jeff Bomer (Boomer)"
+      - button "Jeff Bomer (Boomer) Local Guide · 116 reviews · 494 photos":
+        - generic: Jeff Bomer (Boomer)
+        - generic: Local Guide · 116 reviews · 494 photos
+      - button "Actions for Jeff Bomer (Boomer)'s review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 4 weeks ago
+      - text: The steak was great! The nachos SUCK! They had lettuce on them as well. You would think a mexican resturant could get Nachos right.
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 3"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 3"
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area, Outdoor patio / terrace
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Jeff Bomer (Boomer)'s review.":
+        - generic: 
+        - generic: Share
+    - generic "Susan Grossenbach":
+      - button "Photo of Susan Grossenbach"
+      - button "Susan Grossenbach Local Guide · 51 reviews · 5 photos":
+        - generic: Susan Grossenbach
+        - generic: Local Guide · 51 reviews · 5 photos
+      - button "Actions for Susan Grossenbach's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: Very beautifully remodel. But even better, the authentic delicious food.
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Susan Grossenbach's review.":
+        - generic: 
+        - generic: Share
+    - generic "Suahilee Santana":
+      - button "Photo of Suahilee Santana"
+      - button "Suahilee Santana Local Guide · 45 reviews · 11 photos":
+        - generic: Suahilee Santana
+        - generic: Local Guide · 45 reviews · 11 photos
+      - button "Actions for Suahilee Santana's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: Ordered nachos el molino & was very disappointed the meat had nothing but fat & was very chewy. Guacamole had no flavor at all. the price they charged me was not worthy at all. Very, very disappointed
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 1"
+      - generic: "Service: 4"
+      - generic: Noise level
+      - generic: Not sure
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Suahilee Santana's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mark Obrien":
+      - button "Photo of Mark Obrien"
+      - button "Mark Obrien Local Guide · 40 reviews · 3 photos":
+        - generic: Mark Obrien
+        - generic: Local Guide · 40 reviews · 3 photos
+      - button "Actions for Mark Obrien's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: What a find! My wife and I live in Chicago, and our friends live in Huntley. We had a taste for Mexican and El Molino didn't disappoint. Every aspect of this restaurant was fantastic. A beautiful looking restaurant, easy parking, beautiful bar areas and a wonderful staff. We enjoyed both breakfast and lunch because we went on a Saturday and both menus were offered. Everything we had was so tasty. If you want a Bloody Mary, the bar tender knows how to make a great one! We will definitely be back! Well worth the trip!
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mark Obrien's review.":
+        - generic: 
+        - generic: Share
+    - generic "George Chris":
+      - button "Photo of George Chris"
+      - button "George Chris 2 reviews":
+        - generic: George Chris
+        - generic: 2 reviews
+      - button "Actions for George Chris's review":
+        - generic: 
+      - img "2 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: "WOW! WOW! WOW! This was a scam we’ve never seen. Been coming to el molino for at least 30 years. First time since new owners opened it in November. We were received warmly. Food was good. Service also very good. But then the bill came and they had padded on an additional 10-20% on several items. Increased the total almost $25. On a party of 4. Figured it had to be a mistake, right? Nope, instead the waitress insisted that the small print at the bottom of the menu allows them to change the prices on the menu at their discretion. We asked for the manager who repeatedly argued that the menu prices didn’t reflect what the price could be. Finally after repeated requests the bill was corrected. Please note: None of our meals were marked MP. Nowhere in the menu is it clear that prices may not be what is printed unless you happen to look for the fine print below allergies, etc. And never have we had to fight to pay what was clearly marked for all. Imagine if this was how it was everywhere you shopped and ate. Ridiculous. Strongly suggest avoiding El Molino or at the very least verifying the prices shown are what you’ll be getting charged…before you order."
+      - generic: Price per person
+      - generic: $60–70
+      - generic: "Food: 4"
+      - generic: "Service: 1"
+      - generic: "Atmosphere: 3"
+      - generic: Seating type
+      - generic: Indoor dining area
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share George Chris's review.":
+        - generic: 
+        - generic: Share
+    - generic "Stephanie Doubek":
+      - button "Photo of Stephanie Doubek"
+      - button "Stephanie Doubek 3 reviews · 1 photo":
+        - generic: Stephanie Doubek
+        - generic: 3 reviews · 1 photo
+      - button "Actions for Stephanie Doubek's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: Food was barely warm, too much mole on the enchiladas. The beef enchiladas was not edible, the mole chicken was just wings and legs, so just bones in sauce. Bartender was cordial, but not friendly or a bartender. Sadly, after 25+ years, with so many happy memories, this was a terrible experience. I don’t think we will be back. And 8$ for draft Pacifico and Dos XX? That is expensive and not the advertised price. The hostess was a delight! Keep her!
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 1"
+      - generic: "Service: 1"
+      - generic: "Atmosphere: 2"
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Stephanie Doubek's review.":
+        - generic: 
+        - generic: Share
+    - generic "Richard Beech":
+      - button "Photo of Richard Beech"
+      - button "Richard Beech Local Guide · 344 reviews · 58 photos":
+        - generic: Richard Beech
+        - generic: Local Guide · 344 reviews · 58 photos
+      - button "Actions for Richard Beech's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited a month ago
+      - text: It's good Mexican food. They did seem to nickel and dime me for items like sour cream and tortilla shells. Don't know if I would recommend. They also added a 3% charge for miscellaneous. If you can put up with that it's good
+      - generic: Price per person
+      - generic: $30–40
+      - generic: "Food: 4"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 4"
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - generic: Wait time
+      - generic: No wait
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Richard Beech's review.":
+        - generic: 
+        - generic: Share
+    - generic "Randy Harbin":
+      - button "Photo of Randy Harbin"
+      - button "Randy Harbin Local Guide · 159 reviews · 254 photos":
+        - generic: Randy Harbin
+        - generic: Local Guide · 159 reviews · 254 photos
+      - button "Actions for Randy Harbin's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: The place was packed so we ate at the bar. Niagara Modelo on tap! Chips and salsa were outstanding. Very spicy red sauce just the way I like it. I had the carne asada with the Chipotle sauce. The steak was done perfectly as ordered. Best Mexican food I've had in a while. We will be back!
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 4"
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - generic: Special offers
+      - generic: Weekend specials
+      - generic: Wait time
+      - generic: No wait
+      - generic: Parking space
+      - generic: Somewhat difficult to find parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - generic: Kid-friendliness
+      - generic: Family friendly
+      - button "Carne asada with Chipotle sauce"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Randy Harbin's review.":
+        - generic: 
+        - generic: Share
+    - generic "Kristi Harbin":
+      - button "Photo of Kristi Harbin"
+      - button "Kristi Harbin Local Guide · 80 reviews · 79 photos":
+        - generic: Kristi Harbin
+        - generic: Local Guide · 80 reviews · 79 photos
+      - button "Actions for Kristi Harbin's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: 1st time here busy place. Sat at the bar. Variety on the menu. Food was tasty and hot. Definitely will be back.
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 4"
+      - generic: Recommended dishes
+      - generic: Enchiladas Huastaqueñas
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - generic: Wait time
+      - generic: No wait
+      - generic: Parking space
+      - generic: Somewhat difficult to find parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Photo 1 on Kristi Harbin's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Kristi Harbin's review.":
+        - generic: 
+        - generic: Share
+    - generic "Phil Blaze":
+      - button "Photo of Phil Blaze"
+      - button "Phil Blaze Local Guide · 12 reviews":
+        - generic: Phil Blaze
+        - generic: Local Guide · 12 reviews
+      - button "Actions for Phil Blaze's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: Food was better than average, place is beautiful. After dinner we walked to bar to finish our drinks. It was the owner's birthday and the bartender asked if we wanted a shot of tequila with her for her birthday. Not wanting another drink, but being polite, we said sure. We say Happy Birthday, do our shots, and next thing you know we received a bill for $50 for 2 shots! It's not even the money, it was the way it was handled. Shaddy!
+      - generic: Price per person
+      - generic: $50–60
+      - generic: "Food: 3"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 4"
+      - generic: Recommended dishes
+      - generic: Chips and Salsa, Posole, Fajitas Steak Chicken Shrimp or Combo
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Phil Blaze's review.":
+        - generic: 
+        - generic: Share
+    - generic "_MARTiN":
+      - button "Photo of _MARTiN"
+      - button "_MARTiN Local Guide · 30 reviews · 244 photos":
+        - generic: _MARTiN
+        - generic: Local Guide · 30 reviews · 244 photos
+      - button "Actions for _MARTiN's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: Great atmosphere, great service, great food, will definitely recommend. Great atmosphere, great service, great food, will definitely recommend.
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Wait time
+      - generic: Up to 10 min
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area, Outdoor patio / terrace, Booth seating
+      - generic: Recommendation for vegetarians
+      - generic: Highly recommend
+      - generic: Vegetarian offerings
+      - generic: Large vegetarian selection
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - generic: Kid-friendliness
+      - generic: Wheelchair accessibility
+      - generic: Yes, a ramp.
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Photo 1 on _MARTiN's review"
+      - button "Photo 2 on _MARTiN's review"
+      - button "Photo 3 on _MARTiN's review"
+      - button "Photo 4 on _MARTiN's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share _MARTiN's review.":
+        - generic: 
+        - generic: Share
+    - generic "Irvin Agustin":
+      - button "Photo of Irvin Agustin"
+      - button "Irvin Agustin Local Guide · 8 reviews · 3 photos":
+        - generic: Irvin Agustin
+        - generic: Local Guide · 8 reviews · 3 photos
+      - button "Actions for Irvin Agustin's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+    - generic "Fabby Galicia":
+      - button "Photo of Fabby Galicia"
+      - button "Fabby Galicia Local Guide · 11 reviews · 4 photos":
+        - generic: Fabby Galicia
+        - generic: Local Guide · 11 reviews · 4 photos
+      - button "Actions for Fabby Galicia's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - text: The food was amazing, the best chilaquiles I’ve ever had! Everything tasted authentic and fresh. My licuado was delicious, the tamalitos were incredible, and the café de olla was so good. The service really stood out because they even made something for us that wasn’t on the menu without hesitation. Highly recommend!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Tamales
+      - generic: Reservation
+      - generic: Not sure
+      - generic: Wait time
+      - generic: No wait
+      - button "Photo 1 on Fabby Galicia's review"
+      - button "Photo 2 on Fabby Galicia's review"
+      - button "Photo 3 on Fabby Galicia's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Fabby Galicia's review.":
+        - generic: 
+        - generic: Share
+    - generic "Nino Ruff":
+      - button "Photo of Nino Ruff"
+      - button "Nino Ruff Local Guide · 66 reviews":
+        - generic: Nino Ruff
+        - generic: Local Guide · 66 reviews
+      - button "Actions for Nino Ruff's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Burritos, Cheese Quesadilla
+      - generic: Reservation
+      - generic: Reservations not required
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Nino Ruff's review.":
+        - generic: 
+        - generic: Share
+    - generic "M Leahy":
+      - button "Photo of M Leahy"
+      - button "M Leahy 5 reviews":
+        - generic: M Leahy
+        - generic: 5 reviews
+      - button "Actions for M Leahy's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a month ago
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share M Leahy's review.":
+        - generic: 
+        - generic: Share
+    - generic "Ryan Bruns":
+      - button "Photo of Ryan Bruns"
+      - button "Ryan Bruns 9 reviews":
+        - generic: Ryan Bruns
+        - generic: 9 reviews
+      - button "Actions for Ryan Bruns's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Daniel is the best server! Would definitely come back just because of him
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Ryan Bruns's review.":
+        - generic: 
+        - generic: Share
+    - generic "Juana Flores":
+      - button "Photo of Juana Flores"
+      - button "Juana Flores":
+        - generic: Juana Flores
+      - button "Actions for Juana Flores's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Juana Flores's review.":
+        - generic: 
+        - generic: Share
+    - generic "Charissa Lynn":
+      - button "Photo of Charissa Lynn"
+      - button "Charissa Lynn 3 reviews":
+        - generic: Charissa Lynn
+        - generic: 3 reviews
+      - button "Actions for Charissa Lynn's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Our first time here since the renovations! It's beautiful, bright and as always, delicious! We had the pleasure of being here for a birthday party. The staff was exceptional, and we thoroughly enjoyed our experience! Thank you for your hospitality!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Charissa Lynn's review.":
+        - generic: 
+        - generic: Share
+    - generic "Claudia Dominguez":
+      - button "Photo of Claudia Dominguez"
+      - button "Claudia Dominguez Local Guide · 50 reviews · 4 photos":
+        - generic: Claudia Dominguez
+        - generic: Local Guide · 50 reviews · 4 photos
+      - button "Actions for Claudia Dominguez's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Excellent service! We went to celebrate our friend's birthday; we were a group of 15. The waitresses Hanna and Andrea were very friendly and recommended the best options. The managers, Miguel and Rene, were very professional, and we loved the details on the tables! We will definitely return to this place; the food was delicious.
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 4"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Wait time
+      - generic: No wait
+      - generic: Seating type
+      - generic: Indoor dining area
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Claudia Dominguez's review.":
+        - generic: 
+        - generic: Share
+    - generic "Scott Hansen":
+      - button "Photo of Scott Hansen"
+      - button "Scott Hansen Local Guide · 61 reviews · 32 photos":
+        - generic: Scott Hansen
+        - generic: Local Guide · 61 reviews · 32 photos
+      - button "Actions for Scott Hansen's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Wonderful new atmosphere. Food was wonderful. Drinks were fun
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Group size
+      - generic: 2 people
+      - generic: Wait time
+      - generic: No wait
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area, Outdoor patio / terrace
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Scott Hansen's review.":
+        - generic: 
+        - generic: Share
+    - generic "Nadezhda Mead":
+      - button "Photo of Nadezhda Mead"
+      - button "Nadezhda Mead 2 reviews":
+        - generic: Nadezhda Mead
+        - generic: 2 reviews
+      - button "Actions for Nadezhda Mead's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: "What an amazing service from Daniel who offered us to try a small app of ceviche, what can I cay: Q rico!!! Followed by best cocktails from Miguel, who is an absolute doll! The food is incredible, I had fajitas, sissy had ceviche that is to die for! We will absolutely be back soon with friends!"
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Nadezhda Mead's review.":
+        - generic: 
+        - generic: Share
+    - generic "A. B.":
+      - button "Photo of A. B."
+      - button "A. B. 7 reviews":
+        - generic: A. B.
+        - generic: 7 reviews
+      - button "Actions for A. B.'s review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: One of the best places to enjoy food, drinks, and great service. Daniel and Miguel(bartender) are fantastic! If you want to enjoy good food and drinks bring some friends and get ready for a great time.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share A. B.'s review.":
+        - generic: 
+        - generic: Share
+    - generic "keith franzen":
+      - button "Photo of keith franzen"
+      - button "keith franzen Local Guide · 20 reviews":
+        - generic: keith franzen
+        - generic: Local Guide · 20 reviews
+      - button "Actions for keith franzen's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+    - generic "Emily Navin":
+      - button "Photo of Emily Navin"
+      - button "Emily Navin Local Guide · 37 reviews · 7 photos":
+        - generic: Emily Navin
+        - generic: Local Guide · 37 reviews · 7 photos
+      - button "Actions for Emily Navin's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Group size
+      - generic: 5-8 people
+      - generic: Wait time
+      - generic: No wait
+      - generic: Seating type
+      - generic: Indoor dining area
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Emily Navin's review.":
+        - generic: 
+        - generic: Share
+    - generic "Joseph D. Ruiz":
+      - button "Photo of Joseph D. Ruiz"
+      - button "Joseph D. Ruiz Local Guide · 34 reviews":
+        - generic: Joseph D. Ruiz
+        - generic: Local Guide · 34 reviews
+      - button "Actions for Joseph D. Ruiz's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Anna was our lovely waitress today Feb 16th we had a good variety of of entrée and all were absolutely amazing full stop this is authentic cuisine from start to finish we will come back and often is certain when a place is this good no sorry GREAT is better said we will look forward to seeing Anna and try some specialties like pozole is my next item. JDR
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Very quiet
+      - generic: Special events
+      - generic: No special event
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Joseph D. Ruiz's review.":
+        - generic: 
+        - generic: Share
+    - generic "Jay Krebs":
+      - button "Photo of Jay Krebs"
+      - button "Jay Krebs 2 reviews":
+        - generic: Jay Krebs
+        - generic: 2 reviews
+      - button "Actions for Jay Krebs's review":
+        - generic: 
+      - img "2 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: It’s not what it used to be as far as Mexican dishes - they lost the recipes. You can eat it but there are now better Mexican restaurants around.
+      - generic: Order type
+      - generic: Take out
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 2"
+      - generic: Wait time
+      - generic: No wait
+      - generic: Parking space
+      - generic: Plenty of parking
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Jay Krebs's review.":
+        - generic: 
+        - generic: Share
+    - generic "Larry Turzynski":
+      - button "Photo of Larry Turzynski"
+      - button "Larry Turzynski Local Guide · 392 reviews · 848 photos":
+        - generic: Larry Turzynski
+        - generic: Local Guide · 392 reviews · 848 photos
+      - button "Actions for Larry Turzynski's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Newly remodeled! Excellent queso fundido, burritos and margaritas!
+      - generic: Order type
+      - generic: Dine in
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Chips, Burritos
+      - generic: Wait time
+      - generic: No wait
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Photo 1 on Larry Turzynski's review"
+      - button "Photo 2 on Larry Turzynski's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Larry Turzynski's review.":
+        - generic: 
+        - generic: Share
+    - generic "Stela Levario":
+      - button "Photo of Stela Levario"
+      - button "Stela Levario Local Guide · 13 reviews":
+        - generic: Stela Levario
+        - generic: Local Guide · 13 reviews
+      - button "Actions for Stela Levario's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Great food good experience food was hot & delicious there was plenty of parking friendly staff i would definitely recommend El Molino.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: El Molino, Chips, Enchiladas Huastaqueñas, Guacamole, Enchilada
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Stela Levario's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mike Gell":
+      - button "Photo of Mike Gell"
+      - button "Mike Gell Local Guide · 566 reviews · 906 photos":
+        - generic: Mike Gell
+        - generic: Local Guide · 566 reviews · 906 photos
+      - button "Actions for Mike Gell's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: How to retried after the remodel. Used to go there a lot always had good food It's all nice and white inside makes a very roomy and open Food was awesome service was great . Hemisphere very good.
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 5"
+      - generic: Reservation
+      - generic: Reservations not required
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Seating type
+      - generic: Indoor dining area
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mike Gell's review.":
+        - generic: 
+        - generic: Share
+    - generic "Maria Aguilar":
+      - button "Photo of Maria Aguilar"
+      - button "Maria Aguilar Local Guide · 37 reviews":
+        - generic: Maria Aguilar
+        - generic: Local Guide · 37 reviews
+      - button "Actions for Maria Aguilar's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: We have been at the Molino Mexican twice and we were very satisfied with the place, service food even though they just open everything thing was Exquisite 👌
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - generic: Wait time
+      - generic: No wait
+      - generic: Wheelchair accessibility
+      - generic: They have a ramp to go in the restaurant handicap parking, restrooms very clean A very clean place very cozie romantic depending on the occasion you want to go there for.
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Maria Aguilar's review.":
+        - generic: 
+        - generic: Share
+    - generic "JP":
+      - button "Photo of JP"
+      - button "JP Local Guide · 49 reviews · 52 photos":
+        - generic: JP
+        - generic: Local Guide · 49 reviews · 52 photos
+      - button "Actions for JP's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Very friendly staff and the food is amazing. I would definitely come back again soon! Our server, Daniel was very sweet and attentive. What a cozy and beautiful restaurant.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Photo 1 on JP's review"
+      - button "Photo 2 on JP's review"
+      - button "Photo 3 on JP's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share JP's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mike Maloni":
+      - button "Photo of Mike Maloni"
+      - button "Mike Maloni Local Guide · 76 reviews · 9 photos":
+        - generic: Mike Maloni
+        - generic: Local Guide · 76 reviews · 9 photos
+      - button "Actions for Mike Maloni's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 2 months ago
+      - text: Their green salsa is amazingand their service is amazing, highly recommend
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mike Maloni's review.":
+        - generic: 
+        - generic: Share
+    - generic "Jeremy Alward":
+      - button "Photo of Jeremy Alward"
+      - button "Jeremy Alward Local Guide · 165 reviews · 95 photos":
+        - generic: Jeremy Alward
+        - generic: Local Guide · 165 reviews · 95 photos
+      - button "Actions for Jeremy Alward's review":
+        - generic: 
+      - img "3 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 2 months ago
+      - text: "Edit for new 2026 owners: Food is still tasty with impressive portions for the price. I ordered a Chimichanga and it was almost all meat. Drinks are also large and tasty. But this place has management issues. We were in the back room, and there was only 1 waiter for seven tables (40+ customers, I counted). They are clearly understaffed, and the back room should not have been open. Instead all the tables suffered with slow services, the kitchen was swamped, and two of our four orders came out wrong. This place is just two or three small changes away from being great."
+      - generic: "Food: 4"
+      - generic: "Service: 2"
+      - generic: "Atmosphere: 3"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Jeremy Alward's review.":
+        - generic: 
+        - generic: Share
+    - generic "Kim V":
+      - button "Photo of Kim V"
+      - button "Kim V 12 reviews":
+        - generic: Kim V
+        - generic: 12 reviews
+      - button "Actions for Kim V's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: Loved the new El Molino! The staff is so upscale, love the professional look of all the staff. Food presentation was so pleasant. Margaritas not all lime juice. Owner greeted us, very nice , made you feel welcome. The owner really wanted to please her guests. You can clearly see pride in ownership. Very impressed, been going to El molinos for 40 years. What a nice change.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Kim V's review.":
+        - generic: 
+        - generic: Share
+    - generic "Karley Swetz":
+      - button "Photo of Karley Swetz"
+      - button "Karley Swetz 11 reviews · 4 photos":
+        - generic: Karley Swetz
+        - generic: 11 reviews · 4 photos
+      - button "Actions for Karley Swetz's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: Absolutely loved our dinner and night at the new El Molino. The owner and her staff are lovely. Give it a try!
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - button "Photo 1 on Karley Swetz's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Karley Swetz's review.":
+        - generic: 
+        - generic: Share
+    - generic "Cendy Delgadillo":
+      - button "Photo of Cendy Delgadillo"
+      - button "Cendy Delgadillo 4 reviews":
+        - generic: Cendy Delgadillo
+        - generic: 4 reviews
+      - button "Actions for Cendy Delgadillo's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 3 months ago
+      - text: We waited a long time. The food was delicious. I understand they're starting up. The waiter promised to serve coffee, but it never arrived. When I received my bill, I was charged for two coffees that weren't actually coffee.
+      - generic: Price per person
+      - generic: $60–70
+      - generic: "Food: 5"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 4"
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - generic: Wait time
+      - generic: 1+ hour
+      - generic: Wheelchair accessibility
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Cendy Delgadillo's review.":
+        - generic: 
+        - generic: Share
+    - generic "Aaron Gentry":
+      - button "Photo of Aaron Gentry"
+      - button "Aaron Gentry 3 reviews":
+        - generic: Aaron Gentry
+        - generic: 3 reviews
+      - button "Actions for Aaron Gentry's review":
+        - generic: 
+      - img "3 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: Food was good. 3 dollars for a small amount of sour cream. 3% service charge and we paid cash.
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 4"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 4"
+      - generic: Reservation
+      - generic: Reservations recommended
+      - generic: Seating type
+      - generic: Indoor dining area, Bar area
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Aaron Gentry's review.":
+        - generic: 
+        - generic: Share
+    - generic "Laughterz TX":
+      - button "Photo of Laughterz TX"
+      - button "Laughterz TX Local Guide · 105 reviews · 46 photos":
+        - generic: Laughterz TX
+        - generic: Local Guide · 105 reviews · 46 photos
+      - button "Actions for Laughterz TX's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+    - generic "kenneth nelson":
+      - button "Photo of kenneth nelson"
+      - button "kenneth nelson 5 reviews · 1 photo":
+        - generic: kenneth nelson
+        - generic: 5 reviews · 1 photo
+      - button "Actions for kenneth nelson's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: Should have left it alone. Very disappointing. Food used to be some of the best real Mexican food in the area, now basically flavorless mush. Service was mediocre at best, only one other table seated. Sad to see the revamp of a once great restaurant, into a second rate place. I will not return.
+      - generic: Price per person
+      - generic: $30–40
+      - generic: "Food: 1"
+      - generic: "Service: 2"
+      - generic: "Atmosphere: 1"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share kenneth nelson's review.":
+        - generic: 
+        - generic: Share
+    - generic "Thomas Oconnell":
+      - button "Photo of Thomas Oconnell"
+      - button "Thomas Oconnell 5 reviews":
+        - generic: Thomas Oconnell
+        - generic: 5 reviews
+      - button "Actions for Thomas Oconnell's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: The new el molino is great if ur looking for a delicious meal. We've been going here for years and the food is better than ever. Enchiladas,queso fundito, and quesadillas w machaca beef were some of the best we ever had. The strawberry margaritas were really nice as usual, not as sweet but a little boozier so definitely no complaints. The inside atmosphere is more modern than authentic mexican which i wasn't crazy about but it looks very bright and clean.
+      - generic: Price per person
+      - generic: $40–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 3"
+      - generic: Noise level
+      - generic: Loud, but you can still talk
+      - generic: Group size
+      - generic: 3-4 people
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Thomas Oconnell's review.":
+        - generic: 
+        - generic: Share
+    - generic "Lynn E":
+      - button "Photo of Lynn E"
+      - button "Lynn E Local Guide · 128 reviews · 38 photos":
+        - generic: Lynn E
+        - generic: Local Guide · 128 reviews · 38 photos
+      - button "Actions for Lynn E's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: El Molino just reopened after a big decorative revamp. I think the service issues we experienced were likely due to wait staff inexperience and the big crowd. Their parking lot was inadequate for the size of the restaurant. We found one of the few spots and were quickly seated in a requested booth and several tables were also available. When we left, 2 cars were blocking us and and gratefully moved so 1 could get our spot. Service was friendly but slow. Staff was good about volunteering more chips and salsa. A request for a sauce to be served on the side never appeared and our margaritas and a refill were very slow. The food was a highlight. The tortilla chips were heavy, like the ones in Aculpolco and the green and red salsas were terrific. I had comarones veracruzanos which said it was served on a bed a rice but the rice was on the side. It was a generous portion (10 large shrimp with tails removed) but with all the tasty chips and slow delivery, I ended up taking some home. The margaritas were great and big (only size option was huge or a pitcher-- big and small servings would be good--we split the second one and wouldn't have needed it if service were faster). They had a unique flavor we loved. We'll be back after a few months so they have time to iron out the wrinkles.
+      - generic: Price per person
+      - generic: $30–40
+      - generic: "Food: 5"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Chips and Salsa, Fish Tacos
+      - generic: Group size
+      - generic: 3-4 people, Not sure
+      - generic: Parking space
+      - generic: Difficult to find parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - generic: Parking
+      - generic: They are located on a state highway with NO street parking.
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Lynn E's review.":
+        - generic: 
+        - generic: Share
+    - generic "Vipin Patel":
+      - button "Photo of Vipin Patel"
+      - button "Vipin Patel Local Guide · 120 reviews · 71 photos":
+        - generic: Vipin Patel
+        - generic: Local Guide · 120 reviews · 71 photos
+      - button "Actions for Vipin Patel's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 3 months ago
+      - text: nice TASTE IN FOOD
+      - generic: Price per person
+      - generic: $50–60
+      - generic: "Food: 4"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Enchiladas Huastaqueñas
+      - generic: Group size
+      - generic: 2 people, Not sure
+      - generic: Wait time
+      - generic: Up to 10 min
+      - generic: Kid-friendliness
+      - generic: kiddies love to bite
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Vipin Patel's review.":
+        - generic: 
+        - generic: Share
+    - generic "Karla Garcia":
+      - button "Photo of Karla Garcia"
+      - button "Karla Garcia Local Guide · 19 reviews · 1 photo":
+        - generic: Karla Garcia
+        - generic: Local Guide · 19 reviews · 1 photo
+      - button "Actions for Karla Garcia's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 3 months ago
+      - text: We came to try the soft opening of their breakfast and everything was absolutely fantastic. We got cafes de olla, birria, menudo, and chilaquiles. Everything was full of flavor and delicious. The staff was all super friendly and the restaurant is beautiful. 10/10 would recommend!!! The new owners are amazing.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Karla Garcia's review.":
+        - generic: 
+        - generic: Share
+    - generic "robert nausid":
+      - button "Photo of robert nausid"
+      - button "robert nausid Local Guide · 9 reviews":
+        - generic: robert nausid
+        - generic: Local Guide · 9 reviews
+      - button "Actions for robert nausid's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Just found out yesterday that our favorite Mexican restaurant just reopened. We figured out that it has new owners so we wanted to try it. We were not disappointed the renovations the new owners did were excellent. They made the restaurant more open and brighter you can actually see the food your are consuming. Well we both ordered the enchillada suizas i had cheese and my wife had chicken they were excellant was not disapointed at all. There is only one thing that kinda turned me off but it doesn't mean that we will not be returning the cost . i thought $12.00 for an order of quac was a little high and our meals were a little on the pricey side but the food sure was good. We will be going back
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 4"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share robert nausid's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mike Fitch":
+      - button "Photo of Mike Fitch"
+      - button "Mike Fitch Local Guide · 65 reviews · 6 photos":
+        - generic: Mike Fitch
+        - generic: Local Guide · 65 reviews · 6 photos
+      - button "Actions for Mike Fitch's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: El Molino a staple of the community for many years is reopening and better than ever. New recipes and old recipes are back again. Great atmosphere and great food.
+      - generic: Price per person
+      - generic: $50–100
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Reservation
+      - generic: Reservations not required
+      - generic: Noise level
+      - generic: Very quiet
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mike Fitch's review.":
+        - generic: 
+        - generic: Share
+    - generic "Victor Flores":
+      - button "Photo of Victor Flores"
+      - button "Victor Flores Local Guide · 46 reviews":
+        - generic: Victor Flores
+        - generic: Local Guide · 46 reviews
+      - button "Actions for Victor Flores's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: I have to start by saying that the food is good, the service starts off very well until one of the managers served me and it wasn't so good... There was one detail I noticed that, for me, made the difference between giving 4 stars and only one... One of the managers, who yesterday, December 26th, was wearing a burgundy sweater and had very short hair, went to clean a table and, while removing the dirty glasses, put his fingers in them, which is unhygienic. He also touched clean plates that were on the busboy, and I thought that was very wrong since I'm a manager in a restaurant and that's not allowed by the city... I think they should train the managers better.
+      - generic: Price per person
+      - generic: $50–100
+      - generic: "Food: 3"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 3"
+      - generic: Reservation
+      - generic: Reservations not required
+      - generic: Noise level
+      - generic: Quiet, easy to talk
+      - generic: Wait time
+      - generic: No wait
+      - switch "Translated by Google ・ See original (Spanish)" [checked]:
+        - generic: Translated by Google ・
+        - text: See original (Spanish)
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Victor Flores's review.":
+        - generic: 
+        - generic: Share
+    - generic "Daniel Peabody":
+      - button "Photo of Daniel Peabody"
+      - button "Daniel Peabody Local Guide · 149 reviews · 1 photo":
+        - generic: Daniel Peabody
+        - generic: Local Guide · 149 reviews · 1 photo
+      - button "Actions for Daniel Peabody's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 4 months ago
+      - text: Its under new ownership, they have updated the look inside, but the menu seems to be the same. This was always one of our favorite restaurants, and I hope they stay open for a lot time!
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Lunch
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Daniel Peabody's review.":
+        - generic: 
+        - generic: Share
+      - generic: Response from the owner a year ago
+      - generic: Thank you for being a wonderful loyal customer! We appreciate your feedback. People like you are what keeps us going!
+    - generic "S B":
+      - button "Photo of S B"
+      - button "S B Local Guide · 77 reviews · 46 photos":
+        - generic: S B
+        - generic: Local Guide · 77 reviews · 46 photos
+      - button "Actions for S B's review":
+        - generic: 
+      - img "3 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 4 months ago
+      - text: $20 plate for a tiny wing, drum stick and thigh. Portions get smaller Charged $3 for the extra mole sauce because I wanted to take home so I can put over chicken breast. The mole sauce was delicious, only wish they would serve with chicken breast or a decent size chicken thigh. The margaritas are made with Sour Mix. So be sure to ask "Traditional" for a fresh made one, Absolutely delicious.
+      - generic: Price per person
+      - generic: $30–50
+      - generic: "Food: 3"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 3"
+      - generic: Wait time
+      - generic: Up to 10 min
+      - generic: Seating type
+      - generic: Indoor dining area, Booth seating
+      - button "Photo 1 on S B's review"
+      - button "Photo 2 on S B's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share S B's review.":
+        - generic: 
+        - generic: Share
+    - generic "Carlos Aviles":
+      - button "Photo of Carlos Aviles"
+      - button "Carlos Aviles Local Guide · 75 reviews · 74 photos":
+        - generic: Carlos Aviles
+        - generic: Local Guide · 75 reviews · 74 photos
+      - button "Actions for Carlos Aviles's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - generic: "Food: 4"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 4"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Carlos Aviles's review.":
+        - generic: 
+        - generic: Share
+    - generic "Aleida Rivas":
+      - button "Photo of Aleida Rivas"
+      - button "Aleida Rivas 8 reviews":
+        - generic: Aleida Rivas
+        - generic: 8 reviews
+      - button "Actions for Aleida Rivas's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: It’s a very modern with authentic Mexican style food. We had tacos de carnitas and very delicious everything was worth it with fresh ingredients. Can’t wait to go again!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Aleida Rivas's review.":
+        - generic: 
+        - generic: Share
+    - generic "Irais Collazo":
+      - button "Photo of Irais Collazo"
+      - button "Irais Collazo 8 reviews":
+        - generic: Irais Collazo
+        - generic: 8 reviews
+      - button "Actions for Irais Collazo's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: I think the server was Carolina but if not whatever server was servering us as a party of 20 people on 12/19/2015 are experience was amazing. She was fast. She was organized, she did not Miss A beat. She did not miss an order. And when it came to pay out, everything was correct in every single way If her name is caroline , she deserves a race or at less a bonus , especially in this holiday time , she was absolutely amazing thank you so much girl you did grate we do this with our family once a year and I'm a 100%.Sure will be coming back to this restaurant :)
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Group size
+      - generic: 9+ people
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Irais Collazo's review.":
+        - generic: 
+        - generic: Share
+    - generic "Rich Johnson":
+      - button "Photo of Rich Johnson"
+      - button "Rich Johnson Local Guide · 43 reviews · 265 photos":
+        - generic: Rich Johnson
+        - generic: Local Guide · 43 reviews · 265 photos
+      - button "Actions for Rich Johnson's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+    - generic "Terri Dour":
+      - button "Photo of Terri Dour"
+      - button "Terri Dour 6 reviews · 2 photos":
+        - generic: Terri Dour
+        - generic: 6 reviews · 2 photos
+      - button "Actions for Terri Dour's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Ordered to tamales to go. Live within 5 minutes of the restaurant- food was cold and not good. Only ordered the tamales - they tasted like they had been frozen and reheated. The salsa roja was more sweet and not at all spicy. So disappointed- will not try this place again for any other food.
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 1"
+      - generic: "Service: 4"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Terri Dour's review.":
+        - generic: 
+        - generic: Share
+    - generic "S B":
+      - button "Photo of S B"
+      - button "S B Local Guide · 28 reviews · 7 photos":
+        - generic: S B
+        - generic: Local Guide · 28 reviews · 7 photos
+      - button "Actions for S B's review":
+        - generic: 
+      - img "3 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: My husband picked us up some salsa and chips since new management took over. Two 16 oz containers of salsa and a “bag” of chips (I counted about 25) and the bill was $30. I had to pick my jaw up off the floor. I told him that was insane. Apparently with the new management comes new inflated pricing.
+      - generic: "Food: 4"
+      - generic: "Service: 4"
+      - button "Photo 1 on S B's review"
+      - button "Photo 2 on S B's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share S B's review.":
+        - generic: 
+        - generic: Share
+    - generic "Lisa Salinas":
+      - button "Photo of Lisa Salinas"
+      - button "Lisa Salinas Local Guide · 13 reviews · 35 photos":
+        - generic: Lisa Salinas
+        - generic: Local Guide · 13 reviews · 35 photos
+      - button "Actions for Lisa Salinas's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Lisa Salinas's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mary S.":
+      - button "Photo of Mary S."
+      - button "Mary S. Local Guide · 23 reviews · 7 photos":
+        - generic: Mary S.
+        - generic: Local Guide · 23 reviews · 7 photos
+      - button "Actions for Mary S.'s review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: My boyfriend and I shared the chicken fajitas, and I had a steak taco. The food was all very tasty! Great atmosphere. We will be back.
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Special events
+      - generic: No special event
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mary S.'s review.":
+        - generic: 
+        - generic: Share
+    - generic "Kathy Roger":
+      - button "Photo of Kathy Roger"
+      - button "Kathy Roger Local Guide · 222 reviews · 1,117 photos":
+        - generic: Kathy Roger
+        - generic: Local Guide · 222 reviews · 1,117 photos
+      - button "Actions for Kathy Roger's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Couldn't wait to try after remodel. Very nice inside . Service was great and attentive . Food was good. I ordered something I dont normally order but want to go back and have Machaca beef . My husband had a burrito and he ate it all. My sister had Asada tacos and also liked hers . They did not have the fried ice cream which was disappointing. We had the cherry dessert was a but hard would not get that again. Overall nice place. Tuesdays and Thursdays they have $9 margaritas. Check first before ordering.
+      - generic: "Food: 4"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Photo 1 on Kathy Roger's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Kathy Roger's review.":
+        - generic: 
+        - generic: Share
+    - generic "jorge mendoza":
+      - button "Photo of jorge mendoza"
+      - button "jorge mendoza 6 reviews · 3 photos":
+        - generic: jorge mendoza
+        - generic: 6 reviews · 3 photos
+      - button "Actions for jorge mendoza's review":
+        - generic: 
+      - img "2 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited 4 months ago
+      - text: Mmm not very happy with the food seems like they're slacking on it. the food isn't how I once had it. They're use to be more sauce ,more flavor and more quantity.
+      - generic: Order type
+      - generic: Take out
+      - generic: Price per person
+      - generic: $30–50
+      - generic: "Food: 2"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 2"
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share jorge mendoza's review.":
+        - generic: 
+        - generic: Share
+    - generic "chelsea Stuckemeyer":
+      - button "Photo of chelsea Stuckemeyer"
+      - button "chelsea Stuckemeyer 4 reviews":
+        - generic: chelsea Stuckemeyer
+        - generic: 4 reviews
+      - button "Actions for chelsea Stuckemeyer's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Daniel gave amazing service tonight. Food was one of the best quality I have seen in years. Margarita was on point!!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share chelsea Stuckemeyer's review.":
+        - generic: 
+        - generic: Share
+    - generic "lauren hope":
+      - button "Photo of lauren hope"
+      - button "lauren hope 7 reviews · 1 photo":
+        - generic: lauren hope
+        - generic: 7 reviews · 1 photo
+      - button "Actions for lauren hope's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Thank you to the new owner and the staff! We had a wonderful time tonight celebrating our wedding! This has been our favorite restaurant for years and are so happy they are open again! We will be back soon! They really out did themselves with making our night special! Thank you again!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Photo 1 on lauren hope's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share lauren hope's review.":
+        - generic: 
+        - generic: Share
+    - generic "Denten Laura":
+      - button "Photo of Denten Laura"
+      - button "Denten Laura 7 reviews":
+        - generic: Denten Laura
+        - generic: 7 reviews
+      - button "Actions for Denten Laura's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Food was terrible. The guacamole was bland and the “fried ice cream’ was a scoop of vanilla with something cirnflajes-like sprinkled over, chocolate syrup drizzled and all in a waffle-type bowl that can be purchased at Jewel, Aldi etc.
+      - generic: "Food: 1"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Denten Laura's review.":
+        - generic: 
+        - generic: Share
+    - generic "Juan Munoz":
+      - button "Photo of Juan Munoz"
+      - button "Juan Munoz 13 reviews":
+        - generic: Juan Munoz
+        - generic: 13 reviews
+      - button "Actions for Juan Munoz's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 4 months ago
+      - text: Decided to try this restaurant after it had been sold to new owners. It's very overpriced , service is not the best and food is bland. Will not be going back.
+      - generic: Price per person
+      - generic: $50–100
+      - generic: "Food: 1"
+      - generic: "Service: 1"
+      - generic: "Atmosphere: 4"
+      - generic: Wait time
+      - generic: No wait
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Juan Munoz's review.":
+        - generic: 
+        - generic: Share
+    - generic "Jorge magana":
+      - button "Photo of Jorge magana"
+      - button "Jorge magana 5 reviews":
+        - generic: Jorge magana
+        - generic: 5 reviews
+      - button "Actions for Jorge magana's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 5 months ago
+    - generic "Destiny Clay":
+      - button "Photo of Destiny Clay"
+      - button "Destiny Clay 1 review":
+        - generic: Destiny Clay
+        - generic: 1 review
+      - button "Actions for Destiny Clay's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 7 months ago
+      - text: food is beyond amazing and came very fast
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Destiny Clay's review.":
+        - generic: 
+        - generic: Share
+    - generic "Luke Skywalker":
+      - button "Photo of Luke Skywalker"
+      - button "Luke Skywalker 2 reviews":
+        - generic: Luke Skywalker
+        - generic: 2 reviews
+      - button "Actions for Luke Skywalker's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 8 months ago
+      - text: Outstanding food & service
+      - generic: Price per person
+      - generic: $30–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Luke Skywalker's review.":
+        - generic: 
+        - generic: Share
+    - generic "Krystle Rederer":
+      - button "Photo of Krystle Rederer"
+      - button "Krystle Rederer 9 reviews":
+        - generic: Krystle Rederer
+        - generic: 9 reviews
+      - button "Actions for Krystle Rederer's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: 11 months ago
+      - text: Love this place. Would go here to drink their sweet green salsa alone! Gets a bit noisy during their busy time. Only complaint I have (BUT THEY ARE CURRENTLY REMODELING SO MAY NOT BE THE CASE ANYMORE!!!) was that it was a bit cramped at the tables during rush times and poor ventillation, so I've been avoiding going since i started getting hot flashes.
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 3"
+      - generic: Noise level
+      - generic: Moderate noise
+      - generic: Group size
+      - generic: Suitable for all group sizes
+      - generic: Wait time
+      - generic: No wait
+      - generic: Recommendation for vegetarians
+      - generic: Not sure
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - generic: Parking
+      - generic: More spaces in the back
+      - generic: Kid-friendliness
+      - generic: Staff is so good w kids and its very colorful paint
+      - generic: Wheelchair accessibility
+      - generic: They have a ramp to get in
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Krystle Rederer's review.":
+        - generic: 
+        - generic: Share
+    - generic "Brenda Elizarraraz":
+      - button "Photo of Brenda Elizarraraz"
+      - button "Brenda Elizarraraz 8 reviews · 2 photos":
+        - generic: Brenda Elizarraraz
+        - generic: 8 reviews · 2 photos
+      - button "Actions for Brenda Elizarraraz's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: This place needs to be closed down. Food is not authentic at all.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Brenda Elizarraraz's review.":
+        - generic: 
+        - generic: Share
+    - generic "Leigh Ann Wendt Potenza":
+      - button "Photo of Leigh Ann Wendt Potenza"
+      - button "Leigh Ann Wendt Potenza Local Guide · 27 reviews · 9 photos":
+        - generic: Leigh Ann Wendt Potenza
+        - generic: Local Guide · 27 reviews · 9 photos
+      - button "Actions for Leigh Ann Wendt Potenza's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Leigh Ann Wendt Potenza's review.":
+        - generic: 
+        - generic: Share
+    - generic "jaime pinto":
+      - button "Photo of jaime pinto"
+      - button "jaime pinto 7 reviews":
+        - generic: jaime pinto
+        - generic: 7 reviews
+      - button "Actions for jaime pinto's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+    - generic "Gia Winkler":
+      - button "Photo of Gia Winkler"
+      - button "Gia Winkler Local Guide · 67 reviews · 103 photos":
+        - generic: Gia Winkler
+        - generic: Local Guide · 67 reviews · 103 photos
+      - button "Actions for Gia Winkler's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Gia Winkler's review.":
+        - generic: 
+        - generic: Share
+    - generic "On-Call Service McNally's Heating & Cooling":
+      - button "Photo of On-Call Service McNally's Heating & Cooling"
+      - button "On-Call Service McNally's Heating & Cooling 9 reviews":
+        - generic: On-Call Service McNally's Heating & Cooling
+        - generic: 9 reviews
+      - button "Actions for On-Call Service McNally's Heating & Cooling's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Best Mexican food around and definitely best salsas!
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share On-Call Service McNally's Heating & Cooling's review.":
+        - generic: 
+        - generic: Share
+    - generic "Marcella Daubs":
+      - button "Photo of Marcella Daubs"
+      - button "Marcella Daubs Local Guide · 25 reviews":
+        - generic: Marcella Daubs
+        - generic: Local Guide · 25 reviews
+      - button "Actions for Marcella Daubs's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Steak Tacos, Chips and Salsa
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Marcella Daubs's review.":
+        - generic: 
+        - generic: Share
+    - generic "Sheila Alder":
+      - button "Photo of Sheila Alder"
+      - button "Sheila Alder Local Guide · 8 reviews · 12 photos":
+        - generic: Sheila Alder
+        - generic: Local Guide · 8 reviews · 12 photos
+      - button "Actions for Sheila Alder's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: This has been our favorite place to go for 15 years! Authentic Mexican food and huge portions, we always have some to take home. Their Margaritas are AMAZING! Highly recommend!
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Fish Tacos, Chiles Rellenos Platillo, Tamales
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Sheila Alder's review.":
+        - generic: 
+        - generic: Share
+    - generic "DON ANDGONE":
+      - button "Photo of DON ANDGONE"
+      - button "DON ANDGONE Local Guide · 207 reviews · 37 photos":
+        - generic: DON ANDGONE
+        - generic: Local Guide · 207 reviews · 37 photos
+      - button "Actions for DON ANDGONE's review":
+        - generic: 
+      - img "3 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: I used to get takeout from this place years ago, and I was in the area and decided to revisit them. I spoke highly of the place and had to apologize for the disappointing service we received. The server was very dry and seemed to not want to be working. He wasn't rude, but he was not very friendly or helpful. We should've never had to ask if we could order something to drink. Once I was able to place a drink order, I was told they were out of the juice they needed to make it. It was the drink special for the weekend, so I'm guessing it did very well. Plus, it saddens me to say that the food was just ok. I really used to like the food I would get from this place. The shrimp fajita were not very flavorful, and neither was the salsa that came with the chips. I asked if they had any other sauces or salsa, and I'm pleased to say that they have a chipotle based sauce that was very delicious and flavorful. All in all, the service was worse than the food, and the meal I received was just ok. Thanks for the memories, El Molino's, but I think I'll just move on. Hopefully, things will get better in the future.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 3"
+      - generic: "Service: 3"
+      - generic: "Atmosphere: 4"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share DON ANDGONE's review.":
+        - generic: 
+        - generic: Share
+    - generic "Sean OBrien":
+      - button "Photo of Sean OBrien"
+      - button "Sean OBrien Local Guide · 189 reviews · 337 photos":
+        - generic: Sean OBrien
+        - generic: Local Guide · 189 reviews · 337 photos
+      - button "Actions for Sean OBrien's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited a year ago
+      - text: Great traditional Mexican food.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Fajitas De Camaron
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Sean OBrien's review.":
+        - generic: 
+        - generic: Share
+    - generic "William Cohn":
+      - button "Photo of William Cohn"
+      - button "William Cohn Local Guide · 165 reviews · 124 photos":
+        - generic: William Cohn
+        - generic: Local Guide · 165 reviews · 124 photos
+      - button "Actions for William Cohn's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited a year ago
+      - text: We returned for dinner and I had the El Molino combo plate, Skirt Stake, Chicken Taco, and Cheese Enchilada. It was tasty and a great portion. We will be back.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Chips and Salsa
+      - generic: Recommendation for vegetarians
+      - generic: Highly recommend
+      - generic: Vegetarian offerings
+      - generic: Vegetarian menu or section
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Photo 1 on William Cohn's review"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share William Cohn's review.":
+        - generic: 
+        - generic: Share
+      - generic: Response from the owner a year ago
+      - generic: We are glad you had a great experience! We look forward to having you dine in with us again.
+    - generic "Lee Orenstein":
+      - button "Photo of Lee Orenstein"
+      - button "Lee Orenstein Local Guide · 159 reviews · 21 photos":
+        - generic: Lee Orenstein
+        - generic: Local Guide · 159 reviews · 21 photos
+      - button "Actions for Lee Orenstein's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Terrific all around!
+      - generic: Order type
+      - generic: Dine in
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Lee Orenstein's review.":
+        - generic: 
+        - generic: Share
+    - generic "Clive Pinto":
+      - button "Photo of Clive Pinto"
+      - button "Clive Pinto 2 reviews":
+        - generic: Clive Pinto
+        - generic: 2 reviews
+      - button "Actions for Clive Pinto's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: "Food: 4"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Clive Pinto's review.":
+        - generic: 
+        - generic: Share
+    - generic "Lynne Gallagher":
+      - button "Photo of Lynne Gallagher"
+      - button "Lynne Gallagher Local Guide · 65 reviews · 4 photos":
+        - generic: Lynne Gallagher
+        - generic: Local Guide · 65 reviews · 4 photos
+      - button "Actions for Lynne Gallagher's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $30–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Lynne Gallagher's review.":
+        - generic: 
+        - generic: Share
+    - generic "Louis A":
+      - button "Photo of Louis A"
+      - button "Louis A Local Guide · 6 reviews · 4 photos":
+        - generic: Louis A
+        - generic: Local Guide · 6 reviews · 4 photos
+      - button "Actions for Louis A's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: "Food: 5"
+      - generic: "Service: 4"
+      - generic: "Atmosphere: 4"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Louis A's review.":
+        - generic: 
+        - generic: Share
+    - generic "Aaron McCracken":
+      - button "Photo of Aaron McCracken"
+      - button "Aaron McCracken Local Guide · 217 reviews":
+        - generic: Aaron McCracken
+        - generic: Local Guide · 217 reviews
+      - button "Actions for Aaron McCracken's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited a year ago
+      - text: Good food and service.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Enchilada
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Aaron McCracken's review.":
+        - generic: 
+        - generic: Share
+    - generic "Dora McCracken":
+      - button "Photo of Dora McCracken"
+      - button "Dora McCracken 2 reviews":
+        - generic: Dora McCracken
+        - generic: 2 reviews
+      - button "Actions for Dora McCracken's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Love the stuff jalapeños.
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $30–50
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - generic: Kid-friendliness
+      - generic: Very nice and friendly.
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Dora McCracken's review.":
+        - generic: 
+        - generic: Share
+    - generic "Mike Davis":
+      - button "Photo of Mike Davis"
+      - button "Mike Davis Local Guide · 17 reviews · 8 photos":
+        - generic: Mike Davis
+        - generic: Local Guide · 17 reviews · 8 photos
+      - button "Actions for Mike Davis's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Mike Davis's review.":
+        - generic: 
+        - generic: Share
+    - generic "john pencak":
+      - button "Photo of john pencak"
+      - button "john pencak Local Guide · 7 reviews · 5 photos":
+        - generic: john pencak
+        - generic: Local Guide · 7 reviews · 5 photos
+      - button "Actions for john pencak's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: "Have been going here since 2005. My favorite Mexican restaurant by far. There green salad with chips. The beans I think are the best. I always order a small play of beans with Chihuahua cheese melt on top for an appetizer. My go to is::::: The #2 combination is the combination. Chicken taco, enchilada, Skirt steak... 👍"
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Chiles Rellenos Platillo, Chips and Salsa, Enchilada, Tortilla Chips
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share john pencak's review.":
+        - generic: 
+        - generic: Share
+    - generic "Lea Delapaz":
+      - button "Photo of Lea Delapaz"
+      - button "Lea Delapaz 1 review · 1 photo":
+        - generic: Lea Delapaz
+        - generic: 1 review · 1 photo
+      - button "Actions for Lea Delapaz's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+    - generic "Stephanie Hanson":
+      - button "Photo of Stephanie Hanson"
+      - button "Stephanie Hanson Local Guide · 22 reviews · 89 photos":
+        - generic: Stephanie Hanson
+        - generic: Local Guide · 22 reviews · 89 photos
+      - button "Actions for Stephanie Hanson's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: Edited a year ago
+      - generic: Order type
+      - generic: Take out
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $20–30
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Stephanie Hanson's review.":
+        - generic: 
+        - generic: Share
+    - generic "Jason Ruggiero":
+      - button "Photo of Jason Ruggiero"
+      - button "Jason Ruggiero Local Guide · 15 reviews · 4 photos":
+        - generic: Jason Ruggiero
+        - generic: Local Guide · 15 reviews · 4 photos
+      - button "Actions for Jason Ruggiero's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Amazing food and fantastic service! I recently dined at El Molino and it was an outstanding experience. My family and I were welcomed when we arrived and seated quickly even though they were very busy. The food was very good. The Chiles Rellenos and the Carne Oaxaquena were incredible. Our server was quick and friendly as well, always checking on us to make sure we had full drinks for us and the kids. If you’re craving authentic Mexican food with great service, you have to check this place out! Highly recommended!
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Chiles Rellenos Platillo, Cheese Quesadilla
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - generic: Parking
+      - generic: Plenty of parking around the entire building.
+      - generic: Kid-friendliness
+      - generic: Kids loved the decor and they loved the quesadillas!
+      - generic: Wheelchair accessibility
+      - generic: Yes, ramp into the restaurant.
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Jason Ruggiero's review.":
+        - generic: 
+        - generic: Share
+    - generic "Witch":
+      - button "Photo of Witch"
+      - button "Witch Local Guide · 160 reviews · 418 photos":
+        - generic: Witch
+        - generic: Local Guide · 160 reviews · 418 photos
+      - button "Actions for Witch's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Excellent food and staff 🤞
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Burritos
+      - generic: Parking space
+      - generic: Plenty of parking
+      - generic: Parking options
+      - generic: Free parking lot
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Witch's review.":
+        - generic: 
+        - generic: Share
+    - generic "Regina Muscat":
+      - button "Photo of Regina Muscat"
+      - button "Regina Muscat 9 reviews":
+        - generic: Regina Muscat
+        - generic: 9 reviews
+      - button "Actions for Regina Muscat's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: This is the first Mexican Restaurant I went to in the early ‘80s. Even with so many competitors popping up , they are still the best around ! Thank you staff and management
+      - generic: Order type
+      - generic: Take out
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $10–20
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - generic: Recommended dishes
+      - generic: Burritos
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Regina Muscat's review.":
+        - generic: 
+        - generic: Share
+    - generic "Dee Dubick":
+      - button "Photo of Dee Dubick"
+      - button "Dee Dubick Local Guide · 10 reviews · 1 photo":
+        - generic: Dee Dubick
+        - generic: Local Guide · 10 reviews · 1 photo
+      - button "Actions for Dee Dubick's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: Price per person
+      - generic: $20–30
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Dee Dubick's review.":
+        - generic: 
+        - generic: Share
+    - generic "Olik Maharg":
+      - button "Photo of Olik Maharg"
+      - button "Olik Maharg Local Guide · 22 reviews · 13 photos":
+        - generic: Olik Maharg
+        - generic: Local Guide · 22 reviews · 13 photos
+      - button "Actions for Olik Maharg's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: El Molino Mexican Restaurant is a charming spot with a relaxed vibe, perfect for enjoying a few drinks and some delicious tacos. The food is consistently good, and the atmosphere makes it an enjoyable place to unwind. The building itself is beautifully decorated, both inside and out, with flowers and other decorative touches that really give the place character. It has a laid-back, inviting feel that makes you want to hang out a little longer. The staff is always friendly and helpful, especially when it comes to choosing from their menu. They offer great suggestions and make sure you're comfortable with your order, which I really appreciate. I usually go when it's not too busy, so I can only speak to the service during those quieter times, but it’s always been quick and attentive. Overall, El Molino is a great spot for a casual meal and drinks, and I find myself going there every now and then when I’m in the mood for good Mexican food in a chilled-out setting.
+      - generic: "Food: 5"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 5"
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Olik Maharg's review.":
+        - generic: 
+        - generic: Share
+      - generic: Response from the owner a year ago
+      - generic: Thank you very much for your kind review! We are glad you have had a positive experience.
+    - generic "Chuck Schulten Jr.":
+      - button "Photo of Chuck Schulten Jr."
+      - button "Chuck Schulten Jr. Local Guide · 5 reviews":
+        - generic: Chuck Schulten Jr.
+        - generic: Local Guide · 5 reviews
+      - button "Actions for Chuck Schulten Jr.'s review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+    - generic "Wanda Zygmuntowicz":
+      - button "Photo of Wanda Zygmuntowicz"
+      - button "Wanda Zygmuntowicz Local Guide · 49 reviews":
+        - generic: Wanda Zygmuntowicz
+        - generic: Local Guide · 49 reviews
+      - button "Actions for Wanda Zygmuntowicz's review":
+        - generic: 
+      - img "4 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: Order type
+      - generic: Dine in
+      - generic: Meal type
+      - generic: Dinner
+      - generic: Price per person
+      - generic: $30–50
+      - generic: "Food: 4"
+      - generic: "Service: 5"
+      - generic: "Atmosphere: 3"
+      - generic: Recommended dishes
+      - generic: Chiles Rellenos Platillo
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Wanda Zygmuntowicz's review.":
+        - generic: 
+        - generic: Share
+    - generic "Eric Grawe":
+      - button "Photo of Eric Grawe"
+      - button "Eric Grawe Local Guide · 89 reviews · 27 photos":
+        - generic: Eric Grawe
+        - generic: Local Guide · 89 reviews · 27 photos
+      - button "Actions for Eric Grawe's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Chicken chimichanga delite is fantastic!!! Will definitely be coming back! Red salsa is hot, beware!
+      - button "See more": More
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Eric Grawe's review.":
+        - generic: 
+        - generic: Share
+    - generic "Sharon Gielow":
+      - button "Photo of Sharon Gielow"
+      - button "Sharon Gielow 6 reviews":
+        - generic: Sharon Gielow
+        - generic: 6 reviews
+      - button "Actions for Sharon Gielow's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - generic: Order type
+      - generic: Dine in…
+      - button "See more": More
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Sharon Gielow's review.":
+        - generic: 
+        - generic: Share
+    - generic "Lily Zepeda":
+      - button "Photo of Lily Zepeda"
+      - button "Lily Zepeda 10 reviews · 3 photos":
+        - generic: Lily Zepeda
+        - generic: 10 reviews · 3 photos
+      - button "Actions for Lily Zepeda's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Love this place. I’ve been coming here for almost the 40 years they’ve been open.
+      - generic: Order type…
+      - button "See more": More
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Lily Zepeda's review.":
+        - generic: 
+        - generic: Share
+    - generic "Vicki Madigan":
+      - button "Photo of Vicki Madigan"
+      - button "Vicki Madigan Local Guide · 46 reviews · 23 photos":
+        - generic: Vicki Madigan
+        - generic: Local Guide · 46 reviews · 23 photos
+      - button "Actions for Vicki Madigan's review":
+        - generic: 
+      - img "5 stars":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: Great food and service. Indoor temperature could have been cooler, less humid.
+      - generic: Order type…
+      - button "See more": More
+      - button "Like":
+        - generic: 
+        - generic: Like
+      - button "Share Vicki Madigan's review.":
+        - generic: 
+        - generic: Share
+    - generic "Juan Perry":
+      - button "Photo of Juan Perry"
+      - button "Juan Perry Local Guide · 29 reviews · 12 photos":
+        - generic: Juan Perry
+        - generic: Local Guide · 29 reviews · 12 photos
+      - button "Actions for Juan Perry's review":
+        - generic: 
+      - img "1 star":
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+        - generic: 
+      - generic: a year ago
+      - text: I wish I had taken a picture of my burrito. It was smaller than my tacos. Not to mention it didn't have anyone in it. It was only meat. I didn't know I needed to add the toppings. The food was not tasty. Long drive for no reason. Not to mention we kept having to repeat everything we wanted. Taco Bell would have been better.
+      - button "See more": More
+      - button "1 like":
+        - generic: 
+        - generic: "1"
+      - button "Share Juan Perry's review.":
+        - generic: 
+        - generic: Share
+  - button "Collapse side panel":
+    - generic: 
+  - button "Google apps":
+  - link "Sign in":
+    - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FEl%2BMolino%2BMexican%2BRestaurant%2F%4042.1480327%2C-88.2581124%2C17z%2Fdata%3D!4m8!3m7!1s0x880f0c1c9218bbb5%3A0xec9c1f2a240817e!8m2!3d42.1480327!4d-88.2581124!9m1!1b1!16s%252Fg%252F1tdjrr2d%3Fved%3D1t%253A314688&service=local&ec=GAZAcQ
+  - contentinfo:
+    - text: Imagery ©2026 , Map data ©2026 Google
+    - button "United States"
+    - button "Terms"
+    - button "Privacy"
+    - button "Send Product Feedback"
+  - button "200 ft": 200 ft
+- generic: The reviews are now sorted from newest to oldest.

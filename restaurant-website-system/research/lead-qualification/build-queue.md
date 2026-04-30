@@ -232,3 +232,13 @@ Recommended handling:
   cocktail lounge without a food program. `velvet-shaker-01` is the best
   current fit; `bramble-01` is the warm alternate but assumes food/kitchen
   structure that must be removed.
+
+## 2026-04-30 addendum - VS House
+
+New user-added bottom-of-pile lead:
+
+- **VS House** - `https://www.vshouse.net/`
+- **Queue placement:** bottom of the build pile, after the currently queued
+  candidates.
+- **Status:** unaudited. Run the standard lead-qualification and template-routing
+  pass before building or pitching.

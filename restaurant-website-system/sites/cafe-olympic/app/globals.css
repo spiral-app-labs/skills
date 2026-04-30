@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.ink');
+  font-family: theme('fontFamily.sans');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: theme('colors.ink');
+}
+
+* { box-sizing: border-box; }
+
+/* Wordmark — Cormorant Garamond, all-caps, no rotation. Cafe-Olympic fork
+   replaces the latte template's italic hand-drawn substitute. */
+.wordmark-script {
+  font-family: theme('fontFamily.display');
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wordmark-script .wordmark-line-2 {
+  display: block;
+}
+
+/* Mandatory reduced-motion guard. Strips animation + transition durations
+   to ~0 on the system flag. Layered with framer-motion's useReducedMotion()
+   in interactive components. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

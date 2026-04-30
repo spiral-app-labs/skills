@@ -1,3 +1,8 @@
+---
+name: agency-website-design
+description: Build and improve restaurant and bar websites with a Next.js, Tailwind, and Framer Motion agency system. Use for restaurant website builds, redesigns, polish passes, animation upgrades, mobile conversion improvements, anonymous Google review proof sections, pitch-ready prospect sites, and QA against restaurant-specific design and revenue-path standards.
+---
+
 # Agency Website Design System — Build Bible
 **Version:** 2.3 | **Scope:** Restaurant & Bar Websites | **Stack:** Next.js 14 + Tailwind v3 + Framer Motion
 **Source of Truth:** Deep analysis of 8 live Framer restaurant templates + exact HTML/CSS extraction
@@ -111,7 +116,9 @@ Follow the rest of this skill document (Sections 1-18). Build page by page per S
 
 Run the full Quality Checklist (Section 18) after the build.
 - Fix every failing check.
-- Do a visual review at 375px (mobile) and 1440px (desktop).
+- **Run the 7 mobile-quality checks (Section 2.7) — non-negotiable.** Verify at 390×844 (iPhone 13). Mobile is where restaurant traffic decides; a "looks fine on desktop" pass is not enough.
+- **Verify the ReviewWall ships per Section 2.8** — verbatim quotes from the audit, no reviewer names, aggregate banner, mobile 1-col / lg 4-col grid.
+- Do a visual review at 390px (mobile) and 1440px (desktop).
 - Test all links, CTAs, and interactive elements.
 - Run `npm run build` — zero errors.
 - Iterate on weak sections (hero impact, menu readability, animation smoothness).
@@ -355,6 +362,54 @@ Dark background opacity layering (Framer pattern):
   </div>
 </div>
 ```
+
+### 2.7 Mobile-quality bar — non-negotiable
+
+Mobile is where the majority of restaurant traffic decides whether to walk in. **A site that "looks fine on desktop" but is mediocre on mobile fails the build.** Verify every fork against this checklist before pitching:
+
+**The 7 mobile-quality checks (every fork must pass):**
+
+1. **First-viewport floor at 390×844 (iPhone 13).** Eyebrow + wordmark + sub + at least one CTA must be reachable without scrolling. The CTA is the conversion path (tap-to-call for diners, reservation widget for upscale, online-order for fast). If it's below the fold on iPhone 13, the hero fails.
+2. **Sticky tap-to-call button on mobile.** Bottom-fixed, thumb-reach zone (bottom-left or bottom-right, never both — that is the AI Concierge's slot). Diner economics demand a single-tap dial path. Hide on `md:` and up.
+3. **Inline HTML menu, never image-only.** A flattened JPG / PDF print menu is an automatic mobile failure (pinch-zoom, no allergen filter, screen-reader-invisible, search-invisible). Build the menu page from `content.menu.categories[].items[]`. Toast Tab / OpenTable order links may be additive but never the only menu surface.
+4. **Wordmark wraps gracefully.** Long restaurant names (3+ words) must reduce h1 size at the `sm:` breakpoint instead of clipping or wrapping awkwardly. Use `clamp(40px, 9vw, 72px)` patterns. Test "The Black Bear Bistro"-class names — they're the failure case.
+5. **Greek-key / divider / decorative elements responsive.** If the hero uses flanking dividers around the wordmark, **stack them above + below on mobile**, not left + right (left+right squeezes them to zero width). Use `flex-col md:flex-row`.
+6. **Floating elements never collide.** If both an AI Concierge launcher AND a sticky tap-to-call button ship, place them on opposite bottom corners and verify they don't overlap any link they cover. Open the dialog and verify the launcher's exit animation does not strand a click target.
+7. **Footer reachable on a single thumb scroll.** LiveOpenStatus pill, hours, tap-to-call phone, address, real social links, walk-in policy. Old sites usually fail steps 5–7 of this list (no socials, no live status, no walk-in policy).
+
+**Verification workflow (before claiming the build is done):**
+- `preview_resize` to 390×844, scroll the entire page, screenshot the hero, the menu (if inline), the review wall, the letter-from-us, and the footer.
+- Tap-test the primary CTA on mobile (use `preview_click` on the tel: link target).
+- Test the AI Concierge open/close + suggested-question flow on mobile.
+- Open the Concierge dialog at 390×844 and verify it doesn't cover both the close button and the input simultaneously.
+
+If any of these fail, **the site is not ready to pitch**, regardless of how good the desktop view looks.
+
+### 2.8 The verbatim-review wall — every fork ships with one
+
+Every restaurant fork must include a dedicated **ReviewWall** section on the home page, mid-funnel (between the menu and the secret-sauce / letter / story block). This is not optional — it is one of the highest-leverage conversion surfaces on the page.
+
+**Hard rules:**
+
+1. **Use the review packet truthfully.** If the packet contains full review quotes, use verbatim quotes only: no paraphrasing, no AI rewriting, no marketing-speak. If the available artifact is a Google-only review packet with aggregate stats, topic chips, and micro-excerpts rather than full quotes, build a Google Review Proof section from those exact micro-excerpts plus clearly labeled review-derived themes. Do not invent full testimonials from summaries.
+2. **No reviewer names.** Privacy default — even though the names are public on Google, surfacing them on the cafe's own site implies endorsement and creates an opt-in question. Show the source platform + recency only (e.g. "Google · this month", "Tripadvisor"). This is the catalog convention. Override only with explicit owner permission AND ideally a written waiver from each named reviewer.
+3. **Aggregate banner above the grid.** Show the headline rating + count from the strongest source ("Google · 4.6★ / 1,169 reviews"). Aggregate is the credibility anchor; individual quotes are the texture.
+4. **Star icons explicit per quote.** Five filled stars per card (or fewer for a 4★ card). Visual rhythm of stars-then-quote-then-source is the pattern.
+5. **Mobile = 1-column, tablet = 2-column, desktop = 4-column** stacked grid. Cards are uniform-height with the quote allowed to stretch — never truncate a verbatim quote with ellipsis.
+6. **Source attribution is small-caps eyebrow at the bottom.** Same typography token as section eyebrows. No avatars, no "verified" badges, no profile links.
+
+**Reference implementation:** `restaurant-website-system/sites/cafe-olympic/components/ReviewWall.tsx` (2026-04-30). Eight verbatim quotes from Google + Tripadvisor, anonymized, ochre quote-mark glyphs, aggregate banner, 4-up at lg.
+
+**Google packet mode:** If the local site folder has `google-review-packet.md`, the homepage must include an anonymized Google proof section even when the packet only provides review themes. Use the packet's rating/count/date/topic chips, quote only recorded micro-excerpts, label cards as Google review themes, and omit all reviewer names. Multi-source quotes are preferred when available; never fabricate Yelp/Tripadvisor/Facebook proof to satisfy that preference.
+
+**Composition note:** the ReviewWall is structurally distinct from the catalog's RatingChip (a hero pill that shows aggregate stars only) and from a "what regulars come back for" LovedGrid (synthesis of dish/hospitality categories, owner-voice paraphrase OK). Ship the trio when the secret-sauce packet supports it: chip in hero, LovedGrid above the menu, ReviewWall below the menu. The chip is the headline; LovedGrid is the editorial summary; ReviewWall is the proof.
+
+**Anti-patterns to refuse:**
+- A single hero testimonial card with one quote — too thin.
+- A carousel that auto-advances — diners don't get to read.
+- "Featured on" press logos in lieu of guest quotes (those belong in the trust strip, not the review wall).
+- Stock-photo headshots next to quotes — never. Real or none.
+- Full-sentence testimonials invented from review themes — never. Use theme cards instead.
 
 ---
 

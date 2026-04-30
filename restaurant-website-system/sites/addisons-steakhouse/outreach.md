@@ -1,39 +1,57 @@
 # Outreach — Addison's Steakhouse
 
-**To:** Jon (and Andrea) Descher
-**From:** Ethan
-**Subject:** Quick Addison's questions before I show you something
+## Send-Ready Email
 
----
+**To:** Jon and Andrea Descher  
+**Subject:** I mocked up a cleaner Addison's site
 
-Hi Jon,
+Hi Jon and Andrea,
 
-I'm Ethan — I run a small agency that rebuilds restaurant websites for the McHenry County area. I've already drafted a redesign of theaddisonssteakhouse.com based on your reviews and the Northwest Herald coverage, and I'd love to show it to you. Before I do, I want to make sure I'm building it on the right facts. A few questions:
+I'm Ethan. I build restaurant websites around McHenry County, and I put together a private Addison's mockup because your current site undersells what guests already seem to love: the from-scratch kitchen, the steak and seafood menu, the regulars-room hospitality, and the call-to-reserve habit.
 
-**The big one first**
+The quick version: I kept phone reservations, but made them tap-to-call everywhere a mobile guest would need them. I also cleaned up the nav, rebuilt the menu into easier categories, added live open status, and brought the guest-review proof onto the homepage instead of sending people back to Google.
 
-1. Where are you currently operating? I saw the Northwest Herald piece on the country club move, and the February settlement that had you vacating. The website still lists 335 Front St — is that where you are now, somewhere new, or in-transition? Everything else I'd build depends on this answer.
+This is not a rebrand. It is Addison's, just presented like the from-scratch steakhouse your reviews already describe.
 
-**Things I'd love to confirm**
+Would you be open to a 12-minute walkthrough this week? I can show the before/after and you can tell me what I got right or wrong.
 
-2. Founding year — I have you as opening in 2017 (per the NW Herald). Correct?
-3. Owner name spelling — Jon Descher, sole owner? Is "Andrea" your co-owner, your bartender, or both?
-4. Chef Mike — full name, and OK to feature him on the site?
-5. The named regulars on the floor (Kelly, Peyton, Spencer, Kirsten, Allison) — OK to name them on the site, or keep the team un-named?
+Best,  
+Ethan
 
-**Photo asks**
+## Short DM / Text
 
-6. A single hero-quality shot of the bone-in ribeye with loaded mashed (your most-named dish in reviews — would carry the homepage).
-7. One warm interior shot at dinner service (so the site prices the room correctly — your reviews say $50–100, the current site reads like $25).
-8. 3 phone snaps of the back sports-bar room (helps me decide whether to feature it as a second room or keep the site steakhouse-only).
-9. A chef portrait of Mike, if he's willing — unlocks a much stronger build.
+Hi Jon, I'm Ethan. I mocked up a cleaner Addison's website that keeps phone reservations but makes them tap-to-call, simplifies the menu/nav, and brings the from-scratch steakhouse story + guest reviews up front. Would you be open to a quick 12-minute walkthrough this week?
 
-**Decisions for the rebuild**
+## Follow-Up 1
 
-10. Reservations — would you want OpenTable, Resy, or Tock embedded on the homepage? (OpenTable is my default recommendation for your demographic.)
-11. The back sports-bar room — feature it, soft-mention it, or hide it on the new site?
-12. Are you open to a one-day pro photo shoot down the line, or should we work with what exists?
+Subject: Addison's before/after
 
-Even half of these answered is plenty to get started. Reply when you have a minute — happy to call instead if easier.
+Hi Jon and Andrea,
 
-— Ethan
+Quick follow-up. The biggest thing I noticed is that the site has the right ingredients, but the first screen does not yet say "from-scratch steakhouse." The mockup fixes that while keeping the parts that already work: your phone reservation flow, real menu, address, hours, and family-owned voice.
+
+Happy to send a screenshot first if that is easier.
+
+## Follow-Up 2
+
+Subject: Should I send the Addison's mockup?
+
+Hi Jon and Andrea,
+
+Last note from me. I built the Addison's mockup around three owner-friendly fixes: make reservations easier on mobile, make the menu faster to browse, and make the from-scratch / cooked-to-order story visible before guests leave for Google.
+
+If it is useful, I can send the before/after screenshots and leave it there.
+
+## First-Call Questions
+
+- Are you currently operating at 335 Front St., or should the mockup reflect a new location?
+- Is 2017 the right founding year to use publicly?
+- Should Chef Michael Borlek be named on the site?
+- Do you want to stay phone-first for reservations, or eventually test OpenTable / Resy / Tock?
+- Can Addison's provide a hero-quality bone-in ribeye shot, warm room photo, and chef/team photo?
+
+## Guardrails
+
+- Do not mention awards or formal press recognition beyond verified local coverage/listings.
+- Do not pitch online booking as already built; pitch it as optional later.
+- Do not use employee names in public copy without owner permission.
