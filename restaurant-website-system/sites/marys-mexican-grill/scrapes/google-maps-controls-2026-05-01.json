@@ -1,0 +1,794 @@
+[
+  {
+    "i": 0,
+    "tag": "DIV",
+    "role": null,
+    "aria": "Google Maps",
+    "text": "   Nearby restaurants  Hotels  Things to do  Bars  Coffee  Takeout  Groceries    Saved  Recents Mary's Mexi",
+    "href": ""
+  },
+  {
+    "i": 1,
+    "tag": "SPAN",
+    "role": null,
+    "aria": " stars",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 2,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 3,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 4,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 5,
+    "tag": "DIV",
+    "role": "application",
+    "aria": "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key.",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 6,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Search",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 7,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Close",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 8,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 9,
+    "tag": "DIV",
+    "role": "region",
+    "aria": "Available search options for this area",
+    "text": " Nearby restaurants  Hotels  Things to do  Bars  Coffee  Takeout  Groceries ",
+    "href": ""
+  },
+  {
+    "i": 10,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Nearby restaurants",
+    "href": ""
+  },
+  {
+    "i": 11,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Hotels",
+    "href": ""
+  },
+  {
+    "i": 12,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Things to do",
+    "href": ""
+  },
+  {
+    "i": 13,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Bars",
+    "href": ""
+  },
+  {
+    "i": 14,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Coffee",
+    "href": ""
+  },
+  {
+    "i": 15,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Takeout",
+    "href": ""
+  },
+  {
+    "i": 16,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Groceries",
+    "href": ""
+  },
+  {
+    "i": 17,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Next page",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 18,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 19,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Menu",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 20,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Saved",
+    "href": ""
+  },
+  {
+    "i": 21,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Recents",
+    "href": ""
+  },
+  {
+    "i": 22,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Mary's Mexican Grill",
+    "href": ""
+  },
+  {
+    "i": 23,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " Get app",
+    "href": ""
+  },
+  {
+    "i": 24,
+    "tag": "DIV",
+    "role": "main",
+    "aria": "Mary's Mexican Grill",
+    "text": " See photos Mary's Mexican Grill 4.8 Mexican restaurant· Overview About  Directions  Save  Nearby  Send to phone ",
+    "href": ""
+  },
+  {
+    "i": 25,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Photo of Mary's Mexican Grill",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 26,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": " See photos",
+    "href": ""
+  },
+  {
+    "i": 27,
+    "tag": "SPAN",
+    "role": "img",
+    "aria": "4.8 stars ",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 28,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Mexican restaurant",
+    "href": ""
+  },
+  {
+    "i": 29,
+    "tag": "SPAN",
+    "role": "img",
+    "aria": "Wheelchair accessible entrance",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 30,
+    "tag": "BUTTON",
+    "role": "tab",
+    "aria": "Overview of Mary's Mexican Grill",
+    "text": "Overview",
+    "href": ""
+  },
+  {
+    "i": 31,
+    "tag": "BUTTON",
+    "role": "tab",
+    "aria": "About Mary's Mexican Grill",
+    "text": "About",
+    "href": ""
+  },
+  {
+    "i": 32,
+    "tag": "DIV",
+    "role": "region",
+    "aria": "Actions for Mary's Mexican Grill",
+    "text": " Directions  Save  Nearby  Send to phone  Share",
+    "href": ""
+  },
+  {
+    "i": 33,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Directions",
+    "text": " Directions",
+    "href": ""
+  },
+  {
+    "i": 34,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Save",
+    "text": " Save",
+    "href": ""
+  },
+  {
+    "i": 35,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Nearby",
+    "text": " Nearby",
+    "href": ""
+  },
+  {
+    "i": 36,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Send to phone",
+    "text": " Send to phone",
+    "href": ""
+  },
+  {
+    "i": 37,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Share",
+    "text": " Share",
+    "href": ""
+  },
+  {
+    "i": 38,
+    "tag": "A",
+    "role": null,
+    "aria": null,
+    "text": " Order online",
+    "href": "https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTFzc2pfOGZ4MRgAOgMI8A0%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=wgP1ac3zDYTsptQPzIjFmQk&ei=wgP1ac3zDYTsptQPzIjFmQk&fo_s=OA,SOE&opi=79508299&ebb=1&cs=0&foub=mcpp"
+  },
+  {
+    "i": 39,
+    "tag": "DIV",
+    "role": "region",
+    "aria": "Information for Mary's Mexican Grill",
+    "text": " 108 Cass St, Woodstock, IL 60098   Open · Closes 9 PM See more hours   marysmexicangrillil.com    (815) 337-230",
+    "href": ""
+  },
+  {
+    "i": 40,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Address: 108 Cass St, Woodstock, IL 60098 ",
+    "text": " 108 Cass St, Woodstock, IL 60098",
+    "href": ""
+  },
+  {
+    "i": 41,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Copy address",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 42,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Open · Closes 9 PM · See more hours",
+    "text": " Open · Closes 9 PM See more hours ",
+    "href": ""
+  },
+  {
+    "i": 43,
+    "tag": "A",
+    "role": null,
+    "aria": "Website: marysmexicangrillil.com ",
+    "text": " marysmexicangrillil.com",
+    "href": "https://www.marysmexicangrillil.com/"
+  },
+  {
+    "i": 44,
+    "tag": "A",
+    "role": null,
+    "aria": "Open website",
+    "text": "",
+    "href": "https://www.marysmexicangrillil.com/"
+  },
+  {
+    "i": 45,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Copy website",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 46,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Phone: (815) 337-2303 ",
+    "text": " (815) 337-2303",
+    "href": ""
+  },
+  {
+    "i": 47,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Copy phone number",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 48,
+    "tag": "A",
+    "role": null,
+    "aria": "Call phone number",
+    "text": "",
+    "href": "tel:+18153372303"
+  },
+  {
+    "i": 49,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Plus code: 8H83+44 Woodstock, Illinois",
+    "text": " 8H83+44 Woodstock, Illinois",
+    "href": ""
+  },
+  {
+    "i": 50,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Copy plus code",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 51,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Learn more about plus codes",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 52,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Suggest an edit",
+    "text": " Suggest an edit",
+    "href": ""
+  },
+  {
+    "i": 53,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Street View",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 54,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Add photos & videos",
+    "text": " Add photos & videos",
+    "href": ""
+  },
+  {
+    "i": 55,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Write a review",
+    "text": " Write a review",
+    "href": ""
+  },
+  {
+    "i": 56,
+    "tag": "A",
+    "role": null,
+    "aria": "About this data",
+    "text": "About this data",
+    "href": "https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=en"
+  },
+  {
+    "i": 57,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Learn more about limited view",
+    "text": "Learn more",
+    "href": ""
+  },
+  {
+    "i": 58,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Sign in",
+    "text": "Sign in",
+    "href": ""
+  },
+  {
+    "i": 59,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 60,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 61,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 62,
+    "tag": "A",
+    "role": "button",
+    "aria": "Google apps",
+    "text": "",
+    "href": "https://www.google.com/intl/en/about/products?tab=lh"
+  },
+  {
+    "i": 63,
+    "tag": "A",
+    "role": null,
+    "aria": "Sign in",
+    "text": "Sign in",
+    "href": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FMary%27s%2BMexican%2BGrill%2F%4042.3153678%2C-88.4472487%2C17z%2Fdata%3D!3m1!4b1!4m6!3m5!1s0x880f69e4ce07c595%3A0x4117f7c3211cb317!8m2!3d42.3153678!4d-88.4472487!16s%252Fg%252F11ssj_8fx1%3Fved%3D1t%253A314688&service=local&ec=GAZAcQ"
+  },
+  {
+    "i": 64,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Close",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 65,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Show Your Location",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 66,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Learn more",
+    "href": ""
+  },
+  {
+    "i": 67,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Zoom in",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 68,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Show slider",
+    "href": ""
+  },
+  {
+    "i": 69,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Hide slider",
+    "href": ""
+  },
+  {
+    "i": 70,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Zoom out",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 71,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Browse Street View images",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 72,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Show imagery",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 73,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Street View",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 74,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Collapse side panel",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 75,
+    "tag": "DIV",
+    "role": "region",
+    "aria": "Explore this area",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 76,
+    "tag": "DIV",
+    "role": null,
+    "aria": "Interactive map",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 77,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Zoom in",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 78,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Zoom out",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 80,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": "Close",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 81,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Transit",
+    "href": ""
+  },
+  {
+    "i": 82,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Traffic",
+    "href": ""
+  },
+  {
+    "i": 83,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Biking",
+    "href": ""
+  },
+  {
+    "i": 84,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Terrain",
+    "href": ""
+  },
+  {
+    "i": 85,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Street View",
+    "href": ""
+  },
+  {
+    "i": 86,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Wildfires",
+    "href": ""
+  },
+  {
+    "i": 87,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Air Quality",
+    "href": ""
+  },
+  {
+    "i": 88,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Travel time",
+    "href": ""
+  },
+  {
+    "i": 89,
+    "tag": "BUTTON",
+    "role": "menuitemcheckbox",
+    "aria": null,
+    "text": "Measure",
+    "href": ""
+  },
+  {
+    "i": 90,
+    "tag": "BUTTON",
+    "role": "radio",
+    "aria": null,
+    "text": "Default",
+    "href": ""
+  },
+  {
+    "i": 91,
+    "tag": "BUTTON",
+    "role": "radio",
+    "aria": null,
+    "text": "Satellite",
+    "href": ""
+  },
+  {
+    "i": 92,
+    "tag": "BUTTON",
+    "role": "checkbox",
+    "aria": null,
+    "text": " Globe view",
+    "href": ""
+  },
+  {
+    "i": 93,
+    "tag": "DIV",
+    "role": "tooltip",
+    "aria": "Zoom out and see the world in 3D",
+    "text": "",
+    "href": ""
+  },
+  {
+    "i": 94,
+    "tag": "BUTTON",
+    "role": "checkbox",
+    "aria": null,
+    "text": " Labels",
+    "href": ""
+  },
+  {
+    "i": 95,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "United States",
+    "href": ""
+  },
+  {
+    "i": 96,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Terms",
+    "href": ""
+  },
+  {
+    "i": 97,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Privacy",
+    "href": ""
+  },
+  {
+    "i": 98,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "Send Product Feedback",
+    "href": ""
+  },
+  {
+    "i": 99,
+    "tag": "BUTTON",
+    "role": null,
+    "aria": null,
+    "text": "200 ft",
+    "href": ""
+  }
+]

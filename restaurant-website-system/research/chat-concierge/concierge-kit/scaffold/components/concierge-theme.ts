@@ -46,6 +46,12 @@ export type ConciergeTheme = {
     itemTitleClasses: string;
     itemPriceClasses: string;
     itemDescClasses: string;
+    /** Wrapper around the dietary/calorie badge row inside MenuCard. */
+    badgeRowClasses: string;
+    /** Individual dietary tag pill (vegan, GF, etc.). */
+    dietaryBadgeClasses: string;
+    /** Subtler chip for calorie / spice level metadata. */
+    metaBadgeClasses: string;
   };
   cta: {
     /** Primary filled button — used for {{reserve}}. */
@@ -110,6 +116,11 @@ export const THEME: ConciergeTheme = {
     itemTitleClasses: 'font-display text-card-title text-text',
     itemPriceClasses: 'font-display text-card-title text-accent',
     itemDescClasses: 'mt-2 text-body-sm text-text-muted',
+    badgeRowClasses: 'mt-3 flex flex-wrap gap-1.5',
+    dietaryBadgeClasses:
+      'inline-flex items-center rounded-pill border border-accent/40 bg-accent/10 px-2 py-0.5 text-[10px] uppercase tracking-[2px] text-accent',
+    metaBadgeClasses:
+      'inline-flex items-center rounded-pill border border-border/60 bg-surface px-2 py-0.5 text-[10px] uppercase tracking-[2px] text-text-muted',
   },
   cta: {
     primaryClasses:

@@ -54,6 +54,18 @@ export const RESERVATION_INTENT_TOOL = {
 
 // ---- Card types -------------------------------------------------------------
 
+export type DietaryTag = 'vegetarian' | 'vegan' | 'gluten-free' | 'dairy-free' | 'pescatarian';
+export type Allergen =
+  | 'gluten'
+  | 'dairy'
+  | 'egg'
+  | 'soy'
+  | 'peanut'
+  | 'tree-nut'
+  | 'shellfish'
+  | 'fish'
+  | 'sesame';
+
 export type MenuItemCard = {
   kind: 'menu';
   slug: string;
@@ -62,6 +74,11 @@ export type MenuItemCard = {
   description: string;
   price: string;
   image: string | null;
+  ingredients: string[];
+  allergens: Allergen[];
+  dietary: DietaryTag[];
+  calories: number | null;
+  spiceLevel: 0 | 1 | 2 | 3 | null;
 };
 
 export type DiningTierCard = {
@@ -106,7 +123,22 @@ function buildMenuIndex(): MenuIndex {
   for (const s of sigItems) sigByName[s.name] = s.image;
 
   for (const [category, section] of Object.entries(sections) as Array<
-    [string, { items: Array<{ name: string; description: string; price: string }> }]
+    [
+      string,
+      {
+        items: Array<{
+          name: string;
+          description: string;
+          price: string;
+          image?: string;
+          ingredients?: string[];
+          allergens?: Allergen[];
+          dietary?: DietaryTag[];
+          calories?: number;
+          spiceLevel?: 0 | 1 | 2 | 3;
+        }>;
+      },
+    ]
   >) {
     for (const item of section.items) {
       const slug = slugify(item.name);
@@ -117,7 +149,12 @@ function buildMenuIndex(): MenuIndex {
         name: item.name,
         description: item.description,
         price: item.price,
-        image: sigByName[item.name] ?? null,
+        image: item.image ?? sigByName[item.name] ?? null,
+        ingredients: item.ingredients ?? [],
+        allergens: item.allergens ?? [],
+        dietary: item.dietary ?? [],
+        calories: item.calories ?? null,
+        spiceLevel: item.spiceLevel ?? null,
       };
     }
   }
@@ -203,14 +240,44 @@ function hoursForPrompt(): string {
 function menuForPrompt(): string {
   const sections = (content as any).menu?.sections;
   if (!sections) return '';
-  const lines: string[] = ['## Menu, valid slugs in brackets; use EXACTLY these in markers'];
+  const lines: string[] = [
+    '## Menu, valid slugs in brackets; use EXACTLY these in markers',
+    '',
+    'When ingredient/allergen/dietary metadata is present on an item below, treat it as authoritative. When a field is absent (e.g., no allergens listed), do NOT assume it is allergen-free, say "let me confirm with the kitchen" and emit {{call}}.',
+    '',
+  ];
   for (const [category, section] of Object.entries(sections) as Array<
-    [string, { intro?: string; items: Array<{ name: string; description: string; price: string }> }]
+    [
+      string,
+      {
+        intro?: string;
+        items: Array<{
+          name: string;
+          description: string;
+          price: string;
+          ingredients?: string[];
+          allergens?: Allergen[];
+          dietary?: DietaryTag[];
+          calories?: number;
+          spiceLevel?: 0 | 1 | 2 | 3;
+        }>;
+      },
+    ]
   >) {
     lines.push(`### ${category}`);
     if (section.intro) lines.push(section.intro);
     for (const item of section.items) {
-      lines.push(`- [${slugify(item.name)}] ${item.name} · ${item.price}, ${item.description}`);
+      const meta: string[] = [];
+      if (item.ingredients?.length) meta.push(`ingredients: ${item.ingredients.join(', ')}`);
+      if (item.allergens?.length) meta.push(`allergens: ${item.allergens.join(', ')}`);
+      if (item.dietary?.length) meta.push(`dietary: ${item.dietary.join(', ')}`);
+      if (typeof item.calories === 'number') meta.push(`${item.calories} cal`);
+      if (typeof item.spiceLevel === 'number' && item.spiceLevel > 0)
+        meta.push(`spice ${item.spiceLevel}/3`);
+      const metaStr = meta.length ? ` — ${meta.join(' · ')}` : '';
+      lines.push(
+        `- [${slugify(item.name)}] ${item.name} · ${item.price}, ${item.description}${metaStr}`,
+      );
     }
     lines.push('');
   }

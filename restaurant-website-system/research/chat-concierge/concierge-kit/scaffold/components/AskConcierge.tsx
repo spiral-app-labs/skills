@@ -78,7 +78,17 @@ function parseResponse(raw: string): Block[] {
 
 // ---- Cards (every className reads from THEME) -------------------------------
 
+const DIETARY_LABELS: Record<string, string> = {
+  vegetarian: 'Veg',
+  vegan: 'Vegan',
+  'gluten-free': 'GF',
+  'dairy-free': 'DF',
+  pescatarian: 'Pesc',
+};
+
 function MenuCard({ item }: { item: MenuItemCard }) {
+  const hasBadges =
+    item.dietary.length > 0 || typeof item.calories === 'number' || (item.spiceLevel ?? 0) > 0;
   return (
     <a href="/menu" className={THEME.cards.mediaCardFrameClasses}>
       {item.image && (
@@ -95,6 +105,23 @@ function MenuCard({ item }: { item: MenuItemCard }) {
           <div className={THEME.cards.itemPriceClasses}>{item.price}</div>
         </div>
         <p className={THEME.cards.itemDescClasses}>{item.description}</p>
+        {hasBadges && (
+          <div className={THEME.cards.badgeRowClasses}>
+            {item.dietary.map((d) => (
+              <span key={d} className={THEME.cards.dietaryBadgeClasses}>
+                {DIETARY_LABELS[d] ?? d}
+              </span>
+            ))}
+            {typeof item.calories === 'number' && (
+              <span className={THEME.cards.metaBadgeClasses}>{item.calories} cal</span>
+            )}
+            {item.spiceLevel !== null && item.spiceLevel > 0 && (
+              <span className={THEME.cards.metaBadgeClasses}>
+                {'•'.repeat(item.spiceLevel)} spice
+              </span>
+            )}
+          </div>
+        )}
       </div>
     </a>
   );

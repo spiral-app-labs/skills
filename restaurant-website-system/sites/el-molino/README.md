@@ -11,7 +11,7 @@ Prototype build for El Molino Mexican Restaurant, based on `audit.md`.
 
 ## Improvement Pass
 
-- Applied the `restaurant-fork-improvement` review-proof pattern: Google reviews now render as a horizontal scroll-snap carousel with auto-advance, manual controls, pause behavior, active-card treatment, and progress dots.
+- Applied the `restaurant-fork-improvement` review-proof pattern: guest reviews now render as a horizontal scroll-snap carousel with auto-advance, manual controls, pause behavior, active-card treatment, and progress dots.
 - Used the restaurant animation pattern library for hero photo parallax, active-card glow, slower reveal timing, and hover lift/zoom on content cards.
 - Tightened the main copy in `content.ts` around new Zepeda-family management, the renovated room, and food/service proof.
 - Added an AI concierge backed by the server-only `/api/concierge` route. Configure it with `ANTHROPIC_API_KEY` in `.env.local`; the key is never exposed to the browser bundle.

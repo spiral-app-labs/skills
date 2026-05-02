@@ -1,6 +1,6 @@
 ---
 name: restaurant-website-audit
-description: Use this skill any time you are about to audit a qualified restaurant lead's existing website before forking a new template from the catalog. Runs the five-block pre-fork audit (verbatim findings → secret sauce → principle violations → why-rebuild → risks). REQUIRES Google reviews packet + visual asset inventory + mobile preview access. Produces five locked outputs the fork consumes directly: a Hero Lock 4-tuple, a Photography Tier verdict, an Owner-Voice phrase bank, External Trust signals, and a Mobile-failure screenshot set. Triggers when the user says any of "audit X's old site", "audit X's current website", "let's audit X", "run a pre-fork audit", or asks you to plan a redesign for a real restaurant lead. Drops output at restaurant-website-system/sites/<slug>/audit.md.
+description: Use this skill any time you are about to audit a qualified restaurant lead's existing website before forking a new template from the catalog. Runs the five-block pre-fork audit (verbatim findings → secret sauce → principle violations → why-rebuild → risks). REQUIRES opening the current website in a browser, scraping it, capturing desktop/mobile screenshots, opening the Google Reviews page in a browser, clicking the Highest filter, collecting 30 written Google reviews, plus visual asset inventory access. Produces five locked outputs the fork consumes directly: a Hero Lock 4-tuple, a Photography Tier verdict, an Owner-Voice phrase bank, External Trust signals, and a Mobile-failure screenshot set. Triggers when the user says any of "audit X's old site", "audit X's current website", "let's audit X", "run a pre-fork audit", or asks you to plan a redesign for a real restaurant lead. Drops output at restaurant-website-system/sites/<slug>/audit.md.
 ---
 
 # Restaurant Website Audit
@@ -22,30 +22,53 @@ The pre-fork strategic audit that converts "their site has problems" into a buil
 
 ## Required inputs (HARD GATE — do not start without these)
 
-1. **The current site URL** — for findings table + platform fingerprint + mobile capture
-2. **A Google reviews packet** — minimum 15–25 recent reviews + owner-reply chain if visible. Powers Block 2 (Secret Sauce + Owner Voice).
+1. **The current site URL opened in a browser** — not just WebFetch/search. You MUST inspect the live page in a browser, scrape the site/DOM, and capture desktop + mobile screenshots before Block 1.
+2. **A Google Reviews page opened in a browser** — you MUST open the restaurant's Google reviews page, click the **Highest** filter, and collect **30 written Google reviews** from that filtered view, plus owner replies if visible. Powers Block 2 (Secret Sauce + Owner Voice).
 3. **Visual asset inventory access** — at minimum the Google Maps photos page; ideally the restaurant's IG handle and FB page. Powers Block 5 photography-tier gate.
-4. **Local mobile preview capability** — `preview_start` + `preview_resize` + `preview_screenshot` available. Powers Block 1 mobile capture.
+4. **Local mobile preview capability** — in-app browser/preview or Playwright mobile viewport. Powers Block 1 mobile capture.
 
-If any of (1)(2)(3) are missing, **stop and get them** before opening Block 1. Item (4) you can skip with explicit flag if running headless.
+If any of (1)(2)(3) are missing, **stop and get them** before opening Block 1. Do not substitute aggregator summaries for the Google Reviews packet unless the user explicitly waives the gate after you explain the missing browser evidence.
+
+### Mandatory browser evidence workflow
+
+Before writing Block 1, create the site folder and collect these files:
+
+1. Open the current website in a browser.
+2. Save a scrape/DOM snapshot of the live site to `restaurant-website-system/sites/<slug>/scrapes/current-site-dom-snapshot.txt` or `current-site.html`.
+3. Capture at least:
+   - `screenshots/current-site-desktop-full.png`
+   - `screenshots/current-site-mobile-full.png`
+   - `screenshots/current-site-mobile-fold.png`
+4. Open the Google Maps listing/reviews page in a browser.
+5. Click the Google reviews sort/filter control and choose **Highest**.
+6. Expand/scroll until you have **30 written reviews** from the Highest-filtered view. Written means there is review prose, not only a star rating.
+7. Capture Google evidence:
+   - `screenshots/google-reviews-highest.png`
+   - `scrapes/google-reviews-highest-30.json`
+   - owner replies in the JSON when visible
+8. Open Google Maps photos in a browser and capture/summarize the photo inventory for Block 5.
+
+The audit's **Inputs Collected** section MUST name these files. If any file cannot be produced, record the exact blocker and stop for user help unless the user waives the gate.
 
 ### How to get reviews + owner replies
 
-Priority order — **try every step**, don't bail at the first 403:
+Priority order — **try every step**, but the browser-opened Google Reviews packet is the required target:
 
-1. **Ask the user to paste them.** Phrasing: *"Before I run the audit, I need (a) 20+ recent Google reviews, (b) the restaurant's IG and FB handles, and (c) the URL of their Google Maps listing. The reviews ideally include any owner replies — those are gold for capturing brand voice."*
-2. **Scrape via WebFetch first.** Try the live site, then aggregator pages: Restaurantji → Wanderboat → res-discover → Wheree → Trip.com → Foursquare → Tripadvisor (auto-redirects). WebFetch's server-side fingerprint clears some bot gates that headless Chromium does not.
-3. **WebSearch for verbatim snippets.** Queries that surface review prose: *`"<name>" "<city>" review "the <signature dish>" OR "the broth"`*, *`"<name>" "<city>" Google review "5 stars" OR "loved" OR "recommend"`*, *`"<name>" "<city>" "we went" OR "had dinner" OR "happy hour"`*. Google's search-result snippets surface 1–4 sentences of review prose verbatim, which is enough to source named-staff and signature-dish quotes when direct scraping is blocked. **Especially valuable** for finding NAMED STAFF (e.g. surfaced "Neilla is exceptional" for V's House) — those names go straight into Block 2 category 2.
-4. **Local-browser scrape via Playwright.** See the technique block below — Playwright + Chromium are already installed at `~/Library/Caches/ms-playwright/` and v1.59 is on PATH (`npx playwright`). Works reliably for the **target restaurant's own site** (live screenshots, mobile-viewport captures, deep-link page pulls). Gets blocked by **Yelp, Google Maps SPA, Google SERP, and Restaurantji** which all run aggressive bot detection (DataDome / reCAPTCHA / consent gates).
-5. **Last resort: proceed with explicit flag** — only if user waives. Audit will be much weaker.
+1. **Use the browser for Google Reviews.** Open the Google Maps listing/reviews page, click **Highest**, expand long reviews when needed, and collect 30 written reviews into `scrapes/google-reviews-highest-30.json`. Include reviewer display name, rating, recency/date, text, owner reply text/date if visible, and any service/dine-in/takeout metadata visible.
+2. **If the browser cannot access Google Reviews, ask the user for help before proceeding.** Phrasing: *"Before I run the audit, I need the Google Reviews panel opened/scraped after selecting Highest, with 30 written reviews and any owner replies. Google is blocking my browser path; can you provide access or paste/export the review packet?"*
+3. **Use WebFetch/WebSearch only as support.** Try aggregator pages: Restaurantji → Wanderboat → res-discover → Wheree → Trip.com → Foursquare → Tripadvisor (auto-redirects). These can supplement Secret Sauce and External Trust, but they do not replace the 30-review Google packet unless the user waives the gate.
+4. **WebSearch for additional verbatim snippets.** Queries that surface review prose: *`"<name>" "<city>" review "the <signature dish>" OR "the broth"`*, *`"<name>" "<city>" Google review "5 stars" OR "loved" OR "recommend"`*, *`"<name>" "<city>" "we went" OR "had dinner" OR "happy hour"`*. Search snippets are supporting evidence only.
+5. **Last resort: proceed with explicit flag** — only if user waives. Audit will be much weaker, and the Inputs Collected section must say the 30 Highest-filtered Google reviews were not captured.
 
 ---
 
 ### Live-browser technique (Playwright) — installed and ready
 
-**Use it for: live-target-site mobile/desktop screenshots, deep-link sub-page pulls, and any non-bot-walled aggregator (Wanderboat, res-menu, etc).**
+**Use it for: live-target-site browser opening, scraping, mobile/desktop screenshots, deep-link sub-page pulls, and any non-bot-walled aggregator (Wanderboat, res-menu, etc).**
 
-**Don't use it for: Yelp, Google Maps direct, Google SERP, or Restaurantji direct** — all four return DataDome / reCAPTCHA / "verifying you are human" gates to headless Chromium even with stealth flags. Fall back to WebSearch snippets + WebFetch on aggregators for those sources.
+**Google Reviews exception:** the audit still requires opening Google Reviews in a browser and trying the **Highest** filter. If headless Playwright is blocked, use the in-app browser/manual browser path or ask the user for the review packet. Do not silently downgrade to snippets.
+
+**Don't rely on headless Playwright for: Yelp, Google SERP, or Restaurantji direct** — these often return DataDome / reCAPTCHA / "verifying you are human" gates. Fall back to WebSearch snippets + WebFetch on aggregators for supporting sources only.
 
 Drop a Node ESM script in `restaurant-website-system/sites/<slug>/scrapes/`. Set `package.json` to `{"type":"module"}`. Reference snippet (live-site capture, iPhone 13 + desktop):
 
@@ -84,12 +107,12 @@ Stable selector contract for live target sites: most restaurant sites are Square
 | res-menu, res-discover, Wheree, Trip.com | ✅ | ✅ | WebFetch |
 | Foursquare | ↪ redirects to login wall | ❌ login wall | Skip — not worth it |
 | Yelp | ❌ 403 | ❌ DataDome CAPTCHA | WebSearch snippets only |
-| Google Maps (direct) | ⚠️ landing-page only | ❌ Maps SPA hides reviews behind a JS-only Reviews tab that headless can't reach | WebSearch snippets only |
+| Google Maps reviews | ⚠️ listing only unless browser session is available | ⚠️ may block headless; try in-app/manual browser | REQUIRED: open in browser, click Highest, collect 30 written reviews; stop/ask if blocked |
 | Google SERP / Knowledge Panel | ⚠️ partial | ❌ reCAPTCHA gate | WebSearch is the right tool |
 | TripAdvisor | ⚠️ wrong-page redirects common | not tested | Verify URL belongs to the right business before trusting output |
 | Fort Worth / Dallas Observer / local press | usually 403 in WebFetch | not tested | WebSearch surfaces the byline + headline; the press feature itself only matters for the External Trust strip — usually you don't need the article body |
 
-Outcome: for review packets, **WebSearch + WebFetch (aggregators) covers Yelp + Google indirectly**. Direct Yelp/Google scraping is not worth the time investment unless the user provides a paid bot-bypass.
+Outcome: for review packets, **Google Reviews in a browser is the required source of record**. WebSearch + WebFetch aggregators can enrich the audit, but they do not satisfy the review gate.
 
 ---
 
@@ -101,9 +124,11 @@ Drop the artifact at `restaurant-website-system/sites/<restaurant-slug>/audit.md
 
 A table of what the site actually does, quoted, with no interpretation yet. Capture the standard fields (platform, hero, CTAs, address, phone, reservation flow, menu format, hours, photography count, owner/chef story, heritage signal, reviews displayed, aliveness elements, social, copyright string).
 
+Start from browser evidence: the current website must have been opened in a browser, scraped, and screenshot before this block is written. Cite the scrape and screenshot filenames in the audit.
+
 **NEW subsection: Mobile state** — required, not optional.
 
-Run `preview_start` against the live site, then `preview_resize` to 390×844 (iPhone 13). Capture 3–5 screenshots of specific failure surfaces:
+Run the browser/preview against the live site, then resize to 390×844 (iPhone 13). Capture 3–5 screenshots of specific failure surfaces:
 
 - Hero at first paint (CTA visible? phone tap-target size?)
 - Reservation flow — count taps from landing to a bookable surface
@@ -261,7 +286,7 @@ End with a one-line **status footer**: qualified pre-fork status + recommended t
 
 ## Hard gates
 
-**Gate 1 — Input gate.** Don't start blocks 1–5 without URL + reviews packet + visual inventory access. Mobile preview optional but recommended.
+**Gate 1 — Browser evidence gate.** Don't start blocks 1-5 without: current website opened in a browser, current website scrape/DOM snapshot, desktop screenshot, mobile full/fold screenshots, Google Reviews opened in a browser, **Highest** filter selected, 30 written Google reviews saved, and visual inventory access. If Google blocks the browser path, stop and ask for user help or an explicit waiver before proceeding.
 
 **Gate 2 — Hero lock gate.** Block 4 must end with the Hero Lock 4-tuple drawn from real Secret Sauce data + owner voice + verified photo inventory. If `h1` could appear on any restaurant site, rewrite. If `hero_photo_subject` doesn't exist in the inventory, propose a shoot in Block 5 and reroute the template hypothesis down a tier.
 

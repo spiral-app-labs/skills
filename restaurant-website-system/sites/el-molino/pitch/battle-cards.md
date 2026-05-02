@@ -119,15 +119,15 @@ Use these as quick responses during the pitch. Keep the tone calm and practical.
 
 ## Card 8: "Why Not Just Use Social Media?"
 
-**Likely concern:** Facebook/Instagram/Maps already provide updates.
+**Likely concern:** Social channels and listing profiles already provide updates.
 
 **Response:**  
-"Social is where people discover you. The website is where they decide. It needs to answer menu, hours, story, directions, phone, and confidence questions without sending people bouncing across platforms."
+"Social is where people discover you. The website is where they decide. It needs to answer menu, hours, story, directions, phone, and confidence questions without sending people bouncing across outside profiles."
 
 **Proof points:**
 
 - Owned site controls the story.
-- Site can be linked from Maps, social, QR codes, and ads.
+- Site can be linked from listings, social profiles, QR codes, and ads.
 - Guests can still use social; the website becomes the canonical home.
 
 **Close:**  
@@ -168,7 +168,7 @@ Use these as quick responses during the pitch. Keep the tone calm and practical.
 
 ## Card 11: "What About The Old Domain?"
 
-**Likely concern:** Existing customer links and Maps references.
+**Likely concern:** Existing customer links and listing references.
 
 **Response:**  
 "Part of the launch checklist is choosing the canonical domain and redirecting or updating old paths. The goal is one trusted destination."
@@ -177,7 +177,7 @@ Use these as quick responses during the pitch. Keep the tone calm and practical.
 
 - Audit found current site on `thenewmolino.com`.
 - Legacy indexed domain had DNS issues during the audit.
-- Google/Maps/menu paths should be cleaned up before launch.
+- Listing profiles, menu links, and social paths should be cleaned up before launch.
 
 **Close:**  
 "The site should not make guests guess which El Molino link is real."
