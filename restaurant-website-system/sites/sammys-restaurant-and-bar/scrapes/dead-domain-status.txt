@@ -1,0 +1,6 @@
+{
+  "url": "http://www.sammysbarandgrill.com/",
+  "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at http://www.sammysbarandgrill.com/\nCall log:\n  - navigating to \"http://www.sammysbarandgrill.com/\", waiting until \"load\"\n",
+  "status": null,
+  "finalUrl": "chrome-error://chromewebdata/"
+}

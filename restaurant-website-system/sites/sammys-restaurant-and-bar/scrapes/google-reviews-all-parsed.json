@@ -1,0 +1,4562 @@
+[
+  {
+    "name": "Foursquare\nGoogle\nFacebook\nDoug Frank",
+    "date": "4 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$50–100",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "M Tr",
+    "date": "4 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Think you have to go in to order, i called three time with no answer.",
+    "ratings": {
+      "food": 1,
+      "service": 1,
+      "atmosphere": 1
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 1
+  },
+  {
+    "name": "Wendy Murphey",
+    "date": "4 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Loved the Cristmas spirit displayed by the bartender - food was excellent and service was fast & friendly.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Robert Jenson",
+    "date": "4 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "JJ O",
+    "date": "4 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Delicious bacon burger and fresh brewed ice tea. Attentive server.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Susan Finegan",
+    "date": "4 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Allen Partin",
+    "date": "5 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great place. Good prices and food.",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Rodney Poore",
+    "date": "5 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Best Breakfast in town.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Michael Crisman",
+    "date": "5 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Good service & food.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Eric Larsen",
+    "date": "5 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great lunch spot! Service is always good.",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Kristin Lange",
+    "date": "5 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great food!",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 3
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Jas F",
+    "date": "5 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Super place for great food and excellent service. Not fancy but a wonderful spot to chat with neighbors and friends!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Lee Arroyo",
+    "date": "6 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great breakfast, great food, service is fantastic and people are lovely.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Jeffrey Flowers",
+    "date": "6 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Colette Riley",
+    "date": "6 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 3,
+      "service": 4,
+      "atmosphere": 3
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 3
+  },
+  {
+    "name": "Rocco Filippi",
+    "date": "6 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "So we take a motorcycle ride up to More Brewing in Huntley and run into this very nice barkeep. We told her where we were going to eat while in town. She suggested Sammy's. So we gave them a try.\nWhat a delightful surprise. All 4 of us were happy with the quick service and the waitress was on it when we made changes to our order from what was on the menu. \"No problem!\" she told us every time we added or deleted something that came in our choices. Drinks were delivered asap. And when the food arrived I was thinking how I was going to try and eat all of it there was so much.\nThe whole time we were there she came over and asked us if we needed anything. My cup of coffee never got empty. And her personality was right up there with the old \"down home small town\" theme. We had a wonderful conversation with her. She introduced us to not only the other waitress as we went along but with all the talk of how we really enjoyed the food and service she had the owner/cook come out and we forwarded our opinion to him and expressed how we felt. I then told them that I HAD to leave a review with context to the entire experience.\nI would have to say as many greasy spoons as I have been to this one is at the top of my list. And the people with me would agree to that I am sure. If your in the mood for some great breakfast with good people and are really hungry this is the place for you. Oh, and did I say the prices were actually lower for once than what we received in return?!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Nichole Claude",
+    "date": "6 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Been here a few times, everything I have had so far was delicious. Employees are also friendly and inviting.\ndan krause 6 months ago on Google\nWe stopped in for dinner and a drink. I had what turned out to be the best hamburger I have had in months. Obviously made fresh, it came with fries that were almost as good. My wife had a gyro sandwich that was, according to her, as good as my burger. My drink wasl larger than I expected, but proved to be as good as the burger. The bar tended to be a little noisy at times, but what the hell, this is a bar. I also had to give five stars for the great service from the lady who also had to tend bar. The place is obviously worth coming back to, and we definitely will!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Debbie Malley",
+    "date": "7 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "GREAT food...EXCELLENT service...THANKS jessica!!!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Antwaun Howard",
+    "date": "8 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "The owner, staff, patrons are all awesome. My favorite bar in Huntley.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Allen Halterman",
+    "date": "8 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "It might not look like much from the outside, but this is a place not to miss! The staff is incredibly attentive and is able to offer solid recommendations for both food and drink. We don't live in the area, but we will come back every time we're visiting!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Suzanne Baker",
+    "date": "9 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Steve Bennett",
+    "date": "9 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Jeremiah Tremble",
+    "date": "10 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Donna Markowitz",
+    "date": "11 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Ethan Brooks",
+    "date": "11 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Katie Smith",
+    "date": "11 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Hidden gem. You wouldn't think it driving up but this place is literally AMAZING. Parking behind building provides plenty of spots and can enter through back door.\nVery very very friendly staff.\nVery delicious food.\nAmazing selection of food.\nCoffee is delicious\nLove love love love this place. New favorite spot!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "James Dunavan",
+    "date": "11 months ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "The staff were friendly and got our order quickly. The food was great. I will definitely be coming here to eat more often.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Susan Castle",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great food, fun atmosphere!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Elizabeth Wesemann",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Chris Leuck",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Amanda/Vince",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Best breakfast in town! Very reasonable prices.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "David Sytsma-Ramos",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Donna Addleman",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Food was delicious!! Well worth the trip. Sports bar atmosphere. A little noisy for conversation but doable.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Hickory Burger",
+    "overallRating": 5
+  },
+  {
+    "name": "Mary Ann Pergler",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Marlene Ruckoldt",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Brad Gillespie",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 2
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Buffy Yatos",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Best breakfast in town!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Italian Omelette, Biscuits and Gravy, 2 Eggs, 4 Pieces French Toast, Ribeye Steak N' Eggs, Eggs Benedict, Corned Beef Hash Omelet, Side of Hash Browns, Breakfast Burrito",
+    "overallRating": 5
+  },
+  {
+    "name": "Aelred Gamboa",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Megan Van",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Drinks were wonderful, food was even better. The portion sizes are huge. Staff was attentive and very friendly. 10/10 would be an understatement!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "David Ziebell",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "A H",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Julie Garland",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Thomas Pearson",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Best breakfast in Huntley...",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Biscuits and Gravy, 2 Eggs, Side of Hash Browns, Stuffed French Toast",
+    "overallRating": 5
+  },
+  {
+    "name": "Megan Tinsley",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "We stopped in late after a long day, drawn by the good reviews, and we were not disappointed! The curly fries were perfectly cooked, and my husband's tater tots were excellent. The vegetable soup was wonderful, and the pulled pork sandwich was tasty. It's a great local spot with delicious food. I would definitely stop in again. Thanks!\nService: Dine in\nMeal type: Dinner",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Jessica",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Brunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Paul Mason",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$50–100",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Stephanie Hancock",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "A hidden little gem. Food is good quality and cooked with care. Good menu. Good service. Love bringing guests here.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Jay Boss",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Nice lil spot for bite to eat portions and food was good service and atmosphere was wonderful as well.",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Thomas Scanlon",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Food good.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 2
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "WJ",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Rick McColeman",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Luis Sanchez",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Sue Sabo",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": "$50–100",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Elayna Garcia",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Love the atmosphere here! Really gives you the small town bar with many welcoming faces as soon as you step foot into the establishment. And it’s always better when I see Lola on the clock:).",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Sherri Mears",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "JUDE JEKWU MADUEME",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "John Adamowski",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great breakfast all day.",
+    "ratings": {
+      "food": 5,
+      "service": 3,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Catherine Daker",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Cheese Curds",
+    "overallRating": 5
+  },
+  {
+    "name": "Ed Wellhausen",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "It's a great low end bar.",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 3
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Jeff S",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Brunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Alan Frediani",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": "Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Kelsey Waughon",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Love going to Sammy's on Tuesdays for karaoke night. The food and the service are great!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Cheese Curds",
+    "overallRating": 5
+  },
+  {
+    "name": "DOREEN MCINTIRE",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": "Fried Shrimp with Curly Fries, Wings, Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Dennis Smart",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Friendly staff.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "April Lee",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Michael Barreto",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great food. Great service. Atmosphere is just a small bar type diner but it’s cozy old Huntley as it gets.\nService: Dine in\nMeal type: Breakfast\nPrice per person: $10–20",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 3
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Biscuits and Gravy",
+    "overallRating": 5
+  },
+  {
+    "name": "Juan Arreola",
+    "date": "a year ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Food was OK, I would say slightly overcooked. We came in for breakfast but don't think we would be back for breakfast.",
+    "ratings": {
+      "food": 3,
+      "service": 5,
+      "atmosphere": 3
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 3
+  },
+  {
+    "name": "Peter Nardella",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Local neighborhood bar, I thought, but then I ate also. Great food and a step above bar food. LARGE portions with great flavors. All Orchestrated by Micky, our bartender, who kept everyone's drink full and put smiles on everyone's face.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Terry McKinch",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Typical bar food, nothing special.",
+    "ratings": {
+      "food": 3,
+      "service": 4,
+      "atmosphere": 3
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 3
+  },
+  {
+    "name": "Denise Andren",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "OMG the pretzel appetizer is HUGE!! It is very good. Went for the fish fry and was not disappointed. You get a lot of food for a very reasonable price. I really like Sammy's.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "White Fish Fry with Tater Tots, Pretzel, Biscuits and Gravy",
+    "overallRating": 5
+  },
+  {
+    "name": "Matt Kovar",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": 5,
+      "atmosphere": 3
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Adam Godwin",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Absolutely love Sammys; they’re the best. Food is amazing and well-priced. Staff is very friendly and gives great service. The atmosphere is awesome. They will have live bands which are always entertaining, and dart nights which are fun. 10/10 recommend.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Mystic Moose",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Our first time here, said best breakfast in town, I believe it.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Peter Vlaming",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Botanicstone 62",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Brunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "4 Pieces French Toast, Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Dan Alsteen",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Rick Ciesla",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Finally made it out here. Fish fry was great, service very good. Place had a really friendly atmosphere, almost small town feel. I will be back to try the breakfast soon. Recommended.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Derek Petrucci Jr",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great family place , good is fantastic. Sammy is one of the best guys around hands down Sammy’s is home . Whether you just hang out have a drink or pull up with your girl listen to the bands . Hang out with your family or friends. Great casual place with a great atmosphere.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "White Fish Fry with Tater Tots, Fried Shrimp with Curly Fries, Italian Omelette, Cheese Curds, Pretzel, Wings, Biscuits and Gravy, 2 Eggs, Soft Shell Tacos, Mozzarella Sticks, 4 Pieces French Toast, Ribeye Steak N' Eggs, Eggs Benedict, Corned Beef Hash Omelet, Side of Hash Browns, Hickory Burger, Breakfast Burrito, Pizza Omelette",
+    "overallRating": 5
+  },
+  {
+    "name": "Keith Rodgers",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great place to unwind. The staff and owners are very friendly. Tell Mickey and Kate said hi!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Dan Quinlivan",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Adam Stroh",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$50–100",
+    "recommendedDishes": "Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Dan zukowski",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Usually no wait on a table the food is good the bar can get loud but again it's a bar the wait staff is friendly the food comes out quickly!! Top notch burgers too!!",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "White Fish Fry with Tater Tots, Fried Shrimp with Curly Fries, Cheese Curds, Mozzarella Sticks, Corned Beef Hash Omelet, Side of Hash Browns, Pizza Omelette",
+    "overallRating": 4
+  },
+  {
+    "name": "Paul Forslund",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great little hole in the wall locally.",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 3
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Murugs Lingaswamy",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "People are very friendly. Very relaxed environment(more retired people too) with music, food and drinks with decent service,.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Sandy Frericks",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Susan Lee",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Prices are reasonable and they give generous portions of good food. Nice menu.",
+    "ratings": {
+      "food": 5,
+      "service": 3,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Karen Grabowski",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Eric",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Robert Nincic",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 4,
+      "service": 1,
+      "atmosphere": 3
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Bee O'Brien",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "They advertise as \"Best breakfast in Huntley\", and it lives up to the claim. Good food and the servers are friendly and efficient. And I can't get over the fresh fruit with breakfast.... Yum. (not the usual dry melons).",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Nana G03",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Randy Erwin",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Randall Robinson",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Katryn Lotto",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "This is a hidden gem. Service was fantastic, the ingredients were very fresh throughout and we both enjoyed the breakfasts we had. Prices are also reasonable. We will definitely be going back. We want to try lunch next!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Carolyn Beranek",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "The Fish Fry was very delicious.\nHad the tater tots with clam chowder soup, which was the best we have ever had.\nThe only fault I had was the fish fell away from the breading. But that was a small con compared to the taste, and the service was excellent.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "White Fish Fry with Tater Tots",
+    "overallRating": 5
+  },
+  {
+    "name": "Cheri Moehling",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great gathering place for family and friends.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Chef Consultant",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great little bar. Friendly staff & good quick bar food. Outdoor seating is available.\nService: Dine in\nMeal type: Other\nPrice per person: $10–20",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Cheese Curds",
+    "overallRating": 5
+  },
+  {
+    "name": "Derek Knight",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Really nice friendly family restaurant and bar. Great place for breakfast, and Friday fish fry’s.",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Dan Lockwitz",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Mike and Diane have a great place in Huntley! Enjoyed the food, friendly service and listening to the music of the New Odyssey Guy.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Melissa Sanchez-Fischer",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "The Mickey Mouse pancakes and attention to kids was great. There were no groans as we entered which was a change. Biscuits and gravy were average. Ham egg omelette - surprisingly delicious !",
+    "ratings": {
+      "food": 3,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 3
+  },
+  {
+    "name": "Matthew Steichmann",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Nice place. Comfortable, family atmosphere, good food and decent prices. Like a good diner, only bigger.",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 3
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": "Hickory Burger",
+    "overallRating": 4
+  },
+  {
+    "name": "John Dwyer",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Cary Hernandez",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Andrew Szekely",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Everything you'd want in a hometown bar and restaurant!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Bob Eccker",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "I love this place! Great breakfast at fair price.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Dennis Becofske",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Bill Jutz",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Linda Ross",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Scott Petrocelli",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Dan Dickson",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Robert Galli",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 3
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Maria Lourdes H.",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Love the Fish Fry all you can eat...atmosphere is awesome.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$50–100",
+    "recommendedDishes": "White Fish Fry with Tater Tots",
+    "overallRating": 5
+  },
+  {
+    "name": "Rich Mueller",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Pat Lawlor",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "My veggie omelet was yummy with generous refills of drinks.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Victor Zambetti",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great place to eat.\nMeal type: Breakfast\nkyle bennett 2 years ago on Google",
+    "ratings": {
+      "food": 5,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Theresa Rode",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great place for breakfast. Awesome food!!! Nice big portions, plus great prices. I need to try it for dinner. I almost forgot to mention, toast... like bakery bread. Must try the marble rye.",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Tom Hess",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Was rushed by waiter. And when I said we're you in a hurry he told me the kitchen was slow and needed something to do.",
+    "ratings": {
+      "food": 3,
+      "service": 2,
+      "atmosphere": 3
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": "White Fish Fry with Tater Tots",
+    "overallRating": 3
+  },
+  {
+    "name": "Brittney",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Joel Forpanek",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 3,
+      "service": 4,
+      "atmosphere": 3
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 3
+  },
+  {
+    "name": "Marie Frediani",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 3
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Gayle Nowakowski",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "I had perfectly poached eggs! So many restaurants cannot seem to poach eggs properly. Hash brown nice and crispy. Excellent service.",
+    "ratings": {
+      "food": 4,
+      "service": 5,
+      "atmosphere": 4
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "LUIS NARANJO",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Good food.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Len Hansen",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Super friendly staff, great soup and sandwiches!",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Joni Marlowe",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Geneva G",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Jon Brudzinski",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great place to visit.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Ted Miller",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "David Vincent",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Sammy's is a great place where you will not leave hungry. There are very typical selections of bar food here and a pile of it all appears to be made in house, it's really tasty. The service is great, to the point where the waitress recognized my friends, who are regulars, and knew what their orders would be. She recognized that I was not a regular and spent extra time ensuring she would get my order correct. Always looking forward to my next visit.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Julie Duvall",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great Breakfast.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Dr Don Stien",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Food was good, service was VERY slow. Had to keep asking to refill my coffee because the food took forever to come to the table and there were hardly any customers in the place. It was like all the workers were still asleep and working in slow motion. Don't think I will be back anytime soon if at all. BRUNCH CAFE beats the living daylights out of this place. BRUNCH CAFE Is a few dollars more BUT WELL WORTH IT!!!",
+    "ratings": {
+      "food": 3,
+      "service": 1,
+      "atmosphere": 1
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 3
+  },
+  {
+    "name": "Steven Always Trying New Things",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Food is always good.\nLike that they serve breakfast all day and night.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Wes Motley",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Great food and very friendly atmosphere.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Alex Macaluso",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Brunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "T Hamilton",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Roy Daniels",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Linda Forester",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Amaris Almodovar",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jessika Florek",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jeffrey Geist",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Paul Carroll",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Diane Karalus",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Mark",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$50–100",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Sherry Spranger",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Wayne Willis",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Herdt Lourdes",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Other",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Nick Helmersen",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Raph Kamner",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Louis Nelson",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$30–50",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Amanda Griffin",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Good food srevice\nChester Lozowski",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Thomas Black",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Nick",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ernesto Gargano",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jeffrey Pfundstein",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kati Krajewski",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Other",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Steve Iniguez",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jim Kucera",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Howard Sharp",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Cindy Young",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "William Lasko",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "James",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kyle Peters",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Scott McKay",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jennifer Farrar",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kirk P",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jacqui Doucet",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Brunch",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Perky",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "June Jones",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Karaoke night was fun! Good down home food, great laid back atmosphere. Geared for the older crowd, so nice to have a comfy place to go!",
+    "ratings": {
+      "food": 4,
+      "service": 4,
+      "atmosphere": 4
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 4
+  },
+  {
+    "name": "Joe Bosnick",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Lunch",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Greg Longfield",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Mike Cook",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Sue Sobe",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Brenda Lawson",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jane Perkins",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Dorie Rasmusen",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Stephanie J. Erdmann",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Nick Andreas",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "K1RkS",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Marty haugland",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Pizza omelet bursting with fresh ingredients.\nJen quick with coffee refills. Very generous portions, reasonable prices.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Kathy Roger",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Alan Scott",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Michael Nicholson",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "John Toth",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Hannah Graham",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Brunch",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Javier Castillo",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Renee Kraeplin",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "MiXd DiPz",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$1–10",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Brian Kelly",
+    "date": "4 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Joan Burden",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Joe Kettner",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Lee Totman",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Marcia Hutchison",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Blake Arseneaux",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "A Google User",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Dennis Stensland",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "A Google User",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "A Google User",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Debbie Servantes",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Tony Shook",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Cindy Stegall",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Tony Ramirez",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Larry Stegall",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Johnny Zee",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kingsley Randall",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Terry Messer",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ben Lynch",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Robert Forbes",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Richter Awning",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Always a fun time !",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Shi Barclay",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ike Turner",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Bill Connelly",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Mohamed Braun",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Alan Scott",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Mike Ash",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Chris Mohica",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Keith Boyd",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "C. Feliciano",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Inia Rodriguez",
+    "date": "6 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Sara Bailey",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Mark",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Deborah Baumgarten",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Donald Strauss",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Chris Wojdelko",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Brenda Fahey",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Renee Swanson",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "R\nRebecca Suarez",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "M\nMickey King",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "S\nSi Villarreal",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "D\nDavid Vega",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "H\nHayden Creasy",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "R\nRobert Kosin",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jeff Sharin",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jeffrey Bacon",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Matt Ostrem",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kristina Roper",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Louis Mazzanti",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Cracky J. Squirrel",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Geneva Beers",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jason Schiller",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ed Harrison",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Riley Balduf",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Enjoyed the fish fry\nTammy Spantiko",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Bob Reed",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Good times...great food specials and good bands play on the weekends.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": "Breakfast",
+    "pricePerPerson": "$20–30",
+    "recommendedDishes": "Eggs Benedict",
+    "overallRating": 5
+  },
+  {
+    "name": "Jarvis Jordan",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kevin Ilkow",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Adrianne Kaplan",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Doug Clavey",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Judi Burns",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "KIM NYGAARD",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "SM Brown",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Paul Stephens",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ray Garza",
+    "date": "7 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ruby Neusihin",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "John Fink",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Jennifer Adamski",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "James Foster",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Tom Snodden",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Michael Bennett",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Connie Crommett",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Linda Elliott",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "P.P.P. Matthews",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Joseph Leone",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Patricia Burgard",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Dennis Wisek",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Larry Newman",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Amie Bresette",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Dan Baxley",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "C Boland",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Will Seib",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Erika Kwasny",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ethan Williams",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Rick Williams",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Andy B",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Lori Childress",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "George Koch",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Zena Salgado",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ryan French",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Brent Leese",
+    "date": "8 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Michelle Davis",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Nicole Joy",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Friendly\nDan Duncan",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kenny Engels",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kelly Knigge",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Pensational Art",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Dean M",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Donna Christian",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Kelvin Morgan",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Nick Sanchez",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "Go hawks!!!! Always a good time nice big home town bar, great price, best happy hour.",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Barry McCockinner",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Ian Moone",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Wayne Petty",
+    "date": "9 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Heather Rinker",
+    "date": "10 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Carole Bailey",
+    "date": "10 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Elizabeth Pourchot",
+    "date": "11 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Lisa Spurling",
+    "date": "11 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "L. Curtis Muldrew",
+    "date": "12 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Steven Perreault",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Scott Murray",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": 5,
+      "service": 5,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": 5
+  },
+  {
+    "name": "Pamela Long",
+    "date": "2 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Craig James",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": 5,
+      "atmosphere": 5
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Sahiba Kaur",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Joe Garapolo",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Susan Duda",
+    "date": "3 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": "Dinner",
+    "pricePerPerson": "$10–20",
+    "recommendedDishes": null,
+    "overallRating": null
+  },
+  {
+    "name": "Phat Boii",
+    "date": "5 years ago",
+    "source": "Google (via RestaurantGuru aggregation)",
+    "text": "",
+    "ratings": {
+      "food": null,
+      "service": null,
+      "atmosphere": null
+    },
+    "mealType": null,
+    "pricePerPerson": null,
+    "recommendedDishes": null,
+    "overallRating": null
+  }
+]

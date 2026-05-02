@@ -78,6 +78,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/sites/vs-house", "run", "dev", "--", "--port", "3127"],
       "port": 3127
+    },
+    {
+      "name": "sammys",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/sammys-restaurant-and-bar", "run", "dev", "--", "--port", "3128"],
+      "port": 3128
     }
   ]
 }

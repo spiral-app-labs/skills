@@ -1,0 +1,482 @@
+[
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Search",
+    "role": "",
+    "ja": "omnibox.search; mouseover:omnibox.showTooltip; mouseout:omnibox.hideTooltip; foc"
+  },
+  {
+    "t": "",
+    "al": "Close",
+    "role": "",
+    "ja": "omnibox.clear; mouseover:omnibox.showTooltip; mouseout:omnibox.hideTooltip; focu"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "Nearby restaurants",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle58; keydown:pane.wfvdle58; mouseover:pane.wfvdle58; mouseout:pane.wfv"
+  },
+  {
+    "t": "Hotels",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle59; keydown:pane.wfvdle59; mouseover:pane.wfvdle59; mouseout:pane.wfv"
+  },
+  {
+    "t": "Things to do",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle60; keydown:pane.wfvdle60; mouseover:pane.wfvdle60; mouseout:pane.wfv"
+  },
+  {
+    "t": "Bars",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle61; keydown:pane.wfvdle61; mouseover:pane.wfvdle61; mouseout:pane.wfv"
+  },
+  {
+    "t": "Coffee",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle62; keydown:pane.wfvdle62; mouseover:pane.wfvdle62; mouseout:pane.wfv"
+  },
+  {
+    "t": "Takeout",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle63; keydown:pane.wfvdle63; mouseover:pane.wfvdle63; mouseout:pane.wfv"
+  },
+  {
+    "t": "Groceries",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle64; keydown:pane.wfvdle64; mouseover:pane.wfvdle64; mouseout:pane.wfv"
+  },
+  {
+    "t": "",
+    "al": "Next page",
+    "role": "",
+    "ja": "pane.wfvdle57.next; mouseover:pane.wfvdle57.next; mouseout:pane.wfvdle57.next"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Menu",
+    "role": "",
+    "ja": "navigationrail.more"
+  },
+  {
+    "t": "Saved",
+    "al": "",
+    "role": "",
+    "ja": "navigationrail.saved"
+  },
+  {
+    "t": "Recents",
+    "al": "",
+    "role": "",
+    "ja": "navigationrail.recent"
+  },
+  {
+    "t": "Sammy's Restaurant & Bar",
+    "al": "",
+    "role": "",
+    "ja": "click:navigationrail.bundle; mouseover:navigationrail.bundle; mouseout:navigatio"
+  },
+  {
+    "t": "Get app",
+    "al": "",
+    "role": "",
+    "ja": "navigationrail.mobileApp"
+  },
+  {
+    "t": "",
+    "al": "Photo of Sammy's Restaurant & Bar",
+    "role": "",
+    "ja": "pane.wfvdle16.heroHeaderImage"
+  },
+  {
+    "t": "See photos",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle17"
+  },
+  {
+    "t": "Bar & grill",
+    "al": "",
+    "role": "",
+    "ja": "pane.wfvdle18.category"
+  },
+  {
+    "t": "Overview",
+    "al": "Overview of Sammy's Restaurant & Bar",
+    "role": "tab",
+    "ja": "pane.wfvdle5tabs.tabClick; mousedown:pane.wfvdle5tabs.dragTabs; focus:pane.wfvdl"
+  },
+  {
+    "t": "About",
+    "al": "About Sammy's Restaurant & Bar",
+    "role": "tab",
+    "ja": "pane.wfvdle5tabs.tabClick; mousedown:pane.wfvdle5tabs.dragTabs; focus:pane.wfvdl"
+  },
+  {
+    "t": "Directions",
+    "al": "Directions",
+    "role": "",
+    "ja": "pane.wfvdle19;keydown:pane.wfvdle19;mouseover:pane.wfvdle19;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Save",
+    "al": "Save",
+    "role": "",
+    "ja": "pane.wfvdle20;keydown:pane.wfvdle20;mouseover:pane.wfvdle20;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Nearby",
+    "al": "Nearby",
+    "role": "",
+    "ja": "pane.wfvdle21;keydown:pane.wfvdle21;mouseover:pane.wfvdle21;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Send to phone",
+    "al": "Send to phone",
+    "role": "",
+    "ja": "pane.wfvdle22;keydown:pane.wfvdle22;mouseover:pane.wfvdle22;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Share",
+    "al": "Share",
+    "role": "",
+    "ja": "pane.wfvdle23;keydown:pane.wfvdle23;mouseover:pane.wfvdle23;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Laid-back restaurant & bar offering American food from morni",
+    "al": "",
+    "role": "",
+    "ja": "pane.attributes.expand; ptrdown:ripple.nested; mousedown:ripple.nested; keydown:"
+  },
+  {
+    "t": "11012 IL-47, Huntley, IL 60142",
+    "al": "Address: 11012 IL-47, Huntley, IL 60142 ",
+    "role": "",
+    "ja": "pane.wfvdle24;clickmod:pane.wfvdle24;focus:pane.focusTooltip;blur:pane.blurToolt"
+  },
+  {
+    "t": "",
+    "al": "Copy address",
+    "role": "",
+    "ja": "pane.wfvdle25;keydown:pane.wfvdle25;mouseover:pane.wfvdle25;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Open · Closes 2 AM · Reopens 8 AMSee more hours",
+    "al": "Open · Closes 2 AM · Reopens 8 AM · See more hours",
+    "role": "",
+    "ja": "pane.wfvdle26;clickmod:pane.wfvdle26"
+  },
+  {
+    "t": "(847) 669-9025",
+    "al": "Phone: (847) 669-9025 ",
+    "role": "",
+    "ja": "pane.wfvdle28;clickmod:pane.wfvdle28;focus:pane.focusTooltip;blur:pane.blurToolt"
+  },
+  {
+    "t": "",
+    "al": "Copy phone number",
+    "role": "",
+    "ja": "pane.wfvdle29;keydown:pane.wfvdle29;mouseover:pane.wfvdle29;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "5H9C+MW Huntley, Illinois",
+    "al": "Plus code: 5H9C+MW Huntley, Illinois",
+    "role": "",
+    "ja": "pane.wfvdle31;clickmod:pane.wfvdle31;focus:pane.focusTooltip;blur:pane.blurToolt"
+  },
+  {
+    "t": "",
+    "al": "Copy plus code",
+    "role": "",
+    "ja": "pane.wfvdle32;keydown:pane.wfvdle32;mouseover:pane.wfvdle32;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "",
+    "al": "Learn more about plus codes",
+    "role": "",
+    "ja": "pane.wfvdle33;keydown:pane.wfvdle33;mouseover:pane.wfvdle33;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Suggest an edit",
+    "al": "Suggest an edit",
+    "role": "",
+    "ja": "pane.wfvdle36;keydown:pane.wfvdle36;mouseover:pane.wfvdle36;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "",
+    "al": "More info",
+    "role": "",
+    "ja": "pane.wfvdle2.subheaderSection.onRenderMissingInfoClick; focus:pane.focusTooltip;"
+  },
+  {
+    "t": "",
+    "al": "Street View",
+    "role": "",
+    "ja": "pane.imagepack.button"
+  },
+  {
+    "t": "Add photos & videos",
+    "al": "Add photos & videos",
+    "role": "",
+    "ja": "pane.wfvdle37;keydown:pane.wfvdle37;mouseover:pane.wfvdle37;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Write a review",
+    "al": "Write a review",
+    "role": "",
+    "ja": "pane.wfvdle38;keydown:pane.wfvdle38;mouseover:pane.wfvdle38;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "Learn more",
+    "al": "Learn more about limited view",
+    "role": "",
+    "ja": "pane.wfvdle40"
+  },
+  {
+    "t": "Sign in",
+    "al": "Sign in",
+    "role": "",
+    "ja": "pane.wfvdle41;keydown:pane.wfvdle41;mouseover:pane.wfvdle41;mouseout:pane.wfvdle"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "drawer.close;mouseover:drawer.showToggleTooltip; mouseout:drawer.hideToggleToolt"
+  },
+  {
+    "t": "",
+    "al": "Close",
+    "role": "",
+    "ja": "reveal.card.close"
+  },
+  {
+    "t": "",
+    "al": "Show Your Location",
+    "role": "",
+    "ja": "mylocation.wfvdle48.onButtonClick; ptrdown:ripple.nested; mousedown:ripple.neste"
+  },
+  {
+    "t": "Learn more",
+    "al": "",
+    "role": "",
+    "ja": "help.starthelp"
+  },
+  {
+    "t": "",
+    "al": "Zoom in",
+    "role": "",
+    "ja": "focus:zoom.onZoomInFocus; mouseover:zoom.onZoomInPointerIn; zoom.onZoomInClick; "
+  },
+  {
+    "t": "Show slider",
+    "al": "",
+    "role": "",
+    "ja": "zoom.onShowSliderClick"
+  },
+  {
+    "t": "Hide slider",
+    "al": "",
+    "role": "",
+    "ja": "zoom.onHideSliderClick"
+  },
+  {
+    "t": "",
+    "al": "Zoom out",
+    "role": "",
+    "ja": "mouseover:zoom.onZoomOutPointerIn; zoom.onZoomOutClick; keydown:zoom.keydownAndR"
+  },
+  {
+    "t": "",
+    "al": "Browse Street View images",
+    "role": "",
+    "ja": "runway.pegman; blur:runway.pegman; focus:runway.pegman; mousedown:runway.pegman;"
+  },
+  {
+    "t": "",
+    "al": "Show imagery",
+    "role": "",
+    "ja": "runway.expand; mouseover:runway.expand; mouseout:runway.expand; ptrdown:ripple.n"
+  },
+  {
+    "t": "",
+    "al": "Street View",
+    "role": "",
+    "ja": "runway.poi"
+  },
+  {
+    "t": "",
+    "al": "Collapse side panel",
+    "role": "",
+    "ja": "pane.close;mouseover:pane.showToggleTooltip; mouseout:pane.hideToggleTooltip; fo"
+  },
+  {
+    "t": "",
+    "al": "Zoom in",
+    "role": "",
+    "ja": "click:minimap.zoom-in"
+  },
+  {
+    "t": "",
+    "al": "Zoom out",
+    "role": "",
+    "ja": "click:minimap.zoom-out"
+  },
+  {
+    "t": "",
+    "al": "Close",
+    "role": "",
+    "ja": "layerswitcher.close"
+  },
+  {
+    "t": "Transit",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.transit"
+  },
+  {
+    "t": "Traffic",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.traffic"
+  },
+  {
+    "t": "Biking",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.bike"
+  },
+  {
+    "t": "Terrain",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.terrain"
+  },
+  {
+    "t": "Street View",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.streetview"
+  },
+  {
+    "t": "Wildfires",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.wildfire"
+  },
+  {
+    "t": "Air Quality",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.intent.air_quality"
+  },
+  {
+    "t": "Travel time",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.tool.reachability"
+  },
+  {
+    "t": "Measure",
+    "al": "",
+    "role": "menuitemcheckbox",
+    "ja": "layerswitcher.tool.ruler"
+  },
+  {
+    "t": "Default",
+    "al": "",
+    "role": "radio",
+    "ja": "layerswitcher.intent.map"
+  },
+  {
+    "t": "Satellite",
+    "al": "",
+    "role": "radio",
+    "ja": "layerswitcher.intent.satellite"
+  },
+  {
+    "t": " Globe view",
+    "al": "",
+    "role": "checkbox",
+    "ja": "layerswitcher.intent.spherical"
+  },
+  {
+    "t": " Labels",
+    "al": "",
+    "role": "checkbox",
+    "ja": "layerswitcher.intent.labels"
+  },
+  {
+    "t": "United States",
+    "al": "",
+    "role": "",
+    "ja": "fineprint.country"
+  },
+  {
+    "t": "Terms",
+    "al": "",
+    "role": "",
+    "ja": "fineprint.terms"
+  },
+  {
+    "t": "Privacy",
+    "al": "",
+    "role": "",
+    "ja": "fineprint.privacy"
+  },
+  {
+    "t": "Send Product Feedback",
+    "al": "",
+    "role": "",
+    "ja": "fineprint.rap"
+  }
+]
