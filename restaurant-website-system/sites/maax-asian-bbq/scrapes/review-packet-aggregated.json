@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "collection_method": "aggregator-fallback",
+    "google_reviews_status": "BLOCKED — headless Playwright served stripped Google Maps panel; no Reviews tab. Aggregator-derived reviews used. Recommend manual Google packet for v2.",
+    "fallback_sources_used": [
+      "Restaurantji (3 verbatim + ratings + popular items)",
+      "OpenTable mention (rating + review count via WebSearch)",
+      "WebSearch SERP snippets (5+ verbatim)",
+      "Tripadvisor (0 reviews — listing unclaimed)"
+    ],
+    "aggregate_ratings": {
+      "google": "4.7★ / 621 reviews",
+      "opentable": "4.8★ / 41 diners",
+      "yelp": "67+ reviews / mixed",
+      "tripadvisor": "0 reviews — listing unclaimed",
+      "ranking": "#2 of 65 BBQs in Arlington Heights (Restaurantji)"
+    }
+  },
+  "verbatim_reviews": [
+    { "source": "Restaurantji/Google", "name": "Alexa Luciani", "date": "6 months ago", "rating": 5, "text": "AYCE Hot Pot recommended. Food 4, Service 5, Atmosphere 5. $20–30 per person." },
+    { "source": "Restaurantji/Google", "name": "Ivan Layese", "date": "10 months ago", "rating": 5, "text": "The all-you-can-eat buffet had tons of options, from juicy meats to fresh veggies. Food 5, Service 5, Atmosphere 5." },
+    { "source": "WebSearch SERP", "name": "anonymous", "rating": 5, "text": "The beef boneless short ribs are a favorite when it comes to BBQ, while malatang is recommended for the hot pot. The restaurant even has items like fries that kids love." },
+    { "source": "WebSearch SERP", "name": "anonymous", "rating": 5, "text": "First Asian BBQ and hot pot experience — amazing. A good place if you are looking for a fun thing to do with family, friends, a date night, honestly anything." },
+    { "source": "WebSearch SERP", "name": "anonymous", "rating": 5, "text": "Great combination of Hot Pot and Korean BBQ — buffet of veggies and sauces, unlimited meat, attentive service. Fresh and plentiful food and outstanding service make it a go-to recommendation." },
+    { "source": "WebSearch SERP", "name": "anonymous", "rating": 5, "text": "First time trying MAAX did not disappoint — ordered the traditional Szechuan spicy broth that was flavorful." }
+  ],
+  "popular_items_consensus": [
+    "Beef boneless short ribs (BBQ favorite)",
+    "Malatang (hot pot favorite)",
+    "Szechuan spicy broth",
+    "Juicy meats (AYCE)",
+    "Sushi",
+    "Fresh seafood",
+    "Fries (for kids)"
+  ],
+  "concept_signals": {
+    "format": "AYCE (all-you-can-eat) Korean BBQ + hot pot",
+    "table_setup": "Smokeless grills built into tables; tableside hot-pot burners",
+    "cuisines": "Chinese, Japanese, Korean, Thai influences",
+    "occasions": "family, friends, date night, group dining, kids welcome",
+    "pricing": "$20–30 per person (lunch) up to $30–50 (dinner / premium tiers)",
+    "amenities": "Full liquor bar, draft selection, wheelchair accessible, OpenTable reservations"
+  },
+  "external_trust": [
+    { "source": "Restaurantji", "claim": "#2 of 65 BBQs in Arlington Heights", "url": "https://restaurantguru.com/MAAX-Asian-BBQ-and-Hot-Pots-Arlington-Heights" },
+    { "source": "OpenTable", "claim": "4.8★ / 41 diners", "url": "https://www.opentable.com/r/maax-asian-bbq-and-hot-pots-arlington-heights" },
+    { "source": "Google", "claim": "4.7★ / 621 reviews", "url": "https://www.google.com/maps/search/MAAX+Asian+BBQ+%26+Hot+Pots/" }
+  ],
+  "owner_voice_unknown": "About page returned 404/timeout; no owner story exposed on current site. Recommend asking owner for: (1) founding year, (2) family/owner names, (3) origin story for the multi-cuisine pan-Asian + AYCE format choice."
+}

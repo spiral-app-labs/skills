@@ -19,9 +19,13 @@ export function ContactCtaClosing() {
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing }}
       >
-        <div className="aspect-[4/5] overflow-hidden rounded-card bg-canvas-alt">
+        <div className="group aspect-[4/5] overflow-hidden rounded-image bg-canvas-alt shadow-sm">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={photo.src} alt={photo.alt} className="w-full h-full object-cover" />
+          <img
+            src={photo.src}
+            alt={photo.alt}
+            className="w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
+          />
         </div>
 
         <div>

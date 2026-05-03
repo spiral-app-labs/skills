@@ -4,12 +4,12 @@
 export function MenuPhotoCallout({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="my-2 group">
-      <div className="aspect-square overflow-hidden rounded-card bg-canvas-alt">
+      <div className="aspect-square overflow-hidden rounded-image bg-canvas-alt shadow-sm">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={src}
           alt={alt}
-          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
         />
       </div>
     </div>

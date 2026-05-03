@@ -56,9 +56,10 @@ export const theme = {
 
   radius: {
     pill:   9999,
-    button: 9999, // terracotta CTAs are pill-shaped
-    card:   12,
-    input:  8,
+    button: 9999,
+    card:   20, // bumped from 12 → 20: softer, more "neighborhood" feel; still not pillowy
+    input:  10,
+    image:  24, // dedicated image radius for hero/menu/review photography
   },
 
   motion: {

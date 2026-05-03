@@ -103,8 +103,8 @@ export function ReviewCarousel() {
           <article
             key={r.name + i}
             data-review-card
-            className={`flex-none basis-[85%] md:basis-[42%] lg:basis-[32%] snap-start rounded-card bg-canvas-alt border border-divider p-6 md:p-7 transition-all duration-700 ease-out ${
-              i === activeIdx ? 'opacity-100 scale-100' : 'opacity-60 scale-[0.97]'
+            className={`flex-none basis-[85%] md:basis-[42%] lg:basis-[32%] snap-start rounded-image bg-canvas-alt border border-divider p-6 md:p-7 transition-all duration-700 ease-out ${
+              i === activeIdx ? 'opacity-100 scale-100 shadow-md' : 'opacity-60 scale-[0.97]'
             }`}
           >
             <div className="flex items-center justify-between mb-3">

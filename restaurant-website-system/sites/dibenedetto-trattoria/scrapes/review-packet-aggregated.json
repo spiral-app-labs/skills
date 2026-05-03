@@ -1,0 +1,180 @@
+{
+  "_meta": {
+    "collection_method": "aggregator-fallback",
+    "google_reviews_status": "BLOCKED — headless Playwright served stripped 2-tab place card (Overview + About only); Reviews tab + Highest filter not exposed; 4 stealth attempts (v1-v4) all failed. In-app browser (Claude in Chrome MCP) was not connected. User explicitly waived gate is NOT yet recorded — recommend manual reviews packet for v2.",
+    "fallback_sources_used": [
+      "Tripadvisor (15 verbatim reviews + 2 owner replies)",
+      "Birdeye (Facebook-aggregated, ~8 verbatim)",
+      "Restaurantji (rating breakdown + popular dishes + thematic summary)",
+      "WebSearch SERP snippets"
+    ],
+    "aggregate_ratings": {
+      "tripadvisor": "4.2★ / 41 reviews / #7 of 104 Hoffman Estates",
+      "yelp": "4.5★ / 143 reviews",
+      "google": "4.5★ / ~239+ reviews (per Restaurantji aggregator) / 4.6 stars per Maps panel snapshot",
+      "opentable": "4.6★ / 257 diners",
+      "birdeye": "4.5★ / 326 reviews (multi-source)"
+    }
+  },
+  "verbatim_reviews": [
+    {
+      "source": "Tripadvisor",
+      "name": "Denise M",
+      "date": "Sep 2023",
+      "rating": 5,
+      "text": "Family owned. This is our second time here, and we will be back and take others! From start to finish amazing place. Char, our server was knowledgable and friendly. Proud to work there! Our wine was good and reasonably priced for nice pours. The space was packed and yet the chef prepared something special for us that was not on the menu. The best Veal Napoleon we have ever tasted with a home made Supreme Sauce. Enough for two meals. The owner checked on us a few times and offered us complimentary desserts. We were stuffed, so he sent out two limoncellos on the house."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "Jim M",
+      "date": "Jun 2023",
+      "rating": 5,
+      "text": "Very nice restaurant. I had Fettuccine Harry's Bar pasta. All of the pasta ingredients tasted fresh. Staff was very friendly and attentive. My server was Elena, She met all my needs and was very patient when I asked many questions about the menu. She came up to us multiple times to make sure the food was good and if We needed anything else. Would highly recommend this outstanding place."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "drfate1",
+      "date": "Sep 2024",
+      "rating": 5,
+      "text": "We were expecting a good dinner here, and it actually exceeded our expectations. The service was welcoming and attentive. My wife ordered her usual Italian main dish and loved it. I had one of the absolutely most flavorful gluten free meals ever. Portions were large. Last bite was as good as the first."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "Brad K",
+      "date": "Apr 2022",
+      "rating": 5,
+      "text": "We fell into this family restaurant by luck and plan on making it an annual event while in Chicago Schaumburg area for a convention. I'm not sure if they offer live entertainment every time but on the Friday night we were there they had a female singer that was WONDERFUL. We were also celebrating a birthday and they made it very special. The food you ask? WOW! Classic Italian food in generous quantities. Everyone in our 8 person party was happy with their meal. Fine wine and a great atmosphere rounded out a perfect evening."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "Ginger0529",
+      "date": "Nov 2021",
+      "rating": 5,
+      "text": "Located in a small strip mall you wouldn't expect such great quality Italian food. Our gourmet group loved the chicken Francese, lasagna, clams, pasta primavera and orecchiette turiddu and also the create your own pasta dishes. The salads and soups that was included with the entree were also a cut above the usual. We really enjoyed this restaurant. Not your run of the mill Italian. Definitely better than most. Staff were informative and friendly. We will be back!"
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "MWG",
+      "date": "Feb 2020",
+      "rating": 5,
+      "text": "Owner is very gracious and makes you feel at home with every visit. Food specials are always good, as is the whole menu. Can ask for items off menu, and if ingredients are available they will make. Wonderful veal and sea food dishes. Wine and bar specials, as well. Has become a favorite restaurant due to quality of food and feeling like visiting friends. Never been disappointed with any dish."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "tjel",
+      "date": "Sep 2012",
+      "rating": 5,
+      "text": "This restaurant opened about 5 months ago and it has quickly become one of our favorites. We now go at least once a week, usually to try the latest specials, which are always incredibly delicious. Simply...Di Benedetto's has some of the best Italian food...ever! Food is very fresh, preparation is unique and flavorful, portions are big, and the prices are reasonable. Weekend have 'live' entertainment."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "jimpinman",
+      "date": "Dec 2014",
+      "rating": 5,
+      "text": "We had our doubts when we walked in and the restaurant was less than half full. But the food was excellent with great service. An added bonus was live music playing. Both of our dinners were outstanding."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "BelikinBeer",
+      "date": "Dec 2019",
+      "rating": 5,
+      "text": "Took our daughters here for a nice festive and delicious meal. The choices and specials were plentiful, service was good and food was very nice. I ordered the Smelt appetizer and what a portion. Excellent."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "Moneysal",
+      "date": "Sep 2018",
+      "rating": 5,
+      "text": "One of the best restaurants I have dined at in months!! The veal was so tender you didn't even need a knife to cut into it. And the grilled calamari is so tender and prepared so perfectly. And they had a singer while dining."
+    },
+    {
+      "source": "Tripadvisor",
+      "name": "LadyshipII",
+      "date": "Mar 2018",
+      "rating": 4,
+      "text": "First visit and loved the decor. It is a smaller restaurant, which makes for nice ambiance. The food was generous in portion and good in flavor. The staff was very attentive. I loved the Lemoncello cake for dessert. The owner was a pleasant man.",
+      "owner_reply": { "name": "Vito (Vittorio Di Benedetto)", "text": "Mille Grazie!" }
+    },
+    {
+      "source": "Birdeye/Facebook",
+      "name": "Marilynn Graves",
+      "rating": 5,
+      "text": "Great food, wine and people"
+    },
+    {
+      "source": "Birdeye/Facebook",
+      "name": "Dave Boesche",
+      "rating": 5,
+      "text": "Excellent authentic Italian food, good wines, and friendly staff",
+      "owner_reply": { "text": "Thank you Dave! Hope to see you again soon!" }
+    },
+    {
+      "source": "Birdeye/Facebook",
+      "name": "José Manuel Lagunas",
+      "rating": 5,
+      "text": "Great Experience! Great Food!! GREAT SERVICE!!! Our server Olga was very attentive and provided a great dining experience.",
+      "owner_reply": { "text": "Thank you! Look forward to seeing you again!" }
+    },
+    {
+      "source": "Birdeye/Facebook",
+      "name": "Nicole Zale",
+      "rating": 5,
+      "text": "Great food! Great owners! Great staff! Food even travels well via Grubhub!"
+    },
+    {
+      "source": "Birdeye/Facebook",
+      "name": "Steve MacCabe",
+      "rating": 5,
+      "text": "Another wonderful meal at DB's!"
+    },
+    {
+      "source": "Birdeye/Facebook",
+      "name": "Michele Halverson Stephen",
+      "rating": 5,
+      "text": "I am a regular and the food staff and whole place is one of my favorite to go places."
+    },
+    {
+      "source": "Restaurantji thematic summary",
+      "text": "Delicious, excellent food made from scratch, top-notch outstanding service, perfect ambiance with attentive staff, great cocktails, excellent entertainment on weekends."
+    }
+  ],
+  "owner_voice_phrases": [
+    { "phrase": "Mille Grazie!", "source": "Tripadvisor reply (Vittorio)", "tone": "warm + heritage" },
+    { "phrase": "Hope to see you again soon!", "source": "Birdeye reply", "tone": "warm" },
+    { "phrase": "Look forward to seeing you again!", "source": "Birdeye reply", "tone": "warm" },
+    { "phrase": "Come Enjoy And Be Part Of The Family", "source": "Current site hero", "tone": "warm + family" },
+    { "phrase": "Everything is made to order, patience is appreciated", "source": "Current site menu page", "tone": "proud + specific" },
+    { "phrase": "often times with the chef himself", "source": "Current site About copy", "tone": "specific + chef-as-brand" }
+  ],
+  "popular_dishes_consensus": [
+    { "name": "Veal Napoleon", "mentions": ["Denise M", "Restaurantji popular"] },
+    { "name": "Fettuccine Harry's Bar", "mentions": ["Jim M"] },
+    { "name": "Chicken Francese", "mentions": ["Ginger0529", "Restaurantji popular"] },
+    { "name": "Lasagna Romana", "mentions": ["Ginger0529", "Restaurantji popular"] },
+    { "name": "Orecchiette Turiddu (\"Turridoo Specialty Pasta\")", "mentions": ["Ginger0529", "Restaurantji popular"] },
+    { "name": "Limoncello Cake", "mentions": ["LadyshipII", "Restaurantji popular"] },
+    { "name": "Chicken Piccata", "mentions": ["Restaurantji popular"] },
+    { "name": "Saltimbocca", "mentions": ["Restaurantji popular"] },
+    { "name": "Stuffed Mushrooms", "mentions": ["Restaurantji popular"] },
+    { "name": "Grilled Calamari", "mentions": ["Moneysal"] },
+    { "name": "Smelt appetizer", "mentions": ["BelikinBeer"] }
+  ],
+  "named_staff": [
+    { "name": "Char", "role": "server", "source": "Denise M" },
+    { "name": "Elena", "role": "server", "source": "Jim M" },
+    { "name": "Olga", "role": "server", "source": "José Manuel Lagunas" },
+    { "name": "Marty", "role": "server", "source": "Dataman98" }
+  ],
+  "owner_chef": {
+    "name": "Vittorio Di Benedetto",
+    "nickname": "Vito",
+    "role": "chef-owner",
+    "voice_signature": "Mille Grazie!"
+  },
+  "marketing_director": "Denise A",
+  "founded": "approximately 2012 (per tjel review: \"opened about 5 months ago\" in Sep 2012)",
+  "external_trust": [
+    { "source": "Tripadvisor", "year": 2026, "claim": "#7 of 104 Restaurants in Hoffman Estates", "url": "https://www.tripadvisor.com/Restaurant_Review-g36141-d3472618-Reviews-DiBenedetto_Trattoria-Hoffman_Estates_Illinois.html" },
+    { "source": "OpenTable", "claim": "4.6★ / 257 diners", "url": "https://www.opentable.com/r/di-benedetto-trattoria" }
+  ]
+}

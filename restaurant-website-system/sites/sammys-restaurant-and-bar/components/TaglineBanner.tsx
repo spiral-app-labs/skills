@@ -33,10 +33,21 @@ export function TaglineBanner() {
         </div>
         <div className="grid grid-cols-2 gap-3 w-full md:w-[360px]">
           {collage.map((p, i) => (
-            <div key={i} className="aspect-square overflow-hidden rounded-card bg-canvas-alt">
+            <motion.div
+              key={i}
+              className={`group aspect-square overflow-hidden rounded-image bg-canvas-alt shadow-sm ${i === 1 ? 'translate-y-4' : ''}`}
+              initial={{ opacity: 0, scale: 0.95, rotate: i === 0 ? -2 : 2 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.1 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.src} alt={p.alt} className="w-full h-full object-cover" />
-            </div>
+              <img
+                src={p.src}
+                alt={p.alt}
+                className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
+              />
+            </motion.div>
           ))}
         </div>
       </motion.div>

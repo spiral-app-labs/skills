@@ -104,7 +104,8 @@ export const content = {
   hero: {
     wordmark: "Sammy's Restaurant & Bar",
     eyebrow: 'HUNTLEY · 8 AM – 2 AM · EVERY DAY · 4.5★ ON 500+ GOOGLE REVIEWS',
-    sub: "Hometown bar with a kitchen that opens at 8 and a fryer that doesn't stop until last call. Friday fish fry, Tuesday karaoke, Sammy out from the kitchen — and yes, the pretzel is HUGE.",
+    // Tightened from 38 → 24 words; one concrete proof noun + one sensory noun.
+    sub: "Hometown bar on Route 47. Breakfast from 8 AM, fish fry on Fridays, karaoke on Tuesdays. Sammy's still in the kitchen — and yes, the pretzel is HUGE.",
     cta: { label: 'Call to order — (847) 669-9025', href: 'tel:+18476699025' },
     secondaryCta: { label: 'See the menu', href: '#menu' },
     // Tier-3 placeholder Unsplash; swap with real Sammy's photos before launch.
@@ -386,35 +387,31 @@ export const content = {
   // Per audit Block 3 Principle 5.5 — the rituals must live on the owned page.
   whatsOn: {
     eyebrow: 'EVERY WEEK',
-    heading: "What's on at Sammy's",
-    sub: "The standing dates regulars build their week around. Same time, same room, same bartender.",
+    heading: "The dates regulars build their week around",
+    sub: "Four standing rituals. Same time. Same room. Same bartender pulling your beer before you ask.",
     items: [
       {
         day: 'Tuesday',
         title: 'Karaoke Night',
-        body:
-          "Mics open at 8. Half-price wings till 10. Lola pours, Mickey runs the song queue.",
+        body: "Mics open at 8. Half-price wings till 10. Lola pours, Mickey runs the song queue.",
         time: '8 PM – midnight',
       },
       {
         day: 'Friday',
         title: 'All-You-Can-Eat Fish Fry',
-        body:
-          "Hand-battered white fish, the tater tots, coleslaw, rye bread. The one folks call their date night.",
+        body: "Hand-battered white fish. Tater tots. Slaw. Rye bread. The plate folks call their date night.",
         time: '4 PM – close',
       },
       {
         day: 'Weekends',
-        title: 'Live Bands',
-        body:
-          'Saturday nights, mostly. Local bands playing classic rock + country. Cover charge sometimes — call ahead.',
+        title: 'Live Bands at the Bar',
+        body: 'Saturday nights, mostly. Local bands. Classic rock and a little country. Call ahead — covers come and go.',
         time: '9 PM – 1 AM',
       },
       {
         day: 'Every Day',
-        title: 'Breakfast All Day & All Night',
-        body:
-          "We start the fryer at 8 AM and don't stop. Want eggs Benedict at 11 PM? Yes.",
+        title: 'Breakfast — All Day, All Night',
+        body: "Eggs Benedict at 8 AM. Eggs Benedict at 11 PM. Same kitchen, same fryer, same Bloody Mary on the side.",
         time: '8 AM – 2 AM',
       },
     ],
@@ -425,9 +422,9 @@ export const content = {
   // with prose). Lightly trimmed for length where the prose was paragraph-
   // long. First names only.
   reviews: {
-    eyebrow: 'WHAT GUESTS SAY',
-    heading: '4.5 stars on Google · 500+ reviews · zero of them on a website we own',
-    sub: "These are real reviews from Google. Names trimmed to first name. Edited only for length.",
+    eyebrow: 'CITED IN 500+ GOOGLE REVIEWS',
+    heading: 'The dishes guests come back for — in their own words',
+    sub: "Verbatim Google reviews. First names only. Edited only for length.",
     items: [
       {
         name: 'Derek',
@@ -616,7 +613,7 @@ export const content = {
   closing: {
     heading: 'Pull up a stool.\nWe saved you a seat.',
     subcopy:
-      "Open every day from 8 AM until 2 AM. Walk in, call ahead, or come for the Friday fish fry — we're easy to find on Route 47, just south of the railroad tracks.",
+      "Open 8 AM to 2 AM, every day. Route 47, south of the railroad tracks. Walk in, call ahead, or just come for the fish fry.",
     cta: { label: 'Call (847) 669-9025', href: 'tel:+18476699025' },
     secondaryCta: { label: 'Get directions', href: 'https://www.google.com/maps/place/Sammy%27s+Restaurant+%26+Bar/@42.1691859,-88.4276485,17z/' },
     photo: {

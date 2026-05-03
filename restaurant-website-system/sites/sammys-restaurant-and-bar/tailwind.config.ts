@@ -34,6 +34,7 @@ const config: Config = {
         button: `${t.radius.button}px`,
         card:   `${t.radius.card}px`,
         input:  `${t.radius.input}px`,
+        image:  `${t.radius.image}px`,
       },
       maxWidth: {
         'plate':        `${t.layout.maxWidth}px`,

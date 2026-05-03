@@ -22,10 +22,21 @@ export function AboutHero() {
 
       <div className="grid md:grid-cols-2 gap-4 md:gap-6 mt-10 md:mt-14">
         {photos.map((p, i) => (
-          <div key={i} className="aspect-[5/4] overflow-hidden rounded-card bg-canvas-alt">
+          <motion.div
+            key={i}
+            className="group aspect-[5/4] overflow-hidden rounded-image bg-canvas-alt shadow-sm"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.1 + i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={p.src} alt={p.alt} className="w-full h-full object-cover" />
-          </div>
+            <img
+              src={p.src}
+              alt={p.alt}
+              className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
+            />
+          </motion.div>
         ))}
       </div>
     </section>

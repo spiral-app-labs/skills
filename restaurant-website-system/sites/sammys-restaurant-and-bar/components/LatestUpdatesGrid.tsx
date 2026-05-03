@@ -32,12 +32,12 @@ export function LatestUpdatesGrid() {
               ease: theme.motion.easing,
             }}
           >
-            <div className="aspect-[4/3] overflow-hidden rounded-card bg-canvas-alt">
+            <div className="aspect-[4/3] overflow-hidden rounded-image bg-canvas-alt shadow-sm group-hover:shadow-lg transition-shadow duration-500">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-[1000ms] ease-out"
               />
             </div>
             <div className="mt-4 text-eyebrow text-ink-muted">

@@ -84,6 +84,18 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/sites/sammys-restaurant-and-bar", "run", "dev", "--", "--port", "3128"],
       "port": 3128
+    },
+    {
+      "name": "dibenedetto",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/dibenedetto-trattoria", "run", "dev", "--", "--port", "3129"],
+      "port": 3129
+    },
+    {
+      "name": "maax",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "restaurant-website-system/sites/maax-asian-bbq", "run", "dev", "--", "--port", "3130"],
+      "port": 3130
     }
   ]
 }
