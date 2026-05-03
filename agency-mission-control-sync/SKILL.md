@@ -41,6 +41,10 @@ Use this shape for build progress:
   "mc_task_id": "mission-control-task-id",
   "checklist_markdown_path": "restaurant-website-system/sites/restaurant-slug/checklist.md",
   "checklist_json_path": "restaurant-website-system/sites/restaurant-slug/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/restaurant-slug/scrapes/current-site-dom-snapshot.txt",
+  "google_reviews_packet_path": "restaurant-website-system/sites/restaurant-slug/scrapes/google-reviews-highest-30.json",
+  "pitch_doc_path": "restaurant-website-system/sites/restaurant-slug/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/restaurant-slug/battle-cards.md",
   "vercel_preview_url": "https://restaurant-slug.vercel.app",
   "evidence_urls": ["restaurant-website-system/sites/restaurant-slug/screenshots/mobile.png"],
   "artifact_urls": ["https://restaurant-slug.vercel.app"],
@@ -51,7 +55,9 @@ Use this shape for build progress:
 
 Allowed `build_stage` values:
 
-`queued`, `qualifying`, `auditing`, `routing`, `forking`, `building`, `qa`, `packaging`, `delivered`, `blocked`.
+`queued`, `qualifying`, `claimed`, `checklist`, `auditing`, `reviews`, `routing`, `forking`, `building`, `improving`, `top_3_improvements`, `concierge`, `pitch`, `battle_cards`, `qa_round_1`, `qa_round_2`, `qa_round_3`, `packaging`, `delivered`, `blocked`.
+
+If Mission Control temporarily accepts only coarser values, keep the closest coarse value compatible and store the exact gate in metadata as a substage. Heartbeats should still resume from the exact gate when it is present.
 
 Allowed sales statuses:
 
@@ -88,6 +94,22 @@ Use heartbeat for regular progress:
   }
 }
 ```
+
+## Delivery Evidence Mirror
+
+Before setting `build_stage` to `delivered`, MC must contain or point to:
+
+- checklist markdown + JSON paths
+- current-site browser screenshots and scrape/DOM snapshot
+- Google Reviews **Highest** 30-written-review packet plus screenshots
+- template route/rationale and `template_slug`
+- preview URL
+- website improvement evidence and top-three-improvement evidence
+- AI concierge evidence or blocker
+- pitch doc path
+- battle cards path
+- all three QA round payloads
+- passed requirement IDs
 
 ## Direct Supabase Writes
 

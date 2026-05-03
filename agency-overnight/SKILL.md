@@ -22,3 +22,5 @@ For current work, load:
 3. the relevant restaurant qualification, audit, router, fork, checklist, QA, and pitch skills
 
 Mission Control is the source of truth. Build progress belongs in `agency_leads.metadata.build_stage`; sales status stays one of `lead`, `pitched`, `in_progress`, `delivered`, `closed_won`, or `closed_lost`.
+
+Current new-work gates live in `website-agency-operator`: claim/checklist → audit → 30 Google reviews with Highest filter → route → fork/build → improve/top 3 → AI concierge → pitch → battle cards → QA rounds 1-3 → package → deliver or block.
