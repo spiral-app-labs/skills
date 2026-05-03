@@ -1,6 +1,6 @@
 ---
 name: agency-website-design
-description: Build and improve restaurant and bar websites with a Next.js, Tailwind, and Framer Motion agency system. Use for restaurant website builds, redesigns, polish passes, animation upgrades, mobile conversion improvements, anonymous Google review proof sections, pitch-ready prospect sites, and QA against restaurant-specific design and revenue-path standards.
+description: Reference only for legacy restaurant/bar website design patterns. Do not use as the active agency workflow; prefer `website-agency-operator`, `restaurant-site-router`, `restaurant-template-fork`, `restaurant-fork-improvement`, and `restaurant-qa-delivery`.
 ---
 
 # Agency Website Design System — Build Bible

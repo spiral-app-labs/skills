@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Website Audit"
+  short_description: "Pre-fork live-site audit with review and mobile evidence"
+  default_prompt: "Use $restaurant-website-audit to audit a qualified restaurant lead's existing site before template fork."

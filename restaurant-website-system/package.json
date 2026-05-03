@@ -5,6 +5,8 @@
   "description": "Capture/analysis tooling for the restaurant-website-system. Not the templates themselves — those have their own package.json each.",
   "type": "module",
   "scripts": {
+    "fork": "node scripts/fork-template.mjs",
+    "new-checklist": "node scripts/new-build-checklist.mjs",
     "shoot": "node scripts/shoot-template.mjs",
     "postinstall": "playwright install chromium"
   },

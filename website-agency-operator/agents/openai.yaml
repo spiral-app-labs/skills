@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Agency Operator"
+  short_description: "Autonomous MC-driven restaurant website employee loop"
+  default_prompt: "Use $website-agency-operator to run the restaurant website agency loop from Mission Control with local checklist writeback."

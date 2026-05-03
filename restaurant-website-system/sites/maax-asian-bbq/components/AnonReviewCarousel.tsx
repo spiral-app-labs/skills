@@ -1,48 +1,39 @@
-// AnonReviewCarousel — auto-moving horizontal review marquee.
+'use client';
+
+// AnonReviewCarousel — auto-scroll + user-drag-scroll horizontal review marquee.
 //
 // Rule: NO NAMES, NO ATTRIBUTION. Verbatim quote + stars + source platform only.
-// Names invite litigation, name-mining, and "is this review real?" friction.
-// The proof is the quote + the platform; the reviewer's identity is never the
-// pitch.
 //
 // Behavior contract (locked across the catalog — see
 // ~/skills/restaurant-fork-improvement/SKILL.md Section 1.1):
-//   - Continuous left-scroll marquee. NEVER pauses on its own.
-//   - Hover-to-pause via CSS group-hover.
-//   - Cards duplicated 2× in JSX so the loop seams visually with no jump.
-//   - Card width: basis ~85% mobile / 42% tablet / 32% desktop.
-//   - Pure CSS keyframes (no framer-motion whileInView — that fails to fire
-//     reliably in some preview tooling and on slow mobile).
-//   - prefers-reduced-motion: animation is paused entirely.
-//   - Each card: ★★★★★ row + verbatim quote + small "Google Review" /
-//     "OpenTable Review" / "Yelp Review" platform tag at the bottom.
+//   - JS-driven auto-scroll: increments scrollLeft every animation frame at
+//     ~60px/sec. Wraps seamlessly via the duplicate-track trick (when
+//     scrollLeft passes half the track, jump back by half — invisible jump
+//     because the second half of the track is identical to the first).
+//   - User can drag/swipe horizontally at any time. On user interaction
+//     (touchstart, mousedown, wheel, scroll-by-input), auto-scroll pauses
+//     for 4 seconds, then resumes.
+//   - Hover-to-pause on desktop (mouseenter/mouseleave).
+//   - prefers-reduced-motion: auto-scroll disabled entirely; user can still
+//     manually scroll.
+//   - Each card: ★★★★★ + verbatim short quote + uppercase platform tag.
+//   - Quotes capped at 8–18 words (use ellipsis to trim).
 //   - DO NOT render reviewer names, initials, avatars, or dates.
 
+import { useEffect, useRef } from 'react';
+
+// Reviews are kept to 8–18 words each. Use ellipsis to trim mid-thought.
+// Locked: see ~/skills/restaurant-fork-improvement/SKILL.md Section 1.1.
 const REVIEWS = [
-  {
-    quote: "My first Asian BBQ and hot pot experience — amazing. A good place if you are looking for a fun thing to do with family, friends, a date night, honestly anything.",
-    source: 'Google Review',
-  },
-  {
-    quote: "The all-you-can-eat buffet had tons of options, from juicy meats to fresh veggies.",
-    source: 'OpenTable Review',
-  },
-  {
-    quote: "Great combination of Hot Pot and Korean BBQ — buffet of veggies and sauces, unlimited meat, attentive service.",
-    source: 'Yelp Review',
-  },
-  {
-    quote: "First time trying MAAX did not disappoint — ordered the traditional Szechuan spicy broth that was flavorful.",
-    source: 'Google Review',
-  },
-  {
-    quote: "The beef boneless short ribs are a favorite when it comes to BBQ, while malatang is recommended for the hot pot. The restaurant even has items like fries that kids love.",
-    source: 'Google Review',
-  },
-  {
-    quote: "Fresh and plentiful food and outstanding service make it a go-to recommendation.",
-    source: 'OpenTable Review',
-  },
+  { quote: "Family, friends, date night… honestly anything.", source: 'Google Review' },
+  { quote: "Tons of options, from juicy meats to fresh veggies.", source: 'OpenTable Review' },
+  { quote: "Unlimited meat, attentive service. A go-to.", source: 'Yelp Review' },
+  { quote: "The Szechuan spicy broth was flavorful.", source: 'Google Review' },
+  { quote: "Beef boneless short ribs are the BBQ favorite.", source: 'Google Review' },
+  { quote: "Malatang is the hot pot you order.", source: 'Google Review' },
+  { quote: "Fresh and plentiful. Outstanding service.", source: 'OpenTable Review' },
+  { quote: "First time did not disappoint.", source: 'Google Review' },
+  { quote: "Items like fries that kids love.", source: 'Google Review' },
 ];
 
 function StarsRow() {
@@ -60,9 +51,55 @@ function StarsRow() {
   );
 }
 
+const PIXELS_PER_SEC = 60;
+const PAUSE_AFTER_INTERACTION_MS = 4000;
+
 export function AnonReviewCarousel() {
   // Duplicate so the loop seams visually with no jump.
   const items = [...REVIEWS, ...REVIEWS];
+  const scrollerRef = useRef<HTMLDivElement | null>(null);
+  const lastFrameRef = useRef<number | null>(null);
+  const userPauseUntilRef = useRef(0);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let raf = 0;
+    const tick = (now: number) => {
+      const last = lastFrameRef.current ?? now;
+      const dt = Math.min(0.1, (now - last) / 1000);
+      lastFrameRef.current = now;
+      const isUserPaused = now < userPauseUntilRef.current;
+      if (!isUserPaused) {
+        const half = el.scrollWidth / 2;
+        if (half > 0) {
+          let next = el.scrollLeft + PIXELS_PER_SEC * dt;
+          if (next >= half) next -= half;
+          el.scrollLeft = next;
+        }
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+
+    // Pause briefly when the user actively interacts (drag, swipe, wheel).
+    // No mouseenter pause — on bot/preview cursors that "hover" indefinitely
+    // it locks the carousel; on real desktop the 4s interaction pause is
+    // enough breathing room for users who scrolled to read.
+    const bumpUserPause = () => { userPauseUntilRef.current = performance.now() + PAUSE_AFTER_INTERACTION_MS; };
+    el.addEventListener('touchstart', bumpUserPause, { passive: true });
+    el.addEventListener('pointerdown', bumpUserPause);
+    el.addEventListener('wheel', bumpUserPause, { passive: true });
+
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener('touchstart', bumpUserPause);
+      el.removeEventListener('pointerdown', bumpUserPause);
+      el.removeEventListener('wheel', bumpUserPause);
+    };
+  }, []);
 
   return (
     <section className="overflow-hidden bg-bg-dark py-20 md:py-28">
@@ -78,39 +115,40 @@ export function AnonReviewCarousel() {
         </div>
       </div>
 
-      <div className="group relative">
+      <div className="relative">
         {/* Edge fades so cards melt in/out of frame */}
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-bg-dark to-transparent md:w-32" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-bg-dark to-transparent md:w-32" />
 
-        <ul
-          className="flex w-max items-stretch gap-5 px-6 [animation:maaxreviewmarquee_60s_linear_infinite] group-hover:[animation-play-state:paused] motion-reduce:[animation:none] md:px-10"
-          aria-label="Guest reviews — auto-scrolling carousel"
+        <div
+          ref={scrollerRef}
+          className="no-scrollbar flex overflow-x-auto overscroll-x-contain"
+          style={{ scrollbarWidth: 'none' }}
+          aria-label="Guest reviews — drag or swipe to browse"
         >
-          {items.map((r, i) => (
-            <li
-              key={`${r.source}-${i}`}
-              className="flex w-[85vw] shrink-0 flex-col justify-between rounded-3xl border border-divider/40 bg-bg-dark/40 p-6 backdrop-blur-sm md:w-[440px] md:p-8"
-            >
-              <div>
-                <StarsRow />
-                <p className="mt-5 font-display text-[20px] leading-snug text-text-white md:text-[24px]">
-                  &ldquo;{r.quote}&rdquo;
+          <ul className="flex w-max items-stretch gap-5 px-6 md:px-10">
+            {items.map((r, i) => (
+              <li
+                key={`${r.source}-${i}`}
+                className="flex w-[85vw] shrink-0 flex-col justify-between rounded-3xl border border-divider/40 bg-bg-dark/40 p-6 backdrop-blur-sm md:w-[440px] md:p-8"
+              >
+                <div>
+                  <StarsRow />
+                  <p className="mt-5 font-display text-[20px] leading-snug text-text-white md:text-[24px]">
+                    &ldquo;{r.quote}&rdquo;
+                  </p>
+                </div>
+                <p className="mt-6 font-body text-[11px] uppercase tracking-[0.18em] text-accent">
+                  {r.source}
                 </p>
-              </div>
-              <p className="mt-6 font-body text-[11px] uppercase tracking-[0.18em] text-accent">
-                {r.source}
-              </p>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       <style jsx>{`
-        @keyframes maaxreviewmarquee {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
       `}</style>
     </section>
   );

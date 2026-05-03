@@ -6,14 +6,33 @@ Shared skills, workflows, and capabilities across all Spiral agents — Donna, F
 
 Each skill is a directory with a `SKILL.md` file (the agent reads this to know how to do something). Some skills have supporting reference files.
 
-## Skills
+## Website Agency Pack
+
+The restaurant website employee should load only this agency pack plus minimal ops skills (`heartbeat-execution` and `mission-control-task-ops`) unless Mission Control or Donna explicitly assigns broader work.
+
+| Skill | Purpose |
+|-------|---------|
+| `website-agency-operator` | Primary autonomous OpenClaw operating loop, queue selection, status updates, blocker escalation, and Donna handoff. |
+| `agency-mission-control-sync` | Mission Control API/writeback contract for leads, tasks, heartbeat, activity, QA rounds, evidence, and blockers. |
+| `restaurant-lead-qualification` | Active 7-check lead-fit gate before any speculative build. |
+| `restaurant-website-audit` | Current-site audit with browser, review, mobile, and asset evidence. |
+| `restaurant-site-router` | Route qualified leads to the right catalog template and modifiers. |
+| `restaurant-template-fork` | Fork a selected catalog template into `restaurant-website-system/sites/<slug>/`. |
+| `restaurant-build-checklist` | Create and maintain `checklist.md` and `checklist.json` for every build. |
+| `restaurant-fork-improvement` | Polish a built fork from demo-shippable to pitch-ready. |
+| `restaurant-qa-delivery` | Three-round QA, screenshots, build checks, mobile checks, pitch evidence, and MC writeback. |
+| `restaurant-pitch-doc` | Create one-minute restaurant redesign pitch docs. |
+| `restaurant-template-analysis` | Deep-capture pipeline for catalog templates or inspiration sites. |
+
+Reference/compatibility only:
+
+- `agency-website-design` is legacy design reference material, not the active workflow.
+- `agency-overnight` is a compatibility shim that points to `website-agency-operator`.
+
+## General Skills
 
 | Skill | Purpose | Who Uses It |
 |-------|---------|-------------|
-| `agency-website-design` | Full design system for restaurant websites (Next.js 14 + Tailwind + Framer Motion) — *being superseded by `restaurant-website-system/` (catalog-and-fork architecture). Mined as Input Zero during pattern abstraction.* | Forge, Evan |
-| `agency-overnight` | Overnight restaurant website build workflow | Forge |
-| `restaurant-template-analysis` | Deep-capture pipeline (full-page screenshots, scroll-position frames, page-load videos, computed-style metadata) for analyzing Framer/restaurant templates before audit. Backed by `restaurant-website-system/scripts/shoot-template.sh`. | Any agent building or auditing restaurant templates |
-| `restaurant-pitch-doc` | Create one-minute restaurant redesign pitch docs from audits, revenue leaks, standard-practice gaps, and prototype fixes. | Forge, Evan |
 | `agent-foundation-files` | Build IDENTITY/SOUL/AGENTS files for new agents | Donna |
 | `amazon-narrative-memo` | Write Amazon-style 6-pagers and narrative memos | Donna |
 | `codex-subagent-recovery` | Recovery protocol when a coding sub-agent fails silently | Donna |
@@ -31,9 +50,19 @@ Each skill is a directory with a `SKILL.md` file (the agent reads this to know h
 
 ## Restaurant Website System
 
-`restaurant-website-system/` is a catalog-and-fork system that lives inside this skills folder but is structured as a self-contained system rather than a SKILL.md skill. It has its own README, research docs, scripts, and `templates/` recreations. Skills that emerge from it (like `restaurant-template-analysis`) get promoted into this top-level skills library.
+`restaurant-website-system/` is a catalog-and-fork system that lives inside this skills folder but is structured as a self-contained system rather than a SKILL.md skill. It has its own README, research docs, scripts, and `templates/` recreations. Active skills promote the repeatable parts of that system into the top-level library.
 
 Read `restaurant-website-system/README.md` first.
+
+Helpful scripts:
+
+- `restaurant-website-system/scripts/fork-template.sh`
+- `restaurant-website-system/scripts/new-build-checklist.mjs`
+- `restaurant-website-system/scripts/shoot-template.sh`
+
+## Archive
+
+Market research, old transcripts, and one-off research packets live under `archive/` so the website employee does not load them as active skill surface.
 
 ## Agent Foundation Files
 
@@ -52,7 +81,8 @@ When your task matches a skill's description, read the `SKILL.md` with the read 
 2. Add `SKILL.md` with: description, trigger conditions, step-by-step instructions, and any constraints
 3. Add any reference files (templates, code, lookup tables) in the same directory
 4. Update this README
-5. Commit + push
+5. Run `npm test` from this repo to validate skill metadata and active agency scope
+6. Commit + push
 
 ## Philosophy
 

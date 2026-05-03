@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Fork Improvement"
+  short_description: "Polish built forks from demo-shippable to pitch-ready"
+  default_prompt: "Use $restaurant-fork-improvement to polish a built restaurant fork with proof patterns, copy tightening, and motion upgrades."

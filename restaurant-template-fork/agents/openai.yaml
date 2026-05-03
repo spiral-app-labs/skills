@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Template Fork"
+  short_description: "Fork a catalog template into sites/<slug>"
+  default_prompt: "Use $restaurant-template-fork after the route is locked to create the local fork workspace."

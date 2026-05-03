@@ -30,7 +30,9 @@ brief comes in
     ↓
 research/site-router.md → recommends template (e.g. warm-rustic-02)
     ↓
-scripts/fork-template.sh warm-rustic-02 nonna-portland → standalone project
+scripts/fork-template.sh --template warm-rustic-02 --slug nonna-portland → standalone project
+    ↓
+scripts/new-build-checklist.mjs --slug nonna-portland --lead-id ... --task-id ... --template warm-rustic-02
     ↓
 swap theme.ts (brand tokens) + content.example.ts (real menu/photos/copy)
     ↓
@@ -88,6 +90,8 @@ restaurant-website-system/
 │   ├── framer-templates/              (Framer URLs, screenshots, HTML exports)
 │   └── reference-sites/               (best-in-class non-Framer sites)
 └── scripts/
+    ├── fork-template.sh               (copy a template into sites/<slug>)
+    ├── new-build-checklist.mjs        (create checklist.md + checklist.json)
     └── new-audit.sh                   (scaffold a new audit from _TEMPLATE.md)
 ```
 
@@ -111,12 +115,14 @@ restaurant-website-system/
 
 ### 5.2 Forking a template for a real restaurant
 
-1. Run `scripts/fork-template.sh [template-slug] [restaurant-slug]` (script written when first fork happens).
-2. Replace `theme.ts` with the restaurant's brand tokens.
-3. Replace `content.example.ts` with real menu, photos, copy, hours, reservation links.
-4. Walk the audit's *personalization manifest* — execute the safe swaps, leave the locked pieces alone (Phase 1) or carefully extend them (Phase 2).
-5. QA + audit rounds.
-6. Ship.
+1. Run `scripts/fork-template.sh --template [template-slug] --slug [restaurant-slug]`.
+2. Run `scripts/new-build-checklist.mjs --slug [restaurant-slug] --lead-id [agency_leads.id] --task-id [mc-task-id] --template [template-slug]`.
+3. Mirror the checklist rows to Mission Control via the agency build update API.
+4. Replace `theme.ts` with the restaurant's brand tokens.
+5. Replace `content.example.ts` with real menu, photos, copy, hours, reservation links.
+6. Walk the audit's *personalization manifest* — execute the safe swaps, leave the locked pieces alone (Phase 1) or carefully extend them (Phase 2).
+7. Run three QA rounds and write each round back to Mission Control.
+8. Ship only when MC requirements and completion evidence pass.
 
 ---
 

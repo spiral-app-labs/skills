@@ -1,3 +1,8 @@
+---
+name: restaurant-template-analysis
+description: Deep-capture and audit a Framer restaurant template or live restaurant website before adding it to the restaurant-website-system catalog or using it as fork inspiration.
+---
+
 # Restaurant Template Analysis
 
 **When to use:** any time a Framer restaurant template URL or live restaurant website URL needs to be analyzed before being added to the `restaurant-website-system` catalog as a recreation, OR before being used as inspiration for a fork.

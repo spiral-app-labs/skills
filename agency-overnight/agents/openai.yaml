@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agency Overnight Compatibility"
+  short_description: "Legacy pointer to the Website Agency Operator"
+  default_prompt: "Use $website-agency-operator instead of $agency-overnight for current agency work."

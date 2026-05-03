@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant QA Delivery"
+  short_description: "Three QA rounds and delivery gate"
+  default_prompt: "Use $restaurant-qa-delivery to run the three-round QA, screenshot, build, mobile, link, pitch, and MC evidence gate."

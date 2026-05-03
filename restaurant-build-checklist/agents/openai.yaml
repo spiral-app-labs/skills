@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Build Checklist"
+  short_description: "Create and maintain local per-site checklist artifacts"
+  default_prompt: "Use $restaurant-build-checklist to create or update checklist.md and checklist.json for a restaurant website build."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Lead Qualification"
+  short_description: "7-check pre-build lead-fit gate"
+  default_prompt: "Use $restaurant-lead-qualification to decide whether this restaurant lead should be built, skipped, re-routed, or blocked."

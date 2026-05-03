@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Template Analysis"
+  short_description: "Deep-capture restaurant/Framer template audits"
+  default_prompt: "Use $restaurant-template-analysis to capture and audit a restaurant or Framer template before adding it to the catalog."

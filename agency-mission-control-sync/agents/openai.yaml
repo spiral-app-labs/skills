@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agency Mission Control Sync"
+  short_description: "Agency API, heartbeat, activity, QA, and task requirement writeback"
+  default_prompt: "Use $agency-mission-control-sync before reading or updating agency leads, build progress, QA rounds, heartbeat, activity, or delivery evidence."

@@ -7,3 +7,18 @@
 **/.env
 **/.env.local
 **/.env.*.local
+
+# generated dependencies/build output
+**/node_modules/
+**/.next/
+**/out/
+**/dist/
+**/.vercel/
+**/*.tsbuildinfo
+
+# generated browser-capture artifacts
+**/screenshots/
+**/scroll-frames/
+**/motion-frames/
+**/videos/
+**/recreation-screenshots/

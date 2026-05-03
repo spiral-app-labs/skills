@@ -149,15 +149,12 @@ export const content = {
   ],
 
   testimonial: {
-    eyebrow: 'Verbatim — Public Reviews',
+    eyebrow: 'Family · Friends · Date Night',
     quote:
       'My first Asian BBQ and hot pot experience — amazing. A good place if you are looking for a fun thing to do with family, friends, a date night, honestly anything.',
-    attribution: {
-      role: 'Google review · 5★',
-      name: 'Anonymous (one of 621)',
-    },
+    attribution: { role: '', name: '' },
     chefImage: 'https://images.unsplash.com/photo-1582450871972-ab5ca641643d?auto=format&fit=crop&w=900&q=80',
-    chefAlt: 'Korean BBQ table spread with sides',
+    chefAlt: 'Korean BBQ table spread with sides — group dining',
   },
 
   blog: {

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Site Router"
+  short_description: "Route qualified restaurant leads to the right catalog template"
+  default_prompt: "Use $restaurant-site-router to choose the restaurant-website-system template and modifiers for a qualified restaurant lead."

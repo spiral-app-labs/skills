@@ -13,23 +13,51 @@ The improvement pass has **three categories**, in this priority order:
 
 These convert the static "trust block" into a live, scrollable proof surface. They are the highest-leverage moves on the page, because they convert the audit's collected reviews/press from "wall of text" into something a guest *interacts with*.
 
-### Section 1.1 — ReviewCarousel (horizontal scroll-snap, Google reviews)
+### Section 1.1 — ReviewCarousel (auto-moving horizontal marquee, anonymized)
 
-**This is the signature pattern for the improvement pass.** Replace the static 3×N `ReviewWall` grid with a horizontal scroll-snap carousel of 8–12 verbatim Google reviews.
+**This is the signature pattern for the improvement pass.** Every fork ships an auto-moving horizontal review carousel.
 
-**Behavior contract:**
-- Auto-advances every 5.5s when the section is in viewport AND not hovered AND not paused.
-- Pauses on hover; pauses for 9s after a manual prev/next click.
-- Active card scales to 100% opacity + scale-100; inactive cards sit at scale-0.97 + opacity-60 with a 700ms ease-out transition. Subtle — reads as polish, not motion-heavy.
-- Mobile: native swipe via `snap-x snap-mandatory`. Desktop: prev/next chevrons + clickable progress dots.
-- Card width: `basis-[85%] md:basis-[42%] lg:basis-[32%]` — 1 / 2 / 3 cards visible per breakpoint.
-- IntersectionObserver tracks the most-visible card to drive `activeIndex`.
+**Locked behavior contract — applies to every fork in the catalog:**
+- **Auto-scroll + user-scroll, both at once.** The carousel auto-advances continuously AND the user can drag/swipe horizontally at any time. This is a JS-driven `scrollLeft` increment (~60px/sec via `requestAnimationFrame`), NOT a CSS `transform: translateX` marquee. The transform-marquee pattern blocks user interaction; the scrollLeft pattern doesn't.
+- **Pause-on-interaction:** `mouseenter` pauses indefinitely (resumes on `mouseleave`). `touchstart` / `pointerdown` / `wheel` pauses for 4 seconds, then resumes — long enough for the user to read the card they swiped to, short enough that the marquee feels alive again.
+- **Seamless wrap:** cards duplicated 2× in JSX (`[...REVIEWS, ...REVIEWS]`). When `scrollLeft` passes half the track width, subtract half — invisible jump because the second half is identical to the first.
+- **`prefers-reduced-motion`: auto-scroll disabled entirely.** User can still manually scroll. Detect via `window.matchMedia('(prefers-reduced-motion: reduce)').matches` inside the `useEffect`.
+- **Hide the scrollbar** so the auto-scroll doesn't render a visible track moving on its own — `.no-scrollbar::-webkit-scrollbar { display: none; }` + inline `style={{ scrollbarWidth: 'none' }}` for Firefox.
+- **No JS timers other than `requestAnimationFrame`.** No `setInterval`, no IntersectionObserver gating, no "pause when out of view." The animation is cheap (one scrollLeft write per frame) and doesn't need observation.
+- **Card width:** `w-[85vw] md:w-[440px]` — one full card visible on mobile, two-and-change on desktop.
+- **No framer-motion `whileInView` wrappers** on the carousel or its children. `whileInView` fails to fire reliably in some preview tooling and on slow mobile, leaving cards stuck at `opacity:0`.
+- **Edge fades:** the section's left and right edges have a `bg-gradient-to-r/l` overlay matching the section background, so cards melt in/out of frame instead of hard-cropping. `pointer-events-none` so they don't block drag.
+- **No prev/next chevrons or progress dots.** Drag/swipe is the navigation. The auto-scroll is the discovery.
 
-**Source priority:** Google Maps reviews are the strongest signal because they're the highest-volume review surface for any local restaurant. Scrape them via the Codex in-app browser per the audit skill (`scrapes/google.json`), strip to verbatim quotes + first-name-only attribution, and feed into `content.ts`. Yelp / OpenTable / Restaurantji are good supplements but Google is the lead.
+**NO NAMES — locked rule.** Each card renders **only**:
+- A 5-star row (`★★★★★`)
+- The verbatim quote in quotation marks
+- A small uppercase platform tag at the bottom: *"Google Review"* / *"OpenTable Review"* / *"Yelp Review"* / *"Tripadvisor Review"*
 
-**Reference implementation:** `restaurant-website-system/sites/cucina-bella/components/ReviewCarousel.tsx`. Same shape applies to every fork — only the `content.ts` shape and theme tokens change.
+**Do NOT render:** reviewer first names, last names, initials, avatars, dates, themes/categories, or "verified buyer" badges. Names invite name-mining, "is this review real?" friction, and (in some jurisdictions) republication-consent friction. The platform tag is the credibility signal; the quote is the proof. The reviewer's identity is never the pitch.
 
-**Why not just ReviewWall:** A static 9-card grid asks the guest to read 9 reviews. A carousel asks them to read one, and offers 8 more if they want. Conversion-pattern-wise, "show one, hint at more" beats "show everything" — same logic that drove the audit's `MenuListDotLeader` over a fully-expanded menu page.
+**SHORT QUOTES — locked rule.** Each card carries **8–18 words**. No card should run more than ~3 short lines on mobile. Long verbatim reviews must be **truncated with an ellipsis** (`…`) to the most quotable fragment, not pasted in full. Reasons:
+- Long cards force the marquee card height taller than the viewport on mobile (vertical overflow).
+- Long cards lose the "scannable proof" effect — guests skim the marquee, they don't read it.
+- A truncated 12-word fragment with `…` reads as "real review, edited for the wall." A 60-word block reads as "the agency dumped the JSON."
+
+**How to trim well:** keep one concrete noun (a dish, a moment, an adjective). Drop conjunctions, throat-clearing, and personal anecdotes. Examples:
+- ✅ *"The Szechuan spicy broth was flavorful."* (7 words, one concrete noun)
+- ✅ *"Family, friends, date night… honestly anything."* (7 words, ellipsis trims the original)
+- ❌ *"My first Asian BBQ and hot pot experience — amazing. A good place if you are looking for a fun thing to do with family, friends, a date night, honestly anything."* (32 words, 4+ lines on mobile)
+
+If a quote *must* run longer to land its specific dish/moment, cap at 18 words and let the rest go. The marquee carries 8–12 cards anyway — there's no scarcity that requires hoarding text on a single card.
+
+**Source priority:** Google Maps reviews are the strongest signal because they're the highest-volume review surface for any local restaurant. Scrape them via the Codex/Claude in-app browser per the audit skill (`scrapes/google.json`), strip to verbatim quotes only (drop `name`, `date`, `id`, `theme` fields entirely), and feed into the carousel's local `REVIEWS` array or into `content.ts` as `home.reviewsAnon = [{quote, source}, ...]`. Yelp / OpenTable / Tripadvisor / Restaurantji are good supplements; tag each card with its actual source platform.
+
+**Reference implementation:** `restaurant-website-system/sites/maax-asian-bbq/components/AnonReviewCarousel.tsx` is the canonical anonymous-marquee implementation. Same shape applies to every fork — only the `REVIEWS` array contents and theme tokens (canvas colour, accent colour) change.
+
+**Older reference (DEPRECATED for new forks):** `sites/cucina-bella/components/ReviewCarousel.tsx` and `sites/dibenedetto-trattoria/components/ReviewCarousel.tsx` use the older auto-advance-with-prev/next + named-attribution pattern. Existing forks can keep the older pattern, but **all new forks ship the AnonReviewCarousel pattern**. When polishing one of those older forks for v2+, swap to AnonReviewCarousel.
+
+**Why not the older auto-advance + named pattern:**
+- The auto-advance + IntersectionObserver "pause when out of view" was unreliable across preview tools and on iOS Safari (cards stuck at `opacity:0`). The pure-CSS marquee always works.
+- Named attribution opens up name-republication concerns and creates "is this person real?" doubt for a fraction of guests. The platform tag carries the credibility without that overhead.
+- "Show one, hint at more" was the original logic, but the marquee actually shows ALL of them in motion — guests scan the verbatim flow without having to click.
 
 ### Section 1.2 — PressMarquee (continuous-scroll press strip)
 
