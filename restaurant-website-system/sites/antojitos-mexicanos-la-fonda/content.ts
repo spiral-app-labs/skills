@@ -41,7 +41,7 @@ export const content = {
     serviceArea:
       'Crystal Lake and the surrounding McHenry County neighborhoods looking for Veracruz-style Mexican takeout, tacos, empanadas, huaraches, burritos, and seasonal atole or mole specials.',
     socialProof: [
-      'Google Maps shows 4.5 stars from 148 reviews and an Add website gap.',
+      'Google Maps capture from 2026-05-04 showed 4.5 stars from 148 reviews and an Add website gap.',
       'Restaurantji lists 4.6 from 95 ratings with favorites like Sope Veracruzano, Huarache De Asado, Tinga de Pollo, Super Burrito, and Shrimp Tacos.',
       'Highest-rated Google reviews repeatedly call out authentic comida Veracruzana, friendly staff, clean takeout, and fair prices.',
     ],
@@ -76,7 +76,7 @@ export const content = {
       bullets: [
         'Reviewers call it authentic comida Veracruzana, not generic Mexican food.',
         'Tacos, empanadas, sope Veracruzano, garnachas, huaraches, mole, and atole give the menu a specific hook.',
-        'The biggest before/after is simple: Google shows Add website, so the restaurant needs a first-party conversion home.',
+        'The biggest before/after is simple: the 2026-05-04 Google capture showed Add website, so the restaurant needs a first-party conversion home.',
       ],
       sideEyebrow: 'Hours',
       sideNote: 'Mon-Sat 10 AM - 7 PM. Sunday 10 AM - 4 PM.',
@@ -86,7 +86,7 @@ export const content = {
   fanFavorites: {
     heading: 'What Regulars Keep Naming',
     subhead:
-      'Locals keep pointing to tacos, Veracruz-style antojitos, careful carryout, and seasonal specials — the page now makes those reasons easy to scan before calling.',
+      'Public reviews and directory listings captured on 2026-05-04 point to tacos, Veracruz-style antojitos, careful carryout, and seasonal specials — the page now makes those reasons easy to scan before calling.',
     dishes: [
       {
         name: 'Tacos: steak, pork, shrimp, lengua',
@@ -112,7 +112,7 @@ export const content = {
   pizzaStyles: {
     heading: 'Build The First-Party Menu Story',
     subhead:
-      'Start with the dishes and visit details guests actually ask for, then call the restaurant to verify today’s menu and specials.',
+      'Start with dishes and visit details from public review/listing evidence, then call the restaurant to verify today’s menu, prices, and specials.',
     items: [
       {
         name: 'Veracruz Antojitos',
@@ -126,7 +126,7 @@ export const content = {
         color: 'deal-1' as const,
       },
       {
-        name: 'Tacos People Reorder',
+        name: 'Tacos Regulars Mention',
         inclusions: [
           'Steak, pork, shrimp, carne asada, lengua',
           'Creamy green sauce gets direct praise',
@@ -155,7 +155,7 @@ export const content = {
           'Fresh churros with fillings surface in reviews',
         ],
         price: 'Ask today',
-        note: 'No fake claims',
+        note: 'Verify today',
         color: 'deal-4' as const,
       },
     ],
@@ -192,7 +192,7 @@ export const content = {
     subhead:
       'The current guest journey is Google, Restaurantji, Restaurant Guru, snippets, and menu directories. The preview centralizes the essentials.',
     tiles: [
-      { title: 'No owned site', body: 'Google Maps explicitly shows Add website, which makes the before/after easy to demonstrate.' },
+      { title: 'No official site found', body: 'The 2026-05-04 Google Maps capture showed Add website, which makes the before/after easy to demonstrate.' },
       { title: '4.5 / 148', body: 'The Google review count is strong enough to sit near the top of the page.' },
       { title: 'Takeout-first', body: 'Reviews repeatedly praise carryout packaging, speed, friendliness, and value.' },
       { title: 'Veracruz-specific', body: 'The best copy angle is authentic comida Veracruzana and regional antojitos.' },
@@ -216,9 +216,9 @@ export const content = {
 
   proof: {
     eyebrow: 'GOOGLE PROOF',
-    heading: 'The reputation is already stronger than the web presence.',
+    heading: 'The captured Google reputation is stronger than the web presence.',
     body:
-      'The sell story is unusually direct: Google has the reviews, Restaurantji and Restaurant Guru have the public menu proof, but guests still do not get a clean owned page with phone, hours, dishes, directions, and the Veracruz story.',
+      'The sell story is unusually direct: the 2026-05-04 capture shows Google has the reviews, Restaurantji and Restaurant Guru have public menu proof, but guests still do not get a clean owned page with phone, publicly listed hours, dish examples, directions, and the Veracruz story.',
     quote:
       'What can I say? I finally found authentic comida Veracruzana. Hands down the best Mexican food around.',
     name: 'Highest-rated Google review packet',
@@ -230,7 +230,7 @@ export const content = {
   },
 
   closingCTA: {
-    heading: 'One page can replace the scattered search path.',
+    heading: 'One page can organize the scattered search path.',
     subhead:
       'For the first preview, the priority is to make the phone, directions, hours, review proof, and regional dish story impossible to miss.',
     links: [
@@ -241,11 +241,11 @@ export const content = {
     ],
     leftHeading: 'Truth-safe preview rules',
     leftBody: [
-      'No fake online ordering path: use call and maps until a provider is verified.',
-      'No fake full menu pricing: highlight sourced dishes and ask guests to call for current specials.',
+      'No unverified online ordering path: use call and maps until a provider is verified.',
+      'No unverified full-menu pricing: highlight sourced dishes and ask guests to call for current specials.',
       'No overclaiming dine-in: reviews conflict, so seating should stay carefully worded.',
     ],
-    note: 'Every headline and CTA is sourced from Google/Restaurantji/Restaurant Guru evidence captured on 2026-05-04.',
+    note: 'Every headline and CTA is based on Google, Restaurantji, and Restaurant Guru evidence reviewed on 2026-05-04.',
   },
 
   contact: {
@@ -261,8 +261,8 @@ export const content = {
     contactFacts: [
       { label: 'Address', value: '35 Berkshire Dr Unit 10, Crystal Lake, IL 60014' },
       { label: 'Phone', value: '(815) 526-3633' },
-      { label: 'Hours', value: 'Mon-Sat 10 AM - 7 PM, Sun 10 AM - 4 PM' },
-      { label: 'Current web gap', value: 'Google Maps shows Add website; no owned website was verified.' },
+      { label: 'Publicly listed hours', value: 'Mon-Sat 10 AM - 7 PM, Sun 10 AM - 4 PM; call for holiday changes.' },
+      { label: 'Current website gap', value: 'Google Maps capture showed Add website; no official owned site was verified on 2026-05-04.' }
     ],
   },
 
@@ -312,7 +312,7 @@ export const content = {
         ],
       },
     ],
-    copy: 'Preview build by Spiral — source evidence captured May 4, 2026. Verify current menu, seating, and specials with the restaurant before publishing.',
+    copy: 'Preview build by Spiral — public sources reviewed May 4, 2026. Verify current menu, seating, and specials with the restaurant before publishing.'
   },
 
   confetti: [

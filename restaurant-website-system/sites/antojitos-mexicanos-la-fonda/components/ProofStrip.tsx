@@ -1,10 +1,10 @@
 import { content } from '../content';
 
 const items = [
-  { value: '4.5★', label: 'Google rating captured in browser' },
-  { value: '148', label: 'Google reviews on the public profile' },
+  { value: '4.5★', label: 'Google rating captured 2026-05-04' },
+  { value: '148', label: 'Google reviews captured 2026-05-04' },
   { value: '30', label: 'highest-rated written reviews reviewed' },
-  { value: 'Add website', label: 'current Google Maps gap to fix' },
+  { value: 'Add website', label: 'Google profile gap captured 2026-05-04' },
 ];
 
 export function ProofStrip() {
@@ -15,10 +15,10 @@ export function ProofStrip() {
           <div>
             <p className="text-eyebrow font-bold uppercase text-accent">Verified public proof</p>
             <h2 className="mt-2 text-[28px] leading-[34px] font-extrabold md:text-[36px] md:leading-[42px]">
-              Real demand. No owned site.
+              Real demand. No official site found.
             </h2>
             <p className="mt-3 text-body-sm opacity-80">
-              {content.brand.fullName} already wins trust on Google and local directories; this preview turns that scattered proof into a direct call-and-directions path.
+              {content.brand.fullName} already wins trust on Google and local directories; this preview turns the captured public proof into a direct call-and-directions path.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">

@@ -6,7 +6,7 @@
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "qa_round_1",
+  "currentStage": "qa_round_2",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
@@ -535,9 +535,18 @@
         "build/typecheck result"
       ],
       "order": 10,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-dom-metrics-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/contact-mobile-full.png",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:58:00Z"
     },
     {
       "id": "qa_round_2",
@@ -709,9 +718,41 @@
     "local command: npm run build (passed with /api/concierge route)",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
-    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-pitch-battle-cards-complete-2026-05-04.json"
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-pitch-battle-cards-complete-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-dom-metrics-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-1-complete-2026-05-04.json"
   ],
-  "qaRounds": [],
+  "qaRounds": [
+    {
+      "round": 1,
+      "stage": "qa_round_1",
+      "status": "passed_after_fixes",
+      "completedAt": "2026-05-04T18:58:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-dom-metrics-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/contact-mobile-full.png",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)"
+      ],
+      "findingsFixed": [
+        "Source/date clarity for no-site and stats claims",
+        "Truth-safe menu/order wording and no implied transaction data",
+        "Mobile footer heaviness and post-footer blank space",
+        "Contact label wording for website gap and public-source hours"
+      ],
+      "remainingCaveats": [
+        "Owner must verify current menu, prices, seating, specials, holiday hours, and provider links before launch",
+        "MC writeback still blocked by missing agency auth"
+      ]
+    }
+  ],
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
@@ -721,9 +762,9 @@
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Pitch and battle-card gates are complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
-      "nextUnblockAction": "Retry the prepared pitch-battle-cards writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
-      "recordedAt": "2026-05-04T18:52:00Z"
+      "reason": "QA round 1 is complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
+      "nextUnblockAction": "Retry the prepared QA round 1 writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
+      "recordedAt": "2026-05-04T18:58:00Z"
     }
   ],
   "requirements": [
@@ -1068,11 +1109,21 @@
     {
       "id": "qa-round-1",
       "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "qa_round_1",
       "stage": "qa_round_1",
-      "status": "pending"
+      "status": "passed",
+      "notes": "QA round 1 passed after fixing source/date clarity, truth-safe menu/order wording, mobile footer density, post-footer blank spacing, and contact wording. Final DOM metrics show no horizontal overflow and required conversion facts present.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-dom-metrics-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/contact-mobile-full.png",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)"
+      ]
     },
     {
       "id": "qa-round-2",
@@ -1117,7 +1168,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T18:52:00Z",
+  "updatedAt": "2026-05-04T18:58:00Z",
   "passedRequirementIds": [
     "checklist-md",
     "checklist-json",
@@ -1145,6 +1196,7 @@
     "pitch-evidence",
     "battle-cards-objections",
     "battle-cards-demo-path",
-    "battle-cards-risks"
+    "battle-cards-risks",
+    "qa-round-1"
   ]
 }

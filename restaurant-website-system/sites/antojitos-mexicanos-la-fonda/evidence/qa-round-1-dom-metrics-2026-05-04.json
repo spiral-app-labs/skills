@@ -1,0 +1,50 @@
+[
+  {
+    "url": "http://localhost:3106/",
+    "vw": 1440,
+    "sw": 1440,
+    "bodyH": 7663,
+    "docH": 7663,
+    "footerBottom": 7663,
+    "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasConcierge": true,
+    "fakeWord": false,
+    "ownedSiteClaim": false,
+    "tacoReorder": false,
+    "offenders": []
+  },
+  {
+    "url": "http://localhost:3106/",
+    "vw": 390,
+    "sw": 390,
+    "bodyH": 12347,
+    "docH": 12347,
+    "footerBottom": 12347,
+    "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasConcierge": true,
+    "fakeWord": false,
+    "ownedSiteClaim": false,
+    "tacoReorder": false,
+    "offenders": []
+  },
+  {
+    "url": "http://localhost:3106/contact",
+    "vw": 390,
+    "sw": 390,
+    "bodyH": 2982,
+    "docH": 2982,
+    "footerBottom": 2982,
+    "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasConcierge": false,
+    "fakeWord": false,
+    "ownedSiteClaim": false,
+    "tacoReorder": false,
+    "offenders": []
+  }
+]
