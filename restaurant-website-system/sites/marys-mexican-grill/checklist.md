@@ -3,259 +3,114 @@
 - Workflow version: 2026-05-04
 - Source of truth: Mission Control tasks.metadata + this mirrored local checklist
 - Lead ID: 4416524d-0894-4e47-a4e7-880ba6579aa3
-- Child task ID: 70683332-3044-461f-9dcf-dffa59a24a7b
+- Current child task ID: 81fa73c9-696d-4dd1-a33b-9f58c44e957f
+- Founder gate task ID: 03d5cec6-db38-46de-92d6-47d8c06c787e
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: qa_round_2
+- Current stage: packaging
+- Ready to pitch: false
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
-- Deploy URL: TBD
-- Updated: 2026-05-04T22:20:00Z
+- Delivery package: restaurant-website-system/sites/marys-mexican-grill/delivery-package.md
+- Deploy URL: pending
+- Updated: 2026-05-04T23:55:00Z
+
+## Current Gate
+
+- Package status: packaged, waiting on Ethan human review and site-specific Anthropic key.
+- Founder-only gates still pending:
+  - `anthropic_key_created`: pending_founder
+  - `founder_human_review`: pending_founder
+- Delivery is not final. `ready_to_pitch` must remain `false`.
 
 ## Mission Control Sync Contract
 
-- MC root task metadata must mirror currentStage/build_stage, checklist paths, requirements, evidence_required, required_skills, passed_requirement_ids, and blockers.
-- MC child tasks must mirror workflow_step_id, requirements, evidence_required, required_skills, skill_contract, and operator_contract.
-- Do not mark a later gate complete from local files alone. MC task status + MC requirement evidence must move with the checklist.
+- Do not do raw Supabase writes from this worktree.
+- Mission Control API auth is unavailable here, so sync is represented by local payload files only.
+- Root metadata must mirror currentStage/build_stage, checklist paths, delivery package path, requirements, evidence, passed requirement IDs, and blockers.
+- Child task metadata must mirror workflow step IDs, requirements, evidence required, required skills, and operator contracts.
 
-## Canonical Gates / Skills
+## Canonical Gates
 
-### 1. checklist_created — Create and sync local + Mission Control checklist
-- Stage: checklist
-- Status: pending
-- Required skills: restaurant-build-checklist, agency-mission-control-sync
-- Evidence required: checklist.md path; checklist.json path; MC root task metadata with checklist paths
-- Requirement: checklist-md — Local checklist.md exists for this restaurant
-- Requirement: checklist-json — Local checklist.json exists for this restaurant
-- Requirement: checklist-mc-sync — Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage
-
-### 2. current_site_audit — Audit current site with browser evidence
-- Stage: auditing
-- Status: pending
-- Required skills: restaurant-website-audit, browser-automation, agency-mission-control-sync
-- Evidence required: audit.md; desktop screenshot; mobile screenshot; DOM/text scrape
-- Requirement: current-site-screenshots — Desktop and mobile screenshots captured
-- Requirement: current-site-scrape — Live site DOM/text scrape captured
-- Requirement: current-site-opportunities — Audit names concrete conversion, credibility, mobile, and factual gaps
-
-### 3. google_reviews_capture — Capture Google Reviews evidence
-- Stage: reviews
-- Status: passed
-- Required skills: restaurant-website-audit, browser-automation, agency-mission-control-sync
-- Evidence required: Google profile screenshot; Highest-filter screenshot; 30-review packet JSON/MD
-- Requirement: reviews-highest-filter — Google Reviews opened in browser and sorted by Highest
-- Requirement: reviews-thirty-written — 30 written reviews captured, or exact shortage/blocker documented
-- Requirement: reviews-themes — Review themes summary is usable for copy and pitch docs
-
-### 4. template_route_fork_build — Route to one archetype, fork template, and build first preview
-- Stage: building
-- Status: pending
-- Required skills: website-agency-system, restaurant-site-router, restaurant-template-fork, restaurant-build-checklist, agency-mission-control-sync
-- Evidence required: routing rationale; source.md/content files; npm build/typecheck output; preview URL or local preview evidence
-- Requirement: template-route-locked — Exactly one archetype/template route is chosen and justified
-- Requirement: fork-built — Template fork builds successfully with real content and preserved conversion links
-- Requirement: specificity — No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths
-
-### 5. website_improvement_pass — Run first full improvement pass
-- Stage: improving
-- Status: passed
-- Required skills: restaurant-fork-improvement, website-agency-system, agency-mission-control-sync
-- Evidence required: improvement notes; before/after screenshots or changed file list; mobile evidence
-- Requirement: identity-specific — Copy/visual rhythm feels specific to the restaurant and selected archetype
-- Requirement: conversion-paths — Order/reserve/call/directions/catering/events paths are accurate as applicable
-- Requirement: mobile-check — Mobile pass is explicitly checked with evidence
-
-### 6. top_three_improvements — Identify and implement top 3 improvements
-- Stage: top_3_improvements
-- Status: passed
-- Required skills: restaurant-fork-improvement, restaurant-build-checklist, agency-mission-control-sync
-- Evidence required: top-3 improvements doc; before/after screenshots or diff evidence
-- Requirement: top-three-named — Top 3 concrete improvements are named from audit/preview/QA
-- Requirement: top-three-implemented — All three improvements are implemented
-- Requirement: top-three-evidence — Each improvement has before/after evidence
-
-### 7. ai_concierge_added — Add truthful AI concierge or record blocker
-- Stage: concierge
-- Status: passed
-- Required skills: website-agency-system, restaurant-build-checklist, agency-mission-control-sync
-- Evidence required: KB/source file; test transcript; blocker if concierge cannot be safely added
-- Requirement: concierge-kb-truthful — Concierge KB only uses verified restaurant facts
-- Requirement: concierge-tested — Short transcript proves useful behavior
-- Requirement: concierge-safe — Fallbacks prevent fake reservations, unsupported promises, or invented facts
-
-### 8. pitch_doc — Create sellable pitch doc
-- Stage: pitch
-- Status: passed
-- Required skills: restaurant-pitch-doc, agency-mission-control-sync
-- Evidence required: pitch-doc.md; before/after evidence links
-- Requirement: pitch-specific — Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
-- Requirement: pitch-before-after — Pitch explains before/after delta in owner language
-- Requirement: pitch-evidence — Evidence and preview links are embedded or linked
-- Evidence: restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md; restaurant-website-system/sites/marys-mexican-grill/audit.md; restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md; restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md; restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md; restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md
-- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
-
-### 9. battle_cards_doc — Create owner battle cards
-- Stage: battle_cards
-- Status: passed
-- Required skills: restaurant-pitch-doc, agency-mission-control-sync
-- Evidence required: battle-cards.md
-- Requirement: battle-cards-objections — Likely owner objections have concise answers
-- Requirement: battle-cards-demo-path — Demo path and proof points are clear
-- Requirement: battle-cards-risks — Risks/unknowns are called out truthfully
-- Evidence: restaurant-website-system/sites/marys-mexican-grill/battle-cards.md; restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md; restaurant-website-system/sites/marys-mexican-grill/audit.md; restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md; restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md
-- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
-
-### 10. qa_round_1 — QA round 1
-- Stage: qa_round_1
-- Status: passed
-- Required skills: restaurant-qa-delivery, browser-automation, agency-mission-control-sync
-- Evidence required: qa-round-1.md; desktop screenshot; mobile screenshot; build/typecheck result
-- Requirement: qa-round-1 — QA round 1 completed with screenshots, findings, fixes, and MC writeback
-- Evidence: restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html; restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json; restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json
-- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime. Parent screenshot recapture is still required to confirm the post-fix visual result.
-
-### 11. qa_round_2 — QA round 2
-- Stage: qa_round_2
-- Status: passed
-- Required skills: restaurant-qa-delivery, browser-automation, agency-mission-control-sync
-- Evidence required: qa-round-2.md; desktop screenshot; mobile screenshot; build/typecheck result
-- Requirement: qa-round-2 — QA round 2 completed with screenshots, findings, fixes, and MC writeback
-- Evidence: restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json; restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json; restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json
-- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
-
-### 12. qa_round_3 — QA round 3 final sell-readiness QA
-- Stage: qa_round_3
-- Status: pending
-- Required skills: restaurant-qa-delivery, website-agency-system, browser-automation, agency-mission-control-sync
-- Evidence required: qa-round-3.md; desktop screenshots; mobile screenshots; build/typecheck result
-- Requirement: qa-round-3 — QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
-
-### 13. delivery — Package and deliver only after all gates pass
-- Stage: packaging
-- Status: pending
-- Required skills: restaurant-qa-delivery, restaurant-pitch-doc, agency-mission-control-sync
-- Evidence required: preview URL; pitch doc; battle cards; checklist.md/json; QA evidence; MC delivery writeback
-- Requirement: delivery-package — Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC
-- Requirement: delivery-no-missing-evidence — No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence
+| Gate | Stage | Status | Notes |
+| --- | --- | --- | --- |
+| checklist_created | checklist | done | Local checklist files exist and local MC payload mirroring is prepared. |
+| current_site_audit | auditing | done | Audit, screenshots, and DOM/text scrape are present. |
+| google_reviews_capture | reviews | passed | Highest-rating review capture and theme packet are present. |
+| template_route_fork_build | building | passed | Mary's remains on `bamzi-01`; fresh `npm run build` and `npm run typecheck` passed in this worktree on 2026-05-04. |
+| website_improvement_pass | improving | passed | Improvement evidence is present. |
+| top_three_improvements | top_3_improvements | passed | Ranked top-three doc is present. |
+| ai_concierge_added | concierge | passed | Truthful concierge evidence and transcripts are present. |
+| pitch_doc | pitch | passed | Pitch doc is present. |
+| battle_cards_doc | battle_cards | passed | Battle cards are present. |
+| qa_round_1 | qa_round_1 | passed | QA1 doc and screenshots are present. |
+| qa_round_2 | qa_round_2 | passed with evidence gap | QA2 doc/writebacks exist, but the referenced QA2 screenshots are missing from the current worktree. |
+| qa_round_3 | qa_round_3 | pending | QA3 doc and writebacks exist, but fresh QA3 screenshots are blocked in this sandbox. |
+| delivery | packaging | pending founder | Delivery package and local MC payloads are prepared; preview URL and founder-only gates are still pending. |
 
 ## Requirement Status
 
-- [ ] checklist-md: Local checklist.md exists for this restaurant
-- [ ] checklist-json: Local checklist.json exists for this restaurant
-- [ ] checklist-mc-sync: Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage
-- [ ] current-site-screenshots: Desktop and mobile screenshots captured
-- [ ] current-site-scrape: Live site DOM/text scrape captured
-- [ ] current-site-opportunities: Audit names concrete conversion, credibility, mobile, and factual gaps
-- [x] reviews-highest-filter: Google Reviews opened in browser and sorted by Highest - Captured in OpenClaw browser on Google Maps Reviews tab after selecting Highest rating.
-- [x] reviews-thirty-written: 30 written reviews captured, or exact shortage/blocker documented - 30 written Google reviews captured in JSON and MD packet.
-- [x] reviews-themes: Review themes summary is usable for copy and pitch docs - Google Highest packet theme extraction written to google-reviews-themes.md and audit Inputs updated.
-- [x] template-route-locked: Exactly one archetype/template route is chosen and justified - Mary's remains locked to bamzi-01 with routing rationale and source truth pack preserved locally.
-- [x] fork-built: Template fork builds successfully with real content and preserved conversion links - `npm run build` passed after replacing network-fetched Google fonts with local CSS font variables for this sandbox.
-- [x] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths - Preview content stays inside routing/source/audit/review evidence and labels unresolved phone/order issues truthfully.
-- [x] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype - Hero, mission, menu, visit, and supporting section copy now read specifically to Mary's and Woodstock Square while staying inside verified review/audit facts.
-- [x] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable - Menu, DoorDash, Call, and Directions remain truthful; the public pages center one clear call path at (815) 337-2303 while local QA records preserve the older-number risk.
-- [x] mobile-check: Mobile pass is explicitly checked with evidence - Improvement pass documents mobile-safe carousel behavior (`overflow-x-auto`, 280px cards, touch pause/resume, reduced-motion protection) in improvement-evidence-2026-05-04.md.
-- [x] top-three-named: Top 3 concrete improvements are named from audit/preview/QA - Ranked in `top-3-improvements-2026-05-04.md` with sellability rationale tied to audit, review, and preview evidence.
-- [x] top-three-implemented: All three improvements are implemented - Hero action rail, faster-scanning proof surfaces, and clearer guest-planning/order-phone handling are all live in the preview code.
-- [x] top-three-evidence: Each improvement has before/after evidence - Local diff evidence and verification are recorded in `top-3-improvements-2026-05-04.md`, `build-evidence-2026-05-04.md`, and the updated component/content files.
-- [x] concierge-kb-truthful: Concierge KB only uses verified restaurant facts - Route prompt and local fallback stay inside `content.example.ts`, `source.md`, `audit.md`, and `google-reviews-themes.md` facts only.
-- [x] concierge-tested: Short transcript proves useful behavior - Deterministic API transcripts captured locally for menu suggestions, directions, DoorDash/call routing, and unsupported reservations.
-- [x] concierge-safe: Fallbacks prevent fake reservations, unsupported promises, or invented facts - Concierge refuses reservations/live availability, labels DoorDash as the public third-party path, and falls back to the restaurant phone for time-sensitive questions.
-- [x] pitch-specific: Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps - `pitch-doc.md` is grounded in Woodstock Square context, Mexican grill review themes, and the audited conversion failures on the current domain.
-- [x] pitch-before-after: Pitch explains before/after delta in owner language - The pitch frames the before/after in operator terms: wrong page, wrong CTA, missing proof before; menu-first, proof-backed, truthful action paths after.
-- [x] pitch-evidence: Evidence and preview links are embedded or linked - The pitch doc links the audit, Google review packet/themes, build/improvement docs, top-3 evidence, and concierge evidence locally.
-- [x] battle-cards-objections: Likely owner objections have concise answers - `battle-cards.md` answers common objections around existing demand, polish risk, restaurant register, phone/hours uncertainty, photos, and keeping DoorDash truthful until owner confirmation.
-- [x] battle-cards-demo-path: Demo path and proof points are clear - `battle-cards.md` gives an exact seller demo sequence across the homepage, content source, proof sections, menu/contact flow, and the audited before-state.
-- [x] battle-cards-risks: Risks/unknowns are called out truthfully - `battle-cards.md` explicitly limits phone, hours, order-path, photography, owner-story, and MC sync claims.
-- [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Round 1 local QA artifacts record the responsive fixes, pre-fix screenshot/scrape evidence paths, successful `npm run typecheck` and `npm run build`, and local-only MC payloads.
-- [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Round 2 local QA artifacts capture the mobile conversion polish fixes, the desktop copy blocker and sell-ready rewrite, post-fix desktop/mobile screenshot recapture noted as passed, successful `npm run build` and `npm run typecheck`, and the blocked local MC payloads.
-- [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
-- [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC
-- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence
+- [x] checklist-md: Local checklist.md exists for this restaurant
+- [x] checklist-json: Local checklist.json exists for this restaurant
+- [x] checklist-mc-sync: Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage locally; remote API sync remains pending because agency auth is unavailable.
+- [x] current-site-screenshots: Desktop and mobile current-site screenshots captured in `screenshots/current-site-desktop-full.png`, `screenshots/current-site-mobile-full.png`, and `screenshots/current-site-mobile-fold.png`.
+- [x] current-site-scrape: Live site DOM/text scrape captured in `scrapes/current-site-browser-dom-snapshot-2026-05-04.html` and `scrapes/current-site-browser-text-2026-05-04.txt`.
+- [x] current-site-opportunities: Audit documents concrete conversion, credibility, mobile, and factual gaps in `audit.md`.
+- [x] reviews-highest-filter: Google Reviews Highest filter capture is present in `screenshots/google-reviews-highest-2026-05-04.png`.
+- [x] reviews-thirty-written: 30 written reviews are captured in `scrapes/google-reviews-highest-30.json` and `scrapes/google-reviews-highest-30.md`.
+- [x] reviews-themes: Review themes summary is present in `google-reviews-themes.md`.
+- [x] template-route-locked: Mary's remains locked to archetype `bamzi-01` in `routing.md`.
+- [x] fork-built: `npm run build` passed in this worktree on 2026-05-04.
+- [x] specificity: The fork preserves Mary's restaurant-specific identity and avoids fake claims, fake menu items, fake reviews, and invented order paths.
+- [x] identity-specific: Improvement pass preserves Mary's specific identity and the selected archetype.
+- [x] conversion-paths: Menu, DoorDash, call, directions, and hours remain truthful and restaurant-specific.
+- [x] mobile-check: Mobile behavior is documented in `improvement-evidence-2026-05-04.md`.
+- [x] top-three-named: Top three improvements are documented in `top-3-improvements-2026-05-04.md`.
+- [x] top-three-implemented: The ranked improvements are implemented in the fork.
+- [x] top-three-evidence: Top-three evidence is mirrored in the top-three and build evidence docs.
+- [x] concierge-kb-truthful: Concierge knowledge stays inside verified source material.
+- [x] concierge-tested: Concierge transcript evidence is present in `concierge-evidence-2026-05-04.md`.
+- [x] concierge-safe: Concierge refuses unsupported reservations and invented promises.
+- [x] pitch-specific: Pitch doc is specific to Mary's, Woodstock Square, and the audited conversion gaps.
+- [x] pitch-before-after: Pitch doc explains the before/after delta in owner language.
+- [x] pitch-evidence: Pitch doc links the supporting evidence set.
+- [x] battle-cards-objections: Battle cards answer likely owner objections.
+- [x] battle-cards-demo-path: Battle cards provide an exact demo path.
+- [x] battle-cards-risks: Battle cards call out risks and unknowns truthfully.
+- [x] qa-round-1: QA1 evidence is present locally.
+- [x] qa-round-2: QA2 doc and writebacks are present locally, but packaging notes the missing screenshot files as an unresolved evidence gap.
+- [ ] qa-round-3: QA3 is still pending because fresh QA3 screenshots could not be captured in this sandbox.
+- [x] delivery-package: Delivery package, checklist paths, pitch doc, battle cards, QA docs, screenshot inventory, and local MC payloads are mirrored in `delivery-package.md`.
+- [ ] delivery-no-missing-evidence: Still blocked by preview URL pending, missing QA2 screenshot files in the current worktree, and QA3 screenshot recapture blocked in this sandbox.
 
-## Evidence Paths
+## Core Artifact Paths
 
-- sites/marys-mexican-grill/audit.md
-- sites/marys-mexican-grill/scrapes/current-site-http.html
-- sites/marys-mexican-grill/scrapes/current-site-https-error.txt
-- sites/marys-mexican-grill/scrapes/restaurantji.html
-- sites/marys-mexican-grill/scrapes/google-maps-initial-text-2026-05-01.txt
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json
-- restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md
-- restaurant-website-system/sites/marys-mexican-grill/routing.md
-- restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md
-- restaurant-website-system/sites/marys-mexican-grill/audit.md
-- restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md
-- restaurant-website-system/sites/marys-mexican-grill/source.md
-- restaurant-website-system/sites/marys-mexican-grill/content.example.ts
-- restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx
-- restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-improving-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/components/TestimonialStarRow.tsx
-- restaurant-website-system/sites/marys-mexican-grill/components/ReservationFormBlock.tsx
-- restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx
-- restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx
-- restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts
-- restaurant-website-system/sites/marys-mexican-grill/components/AskConcierge.tsx
-- restaurant-website-system/sites/marys-mexican-grill/app/page.tsx
-- restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-concierge-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-pitch-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/battle-cards.md
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-battle-cards-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html
-- restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png
-- restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json
-- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json
+- Delivery package: `restaurant-website-system/sites/marys-mexican-grill/delivery-package.md`
+- Pitch doc: `restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md`
+- Battle cards: `restaurant-website-system/sites/marys-mexican-grill/battle-cards.md`
+- Audit: `restaurant-website-system/sites/marys-mexican-grill/audit.md`
+- Source truth: `restaurant-website-system/sites/marys-mexican-grill/source.md`
+- Build evidence: `restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md`
+- Improvement evidence: `restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md`
+- Top three: `restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md`
+- Concierge evidence: `restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md`
+- QA1: `restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md`
+- QA2: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md`
+- QA3: `restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md`
+- Packaging build payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json`
+- Packaging delivery payload: `restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json`
 
 ## QA Rounds
 
-- Round 1: passed
-- Round 2: passed
-- Round 3: pending
-
-## Pitch Artifacts
-
-- Pitch doc: restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md
-- Battle cards: restaurant-website-system/sites/marys-mexican-grill/battle-cards.md
-- Outreach draft: TBD
+- Round 1: passed with screenshots in `screenshots/qa-round-1-desktop-2026-05-04.png` and `screenshots/qa-round-1-mobile-2026-05-04.png`.
+- Round 2: doc/writeback passed, but the screenshot files referenced in QA2 docs/writebacks are not present in this worktree and remain an evidence blocker for final delivery.
+- Round 3: doc/writeback prepared, but fresh screenshots are blocked because localhost bind and headless browser launch are denied in this sandbox.
 
 ## Blockers
 
-- Mission Control API writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset; local Google Reviews evidence is captured but MC cannot be advanced from reviews to routing until auth is available.
-- Mission Control build-stage writeback remains local-only for the same auth reason, even though the first bamzi-01 fork now builds successfully in this workspace.
-- Mission Control improving-stage writeback remains local-only for the same auth reason, even though the improvement pass now has local evidence and successful verification output.
-- Mission Control top-three-improvements writeback remains local-only for the same auth reason, even though the gate now has local evidence and successful verification output.
-- Mission Control concierge-stage writeback remains local-only for the same auth reason, even though the concierge gate now has local UI evidence, deterministic transcripts, and successful verification output.
-- Mission Control pitch-stage writeback remains local-only for the same auth reason, even though the pitch gate now has local evidence and checklist updates.
-- Mission Control battle-cards-stage writeback remains local-only for the same auth reason, even though the battle cards gate now has local evidence and checklist updates.
-- Mission Control qa-round-1 writeback remains local-only for the same auth reason, even though the round-1 responsive fixes, checklist updates, and local payload artifacts are complete.
-- Mission Control qa-round-2 writeback remains local-only for the same auth reason, even though the round-2 mobile polish fixes, checklist updates, and local payload artifacts are complete.
-
-## Done Criteria
-
-- Mission Control lead has a simple sales status and current metadata.build_stage.
-- Mission Control parent task metadata.requirements mirrors this checklist.
-- All required checklist rows are passed.
-- Three QA rounds are logged with screenshot evidence.
-- Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
+- `ready_to_pitch` must remain `false` until Ethan personally completes human review.
+- `ready_to_pitch` must remain `false` until the site-specific Anthropic key is created/configured.
+- Preview URL is not stored anywhere in this worktree and must not be invented.
+- QA2 screenshot files referenced by the existing QA2 docs/writebacks are not present in this worktree.
+- Fresh QA3 screenshots still need capture in an environment that allows local preview rendering.
+- Mission Control API sync is pending because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
