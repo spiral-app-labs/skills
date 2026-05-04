@@ -1,0 +1,51 @@
+{
+  "build_stage": "packaging",
+  "currentStage": "packaging",
+  "site_slug": "strawberry-moon",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "qa_round_task_id": "f2c92b69-6485-415e-b2c3-8c765f8b193b",
+  "template_slug": "velvet-shaker-01",
+  "checklist_markdown_path": "restaurant-website-system/sites/strawberry-moon/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/strawberry-moon/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-dom-snapshot.txt",
+  "google_reviews_packet_path": "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+  "pitch_doc_path": "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+  "qa_round_3_path": "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+  "qa_round_3_browser_checks_path": "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+    "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx",
+    "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/content.ts",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+  ],
+  "artifact_urls": [
+    "http://127.0.0.1:3083"
+  ],
+  "passed_requirement_ids": [
+    "qa-round-3"
+  ],
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "blockers": [
+    "Mission Control API auth unavailable for remote writeback in this runtime.",
+    "Founder-controlled Anthropic key remains pending_founder.",
+    "Founder human review remains pending_founder."
+  ],
+  "heartbeat_summary": "QA round 3 completed locally for Strawberry Moon with build/typecheck, desktop/mobile screenshots, visual QA fixes, concierge safety check, and local MC writeback payloads. Stage advanced to packaging; ready_to_pitch remains false.",
+  "created_at": "2026-05-04T23:32:00Z"
+}

@@ -1,66 +1,103 @@
-# Strawberry Moon — QA Round 3 Final Sell-Readiness QA
+# Strawberry Moon — Canonical QA Round 3
 
 - Date: 2026-05-04
 - Site slug: `strawberry-moon`
-- MC parent task: `216314e9-4af6-4f99-92ab-54e7912b9173`
+- MC root task: `216314e9-4af6-4f99-92ab-54e7912b9173`
+- MC QA3 child task: `f2c92b69-6485-415e-b2c3-8c765f8b193b`
 - Lead ID: `af98b880-9351-4f00-b35b-253ad35570d9`
-- Current gate: `qa_round_3`
-- Locked route: `velvet-shaker-01`, warmed toward Bramble for a cozy Wauconda martini lounge.
+- Archetype lock: `velvet-shaker-01`
+- QA scope: final sell-readiness, preview/screenshots, pitch/battle-card evidence, top-three-improvement evidence, concierge safety, links, and MC requirement packaging
 
-## Verification run
+## Git identity
+
+- `git config user.name`: `Ethan Talreja`
+- `git config user.email`: `64980375+EthanTalreja@users.noreply.github.com`
+
+## Commands run
 
 ```bash
-npm run typecheck
+npm ci
 npm run build
-npm run start -- --hostname 127.0.0.1 --port 3078
+npm run typecheck
+npm run start -- --hostname 127.0.0.1 --port 3083
+node /tmp/qa3-capture.mjs
 ```
 
-Result: typecheck and production build passed. Local production preview served successfully on `127.0.0.1:3078`. Mission Control heartbeat writeback succeeded as `876ee0b4-052c-4f76-b50c-dbeb5f92d16d`.
+## Verification result
+
+- `npm ci`: passed; npm audit reported inherited advisories in the current dependency stack
+- `npm run build`: passed
+- `npm run typecheck`: passed
+- Local production preview: passed at `http://127.0.0.1:3083`
+- Browser evidence: passed via host Chrome CDP screenshots after OpenClaw browser direct localhost navigation was blocked by browser policy
+- Visual QA: passed after fixes below
 
 ## Evidence captured
 
-Desktop and mobile screenshots captured for home, menu, contact, and about:
+Desktop and mobile screenshots captured for home, menu, about, and contact:
 
 - `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png`
 - `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png`
 - `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png`
 - `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png`
-- `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png`
-- `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png`
 - `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png`
 - `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png`
 
-## Final verdict
+Route/browser evidence packet:
 
-Pass.
+- `restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json`
 
-## What is world-class already
+Mission Control local payloads:
 
-- Identity is unmistakably Strawberry Moon: red-door Wauconda martini lounge, Tuesday flights, first-come seating, cozy two-level room, live music, fondue/nibbles, and warm bartender/owner hospitality.
-- Conversion paths are clear and honest: call, directions, current site, and events page, with no fake reservations or ordering flows.
-- The redesign is materially stronger than the current Weebly experience because it sells mood, reasons to visit, live music, Google proof, and practical visit details in one coherent system.
-- Mobile passes: navigation, CTAs, address, phone, hours, directions, live music info, menu content, and story sections are usable and coherent.
+- `restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json`
+- `restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json`
 
-## What still blocks sellability
+## Required artifacts checked
 
-None after Round 3 fixes.
+- `pitch-doc.md`: present and specific to Strawberry Moon's preserve-stack owner story
+- `battle-cards.md`: present with owner objections, demo path, proof, and risks
+- `improvements.md`: top three improvements named and implemented
+- `ai-concierge.md` and `ai-concierge-transcript.md`: present
+- `/api/concierge`: returns a truth-safe unsupported-intent handoff for reservation requests
+- `scrapes/google-reviews-highest-30.json`: present as review proof
+- `audit.md` and `source.md`: present as factual source basis
+- `checklist.md` and `checklist.json`: updated to advance from QA3 to packaging
 
-Previously visible blockers fixed in this round:
+## Findings and fixes
 
-1. Removed customer-visible audit/prototype language from menu, about, contact, footer, and CTA copy.
-2. Removed the personal-looking email CTA from the sellable contact experience and emphasized call/directions/events/current-site paths instead.
-3. Replaced the blank embedded map capture with a reliable high-contrast directions card.
-4. Disabled scroll-reveal wrappers for this preview so below-fold desktop content is fully visible in screenshots and does not read as low-contrast/unfinished.
-5. Reworked the hero proof card to a solid high-contrast panel so the text no longer looks muddy over photography.
+1. Initial UA-only mobile screenshots falsely appeared horizontally clipped. I regenerated screenshot evidence through Chrome CDP device metrics; final route metrics are `documentScrollWidth == viewportWidth` on desktop and mobile.
+2. The fixed mobile Call/Directions rail was useful on the homepage but covered first-screen body content on menu/about/contact. I limited it to the homepage and tightened its height.
+3. Contact eyebrow copy read like internal notes. I changed it from `(call, directions, live music)` to `Call, directions, and live music`.
+4. Contact CTAs were awkward. I changed them to `Visit current site`, `See events page`, and `Book an event`.
+5. The menu page repeated `Martinis` as page heading and first section heading. I changed the page display heading to `Martinis & more`.
 
-## Critical fixes before Ethan sees it
+## Final visual QA
 
-None required for QA Round 3. Next work is packaging, pitch/outreach docs, preview URL, and Mission Control mirror/writeback.
+- No blocking desktop or mobile clipping found
+- No horizontal overflow found in final CDP metrics
+- No placeholder/internal-note copy remains in customer-facing contact hero/CTA labels
+- Sticky mobile CTA no longer covers menu/about/contact content
+- Home mobile CTA remains clear and conversion-oriented
+- Non-blocking notes: mobile nav wraps `events` to a second line at 390px; compact fact cards wrap but remain legible
 
-## Confidence to sell
+## Route and conversion checks
 
-Ethan can confidently pitch this as a softer/nurture redesign: not a rescue of a broken site, but a clear upgrade from a thin Weebly page into a warmer, more polished martini/lounge/live-music experience. The owner should immediately see the red-door identity, live-music cadence, martini program, first-come policy, and visit paths without Ethan needing to explain away prototype scaffolding.
+- Internal routes returned 200: `/`, `/menu`, `/about`, `/contact`
+- Concierge API returned 200 and refused unsupported reservation promises with call/official-site handoff
+- Conversion handoffs present: `tel:+18478655151`, `mailto:thomasmalik830@gmail.com`, Google Maps directions, official site, events page, and official Book an Event page
+- No invented online ordering, reservations, table holds, fake prices, fake awards, or fake review counts found
 
-## Round 3 result
+## Verdict
 
-Passed. Advance to `packaging`.
+Canonical QA Round 3 is complete locally and may advance to `packaging`.
+
+- Build: pass
+- Typecheck: pass
+- Desktop/mobile screenshots: pass
+- Final visual QA: pass
+- Pitch/battle-card/top-three/concierge evidence: pass
+- MC remote sync: blocked by unavailable auth; local payloads created
+
+`ready_to_pitch` remains `false`; `anthropic_key_status` and `human_review_status` both remain `pending_founder`.

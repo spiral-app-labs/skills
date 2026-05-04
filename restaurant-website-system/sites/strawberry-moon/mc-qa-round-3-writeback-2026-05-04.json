@@ -1,0 +1,62 @@
+{
+  "round_number": 3,
+  "site_slug": "strawberry-moon",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_task_id": "f2c92b69-6485-415e-b2c3-8c765f8b193b",
+  "parent_root_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "build_stage": "qa_round_3",
+  "findings": [
+    "Initial visual pass caught a false mobile-overflow artifact from UA-only screenshots; regenerated screenshots with CDP mobile device metrics showed no horizontal overflow.",
+    "Fixed real sell-readiness issues before passing: fixed CTA rail no longer covers menu/about/contact first-screen content, contact eyebrow no longer reads like internal notes, contact CTAs are less awkward, and menu heading repetition is removed.",
+    "Final visual QA found no blocking clipping, overflow, placeholder copy, sticky CTA overlap, or illegibility."
+  ],
+  "fixes_applied": [
+    "Limited MobileStickyCta to the homepage and made it more compact.",
+    "Changed contact eyebrow to Call, directions, and live music.",
+    "Changed CTAs to Visit current site, See events page, and Book an event.",
+    "Changed menu page display heading to Martinis & more."
+  ],
+  "screenshots": [
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+    "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx",
+    "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/content.ts",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+  ],
+  "artifact_urls": [
+    "http://127.0.0.1:3083"
+  ],
+  "commands_passed": [
+    "npm ci",
+    "npm run build",
+    "npm run typecheck",
+    "npm run start -- --hostname 127.0.0.1 --port 3083"
+  ],
+  "visual_qa_status": "passed",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "mission_control_sync": "pending_remote_auth; local payload created",
+  "created_at": "2026-05-04T23:32:00Z"
+}
