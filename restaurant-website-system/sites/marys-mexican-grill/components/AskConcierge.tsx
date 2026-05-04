@@ -8,6 +8,7 @@ const SUGGESTED_CHIPS = [
   'What should I order tonight?',
   'When are you open?',
   'Where are you located?',
+  'Can I reserve a table?',
 ];
 
 export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: string }) {
@@ -182,10 +183,12 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
             {messages.length === 0 && (
               <div className="space-y-4">
                 <p className="font-display text-section-h3 leading-tight text-text-dark">
-                  Hello, how can I help?
+                  Ask about Mary&apos;s before you call or head over.
                 </p>
                 <p className="text-body-sm text-text-muted">
-                  Menu, hours, directions, or a table tonight. Ask anything.
+                  Public facts only, menu signals, public hours, Woodstock Square directions,
+                  the phone note, and the DoorDash path. No live reservations, direct-order
+                  promises, or invented availability.
                 </p>
               </div>
             )}
@@ -262,8 +265,8 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
               </button>
             </div>
             <p className="mt-2 text-[11px] leading-tight text-text-muted">
-              AI concierge, confirm with the restaurant for allergy or time-sensitive
-              questions.
+              Preview-safe AI concierge. Confirm allergies, live availability, hours, and
+              phone details with the restaurant directly.
             </p>
           </form>
         </div>

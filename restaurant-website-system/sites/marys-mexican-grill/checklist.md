@@ -3,14 +3,14 @@
 - Workflow version: 2026-05-04
 - Source of truth: Mission Control tasks.metadata + this mirrored local checklist
 - Lead ID: 4416524d-0894-4e47-a4e7-880ba6579aa3
-- Child task ID: 305e2186-ed2d-4148-be9d-9439740cae9f
+- Child task ID: 70683332-3044-461f-9dcf-dffa59a24a7b
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: top_3_improvements
+- Current stage: concierge
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T20:29:26Z
+- Updated: 2026-05-04T20:36:05Z
 
 ## Mission Control Sync Contract
 
@@ -76,7 +76,7 @@
 
 ### 7. ai_concierge_added — Add truthful AI concierge or record blocker
 - Stage: concierge
-- Status: pending
+- Status: passed
 - Required skills: website-agency-system, restaurant-build-checklist, agency-mission-control-sync
 - Evidence required: KB/source file; test transcript; blocker if concierge cannot be safely added
 - Requirement: concierge-kb-truthful — Concierge KB only uses verified restaurant facts
@@ -150,9 +150,9 @@
 - [x] top-three-named: Top 3 concrete improvements are named from audit/preview/QA - Ranked in `top-3-improvements-2026-05-04.md` with sellability rationale tied to audit, review, and preview evidence.
 - [x] top-three-implemented: All three improvements are implemented - Hero action rail, faster-scanning proof surfaces, and clearer guest-planning/order-phone handling are all live in the preview code.
 - [x] top-three-evidence: Each improvement has before/after evidence - Local diff evidence and verification are recorded in `top-3-improvements-2026-05-04.md`, `build-evidence-2026-05-04.md`, and the updated component/content files.
-- [ ] concierge-kb-truthful: Concierge KB only uses verified restaurant facts
-- [ ] concierge-tested: Short transcript proves useful behavior
-- [ ] concierge-safe: Fallbacks prevent fake reservations, unsupported promises, or invented facts
+- [x] concierge-kb-truthful: Concierge KB only uses verified restaurant facts - Route prompt and local fallback stay inside `content.example.ts`, `source.md`, `audit.md`, and `google-reviews-themes.md` facts only.
+- [x] concierge-tested: Short transcript proves useful behavior - Deterministic API transcripts captured locally for menu suggestions, directions, DoorDash/call routing, and unsupported reservations.
+- [x] concierge-safe: Fallbacks prevent fake reservations, unsupported promises, or invented facts - Concierge refuses reservations/live availability, labels DoorDash as the public third-party path, and falls back to the restaurant phone for time-sensitive questions.
 - [ ] pitch-specific: Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
 - [ ] pitch-before-after: Pitch explains before/after delta in owner language
 - [ ] pitch-evidence: Evidence and preview links are embedded or linked
@@ -192,6 +192,11 @@
 - restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx
 - restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts
+- restaurant-website-system/sites/marys-mexican-grill/components/AskConcierge.tsx
+- restaurant-website-system/sites/marys-mexican-grill/app/page.tsx
+- restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-concierge-2026-05-04.json
 
 ## QA Rounds
 
@@ -211,6 +216,7 @@
 - Mission Control build-stage writeback remains local-only for the same auth reason, even though the first bamzi-01 fork now builds successfully in this workspace.
 - Mission Control improving-stage writeback remains local-only for the same auth reason, even though the improvement pass now has local evidence and successful verification output.
 - Mission Control top-three-improvements writeback remains local-only for the same auth reason, even though the gate now has local evidence and successful verification output.
+- Mission Control concierge-stage writeback remains local-only for the same auth reason, even though the concierge gate now has local UI evidence, deterministic transcripts, and successful verification output.
 
 ## Done Criteria
 
