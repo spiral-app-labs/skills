@@ -21,11 +21,11 @@ export function LocationFinderStrip({ heading, subhead, tiles, accordion, id }: 
       <div className="max-w-content mx-auto px-5 md:px-10 py-16 md:py-24">
         <SectionHeading heading={heading} subhead={subhead} />
 
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4">
+        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-5 md:gap-4">
           {tiles.map((t) => (
             <div
               key={t.title}
-              className="flex aspect-[4/5] flex-col justify-between rounded-card border border-card-border bg-canvas-warm p-4"
+              className="flex min-h-[150px] flex-col justify-between rounded-card border border-card-border bg-canvas-warm p-4 md:aspect-[4/5]"
             >
               <span className="inline-block w-fit bg-accent text-text-on-brand text-body-sm font-bold px-3 py-1 rounded-pill">
                 {t.title}

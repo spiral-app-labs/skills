@@ -15,7 +15,7 @@ export function ProofStrip() {
           <div>
             <p className="text-eyebrow font-bold uppercase text-accent">Verified public proof</p>
             <h2 className="mt-2 text-[28px] leading-[34px] font-extrabold md:text-[36px] md:leading-[42px]">
-              Real demand. No official site found.
+              Real demand. Website not verified.
             </h2>
             <p className="mt-3 text-body-sm opacity-80">
               {content.brand.fullName} already wins trust on Google and local directories; this preview turns the captured public proof into a direct call-and-directions path.
