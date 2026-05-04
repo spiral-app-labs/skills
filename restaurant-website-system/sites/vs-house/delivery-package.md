@@ -7,7 +7,7 @@
 - MC parent task: `41da188d-4629-4cb2-91f3-6be31d6b9b6d`
 - Template archetype: `bamzi-01`
 - Current local stage: `packaging`
-- Preview URL: `TBD`
+- Preview URL: `https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app` (Vercel protected, not owner-shareable yet)
 - Delivery verdict: **Not delivered yet** — local QA/evidence package is assembled; deployed preview and MC writeback remain.
 
 ## Core sell story
@@ -72,8 +72,8 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 
 ## Remaining blockers before delivery
 
-1. Deploy or attach a preview URL.
-2. Smoke-test `/api/chat` on the deployed preview URL; local production fallback is verified without an API key.
+1. Make the Vercel preview owner-shareable or provide a deployment-protection bypass token.
+2. Smoke-test `/` and `/api/chat` on the deployed preview URL after Vercel protection is bypassed; local production fallback is verified without an API key.
 3. Mirror packaging evidence to Mission Control via approved API route.
 4. Confirm final owner-facing outreach timing and contact path.
 
@@ -91,3 +91,10 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 - Updated `components/AskConcierge.tsx` so streamed error frames surface to the guest instead of being swallowed as malformed SSE.
 - Verified `npm run typecheck`, `npm run build`, and local production `/api/chat` fallback via curl.
 - Evidence: `restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md`.
+
+## 2026-05-04 heartbeat addendum — preview URL found but protected
+
+- Vercel preview URL found from PR #1: `https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app`.
+- `GET /` and `POST /api/chat` both returned Vercel Authentication Required (`401`) from OpenClaw.
+- Added `preview-smoke-evidence.md`.
+- Delivery remains blocked on an owner-shareable/public preview or deployment-protection bypass, plus MC writeback confirmation.

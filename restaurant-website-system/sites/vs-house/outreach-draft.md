@@ -8,6 +8,8 @@ The big thing I wanted to fix: your current homepage says `Welcome Home`, but it
 
 Preview link: **TBD before sending**
 
+Internal preview currently exists at `https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app`, but it is Vercel-protected and should not be sent to the owner until it is made public/shareable or a bypass is configured.
+
 ## Why I thought this was worth building
 
 - V's House already has a stronger story than most restaurants: Vu family heritage, public press, strong review volume, and a room guests repeatedly call beautiful.

@@ -4,8 +4,8 @@
 - MC parent task ID: 41da188d-4629-4cb2-91f3-6be31d6b9b6d
 - Template slug: bamzi-01
 - Current stage: packaging
-- Deploy URL: TBD
-- Updated: 2026-05-04T15:05:00Z
+- Deploy URL: https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app (Vercel protected, not owner-shareable yet)
+- Updated: 2026-05-04T15:20:00Z
 
 ## Requirements
 
@@ -102,3 +102,10 @@
 - Updated `components/AskConcierge.tsx` so streamed error frames surface to the guest instead of being swallowed as malformed SSE.
 - Verified `npm run typecheck`, `npm run build`, and local production `/api/chat` fallback via curl.
 - Evidence: `restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md`.
+
+## 2026-05-04 — Vercel preview protection heartbeat progress
+
+- Vercel PR preview found: `https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app`.
+- Smoke test attempted for `/` and `/api/chat`; both returned Vercel Authentication Required (`401`).
+- Artifact added: `restaurant-website-system/sites/vs-house/preview-smoke-evidence.md`.
+- Local production concierge fallback remains verified, but deployed smoke test and owner-shareable delivery are blocked until preview protection is bypassed/disabled or a public preview is created.

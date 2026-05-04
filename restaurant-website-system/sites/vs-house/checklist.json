@@ -26,7 +26,8 @@
     "restaurant-website-system/sites/vs-house/outreach-draft.md",
     "restaurant-website-system/sites/vs-house/delivery-package.md",
     "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
-    "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx"
+    "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
+    "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md"
   ],
   "qaRounds": [
     {
@@ -60,7 +61,7 @@
       ]
     }
   ],
-  "deployUrl": null,
+  "deployUrl": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/vs-house/pitch-doc.md",
     "outreachDraft": "restaurant-website-system/sites/vs-house/outreach-draft.md",
@@ -70,8 +71,8 @@
   "blockers": [
     {
       "gate": "packaging",
-      "reason": "Packaging artifacts now include outreach draft, delivery package, screenshots, Google Highest packet, and local concierge fallback verification. Final delivery still needs a deployed preview URL, Mission Control API/writeback confirmation, and deployed preview smoke test.",
-      "recordedAt": "2026-05-04T15:05:00Z"
+      "reason": "Vercel preview URL exists, but it returns Vercel Authentication Required (401) for both / and /api/chat. Need preview protection bypass/public owner-shareable URL before deployed smoke test and delivery; MC API/writeback confirmation also remains pending.",
+      "recordedAt": "2026-05-04T15:20:00Z"
     }
   ],
   "requirements": [
@@ -172,7 +173,7 @@
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
       "required": true,
-      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, screenshot evidence, and local concierge fallback verification exist. Final delivery still needs a deployed preview URL, MC mirror/writeback, and deployed preview smoke test.",
+      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, screenshot evidence, local concierge fallback verification, and Vercel preview URL exist. Final delivery still needs preview protection bypass/public owner-shareable URL, MC mirror/writeback, and deployed preview smoke test.",
       "evidence": [
         "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
         "restaurant-website-system/sites/vs-house/battle-cards.md",
@@ -181,6 +182,7 @@
         "restaurant-website-system/sites/vs-house/delivery-package.md",
         "restaurant-website-system/sites/vs-house/outreach-draft.md",
         "restaurant-website-system/sites/vs-house/pitch-doc.md",
+        "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
         "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
@@ -195,5 +197,8 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T15:05:00Z"
+  "updatedAt": "2026-05-04T15:20:00Z",
+  "artifactUrls": [
+    "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app"
+  ]
 }
