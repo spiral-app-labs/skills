@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "top_3_improvements",
+  "currentStage": "concierge",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -397,9 +397,19 @@
         "blocker if concierge cannot be safely added"
       ],
       "order": 7,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/app/page.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-concierge-2026-05-04.json"
+      ],
+      "blocker": {
+        "reason": "Mission Control auth is unavailable in this runtime, so concierge-stage writeback can only be recorded locally.",
+        "nextUnblockAction": "POST mc-build-writeback-concierge-2026-05-04.json once agency auth is restored.",
+        "updatedAt": "2026-05-04T20:36:05Z"
+      }
     },
     {
       "id": "pitch_doc",
@@ -934,29 +944,49 @@
     {
       "id": "concierge-kb-truthful",
       "title": "Concierge KB only uses verified restaurant facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Concierge prompt and fallback logic stay inside verified facts from the source pack, review themes, and current content file only.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/source.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+        "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "concierge-tested",
       "title": "Short transcript proves useful behavior",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Compiled API route was exercised directly with deterministic local fallback transcripts for menu suggestions, directions, DoorDash and call routing, and reservation refusal.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts"
+      ]
     },
     {
       "id": "concierge-safe",
       "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The concierge refuses reservations and live availability promises, labels DoorDash as a public third-party path, and sends time-sensitive questions back to the restaurant phone.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "pitch-specific",
@@ -1065,6 +1095,6 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T20:29:26Z",
-  "childTaskId": "305e2186-ed2d-4148-be9d-9439740cae9f"
+  "updatedAt": "2026-05-04T20:36:05Z",
+  "childTaskId": "70683332-3044-461f-9dcf-dffa59a24a7b"
 }

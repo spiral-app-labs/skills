@@ -10,6 +10,7 @@ import { BlogCardGrid } from '../components/BlogCardGrid';
 import { TimelessFooterSection } from '../components/TimelessFooterSection';
 import { ContactStripFooter } from '../components/ContactStripFooter';
 import { ScrollRevealStandard } from '../components/ScrollReveal';
+import { AskConcierge } from '../components/AskConcierge';
 import { content } from '../content.example';
 
 // Aliveness retrofit (2026-04-20): every below-hero section wrapped in
@@ -68,6 +69,7 @@ export default function HomePage() {
         </ScrollRevealStandard>
       </main>
       <ContactStripFooter />
+      <AskConcierge restaurantName={content.brand.name} />
     </>
   );
 }

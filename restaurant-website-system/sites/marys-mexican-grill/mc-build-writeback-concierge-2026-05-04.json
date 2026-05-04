@@ -1,0 +1,39 @@
+{
+  "build_stage": "concierge",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "70683332-3044-461f-9dcf-dffa59a24a7b",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/components/AskConcierge.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/app/page.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/source.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md"
+  ],
+  "passed_requirement_ids": [
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe"
+  ],
+  "blocker": "Mission Control writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+  "heartbeat_summary": "Concierge gate completed locally for Mary's Mexican Grill. The homepage now mounts a restaurant-specific preview-safe concierge entry point, the API route is constrained to verified Mary's facts with deterministic fallback behavior when no model key is present, and local evidence captures UI strings plus menu, directions, DoorDash/call routing, and unsupported reservation transcripts. npm ci, npm run build, and npm run typecheck passed. MC sync is captured in local artifacts only until agency auth is restored."
+}
