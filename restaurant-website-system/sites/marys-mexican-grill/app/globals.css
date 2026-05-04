@@ -42,3 +42,34 @@ h1, h2, h3, h4 {
 }
 
 * { box-sizing: border-box; }
+
+.hero-plate-float {
+  animation: heroPlateFloat 7s ease-in-out infinite;
+}
+
+.review-carousel-track {
+  scrollbar-width: none;
+}
+
+.review-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes heroPlateFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-plate-float {
+    animation: none;
+  }
+
+  .review-carousel-card {
+    transition: none;
+  }
+}

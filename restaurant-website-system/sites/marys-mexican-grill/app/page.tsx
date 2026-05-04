@@ -5,6 +5,7 @@ import { CategoryStrip } from '../components/CategoryStrip';
 import { BigHeadline } from '../components/BigHeadline';
 import { MenuListDotLeader } from '../components/MenuListDotLeader';
 import { TestimonialChefBlock } from '../components/TestimonialChefBlock';
+import { ReviewCarousel } from '../components/ReviewCarousel';
 import { BlogCardGrid } from '../components/BlogCardGrid';
 import { TimelessFooterSection } from '../components/TimelessFooterSection';
 import { ContactStripFooter } from '../components/ContactStripFooter';
@@ -38,6 +39,9 @@ export default function HomePage() {
         </ScrollRevealStandard>
         <ScrollRevealStandard>
           <BigHeadline />
+        </ScrollRevealStandard>
+        <ScrollRevealStandard>
+          <ReviewCarousel />
         </ScrollRevealStandard>
         {content.featured.map((f) => (
           <ScrollRevealStandard key={f.eyebrow}>

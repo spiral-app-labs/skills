@@ -82,7 +82,7 @@ export function DarkLeafHero({
 
       {!compact && plateImage && (
         <div className="relative mt-10 max-w-[1000px] mx-auto px-6">
-          <div className="relative aspect-[16/9] -mb-24 md:-mb-36 rounded-[50%/25%] overflow-hidden">
+          <div className="hero-plate-float relative aspect-[16/9] -mb-24 md:-mb-36 rounded-[50%/25%] overflow-hidden">
             <Image
               src={plateImage}
               alt={plateAlt}
