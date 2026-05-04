@@ -12,8 +12,8 @@ export function CocktailPhotoRow({ photos }: { photos: ReadonlyArray<Photo> }) {
       <div className="mx-auto max-w-shell px-5 md:px-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {photos.map((p, i) => (
-            <div key={i} className="relative aspect-[3/4] overflow-hidden">
-              <CurtainImage src={p.src} alt={p.alt} from="top" delay={i * 0.08} />
+            <div key={i} className="relative aspect-[3/4] overflow-hidden bg-canvas">
+              <CurtainImage src={p.src} alt={p.alt} from="top" delay={i * 0.08} eager={i < 2} />
             </div>
           ))}
         </div>

@@ -4,7 +4,6 @@ import { PageDisplayHeading } from '../../components/PageDisplayHeading';
 import { ContactFormPanel } from '../../components/ContactFormPanel';
 import { ContactInteriorStrip } from '../../components/ContactInteriorStrip';
 import { LowChromeFaqAccordion } from '../../components/LowChromeFaqAccordion';
-import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 import Link from 'next/link';
 
 export default function ContactPage() {
@@ -14,23 +13,23 @@ export default function ContactPage() {
     <WordmarkBookendLayout>
       <PageDisplayHeading eyebrow={c.eyebrow} heading={c.h1} />
 
-      {/* 2-col: booking info left, form right */}
+      {/* 2-col: direct-contact facts left, honest handoff panel right */}
       <section className="w-full">
         <div className="mx-auto max-w-shell px-5 md:px-10 pb-16 md:pb-24">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
             <aside className="md:col-span-4">
-              <h3 className="text-h3 mb-6">{c.bookNow.heading}</h3>
-              <div className="grid grid-cols-2 gap-6 max-w-sm">
+              <h3 className="text-h3 mb-6">{c.direct.heading}</h3>
+              <div className="grid grid-cols-1 gap-5 max-w-sm sm:grid-cols-2">
                 <div>
-                  <div className="text-micro text-ink mb-1">{c.bookNow.viaEmail.label}</div>
-                  <Link href={c.bookNow.viaEmail.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
-                    {c.bookNow.viaEmail.value}
+                  <div className="text-micro text-ink mb-1">{c.direct.call.label}</div>
+                  <Link href={c.direct.call.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
+                    {c.direct.call.value}
                   </Link>
                 </div>
                 <div>
-                  <div className="text-micro text-ink mb-1">{c.bookNow.whatsapp.label}</div>
-                  <Link href={c.bookNow.whatsapp.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
-                    {c.bookNow.whatsapp.value}
+                  <div className="text-micro text-ink mb-1">{c.direct.directions.label}</div>
+                  <Link href={c.direct.directions.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
+                    {c.direct.directions.value}
                   </Link>
                 </div>
               </div>
@@ -83,16 +82,23 @@ export default function ContactPage() {
 
       <section className="w-full">
         <div className="mx-auto max-w-shell px-5 md:px-10 pb-12 md:pb-16">
-          <LiveMapEmbed
-            address={`${b.address.line1}, ${b.address.line2}`}
-            lat={b.geo.lat}
-            lng={b.geo.lng}
-            zoom={15}
-            mapLabel={`${b.name} — ${b.address.line2}`}
-            aspectRatio="16/9"
-            className="ring-1 ring-white/10"
-            ctaLabel="Directions →"
-          />
+          <div className="grid gap-6 border border-ink/15 bg-ink/[0.04] p-6 md:grid-cols-[1fr_auto] md:items-center md:p-8">
+            <div>
+              <p className="text-micro uppercase tracking-[0.16em] text-ink">Find the red door</p>
+              <h3 className="mt-3 text-h3">{b.address.line1}, {b.address.line2}</h3>
+              <p className="mt-3 max-w-xl text-body text-ink">
+                Strawberry Moon sits on South Main Street in Wauconda. Open directions before you go, then check the events page if live music is part of the plan.
+              </p>
+            </div>
+            <Link
+              href={c.visit.directionsLink}
+              className="vs-link inline-flex items-center justify-center rounded-button bg-btn-bg px-5 py-3 text-body text-btn-ink"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open directions
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -12,14 +12,18 @@ export const content = {
     },
     phone: '847-865-5151',
     phoneHref: 'tel:+18478655151',
-    email: 'thomasmalik830@gmail.com',
-    emailHref: 'mailto:thomasmalik830@gmail.com',
     officialSite: 'https://strawberrymoonmartinisandmore.weebly.com/',
     eventsPage: 'https://strawberrymoonmartinisandmore.weebly.com/events.html',
     directionsHref:
       'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084',
     statusLine: 'Tuesday-Saturday · open 4 pm · first come, first served',
     googleSummary: '4.7 on Google · 214 reviews · $20–30 · Bar',
+    quickFacts: [
+      'Tue-Sat from 4 pm',
+      'First-come seating',
+      'Live music Thu-Sat',
+      '204 S Main St',
+    ],
     hours: [
       { days: 'Tuesday - Saturday', time: 'Open 4 pm' },
       { days: 'Seating', time: 'First-come, first-served' },
@@ -46,7 +50,7 @@ export const content = {
       { src: `${officialImageBase}/img-0594.jpg`, alt: 'Warm bar scene at Strawberry Moon' },
     ],
     editorialParagraph:
-      'Behind the red door on Main Street, Strawberry Moon leans into the part of a night out that people actually remember: martinis, wine, easy small plates, and live sets that keep the room lively without turning it into a shout-over-the-band bar.',
+      'Behind the red door on Main Street, Strawberry Moon sells the kind of night people actually mention by name afterward: Tuesday martini flights, signature pours like the Strawberry Moon and Stormy Night martinis, wine and cheese fondue, and live sets that stay lively without wiping out conversation.',
     galleryLink: { label: 'see the room', href: '/about' },
     asymmetricGallery: {
       left: {
@@ -62,43 +66,43 @@ export const content = {
     },
     cocktailsNoPrice: [
       {
-        name: 'Martinis first',
-        desc: 'The official site leads with martinis, and regulars keep naming weekly pours, dirty martinis, Stormy Night martinis, and the house Strawberry Moon martini.',
+        name: 'Tuesday flights and named house pours',
+        desc: 'Regulars explicitly call out Tuesday martini flights, the Strawberry Moon martini, dirty martinis, and the Stormy Night martini, which gives the bar a real signature-drink identity instead of generic cocktail copy.',
       },
       {
-        name: 'Wine, fondue, and noshes',
-        desc: 'Official copy promises wine, nibbles, and decadent desserts; reviews keep adding wine and cheese fondue, appetizers, pretzel nuggets, and easy shareables to the picture.',
+        name: 'Wine, fondue, and actual shareables',
+        desc: 'Official copy promises wine, nibbles, and decadent desserts; guests make that concrete with wine and cheese fondue, pretzel nuggets, appetizers, and noshes that turn a stop-in drink into a full evening.',
       },
       {
         name: 'Live music that still leaves room to talk',
-        desc: 'Thursday through Saturday performances are a core part of the experience, with guests specifically noting the upstairs stays quiet enough for conversation.',
+        desc: 'Thursday through Saturday performances are part of the draw, and guests still describe the upstairs as quiet enough for conversation instead of a too-loud bar night.',
       },
       {
-        name: 'Friendly bartenders',
-        desc: 'The review packet repeatedly points to knowledgeable bartenders, warm welcomes, and owner hospitality from Tom when people want a local place that feels looked after.',
+        name: 'Bartenders who read the room',
+        desc: 'Knowledgeable bartenders, custom off-menu drinks, warm welcomes, and Tom-level owner hospitality make the room feel looked after without making it feel precious.',
       },
     ],
     numberedEyebrow: { number: '03', label: 'THE NIGHT' },
     occasions: [
       {
         heading: 'Date night',
-        body: 'Small tables, candlelit energy, and a room that feels tucked away rather than overproduced. Guests repeatedly call it a strong pick for romantic nights out.',
+        body: 'Small tables, candlelit energy, and an intimate room that guests repeatedly call out for date nights, ladies nights, and an evening that feels tucked away rather than overproduced.',
         photo: { src: `${officialImageBase}/strawberry-moon-1.jpg`, alt: 'Interior mood at Strawberry Moon' },
       },
       {
         heading: 'Live music',
-        body: 'The official events page makes the calendar a real reason to return, with Thursday, Friday, and Saturday sets spanning R&B, classic rock, and local acoustic acts.',
+        body: 'The events page makes the calendar a real reason to return, with Thursday, Friday, and Saturday sets spanning R&B, classic rock, and local acoustic acts without turning the lounge into a loud nightclub.',
         photo: { src: `${officialImageBase}/img-0603.jpg`, alt: 'Stage or live music atmosphere at Strawberry Moon' },
       },
       {
         heading: 'Warm hospitality',
-        body: 'Guests talk about being greeted warmly, offered birthday cake, and steered toward the right martini or cocktail by bartenders who know how to read the room.',
+        body: 'Guests talk about being greeted warmly, offered birthday cake, and steered toward the right martini or custom cocktail by bartenders who know how to read the room.',
         photo: { src: `${officialImageBase}/img-0604.jpg`, alt: 'Bar hospitality detail at Strawberry Moon' },
       },
     ],
     brandStory: {
       paragraph:
-        'Strawberry Moon already has the real identity most lounge sites try to fake: a red-door arrival, two levels, martinis that locals drive back for, and live performers that make the room feel active without flattening the cozy side of the night. This first preview keeps the Velvet Shaker frame, but warms it toward the softer Bramble lane that fits Strawberry Moon better.',
+        'Strawberry Moon has the details that make a lounge memorable: a red-door arrival, two levels, martinis that locals come back for, and live performers who make the room feel active without flattening the cozy side of the night. Tuesday flights give groups an easy way in, the upstairs offers a quieter perch, and fondue, pretzel nuggets, and custom drinks make it easy to linger.',
       thumbnails: [
         { src: `${officialImageBase}/img-0592.jpg`, alt: 'Cocktail at Strawberry Moon' },
         { src: `${officialImageBase}/img-0588.jpg`, alt: 'Drink and garnish at Strawberry Moon' },
@@ -134,8 +138,8 @@ export const content = {
         items: [
           {
             name: 'Weekly martinis',
-            desc: 'The review packet calls out rotating weekly pours and Tuesday martini flights for guests who want to try more than one lane.',
-            meta: 'Review-backed',
+            desc: 'Rotating weekly pours and Tuesday martini flights give guests a low-pressure way to try more than one lane.',
+            meta: 'Local favorite',
           },
           {
             name: 'Strawberry Moon martini',
@@ -145,16 +149,16 @@ export const content = {
           {
             name: 'Dirty martini',
             desc: 'A repeat public favorite alongside the sweeter seasonal and fruit-forward options.',
-            meta: 'Guest favorite',
+            meta: 'House favorite',
           },
           {
             name: 'Stormy Night martini',
-            desc: 'Another named drink from the review packet that helps prove the house cocktail identity is real, not generic.',
-            meta: 'Named in reviews',
+            desc: 'Another named drink that helps the house cocktail identity feel specific rather than generic.',
+            meta: 'Named pour',
           },
           {
             name: 'Custom craft cocktails',
-            desc: 'Reviews say the bartenders can build on or off menu, which matters when regulars want something tuned to taste rather than just ordered by name.',
+            desc: 'Bartenders can build on or off menu, which matters when regulars want something tuned to taste rather than just ordered by name.',
             meta: 'Staff craft',
           },
         ],
@@ -165,17 +169,17 @@ export const content = {
           {
             name: 'Wine list',
             desc: 'The official site\'s own promise is simple and useful: martinis, wine, and more.',
-            meta: 'Official site',
+            meta: 'House list',
           },
           {
             name: 'Curated cocktails',
-            desc: 'Guests repeatedly describe the broader cocktail list as creative, curated, and worth the drive even when martinis are not the only goal.',
-            meta: 'Review-backed',
+            desc: 'The broader cocktail list has enough range for guests who want something creative even when martinis are not the only goal.',
+            meta: 'Local favorite',
           },
           {
             name: 'Adult beverages beyond the martini list',
-            desc: 'Public reviews describe a wider adult beverage spread, which gives the room more range than a one-note martini bar.',
-            meta: 'Review-backed',
+            desc: 'A wider adult beverage spread gives the room more range than a one-note martini bar.',
+            meta: 'Local favorite',
           },
           {
             name: 'Tuesday flight energy',
@@ -189,23 +193,23 @@ export const content = {
         items: [
           {
             name: 'Wine and cheese fondue',
-            desc: 'One of the clearest review-backed food tells. Guests mention it alongside martini orders when explaining why the stop felt complete.',
-            meta: 'Review-backed',
+            desc: 'A natural companion to martini orders when the night calls for something slower and more shareable.',
+            meta: 'Local favorite',
           },
           {
             name: 'Appetizers and noshes',
-            desc: 'Official copy promises nibbles, while multiple reviews use appetizer and nosh language to describe the light-food side of the bar.',
-            meta: 'Official + reviews',
+            desc: 'Nibbles and light bites keep the room from feeling like a one-drink stop.',
+            meta: 'Light bites',
           },
           {
             name: 'Pretzel nuggets',
-            desc: 'Called out directly in the review packet with multiple dipping sauces.',
-            meta: 'Review-backed',
+            desc: 'A casual, shareable bar snack that fits the martini-and-music rhythm.',
+            meta: 'Local favorite',
           },
           {
             name: 'Decadent desserts',
-            desc: 'The current official homepage uses that exact phrase, so the sweeter finish belongs in the pitch.',
-            meta: 'Official site',
+            desc: 'A sweeter finish for nights that turn from one cocktail into a full visit.',
+            meta: 'House list',
           },
         ],
       },
@@ -218,8 +222,8 @@ export const content = {
     ],
     cantFind: {
       heading: 'Need the latest nightly details?',
-      body: 'This preview keeps the proof tight and factual. For the official martini pages, rotating specials, and live schedule, hand off to Strawberry Moon\'s own site and events page.',
-      linkLabel: 'go to the official site',
+      body: 'For the latest martini pages, rotating specials, and live schedule, head to Strawberry Moon\'s current site and events page.',
+      linkLabel: 'go to the current site',
       linkHref: 'https://strawberrymoonmartinisandmore.weebly.com/',
       photos: [
         { src: `${officialImageBase}/img-0588.jpg`, alt: 'Cocktail detail at Strawberry Moon' },
@@ -238,12 +242,12 @@ export const content = {
       { value: '3', label: 'Live music nights' },
     ],
     story:
-      'The official site is thin, but the public proof is not. Strawberry Moon reads as an intimate local lounge with real repeat traffic: people praise the atmosphere, the bartenders, the music lineup, and the fact that the space is bigger than it first looks thanks to a second level with quieter upstairs seating.',
+      'Strawberry Moon reads as an intimate local lounge with real repeat traffic: a warm room, a strong martini list, a live-music cadence, and a two-level setup that makes the space feel bigger than it first looks.',
     aboutGallery: [
       { src: `${officialImageBase}/sign_1.jpg`, alt: 'Strawberry Moon exterior sign' },
       { src: `${officialImageBase}/moon-upstairs_1.jpg`, alt: 'Upstairs view at Strawberry Moon' },
     ],
-    proofHeading: 'What the review packet actually proves',
+    proofHeading: 'What guests come back for',
     proofItems: [
       {
         name: 'Knowledgeable bartenders',
@@ -251,7 +255,7 @@ export const content = {
       },
       {
         name: 'Tom-level hospitality',
-        desc: 'Tom is named directly in the review packet for hospitality, and other guests describe owner circulation and hands-on warmth as part of the appeal.',
+        desc: 'Owner warmth and hands-on hospitality are part of the appeal, especially when guests want a place that feels personal.',
       },
       {
         name: 'Two levels, one intimate feel',
@@ -267,24 +271,24 @@ export const content = {
       },
       {
         name: 'First-come, first-served',
-        desc: 'The official homepage now explicitly says seating is first-come, first-served, so the conversion path should stay honest about that policy.',
+        desc: 'Strawberry Moon lists seating as first-come, first-served, so the plan-a-visit path stays honest about that policy.',
       },
     ],
   },
 
   contact: {
-    eyebrow: '(call, directions, official handoff)',
-    h1: 'Plan a Strawberry Moon night honestly',
-    bookNow: {
-      heading: 'Use the real paths',
-      viaEmail: { label: 'Email', value: 'thomasmalik830@gmail.com', href: 'mailto:thomasmalik830@gmail.com' },
-      whatsapp: { label: 'Call', value: '847-865-5151', href: 'tel:+18478655151' },
+    eyebrow: '(call, directions, live music)',
+    h1: 'Plan a Strawberry Moon night',
+    direct: {
+      heading: 'Call before you go',
+      call: { label: 'Call', value: '847-865-5151', href: 'tel:+18478655151' },
+      directions: { label: 'Directions', value: '204 S Main St', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084' },
     },
     visit: {
       heading: 'Visit us',
       address: ['Strawberry Moon', '204 S Main St', 'Wauconda, IL 60084'],
       directionsLink: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084',
-      hoursHeading: 'What is confirmed',
+      hoursHeading: 'Hours & seating',
       hours: [
         'Tuesday-Saturday · open 4 pm',
         'First-come, first-served seating',
@@ -294,25 +298,24 @@ export const content = {
     socials: {
       heading: 'Quick links',
       links: [
-        { label: 'Official site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', external: true },
+        { label: 'Current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', external: true },
         { label: 'Events page', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', external: true },
         { label: 'Directions', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084', external: true },
-        { label: 'Email', href: 'mailto:thomasmalik830@gmail.com', external: true },
       ],
     },
     panel: {
-      heading: 'Keep the handoff clean',
-      body: 'This preview avoids fake booking, fake ordering, and fake private-event claims. The strongest conversion path here is direct call, direct email, directions, and the official pages for the current lineup.',
+      heading: 'Your easiest next step',
+      body: 'Strawberry Moon is a first-come martini lounge, so the easiest plan is simple: call if you have a question, get directions, then check the live-music calendar for the current lineup.',
       actions: [
         { label: 'Call Strawberry Moon', href: 'tel:+18478655151', style: 'primary' as const },
-        { label: 'Email the bar', href: 'mailto:thomasmalik830@gmail.com', style: 'secondary' as const },
-        { label: 'Open the official site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', style: 'secondary' as const },
+        { label: 'Get directions', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084', style: 'secondary' as const },
+        { label: 'Open the current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', style: 'secondary' as const },
         { label: 'See the events page', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', style: 'secondary' as const },
       ],
       notes: [
-        'Google summary captured in the audit: 4.7 rating from 214 reviews, listed as a $20-30 bar.',
-        'Official homepage language: martinis, wine and more, delicious nibbles, decadent desserts, and live music.',
-        'Review packet proof: cozy two-level setting, friendly knowledgeable bartenders, and warm hospitality from Tom and the team.',
+        '4.7 on Google across 214 reviews, listed as a $20-30 bar.',
+        'Martinis, wine, nibbles, decadent desserts, and live music are the core of the night.',
+        'Two levels, Tuesday martini flights, friendly bartenders, and warm hospitality give the room its regulars-come-back feel.',
       ],
     },
     interiorStrip: [
@@ -321,27 +324,27 @@ export const content = {
       { src: `${officialImageBase}/img-0594.jpg`, alt: 'Cocktail and table at Strawberry Moon' },
       { src: `${officialImageBase}/img-0604.jpg`, alt: 'Venue detail at Strawberry Moon' },
     ],
-    faqHeading: 'What is supported by the audit',
+    faqHeading: 'Good to know before you go',
     faqs: [
       {
         q: 'Do you take reservations?',
-        a: 'The official homepage now says Strawberry Moon operates on a first-come, first-served basis, so this preview does not invent a reservation flow.',
+        a: 'Strawberry Moon lists seating as first-come, first-served, so the best move is to call ahead if timing matters.',
       },
       {
         q: 'What is Strawberry Moon known for?',
-        a: 'Martinis lead the story, with wine, nibbles, decadent desserts, and review-backed mentions of weekly specials, custom cocktails, and wine and cheese fondue.',
+        a: 'Martinis lead the story, with wine, nibbles, decadent desserts, weekly specials, custom cocktails, and wine and cheese fondue in the mix.',
       },
       {
         q: 'When is live music?',
-        a: 'The captured official events page says Thursdays run 6:30 to 9:30 pm, while Fridays and Saturdays run 7 to 10 pm.',
+        a: 'The events page lists Thursdays from 6:30 to 9:30 pm, with Fridays and Saturdays from 7 to 10 pm.',
       },
       {
         q: 'What is the room like?',
         a: 'Guests describe Strawberry Moon as intimate, cozy, and bigger than it first appears because of the two-level setup and quieter upstairs seating.',
       },
       {
-        q: 'Why does the preview lean so hard on hospitality?',
-        a: 'Because the review packet does. People repeatedly mention friendly, knowledgeable bartenders, birthday hospitality, and owner warmth from Tom.',
+        q: 'Why does the site lean so hard on hospitality?',
+        a: 'Because Strawberry Moon is not just selling drinks. The draw is a warm room, friendly bartenders, owner hospitality, and a night that feels personal.',
       },
     ],
   },
@@ -353,9 +356,9 @@ export const content = {
       { label: 'about', href: '/about' },
       { label: 'menu', href: '/menu' },
       { label: 'events', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', external: true },
-      { label: 'official site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', external: true },
+      { label: 'current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', external: true },
     ],
-    colophon: 'Strawberry Moon preview built from the velvet-shaker-01 route with factual audit evidence only.',
+    colophon: 'Martinis, wine, live music, and cozy nights behind the red door in Wauconda.',
   },
 } as const;
 

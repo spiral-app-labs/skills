@@ -28,18 +28,18 @@ export function OccasionsStaircase({ eyebrow, items }: Props) {
       <div className="mx-auto max-w-shell px-5 md:px-10 py-14 md:py-24">
         <ScrollFillDivider />
         {eyebrow && (
-          <p className="text-micro tracking-widest text-ink mt-8 md:mt-10 mb-12 md:mb-16">
+          <p className="text-micro tracking-widest text-ink/80 mt-8 md:mt-10 mb-10 md:mb-16">
             {eyebrow.number}// {eyebrow.label}
           </p>
         )}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-14 md:gap-y-0 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-10 md:gap-y-0 items-start">
           {items.map((it, i) => (
             <div key={it.heading} className={i === 1 ? 'md:mt-20' : i === 2 ? 'md:mt-10' : ''}>
               <h3 className="text-h3-large mb-6">{it.heading}</h3>
-              <div className="relative aspect-[4/3] overflow-hidden mb-6">
+              <div className="relative aspect-[4/3] overflow-hidden bg-canvas mb-5">
                 <CurtainImage src={it.photo.src} alt={it.photo.alt} from="top" delay={i * 0.1} />
               </div>
-              <p className="text-body text-ink leading-relaxed">{it.body}</p>
+              <p className="text-body text-ink/92 leading-[1.72]">{it.body}</p>
             </div>
           ))}
         </div>

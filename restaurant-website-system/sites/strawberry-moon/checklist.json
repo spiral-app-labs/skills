@@ -4,7 +4,7 @@
   "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
   "siteSlug": "strawberry-moon",
   "templateSlug": "velvet-shaker-01",
-  "currentStage": "qa_round_3",
+  "currentStage": "packaging",
   "evidencePaths": [
     "restaurant-website-system/sites/strawberry-moon/checklist.md",
     "restaurant-website-system/sites/strawberry-moon/checklist.json",
@@ -32,7 +32,19 @@
     "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
     "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-desktop-2026-05-04.png",
     "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-mobile-2026-05-04.png",
-    "restaurant-website-system/sites/strawberry-moon/components/CurtainImage.tsx"
+    "restaurant-website-system/sites/strawberry-moon/components/CurtainImage.tsx",
+    "restaurant-website-system/sites/strawberry-moon/improvements.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/components/ScrollReveal.tsx",
+    "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -118,10 +130,8 @@
       "qaState": "passed",
       "required": true,
       "status": "passed",
-      "notes": "Round 1 passed after hero/nav fixes: first viewport is demo-ready; typecheck/build passed; desktop/mobile preview screenshots captured. Round 2 should address below-fold mobile gallery gap and low-contrast dark sections.",
+      "notes": "Round 1 passed after hero/nav fixes: first viewport is demo-ready; typecheck/build passed; desktop/mobile preview screenshots captured.",
       "evidence": [
-        "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
-        "restaurant-website-system/sites/strawberry-moon/components/MinimalTextNav.tsx",
         "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
         "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png",
         "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png"
@@ -133,11 +143,8 @@
       "qaState": "passed",
       "required": true,
       "status": "passed",
-      "notes": "Round 2 passed: fixed mobile cropped-strip/gallery capture issue, raised below-fold contrast, made hero proof card readable, improved mobile nav, recaptured desktop/mobile evidence, and verified typecheck/build.",
+      "notes": "Round 2 passed after fixing mobile gallery/cropped-strip capture, raising contrast, making the hero proof card readable, and improving mobile nav.",
       "evidence": [
-        "restaurant-website-system/sites/strawberry-moon/components/CurtainImage.tsx",
-        "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
-        "restaurant-website-system/sites/strawberry-moon/components/MinimalTextNav.tsx",
         "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
         "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-desktop-2026-05-04.png",
         "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-mobile-2026-05-04.png"
@@ -146,16 +153,33 @@
     {
       "id": "qa-round-3",
       "title": "QA round 3 completed with findings and fixes logged",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
-      "status": "pending",
-      "notes": "Next: final sell-readiness QA before packaging, with focus on factual links, mobile nav acceptability, and final demo polish."
+      "status": "passed",
+      "notes": "Round 3 final sell-readiness QA passed after removing audit/prototype language, removing personal email CTA, replacing blank map with directions card, disabling reveal wrappers for reliable below-fold rendering, improving hero proof readability, recapturing home/menu/contact/about desktop+mobile screenshots, and verifying typecheck/build.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/ScrollReveal.tsx",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png"
+      ]
     },
     {
       "id": "delivery-package",
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "status": "pending",
+      "notes": "Next: package preview URL, pitch doc, outreach draft, screenshots, QA evidence, and MC writeback."
     }
   ],
   "doneCriteria": [
@@ -165,7 +189,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T15:45:00Z",
-  "lastMissionControlHeartbeatId": "d7541376-2c9e-4f2f-a202-0184d73fae6c",
-  "lastMissionControlActivityId": "b79cce0a-9a53-4753-8176-688205a4a526"
+  "updatedAt": "2026-05-04T16:10:00Z",
+  "lastMissionControlHeartbeatId": "876ee0b4-052c-4f76-b50c-dbeb5f92d16d",
+  "lastMissionControlActivityId": "04969617-58f8-4f82-b032-a6ff2c823327"
 }

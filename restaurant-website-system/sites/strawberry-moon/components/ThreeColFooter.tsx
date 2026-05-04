@@ -31,13 +31,9 @@ export function ThreeColFooter() {
           {/* Contact */}
           <div>
             <h4 className="text-body mb-4">{footer.contactHeading}</h4>
-            <div className="text-body text-ink">{contact.bookNow.viaEmail.label}</div>
-            <Link href={contact.bookNow.viaEmail.href} className="vs-link text-body">
-              {contact.bookNow.viaEmail.value}
-            </Link>
-            <div className="mt-4 text-body text-ink">{contact.bookNow.whatsapp.label}</div>
-            <Link href={contact.bookNow.whatsapp.href} className="vs-link text-body">
-              {contact.bookNow.whatsapp.value}
+            <div className="text-body text-ink">{contact.direct.call.label}</div>
+            <Link href={contact.direct.call.href} className="vs-link text-body">
+              {contact.direct.call.value}
             </Link>
           </div>
 

@@ -22,9 +22,19 @@ export function MassiveWordmarkHero() {
             <p className="text-[22px] md:text-[30px] leading-[1.08] text-ink">
               {b.tagline}
             </p>
-            <p className="text-body md:text-[18px] leading-relaxed text-ink max-w-xl">
+            <p className="text-body md:text-[18px] leading-relaxed text-ink/92 max-w-xl">
               First-come seating, martinis and wine from 4 pm, plus Thursday through Saturday live sets that keep the room warm without turning it into a shout-over-the-band bar.
             </p>
+          </div>
+          <div className="grid max-w-[38rem] grid-cols-2 gap-3 md:grid-cols-4">
+            {b.quickFacts.map((fact) => (
+              <div
+                key={fact}
+                className="rounded-[18px] border border-ink/12 bg-ink/[0.04] px-4 py-3 text-[13px] uppercase tracking-[0.14em] text-ink"
+              >
+                {fact}
+              </div>
+            ))}
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href={b.directionsHref} className="vs-link rounded-full border border-ink bg-ink px-5 py-3 text-[14px] lowercase text-canvas">
@@ -44,14 +54,15 @@ export function MassiveWordmarkHero() {
           <img
             src={heroImage.src}
             alt={heroImage.alt}
+            loading="eager"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/88 via-ink/25 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 text-canvas">
-            <div className="max-w-md rounded-[22px] bg-ink p-4 shadow-[0_18px_60px_rgba(0,0,0,0.36)] md:p-5">
-              <p className="text-[13px] uppercase tracking-[0.18em] text-canvas">{b.googleSummary}</p>
+          <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7">
+            <div className="max-w-md rounded-[22px] bg-canvas p-4 text-ink shadow-[0_18px_60px_rgba(0,0,0,0.42)] md:p-5">
+              <p className="text-[13px] uppercase tracking-[0.18em] text-ink">{b.googleSummary}</p>
               <p className="mt-3 max-w-sm text-[24px] leading-tight md:text-[32px]">
-                Cozy two-level lounge energy, not a generic bar page.
+                Tuesday flights, a quiet upstairs perch, and live sets worth planning around.
               </p>
             </div>
           </div>

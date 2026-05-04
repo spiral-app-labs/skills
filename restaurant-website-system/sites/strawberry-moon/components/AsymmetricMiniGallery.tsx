@@ -16,17 +16,17 @@ export function AsymmetricMiniGallery({
   return (
     <section className="w-full">
       <div className="mx-auto max-w-shell px-5 md:px-10 py-10 md:py-16">
-        <div className="grid grid-cols-12 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-12 md:gap-6 items-start">
           {/* Left: portrait, offset down + narrower column */}
-          <div className="col-span-5 md:col-span-3 md:col-start-2">
-            <div className="relative aspect-[3/4] overflow-hidden">
-              <CurtainImage src={left.src} alt={left.alt} from="top" />
+          <div className="col-span-1 md:col-span-3 md:col-start-2">
+            <div className="relative aspect-[3/4] overflow-hidden bg-canvas">
+              <CurtainImage src={left.src} alt={left.alt} from="top" eager />
             </div>
           </div>
           {/* Right: landscape, offset up + wider column */}
-          <div className="col-span-7 md:col-span-6 md:col-start-6 md:mt-16">
-            <div className="relative aspect-[16/10] overflow-hidden">
-              <CurtainImage src={right.src} alt={right.alt} from="top" delay={0.15} />
+          <div className="col-span-1 md:col-span-6 md:col-start-6 md:mt-16">
+            <div className="relative aspect-[3/4] md:aspect-[16/10] overflow-hidden bg-canvas">
+              <CurtainImage src={right.src} alt={right.alt} from="top" delay={0.15} eager />
             </div>
           </div>
         </div>
