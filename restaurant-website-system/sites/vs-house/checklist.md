@@ -62,3 +62,11 @@
 - Code updated: `content.ts`, `components/MenuSection.tsx`, `app/api/chat/route.ts`.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
 - Remaining blockers: desktop/mobile screenshot evidence, owner-confirmed menu prices, and deployed concierge runtime verification.
+
+## 2026-05-04 — Menu price evidence heartbeat progress
+
+- Artifact added: `restaurant-website-system/sites/vs-house/menu-price-evidence.md`.
+- Fetched official live menu HTML and downloaded 11 current menu PNGs to `scrapes/menu-images/`.
+- Reintroduced only source-confirmed prices into `content.ts`; left unconfirmed items without prices.
+- Verification: `npm run build` passed; `npm run typecheck` passed.
+- Remaining blockers are now narrower: screenshot capture, deployed concierge runtime verification, and any final unpriced-item confirmation/removal.

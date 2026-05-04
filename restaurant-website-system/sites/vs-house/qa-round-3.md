@@ -52,3 +52,13 @@ This is not a brand/content failure: the V's House rebuild is strongly restauran
 ## Confidence to sell
 
 Ethan should not send this as a final delivered package yet because screenshots and confirmed prices are still pending. But the core pitch is strong: this is clearly a premium, custom V's House upgrade, and the remaining work is verification/commercial polish rather than a rebuild-level problem.
+
+## 2026-05-04 heartbeat addendum — menu price confirmation advanced
+
+- Fetched live official menu page HTML from `https://www.vshouse.net/menu` into `scrapes/menu-live.html`.
+- Downloaded 11 current official Squarespace menu PNGs into `scrapes/menu-images/`.
+- Added `menu-price-evidence.md` with item-by-item price confirmations.
+- Reintroduced only source-confirmed prices into `content.ts`; left unconfirmed `Spicy California Roll` and happy-hour egg rolls without prices.
+- Re-ran `npm run build` and `npm run typecheck`; both passed.
+
+Updated blocker state: the broad demo-price risk is resolved for the preview. Remaining price work is narrow: confirm any unpriced items before final delivery or remove them from the sales demo.
