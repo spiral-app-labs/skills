@@ -33,7 +33,7 @@ export function DarkLeafHero({
   compact?: boolean;
 }) {
   return (
-    <section className={`relative bg-bg-dark text-text-white overflow-hidden ${compact ? 'pt-[120px] pb-20' : 'pt-[140px] pb-0'}`}>
+    <section className={`relative overflow-hidden bg-bg-dark text-text-white ${compact ? 'pt-[120px] pb-20' : 'min-h-[calc(100svh-4rem)] pt-[120px] pb-12 md:pt-[140px] md:pb-0'}`}>
       {/* Flanking botanicals */}
       <div className="absolute left-0 top-20 pointer-events-none hidden md:block">
         <BotanicalDecor side="left" />
@@ -42,20 +42,24 @@ export function DarkLeafHero({
         <BotanicalDecor side="right" />
       </div>
 
-      <div className="relative max-w-[900px] mx-auto text-center px-6">
-        {eyebrow && <EyebrowDotLabel tone="light" className="mb-5">{eyebrow}</EyebrowDotLabel>}
-        <h1 className="font-display text-hero-h1 text-text-white">
+      <div className="relative mx-auto max-w-[900px] px-4 text-center sm:px-6">
+        {eyebrow && (
+          <EyebrowDotLabel tone="light" className="mb-5 max-w-full flex-wrap justify-center overflow-hidden text-center">
+            <span className="max-w-full whitespace-normal break-words">{eyebrow}</span>
+          </EyebrowDotLabel>
+        )}
+        <h1 className="mx-auto max-w-[14ch] text-[clamp(2.6rem,10vw,5rem)] font-display leading-[1.06] text-text-white text-balance sm:text-hero-h1">
           {title}
         </h1>
         {subtitle && (
-          <p className="mt-5 text-body text-text-muted-dark max-w-xl mx-auto">{subtitle}</p>
+          <p className="mx-auto mt-5 max-w-xl text-body text-text-muted-dark sm:px-0">{subtitle}</p>
         )}
         {(cta || secondaryCta) && (
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             {cta && (
               <Link
                 href={cta.href}
-                className="inline-block bg-accent text-text-white px-7 py-3.5 rounded-pill text-button font-semibold hover:brightness-110 transition"
+                className="inline-flex min-w-0 items-center justify-center rounded-pill bg-accent px-6 py-3.5 text-button font-semibold text-text-white transition hover:brightness-110 sm:inline-block sm:px-7"
               >
                 {cta.label}
               </Link>
@@ -63,7 +67,7 @@ export function DarkLeafHero({
             {secondaryCta && (
               <Link
                 href={secondaryCta.href}
-                className="inline-block border border-white/20 bg-white/5 text-text-white px-7 py-3.5 rounded-pill text-button font-semibold hover:bg-white/10 transition"
+                className="inline-flex min-w-0 items-center justify-center rounded-pill border border-white/20 bg-white/5 px-6 py-3.5 text-button font-semibold text-text-white transition hover:bg-white/10 sm:inline-block sm:px-7"
               >
                 {secondaryCta.label}
               </Link>
@@ -71,11 +75,11 @@ export function DarkLeafHero({
           </div>
         )}
         {!!metaItems?.length && (
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             {metaItems.map((item) => (
               <div
                 key={item}
-                className="rounded-pill border border-white/10 bg-white/5 px-4 py-2 text-eyebrow text-text-muted-dark"
+                className="rounded-pill border border-white/10 bg-white/5 px-4 py-2 text-center text-eyebrow text-text-muted-dark"
               >
                 {item}
               </div>
@@ -88,13 +92,13 @@ export function DarkLeafHero({
               <Link
                 key={action.label}
                 href={action.href}
-                className="group rounded-card border border-white/10 bg-white/5 px-5 py-4 transition hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                className="group min-w-0 rounded-card border border-white/10 bg-white/5 px-4 py-4 transition hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 sm:px-5"
               >
                 <div className="flex items-center justify-between gap-4">
-                  <span className="font-display text-[22px] text-text-white">{action.label}</span>
+                  <span className="min-w-0 pr-2 font-display text-[20px] text-text-white sm:text-[22px]">{action.label}</span>
                   <span
                     aria-hidden
-                    className="text-accent transition-transform duration-200 group-hover:translate-x-1"
+                    className="shrink-0 text-accent transition-transform duration-200 group-hover:translate-x-1"
                   >
                     ↗
                   </span>
@@ -110,7 +114,7 @@ export function DarkLeafHero({
       </div>
 
       {!compact && plateImage && (
-        <div className="relative mt-10 max-w-[1000px] mx-auto px-6">
+        <div className="relative mx-auto mt-10 max-w-[1000px] px-4 sm:px-6">
           <div className="hero-plate-float relative aspect-[16/9] -mb-24 md:-mb-36 rounded-[50%/25%] overflow-hidden">
             <Image
               src={plateImage}

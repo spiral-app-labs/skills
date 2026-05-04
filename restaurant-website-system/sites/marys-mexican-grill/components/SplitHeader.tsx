@@ -27,14 +27,16 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
 
   return (
     <header className={`fixed top-0 inset-x-0 z-40 transition-colors duration-300 ${bgClass}`}>
-      <div className="max-w-[1200px] mx-auto px-6 md:px-10 h-[72px] flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-text-white">
-          <span className="inline-block h-[28px] w-[28px] rounded-full bg-accent flex items-center justify-center">
+      <div className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between gap-3 px-4 sm:px-6 md:px-10">
+        <Link href="/" className="flex min-w-0 items-center gap-2 text-text-white">
+          <span className="inline-flex h-[28px] w-[28px] shrink-0 items-center justify-center rounded-full bg-accent">
             <span className="font-display text-[18px] leading-none text-text-white">
               {content.brand.name.charAt(0)}
             </span>
           </span>
-          <span className="font-display text-[22px] leading-none">{content.brand.name}</span>
+          <span className="truncate font-display text-[18px] leading-none sm:text-[22px]">
+            {content.brand.name}
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -58,7 +60,7 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
           </div>
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-4">
           {/* Aliveness retrofit (2026-04-20): LiveOpenStatus dot variant — dark
               canvas with orange accent matches bamzi's register per
               aliveness-patterns.md §1.1. */}
@@ -70,10 +72,12 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
 
           <Link
             href={content.nav.cta.href}
-            className="inline-flex items-center gap-2 bg-accent text-text-white px-5 py-2.5 rounded-pill text-button font-semibold hover:brightness-110 transition"
+            className="inline-flex items-center gap-2 rounded-pill bg-accent px-3 py-2 text-[11px] font-semibold uppercase tracking-[1.2px] text-text-white transition hover:brightness-110 sm:px-5 sm:py-2.5 sm:text-button"
+            aria-label={content.nav.cta.label}
           >
-            <span aria-hidden>☰</span>
-            {content.nav.cta.label}
+            <span aria-hidden className="text-xs">☰</span>
+            <span className="hidden sm:inline">{content.nav.cta.label}</span>
+            <span className="sm:hidden">Menu</span>
           </Link>
         </div>
       </div>
