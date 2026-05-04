@@ -1,0 +1,49 @@
+{
+  "build_stage": "improving",
+  "currentStage": "improving",
+  "site_slug": "antojitos-mexicanos-la-fonda",
+  "template_slug": "pepper-01",
+  "lead_id": "92b49f80-4193-4c76-ba72-7a03493fd707",
+  "mc_task_id": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
+  "checklist_markdown_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+  "routing_rationale_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/source.md",
+  "build_evidence_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/build-typecheck-2026-05-04.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/source.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/README.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/content.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/.agency-template.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/build-typecheck-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/google-reviews-highest-2026-05-04.png"
+  ],
+  "passed_requirement_ids": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity"
+  ],
+  "commands": [
+    "npm install",
+    "npm run typecheck",
+    "npm run build"
+  ],
+  "heartbeat_summary": "Antojitos first preview build completed locally from pepper-01 with verified La Fonda copy, call/maps CTAs, no invented ordering path, and successful typecheck/build. Next canonical stage is improving, but MC sync remains blocked by missing agency auth in this runtime.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime; prior MC build writeback returned 401 Unauthorized.",
+    "next_unblock_action": "Retry this payload against /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}

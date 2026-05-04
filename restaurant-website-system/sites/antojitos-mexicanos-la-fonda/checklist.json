@@ -6,7 +6,7 @@
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "routing",
+  "currentStage": "improving",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
@@ -237,9 +237,19 @@
         "preview URL or local preview evidence"
       ],
       "order": 4,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/source.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/README.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/content.ts",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/package.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/.agency-template.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/build-typecheck-2026-05-04.md",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:18:00.000Z"
     },
     {
       "id": "website_improvement_pass",
@@ -632,7 +642,16 @@
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/google-reviews-highest-2026-05-04.png",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.md",
-    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md"
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/source.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/README.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/content.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/package.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/.agency-template.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/build-typecheck-2026-05-04.md",
+    "local command: npm run typecheck (passed)",
+    "local command: npm run build (passed)",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-building-complete-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -643,10 +662,10 @@
   },
   "blockers": [
     {
-      "gate": "auditing",
-      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
-      "nextUnblockAction": "Enable browser/Chromium capture for desktop/mobile proof of owned-site absence and directory evidence.",
-      "recordedAt": "2026-05-04T04:39:42.125985Z"
+      "gate": "mission_control_sync",
+      "reason": "Local build gate is complete, but Mission Control build writeback cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
+      "nextUnblockAction": "Retry the prepared build writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
+      "recordedAt": "2026-05-04T18:18:00.000Z"
     }
   ],
   "requirements": [
@@ -739,19 +758,36 @@
     {
       "id": "fork-built",
       "title": "Template fork builds successfully with real content and preserved conversion links",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Forked pepper-01, personalized with verified La Fonda content, preserved call/maps conversion paths, and passed local typecheck/build.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/.agency-template.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/content.ts",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/build-typecheck-2026-05-04.md",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)"
+      ]
     },
     {
       "id": "specificity",
       "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "template_route_fork_build",
-      "stage": "building"
+      "stage": "building",
+      "status": "passed",
+      "notes": "Content uses verified Google/Restaurantji/Restaurant Guru facts, no fake online ordering, no fake full menu/pricing, no fake email, and careful seating language.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/source.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/README.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/content.ts",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json"
+      ]
     },
     {
       "id": "identity-specific",
@@ -925,7 +961,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T18:07:21.550Z",
+  "updatedAt": "2026-05-04T18:18:00.000Z",
   "passedRequirementIds": [
     "checklist-md",
     "checklist-json",
@@ -936,6 +972,8 @@
     "reviews-highest-filter",
     "reviews-thirty-written",
     "reviews-themes",
-    "template-route-locked"
+    "template-route-locked",
+    "fork-built",
+    "specificity"
   ]
 }
