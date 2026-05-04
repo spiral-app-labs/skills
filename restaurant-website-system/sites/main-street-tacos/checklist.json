@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "leadId": "51459758-7f1c-4137-a2c8-bb95386e2582",
+  "mcParentTaskId": "6eb6cf29-eaf5-4751-8aab-3dc5f827e40e",
+  "siteSlug": "main-street-tacos",
+  "templateSlug": "pepper-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/main-street-tacos/checklist.md",
+    "restaurant-website-system/sites/main-street-tacos/checklist.json",
+    "restaurant-website-system/sites/main-street-tacos/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for Google/Maps first-party-site verification, desktop/mobile directory screenshots, and Google review packet.",
+      "recordedAt": "2026-05-04T04:52:13.316256Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Qualification list flags Main Street Tacos as a no-clear-owned-site prospect; source audit verified directory-led discovery with strong taco/order proof.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/main-street-tacos/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted; canonical Google/Maps browser verification, desktop/mobile screenshots, and DOM snapshot remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/main-street-tacos/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to pepper-01 for fast taco/order motion; core archetype: Cuisine-style warm casual neighborhood clarity.",
+      "evidence": [
+        "restaurant-website-system/sites/main-street-tacos/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T04:52:13.363Z"
+}
