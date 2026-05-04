@@ -80,23 +80,26 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
           if (!line.startsWith('data: ')) continue;
           const payload = line.slice(6).trim();
           if (!payload) continue;
+          let parsed: { text?: string; done?: boolean; error?: string };
           try {
-            const parsed = JSON.parse(payload) as {
+            parsed = JSON.parse(payload) as {
               text?: string;
               done?: boolean;
               error?: string;
             };
-            if (parsed.error) throw new Error(parsed.error);
-            if (parsed.text) {
-              // Strip em/en dashes on the way in so they never render.
-              assistantText += parsed.text.replace(/\s*[—–]\s*/g, ', ');
-              setMessages([
-                ...nextMessages,
-                { role: 'assistant', content: assistantText },
-              ]);
-            }
           } catch {
             // ignore malformed frame
+            continue;
+          }
+
+          if (parsed.error) throw new Error(parsed.error);
+          if (parsed.text) {
+            // Strip em/en dashes on the way in so they never render.
+            assistantText += parsed.text.replace(/\s*[—–]\s*/g, ', ');
+            setMessages([
+              ...nextMessages,
+              { role: 'assistant', content: assistantText },
+            ]);
           }
         }
       }

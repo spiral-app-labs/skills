@@ -5,7 +5,7 @@
 - Template slug: bamzi-01
 - Current stage: packaging
 - Deploy URL: TBD
-- Updated: 2026-05-04T14:50:00Z
+- Updated: 2026-05-04T15:05:00Z
 
 ## Requirements
 
@@ -61,7 +61,7 @@
 - Final sell-readiness issue found and fixed: `content.ts` had demo/market-range prices. Removed visible prices until V's House prices are owner/current-menu-confirmed.
 - Code updated: `content.ts`, `components/MenuSection.tsx`, `app/api/chat/route.ts`.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
-- Remaining blockers: desktop/mobile screenshot evidence, owner-confirmed menu prices, and deployed concierge runtime verification.
+- Remaining blockers: desktop/mobile screenshot evidence, owner-confirmed menu prices, and deployed preview smoke test.
 
 ## 2026-05-04 — Menu price evidence heartbeat progress
 
@@ -69,14 +69,14 @@
 - Fetched official live menu HTML and downloaded 11 current menu PNGs to `scrapes/menu-images/`.
 - Reintroduced only source-confirmed prices into `content.ts`; left unconfirmed items without prices.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
-- Remaining blockers are now narrower: screenshot capture, deployed concierge runtime verification, and any final unpriced-item confirmation/removal.
+- Remaining blockers are now narrower: screenshot capture, deployed preview smoke test, and any final unpriced-item confirmation/removal.
 
 ## 2026-05-04 — Unpriced menu item cleanup heartbeat progress
 
 - Removed remaining unpriced sales-demo menu rows from `content.ts`: `Spicy California Roll` and happy-hour egg rolls.
 - Verified no `price: null`, `Spicy California`, or `price pending` strings remain in `content.ts`.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
-- Remaining blockers: browser screenshot capture and deployed concierge runtime verification.
+- Remaining blockers: browser screenshot capture and deployed preview smoke test.
 
 ## 2026-05-04 — Browser evidence recovered and packaging advanced
 
@@ -86,11 +86,19 @@
   - `restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png`
   - `restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png`
 - QA requirements 1-3 are now locally evidence-backed in `checklist.json`.
-- Current stage advanced locally to `packaging`. Remaining delivery blockers: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed concierge runtime verification.
+- Current stage advanced locally to `packaging`. Remaining delivery blockers: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed preview smoke test.
 
 ## 2026-05-04 — Packaging artifacts heartbeat progress
 
 - Artifact added: `restaurant-website-system/sites/vs-house/outreach-draft.md`.
 - Artifact added: `restaurant-website-system/sites/vs-house/delivery-package.md`.
 - Updated pitch/battle-card notes to reflect the new Google Highest packet and latest live Google review count snapshot.
-- Delivery package is now locally assembled except for deployed preview URL, MC evidence mirror/writeback, and deployed concierge runtime verification.
+- Delivery package is now locally assembled except for deployed preview URL, MC evidence mirror/writeback, and deployed preview smoke test.
+
+## 2026-05-04 heartbeat addendum — concierge fallback verified
+
+- Updated `app/api/chat/route.ts` so Anthropic is instantiated lazily only when `ANTHROPIC_API_KEY` exists.
+- Added a truthful no-secret SSE fallback grounded in V's House content for hours, address, reservation/order links, phone, and menu item names.
+- Updated `components/AskConcierge.tsx` so streamed error frames surface to the guest instead of being swallowed as malformed SSE.
+- Verified `npm run typecheck`, `npm run build`, and local production `/api/chat` fallback via curl.
+- Evidence: `restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md`.

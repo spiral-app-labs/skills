@@ -24,7 +24,9 @@
     "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
     "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
     "restaurant-website-system/sites/vs-house/outreach-draft.md",
-    "restaurant-website-system/sites/vs-house/delivery-package.md"
+    "restaurant-website-system/sites/vs-house/delivery-package.md",
+    "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
+    "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx"
   ],
   "qaRounds": [
     {
@@ -68,8 +70,8 @@
   "blockers": [
     {
       "gate": "packaging",
-      "reason": "Packaging artifacts now include outreach draft and delivery package, but final delivery still needs a deployed preview URL, Mission Control API/writeback confirmation, and deployed concierge runtime verification.",
-      "recordedAt": "2026-05-04T14:50:00Z"
+      "reason": "Packaging artifacts now include outreach draft, delivery package, screenshots, Google Highest packet, and local concierge fallback verification. Final delivery still needs a deployed preview URL, Mission Control API/writeback confirmation, and deployed preview smoke test.",
+      "recordedAt": "2026-05-04T15:05:00Z"
     }
   ],
   "requirements": [
@@ -150,9 +152,12 @@
       "title": "QA round 3 completed with findings and fixes logged",
       "qaState": "passed",
       "required": true,
-      "notes": "Round 3 sell-readiness QA logged; menu price cleanup, review proof packet, and desktop/mobile screenshot evidence attached. Deployed runtime verification remains a delivery-package blocker, not a QA-round blocker.",
+      "notes": "Round 3 sell-readiness QA logged; menu price cleanup, review proof packet, desktop/mobile screenshot evidence, and local concierge fallback runtime verification are attached. Deployed preview smoke test remains a delivery-package blocker.",
       "evidence": [
+        "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
+        "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
         "restaurant-website-system/sites/vs-house/components/MenuSection.tsx",
+        "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
         "restaurant-website-system/sites/vs-house/content.ts",
         "restaurant-website-system/sites/vs-house/menu-price-evidence.md",
         "restaurant-website-system/sites/vs-house/qa-round-3.md",
@@ -167,9 +172,12 @@
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
       "required": true,
-      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, and screenshot evidence exist. Final delivery still needs a deployed preview URL, MC mirror/writeback, and concierge runtime verification.",
+      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, screenshot evidence, and local concierge fallback verification exist. Final delivery still needs a deployed preview URL, MC mirror/writeback, and deployed preview smoke test.",
       "evidence": [
+        "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
         "restaurant-website-system/sites/vs-house/battle-cards.md",
+        "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
         "restaurant-website-system/sites/vs-house/delivery-package.md",
         "restaurant-website-system/sites/vs-house/outreach-draft.md",
         "restaurant-website-system/sites/vs-house/pitch-doc.md",
@@ -187,5 +195,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T14:50:00Z"
+  "updatedAt": "2026-05-04T15:05:00Z"
 }

@@ -80,3 +80,11 @@ Updated blocker state: the unpriced-item cleanup is resolved for the sales demo.
   - `screenshots/preview-home-mobile-2026-05-04.png`
 - Updated checklist to mark QA rounds 1-3 locally evidence-backed and move the local stage to `packaging`.
 - Remaining delivery blockers are now packaging-level: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed concierge runtime verification.
+
+## 2026-05-04 heartbeat addendum — concierge fallback verified
+
+- Updated `app/api/chat/route.ts` so Anthropic is instantiated lazily only when `ANTHROPIC_API_KEY` exists.
+- Added a truthful no-secret SSE fallback grounded in V's House content for hours, address, reservation/order links, phone, and menu item names.
+- Updated `components/AskConcierge.tsx` so streamed error frames surface to the guest instead of being swallowed as malformed SSE.
+- Verified `npm run typecheck`, `npm run build`, and local production `/api/chat` fallback via curl.
+- Evidence: `restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md`.

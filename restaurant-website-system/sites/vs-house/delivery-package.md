@@ -8,7 +8,7 @@
 - Template archetype: `bamzi-01`
 - Current local stage: `packaging`
 - Preview URL: `TBD`
-- Delivery verdict: **Not delivered yet** — local QA/evidence package is assembled; deployed preview, MC writeback, and concierge runtime verification remain.
+- Delivery verdict: **Not delivered yet** — local QA/evidence package is assembled; deployed preview and MC writeback remain.
 
 ## Core sell story
 
@@ -73,7 +73,7 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 ## Remaining blockers before delivery
 
 1. Deploy or attach a preview URL.
-2. Verify deployed concierge runtime (`/api/chat`) has required environment secrets or disable the trigger for sales demo.
+2. Smoke-test `/api/chat` on the deployed preview URL; local production fallback is verified without an API key.
 3. Mirror packaging evidence to Mission Control via approved API route.
 4. Confirm final owner-facing outreach timing and contact path.
 
@@ -83,3 +83,11 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 - Do not present the site as final-delivered until a deployed preview URL and runtime verification are attached.
 - Treat Google review counts as snapshot evidence (`4.4 / 1,156` seen on 2026-05-04) and re-check before a live sales call if needed.
 - Keep register polished accessible-casual, not fine dining.
+
+## 2026-05-04 heartbeat addendum — concierge fallback verified
+
+- Updated `app/api/chat/route.ts` so Anthropic is instantiated lazily only when `ANTHROPIC_API_KEY` exists.
+- Added a truthful no-secret SSE fallback grounded in V's House content for hours, address, reservation/order links, phone, and menu item names.
+- Updated `components/AskConcierge.tsx` so streamed error frames surface to the guest instead of being swallowed as malformed SSE.
+- Verified `npm run typecheck`, `npm run build`, and local production `/api/chat` fallback via curl.
+- Evidence: `restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md`.
