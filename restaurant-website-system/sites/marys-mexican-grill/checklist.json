@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "leadId": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "siteSlug": "marys-mexican-grill",
+  "templateSlug": "bamzi-01",
+  "currentStage": "reviews",
+  "evidencePaths": [
+    "sites/marys-mexican-grill/audit.md",
+    "sites/marys-mexican-grill/scrapes/current-site-http.html",
+    "sites/marys-mexican-grill/scrapes/current-site-https-error.txt",
+    "sites/marys-mexican-grill/scrapes/restaurantji.html",
+    "sites/marys-mexican-grill/scrapes/google-maps-initial-text-2026-05-01.txt"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "reason": "Need in-app browser Google Reviews Highest-filter capture with 30 written reviews before claiming reviews gate complete."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Qualified as rank #1 in next-15-bad-no-site-leads-2026-05-01.md; hard setup-page/HTTPS failure.",
+      "evidence": [
+        "research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "sites/marys-mexican-grill/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Pre-fork audit exists with current-site HTTP/HTTPS failure, menu/profile references, and mobile/desktop screenshot paths.",
+      "evidence": [
+        "sites/marys-mexican-grill/audit.md",
+        "sites/marys-mexican-grill/scrapes/current-site-http.html",
+        "sites/marys-mexican-grill/scrapes/current-site-https-error.txt"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T00:21:07.010Z"
+}
