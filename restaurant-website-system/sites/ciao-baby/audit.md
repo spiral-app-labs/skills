@@ -7,15 +7,37 @@
 - Restaurant: Ciao Baby!, Barrington, IL
 - Phone: `(847) 381-3555`
 - Address found: `232 E Main St, Barrington, IL 60010`
+- Canonical gate covered here: `auditing`
+
+## Inputs collected
+
+Browser evidence captured with OpenClaw-managed Chrome/CDP on 2026-05-04:
+
+- `restaurant-website-system/sites/ciao-baby/screenshots/current-site-desktop-full.png`
+- `restaurant-website-system/sites/ciao-baby/screenshots/current-site-mobile-full.png`
+- `restaurant-website-system/sites/ciao-baby/screenshots/current-site-mobile-fold.png`
+- `restaurant-website-system/sites/ciao-baby/scrapes/current-site-browser-dom-snapshot.html`
+- `restaurant-website-system/sites/ciao-baby/scrapes/current-site-browser-text.txt`
+- `restaurant-website-system/sites/ciao-baby/screenshots/ciaobaby-net-shell-desktop-full.png`
+- `restaurant-website-system/sites/ciao-baby/screenshots/ciaobaby-net-shell-mobile-full.png`
+- `restaurant-website-system/sites/ciao-baby/screenshots/ciaobaby-net-shell-mobile-fold.png`
+- `restaurant-website-system/sites/ciao-baby/scrapes/ciaobaby-net-shell-browser-dom-snapshot.html`
+- `restaurant-website-system/sites/ciao-baby/scrapes/ciaobaby-net-shell-browser-text.txt`
+
+Supporting public-source evidence:
+
+- DuckDuckGo result for `https://ciaobaby.net/`: title `Ciao Baby! Barrington`, snippet says authentic Italian cuisine in Barrington and family-owned for 20+ years.
+- DuckDuckGo result for `https://www.ciaobabyonline.com/`: title `Authentic Italian Food | Www.ciaobabyonline.com | United States`, snippet includes the Barrington address and phone.
+- Restaurantji and Barrington Chamber source details captured in the prior local audit notes.
 
 ## Source status
 
-Initial MC inventory marked Ciao Baby! as a no-clear-owned-site candidate. This heartbeat found two likely owned/official web paths:
+Ciao Baby currently has a fragmented official-site footprint rather than a clean single source of truth:
 
-1. `https://ciaobaby.net/` — resolves but extracted page text is effectively only `Ciao Baby! Barrington`, suggesting a thin/shell page.
-2. `https://www.ciaobabyonline.com/` — resolves with minimal Wix-style content: address, "Your Downtown Barrington Restaurant for Italian and Americana Dining," hours, and party-room copy.
+1. `https://www.ciaobabyonline.com/` resolves to an older Wix-style site. It has the address, phone, hours, order/menu navigation, and party-room copy, but the design is dated and weak on mobile.
+2. `https://ciaobaby.net/` resolves to a fuller modern site. The browser text includes a complete story section, menu sections, catering/events/visit navigation, phone CTA, and long menu content. It appears to be a full modern website, not a shell.
 
-This changes the pitch hook from pure "no site" to **thin / underdeveloped owned web presence**.
+Because Mission Control does not currently provide an official `website_url`, builder-facing work should treat both domains as source candidates until ownership is verified. The pitch hook is therefore **fragmented / inconsistent web identity**, not simply “no website.”
 
 ## Public proof captured
 
@@ -34,32 +56,43 @@ This changes the pitch hook from pure "no site" to **thin / underdeveloped owned
 - Describes authentic Italian cuisine, pizza and pastas, casual atmosphere, and regulars from the Barrington area.
 - Rep/contact surfaced: Bill Tarsitano.
 
-### Official/minimal site copy
-
-`ciaobabyonline.com` says:
+### `ciaobabyonline.com` browser text
 
 - `232 E Main Street, Barrington Il 60010`
 - `Your Downtown Barrington Restaurant for Italian and Americana Dining`
-- New hours: Tue–Thu 11am–9pm; Friday 11am–10pm; Saturday noon–10pm.
+- Hours: Tue–Thu 11am–9pm; Friday 11am–10pm; Saturday noon–10pm.
 - Party room for birthday parties, showers, holiday events, and business meetings.
+- Phone footer: `847-381-3555`.
+
+### `ciaobaby.net` browser text
+
+- Positions Ciao Baby as `An Italian Kitchen for the Whole Community`.
+- Story copy says the restaurant opened in `2011` and emphasizes family recipes, tradition, fresh ingredients, and local produce whenever possible.
+- Menu sections captured include Lunch, Dinner, Drinks, Alcohol, Pizza, and Dessert.
+- Specific menu proof includes Ciao Baby! Sticks, Stuffed Artichoke, Aunt Dodie's Rolled Stuffed Eggplant, Stuffed Melrose Peppers, Lamb Chops Vesuvio, Baked Clams, CiaoBaby! Burnt Pasta, Very Chopped Meatless Salad, Umbriago Salad, and Create Your Own Pasta.
 
 ## Audit findings
 
-1. **Thin owned web presence:** the official-looking pages are extremely sparse and do not carry the family-run Italian proof, reviews, favorite dishes, party-room conversion path, or menu depth in a sellable way.
-2. **Conflicting/fragmented web identity:** `ciaobaby.net` and `ciaobabyonline.com` both appear in search results; one is nearly empty, one is a minimal content page. That fragmentation is a clear pitch hook.
-3. **Menu/proof lives off-site:** Restaurantji carries the best structured dish/review proof; the owned site does not make that proof work above the fold.
-4. **Event/private-room opportunity is under-sold:** the official copy mentions a party room, but there is no strong private dining page, inquiry CTA, or event package story.
-5. **Route:** `gusto-01`, softened toward neighborhood Italian rather than upscale trattoria. The site should feel warm, family-run, and Barrington-local, not formal luxury.
+1. **Two-domain identity conflict:** Search surfaces both `ciaobaby.net` and `ciaobabyonline.com`. The former looks modern and complete; the latter looks legacy but still contains official-looking operational info. Without MC-confirmed official URL, this is a trust/confusion risk.
+2. **Legacy site has severe mobile issues:** `ciaobabyonline.com` is horizontally cropped/zoomed on mobile, with dated overlays and weak responsive behavior. This is the strongest visual before/after proof if the owner still uses that domain.
+3. **Modern site still needs verification before reuse:** `ciaobaby.net` has strong content depth and a responsive layout, but ownership and recency need verification before treating its claims/menu as canonical.
+4. **Event/private-room conversion is under-sold on the legacy site:** The party-room copy exists, but it has no strong event funnel, package framing, or inquiry path.
+5. **Menu depth is the best specificity source:** Ciao Baby has named dishes and category depth that can prevent generic Italian copy. Any fork must preserve real dish names and avoid invented claims.
+6. **Hours conflict risk:** Restaurantji and `ciaobabyonline.com` show different hours. The builder should not hard-code hours without marking source/date or verifying against Google/official owner source.
 
-## Required browser evidence blocker
+## Builder-safe direction
 
-OpenClaw managed browser is unavailable on this host (`No supported browser found`), so this audit currently has web-fetch/source evidence but not the required desktop/mobile screenshots or live browser DOM snapshot. Before marking the canonical audit gate fully passed, capture:
+- Treat Ciao Baby as a warm neighborhood Italian/Americana restaurant with family-recipe language, strong menu depth, and private-event potential.
+- Use the modern source only as evidence after ownership is verified; otherwise mark it as `unverified domain candidate`.
+- Preserve phone CTA `(847) 381-3555`, Barrington address, menu proof, and private-room angle.
+- Do not claim “over 20 years” unless confirmed by Google/reviews/owner source; `ciaobaby.net` says opened in 2011, which conflicts with that search snippet.
 
-- desktop screenshot of `ciaobabyonline.com`
-- mobile screenshot of `ciaobabyonline.com`
-- desktop/mobile screenshot or proof of the thin `ciaobaby.net` shell
-- browser DOM/text snapshot for official pages
+## Next canonical gate
 
-## Current recommendation
+The `auditing` gate is now locally satisfied with browser screenshots plus DOM/text scrapes. The next gate is `reviews`: open Google Reviews in a browser, choose the **Highest** filter, collect 30 written reviews, and save:
 
-Proceed only after browser evidence is captured or explicitly waived. The lead remains promising because the web presence is real but weak, public proof is decent, and the party-room/private-event angle gives a concrete conversion story.
+- `restaurant-website-system/sites/ciao-baby/screenshots/google-reviews-highest.png`
+- `restaurant-website-system/sites/ciao-baby/scrapes/google-reviews-highest-30.json`
+- `restaurant-website-system/sites/ciao-baby/google-reviews-themes.md`
+
+Until that packet exists or a blocker is mirrored to MC, do not advance to final routing/forking.
