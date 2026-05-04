@@ -23,7 +23,7 @@ export function ConfettiHero() {
               key={i}
               className="absolute text-[32px] md:text-[48px] select-none"
               style={{ top: c.top, left: c.left, transform: `rotate(${c.rotate}deg)` }}
-              initial={{ opacity: 0, scale: 0.6 }}
+              initial={false}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.1 + i * 0.05, ease: [0.4, 0, 0.2, 1] }}
             >
@@ -34,7 +34,7 @@ export function ConfettiHero() {
 
         <div className="relative z-10 text-center max-w-[900px] mx-auto">
           <motion.p
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
             className="text-eyebrow font-bold uppercase text-accent"
@@ -42,15 +42,15 @@ export function ConfettiHero() {
             {content.hero.eyebrow}
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08, ease: [0.4, 0, 0.2, 1] }}
-            className="mt-4 text-hero-h1 font-extrabold text-ink"
+            className="mt-4 text-[40px] leading-[44px] sm:text-hero-h1 font-extrabold text-ink"
           >
             {content.hero.headline}
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
             className="mt-5 text-body text-ink-soft max-w-[560px] mx-auto"
@@ -58,7 +58,7 @@ export function ConfettiHero() {
             {content.hero.subhead}
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.24, ease: [0.4, 0, 0.2, 1] }}
             className="mt-6 flex flex-wrap items-center justify-center gap-2"
@@ -73,7 +73,7 @@ export function ConfettiHero() {
             ))}
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
             className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"
@@ -95,14 +95,14 @@ export function ConfettiHero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={false}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
           className="relative z-10 mt-12 md:mt-16 mx-auto max-w-[720px]"
         >
-          <div className="rounded-[48px] border border-card-border bg-canvas-warm p-8 shadow-card">
+          <div className="rounded-[32px] md:rounded-[48px] border border-card-border bg-canvas-warm p-4 md:p-8 shadow-card">
             <div className="grid gap-4 md:grid-cols-[1.3fr_0.7fr]">
-              <div className="rounded-[36px] bg-accent p-8 text-text-on-brand">
+              <div className="rounded-[28px] md:rounded-[36px] bg-accent p-5 md:p-8 text-text-on-brand">
                 <p className="text-eyebrow font-bold uppercase">{content.hero.proofPanel.eyebrow}</p>
                 <ul className="mt-4 space-y-3 text-body">
                   {content.hero.proofPanel.bullets.map((item) => (
@@ -110,7 +110,7 @@ export function ConfettiHero() {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-[36px] bg-ink p-8 text-text-on-dark">
+              <div className="rounded-[28px] md:rounded-[36px] bg-ink p-5 md:p-8 text-text-on-dark">
                 <p className="text-eyebrow font-bold uppercase text-accent">{content.hero.proofPanel.sideEyebrow}</p>
                 <div className="mt-4 space-y-2 text-body-sm">
                   {content.brand.hours.slice(0, 4).map((row) => (

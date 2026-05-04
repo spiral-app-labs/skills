@@ -74,7 +74,7 @@ export function ScrollReveal({
   return (
     <MotionTag
       className={className}
-      initial={{ opacity: 0, y, x, rotate }}
+      initial={false}
       whileInView={{ opacity: 1, y: 0, x: 0, rotate: 0 }}
       viewport={{ once, amount }}
       transition={{ duration, delay, ease }}

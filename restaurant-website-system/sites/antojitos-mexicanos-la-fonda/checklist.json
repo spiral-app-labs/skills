@@ -6,7 +6,7 @@
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "improving",
+  "currentStage": "concierge",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
@@ -292,9 +292,18 @@
         "mobile evidence"
       ],
       "order": 5,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-desktop.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-mobile.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-desktop.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:36:54Z"
     },
     {
       "id": "top_three_improvements",
@@ -336,9 +345,16 @@
         "before/after screenshots or diff evidence"
       ],
       "order": 6,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-desktop.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-mobile.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-desktop.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:36:54Z"
     },
     {
       "id": "ai_concierge_added",
@@ -651,7 +667,13 @@
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/build-typecheck-2026-05-04.md",
     "local command: npm run typecheck (passed)",
     "local command: npm run build (passed)",
-    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-building-complete-2026-05-04.json"
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-building-complete-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-desktop.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-mobile.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-desktop.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-improving-complete-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -663,9 +685,9 @@
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Local build gate is complete, but Mission Control build writeback cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
-      "nextUnblockAction": "Retry the prepared build writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
-      "recordedAt": "2026-05-04T18:18:00.000Z"
+      "reason": "Improvement/top-3 gates are complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
+      "nextUnblockAction": "Retry the prepared improving-complete writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
+      "recordedAt": "2026-05-04T18:36:54Z"
     }
   ],
   "requirements": [
@@ -792,50 +814,82 @@
     {
       "id": "identity-specific",
       "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
-      "stage": "improving"
+      "stage": "improving",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md"
+      ],
+      "notes": "Improvement pass keeps pepper-01 but foregrounds La Fonda/Veracruz/taco/antojito proof instead of generic restaurant copy."
     },
     {
       "id": "conversion-paths",
       "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
-      "stage": "improving"
+      "stage": "improving",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md"
+      ],
+      "notes": "Menu/deal CTAs now route to verified phone; directions remain verified Google Maps; no fake online ordering provider was added."
     },
     {
       "id": "mobile-check",
       "title": "Mobile pass is explicitly checked with evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
-      "stage": "improving"
+      "stage": "improving",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png",
+        "CDP mobile metrics: vw=390, scrollWidth=390, offenders=[]"
+      ],
+      "notes": "CDP mobile check passed at 390px with scrollWidth=390 and no overflow offenders; after-mobile screenshot captured."
     },
     {
       "id": "top-three-named",
       "title": "Top 3 concrete improvements are named from audit/preview/QA",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
-      "stage": "top_3_improvements"
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md"
+      ],
+      "notes": "Top three improvements are named in improvement-pass evidence: visibility, proof/conversion, mobile sell-readiness."
     },
     {
       "id": "top-three-implemented",
       "title": "All three improvements are implemented",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
-      "stage": "top_3_improvements"
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md"
+      ],
+      "notes": "All top three improvements are implemented in Antojitos components/content/global CSS."
     },
     {
       "id": "top-three-evidence",
       "title": "Each improvement has before/after evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
-      "stage": "top_3_improvements"
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md"
+      ],
+      "notes": "Before/after desktop/mobile screenshot paths and CDP metrics are recorded in improvement-pass evidence."
     },
     {
       "id": "concierge-kb-truthful",
@@ -961,7 +1015,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T18:18:00.000Z",
+  "updatedAt": "2026-05-04T18:36:54Z",
   "passedRequirementIds": [
     "checklist-md",
     "checklist-json",
@@ -974,6 +1028,12 @@
     "reviews-themes",
     "template-route-locked",
     "fork-built",
-    "specificity"
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence"
   ]
 }

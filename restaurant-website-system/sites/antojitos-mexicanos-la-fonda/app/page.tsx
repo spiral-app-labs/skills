@@ -5,6 +5,8 @@ import { DealCardStack } from '../components/DealCardStack';
 import { LocationFinderStrip } from '../components/LocationFinderStrip';
 import { ChefTestimonialBand } from '../components/ChefTestimonialBand';
 import { InlineCTAWithPhoto } from '../components/InlineCTAWithPhoto';
+import { ProofStrip } from '../components/ProofStrip';
+import { MobileStickyCTA } from '../components/MobileStickyCTA';
 import { SaturatedFooter } from '../components/SaturatedFooter';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { content } from '../content';
@@ -15,6 +17,7 @@ export default function HomePage() {
       <TopNavSimple />
       <main>
         <ConfettiHero />
+        <ProofStrip />
         <ScrollReveal>
           <DishCardGrid
             id="menu"
@@ -22,7 +25,7 @@ export default function HomePage() {
             subhead={content.fanFavorites.subhead}
             dishes={content.fanFavorites.dishes}
             imageShape="square"
-            orderHref={content.brand.menuHref}
+            orderHref={content.brand.phoneHref}
           />
         </ScrollReveal>
         <ScrollReveal>
@@ -39,7 +42,7 @@ export default function HomePage() {
             dishes={content.moreMenu.dishes}
             imageShape="square"
             cardSize="sm"
-            orderHref={content.brand.menuHref}
+            orderHref={content.brand.phoneHref}
           />
         </ScrollReveal>
         <ScrollReveal>
@@ -59,6 +62,7 @@ export default function HomePage() {
         </ScrollReveal>
       </main>
       <SaturatedFooter />
+      <MobileStickyCTA />
     </>
   );
 }

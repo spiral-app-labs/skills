@@ -8,6 +8,7 @@ html, body {
   font-family: theme('fontFamily.body');
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 html {
@@ -27,3 +28,7 @@ h1, h2, h3, h4 {
 }
 
 * { box-sizing: border-box; }
+
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
