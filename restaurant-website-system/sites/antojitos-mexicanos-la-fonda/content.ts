@@ -188,11 +188,11 @@ export const content = {
   },
 
   visit: {
-    heading: 'A Cleaner Path Than Directory Hopping',
+    heading: 'Everything You Need Before You Go',
     subhead:
-      'The current guest journey is Google, Restaurantji, Restaurant Guru, snippets, and menu directories. The preview centralizes the essentials.',
+      'Phone, directions, public-source hours, review proof, and La Fonda’s Veracruz-style dish story are gathered in one simple place.',
     tiles: [
-      { title: 'No official site found', body: 'The 2026-05-04 Google Maps capture showed Add website, which makes the before/after easy to demonstrate.' },
+      { title: 'Website not verified', body: 'The 2026-05-04 Google Maps capture showed Add website, so this page gives guests a clearer first-party path.' },
       { title: '4.5 / 148', body: 'The Google review count is strong enough to sit near the top of the page.' },
       { title: 'Takeout-first', body: 'Reviews repeatedly praise carryout packaging, speed, friendliness, and value.' },
       { title: 'Veracruz-specific', body: 'The best copy angle is authentic comida Veracruzana and regional antojitos.' },
@@ -237,7 +237,7 @@ export const content = {
       { label: 'Call La Fonda', href: 'tel:+18155263633' },
       { label: 'Get Directions', href: 'https://www.google.com/maps/search/?api=1&query=35+Berkshire+Dr+Unit+10+Crystal+Lake+IL+60014' },
       { label: 'Open Google Profile', href: 'https://www.google.com/maps/place/Antojitos+Mexicanos+La+Fonda/@42.2179964,-88.3189578,17z/data=!4m8!3m7!1s0x880f0ddbc42b18c1:0x67112e53c48d4b64!8m2!3d42.2179964!4d-88.3189578!9m1!1b1!16s%2Fg%2F11r9b4q5ly' },
-      { label: 'See Restaurantji Evidence', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' },
+      { label: 'View Restaurantji Profile', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' }
     ],
     leftHeading: 'Truth-safe preview rules',
     leftBody: [
@@ -287,7 +287,7 @@ export const content = {
   footer: {
     columns: [
       {
-        heading: 'Menu proof',
+        heading: 'Menu highlights',
         links: [
           { label: 'Tacos', href: '/#menu' },
           { label: 'Empanadas', href: '/#menu' },
@@ -304,7 +304,7 @@ export const content = {
         ],
       },
       {
-        heading: 'Evidence',
+        heading: 'Public profiles',
         links: [
           { label: 'Google profile', href: 'https://www.google.com/maps/place/Antojitos+Mexicanos+La+Fonda/@42.2179964,-88.3189578,17z/data=!4m8!3m7!1s0x880f0ddbc42b18c1:0x67112e53c48d4b64!8m2!3d42.2179964!4d-88.3189578!9m1!1b1!16s%2Fg%2F11r9b4q5ly' },
           { label: 'Restaurantji', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' },
@@ -312,7 +312,7 @@ export const content = {
         ],
       },
     ],
-    copy: 'Preview build by Spiral — public sources reviewed May 4, 2026. Verify current menu, seating, and specials with the restaurant before publishing.'
+    copy: 'Public sources reviewed May 4, 2026. Verify current menu, seating, and specials with the restaurant before publishing.'
   },
 
   confetti: [
