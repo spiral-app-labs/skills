@@ -1,0 +1,29 @@
+{
+  "build_stage": "pitch",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "70683332-3044-461f-9dcf-dffa59a24a7b",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
+  ],
+  "passed_requirement_ids": [
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence"
+  ],
+  "blocker": "Mission Control writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+  "heartbeat_summary": "Pitch gate completed locally for Mary's Mexican Grill. The new pitch doc stays grounded in the audit, Google Highest review packet, improvement pass, top-three changes, and concierge evidence. It leads with the owned-site revenue leak, names Mary's public strengths on Woodstock Square, explains the before/after in owner language, and preserves truthful DoorDash plus phone-conflict caveats. Checklist state is advanced to pitch locally only until agency auth is restored."
+}
