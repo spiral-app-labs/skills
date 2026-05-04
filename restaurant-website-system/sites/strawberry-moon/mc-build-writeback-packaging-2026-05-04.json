@@ -1,0 +1,69 @@
+{
+  "build_stage": "packaging",
+  "currentStage": "packaging",
+  "package_status": "packaged_waiting_on_founder_and_mc_sync",
+  "site_slug": "strawberry-moon",
+  "template_slug": "velvet-shaker-01",
+  "mc_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "child_task_id": "b629a4f6-c8ff-40dc-a544-31456d20c630",
+  "qa_round_3_task_id": "f2c92b69-6485-415e-b2c3-8c765f8b193b",
+  "founder_gate_task_id": null,
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "checklist_markdown_path": "restaurant-website-system/sites/strawberry-moon/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/strawberry-moon/checklist.json",
+  "delivery_package_path": "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+  "outreach_draft_path": "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+  "screenshot_inventory_path": "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+  "preview_url": null,
+  "local_preview_url": "http://127.0.0.1:3083",
+  "vercel_check_url": "https://vercel.com/ethan-ethantalrejas-projects/skills/6YT3DtFeyx3S3hREGLuSEg7z81GW",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "passed_requirement_ids": [
+    "delivery-package"
+  ],
+  "pending_requirement_ids": [
+    "delivery-no-missing-evidence"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+    "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.json",
+    "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+    "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+    "restaurant-website-system/sites/strawberry-moon/source.md",
+    "restaurant-website-system/sites/strawberry-moon/audit.md",
+    "restaurant-website-system/sites/strawberry-moon/improvements.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-packaging-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json"
+  ],
+  "screenshot_manifest_summary": {
+    "total": 18,
+    "qa_round_3": 8,
+    "current_site": 4,
+    "google": 2,
+    "preview_or_qa2": 4
+  },
+  "blockers": [
+    "Public preview URL is pending; Vercel check URL is not a client preview URL.",
+    "Screenshot PNGs are present locally but ignored by git and still need MC upload/mirroring.",
+    "Mission Control agency API auth unavailable; local payload recorded instead of remote sync.",
+    "Founder must create/configure the site-specific Anthropic key.",
+    "Founder must personally complete human review before ready_to_pitch can become true."
+  ],
+  "blocker": "Packaging is assembled locally, but final delivery is blocked by missing public preview URL, pending MC screenshot/evidence sync, unavailable MC API auth, and founder-only Anthropic/human-review gates.",
+  "heartbeat_summary": "Strawberry Moon packaging package assembled locally with checklist, pitch, battle cards, QA evidence, screenshot manifest, outreach draft, and local MC payloads. ready_to_pitch remains false and final delivery remains blocked by preview URL, MC sync, and founder gates.",
+  "created_at": "2026-05-04T23:35:52Z"
+}
