@@ -27,7 +27,9 @@
     "restaurant-website-system/sites/vs-house/delivery-package.md",
     "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
     "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
-    "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md"
+    "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
+    "restaurant-website-system/sites/vs-house/mc-writeback-payload-2026-05-04.json",
+    "restaurant-website-system/sites/vs-house/mc-writeback-blocker.md"
   ],
   "qaRounds": [
     {
@@ -71,8 +73,8 @@
   "blockers": [
     {
       "gate": "packaging",
-      "reason": "Vercel preview URL exists, but it returns Vercel Authentication Required (401) for both / and /api/chat. Need preview protection bypass/public owner-shareable URL before deployed smoke test and delivery; MC API/writeback confirmation also remains pending.",
-      "recordedAt": "2026-05-04T15:20:00Z"
+      "reason": "Vercel preview URL exists, but it returns Vercel Authentication Required (401) for both / and /api/chat. MC heartbeat writeback succeeded, but full lead/QA writeback remains blocked because OpenClaw lacks AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET and the documented /build route returned 404. Need preview protection bypass/public owner-shareable URL plus authenticated MC lead/QA writeback before delivery.",
+      "recordedAt": "2026-05-04T15:30:00Z"
     }
   ],
   "requirements": [
@@ -173,13 +175,15 @@
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
       "required": true,
-      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, screenshot evidence, local concierge fallback verification, and Vercel preview URL exist. Final delivery still needs preview protection bypass/public owner-shareable URL, MC mirror/writeback, and deployed preview smoke test.",
+      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, screenshot evidence, local concierge fallback verification, Vercel preview URL, protected-preview evidence, and prepared MC writeback payload exist. Final delivery still needs preview protection bypass/public owner-shareable URL, authenticated MC mirror/writeback, and deployed preview smoke test.",
       "evidence": [
         "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
         "restaurant-website-system/sites/vs-house/battle-cards.md",
         "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
         "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
         "restaurant-website-system/sites/vs-house/delivery-package.md",
+        "restaurant-website-system/sites/vs-house/mc-writeback-blocker.md",
+        "restaurant-website-system/sites/vs-house/mc-writeback-payload-2026-05-04.json",
         "restaurant-website-system/sites/vs-house/outreach-draft.md",
         "restaurant-website-system/sites/vs-house/pitch-doc.md",
         "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
@@ -197,8 +201,10 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T15:20:00Z",
+  "updatedAt": "2026-05-04T15:31:00Z",
   "artifactUrls": [
     "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app"
-  ]
+  ],
+  "lastMissionControlHeartbeatId": "37972128-9264-435e-96de-284380246c0c",
+  "lastMissionControlActivityId": "c3138254-7216-4c66-89da-4ded7d593401"
 }

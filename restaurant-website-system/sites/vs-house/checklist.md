@@ -109,3 +109,10 @@
 - Smoke test attempted for `/` and `/api/chat`; both returned Vercel Authentication Required (`401`).
 - Artifact added: `restaurant-website-system/sites/vs-house/preview-smoke-evidence.md`.
 - Local production concierge fallback remains verified, but deployed smoke test and owner-shareable delivery are blocked until preview protection is bypassed/disabled or a public preview is created.
+
+## 2026-05-04 heartbeat addendum — Mission Control writeback payload prepared
+
+- Confirmed deployed MC lead and QA routes exist but require auth; documented `/build` route returned `404` on probe.
+- No `AGENCY_AUTONOMY_API_KEY` or `OPENCLAW_WEBHOOK_SECRET` is available in this OpenClaw runtime, so no authenticated MC writeback was attempted.
+- Added `mc-writeback-payload-2026-05-04.json` and `mc-writeback-blocker.md`; MC heartbeat writeback succeeded as `37972128-9264-435e-96de-284380246c0c`.
+- Delivery remains blocked on preview protection bypass/public preview, authenticated MC writeback, and deployed preview smoke test.

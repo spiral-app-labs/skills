@@ -98,3 +98,10 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 - `GET /` and `POST /api/chat` both returned Vercel Authentication Required (`401`) from OpenClaw.
 - Added `preview-smoke-evidence.md`.
 - Delivery remains blocked on an owner-shareable/public preview or deployment-protection bypass, plus MC writeback confirmation.
+
+## 2026-05-04 heartbeat addendum — Mission Control writeback payload prepared
+
+- Confirmed deployed MC lead and QA routes exist but require auth; documented `/build` route returned `404` on probe.
+- No `AGENCY_AUTONOMY_API_KEY` or `OPENCLAW_WEBHOOK_SECRET` is available in this OpenClaw runtime, so no authenticated MC writeback was attempted.
+- Added `mc-writeback-payload-2026-05-04.json` and `mc-writeback-blocker.md`; MC heartbeat writeback succeeded as `37972128-9264-435e-96de-284380246c0c`.
+- Delivery remains blocked on preview protection bypass/public preview, authenticated MC writeback, and deployed preview smoke test.

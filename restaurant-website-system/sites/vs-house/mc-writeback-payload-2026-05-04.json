@@ -1,0 +1,73 @@
+{
+  "lead_patch": {
+    "status": "in_progress",
+    "vercel_preview_url": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
+    "metadata": {
+      "site_slug": "vs-house",
+      "template_slug": "bamzi-01",
+      "build_stage": "packaging",
+      "mc_parent_task_id": "41da188d-4629-4cb2-91f3-6be31d6b9b6d",
+      "skills_pr_url": "https://github.com/spiral-app-labs/skills/pull/1",
+      "preview_protection_status": "blocked_401_vercel_authentication_required",
+      "preview_owner_shareable": false,
+      "last_openclaw_evidence_paths": [
+        "restaurant-website-system/sites/vs-house/checklist.md",
+        "restaurant-website-system/sites/vs-house/checklist.json",
+        "restaurant-website-system/sites/vs-house/audit.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/vs-house/pitch-doc.md",
+        "restaurant-website-system/sites/vs-house/battle-cards.md",
+        "restaurant-website-system/sites/vs-house/qa-round-1.md",
+        "restaurant-website-system/sites/vs-house/qa-round-2.md",
+        "restaurant-website-system/sites/vs-house/qa-round-3.md",
+        "restaurant-website-system/sites/vs-house/delivery-package.md",
+        "restaurant-website-system/sites/vs-house/outreach-draft.md",
+        "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
+        "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+      ],
+      "blockers": [
+        {
+          "gate": "packaging",
+          "reason": "Vercel preview URL exists, but Vercel deployment protection returns 401 for / and /api/chat. Need bypass/public preview before deployed smoke test and owner delivery. MC build-writeback auth is also unavailable in this OpenClaw environment.",
+          "recordedAt": "2026-05-04T15:30:00Z"
+        }
+      ]
+    }
+  },
+  "heartbeat_post": {
+    "status": "work_done",
+    "summary": "Agency: V's House packaging found a Vercel preview URL, verified it is protected by 401 auth, prepared MC writeback payload, and kept delivery blocked until owner-shareable preview plus MC writeback are available.",
+    "mode": "agency",
+    "source": "openclaw_website_agency",
+    "taskIds": [
+      "41da188d-4629-4cb2-91f3-6be31d6b9b6d"
+    ],
+    "metadata": {
+      "lead_id": "1006c1ea-5a06-4703-9994-117bc90d9dba",
+      "build_stage": "packaging",
+      "site_slug": "vs-house",
+      "template_slug": "bamzi-01",
+      "preview_url": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
+      "skills_pr_url": "https://github.com/spiral-app-labs/skills/pull/1",
+      "blocker": "preview_protection_401_and_agency_api_auth_missing"
+    }
+  },
+  "api_probe": {
+    "base_url": "https://hq.ethantalreja.com",
+    "observed_without_token": {
+      "/api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba": "401 Unauthorized, route exists",
+      "/api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/build": "404, route not present on deployed MC at probe time",
+      "/api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/qa-rounds": "401 Unauthorized, route exists",
+      "/api/heartbeat": "200 on GET; POST can record heartbeat rows"
+    }
+  },
+  "heartbeat_result": {
+    "status": "success",
+    "heartbeatId": "37972128-9264-435e-96de-284380246c0c",
+    "activityId": "c3138254-7216-4c66-89da-4ded7d593401",
+    "recordedAt": "2026-05-04T15:31:00Z"
+  }
+}
