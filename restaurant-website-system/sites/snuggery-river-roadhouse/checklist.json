@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "leadId": "713dec87-03c2-4782-ad16-93d72368d130",
+  "mcParentTaskId": "28641d8b-ed9c-4fc3-9326-9c3436bbdc31",
+  "siteSlug": "snuggery-river-roadhouse",
+  "templateSlug": "bramble-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.md",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.json",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+    "restaurant-website-system/reports/repo-mc-inventory-2026-05-03.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for official-site verification, desktop/mobile screenshots, and Google review packet.",
+      "recordedAt": "2026-05-04T04:56:48.501794Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "pending",
+      "required": true,
+      "notes": "MC marks Snuggery as a family-owned riverside roadhouse lead; source audit found a likely official site but it needs real-browser verification because web fetch hit 403 checkpoints.",
+      "evidence": [
+        "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+        "restaurant-website-system/reports/repo-mc-inventory-2026-05-03.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted; canonical official-site browser verification, desktop/mobile screenshots, and DOM snapshot remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to bramble-01 as a family waterfront roadhouse/sports-bar variant, not upscale cocktail lounge.",
+      "evidence": [
+        "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T04:56:48.542Z"
+}
