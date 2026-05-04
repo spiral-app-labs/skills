@@ -19,11 +19,11 @@ export function CantFindBlock({
 }) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-16 md:py-24">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-10 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <h2 className="text-display-mid">{heading}</h2>
-            <p className="text-body text-ink/75 mt-6 max-w-md">{body}</p>
+            <p className="text-body text-ink mt-6 max-w-md">{body}</p>
             <Link href={linkHref} className="vs-link inline-block mt-6 text-body underline underline-offset-4 decoration-ink/40">
               {linkLabel}
             </Link>

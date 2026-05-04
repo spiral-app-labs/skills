@@ -10,7 +10,7 @@ export function ThreeColFooter() {
           {/* Visit us */}
           <div>
             <h4 className="text-body mb-4">{contact.visit.heading}</h4>
-            <address className="not-italic text-body text-ink/80 leading-[1.6]">
+            <address className="not-italic text-body text-ink leading-[1.6]">
               {contact.visit.address.map((line) => (
                 <div key={line}>{line}</div>
               ))}
@@ -23,7 +23,7 @@ export function ThreeColFooter() {
             <div className="mt-6">
               <div className="text-body mb-1">{contact.visit.hoursHeading}</div>
               {contact.visit.hours.map((h) => (
-                <div key={h} className="text-body text-ink/80">{h}</div>
+                <div key={h} className="text-body text-ink">{h}</div>
               ))}
             </div>
           </div>
@@ -31,11 +31,11 @@ export function ThreeColFooter() {
           {/* Contact */}
           <div>
             <h4 className="text-body mb-4">{footer.contactHeading}</h4>
-            <div className="text-body text-ink/80">{contact.bookNow.viaEmail.label}</div>
+            <div className="text-body text-ink">{contact.bookNow.viaEmail.label}</div>
             <Link href={contact.bookNow.viaEmail.href} className="vs-link text-body">
               {contact.bookNow.viaEmail.value}
             </Link>
-            <div className="mt-4 text-body text-ink/80">{contact.bookNow.whatsapp.label}</div>
+            <div className="mt-4 text-body text-ink">{contact.bookNow.whatsapp.label}</div>
             <Link href={contact.bookNow.whatsapp.href} className="vs-link text-body">
               {contact.bookNow.whatsapp.value}
             </Link>
@@ -66,7 +66,7 @@ export function ThreeColFooter() {
 
         {/* Sub-nav links row */}
         <div className="vs-divider mt-16 md:mt-20 pt-6 flex flex-wrap items-center justify-between gap-4">
-          <p className="text-micro text-ink/60">{content.footer.colophon}</p>
+          <p className="text-micro text-ink">{content.footer.colophon}</p>
           <nav className="flex flex-wrap gap-4 md:gap-6">
             {content.footer.links.map((l) => {
               const isExternal = 'external' in l && l.external;

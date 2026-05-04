@@ -11,7 +11,7 @@ export function MixologistGrid({
 }) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-16 md:py-24">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-10 md:py-16">
         <h2 className="text-display-mid mb-10 md:mb-14 max-w-3xl">{heading}</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {people.map((p) => (
@@ -22,7 +22,7 @@ export function MixologistGrid({
               </div>
               <figcaption className="mt-4">
                 <div className="text-h4">{p.name}</div>
-                <div className="text-body text-ink/65 mt-1">{p.role}</div>
+                <div className="text-body text-ink mt-1">{p.role}</div>
               </figcaption>
             </figure>
           ))}

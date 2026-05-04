@@ -15,9 +15,9 @@ export function PageDisplayHeading({
   return (
     <section className="w-full">
       <div className="mx-auto max-w-shell px-5 md:px-10 pt-14 md:pt-20 pb-10 md:pb-16">
-        {eyebrow && <p className="text-body text-ink/70 mb-4">{eyebrow}</p>}
+        {eyebrow && <p className="text-body text-ink mb-4">{eyebrow}</p>}
         <h1 className="text-display leading-[1.05]">{heading}</h1>
-        {subheading && <p className="mt-6 text-body text-ink/80 max-w-prose-editorial">{subheading}</p>}
+        {subheading && <p className="mt-6 text-body text-ink max-w-prose-editorial">{subheading}</p>}
         {children}
       </div>
     </section>

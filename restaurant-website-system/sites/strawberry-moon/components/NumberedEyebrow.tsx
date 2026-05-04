@@ -15,10 +15,10 @@ export function NumberedEyebrow({
 }) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-20 md:py-28">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-14 md:py-24">
         <ScrollFillDivider />
         <div className="pt-8 md:pt-10">
-          <p className="text-micro tracking-widest text-ink/75">{number}// {label}</p>
+          <p className="text-micro tracking-widest text-ink">{number}// {label}</p>
           {displayLabel && (
             <h2 className="text-h3-large mt-6">{displayLabel}</h2>
           )}

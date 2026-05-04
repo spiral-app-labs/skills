@@ -9,7 +9,7 @@ export function MassiveWordmarkHero() {
     <section className="w-full flex">
       <div className="mx-auto max-w-shell px-5 md:px-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.66fr)] gap-8 lg:gap-14 pt-8 pb-14 md:pt-10 md:pb-16 lg:pt-12 lg:pb-20 items-start">
         <div className="flex flex-col gap-7 md:gap-8">
-          <p className="text-nav uppercase tracking-[0.18em] text-ink/58">
+          <p className="text-nav uppercase tracking-[0.18em] text-ink">
             Wauconda martini lounge · live music · red door on Main
           </p>
           <h1
@@ -19,10 +19,10 @@ export function MassiveWordmarkHero() {
             {b.name}
           </h1>
           <div className="max-w-2xl space-y-5">
-            <p className="text-[22px] md:text-[30px] leading-[1.08] text-ink/88">
+            <p className="text-[22px] md:text-[30px] leading-[1.08] text-ink">
               {b.tagline}
             </p>
-            <p className="text-body md:text-[18px] leading-relaxed text-ink/68 max-w-xl">
+            <p className="text-body md:text-[18px] leading-relaxed text-ink max-w-xl">
               First-come seating, martinis and wine from 4 pm, plus Thursday through Saturday live sets that keep the room warm without turning it into a shout-over-the-band bar.
             </p>
           </div>
@@ -46,12 +46,14 @@ export function MassiveWordmarkHero() {
             alt={heroImage.alt}
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/88 via-ink/25 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 text-canvas">
-            <p className="text-[13px] uppercase tracking-[0.18em] text-canvas/72">{b.googleSummary}</p>
-            <p className="mt-3 max-w-sm text-[24px] leading-tight md:text-[32px]">
-              Cozy two-level lounge energy, not a generic bar page.
-            </p>
+            <div className="max-w-md rounded-[22px] bg-ink p-4 shadow-[0_18px_60px_rgba(0,0,0,0.36)] md:p-5">
+              <p className="text-[13px] uppercase tracking-[0.18em] text-canvas">{b.googleSummary}</p>
+              <p className="mt-3 max-w-sm text-[24px] leading-tight md:text-[32px]">
+                Cozy two-level lounge energy, not a generic bar page.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -22,13 +22,13 @@ export default function ContactPage() {
               <h3 className="text-h3 mb-6">{c.bookNow.heading}</h3>
               <div className="grid grid-cols-2 gap-6 max-w-sm">
                 <div>
-                  <div className="text-micro text-ink/60 mb-1">{c.bookNow.viaEmail.label}</div>
+                  <div className="text-micro text-ink mb-1">{c.bookNow.viaEmail.label}</div>
                   <Link href={c.bookNow.viaEmail.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
                     {c.bookNow.viaEmail.value}
                   </Link>
                 </div>
                 <div>
-                  <div className="text-micro text-ink/60 mb-1">{c.bookNow.whatsapp.label}</div>
+                  <div className="text-micro text-ink mb-1">{c.bookNow.whatsapp.label}</div>
                   <Link href={c.bookNow.whatsapp.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
                     {c.bookNow.whatsapp.value}
                   </Link>
@@ -36,7 +36,7 @@ export default function ContactPage() {
               </div>
 
               <h3 className="text-h3 mt-10 mb-6">{c.visit.heading}</h3>
-              <address className="not-italic text-body text-ink/85 leading-[1.6]">
+              <address className="not-italic text-body text-ink leading-[1.6]">
                 {c.visit.address.map((line) => (
                   <div key={line}>{line}</div>
                 ))}
@@ -48,7 +48,7 @@ export default function ContactPage() {
               <div className="mt-8">
                 <div className="text-body mb-1">{c.visit.hoursHeading}</div>
                 {c.visit.hours.map((h) => (
-                  <div key={h} className="text-body text-ink/80">{h}</div>
+                  <div key={h} className="text-body text-ink">{h}</div>
                 ))}
               </div>
 

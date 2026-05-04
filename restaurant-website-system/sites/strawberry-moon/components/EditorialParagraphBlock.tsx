@@ -11,7 +11,7 @@ export function EditorialParagraphBlock({
 }) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-20 md:py-28">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-14 md:py-24">
         <div className="max-w-prose-editorial mx-auto">
           <p className="text-body md:text-[18px] leading-relaxed text-ink">{paragraph}</p>
           {link && (

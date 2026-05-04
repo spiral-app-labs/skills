@@ -9,7 +9,7 @@ export function ContactFormPanel() {
   return (
     <section className="w-full border border-ink/10 p-6 md:p-8">
       <h3 className="text-h3 mb-4">{panel.heading}</h3>
-      <p className="text-body text-ink/75 max-w-2xl">{panel.body}</p>
+      <p className="text-body text-ink max-w-2xl">{panel.body}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-8">
         {panel.actions.map((action) => (
@@ -32,7 +32,7 @@ export function ContactFormPanel() {
       <div className="vs-divider mt-8 pt-6">
         <ul className="space-y-3">
           {panel.notes.map((note) => (
-            <li key={note} className="text-body text-ink/72">
+            <li key={note} className="text-body text-ink">
               {note}
             </li>
           ))}

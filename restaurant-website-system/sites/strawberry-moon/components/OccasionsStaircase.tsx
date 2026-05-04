@@ -25,10 +25,10 @@ type Props = {
 export function OccasionsStaircase({ eyebrow, items }: Props) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-20 md:py-28">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-14 md:py-24">
         <ScrollFillDivider />
         {eyebrow && (
-          <p className="text-micro tracking-widest text-ink/75 mt-8 md:mt-10 mb-12 md:mb-16">
+          <p className="text-micro tracking-widest text-ink mt-8 md:mt-10 mb-12 md:mb-16">
             {eyebrow.number}// {eyebrow.label}
           </p>
         )}
@@ -39,7 +39,7 @@ export function OccasionsStaircase({ eyebrow, items }: Props) {
               <div className="relative aspect-[4/3] overflow-hidden mb-6">
                 <CurtainImage src={it.photo.src} alt={it.photo.alt} from="top" delay={i * 0.1} />
               </div>
-              <p className="text-body text-ink/75 leading-relaxed">{it.body}</p>
+              <p className="text-body text-ink leading-relaxed">{it.body}</p>
             </div>
           ))}
         </div>

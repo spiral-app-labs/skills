@@ -12,7 +12,7 @@ export function EventsPreviewGrid({
 }) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-16 md:py-24">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-10 md:py-16">
         <p className="text-body text-ink mb-6 md:mb-10">{label}</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {items.map((it, i) => (
@@ -22,7 +22,7 @@ export function EventsPreviewGrid({
                 <img src={it.src} alt={it.alt} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
               </div>
               {it.caption && (
-                <figcaption className="mt-3 text-micro text-ink/70">{it.caption}</figcaption>
+                <figcaption className="mt-3 text-micro text-ink">{it.caption}</figcaption>
               )}
             </figure>
           ))}

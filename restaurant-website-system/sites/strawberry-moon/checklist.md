@@ -3,9 +3,9 @@
 - Lead ID: af98b880-9351-4f00-b35b-253ad35570d9
 - MC parent task ID: 216314e9-4af6-4f99-92ab-54e7912b9173
 - Template slug: velvet-shaker-01
-- Current stage: qa_round_2
+- Current stage: qa_round_3
 - Deploy URL: TBD
-- Updated: 2026-05-04T15:35:00Z
+- Updated: 2026-05-04T15:45:00Z
 
 ## Requirements
 
@@ -15,7 +15,7 @@
 - [x] google-reviews-captured: Highest-filter Google review packet captured with 30 written reviews, rating summary, and screenshots
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Velvet-shaker-01 now lives in the Strawberry Moon site folder with official-site imagery, factual martini/lounge/live-music content, honest call/directions/events/official-site handoff links, and no fake booking or price claims. `npm ci`, `npm run typecheck`, and `npm run build` passed.
 - [x] qa-round-1: QA round 1 completed with findings and fixes logged - Round 1 passed after hero/nav fixes: first viewport is demo-ready; typecheck/build passed; desktop/mobile preview screenshots captured.
-- [ ] qa-round-2: QA round 2 completed with findings and fixes logged - Next: fix below-fold mobile gallery gap/cropped strip, improve low-contrast section copy, then recapture screenshots.
+- [x] qa-round-2: QA round 2 completed with findings and fixes logged - Round 2 passed after fixing mobile gallery/cropped-strip capture, raising contrast, making the hero proof card readable, and improving mobile nav.
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
 - [ ] delivery-package: Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached
 
@@ -43,7 +43,7 @@
 ## QA Rounds
 
 - Round 1: passed — `qa-round-1.md`
-- Round 2: pending
+- Round 2: passed — `qa-round-2.md`
 - Round 3: pending
 
 ## Pitch Artifacts
@@ -72,3 +72,11 @@
 - Added `qa-round-1.md`; advanced local stage to `qa_round_2`.
 - Mission Control heartbeat writeback succeeded as `c036c904-df28-426e-8461-e7243a0b8a83`.
 - Round 2 follow-up: mobile below-fold gallery gap/cropped strip and low-contrast lower sections.
+
+## 2026-05-04 — QA Round 2 heartbeat progress
+
+- Ran `npm run typecheck` and `npm run build`; production build passed.
+- Replaced reveal-overlay image behavior with immediate rendering so mobile screenshots no longer show blank/cropped gallery strips.
+- Tightened below-fold spacing, raised low-contrast text treatments, made the hero proof card solid/readable, and upgraded mobile nav links to clearer chips.
+- Captured `qa-round-2-desktop-2026-05-04.png` and `qa-round-2-mobile-2026-05-04.png`.
+- Final image QA passed Round 2; Mission Control heartbeat writeback succeeded as `d7541376-2c9e-4f2f-a202-0184d73fae6c`; advanced local stage to `qa_round_3`.

@@ -15,7 +15,7 @@ export function AsymmetricMiniGallery({
 }) {
   return (
     <section className="w-full">
-      <div className="mx-auto max-w-shell px-5 md:px-10 py-12 md:py-20">
+      <div className="mx-auto max-w-shell px-5 md:px-10 py-10 md:py-16">
         <div className="grid grid-cols-12 gap-4 md:gap-6">
           {/* Left: portrait, offset down + narrower column */}
           <div className="col-span-5 md:col-span-3 md:col-start-2">
