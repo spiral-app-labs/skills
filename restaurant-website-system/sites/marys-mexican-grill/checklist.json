@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "concierge",
+  "currentStage": "pitch",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -446,9 +446,21 @@
         "before/after evidence links"
       ],
       "order": 8,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-pitch-2026-05-04.json"
+      ],
+      "blocker": {
+        "reason": "Mission Control auth is unavailable in this runtime, so pitch-stage writeback can only be recorded locally.",
+        "nextUnblockAction": "POST mc-build-writeback-pitch-2026-05-04.json once agency auth is restored.",
+        "updatedAt": "2026-05-04T20:45:37Z"
+      }
     },
     {
       "id": "battle_cards_doc",
@@ -682,9 +694,14 @@
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
-    "pitchDoc": null,
+    "pitchDoc": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
     "outreachDraft": null,
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [
+      "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+      "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+      "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
+      "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md"
+    ]
   },
   "blockers": [
     {
@@ -696,7 +713,9 @@
     },
     "Mission Control build-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
     "Mission Control improving-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control top-three-improvements writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+    "Mission Control top-three-improvements writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    "Mission Control concierge-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    "Mission Control pitch-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
   ],
   "requirements": [
     {
@@ -991,29 +1010,50 @@
     {
       "id": "pitch-specific",
       "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
       "stage": "pitch",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The pitch doc is tied directly to Mary's Mexican Grill, Woodstock Square, verified Google review themes, and the audited owned-site conversion failures.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md"
+      ]
     },
     {
       "id": "pitch-before-after",
       "title": "Pitch explains before/after delta in owner language",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
       "stage": "pitch",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The pitch frames the current site as a setup-page leak and the preview as a menu-first, proof-backed, conversion repair in plain operator language.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "pitch-evidence",
       "title": "Evidence and preview links are embedded or linked",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
       "stage": "pitch",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The pitch doc embeds or links the audit, review packet/themes, improvement evidence, top-three evidence, and concierge evidence that support the seller story.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "battle-cards-objections",
