@@ -4,20 +4,35 @@
   "mcParentTaskId": "41da188d-4629-4cb2-91f3-6be31d6b9b6d",
   "siteSlug": "vs-house",
   "templateSlug": "bamzi-01",
-  "currentStage": "battle_cards",
+  "currentStage": "qa_round_1",
   "evidencePaths": [
     "restaurant-website-system/sites/vs-house/pitch-doc.md",
     "restaurant-website-system/sites/vs-house/audit.md",
-    "restaurant-website-system/sites/vs-house/scrapes/google.json"
+    "restaurant-website-system/sites/vs-house/scrapes/google.json",
+    "restaurant-website-system/sites/vs-house/battle-cards.md",
+    "restaurant-website-system/sites/vs-house/qa-round-1.md"
   ],
-  "qaRounds": [],
+  "qaRounds": [
+    {
+      "roundNumber": 1,
+      "summary": "Factual/source QA found and fixed unsupported past-midnight bar claim; build/typecheck passed; screenshots blocked by unavailable browser.",
+      "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-1.md",
+      "status": "advanced_blocked_on_screenshots"
+    }
+  ],
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/vs-house/pitch-doc.md",
     "outreachDraft": null,
     "beforeAfterScreenshots": []
   },
-  "blockers": [],
+  "blockers": [
+    {
+      "gate": "qa_round_1",
+      "reason": "Fresh QA screenshots cannot be captured because the OpenClaw managed browser cannot start on this host (No supported browser found). Source/build QA advanced; next unblock action is enabling browser/Chromium capture for desktop + mobile screenshots.",
+      "recordedAt": "2026-05-04T04:32:23.708814Z"
+    }
+  ],
   "requirements": [
     {
       "id": "lead-fit-qualified",
@@ -94,5 +109,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T04:01:58.671Z"
+  "updatedAt": "2026-05-04T04:32:23.750Z"
 }

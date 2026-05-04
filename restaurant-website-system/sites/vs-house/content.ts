@@ -146,7 +146,7 @@ export const content = {
     h1:      "V's House",
     sub:     "Bar · Sushi · Pho",
     pitch:
-      "A Vu family kitchen on Bedford-Euless Road since 1982. Pho hand-made over 24 hours. A Saigon-coded bar that pours past midnight.",
+      "A Vu family kitchen on Bedford-Euless Road since 1982. Pho hand-made over 24 hours. A Saigon-coded bar for dinner, happy hour, and Vietnamese-coffee cocktails.",
     primaryCta:   { label: 'Reserve a table', href: 'https://tables.toasttab.com/restaurants/vs-house/findTime' },
     secondaryCta: { label: '(682) 777-3690', href: 'tel:+16827773690' },
   },
