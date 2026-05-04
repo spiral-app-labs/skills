@@ -2,7 +2,7 @@
 
 - Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
 - MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
-- Current stage: `qa_round_1`
+- Current stage: `qa_round_2`
 - Template route: `pepper-01`
 
 ## Workflow status
@@ -103,7 +103,15 @@
 ### 10. QA round 1
 
 - Stage: `qa_round_1`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-2026-05-04.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-1-dom-metrics-2026-05-04.json`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-desktop-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/home-mobile-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-1-2026-05-04/contact-mobile-full.png`
+  - `local command: npm run typecheck (passed)`
+  - `local command: npm run build (passed)`
 
 ### 11. QA round 2
 
@@ -149,9 +157,10 @@
 - `battle-cards-objections`
 - `battle-cards-demo-path`
 - `battle-cards-risks`
+- `qa-round-1`
 
 ## Current blocker
 
 - Gate: `mission_control_sync`
-- Reason: local pitch and battle-card gates are complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
-- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-pitch-battle-cards-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.
+- Reason: local QA round 1 is complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
+- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-1-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.

@@ -67,8 +67,8 @@ export function TruthfulConcierge() {
               This helper is built from the verified La Fonda evidence packet: hours, address, phone, Google proof, review themes, and publicly named menu highlights.
             </p>
             <ul className="mt-6 space-y-3 text-body-sm font-semibold">
-              <li>✓ No fake online ordering provider</li>
-              <li>✓ No fake menu pricing or allergy claims</li>
+              <li>✓ No unverified online ordering provider</li>
+              <li>✓ No unverified menu pricing or allergy claims</li>
               <li>✓ Calls the restaurant when details must be current</li>
             </ul>
           </div>

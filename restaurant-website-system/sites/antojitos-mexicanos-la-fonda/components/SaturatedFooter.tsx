@@ -8,8 +8,8 @@ import { content } from '../content';
 export function SaturatedFooter() {
   return (
     <footer className="bg-accent text-text-on-brand">
-      <div className="max-w-content mx-auto px-5 md:px-10 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12">
+      <div className="max-w-content mx-auto px-5 md:px-10 pt-10 pb-28 md:py-20">
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-4 md:gap-12">
           <div className="md:col-span-1">
             <PepperWordmark color="on-brand" size="lg" />
             <address className="mt-4 not-italic text-body-sm opacity-95">
@@ -30,7 +30,10 @@ export function SaturatedFooter() {
                 </div>
               ) : null}
             </div>
-            <div className="mt-4 text-body-sm opacity-95">
+            <div className="mt-4 text-body-sm opacity-95 md:hidden">
+              <span className="font-bold">Publicly listed hours:</span> Mon-Sat 10 AM - 7 PM; Sun 10 AM - 4 PM. Call for holiday changes.
+            </div>
+            <div className="mt-4 hidden text-body-sm opacity-95 md:block">
               {content.brand.hours.map((h) => (
                 <div key={h.days}>
                   <span className="font-bold">{h.days}:</span> {h.time}
@@ -42,7 +45,7 @@ export function SaturatedFooter() {
           {content.footer.columns.map((col) => (
             <div key={col.heading}>
               <h4 className="text-body font-extrabold">{col.heading}</h4>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-3 space-y-1.5 md:mt-4 md:space-y-2">
                 {col.links.map((link) => (
                   <li key={link.label}>
                     <a
@@ -58,7 +61,7 @@ export function SaturatedFooter() {
           ))}
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/25 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-body-sm opacity-90">
+        <div className="mt-8 pt-5 border-t border-white/25 flex flex-col md:mt-12 md:pt-6 md:flex-row items-start md:items-center justify-between gap-3 text-body-sm opacity-90">
           <div>{content.footer.copy}</div>
         </div>
       </div>
