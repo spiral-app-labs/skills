@@ -4,6 +4,7 @@ import { PageDisplayHeading } from '../../components/PageDisplayHeading';
 import { ContactFormPanel } from '../../components/ContactFormPanel';
 import { ContactInteriorStrip } from '../../components/ContactInteriorStrip';
 import { LowChromeFaqAccordion } from '../../components/LowChromeFaqAccordion';
+import { TruthfulConcierge } from '../../components/TruthfulConcierge';
 import Link from 'next/link';
 
 export default function ContactPage() {
@@ -75,6 +76,12 @@ export default function ContactPage() {
               <ContactFormPanel />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full">
+        <div className="mx-auto max-w-shell px-5 md:px-10 pb-16 md:pb-20">
+          <TruthfulConcierge />
         </div>
       </section>
 

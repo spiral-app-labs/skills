@@ -6,7 +6,7 @@
   "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
   "siteSlug": "strawberry-moon",
   "templateSlug": "velvet-shaker-01",
-  "currentStage": "concierge",
+  "currentStage": "pitch",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/strawberry-moon/checklist.md",
     "json": "restaurant-website-system/sites/strawberry-moon/checklist.json"
@@ -361,8 +361,16 @@
         "blocker if concierge cannot be safely added"
       ],
       "order": 7,
-      "status": "in_progress",
-      "evidence": [],
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts",
+        "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json"
+      ],
       "blocker": null
     },
     {
@@ -645,7 +653,13 @@
     "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
     "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
     "restaurant-website-system/sites/strawberry-moon/components/ScrollReveal.tsx",
-    "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx"
+    "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -874,29 +888,49 @@
     {
       "id": "concierge-kb-truthful",
       "title": "Concierge KB only uses verified restaurant facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The concierge knowledge base is deterministic and limited to verified facts from source.md, audit.md, the current events scrape, and the Google review packet.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-text.txt",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ]
     },
     {
       "id": "concierge-tested",
       "title": "Short transcript proves useful behavior",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The deterministic concierge resolver used by the route was smoke-tested with factual and refusal prompts, and the transcript is recorded under the site folder.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts"
+      ]
     },
     {
       "id": "concierge-safe",
       "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Unsupported asks are routed to a refusal-plus-handoff response instead of speculative answers, and the UI can render safely without any external model key.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md"
+      ]
     },
     {
       "id": "pitch-specific",
@@ -1034,7 +1068,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T16:55:00Z",
+  "updatedAt": "2026-05-04T18:20:00Z",
   "lastMissionControlHeartbeatId": "c791097c-9730-43f6-988e-5467c82285f5",
   "lastMissionControlActivityId": "a436d988-8643-43a1-9ea1-3563f68d0617"
 }
