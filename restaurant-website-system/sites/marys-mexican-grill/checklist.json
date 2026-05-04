@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "reviews",
+  "currentStage": "building",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -232,16 +232,19 @@
         "preview URL or local preview evidence"
       ],
       "order": 4,
-      "status": "pending",
+      "status": "passed",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/routing.md",
         "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
-        "restaurant-website-system/sites/marys-mexican-grill/source.md"
+        "restaurant-website-system/sites/marys-mexican-grill/source.md",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json"
       ],
       "blocker": {
-        "reason": "Source truth pack and routing are drafted locally, but MC remains at reviews until agency API auth is available and reviews-complete writeback succeeds.",
-        "nextUnblockAction": "POST mc-build-writeback-reviews-complete-2026-05-04.json, then use routing.md/source.md as template-route-locked/build-source evidence.",
-        "updatedAt": "2026-05-04T16:59:50.509Z"
+        "reason": "Mission Control auth is unavailable in this runtime, so template-route/build writeback can only be recorded locally.",
+        "nextUnblockAction": "POST mc-build-writeback-first-fork-2026-05-04.json once agency auth is restored.",
+        "updatedAt": "2026-05-04T20:00:33Z"
       }
     },
     {
@@ -632,7 +635,10 @@
     "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
     "restaurant-website-system/sites/marys-mexican-grill/audit.md",
     "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
-    "restaurant-website-system/sites/marys-mexican-grill/source.md"
+    "restaurant-website-system/sites/marys-mexican-grill/source.md",
+    "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -648,7 +654,8 @@
       "taskId": "864e0342-a3c9-452d-8bc4-aea7eb1de3dd",
       "nextUnblockAction": "Provide AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to OpenClaw runtime or run the MC build writeback with the prepared payload.",
       "updatedAt": "2026-05-04T16:51:18.752Z"
-    }
+    },
+    "Mission Control build-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
   ],
   "requirements": [
     {
@@ -759,12 +766,12 @@
     {
       "id": "template-route-locked",
       "title": "Exactly one archetype/template route is chosen and justified",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
-      "status": "pending",
-      "notes": "Draft route selected bamzi-01 and source truth pack prepared; pending MC stage advance/writeback before locking.",
+      "status": "passed",
+      "notes": "Mary's remains locked to bamzi-01 with routing rationale and source truth pack preserved locally.",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/routing.md",
         "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
@@ -774,20 +781,32 @@
     {
       "id": "fork-built",
       "title": "Template fork builds successfully with real content and preserved conversion links",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
-      "status": "pending"
+      "status": "passed",
+      "notes": "npm run build passed after replacing network-fetched Google fonts with local CSS font variables for this sandbox.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts"
+      ]
     },
     {
       "id": "specificity",
       "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Preview content stays inside routing/source/audit/review evidence and labels unresolved phone/order issues truthfully.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/routing.md",
+        "restaurant-website-system/sites/marys-mexican-grill/source.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts"
+      ]
     },
     {
       "id": "identity-specific",
@@ -977,5 +996,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T16:59:50.550Z"
+  "updatedAt": "2026-05-04T20:00:33Z"
 }
