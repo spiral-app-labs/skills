@@ -1,0 +1,46 @@
+{
+  "build_stage": "packaging",
+  "package_status": "packaged_waiting_on_founder",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
+  "founder_gate_task_id": "03d5cec6-db38-46de-92d6-47d8c06c787e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "delivery_package_path": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+  "preview_url": null,
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "passed_requirement_ids": [
+    "delivery-package"
+  ],
+  "pending_requirement_ids": [
+    "qa-round-3",
+    "delivery-no-missing-evidence"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json"
+  ],
+  "blockers": [
+    "Preview URL is still pending and is not stored in this worktree.",
+    "Founder must create/configure the site-specific Anthropic key.",
+    "Founder must personally complete human review.",
+    "QA2 screenshot files referenced by existing QA2 docs/writebacks are missing from this worktree.",
+    "Fresh QA3 screenshots still need recapture in an environment that allows local preview rendering.",
+    "Mission Control API auth is unavailable; local payload recorded instead of remote sync."
+  ],
+  "blocker": "Packaging is prepared locally, but ready_to_pitch must remain false until Ethan completes human review and the site-specific Anthropic key is configured. Preview URL and screenshot evidence are also still incomplete.",
+  "heartbeat_summary": "Mary's Mexican Grill packaging handoff is prepared locally for founder review only. Delivery-package.md, checklist.md/json, pitch doc, battle cards, and QA docs are mirrored in the worktree, and fresh npm ci, npm run typecheck, and npm run build passed on 2026-05-04. ready_to_pitch remains false because the site-specific Anthropic key and Ethan human review are founder-only gates, no preview URL is stored locally, QA2 screenshot assets are missing from this worktree, QA3 screenshots remain sandbox-blocked, and Mission Control auth is unavailable for remote sync."
+}

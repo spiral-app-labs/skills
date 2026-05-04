@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "qa_round_3",
+  "currentStage": "packaging",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -597,22 +597,14 @@
       "status": "passed",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json"
       ],
       "blocker": {
-        "reason": "Mission Control auth is unavailable in this runtime, so qa-round-2 writeback can only be recorded locally.",
-        "nextUnblockAction": "POST mc-qa-round-2-writeback-2026-05-04.json and mc-build-writeback-qa-round-2-2026-05-04.json once agency auth is restored.",
-        "updatedAt": "2026-05-04T22:45:00Z"
+        "reason": "Mission Control auth is unavailable in this runtime, and the QA2 screenshot paths referenced in older local artifacts are not present in the current worktree.",
+        "nextUnblockAction": "POST the existing QA2 payloads once agency auth is restored and mirror the missing QA2 screenshot assets back into this worktree before final delivery.",
+        "updatedAt": "2026-05-04T23:55:00Z"
       }
     },
     {
@@ -708,8 +700,23 @@
       ],
       "order": 13,
       "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+        "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+        "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json"
+      ],
+      "blocker": {
+        "reason": "Packaging is prepared locally, but ready_to_pitch must remain false: preview URL is still missing, founder-only Anthropic key and human review gates are still pending, QA2 screenshot assets referenced by prior QA are missing from this worktree, QA3 fresh screenshots are blocked in this sandbox, and Mission Control API auth is unavailable.",
+        "nextUnblockAction": "Mirror a real preview URL and missing QA screenshot assets, recapture QA3 screenshots in an environment that can render the local preview, then wait for Ethan to configure the site-specific Anthropic key and complete human review before setting ready_to_pitch true.",
+        "updatedAt": "2026-05-04T23:55:00Z"
+      }
     }
   ],
   "evidencePaths": [
@@ -752,7 +759,10 @@
     "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png",
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html",
     "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json",
-    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json"
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json"
   ],
   "qaRounds": [
     {
@@ -770,7 +780,55 @@
         "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json"
       ],
-      "note": "Screenshot paths point to the post-fix round-2 desktop/mobile recapture set that passed visual QA."
+      "note": "QA1 screenshot files are present in this worktree."
+    },
+    {
+      "round": 2,
+      "status": "passed_with_missing_screenshot_assets",
+      "qaDocPath": "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+      "screenshotPaths": [],
+      "referencedScreenshotPaths": [
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png"
+      ],
+      "scrapePaths": [
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json"
+      ],
+      "writebackPaths": [
+        "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json"
+      ],
+      "note": "QA2 docs and writebacks reference screenshot files that are not present in the current worktree; packaging keeps that gap explicit."
+    },
+    {
+      "round": 3,
+      "status": "hold",
+      "qaDocPath": "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+      "screenshotPaths": [],
+      "blockedScreenshotPaths": [
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
+      ],
+      "scrapePaths": [
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json"
+      ],
+      "writebackPaths": [
+        "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json"
+      ],
+      "note": "QA3 screenshot capture is blocked in this sandbox because localhost preview binding and headless browser launch are denied."
     }
   ],
   "deployUrl": null,
@@ -783,77 +841,99 @@
       "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
       "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
       "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md"
-    ]
+    ],
+    "deliveryPackage": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md"
   },
   "blockers": [
-    {
-      "reason": "Mission Control API writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset; local Google Reviews evidence is captured but MC cannot be advanced from reviews to routing until auth is available.",
-      "stage": "reviews",
-      "taskId": "864e0342-a3c9-452d-8bc4-aea7eb1de3dd",
-      "nextUnblockAction": "Provide AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to OpenClaw runtime or run the MC build writeback with the prepared payload.",
-      "updatedAt": "2026-05-04T16:51:18.752Z"
-    },
-    "Mission Control build-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control improving-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control top-three-improvements writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control concierge-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control pitch-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control battle-cards-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+    "ready_to_pitch must remain false until Ethan personally completes human review.",
+    "ready_to_pitch must remain false until the site-specific Anthropic key is created/configured.",
+    "Preview URL is not stored anywhere in this worktree and must not be invented.",
+    "QA2 screenshot files referenced by existing QA2 docs/writebacks are not present in this worktree.",
+    "Fresh QA3 screenshots still need recapture in an environment that allows local preview rendering.",
+    "Mission Control API sync remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
   ],
   "requirements": [
     {
       "id": "checklist-md",
       "title": "Local checklist.md exists for this restaurant",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "checklist_created",
       "stage": "checklist",
-      "status": "pending"
+      "status": "passed",
+      "notes": "checklist.md exists and now reflects the packaging gate plus founder hold.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/checklist.md"
+      ]
     },
     {
       "id": "checklist-json",
       "title": "Local checklist.json exists for this restaurant",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "checklist_created",
       "stage": "checklist",
-      "status": "pending"
+      "status": "passed",
+      "notes": "checklist.json exists and now mirrors the packaging gate plus founder hold.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
+      ]
     },
     {
       "id": "checklist-mc-sync",
       "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "checklist_created",
       "stage": "checklist",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Mission Control sync is represented by local payload files because API auth is unavailable in this runtime.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json"
+      ]
     },
     {
       "id": "current-site-screenshots",
       "title": "Desktop and mobile screenshots captured",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "current_site_audit",
       "stage": "auditing",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Current-site desktop and mobile screenshots are present locally.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/current-site-mobile-fold.png"
+      ]
     },
     {
       "id": "current-site-scrape",
       "title": "Live site DOM/text scrape captured",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "current_site_audit",
       "stage": "auditing",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Current-site DOM/text scrape is present locally.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-browser-text-2026-05-04.txt"
+      ]
     },
     {
       "id": "current-site-opportunities",
       "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "current_site_audit",
       "stage": "auditing",
-      "status": "pending"
+      "status": "passed",
+      "notes": "audit.md records the concrete conversion, credibility, mobile, and factual gaps.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md"
+      ]
     },
     {
       "id": "reviews-highest-filter",
@@ -1209,17 +1289,9 @@
       "workflowStepId": "qa_round_2",
       "stage": "qa_round_2",
       "status": "passed",
-      "notes": "Round 2 local QA artifacts capture the mobile conversion polish fixes, the desktop sell-readiness copy blocker and rewrite, post-fix desktop/mobile screenshot recapture noted as passed, successful build/typecheck verification, and the blocked Mission Control writeback payloads.",
+      "notes": "QA2 doc and writebacks are present, but the referenced screenshot files are missing from the current worktree and remain a packaging blocker for final delivery.",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json"
@@ -1232,16 +1304,34 @@
       "required": true,
       "workflowStepId": "qa_round_3",
       "stage": "qa_round_3",
-      "status": "pending"
+      "status": "pending",
+      "notes": "QA3 docs/writebacks exist, but fresh QA3 screenshots are still blocked in this sandbox and ready_to_pitch remains false.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json"
+      ]
     },
     {
       "id": "delivery-package",
       "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "delivery",
       "stage": "packaging",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Delivery package, checklist paths, pitch doc, battle cards, QA docs, screenshot inventory status, and local MC payloads are mirrored locally. Preview URL remains explicitly pending.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json"
+      ]
     },
     {
       "id": "delivery-no-missing-evidence",
@@ -1250,16 +1340,25 @@
       "required": true,
       "workflowStepId": "delivery",
       "stage": "packaging",
-      "status": "pending"
+      "status": "pending",
+      "notes": "Still blocked because preview URL is missing, QA2 screenshot assets are missing from this worktree, and fresh QA3 screenshots could not be captured in this sandbox.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md"
+      ]
     }
   ],
   "doneCriteria": [
-    "Mission Control lead has a simple sales status and current metadata.build_stage.",
-    "Mission Control parent task metadata.requirements mirrors this checklist.",
-    "All required checklist rows are passed.",
-    "Three QA rounds are logged with screenshot evidence.",
-    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+    "Checklist and delivery-package files reflect the current packaging gate.",
+    "Local Mission Control writeback payloads are prepared without raw Supabase writes.",
+    "Pitch doc, battle cards, and all three QA round docs are mirrored in the package.",
+    "ready_to_pitch remains false until founder Anthropic key setup and founder human review are complete.",
+    "Preview URL and missing QA screenshot evidence remain explicit blockers instead of invented claims."
   ],
-  "updatedAt": "2026-05-04T23:10:00Z",
-  "childTaskId": "bbb46016-3e2e-43e7-b3d7-e0995e34252e"
+  "updatedAt": "2026-05-04T23:55:00Z",
+  "childTaskId": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
+  "founderGateTaskId": "03d5cec6-db38-46de-92d6-47d8c06c787e",
+  "deliveryPackagePath": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+  "readyToPitch": false
 }

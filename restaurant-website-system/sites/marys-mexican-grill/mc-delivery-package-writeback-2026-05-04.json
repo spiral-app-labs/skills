@@ -1,0 +1,66 @@
+{
+  "package_stage": "packaging",
+  "package_status": "packaged_waiting_on_founder",
+  "site_slug": "marys-mexican-grill",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
+  "founder_gate_task_id": "03d5cec6-db38-46de-92d6-47d8c06c787e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "delivery_package_path": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+  "qa_round_paths": [
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md"
+  ],
+  "preview_url": null,
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "screenshot_inventory": {
+    "qa_round_1_present": [
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png"
+    ],
+    "qa_round_2_referenced_missing": [
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png"
+    ],
+    "qa_round_3_blocked_pending_capture": [
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
+    ]
+  },
+  "passed_requirement_ids": [
+    "delivery-package"
+  ],
+  "pending_requirement_ids": [
+    "delivery-no-missing-evidence"
+  ],
+  "blockers": [
+    "Preview URL pending.",
+    "Founder Anthropic key pending.",
+    "Founder human review pending.",
+    "QA2 screenshot files referenced by existing evidence are missing from this worktree.",
+    "QA3 screenshot capture blocked by sandbox restrictions.",
+    "Mission Control API auth unavailable; sync pending."
+  ],
+  "sync_status": "local_payload_only_pending_api_auth",
+  "blocker": "Delivery package is assembled locally but cannot be treated as final delivery because preview URL and screenshot evidence are incomplete and founder-only gates remain open.",
+  "heartbeat_summary": "Founder delivery package assembled locally with ready_to_pitch=false. Package includes checklist, pitch, battle cards, QA docs, screenshot inventory status, and local Mission Control payloads. Preview URL remains pending, QA2 screenshots are missing from the current worktree, QA3 screenshots are sandbox-blocked, and founder Anthropic/human-review gates remain open."
+}
