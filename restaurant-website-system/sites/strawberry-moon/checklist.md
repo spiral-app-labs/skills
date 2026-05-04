@@ -5,11 +5,11 @@
 - Lead ID: af98b880-9351-4f00-b35b-253ad35570d9
 - MC parent task ID: 216314e9-4af6-4f99-92ab-54e7912b9173
 - Template slug: velvet-shaker-01
-- Current stage: pitch
+- Current stage: battle_cards
 - Checklist MD: restaurant-website-system/sites/strawberry-moon/checklist.md
 - Checklist JSON: restaurant-website-system/sites/strawberry-moon/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T18:20:00Z
+- Updated: 2026-05-04T19:15:00Z
 
 ## Mission Control Sync Contract
 
@@ -84,7 +84,7 @@
 
 ### 8. pitch_doc — Create sellable pitch doc
 - Stage: pitch
-- Status: pending
+- Status: passed
 - Required skills: restaurant-pitch-doc, agency-mission-control-sync
 - Evidence required: pitch-doc.md; before/after evidence links
 - Requirement: pitch-specific — Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
@@ -152,9 +152,9 @@
 - [x] concierge-kb-truthful: Concierge KB only uses verified restaurant facts - Passed via `lib/concierge-kb.ts`, `ai-concierge.md`, and the source/audit/review packet basis listed there.
 - [x] concierge-tested: Short transcript proves useful behavior - Passed via `ai-concierge-transcript.md` and direct smoke tests against the same resolver used by `/api/concierge`.
 - [x] concierge-safe: Fallbacks prevent fake reservations, unsupported promises, or invented facts - Passed via deterministic unsupported-intent handling in `lib/concierge-kb.ts` and the UI/API wiring.
-- [ ] pitch-specific: Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
-- [ ] pitch-before-after: Pitch explains before/after delta in owner language
-- [ ] pitch-evidence: Evidence and preview links are embedded or linked
+- [x] pitch-specific: Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps - Passed via `pitch-doc.md`, `audit.md`, `source.md`, and the Google review packet.
+- [x] pitch-before-after: Pitch explains before/after delta in owner language - Passed via the before/after sell story and Ethan demo path in `pitch-doc.md`.
+- [x] pitch-evidence: Evidence and preview links are embedded or linked - Passed via linked file evidence in `pitch-doc.md`, QA docs, and the concierge/build artifacts.
 - [ ] battle-cards-objections: Likely owner objections have concise answers
 - [ ] battle-cards-demo-path: Demo path and proof points are clear
 - [ ] battle-cards-risks: Risks/unknowns are called out truthfully
@@ -220,13 +220,16 @@
 
 ## Pitch Artifacts
 
-- Pitch doc: TBD
+- Pitch doc: `restaurant-website-system/sites/strawberry-moon/pitch-doc.md`
 - Battle cards: TBD
 - Outreach draft: TBD
 
 ## Blockers
 
-- None
+- `ready_to_pitch` remains `false` until founder review is complete.
+- `anthropic_key_status` remains `pending_founder`.
+- `human_review_status` remains `pending_founder`.
+- Mission Control API auth is unavailable in this runtime, so sync is recorded through local writeback payloads only.
 
 ## Done Criteria
 
@@ -252,3 +255,12 @@
 - Explicit refusals: reservations, table holds, ordering, allergies/medical, private-event promises beyond known facts, prices, specials, closing times, and same-day availability.
 - Advanced local stage to `pitch`.
 - Mission Control API auth is still unavailable in this runtime, so concierge sync is recorded in a local writeback payload only.
+
+## 2026-05-04 — Pitch gate closeout
+
+- Completed the canonical `pitch_doc` gate with a Strawberry Moon-specific preserve-stack pitch brief.
+- Evidence: `pitch-doc.md`, `audit.md`, `source.md`, `content.ts`, `qa-round-1.md`, `qa-round-2.md`, `qa-round-3.md`, `ai-concierge.md`, `ai-concierge-transcript.md`, and `scrapes/google-reviews-highest-30.json`.
+- Sell story: the current Weebly site works, but it undersells the martini program, live-music cadence, upstairs conversation space, and Tom-level hospitality that reviews already prove.
+- Advanced local stage to `battle_cards`.
+- `ready_to_pitch` stays `false`; founder review and Anthropic key gates remain pending.
+- Next: battle cards.
