@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "leadId": "1006c1ea-5a06-4703-9994-117bc90d9dba",
+  "mcParentTaskId": "41da188d-4629-4cb2-91f3-6be31d6b9b6d",
+  "siteSlug": "vs-house",
+  "templateSlug": "bamzi-01",
+  "currentStage": "battle_cards",
+  "evidencePaths": [
+    "restaurant-website-system/sites/vs-house/pitch-doc.md",
+    "restaurant-website-system/sites/vs-house/audit.md",
+    "restaurant-website-system/sites/vs-house/scrapes/google.json"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/vs-house/pitch-doc.md",
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Audit identifies V's House as a high-fit restaurant with strong review volume, press, family heritage, and existing conversion flows.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Pre-fork audit exists at restaurant-website-system/sites/vs-house/audit.md with screenshots/scrapes and review/proof inventory.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/audit.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google.json"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Route locked to bamzi-01 in audit/source.md for accessible-casual modern Asian restaurant with menu depth and saturated accent potential.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/audit.md",
+        "restaurant-website-system/sites/vs-house/source.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Local Next.js fork exists at restaurant-website-system/sites/vs-house with bamzi-01 source, real content.ts, preserved contact/reservation/order flows.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/content.ts",
+        "restaurant-website-system/sites/vs-house/source.md"
+      ]
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T04:01:58.671Z"
+}
