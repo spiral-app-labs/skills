@@ -54,3 +54,11 @@
 - Fix shipped locally: homepage now includes `MenuSection` after the signature row and `ContactPanel` before the footer, so mobile diners can see the text menu, reserve/call/order paths, hours, address, and map without leaving the homepage.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
 - Remaining blocker: desktop/mobile screenshot capture is still pending because the OpenClaw managed browser has no Chromium executable and the user-profile attach path is not connected. Final delivery stays blocked until screenshot evidence is attached.
+
+## 2026-05-04 — QA Round 3 heartbeat progress
+
+- Artifact added: `restaurant-website-system/sites/vs-house/qa-round-3.md`.
+- Final sell-readiness issue found and fixed: `content.ts` had demo/market-range prices. Removed visible prices until V's House prices are owner/current-menu-confirmed.
+- Code updated: `content.ts`, `components/MenuSection.tsx`, `app/api/chat/route.ts`.
+- Verification: `npm run build` passed; `npm run typecheck` passed.
+- Remaining blockers: desktop/mobile screenshot evidence, owner-confirmed menu prices, and deployed concierge runtime verification.

@@ -11,7 +11,11 @@
     "restaurant-website-system/sites/vs-house/scrapes/google.json",
     "restaurant-website-system/sites/vs-house/battle-cards.md",
     "restaurant-website-system/sites/vs-house/qa-round-1.md",
-    "restaurant-website-system/sites/vs-house/qa-round-2.md"
+    "restaurant-website-system/sites/vs-house/qa-round-2.md",
+    "restaurant-website-system/sites/vs-house/qa-round-3.md",
+    "restaurant-website-system/sites/vs-house/content.ts",
+    "restaurant-website-system/sites/vs-house/components/MenuSection.tsx",
+    "restaurant-website-system/sites/vs-house/app/api/chat/route.ts"
   ],
   "qaRounds": [
     {
@@ -25,6 +29,12 @@
       "summary": "Mobile/conversion QA found homepage conversion depth was split across sub-routes; added homepage text-menu and contact/CTA sections; build/typecheck passed; screenshots blocked by unavailable browser.",
       "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-2.md",
       "status": "advanced_blocked_on_screenshots"
+    },
+    {
+      "roundNumber": 3,
+      "summary": "Final sell-readiness QA found demo/market-range menu prices were unsafe; hid prices until owner-confirmed; build/typecheck passed; screenshots still pending browser unblock.",
+      "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-3.md",
+      "status": "advanced_blocked_on_screenshots_and_price_confirmation"
     }
   ],
   "deployUrl": null,
@@ -44,6 +54,16 @@
       "gate": "qa_round_2",
       "reason": "Fresh Round 2 desktop/mobile screenshots cannot be captured because browser.doctor reports no managed Chromium executable and user-profile attach is not connected. Code/build QA advanced; next unblock action is enabling Chrome/Chromium capture.",
       "recordedAt": "2026-05-04T13:48:47.383211Z"
+    },
+    {
+      "gate": "qa_round_3",
+      "reason": "Fresh Round 3 desktop/mobile screenshots cannot be captured because no managed Chromium executable is available and user browser attach is not connected. Final visual QA remains pending browser access.",
+      "recordedAt": "2026-05-04T13:52:04.849549Z"
+    },
+    {
+      "gate": "qa_round_3",
+      "reason": "Owner-confirmed menu prices are still pending; demo/market-range prices were removed from the preview to avoid invented pricing claims.",
+      "recordedAt": "2026-05-04T13:52:04.849549Z"
     }
   ],
   "requirements": [
@@ -111,7 +131,13 @@
       "id": "qa-round-3",
       "title": "QA round 3 completed with findings and fixes logged",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "notes": "Final sell-readiness QA advanced and unsafe demo prices removed; screenshots and owner-confirmed prices remain pending before final pass.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/qa-round-3.md",
+        "restaurant-website-system/sites/vs-house/content.ts",
+        "restaurant-website-system/sites/vs-house/components/MenuSection.tsx"
+      ]
     },
     {
       "id": "delivery-package",
@@ -127,5 +153,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T13:48:47.383328Z"
+  "updatedAt": "2026-05-04T13:52:04.849549Z"
 }

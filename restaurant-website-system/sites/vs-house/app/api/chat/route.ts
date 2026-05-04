@@ -17,7 +17,7 @@ function buildSystemPrompt(): string {
   const menuLines = menu
     .map((section) => {
       const items = section.items
-        .map((it) => `  - ${it.name} (${it.price}), ${it.desc}`)
+        .map((it) => `  - ${it.name}${it.price ? ` (${it.price})` : ''}, ${it.desc}`)
         .join('\n');
       return `${section.heading}\n${items}`;
     })
