@@ -3,9 +3,9 @@
 - Lead ID: 1006c1ea-5a06-4703-9994-117bc90d9dba
 - MC parent task ID: 41da188d-4629-4cb2-91f3-6be31d6b9b6d
 - Template slug: bamzi-01
-- Current stage: qa_round_1
+- Current stage: packaging
 - Deploy URL: TBD
-- Updated: 2026-05-04T13:16:49.006Z
+- Updated: 2026-05-04T14:30:00Z
 
 ## Requirements
 
@@ -77,3 +77,13 @@
 - Verified no `price: null`, `Spicy California`, or `price pending` strings remain in `content.ts`.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
 - Remaining blockers: browser screenshot capture and deployed concierge runtime verification.
+
+## 2026-05-04 — Browser evidence recovered and packaging advanced
+
+- Artifact added: `restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json` plus Markdown companion.
+- Google Reviews evidence: live Google Maps Reviews tab, `Sort -> Highest rating`, 30 written five-star rows/snippets captured. The all-highest feed stopped paginating at 20 rows, so rows 21-30 use Google topic chips while Highest sorting remained selected; truncation is marked in the packet.
+- Preview screenshots captured with local Chrome against `http://127.0.0.1:3076`:
+  - `restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png`
+  - `restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png`
+- QA requirements 1-3 are now locally evidence-backed in `checklist.json`.
+- Current stage advanced locally to `packaging`. Remaining delivery blockers: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed concierge runtime verification.

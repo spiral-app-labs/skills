@@ -44,3 +44,13 @@
 ## Result
 
 QA Round 1 is materially advanced: factual issue found and fixed; build/typecheck pass. Keep the MC task in `qa_round_1` until fresh screenshots can be attached or a screenshot blocker is formally accepted for this round.
+
+## 2026-05-04 heartbeat addendum — screenshot/review evidence attached
+
+- Browser access recovered enough to capture live Google Maps review evidence and local preview screenshots.
+- Added Google Reviews Highest packet: `scrapes/google-highest-30-2026-05-04.json` and `.md` companion.
+- Captured preview screenshots:
+  - `screenshots/preview-home-desktop-2026-05-04.png`
+  - `screenshots/preview-home-mobile-2026-05-04.png`
+- Updated checklist to mark QA rounds 1-3 locally evidence-backed and move the local stage to `packaging`.
+- Remaining delivery blockers are now packaging-level: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed concierge runtime verification.

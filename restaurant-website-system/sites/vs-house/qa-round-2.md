@@ -54,3 +54,13 @@ This directly addresses the audit's mobile failures: no text menu, no above-fold
 ## Result
 
 QA Round 2 is materially advanced: a homepage conversion gap was found and fixed, and the build/typecheck gate passed. Keep screenshot evidence marked pending until browser capture is available; do not mark final delivery complete until desktop/mobile screenshots are attached.
+
+## 2026-05-04 heartbeat addendum — screenshot/review evidence attached
+
+- Browser access recovered enough to capture live Google Maps review evidence and local preview screenshots.
+- Added Google Reviews Highest packet: `scrapes/google-highest-30-2026-05-04.json` and `.md` companion.
+- Captured preview screenshots:
+  - `screenshots/preview-home-desktop-2026-05-04.png`
+  - `screenshots/preview-home-mobile-2026-05-04.png`
+- Updated checklist to mark QA rounds 1-3 locally evidence-backed and move the local stage to `packaging`.
+- Remaining delivery blockers are now packaging-level: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed concierge runtime verification.
