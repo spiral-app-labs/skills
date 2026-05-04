@@ -1,4 +1,5 @@
 import { MinimalTextNav } from './MinimalTextNav';
+import { MobileStickyCta } from './MobileStickyCta';
 import { WordmarkEcho } from './WordmarkEcho';
 import { ThreeColFooter } from './ThreeColFooter';
 
@@ -10,7 +11,8 @@ export function WordmarkBookendLayout({ children }: { children: React.ReactNode 
   return (
     <>
       <MinimalTextNav />
-      <main className="w-full">{children}</main>
+      <main className="w-full pb-28 md:pb-0">{children}</main>
+      <MobileStickyCta />
       <ThreeColFooter />
       <WordmarkEcho />
     </>
