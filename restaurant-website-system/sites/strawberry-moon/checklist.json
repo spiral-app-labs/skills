@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "leadId": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "siteSlug": "strawberry-moon",
+  "templateSlug": "velvet-shaker-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.json",
+    "restaurant-website-system/sites/strawberry-moon/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for official Weebly homepage/events screenshots/DOM, Google Maps verification, and Google review packet.",
+      "recordedAt": "2026-05-04T05:00:40.180597Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Qualification list marks Strawberry Moon as softer/nurture: functioning but thin/dated Weebly site. Source audit confirms not a hard broken-site lead.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted; canonical browser screenshots/DOM, events page capture, and Google/Maps verification remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to velvet-shaker-01 warmed down; core archetype is Bramble for cozy martini lounge/date-night personality, not tavern/fine-dining.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T05:00:40.220Z"
+}
