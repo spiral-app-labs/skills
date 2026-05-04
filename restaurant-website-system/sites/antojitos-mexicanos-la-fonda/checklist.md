@@ -1,50 +1,104 @@
-# antojitos-mexicanos-la-fonda Build Checklist
+# Antojitos Mexicanos La Fonda — Website Build Checklist
 
-- Lead ID: 92b49f80-4193-4c76-ba72-7a03493fd707
-- MC parent task ID: c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc
-- Template slug: pepper-01
-- Current stage: auditing
-- Deploy URL: TBD
-- Updated: 2026-05-04T04:39:42.167Z
+- Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
+- MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
+- Current stage: `routing`
+- Template route: `pepper-01`
 
-## Requirements
+## Workflow status
 
-- [x] lead-fit-qualified: Lead passed the restaurant lead-fit qualification gate - Qualification list flags this as a concrete no-site/404 Mexican lead; source audit verified aggregator-led discovery and public proof.
-- [ ] current-site-audit: Current site audit captured desktop, mobile, menu, reviews, and asset evidence - Web/source audit drafted; canonical desktop/mobile browser screenshots and DOM snapshot remain blocked.
-- [x] template-route-locked: Template route and modifiers are locked from the restaurant site router - Routed to pepper-01, closest core archetype: Cuisine-style warm casual neighborhood/takeout clarity.
-- [ ] fork-built: Template fork is built with real content, preserved links, and no placeholder copy
-- [ ] qa-round-1: QA round 1 completed with findings and fixes logged
-- [ ] qa-round-2: QA round 2 completed with findings and fixes logged
-- [ ] qa-round-3: QA round 3 completed with findings and fixes logged
-- [ ] delivery-package: Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached
+### 1. Create and sync local + Mission Control checklist
 
-## Evidence Paths
+- Stage: `checklist`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json`
+  - `Mission Control workflow refreshed via /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/website-workflow on 2026-05-04`
 
-- restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md
-- restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json
-- restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md
-- restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md
+### 2. Audit current site with browser evidence
 
-## QA Rounds
+- Stage: `auditing`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-desktop-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-google-listing-mobile-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-mobile-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantji-desktop-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantguru-desktop-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-dom-snapshot-2026-05-04.html`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-text-2026-05-04.txt`
 
-- Round 1: pending
-- Round 2: pending
-- Round 3: pending
+### 3. Capture Google Reviews evidence
 
-## Pitch Artifacts
+- Stage: `reviews`
+- Status: `passed`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/google-reviews-highest-2026-05-04.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md`
 
-- Pitch doc: TBD
-- Outreach draft: TBD
+### 4. Route to one archetype, fork template, and build first preview
 
-## Blockers
+- Stage: `building`
+- Status: `pending`
 
-- Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).
+### 5. Run first full improvement pass
 
-## Done Criteria
+- Stage: `improving`
+- Status: `pending`
 
-- Mission Control lead has a simple sales status and current metadata.build_stage.
-- Mission Control parent task metadata.requirements mirrors this checklist.
-- All required checklist rows are passed.
-- Three QA rounds are logged with screenshot evidence.
-- Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
+### 6. Identify and implement top 3 improvements
 
+- Stage: `top_3_improvements`
+- Status: `pending`
+
+### 7. Add truthful AI concierge or record blocker
+
+- Stage: `concierge`
+- Status: `pending`
+
+### 8. Create sellable pitch doc
+
+- Stage: `pitch`
+- Status: `pending`
+
+### 9. Create owner battle cards
+
+- Stage: `battle_cards`
+- Status: `pending`
+
+### 10. QA round 1
+
+- Stage: `qa_round_1`
+- Status: `pending`
+
+### 11. QA round 2
+
+- Stage: `qa_round_2`
+- Status: `pending`
+
+### 12. QA round 3 final sell-readiness QA
+
+- Stage: `qa_round_3`
+- Status: `pending`
+
+### 13. Package and deliver only after all gates pass
+
+- Stage: `packaging`
+- Status: `pending`
+
+## Passed requirement IDs
+
+- `checklist-md`
+- `checklist-json`
+- `checklist-mc-sync`
+- `current-site-screenshots`
+- `current-site-scrape`
+- `current-site-opportunities`
+- `reviews-highest-filter`
+- `reviews-thirty-written`
+- `reviews-themes`
+- `template-route-locked`

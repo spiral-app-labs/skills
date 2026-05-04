@@ -1,15 +1,638 @@
 {
-  "version": 1,
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
   "leadId": "92b49f80-4193-4c76-ba72-7a03493fd707",
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "auditing",
+  "currentStage": "routing",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+    "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+        "Mission Control workflow refreshed via /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/website-workflow on 2026-05-04"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:07:21.551Z"
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-google-listing-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantji-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantguru-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-text-2026-05-04.txt"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:07:21.551Z"
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/google-reviews-highest-2026-05-04.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:07:21.551Z"
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    }
+  ],
   "evidencePaths": [
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
-    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "Mission Control workflow refreshed via /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/website-workflow on 2026-05-04",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-google-listing-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantji-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantguru-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-text-2026-05-04.txt",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/google-reviews-highest-2026-05-04.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -28,31 +651,85 @@
   ],
   "requirements": [
     {
-      "id": "lead-fit-qualified",
-      "title": "Lead passed the restaurant lead-fit qualification gate",
-      "qaState": "passed",
-      "required": true,
-      "notes": "Qualification list flags this as a concrete no-site/404 Mexican lead; source audit verified aggregator-led discovery and public proof.",
-      "evidence": [
-        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
-        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md"
-      ]
-    },
-    {
-      "id": "current-site-audit",
-      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
       "qaState": "pending",
       "required": true,
-      "notes": "Web/source audit drafted; canonical desktop/mobile browser screenshots and DOM snapshot remain blocked.",
-      "evidence": [
-        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md"
-      ]
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
     },
     {
       "id": "template-route-locked",
-      "title": "Template route and modifiers are locked from the restaurant site router",
+      "title": "Exactly one archetype/template route is chosen and justified",
       "qaState": "passed",
       "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
       "notes": "Routed to pepper-01, closest core archetype: Cuisine-style warm casual neighborhood/takeout clarity.",
       "evidence": [
         "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
@@ -61,33 +738,184 @@
     },
     {
       "id": "fork-built",
-      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "pending"
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building"
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving"
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving"
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving"
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements"
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements"
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements"
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge"
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge"
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge"
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
     },
     {
       "id": "qa-round-1",
-      "title": "QA round 1 completed with findings and fixes logged",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "pending"
     },
     {
       "id": "qa-round-2",
-      "title": "QA round 2 completed with findings and fixes logged",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "pending"
     },
     {
       "id": "qa-round-3",
-      "title": "QA round 3 completed with findings and fixes logged",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "pending"
     },
     {
       "id": "delivery-package",
-      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "pending"
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging"
     }
   ],
   "doneCriteria": [
@@ -97,5 +925,17 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T04:39:42.167Z"
+  "updatedAt": "2026-05-04T18:07:21.550Z",
+  "passedRequirementIds": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked"
+  ]
 }
