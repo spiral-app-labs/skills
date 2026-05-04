@@ -1,0 +1,68 @@
+{
+  "build_stage": "pitch",
+  "currentStage": "pitch",
+  "site_slug": "antojitos-mexicanos-la-fonda",
+  "template_slug": "pepper-01",
+  "lead_id": "92b49f80-4193-4c76-ba72-7a03493fd707",
+  "mc_task_id": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
+  "checklist_markdown_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+  "concierge_evidence_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+  "concierge_transcript_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/desktop.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/mobile.png"
+  ],
+  "passed_requirement_ids": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe"
+  ],
+  "concierge_guardrails": [
+    "No fake online ordering provider",
+    "No fake full menu or prices",
+    "No allergy, catering, reservation, seating, or current-special promises",
+    "Holiday hours, same-day availability, prices, seating, and unsupported questions hand off to phone confirmation"
+  ],
+  "commands": [
+    "npm run typecheck",
+    "curl -X POST http://localhost:3106/api/concierge smoke tests",
+    "npm run build"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "api_smoke": "passed for online ordering, seating, and unsupported catering fallback",
+    "desktop_cdp": "vw=1440, scrollWidth=1440, concierge visible",
+    "mobile_cdp": "vw=390, scrollWidth=390, concierge visible",
+    "build": "passed with dynamic /api/concierge route"
+  },
+  "heartbeat_summary": "Antojitos concierge gate completed locally: added truth-safe concierge UI, deterministic API resolver, verified KB, and transcript proving phone handoffs for unsupported/current details. Next canonical stage is pitch; MC sync remains blocked by missing agency auth in this runtime.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime; prior MC build writeback returned 401 Unauthorized.",
+    "next_unblock_action": "Retry this payload against /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}

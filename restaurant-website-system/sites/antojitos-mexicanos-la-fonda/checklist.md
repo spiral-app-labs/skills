@@ -2,7 +2,7 @@
 
 - Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
 - MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
-- Current stage: `concierge`
+- Current stage: `pitch`
 - Template route: `pepper-01`
 
 ## Workflow status
@@ -76,7 +76,15 @@
 ### 7. Add truthful AI concierge or record blocker
 
 - Stage: `concierge`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/lib/concierge-kb.ts`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/app/api/concierge/route.ts`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/components/TruthfulConcierge.tsx`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md`
+  - `local command: npm run typecheck (passed)`
+  - `local command: npm run build (passed with /api/concierge route)`
 
 ### 8. Create sellable pitch doc
 
@@ -128,9 +136,12 @@
 - `top-three-named`
 - `top-three-implemented`
 - `top-three-evidence`
+- `concierge-kb-truthful`
+- `concierge-tested`
+- `concierge-safe`
 
 ## Current blocker
 
 - Gate: `mission_control_sync`
-- Reason: local improvement/top-3 gates are complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
-- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-improving-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.
+- Reason: local concierge gate is complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
+- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-concierge-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.

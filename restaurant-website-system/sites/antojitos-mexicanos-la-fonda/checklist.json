@@ -6,7 +6,7 @@
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "concierge",
+  "currentStage": "pitch",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
@@ -397,9 +397,20 @@
         "blocker if concierge cannot be safely added"
       ],
       "order": 7,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/app/api/concierge/route.ts",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/desktop.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/mobile.png",
+        "local command: curl -X POST /api/concierge smoke tests (passed)",
+        "local command: npm run build (passed with /api/concierge route)"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:46:00Z"
     },
     {
       "id": "pitch_doc",
@@ -673,7 +684,17 @@
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-mobile.png",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-desktop.png",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png",
-    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-improving-complete-2026-05-04.json"
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-improving-complete-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/desktop.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/mobile.png",
+    "local command: curl -X POST /api/concierge smoke tests (passed)",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-concierge-complete-2026-05-04.json",
+    "local command: npm run build (passed with /api/concierge route)"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -685,9 +706,9 @@
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Improvement/top-3 gates are complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
-      "nextUnblockAction": "Retry the prepared improving-complete writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
-      "recordedAt": "2026-05-04T18:36:54Z"
+      "reason": "Concierge gate is complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
+      "nextUnblockAction": "Retry the prepared concierge-complete writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
+      "recordedAt": "2026-05-04T18:46:00Z"
     }
   ],
   "requirements": [
@@ -894,26 +915,44 @@
     {
       "id": "concierge-kb-truthful",
       "title": "Concierge KB only uses verified restaurant facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
-      "stage": "concierge"
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ],
+      "notes": "Concierge resolver uses only verified La Fonda facts: phone, address, hours, Google proof, public dish/review themes, and safe call/directions handoffs."
     },
     {
       "id": "concierge-tested",
       "title": "Short transcript proves useful behavior",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
-      "stage": "concierge"
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ],
+      "notes": "Endpoint smoke transcript covers online ordering, seating, and unsupported catering question with safe fallback behavior."
     },
     {
       "id": "concierge-safe",
       "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
-      "stage": "concierge"
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ],
+      "notes": "Answers hand off current prices, allergies, seating, holiday hours, catering/events, and unsupported claims to direct phone confirmation; no fake provider or menu pricing added."
     },
     {
       "id": "pitch-specific",
@@ -1015,7 +1054,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T18:36:54Z",
+  "updatedAt": "2026-05-04T18:46:00Z",
   "passedRequirementIds": [
     "checklist-md",
     "checklist-json",
@@ -1034,6 +1073,9 @@
     "mobile-check",
     "top-three-named",
     "top-three-implemented",
-    "top-three-evidence"
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe"
   ]
 }

@@ -6,6 +6,7 @@ import { LocationFinderStrip } from '../components/LocationFinderStrip';
 import { ChefTestimonialBand } from '../components/ChefTestimonialBand';
 import { InlineCTAWithPhoto } from '../components/InlineCTAWithPhoto';
 import { ProofStrip } from '../components/ProofStrip';
+import { TruthfulConcierge } from '../components/TruthfulConcierge';
 import { MobileStickyCTA } from '../components/MobileStickyCTA';
 import { SaturatedFooter } from '../components/SaturatedFooter';
 import { ScrollReveal } from '../components/ScrollReveal';
@@ -53,6 +54,9 @@ export default function HomePage() {
             tiles={content.visit.tiles}
             accordion={content.visit.accordion}
           />
+        </ScrollReveal>
+        <ScrollReveal>
+          <TruthfulConcierge />
         </ScrollReveal>
         <ScrollReveal>
           <ChefTestimonialBand />
