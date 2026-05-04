@@ -1,0 +1,32 @@
+{
+  "build_stage": "improving",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "a03f8b45-7fbe-45be-ad20-6243fd7ee29e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/app/page.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/DarkLeafHero.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/app/globals.css",
+    "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md"
+  ],
+  "passed_requirement_ids": [
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check"
+  ],
+  "blocker": "Mission Control writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+  "heartbeat_summary": "Improving pass applied to Mary's on bamzi-01: added the required anonymous Google review carousel to the home page, tightened public-facing copy across hero and supporting sections, added a restrained hero motion upgrade with reduced-motion protection, and re-ran npm ci, npm run typecheck, and npm run build successfully. MC sync is captured in local artifacts only until agency auth is restored."
+}

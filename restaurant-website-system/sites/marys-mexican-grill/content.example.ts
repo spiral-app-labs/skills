@@ -8,8 +8,8 @@ export const content = {
     name: "Mary's Mexican Grill",
     tagline: 'Mexican grill on Woodstock Square',
     description:
-      "A casual Mexican grill at 108 Cass St with tacos, tamales, ceviche, fresh salsa, and strong 4.8-star public proof.",
-    since: 'Neighborhood favorite with strong recent public proof',
+      'A casual Mexican grill at 108 Cass St known for tacos, tamales, ceviche, fresh salsa, and friendly service.',
+    since: 'Neighborhood favorite on Woodstock Square',
     address: '108 Cass St, Woodstock, IL 60098',
     phone: '(815) 337-2303',
     phoneHref: 'tel:+18153372303',
@@ -59,9 +59,9 @@ export const content = {
 
   hero: {
     eyebrow: 'Woodstock Square Mexican Grill',
-    title: "Tacos, tamales, and fresh salsa in downtown Woodstock.",
+    title: 'Authentic tacos, tamales, and fresh salsa on Woodstock Square.',
     subtitle:
-      "Mary's Mexican Grill pairs a casual town-square location with 4.8-star public proof, warm service, and the dishes guests call out by name.",
+      "Mary's Mexican Grill brings together a downtown Woodstock location, fast friendly service, and the dishes guests keep naming in public reviews.",
     cta: { label: 'View Menu', href: '/menu' },
     secondaryCta: { label: 'Order on DoorDash', href: orderHref },
     metaItems: [
@@ -76,9 +76,9 @@ export const content = {
 
   mission: {
     eyebrow: 'Why locals come back',
-    title: 'Casual, fast-moving, and specific about flavor.',
+    title: 'Fresh, friendly, and easy to come back to.',
     body:
-      "Public reviews keep returning to the same mix: authentic tacos, memorable sauces, fresh chips, friendly service, and a location that makes Mary's easy to choose after a walk around the Square.",
+      "Reviews keep circling the same strengths: authentic tacos, fresh chips, standout sauces, attentive service, and a location that feels built into a day around the Square.",
     cta: { label: 'See the menu favorites', href: '/menu#favorites' },
     phone: '(815) 337-2303',
     image: '/assets/marys/story-square.svg',
@@ -87,7 +87,7 @@ export const content = {
 
   categoryStrip: {
     eyebrow: 'Menu highlights',
-    title: 'Built around the dishes guests actually mention.',
+    title: 'Start with the dishes guests call out most.',
     categories: [
       { label: 'Pastor, carnitas, and steak tacos', image: '/assets/marys/card-tacos.svg' },
       { label: 'Tamales, mole, and enchiladas', image: '/assets/marys/card-tamales.svg' },
@@ -96,7 +96,22 @@ export const content = {
   },
 
   bigHeadline:
-    "A stronger first tap for Mary's means menu, order, call, and directions all show up before a guest ever leaves the page.",
+    "From first click to first bite, Mary's should feel easy to choose.",
+
+  reviewCarousel: {
+    eyebrow: 'Guest highlights',
+    title: 'Short proof from the highest-rated review packet',
+    reviews: [
+      { quote: 'A lovely little Mexican restaurant right on the historic Woodstock Square.', platform: 'Google Reviews' },
+      { quote: 'The salsas were super good and the red one was the perfect amount of spicy.', platform: 'Google Reviews' },
+      { quote: 'Best mole I\'ve had. Neat to find out it was the building used in the Groundhog Day movie.', platform: 'Google Reviews' },
+      { quote: 'Great spot on the square to crush tacos and micheladas.', platform: 'Google Reviews' },
+      { quote: 'Torta Mary absolutely delicious! So much to eat!', platform: 'Google Reviews' },
+      { quote: 'The chips are really good / extra flakey, which holds the salsa ready well.', platform: 'Google Reviews' },
+      { quote: 'The steak and pastor tacos were delicious! The prices are good.', platform: 'Google Reviews' },
+      { quote: 'The red salsa was a perfect burst of spice on my taco dinner.', platform: 'Google Reviews' },
+    ],
+  },
 
   featured: [
     {
@@ -164,56 +179,56 @@ export const content = {
     quote:
       "We had a great experience at Mary's. Our waitress was super friendly, playful, and attentive, which made the whole meal even more enjoyable.",
     attribution: {
-      role: 'Google Highest rating review',
-      name: 'Holly P',
+      role: 'Guest highlight',
+      name: 'Google Reviews',
     },
     chefImage: '/assets/marys/review-service.svg',
     chefAlt: "Preview illustration for Mary's service and hospitality proof",
   },
 
   blog: {
-    eyebrow: 'What the reviews say',
-    title: "The signals Mary's should own on its own site",
+    eyebrow: 'Why guests return',
+    title: 'What stands out once people try Mary’s',
     posts: [
       {
         id: 'square-draw',
-        date: 'Neighborhood draw',
-        title: 'Lead with the Woodstock Square location and make directions a first-screen action.',
+        date: 'Woodstock Square',
+        title: 'Right on the Square, with an easy stop for lunch, dinner, or a walk-through visit.',
         image: '/assets/marys/proof-square.svg',
         href: '/contact',
       },
       {
         id: 'service-proof',
-        date: 'Service proof',
-        title: 'Martha, Laura, and the dining room warmth are part of the conversion story.',
+        date: 'Warm service',
+        title: 'Attentive service keeps showing up alongside the food in guest reviews.',
         image: '/assets/marys/proof-service.svg',
         href: '/about',
       },
       {
         id: 'food-specificity',
-        date: 'Food specificity',
-        title: 'Tacos, tamales, mole, ceviche, guacamole, and salsa beat generic Mexican copy.',
+        date: 'House favorites',
+        title: 'Tacos, tamales, mole, ceviche, guacamole, and salsa give the menu its shape.',
         image: '/assets/marys/proof-food.svg',
         href: '/menu',
       },
       {
         id: 'value-speed',
-        date: 'Casual register',
-        title: 'Guests talk about modest prices, quick service, and a clean room, not fine dining.',
+        date: 'Casual comfort',
+        title: 'Guests keep mentioning modest prices, quick service, and a clean welcoming room.',
         image: '/assets/marys/proof-value.svg',
         href: '/about',
       },
       {
         id: 'pickup-demand',
-        date: 'Order intent',
-        title: 'Pickup and delivery demand already exists, the owned site should capture more of it.',
+        date: 'Takeout demand',
+        title: 'Pickup and delivery already matter here, especially for tacos, burritos, and tamales.',
         image: '/assets/marys/proof-order.svg',
         href: '/menu#plan-visit',
       },
       {
         id: 'phone-conflict',
-        date: 'Truth note',
-        title: 'Public listings show (815) 337-2303, while older indexed site copy showed another number.',
+        date: 'Call first',
+        title: 'Public listings agree on the main phone number, with one older web listing still conflicting.',
         image: '/assets/marys/proof-phone.svg',
         href: '/contact',
       },
@@ -227,15 +242,15 @@ export const content = {
 
   about: {
     hero: {
-      title: 'Local proof, not generic filler.',
+      title: 'A local spot with clear signals.',
       subtitle:
-        "This preview stays inside what's verified: location, hours, public proof, menu signals, and named hospitality mentions from the review packet.",
+        'This preview stays inside what is verified: location, hours, menu signals, and public review themes.',
     },
     immerse: {
       eyebrow: 'Public snapshot',
-      title: "Mary's is strongest when it sounds like Mary's.",
+      title: "Mary's works best when the details stay specific.",
       body:
-        "The restaurant does not need a fake chef story or invented origin myth. The strongest version is already in the evidence: a clean casual grill, fair prices, fresh food, and a team guests want to see again.",
+        'The strongest version is already in the evidence: a casual grill, fair prices, fresh food, and a team guests want to see again.',
       statBig: '4.8',
       statLabel: 'Google rating',
       chefImage: '/assets/marys/avatar-proof.svg',
@@ -244,9 +259,9 @@ export const content = {
     },
     journey: {
       eyebrow: 'How guests use it',
-      title: 'The site should follow the real conversion rhythm.',
+      title: 'The strongest visit paths are already clear.',
       body:
-        "Mary's is a walk-in, lunch, takeout, family, and repeat-visit restaurant. The build should help each of those intents move fast instead of hiding them behind vendor setup copy.",
+        "Mary's is a walk-in, lunch, takeout, family, and repeat-visit restaurant, so the most useful actions should stay easy to reach.",
       milestones: [
         {
           year: 'Walk in',
@@ -328,9 +343,9 @@ export const content = {
 
   menuPage: {
     hero: {
-      title: 'Menu signals from public evidence',
+      title: 'Menu highlights pulled from public proof',
       subtitle:
-        'This first preview uses review-backed items and public listing signals, not invented prices or unverified full-menu claims.',
+        'This preview uses review-backed items and public listing signals, not invented prices or unverified full-menu claims.',
     },
     categories: [
       {
@@ -403,7 +418,7 @@ export const content = {
     },
     reservation: {
       eyebrow: 'Plan your visit',
-      title: 'Truthful action paths for this first preview',
+      title: 'The fastest ways to order, call, or head over',
       body:
         'The owned direct-order setup is still unresolved, so this preview keeps the menu on-site and sends online ordering to the public DoorDash listing.',
       image: '/assets/marys/action-order.svg',
@@ -420,9 +435,9 @@ export const content = {
 
   newsPage: {
     hero: {
-      title: 'Proof that should shape the build',
+      title: 'The proof behind the menu and service story',
       subtitle:
-        "These are the signals lifted from Mary's review and audit packet, not filler editorial cards.",
+        "These signals come from Mary's review and audit packet, not filler editorial cards.",
     },
   },
 
@@ -430,7 +445,7 @@ export const content = {
     hero: {
       title: 'Visit Marys on Cass Street',
       subtitle:
-        'Directions, public hours, and phone clarity should be easier to find than marketplace detours or vendor setup copy.',
+        'Directions, public hours, and phone clarity should be easier to find than a marketplace detour.',
     },
     photos: [
       '/assets/marys/contact-exterior.svg',
@@ -439,7 +454,7 @@ export const content = {
     ],
     headline: {
       eyebrow: 'Visit and order',
-      title: 'The practical details should feel as polished as the food proof.',
+      title: 'The practical details should feel as polished as the food.',
     },
     infoCards: [
       {
@@ -455,9 +470,9 @@ export const content = {
     ],
     form: {
       eyebrow: 'Preview-safe contact paths',
-      title: 'Use a real action instead of a fake form flow.',
+      title: 'Choose a real action instead of a dead-end form.',
       body:
-        'This first preview keeps the high-intent paths explicit. Call for current details, use DoorDash for third-party online ordering, or head straight to directions.',
+        'This preview keeps the high-intent paths explicit. Call for current details, use DoorDash for third-party online ordering, or head straight to directions.',
       actions: [
         { label: 'Call Marys', href: 'tel:+18153372303' },
         { label: 'Order on DoorDash', href: orderHref },

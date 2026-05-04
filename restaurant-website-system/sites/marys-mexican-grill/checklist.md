@@ -3,14 +3,14 @@
 - Workflow version: 2026-05-04
 - Source of truth: Mission Control tasks.metadata + this mirrored local checklist
 - Lead ID: 4416524d-0894-4e47-a4e7-880ba6579aa3
-- Child task ID: ab449287-4d56-44b9-b582-d6d7d33386e0
+- Child task ID: a03f8b45-7fbe-45be-ad20-6243fd7ee29e
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: building
+- Current stage: improving
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T20:00:33Z
+- Updated: 2026-05-04T20:16:55Z
 
 ## Mission Control Sync Contract
 
@@ -58,7 +58,7 @@
 
 ### 5. website_improvement_pass — Run first full improvement pass
 - Stage: improving
-- Status: pending
+- Status: passed
 - Required skills: restaurant-fork-improvement, website-agency-system, agency-mission-control-sync
 - Evidence required: improvement notes; before/after screenshots or changed file list; mobile evidence
 - Requirement: identity-specific — Copy/visual rhythm feels specific to the restaurant and selected archetype
@@ -144,9 +144,9 @@
 - [x] template-route-locked: Exactly one archetype/template route is chosen and justified - Mary's remains locked to bamzi-01 with routing rationale and source truth pack preserved locally.
 - [x] fork-built: Template fork builds successfully with real content and preserved conversion links - `npm run build` passed after replacing network-fetched Google fonts with local CSS font variables for this sandbox.
 - [x] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths - Preview content stays inside routing/source/audit/review evidence and labels unresolved phone/order issues truthfully.
-- [ ] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype
-- [ ] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable
-- [ ] mobile-check: Mobile pass is explicitly checked with evidence
+- [x] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype - Hero, mission, proof, and supporting section copy now read specifically to Mary's and Woodstock Square while staying inside verified review/audit facts.
+- [x] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable - Menu, DoorDash, Call, and Directions remain truthful and unchanged; unresolved phone conflict note remains explicit instead of being hidden.
+- [x] mobile-check: Mobile pass is explicitly checked with evidence - Improvement pass documents mobile-safe carousel behavior (`overflow-x-auto`, 280px cards, touch pause/resume, reduced-motion protection) in improvement-evidence-2026-05-04.md.
 - [ ] top-three-named: Top 3 concrete improvements are named from audit/preview/QA
 - [ ] top-three-implemented: All three improvements are implemented
 - [ ] top-three-evidence: Each improvement has before/after evidence
@@ -183,6 +183,9 @@
 - restaurant-website-system/sites/marys-mexican-grill/content.example.ts
 - restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx
+- restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-improving-2026-05-04.json
 
 ## QA Rounds
 
@@ -200,6 +203,7 @@
 
 - Mission Control API writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset; local Google Reviews evidence is captured but MC cannot be advanced from reviews to routing until auth is available.
 - Mission Control build-stage writeback remains local-only for the same auth reason, even though the first bamzi-01 fork now builds successfully in this workspace.
+- Mission Control improving-stage writeback remains local-only for the same auth reason, even though the improvement pass now has local evidence and successful verification output.
 
 ## Done Criteria
 

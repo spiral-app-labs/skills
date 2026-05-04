@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "building",
+  "currentStage": "improving",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -288,9 +288,18 @@
         "mobile evidence"
       ],
       "order": 5,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md"
+      ],
+      "blocker": {
+        "reason": "Mission Control auth is unavailable in this runtime, so improving-stage writeback can only be recorded locally.",
+        "nextUnblockAction": "POST mc-build-writeback-improving-2026-05-04.json once agency auth is restored.",
+        "updatedAt": "2026-05-04T20:16:55Z"
+      }
     },
     {
       "id": "top_three_improvements",
@@ -638,7 +647,10 @@
     "restaurant-website-system/sites/marys-mexican-grill/source.md",
     "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
     "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
-    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json"
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-improving-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -655,7 +667,8 @@
       "nextUnblockAction": "Provide AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to OpenClaw runtime or run the MC build writeback with the prepared payload.",
       "updatedAt": "2026-05-04T16:51:18.752Z"
     },
-    "Mission Control build-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+    "Mission Control build-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    "Mission Control improving-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
   ],
   "requirements": [
     {
@@ -811,29 +824,45 @@
     {
       "id": "identity-specific",
       "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
       "stage": "improving",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Home-page copy and proof sections were tightened around Woodstock Square, tacos, tamales, mole, salsa, and service themes from the review packet.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "conversion-paths",
       "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
       "stage": "improving",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Menu, DoorDash, call, and directions paths remain truthful, and the public phone conflict note stays visible instead of being hidden.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "mobile-check",
       "title": "Mobile pass is explicitly checked with evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
       "stage": "improving",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The review carousel keeps a mobile-safe horizontal scroll lane with touch pause/resume and reduced-motion protection, documented in the improvement evidence file.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/app/globals.css",
+        "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md"
+      ]
     },
     {
       "id": "top-three-named",
