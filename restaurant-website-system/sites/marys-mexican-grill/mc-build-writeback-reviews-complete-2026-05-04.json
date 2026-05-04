@@ -11,7 +11,8 @@
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
     "restaurant-website-system/sites/marys-mexican-grill/audit.md",
-    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/source.md"
   ],
   "passed_requirement_ids": [
     "reviews-highest-filter",

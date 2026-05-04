@@ -9,10 +9,11 @@
   "google_reviews_packet_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
   "evidence_urls": [
     "restaurant-website-system/sites/marys-mexican-grill/routing.md",
-    "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md"
+    "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
+    "restaurant-website-system/sites/marys-mexican-grill/source.md"
   ],
   "passed_requirement_ids": [
     "template-route-locked"
   ],
-  "heartbeat_summary": "Locked Mary's Mexican Grill to bamzi-01 after audit + Highest-filter Google Reviews evidence. Ready to fork/build from the selected archetype with menu/order/mobile conversion modifiers."
+  "heartbeat_summary": "Locked Mary's Mexican Grill to bamzi-01 and prepared source truth pack for the first fork: facts, hours, dish hooks, conversion paths, phone conflict, and copy register. Ready to fork once MC advances past reviews."
 }

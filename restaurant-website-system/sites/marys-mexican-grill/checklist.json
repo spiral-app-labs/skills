@@ -225,12 +225,13 @@
       "status": "pending",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/routing.md",
-        "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md"
+        "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
+        "restaurant-website-system/sites/marys-mexican-grill/source.md"
       ],
       "blocker": {
-        "reason": "Route is drafted locally but MC remains at reviews until agency API auth is available and reviews-complete writeback succeeds.",
-        "nextUnblockAction": "POST mc-build-writeback-reviews-complete-2026-05-04.json, then use routing.md as template-route-locked evidence.",
-        "updatedAt": "2026-05-04T16:55:17.617Z"
+        "reason": "Source truth pack and routing are drafted locally, but MC remains at reviews until agency API auth is available and reviews-complete writeback succeeds.",
+        "nextUnblockAction": "POST mc-build-writeback-reviews-complete-2026-05-04.json, then use routing.md/source.md as template-route-locked/build-source evidence.",
+        "updatedAt": "2026-05-04T16:59:50.509Z"
       }
     },
     {
@@ -620,7 +621,8 @@
     "restaurant-website-system/sites/marys-mexican-grill/routing.md",
     "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
     "restaurant-website-system/sites/marys-mexican-grill/audit.md",
-    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/source.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -752,10 +754,11 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "pending",
-      "notes": "Draft route selected bamzi-01; pending MC stage advance/writeback before locking.",
+      "notes": "Draft route selected bamzi-01 and source truth pack prepared; pending MC stage advance/writeback before locking.",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/routing.md",
-        "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md"
+        "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
+        "restaurant-website-system/sites/marys-mexican-grill/source.md"
       ]
     },
     {
@@ -964,5 +967,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T16:57:27.393Z"
+  "updatedAt": "2026-05-04T16:59:50.550Z"
 }
