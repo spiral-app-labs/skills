@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "leadId": "da8188e5-7830-43ec-b908-661cf2e56b30",
+  "mcParentTaskId": "0d4123df-83b0-4d81-bc75-88263ebb402b",
+  "siteSlug": "dino-s-pizza-pasta",
+  "templateSlug": "pepper-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for desktop/mobile proof of the official homepage artifact, menu page, and DOM snapshots.",
+      "recordedAt": "2026-05-04T04:43:00.894464Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Qualification list flags Dino’s as a strong site-rot lead; source audit verified a sparse official site with AVIATOR/LONDON artifact and real pizza/menu proof.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted; canonical desktop/mobile browser screenshots and DOM snapshot remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to pepper-01, closest core archetype: Cuisine-style warm casual neighborhood pizza/order clarity.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T04:43:00.935Z"
+}
