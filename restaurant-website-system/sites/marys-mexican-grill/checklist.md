@@ -3,14 +3,14 @@
 - Workflow version: 2026-05-04
 - Source of truth: Mission Control tasks.metadata + this mirrored local checklist
 - Lead ID: 4416524d-0894-4e47-a4e7-880ba6579aa3
-- Child task ID: a03f8b45-7fbe-45be-ad20-6243fd7ee29e
+- Child task ID: 305e2186-ed2d-4148-be9d-9439740cae9f
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: improving
+- Current stage: top_3_improvements
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T20:16:55Z
+- Updated: 2026-05-04T20:29:26Z
 
 ## Mission Control Sync Contract
 
@@ -67,7 +67,7 @@
 
 ### 6. top_three_improvements — Identify and implement top 3 improvements
 - Stage: top_3_improvements
-- Status: pending
+- Status: passed
 - Required skills: restaurant-fork-improvement, restaurant-build-checklist, agency-mission-control-sync
 - Evidence required: top-3 improvements doc; before/after screenshots or diff evidence
 - Requirement: top-three-named — Top 3 concrete improvements are named from audit/preview/QA
@@ -147,9 +147,9 @@
 - [x] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype - Hero, mission, proof, and supporting section copy now read specifically to Mary's and Woodstock Square while staying inside verified review/audit facts.
 - [x] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable - Menu, DoorDash, Call, and Directions remain truthful and unchanged; unresolved phone conflict note remains explicit instead of being hidden.
 - [x] mobile-check: Mobile pass is explicitly checked with evidence - Improvement pass documents mobile-safe carousel behavior (`overflow-x-auto`, 280px cards, touch pause/resume, reduced-motion protection) in improvement-evidence-2026-05-04.md.
-- [ ] top-three-named: Top 3 concrete improvements are named from audit/preview/QA
-- [ ] top-three-implemented: All three improvements are implemented
-- [ ] top-three-evidence: Each improvement has before/after evidence
+- [x] top-three-named: Top 3 concrete improvements are named from audit/preview/QA - Ranked in `top-3-improvements-2026-05-04.md` with sellability rationale tied to audit, review, and preview evidence.
+- [x] top-three-implemented: All three improvements are implemented - Hero action rail, faster-scanning proof surfaces, and clearer guest-planning/order-phone handling are all live in the preview code.
+- [x] top-three-evidence: Each improvement has before/after evidence - Local diff evidence and verification are recorded in `top-3-improvements-2026-05-04.md`, `build-evidence-2026-05-04.md`, and the updated component/content files.
 - [ ] concierge-kb-truthful: Concierge KB only uses verified restaurant facts
 - [ ] concierge-tested: Short transcript proves useful behavior
 - [ ] concierge-safe: Fallbacks prevent fake reservations, unsupported promises, or invented facts
@@ -186,6 +186,12 @@
 - restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx
 - restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-improving-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/components/TestimonialStarRow.tsx
+- restaurant-website-system/sites/marys-mexican-grill/components/ReservationFormBlock.tsx
+- restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx
+- restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx
+- restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json
 
 ## QA Rounds
 
@@ -204,6 +210,7 @@
 - Mission Control API writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset; local Google Reviews evidence is captured but MC cannot be advanced from reviews to routing until auth is available.
 - Mission Control build-stage writeback remains local-only for the same auth reason, even though the first bamzi-01 fork now builds successfully in this workspace.
 - Mission Control improving-stage writeback remains local-only for the same auth reason, even though the improvement pass now has local evidence and successful verification output.
+- Mission Control top-three-improvements writeback remains local-only for the same auth reason, even though the gate now has local evidence and successful verification output.
 
 ## Done Criteria
 

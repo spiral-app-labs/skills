@@ -24,7 +24,10 @@ export function ReservationFormBlock() {
               </Link>
             ))}
           </div>
-          <p className="mt-6 text-body-sm text-text-muted">{r.footnote}</p>
+          <div className="mt-6 rounded-card border border-border-light bg-bg-cream p-5">
+            <div className="text-eyebrow text-text-muted">Phone note</div>
+            <p className="mt-2 text-body-sm text-text-dark">{r.footnote}</p>
+          </div>
         </div>
         <div className="relative aspect-[4/3] rounded-card overflow-hidden">
           <Image src={r.image} alt="" fill sizes="(min-width: 768px) 500px, 100vw" className="object-cover" />

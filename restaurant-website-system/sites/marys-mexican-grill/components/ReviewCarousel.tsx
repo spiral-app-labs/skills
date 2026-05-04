@@ -6,14 +6,19 @@ import { EyebrowDotLabel } from './EyebrowDotLabel';
 import { content } from '../content.example';
 
 type ReviewCard = (typeof content.reviewCarousel.reviews)[number];
+type ReviewStat = (typeof content.reviewCarousel.stats)[number];
 
 export function ReviewCarousel({
   eyebrow = content.reviewCarousel.eyebrow,
   title = content.reviewCarousel.title,
+  stats = content.reviewCarousel.stats,
+  themes = content.reviewCarousel.themes,
   reviews = content.reviewCarousel.reviews,
 }: {
   eyebrow?: string;
   title?: string;
+  stats?: ReviewStat[];
+  themes?: string[];
   reviews?: ReviewCard[];
 }) {
   const prefersReducedMotion = useReducedMotion();
@@ -71,6 +76,28 @@ export function ReviewCarousel({
           <EyebrowDotLabel className="mb-3">{eyebrow}</EyebrowDotLabel>
           <h2 className="font-display text-section-h3 text-text-dark">{title}</h2>
         </div>
+        {!!stats?.length && (
+          <div className="mb-6 grid gap-4 text-center md:grid-cols-3">
+            {stats.map((stat) => (
+              <div key={stat.label} className="rounded-card border border-border-light bg-bg-white px-5 py-5 shadow-[0_12px_28px_rgba(33,19,14,0.06)]">
+                <div className="font-display text-[34px] leading-none text-text-dark">{stat.value}</div>
+                <div className="mt-2 text-eyebrow text-text-muted">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {!!themes?.length && (
+          <div className="mb-8 flex flex-wrap justify-center gap-3">
+            {themes.map((theme) => (
+              <div
+                key={theme}
+                className="rounded-pill border border-border-light bg-bg-white px-4 py-2 text-eyebrow text-text-dark"
+              >
+                {theme}
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="relative">
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-bg-cream to-transparent" />
@@ -88,11 +115,11 @@ export function ReviewCarousel({
             onWheel={pauseTemporarily}
             aria-label="Anonymous guest review highlights"
           >
-            <div className="flex w-max gap-5">
+            <div className="flex w-max snap-x gap-5">
               {duplicatedReviews.map((review, index) => (
                 <article
                   key={`${review.quote}-${index}`}
-                  className="review-carousel-card flex min-h-[220px] w-[85vw] shrink-0 flex-col justify-between rounded-card border border-border-light bg-bg-white p-6 shadow-[0_18px_40px_rgba(33,19,14,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(33,19,14,0.14)] md:w-[440px]"
+                  className="review-carousel-card flex min-h-[220px] w-[85vw] shrink-0 snap-start flex-col justify-between rounded-card border border-border-light bg-bg-white p-6 shadow-[0_18px_40px_rgba(33,19,14,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_rgba(33,19,14,0.14)] md:w-[440px]"
                 >
                   <div>
                     <div className="mb-4 text-[18px] tracking-[0.18em] text-accent" aria-label="5 star review">
