@@ -5,11 +5,11 @@
 - Lead ID: af98b880-9351-4f00-b35b-253ad35570d9
 - MC parent task ID: 216314e9-4af6-4f99-92ab-54e7912b9173
 - Template slug: velvet-shaker-01
-- Current stage: qa_round_1
+- Current stage: qa_round_2
 - Checklist MD: restaurant-website-system/sites/strawberry-moon/checklist.md
 - Checklist JSON: restaurant-website-system/sites/strawberry-moon/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T20:20:00Z
+- Updated: 2026-05-04T22:05:00Z
 
 ## Mission Control Sync Contract
 
@@ -102,7 +102,7 @@
 
 ### 10. qa_round_1 — QA round 1
 - Stage: qa_round_1
-- Status: pending
+- Status: passed
 - Required skills: restaurant-qa-delivery, browser-automation, agency-mission-control-sync
 - Evidence required: qa-round-1.md; desktop screenshot; mobile screenshot; build/typecheck result
 - Requirement: qa-round-1 — QA round 1 completed with screenshots, findings, fixes, and MC writeback
@@ -141,7 +141,7 @@
 - [x] reviews-thirty-written: 30 written reviews captured, or exact shortage/blocker documented
 - [x] reviews-themes: Review themes summary is usable for copy and pitch docs
 - [x] template-route-locked: Exactly one archetype/template route is chosen and justified - Routed to velvet-shaker-01 warmed down; core archetype is Bramble for cozy martini lounge/date-night personality, not tavern/fine-dining.
-- [x] fork-built: Template fork builds successfully with real content and preserved conversion links - Velvet-shaker-01 fork now exists in the Strawberry Moon site folder with official-site imagery, factual martini/lounge/live-music content, honest handoff links, and no fake booking or price claims. npm run build passed. npm install created no usable local next binary, so verification used a compatible local node_modules tree from dino-s-pizza-pasta.
+- [x] fork-built: Template fork builds successfully with real content and preserved conversion links - Velvet-shaker-01 fork now exists in the Strawberry Moon site folder with official-site imagery, factual martini/lounge/live-music content, honest handoff links, and no fake booking or price claims. Canonical QA1 reran `npm ci`, `npm run build`, and `npm run typecheck` successfully in this worktree on 2026-05-04.
 - [x] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths
 - [x] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype
 - [x] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable
@@ -158,7 +158,7 @@
 - [x] battle-cards-objections: Likely owner objections have concise answers
 - [x] battle-cards-demo-path: Demo path and proof points are clear
 - [x] battle-cards-risks: Risks/unknowns are called out truthfully
-- [ ] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
+- [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Canonical QA1 is complete locally via `qa-round-1.md`, `scrapes/qa-round-1-browser-checks-2026-05-04.json`, `mc-qa-round-1-writeback-2026-05-04.json`, and `mc-build-writeback-qa-round-1-2026-05-04.json`. Fresh localhost screenshots were blocked by sandbox `listen EPERM`, and that blocker is recorded truthfully in the QA1 payload.
 - [ ] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
 - [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
 - [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC - Next: package preview URL, pitch doc, outreach draft, screenshots, QA evidence, and MC writeback.
@@ -185,6 +185,9 @@
 - restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png
 - restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md
 - restaurant-website-system/sites/strawberry-moon/qa-round-1.md
+- restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json
+- restaurant-website-system/sites/strawberry-moon/mc-qa-round-1-writeback-2026-05-04.json
+- restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-1-2026-05-04.json
 - restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png
 - restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png
 - restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx
@@ -216,8 +219,8 @@
 
 ## QA Rounds
 
-- Round 1: next
-- Round 2: pending
+- Round 1: passed
+- Round 2: next
 - Round 3: pending
 
 ## Pitch Artifacts
@@ -275,3 +278,14 @@
 - `ready_to_pitch` stays `false`; founder review and Anthropic key gates remain pending.
 - Mission Control API auth is still unavailable in this runtime, so battle-card sync is recorded in a local writeback payload only.
 - Next: QA round 1.
+
+## 2026-05-04 — Canonical QA Round 1 closeout
+
+- Completed the canonical `qa_round_1` gate locally for build correctness and source fidelity.
+- Evidence: `qa-round-1.md`, `scrapes/qa-round-1-browser-checks-2026-05-04.json`, `mc-qa-round-1-writeback-2026-05-04.json`, and `mc-build-writeback-qa-round-1-2026-05-04.json`.
+- Commands: `npm ci`, `npm run build`, `npm run typecheck`, and a blocked `npm run start -- --hostname 127.0.0.1 --port 3078` localhost attempt.
+- Safe factual fixes shipped in QA1: surfaced the verified public email address and the official external `Book an Event` page without inventing any reservation or private-event promises.
+- Browser blocker: sandbox denied localhost listen with `EPERM`, so no fresh or reusable screenshot artifacts were available in this worktree; blocker is recorded in the QA1 browser checks payload.
+- Advanced local stage to `qa_round_2`.
+- `ready_to_pitch` stays `false`; `anthropic_key_status` and `human_review_status` both remain `pending_founder`.
+- Mission Control API auth is still unavailable in this runtime, so QA1 sync is recorded in local writeback payloads only.

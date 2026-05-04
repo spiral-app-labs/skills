@@ -14,6 +14,7 @@
 - Email: thomasmalik830@gmail.com
 - Official site: <https://strawberrymoonmartinisandmore.weebly.com/>
 - Events page: <https://strawberrymoonmartinisandmore.weebly.com/events.html>
+- Official Book an Event page path verified from the public Weebly nav: <https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html>
 - Official homepage wording used directly: martinis, wine and more; delicious nibbles; decadent desserts; live music; first-come, first-served seating; Tuesday-Saturday open 4 pm.
 - Google profile evidence used directly: 4.7 rating, 214 reviews, $20-30, category Bar.
 - Review packet proof used in the build: weekly martinis, Strawberry Moon martini, dirty martini, Stormy Night martini, wine and cheese fondue, appetizers/noshes, pretzel nuggets, friendly knowledgeable bartenders, Tom's hospitality, two levels with a quiet upstairs, and live music three nights a week.
@@ -21,8 +22,8 @@
 ## Conversion choices
 
 - Primary conversion is direct call, because that is the clearest low-friction path supported by the evidence.
-- Secondary conversion is email, directions, the official site, and the official events page.
-- I did not invent reservations, online ordering, private events, awards, or exact nightly closing hours.
+- Secondary conversion is email, directions, the official site, the official events page, and the current-site Book an Event page as a truthful external handoff only.
+- I did not invent reservations, online ordering, private-event details, awards, or exact nightly closing hours.
 - The menu page stays descriptive rather than price-driven because the captured evidence supports categories and standout items, not a clean verified full price list.
 
 ## Design route

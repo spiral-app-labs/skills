@@ -12,8 +12,11 @@ export const content = {
     },
     phone: '847-865-5151',
     phoneHref: 'tel:+18478655151',
+    email: 'thomasmalik830@gmail.com',
+    emailHref: 'mailto:thomasmalik830@gmail.com',
     officialSite: 'https://strawberrymoonmartinisandmore.weebly.com/',
     eventsPage: 'https://strawberrymoonmartinisandmore.weebly.com/events.html',
+    bookEventPage: 'https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html',
     directionsHref:
       'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084',
     statusLine: 'Tuesday-Saturday · open 4 pm · first come, first served',
@@ -282,6 +285,7 @@ export const content = {
     direct: {
       heading: 'Call before you go',
       call: { label: 'Call', value: '847-865-5151', href: 'tel:+18478655151' },
+      email: { label: 'Email', value: 'thomasmalik830@gmail.com', href: 'mailto:thomasmalik830@gmail.com' },
       directions: { label: 'Directions', value: '204 S Main St', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084' },
     },
     visit: {
@@ -300,6 +304,8 @@ export const content = {
       links: [
         { label: 'Current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', external: true },
         { label: 'Events page', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', external: true },
+        { label: 'Book an event', href: 'https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html', external: true },
+        { label: 'Email', href: 'mailto:thomasmalik830@gmail.com' },
         { label: 'Directions', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084', external: true },
       ],
     },
@@ -308,13 +314,16 @@ export const content = {
       body: 'Strawberry Moon is a first-come martini lounge, so the easiest plan is simple: call if you have a question, get directions, then check the live-music calendar for the current lineup.',
       actions: [
         { label: 'Call Strawberry Moon', href: 'tel:+18478655151', style: 'primary' as const },
+        { label: 'Email Strawberry Moon', href: 'mailto:thomasmalik830@gmail.com', style: 'secondary' as const },
         { label: 'Get directions', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084', style: 'secondary' as const },
         { label: 'Open the current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', style: 'secondary' as const },
         { label: 'See the events page', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', style: 'secondary' as const },
+        { label: 'Open Book an Event', href: 'https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html', style: 'secondary' as const },
       ],
       notes: [
         '4.7 on Google across 214 reviews, listed as a $20-30 bar.',
         'Martinis, wine, nibbles, decadent desserts, and live music are the core of the night.',
+        'Official contact paths include phone, email, the events page, and the current-site Book an Event page.',
         'Two levels, Tuesday martini flights, friendly bartenders, and warm hospitality give the room its regulars-come-back feel.',
       ],
     },
