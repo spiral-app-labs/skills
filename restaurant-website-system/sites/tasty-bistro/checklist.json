@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "leadId": "4a61843f-7ce4-42d1-9971-1452aa311c47",
+  "mcParentTaskId": "b19181d6-a00f-4d82-9c38-707c9dcb5372",
+  "siteSlug": "tasty-bistro",
+  "templateSlug": "bamzi-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/tasty-bistro/checklist.md",
+    "restaurant-website-system/sites/tasty-bistro/checklist.json",
+    "restaurant-website-system/sites/tasty-bistro/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for OrderOnlineHub app screenshots/DOM, Google Maps open-status verification, and Google review packet.",
+      "recordedAt": "2026-05-04T05:05:01.862499Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Qualification list flags Tasty Bistro for JavaScript-only order-app friction; source audit verified redirect/low crawlable content, but open status must be verified because Restaurant Guru says temporarily closed.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/tasty-bistro/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted; canonical browser screenshots/DOM and Google/Maps open-status verification remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/tasty-bistro/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to bamzi-01 for broad casual Asian/sushi energy; avoid over-premium omakase posture and verify room/photos.",
+      "evidence": [
+        "restaurant-website-system/sites/tasty-bistro/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T05:05:01.902Z"
+}
