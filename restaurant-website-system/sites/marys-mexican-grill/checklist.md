@@ -6,11 +6,11 @@
 - Child task ID: 70683332-3044-461f-9dcf-dffa59a24a7b
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: pitch
+- Current stage: battle_cards
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T20:45:37Z
+- Updated: 2026-05-04T20:51:14Z
 
 ## Mission Control Sync Contract
 
@@ -96,12 +96,14 @@
 
 ### 9. battle_cards_doc — Create owner battle cards
 - Stage: battle_cards
-- Status: pending
+- Status: passed
 - Required skills: restaurant-pitch-doc, agency-mission-control-sync
 - Evidence required: battle-cards.md
 - Requirement: battle-cards-objections — Likely owner objections have concise answers
 - Requirement: battle-cards-demo-path — Demo path and proof points are clear
 - Requirement: battle-cards-risks — Risks/unknowns are called out truthfully
+- Evidence: restaurant-website-system/sites/marys-mexican-grill/battle-cards.md; restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md; restaurant-website-system/sites/marys-mexican-grill/audit.md; restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md; restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md
+- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
 
 ### 10. qa_round_1 — QA round 1
 - Stage: qa_round_1
@@ -158,9 +160,9 @@
 - [x] pitch-specific: Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps - `pitch-doc.md` is grounded in Woodstock Square context, Mexican grill review themes, and the audited conversion failures on the current domain.
 - [x] pitch-before-after: Pitch explains before/after delta in owner language - The pitch frames the before/after in operator terms: wrong page, wrong CTA, missing proof before; menu-first, proof-backed, truthful action paths after.
 - [x] pitch-evidence: Evidence and preview links are embedded or linked - The pitch doc links the audit, Google review packet/themes, build/improvement docs, top-3 evidence, and concierge evidence locally.
-- [ ] battle-cards-objections: Likely owner objections have concise answers
-- [ ] battle-cards-demo-path: Demo path and proof points are clear
-- [ ] battle-cards-risks: Risks/unknowns are called out truthfully
+- [x] battle-cards-objections: Likely owner objections have concise answers - `battle-cards.md` answers common objections around existing demand, polish risk, restaurant register, phone/hours uncertainty, photos, and keeping DoorDash truthful until owner confirmation.
+- [x] battle-cards-demo-path: Demo path and proof points are clear - `battle-cards.md` gives an exact seller demo sequence across the homepage, content source, proof sections, menu/contact flow, and the audited before-state.
+- [x] battle-cards-risks: Risks/unknowns are called out truthfully - `battle-cards.md` explicitly limits phone, hours, order-path, photography, owner-story, and MC sync claims.
 - [ ] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback
 - [ ] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback
 - [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
@@ -201,6 +203,8 @@
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-concierge-2026-05-04.json
 - restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-pitch-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/battle-cards.md
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-battle-cards-2026-05-04.json
 
 ## QA Rounds
 
@@ -211,7 +215,7 @@
 ## Pitch Artifacts
 
 - Pitch doc: restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md
-- Battle cards: TBD
+- Battle cards: restaurant-website-system/sites/marys-mexican-grill/battle-cards.md
 - Outreach draft: TBD
 
 ## Blockers
@@ -222,6 +226,7 @@
 - Mission Control top-three-improvements writeback remains local-only for the same auth reason, even though the gate now has local evidence and successful verification output.
 - Mission Control concierge-stage writeback remains local-only for the same auth reason, even though the concierge gate now has local UI evidence, deterministic transcripts, and successful verification output.
 - Mission Control pitch-stage writeback remains local-only for the same auth reason, even though the pitch gate now has local evidence and checklist updates.
+- Mission Control battle-cards-stage writeback remains local-only for the same auth reason, even though the battle cards gate now has local evidence and checklist updates.
 
 ## Done Criteria
 
