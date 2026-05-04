@@ -6,7 +6,37 @@
   "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
   "siteSlug": "strawberry-moon",
   "templateSlug": "velvet-shaker-01",
-  "currentStage": "pitch",
+  "currentStage": "battle_cards",
+  "buildStage": "battle_cards",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "passedRequirementIds": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe",
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence"
+  ],
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/strawberry-moon/checklist.md",
     "json": "restaurant-website-system/sites/strawberry-moon/checklist.json"
@@ -408,8 +438,19 @@
         "before/after evidence links"
       ],
       "order": 8,
-      "status": "pending",
-      "evidence": [],
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ],
       "blocker": null
     },
     {
@@ -620,6 +661,7 @@
     "restaurant-website-system/sites/strawberry-moon/audit.md",
     "restaurant-website-system/sites/strawberry-moon/source.md",
     "restaurant-website-system/sites/strawberry-moon/content.ts",
+    "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
     "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-dom-snapshot.txt",
     "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-dom.html",
     "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-text.txt",
@@ -659,16 +701,51 @@
     "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
     "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
     "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
-    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json"
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-pitch-writeback-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
-    "pitchDoc": null,
+    "pitchDoc": "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+    "battleCards": null,
     "outreachDraft": null,
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [],
+    "beforeAfterEvidence": [
+      "restaurant-website-system/sites/strawberry-moon/audit.md",
+      "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+      "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+      "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+      "restaurant-website-system/sites/strawberry-moon/content.ts",
+      "restaurant-website-system/sites/strawberry-moon/app/layout.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/about/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+      "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx"
+    ]
   },
-  "blockers": [],
+  "blockers": [
+    {
+      "id": "founder-anthropic-key",
+      "stage": "battle_cards",
+      "status": "pending",
+      "reason": "Anthropic key status is founder-controlled and remains pending_founder."
+    },
+    {
+      "id": "founder-human-review",
+      "stage": "battle_cards",
+      "status": "pending",
+      "reason": "Human review status is founder-controlled and remains pending_founder."
+    },
+    {
+      "id": "mission-control-auth",
+      "stage": "battle_cards",
+      "status": "pending",
+      "reason": "Mission Control API auth is unavailable in this runtime, so sync must be mirrored through local writeback payloads."
+    }
+  ],
   "requirements": [
     {
       "id": "checklist-md",
@@ -935,29 +1012,56 @@
     {
       "id": "pitch-specific",
       "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
       "stage": "pitch",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The pitch brief is specific to Strawberry Moon's Wauconda martini-lounge identity, current Weebly conversion leaks, live-music cadence, and review-backed reasons guests already love the venue.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ]
     },
     {
       "id": "pitch-before-after",
       "title": "Pitch explains before/after delta in owner language",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
       "stage": "pitch",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The pitch brief frames the current site as a thin brochure and the redesign as a preserve-stack upgrade that sells the night before guests arrive.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md"
+      ]
     },
     {
       "id": "pitch-evidence",
       "title": "Evidence and preview links are embedded or linked",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
       "stage": "pitch",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The pitch brief links the audit, review packet, source/content basis, core demo pages, QA passes, and concierge proof.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/app/layout.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/about/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/strawberry-moon/mc-pitch-writeback-2026-05-04.json"
+      ]
     },
     {
       "id": "battle-cards-objections",
@@ -1068,7 +1172,8 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T18:20:00Z",
+  "updatedAt": "2026-05-04T19:15:00Z",
   "lastMissionControlHeartbeatId": "c791097c-9730-43f6-988e-5467c82285f5",
-  "lastMissionControlActivityId": "a436d988-8643-43a1-9ea1-3563f68d0617"
+  "lastMissionControlActivityId": "a436d988-8643-43a1-9ea1-3563f68d0617",
+  "nextStep": "battle_cards"
 }
