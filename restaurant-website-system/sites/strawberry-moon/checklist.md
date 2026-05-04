@@ -9,7 +9,7 @@
 - Checklist MD: restaurant-website-system/sites/strawberry-moon/checklist.md
 - Checklist JSON: restaurant-website-system/sites/strawberry-moon/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T23:32:00Z
+- Updated: 2026-05-04T23:35:52Z
 
 ## Mission Control Sync Contract
 
@@ -161,8 +161,8 @@
 - [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Canonical QA1 is complete locally via `qa-round-1.md`, `scrapes/qa-round-1-browser-checks-2026-05-04.json`, `mc-qa-round-1-writeback-2026-05-04.json`, and `mc-build-writeback-qa-round-1-2026-05-04.json`. Fresh localhost screenshots were blocked by sandbox `listen EPERM`, and that blocker is recorded truthfully in the QA1 payload.
 - [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Canonical QA2 completed locally via `qa-round-2.md`, `scrapes/qa-round-2-browser-checks-2026-05-04.json`, `mc-qa-round-2-writeback-2026-05-04.json`, and `mc-build-writeback-qa-round-2-2026-05-04.json`; remote MC sync remains pending auth.
 - [x] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback - Canonical QA3 completed locally with build/typecheck, local preview, desktop/mobile screenshots, final visual QA fixes, concierge safety check, and local MC payloads; remote MC sync remains pending auth.
-- [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC - Next: package preview URL, pitch doc, outreach draft, screenshots, QA evidence, and MC writeback.
-- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence
+- [x] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC - Package assembled locally with `delivery-package.md`, `outreach-draft.md`, `screenshot-inventory-2026-05-04.json`, QA docs, checklist paths, and local MC payloads; public preview URL and remote MC sync remain pending.
+- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence - Blocked by missing public preview URL, pending MC screenshot/evidence mirroring, unavailable MC API auth, and founder-only Anthropic/human-review gates.
 
 ## Evidence Paths
 
@@ -216,6 +216,12 @@
 - restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json
 - restaurant-website-system/sites/strawberry-moon/battle-cards.md
 - restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json
+
+- restaurant-website-system/sites/strawberry-moon/delivery-package.md
+- restaurant-website-system/sites/strawberry-moon/outreach-draft.md
+- restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json
+- restaurant-website-system/sites/strawberry-moon/mc-build-writeback-packaging-2026-05-04.json
+- restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json
 
 ## QA Rounds
 
@@ -312,3 +318,14 @@
 - Advanced local stage to `packaging`.
 - `ready_to_pitch` stays `false`; `anthropic_key_status` and `human_review_status` both remain `pending_founder`.
 - Mission Control API auth is still unavailable in this runtime, so QA3 sync is recorded in local writeback payloads only.
+
+
+## 2026-05-04 — Packaging gate local assembly
+
+- Assembled the canonical `delivery` / packaging gate locally for founder review only.
+- Evidence: `delivery-package.md`, `outreach-draft.md`, `screenshot-inventory-2026-05-04.json`, `mc-build-writeback-packaging-2026-05-04.json`, and `mc-delivery-package-writeback-2026-05-04.json`.
+- Package includes checklist paths, pitch doc, battle cards, source/audit/review evidence, QA1/QA2/QA3 docs, local screenshot inventory with hashes, and the founder-safe outreach draft.
+- Public preview URL remains pending; the Vercel check URL is recorded as build evidence only and must not be treated as a client preview URL.
+- Screenshot PNGs are present locally in the packaging worktree but ignored by repo policy, so they still need Mission Control/upload mirroring before final delivery.
+- `ready_to_pitch` stays `false`; `anthropic_key_status` and `human_review_status` both remain `pending_founder`.
+- Mission Control API auth is still unavailable in this runtime, so packaging sync is recorded in local writeback payloads only.

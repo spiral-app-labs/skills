@@ -1,0 +1,142 @@
+{
+  "date": "2026-05-04",
+  "site_slug": "strawberry-moon",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "note": "Screenshot PNGs are present in this packaging worktree under screenshots/ but ignored by repository policy (**/screenshots/). This manifest preserves exact paths, sizes, and hashes for MC/upload reconciliation.",
+  "screenshots": [
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-desktop.png",
+      "bytes": 776208,
+      "sha256": "650c4e980efb64e997c06a678155602a932bba1435aad40f97af066cb7ef98c9",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-mobile.png",
+      "bytes": 211100,
+      "sha256": "e913011b1d40b956666723a7dbe240540efff4181ddbc02b3dcc662cd8a03db1",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-desktop.png",
+      "bytes": 1819516,
+      "sha256": "9d12140e2a08c6b060a42fbb0e307bc7c01faf3372f36414cb5cb2115babb3dc",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-mobile.png",
+      "bytes": 279463,
+      "sha256": "96bda35b64b46da24e481a6e465fb9eb5d03502e27ececcfd5ace27824432c85",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png",
+      "bytes": 904406,
+      "sha256": "839b17dd1358edef606f4961a6eb336da6173f7b058352821d01f862d5a74744",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png",
+      "bytes": 765352,
+      "sha256": "266a0455df78cd01d4e2f64d36f9dbb17df41c394deda4ae7d9b27541cd9a422",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png",
+      "bytes": 1564482,
+      "sha256": "45cb33cc99aadb080ce3e2035e0bbd22b16d98a8dadde6b768ccaf4d0c9847a0",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png",
+      "bytes": 1200858,
+      "sha256": "a89b2b0319ae5eafdd135ffa83a6f0e30fafc7d13326a84f24e87b39e359e885",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-desktop-2026-05-04.png",
+      "bytes": 2371244,
+      "sha256": "c391d6ce81e7ed5abcabeda11217885e73a4fc7f677bc6ba693df33b1eb7e460",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-mobile-2026-05-04.png",
+      "bytes": 2376573,
+      "sha256": "636dcb19dee1c1c8845a9c665dbc8f8dfca8f5e504aaa7472b879f1802158dfa",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+      "bytes": 1418667,
+      "sha256": "ecb92cc7f35375e339fce926a871b24b5833ac997a82dd5785cb721803f43dd6",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+      "bytes": 2108646,
+      "sha256": "7b8da3a91627beeea801811030ae1122eaac28bafd621747d9fc6d1191b0cdf3",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+      "bytes": 1113502,
+      "sha256": "cd857798c42793282ef9c6c380ec1e6de66ae6f3460bdeca8ba588630b0dafe3",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+      "bytes": 1452491,
+      "sha256": "cf9d65ccceb9d2aa53f6ba262af5cbdea519635480383c55b7a937cb3945e091",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+      "bytes": 2623500,
+      "sha256": "be4883871695e256c6503bdafa7d1b656b46eb2468762c7b228d92bd8c68683c",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+      "bytes": 2790969,
+      "sha256": "12b52d442038e4b222db5570cae0d3cf7e4e6da8d791013dea9600e64768285f",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+      "bytes": 1373773,
+      "sha256": "ce5347bfb8187c9533f9cddaf9e07e79ba0b41474f8a51c19150f9c401f0ded5",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    },
+    {
+      "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+      "bytes": 1803634,
+      "sha256": "77ebcfc147a26e79ae4e7bef347d0469c9ed12a39a59a9e29002b8aca143e2c6",
+      "present_in_packaging_worktree": true,
+      "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+    }
+  ],
+  "counts": {
+    "total": 18,
+    "qa_round_3": 8,
+    "current_site": 4,
+    "google": 2,
+    "preview_or_qa2": 4
+  },
+  "created_at": "2026-05-04T23:35:52Z"
+}
