@@ -5,11 +5,11 @@
 - Lead ID: af98b880-9351-4f00-b35b-253ad35570d9
 - MC parent task ID: 216314e9-4af6-4f99-92ab-54e7912b9173
 - Template slug: velvet-shaker-01
-- Current stage: battle_cards
+- Current stage: qa_round_1
 - Checklist MD: restaurant-website-system/sites/strawberry-moon/checklist.md
 - Checklist JSON: restaurant-website-system/sites/strawberry-moon/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T19:15:00Z
+- Updated: 2026-05-04T20:20:00Z
 
 ## Mission Control Sync Contract
 
@@ -93,7 +93,7 @@
 
 ### 9. battle_cards_doc — Create owner battle cards
 - Stage: battle_cards
-- Status: pending
+- Status: passed
 - Required skills: restaurant-pitch-doc, agency-mission-control-sync
 - Evidence required: battle-cards.md
 - Requirement: battle-cards-objections — Likely owner objections have concise answers
@@ -155,9 +155,9 @@
 - [x] pitch-specific: Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps - Passed via `pitch-doc.md`, `audit.md`, `source.md`, and the Google review packet.
 - [x] pitch-before-after: Pitch explains before/after delta in owner language - Passed via the before/after sell story and Ethan demo path in `pitch-doc.md`.
 - [x] pitch-evidence: Evidence and preview links are embedded or linked - Passed via linked file evidence in `pitch-doc.md`, QA docs, and the concierge/build artifacts.
-- [ ] battle-cards-objections: Likely owner objections have concise answers
-- [ ] battle-cards-demo-path: Demo path and proof points are clear
-- [ ] battle-cards-risks: Risks/unknowns are called out truthfully
+- [x] battle-cards-objections: Likely owner objections have concise answers
+- [x] battle-cards-demo-path: Demo path and proof points are clear
+- [x] battle-cards-risks: Risks/unknowns are called out truthfully
 - [ ] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
 - [ ] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
 - [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
@@ -211,17 +211,19 @@
 - restaurant-website-system/sites/strawberry-moon/ai-concierge.md
 - restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md
 - restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json
+- restaurant-website-system/sites/strawberry-moon/battle-cards.md
+- restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json
 
 ## QA Rounds
 
-- Round 1: pending
+- Round 1: next
 - Round 2: pending
 - Round 3: pending
 
 ## Pitch Artifacts
 
 - Pitch doc: `restaurant-website-system/sites/strawberry-moon/pitch-doc.md`
-- Battle cards: TBD
+- Battle cards: `restaurant-website-system/sites/strawberry-moon/battle-cards.md`
 - Outreach draft: TBD
 
 ## Blockers
@@ -264,3 +266,12 @@
 - Advanced local stage to `battle_cards`.
 - `ready_to_pitch` stays `false`; founder review and Anthropic key gates remain pending.
 - Next: battle cards.
+
+## 2026-05-04 — Battle cards gate closeout
+
+- Completed the canonical `battle_cards_doc` gate with Strawberry Moon-specific owner objection handling, proof references, demo path, risks, and do-not-claim guardrails.
+- Evidence: `battle-cards.md`, `pitch-doc.md`, `audit.md`, `source.md`, `content.ts`, `improvements.md`, `ai-concierge.md`, `ai-concierge-transcript.md`, `qa-round-1.md`, `qa-round-2.md`, `qa-round-3.md`, and `scrapes/google-reviews-highest-30.json`.
+- Advanced local stage to `qa_round_1`.
+- `ready_to_pitch` stays `false`; founder review and Anthropic key gates remain pending.
+- Mission Control API auth is still unavailable in this runtime, so battle-card sync is recorded in a local writeback payload only.
+- Next: QA round 1.

@@ -6,8 +6,8 @@
   "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
   "siteSlug": "strawberry-moon",
   "templateSlug": "velvet-shaker-01",
-  "currentStage": "battle_cards",
-  "buildStage": "battle_cards",
+  "currentStage": "qa_round_1",
+  "buildStage": "qa_round_1",
   "ready_to_pitch": false,
   "anthropic_key_status": "pending_founder",
   "human_review_status": "pending_founder",
@@ -35,7 +35,10 @@
     "concierge-safe",
     "pitch-specific",
     "pitch-before-after",
-    "pitch-evidence"
+    "pitch-evidence",
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks"
   ],
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/strawberry-moon/checklist.md",
@@ -487,8 +490,22 @@
         "battle-cards.md"
       ],
       "order": 9,
-      "status": "pending",
-      "evidence": [],
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json"
+      ],
       "blocker": null
     },
     {
@@ -702,13 +719,15 @@
     "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
     "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
     "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json",
-    "restaurant-website-system/sites/strawberry-moon/mc-pitch-writeback-2026-05-04.json"
+    "restaurant-website-system/sites/strawberry-moon/mc-pitch-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+    "restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
-    "battleCards": null,
+    "battleCards": "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
     "outreachDraft": null,
     "beforeAfterScreenshots": [],
     "beforeAfterEvidence": [
@@ -729,19 +748,19 @@
   "blockers": [
     {
       "id": "founder-anthropic-key",
-      "stage": "battle_cards",
+      "stage": "qa_round_1",
       "status": "pending",
       "reason": "Anthropic key status is founder-controlled and remains pending_founder."
     },
     {
       "id": "founder-human-review",
-      "stage": "battle_cards",
+      "stage": "qa_round_1",
       "status": "pending",
       "reason": "Human review status is founder-controlled and remains pending_founder."
     },
     {
       "id": "mission-control-auth",
-      "stage": "battle_cards",
+      "stage": "qa_round_1",
       "status": "pending",
       "reason": "Mission Control API auth is unavailable in this runtime, so sync must be mirrored through local writeback payloads."
     }
@@ -1066,29 +1085,49 @@
     {
       "id": "battle-cards-objections",
       "title": "Likely owner objections have concise answers",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "battle-cards.md includes seven Strawberry Moon-specific owner objections with calm responses and traceable proof references.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ]
     },
     {
       "id": "battle-cards-demo-path",
       "title": "Demo path and proof points are clear",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "battle-cards.md includes a step-by-step demo path plus owner-safe language and proof points for home, about, events, and contact/concierge.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md"
+      ]
     },
     {
       "id": "battle-cards-risks",
       "title": "Risks/unknowns are called out truthfully",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "battle-cards.md calls out soft-redesign posture, pending founder gates, MC auth limits, and operational claims the demo must not make.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -1172,8 +1211,8 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T19:15:00Z",
+  "updatedAt": "2026-05-04T20:20:00Z",
   "lastMissionControlHeartbeatId": "c791097c-9730-43f6-988e-5467c82285f5",
   "lastMissionControlActivityId": "a436d988-8643-43a1-9ea1-3563f68d0617",
-  "nextStep": "battle_cards"
+  "nextStep": "qa_round_1"
 }
