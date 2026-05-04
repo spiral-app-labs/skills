@@ -1,63 +1,111 @@
-# Antojitos Mexicanos La Fonda — Current Site / Source Audit
+# Antojitos Mexicanos La Fonda — Pre-Fork Audit
 
 - Date: 2026-05-04
 - Site slug: `antojitos-mexicanos-la-fonda`
 - MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
 - Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
 - Restaurant: Antojitos Mexicanos La Fonda, Crystal Lake, IL
-- Address found: `35 Berkshire Dr Unit 10, Crystal Lake, IL 60014`
-- Phone found: `(815) 526-3633`
+- Address verified: `35 Berkshire Dr Unit 10, Crystal Lake, IL 60014`
+- Phone verified: `(815) 526-3633`
+- Template route: `pepper-01`
 
-## Source status
+## Inputs collected
 
-No clear owned website surfaced in the current evidence pass. Public discovery is carried by aggregator/directory pages: Restaurantji, Yelp, Restaurant Guru, Zmenu/MenuPix/Sirved-style menu pages, Chamber of Commerce, and Checkle. The lead's original qualification note also flagged a `negocio.site` path returning Google 404.
+Browser/source evidence now exists for the audit gate:
 
-The pitch hook is therefore: **strong local Mexican food proof, but no reliable owned website / conversion home.**
+- Google Maps / no-owned-site proof text: `scrapes/current-site-browser-text-2026-05-04.txt`
+- Google Maps / no-owned-site proof DOM: `scrapes/current-site-browser-dom-snapshot-2026-05-04.html`
+- Google Maps desktop screenshot: `screenshots/current-site-desktop-full.png`
+- Google Maps mobile/listing screenshot: `screenshots/current-site-google-listing-mobile-full.png`
+- Mobile public discovery screenshot: `screenshots/current-site-mobile-full.png`
+- Restaurantji desktop screenshot: `screenshots/restaurantji-desktop-full.png`
+- Restaurant Guru desktop screenshot: `screenshots/restaurantguru-desktop-full.png`
+- Google Reviews Highest screenshot: `screenshots/google-reviews-highest-2026-05-04.png`
+- Google Reviews Highest 30 written review packet: `scrapes/google-reviews-highest-30.json`
+- Review themes: `google-reviews-themes.md`
 
-## Public proof captured
+## Block 1 — Verbatim findings
 
-### Restaurantji
+| Field | Finding |
+|---|---|
+| Owned website | Google Maps explicitly shows `Add website`; no first-party website surfaced in search/source checks. |
+| Primary public profile | Google Maps listing for `Antojitos Mexicanos La Fonda`, `4.5`, `148 reviews`, `$10–20`, Mexican restaurant. |
+| Address | `35 Berkshire Dr Unit 10, Crystal Lake, IL 60014`; located in Coventry Plaza Shopping Center. |
+| Phone | `(815) 526-3633`. |
+| Service modes | Google shows `Dine-in` and `Takeout`; reviews repeatedly describe takeout/carryout and limited/desired seating. |
+| Hours | Restaurantji/Guru corroborate Mon–Sat `10AM–7PM`, Sun `10AM–4PM`. |
+| Public menu proof | Restaurantji favorites: Breaded Chicken Fillet, Sope Veracruzano, Milanesa de Pollo, Chicken Empanada, Huarache De Asado, Chips and Salsa, Nachos Supreme, Tinga de Pollo, Super Burrito, Shrimp Tacos. |
+| Review snippets | Google highlights: “Mexican small plates/appetizers amazing quality, great little shop!”, “Price was right, staff was very friendly, location was super clean.”, “They have THEE best pork tacos and creamy green sauce **CHEFS KISS**”. |
+| Photos/assets | Restaurant Guru lists `41 photos`; Google shows menu/food/vibe/owner photo categories. |
+| Social/owner activity | Google listing includes owner posts, including `New prices 🌮🌯🫔` from Feb 10, 2026. |
 
-- URL: `https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/`
-- Category: Mexican, pet friendly.
-- Rating evidence: `4.6` from `95 ratings` in fetched page.
-- Address: `35 Berkshire Dr unit 10, Crystal Lake`.
-- Phone: `(815) 526-3633`.
-- Favorites surfaced: Breaded Chicken Fillet, Sope Veracruzano, Milanesa de Pollo, Chicken Empanada, Huarache De Asado, Chips and Salsa, Nachos Supreme, Tinga de Pollo, Super Burrito, Shrimp Tacos.
-- Hours: Mon–Sat 10AM–7PM; Sunday 10AM–4PM.
+### Mobile state
 
-### Restaurant Guru
+Because there is no owned website, the mobile failure is a discovery failure rather than a layout bug:
 
-- URL: `https://restaurantguru.com/Antojitos-Mexicanos-La-Fonda-Crystal-Lake`
-- 41 photos listed.
-- Summary says visitors point to Mexican tacos, Mexican steaks, nacho chips, efficient staff, spectacular service, attractive prices, and a homey atmosphere.
-- Google-derived rating shown as `4.6`.
-- Address and hours corroborate Restaurantji.
-- Features: takeaway, credit cards, wheelchair accessible.
+1. Guests land on Google/aggregator panels instead of a controlled first-party homepage (`screenshots/current-site-google-listing-mobile-full.png`).
+2. Menu proof is distributed across Google/Restaurantji/Guru, not an owned page with restaurant voice (`screenshots/current-site-mobile-full.png`).
+3. Review proof is strong but buried inside Google; it is not transformed into owned trust copy, dish sections, or a clear takeout CTA.
 
-### Search / Yelp snippets
+## Block 2 — Secret sauce from reviews
 
-- Yelp snippets mention authentic Mexican restaurants, lime slices over tacos, tacos, quesadillas, huaraches, and torta de la casa.
-- Chamber of Commerce snippet corroborates address and phone.
-- Checkle snippet says menu/location is `35 Berkshire Dr Unit 10` and describes authentic Mexican food with dishes typical of the southeast region of Mexico, sharing tradition and culinary culture in the northeast suburbs of Chicago.
+The highest-rated review packet shows the core promise: **authentic Veracruz-style Mexican antojitos with takeout reliability, friendly people, fair prices, and unusually specific dish love.**
 
-## Audit findings
+Repeated guest language:
 
-1. **Owned-site gap:** no reliable owned website was found during this pass; discovery and menu proof are scattered across directories.
-2. **Conversion gap:** guests can find phone/address through aggregators, but there is no first-party page that cleanly presents hours, menu, phone, maps, takeout, and the restaurant's regional Mexican identity.
-3. **Menu/proof gap:** the best dish proof is off-site. Favorites like sope Veracruzano, huarache de asado, tinga de pollo, shrimp tacos, torta de la casa, and chicken empanada should be structured into owned content.
-4. **Trust gap:** the 4.6 rating, homey atmosphere, efficient staff, attractive prices, and takeaway practicality are not concentrated into a sellable owned experience.
-5. **Route:** `pepper-01`, with a warm casual Mexican/takeout-first interpretation. If the final archetype language must map to the core six, this is closest to **Cuisine**: a warm, family, casual neighborhood restaurant where clarity and approachability matter most.
+- “authentic comida Veracruzana” / “Vera Cruz style Mexican food”
+- “best tacos in Crystal Lake” / “best Mexican food in the area”
+- “friendly,” “super friendly,” “nice workers”
+- “clean,” “well maintained,” “modest storefront,” “hidden gem”
+- “scratch made,” “fresh ingredients,” “not cheaping out on ingredients”
+- “takeout only,” “carry out,” “packaged well,” “ready in 20 minutes”
 
-## Required browser evidence blocker
+Dish anchors to preserve:
 
-OpenClaw managed browser is unavailable on this host (`No supported browser found`), so this audit currently has web-fetch/search evidence but not the required desktop/mobile screenshots or live browser DOM snapshot. Before marking the canonical audit gate fully passed, capture:
+- tacos: steak, pork, shrimp, carne asada, lengua
+- empanadas
+- sope Veracruzano
+- garnachas
+- flautas
+- huarache de asado
+- steak burrito / super burrito
+- mole and atole specials
+- churros
 
-- desktop/mobile evidence of the no-owned-site / aggregator-led discovery path
-- Google/Maps business profile screenshot if available
-- browser DOM/text snapshot for any official/negocio.site path if it still exists
-- screenshots of Restaurantji / Restaurant Guru proof pages as supporting evidence
+## Block 3 — Principle violations
 
-## Current recommendation
+1. **No owned conversion home.** The business has strong public proof, but Google still asks users to “Add website.”
+2. **Proof is scattered.** Reviews, photos, menu hints, hours, address, and phone live across Google, Restaurantji, Restaurant Guru, Yelp snippets, Checkle, and menu directories.
+3. **Regional identity is under-owned.** The Veracruz-style specificity is the differentiator, but it only appears in reviews and snippets.
+4. **Takeout clarity is not centralized.** Reviews praise carryout packaging, speed, and value, but there is no first-party page to frame that as a reason to call/visit.
+5. **Mobile guests get directory UX.** On mobile, discovery starts in aggregator interfaces rather than an owner-controlled path with phone, maps, hours, and menu highlights above the fold.
 
-Proceed as a build candidate only after browser evidence confirms the owned-site absence/404. The concept is straightforward and pitchable: make one clean owned page for menu, hours, phone, directions, takeaway, and the specific Mexican dishes people already mention publicly.
+## Block 4 — Why rebuild
+
+This is a high-confidence no-site pitch. A first-party page can do what the current public footprint cannot:
+
+- put phone, directions, hours, and takeout CTA above the fold
+- make `4.5 stars / 148 Google reviews` visible immediately
+- tell the Veracruz-style / authentic antojitos story in owner-friendly language
+- turn review-loved dishes into structured menu highlights
+- reduce dependency on directory pages with stale/incomplete menus
+- give Ethan/client a clean “before = no website, after = owned conversion page” demo
+
+## Block 5 — Risks and guardrails
+
+- **Do not invent online ordering.** Use call/maps/takeout CTAs unless a verified ordering provider is found.
+- **Do not overclaim dine-in.** Reviews mention limited/no seating and an expansion/update; state dine-in only if confirmed, otherwise phrase as “call for current seating/takeout details.”
+- **Do not fake full menu pricing.** Use highlights and verified public favorites until an official menu is captured.
+- **Use real proof only.** Ratings, review quotes, hours, address, phone, and dish names must remain tied to captured Google/Restaurantji/Guru evidence.
+
+## Locked fork outputs
+
+- **Hero Lock 4-tuple:** `Authentic Veracruz-style Mexican antojitos in Crystal Lake` / `Tacos, empanadas, sope Veracruzano, huaraches, burritos, atole + mole specials` / `Call for takeout` / `Get directions to Coventry Plaza`.
+- **Photography Tier verdict:** Tier B from public Google/Restaurant Guru photo inventory; enough food/menu proof for a warm build, but final fork should avoid pretending there is a large owned photo library.
+- **Owner-Voice phrase bank:** “authentic comida Veracruzana,” “Vera Cruz style Mexican food,” “fresh made,” “hidden gem,” “best tacos in Crystal Lake,” “takeout done right,” “friendly people, clean place, great prices.”
+- **External Trust signals:** Google `4.5 / 148 reviews`; Restaurantji `4.6 / 95 ratings`; Restaurant Guru Google-derived `4.6`, 41 photos, takeaway/credit cards/wheelchair accessible.
+- **Mobile-failure screenshot set:** `current-site-google-listing-mobile-full.png`, `current-site-mobile-full.png`, `google-reviews-highest-2026-05-04.png`.
+
+## Recommendation
+
+Proceed to routing/build with `pepper-01`: warm casual Mexican/takeout-first, emphasizing Veracruz-style specificity, clean neighborhood value, and call/directions conversion. The pitch hook is strong: **Google has the proof, but Antojitos has no owned website to convert it.**
