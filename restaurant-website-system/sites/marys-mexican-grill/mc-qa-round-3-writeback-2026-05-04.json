@@ -1,0 +1,78 @@
+{
+  "round_number": 3,
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "mc_child_task_id": "bbb46016-3e2e-43e7-b3d7-e0995e34252e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "ready_to_pitch": false,
+  "qa_verdict": "hold",
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "findings": [
+    "The site remains truthful and sellable, but founder-only gates still block pitch readiness.",
+    "Fresh QA3 screenshots could not be captured in this sandbox because local preview server binding and headless browser launch are both blocked.",
+    "Contact/footer conversion surfaces still had plain-text address and phone treatment before this pass."
+  ],
+  "fixes_applied": [
+    "Added tappable map and phone actions to the contact info cards.",
+    "Made the footer address link directly to directions.",
+    "Made the footer phone link directly to the verified call path."
+  ],
+  "evidence_checked": [
+    "restaurant-website-system/sites/marys-mexican-grill/source.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+    "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json"
+  ],
+  "screenshots": [
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png",
+      "status": "blocked_not_captured_in_sandbox"
+    }
+  ],
+  "browser_checks": [
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json"
+  ],
+  "pending_non_agent_gates": [
+    "Founder must configure the site-specific Anthropic key.",
+    "Founder must complete personal human review.",
+    "Fresh QA3 route screenshots must be recaptured in an environment that allows local preview rendering."
+  ],
+  "blocker": "Mission Control QA writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable; payload recorded locally only."
+}

@@ -478,11 +478,15 @@ export const content = {
         icon: 'map',
         label: 'Visit the Square',
         lines: ['108 Cass St', 'Woodstock, IL 60098', 'Historic Woodstock Square'],
+        href: directionsHref,
+        linkLabel: 'Open in Maps',
       },
       {
         icon: 'phone',
         label: "Call Mary's",
         lines: ['(815) 337-2303', 'Best number for takeout questions', 'Call for takeout and daily details'],
+        href: 'tel:+18153372303',
+        linkLabel: "Call Mary's",
       },
       {
         icon: 'map',

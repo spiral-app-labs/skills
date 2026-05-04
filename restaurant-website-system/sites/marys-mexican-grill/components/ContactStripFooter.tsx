@@ -6,6 +6,7 @@ import { content } from '../content.example';
  */
 export function ContactStripFooter() {
   const b = content.brand;
+  const directionsAction = b.utilityActions.find((action) => action.label === 'Directions');
   return (
     <footer className="bg-bg-dark text-text-white pt-20 pb-8 px-6">
       <div className="max-w-[1200px] mx-auto">
@@ -17,14 +18,22 @@ export function ContactStripFooter() {
             <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent text-text-white text-sm" aria-hidden>📍</span>
             <div>
               <div className="text-eyebrow text-text-muted-dark mb-1">Location</div>
-              <div className="text-body-sm text-text-white">{b.address}</div>
+              {directionsAction ? (
+                <a href={directionsAction.href} className="text-body-sm text-text-white underline decoration-white/30 underline-offset-4 transition hover:text-accent hover:decoration-accent">
+                  {b.address}
+                </a>
+              ) : (
+                <div className="text-body-sm text-text-white">{b.address}</div>
+              )}
             </div>
           </div>
           <div className="flex items-start gap-3">
             <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent text-text-white text-sm" aria-hidden>☎</span>
             <div>
               <div className="text-eyebrow text-text-muted-dark mb-1">Contact</div>
-              <div className="text-body-sm text-text-white">{b.phone}</div>
+              <a href={b.phoneHref} className="text-body-sm text-text-white underline decoration-white/30 underline-offset-4 transition hover:text-accent hover:decoration-accent">
+                {b.phone}
+              </a>
               <div className="text-body-sm text-text-muted-dark">Main phone for takeout questions, hours, and same-day plans.</div>
             </div>
           </div>
