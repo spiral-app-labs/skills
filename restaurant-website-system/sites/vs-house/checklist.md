@@ -47,3 +47,10 @@
 - Three QA rounds are logged with screenshot evidence.
 - Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
 
+
+## 2026-05-04 — QA Round 2 heartbeat progress
+
+- Artifact added: `restaurant-website-system/sites/vs-house/qa-round-2.md`.
+- Fix shipped locally: homepage now includes `MenuSection` after the signature row and `ContactPanel` before the footer, so mobile diners can see the text menu, reserve/call/order paths, hours, address, and map without leaving the homepage.
+- Verification: `npm run build` passed; `npm run typecheck` passed.
+- Remaining blocker: desktop/mobile screenshot capture is still pending because the OpenClaw managed browser has no Chromium executable and the user-profile attach path is not connected. Final delivery stays blocked until screenshot evidence is attached.

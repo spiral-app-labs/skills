@@ -10,13 +10,20 @@
     "restaurant-website-system/sites/vs-house/audit.md",
     "restaurant-website-system/sites/vs-house/scrapes/google.json",
     "restaurant-website-system/sites/vs-house/battle-cards.md",
-    "restaurant-website-system/sites/vs-house/qa-round-1.md"
+    "restaurant-website-system/sites/vs-house/qa-round-1.md",
+    "restaurant-website-system/sites/vs-house/qa-round-2.md"
   ],
   "qaRounds": [
     {
       "roundNumber": 1,
       "summary": "Factual/source QA found and fixed unsupported past-midnight bar claim; build/typecheck passed; screenshots blocked by unavailable browser.",
       "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-1.md",
+      "status": "advanced_blocked_on_screenshots"
+    },
+    {
+      "roundNumber": 2,
+      "summary": "Mobile/conversion QA found homepage conversion depth was split across sub-routes; added homepage text-menu and contact/CTA sections; build/typecheck passed; screenshots blocked by unavailable browser.",
+      "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-2.md",
       "status": "advanced_blocked_on_screenshots"
     }
   ],
@@ -32,6 +39,11 @@
       "gate": "qa_round_1",
       "reason": "Fresh QA screenshots cannot be captured because the OpenClaw managed browser cannot start on this host (No supported browser found). Source/build QA advanced; next unblock action is enabling browser/Chromium capture for desktop + mobile screenshots.",
       "recordedAt": "2026-05-04T04:32:23.708814Z"
+    },
+    {
+      "gate": "qa_round_2",
+      "reason": "Fresh Round 2 desktop/mobile screenshots cannot be captured because browser.doctor reports no managed Chromium executable and user-profile attach is not connected. Code/build QA advanced; next unblock action is enabling Chrome/Chromium capture.",
+      "recordedAt": "2026-05-04T13:48:47.383211Z"
     }
   ],
   "requirements": [
@@ -88,7 +100,12 @@
       "id": "qa-round-2",
       "title": "QA round 2 completed with findings and fixes logged",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "notes": "Source/code QA advanced and conversion fix implemented; screenshot evidence still pending because browser capture is unavailable on host.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/qa-round-2.md",
+        "restaurant-website-system/sites/vs-house/app/page.tsx"
+      ]
     },
     {
       "id": "qa-round-3",
@@ -110,5 +127,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T13:16:49.006Z"
+  "updatedAt": "2026-05-04T13:48:47.383328Z"
 }
