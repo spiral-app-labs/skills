@@ -198,7 +198,6 @@ export const content = {
         { name: 'Shaken Beef',              desc: 'Cubed filet, hand-shaken. "Legit."',             price: '$18' },
         { name: 'Bun Vermicelli',           desc: 'Grilled pork or chicken, herbs, fish sauce.',   price: '$16.5' },
         { name: 'Salmon Lover Roll',        desc: 'Three-salmon sushi roll, signature.',            price: '$18' },
-        { name: 'Spicy California Roll',    desc: 'Crab, avocado, spicy mayo.',                     price: null },
       ],
     },
     {
@@ -225,7 +224,6 @@ export const content = {
         { name: 'Beer (draft)',            desc: '16oz draft pours.',                                price: '$5–$7' },
         { name: 'Wine (glass)',            desc: 'Red / white.',                                     price: '$10–$13' },
         { name: 'Crab Bread',              desc: 'Happy-hour toasted crab bread.',                    price: '$12' },
-        { name: 'Egg Rolls',               desc: 'Happy-hour egg rolls, price pending confirmation.', price: null },
       ],
     },
   ],

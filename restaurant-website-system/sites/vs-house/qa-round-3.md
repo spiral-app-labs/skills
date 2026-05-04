@@ -62,3 +62,11 @@ Ethan should not send this as a final delivered package yet because screenshots 
 - Re-ran `npm run build` and `npm run typecheck`; both passed.
 
 Updated blocker state: the broad demo-price risk is resolved for the preview. Remaining price work is narrow: confirm any unpriced items before final delivery or remove them from the sales demo.
+
+## 2026-05-04 heartbeat addendum — unpriced demo items removed
+
+- Removed the remaining unpriced `Spicy California Roll` item from the preview menu because it was not confirmed in the extracted official menu image set.
+- Removed the remaining unpriced happy-hour egg rolls row from the preview menu because the price was not confirmed in the extracted official menu image set.
+- Re-ran `npm run build` and `npm run typecheck`; both passed.
+
+Updated blocker state: the unpriced-item cleanup is resolved for the sales demo. The site now shows only source-confirmed menu prices from official menu images. Final delivery still needs browser screenshots and deployed concierge runtime verification.

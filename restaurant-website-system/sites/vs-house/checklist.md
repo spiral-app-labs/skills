@@ -70,3 +70,10 @@
 - Reintroduced only source-confirmed prices into `content.ts`; left unconfirmed items without prices.
 - Verification: `npm run build` passed; `npm run typecheck` passed.
 - Remaining blockers are now narrower: screenshot capture, deployed concierge runtime verification, and any final unpriced-item confirmation/removal.
+
+## 2026-05-04 — Unpriced menu item cleanup heartbeat progress
+
+- Removed remaining unpriced sales-demo menu rows from `content.ts`: `Spicy California Roll` and happy-hour egg rolls.
+- Verified no `price: null`, `Spicy California`, or `price pending` strings remain in `content.ts`.
+- Verification: `npm run build` passed; `npm run typecheck` passed.
+- Remaining blockers: browser screenshot capture and deployed concierge runtime verification.

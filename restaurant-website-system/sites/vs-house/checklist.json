@@ -35,7 +35,7 @@
     },
     {
       "roundNumber": 3,
-      "summary": "Final sell-readiness QA advanced further: live official menu images fetched, menu-price evidence created, source-confirmed prices restored, unconfirmed items left unpriced; build/typecheck passed; screenshots and deployed concierge runtime still pending.",
+      "summary": "Final sell-readiness QA advanced further: live official menu images fetched, source-confirmed prices restored, remaining unpriced demo rows removed, build/typecheck passed; screenshots and deployed concierge runtime still pending.",
       "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-3.md",
       "status": "advanced_blocked_on_screenshots_and_runtime_verification"
     }
@@ -62,11 +62,6 @@
       "gate": "qa_round_3",
       "reason": "Fresh Round 3 desktop/mobile screenshots cannot be captured because no managed Chromium executable is available and user browser attach is not connected. Final visual QA remains pending browser access.",
       "recordedAt": "2026-05-04T13:52:04.849549Z"
-    },
-    {
-      "gate": "qa_round_3",
-      "reason": "Most menu prices are now source-confirmed from official menu images; final pass still needs either confirmation or removal of remaining unpriced menu items before delivery.",
-      "recordedAt": "2026-05-04T13:56:57.213062Z"
     }
   ],
   "requirements": [
@@ -135,7 +130,7 @@
       "title": "QA round 3 completed with findings and fixes logged",
       "qaState": "pending",
       "required": true,
-      "notes": "Final sell-readiness QA advanced; menu price evidence created and source-confirmed prices restored. Screenshots and deployed concierge runtime remain pending before final pass.",
+      "notes": "Final sell-readiness QA advanced; menu prices are now source-confirmed or the row was removed. Screenshots and deployed concierge runtime remain pending before final pass.",
       "evidence": [
         "restaurant-website-system/sites/vs-house/qa-round-3.md",
         "restaurant-website-system/sites/vs-house/content.ts",
@@ -157,5 +152,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T13:56:57.213062Z"
+  "updatedAt": "2026-05-04T13:58:53.739582Z"
 }
