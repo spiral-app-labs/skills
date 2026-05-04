@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "qa_round_2",
+  "currentStage": "qa_round_3",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -655,8 +655,17 @@
       ],
       "order": 12,
       "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json"
+      ],
+      "blocker": {
+        "reason": "Founder-only gates still block ready_to_pitch: site-specific Anthropic key is pending, Ethan human review is pending, and agents cannot close those gates. Fresh QA3 screenshot recapture is also blocked in this sandbox because localhost preview binds and headless browser launch both fail.",
+        "nextUnblockAction": "Recapture QA3 desktop/mobile screenshots in an environment that allows local preview rendering, then wait for Ethan to configure the Anthropic key and complete human review before setting ready_to_pitch true.",
+        "updatedAt": "2026-05-04T23:10:00Z"
+      }
     },
     {
       "id": "delivery",
@@ -1251,6 +1260,6 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T22:20:00Z",
-  "childTaskId": "70683332-3044-461f-9dcf-dffa59a24a7b"
+  "updatedAt": "2026-05-04T23:10:00Z",
+  "childTaskId": "bbb46016-3e2e-43e7-b3d7-e0995e34252e"
 }

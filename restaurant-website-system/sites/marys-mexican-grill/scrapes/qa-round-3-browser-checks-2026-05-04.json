@@ -1,0 +1,108 @@
+{
+  "date": "2026-05-04",
+  "site_slug": "marys-mexican-grill",
+  "method": "built_html_and_source_inspection",
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "framework": "Next.js 14.2.35"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "status": "passed",
+    "note": "Succeeded after rerunning against completed .next output."
+  },
+  "screenshot_capture": {
+    "status": "blocked",
+    "requested_viewports": [
+      {
+        "device": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "device": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "blockers": [
+      "next start and next dev cannot bind localhost in this sandbox (listen EPERM).",
+      "Headless Chrome and Playwright launch attempts abort under sandbox policy."
+    ],
+    "last_successful_visual_baseline": "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "title": "Mary's Mexican Grill — Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/index.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "cta_menu": true,
+        "cta_order_doordash": true,
+        "cta_call": true,
+        "cta_directions": true,
+        "mobile_sticky_menu_order_call_map": true,
+        "placeholder_or_vendor_copy_found": false
+      }
+    },
+    {
+      "path": "/menu",
+      "title": "Mary's Mexican Grill — Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/menu.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "cta_order_doordash": true,
+        "cta_call": true,
+        "cta_directions": true,
+        "menu_items_truth_grounded": true,
+        "fake_prices_found": false
+      }
+    },
+    {
+      "path": "/about",
+      "title": "Mary's Mexican Grill — Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/about.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "hours_present": true,
+        "directions_link_present": true,
+        "fake_owner_story_found": false
+      }
+    },
+    {
+      "path": "/contact",
+      "title": "Mary's Mexican Grill — Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/contact.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "address_present": true,
+        "phone_present": true,
+        "hours_present": true,
+        "directions_link_present": true,
+        "footer_phone_clickable": true,
+        "footer_address_clickable": true
+      }
+    }
+  ],
+  "external_link_review": {
+    "phone_href": "tel:+18153372303",
+    "order_href": "https://www.doordash.com/en/store/marys-mexican-grill-woodstock-28404782/",
+    "directions_href": "https://www.google.com/maps/dir/?api=1&destination=108%20Cass%20St%2C%20Woodstock%2C%20IL%2060098",
+    "social_links_present": false,
+    "social_links_note": "No verified production-safe social URLs were captured in the local source pack, so none are rendered."
+  }
+}
