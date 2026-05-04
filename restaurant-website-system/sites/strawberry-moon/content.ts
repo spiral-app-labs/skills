@@ -280,7 +280,7 @@ export const content = {
   },
 
   contact: {
-    eyebrow: '(call, directions, live music)',
+    eyebrow: 'Call, directions, and live music',
     h1: 'Plan a Strawberry Moon night',
     direct: {
       heading: 'Call before you go',
@@ -316,9 +316,9 @@ export const content = {
         { label: 'Call Strawberry Moon', href: 'tel:+18478655151', style: 'primary' as const },
         { label: 'Email Strawberry Moon', href: 'mailto:thomasmalik830@gmail.com', style: 'secondary' as const },
         { label: 'Get directions', href: 'https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084', style: 'secondary' as const },
-        { label: 'Open the current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', style: 'secondary' as const },
-        { label: 'See the events page', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', style: 'secondary' as const },
-        { label: 'Open Book an Event', href: 'https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html', style: 'secondary' as const },
+        { label: 'Visit current site', href: 'https://strawberrymoonmartinisandmore.weebly.com/', style: 'secondary' as const },
+        { label: 'See events page', href: 'https://strawberrymoonmartinisandmore.weebly.com/events.html', style: 'secondary' as const },
+        { label: 'Book an event', href: 'https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html', style: 'secondary' as const },
       ],
       notes: [
         '4.7 on Google across 214 reviews, listed as a $20-30 bar.',

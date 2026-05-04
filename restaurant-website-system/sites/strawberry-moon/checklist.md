@@ -5,11 +5,11 @@
 - Lead ID: af98b880-9351-4f00-b35b-253ad35570d9
 - MC parent task ID: 216314e9-4af6-4f99-92ab-54e7912b9173
 - Template slug: velvet-shaker-01
-- Current stage: qa_round_3
+- Current stage: packaging
 - Checklist MD: restaurant-website-system/sites/strawberry-moon/checklist.md
 - Checklist JSON: restaurant-website-system/sites/strawberry-moon/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T23:15:00Z
+- Updated: 2026-05-04T23:32:00Z
 
 ## Mission Control Sync Contract
 
@@ -116,7 +116,7 @@
 
 ### 12. qa_round_3 — QA round 3 final sell-readiness QA
 - Stage: qa_round_3
-- Status: pending
+- Status: passed
 - Required skills: restaurant-qa-delivery, website-agency-system, browser-automation, agency-mission-control-sync
 - Evidence required: qa-round-3.md; desktop screenshots; mobile screenshots; build/typecheck result
 - Requirement: qa-round-3 — QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
@@ -159,8 +159,8 @@
 - [x] battle-cards-demo-path: Demo path and proof points are clear
 - [x] battle-cards-risks: Risks/unknowns are called out truthfully
 - [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Canonical QA1 is complete locally via `qa-round-1.md`, `scrapes/qa-round-1-browser-checks-2026-05-04.json`, `mc-qa-round-1-writeback-2026-05-04.json`, and `mc-build-writeback-qa-round-1-2026-05-04.json`. Fresh localhost screenshots were blocked by sandbox `listen EPERM`, and that blocker is recorded truthfully in the QA1 payload.
-- [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
-- [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback - Local QA artifacts may exist, but MC canonical QA child tasks are backlog/pending; do not treat this gate as passed until MC QA writeback marks it passed.
+- [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Canonical QA2 completed locally via `qa-round-2.md`, `scrapes/qa-round-2-browser-checks-2026-05-04.json`, `mc-qa-round-2-writeback-2026-05-04.json`, and `mc-build-writeback-qa-round-2-2026-05-04.json`; remote MC sync remains pending auth.
+- [x] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback - Canonical QA3 completed locally with build/typecheck, local preview, desktop/mobile screenshots, final visual QA fixes, concierge safety check, and local MC payloads; remote MC sync remains pending auth.
 - [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC - Next: package preview URL, pitch doc, outreach draft, screenshots, QA evidence, and MC writeback.
 - [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence
 
@@ -220,8 +220,8 @@
 ## QA Rounds
 
 - Round 1: passed
-- Round 2: next
-- Round 3: pending
+- Round 2: passed
+- Round 3: passed
 
 ## Pitch Artifacts
 
@@ -300,3 +300,15 @@
 - Screenshot blocker: localhost binding was denied by sandbox (`listen EPERM`), so fresh desktop/mobile browser screenshots remain blocked and documented in the QA2 browser checks payload.
 - Founder gates remain locked: `ready_to_pitch=false`, `anthropic_key_status=pending_founder`, `human_review_status=pending_founder`.
 - MC API writeback remains local-payload only until auth is available.
+
+
+## 2026-05-04 — Canonical QA Round 3 closeout
+
+- Completed the canonical `qa_round_3` gate locally for final sell-readiness.
+- Evidence: `qa-round-3.md`, `scrapes/qa-round-3-browser-checks-2026-05-04.json`, `mc-qa-round-3-writeback-2026-05-04.json`, `mc-build-writeback-qa-round-3-2026-05-04.json`, and eight desktop/mobile screenshots for home, menu, about, and contact.
+- Commands: `npm ci`, `npm run build`, `npm run typecheck`, and local production preview on `127.0.0.1:3083`.
+- QA3 fixes: limited the mobile sticky Call/Directions rail to the homepage, tightened its height, replaced contact internal-note copy, polished contact CTA labels, and changed the menu display heading to `Martinis & more`.
+- Final visual QA passed with no blocking clipping, horizontal overflow, placeholder copy, sticky CTA overlap, or illegibility.
+- Advanced local stage to `packaging`.
+- `ready_to_pitch` stays `false`; `anthropic_key_status` and `human_review_status` both remain `pending_founder`.
+- Mission Control API auth is still unavailable in this runtime, so QA3 sync is recorded in local writeback payloads only.

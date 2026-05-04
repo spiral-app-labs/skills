@@ -10,7 +10,7 @@ export default function MenuPage() {
   const [first, ...rest] = m.categories;
   return (
     <WordmarkBookendLayout>
-      <PageDisplayHeading heading={first.title} />
+      <PageDisplayHeading heading="Martinis & more" />
       <MenuPhotoStrip photos={m.photoStrip} />
       <NamedItemGrid categories={[first]} />
       <NamedItemGrid categories={rest} />
