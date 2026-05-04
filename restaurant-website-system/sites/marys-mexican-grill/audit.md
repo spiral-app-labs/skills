@@ -16,7 +16,8 @@
 - Restaurantji scrape stored at `scrapes/restaurantji.html`; visible public profile lists menu, hours, social links, photos, and reviews.
 - Restaurantji public photo/menu assets downloaded for audit-only inventory into `screenshots/restaurantji-photo-wide.jpg`, `screenshots/restaurantji-photo-menu-grid.jpg`, and `screenshots/restaurantji-menu-wide.jpg`.
 - External review/trust references checked: Restaurantji, Restaurant Guru, DoorDash, Roost scraped review snippets, and public search/crawler snippets for the official domain.
-- Direct Google Maps review packet was not available in this pass. Google-derived reputation was observed indirectly through Restaurant Guru and public snippets; no owner replies were visible.
+- Direct Google Maps reviews were captured in the OpenClaw browser on 2026-05-04 after clicking the **Highest rating** filter: `scrapes/google-reviews-highest-30.json`, `scrapes/google-reviews-highest-30.md`, `google-reviews-themes.md`, and `screenshots/google-reviews-highest-2026-05-04.png`.
+- The captured Google packet contains 30 written 5-star reviews; no owner replies were visible in the captured set.
 
 ## TL;DR
 

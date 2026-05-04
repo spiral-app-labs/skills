@@ -9,12 +9,14 @@
   "evidence_urls": [
     "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
-    "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md"
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
   ],
   "passed_requirement_ids": [
     "reviews-highest-filter",
     "reviews-thirty-written",
     "reviews-themes"
   ],
-  "heartbeat_summary": "Captured Mary's Mexican Grill Google Reviews evidence in browser after selecting Highest rating: 30 written reviews plus screenshot. Reviews gate is locally complete; advance MC to routing/template_route_fork_build."
+  "heartbeat_summary": "Captured and summarized Mary's Mexican Grill Google Reviews evidence in browser after selecting Highest rating: 30 written reviews, screenshot, and theme extraction. Reviews gate is locally complete; advance MC to routing/template_route_fork_build."
 }

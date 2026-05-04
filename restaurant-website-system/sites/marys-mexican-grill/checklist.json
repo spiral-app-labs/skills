@@ -164,7 +164,9 @@
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
-        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md"
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
       ],
       "blocker": null
     },
@@ -616,7 +618,9 @@
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
     "restaurant-website-system/sites/marys-mexican-grill/routing.md",
-    "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md"
+    "restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -701,7 +705,9 @@
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
-        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md"
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
       ]
     },
     {
@@ -716,7 +722,9 @@
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
-        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md"
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
       ]
     },
     {
@@ -727,11 +735,13 @@
       "workflowStepId": "google_reviews_capture",
       "stage": "reviews",
       "status": "passed",
-      "notes": "Packet is ready for review-derived Secret Sauce / owner voice extraction in routing/build brief.",
+      "notes": "Google Highest packet theme extraction written to google-reviews-themes.md and audit Inputs updated.",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
-        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md"
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
       ]
     },
     {
@@ -954,5 +964,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T16:55:17.658Z"
+  "updatedAt": "2026-05-04T16:57:27.393Z"
 }

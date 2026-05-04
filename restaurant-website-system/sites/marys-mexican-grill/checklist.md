@@ -9,7 +9,7 @@
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T16:55:17.658Z
+- Updated: 2026-05-04T16:57:27.393Z
 
 ## Mission Control Sync Contract
 
@@ -139,7 +139,7 @@
 - [ ] current-site-opportunities: Audit names concrete conversion, credibility, mobile, and factual gaps
 - [x] reviews-highest-filter: Google Reviews opened in browser and sorted by Highest - Captured in OpenClaw browser on Google Maps Reviews tab after selecting Highest rating.
 - [x] reviews-thirty-written: 30 written reviews captured, or exact shortage/blocker documented - 30 written Google reviews captured in JSON and MD packet.
-- [x] reviews-themes: Review themes summary is usable for copy and pitch docs - Packet is ready for review-derived Secret Sauce / owner voice extraction in routing/build brief.
+- [x] reviews-themes: Review themes summary is usable for copy and pitch docs - Google Highest packet theme extraction written to google-reviews-themes.md and audit Inputs updated.
 - [ ] template-route-locked: Exactly one archetype/template route is chosen and justified - Draft route selected bamzi-01; pending MC stage advance/writeback before locking.
 - [ ] fork-built: Template fork builds successfully with real content and preserved conversion links
 - [ ] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths
@@ -176,6 +176,8 @@
 - restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md
 - restaurant-website-system/sites/marys-mexican-grill/routing.md
 - restaurant-website-system/sites/marys-mexican-grill/codex-brief-routing-fork-build.md
+- restaurant-website-system/sites/marys-mexican-grill/audit.md
+- restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md
 
 ## QA Rounds
 
