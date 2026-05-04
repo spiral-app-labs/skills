@@ -1,0 +1,23 @@
+{
+  "build_stage": "routing",
+  "site_slug": "marys-mexican-grill",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-http.html",
+  "google_reviews_packet_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/source.md"
+  ],
+  "passed_requirement_ids": [
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes"
+  ],
+  "heartbeat_summary": "Captured and summarized Mary's Mexican Grill Google Reviews evidence in browser after selecting Highest rating: 30 written reviews, screenshot, and theme extraction. Reviews gate is locally complete; advance MC to routing/template_route_fork_build."
+}

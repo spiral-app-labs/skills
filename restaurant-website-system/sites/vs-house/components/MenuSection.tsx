@@ -49,10 +49,14 @@ export function MenuSection() {
                     <h3 className="font-display text-menu-item text-text-dark whitespace-nowrap">
                       {item.name}
                     </h3>
-                    <span className="menu-dot-fill" aria-hidden />
-                    <span className="font-body text-price text-text-dark whitespace-nowrap">
-                      {item.price}
-                    </span>
+                    {item.price ? (
+                      <>
+                        <span className="menu-dot-fill" aria-hidden />
+                        <span className="font-body text-price text-text-dark whitespace-nowrap">
+                          {item.price}
+                        </span>
+                      </>
+                    ) : null}
                   </div>
                   <p className="mt-2 text-text-muted text-bodySm leading-snug">
                     {item.desc}

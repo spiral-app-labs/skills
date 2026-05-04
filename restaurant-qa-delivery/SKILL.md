@@ -13,7 +13,7 @@ Run exactly three QA rounds. Each round must produce screenshots/evidence and a 
 
 1. Round 1: build correctness and content truth.
 2. Round 2: mobile conversion and visual polish.
-3. Round 3: delivery readiness, links, preview URL, pitch assets, and MC requirements.
+3. Round 3: delivery readiness, links, preview URL, pitch doc, battle cards, top-three-improvement evidence, concierge evidence, and MC requirements.
 
 ## Round Checks
 
@@ -42,7 +42,7 @@ For every round:
 }
 ```
 
-After round 3, update the build stage to `packaging`, then `delivered` only when the pitch doc, preview URL, screenshots, and MC requirement evidence are attached.
+After round 3, update the build stage to `packaging`, then `delivered` only when the pitch doc, battle cards doc, preview URL, screenshots, audit evidence, 30-review packet, top-three-improvement evidence, concierge evidence, and MC requirement evidence are attached.
 
 ## Skill Feedback
 

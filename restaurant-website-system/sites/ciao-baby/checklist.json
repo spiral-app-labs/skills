@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "leadId": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mcParentTaskId": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "siteSlug": "ciao-baby",
+  "templateSlug": "gusto-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/ciao-baby/checklist.md",
+    "restaurant-website-system/sites/ciao-baby/checklist.json",
+    "restaurant-website-system/sites/ciao-baby/audit.md",
+    "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for desktop and mobile official-site screenshots.",
+      "recordedAt": "2026-05-04T04:37:11.768256Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Qualification reference ranks Ciao Baby! as a strong Barrington Italian/thin-site candidate; heartbeat verified official pages are sparse and public proof exists.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md",
+        "restaurant-website-system/sites/ciao-baby/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted, but browser screenshots and DOM snapshot remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to gusto-01, softened toward neighborhood Italian rather than upscale trattoria.",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/audit.md",
+        "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T04:37:11.809Z"
+}

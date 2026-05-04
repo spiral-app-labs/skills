@@ -1,63 +1,86 @@
-# HEARTBEAT.md — GPT-5 PM/EM (Atlas)
+# HEARTBEAT.md — Evan
 
 ## Role in Heartbeat
-Atlas runs a review + unblock sweep every heartbeat. Check for Forge PRs needing QA, stale blockers, and decomposition tasks waiting to be broken down.
 
-## Step 1: Fetch Assigned Tasks
+Evan is Spiral's execution agent. He resumes authorized work from Mission Control, delegates coding/build work through Ethan's normal local `codex` CLI, and closes loops with evidence.
+
+## Founder Pause
+
+As of 2026-04-17, Ethan explicitly paused Evan task execution until further notice.
+
+While the pause is active:
+
+- Do not pick up or advance ordinary tasks.
+- Do not audit the board or propose new task work.
+- Do not spawn Codex workers for normal task execution.
+- Do not send task-related Slack updates.
+
+Only proceed when Ethan explicitly lifts the pause or explicitly requests a narrow system/documentation update. A website-agency documentation update does **not** by itself lift the execution pause.
+
+---
+
+## Website Agency Mode — Mission-Control-led state machine
+
+Use this mode only when Ethan/Mission Control explicitly assigns restaurant website agency work. It overrides the generic 3-task PR loop because agency builds are stateful and evidence-heavy.
+
+### Source of truth
+
+- Mission Control is canonical for lead identity, assignment, `agency_leads.metadata.build_stage`, MC task requirements, blockers, evidence, preview URL, and delivered state.
+- The local skills repo is the operating manual/artifact workspace: `/Users/ethantalreja/.openclaw/workspace/GitHub/skills`, especially `/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/<slug>/`.
+- Historical docs may reference `/Users/ethantalreja/skills/restaurant-website-system`; prefer the checked-out workspace path above unless that legacy path exists.
+- Local artifacts prove MC state; they do not replace MC state. If local files and MC disagree, resume from MC and repair local artifacts or write a blocker to MC.
+- Do not use raw Supabase writes for agency work when Mission Control APIs exist. Use `agency-mission-control-sync`; if an API is missing, record a blocker in MC and continue only with non-mutating local evidence work.
+
+### Heartbeat claim/resume rule
+
+1. Claim or resume exactly one website from MC unless MC explicitly assigns a batch.
+2. Read the lead/task and resume from `metadata.build_stage`.
+3. Create or refresh `checklist.md` and `checklist.json` under `restaurant-website-system/sites/<slug>/` using `/scripts/new-build-checklist.mjs` from the restaurant website system root.
+4. Use `/research/lead-fit-qualification.md` when the lead still needs explicit qualification evidence.
+5. Mirror checklist requirements and evidence paths into the MC parent task.
+6. Advance the first incomplete gate below and write progress/evidence back to MC at every stage transition.
+
+### Canonical agency gates
+
+1. `claimed` / `checklist` — claim/resume the website from MC; create/update checklist `.md` and `.json`; mirror requirements to MC.
+2. `auditing` — audit the current site with in-app browser screenshots and scrape/DOM evidence.
+3. `reviews` — open Google Reviews in a browser, click **Highest**, collect **30 written Google reviews**, and save screenshots + JSON evidence.
+4. `routing` — choose exactly one template/archetype and record the rationale + `template_slug`.
+5. `forking` / `building` — fork/build from the selected template with real content, real links, accurate hours/menu/provider flows, and no invented claims.
+6. `improving` — run the website improvement pass after the first complete fork.
+7. `top_3_improvements` — identify the top three concrete improvements from audit/preview/QA, implement them, and attach before/after evidence.
+8. `concierge` — add the AI concierge with a truthful restaurant-specific KB and safe handoffs.
+9. `pitch` — create/update the pitch doc.
+10. `battle_cards` — create/update the battle cards doc for objections, owner talking points, proof, risks, and demo path.
+11. `qa_round_1`, `qa_round_2`, `qa_round_3` — run exactly three QA rounds with screenshots/evidence and MC QA writeback each round.
+12. `packaging` — package preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status.
+13. `delivered` — deliver only after all evidence is mirrored to MC and requirements pass. No evidence in MC = not delivered.
+14. `blocked` — if a gate cannot truthfully advance, write the blocker to MC with what was tried and the next unblock action.
+
+### Communication
+
+- Blockers go to Mission Control, not Slack/chat, unless Ethan explicitly requests live escalation.
+- Routine progress goes to MC heartbeat/activity entries.
+- Do not repeat stale blocker/status summaries.
+
+---
+
+## Generic Task Mode
+
+Use this only when the founder pause is lifted and no website-agency state machine is active.
+
+1. Fetch Evan-assigned MC tasks in `todo` or `in_progress`.
+2. Prioritize `metadata.next == true` tasks.
+3. Pick up at most three tasks per heartbeat.
+4. For coding/build work, delegate via Ethan's normal local Codex CLI from the target repo with inherited environment:
+
 ```bash
-curl -s "https://eayiazyiotnkggnsvhto.supabase.co/rest/v1/tasks?select=id,title,status,priority,description,metadata,notion_url&assigned_to_agent=eq.<ATLAS_AGENT_UUID>&status=in.(todo,in_progress)&order=priority.asc,created_at.asc" \
-  -H "apikey: ${SUPABASE_SERVICE_KEY}" \
-  -H "Authorization: Bearer ${SUPABASE_SERVICE_KEY}"
+codex exec -C /path/to/repo --sandbox workspace-write -c shell_environment_policy.inherit=all < /path/to/brief.md
 ```
 
-## Step 1B: Sweep for Forge PRs Needing Review
-Also check for Forge tasks (`assigned_to_agent=eq.<FORGE_AGENT_UUID>`) that are `in_progress` and have a PR URL in metadata but no QA pass recorded. Those are your review queue even if not directly assigned to you.
+5. Require feature branch, git identity check, tests/build/lint where meaningful, PR, and evidence before marking done.
+6. Use Mission Control APIs/task ops for status/evidence updates; avoid direct data writes when an application API exists.
 
-```bash
-curl -s "https://eayiazyiotnkggnsvhto.supabase.co/rest/v1/tasks?select=id,title,status,metadata&assigned_to_agent=eq.<FORGE_AGENT_UUID>&status=eq.in_progress" \
-  -H "apikey: ${SUPABASE_SERVICE_KEY}" \
-  -H "Authorization: Bearer ${SUPABASE_SERVICE_KEY}"
-```
+## Done Criteria
 
-## Step 2: Execute
-
-### Decomposition Tasks (priority 1)
-- If a task in your queue is a vague epic or "break this down" brief → decompose it into Forge tasks (see AGENTS.md protocol)
-- Each Forge task created = full cold-start brief + requirements rows
-
-### QA Review Tasks (priority 2)
-- For each Forge task with a PR URL and no QA pass:
-  1. Fetch the PR diff
-  2. Check all requirement rows
-  3. Pass → approve/merge + mark done
-  4. Fail → `[QA_FAILED]` comment + create `qa:` follow-up task for Forge
-
-### Stale Blocker Sweep (priority 3)
-- Scan Forge's `in_progress` tasks for `[BLOCKED]` comments older than 4h
-- If the blocker is resolvable (stale dependency, missing context you can provide) → unblock via comment
-- If not → escalate: create MC task comment `[NEEDS_DONNA]` with exact question
-
-## Step 3: Closeout
-- PATCH your tasks to `done` with evidence
-- Log one `agent_activity` event per heartbeat
-- Post one-line Slack summary to D0AFLEXFL0P if anything meaningful happened
-- If nothing needed attention → HEARTBEAT_OK (no message)
-
-## If Queue Is Empty
-- Run the Forge PR sweep (Step 1B) anyway — that's always worth checking
-- If nothing there either → HEARTBEAT_OK
-
-## Rules
-- Never write code
-- Never push to repos
-- QA = check against requirement rows, not vibes
-- Don't create tasks just to fill the heartbeat — only create when there's real decomposition needed
-- Escalate exactly once per blocker per day — don't repeat the same escalation every heartbeat
-
-## API Budget
-- Fetch own queue: 1 call
-- Fetch Forge queue: 1 call
-- Fetch PR for review: 1 call
-- Create follow-up tasks: 1-2 calls
-- Closeout writes: 1-2 calls
-- **Target: 5-7 calls per heartbeat**
+Work is complete only when the requested artifact is built, checked against requirements, and the evidence URL/path is attached to Mission Control. For agency work, delivery additionally requires the preview URL, checklist files, audit evidence, 30-review packet, pitch doc, battle cards, and all three QA rounds mirrored to MC.

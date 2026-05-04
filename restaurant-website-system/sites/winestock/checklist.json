@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "leadId": "7f1432ae-2553-442c-80ff-df58acb162ef",
+  "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
+  "siteSlug": "winestock",
+  "templateSlug": "bramble-01",
+  "currentStage": "blocked",
+  "evidencePaths": [
+    "restaurant-website-system/sites/winestock/checklist.md",
+    "restaurant-website-system/sites/winestock/checklist.json",
+    "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+    "restaurant-website-system/sites/winestock/scrapes/current-site-links.json"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "reviews",
+      "reason": "OpenClaw host browser cannot start: browser.start returned “No supported browser found (Chrome/Brave/Edge/Chromium on macOS, Linux, or Windows)”. Cannot truthfully open Google Reviews, click Highest, and capture 30 written Google reviews in this environment.",
+      "tried": [
+        "browser.status showed OpenClaw browser enabled but not running",
+        "browser.start on host failed with no supported browser found",
+        "Existing scrape scripts produced empty google-reviews-extracted*.json files"
+      ],
+      "next_unblock_action": "Install/launch a supported Chromium browser for OpenClaw or run the Google Reviews Highest capture from an environment with browser access.",
+      "at": "2026-05-04T04:02:17.467201Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Mission Control inventory marks Winestock Market & Lounge as an in-progress agency website lead; official site confirms live business at 136 Cass St, Woodstock, IL.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Current-site scrape exists with under-construction homepage copy, address, contact link, Facebook link, and small plates/flatbreads/sandwiches/wine positioning.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-links.json",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-desktop.html",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-mobile.html"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T04:02:17.509Z"
+}

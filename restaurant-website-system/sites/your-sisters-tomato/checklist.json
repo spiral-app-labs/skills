@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "leadId": "3ffa966a-0590-479f-9ef3-e3380b2dc751",
+  "mcParentTaskId": "779ffaee-407f-4ad1-a87c-cece1392a57c",
+  "siteSlug": "your-sisters-tomato",
+  "templateSlug": "cuisine-01",
+  "currentStage": "auditing",
+  "evidencePaths": [
+    "restaurant-website-system/sites/your-sisters-tomato/checklist.md",
+    "restaurant-website-system/sites/your-sisters-tomato/checklist.json",
+    "restaurant-website-system/sites/your-sisters-tomato/audit.md",
+    "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; official domain returns 403 in fetch and OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture to verify the official site, Google Maps open/seasonality status, screenshots, and Google review packet.",
+      "recordedAt": "2026-05-04T05:12:41.233180Z"
+    },
+    {
+      "gate": "lead_fit",
+      "reason": "Qualification research says Your Sister’s Tomato is not a priority broken-site lead because direct search found a working site with restaurant/food-truck/event content and seasonal closure context.",
+      "nextUnblockAction": "Only build if Mission Control explicitly wants nurture/improvement outreach or browser evidence finds a serious owner-visible site problem beyond fetch 403.",
+      "recordedAt": "2026-05-04T05:12:41.233267Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Strong restaurant but not a clean bad-site lead. Qualification doc demotes it due working site/seasonality; source audit confirms fetch 403 requires browser verification before any pitch.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md",
+        "restaurant-website-system/sites/your-sisters-tomato/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Web/source audit drafted; canonical browser screenshots/DOM and official-site/open-status verification remain blocked.",
+      "evidence": [
+        "restaurant-website-system/sites/your-sisters-tomato/audit.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to cuisine-01/Cuisine if built: warm neighborhood clarity for wood-fired pizzeria/food-truck/event brand; do not force faux luxury.",
+      "evidence": [
+        "restaurant-website-system/sites/your-sisters-tomato/audit.md",
+        "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T05:12:41.273Z"
+}
