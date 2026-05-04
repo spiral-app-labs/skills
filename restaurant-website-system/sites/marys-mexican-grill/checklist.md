@@ -3,13 +3,14 @@
 - Workflow version: 2026-05-04
 - Source of truth: Mission Control tasks.metadata + this mirrored local checklist
 - Lead ID: 4416524d-0894-4e47-a4e7-880ba6579aa3
+- Child task ID: ab449287-4d56-44b9-b582-d6d7d33386e0
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: reviews
+- Current stage: building
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T16:59:50.550Z
+- Updated: 2026-05-04T20:00:33Z
 
 ## Mission Control Sync Contract
 
@@ -140,9 +141,9 @@
 - [x] reviews-highest-filter: Google Reviews opened in browser and sorted by Highest - Captured in OpenClaw browser on Google Maps Reviews tab after selecting Highest rating.
 - [x] reviews-thirty-written: 30 written reviews captured, or exact shortage/blocker documented - 30 written Google reviews captured in JSON and MD packet.
 - [x] reviews-themes: Review themes summary is usable for copy and pitch docs - Google Highest packet theme extraction written to google-reviews-themes.md and audit Inputs updated.
-- [ ] template-route-locked: Exactly one archetype/template route is chosen and justified - Draft route selected bamzi-01 and source truth pack prepared; pending MC stage advance/writeback before locking.
-- [ ] fork-built: Template fork builds successfully with real content and preserved conversion links
-- [ ] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths
+- [x] template-route-locked: Exactly one archetype/template route is chosen and justified - Mary's remains locked to bamzi-01 with routing rationale and source truth pack preserved locally.
+- [x] fork-built: Template fork builds successfully with real content and preserved conversion links - `npm run build` passed after replacing network-fetched Google fonts with local CSS font variables for this sandbox.
+- [x] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths - Preview content stays inside routing/source/audit/review evidence and labels unresolved phone/order issues truthfully.
 - [ ] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype
 - [ ] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable
 - [ ] mobile-check: Mobile pass is explicitly checked with evidence
@@ -179,6 +180,9 @@
 - restaurant-website-system/sites/marys-mexican-grill/audit.md
 - restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md
 - restaurant-website-system/sites/marys-mexican-grill/source.md
+- restaurant-website-system/sites/marys-mexican-grill/content.example.ts
+- restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json
 
 ## QA Rounds
 
@@ -195,6 +199,7 @@
 ## Blockers
 
 - Mission Control API writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset; local Google Reviews evidence is captured but MC cannot be advanced from reviews to routing until auth is available.
+- Mission Control build-stage writeback remains local-only for the same auth reason, even though the first bamzi-01 fork now builds successfully in this workspace.
 
 ## Done Criteria
 
@@ -203,4 +208,3 @@
 - All required checklist rows are passed.
 - Three QA rounds are logged with screenshot evidence.
 - Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
-

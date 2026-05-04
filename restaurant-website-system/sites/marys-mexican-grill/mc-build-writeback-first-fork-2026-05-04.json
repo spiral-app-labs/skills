@@ -1,0 +1,28 @@
+{
+  "build_stage": "building",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "ab449287-4d56-44b9-b582-d6d7d33386e0",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+  "google_reviews_packet_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/routing.md",
+    "restaurant-website-system/sites/marys-mexican-grill/source.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+    "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md"
+  ],
+  "passed_requirement_ids": [
+    "template-route-locked",
+    "fork-built",
+    "specificity"
+  ],
+  "blocker": "Mission Control writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+  "heartbeat_summary": "Forked bamzi-01 into the existing Mary's site folder without disturbing research artifacts, replaced placeholder sushi/reservation content with review-backed Marys copy and local preview-safe assets, added mobile Menu/Order/Call/Directions actions, and confirmed npm run build passes locally. MC sync is recorded only in local artifacts until agency auth is restored."
+}
