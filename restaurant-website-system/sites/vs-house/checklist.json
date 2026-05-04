@@ -22,7 +22,9 @@
     "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
     "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
     "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
-    "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+    "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/vs-house/outreach-draft.md",
+    "restaurant-website-system/sites/vs-house/delivery-package.md"
   ],
   "qaRounds": [
     {
@@ -59,15 +61,15 @@
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/vs-house/pitch-doc.md",
-    "outreachDraft": null,
+    "outreachDraft": "restaurant-website-system/sites/vs-house/outreach-draft.md",
     "beforeAfterScreenshots": [],
     "battleCards": "restaurant-website-system/sites/vs-house/battle-cards.md"
   },
   "blockers": [
     {
       "gate": "packaging",
-      "reason": "Local QA evidence is now captured, but final delivery still needs a deployed preview URL, outreach draft, Mission Control API/writeback confirmation, and deployed concierge runtime verification.",
-      "recordedAt": "2026-05-04T14:30:00Z"
+      "reason": "Packaging artifacts now include outreach draft and delivery package, but final delivery still needs a deployed preview URL, Mission Control API/writeback confirmation, and deployed concierge runtime verification.",
+      "recordedAt": "2026-05-04T14:50:00Z"
     }
   ],
   "requirements": [
@@ -165,10 +167,12 @@
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
       "required": true,
-      "notes": "Packaging is the current stage. Local evidence is assembled; final delivery still needs a deployed preview URL, outreach draft, MC mirror/writeback, and concierge runtime verification.",
+      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, and screenshot evidence exist. Final delivery still needs a deployed preview URL, MC mirror/writeback, and concierge runtime verification.",
       "evidence": [
-        "restaurant-website-system/sites/vs-house/pitch-doc.md",
         "restaurant-website-system/sites/vs-house/battle-cards.md",
+        "restaurant-website-system/sites/vs-house/delivery-package.md",
+        "restaurant-website-system/sites/vs-house/outreach-draft.md",
+        "restaurant-website-system/sites/vs-house/pitch-doc.md",
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
         "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
@@ -183,5 +187,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T14:30:00Z"
+  "updatedAt": "2026-05-04T14:50:00Z"
 }

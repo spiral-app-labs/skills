@@ -5,7 +5,7 @@
 - Site slug: `vs-house`
 - MC parent task: `41da188d-4629-4cb2-91f3-6be31d6b9b6d`
 - Lead ID: `1006c1ea-5a06-4703-9994-117bc90d9dba`
-- Current gate: `battle_cards`
+- Current gate: `packaging`
 - Locked archetype: `bamzi-01`
 - Core sell story: third-generation Vu family Vietnamese kitchen on Bedford-Euless Road, modern warm room, pho/sushi/cocktail depth, strong public proof.
 
@@ -16,7 +16,7 @@
 ## Proof stack to use in calls
 
 - Three-generation Vu family story: Quan Vu opened in Haltom City in 1982; Rex and Ann Vu run Pho V in Bedford; Alex and Ryan Vu opened V's House with Victoria Vu on the line.
-- Existing public rating/proof: 4.4★ Google / 1,154 reviews; 4.6★ OpenTable / 116 diners; 4.4★ Restaurantji / 316; 96% Facebook recommend signal from audit evidence.
+- Existing public rating/proof: 4.4★ Google / 1,156 reviews; 4.6★ OpenTable / 116 diners; 4.4★ Restaurantji / 316; 96% Facebook recommend signal from audit evidence.
 - Press: Fort Worth Magazine and Dallas Observer coverage.
 - Restaurant-specific product depth: 24-hour pho, Beef Deluxe Pho, Bún Bò Huế, Banh Khot, Shaken Beef, boba, full cocktail/bar program.
 - Existing conversion flows preserved: Toast reservations, Toast online ordering, gift cards, phone, directions, Instagram/Facebook.
@@ -104,8 +104,8 @@
 
 ## Honest risks / owner-confirm items
 
-- Current Google review packet for V's House is a usable newest-sorted sample, not the newer canonical Highest-filter 30-written-review packet.
-- Menu item prices/content should be owner-confirmed before a live launch.
+- Google Highest-filter 30-written-review packet exists locally as `scrapes/google-highest-30-2026-05-04.json`; counts should still be re-checked before a live sales call.
+- Menu prices shown in the preview are source-confirmed from official menu images where present; owner should still confirm before live launch.
 - Do not claim a new photoshoot; current version uses existing/public asset strategy.
 - Keep register accessible-casual; do not oversell as fine dining.
 

@@ -5,7 +5,7 @@
 - Template slug: bamzi-01
 - Current stage: packaging
 - Deploy URL: TBD
-- Updated: 2026-05-04T14:30:00Z
+- Updated: 2026-05-04T14:50:00Z
 
 ## Requirements
 
@@ -33,7 +33,7 @@
 ## Pitch Artifacts
 
 - Pitch doc: restaurant-website-system/sites/vs-house/pitch-doc.md
-- Outreach draft: TBD
+- Outreach draft: restaurant-website-system/sites/vs-house/outreach-draft.md
 
 ## Blockers
 
@@ -87,3 +87,10 @@
   - `restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png`
 - QA requirements 1-3 are now locally evidence-backed in `checklist.json`.
 - Current stage advanced locally to `packaging`. Remaining delivery blockers: deployed preview URL, outreach draft, Mission Control evidence mirror/writeback, and deployed concierge runtime verification.
+
+## 2026-05-04 — Packaging artifacts heartbeat progress
+
+- Artifact added: `restaurant-website-system/sites/vs-house/outreach-draft.md`.
+- Artifact added: `restaurant-website-system/sites/vs-house/delivery-package.md`.
+- Updated pitch/battle-card notes to reflect the new Google Highest packet and latest live Google review count snapshot.
+- Delivery package is now locally assembled except for deployed preview URL, MC evidence mirror/writeback, and deployed concierge runtime verification.
