@@ -2,7 +2,7 @@
 
 - Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
 - MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
-- Current stage: `improving`
+- Current stage: `concierge`
 - Template route: `pepper-01`
 
 ## Workflow status
@@ -56,12 +56,22 @@
 ### 5. Run first full improvement pass
 
 - Stage: `improving`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-desktop.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-mobile.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-desktop.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png`
+  - `local command: npm run typecheck (passed)`
+  - `local command: npm run build (passed)`
 
 ### 6. Identify and implement top 3 improvements
 
 - Stage: `top_3_improvements`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md`
 
 ### 7. Add truthful AI concierge or record blocker
 
@@ -112,9 +122,15 @@
 - `template-route-locked`
 - `fork-built`
 - `specificity`
+- `identity-specific`
+- `conversion-paths`
+- `mobile-check`
+- `top-three-named`
+- `top-three-implemented`
+- `top-three-evidence`
 
 ## Current blocker
 
 - Gate: `mission_control_sync`
-- Reason: local build gate is complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
-- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-building-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.
+- Reason: local improvement/top-3 gates are complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
+- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-improving-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.

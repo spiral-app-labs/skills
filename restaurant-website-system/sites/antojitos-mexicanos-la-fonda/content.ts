@@ -86,7 +86,7 @@ export const content = {
   fanFavorites: {
     heading: 'What Regulars Keep Naming',
     subhead:
-      'Every card is based on captured Google, Restaurantji, Restaurant Guru, and search evidence — no invented menu promises.',
+      'Locals keep pointing to tacos, Veracruz-style antojitos, careful carryout, and seasonal specials — the page now makes those reasons easy to scan before calling.',
     dishes: [
       {
         name: 'Tacos: steak, pork, shrimp, lengua',
@@ -112,7 +112,7 @@ export const content = {
   pizzaStyles: {
     heading: 'Build The First-Party Menu Story',
     subhead:
-      'Pepper-01 works here because its bright order-first card system can translate the scattered public proof into a simple call-and-go menu path.',
+      'Start with the dishes and visit details guests actually ask for, then call the restaurant to verify today’s menu and specials.',
     items: [
       {
         name: 'Veracruz Antojitos',

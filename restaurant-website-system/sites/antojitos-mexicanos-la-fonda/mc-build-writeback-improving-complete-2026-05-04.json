@@ -1,0 +1,73 @@
+{
+  "build_stage": "concierge",
+  "currentStage": "concierge",
+  "site_slug": "antojitos-mexicanos-la-fonda",
+  "template_slug": "pepper-01",
+  "lead_id": "92b49f80-4193-4c76-ba72-7a03493fd707",
+  "mc_task_id": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
+  "checklist_markdown_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+  "improvement_evidence_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-desktop.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/before-mobile.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-desktop.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/improvement-pass-2026-05-04/after-mobile.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/content.ts",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/app/page.tsx",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/components/ProofStrip.tsx",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/components/MobileStickyCTA.tsx"
+  ],
+  "passed_requirement_ids": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence"
+  ],
+  "top_three_improvements": [
+    {
+      "id": "ssr-visible-preview",
+      "summary": "Hero and scroll-reveal sections now render visibly before hydration/screenshot timing instead of relying on initial opacity states."
+    },
+    {
+      "id": "truthful-proof-and-ctas",
+      "summary": "Added verified public proof strip and replaced misleading menu/review CTAs with call-first verified phone paths."
+    },
+    {
+      "id": "mobile-sell-readiness",
+      "summary": "Added mobile sticky call/directions CTA and tightened responsive header, hero, cards, and overflow behavior."
+    }
+  ],
+  "commands": [
+    "npm run typecheck",
+    "npm run build"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "build": "passed",
+    "mobile_cdp": "vw=390, scrollWidth=390, visible=true, offenders=[]",
+    "desktop_cdp": "vw=1440, scrollWidth=1440, visible=true",
+    "visual_check": "desktop/mobile hero, proof content, and CTAs render clearly; no screenshot blocker remained"
+  },
+  "heartbeat_summary": "Antojitos improvement and top-3 gates completed locally: fixed blank/headless visibility risk, added verified public proof, corrected CTAs to call-first paths, and made mobile CTAs responsive. Next canonical stage is concierge; MC sync remains blocked by missing agency auth in this runtime.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime; prior MC build writeback returned 401 Unauthorized.",
+    "next_unblock_action": "Retry this payload against /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}

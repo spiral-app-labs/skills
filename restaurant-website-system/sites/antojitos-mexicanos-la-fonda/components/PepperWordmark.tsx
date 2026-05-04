@@ -17,7 +17,7 @@ export function PepperWordmark({ color = 'accent', size = 'md' }: Props) {
   const sizeClass =
     size === 'sm' ? 'text-[24px] leading-[28px]'
     : size === 'lg' ? 'text-[44px] leading-[52px]'
-    : 'text-[36px] leading-[43px]';
+    : 'text-[30px] leading-[36px] sm:text-[36px] sm:leading-[43px]';
 
   return (
     <span className={`font-wordmark inline-block ${colorClass} ${sizeClass}`}>

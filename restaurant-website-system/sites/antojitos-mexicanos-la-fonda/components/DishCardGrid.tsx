@@ -18,10 +18,11 @@ type Props = {
   imageShape?: 'round' | 'square';
   cardSize?: 'md' | 'sm';
   orderHref?: string;
+  actionLabel?: string;
   id?: string;
 };
 
-export function DishCardGrid({ heading, subhead, dishes, imageShape = 'round', cardSize = 'md', orderHref, id }: Props) {
+export function DishCardGrid({ heading, subhead, dishes, imageShape = 'round', cardSize = 'md', orderHref, actionLabel = 'Call', id }: Props) {
   const padding = cardSize === 'sm' ? 'p-5' : 'p-6';
   const titleSize = cardSize === 'sm' ? 'text-[22px] leading-[28px]' : 'text-card-title';
   const badgeShape = imageShape === 'round' ? 'rounded-full' : 'rounded-[28px]';
@@ -50,7 +51,7 @@ export function DishCardGrid({ heading, subhead, dishes, imageShape = 'round', c
                     href={orderHref}
                     className="inline-flex items-center justify-center h-9 px-4 rounded-pill bg-ink text-text-on-dark text-button hover:bg-accent transition-colors"
                   >
-                    Menu
+                    {actionLabel}
                   </a>
                 ) : null}
               </div>
