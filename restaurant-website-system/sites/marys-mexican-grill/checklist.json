@@ -69,8 +69,12 @@
         "MC root task metadata with checklist paths"
       ],
       "order": 1,
-      "status": "pending",
-      "evidence": [],
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+        "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+        "Mission Control website workflow metadata has canonical requirements/skills for Mary's root and child tasks"
+      ],
       "blocker": null
     },
     {
@@ -115,8 +119,15 @@
         "DOM/text scrape"
       ],
       "order": 2,
-      "status": "pending",
-      "evidence": [],
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/current-site-mobile-fold.png",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-browser-text-2026-05-04.txt"
+      ],
       "blocker": null
     },
     {
@@ -165,7 +176,6 @@
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/google-reviews-highest-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
-        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
         "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
       ],
       "blocker": null

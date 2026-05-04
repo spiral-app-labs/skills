@@ -1,7 +1,7 @@
 # Mary's Mexican Grill — Google Reviews Themes
 
 Source packet: `restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json`
-Captured: 2026-05-04T16:45:23.236Z
+Captured: 2026-05-04T17:50:45.012Z
 Filter: Highest rating
 Written review count: 30
 
