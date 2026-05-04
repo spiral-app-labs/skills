@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
 
 body {
   min-width: 320px;
-  padding-bottom: calc(env(safe-area-inset-bottom) + 4.75rem);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 4.25rem);
 }
 
 @media (min-width: 768px) {
