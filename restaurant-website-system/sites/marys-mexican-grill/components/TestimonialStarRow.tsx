@@ -1,10 +1,8 @@
-import Image from 'next/image';
 import { EyebrowDotLabel } from './EyebrowDotLabel';
 import { content } from '../content.example';
 
 /**
- * TestimonialStarRow — 3-column stars + quote + avatar-name-role card grid.
- * Strong shared candidate.
+ * TestimonialStarRow — 3-column stars + quote + proof-label card grid.
  */
 export function TestimonialStarRow() {
   const t = content.menuPage.testimonials;
@@ -16,17 +14,12 @@ export function TestimonialStarRow() {
       </div>
       <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 gap-6">
         {t.entries.map((e) => (
-          <article key={e.name} className="bg-bg-white rounded-card p-6 border border-border-light">
+          <article key={e.label} className="bg-bg-white rounded-card p-6 border border-border-light shadow-[0_16px_36px_rgba(33,19,14,0.06)]">
             <div className="text-accent text-lg mb-3" aria-label={`${e.stars} stars`}>{'★'.repeat(e.stars)}</div>
             <blockquote className="font-display text-[18px] text-text-dark leading-snug">&ldquo;{e.quote}&rdquo;</blockquote>
-            <div className="mt-5 flex items-center gap-3">
-              <div className="relative h-[40px] w-[40px] rounded-full overflow-hidden">
-                <Image src={e.avatar} alt={e.name} fill sizes="40px" className="object-cover" />
-              </div>
-              <div>
-                <div className="font-display text-[16px] text-text-dark">{e.name}</div>
-                <div className="text-eyebrow text-text-muted">{e.role}</div>
-              </div>
+            <div className="mt-5 border-t border-border-light pt-4">
+              <div className="font-display text-[18px] text-text-dark">{e.label}</div>
+              <div className="text-eyebrow text-text-muted">{e.platform}</div>
             </div>
           </article>
         ))}

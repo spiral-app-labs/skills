@@ -59,9 +59,9 @@ export const content = {
 
   hero: {
     eyebrow: 'Woodstock Square Mexican Grill',
-    title: 'Authentic tacos, tamales, and fresh salsa on Woodstock Square.',
+    title: 'Tacos, tamales, and fresh salsa right on Woodstock Square.',
     subtitle:
-      "Mary's Mexican Grill brings together a downtown Woodstock location, fast friendly service, and the dishes guests keep naming in public reviews.",
+      "Mary's Mexican Grill puts the strongest guest signals up front: a 4.8 Google rating, menu favorites people name on repeat, and clear ways to view the menu, call, order, or head over tonight.",
     cta: { label: 'View Menu', href: '/menu' },
     secondaryCta: { label: 'Order on DoorDash', href: orderHref },
     metaItems: [
@@ -70,6 +70,14 @@ export const content = {
       '108 Cass St, Woodstock',
       'Open daily, public hours posted',
     ],
+    quickActions: [
+      { label: 'View menu', detail: 'Review-backed favorites on-site', href: '/menu' },
+      { label: 'Order online', detail: 'Public DoorDash listing', href: orderHref },
+      { label: 'Call Marys', detail: '(815) 337-2303 public listing', href: 'tel:+18153372303' },
+      { label: 'Get directions', detail: 'Historic Woodstock Square', href: directionsHref },
+    ],
+    note:
+      'Public listings consistently point to (815) 337-2303. An older indexed official-site result showed a different number, so owner confirmation is still recommended before launch.',
     plateImage: '/assets/marys/hero-tacos.svg',
     plateAlt: "Mary's preview hero illustration with tacos, salsa, and Woodstock Square cues",
   },
@@ -100,7 +108,19 @@ export const content = {
 
   reviewCarousel: {
     eyebrow: 'Guest highlights',
-    title: 'Short proof from the highest-rated review packet',
+    title: 'What the highest-rated review packet keeps repeating',
+    stats: [
+      { value: '4.8', label: 'Google rating' },
+      { value: '604', label: 'Public reviews captured' },
+      { value: '30', label: 'Highest-rated written reviews reviewed' },
+    ],
+    themes: [
+      'Historic Square stop',
+      'Fresh chips and salsa',
+      'Friendly service',
+      'Affordable portions',
+      'Repeat-visit tacos and tamales',
+    ],
     reviews: [
       { quote: 'A lovely little Mexican restaurant right on the historic Woodstock Square.', platform: 'Google Reviews' },
       { quote: 'The salsas were super good and the red one was the perfect amount of spicy.', platform: 'Google Reviews' },
@@ -390,46 +410,43 @@ export const content = {
       },
     ],
     testimonials: {
-      eyebrow: 'Review excerpt cards',
-      title: 'Specific praise beats generic praise',
+      eyebrow: 'Fast proof',
+      title: 'Three quick reasons the menu feels easy to trust',
       entries: [
         {
           stars: 5,
           quote: 'The tacos al pastor were dynamite, a great spot on the square to crush tacos and micheladas.',
-          name: 'Matt Werhane',
-          role: 'Google review',
-          avatar: '/assets/marys/avatar-guest-a.svg',
+          label: 'Taco proof',
+          platform: 'Google Reviews',
         },
         {
           stars: 5,
           quote: 'The chips and salsa are dangerously addictive, the food comes out quick and fresh and hot.',
-          name: 'FloofyGr3mlin',
-          role: 'Google review',
-          avatar: '/assets/marys/avatar-guest-b.svg',
+          label: 'Chips and salsa proof',
+          platform: 'Google Reviews',
         },
         {
           stars: 5,
           quote: 'The steak and pastor tacos were delicious, the prices are good for the amount they serve.',
-          name: 'Sylvia Moreno',
-          role: 'Google review',
-          avatar: '/assets/marys/avatar-guest-c.svg',
+          label: 'Value proof',
+          platform: 'Google Reviews',
         },
       ],
     },
     reservation: {
-      eyebrow: 'Plan your visit',
-      title: 'The fastest ways to order, call, or head over',
+      eyebrow: 'Guest planning',
+      title: 'Choose the quickest real next step tonight',
       body:
-        'The owned direct-order setup is still unresolved, so this preview keeps the menu on-site and sends online ordering to the public DoorDash listing.',
+        'The current owned-domain order path is still unresolved in the audit packet, so this preview keeps the menu on-site, points online ordering to the public DoorDash listing, and keeps the public phone note visible instead of burying it.',
       image: '/assets/marys/action-order.svg',
       actions: [
         { label: 'Order on DoorDash', href: orderHref, note: 'Public third-party listing' },
-        { label: 'Call Marys', href: 'tel:+18153372303', note: 'Public listing number' },
+        { label: 'Call Marys', href: 'tel:+18153372303', note: 'Public listing number used across Google and restaurant directories' },
         { label: 'Get directions', href: directionsHref, note: '108 Cass St, Woodstock' },
-        { label: 'Review the phone conflict', href: '/contact', note: 'Older indexed site showed another number' },
+        { label: 'Check hours and phone note', href: '/contact', note: 'Older indexed site showed another number' },
       ],
       footnote:
-        'Phone note: Google, Restaurantji, Restaurant Guru, and DoorDash point to (815) 337-2303. Older indexed official-site copy showed (815) 923-5240. Owner confirmation still needed.',
+        'Phone note: Google, Restaurantji, Restaurant Guru, and DoorDash point to (815) 337-2303. Older indexed official-site copy showed (815) 923-5240. The preview keeps the public listing number usable while flagging the conflict truthfully.',
     },
   },
 
@@ -445,7 +462,7 @@ export const content = {
     hero: {
       title: 'Visit Marys on Cass Street',
       subtitle:
-        'Directions, public hours, and phone clarity should be easier to find than a marketplace detour.',
+        'Directions, public hours, and phone clarity should be easier to find than a marketplace detour or a wrong-number dead end.',
     },
     photos: [
       '/assets/marys/contact-exterior.svg',
@@ -479,7 +496,7 @@ export const content = {
         { label: 'Get directions', href: directionsHref },
       ],
       footnote:
-        'Current owned-domain ordering reliability remains unresolved in the audit packet, so the preview does not invent a direct online-order URL.',
+        'Current owned-domain ordering reliability remains unresolved in the audit packet, so the preview does not invent a direct online-order URL and keeps the public phone conflict visible.',
     },
   },
 };

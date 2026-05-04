@@ -32,7 +32,7 @@ export function ContactStripFooter() {
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-6">
           <div className="text-body-sm text-text-muted-dark">
-            First preview fork built from bamzi-01 with Marys source-truth notes.
+            Marys keeps the menu on-site, ordering truthfully routed, and Cass Street details easy to verify.
           </div>
           <Link href="/" className="flex items-center gap-2">
             <span className="inline-block h-[22px] w-[22px] rounded-full bg-accent" aria-hidden />

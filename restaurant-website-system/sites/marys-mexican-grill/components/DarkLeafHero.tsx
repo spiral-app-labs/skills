@@ -14,6 +14,8 @@ export function DarkLeafHero({
   cta,
   secondaryCta,
   metaItems,
+  quickActions,
+  note,
   plateImage,
   plateAlt = '',
   compact = false,
@@ -24,6 +26,8 @@ export function DarkLeafHero({
   cta?: { label: string; href: string };
   secondaryCta?: { label: string; href: string };
   metaItems?: string[];
+  quickActions?: Array<{ label: string; detail: string; href: string }>;
+  note?: string;
   plateImage?: string;
   plateAlt?: string;
   compact?: boolean;
@@ -77,6 +81,31 @@ export function DarkLeafHero({
               </div>
             ))}
           </div>
+        )}
+        {!!quickActions?.length && !compact && (
+          <div className="mt-8 grid gap-3 text-left sm:grid-cols-2">
+            {quickActions.map((action) => (
+              <Link
+                key={action.label}
+                href={action.href}
+                className="group rounded-card border border-white/10 bg-white/5 px-5 py-4 transition hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <span className="font-display text-[22px] text-text-white">{action.label}</span>
+                  <span
+                    aria-hidden
+                    className="text-accent transition-transform duration-200 group-hover:translate-x-1"
+                  >
+                    ↗
+                  </span>
+                </div>
+                <p className="mt-2 text-body-sm text-text-muted-dark">{action.detail}</p>
+              </Link>
+            ))}
+          </div>
+        )}
+        {note && !compact && (
+          <p className="mx-auto mt-6 max-w-3xl text-body-sm text-text-muted-dark">{note}</p>
         )}
       </div>
 

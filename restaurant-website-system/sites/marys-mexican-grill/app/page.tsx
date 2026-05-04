@@ -28,6 +28,8 @@ export default function HomePage() {
           cta={content.hero.cta}
           secondaryCta={content.hero.secondaryCta}
           metaItems={content.hero.metaItems}
+          quickActions={content.hero.quickActions}
+          note={content.hero.note}
           plateImage={content.hero.plateImage}
           plateAlt={content.hero.plateAlt}
         />

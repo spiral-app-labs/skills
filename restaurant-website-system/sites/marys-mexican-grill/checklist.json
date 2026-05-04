@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "improving",
+  "currentStage": "top_3_improvements",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -341,8 +341,19 @@
         "before/after screenshots or diff evidence"
       ],
       "order": 6,
-      "status": "pending",
-      "evidence": [],
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/components/DarkLeafHero.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/TestimonialStarRow.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/ReservationFormBlock.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json"
+      ],
       "blocker": null
     },
     {
@@ -650,7 +661,13 @@
     "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-first-fork-2026-05-04.json",
     "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
     "restaurant-website-system/sites/marys-mexican-grill/improvement-evidence-2026-05-04.md",
-    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-improving-2026-05-04.json"
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-improving-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/components/TestimonialStarRow.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ReservationFormBlock.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -668,7 +685,8 @@
       "updatedAt": "2026-05-04T16:51:18.752Z"
     },
     "Mission Control build-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control improving-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+    "Mission Control improving-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    "Mission Control top-three-improvements writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
   ],
   "requirements": [
     {
@@ -867,29 +885,51 @@
     {
       "id": "top-three-named",
       "title": "Top 3 concrete improvements are named from audit/preview/QA",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
       "stage": "top_3_improvements",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Ranked in top-3-improvements-2026-05-04.md with rationale tied to audit, review themes, and the current preview.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md"
+      ]
     },
     {
       "id": "top-three-implemented",
       "title": "All three improvements are implemented",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
       "stage": "top_3_improvements",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Hero action rail, faster-scanning proof surfaces, and clearer order-phone planning updates are implemented in the preview code.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+        "restaurant-website-system/sites/marys-mexican-grill/components/DarkLeafHero.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/TestimonialStarRow.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/ReservationFormBlock.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx"
+      ]
     },
     {
       "id": "top-three-evidence",
       "title": "Each improvement has before/after evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
       "stage": "top_3_improvements",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Before/after notes, diff evidence, and verification output are captured locally for each ranked improvement.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json"
+      ]
     },
     {
       "id": "concierge-kb-truthful",
@@ -1025,5 +1065,6 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T20:00:33Z"
+  "updatedAt": "2026-05-04T20:29:26Z",
+  "childTaskId": "305e2186-ed2d-4148-be9d-9439740cae9f"
 }
