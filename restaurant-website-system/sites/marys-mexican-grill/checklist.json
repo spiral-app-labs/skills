@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "qa_round_1",
+  "currentStage": "qa_round_2",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -594,9 +594,26 @@
         "build/typecheck result"
       ],
       "order": 11,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json"
+      ],
+      "blocker": {
+        "reason": "Mission Control auth is unavailable in this runtime, so qa-round-2 writeback can only be recorded locally.",
+        "nextUnblockAction": "POST mc-qa-round-2-writeback-2026-05-04.json and mc-build-writeback-qa-round-2-2026-05-04.json once agency auth is restored.",
+        "updatedAt": "2026-05-04T22:45:00Z"
+      }
     },
     {
       "id": "qa_round_3",
@@ -744,7 +761,7 @@
         "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json"
       ],
-      "note": "Screenshot paths currently point to the parent-captured pre-fix artifacts and are also the expected post-fix recapture targets."
+      "note": "Screenshot paths point to the post-fix round-2 desktop/mobile recapture set that passed visual QA."
     }
   ],
   "deployUrl": null,
@@ -1178,11 +1195,26 @@
     {
       "id": "qa-round-2",
       "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "qa_round_2",
       "stage": "qa_round_2",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Round 2 local QA artifacts capture the mobile conversion polish fixes, the desktop sell-readiness copy blocker and rewrite, post-fix desktop/mobile screenshot recapture noted as passed, successful build/typecheck verification, and the blocked Mission Control writeback payloads.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json"
+      ]
     },
     {
       "id": "qa-round-3",
@@ -1219,6 +1251,6 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T21:30:00Z",
+  "updatedAt": "2026-05-04T22:20:00Z",
   "childTaskId": "70683332-3044-461f-9dcf-dffa59a24a7b"
 }

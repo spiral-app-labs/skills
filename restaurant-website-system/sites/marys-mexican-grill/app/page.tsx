@@ -28,6 +28,7 @@ export default function HomePage() {
           subtitle={content.hero.subtitle}
           cta={content.hero.cta}
           secondaryCta={content.hero.secondaryCta}
+          emphasizeSecondaryCta
           metaItems={content.hero.metaItems}
           quickActions={content.hero.quickActions}
           note={content.hero.note}

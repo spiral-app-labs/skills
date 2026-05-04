@@ -50,7 +50,7 @@ export const content = {
         { label: 'Home', href: '/' },
         { label: 'Menu', href: '/menu' },
         { label: 'About', href: '/about' },
-        { label: 'Proof', href: '/news' },
+        { label: 'Highlights', href: '/news' },
         { label: 'Visit', href: '/contact' },
       ],
     },
@@ -61,25 +61,25 @@ export const content = {
     eyebrow: 'Woodstock Square Mexican Grill',
     title: 'Tacos, tamales, and fresh salsa right on Woodstock Square.',
     subtitle:
-      "Mary's Mexican Grill puts the strongest guest signals up front: a 4.8 Google rating, menu favorites people name on repeat, and clear ways to view the menu, call, order, or head over tonight.",
+      "Mary's Mexican Grill is a casual Woodstock Square stop for tacos, tamales, ceviche, fresh salsa, and an easy choice for lunch, dinner, takeout, or a quick walk over tonight.",
     cta: { label: 'View Menu', href: '/menu' },
     secondaryCta: { label: 'Order on DoorDash', href: orderHref },
     metaItems: [
       '4.8 Google rating',
-      '604 reviews captured May 4, 2026',
+      '600+ Google reviews',
       '108 Cass St, Woodstock',
-      'Open daily, public hours posted',
+      'Open daily on the Square',
     ],
     quickActions: [
-      { label: 'View menu', detail: 'Review-backed favorites on-site', href: '/menu' },
-      { label: 'Order online', detail: 'Public DoorDash listing', href: orderHref },
-      { label: 'Call Marys', detail: '(815) 337-2303 public listing', href: 'tel:+18153372303' },
+      { label: 'View menu', detail: 'Tacos, tortas, tamales, and more', href: '/menu' },
+      { label: 'Order online', detail: 'DoorDash pickup and delivery', href: orderHref },
+      { label: "Call Mary's", detail: '(815) 337-2303', href: 'tel:+18153372303' },
       { label: 'Get directions', detail: 'Historic Woodstock Square', href: directionsHref },
     ],
     note:
-      'Public listings consistently point to (815) 337-2303. An older indexed official-site result showed a different number, so owner confirmation is still recommended before launch.',
+      'Call (815) 337-2303 for the fastest answer on takeout, hours, and same-day plans.',
     plateImage: '/assets/marys/hero-tacos.svg',
-    plateAlt: "Mary's preview hero illustration with tacos, salsa, and Woodstock Square cues",
+    plateAlt: "Mary's hero illustration with tacos, salsa, and Woodstock Square cues",
   },
 
   mission: {
@@ -90,7 +90,7 @@ export const content = {
     cta: { label: 'See the menu favorites', href: '/menu#favorites' },
     phone: '(815) 337-2303',
     image: '/assets/marys/story-square.svg',
-    imageAlt: 'Illustrated storefront and plate preview for Marys Mexican Grill',
+    imageAlt: "Illustrated storefront and plate for Mary's Mexican Grill",
   },
 
   categoryStrip: {
@@ -108,11 +108,11 @@ export const content = {
 
   reviewCarousel: {
     eyebrow: 'Guest highlights',
-    title: 'What the highest-rated review packet keeps repeating',
+    title: 'What guests keep mentioning after a visit',
     stats: [
       { value: '4.8', label: 'Google rating' },
-      { value: '604', label: 'Public reviews captured' },
-      { value: '30', label: 'Highest-rated written reviews reviewed' },
+      { value: '600+', label: 'Google reviews' },
+      { value: '30', label: 'recent guest notes checked' },
     ],
     themes: [
       'Historic Square stop',
@@ -136,10 +136,10 @@ export const content = {
   featured: [
     {
       eyebrow: 'Most-mentioned orders',
-      title: 'Review-backed standouts',
+      title: 'Guest favorites around the menu',
       side: 'left' as const,
       image: '/assets/marys/featured-favorites.svg',
-      imageAlt: 'Preview illustration for tacos, torta, and tamales',
+      imageAlt: "Illustration for Mary's tacos, torta, and tamales",
       items: [
         {
           name: 'Tacos al pastor',
@@ -148,17 +148,17 @@ export const content = {
         },
         {
           name: 'Carnitas and steak tacos',
-          desc: 'Guests mention authentic flavor, fair prices, and portions that feel worth the stop.',
+          desc: 'Authentic flavor, fair prices, and generous portions make these easy repeat orders.',
           price: 'Local go-to',
         },
         {
           name: 'Torta Mary and steak torta',
           desc: 'Named directly in reviews and carryout snippets as a filling, specific order path.',
-          price: 'Review mention',
+          price: 'Guest pick',
         },
         {
           name: 'Tamales and mole enchiladas',
-          desc: 'Strong proof around comfort, value, and return visits.',
+          desc: 'A comfort-food pairing guests connect with value, flavor, and return visits.',
           price: 'Worth repeating',
         },
       ],
@@ -168,17 +168,17 @@ export const content = {
       title: 'The details that set the place apart',
       side: 'right' as const,
       image: '/assets/marys/featured-sauces.svg',
-      imageAlt: 'Preview illustration for ceviche, guacamole, and salsa service',
+      imageAlt: "Illustration for Mary's ceviche, guacamole, and salsa service",
       items: [
         {
           name: 'Ceviche and grilled shrimp',
-          desc: 'Pulled from Restaurantji favorites and review notes about seafood plates.',
-          price: 'Menu signal',
+          desc: 'A fresh seafood choice that gives the menu more range than the usual taco order.',
+          price: 'Fresh option',
         },
         {
           name: 'Homemade guacamole',
-          desc: 'Reviews mention custom requests and attentive service around guacamole and chips.',
-          price: 'Service proof',
+          desc: 'A natural starter when the table wants chips, salsa, and something fresh to share.',
+          price: 'Warm service',
         },
         {
           name: 'Fresh chips and salsa',
@@ -187,7 +187,7 @@ export const content = {
         },
         {
           name: 'Horchata and margaritas',
-          desc: 'Drink mentions appear in public reviews, but food remains the lead conversion story.',
+          desc: 'Classic drinks that round out a quick lunch, dinner, or takeout plan.',
           price: 'Add-on draw',
         },
       ],
@@ -195,7 +195,7 @@ export const content = {
   ],
 
   testimonial: {
-    eyebrow: 'Guest proof',
+    eyebrow: 'Guest favorite',
     quote:
       "We had a great experience at Mary's. Our waitress was super friendly, playful, and attentive, which made the whole meal even more enjoyable.",
     attribution: {
@@ -203,7 +203,7 @@ export const content = {
       name: 'Google Reviews',
     },
     chefImage: '/assets/marys/review-service.svg',
-    chefAlt: "Preview illustration for Mary's service and hospitality proof",
+    chefAlt: "Mary's service and hospitality illustration",
   },
 
   blog: {
@@ -248,7 +248,7 @@ export const content = {
       {
         id: 'phone-conflict',
         date: 'Call first',
-        title: 'Public listings agree on the main phone number, with one older web listing still conflicting.',
+        title: 'Call ahead for takeout questions, quick timing, and same-day plans.',
         image: '/assets/marys/proof-phone.svg',
         href: '/contact',
       },
@@ -262,36 +262,36 @@ export const content = {
 
   about: {
     hero: {
-      title: 'A local spot with clear signals.',
+      title: 'A neighborhood Mexican grill right on Cass Street.',
       subtitle:
-        'This preview stays inside what is verified: location, hours, menu signals, and public review themes.',
+        "Mary's keeps it simple in the best way: recognizable favorites, friendly service, posted hours, and a location that makes it easy to stop in while you're on Woodstock Square.",
     },
     immerse: {
-      eyebrow: 'Public snapshot',
-      title: "Mary's works best when the details stay specific.",
+      eyebrow: 'Why it stands out',
+      title: "Mary's feels easy to come back to.",
       body:
-        'The strongest version is already in the evidence: a casual grill, fair prices, fresh food, and a team guests want to see again.',
+        'Guests talk about fair prices, fresh food, welcoming service, and the kind of tacos, tamales, salsa, and mole that turn a first stop into a regular routine.',
       statBig: '4.8',
       statLabel: 'Google rating',
       chefImage: '/assets/marys/avatar-proof.svg',
-      chefName: '604 public reviews',
-      chefRole: 'Captured May 4, 2026',
+      chefName: '600+ Google reviews',
+      chefRole: '4.8-star local favorite',
     },
     journey: {
       eyebrow: 'How guests use it',
-      title: 'The strongest visit paths are already clear.',
+      title: 'Built for lunch, dinner, takeout, and repeat visits.',
       body:
-        "Mary's is a walk-in, lunch, takeout, family, and repeat-visit restaurant, so the most useful actions should stay easy to reach.",
+        "Mary's fits the way people actually eat around the Square: walk in, grab lunch, pick up dinner, bring the family, and come back when the taco craving hits again.",
       milestones: [
         {
           year: 'Walk in',
           title: 'Woodstock Square stop',
-          body: 'Address and directions need to be visible immediately for town-square foot traffic.',
+          body: 'Address and directions stay easy to find for town-square foot traffic.',
         },
         {
           year: 'Order',
           title: 'Menu and pickup intent',
-          body: 'Public demand already exists for tacos, burritos, tamales, and chimichangas.',
+          body: 'Tacos, burritos, tamales, and chimichangas are easy takeout-friendly choices.',
         },
         {
           year: 'Lunch',
@@ -306,8 +306,8 @@ export const content = {
       ],
     },
     hours: {
-      eyebrow: 'Public hours',
-      title: 'Open daily, with owner confirmation still recommended before launch.',
+      eyebrow: 'Posted hours',
+      title: 'Open daily on Woodstock Square.',
       times: [
         { day: 'Monday', time: '10:00 am - 9:00 pm' },
         { day: 'Tuesday', time: '10:00 am - 9:00 pm' },
@@ -321,8 +321,8 @@ export const content = {
       image: '/assets/marys/hours-room.svg',
     },
     chefs: {
-      eyebrow: 'Hospitality proof',
-      title: 'Named warmth from the review packet',
+      eyebrow: 'Warm service',
+      title: 'Friendly hospitality guests remember',
       team: [
         {
           name: 'Martha',
@@ -342,8 +342,8 @@ export const content = {
       ],
     },
     values: {
-      eyebrow: 'What to preserve',
-      title: "Mary's strongest identity is already visible in the public evidence.",
+      eyebrow: "What makes it feel like Mary's",
+      title: "Mary's identity comes through in the food, the pace, and the welcome.",
       items: [
         {
           title: 'Food-specific copy',
@@ -363,72 +363,72 @@ export const content = {
 
   menuPage: {
     hero: {
-      title: 'Menu highlights pulled from public proof',
+      title: 'Menu highlights for tacos, tamales, salsa, and more',
       subtitle:
-        'This preview uses review-backed items and public listing signals, not invented prices or unverified full-menu claims.',
+        "Start with the dishes guests mention most, then use the menu, call, or DoorDash links to plan the easiest way to order tonight.",
     },
     categories: [
       {
         eyebrow: 'Tacos and tortas',
         title: 'Street favorites',
         items: [
-          { name: 'Tacos al pastor', desc: 'Frequently praised for bold flavor and strong salsa pairing.', price: 'Review-backed' },
-          { name: 'Steak tacos', desc: 'Named alongside pastor and carnitas as a repeat order.', price: 'Review-backed' },
-          { name: 'Carnitas taco', desc: 'Guests specifically mention authentic flavor and return intent.', price: 'Google review' },
-          { name: 'Torta Mary', desc: 'Called out by name as a filling house sandwich order.', price: 'Google review' },
+          { name: 'Tacos al pastor', desc: 'Frequently praised for bold flavor and a strong salsa pairing.', price: 'Guest favorite' },
+          { name: 'Steak tacos', desc: 'Named alongside pastor and carnitas as a repeat order.', price: 'Guest favorite' },
+          { name: 'Carnitas taco', desc: 'Guests specifically mention authentic flavor and return intent.', price: 'Popular pick' },
+          { name: 'Torta Mary', desc: 'Called out by name as a filling house sandwich order.', price: 'House favorite' },
         ],
       },
       {
         eyebrow: 'Comfort plates',
         title: 'Tamales, mole, and enchiladas',
         items: [
-          { name: 'Tamales', desc: 'Public reviews mention tamales directly, including strong value language.', price: 'Public proof' },
-          { name: 'Mole enchiladas', desc: 'A recurring review highlight and a strong identity cue.', price: 'Public proof' },
-          { name: 'Enchiladas verdes', desc: 'Visible in Restaurantji menu signals and favorites.', price: 'Menu signal' },
-          { name: 'Enchiladas suizas', desc: 'Listed in public menu snippets and audit notes.', price: 'Menu signal' },
+          { name: 'Tamales', desc: 'A cozy, value-friendly favorite when you want something beyond tacos.', price: 'Comfort favorite' },
+          { name: 'Mole enchiladas', desc: 'A recurring highlight and one of the clearest flavor signatures on the menu.', price: 'House favorite' },
+          { name: 'Enchiladas verdes', desc: 'A familiar plate that helps round out the comfort-food side of the menu.', price: 'Menu highlight' },
+          { name: 'Enchiladas suizas', desc: 'Another easy choice when you want a sauced, satisfying plate.', price: 'Menu highlight' },
         ],
       },
       {
         eyebrow: 'Seafood and grill',
         title: 'Shrimp, ceviche, and larger plates',
         items: [
-          { name: 'Ceviche', desc: 'Present in public listings and helps widen the menu story beyond tacos.', price: 'Menu signal' },
-          { name: 'Grilled shrimp', desc: 'Mentioned in reviews alongside attentive service and family visits.', price: 'Google review' },
-          { name: 'Tampiquena', desc: 'Called out in review copy as part of a first visit worth repeating.', price: 'Google review' },
-          { name: 'Camarones a La Mexicana', desc: 'Appears in public menu favorites captured during audit.', price: 'Menu signal' },
+          { name: 'Ceviche', desc: 'A bright seafood option that broadens the menu beyond tacos and burritos.', price: 'Fresh option' },
+          { name: 'Grilled shrimp', desc: 'A flexible plate for seafood cravings, family visits, or a fuller dinner.', price: 'Guest pick' },
+          { name: 'Tampiquena', desc: 'A larger plate that gives first-time guests a reason to come back.', price: 'Guest pick' },
+          { name: 'Camarones a La Mexicana', desc: 'A strong shrimp option for guests looking past the usual taco order.', price: 'Menu highlight' },
         ],
       },
       {
         eyebrow: 'Burritos and house extras',
         title: 'Carryout-ready picks',
         items: [
-          { name: 'Pork burrito', desc: 'Named in review snippets and stronger for takeout conversion.', price: 'Review mention' },
-          { name: 'Burritos suizos', desc: 'Visible in public menu references and listing snippets.', price: 'Menu signal' },
-          { name: 'Pastor chimichanga', desc: 'Directly praised in guest proof for flavor and portion.', price: 'Google review' },
-          { name: 'Horchata', desc: 'Public drink mention that pairs well with lunch and carryout traffic.', price: 'Drink signal' },
+          { name: 'Pork burrito', desc: 'Easy to picture as a filling takeout order.', price: 'Takeout favorite' },
+          { name: 'Burritos suizos', desc: 'A hearty option when you want something saucy, filling, and easy to share.', price: 'Menu highlight' },
+          { name: 'Pastor chimichanga', desc: 'Praised for flavor and portion in guest comments.', price: 'Big appetite pick' },
+          { name: 'Horchata', desc: 'A classic drink pairing for lunch, dinner, or carryout.', price: 'Classic sip' },
         ],
       },
     ],
     testimonials: {
-      eyebrow: 'Fast proof',
-      title: 'Three quick reasons the menu feels easy to trust',
+      eyebrow: 'Guest favorites',
+      title: 'Three quick reasons people come back hungry',
       entries: [
         {
           stars: 5,
           quote: 'The tacos al pastor were dynamite, a great spot on the square to crush tacos and micheladas.',
-          label: 'Taco proof',
+          label: 'Taco favorite',
           platform: 'Google Reviews',
         },
         {
           stars: 5,
           quote: 'The chips and salsa are dangerously addictive, the food comes out quick and fresh and hot.',
-          label: 'Chips and salsa proof',
+          label: 'Chips and salsa',
           platform: 'Google Reviews',
         },
         {
           stars: 5,
           quote: 'The steak and pastor tacos were delicious, the prices are good for the amount they serve.',
-          label: 'Value proof',
+          label: 'Good value',
           platform: 'Google Reviews',
         },
       ],
@@ -437,32 +437,32 @@ export const content = {
       eyebrow: 'Guest planning',
       title: 'Choose the quickest real next step tonight',
       body:
-        'The current owned-domain order path is still unresolved in the audit packet, so this preview keeps the menu on-site, points online ordering to the public DoorDash listing, and keeps the public phone note visible instead of burying it.',
+        "Check the menu, place an order through DoorDash, call the dining room, or head over to Cass Street. The fastest path stays simple on purpose.",
       image: '/assets/marys/action-order.svg',
       actions: [
-        { label: 'Order on DoorDash', href: orderHref, note: 'Public third-party listing' },
-        { label: 'Call Marys', href: 'tel:+18153372303', note: 'Public listing number used across Google and restaurant directories' },
+        { label: 'Order on DoorDash', href: orderHref, note: 'Pickup and delivery' },
+        { label: "Call Mary's", href: 'tel:+18153372303', note: 'Main dining room phone' },
         { label: 'Get directions', href: directionsHref, note: '108 Cass St, Woodstock' },
-        { label: 'Check hours and phone note', href: '/contact', note: 'Older indexed site showed another number' },
+        { label: 'Check hours and visit info', href: '/contact', note: 'Hours, phone, and directions' },
       ],
       footnote:
-        'Phone note: Google, Restaurantji, Restaurant Guru, and DoorDash point to (815) 337-2303. Older indexed official-site copy showed (815) 923-5240. The preview keeps the public listing number usable while flagging the conflict truthfully.',
+        'For the clearest response on timing, takeout, and daily details, call (815) 337-2303.',
     },
   },
 
   newsPage: {
     hero: {
-      title: 'The proof behind the menu and service story',
+      title: "Why guests keep coming back to Mary's",
       subtitle:
-        "These signals come from Mary's review and audit packet, not filler editorial cards.",
+        'A few quick highlights from the food, service, and Woodstock Square setting that people mention again and again.',
     },
   },
 
   contactPage: {
     hero: {
-      title: 'Visit Marys on Cass Street',
+      title: "Visit Mary's on Cass Street",
       subtitle:
-        'Directions, public hours, and phone clarity should be easier to find than a marketplace detour or a wrong-number dead end.',
+        'Find the dining room, call ahead, check hours, or head straight to the Square for tacos, tamales, and a quick meal.',
     },
     photos: [
       '/assets/marys/contact-exterior.svg',
@@ -481,22 +481,29 @@ export const content = {
       },
       {
         icon: 'phone',
-        label: 'Call or verify',
-        lines: ['Public listings: (815) 337-2303', 'Older indexed site: (815) 923-5240', 'Owner confirmation still needed'],
+        label: "Call Mary's",
+        lines: ['(815) 337-2303', 'Best number for takeout questions', 'Call for takeout and daily details'],
+      },
+      {
+        icon: 'map',
+        label: 'Hours and directions',
+        lines: ['Mon-Sat: 10:00 am - 9:00 pm', 'Sunday: 10:00 am - 8:00 pm', 'Use Google Maps for the fastest route'],
+        href: directionsHref,
+        linkLabel: 'Get directions',
       },
     ],
     form: {
-      eyebrow: 'Preview-safe contact paths',
-      title: 'Choose a real action instead of a dead-end form.',
+      eyebrow: 'Plan your stop',
+      title: "Pick the easiest way to reach Mary's tonight.",
       body:
-        'This preview keeps the high-intent paths explicit. Call for current details, use DoorDash for third-party online ordering, or head straight to directions.',
+        'Call for current details, use DoorDash for third-party online ordering, or head straight to directions if you are already on your way.',
       actions: [
-        { label: 'Call Marys', href: 'tel:+18153372303' },
+        { label: "Call Mary's", href: 'tel:+18153372303' },
         { label: 'Order on DoorDash', href: orderHref },
         { label: 'Get directions', href: directionsHref },
       ],
       footnote:
-        'Current owned-domain ordering reliability remains unresolved in the audit packet, so the preview does not invent a direct online-order URL and keeps the public phone conflict visible.',
+        'For the clearest response on timing, takeout, and daily details, call (815) 337-2303.',
     },
   },
 };

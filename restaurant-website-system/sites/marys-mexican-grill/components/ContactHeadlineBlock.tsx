@@ -7,8 +7,8 @@ import { content } from '../content.example';
 export function ContactHeadlineBlock() {
   const h = content.contactPage.headline;
   return (
-    <section className="bg-bg-white py-20 px-6 text-center">
-      <div className="mx-auto mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-accent text-text-white text-xl">
+    <section className="bg-bg-white px-6 py-10 text-center md:py-16">
+      <div className="mx-auto mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent text-xl text-text-white md:mb-6 md:h-16 md:w-16">
         +
       </div>
       <EyebrowDotLabel className="mb-3">{h.eyebrow}</EyebrowDotLabel>

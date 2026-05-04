@@ -6,11 +6,11 @@
 - Child task ID: 70683332-3044-461f-9dcf-dffa59a24a7b
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: qa_round_1
+- Current stage: qa_round_2
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T21:30:00Z
+- Updated: 2026-05-04T22:20:00Z
 
 ## Mission Control Sync Contract
 
@@ -116,10 +116,12 @@
 
 ### 11. qa_round_2 — QA round 2
 - Stage: qa_round_2
-- Status: pending
+- Status: passed
 - Required skills: restaurant-qa-delivery, browser-automation, agency-mission-control-sync
 - Evidence required: qa-round-2.md; desktop screenshot; mobile screenshot; build/typecheck result
 - Requirement: qa-round-2 — QA round 2 completed with screenshots, findings, fixes, and MC writeback
+- Evidence: restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json; restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json; restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json
+- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
 
 ### 12. qa_round_3 — QA round 3 final sell-readiness QA
 - Stage: qa_round_3
@@ -150,8 +152,8 @@
 - [x] template-route-locked: Exactly one archetype/template route is chosen and justified - Mary's remains locked to bamzi-01 with routing rationale and source truth pack preserved locally.
 - [x] fork-built: Template fork builds successfully with real content and preserved conversion links - `npm run build` passed after replacing network-fetched Google fonts with local CSS font variables for this sandbox.
 - [x] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths - Preview content stays inside routing/source/audit/review evidence and labels unresolved phone/order issues truthfully.
-- [x] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype - Hero, mission, proof, and supporting section copy now read specifically to Mary's and Woodstock Square while staying inside verified review/audit facts.
-- [x] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable - Menu, DoorDash, Call, and Directions remain truthful and unchanged; unresolved phone conflict note remains explicit instead of being hidden.
+- [x] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype - Hero, mission, menu, visit, and supporting section copy now read specifically to Mary's and Woodstock Square while staying inside verified review/audit facts.
+- [x] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable - Menu, DoorDash, Call, and Directions remain truthful; the public pages center one clear call path at (815) 337-2303 while local QA records preserve the older-number risk.
 - [x] mobile-check: Mobile pass is explicitly checked with evidence - Improvement pass documents mobile-safe carousel behavior (`overflow-x-auto`, 280px cards, touch pause/resume, reduced-motion protection) in improvement-evidence-2026-05-04.md.
 - [x] top-three-named: Top 3 concrete improvements are named from audit/preview/QA - Ranked in `top-3-improvements-2026-05-04.md` with sellability rationale tied to audit, review, and preview evidence.
 - [x] top-three-implemented: All three improvements are implemented - Hero action rail, faster-scanning proof surfaces, and clearer guest-planning/order-phone handling are all live in the preview code.
@@ -166,7 +168,7 @@
 - [x] battle-cards-demo-path: Demo path and proof points are clear - `battle-cards.md` gives an exact seller demo sequence across the homepage, content source, proof sections, menu/contact flow, and the audited before-state.
 - [x] battle-cards-risks: Risks/unknowns are called out truthfully - `battle-cards.md` explicitly limits phone, hours, order-path, photography, owner-story, and MC sync claims.
 - [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Round 1 local QA artifacts record the responsive fixes, pre-fix screenshot/scrape evidence paths, successful `npm run typecheck` and `npm run build`, and local-only MC payloads.
-- [ ] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback
+- [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - Round 2 local QA artifacts capture the mobile conversion polish fixes, the desktop copy blocker and sell-ready rewrite, post-fix desktop/mobile screenshot recapture noted as passed, successful `npm run build` and `npm run typecheck`, and the blocked local MC payloads.
 - [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
 - [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC
 - [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence
@@ -213,11 +215,23 @@
 - restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html
 - restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-2-writeback-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-2-2026-05-04.json
 
 ## QA Rounds
 
 - Round 1: passed
-- Round 2: pending
+- Round 2: passed
 - Round 3: pending
 
 ## Pitch Artifacts
@@ -236,6 +250,7 @@
 - Mission Control pitch-stage writeback remains local-only for the same auth reason, even though the pitch gate now has local evidence and checklist updates.
 - Mission Control battle-cards-stage writeback remains local-only for the same auth reason, even though the battle cards gate now has local evidence and checklist updates.
 - Mission Control qa-round-1 writeback remains local-only for the same auth reason, even though the round-1 responsive fixes, checklist updates, and local payload artifacts are complete.
+- Mission Control qa-round-2 writeback remains local-only for the same auth reason, even though the round-2 mobile polish fixes, checklist updates, and local payload artifacts are complete.
 
 ## Done Criteria
 

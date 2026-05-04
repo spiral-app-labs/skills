@@ -22,9 +22,9 @@ export default function ContactPage() {
           subtitle={content.contactPage.hero.subtitle}
           compact
         />
-        <ContactPhotoRow />
-        <ContactHeadlineBlock />
         <InfoCardsRow />
+        <ContactHeadlineBlock />
+        <ContactPhotoRow />
         <section className="bg-bg-white pb-16 px-6">
           <div className="max-w-[1000px] mx-auto">
             <LiveMapEmbed

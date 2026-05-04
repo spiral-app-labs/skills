@@ -25,14 +25,14 @@ export function ContactStripFooter() {
             <div>
               <div className="text-eyebrow text-text-muted-dark mb-1">Contact</div>
               <div className="text-body-sm text-text-white">{b.phone}</div>
-              <div className="text-body-sm text-text-muted-dark">Public listing number, owner confirmation still recommended.</div>
+              <div className="text-body-sm text-text-muted-dark">Main phone for takeout questions, hours, and same-day plans.</div>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-6">
           <div className="text-body-sm text-text-muted-dark">
-            Marys keeps the menu on-site, ordering truthfully routed, and Cass Street details easy to verify.
+            Mary's keeps the menu, DoorDash, phone, and Cass Street details easy to find.
           </div>
           <Link href="/" className="flex items-center gap-2">
             <span className="inline-block h-[22px] w-[22px] rounded-full bg-accent" aria-hidden />
@@ -41,7 +41,7 @@ export function ContactStripFooter() {
           <div className="flex items-center gap-5 text-body-sm text-text-muted-dark">
             <Link href="/menu" className="hover:text-accent">Menu</Link>
             <Link href="/contact" className="hover:text-accent">Contact</Link>
-            <Link href="/news" className="hover:text-accent">Proof</Link>
+            <Link href="/news" className="hover:text-accent">Highlights</Link>
           </div>
         </div>
       </div>
