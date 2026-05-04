@@ -4,12 +4,31 @@
   "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
   "siteSlug": "strawberry-moon",
   "templateSlug": "velvet-shaker-01",
-  "currentStage": "auditing",
+  "currentStage": "qa_round_2",
   "evidencePaths": [
     "restaurant-website-system/sites/strawberry-moon/checklist.md",
     "restaurant-website-system/sites/strawberry-moon/checklist.json",
     "restaurant-website-system/sites/strawberry-moon/audit.md",
-    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+    "restaurant-website-system/sites/strawberry-moon/source.md",
+    "restaurant-website-system/sites/strawberry-moon/content.ts",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-dom-snapshot.txt",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-dom.html",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-text.txt",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-dom.html",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-text.txt",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-desktop.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-mobile.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-desktop.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-mobile.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+    "restaurant-website-system/sites/strawberry-moon/components/MinimalTextNav.tsx"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -18,14 +37,7 @@
     "outreachDraft": null,
     "beforeAfterScreenshots": []
   },
-  "blockers": [
-    {
-      "gate": "auditing",
-      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).",
-      "nextUnblockAction": "Enable browser/Chromium capture for official Weebly homepage/events screenshots/DOM, Google Maps verification, and Google review packet.",
-      "recordedAt": "2026-05-04T05:00:40.180597Z"
-    }
-  ],
+  "blockers": [],
   "requirements": [
     {
       "id": "lead-fit-qualified",
@@ -41,11 +53,33 @@
     {
       "id": "current-site-audit",
       "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
-      "notes": "Web/source audit drafted; canonical browser screenshots/DOM, events page capture, and Google/Maps verification remain blocked.",
+      "notes": "Browser screenshots plus DOM/text scrapes captured for homepage/events; Google Maps overview verified.",
       "evidence": [
-        "restaurant-website-system/sites/strawberry-moon/audit.md"
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-dom.html",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-text.txt",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-dom.html",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-text.txt",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-desktop.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-mobile.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-desktop.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-mobile.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png"
+      ]
+    },
+    {
+      "id": "google-reviews-captured",
+      "title": "Highest-filter Google review packet captured with 30 written reviews, rating summary, and screenshots",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Google Maps showed 4.7 rating, 214 reviews, $20–30 price range, category Bar; Sort > Highest rating applied and 30 written 5-star review snippets captured.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png"
       ]
     },
     {
@@ -62,20 +96,40 @@
     {
       "id": "fork-built",
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "Velvet-shaker-01 fork now exists in the Strawberry Moon site folder with official-site imagery, factual martini/lounge/live-music content, honest handoff links, and no fake booking or price claims. npm run build passed. npm install created no usable local next binary, so verification used a compatible local node_modules tree from dino-s-pizza-pasta.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/app/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/about/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx"
+      ]
     },
     {
       "id": "qa-round-1",
       "title": "QA round 1 completed with findings and fixes logged",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "status": "passed",
+      "notes": "Round 1 passed after hero/nav fixes: first viewport is demo-ready; typecheck/build passed; desktop/mobile preview screenshots captured. Round 2 should address below-fold mobile gallery gap and low-contrast dark sections.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/MinimalTextNav.tsx",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png"
+      ]
     },
     {
       "id": "qa-round-2",
       "title": "QA round 2 completed with findings and fixes logged",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "status": "pending",
+      "notes": "Next: fix below-fold mobile gallery gap/cropped strip, improve low-contrast section copy, then recapture screenshots."
     },
     {
       "id": "qa-round-3",
@@ -97,5 +151,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T05:00:40.220Z"
+  "updatedAt": "2026-05-04T15:35:00Z",
+  "lastMissionControlHeartbeatId": "c036c904-df28-426e-8461-e7243a0b8a83",
+  "lastMissionControlActivityId": "5544322a-4374-486c-ad4e-964a55027535"
 }

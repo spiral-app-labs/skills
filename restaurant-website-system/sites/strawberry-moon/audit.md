@@ -49,6 +49,13 @@ The pitch hook is therefore softer than a broken-site lead: **Strawberry Moon al
 - Features: outdoor seating, credit cards accepted, takeaway, booking, wheelchair accessible, parking, TV; no delivery.
 - Hours: Tuesday/Wednesday 4–9PM; Thursday 4–10PM; Friday/Saturday 4–11PM; Sunday/Monday closed.
 
+### Google Maps / highest written reviews
+
+- Google overview evidence shows `4.7` rating, `214` reviews, price range `$20–30`, category `Bar`, address/phone/site/menu links, and the same Wauconda location.
+- Highest-rating review capture includes 30 written 5-star reviews in `scrapes/google-reviews-highest-30.json`.
+- Repeated review themes: excellent martinis/craft cocktails, weekly martinis/martini flights, warm bartenders and owner hospitality, cozy/date-night/friend-night atmosphere, live music that is present but still conversation-friendly, upstairs/quiet seating, nibbles/appetizers/fondue/pretzels, and “gem in Wauconda” local-love language.
+- Build implication: lead with martini-lounge warmth and live music, preserve the first-come seating policy, avoid inventing reservations/private-events beyond the real `Book an Event` path, and use review language as proof that the experience is intimate/cozy rather than loud nightclub or formal fine dining.
+
 ## Audit findings
 
 1. **Soft site-quality gap:** official Weebly page works and has truthful facts, but it reads as a light brochure rather than a sellable lounge website.
@@ -57,15 +64,35 @@ The pitch hook is therefore softer than a broken-site lead: **Strawberry Moon al
 4. **Conversion gap:** the site should clearly present hours by day, first-come seating policy, phone, map/directions, events, signature drinks, private/event options if real, and a concise small-plates/dessert story.
 5. **Route:** `velvet-shaker-01` warmed down per qualification. Core archetype mapping: **Bramble** — bar/lounge/nightlife personality, but specifically cozy martini lounge/date-night, not a loud tavern or formal fine cocktail concept.
 
-## Required browser evidence blocker
+## Browser evidence captured
 
-OpenClaw managed browser is unavailable/cooling down after repeated failures (`No supported browser found`), so this audit currently has web-fetch/source evidence but not the required desktop/mobile screenshots or live browser DOM snapshot. Before marking the canonical audit gate fully passed, capture:
+OpenClaw browser/Chrome capture is working again. Canonical audit evidence now includes:
 
-- desktop/mobile screenshots of the official Weebly homepage and Events page
-- browser DOM/text snapshot for homepage/events/contact/menu if present
-- screenshots of Restaurantji/Restaurant Guru proof pages
-- Google/Maps profile screenshot, official website field, and later Highest-filter 30 written Google review packet
+- desktop/mobile screenshots of the official Weebly homepage
+- desktop/mobile screenshots of the Entertainment Events page
+- browser DOM/text snapshots for homepage and events
+- Google Maps overview screenshot verifying 4.7 rating, 214 reviews, address, website/menu links, phone, category, and service model
+- Highest-rating Google review packet with 30 written review snippets plus review-panel screenshot
+
+Evidence paths:
+
+- `restaurant-website-system/sites/strawberry-moon/screenshots/current-home-desktop.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/current-home-mobile.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/current-events-desktop.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/current-events-mobile.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png`
+- `restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png`
+- `restaurant-website-system/sites/strawberry-moon/scrapes/current-site-dom-snapshot.txt`
+- `restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-dom.html`
+- `restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-text.txt`
+- `restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-dom.html`
+- `restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-text.txt`
+- `restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json`
 
 ## Current recommendation
 
 Treat Strawberry Moon as a nurture/soft-redesign lead, not a hard broken-site lead. If built, the sell story should be about elevating an existing dated Weebly page into a warmer, more polished martini/lounge/event experience that sells the red door, live music, cozy date-night atmosphere, martinis, fondue/small plates, hours, and first-come seating — without overclaiming fine-dining or inventing private-event capabilities.
+
+## Next build direction
+
+Proceed to routing/building from `velvet-shaker-01` with **Bramble** as the archetype: intimate cocktail-lounge pacing, red-door/date-night mood, martini/fondue/menu proof, live-music calendar clarity, and strong CTAs for phone, directions, events, and first-come seating.
