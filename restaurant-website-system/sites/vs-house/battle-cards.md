@@ -1,114 +1,54 @@
-# V's House — Founder Battle Cards
+# V's House — Sales Battle Cards
 
-## Status
+## Core positioning
+V's House is not a generic sushi-and-pho spot. It is a third-generation Vu family restaurant with a real room, real press, a serious drink program, and enough review proof to justify a site that feels much more premium than the current Squarespace page.
 
-- Site slug: `vs-house`
-- MC parent task: `41da188d-4629-4cb2-91f3-6be31d6b9b6d`
-- Lead ID: `1006c1ea-5a06-4703-9994-117bc90d9dba`
-- Current gate: `battle_cards`
-- Locked archetype: `bamzi-01`
-- Core sell story: third-generation Vu family Vietnamese kitchen on Bedford-Euless Road, modern warm room, pho/sushi/cocktail depth, strong public proof.
+## Demo spine
+1. Old hero: “Welcome Home” does not explain the restaurant, the family, or the reason to book.
+2. New hero: family heritage, 24-hour pho, Saigon-coded bar, and clear reservation/order actions.
+3. Proof: Google/OpenTable/Facebook signals, press mentions, named review themes, and real photo inventory.
+4. Menu: structured text menu instead of mobile-hostile image carousel.
+5. Close: “We made your website act like the restaurant guests already believe you are.”
 
-## Ethan's opening frame
+## Objection: “Our current site is fine.”
+*Response:* It is functional, but it hides the strongest sales assets. A guest can reserve or order, but they do not learn the Vu family story, the press proof, the review volume, or why V's House is different before they make a decision.
 
-"This is not a rescue site. V's House already has the family story, review volume, press, room, menu, and ordering/reservation flows. The rebuild simply makes the website communicate those strengths in the first 10 seconds instead of burying them behind a generic Squarespace hero and image-only menu."
+*Proof to show:* Current homepage hero + menu image carousel vs rebuilt hero + structured menu.
 
-## Proof stack to use in calls
+## Objection: “We don’t need a fancy website.”
+*Response:* This is not about making it fancy. It is about making the site match the room, food, and reputation you already built. The register stays accessible-casual; it just stops looking generic.
 
-- Three-generation Vu family story: Quan Vu opened in Haltom City in 1982; Rex and Ann Vu run Pho V in Bedford; Alex and Ryan Vu opened V's House with Victoria Vu on the line.
-- Existing public rating/proof: 4.4★ Google / 1,154 reviews; 4.6★ OpenTable / 116 diners; 4.4★ Restaurantji / 316; 96% Facebook recommend signal from audit evidence.
-- Press: Fort Worth Magazine and Dallas Observer coverage.
-- Restaurant-specific product depth: 24-hour pho, Beef Deluxe Pho, Bún Bò Huế, Banh Khot, Shaken Beef, boba, full cocktail/bar program.
-- Existing conversion flows preserved: Toast reservations, Toast online ordering, gift cards, phone, directions, Instagram/Facebook.
+*Proof to show:* The preview keeps Toast reservations, online ordering, phone, directions, and real menu flow as practical conversion paths.
 
-## Objection cards
+## Objection: “We already have reviews.”
+*Response:* Exactly — but the current site does not use them. The rebuild turns existing reputation into conversion proof, especially for first-time guests deciding between restaurants on mobile.
 
-### 1. "Our current site is fine."
+*Proof to show:* 4.4★ Google / 1,154 reviews, 4.6★ OpenTable, 96% Facebook recommend, review themes around pho, boba, patio, shaken beef, and service.
 
-**Response:**
-"It works as a brochure, but it under-sells what makes V's House special. The old homepage says `Welcome Home`; the new one explains why that is true: three generations, Vu family heritage since 1982, 24-hour pho, press, and 1,000+ reviews."
+## Objection: “Our menu changes.”
+*Response:* The current image menu is hard to read and hard to update for web search. The rebuild can keep the source of truth flexible while making the guest-facing version readable on a phone.
 
-**Show:** old hero vs rebuilt hero; then the proof strip.
+*Proof to show:* Old PNG carousel requires pinch-zoom; preview organizes sections into web-native content.
 
-**Close:**
-"You do not need a different restaurant story. You need the current website to tell the story guests already love."
+## Objection: “We don’t want to overstate the family story.”
+*Response:* We should not invent or exaggerate. The preview only uses sourced facts from the audit: Quan Vu in 1982, Pho V in Bedford, V's House opening in late 2021, and the Vu family operators. If the family wants softer wording, the structure still works.
 
-### 2. "We already have Toast for reservations and ordering."
+*Proof to show:* Audit citations and owner-editable content file.
 
-**Response:**
-"Good — we kept Toast. The website's job is to make guests confident enough to click Toast. The rebuild keeps the same operational handoffs but makes the decision easier before they leave the site."
+## Objection: “Will this hurt our existing reservation/order setup?”
+*Response:* No. The preview preserves the existing Toast reservations, Toast ordering, gift cards, phone, and maps paths. It improves the context around those actions.
 
-**Show:** reserve/order CTAs, phone CTA, directions, gift cards.
+*Proof to show:* CTA links in the preview/content file.
 
-**Close:**
-"This is not replacing your systems. It is feeding them better-qualified guests."
+## Risk card: Google review gate
+The audit has a Google Maps newest-sorted 30-row sample. The newer agency delivery gate asks for Highest-filter 30 written Google reviews. Do not claim the newer gate is complete until that exact packet is captured.
 
-### 3. "Our menu changes / the menu is easier as images."
+## Founder talking points
+- “This is a promotion, not a rescue.”
+- “The room and reputation are stronger than the current homepage.”
+- “The menu is the biggest mobile fix.”
+- “We kept the real business flows; we just made the first ten seconds persuasive.”
+- “The site should make a first-time guest understand why V's House is not interchangeable.”
 
-**Response:**
-"Images are easy for the restaurant but painful for mobile guests and invisible to search. We can keep owner-editable menu content, but the main experience should be readable text with sections, anchors, and real dish names."
-
-**Show:** old image carousel/pinch-zoom menu vs structured menu sections.
-
-**Close:**
-"The menu can still be updated, but guests should not have to pinch-zoom a PNG to decide what to order."
-
-### 4. "This feels too fancy for us."
-
-**Response:**
-"The positioning is polished but not fine dining. It is intentionally accessible-casual: pho, sushi, boba, cocktails, family warmth, and a room that already feels designed. We did not turn V's House into an omakase or tasting-menu brand."
-
-**Show:** copy around `Bar · Sushi · Pho`, warm family story, casual CTAs.
-
-**Close:**
-"The site should feel as good as the room, not more formal than the restaurant."
-
-### 5. "Did you invent any of this?"
-
-**Response:**
-"No. The preview is grounded in public facts and the existing audit: restaurant site, Google/OpenTable/Restaurantji/Yelp signals, press coverage, and current official Toast links. The only thing we should owner-confirm before launch is exact menu/pricing if they want the text menu live."
-
-**Show:** audit.md, source links, content.ts source comments.
-
-**Close:**
-"Everything important is traceable. We can remove or soften anything the owner does not want to claim."
-
-### 6. "We don't have budget right now."
-
-**Response:**
-"Totally fair. The reason we built the preview first is so this is not a vague agency pitch. You can see exactly what the site could become and decide whether it is worth turning the restaurant's existing proof into more reservations, online orders, and better first impressions."
-
-**Show:** before/after demo path; menu conversion flow.
-
-**Close:**
-"If this gets even a small lift in direct reservations or orders, it pays back quickly."
-
-### 7. "Who will maintain this?"
-
-**Response:**
-"The launch version can preserve stable core pages and direct operational flows to Toast, Google, social, and phone. Menu edits can be handled either as small owner-request updates or converted into a simple CMS flow if they want frequent changes."
-
-**Show:** content.ts as centralized content source; Toast handoffs for dynamic operations.
-
-**Close:**
-"We are not trying to create a fragile custom system. We are making the high-value story and conversion paths stronger."
-
-## Demo path
-
-1. Open old site hero: point out `Welcome Home` and ask whether it communicates the Vu family story.
-2. Open rebuilt hero: show `Third Generation on Bedford-Euless Road`, `Bar · Sushi · Pho`, proof strip, and CTAs.
-3. Show heritage section: 1982 Quan Vu → Pho V Bedford → V's House.
-4. Show structured menu: Pho, small plates, mains, cocktails, happy hour — no pinch-zoom image carousel.
-5. Show trust: Fort Worth Magazine, Dallas Observer, Google/OpenTable ratings, named service/dish proof.
-6. End on conversion: reserve, order, call, directions, gift cards.
-
-## Honest risks / owner-confirm items
-
-- Current Google review packet for V's House is a usable newest-sorted sample, not the newer canonical Highest-filter 30-written-review packet.
-- Menu item prices/content should be owner-confirmed before a live launch.
-- Do not claim a new photoshoot; current version uses existing/public asset strategy.
-- Keep register accessible-casual; do not oversell as fine dining.
-
-## Strongest close
-
-"You already earned the story: three generations, a beautiful room, a serious menu, and enough reviews to prove guests care. We rebuilt the website so someone understands all of that before they ever click Toast or drive over."
+## Close line
+“You already built the story in the restaurant. We rebuilt the website so guests can feel it before they walk in.”

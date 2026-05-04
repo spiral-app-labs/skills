@@ -24,7 +24,8 @@
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/vs-house/pitch-doc.md",
     "outreachDraft": null,
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [],
+    "battleCards": "restaurant-website-system/sites/vs-house/battle-cards.md"
   },
   "blockers": [
     {
@@ -109,5 +110,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T04:32:23.750Z"
+  "updatedAt": "2026-05-04T13:16:49.006Z"
 }
