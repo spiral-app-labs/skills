@@ -1,0 +1,30 @@
+{
+  "build_stage": "battle_cards",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "70683332-3044-461f-9dcf-dffa59a24a7b",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
+  ],
+  "passed_requirement_ids": [
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks"
+  ],
+  "blocker": "Mission Control writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+  "heartbeat_summary": "Battle cards gate completed locally for Mary's Mexican Grill. The new battle-cards doc gives a seller-ready one-line positioning statement, owner talking points, objection handling, traceable evidence links, explicit risks and do-not-overclaim guidance, an exact demo path, a strongest close, and owner verification questions for phone, order path, hours, and photos. Checklist state is advanced to battle_cards locally only; QA, packaging, and delivery remain pending until later gates and remote MC auth are available."
+}

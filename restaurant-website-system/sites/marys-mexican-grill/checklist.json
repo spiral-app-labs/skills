@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "pitch",
+  "currentStage": "battle_cards",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -496,9 +496,20 @@
         "battle-cards.md"
       ],
       "order": 9,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+        "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+        "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-battle-cards-2026-05-04.json"
+      ],
+      "blocker": {
+        "reason": "Mission Control auth is unavailable in this runtime, so battle-cards-stage writeback can only be recorded locally.",
+        "nextUnblockAction": "POST mc-build-writeback-battle-cards-2026-05-04.json once agency auth is restored.",
+        "updatedAt": "2026-05-04T20:51:14Z"
+      }
     },
     {
       "id": "qa_round_1",
@@ -689,12 +700,22 @@
     "restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx",
     "restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx",
     "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
-    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json"
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-top-3-improvements-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/app/api/chat/route.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/components/AskConcierge.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/app/page.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-concierge-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-pitch-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-battle-cards-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "battleCards": "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
     "outreachDraft": null,
     "beforeAfterScreenshots": [
       "restaurant-website-system/sites/marys-mexican-grill/audit.md",
@@ -715,7 +736,8 @@
     "Mission Control improving-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
     "Mission Control top-three-improvements writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
     "Mission Control concierge-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control pitch-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+    "Mission Control pitch-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    "Mission Control battle-cards-stage writeback remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
   ],
   "requirements": [
     {
@@ -1058,29 +1080,47 @@
     {
       "id": "battle-cards-objections",
       "title": "Likely owner objections have concise answers",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The battle cards answer the main owner objections around existing Google/DoorDash demand, polish risk, casual-vs-fancy register, phone/hours uncertainty, photo readiness, and truthful order-path handling.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+        "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md"
+      ]
     },
     {
       "id": "battle-cards-demo-path",
       "title": "Demo path and proof points are clear",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The battle cards define an exact seller sequence across the homepage, content source, review proof, menu/contact flow, and audited before-state so the demo stays concrete.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+        "restaurant-website-system/sites/marys-mexican-grill/app/page.tsx",
+        "restaurant-website-system/sites/marys-mexican-grill/content.example.ts"
+      ]
     },
     {
       "id": "battle-cards-risks",
       "title": "Risks/unknowns are called out truthfully",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The battle cards explicitly limit claims around phone confirmation, hours, direct ordering, owner story, photography rights, and remote Mission Control sync.",
+      "evidence": [
+        "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+        "restaurant-website-system/sites/marys-mexican-grill/source.md",
+        "restaurant-website-system/sites/marys-mexican-grill/audit.md"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -1135,6 +1175,6 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T20:36:05Z",
+  "updatedAt": "2026-05-04T20:51:14Z",
   "childTaskId": "70683332-3044-461f-9dcf-dffa59a24a7b"
 }
