@@ -5,11 +5,11 @@
 - Lead ID: af98b880-9351-4f00-b35b-253ad35570d9
 - MC parent task ID: 216314e9-4af6-4f99-92ab-54e7912b9173
 - Template slug: velvet-shaker-01
-- Current stage: top_3_improvements
+- Current stage: concierge
 - Checklist MD: restaurant-website-system/sites/strawberry-moon/checklist.md
 - Checklist JSON: restaurant-website-system/sites/strawberry-moon/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T16:36:02.746Z
+- Updated: 2026-05-04T16:55:00Z
 
 ## Mission Control Sync Contract
 
@@ -66,7 +66,7 @@
 
 ### 6. top_three_improvements — Identify and implement top 3 improvements
 - Stage: top_3_improvements
-- Status: in_progress
+- Status: passed
 - Required skills: restaurant-fork-improvement, restaurant-build-checklist, agency-mission-control-sync
 - Evidence required: top-3 improvements doc; before/after screenshots or diff evidence
 - Requirement: top-three-named — Top 3 concrete improvements are named from audit/preview/QA
@@ -75,7 +75,7 @@
 
 ### 7. ai_concierge_added — Add truthful AI concierge or record blocker
 - Stage: concierge
-- Status: pending
+- Status: in_progress
 - Required skills: website-agency-system, restaurant-build-checklist, agency-mission-control-sync
 - Evidence required: KB/source file; test transcript; blocker if concierge cannot be safely added
 - Requirement: concierge-kb-truthful — Concierge KB only uses verified restaurant facts
@@ -146,9 +146,9 @@
 - [ ] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype
 - [ ] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable
 - [ ] mobile-check: Mobile pass is explicitly checked with evidence
-- [ ] top-three-named: Top 3 concrete improvements are named from audit/preview/QA
-- [ ] top-three-implemented: All three improvements are implemented
-- [ ] top-three-evidence: Each improvement has before/after evidence
+- [x] top-three-named: Top 3 concrete improvements are named from audit/preview/QA - Passed via `improvements.md`, QA round docs, changed site files, and QA Round 3 screenshots.
+- [x] top-three-implemented: All three improvements are implemented - Passed via `improvements.md`, QA round docs, changed site files, and QA Round 3 screenshots.
+- [x] top-three-evidence: Each improvement has before/after evidence - Passed via `improvements.md`, QA round docs, changed site files, and QA Round 3 screenshots.
 - [ ] concierge-kb-truthful: Concierge KB only uses verified restaurant facts
 - [ ] concierge-tested: Short transcript proves useful behavior
 - [ ] concierge-safe: Fallbacks prevent fake reservations, unsupported promises, or invented facts
@@ -230,3 +230,10 @@
 - Three QA rounds are logged with screenshot evidence.
 - Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
 
+## 2026-05-04 — Top 3 improvements gate closeout
+
+- Completed the canonical `top_3_improvements` gate.
+- Evidence: `improvements.md`, `content.ts`, QA round docs, and final QA Round 3 desktop/mobile screenshots.
+- Top 3 named and implemented: stronger above-the-fold visit facts, improved mobile/contrast/image reliability, and more named Strawberry Moon proof from reviews/source evidence.
+- Mission Control heartbeat writeback succeeded as `c791097c-9730-43f6-988e-5467c82285f5`.
+- Advanced local stage to `concierge`.

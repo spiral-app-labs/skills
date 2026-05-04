@@ -31,3 +31,12 @@ Date: 2026-05-04
 - Official homepage: Tuesday-Saturday open 4 pm, first-come seating, martinis/wine/nibbles/desserts, live music.
 - Official events page evidence already captured in the audit: Thursday 6:30-9:30 pm, Friday-Saturday 7-10 pm.
 - Google review packet: martini flights, signature martinis, wine and cheese fondue, pretzel nuggets, quiet upstairs, knowledgeable bartenders, Tom hospitality, live music that still allows conversation.
+
+## Gate closeout — top 3 implemented evidence
+
+- Build/typecheck evidence: `npm run typecheck` and `npm run build` passed during QA Round 3.
+- Before/after evidence for improvement 1: Round 1/2 hero QA notes in `qa-round-1.md` and `qa-round-2.md`; final implementation and screenshots in `qa-round-3.md` plus `screenshots/qa-round-3-home-desktop-2026-05-04.png` and `screenshots/qa-round-3-home-mobile-2026-05-04.png`.
+- Before/after evidence for improvement 2: Round 2 mobile gallery/contrast findings in `qa-round-2.md`; final pass in `qa-round-3.md` with home/menu/contact/about mobile screenshots.
+- Before/after evidence for improvement 3: source/audit/review packet in `audit.md` and `scrapes/google-reviews-highest-30.json`; implemented copy in `content.ts` and final QA pass in `qa-round-3.md`.
+
+Result: all three improvements are named, implemented, and backed by before/after QA or screenshot evidence. Mission Control heartbeat writeback succeeded as `c791097c-9730-43f6-988e-5467c82285f5`. Next canonical gate is `concierge`.
