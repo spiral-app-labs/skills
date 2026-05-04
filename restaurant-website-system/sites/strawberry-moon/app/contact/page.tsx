@@ -20,11 +20,17 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16">
             <aside className="md:col-span-4">
               <h3 className="text-h3 mb-6">{c.direct.heading}</h3>
-              <div className="grid grid-cols-1 gap-5 max-w-sm sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-5 max-w-xl sm:grid-cols-2">
                 <div>
                   <div className="text-micro text-ink mb-1">{c.direct.call.label}</div>
                   <Link href={c.direct.call.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
                     {c.direct.call.value}
+                  </Link>
+                </div>
+                <div>
+                  <div className="text-micro text-ink mb-1">{c.direct.email.label}</div>
+                  <Link href={c.direct.email.href} className="vs-link text-body underline underline-offset-4 decoration-ink/30">
+                    {c.direct.email.value}
                   </Link>
                 </div>
                 <div>

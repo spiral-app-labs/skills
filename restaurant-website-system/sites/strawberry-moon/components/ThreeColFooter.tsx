@@ -35,6 +35,10 @@ export function ThreeColFooter() {
             <Link href={contact.direct.call.href} className="vs-link text-body">
               {contact.direct.call.value}
             </Link>
+            <div className="mt-4 text-body text-ink">{contact.direct.email.label}</div>
+            <Link href={contact.direct.email.href} className="vs-link text-body break-all">
+              {contact.direct.email.value}
+            </Link>
           </div>
 
           {/* Socials */}

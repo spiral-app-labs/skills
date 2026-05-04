@@ -1,0 +1,43 @@
+{
+  "build_stage": "qa_round_2",
+  "currentStage": "qa_round_2",
+  "completed_gate": "qa_round_1",
+  "site_slug": "strawberry-moon",
+  "template_slug": "velvet-shaker-01",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "qa_round_1_child_task_id": "2aa1bf26-d71f-4f72-b591-2f01456e87fc",
+  "checklist_markdown_path": "restaurant-website-system/sites/strawberry-moon/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/strawberry-moon/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/content.ts",
+    "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/components/ThreeColFooter.tsx",
+    "restaurant-website-system/sites/strawberry-moon/source.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.json"
+  ],
+  "commands": [
+    "npm ci",
+    "npm run build",
+    "npm run typecheck"
+  ],
+  "verification": {
+    "npm_ci": "passed",
+    "build": "passed with static /, /about, /menu, and /contact routes plus dynamic /api/concierge",
+    "typecheck": "passed",
+    "route_metadata_and_links": "verified from generated .next/server/app HTML artifacts and persisted into scrapes/qa-round-1-browser-checks-2026-05-04.json",
+    "localhost_http": "blocked by sandbox listen EPERM on 127.0.0.1:3078"
+  },
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "heartbeat_summary": "QA Round 1 build verification completed locally for Strawberry Moon. The site builds and typechecks cleanly after the QA1 source-fidelity patch, route metadata and link handoffs are verified, and browser capture is documented as blocked by sandbox localhost restrictions. Local build_stage/currentStage advance to qa_round_2 only in local mirrored artifacts.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "Mission Control API auth is unavailable in this runtime, so no remote task update was attempted.",
+    "next_unblock_action": "Replay this payload through the normal Mission Control sync path once agency auth is restored."
+  }
+}
