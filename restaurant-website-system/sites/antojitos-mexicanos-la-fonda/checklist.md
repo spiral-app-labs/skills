@@ -2,7 +2,7 @@
 
 - Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
 - MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
-- Current stage: `pitch`
+- Current stage: `qa_round_1`
 - Template route: `pepper-01`
 
 ## Workflow status
@@ -89,12 +89,16 @@
 ### 8. Create sellable pitch doc
 
 - Stage: `pitch`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md`
 
 ### 9. Create owner battle cards
 
 - Stage: `battle_cards`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md`
 
 ### 10. QA round 1
 
@@ -139,9 +143,15 @@
 - `concierge-kb-truthful`
 - `concierge-tested`
 - `concierge-safe`
+- `pitch-specific`
+- `pitch-before-after`
+- `pitch-evidence`
+- `battle-cards-objections`
+- `battle-cards-demo-path`
+- `battle-cards-risks`
 
 ## Current blocker
 
 - Gate: `mission_control_sync`
-- Reason: local concierge gate is complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
-- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-concierge-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.
+- Reason: local pitch and battle-card gates are complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
+- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-pitch-battle-cards-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.

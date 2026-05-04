@@ -6,7 +6,7 @@
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "pitch",
+  "currentStage": "qa_round_1",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
@@ -447,9 +447,16 @@
         "before/after evidence links"
       ],
       "order": 8,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:52:00Z"
     },
     {
       "id": "battle_cards_doc",
@@ -485,9 +492,14 @@
         "battle-cards.md"
       ],
       "order": 9,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-04T18:52:00Z"
     },
     {
       "id": "qa_round_1",
@@ -694,21 +706,24 @@
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/concierge-2026-05-04/mobile.png",
     "local command: curl -X POST /api/concierge smoke tests (passed)",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-concierge-complete-2026-05-04.json",
-    "local command: npm run build (passed with /api/concierge route)"
+    "local command: npm run build (passed with /api/concierge route)",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-pitch-battle-cards-complete-2026-05-04.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
-    "pitchDoc": null,
+    "pitchDoc": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
     "outreachDraft": null,
     "beforeAfterScreenshots": []
   },
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Concierge gate is complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
-      "nextUnblockAction": "Retry the prepared concierge-complete writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
-      "recordedAt": "2026-05-04T18:46:00Z"
+      "reason": "Pitch and battle-card gates are complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
+      "nextUnblockAction": "Retry the prepared pitch-battle-cards writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
+      "recordedAt": "2026-05-04T18:52:00Z"
     }
   ],
   "requirements": [
@@ -957,50 +972,98 @@
     {
       "id": "pitch-specific",
       "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
-      "stage": "pitch"
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch names the no-owned-site leak, 4.5/148 Google proof, Veracruz-style review love, Crystal Lake address/phone, and call/maps-first conversion strategy.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md"
+      ]
     },
     {
       "id": "pitch-before-after",
       "title": "Pitch explains before/after delta in owner language",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
-      "stage": "pitch"
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch frames before as scattered directory proof with Google Add website and after as an owned call/directions/proof/conierge path.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md"
+      ]
     },
     {
       "id": "pitch-evidence",
       "title": "Evidence and preview links are embedded or linked",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "pitch_doc",
-      "stage": "pitch"
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch links local audit, review themes, improvement evidence, concierge KB, and demo path.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md"
+      ]
     },
     {
       "id": "battle-cards-objections",
       "title": "Likely owner objections have concise answers",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
-      "stage": "battle_cards"
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards cover Google-only discovery, no online ordering, changing menu/prices, dine-in ambiguity, genericness, and concierge concerns.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ]
     },
     {
       "id": "battle-cards-demo-path",
       "title": "Demo path and proof points are clear",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
-      "stage": "battle_cards"
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards include a five-step demo path: hero, proof strip, menu cards, concierge, mobile sticky CTA.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ]
     },
     {
       "id": "battle-cards-risks",
       "title": "Risks/unknowns are called out truthfully",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
-      "stage": "battle_cards"
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards call out menu/prices/specials/seating/provider/holiday-hour verification and MC sync blocker.",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -1054,7 +1117,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T18:46:00Z",
+  "updatedAt": "2026-05-04T18:52:00Z",
   "passedRequirementIds": [
     "checklist-md",
     "checklist-json",
@@ -1076,6 +1139,12 @@
     "top-three-evidence",
     "concierge-kb-truthful",
     "concierge-tested",
-    "concierge-safe"
+    "concierge-safe",
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence",
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks"
   ]
 }

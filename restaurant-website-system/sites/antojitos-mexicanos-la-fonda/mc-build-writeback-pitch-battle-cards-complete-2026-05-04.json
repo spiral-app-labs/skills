@@ -1,0 +1,63 @@
+{
+  "build_stage": "qa_round_1",
+  "currentStage": "qa_round_1",
+  "site_slug": "antojitos-mexicanos-la-fonda",
+  "template_slug": "pepper-01",
+  "lead_id": "92b49f80-4193-4c76-ba72-7a03493fd707",
+  "mc_task_id": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
+  "checklist_markdown_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/battle-cards.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-kb-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/concierge-test-transcript-2026-05-04.md"
+  ],
+  "passed_requirement_ids": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe",
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence",
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks"
+  ],
+  "pitch_summary": "One-page seller brief frames the before/after: Google has strong proof but no owned website, while the preview centralizes call, directions, hours, review proof, Veracruz-specific menu story, mobile CTAs, and safe concierge handoffs.",
+  "battle_card_summary": "Owner talking points, objections, proof, risks, and demo path are recorded; strongest close emphasizes converting scattered Google proof into calls and directions without fake ordering or menu claims.",
+  "verification": {
+    "markdown_artifacts": "created and linked from checklist",
+    "json_valid": "checklist and writeback payload validated with python3 -m json.tool",
+    "truth_safety": "docs explicitly ban fake online ordering, fake menu pricing, overclaimed seating, catering/allergy/reservation promises, and unverified provider claims"
+  },
+  "heartbeat_summary": "Antojitos pitch and battle-card gates completed locally. Next canonical stage is qa_round_1; MC sync remains blocked by missing agency auth in this runtime.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime; prior MC build writeback returned 401 Unauthorized.",
+    "next_unblock_action": "Retry this payload against /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}
