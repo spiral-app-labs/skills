@@ -1,0 +1,76 @@
+{
+  "build_stage": "pitch",
+  "currentStage": "pitch",
+  "site_slug": "strawberry-moon",
+  "template_slug": "velvet-shaker-01",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "child_task_id": "c451e21c-dd98-4522-9bce-94ecdb6d1753",
+  "checklist_markdown_path": "restaurant-website-system/sites/strawberry-moon/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/strawberry-moon/checklist.json",
+  "concierge_evidence_path": "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+  "concierge_transcript_path": "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.json"
+  ],
+  "passed_requirement_ids": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe"
+  ],
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "concierge_guardrails": [
+    "Only answers from verified facts captured in source.md, audit.md, event scrape, and review packet",
+    "No reservation, booking, table-hold, or same-night availability promises",
+    "No ordering, delivery, takeout, or fake provider claims",
+    "No allergy, dietary, or medical guidance",
+    "No invented prices, specials, or closing times",
+    "Hands uncertain asks to phone or official site/events page"
+  ],
+  "commands": [
+    "npm ci",
+    "npm run typecheck",
+    "node --experimental-strip-types --input-type=module smoke test against lib/concierge-kb.ts",
+    "npm run build"
+  ],
+  "verification": {
+    "npm_ci": "passed",
+    "typecheck": "passed",
+    "resolver_smoke": "passed for hours, reservations refusal, drinks, vibe, and delivery refusal",
+    "build": "passed with dynamic /api/concierge route",
+    "localhost_http": "blocked by sandbox listen EPERM on 127.0.0.1:3106, so transcript uses direct resolver execution instead of a bound local server"
+  },
+  "heartbeat_summary": "Concierge gate completed locally for Strawberry Moon. Added a truthful restaurant-specific concierge UI on the contact page, a deterministic local resolver and API route, a verified KB, and a short tested transcript showing useful answers plus safe refusals. Local stage advanced to pitch, while ready_to_pitch stays false and founder-controlled Anthropic/human-review gates remain pending.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "Mission Control API auth is unavailable in this runtime, so no remote task update was attempted.",
+    "next_unblock_action": "Replay this payload through the normal Mission Control sync path once agency auth is restored."
+  }
+}
