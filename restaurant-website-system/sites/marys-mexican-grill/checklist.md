@@ -6,11 +6,11 @@
 - Child task ID: 70683332-3044-461f-9dcf-dffa59a24a7b
 - MC parent task ID: 0ee079ce-2e26-4d44-8fdf-96e0db2e4047
 - Template slug: bamzi-01
-- Current stage: battle_cards
+- Current stage: qa_round_1
 - Checklist MD: restaurant-website-system/sites/marys-mexican-grill/checklist.md
 - Checklist JSON: restaurant-website-system/sites/marys-mexican-grill/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-04T20:51:14Z
+- Updated: 2026-05-04T21:30:00Z
 
 ## Mission Control Sync Contract
 
@@ -107,10 +107,12 @@
 
 ### 10. qa_round_1 — QA round 1
 - Stage: qa_round_1
-- Status: pending
+- Status: passed
 - Required skills: restaurant-qa-delivery, browser-automation, agency-mission-control-sync
 - Evidence required: qa-round-1.md; desktop screenshot; mobile screenshot; build/typecheck result
 - Requirement: qa-round-1 — QA round 1 completed with screenshots, findings, fixes, and MC writeback
+- Evidence: restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png; restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html; restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json; restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json
+- Blocker: MC writeback remains local-only because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime. Parent screenshot recapture is still required to confirm the post-fix visual result.
 
 ### 11. qa_round_2 — QA round 2
 - Stage: qa_round_2
@@ -163,7 +165,7 @@
 - [x] battle-cards-objections: Likely owner objections have concise answers - `battle-cards.md` answers common objections around existing demand, polish risk, restaurant register, phone/hours uncertainty, photos, and keeping DoorDash truthful until owner confirmation.
 - [x] battle-cards-demo-path: Demo path and proof points are clear - `battle-cards.md` gives an exact seller demo sequence across the homepage, content source, proof sections, menu/contact flow, and the audited before-state.
 - [x] battle-cards-risks: Risks/unknowns are called out truthfully - `battle-cards.md` explicitly limits phone, hours, order-path, photography, owner-story, and MC sync claims.
-- [ ] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback
+- [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - Round 1 local QA artifacts record the responsive fixes, pre-fix screenshot/scrape evidence paths, successful `npm run typecheck` and `npm run build`, and local-only MC payloads.
 - [ ] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback
 - [ ] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
 - [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC
@@ -205,10 +207,16 @@
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-pitch-2026-05-04.json
 - restaurant-website-system/sites/marys-mexican-grill/battle-cards.md
 - restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-battle-cards-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png
+- restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html
+- restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-1-writeback-2026-05-04.json
+- restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-1-2026-05-04.json
 
 ## QA Rounds
 
-- Round 1: pending
+- Round 1: passed
 - Round 2: pending
 - Round 3: pending
 
@@ -227,6 +235,7 @@
 - Mission Control concierge-stage writeback remains local-only for the same auth reason, even though the concierge gate now has local UI evidence, deterministic transcripts, and successful verification output.
 - Mission Control pitch-stage writeback remains local-only for the same auth reason, even though the pitch gate now has local evidence and checklist updates.
 - Mission Control battle-cards-stage writeback remains local-only for the same auth reason, even though the battle cards gate now has local evidence and checklist updates.
+- Mission Control qa-round-1 writeback remains local-only for the same auth reason, even though the round-1 responsive fixes, checklist updates, and local payload artifacts are complete.
 
 ## Done Criteria
 
