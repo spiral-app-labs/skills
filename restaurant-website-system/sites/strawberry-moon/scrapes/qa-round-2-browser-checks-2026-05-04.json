@@ -1,0 +1,78 @@
+{
+  "date": "2026-05-04",
+  "site_slug": "strawberry-moon",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_root_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "mc_qa_round_2_child_task_id": "136d94d0-2fa2-4c09-8584-52c08f4a05ac",
+  "preview_attempt": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3078",
+    "status": "blocked",
+    "blocker": "listen EPERM: operation not permitted 127.0.0.1:3078"
+  },
+  "viewports_attempted": [
+    { "name": "mobile", "width": 390, "height": 844, "screenshot_status": "blocked" },
+    { "name": "desktop", "width": 1440, "height": 900, "screenshot_status": "blocked" }
+  ],
+  "routes_checked": [
+    {
+      "route": "/",
+      "built_html_path": ".next/server/app/index.html",
+      "checks": [
+        "title and description present",
+        "primary nav present",
+        "hero CTAs include directions, events, and phone",
+        "footer includes directions, phone, and email"
+      ]
+    },
+    {
+      "route": "/menu",
+      "built_html_path": ".next/server/app/menu.html",
+      "checks": [
+        "title and description present",
+        "menu sections rendered without fake prices",
+        "footer includes directions, phone, and email"
+      ]
+    },
+    {
+      "route": "/about",
+      "built_html_path": ".next/server/app/about.html",
+      "checks": [
+        "title and description present",
+        "review-backed proof blocks rendered",
+        "events section present",
+        "footer includes directions, phone, and email"
+      ]
+    },
+    {
+      "route": "/contact",
+      "built_html_path": ".next/server/app/contact.html",
+      "checks": [
+        "title and description present",
+        "call, email, directions, current site, events, and Book an Event links present",
+        "truthful concierge rendered with refusal guardrails",
+        "directions CTA repeated near page bottom"
+      ]
+    }
+  ],
+  "link_verification": {
+    "internal_routes": ["/", "/about", "/menu", "/contact"],
+    "external_links": [
+      "tel:+18478655151",
+      "mailto:thomasmalik830@gmail.com",
+      "https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084",
+      "https://strawberrymoonmartinisandmore.weebly.com/",
+      "https://strawberrymoonmartinisandmore.weebly.com/events.html",
+      "https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html"
+    ]
+  },
+  "mobile_conversion_review": {
+    "sticky_cta": "added in QA2 via components/MobileStickyCta.tsx",
+    "primary_actions": ["call", "directions"],
+    "truthfulness": "no fake reservations, no fake ordering, no invented provider paths",
+    "horizontal_overflow_risk": "no overflow-risk classes found in inspected route structure"
+  },
+  "screenshots": {
+    "status": "blocked",
+    "reason": "No localhost browser session could be opened from this sandbox, and older screenshot paths referenced by docs are not present in this worktree."
+  }
+}
