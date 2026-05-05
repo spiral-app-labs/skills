@@ -77,3 +77,24 @@ OpenClaw managed browser is unavailable on this host (`No supported browser foun
 ## Current recommendation
 
 Proceed as a conditional build candidate after browser evidence verifies the owned-site friction. Golden Rolls has clear sellability: high rating, strong sushi/Japanese menu signals, dine-in/curbside/delivery, and a bistro/bar identity. The build should make the official site feel reliable, structured, and more premium without inventing claims or turning it into a formal omakase concept.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md`, `scrapes/browser-audit-manifest-2026-05-05.json`, and `scrapes/public-proof-manifest-2026-05-05.json`.
+
+Captured official-site evidence:
+
+- Homepage desktop/mobile screenshots and DOM/text snapshots.
+- Full Menu desktop/mobile screenshots and DOM/text snapshots.
+- Location & Hours desktop/mobile screenshots and DOM/text snapshots.
+- Browser fetch/status checks for homepage, full menu, and location-hours all returned HTTP 200 in the managed Chrome audit run.
+
+Captured supporting public proof:
+
+- Restaurantji screenshot/text showing 4.7 from 187 ratings, Sushi Bars/Japanese categorization, address, phone, hours, favorites, and order/menu links.
+- Roost/directory proof screenshot/text corroborating a chill Japanese bistro with a bar, creative sushi rolls, noodles, teriyaki, dine-in, curbside pickup, delivery, address, phone, and 4.5/290 review signal.
+
+Updated audit interpretation: the official site is more than a one-page scrape in real browser context. It has a large WordPress menu system and a crawlable full-menu page with detailed menu/pricing content. The sellable gaps remain real: dated visual presentation, weak homepage conversion, dense mobile navigation, and an unhelpful Location & Hours page capture with little crawlable address/hour content.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
