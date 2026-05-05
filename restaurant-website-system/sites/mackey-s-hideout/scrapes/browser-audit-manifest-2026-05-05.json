@@ -1,0 +1,70 @@
+{
+  "capturedAt": "2026-05-05T08:20:28.814Z",
+  "captures": [
+    {
+      "url": "http://www.mackeyshideout.com/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/official-live-music-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "http://www.mackeyshideout.com/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/official-live-music-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/mchenry/mackeys-hideout-/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://restaurantguru.com/Mackeys-Hideout-McHenry",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/restaurantguru-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantguru-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantguru-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Mackey%27s+Hideout+2601+S+River+Rd+McHenry+IL",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-search-desktop-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "official-live-music",
+      "url": "http://www.mackeyshideout.com/",
+      "status": 200,
+      "finalUrl": "http://www.mackeyshideout.com/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "restaurantji",
+      "url": "https://www.restaurantji.com/il/mchenry/mackeys-hideout-/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/mchenry/mackeys-hideout-/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "restaurantguru",
+      "url": "https://restaurantguru.com/Mackeys-Hideout-McHenry",
+      "status": 200,
+      "finalUrl": "https://restaurantguru.com/Mackeys-Hideout-McHenry",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "google-search",
+      "url": "https://www.google.com/search?q=Mackey%27s+Hideout+2601+S+River+Rd+McHenry+IL",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Mackey%27s+Hideout+2601+S+River+Rd+McHenry+IL",
+      "contentType": "text/html; charset=ISO-8859-1"
+    }
+  ]
+}

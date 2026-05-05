@@ -65,3 +65,24 @@ OpenClaw managed browser is unavailable on this host (`No supported browser foun
 ## Current recommendation
 
 Proceed only as a bar/live-music venue build, not a conventional restaurant build. Mackey's is sellable if the website becomes a stronger music-calendar and bar-identity page: upcoming shows, open mic/karaoke, craft beer/drinks, address/hours, TicketWeb links, outdoor events, and a warm dive-bar/roadhouse mood. Keep claims grounded and avoid inventing food depth.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured current-site evidence:
+
+- Official live-music schedule desktop/mobile screenshots and DOM/text snapshots.
+- Browser status check for the official URL returned HTTP 200.
+- The official site shows Live Music, Beer Menu, Booking, About, Merch, Photos, and Home navigation, plus a long 2026 schedule with open mic, karaoke, outdoor shows, band names, prices, and ticket prompts.
+
+Captured public proof:
+
+- Google search/local pack screenshot/text showing 4.6 from 408 Google reviews, Bar category, address, craft beer, live music, karaoke, open mic, friendly staff, reasonable drink prices, and outside-food allowance.
+- Restaurantji screenshot/text showing 4.7 from 155 ratings, Bars category, address, phone, hours, live music, drink selection, frozen pizzas, slots, darts, and stage.
+- Restaurant Guru screenshot/text showing #1 pub/bar rankings in the area, 108 photos, 4.6 Google-derived rating, craft/draft beer, bourbon, pizza, cozy atmosphere, live music, karaoke, website, and Instagram proof.
+
+Updated audit interpretation: the official site is reachable and text-rich, but it still reads like a raw schedule archive. The sellable gap remains turning Mackey's into a high-conversion Bramble-style bar/live-music venue page with clear upcoming shows, ticket links, open mic/karaoke, drinks, hours, address, and roadhouse personality.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
