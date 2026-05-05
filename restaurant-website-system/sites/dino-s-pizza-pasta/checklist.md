@@ -161,8 +161,8 @@
 - [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback - QA round 1 completed with screenshots, findings/fixes, build/typecheck result, and remaining blockers documented.
 - [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback - QA round 2 completed with desktop/mobile screenshots for home/about/contact, page audit JSON, build/typecheck pass, metadata/OG fix, mobile CTA polish, contact map CTA fix, and tap-target fixes.
 - [x] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback - QA round 3 final sell-readiness passed locally with final screenshots, final CDP audit, build/typecheck, copy cleanup, map polish, and visual QA re-check.
-- [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC - Local delivery package/archive, owner-confirmation packet, public-preview runbook, and MC writeback payload/runbook are assembled; final delivery cannot pass until public preview URL and Mission Control writeback are available and owner-sensitive facts are confirmed.
-- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence - Local delivery package/archive, owner-confirmation packet, public-preview runbook, and MC writeback payload/runbook are assembled; final delivery cannot pass until public preview URL and Mission Control writeback are available and owner-sensitive facts are confirmed.
+- [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC - Local delivery package/archive, owner-confirmation packet, public-preview runbook, public preview access check, and MC writeback payload/runbook are assembled; final delivery cannot pass because the Vercel PR preview is SSO-protected (`HTTP/2 401`), Mission Control writeback needs agency API auth, and owner-sensitive facts must be confirmed.
+- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence - Local delivery package/archive, owner-confirmation packet, public-preview runbook, public preview access check, and MC writeback payload/runbook are assembled; final delivery cannot pass because the Vercel PR preview is SSO-protected (`HTTP/2 401`), Mission Control writeback needs agency API auth, and owner-sensitive facts must be confirmed.
 
 ## Evidence Paths
 
@@ -228,6 +228,7 @@
 - restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md
 - restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md
 - restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md
+- restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md
 - restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json
 - restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md
 
@@ -245,7 +246,7 @@
 
 ## Blockers
 
-- Public owner-shareable preview URL missing; delivery cannot pass without it. Public preview runbook is prepared locally.
+- Public owner-shareable preview remains blocked. Vercel PR preview `https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app` exists, but unauthenticated access returns `HTTP/2 401` / Authentication Required. Public preview runbook and access-check evidence are prepared locally.
 - Mission Control API writeback pending: AGENCY_AUTONOMY_API_KEY is present, but no trusted Mission Control base URL is configured in this runtime; the only discovered example URL failed TLS hostname validation. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror and MC writeback payload/runbook are prepared locally.
 - Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally.
 
@@ -257,3 +258,8 @@
 - Three QA rounds are logged with screenshot evidence.
 - Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
 
+## 2026-05-05 blocker recheck
+
+- Public preview candidate rechecked at `2026-05-05T22:32:52Z`: still `HTTP/2 401` / Vercel Authentication Required.
+- Mission Control lead API rechecked at `2026-05-05T22:32:53Z` with `x-agency-runtime: openclaw` and no bearer: still `HTTP/2 401`.
+- Delivery remains blocked; local package/runbooks stay ready for public preview + agency API auth.

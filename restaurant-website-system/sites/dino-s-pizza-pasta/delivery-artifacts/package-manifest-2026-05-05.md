@@ -5,6 +5,7 @@
 - Archive: `restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz`
 - SHA-256: `4d37e05368a8373dc4b60825c984271375af24be48c1c7febeced889b12211c5`
 - Size: 4.6 MB
+- Merged packaging PR: https://github.com/spiral-app-labs/skills/pull/42
 
 ## Contents
 
@@ -18,4 +19,4 @@ The archive excludes `node_modules`, `.next`, `.git`, and prior package archives
 
 ## Status
 
-This is a local handoff/deployment package only. It is not a public preview URL and does not satisfy final delivery until Mission Control writeback, owner confirmation, and owner-shareable preview are available.
+This is a local handoff/deployment package only. It is not a public preview URL and does not satisfy final delivery until Mission Control writeback, owner confirmation, and owner-shareable preview are available. Mission Control writeback currently has a trusted base URL (`https://hq.ethantalreja.com`) but is blocked by missing agency API bearer token in this runtime.
