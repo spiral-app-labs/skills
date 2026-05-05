@@ -69,3 +69,24 @@ OpenClaw managed browser is unavailable on this host (`No supported browser foun
 ## Current recommendation
 
 Proceed as a conditional no-owned-site build candidate after Google/Maps browser verification. The sell story is simple: Main Street Tacos already has strong ratings and craveable taco signals, but needs one owned page for menu, hours, call/directions, delivery/takeout, and local trust instead of letting directories own the first impression.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured Google / first-party-site verification:
+
+- Google desktop/mobile screenshots and text.
+- Google shows Main Street Tacos at 4.4 from 572 Google reviews, `327 N Main St, Wauconda, IL 60084`, phone `(847) 526-8586`, call/directions actions, menu highlights, and generated/directory web results.
+- Candidate website-like URLs were checked: `main-street-tacos.menu-world.com` renders a generated profile with generic copy and reservation language, while `MainStreetTacos.food96.com` returned Cloudflare 502. These do not look like a clean owner-controlled primary website.
+
+Captured public proof:
+
+- Restaurantji desktop/mobile screenshot/text showing 4.8 from 174 ratings, Mexican/Vegetarian category, address, phone, 10AM–10PM daily hours, delivery/takeout, and favorites.
+- Restaurant Guru screenshot/text showing #5 of 49 restaurants in Wauconda, 86 photos, 4.4 Google-derived rating, delivery/outdoor seating/takeaway, Instagram, and candidate Food96 website.
+- Restaurantji Wauconda city-listing screenshot/text showing Main Street Tacos ranked with 4.8 / Superb 174 reviews and taco favorites.
+
+Updated audit interpretation: Main Street Tacos has strong demand and discoverability, but the current web footprint is fragmented across Google, Restaurantji, Restaurant Guru, Menu World, Food96, Yelp, Facebook, and Apple Maps rather than a trustworthy owner-controlled landing page. The pitch should focus on replacing generated/directory-led discovery with one fast, accurate, order-first taco site.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
