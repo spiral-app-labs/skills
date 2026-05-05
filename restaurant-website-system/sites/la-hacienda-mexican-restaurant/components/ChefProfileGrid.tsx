@@ -17,11 +17,11 @@ export function ChefProfileGrid() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {c.team.map((chef) => (
-            <article key={chef.name} className="rounded-card overflow-hidden">
-              <div className="relative aspect-[4/5]">
-                <Image src={chef.image} alt={chef.name} fill sizes="(min-width: 768px) 380px, 100vw" className="object-cover" />
+            <article key={chef.name} className="rounded-card overflow-hidden border border-border-dark bg-bg-dark/60">
+              <div className="relative hidden aspect-[4/3] bg-bg-dark md:block">
+                <Image src={chef.image} alt={chef.name} fill sizes="(min-width: 768px) 380px, 100vw" className="object-contain" />
               </div>
-              <div className="p-4 text-center">
+              <div className="p-5 text-center">
                 <div className="font-display text-[22px] text-text-white">{chef.name}</div>
                 <div className="text-body-sm text-text-muted-dark mt-1">{chef.role}</div>
               </div>

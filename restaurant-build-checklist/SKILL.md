@@ -32,6 +32,7 @@ Reference paths:
 - site slug
 - template slug
 - current build stage / exact gate
+- structured lead metadata mirrored from the audit (`owner_name`, `owner_email`, `contact_email`, `phone`, `hours`, `address_location`, `website_url`, `order_url`, `reservation_url`, `catering_events_url`, `google_rating`, `google_review_count`, `metadata_source_notes`, outreach draft path/status, and field evidence)
 - checklist evidence paths
 - current-site browser screenshot paths and scrape/DOM snapshot path
 - Google Reviews evidence path: **Highest** filter, 30 written reviews JSON, screenshots
@@ -73,6 +74,7 @@ Update the checklist whenever:
 
 - stage/gate changes
 - evidence is captured
+- structured lead metadata changes or a metadata blocker is cleared
 - Google review packet changes
 - top-three-improvement decision or implementation changes
 - QA round completes

@@ -90,3 +90,48 @@ Captured public proof:
 Updated audit interpretation: the Canva page is not completely blank to a modern browser, but it is still not a proper restaurant website. It behaves like a document/menu deck instead of a first-party conversion homepage, with no strong call/directions/order structure, no normal restaurant navigation, no owner-controlled SEO story, and weak mobile-first landing-page polish.
 
 Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
+
+## Structured lead metadata for checklist + Mission Control sync
+
+- `owner_name`: `null`
+  - Evidence checked: Google review packet, Restaurantji text, Canva menu text, Roost directory text.
+  - Notes: reviews mention kind owners and one staff member (`Gisselle`), but no publicly verified owner name was captured.
+- `owner_email`: `null`
+  - Evidence checked: Canva menu text, Restaurantji text, Google local pack text, Roost directory text.
+  - Notes: no owner email surfaced in the captured public evidence.
+- `contact_email`: `null`
+  - Evidence checked: same public sources as above.
+  - Notes: no general contact email surfaced in the captured public evidence.
+- `phone`: `(847) 426-0506`
+  - Evidence: Canva menu text, Restaurantji, Google local pack, Roost directory.
+- `hours`: `Sunday 10:00 am - 9:00 pm; Monday-Thursday 10:00 am - 9:00 pm; Friday-Saturday 10:00 am - 10:00 pm`
+  - Evidence: Restaurantji, Google local pack, Roost directory.
+  - Notes: public sources agree, but owner confirmation is still required before final handoff because hours are time-sensitive.
+- `address_location`: `411 E Main St, East Dundee, IL 60118`
+  - Evidence: Canva menu text, Restaurantji, Google local pack, Roost directory.
+- `website_url`: `https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view`
+  - Evidence: MC lead record reference, Canva browser capture, Restaurantji Website listing.
+- `order_url`: `https://www.restaurantji.com/order.php?id=3429883`
+  - Evidence: local QA DOM audits captured the live built order link; Restaurantji and Google local pack both show public order-online surfaces.
+  - Notes: owner confirmation is still required before treating this as the preferred long-term provider path.
+- `reservation_url`: `null`
+  - Evidence checked: captured public sources above.
+  - Notes: no reservation provider or booking URL was verified.
+- `catering_events_url`: `null`
+  - Evidence checked: captured public sources above.
+  - Notes: no verified catering/events URL was captured.
+- `google_rating`: `4.3`
+  - Evidence: Google local pack browser capture and 30-review packet.
+- `google_review_count`: `530`
+  - Evidence: Google local pack browser capture and 30-review packet.
+  - Notes: count is time-sensitive and should remain owner-reviewable before any final public sales claim.
+- `outreach_email_draft_path`: `null`
+- `outreach_email_draft_status`: `not_created`
+
+### Metadata source notes
+
+- Checked the Canva current-site text capture for restaurant name, address, phone, specials, and the explicit note that menu prices can change without notice.
+- Checked Restaurantji for phone, hours, address, category, menu/order-online surfaces, and public review summary text.
+- Checked the Google local pack browser capture for rating, review count, address, phone, hours context, and visible order/menu actions.
+- Checked the Roost directory capture for corroborating address, phone, hours, and menu corpus.
+- Did not promote any owner names, emails, reservation links, or catering links because they were not publicly verified in the captured evidence.

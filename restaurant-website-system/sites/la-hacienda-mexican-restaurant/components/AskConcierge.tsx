@@ -116,19 +116,39 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
 
   return (
     <>
+      <div className="bg-bg-dark px-6 py-6 pb-28 text-text-white md:hidden">
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="flex w-full items-center justify-between rounded-card border border-border-dark bg-bg-dark/80 px-5 py-4 text-left shadow-lg"
+        >
+          <span>
+            <span className="block text-eyebrow uppercase tracking-[2px] text-text-muted-dark">
+              Questions before you go?
+            </span>
+            <span className="mt-1 block font-display text-[24px] leading-tight text-text-white">
+              Ask La Hacienda Concierge
+            </span>
+          </span>
+          <span className="rounded-full bg-accent px-3 py-1 text-button font-semibold text-text-white">
+            Open
+          </span>
+        </button>
+      </div>
+
       {/* Trigger pill — bottom-right, reveals after scroll */}
       <button
         type="button"
         aria-label={`Ask ${restaurantName} anything`}
         onClick={() => setOpen(true)}
-        className={`fixed bottom-[88px] right-3 z-40 flex items-center gap-2 rounded-pill bg-accent px-3 py-2 text-[10px] font-semibold uppercase text-text-white shadow-lg transition-all duration-500 hover:brightness-110 md:bottom-6 md:right-6 md:px-5 md:py-3 md:text-button ${
+        className={`fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-pill bg-accent px-4 py-3 text-button font-semibold uppercase text-text-white shadow-lg transition-all duration-500 hover:brightness-110 md:flex ${
           visible && !open
             ? 'translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-4 opacity-0'
         }`}
       >
         <span className="inline-block h-2 w-2 rounded-full bg-text-white" aria-hidden />
-        Ask {restaurantName}
+        Ask us
       </button>
 
       {/* Backdrop + bottom-sheet */}

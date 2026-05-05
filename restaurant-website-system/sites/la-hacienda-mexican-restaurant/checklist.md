@@ -1,11 +1,19 @@
 # la-hacienda-mexican-restaurant Build Checklist
 
+- Workflow version: 2026-05-05
+- Source of truth: Mission Control tasks.metadata + this mirrored local checklist
 - Lead ID: 7cba3fe2-8f65-4516-b46b-05c2c07ab235
 - MC parent task ID: fd7f4976-daac-42aa-8c9a-1ddb09a9d12f
 - Template slug: bamzi-01
-- Current stage: qa_round_2 (local build gate passed; Mission Control writeback pending)
+- Current stage: delivery_package (local package assembled; public preview + Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-05T13:39:00Z
+- Ready to pitch: false
+- Updated: 2026-05-05T19:46:05Z
+
+## Mission Control Sync Contract
+
+- MC root task metadata must mirror currentStage/build_stage, checklist paths, passed requirements, blockers, lead metadata, ready-to-pitch state, and preview URL state.
+- Local artifacts are ahead of MC for this site; the prepared writeback payload and runbook are the truth bridge until agency API auth/base URL are available.
 
 ## Requirements
 
@@ -19,12 +27,12 @@
 - [x] pitch: Sellable pitch doc created or updated - Owner-facing pitch doc created with demo path, proof locker, caveats, and next-step battle-card recommendation.
 - [x] battle-cards: Battle cards doc created or updated - Core sales frame, demo path, objections, proof locker, founder cautions, and close created.
 - [x] qa_round_1: QA round 1 completed with findings and fixes logged - Fixed cropped/internal decorative cards, SVG parse issues, guest-facing copy labels, and concierge trigger prominence; build, DOM, and vision checks passed.
-- [ ] qa_round_2: QA round 2 completed with findings and fixes logged - Pending next gate.
+- [x] qa_round_2: QA round 2 completed with findings and fixes logged - Production-preview QA2 recapture passed build/typecheck, 0 overflow offenders, 0 visible broken images, and no rendered internal/template phrase leaks.
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Bamzi scaffold copied into the existing La Hacienda site folder, placeholder content replaced with audit/review/menu proof, and `npm run build` passed locally on 2026-05-05 after switching to offline-safe font stacks.
-- [ ] qa-round-1: QA round 1 completed with findings and fixes logged
-- [ ] qa-round-2: QA round 2 completed with findings and fixes logged
-- [ ] qa-round-3: QA round 3 completed with findings and fixes logged
-- [ ] delivery-package: Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached
+- [x] qa-round-1: QA round 1 completed with findings and fixes logged
+- [x] qa-round-2: QA round 2 completed with findings and fixes logged
+- [x] qa-round-3: QA round 3 completed with findings and fixes logged - Final sell-readiness QA passed after fixing the mobile quick-action bar to stay fixed, adding body bottom padding, rebuilding/typechecking, and recapturing DOM/mobile viewport evidence.
+- [ ] delivery-package: Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached - Local package, archive, manifest, owner confirmation packet, public preview runbook, and MC writeback payload are prepared. Still blocked on public owner-shareable preview URL and Mission Control agency API writeback.
 
 ## Evidence Paths
 
@@ -54,18 +62,43 @@
 
 ## QA Rounds
 
-- Round 1: pending
-- Round 2: pending
-- Round 3: pending
+- Round 1: passed — see `qa-round-1-2026-05-05.md`
+- Round 2: passed — see `qa-round-2-2026-05-05.md`
+- Round 3: passed — see `qa-round-3-2026-05-05.md`
 
 ## Pitch Artifacts
 
-- Pitch doc: TBD
-- Outreach draft: TBD
+- Pitch doc: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md`
+- Battle cards: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md`
+- Outreach draft: not created (`null`)
+
+## Structured Lead Metadata
+
+- Owner name: `null`
+- Owner email: `null`
+- Contact email: `null`
+- Phone: `(847) 426-0506`
+- Hours:
+  - Sunday: 10:00 am - 9:00 pm
+  - Monday-Thursday: 10:00 am - 9:00 pm
+  - Friday-Saturday: 10:00 am - 10:00 pm
+- Address/location: `411 E Main St, East Dundee, IL 60118`
+- Website URL: `https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view`
+- Order URL: `https://www.restaurantji.com/order.php?id=3429883`
+- Reservation URL: `null`
+- Catering/events URL: `null`
+- Google rating/review count: `4.3` from `530` Google reviews
+- Metadata source notes:
+  - Checked Canva current-site capture, Restaurantji, Google local pack evidence, Roost directory capture, and the Google Highest review packet.
+  - No publicly verified owner name, owner email, contact email, reservation URL, or catering/events URL was captured, so those remain `null`.
+  - Hours, order-path preference, and review-count language still require owner/founder confirmation before final handoff.
 
 ## Blockers
 
-- stage_writeback: Local build gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime. Next unblock action: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.
+- public_preview_url: Public owner-shareable preview URL is missing; final delivery cannot pass without it. Next unblock action: deploy a preview/staging build using `public-preview-runbook-2026-05-05.md`, attach URL to delivery package/checklist, and rerun remote smoke checks.
+- stage_writeback: Local packaging artifacts are assembled, but Mission Control writeback still cannot be submitted because agency API auth/base URL are unavailable in this runtime. Next unblock action: configure Mission Control agency API auth/base URL for OpenClaw, then submit `mission-control-writeback-payload-2026-05-05.json`.
+- owner_confirmation: Owner-sensitive facts still need confirmation before final handoff: hours, ordering/provider flow, current menu/prices, review-count language, and public claims. Next unblock action: use `owner-confirmation-questions-2026-05-05.md` or get Ethan approval for conservative wording before production/final delivery.
+- founder_review: Founder human review has not been recorded, so `ready_to_pitch` remains false. Next unblock action: have Ethan/Evan review the package and explicitly clear or override the remaining owner-sensitive claims before any pitch or delivery status change.
 
 ## Done Criteria
 
@@ -73,7 +106,7 @@
 - Mission Control parent task metadata.requirements mirrors this checklist.
 - All required checklist rows are passed.
 - Three QA rounds are logged with screenshot evidence.
-- Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
+- Preview URL, pitch doc, outreach draft status, and delivery evidence are attached.
 
 
 ## Improving evidence
@@ -124,3 +157,49 @@
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-contact-mobile-2026-05-05.png
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-concierge-open-mobile-2026-05-05.png
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-qa-round-1-complete-2026-05-05.json
+
+
+## QA Round 2 evidence
+
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-2-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-2-dom-check-2026-05-05.json
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-home-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-about-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-menu-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-contact-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-news-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-home-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-about-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-menu-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-contact-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-news-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-concierge-open-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-concierge-open-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-qa-round-2-complete-2026-05-05.json
+
+
+## QA Round 3 evidence
+
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-3-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-3-final-audit-2026-05-05.json
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-home-top-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-menu-top-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-contact-top-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-qa-round-3-complete-2026-05-05.json
+
+
+## Delivery package evidence
+
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-package-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/la-hacienda-mexican-restaurant-local-package-2026-05-05.tar.gz
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/package-manifest-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/owner-confirmation-questions-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-runbook-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-payload-2026-05-05.json
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-runbook-2026-05-05.md
