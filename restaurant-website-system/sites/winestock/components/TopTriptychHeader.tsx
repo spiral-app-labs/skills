@@ -46,7 +46,7 @@ export function TopTriptychHeader() {
       </div>
 
       <Link
-        href="#menus"
+        href="/#menus"
         className="px-4 py-2 rounded-button border border-text-cream/60 hover:bg-text-cream/10 text-button text-text-cream transition-colors flex items-center gap-2"
       >
         Menu

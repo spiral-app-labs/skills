@@ -43,6 +43,39 @@ export const content = {
     body: 'A Cass Street wine market and lounge for hand-selected bottles, small plates, live music, and the easy Woodstock Square nights regulars keep coming back for.',
   },
 
+  visitModes: [
+    {
+      eyebrow: 'Market',
+      title: 'Hand-selected bottles',
+      body: 'Shop artisanal wines and spirits from around the globe, with owner/staff guidance for pairings, parties, and gifts.',
+    },
+    {
+      eyebrow: 'Lounge',
+      title: 'Woodstock’s living room',
+      body: 'Regulars describe the room as relaxed, friendly, and easy to settle into for wine, craft beer, conversation, and music.',
+    },
+    {
+      eyebrow: 'Boards + bites',
+      title: 'Small plates that travel',
+      body: 'Flatbreads, sandwiches, charcuterie, and cheese boards work for a night in the lounge or something to bring home.',
+    },
+  ],
+
+  proofQuotes: [
+    {
+      quote: 'All roads lead to Winestock. Friendly atmosphere, eclectic patrons and always phenomenal live music!',
+      by: 'Laura Witlox, Google review',
+    },
+    {
+      quote: 'Carolyn had several selections based on the menu I sent over. Exceptional service all around!',
+      by: 'Rachel Lacsamana, Google review',
+    },
+    {
+      quote: 'Winestock, a.k.a. Woodstock’s living room, is the best place to have a good evening with friends, wine and charcuterie in town.',
+      by: 'StrandedOnAPlanet, Google review',
+    },
+  ],
+
   polaroids: [
     { src: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80', alt: 'Curated wine bottles', rotation: -4 },
     { src: 'https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=600&q=80', alt: 'Charcuterie and cheese board', rotation: 2 },
@@ -65,10 +98,12 @@ export const content = {
     food: {
       label: 'Small Plates',
       pdfUrl: '#small-plates',
+      highlights: ['Flatbreads', 'Sandwiches', 'Charcuterie + cheese boards'],
     },
     drinks: {
       label: 'Wine + Spirits',
       pdfUrl: '#wine-spirits',
+      highlights: ['Artisanal wines', 'Craft beer', 'Spirits + non-alcoholic drinks'],
     },
     fullMenuCta: { label: 'Contact Winestock', href: 'mailto:info@shopwinestock.com' },
   },
@@ -98,10 +133,28 @@ export const content = {
 
   mailingList: {
     title: 'Plan your next Woodstock Square stop',
-    subtitle: 'Email Winestock for bottle picks, boards, live music, and visit questions.',
+    subtitle: 'Choose the handoff that matches your visit — no fake booking flow, just the real public contact paths Winestock uses today.',
     placeholder: 'email@example.com',
     cta: 'Contact Us',
   },
+
+  contactActions: [
+    {
+      label: 'Email Winestock',
+      href: 'mailto:info@shopwinestock.com?subject=Winestock%20visit',
+      note: 'Bottle picks, boards, gifts, event questions, and visit planning.',
+    },
+    {
+      label: 'Call (815) 308-5610',
+      href: 'tel:+18153085610',
+      note: 'Best for today’s hours, quick questions, and same-day details.',
+    },
+    {
+      label: 'Facebook updates',
+      href: 'https://www.facebook.com/Winestockmarket/',
+      note: 'Live music, market updates, and the latest room energy.',
+    },
+  ],
 
   footer: {
     wordmark: 'Winestock',

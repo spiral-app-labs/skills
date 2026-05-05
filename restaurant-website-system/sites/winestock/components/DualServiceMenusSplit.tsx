@@ -18,7 +18,7 @@ export function DualServiceMenusSplit() {
     <section id="menus" className="bg-bg-dark py-24 md:py-32 px-6">
       <motion.div
         className="max-w-6xl mx-auto"
-        initial={{ opacity: 0, y: 20 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: theme.motion.easing }}
@@ -29,12 +29,15 @@ export function DualServiceMenusSplit() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-center">
           {/* LEFT: Food */}
-          <div className="text-center md:text-right space-y-3">
+          <div id="small-plates" className="text-center md:text-right space-y-3">
             <h3 className="font-display text-section-label text-text-cream" style={{ fontWeight: 300 }}>
               {m.food.label}
             </h3>
+            <ul className="space-y-1 text-body-sm text-text-muted-cream">
+              {m.food.highlights.map((item) => <li key={item}>{item}</li>)}
+            </ul>
             <Link href={m.food.pdfUrl} className="inline-block text-address text-text-cream/70 hover:text-text-cream transition-colors">
-              View Menu →
+              Start with food →
             </Link>
           </div>
 
@@ -48,12 +51,15 @@ export function DualServiceMenusSplit() {
           </div>
 
           {/* RIGHT: Drinks */}
-          <div className="text-center md:text-left space-y-3">
+          <div id="wine-spirits" className="text-center md:text-left space-y-3">
             <h3 className="font-display text-section-label text-text-cream" style={{ fontWeight: 300 }}>
               {m.drinks.label}
             </h3>
+            <ul className="space-y-1 text-body-sm text-text-muted-cream">
+              {m.drinks.highlights.map((item) => <li key={item}>{item}</li>)}
+            </ul>
             <Link href={m.drinks.pdfUrl} className="inline-block text-address text-text-cream/70 hover:text-text-cream transition-colors">
-              View Menu →
+              Start with drinks →
             </Link>
           </div>
         </div>
