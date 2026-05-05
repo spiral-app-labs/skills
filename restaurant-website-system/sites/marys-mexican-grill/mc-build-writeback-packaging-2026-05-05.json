@@ -20,7 +20,10 @@
     "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
     "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
     "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
-    "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md"
+    "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json",
+    "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png"
   ],
   "artifact_urls": [
     "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app"
@@ -30,8 +33,12 @@
     "delivery-package"
   ],
   "blocker": {
-    "reason": "QA2 screenshot evidence gap is locally resolved and ready for MC mirroring, but final delivery remains blocked by auth-protected preview verification, founder Anthropic key, and Ethan human review. This 2026-05-05 screenshot refresh has not been posted through the MC agency API because the runtime does not expose AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET.",
-    "source": "openclaw_heartbeat_2026-05-05"
+    "reason": "QA2 screenshot evidence gap is locally resolved, with all 8 referenced files verified present/non-empty in qa2-screenshot-existence-verify-2026-05-05.json. Final delivery remains blocked by auth-protected preview verification, founder Anthropic key, and Ethan human review. The 2026-05-05 QA2/preview evidence refresh has not been posted through the MC agency API because this runtime does not expose AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET.",
+    "source": "openclaw_heartbeat_2026-05-05",
+    "last_checked_at": "2026-05-05T15:05:00Z",
+    "preview_access_evidence_path": "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md",
+    "qa2_existence_manifest_path": "restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json"
   },
-  "heartbeat_summary": "Mary's packaging evidence advanced: recaptured the full QA2 desktop/mobile screenshot packet, refreshed checklist/delivery package, and prepared MC packaging writeback. Final delivery remains blocked only by preview auth verification, founder Anthropic key, founder human review, and API sync for this refresh."
+  "heartbeat_summary": "Mary\u2019s packaging evidence advanced again: verified all QA2 referenced screenshots are present/non-empty, recaptured the Vercel auth-wall preview evidence, and updated local checklist/delivery/QA3 artifacts. Final delivery remains blocked only by authenticated/public preview verification, founder Anthropic key, Ethan human review, and MC API credentials for this refresh.",
+  "mc_api_base_url": "https://hq.ethantalreja.com"
 }

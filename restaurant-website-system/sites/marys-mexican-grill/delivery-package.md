@@ -1,6 +1,6 @@
 # Mary's Mexican Grill Delivery Package
 
-- Date: 2026-05-04, refreshed 2026-05-05T12:49:00Z
+- Date: 2026-05-04, refreshed 2026-05-05T12:49:00Z, preview/QA2 evidence rechecked 2026-05-05T15:05Z
 - Site path: `restaurant-website-system/sites/marys-mexican-grill`
 - MC root task: `0ee079ce-2e26-4d44-8fdf-96e0db2e4047`
 - MC QA3 child task: `bbb46016-3e2e-43e7-b3d7-e0995e34252e`
@@ -25,6 +25,8 @@
 - Access status: auth-protected.
   - Unauthenticated request returned HTTP 401 Unauthorized.
   - Managed OpenClaw browser reached the Vercel login wall instead of the site.
+  - 2026-05-05 recheck evidence: `restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md`
+  - Auth-wall screenshot: `restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png`
 - Handoff implication: Ethan must verify this URL in an authenticated Vercel/GitHub session or provide a client-safe preview URL before final delivery.
 
 ## Evidence Inventory
@@ -61,6 +63,7 @@
 - QA2 doc: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md`
   - QA2 PR: https://github.com/spiral-app-labs/skills/pull/18
   - QA2 screenshot refresh: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md`
+  - QA2 screenshot existence manifest: `restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json`
 - QA3 doc: `restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md`
   - QA3 PR: https://github.com/spiral-app-labs/skills/pull/19
 - QA3 browser checks: `restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json`
@@ -97,6 +100,7 @@
 - Status: passed; referenced screenshot inventory is now present in the current worktree after 2026-05-05 local preview recapture.
 - Summary: mobile conversion polish, tighter public copy, earlier contact details, and better truthful DoorDash emphasis.
 - Screenshot refresh note: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md`
+- Screenshot existence manifest: `restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json`
 - Screenshot files present:
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png`
@@ -148,7 +152,7 @@
 - Ethan must verify or provide a client-safe preview URL; PR #19 preview is auth-protected for unauthenticated checks.
 - Ethan must create/configure the site-specific Anthropic key.
 - Ethan must personally complete human review.
-- QA2 screenshot files referenced in the existing evidence were recaptured locally on 2026-05-05 and now need to be mirrored to MC when the agency API secret is available.
+- QA2 screenshot files referenced in the existing evidence were recaptured locally on 2026-05-05 and verified present/non-empty in `qa2-screenshot-existence-verify-2026-05-05.json`; they now need to be mirrored to MC when the agency API secret is available.
 - Mission Control QA3 + prior packaging sync is complete via the patched local MC agency API from PR #328; the 2026-05-05 QA2 screenshot refresh is local-only pending API credentials.
 
 ## Local MC Payloads

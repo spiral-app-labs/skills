@@ -103,6 +103,9 @@
 - QA1: `restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md`
 - QA2: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md`
 - QA2 screenshot refresh: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md`
+- QA2 screenshot existence manifest: `restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json`
+- Preview access recheck: `restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md`
+- Preview auth-wall screenshot: `restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png`
 - QA3: `restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md`
 - QA3 browser checks: `restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json`
 - Packaging build payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json`
@@ -112,7 +115,7 @@
 ## QA Rounds
 
 - Round 1: passed with screenshots in `screenshots/qa-round-1-desktop-2026-05-04.png` and `screenshots/qa-round-1-mobile-2026-05-04.png`.
-- Round 2: doc/writeback passed, and the screenshot files referenced in QA2 docs/writebacks are now present after the 2026-05-05 recapture (`qa-round-2-screenshot-recapture-2026-05-05.md`).
+- Round 2: doc/writeback passed, and the screenshot files referenced in QA2 docs/writebacks are now present after the 2026-05-05 recapture (`qa-round-2-screenshot-recapture-2026-05-05.md`) and verified non-empty in `qa2-screenshot-existence-verify-2026-05-05.json`.
 - Round 3: local screenshots captured for desktop/mobile home, menu, about, and contact; browser checks are in `scrapes/qa-round-3-browser-checks-2026-05-04.json`; MC QA writeback is synced and the QA3 child task is done.
 
 ## QA2 Screenshot Packet
@@ -141,6 +144,6 @@
 
 - `ready_to_pitch` must remain `false` until Ethan personally completes human review.
 - `ready_to_pitch` must remain `false` until the site-specific Anthropic key is created/configured.
-- The PR #19 preview URL is recorded, but unauthenticated checks hit Vercel login/401 and require Ethan/authenticated verification.
+- The PR #19 preview URL is recorded, but unauthenticated checks hit Vercel login/401 and require Ethan/authenticated verification; latest managed-browser evidence is `preview-access-check-2026-05-05.md` plus `screenshots/preview-auth-wall-2026-05-05.png`.
 - QA2 screenshot files referenced by the existing QA2 docs/writebacks are now present locally; the refresh still needs MC agency API writeback when credentials are available.
 - Mission Control QA3 + packaging sync succeeded via the patched local MC agency API from PR #328; remaining blockers are preview access, Anthropic key, Ethan human review, and MC sync of the 2026-05-05 QA2 screenshot refresh.
