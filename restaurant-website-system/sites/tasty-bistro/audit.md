@@ -67,3 +67,30 @@ OpenClaw managed browser is unavailable/cooling down after repeated failures (`N
 ## Current recommendation
 
 Proceed only as a conditional build candidate until current operating status is verified. If open, the sell story is strong: Tasty Bistro should not rely solely on a JavaScript-only order app as its public website. A better first-party site should preserve the order path while clearly presenting sushi, ramen, Thai/Chinese favorites, hours, address, phone, delivery/takeaway, and a coherent casual Asian bistro identity.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured official/order-domain evidence:
+
+- Official domain `http://www.tastybistrocl.com/` redirects to `https://www.orderonlinehub.com/tastybistro_hf98723g1bt5`. Browser screenshots and DOM/text snapshots were captured for desktop/mobile.
+- In real browser context the OrderOnlineHub app now renders a restaurant menu, but the app points to `630 Northwest Hwy, Cary IL 60013` and includes a notice that March 2 was the final day of operation, starting March 3, with copy truncated in the app.
+- The order app exposes broad sushi/Thai/Chinese/Japanese menu depth, but it is not evidence that the original Crystal Lake location remains open.
+
+Captured operating-status evidence:
+
+- Google mobile shows the Crystal Lake profile at 4.4 from 331 reviews and explicitly says the Crystal Lake physical location has closed and merged with sister restaurant Tasty Sushi in Cary, with food/staff moved to `630 Northwest Highway`. It marks the Crystal Lake profile `Temporarily closed`.
+- Google desktop/search results include Patch, Daily Herald, and Shaw Local closure/consolidation coverage from February/March 2026.
+- Marketplace/order search points to Cary/Tasty Sushi ordering and a Facebook snippet that ordering from Tasty Bistro through Uber/DoorDash will no longer be available starting May 1, 2026.
+- Restaurant Guru also marks the Crystal Lake profile `Temporarily closed`.
+
+Captured directory proof:
+
+- Restaurantji desktop/mobile screenshots and text still preserve historical Crystal Lake proof: 4.4 from 157 ratings, Asian/Sushi Bars/Thai categories, address, phone, and menu favorites.
+- Restaurant Guru screenshot/text captures 4.4 Google-derived proof and historical menu/service/decor notes, but also the `Temporarily closed` status.
+
+Updated audit interpretation: Tasty Bistro is not executable as a Crystal Lake website build right now. The canonical audit evidence is complete, but the workflow should be marked `blocked` until Mission Control/founder decides whether to retire the Crystal Lake lead or create a new Tasty Sushi/Cary workflow. Do not advance to Google review packet or build for this Crystal Lake lead.
+
+Local canonical status: `blocked`, pending Mission Control writeback.
