@@ -1,0 +1,54 @@
+{
+  "lead_id": "713dec87-03c2-4782-ad16-93d72368d130",
+  "root_task_id": "28641d8b-ed9c-4fc3-9326-9c3436bbdc31",
+  "site_slug": "snuggery-river-roadhouse",
+  "build_stage": "reviews",
+  "currentStage": "reviews",
+  "stage_completed": "auditing",
+  "ready_to_pitch": false,
+  "template_slug": "bramble-01",
+  "checklist_markdown_path": "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.json",
+  "current_site_audit_path": "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+  "evidence_paths": [
+    "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.md",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.json",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+    "restaurant-website-system/reports/repo-mc-inventory-2026-05-03.md",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-nonwww-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-nonwww-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/roost-proof-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/roost-proof-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/browser-evidence-audit-2026-05-05.md"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked"
+  ],
+  "blockers": [
+    {
+      "gate": "reviews",
+      "reason": "Next gate requires Google Reviews Highest-filter packet: 30 written reviews plus screenshots. Not started because Mission Control stage writeback is pending."
+    },
+    {
+      "gate": "stage_writeback",
+      "reason": "AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this OpenClaw runtime, so this payload was committed for later agency API submission instead of raw Supabase task mutation."
+    }
+  ],
+  "heartbeat_summary": "Snuggery River Roadhouse browser audit evidence captured; stale No supported browser found blocker cleared locally; official site verified as reachable but crawler-hostile/non-browser 403 and conversion gaps remain; ready for MC sync and the next reviews gate.",
+  "updated_at": "2026-05-05T08:55:00.000Z"
+}
