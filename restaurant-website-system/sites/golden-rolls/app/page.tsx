@@ -1,42 +1,15 @@
 import Link from 'next/link';
 import { content } from '../content.example';
+import { SiteFooter, SiteHeader } from '../components/SiteChrome';
 
 const c = content;
-
-function Header() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071510]/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 text-white">
-        <Link href="/" className="font-display text-2xl">Golden Rolls</Link>
-        <div className="hidden gap-6 text-sm md:flex">
-          <Link href="/menu">Menu</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-        <a href="tel:+18153085099" className="rounded-full bg-[#f59f3a] px-4 py-2 text-sm font-semibold text-[#071510]">Call to order</a>
-      </nav>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="bg-[#071510] px-5 py-10 text-white">
-      <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-        <div><div className="font-display text-2xl">Golden Rolls</div><p className="mt-2 text-sm text-white/70">Fresh sushi, generous rolls, and a calm Woodstock dining room.</p></div>
-        <div><div className="text-sm uppercase tracking-[0.22em] text-[#f59f3a]">Visit</div><p className="mt-2 text-white/80">790 S Eastwood Dr<br />Woodstock, IL 60098</p></div>
-        <div><div className="text-sm uppercase tracking-[0.22em] text-[#f59f3a]">Call</div><a className="mt-2 block text-white/80" href="tel:+18153085099">(815) 308-5099</a></div>
-      </div>
-    </footer>
-  );
-}
 
 export default function HomePage() {
   return (
     <>
-      <Header />
+      <SiteHeader />
       <main className="bg-[#fbf5ea] text-[#132018]">
-        <section className="bg-[#071510] px-5 py-20 text-white md:py-28">
+        <section className="bg-[#071510] px-5 py-16 text-white md:py-28">
           <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.05fr_.95fr]">
             <div>
               <p className="mb-4 text-sm uppercase tracking-[0.28em] text-[#f59f3a]">Woodstock sushi · dine-in · takeout · delivery</p>
@@ -93,7 +66,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <SiteFooter />
     </>
   );
 }
