@@ -27,7 +27,7 @@ export function InlineInfoSplit() {
             <h3 className="font-display text-body-h3 text-text-cream" style={{ fontWeight: 300 }}>
               {item.title}
             </h3>
-            <p className="text-body-sm text-text-muted-cream max-w-sm mx-auto leading-relaxed">
+            <p className="text-body text-text-muted-cream max-w-sm mx-auto leading-relaxed">
               {item.body}
             </p>
             <Link

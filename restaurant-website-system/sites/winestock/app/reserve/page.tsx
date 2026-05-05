@@ -37,12 +37,12 @@ export default function ReservePage() {
                   {action.label}
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </span>
-                <span className="mt-2 block text-body-sm text-text-muted-cream">{action.note}</span>
+                <span className="mt-2 block text-body text-text-muted-cream">{action.note}</span>
               </Link>
             ))}
           </div>
 
-          <p className="text-body-sm text-text-muted-cream">
+          <p className="text-body text-text-muted-cream">
             This page intentionally uses public contact links instead of a pretend reservation form.
           </p>
         </motion.div>

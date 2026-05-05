@@ -33,7 +33,7 @@ export function DualServiceMenusSplit() {
             <h3 className="font-display text-section-label text-text-cream" style={{ fontWeight: 300 }}>
               {m.food.label}
             </h3>
-            <ul className="space-y-1 text-body-sm text-text-muted-cream">
+            <ul className="space-y-1 text-body text-text-muted-cream">
               {m.food.highlights.map((item) => <li key={item}>{item}</li>)}
             </ul>
             <Link href={m.food.pdfUrl} className="inline-block text-address text-text-cream/70 hover:text-text-cream transition-colors">
@@ -55,7 +55,7 @@ export function DualServiceMenusSplit() {
             <h3 className="font-display text-section-label text-text-cream" style={{ fontWeight: 300 }}>
               {m.drinks.label}
             </h3>
-            <ul className="space-y-1 text-body-sm text-text-muted-cream">
+            <ul className="space-y-1 text-body text-text-muted-cream">
               {m.drinks.highlights.map((item) => <li key={item}>{item}</li>)}
             </ul>
             <Link href={m.drinks.pdfUrl} className="inline-block text-address text-text-cream/70 hover:text-text-cream transition-colors">
