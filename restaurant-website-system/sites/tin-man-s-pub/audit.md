@@ -60,3 +60,24 @@ OpenClaw managed browser is unavailable/cooling down after repeated failures (`N
 ## Current recommendation
 
 Treat Tin Man's Pub as a weak/conditional lead, not a priority build. If Google/Maps confirms no owned site and reviews/photos show a stable local sports-pub identity, the site should be a practical pub page: hours, location, call, menu image/food basics, TVs/sports, drinks, and local vibe. If the political/reputation risk or template mismatch is real, skip or hold rather than spending build capacity.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured Google/no-owned-site evidence:
+
+- Google desktop/mobile screenshots and text. Google mobile shows Tinman's Pub at `926 IL-22, Fox River Grove, IL 60021`, located in Stone Hill Center, with only 3.2 from 6 Google reviews, no owned website shown, and prompts to add phone/hours/website.
+- Desktop Google results surface Yelp, Tripadvisor, MapQuest, Fox River Grove municipal listing, Apple Maps, SinglePlatform, Naturally McHenry County, Menuweb PDF, and Restaurant Guru — no first-party site.
+- Menu/official-site search finds Yelp/SinglePlatform/Menuweb and directory results, not a restaurant-owned site.
+
+Captured directory/reputation evidence:
+
+- Restaurantji desktop/mobile screenshots and text showing 4.7 from 66 ratings, Bars/Sports Bars/Pubs categories, address, phone, hours, delivery, outdoor seating, great cocktails, no reservations, and Bowl of Chili as the only surfaced favorite. Visible recent Restaurantji review excerpts are political/negative and should not be used in marketing copy.
+- Wheree screenshot/text showing sports bar / pub / pool hall positioning, Diamond pool tables, generous portions, homemade dishes, bartenders, free pool Fridays, and social pub atmosphere; status check still returned a 403 checkpoint.
+- Restaurant Guru direct profile screenshot/text showing 4.5 Google-derived proof from 109, 30 photos, beer, burgers, pool/gaming, parking, TV, Wi-Fi, outdoor seating, takeaway, no booking, and positive recent Google excerpts. Restaurant Guru search evidence also surfaces a negative AI overview / reputation warning around a polarizing dive-bar atmosphere and political decor reports.
+
+Updated audit interpretation: the browser audit confirms no clear owned-site path, but Tin Man's should not automatically advance to reviews/build. This is a weak/conditional corner-bar lead with sparse Google proof, inconsistent reputation signals, minimal food/menu depth, and real outreach risk. Recommended local status is `blocked` / hold for Mission Control/founder decision: skip/nurture unless explicitly approved for a very stripped-down Bramble pub page.
+
+Local canonical status: `blocked`, pending Mission Control writeback.

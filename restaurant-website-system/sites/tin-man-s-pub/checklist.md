@@ -3,14 +3,14 @@
 - Lead ID: 016b951a-6ed7-4687-ad56-3dd34d97a6ca
 - MC parent task ID: 173436b8-bcc1-4ebd-85ac-44b2541409dc
 - Template slug: bramble-01
-- Current stage: auditing
+- Current stage: blocked (local; Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-04T05:06:54.215Z
+- Updated: 2026-05-05T09:50:00.000Z
 
 ## Requirements
 
-- [ ] lead-fit-qualified: Lead passed the restaurant lead-fit qualification gate - Qualification list marks Tin Man’s as weak/conditional sports-pub/no-site lead; source audit found directory-led presence and reputation/template-fit risks that require Google/browser verification.
-- [ ] current-site-audit: Current site audit captured desktop, mobile, menu, reviews, and asset evidence - Web/source audit drafted; canonical browser screenshots/DOM and Google/Maps official-site/reputation verification remain blocked.
+- [!] lead-fit-qualified: Lead passed the restaurant lead-fit qualification gate - BLOCKED/HOLD: browser evidence confirms no clear owned site, but sparse Google profile, political/reputation risk, minimal menu proof, and weak sports-pub fit require MC/founder decision before any reviews/build work.
+- [x] current-site-audit: Current site audit captured desktop, mobile, menu, reviews, and asset evidence - Browser evidence captured 2026-05-05: Google, Restaurantji, Wheree, Restaurant Guru search/direct profile, and menu/official-site search proof.
 - [x] template-route-locked: Template route and modifiers are locked from the restaurant site router - Routed to bramble-01 only as stripped-down sports pub/corner-bar variant; skip/nurture if photos or review risk reject the fit.
 - [ ] fork-built: Template fork is built with real content, preserved links, and no placeholder copy
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
@@ -24,6 +24,24 @@
 - restaurant-website-system/sites/tin-man-s-pub/checklist.json
 - restaurant-website-system/sites/tin-man-s-pub/audit.md
 - restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/browser-audit-manifest-2026-05-05.json
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-desktop-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-mobile-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/google-search-desktop-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/google-search-mobile-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantji-desktop-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantji-mobile-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-mobile-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/wheree-desktop-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/wheree-desktop-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantguru-search-desktop-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-search-desktop-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantguru-desktop-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-desktop-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/screenshots/menu-search-desktop-2026-05-05.png
+- restaurant-website-system/sites/tin-man-s-pub/scrapes/menu-search-desktop-2026-05-05.txt
+- restaurant-website-system/sites/tin-man-s-pub/browser-evidence-audit-2026-05-05.md
 
 ## QA Rounds
 
@@ -38,7 +56,8 @@
 
 ## Blockers
 
-- Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).
+- Lead-fit/reputation blocker: Tin Man’s has no clear owned site, but the public evidence is too risky/weak to proceed automatically. Google mobile shows only 3.2 from 6 reviews and no website/hours; Restaurantji shows visible political/negative review excerpts; Restaurant Guru/search shows mixed positive proof plus polarizing reputation warnings. MC/founder should decide skip/nurture vs explicitly approved stripped-down Bramble pub build.
+- Mission Control writeback pending: local audit evidence and blocked status are ready, but this runtime is missing `AGENCY_AUTONOMY_API_KEY` and a trusted Mission Control base URL. Submit `restaurant-website-system/sites/tin-man-s-pub/mc-build-writeback-blocked-2026-05-05.json` once configured.
 
 ## Done Criteria
 
@@ -47,4 +66,3 @@
 - All required checklist rows are passed.
 - Three QA rounds are logged with screenshot evidence.
 - Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
-

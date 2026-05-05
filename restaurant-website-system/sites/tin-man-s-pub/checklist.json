@@ -4,12 +4,30 @@
   "mcParentTaskId": "173436b8-bcc1-4ebd-85ac-44b2541409dc",
   "siteSlug": "tin-man-s-pub",
   "templateSlug": "bramble-01",
-  "currentStage": "auditing",
+  "currentStage": "blocked",
   "evidencePaths": [
     "restaurant-website-system/sites/tin-man-s-pub/checklist.md",
     "restaurant-website-system/sites/tin-man-s-pub/checklist.json",
     "restaurant-website-system/sites/tin-man-s-pub/audit.md",
-    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-search-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantji-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/wheree-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/wheree-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantguru-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantguru-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/menu-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/menu-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/browser-evidence-audit-2026-05-05.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -21,31 +39,58 @@
   "blockers": [
     {
       "gate": "auditing",
-      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start/cooldown after repeated failures (No supported browser found).",
-      "nextUnblockAction": "Enable browser/Chromium capture for Google Maps official-site/reputation verification, desktop/mobile directory screenshots, and Google review packet.",
-      "recordedAt": "2026-05-04T05:06:54.175824Z"
+      "reason": "Browser evidence confirms no clear owned site, but Tin Man’s remains a weak/conditional lead: sparse Google profile (3.2 from 6 in mobile profile), inconsistent reputation signals, visible political/reputation risk, minimal menu proof, and sports-pub/corner-bar fit that may not justify build capacity.",
+      "nextUnblockAction": "Mission Control/founder should decide whether to skip/nurture this lead or explicitly approve a stripped-down Bramble pub build before reviews/build work proceeds.",
+      "recordedAt": "2026-05-05T09:50:00.000Z"
+    },
+    {
+      "gate": "stage_writeback",
+      "reason": "Local browser audit evidence and blocked status are ready, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-blocked-2026-05-05.json through the agency build writeback route.",
+      "recordedAt": "2026-05-05T09:50:00.000Z"
     }
   ],
   "requirements": [
     {
       "id": "lead-fit-qualified",
       "title": "Lead passed the restaurant lead-fit qualification gate",
-      "qaState": "pending",
+      "qaState": "blocked",
       "required": true,
-      "notes": "Qualification list marks Tin Man’s as weak/conditional sports-pub/no-site lead; source audit found directory-led presence and reputation/template-fit risks that require Google/browser verification.",
+      "notes": "Browser evidence confirms no obvious owned site, but fit/reputation is too weak to proceed automatically: sparse Google profile, negative/political review risk, minimal menu proof, and corner-bar fit. Needs MC/founder skip/nurture vs stripped-down build decision.",
       "evidence": [
         "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
-        "restaurant-website-system/sites/tin-man-s-pub/audit.md"
+        "restaurant-website-system/sites/tin-man-s-pub/audit.md",
+        "restaurant-website-system/sites/tin-man-s-pub/browser-evidence-audit-2026-05-05.md",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-search-desktop-2026-05-05.txt"
       ]
     },
     {
       "id": "current-site-audit",
       "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
-      "notes": "Web/source audit drafted; canonical browser screenshots/DOM and Google/Maps official-site/reputation verification remain blocked.",
+      "notes": "Browser evidence captured on 2026-05-05: Google no-owned-site/profile proof, Restaurantji desktop/mobile, Wheree, Restaurant Guru search/direct profile, and menu/official-site search evidence. Audit concludes the lead should be held/blocked pending MC decision.",
       "evidence": [
-        "restaurant-website-system/sites/tin-man-s-pub/audit.md"
+        "restaurant-website-system/sites/tin-man-s-pub/audit.md",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/browser-audit-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-search-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-search-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantji-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantji-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/wheree-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/wheree-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantguru-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/restaurantguru-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/screenshots/menu-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/menu-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/browser-evidence-audit-2026-05-05.md"
       ]
     },
     {
@@ -97,5 +142,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T05:06:54.215Z"
+  "updatedAt": "2026-05-05T09:50:00.000Z"
 }
