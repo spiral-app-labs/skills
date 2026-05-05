@@ -54,7 +54,7 @@ export const content = {
     eyebrow: 'Woodstock sushi · dine-in · takeout · delivery',
     title: 'Do not let the outside fool you.',
     subtitle:
-      'Inside Golden Rolls: fresh generous sushi, creative rolls, calm white-tablecloth energy, and kind service at 790 S Eastwood Dr.',
+      'Inside Golden Rolls: fresh generous sushi, creative rolls, a surprisingly polished dining room, and kind service at 790 S Eastwood Dr.',
     cta: { label: 'Call (815) 308-5099', href: 'tel:+18153085099' },
     plateImage: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1400&q=80',
     plateAlt: 'Fresh sushi rolls plated for dinner',

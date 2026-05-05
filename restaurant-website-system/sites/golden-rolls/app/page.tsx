@@ -14,7 +14,7 @@ export default function HomePage() {
             <div>
               <p className="mb-4 text-sm uppercase tracking-[0.28em] text-[#f59f3a]">Woodstock sushi · dine-in · takeout · delivery</p>
               <h1 className="font-display text-5xl leading-[0.95] md:text-7xl">The hidden sushi room on Eastwood Drive.</h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78">Guests keep saying the same thing: do not let the outside fool you. Inside Golden Rolls is fresh generous sushi, creative rolls, calm white-tablecloth energy, and attentive service.</p>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78">Guests keep saying the same thing: do not let the outside fool you. Inside Golden Rolls is fresh generous sushi, creative rolls, a surprisingly polished dining room, and attentive service.</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="tel:+18153085099" className="rounded-full bg-[#f59f3a] px-6 py-3 font-semibold text-[#071510]">Call (815) 308-5099</a>
                 <Link href="/menu" className="rounded-full border border-white/25 px-6 py-3 font-semibold text-white">View menu</Link>

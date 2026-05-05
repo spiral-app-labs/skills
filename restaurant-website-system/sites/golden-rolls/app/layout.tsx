@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Prata, Inter } from 'next/font/google';
 import { content } from '../content.example';
 import { AskConcierge } from '../components/AskConcierge';
@@ -22,6 +22,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: `${content.brand.name} — ${content.brand.tagline}`,
   description: content.brand.description,
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
