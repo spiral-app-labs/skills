@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { theme } from '../theme';
 import { content } from '../content';
@@ -17,14 +16,13 @@ import { content } from '../content';
 export function PolaroidStrip() {
   const pol = theme.layout.polaroid;
   return (
-    <section className="relative bg-bg-cream py-16 md:py-20 overflow-hidden">
-      <div className="flex items-center gap-6 md:gap-10 px-4 md:px-10 overflow-x-auto md:overflow-visible md:justify-center">
+    <section className="relative bg-bg-cream py-10 md:py-14 overflow-hidden">
+      <div className="grid grid-cols-2 justify-items-center gap-x-3 gap-y-5 px-5 md:flex md:items-center md:gap-10 md:px-10 md:overflow-visible md:justify-center">
         {content.polaroids.map((p, i) => (
           <motion.figure
             key={i}
-            className="flex-shrink-0 bg-white"
+            className={`flex-shrink-0 bg-white w-[calc((100vw-3.25rem)/2)] max-w-[168px] md:w-[220px] md:max-w-none lg:w-[260px] ${i > 3 ? 'hidden md:block' : ''}`}
             style={{
-              width: pol.width,
               padding: `${pol.borderWidth}px ${pol.borderWidth}px ${pol.borderBottom}px ${pol.borderWidth}px`,
               transform: `rotate(${p.rotation}deg)`,
               boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
@@ -36,16 +34,16 @@ export function PolaroidStrip() {
             whileHover={{ rotate: 0, scale: 1.04, transition: { duration: 0.25 } }}
           >
             <div
-              className="relative w-full overflow-hidden"
+              className="relative flex w-full items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_28%_22%,rgba(255,255,255,0.42),transparent_28%),linear-gradient(135deg,#4a1716_0%,#7f422d_46%,#172719_100%)] px-4 text-center"
               style={{ aspectRatio: pol.aspect }}
             >
-              <Image
-                src={p.src}
-                alt={p.alt}
-                fill
-                sizes="260px"
-                className="object-cover"
-              />
+              <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(20,20,18,0.12),rgba(20,20,18,0.52))]" />
+              <div className="relative space-y-3 text-text-cream">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-text-cream/72">Winestock moment</p>
+                <p className="font-display text-[clamp(20px,5vw,34px)] leading-[0.95]" style={{ fontWeight: 300 }}>
+                  {p.alt}
+                </p>
+              </div>
             </div>
           </motion.figure>
         ))}

@@ -26,7 +26,7 @@ export function HeroSlideshow() {
   }, [slides.length]);
 
   return (
-    <section className="relative w-full h-screen min-h-[640px] overflow-hidden bg-bg-dark">
+    <section className="relative w-full min-h-[620px] md:h-screen md:min-h-[720px] overflow-hidden bg-bg-dark">
       {/* Cycling images */}
       <AnimatePresence mode="sync">
         <motion.div
@@ -50,17 +50,17 @@ export function HeroSlideshow() {
 
       {/* Bottom scrim for wordmark legibility */}
       <div
-        className="absolute inset-x-0 bottom-0 h-1/2 pointer-events-none"
+        className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to top, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.2) 60%, rgba(23,23,23,0.0) 100%)',
+            'linear-gradient(to top, rgba(23,23,23,0.92) 0%, rgba(23,23,23,0.58) 52%, rgba(23,23,23,0.34) 100%)',
         }}
       />
 
-      <div className="absolute inset-x-0 bottom-32 md:bottom-44 px-6">
-        <div className="max-w-3xl mx-auto text-center text-text-cream space-y-5">
-          <p className="text-address text-text-cream/80">{content.hero.kicker}</p>
-          <p className="font-display text-[clamp(28px,5vw,52px)] leading-[0.95]" style={{ fontWeight: 300 }}>
+      <div className="absolute inset-x-0 bottom-28 md:bottom-44 px-4 md:px-6">
+        <div className="max-w-3xl mx-auto rounded-[28px] border border-text-cream/18 bg-bg-dark/68 px-5 py-5 text-center text-text-cream shadow-2xl backdrop-blur-sm md:px-8 md:py-7 space-y-4 md:space-y-5">
+          <p className="text-address text-text-cream/90">{content.hero.kicker}</p>
+          <p className="font-display text-[clamp(28px,7vw,50px)] leading-[1.02] drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]" style={{ fontWeight: 300 }}>
             {content.hero.subhead}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -68,7 +68,7 @@ export function HeroSlideshow() {
               <Link
                 key={action.href}
                 href={action.href}
-                className={`w-full sm:w-auto px-5 py-3 rounded-button border text-button transition-colors ${
+                className={`w-full sm:w-auto px-5 py-4 sm:py-3 rounded-button border text-button transition-colors ${
                   idx === 0
                     ? 'bg-text-cream text-text-dark border-text-cream hover:bg-white'
                     : 'border-text-cream/60 text-text-cream hover:bg-text-cream/10'
@@ -82,9 +82,9 @@ export function HeroSlideshow() {
       </div>
 
       {/* Static wordmark overlay */}
-      <div className="absolute inset-x-0 bottom-0 pb-8 md:pb-10 px-6 flex items-end justify-center">
+      <div className="absolute inset-x-0 bottom-0 pb-7 md:pb-10 px-6 flex items-end justify-center">
         <h1
-          className="font-display text-text-cream text-hero-wordmark text-center leading-none"
+          className="font-display text-text-cream text-[clamp(54px,16vw,72px)] md:text-hero-wordmark text-center leading-none"
           style={{ fontWeight: 300 }}
         >
           {content.brand.wordmark}

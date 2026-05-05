@@ -12,7 +12,7 @@ export default function ReservePage() {
   return (
     <>
       <TopTriptychHeader />
-      <main className="bg-bg-dark min-h-screen pt-32 pb-20 px-6">
+      <main className="bg-bg-dark pt-28 pb-14 px-6 md:pt-32 md:pb-18">
         <motion.div
           className="max-w-xl mx-auto text-center space-y-8"
           initial={{ opacity: 0, y: 16 }}
@@ -43,7 +43,11 @@ export default function ReservePage() {
           </div>
 
           <p className="text-body text-text-muted-cream">
-            This page intentionally uses public contact links instead of a pretend reservation form.
+            For the fastest answer, choose the contact path that fits your question: email, phone,
+            Facebook updates, or directions to Cass Street.
+          </p>
+          <p className="text-address text-text-muted-cream">
+            136 Cass St, Woodstock, IL · info@shopwinestock.com
           </p>
         </motion.div>
       </main>

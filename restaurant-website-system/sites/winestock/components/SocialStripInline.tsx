@@ -24,6 +24,7 @@ export function ContactStrip() {
   const b = content.brand;
   return (
     <section className="bg-bg-cream py-10 px-6 text-center space-y-2">
+      <p className="text-address text-text-muted">{b.address}</p>
       <p className="text-body text-text-dark">{b.phone}</p>
       <Link href={`mailto:${b.email}`} className="text-body text-text-muted hover:text-text-dark transition-colors">
         {b.email}

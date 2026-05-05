@@ -22,6 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: `${content.brand.name} — ${content.brand.tagline}`,
   description: content.brand.description,
+  icons: { icon: '/favicon.svg' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

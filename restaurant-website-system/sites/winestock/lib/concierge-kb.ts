@@ -18,13 +18,13 @@ const FACEBOOK = 'https://www.facebook.com/Winestockmarket/';
 const DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481';
 
 const safetyNote =
-  'This preview concierge only uses verified Winestock facts from the current-site scrape, Google Reviews Highest packet, and routing/build evidence. For current hours, live-music timing, allergy questions, prices, availability, or anything sensitive, contact Winestock directly.';
+  'This helper is based on confirmed public Winestock details. For current hours, live-music timing, allergy questions, prices, availability, or anything sensitive, contact Winestock directly.';
 
 const answers = {
   start: {
     topic: 'start',
     answer:
-      'Ask about Winestock’s hours, location, wine-market help, small plates, live-music vibe, boards, or the safest way to contact the team. I will stay inside verified public facts and route anything uncertain to email, phone, Facebook, or directions.',
+      'Ask about Winestock’s hours, location, wine-market help, small plates, live-music vibe, boards, or the best way to contact the team. For details that change day to day, use email, phone, Facebook, or directions.',
     actions: [
       { label: 'Email Winestock', href: EMAIL_VISIT },
       { label: 'Get directions', href: DIRECTIONS },
@@ -34,7 +34,7 @@ const answers = {
   hours: {
     topic: 'hours',
     answer:
-      'The captured Google snapshot used for this preview listed Monday closed, Tuesday through Thursday 10am–9pm, Friday and Saturday 10am–10pm, and Sunday 12pm–6pm. Hours can change, so call or check Facebook before promising today’s timing.',
+      'The latest public hours snapshot listed Monday closed, Tuesday through Thursday 10am–9pm, Friday and Saturday 10am–10pm, and Sunday 12pm–6pm. Hours can change, so call or check Facebook for today’s timing.',
     actions: [
       { label: 'Call Winestock', href: PHONE },
       { label: 'Check Facebook', href: FACEBOOK },
@@ -95,7 +95,7 @@ const answers = {
   unsupported: {
     topic: 'safe handoff',
     answer:
-      'I cannot verify that safely from the Winestock evidence packet. I do not make reservations, hold tables, take orders, quote current prices, invent specials, confirm private events, or answer allergy/medical questions. Please use a direct Winestock handoff for a human-confirmed answer.',
+      'That needs a direct answer from Winestock. Please use email, phone, or Facebook for reservations, orders, current prices, specials, private events, availability, or allergy/medical questions.',
     actions: [
       { label: 'Email Winestock', href: EMAIL_VISIT },
       { label: 'Call Winestock', href: PHONE },

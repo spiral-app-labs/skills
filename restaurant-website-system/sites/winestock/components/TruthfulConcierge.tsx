@@ -46,18 +46,18 @@ export function TruthfulConcierge() {
     <section id="concierge" className="bg-bg-dark px-6 py-16 md:py-20 text-text-cream">
       <div className="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="space-y-5">
-          <p className="text-address text-text-muted-cream">Truthful AI concierge</p>
+          <p className="text-address text-text-muted-cream">Winestock visit helper</p>
           <h2 className="font-display text-section-h1" style={{ fontWeight: 300 }}>
-            Ask Winestock without inventing a single promise.
+            Ask about bottles, boards, music, and visits.
           </h2>
           <p className="text-body text-text-muted-cream">
-            This preview helper is grounded in verified Winestock evidence: the current-site scrape,
-            Google Reviews Highest packet, address, phone, email, Facebook, menu categories, and review-backed vibe.
+            Get quick guidance for common visit questions, then use Winestock’s real email,
+            phone, Facebook, and directions links when the details need a direct answer from the team.
           </p>
           <ul className="space-y-3 text-body text-text-muted-cream">
-            <li>No fake reservations, online ordering, or table holds.</li>
-            <li>No invented specials, prices, private events, or availability.</li>
-            <li>No allergy or medical guidance — it routes guests to Winestock directly.</li>
+            <li>Best for hours, bottle picks, boards, music, and contact questions.</li>
+            <li>Current pricing, events, and availability should be confirmed with Winestock directly.</li>
+            <li>Allergy and dietary questions route to the team instead of guessing.</li>
           </ul>
         </div>
 
@@ -66,7 +66,7 @@ export function TruthfulConcierge() {
             <div>
               <p className="text-address text-text-muted-cream">Winestock Market & Lounge</p>
               <h3 className="mt-2 font-display text-body-h3 text-text-cream" style={{ fontWeight: 300 }}>
-                Verified facts only
+                Helpful first stop
               </h3>
             </div>
             <span className="rounded-button border border-text-cream/25 px-3 py-1 text-address text-text-muted-cream">
