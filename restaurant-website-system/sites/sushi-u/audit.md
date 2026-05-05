@@ -80,3 +80,25 @@ OpenClaw managed browser is unavailable/cooling down after repeated failures (`N
 ## Current recommendation
 
 Proceed as a conditional sushi/Japanese technical-friction lead after browser verification. The sell story should be precise: keep Sushi U’s existing ordering path, but replace SSL/PDF-menu trust friction with a clearer, mobile-strong first-party site that highlights hours, address, phone, popular rolls, takeout/delivery, and the HonorPOS order handoff.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured official-site evidence:
+
+- Official homepage desktop/mobile and www desktop screenshots plus DOM/text snapshots. Browser access works and shows `Sushi U | Online Ordering Menu`, phone, hours, address, Dine In & Pick Up, Our Menu, Order Online, and HonorPOS credit.
+- PDF menu desktop/mobile screenshots. The menu is still a PDF path (`images/menu26.3.11.pdf`), confirming the mobile/search friction.
+- HonorPOS order path desktop/mobile screenshots and text. The order menu is rich and should be preserved: appetizers/soup/salad, sushi/sashimi, chef special rolls, vegetarian/maki rolls, bento, poke, sushi dinner specials, hibachi, party trays, dessert, drinks, and ramen.
+- Node/browserless status checks still failed for the official homepage, www homepage, PDF menu, and order path with `TypeError: fetch failed`, preserving the technical-friction story even though managed-browser access succeeds.
+
+Captured public proof:
+
+- Google desktop/mobile screenshots and text showing 4.6 from 378 Google reviews, `5899 Northwest Hwy Unit A, Crystal Lake, IL 60014`, phone `(815) 893-6338`, sushi restaurant category, order pickup/delivery, all-you-can-eat signal, menu path, and popular items.
+- Restaurantji desktop/mobile screenshot/text showing 4.5 from 141 ratings, Sushi Bars/Japanese categories, hours, order/reserve links, attentive service, all-you-can-eat popularity, decorated interior, and roll/favorite proof.
+- Restaurant Guru screenshot/text showing #7 of 185 restaurants in Crystal Lake, 34 photos, 4.6 Google-derived rating, Japanese cuisine, avocado sushi, volcano roll, miso soup, takeaway, attentive staff, low prices, calm atmosphere, and fancy decor.
+
+Updated audit interpretation: Sushi U is a real-site improvement lead, not a no-site lead. The pitch should be precise: preserve the working HonorPOS ordering path, but replace PDF-menu/mobile/search friction and SSL/crawler trust issues with a stronger first-party menu/story experience.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
