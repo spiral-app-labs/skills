@@ -3,9 +3,9 @@
 - Lead ID: 7f1432ae-2553-442c-80ff-df58acb162ef
 - MC parent task ID: 35f58383-0074-4a64-85cc-46ea2cfcd6bb
 - Template slug: bramble-01
-- Current stage: pitch
+- Current stage: battle_cards
 - Deploy URL: TBD
-- Updated: 2026-05-05T02:35:20Z
+- Updated: 2026-05-05T02:38:57Z
 
 ## Requirements
 
@@ -16,6 +16,7 @@
 - [x] improvement-pass: Website improvement pass completed after first fork - Added specific Winestock story cards, exact review proof, menu/offer clarity, real contact handoffs, screenshot-safe reveal behavior, and passed typecheck/build/browser QA.
 - [x] top-3-improvements: Top 3 concrete improvements identified, implemented, and evidenced - Hero conversion clarity, practical visit handoffs, and mobile readability/CTA polish are complete with before/after evidence and passing checks.
 - [x] concierge-added: Truthful AI concierge added with restaurant-specific KB and safe handoffs - Deterministic Winestock concierge uses verified facts only, refuses unsupported requests, routes to public handoffs, and passed API/browser QA.
+- [x] pitch-doc: Sellable owner-facing pitch doc created - Pitch doc frames the under-construction site gap, Bramble routing, review proof, visit handoffs, truthful concierge, preserve-stack promise, and owner asks without fake claims.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -78,6 +79,7 @@
 - restaurant-website-system/sites/winestock/app/page.tsx
 - restaurant-website-system/sites/winestock/ai-concierge.md
 - restaurant-website-system/sites/winestock/ai-concierge-transcript.md
+- restaurant-website-system/sites/winestock/pitch-doc.md
 
 ## QA Rounds
 
@@ -87,7 +89,7 @@
 
 ## Pitch Artifacts
 
-- Pitch doc: TBD
+- Pitch doc: restaurant-website-system/sites/winestock/pitch-doc.md
 - Outreach draft: TBD
 
 ## Blockers
@@ -141,3 +143,12 @@
 - Verification passed: `npm run typecheck`, `npm run build`, API smoke tests, browser screenshot capture, mobile QA, 320px QA, and link check.
 - Evidence: `restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md` plus `restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/`.
 - Current local stage advanced to `pitch`; next executable gate is the sellable pitch doc.
+
+## 2026-05-04 heartbeat addendum — pitch doc complete
+
+- Created the sellable owner-facing pitch doc for Winestock.
+- The pitch leads with the current under-construction site gap and frames the preview as the version that tells Winestock’s existing review-backed story.
+- It names `bramble-01` / Bramble as the archetype, explains the 4.9 / 52 review proof, top-3 improvements, truthful concierge, safe handoffs, and what stays unchanged.
+- It avoids fake reservation, ordering, pricing, private-event, or provider claims and lists owner confirmations needed before v2/final launch.
+- Evidence: `restaurant-website-system/sites/winestock/pitch-doc.md`.
+- Current local stage advanced to `battle_cards`; next executable gate is the battle cards doc.

@@ -1,0 +1,34 @@
+{
+  "build_stage": "battle_cards",
+  "site_slug": "winestock",
+  "template_slug": "bramble-01",
+  "lead_id": "7f1432ae-2553-442c-80ff-df58acb162ef",
+  "mc_task_id": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
+  "checklist_markdown_path": "restaurant-website-system/sites/winestock/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/winestock/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/winestock/pitch-doc.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/winestock/pitch-doc.md",
+    "restaurant-website-system/sites/winestock/checklist.md",
+    "restaurant-website-system/sites/winestock/routing.md",
+    "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png"
+  ],
+  "passed_requirement_ids": [
+    "pitch-doc"
+  ],
+  "verification": {
+    "json": "checklist and writeback payload valid JSON",
+    "truth_safety": "pitch avoids fake reservations/order/pricing/provider claims; owner confirmations listed before launch"
+  },
+  "heartbeat_summary": "Winestock pitch doc completed locally; next canonical stage is battle_cards. MC sync remains blocked by missing agency auth.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+    "next_unblock_action": "Retry this payload against the official agency Mission Control build API with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}
