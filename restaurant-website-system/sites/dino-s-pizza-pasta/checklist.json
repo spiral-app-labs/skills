@@ -1,93 +1,1351 @@
 {
-  "version": 1,
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
   "leadId": "da8188e5-7830-43ec-b908-661cf2e56b30",
   "mcParentTaskId": "0d4123df-83b0-4d81-bc75-88263ebb402b",
   "siteSlug": "dino-s-pizza-pasta",
   "templateSlug": "pepper-01",
-  "currentStage": "auditing",
+  "currentStage": "packaging",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+    "json": "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json"
+      ],
+      "blocker": "Mission Control mirror still requires API writeback."
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-dom-2026-05-05.html",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-dom-2026-05-05.html"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/google-reviews-highest-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/content.ts",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/page.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConfettiHero.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ContactPageLayout.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/source.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/improvement-pass-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/top-3-improvements-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-before-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-kb.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-test-transcript-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-concierge-mobile-2026-05-05.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ],
+      "blocker": "Mission Control QA writeback still requires agency API credentials/path."
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-2-page-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/layout.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/opengraph-image.tsx"
+      ],
+      "blocker": "Mission Control QA writeback pending: no trusted Mission Control base URL configured in this runtime; candidate example URL failed TLS hostname validation."
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png"
+      ],
+      "blocker": "Mission Control QA writeback pending: no trusted Mission Control base URL configured in this runtime."
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "blocked",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md"
+      ],
+      "blocker": "Final delivery blocked: public owner-shareable preview URL missing; Mission Control writeback blocked by missing trusted MC base URL; owner-sensitive facts still need confirmation before handoff. Local package archive, owner confirmation packet, public preview runbook, and Mission Control writeback payload/runbook are assembled."
+    }
+  ],
   "evidencePaths": [
     "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
     "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
     "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
-    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+    "restaurant-website-system/sites/dino-s-pizza-pasta/source.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/content.ts",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/app/page.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConfettiHero.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/components/ContactPageLayout.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/package.json",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-dom-2026-05-05.html",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-text-2026-05-05.txt",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-dom-2026-05-05.html",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-text-2026-05-05.txt",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/google-reviews-highest-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.json",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/improvement-pass-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/top-3-improvements-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-before-nav-menu-fix-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/components/TopNavSimple.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-kb.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-test-transcript-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConciergePanel.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-concierge-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-2-page-audit-2026-05-05.json",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/app/layout.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/app/opengraph-image.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/components/LiveOpenStatus.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/components/SaturatedFooter.tsx",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md"
   ],
-  "qaRounds": [],
+  "qaRounds": [
+    {
+      "roundNumber": 1,
+      "summary": "Passed local build readiness; mobile hero/nav and Google proof fixes documented.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "roundNumber": 2,
+      "summary": "Passed mobile conversion and visual polish QA after hero, nav/tap target, contact map CTA, status contrast, and OG metadata fixes.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-2-page-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/layout.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/opengraph-image.tsx"
+      ]
+    },
+    {
+      "roundNumber": 3,
+      "summary": "Passed final sell-readiness QA locally; UI quality passed, with delivery blockers limited to public preview URL, MC writeback, and owner fact confirmation.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png"
+      ]
+    }
+  ],
   "deployUrl": null,
   "pitchArtifacts": {
-    "pitchDoc": null,
+    "pitchDoc": "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
     "outreachDraft": null,
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [],
+    "battleCards": "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md"
   },
   "blockers": [
-    {
-      "gate": "auditing",
-      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
-      "nextUnblockAction": "Enable browser/Chromium capture for desktop/mobile proof of the official homepage artifact, menu page, and DOM snapshots.",
-      "recordedAt": "2026-05-04T04:43:00.894464Z"
-    }
+    "Public owner-shareable preview URL missing; delivery cannot pass without it. Public preview runbook is prepared locally.",
+    "Mission Control API writeback pending: AGENCY_AUTONOMY_API_KEY is present, but no trusted Mission Control base URL is configured in this runtime; the only discovered example URL failed TLS hostname validation. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror and MC writeback payload/runbook are prepared locally.",
+    "Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally."
   ],
   "requirements": [
     {
-      "id": "lead-fit-qualified",
-      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
       "qaState": "passed",
       "required": true,
-      "notes": "Qualification list flags Dino’s as a strong site-rot lead; source audit verified a sparse official site with AVIATOR/LONDON artifact and real pizza/menu proof.",
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed",
+      "notes": "Updated local checklist.md exists.",
       "evidence": [
-        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md"
+      ]
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed",
+      "notes": "Updated local checklist.json exists.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json"
+      ]
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "pending"
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "notes": "Desktop/mobile homepage and menu screenshots captured in the OpenClaw browser.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-mobile-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "notes": "Homepage/menu DOM and text scrapes captured.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-dom-2026-05-05.html",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-text-2026-05-05.txt",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-dom-2026-05-05.html",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-text-2026-05-05.txt"
+      ]
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "notes": "Audit identifies homepage template artifact, conversion clarity, menu packaging, family/local proof, and selected pepper-01/Cuisine route.",
+      "evidence": [
         "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md"
       ]
     },
     {
-      "id": "current-site-audit",
-      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
-      "qaState": "pending",
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "passed",
       "required": true,
-      "notes": "Web/source audit drafted; canonical desktop/mobile browser screenshots and DOM snapshot remain blocked.",
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "notes": "Google reviews were opened in the browser and sorted by Highest rating.",
       "evidence": [
-        "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md"
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/google-reviews-highest-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "notes": "30 written Highest-filter Google reviews captured into JSON and Markdown packets.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "notes": "Review themes are usable for copy/pitch: family/Dino warmth, crispy thin crust, neighborhood bar vibe, longtime loyalty, Wise Guy/beer nuggets/meatball/pasta proof, takeout and dine-in reliability.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
       ]
     },
     {
       "id": "template-route-locked",
-      "title": "Template route and modifiers are locked from the restaurant site router",
+      "title": "Exactly one archetype/template route is chosen and justified",
       "qaState": "passed",
       "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
       "notes": "Routed to pepper-01, closest core archetype: Cuisine-style warm casual neighborhood pizza/order clarity.",
       "evidence": [
         "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
-        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+        "restaurant-website-system/sites/dino-s-pizza-pasta/source.md"
       ]
     },
     {
       "id": "fork-built",
-      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
-      "qaState": "pending",
-      "required": true
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Local Next.js fork builds successfully with real content and preserved call/menu/directions/site flows. npm run build and npm run typecheck passed; local preview returned HTTP 200 on port 3073.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Reviewed and updated the build around verified Dino’s facts: Miller Rd/Lake in the Hills, call-first ordering, official menu pricing/items, hours, Google review proof, and no fake ordering/reservation claims.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/content.ts",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/page.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConfettiHero.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ContactPageLayout.tsx"
+      ]
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "notes": "Improvement pass ties the preview to Dino’s verified identity: family warmth, made-from-scratch thin crust, Miller Rd/Lake in the Hills location, Google review proof, beer/bar energy, and real menu favorites.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/improvement-pass-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "notes": "Direct call, official menu, directions, email, official site, and source-backed hours are preserved; unsupported reservation/ordering promises are intentionally not invented.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/improvement-pass-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "notes": "Mobile preview screenshot captured after hiding decorative hero emoji on mobile; visual QA found no obvious broken layout, unreadable text, emoji overlap, or overflow.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/improvement-pass-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Named three concrete improvements from audit/preview/QA: Google proof section, mobile hero declutter, and persistent mobile menu access.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/top-3-improvements-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-before-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Implemented all three improvements across content.ts, ConfettiHero.tsx, and TopNavSimple.tsx.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/top-3-improvements-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-before-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Attached top-3 doc, before/after mobile nav screenshots, after desktop/mobile preview screenshots, and build/typecheck evidence.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/top-3-improvements-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-before-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "Concierge KB is source-locked to verified address, phone, hours, menu facts, review themes, and safe handoffs.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-kb.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-test-transcript-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-concierge-mobile-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "Short transcript covers first-order recommendation, family dine-in context, hours, and directions.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-kb.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-test-transcript-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-concierge-mobile-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "Concierge UI and KB explicitly forbid placing orders, quoting live waits, guaranteeing delivery, inventing reservations, or unsupported promises.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-kb.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-test-transcript-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-concierge-mobile-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch is specific to Dino’s Lake in the Hills identity, thin-crust/deep-dish/pasta menu, Google review proof, and current-site artifact gap.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch explains before/after delta in owner language: from thin/template-debris homepage to call-first, menu-first, proof-backed preview.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch links audit screenshots/scrapes, Google review packet, top-3 improvements, concierge safety docs, and build evidence.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards cover current-site good-enough, phone ordering, genericness, concierge risk, changing specials, and send-readiness objections.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md"
+      ]
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards include a clear demo path: current artifact, preview hero/mobile header, menu sections, Google proof, concierge, owner pitch.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md"
+      ]
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards call out public preview URL, MC writeback, hours/specials confirmation, provider/order flow confirmation, and pending QA rounds.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md"
+      ]
     },
     {
       "id": "qa-round-1",
-      "title": "QA round 1 completed with findings and fixes logged",
-      "qaState": "pending",
-      "required": true
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "passed",
+      "notes": "QA round 1 completed with screenshots, findings/fixes, build/typecheck result, and remaining blockers documented.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md"
+      ]
     },
     {
       "id": "qa-round-2",
-      "title": "QA round 2 completed with findings and fixes logged",
-      "qaState": "pending",
-      "required": true
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "passed",
+      "notes": "QA round 2 completed with desktop/mobile screenshots for home/about/contact, page audit JSON, build/typecheck pass, metadata/OG fix, mobile CTA polish, contact map CTA fix, and tap-target fixes.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-2-page-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/layout.tsx",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/app/opengraph-image.tsx"
+      ]
     },
     {
       "id": "qa-round-3",
-      "title": "QA round 3 completed with findings and fixes logged",
-      "qaState": "pending",
-      "required": true
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "passed",
+      "notes": "QA round 3 final sell-readiness passed locally with final screenshots, final CDP audit, build/typecheck, copy cleanup, map polish, and visual QA re-check.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png"
+      ]
     },
     {
       "id": "delivery-package",
-      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
-      "qaState": "pending",
-      "required": true
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "blocked",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "blocked",
+      "notes": "Local delivery package/archive, owner-confirmation packet, public-preview runbook, and MC writeback payload/runbook are assembled; final delivery cannot pass until public preview URL and Mission Control writeback are available and owner-sensitive facts are confirmed.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "blocked",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "blocked",
+      "notes": "Local delivery package/archive, owner-confirmation packet, public-preview runbook, and MC writeback payload/runbook are assembled; final delivery cannot pass until public preview URL and Mission Control writeback are available and owner-sensitive facts are confirmed.",
+      "evidence": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md"
+      ]
     }
   ],
   "doneCriteria": [
@@ -97,5 +1355,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T04:43:00.935Z"
+  "updatedAt": "2026-05-05T06:54:26.820Z"
 }
