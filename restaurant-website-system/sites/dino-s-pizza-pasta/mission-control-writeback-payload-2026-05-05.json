@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-05T06:53:34.257Z",
+  "generated_at": "2026-05-05T16:48:00Z",
   "lead_id": "da8188e5-7830-43ec-b908-661cf2e56b30",
   "endpoints": {
-    "build_update": "POST or PATCH /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/build",
-    "qa_rounds": "POST /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/qa-rounds",
-    "heartbeat": "POST /api/heartbeat"
+    "build_update": "POST or PATCH https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/build",
+    "qa_rounds": "POST https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/qa-rounds",
+    "heartbeat": "POST https://hq.ethantalreja.com/api/heartbeat"
   },
   "build_payload": {
     "build_stage": "packaging",
@@ -101,11 +101,14 @@
       "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
       "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
       "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
-      "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md"
+      "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+      "https://github.com/spiral-app-labs/skills/pull/42",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md"
     ],
     "artifact_urls": [
       "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
-      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md"
+      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+      "https://github.com/spiral-app-labs/skills/pull/42"
     ],
     "passed_requirement_ids": [
       "checklist-md",
@@ -142,8 +145,15 @@
       "delivery-package",
       "delivery-no-missing-evidence"
     ],
-    "blocker": "Public owner-shareable preview URL missing; delivery cannot pass without it. Public preview runbook is prepared locally.\nMission Control API writeback pending: AGENCY_AUTONOMY_API_KEY is present, but no trusted Mission Control base URL is configured in this runtime; the only discovered example URL failed TLS hostname validation. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror.\nOwner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally.",
-    "heartbeat_summary": "Dino’s is packaged locally after all QA rounds passed; final delivery remains blocked on public preview URL, Mission Control writeback base URL, and owner fact confirmation."
+    "blocker": "Public owner-shareable preview is still blocked: Vercel PR preview https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app exists, but unauthenticated access returns HTTP/2 401 / Authentication Required. Do not owner-deliver until public/shareable access is configured.\nMission Control API writeback pending: trusted base URL is now identified as https://hq.ethantalreja.com, but this OpenClaw runtime has no usable AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET bearer token. The API returns 401 with x-agency-runtime: openclaw. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror.\nOwner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally.",
+    "heartbeat_summary": "Dino’s is packaged locally and PR #42 has a Vercel preview, but unauthenticated preview access returns 401; final delivery remains blocked on public preview access, agency API bearer token for MC writeback, and owner fact confirmation.",
+    "github_pr_url": "https://github.com/spiral-app-labs/skills/pull/42",
+    "github_pr_state": "merged",
+    "github_pr_merged_at": "2026-05-05T08:00:37Z",
+    "mc_api_base_url": "https://hq.ethantalreja.com",
+    "mc_api_access_check_path": "restaurant-website-system/sites/dino-s-pizza-pasta/mc-api-access-check-2026-05-05.md",
+    "protected_preview_url": "https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app",
+    "public_preview_access_check_path": "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md"
   },
   "qa_round_payloads": [
     {
@@ -197,7 +207,7 @@
   ],
   "heartbeat_payload": {
     "status": "work_done",
-    "summary": "Agency: Dino’s local delivery package, owner-confirmation packet, public-preview runbook, and MC writeback payload are ready; final delivery remains blocked on public preview URL, trusted MC base URL, and owner confirmations.",
+    "summary": "Dino’s is packaged locally and PR #42 has a Vercel preview, but unauthenticated preview access returns 401; final delivery remains blocked on public preview access, agency API bearer token for MC writeback, and owner fact confirmation.",
     "mode": "agency",
     "source": "openclaw_website_agency",
     "taskIds": [
@@ -209,10 +219,12 @@
       "build_stage": "packaging",
       "delivery_status": "blocked",
       "blockers": [
-        "Public owner-shareable preview URL missing; delivery cannot pass without it. Public preview runbook is prepared locally.",
-        "Mission Control API writeback pending: AGENCY_AUTONOMY_API_KEY is present, but no trusted Mission Control base URL is configured in this runtime; the only discovered example URL failed TLS hostname validation. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror.",
-        "Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally."
-      ]
+        "Public owner-shareable preview is blocked: Vercel PR preview exists but unauthenticated access returns HTTP/2 401 / Authentication Required.",
+        "Mission Control API writeback pending: trusted base URL is https://hq.ethantalreja.com, but no agency API bearer token is available in this runtime (401 with x-agency-runtime: openclaw).",
+        "Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims."
+      ],
+      "mc_api_base_url": "https://hq.ethantalreja.com",
+      "github_pr_url": "https://github.com/spiral-app-labs/skills/pull/42"
     }
   },
   "blocked_from_delivery": true,

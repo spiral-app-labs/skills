@@ -11,9 +11,9 @@ Dino’s is in `packaging` locally. All build/QA gates through `qa_round_3` have
 
 ## Why this runbook exists
 
-Mission Control API writeback is required, but this runtime does not have a trusted Mission Control base URL configured. The only discovered example URL failed TLS hostname validation. Raw Supabase writes are forbidden for agency work.
+Mission Control API writeback is required. This runtime now has a trusted Mission Control base URL candidate (`https://hq.ethantalreja.com`), but it does not have a usable agency API bearer token configured (`AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET`). The old `https://os.ethan.com` example still fails TLS hostname validation. Raw Supabase writes are forbidden for agency work.
 
-This file prepares the exact payloads to submit once a trusted MC base URL is available.
+This file prepares the exact payloads to submit once a trusted MC agency API token is available. Latest access check: `restaurant-website-system/sites/dino-s-pizza-pasta/mc-api-access-check-2026-05-05.md`.
 
 ## Required API auth
 
@@ -30,15 +30,15 @@ Do not use raw Supabase writes.
 ## Writeback order
 
 1. Read lead first:
-   - `GET /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30`
+   - `GET https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30`
 2. Submit build payload from `build_payload`:
-   - `POST /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/build`
+   - `POST https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/build`
    - If POST is not accepted, use `PATCH` on the same route.
 3. Submit all three `qa_round_payloads`:
-   - `POST /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/qa-rounds`
+   - `POST https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/qa-rounds`
 4. Submit heartbeat/activity payload if the build/QA routes do not already log enough activity:
-   - `POST /api/heartbeat`
-   - optional `POST /api/activity`
+   - `POST https://hq.ethantalreja.com/api/heartbeat`
+   - optional `POST https://hq.ethantalreja.com/api/activity`
 5. Re-read the lead and verify MC mirrors:
    - `build_stage/currentStage = packaging`
    - checklist paths

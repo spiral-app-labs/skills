@@ -687,9 +687,13 @@
         "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
         "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
         "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json",
-        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md"
+        "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md"
       ],
-      "blocker": "Final delivery blocked: public owner-shareable preview URL missing; Mission Control writeback blocked by missing trusted MC base URL; owner-sensitive facts still need confirmation before handoff. Local package archive, owner confirmation packet, public preview runbook, and Mission Control writeback payload/runbook are assembled."
+      "blocker": "Final delivery blocked: public owner-shareable preview URL missing/rechecked 401 at 2026-05-05T22:32:52Z; Mission Control writeback blocked by missing agency bearer token/rechecked 401 at 2026-05-05T22:32:53Z; owner-sensitive facts still need confirmation before handoff. Local package archive, owner confirmation packet, public preview runbook, access checks, and Mission Control writeback payload/runbook are assembled.",
+      "notes": [
+        "2026-05-05T16:47Z: Vercel PR preview exists but unauthenticated access returned HTTP/2 401 / Authentication Required; preview is not owner-shareable."
+      ]
     }
   ],
   "evidencePaths": [
@@ -756,7 +760,8 @@
     "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
     "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
     "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-payload-2026-05-05.json",
-    "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md"
+    "restaurant-website-system/sites/dino-s-pizza-pasta/mission-control-writeback-runbook-2026-05-05.md",
+    "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md"
   ],
   "qaRounds": [
     {
@@ -808,8 +813,8 @@
     "battleCards": "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md"
   },
   "blockers": [
-    "Public owner-shareable preview URL missing; delivery cannot pass without it. Public preview runbook is prepared locally.",
-    "Mission Control API writeback pending: AGENCY_AUTONOMY_API_KEY is present, but no trusted Mission Control base URL is configured in this runtime; the only discovered example URL failed TLS hostname validation. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror and MC writeback payload/runbook are prepared locally.",
+    "Public owner-shareable preview remains blocked. Vercel PR preview https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app exists, but unauthenticated access returns HTTP/2 401 / Authentication Required. Public preview runbook and access-check evidence are prepared locally.",
+    "Mission Control API writeback pending: trusted base URL https://hq.ethantalreja.com is reachable, but this runtime has no usable AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET bearer token; GET lead returns HTTP/2 401 with x-agency-runtime: openclaw. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror and MC writeback payload/runbook are prepared locally.",
     "Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally."
   ],
   "requirements": [
@@ -1355,5 +1360,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T06:54:26.820Z"
+  "updatedAt": "2026-05-05T16:48:00Z"
 }
