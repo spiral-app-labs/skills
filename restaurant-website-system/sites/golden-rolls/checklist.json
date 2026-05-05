@@ -117,7 +117,9 @@
     "restaurant-website-system/sites/golden-rolls/screenshots/qa3-cdp-contact-narrow-mobile-2026-05-05.png",
     "restaurant-website-system/sites/golden-rolls/screenshots/qa3-cdp-contact-mobile-2026-05-05.png",
     "restaurant-website-system/sites/golden-rolls/screenshots/qa3-cdp-contact-desktop-2026-05-05.png",
-    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-qa-round-3-complete-2026-05-05.json"
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-qa-round-3-complete-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/delivery-package-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-packaging-progress-2026-05-05.json"
   ],
   "qaRounds": [
     {
@@ -198,7 +200,7 @@
       ]
     }
   ],
-  "deployUrl": null,
+  "deployUrl": "https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app",
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
     "outreachDraft": "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
@@ -208,9 +210,21 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local QA round 3 artifacts and writeback payload are ready; submit mc-build-writeback-qa-round-3-complete-2026-05-05.json when MC API auth/base URL are configured.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the QA round 3 complete writeback payload before marking MC as packaging.",
-      "recordedAt": "2026-05-05T10:55:01.000Z"
+      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local packaging artifact and writeback payload are ready; submit mc-build-writeback-packaging-progress-2026-05-05.json when MC API auth/base URL are configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the packaging-progress writeback payload before marking MC packaging/delivery state.",
+      "recordedAt": "2026-05-05T10:58:49.000Z"
+    },
+    {
+      "gate": "public_preview_url",
+      "reason": "Vercel preview URL is auth-gated for unauthenticated access: https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app. It is not owner-deliverable until public/shareable preview access is configured.",
+      "nextUnblockAction": "Create or configure a public/shareable preview URL for Golden Rolls, then recapture/verify it and update delivery-package evidence.",
+      "recordedAt": "2026-05-05T10:58:49.000Z"
+    },
+    {
+      "gate": "owner_data_verification",
+      "reason": "Current prices, hours, ratings/review counts, and delivery availability should be owner-confirmed before launch because they can change.",
+      "nextUnblockAction": "Confirm current data with the restaurant owner before final delivery/launch.",
+      "recordedAt": "2026-05-05T10:58:49.000Z"
     }
   ],
   "requirements": [
@@ -499,7 +513,24 @@
       "id": "delivery-package",
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "notes": "Packaging packet assembled locally with pitch doc, outreach draft, battle cards, QA evidence, screenshots, and PR preview URL. Delivery remains blocked because the Vercel preview URL is auth-gated for unauthenticated access and MC writeback is unavailable.",
+      "evidence": [
+        "restaurant-website-system/sites/golden-rolls/delivery-package-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
+        "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
+        "restaurant-website-system/sites/golden-rolls/battle-cards.md",
+        "restaurant-website-system/sites/golden-rolls/qa-round-1-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/qa-round-2-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/qa-round-3-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/scrapes/qa3-responsive-metrics-2026-05-05.json",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa3-cdp-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa3-cdp-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa3-cdp-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/audit.md",
+        "restaurant-website-system/sites/golden-rolls/google-reviews-themes.md",
+        "restaurant-website-system/sites/golden-rolls/concierge-qa-2026-05-05.md"
+      ]
     }
   ],
   "doneCriteria": [
@@ -509,5 +540,14 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T10:55:01.000Z"
+  "updatedAt": "2026-05-05T10:58:49.000Z",
+  "previewAccessStatus": "auth_gated_vercel_preview_not_owner_deliverable",
+  "packagingArtifacts": {
+    "deliveryPackage": "restaurant-website-system/sites/golden-rolls/delivery-package-2026-05-05.md",
+    "pitchDoc": "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
+    "outreachDraft": "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
+    "battleCards": "restaurant-website-system/sites/golden-rolls/battle-cards.md",
+    "previewUrl": "https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app",
+    "previewAccessStatus": "auth_gated"
+  }
 }
