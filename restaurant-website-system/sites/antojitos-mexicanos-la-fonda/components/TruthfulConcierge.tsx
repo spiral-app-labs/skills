@@ -36,13 +36,13 @@ export function TruthfulConcierge() {
       setAnswer({
         topic: 'fallback',
         answer:
-          'I cannot verify that from the preview right now. The safest next step is to call La Fonda directly before promising menu details, seating, prices, allergies, or same-day specials.',
+          'I cannot verify that right now. The best next step is to call La Fonda directly for menu details, seating, prices, allergies, or same-day specials.',
         actions: [
           { label: 'Call La Fonda', href: content.brand.phoneHref },
           { label: 'Get directions', href: content.brand.directionsHref },
         ],
         safetyNote:
-          'This concierge is intentionally truth-safe: it only uses captured public facts and hands off anything current or sensitive to the restaurant.',
+          'This helper uses public information and hands off current or sensitive questions to the restaurant.',
       });
     } finally {
       setLoading(false);
@@ -59,17 +59,17 @@ export function TruthfulConcierge() {
       <div className="max-w-content mx-auto px-5 md:px-10 py-16 md:py-24">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
           <div className="rounded-card bg-accent p-6 text-text-on-brand shadow-card md:p-8">
-            <p className="text-eyebrow font-bold uppercase">Truth-safe concierge</p>
+            <p className="text-eyebrow font-bold uppercase">La Fonda helper</p>
             <h2 className="mt-3 text-section-h2 font-extrabold">
-              Ask La Fonda without inventing answers.
+              Ask about calling, pickup, or a visit.
             </h2>
             <p className="mt-4 text-body">
-              This helper is built from the verified La Fonda evidence packet: hours, address, phone, Google proof, review themes, and publicly named menu highlights.
+              Get quick guidance on hours, address, phone, review-loved dishes, takeout, and what to confirm directly with the restaurant.
             </p>
             <ul className="mt-6 space-y-3 text-body-sm font-semibold">
-              <li>✓ No unverified online ordering provider</li>
-              <li>✓ No unverified menu pricing or allergy claims</li>
-              <li>✓ Calls the restaurant when details must be current</li>
+              <li>✓ Quick phone and directions links</li>
+              <li>✓ Current prices handled by phone</li>
+              <li>✓ Day-to-day details handled by phone</li>
             </ul>
           </div>
 
@@ -82,7 +82,7 @@ export function TruthfulConcierge() {
                 </h3>
               </div>
               <span className="rounded-pill bg-ink px-3 py-1 text-body-sm font-bold text-text-on-dark">
-                Verified facts only
+                Call to confirm
               </span>
             </div>
 

@@ -50,7 +50,7 @@ export function ContactPageLayout() {
           </div>
 
           <div>
-            <h2 className="text-[28px] leading-[36px] font-extrabold text-ink">Use The Real Conversion Paths</h2>
+            <h2 className="text-[28px] leading-[36px] font-extrabold text-ink">Call, Map, and Profiles</h2>
             <div className="mt-6 space-y-3">
               {c.links.map((link) => (
                 <a
@@ -68,7 +68,7 @@ export function ContactPageLayout() {
       </section>
 
       <section className="max-w-content mx-auto px-5 md:px-10 pb-16 md:pb-24">
-        <h2 className="text-section-h2 font-extrabold text-ink">Visit Notes</h2>
+        <h2 className="text-section-h2 font-extrabold text-ink">Helpful Before You Go</h2>
         <div className="mt-10">
           <NumberedAccordion rows={content.visit.accordion} />
         </div>

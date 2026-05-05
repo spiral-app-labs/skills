@@ -2,8 +2,10 @@
 
 - Lead ID: `92b49f80-4193-4c76-ba72-7a03493fd707`
 - MC parent task: `c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc`
-- Current stage: `qa_round_3`
+- Current stage: `packaging`
 - Template route: `pepper-01`
+- PR: `https://github.com/spiral-app-labs/skills/pull/29`
+- Vercel PR preview: `https://skills-git-chore-antojitos-qa3-ethan-ethantalrejas-projects.vercel.app` (auth-gated, not client-shareable)
 
 ## Workflow status
 
@@ -130,12 +132,28 @@
 ### 12. QA round 3 final sell-readiness QA
 
 - Stage: `qa_round_3`
-- Status: `pending`
+- Status: `done`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-3-2026-05-04.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-browser-checks-2026-05-04.json`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshot-inventory-qa-round-3-2026-05-04.json`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/`
+  - `local command: npm run typecheck (passed)`
+  - `local command: npm run build (passed)`
+  - `image QA: final mobile viewport visual review passed with no hard blockers`
 
 ### 13. Package and deliver only after all gates pass
 
 - Stage: `packaging`
-- Status: `pending`
+- Status: `blocked`
+- Evidence:
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/delivery-package.md`
+  - `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-3-complete-2026-05-04.json`
+- Blocker: Packaging/delivery blocked until official Mission Control sync auth is configured and a client-shareable public preview URL exists; current Vercel PR preview is authentication-gated.
 
 ## Passed requirement IDs
 
@@ -168,9 +186,14 @@
 - `battle-cards-risks`
 - `qa-round-1`
 - `qa-round-2`
+- `qa-round-3`
 
 ## Current blocker
 
 - Gate: `mission_control_sync`
-- Reason: local QA round 2 is complete, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; prior `/api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build` attempt returned `401 Unauthorized`.
-- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-2-complete-2026-05-04.json` with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`.
+- Reason: QA round 3 is complete locally and the next canonical stage is `packaging`, but Mission Control build writeback cannot be mirrored from this runtime because `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` are not configured; official agency API writes require those headers.
+- Next unblock action: retry `restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-3-complete-2026-05-04.json` through the official agency API with `Authorization: Bearer $AGENCY_AUTONOMY_API_KEY`, `x-agency-runtime: openclaw`, and `Content-Type: application/json`, then continue packaging with a client-shareable preview URL.
+
+- Gate: `packaging_public_preview`
+- Reason: the Vercel PR preview exists but returned `401 Authentication Required` without a Vercel login, so it is not client-shareable; packaging/delivery still requires a public preview URL.
+- Next unblock action: create or attach a client-shareable preview URL, then include it in the packaging/delivery Mission Control writeback.

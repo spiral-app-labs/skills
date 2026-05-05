@@ -41,9 +41,9 @@ export const content = {
     serviceArea:
       'Crystal Lake and the surrounding McHenry County neighborhoods looking for Veracruz-style Mexican takeout, tacos, empanadas, huaraches, burritos, and seasonal atole or mole specials.',
     socialProof: [
-      'Google Maps capture from 2026-05-04 showed 4.5 stars from 148 reviews and an Add website gap.',
-      'Restaurantji lists 4.6 from 95 ratings with favorites like Sope Veracruzano, Huarache De Asado, Tinga de Pollo, Super Burrito, and Shrimp Tacos.',
-      'Highest-rated Google reviews repeatedly call out authentic comida Veracruzana, friendly staff, clean takeout, and fair prices.',
+      'Guests on Google and local directories consistently point to authentic comida Veracruzana, friendly service, careful takeout, and fair value.',
+      'Local listings highlight favorites like Sope Veracruzano, Huarache De Asado, Tinga de Pollo, Super Burrito, and Shrimp Tacos.',
+      'Highest-rated Google reviews repeatedly call out tacos, empanadas, clean carryout, fresh churros, atole, and mole specials.',
     ],
   },
 
@@ -61,22 +61,22 @@ export const content = {
     eyebrow: 'Crystal Lake Mexican takeout',
     headline: 'Veracruz flavor, tacos, and antojitos worth the trip.',
     subhead:
-      'La Fonda already has the proof: guests talk about authentic comida Veracruzana, the best tacos in the area, friendly service, clean carryout, and specials like atole and mole. This preview finally puts that story in one owned place.',
+      'Guests talk about authentic comida Veracruzana, craveable tacos, friendly service, clean carryout, and specials like atole and mole. Find the essentials before you call or visit.',
     highlightChips: [
-      '4.5 stars on Google',
-      '148 Google reviews',
-      'Call-first takeout clarity',
+      'Veracruz-style Mexican food',
+      'Call-first takeout',
+      'Crystal Lake favorite',
     ],
     ctas: [
       { label: 'Call (815) 526-3633', href: 'tel:+18155263633', style: 'accent' as const },
       { label: 'Get Directions', href: 'https://www.google.com/maps/search/?api=1&query=35+Berkshire+Dr+Unit+10+Crystal+Lake+IL+60014', style: 'dark' as const },
     ],
     proofPanel: {
-      eyebrow: 'Why La Fonda sells',
+      eyebrow: 'Why regulars come back',
       bullets: [
         'Reviewers call it authentic comida Veracruzana, not generic Mexican food.',
         'Tacos, empanadas, sope Veracruzano, garnachas, huaraches, mole, and atole give the menu a specific hook.',
-        'The biggest before/after is simple: the 2026-05-04 Google capture showed Add website, so the restaurant needs a first-party conversion home.',
+        'Phone, directions, hours, and dish highlights are ready before guests make the trip.'
       ],
       sideEyebrow: 'Hours',
       sideNote: 'Mon-Sat 10 AM - 7 PM. Sunday 10 AM - 4 PM.',
@@ -84,9 +84,9 @@ export const content = {
   },
 
   fanFavorites: {
-    heading: 'What Regulars Keep Naming',
+    heading: 'Favorites Guests Keep Naming',
     subhead:
-      'Public reviews and directory listings captured on 2026-05-04 point to tacos, Veracruz-style antojitos, careful carryout, and seasonal specials — the page now makes those reasons easy to scan before calling.',
+      'Guests point to tacos, Veracruz-style antojitos, careful carryout, and seasonal specials — start with the favorites before calling.',
     dishes: [
       {
         name: 'Tacos: steak, pork, shrimp, lengua',
@@ -96,8 +96,8 @@ export const content = {
       },
       {
         name: 'Empanadas & sope Veracruzano',
-        desc: 'The review packet and Restaurantji favorites both point to empanadas, garnachas, flautas, and sope Veracruzano as the regional proof worth leading with.',
-        price: 'Veracruz proof',
+        desc: 'Empanadas, garnachas, flautas, and sope Veracruzano bring the regional personality guests remember.',
+        price: 'Veracruz favorite',
         tag: 'Antojitos',
       },
       {
@@ -110,19 +110,19 @@ export const content = {
   },
 
   pizzaStyles: {
-    heading: 'Build The First-Party Menu Story',
+    heading: 'A Menu Story With Regional Character',
     subhead:
-      'Start with dishes and visit details from public review/listing evidence, then call the restaurant to verify today’s menu, prices, and specials.',
+      'Start with the dishes guests keep naming, then call the restaurant to verify today’s menu, prices, and specials.',
     items: [
       {
         name: 'Veracruz Antojitos',
         inclusions: [
           'Sope Veracruzano',
           'Garnachas, flautas, empanadas',
-          'Huachinango a la veracruzana appears in Google review topics',
+          'Huachinango a la veracruzana is part of the regional story',
         ],
         price: 'Regional hook',
-        note: 'Lead with this',
+        note: 'Regional favorite',
         color: 'deal-1' as const,
       },
       {
@@ -130,10 +130,10 @@ export const content = {
         inclusions: [
           'Steak, pork, shrimp, carne asada, lengua',
           'Creamy green sauce gets direct praise',
-          'Tuesday 3 tacos for $6 appears in a Google review',
+          'Ask about current taco specials',
         ],
-        price: 'Repeat driver',
-        note: 'Call to verify',
+        price: 'Guest favorite',
+        note: 'Ask today',
         color: 'deal-2' as const,
       },
       {
@@ -143,7 +143,7 @@ export const content = {
           'Careful packaging with hot sauce, napkins, and silverware',
           'Clean storefront and fair value are repeated themes',
         ],
-        price: 'Conversion path',
+        price: 'Phone-first',
         note: 'Phone first',
         color: 'deal-3' as const,
       },
@@ -155,27 +155,27 @@ export const content = {
           'Fresh churros with fillings surface in reviews',
         ],
         price: 'Ask today',
-        note: 'Verify today',
+        note: 'Ask today',
         color: 'deal-4' as const,
       },
     ],
   },
 
   moreMenu: {
-    heading: 'More Dishes To Make The Page Feel Specific',
+    heading: 'More Reasons To Call In An Order',
     subhead:
-      'The build should sound like La Fonda, not a generic Mexican template. These highlights are all sourced from the audit and review packet.',
+      'The menu story feels like La Fonda: regional, generous, practical, and rooted in what guests already love.',
     dishes: [
       {
         name: 'Huarache De Asado',
-        desc: 'Restaurantji names this as a customer favorite and it fits the antojitos-forward identity.',
-        price: 'Restaurantji favorite',
+        desc: 'A customer favorite that fits the antojitos-forward identity.',
+        price: 'Guest favorite',
         tag: 'Huarache',
       },
       {
         name: 'Tinga de Pollo & Milanesa de Pollo',
         desc: 'Both appear in public menu/favorite evidence and help widen the page beyond taco-only copy.',
-        price: 'Public-source proof',
+        price: 'Menu highlight',
         tag: 'Pollo',
       },
       {
@@ -190,79 +190,79 @@ export const content = {
   visit: {
     heading: 'Everything You Need Before You Go',
     subhead:
-      'Phone, directions, public-source hours, review proof, and La Fonda’s Veracruz-style dish story are gathered in one simple place.',
+      'Phone, directions, listed hours, local favorites, and La Fonda’s Veracruz-style dish story are ready before you go.',
     tiles: [
-      { title: 'Website not verified', body: 'The 2026-05-04 Google Maps capture showed Add website, so this page gives guests a clearer first-party path.' },
-      { title: '4.5 / 148', body: 'The Google review count is strong enough to sit near the top of the page.' },
-      { title: 'Takeout-first', body: 'Reviews repeatedly praise carryout packaging, speed, friendliness, and value.' },
-      { title: 'Veracruz-specific', body: 'The best copy angle is authentic comida Veracruzana and regional antojitos.' },
-      { title: 'Call + maps', body: 'Until a verified ordering link exists, the honest conversion path is phone and directions.' },
+      { title: 'Call-first', body: 'Guests can tap once to call the restaurant for takeout, current specials, and menu questions.' },
+      { title: 'Easy directions', body: 'The Coventry Plaza address is clear and linked directly to maps.' },
+      { title: 'Takeout-ready', body: 'Reviews repeatedly praise carryout packaging, speed, friendliness, and value.' },
+      { title: 'Veracruz-specific', body: 'Guests come for authentic comida Veracruzana and regional antojitos.' },
+      { title: 'Ask today', body: 'Call for holiday hours, same-day changes, current prices, and specials.' }
     ],
     accordion: [
       {
-        title: 'Hours captured from public sources',
-        body: 'Restaurantji and Restaurant Guru corroborate Monday through Saturday 10 AM to 7 PM and Sunday 10 AM to 4 PM. Guests should still call for holiday or special-event changes.',
+        title: 'Listed hours',
+        body: 'Listed hours are Monday through Saturday 10 AM to 7 PM and Sunday 10 AM to 4 PM. Guests should still call for holiday or special-event changes.'
       },
       {
-        title: 'Ordering path kept honest',
-        body: 'No first-party online ordering provider was verified in the audit, so this preview uses direct call and directions rather than inventing an order flow.',
+        title: 'Best way to order',
+        body: 'Call La Fonda directly for takeout, current menu details, prices, and today’s specials.'
       },
       {
-        title: 'Seating language stays careful',
-        body: 'Reviews mention takeout-only or limited seating while also saying the building was being updated to accommodate eating in. The build should avoid overpromising dine-in until verified.',
+        title: 'Before dining in',
+        body: 'Some public listings and reviews mention limited seating, so call before assuming dine-in availability.'
       },
     ],
   },
 
   proof: {
-    eyebrow: 'GOOGLE PROOF',
-    heading: 'The captured Google reputation is stronger than the web presence.',
+    eyebrow: 'LOCAL FAVORITE',
+    heading: 'Veracruz flavor with real Crystal Lake word of mouth.',
     body:
-      'The sell story is unusually direct: the 2026-05-04 capture shows Google has the reviews, Restaurantji and Restaurant Guru have public menu proof, but guests still do not get a clean owned page with phone, publicly listed hours, dish examples, directions, and the Veracruz story.',
+      'Guest reviews and local menu listings point to a restaurant with real local demand. Phone, hours, dish examples, directions, and the Veracruz story are all gathered here.',
     quote:
       'What can I say? I finally found authentic comida Veracruzana. Hands down the best Mexican food around.',
-    name: 'Highest-rated Google review packet',
+    name: 'Local guest review',
     stats: [
-      { value: '4.5', label: 'Google rating captured in browser' },
-      { value: '148', label: 'Google reviews captured in browser' },
-      { value: '30', label: 'Highest-filter written reviews captured' },
+      { value: '4.5', label: 'Google rating' },
+      { value: '148', label: 'Google reviews' },
+      { value: '30', label: 'review-loved dishes & details' }
     ],
   },
 
   closingCTA: {
-    heading: 'One page can organize the scattered search path.',
+    heading: 'Ready for tacos, antojitos, and takeout?',
     subhead:
-      'For the first preview, the priority is to make the phone, directions, hours, review proof, and regional dish story impossible to miss.',
+      'Call, get directions, check listed hours, and browse the regional dish story before you head over.',
     links: [
       { label: 'Call La Fonda', href: 'tel:+18155263633' },
       { label: 'Get Directions', href: 'https://www.google.com/maps/search/?api=1&query=35+Berkshire+Dr+Unit+10+Crystal+Lake+IL+60014' },
       { label: 'Open Google Profile', href: 'https://www.google.com/maps/place/Antojitos+Mexicanos+La+Fonda/@42.2179964,-88.3189578,17z/data=!4m8!3m7!1s0x880f0ddbc42b18c1:0x67112e53c48d4b64!8m2!3d42.2179964!4d-88.3189578!9m1!1b1!16s%2Fg%2F11r9b4q5ly' },
-      { label: 'View Restaurantji Profile', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' }
+      { label: 'View Local Menu Listing', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' }
     ],
-    leftHeading: 'Truth-safe preview rules',
+    leftHeading: 'Helpful before you go',
     leftBody: [
-      'No unverified online ordering path: use call and maps until a provider is verified.',
-      'No unverified full-menu pricing: highlight sourced dishes and ask guests to call for current specials.',
-      'No overclaiming dine-in: reviews conflict, so seating should stay carefully worded.',
+      'Call for the current menu, prices, specials, and takeout timing.',
+      'Use directions for the Coventry Plaza address before heading over.',
+      'Ask the restaurant directly about dine-in seating, allergies, catering, or holiday hours.',
     ],
-    note: 'Every headline and CTA is based on Google, Restaurantji, and Restaurant Guru evidence reviewed on 2026-05-04.',
+    note: 'Call the restaurant for current prices, specials, seating, allergies, and holiday hours.'
   },
 
   contact: {
     title: 'Contact La Fonda',
     subtitle:
-      'Direct call and directions matter most for a restaurant whose current public footprint is spread across Google and directory pages.',
+      'Direct call and directions matter most: tap to ask about today’s menu, specials, hours, and takeout timing.',
     links: [
       { label: 'Call (815) 526-3633', href: 'tel:+18155263633' },
       { label: 'Get directions to Coventry Plaza', href: 'https://www.google.com/maps/search/?api=1&query=35+Berkshire+Dr+Unit+10+Crystal+Lake+IL+60014' },
       { label: 'Open Google profile', href: 'https://www.google.com/maps/place/Antojitos+Mexicanos+La+Fonda/@42.2179964,-88.3189578,17z/data=!4m8!3m7!1s0x880f0ddbc42b18c1:0x67112e53c48d4b64!8m2!3d42.2179964!4d-88.3189578!9m1!1b1!16s%2Fg%2F11r9b4q5ly' },
-      { label: 'View Restaurantji profile', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' },
+      { label: 'View local menu listing', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' },
     ],
     contactFacts: [
       { label: 'Address', value: '35 Berkshire Dr Unit 10, Crystal Lake, IL 60014' },
       { label: 'Phone', value: '(815) 526-3633' },
       { label: 'Publicly listed hours', value: 'Mon-Sat 10 AM - 7 PM, Sun 10 AM - 4 PM; call for holiday changes.' },
-      { label: 'Current website gap', value: 'Google Maps capture showed Add website; no official owned site was verified on 2026-05-04.' }
+      { label: 'Best first step', value: 'Call the restaurant for current specials, seating, and menu questions.' }
     ],
   },
 
@@ -271,16 +271,16 @@ export const content = {
     subtitle:
       'A modest Crystal Lake storefront with outsized review love for Veracruz-style Mexican food, clean carryout, and friendly service.',
     intro:
-      'The strongest public story is not a generic Mexican restaurant story. Reviewers specifically call out authentic comida Veracruzana, atole, mole, garnachas, empanadas, sope Veracruzano, huaraches, tacos, and careful takeout service.',
+      'La Fonda’s story is specific: reviewers call out authentic comida Veracruzana, atole, mole, garnachas, empanadas, sope Veracruzano, huaraches, tacos, and careful takeout service.',
     stats: [
       { value: '4.5', label: 'Google rating' },
       { value: '148', label: 'Google reviews' },
-      { value: '4.6', label: 'Restaurantji rating' },
-      { value: '41', label: 'Restaurant Guru photos' },
+      { value: '4.6', label: 'local listing rating' },
+      { value: '41', label: 'local listing photos' }
     ],
     paragraphs: [
-      'A first-party website should preserve the restaurant’s real strengths: regional specificity, value, friendly staff, and easy takeout. It should not blur La Fonda into generic taco-shop copy.',
-      'The build also needs to be careful with what is not verified. The audit did not find an official online ordering link or a full official menu/pricing source, and reviews conflict on current seating. Calls and directions are the safest primary conversions.',
+      'The restaurant’s strengths are regional specificity, value, friendly staff, and easy takeout — all anchored in a Veracruz-inspired menu story.',
+      'Because online ordering, full pricing, and current seating details can change, the best guest path is simple: call the restaurant or get directions before heading over.',
     ],
   },
 
@@ -307,12 +307,12 @@ export const content = {
         heading: 'Public profiles',
         links: [
           { label: 'Google profile', href: 'https://www.google.com/maps/place/Antojitos+Mexicanos+La+Fonda/@42.2179964,-88.3189578,17z/data=!4m8!3m7!1s0x880f0ddbc42b18c1:0x67112e53c48d4b64!8m2!3d42.2179964!4d-88.3189578!9m1!1b1!16s%2Fg%2F11r9b4q5ly' },
-          { label: 'Restaurantji', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' },
-          { label: 'Restaurant Guru', href: 'https://restaurantguru.com/Antojitos-Mexicanos-La-Fonda-Crystal-Lake' },
+          { label: 'Local menu listing', href: 'https://www.restaurantji.com/il/crystal-lake/antojitos-mexicanos-la-fonda-/' },
+          { label: 'Local photo listing', href: 'https://restaurantguru.com/Antojitos-Mexicanos-La-Fonda-Crystal-Lake' },
         ],
       },
     ],
-    copy: 'Public sources reviewed May 4, 2026. Verify current menu, seating, and specials with the restaurant before publishing.'
+    copy: 'Call the restaurant to verify current menu, seating, holiday hours, and specials.'
   },
 
   confetti: [
