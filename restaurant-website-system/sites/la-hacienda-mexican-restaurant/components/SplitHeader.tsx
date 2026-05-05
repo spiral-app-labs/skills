@@ -38,7 +38,8 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
           <span className="inline-block h-[28px] w-[28px] rounded-full bg-accent flex items-center justify-center">
             <span className="font-display text-[14px] leading-none text-text-white">{brandMark}</span>
           </span>
-          <span className="font-display text-[18px] sm:text-[22px] leading-none truncate max-w-[160px] sm:max-w-none">{content.brand.name}</span>
+          <span className="font-display text-[18px] leading-none sm:hidden">La Hacienda</span>
+          <span className="hidden sm:inline font-display text-[22px] leading-none">{content.brand.name}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

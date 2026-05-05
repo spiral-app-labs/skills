@@ -3,8 +3,8 @@ export const content = {
     name: 'La Hacienda Mexican Restaurant',
     tagline: 'Neighborhood Mexican favorites with fast pickup and longtime regulars',
     description:
-      'La Hacienda Mexican Restaurant in East Dundee serves source-backed menu favorites including tacos, burritos, tortas, chimichangas, fajitas, and horchata. Public proof confirms the address, phone, hours, and strong local review volume.',
-    since: 'Public proof captured May 5, 2026',
+      'La Hacienda Mexican Restaurant in East Dundee serves tacos, burritos, tortas, chimichangas, fajitas, horchata, and quick pickup favorites from 411 E Main St.',
+    since: 'East Dundee neighborhood Mexican restaurant',
     address: '411 E Main St, East Dundee, IL 60118',
     phone: '(847) 426-0506',
     email: '',
@@ -60,18 +60,18 @@ export const content = {
       'Tacos, burritos, tortas, fajitas, horchata, and fast pickup at 411 E Main St — with clear calls, directions, menu, and order links.',
     cta: { label: 'View Menu', href: '/menu' },
     plateImage: '/la-hacienda/hero-review-board.svg',
-    plateAlt: 'La Hacienda review-backed preview panel',
+    plateAlt: 'La Hacienda menu and review highlights panel',
   },
 
   mission: {
-    eyebrow: 'Why This Works',
+    eyebrow: 'Local Favorites',
     title: 'Fast pickup, familiar favorites, and one-tap next steps.',
     body:
-      'Public reviews repeat the same story: burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas keep people coming back. This preview makes those choices easier to find and easier to act on.',
+      'Locals keep coming back for burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas. Favorites, phone number, directions, and online ordering are easy to find before you head over.',
     cta: { label: 'Call La Hacienda', href: 'tel:+18474260506' },
     phone: '(847) 426-0506',
     image: '/la-hacienda/current-site-gap.svg',
-    imageAlt: 'Poster contrasting Canva menu with a conversion website',
+    imageAlt: 'La Hacienda quick action and menu poster',
   },
 
   categoryStrip: {
@@ -93,7 +93,7 @@ export const content = {
       image: '/la-hacienda/featured-tacos.svg',
       imageAlt: 'Taco favorites poster',
       items: [
-        { name: 'Carne Asada Taco', desc: 'Broiled skirt steak, repeatedly mentioned in review proof.', price: '$3.95' },
+        { name: 'Carne Asada Taco', desc: 'Broiled skirt steak and one of the clearest taco favorites.', price: '$3.95' },
         { name: 'Carnitas Taco', desc: 'A regular favorite in the highest-sort Google packet.', price: '$3.95' },
         { name: 'Al Pastor Taco', desc: 'Corroborated in review packets and directory menu coverage.', price: '$3.95' },
         { name: 'Chile Relleno Taco', desc: 'Stuffed pepper with beans, rice, lettuce, and tomatoes.', price: '$4.00' },
@@ -116,37 +116,37 @@ export const content = {
   testimonial: {
     eyebrow: 'What Regulars Say',
     quote:
-      'La Hacienda already has the kind of local proof most restaurants want: generous portions, fast takeout, friendly service, and people who have been coming back for years.',
+      'La Hacienda already has what neighborhood restaurants are built on: generous portions, fast takeout, friendly service, and regulars who have been coming back for years.',
     attribution: {
-      role: 'Built from Google Highest reviews, May 5, 2026',
-      name: '30 written reviews captured',
+      role: 'Local review themes',
+      name: 'Regulars, takeout, tacos, and salsa',
     },
     chefImage: '/la-hacienda/review-proof.svg',
-    chefAlt: 'Review packet proof poster',
+    chefAlt: 'La Hacienda review highlights poster',
   },
 
   blog: {
-    eyebrow: 'Public Proof',
-    title: 'The pages this preview is built around',
+    eyebrow: 'Plan Your Visit',
+    title: 'Everything guests need before they head over',
     posts: [
       {
         id: 'canva-menu',
         date: 'May 5, 2026',
-        title: 'The current website path still behaves like a Canva menu deck, not a proper homepage.',
+        title: 'Open the full menu when you want more than the highlights.',
         image: '/la-hacienda/post-canva.svg',
         href: 'https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view',
       },
       {
         id: 'google-reviews',
         date: 'May 5, 2026',
-        title: 'Google proof currently shows 4.3 stars from 530 reviews, with strong taco, burrito, and salsa signals.',
+        title: 'Local reviewers keep pointing to tacos, burritos, salsa, and quick service.',
         image: '/la-hacienda/post-reviews.svg',
         href: '/about',
       },
       {
         id: 'hours-order',
         date: 'May 5, 2026',
-        title: 'Restaurantji corroborates the phone number, hours, Canva website link, and an order-online path.',
+        title: 'Call, get directions, check hours, or use the online order link.',
         image: '/la-hacienda/post-hours.svg',
         href: '/contact',
       },
@@ -160,8 +160,8 @@ export const content = {
 
   about: {
     hero: {
-      title: 'What the public proof already says about La Hacienda',
-      subtitle: 'This preview stays inside source-backed facts instead of inventing a glossy restaurant story.',
+      title: 'What locals already love about La Hacienda',
+      subtitle: 'A warm, simple guide to the favorites, hours, address, and next steps guests actually need.',
     },
     immerse: {
       eyebrow: 'Review Signal',
@@ -171,19 +171,19 @@ export const content = {
       statBig: '530',
       statLabel: 'Google reviews observed on May 5, 2026',
       chefImage: '/la-hacienda/about-proof.svg',
-      chefName: 'Highest-sort review packet',
-      chefRole: 'Local evidence, not guesswork',
+      chefName: 'Local favorite themes',
+      chefRole: 'Tacos, burritos, salsa, pickup',
     },
     journey: {
       eyebrow: 'Why It Matters',
       title: 'The repeat-customer story is already visible in public reviews.',
       body:
-        'Instead of inventing a founder timeline, this preview uses the strongest repeat patterns from the captured review packet to frame what guests should expect.',
+        'Instead of making guests hunt, the page organizes the strongest repeat patterns people mention: loyalty, speed, portions, and salsa-forward flavor.',
       milestones: [
         { year: '25+', title: 'Years of loyalty show up in reviews', body: 'Multiple reviewers describe 10, 25, or more years of repeat visits, which is a stronger trust signal than generic marketing copy.' },
         { year: 'FAST', title: 'Takeout speed keeps getting called out', body: 'Phone orders, fast carryout, and neat packaging appear across the Google evidence packet.' },
         { year: 'BIG', title: 'Portion value is part of the reputation', body: 'Reviewers repeatedly describe burritos, chimichangas, and combo dinners as generous and satisfying.' },
-        { year: 'GREEN', title: 'Salsa, pico, and green sauce are part of the identity', body: 'Green salsa, pico de gallo, chips and salsa, and flavor-forward taco toppings show up again and again in the written proof.' },
+        { year: 'GREEN', title: 'Salsa, pico, and green sauce are part of the identity', body: 'Green salsa, pico de gallo, chips and salsa, and flavor-forward taco toppings show up again and again in local guest comments.' },
       ],
     },
     hours: {
@@ -207,20 +207,20 @@ export const content = {
       ],
     },
     values: {
-      eyebrow: 'Preview Priorities',
-      title: 'This first build is trying to solve the exact conversion gaps the current setup leaves open.',
+      eyebrow: 'Guest Priorities',
+      title: 'The site keeps the experience focused on the simple things that help guests choose La Hacienda quickly.',
       items: [
-        { title: 'Clear menu path', body: 'Bring the Canva menu and strongest menu anchors into a cleaner first-party experience.' },
-        { title: 'Simple action flow', body: 'Keep the primary actions focused on call, directions, menu, and order online.' },
-        { title: 'Grounded trust', body: 'Use the real review packet and directory proof instead of unsupported claims about sourcing, chefs, or events.' },
+        { title: 'Menu in easy reach', body: 'Put menu highlights, the full menu link, and favorite categories where guests can find them fast.' },
+        { title: 'Simple action flow', body: 'Keep call, directions, menu, and order online available from every important page.' },
+        { title: 'Grounded trust', body: 'Talk about what guests actually praise: portions, speed, friendly service, and familiar favorites.' },
       ],
     },
   },
 
   menuPage: {
     hero: {
-      title: 'Menu highlights pulled from public menu proof',
-      subtitle: 'Item names and listed prices below come from captured Canva and Roost menu evidence where available.',
+      title: 'Menu highlights and popular favorites',
+      subtitle: 'Start with tacos, burritos, tortas, specials, and the favorites local guests mention most. Prices can change, so call to confirm tonight’s menu.',
     },
     categories: [
       {
@@ -255,7 +255,7 @@ export const content = {
       },
       {
         eyebrow: 'Specials',
-        title: 'Canva menu callouts',
+        title: 'Specials and bigger plates',
         items: [
           { name: 'Everyday Special', desc: 'Two regular tacos or one regular burrito with fries and a canned drink.', price: '$11.75' },
           { name: 'Monday Special', desc: 'Two gorditas with rice, beans, and a regular drink.', price: '$12.50' },
@@ -266,7 +266,7 @@ export const content = {
     ],
     testimonials: {
       eyebrow: 'Google Review Packet',
-      title: 'Three quick proof points from locals',
+      title: 'What locals say',
       entries: [
         {
           stars: 5,
@@ -300,15 +300,15 @@ export const content = {
 
   newsPage: {
     hero: {
-      title: 'Current proof, menu signals, and route notes',
-      subtitle: 'A warm neighborhood Mexican build still needs to stay inside the evidence.',
+      title: 'Menu notes, local favorites, and easy next steps',
+      subtitle: 'A quick guide to what people order, how to get there, and the easiest ways to plan pickup.',
     },
   },
 
   contactPage: {
     hero: {
       title: 'Call, order, or head straight to East Dundee',
-      subtitle: 'The contact page should reduce friction, not make people hunt through a Canva deck.',
+      subtitle: 'Call, check the menu, get directions, or order online without hunting around.',
     },
     photos: [
       '/la-hacienda/contact-menu.svg',
@@ -317,18 +317,18 @@ export const content = {
     ],
     headline: {
       eyebrow: 'Easy Next Step',
-      title: 'La Hacienda does not need a complicated funnel. It needs a clean menu path, one-tap calling, simple directions, and a source-backed order link.',
+      title: 'Need the fastest next step? Call for pickup questions, open the menu, map the drive, or start an online order.',
     },
     infoCards: [
       {
         icon: 'map',
         label: 'Visit La Hacienda',
-        lines: ['411 E Main St', 'East Dundee, IL 60118', 'Source-backed by Google, Restaurantji, and Roost'],
+        lines: ['411 E Main St', 'East Dundee, IL 60118', 'Open daily at 10:00 am'],
       },
       {
         icon: 'phone',
         label: 'Call or Order',
-        lines: ['(847) 426-0506', 'Order Online link captured from Restaurantji'],
+        lines: ['(847) 426-0506', 'Order online option available'],
       },
     ],
     form: {

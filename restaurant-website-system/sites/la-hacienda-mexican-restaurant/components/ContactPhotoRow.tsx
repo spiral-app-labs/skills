@@ -6,7 +6,7 @@ import { content } from '../content.example';
  */
 export function ContactPhotoRow() {
   return (
-    <section className="bg-bg-white py-12 px-6">
+    <section className="hidden md:block bg-bg-white py-12 px-6">
       <div className="max-w-[1200px] mx-auto grid md:grid-cols-3 gap-4">
         {content.contactPage.photos.map((src, i) => (
           <div key={i} className="relative aspect-[4/3] rounded-card overflow-hidden">

@@ -27,13 +27,13 @@ export function ContactFormBlock() {
           </a>
           <a href={links.menu} className="rounded-card border border-border-light p-6 hover:border-accent transition">
             <div className="text-eyebrow text-accent mb-2">Open current menu</div>
-            <div className="font-display text-[24px] text-text-dark">Canva menu deck</div>
-            <p className="mt-2 text-body-sm text-text-muted">The current public menu source captured in the audit.</p>
+            <div className="font-display text-[24px] text-text-dark">Full menu link</div>
+            <p className="mt-2 text-body-sm text-text-muted">Open the full La Hacienda menu before you head over.</p>
           </a>
           <a href={links.order} className="rounded-card border border-border-light p-6 hover:border-accent transition">
             <div className="text-eyebrow text-accent mb-2">Order online</div>
-            <div className="font-display text-[24px] text-text-dark">Restaurantji order path</div>
-            <p className="mt-2 text-body-sm text-text-muted">Source-backed order-online link captured from Restaurantji.</p>
+            <div className="font-display text-[24px] text-text-dark">Pickup order link</div>
+            <p className="mt-2 text-body-sm text-text-muted">Use the online order option, or call if you want to confirm details.</p>
           </a>
         </div>
       </div>
