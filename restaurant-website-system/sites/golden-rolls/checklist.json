@@ -4,7 +4,7 @@
   "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
   "siteSlug": "golden-rolls",
   "templateSlug": "bamzi-01",
-  "currentStage": "improving",
+  "currentStage": "top_3_improvements",
   "evidencePaths": [
     "restaurant-website-system/sites/golden-rolls/checklist.md",
     "restaurant-website-system/sites/golden-rolls/checklist.json",
@@ -52,7 +52,10 @@
     "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt",
     "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt",
     "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt",
-    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-building-complete-2026-05-05.json"
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-building-complete-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/improvement-pass-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/components/SiteChrome.tsx",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-improving-complete-2026-05-05.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -64,9 +67,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Mission Control agency API writeback is still pending because AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this runtime. Local build artifacts and writeback payload are ready; submit mc-build-writeback-building-complete-2026-05-05.json when MC API auth is configured.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the building-complete writeback payload before marking MC as improving.",
-      "recordedAt": "2026-05-05T09:45:00.000Z"
+      "reason": "Mission Control agency API writeback is still pending because AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this runtime. Local improvement-pass artifacts and writeback payload are ready; submit mc-build-writeback-improving-complete-2026-05-05.json when MC API auth is configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the improving-complete writeback payload before marking MC as top_3_improvements.",
+      "recordedAt": "2026-05-05T10:06:15.000Z"
     }
   ],
   "requirements": [
@@ -168,6 +171,42 @@
       ]
     },
     {
+      "id": "improvement-pass-completed",
+      "title": "Post-fork improvement pass completed with fixes and evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Improvement pass added persistent mobile navigation, wrapped menu category shortcuts, larger mobile menu descriptions, and replaced the fragile embedded map with a reliable location/details card. Production build, screenshot capture, and mobile visual QA passed.",
+      "evidence": [
+        "restaurant-website-system/sites/golden-rolls/improvement-pass-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/components/SiteChrome.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/about/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/contact/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-capture-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt"
+      ]
+    },
+    {
+      "id": "top-3-improvements",
+      "title": "Top 3 sellability improvements identified, implemented, and evidenced",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Next canonical gate after the improvement pass.",
+      "evidence": []
+    },
+    {
       "id": "qa-round-1",
       "title": "QA round 1 completed with findings and fixes logged",
       "qaState": "pending",
@@ -199,5 +238,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T09:45:00.000Z"
+  "updatedAt": "2026-05-05T10:06:15.000Z"
 }
