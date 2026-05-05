@@ -3,9 +3,9 @@
 - Lead ID: 7f1432ae-2553-442c-80ff-df58acb162ef
 - MC parent task ID: 35f58383-0074-4a64-85cc-46ea2cfcd6bb
 - Template slug: bramble-01
-- Current stage: concierge
+- Current stage: pitch
 - Deploy URL: TBD
-- Updated: 2026-05-05T02:29:29Z
+- Updated: 2026-05-05T02:35:20Z
 
 ## Requirements
 
@@ -15,6 +15,7 @@
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - First Bramble fork uses Winestock-specific content, safe contact CTAs, review proof, browser evidence, and passed typecheck/build.
 - [x] improvement-pass: Website improvement pass completed after first fork - Added specific Winestock story cards, exact review proof, menu/offer clarity, real contact handoffs, screenshot-safe reveal behavior, and passed typecheck/build/browser QA.
 - [x] top-3-improvements: Top 3 concrete improvements identified, implemented, and evidenced - Hero conversion clarity, practical visit handoffs, and mobile readability/CTA polish are complete with before/after evidence and passing checks.
+- [x] concierge-added: Truthful AI concierge added with restaurant-specific KB and safe handoffs - Deterministic Winestock concierge uses verified facts only, refuses unsupported requests, routes to public handoffs, and passed API/browser QA.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -59,6 +60,24 @@
 - restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-text.txt
 - restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-text.txt
 - restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/link-check.txt
+- restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/capture-manifest.json
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-full.png
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-full.png
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-text.txt
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-text.txt
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-text.txt
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-text.txt
+- restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/link-check.txt
+- restaurant-website-system/sites/winestock/evidence-concierge-api-smoke-2026-05-04.jsonl
+- restaurant-website-system/sites/winestock/lib/concierge-kb.ts
+- restaurant-website-system/sites/winestock/app/api/concierge/route.ts
+- restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx
+- restaurant-website-system/sites/winestock/app/page.tsx
+- restaurant-website-system/sites/winestock/ai-concierge.md
+- restaurant-website-system/sites/winestock/ai-concierge-transcript.md
 
 ## QA Rounds
 
@@ -113,3 +132,12 @@
 - Verification passed: `npm run typecheck`, `npm run build`, browser screenshot capture, mobile QA, 320px QA, and link check.
 - Evidence: `restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md` plus `restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/`.
 - Current local stage advanced to `concierge`; next executable gate is adding the AI concierge with a truthful Winestock-specific KB and safe provider handoffs.
+
+## 2026-05-04 heartbeat addendum — concierge complete
+
+- Added a deterministic Winestock AI concierge grounded in the current-site scrape, Google Reviews Highest packet, and verified public handoffs.
+- Added `lib/concierge-kb.ts`, `/api/concierge`, `TruthfulConcierge`, `ai-concierge.md`, and `ai-concierge-transcript.md`.
+- Guardrails prevent fake reservations, ordering, table holds, allergy/medical guidance, current prices/specials, private-event promises, and live availability claims.
+- Verification passed: `npm run typecheck`, `npm run build`, API smoke tests, browser screenshot capture, mobile QA, 320px QA, and link check.
+- Evidence: `restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md` plus `restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/`.
+- Current local stage advanced to `pitch`; next executable gate is the sellable pitch doc.

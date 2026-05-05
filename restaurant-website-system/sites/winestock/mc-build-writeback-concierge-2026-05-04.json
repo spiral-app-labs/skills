@@ -1,0 +1,47 @@
+{
+  "build_stage": "pitch",
+  "site_slug": "winestock",
+  "template_slug": "bramble-01",
+  "lead_id": "7f1432ae-2553-442c-80ff-df58acb162ef",
+  "mc_task_id": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
+  "checklist_markdown_path": "restaurant-website-system/sites/winestock/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/winestock/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/link-check.txt",
+    "restaurant-website-system/sites/winestock/evidence-concierge-api-smoke-2026-05-04.jsonl"
+  ],
+  "artifact_urls": [
+    "restaurant-website-system/sites/winestock/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/winestock/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/winestock/app/page.tsx",
+    "restaurant-website-system/sites/winestock/ai-concierge.md",
+    "restaurant-website-system/sites/winestock/ai-concierge-transcript.md"
+  ],
+  "passed_requirement_ids": [
+    "concierge-added"
+  ],
+  "verification": {
+    "typecheck": "npm run typecheck passed",
+    "build": "npm run build passed with /api/concierge dynamic route",
+    "api_smoke": "five prompt smoke recorded; unsupported reservation/allergy-style asks safely handed off",
+    "browser_evidence": "desktop/mobile/320px screenshots captured from local production server",
+    "link_check": "no bad anchors; real public handoffs present"
+  },
+  "heartbeat_summary": "Winestock concierge gate completed locally; next canonical stage is pitch. MC sync remains blocked by missing agency auth.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+    "next_unblock_action": "Retry this payload against the official agency Mission Control build API with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}
