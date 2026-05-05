@@ -15,7 +15,7 @@ export default function ContactPage() {
         <section className="mx-auto grid max-w-6xl gap-6 px-5 py-14 md:grid-cols-3">
           <a href="tel:+18153085099" className="min-w-0 rounded-[2rem] bg-white p-6 shadow-sm sm:p-7"><p className="text-sm uppercase tracking-[0.24em] text-[#b56a19]">Phone</p><h2 className="mt-3 break-words font-display text-2xl sm:text-3xl">(815) 308-5099</h2></a>
           <a href="https://www.google.com/maps/search/Golden+Rolls+790+S+Eastwood+Dr+Woodstock+IL" className="min-w-0 rounded-[2rem] bg-white p-6 shadow-sm sm:p-7"><p className="text-sm uppercase tracking-[0.24em] text-[#b56a19]">Address</p><h2 className="mt-3 break-words font-display text-2xl sm:text-3xl">790 S Eastwood Dr</h2><p className="mt-2 text-[#536054]">Woodstock, IL 60098</p></a>
-          <a href="https://goldenrollssushi.com/" className="min-w-0 rounded-[2rem] bg-white p-6 shadow-sm sm:p-7"><p className="text-sm uppercase tracking-[0.24em] text-[#b56a19]">Official site</p><h2 className="mt-3 break-words font-display text-2xl sm:text-3xl">goldenrollssushi.com</h2></a>
+          <a href="https://goldenrollssushi.com/" className="min-w-0 rounded-[2rem] bg-white p-6 shadow-sm sm:p-7"><p className="text-sm uppercase tracking-[0.24em] text-[#b56a19]">Official site</p><h2 className="mt-3 break-words font-body text-lg font-semibold leading-tight tracking-tight text-[#132018] sm:text-xl">goldenrollssushi.com</h2></a>
         </section>
         <section className="px-5 pb-16">
           <div className="mx-auto grid max-w-6xl gap-6 rounded-[2rem] bg-white p-7 shadow-sm md:grid-cols-[1fr_1.2fr] md:p-10">
