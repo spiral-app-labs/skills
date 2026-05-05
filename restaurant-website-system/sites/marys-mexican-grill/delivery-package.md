@@ -8,7 +8,7 @@
 - Founder gate task: `03d5cec6-db38-46de-92d6-47d8c06c787e`
 - Lead ID: `4416524d-0894-4e47-a4e7-880ba6579aa3`
 - Archetype: `bamzi-01`
-- Package status: `prepared / waiting on sync + founder`
+- Package status: `prepared / MC synced / waiting on founder + preview verification`
 - `ready_to_pitch`: `false`
 
 ## Founder Status
@@ -110,8 +110,8 @@
 
 ### QA Round 3
 
-- Status: passed locally / pending Mission Control sync.
-- Summary: final sell-readiness review is complete for local founder review. The site remains restaurant-specific, truthful, mobile-usable, and conversion-oriented; final handoff is blocked by preview access verification, QA2 screenshot evidence, MC auth, and founder-only gates.
+- Status: passed / Mission Control synced.
+- Summary: final sell-readiness review is complete for local founder review. The site remains restaurant-specific, truthful, mobile-usable, and conversion-oriented; final handoff is blocked by preview access verification, QA2 screenshot evidence, and founder-only gates.
 - Screenshot files captured:
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png`
@@ -148,7 +148,7 @@
 - Ethan must create/configure the site-specific Anthropic key.
 - Ethan must personally complete human review.
 - QA2 screenshot files referenced in the existing evidence are missing from this worktree and need to be mirrored back in or superseded explicitly in MC.
-- Mission Control API sync is still pending because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime.
+- Mission Control QA3 + packaging sync is complete via the patched local MC agency API from PR #328.
 
 ## Local MC Payloads
 
@@ -156,8 +156,10 @@
 - QA3 build payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json`
 - Packaging build payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json`
 - Delivery payload: `restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json`
-- All local payloads keep:
+- MC/root task state after sync:
+  - root task `0ee079ce-2e26-4d44-8fdf-96e0db2e4047`: `packaging`, blocker attached, 17 evidence URLs mirrored
+  - QA3 child `bbb46016-3e2e-43e7-b3d7-e0995e34252e`: `done`, 8 screenshot evidence URLs mirrored
+  - delivery child `81fa73c9-696d-4dd1-a33b-9f58c44e957f`: `in_progress`, blocker attached, 17 evidence URLs mirrored
   - `ready_to_pitch: false`
   - founder Anthropic key pending
   - founder human review pending
-  - Mission Control sync pending API auth

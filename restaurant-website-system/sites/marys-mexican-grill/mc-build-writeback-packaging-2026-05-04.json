@@ -45,10 +45,10 @@
     "Preview URL exists from GitHub PR #19 but is protected by Vercel login/401 for unauthenticated checks; Ethan/authenticated Vercel verification is still required.",
     "Founder must create/configure the site-specific Anthropic key.",
     "Founder must personally complete human review.",
-    "QA2 screenshot files referenced by existing QA2 docs/writebacks are missing from this worktree.",
-    "Mission Control API auth is unavailable; local payload recorded instead of remote sync."
+    "QA2 screenshot files referenced by existing QA2 docs/writebacks are missing from this worktree."
   ],
-  "blocker": "Packaging is prepared locally and QA3 screenshots are captured, but ready_to_pitch must remain false until Ethan verifies preview access, completes human review, and configures the site-specific Anthropic key; QA2 screenshot evidence and Mission Control sync are also still incomplete.",
-  "heartbeat_summary": "Mary's Mexican Grill packaging handoff was refreshed locally: PR #19 preview URL is recorded, fresh QA3 local screenshots are captured, and npm ci/build/typecheck pass. ready_to_pitch remains false because preview access is auth-protected, QA2 screenshots are missing, Mission Control auth is unavailable, and founder-only Anthropic/human-review gates remain open.",
-  "preview_access_status": "auth_protected_pending_ethan_verification"
+  "blocker": "Packaging is synced to Mission Control, but ready_to_pitch must remain false until Ethan verifies preview access, completes human review, and configures the site-specific Anthropic key; QA2 screenshot evidence is also still incomplete.",
+  "heartbeat_summary": "Mary's Mexican Grill packaging handoff is synced to Mission Control via PR #328's patched agency API: root is packaging with evidence/blocker, QA3 child is done with screenshots, and delivery child is in_progress with evidence/blocker. ready_to_pitch remains false because preview access is auth-protected, QA2 screenshots are missing, and founder-only Anthropic/human-review gates remain open.",
+  "preview_access_status": "auth_protected_pending_ethan_verification",
+  "sync_status": "synced_via_patched_local_mc_api_pr_328"
 }

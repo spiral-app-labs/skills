@@ -27,11 +27,12 @@
   "ready_to_pitch": false,
   "anthropic_key_status": "pending_founder",
   "human_review_status": "pending_founder",
-  "blocker": "Mission Control build-stage writeback is blocked because agency API auth is unavailable. QA3 local screenshots are now captured, but preview access is auth-protected, Ethan human review is pending, and the site-specific Anthropic key is pending, so ready_to_pitch remains false.",
-  "heartbeat_summary": "QA round 3 local evidence was refreshed for Mary's Mexican Grill: npm ci, npm run build, and npm run typecheck passed; desktop/mobile screenshots for home/menu/about/contact were captured from local next start; and PR #19 provided a Vercel preview URL. The preview is auth-protected for unauthenticated checks, Mission Control API auth is unavailable, and founder Anthropic/human-review gates remain pending, so ready_to_pitch stays false.",
+  "blocker": "QA3 is synced to Mission Control and the QA3 child task is done. Final handoff remains blocked by auth-protected preview access, missing QA2 screenshots, Ethan human review, and the site-specific Anthropic key.",
+  "heartbeat_summary": "QA round 3 evidence was refreshed and synced for Mary's Mexican Grill: npm ci, npm run build, and npm run typecheck passed; desktop/mobile screenshots for home/menu/about/contact were captured from local next start; PR #19 provided the Vercel preview URL; and MC now marks QA3 done. The preview is auth-protected for unauthenticated checks, QA2 screenshots are missing, and founder Anthropic/human-review gates remain pending, so ready_to_pitch stays false.",
   "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
   "preview_access_status": "auth_protected_pending_ethan_verification",
   "pending_requirement_ids": [
     "qa3-assets-ready"
-  ]
+  ],
+  "sync_status": "synced_via_patched_local_mc_api_pr_328"
 }
