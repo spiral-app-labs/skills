@@ -4,7 +4,7 @@
   "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
   "siteSlug": "la-hacienda-mexican-restaurant",
   "templateSlug": "bamzi-01",
-  "currentStage": "pitch",
+  "currentStage": "qa_round_1",
   "evidencePaths": [
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
@@ -53,21 +53,23 @@
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/concierge-open-mobile-2026-05-05.png",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/concierge-open-desktop-2026-05-05.png",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/app/api/chat/route.ts",
-    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/components/AskConcierge.tsx"
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/components/AskConcierge.tsx",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
-    "pitchDoc": null,
-    "outreachDraft": null,
+    "pitchDoc": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md",
+    "outreachDraft": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md",
     "beforeAfterScreenshots": []
   },
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Local concierge gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda concierge writeback payload through the agency build writeback route.",
-      "recordedAt": "2026-05-05T12:18:00Z"
+      "reason": "Local pitch and battle-card gates are complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda pitch and battle-card writeback payloads through the agency build writeback route.",
+      "recordedAt": "2026-05-05T13:02:00Z"
     }
   ],
   "requirements": [
@@ -188,14 +190,22 @@
     {
       "id": "pitch",
       "title": "Sellable pitch doc created or updated",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "Sellable owner-facing pitch doc created with one-line pitch, current-site leaks, preview fixes, demo path, talking points, proof locker, caveats, and recommended battle-card next step.",
+      "evidence": [
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md"
+      ]
     },
     {
       "id": "battle-cards",
       "title": "Battle cards doc created or updated",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "Battle cards created with core sales frame, demo path, objection responses, proof locker, founder cautions, and close.",
+      "evidence": [
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -229,5 +239,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T12:18:00Z"
+  "updatedAt": "2026-05-05T13:02:00Z"
 }
