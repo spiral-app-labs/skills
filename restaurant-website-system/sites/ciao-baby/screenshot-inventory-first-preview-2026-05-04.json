@@ -1,0 +1,47 @@
+{
+  "site_slug": "ciao-baby",
+  "captured_at": "2026-05-04T23:57:00Z",
+  "note": "PNG screenshot files are local evidence and ignored by repo; this tracked manifest records path, size, and hash.",
+  "screenshots": [
+    {
+      "path": "screenshots/preview-about-desktop-2026-05-04.png",
+      "bytes": 1186614,
+      "sha256": "94e3584b60d3942d6bd820dbbe8c29786e23061436e1764eef06754abf23ec21"
+    },
+    {
+      "path": "screenshots/preview-about-mobile-2026-05-04.png",
+      "bytes": 1112394,
+      "sha256": "edde78a45e98f3695f07307a89a40b7e64442573864e541d1dca6bef07697355"
+    },
+    {
+      "path": "screenshots/preview-contact-desktop-2026-05-04.png",
+      "bytes": 578308,
+      "sha256": "2859fab86e6bb8fb669a12564a14491e7be50b6d2741b24ea8f771a2af0bbeb3"
+    },
+    {
+      "path": "screenshots/preview-contact-mobile-2026-05-04.png",
+      "bytes": 505365,
+      "sha256": "1dde2355612c40e0e37eef24907ca49128c330ddf32688a7086a47961d610219"
+    },
+    {
+      "path": "screenshots/preview-home-desktop-2026-05-04.png",
+      "bytes": 970490,
+      "sha256": "39f82176990536cc310013eabfbaf9a64ebff356a938c0e66bfd65697aaa9d2a"
+    },
+    {
+      "path": "screenshots/preview-home-mobile-2026-05-04.png",
+      "bytes": 1133854,
+      "sha256": "5b6a39a404229fbf64fd72f825aca12007d810e4fc4ad8ab9319b7e150ffbf5f"
+    },
+    {
+      "path": "screenshots/preview-menu-desktop-2026-05-04.png",
+      "bytes": 669635,
+      "sha256": "d0c78b95d76666845a9a49d300aba9a8e46b2467aec998dc826b5fd3a2da8443"
+    },
+    {
+      "path": "screenshots/preview-menu-mobile-2026-05-04.png",
+      "bytes": 1041485,
+      "sha256": "1efc1e70e7dfcf768b489e617a365c11f4f00a04d1f7828fe41f3b5ccab02dd1"
+    }
+  ]
+}

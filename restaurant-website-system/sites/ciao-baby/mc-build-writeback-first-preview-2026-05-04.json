@@ -1,0 +1,55 @@
+{
+  "build_stage": "improving",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/ciao-baby/scrapes/current-site-browser-dom-snapshot.html",
+  "google_reviews_packet_path": "restaurant-website-system/sites/ciao-baby/scrapes/google-reviews-highest-30.json",
+  "routing_rationale_path": "restaurant-website-system/sites/ciao-baby/routing-rationale.md",
+  "first_preview_notes_path": "restaurant-website-system/sites/ciao-baby/first-preview-build-notes.md",
+  "local_preview_url": "http://127.0.0.1:3084",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/routing-rationale.md",
+    "restaurant-website-system/sites/ciao-baby/.agency-template.json",
+    "restaurant-website-system/sites/ciao-baby/content.ts",
+    "restaurant-website-system/sites/ciao-baby/first-preview-build-notes.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/capture-preview-evidence.mjs",
+    "restaurant-website-system/sites/ciao-baby/scrapes/first-preview-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-first-preview-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/preview-contact-mobile-2026-05-04.png"
+  ],
+  "artifact_urls": [
+    "restaurant-website-system/sites/ciao-baby/app",
+    "restaurant-website-system/sites/ciao-baby/components",
+    "restaurant-website-system/sites/ciao-baby/content.ts",
+    "restaurant-website-system/sites/ciao-baby/package.json"
+  ],
+  "passed_requirement_ids": [
+    "template-route-locked",
+    "fork-built",
+    "specificity"
+  ],
+  "verification": {
+    "npm_ci": "passed",
+    "typecheck": "passed",
+    "build": "passed",
+    "browser_preview_capture": "passed",
+    "horizontal_overflow_offenders": 0,
+    "dependency_audit_note": "npm audit reports 2 inherited vulnerabilities from Next.js 14.2.15: 1 moderate, 1 critical"
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Routed Ciao Baby to gusto-01, merged the template into the existing evidence folder, built the first Ciao-specific preview, captured desktop/mobile browser evidence for four routes, and prepared the site for the improvement pass."
+}

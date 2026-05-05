@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.canvas');
+  color: theme('colors.ink');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 400;
+  margin: 0;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Testimonial overlay card — semi-translucent dark card on hero photography.
+   Uses backdrop-filter for depth against varied photo backgrounds. */
+.gusto-overlay-card {
+  background-color: theme('colors.canvas' / 0.72);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+}
+
+.gusto-overlay-card-strong {
+  background-color: theme('colors.canvas' / 0.9);
+}
+
+/* Chip label pill on photo cards — small cream-text pill, translucent dark bg. */
+.gusto-chip {
+  background-color: rgba(14, 16, 17, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: theme('colors.ink');
+  border: 1px solid rgba(255, 252, 244, 0.1);
+}
+
+/* Opening hours row — hairline divider between days. */
+.gusto-hours-row {
+  border-bottom: 1px solid theme('colors.divider');
+}
+.gusto-hours-row:last-child { border-bottom: 0; }
+
+/* Menu dish row — hairline between dishes on /menu page. */
+.gusto-dish-row + .gusto-dish-row {
+  border-top: 1px solid theme('colors.divider');
+}
+
+/* Custom scrollbar restraint — keep the editorial register */
+html { scroll-behavior: smooth; }

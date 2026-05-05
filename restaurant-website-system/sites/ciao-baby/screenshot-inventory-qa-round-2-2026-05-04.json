@@ -1,0 +1,48 @@
+{
+  "site_slug": "ciao-baby",
+  "captured_at": "2026-05-05T00:58:00Z",
+  "capture_label": "qa-round-2",
+  "note": "PNG screenshot files are local evidence and ignored by repo; this tracked manifest records path, size, and hash after the second QA2 copy/simplification pass.",
+  "screenshots": [
+    {
+      "path": "screenshots/qa-round-2-about-desktop-2026-05-04.png",
+      "bytes": 1185010,
+      "sha256": "cfd90d1e580072e02d83bfe1c2ff150eb1cb9c644f37ba398ae4da0acf190b6a"
+    },
+    {
+      "path": "screenshots/qa-round-2-about-mobile-2026-05-04.png",
+      "bytes": 1116105,
+      "sha256": "8d890d1fed8e682cf5991afc130d4b77a8e1df4ad35e440b2bcc550dcdec4b26"
+    },
+    {
+      "path": "screenshots/qa-round-2-contact-desktop-2026-05-04.png",
+      "bytes": 662960,
+      "sha256": "a41c6beffb80bdcadb1641c3fde2a814e4ef9ef5486056f49eb1f8f99e0af055"
+    },
+    {
+      "path": "screenshots/qa-round-2-contact-mobile-2026-05-04.png",
+      "bytes": 692347,
+      "sha256": "530898a4416e3066f428e9e1e6d3175f7c7aa79be95cf53c7a323354dcf4c0d5"
+    },
+    {
+      "path": "screenshots/qa-round-2-home-desktop-2026-05-04.png",
+      "bytes": 1055217,
+      "sha256": "c4c4ddb58b7d13142ce95ee136f636468b15a79365bfcf14dbda3ebf592aa0d0"
+    },
+    {
+      "path": "screenshots/qa-round-2-home-mobile-2026-05-04.png",
+      "bytes": 1403123,
+      "sha256": "b1f735afc74d6ff5619a7f341042b1599b2e60613a493ec8105c94f029745356"
+    },
+    {
+      "path": "screenshots/qa-round-2-menu-desktop-2026-05-04.png",
+      "bytes": 674555,
+      "sha256": "016531d936c71cb3347451593d6e88989d6aa43a973fd93b7fa9774f9c88494d"
+    },
+    {
+      "path": "screenshots/qa-round-2-menu-mobile-2026-05-04.png",
+      "bytes": 1033312,
+      "sha256": "3e2206154060c5088af0f989ca9de9507cd284b2c3ecdc2571095bbde94cc307"
+    }
+  ]
+}
