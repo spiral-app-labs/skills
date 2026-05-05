@@ -1,6 +1,6 @@
 # Mary's Mexican Grill Delivery Package
 
-- Date: 2026-05-04, refreshed 2026-05-05T03:18:39Z
+- Date: 2026-05-04, refreshed 2026-05-05T12:49:00Z
 - Site path: `restaurant-website-system/sites/marys-mexican-grill`
 - MC root task: `0ee079ce-2e26-4d44-8fdf-96e0db2e4047`
 - MC QA3 child task: `bbb46016-3e2e-43e7-b3d7-e0995e34252e`
@@ -8,7 +8,7 @@
 - Founder gate task: `03d5cec6-db38-46de-92d6-47d8c06c787e`
 - Lead ID: `4416524d-0894-4e47-a4e7-880ba6579aa3`
 - Archetype: `bamzi-01`
-- Package status: `prepared / MC synced / waiting on founder + preview verification`
+- Package status: `prepared / MC synced / QA2 screenshot gap locally resolved / waiting on founder + preview verification`
 - `ready_to_pitch`: `false`
 
 ## Founder Status
@@ -60,6 +60,7 @@
   - QA1 PR: https://github.com/spiral-app-labs/skills/pull/17
 - QA2 doc: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md`
   - QA2 PR: https://github.com/spiral-app-labs/skills/pull/18
+  - QA2 screenshot refresh: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md`
 - QA3 doc: `restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md`
   - QA3 PR: https://github.com/spiral-app-labs/skills/pull/19
 - QA3 browser checks: `restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json`
@@ -93,9 +94,10 @@
 
 ### QA Round 2
 
-- Status: passed in doc/writeback, but screenshot inventory is incomplete in the current worktree.
+- Status: passed; referenced screenshot inventory is now present in the current worktree after 2026-05-05 local preview recapture.
 - Summary: mobile conversion polish, tighter public copy, earlier contact details, and better truthful DoorDash emphasis.
-- Referenced screenshot targets in QA2 artifacts:
+- Screenshot refresh note: `restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md`
+- Screenshot files present:
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png`
@@ -104,14 +106,13 @@
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png`
-- Current state: these files are referenced by QA2 docs/writebacks but are not present in this worktree.
 - Supporting browser checks:
   - `restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json`
 
 ### QA Round 3
 
 - Status: passed / Mission Control synced.
-- Summary: final sell-readiness review is complete for local founder review. The site remains restaurant-specific, truthful, mobile-usable, and conversion-oriented; final handoff is blocked by preview access verification, QA2 screenshot evidence, and founder-only gates.
+- Summary: final sell-readiness review is complete for local founder review. The site remains restaurant-specific, truthful, mobile-usable, and conversion-oriented; final handoff is blocked by preview access verification and founder-only gates.
 - Screenshot files captured:
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png`
   - `restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png`
@@ -147,14 +148,15 @@
 - Ethan must verify or provide a client-safe preview URL; PR #19 preview is auth-protected for unauthenticated checks.
 - Ethan must create/configure the site-specific Anthropic key.
 - Ethan must personally complete human review.
-- QA2 screenshot files referenced in the existing evidence are missing from this worktree and need to be mirrored back in or superseded explicitly in MC.
-- Mission Control QA3 + packaging sync is complete via the patched local MC agency API from PR #328.
+- QA2 screenshot files referenced in the existing evidence were recaptured locally on 2026-05-05 and now need to be mirrored to MC when the agency API secret is available.
+- Mission Control QA3 + prior packaging sync is complete via the patched local MC agency API from PR #328; the 2026-05-05 QA2 screenshot refresh is local-only pending API credentials.
 
 ## Local MC Payloads
 
 - QA3 payload: `restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json`
 - QA3 build payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json`
 - Packaging build payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json`
+- Packaging refresh payload: `restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-05.json`
 - Delivery payload: `restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json`
 - MC/root task state after sync:
   - root task `0ee079ce-2e26-4d44-8fdf-96e0db2e4047`: `packaging`, blocker attached, 17 evidence URLs mirrored

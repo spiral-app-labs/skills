@@ -1,0 +1,27 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "qa_round_1",
+  "completedStage": "battle_cards",
+  "status": "in_progress",
+  "templateSlug": "bamzi-01",
+  "passedRequirementIds": [
+    "pitch",
+    "battle-cards"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/concierge-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/top-3-improvements-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  ],
+  "verification": [
+    "battle cards created with demo path, objection responses, proof locker, founder cautions, and close"
+  ],
+  "blocker": "Mission Control writeback still pending because agency API auth/base URL is unavailable in this runtime; local writeback payload prepared instead.",
+  "createdAt": "2026-05-05T13:02:00Z"
+}
