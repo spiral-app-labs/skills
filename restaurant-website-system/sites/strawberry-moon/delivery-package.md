@@ -25,6 +25,15 @@
 - Vercel PR #26 build/check evidence: `https://vercel.com/ethan-ethantalrejas-projects/skills/6YT3DtFeyx3S3hREGLuSEg7z81GW`
 - Do not invent or backfill a public preview URL from the Vercel dashboard/check URL.
 
+
+## Preview Smoke Evidence — 2026-05-05
+
+- Candidate preview tested: `https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app`
+- Result: HTTP `401` / `Authentication Required`.
+- Evidence file: `restaurant-website-system/sites/strawberry-moon/preview-smoke-evidence-2026-05-05.md`
+- Delivery remains blocked on a public owner-shareable preview URL or Vercel protection bypass.
+- Mission Control heartbeat writeback: `d5b257ed-39f3-4118-b771-47d425138214`.
+
 ## Evidence Inventory
 
 ### Core package files
@@ -129,7 +138,7 @@ The screenshot PNGs are present locally in this packaging worktree, but `**/scre
 
 ## Open Blockers / Next Actions
 
-- Attach a real public preview URL; do not use the Vercel dashboard/check URL as a client preview URL.
+- Attach a real public preview URL or Vercel protection bypass; the 2026-05-05 smoke test of the PR preview candidate returned HTTP 401 Authentication Required.
 - Upload/mirror screenshot PNGs or equivalent evidence to Mission Control; local files are present but screenshots are ignored by git.
 - Sync local MC payloads through the official Mission Control agency API when auth is available.
 - Ethan must configure the site-specific Anthropic key.
