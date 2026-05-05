@@ -69,3 +69,25 @@ OpenClaw managed browser is unavailable on this host (`No supported browser foun
 ## Current recommendation
 
 Proceed as a strong no-owned-site build candidate after Google/Maps browser verification. The sell story is clear and differentiated: a highly rated Honduran restaurant deserves a first-party site that explains the cuisine, highlights signature dishes and family/local proof, and gives guests a clean path to call, visit, and order without relying entirely on directories or marketplace pages.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured Google / first-party-site verification:
+
+- Google desktop/mobile screenshots and text.
+- Google shows 4.8 from 138 Google reviews, `4113 W Shamrock Ln, McHenry, IL 60050`, phone `(779) 244-5791`, Honduran restaurant category, call/directions/website/order actions, and menu highlights.
+- The visible web presence is Facebook plus marketplace/search paths such as DoorDash, not a clean owner-controlled restaurant domain.
+
+Captured public proof:
+
+- Restaurantji desktop/mobile screenshot/text showing 4.8 from 84 ratings, Honduran category, address, phone, hours, delivery, vegetarian options, Wi-Fi, kids' menu, and signature dish favorites.
+- Restaurant Guru screenshot/text showing #9 of 130 restaurants in McHenry, 51 photos, 4.8 Google-derived rating, Honduran cuisine, grilled beef, stewed steaks, asado, staff/service proof, Facebook website, and features.
+- USA Restaurants screenshot/text with authentic Honduran/family proof, fresh handmade tortillas for baleadas, pollo con tajadas, mantequilla/queso by the pound, fair prices, and large portions.
+- DoorDash/marketplace search screenshot/text showing delivery/order discovery exists but is not an owned explanatory homepage.
+
+Updated audit interpretation: the no-owned-site story remains strong. Google and directories carry trust, menu education, ordering, hours, and dish photos, while the restaurant’s visible “website” path appears to be Facebook/marketplace-led rather than a dedicated first-party site. The build should create a warm Honduran/Cuisine-style landing page that explains unfamiliar dishes and routes guests to call, directions, pickup/delivery, and hours.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
