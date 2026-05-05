@@ -57,11 +57,10 @@
     "Preview URL exists from GitHub PR #19 but is protected by Vercel login/401 for unauthenticated checks; Ethan/authenticated Vercel verification is still required.",
     "Founder Anthropic key pending.",
     "Founder human review pending.",
-    "QA2 screenshot files referenced by existing evidence are missing from this worktree.",
-    "Mission Control API auth unavailable; sync pending."
+    "QA2 screenshot files referenced by existing evidence are missing from this worktree."
   ],
-  "sync_status": "local_payload_only_pending_api_auth",
-  "blocker": "Delivery package is assembled locally and QA3 screenshots are captured, but final delivery still cannot be marked complete because preview access is auth-protected, QA2 screenshot evidence is incomplete, Mission Control sync is unavailable, and founder-only gates remain open.",
-  "heartbeat_summary": "Founder delivery package refreshed locally with ready_to_pitch=false. PR #19 preview URL is now recorded, QA3 desktop/mobile screenshots are captured, and checklist/pitch/battle-card/QA artifacts are assembled. Final handoff remains blocked by Vercel preview access verification, missing QA2 screenshots, Mission Control API auth, and Ethan-only Anthropic/human-review gates.",
+  "sync_status": "synced_via_patched_local_mc_api_pr_328",
+  "blocker": "Delivery package is assembled and synced to Mission Control, but final delivery still cannot be marked complete because preview access is auth-protected, QA2 screenshot evidence is incomplete, and founder-only gates remain open.",
+  "heartbeat_summary": "Founder delivery package is synced to Mission Control with ready_to_pitch=false. PR #19 preview URL is recorded, QA3 desktop/mobile screenshots are captured, and checklist/pitch/battle-card/QA artifacts are assembled. Final handoff remains blocked by Vercel preview access verification, missing QA2 screenshots, and Ethan-only Anthropic/human-review gates.",
   "preview_access_status": "auth_protected_pending_ethan_verification"
 }

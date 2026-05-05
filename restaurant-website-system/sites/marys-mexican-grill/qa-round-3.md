@@ -32,13 +32,13 @@ The handoff still cannot be marked final because the PR #19 Vercel preview URL i
 2. Ethan has not yet configured the site-specific Anthropic key.
 3. Ethan has not yet completed human review.
 4. QA2 screenshot files referenced in existing QA2 docs/writebacks are still missing from the current worktree.
-5. Mission Control API auth (`AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET`) is unavailable, so QA3 writeback is local-payload-only.
+5. Mission Control QA3 writeback is now synced via the patched local agency API from PR #328; final handoff still waits on the packaging blockers above.
 
 ## Critical fixes before Ethan sees it
 
 1. Verify the PR #19 preview URL in an authenticated Vercel/GitHub browser session, or disable preview protection for the client-safe handoff URL.
 2. Mirror or recapture the missing QA2 screenshot evidence, or explicitly supersede it with the QA3 screenshot packet in Mission Control.
-3. Sync `mc-qa-round-3-writeback-2026-05-04.json` and `mc-build-writeback-qa-round-3-2026-05-04.json` to Mission Control once agency API auth is available.
+3. Keep the MC packaging blocker current until preview access, QA2 screenshot evidence, Anthropic key, and human review are resolved.
 4. Ethan must create/configure the site-specific Anthropic key.
 5. Ethan must complete human review before `ready_to_pitch` can become `true`.
 
