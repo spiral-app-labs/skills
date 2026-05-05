@@ -69,3 +69,24 @@ OpenClaw managed browser is unavailable on this host (`No supported browser foun
 ## Current recommendation
 
 Proceed as a strong bad-site lead after browser evidence is attached. The sell story is clean: La Hacienda should not rely on a Canva menu page and third-party listings as its first impression. A first-party site should lead with hours, phone, directions, delivery/takeout, key Mexican dishes, and a trustworthy local dining story without inventing unsupported claims.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured current-site evidence:
+
+- Canva menu desktop/mobile screenshots and DOM/text snapshots.
+- Browser status check for the Canva URL returned HTTP 200.
+- The Canva viewer exposes more menu text in browser than the earlier web-fetch result: restaurant name, address, phone, daily specials, regular taco dinner, burritos, tortas, enchiladas, everyday special, and parrillada.
+
+Captured public proof:
+
+- Google search/local pack screenshot/text showing 4.3 from 530 Google reviews, address, category, and menu highlights.
+- Restaurantji screenshot/text showing 4.2 from 134 ratings, category, address, phone, hours, Website/Order Online links, and favorites.
+- Roost/directory proof screenshot/text showing 4.3 from 473 reviews, dine-in, drive-through, delivery, address, phone, hours, and a long menu/pricing corpus.
+
+Updated audit interpretation: the Canva page is not completely blank to a modern browser, but it is still not a proper restaurant website. It behaves like a document/menu deck instead of a first-party conversion homepage, with no strong call/directions/order structure, no normal restaurant navigation, no owner-controlled SEO story, and weak mobile-first landing-page polish.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.

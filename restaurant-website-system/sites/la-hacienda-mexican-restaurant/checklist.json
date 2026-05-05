@@ -4,12 +4,26 @@
   "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
   "siteSlug": "la-hacienda-mexican-restaurant",
   "templateSlug": "bamzi-01",
-  "currentStage": "auditing",
+  "currentStage": "reviews",
   "evidencePaths": [
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md",
-    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.html",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.html",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/roost-proof-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -20,10 +34,10 @@
   },
   "blockers": [
     {
-      "gate": "auditing",
-      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
-      "nextUnblockAction": "Enable browser/Chromium capture for desktop/mobile proof of Canva site behavior, Restaurantji Website button, and supporting directory evidence.",
-      "recordedAt": "2026-05-04T04:48:36.626011Z"
+      "gate": "stage_writeback",
+      "reason": "Local browser audit evidence is complete and the next canonical gate is reviews, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-auditing-complete-2026-05-05.json through the agency build writeback route before starting the reviews gate.",
+      "recordedAt": "2026-05-05T08:22:00.000Z"
     }
   ],
   "requirements": [
@@ -41,11 +55,25 @@
     {
       "id": "current-site-audit",
       "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
-      "notes": "Web/source audit drafted; canonical desktop/mobile browser screenshots and DOM snapshot remain blocked.",
+      "notes": "Browser evidence captured on 2026-05-05: Canva current-site desktop/mobile screenshots and DOM/text, plus Google local proof, Restaurantji, and Roost screenshots/text. The previous No supported browser found blocker is cleared locally.",
       "evidence": [
-        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md"
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/browser-audit-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.html",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.html",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/roost-proof-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md"
       ]
     },
     {
@@ -97,5 +125,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T04:48:36.666Z"
+  "updatedAt": "2026-05-05T08:22:00.000Z"
 }

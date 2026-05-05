@@ -1,0 +1,70 @@
+{
+  "capturedAt": "2026-05-05T08:15:23.149Z",
+  "captures": [
+    {
+      "url": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/east-dundee/el-faro-restaurant-/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.roostcafeandbistro.com/la-hacienda-mexican-restaurant-60118/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/roost-proof-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=La+Hacienda+Mexican+Restaurant+411+E+Main+St+East+Dundee+IL",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "canva-menu",
+      "url": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view",
+      "status": 200,
+      "finalUrl": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view",
+      "contentType": "text/html;charset=utf-8"
+    },
+    {
+      "label": "restaurantji",
+      "url": "https://www.restaurantji.com/il/east-dundee/el-faro-restaurant-/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/east-dundee/el-faro-restaurant-/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "roost-proof",
+      "url": "https://www.roostcafeandbistro.com/la-hacienda-mexican-restaurant-60118/",
+      "status": 200,
+      "finalUrl": "https://www.roostcafeandbistro.com/la-hacienda-mexican-restaurant-60118/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "google-search",
+      "url": "https://www.google.com/search?q=La+Hacienda+Mexican+Restaurant+411+E+Main+St+East+Dundee+IL",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=La+Hacienda+Mexican+Restaurant+411+E+Main+St+East+Dundee+IL",
+      "contentType": "text/html; charset=ISO-8859-1"
+    }
+  ]
+}
