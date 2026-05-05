@@ -3,9 +3,9 @@
 - Lead ID: 7f1432ae-2553-442c-80ff-df58acb162ef
 - MC parent task ID: 35f58383-0074-4a64-85cc-46ea2cfcd6bb
 - Template slug: bramble-01
-- Current stage: battle_cards
+- Current stage: qa_round_1
 - Deploy URL: TBD
-- Updated: 2026-05-05T02:38:57Z
+- Updated: 2026-05-05T02:43:37Z
 
 ## Requirements
 
@@ -17,6 +17,7 @@
 - [x] top-3-improvements: Top 3 concrete improvements identified, implemented, and evidenced - Hero conversion clarity, practical visit handoffs, and mobile readability/CTA polish are complete with before/after evidence and passing checks.
 - [x] concierge-added: Truthful AI concierge added with restaurant-specific KB and safe handoffs - Deterministic Winestock concierge uses verified facts only, refuses unsupported requests, routes to public handoffs, and passed API/browser QA.
 - [x] pitch-doc: Sellable owner-facing pitch doc created - Pitch doc frames the under-construction site gap, Bramble routing, review proof, visit handoffs, truthful concierge, preserve-stack promise, and owner asks without fake claims.
+- [x] battle-cards: Sales battle cards created for owner objections and demo path - Battle cards package the close, owner talking points, likely objections, proof references, demo path, risks, and what-not-to-claim guardrails without fake provider or operational claims.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -80,6 +81,7 @@
 - restaurant-website-system/sites/winestock/ai-concierge.md
 - restaurant-website-system/sites/winestock/ai-concierge-transcript.md
 - restaurant-website-system/sites/winestock/pitch-doc.md
+- restaurant-website-system/sites/winestock/battle-cards.md
 
 ## QA Rounds
 
@@ -90,6 +92,7 @@
 ## Pitch Artifacts
 
 - Pitch doc: restaurant-website-system/sites/winestock/pitch-doc.md
+- Battle cards: restaurant-website-system/sites/winestock/battle-cards.md
 - Outreach draft: TBD
 
 ## Blockers
@@ -152,3 +155,11 @@
 - It avoids fake reservation, ordering, pricing, private-event, or provider claims and lists owner confirmations needed before v2/final launch.
 - Evidence: `restaurant-website-system/sites/winestock/pitch-doc.md`.
 - Current local stage advanced to `battle_cards`; next executable gate is the battle cards doc.
+
+## 2026-05-04 heartbeat addendum — battle cards complete
+
+- Created the Winestock sales battle cards for Ethan/founder use.
+- The battle cards include the strongest one-sentence close, owner talking points, ten likely objections with calm responses, proof references, a six-step demo path, risks/caveats, and strict what-not-to-claim guardrails.
+- The cards preserve the under-construction-site-gap + preserve-stack pitch posture and avoid fake reservations, ordering, pricing, private-event, provider, or live-availability claims.
+- Evidence: `restaurant-website-system/sites/winestock/battle-cards.md`.
+- Current local stage advanced to `qa_round_1`; next executable gate is QA Round 1 with fresh screenshot/build/link/truth-safety evidence.
