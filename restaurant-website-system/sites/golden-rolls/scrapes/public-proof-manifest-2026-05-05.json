@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-05-05T08:08:24.648Z",
+  "captures": [
+    {
+      "url": "https://www.restaurantji.com/il/woodstock/golden-rolls-/",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.roostcafeandbistro.com/golden-rolls-60098/",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/roost-proof-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/roost-proof-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/roost-proof-desktop-2026-05-05.txt"
+    }
+  ]
+}
