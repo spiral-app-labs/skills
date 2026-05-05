@@ -7,7 +7,7 @@ type ChatMessage = { role: 'user' | 'assistant'; content: string };
 const SUGGESTED_CHIPS = [
   'What should I order tonight?',
   'When are you open?',
-  'Where are you located?',
+  'Can I order pickup?',
 ];
 
 export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: string }) {
@@ -121,7 +121,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
         type="button"
         aria-label={`Ask ${restaurantName} anything`}
         onClick={() => setOpen(true)}
-        className={`fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-pill bg-accent px-5 py-3 text-button font-semibold text-text-white shadow-lg transition-all duration-500 hover:brightness-110 ${
+        className={`fixed bottom-[76px] right-4 z-40 flex items-center gap-2 rounded-pill bg-accent px-4 py-3 text-[12px] font-semibold uppercase text-text-white shadow-lg transition-all duration-500 hover:brightness-110 md:bottom-6 md:right-6 md:px-5 md:text-button ${
           visible && !open
             ? 'translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-4 opacity-0'
@@ -185,7 +185,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
                   Hello, how can I help?
                 </p>
                 <p className="text-body-sm text-text-muted">
-                  Menu, hours, directions, or a table tonight. Ask anything.
+                  Menu favorites, hours, pickup, directions, or quick planning. Ask anything.
                 </p>
               </div>
             )}
@@ -262,8 +262,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
               </button>
             </div>
             <p className="mt-2 text-[11px] leading-tight text-text-muted">
-              AI concierge, confirm with the restaurant for allergy or time-sensitive
-              questions.
+              AI concierge, please call the restaurant for allergies, prices, or time-sensitive pickup details.
             </p>
           </form>
         </div>
