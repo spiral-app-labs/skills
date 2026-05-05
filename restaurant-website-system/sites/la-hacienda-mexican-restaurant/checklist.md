@@ -3,9 +3,9 @@
 - Lead ID: 7cba3fe2-8f65-4516-b46b-05c2c07ab235
 - MC parent task ID: fd7f4976-daac-42aa-8c9a-1ddb09a9d12f
 - Template slug: bamzi-01
-- Current stage: concierge (local build gate passed; Mission Control writeback pending)
+- Current stage: pitch (local build gate passed; Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-05T12:04:00Z
+- Updated: 2026-05-05T12:18:00Z
 
 ## Requirements
 
@@ -15,7 +15,9 @@
 - [x] google-reviews-highest-30: 30 written Google reviews captured using the Highest sort/filter - Captured browser evidence from Google Search local reviews panel on 2026-05-05. Highest sort selected; 30 written reviews summarized into a build-safe evidence packet. Observed 4.3 rating from 530 Google reviews.
 - [x] improvement-pass: Improvement pass completed after first fork - Rewrote hero for diners, tightened mobile/header containment, reduced mobile hero scale, captured before/after homepage screenshots, passed npm run build, and verified no 390px horizontal overflow offenders.
 - [x] top-3-improvements: Top 3 improvements selected, implemented, and evidenced - Visitor-facing copy cleanup, mobile conversion cleanup, and mobile/asset reliability fixes implemented with before/after screenshots and 390px overflow evidence.
-- [ ] concierge: AI concierge added with truthful restaurant-specific KB and safe handoffs - Pending next gate.
+- [x] concierge: AI concierge added with truthful restaurant-specific KB and safe handoffs - Mounted globally, deterministic KB router added, allergy/price/time-sensitive handoffs route to phone, screenshots/API transcript captured.
+- [ ] pitch: Sellable pitch doc created or updated - Pending next gate.
+- [ ] battle-cards: Battle cards doc created or updated - Pending after pitch.
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Bamzi scaffold copied into the existing La Hacienda site folder, placeholder content replaced with audit/review/menu proof, and `npm run build` passed locally on 2026-05-05 after switching to offline-safe font stacks.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
@@ -86,3 +88,12 @@
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/top-3-improvements-2026-05-05.md
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/responsive-overflow-check-top3-2026-05-05.json
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-top-3-improvements-complete-2026-05-05.json
+
+
+## Concierge evidence
+
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/concierge-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/concierge-api-transcript-2026-05-05.json
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/concierge-open-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/concierge-open-desktop-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-concierge-complete-2026-05-05.json

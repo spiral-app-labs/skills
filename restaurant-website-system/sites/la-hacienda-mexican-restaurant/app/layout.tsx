@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { content } from '../content.example';
+import { AskConcierge } from '../components/AskConcierge';
 import { MobileQuickActions } from '../components/MobileQuickActions';
 import './globals.css';
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="font-body bg-bg-white text-text-dark antialiased ">
         {children}
+        <AskConcierge restaurantName="La Hacienda" />
         <MobileQuickActions />
       </body>
     </html>

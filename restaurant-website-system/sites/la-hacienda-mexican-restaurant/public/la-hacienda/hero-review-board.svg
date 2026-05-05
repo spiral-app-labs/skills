@@ -14,7 +14,7 @@
   <rect x="600" y="420" width="400" height="250" rx="28" fill="#d9b36b"/>
   <text x="640" y="500" fill="#1b1712" font-size="44" font-family="Georgia, serif">Menu</text>
   <text x="640" y="560" fill="#7f2418" font-size="54" font-family="Georgia, serif">Tacos, Burritos, Tortas</text>
-  <text x="640" y="620" fill="#3d2f22" font-size="28" font-family="Arial, sans-serif">Review-backed favorites, not filler copy</text>
+  <text x="640" y="620" fill="#3d2f22" font-size="28" font-family="Arial, sans-serif">Local favorites, fast pickup, easy links</text>
   <rect x="1080" y="420" width="360" height="250" rx="28" fill="#7f2418"/>
   <text x="1120" y="500" fill="#f6efe4" font-size="44" font-family="Georgia, serif">Directions</text>
   <text x="1120" y="560" fill="#f6efe4" font-size="34" font-family="Arial, sans-serif">411 E Main St</text>

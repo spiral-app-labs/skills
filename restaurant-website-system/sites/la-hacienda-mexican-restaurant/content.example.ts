@@ -75,8 +75,8 @@ export const content = {
   },
 
   categoryStrip: {
-    eyebrow: 'Review-Backed Favorites',
-    title: 'The strongest menu signals are already there, they just need a better home.',
+    eyebrow: 'Guest Favorites',
+    title: 'Tacos, burritos, tortas, and specials are easy to find before you go.',
     categories: [
       { label: 'Burritos & Chimichangas', image: '/la-hacienda/category-burritos.svg' },
       { label: 'Tacos & Salsa', image: '/la-hacienda/category-tacos.svg' },
@@ -180,7 +180,7 @@ export const content = {
       body:
         'Instead of making guests hunt, the page organizes the strongest repeat patterns people mention: loyalty, speed, portions, and salsa-forward flavor.',
       milestones: [
-        { year: '25+', title: 'Years of loyalty show up in reviews', body: 'Multiple reviewers describe 10, 25, or more years of repeat visits, which is a stronger trust signal than generic marketing copy.' },
+        { year: '25+', title: 'Longtime regulars keep coming back', body: 'Guests describe years of repeat visits, quick pickup, and familiar favorites that make La Hacienda feel like a local standby.' },
         { year: 'FAST', title: 'Takeout speed keeps getting called out', body: 'Phone orders, fast carryout, and neat packaging appear across the Google evidence packet.' },
         { year: 'BIG', title: 'Portion value is part of the reputation', body: 'Reviewers repeatedly describe burritos, chimichangas, and combo dinners as generous and satisfying.' },
         { year: 'GREEN', title: 'Salsa, pico, and green sauce are part of the identity', body: 'Green salsa, pico de gallo, chips and salsa, and flavor-forward taco toppings show up again and again in local guest comments.' },

@@ -3,33 +3,46 @@ import { content } from '../../../content.example';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
+const menuHighlights = [
+  'carne asada tacos',
+  'carnitas tacos',
+  'al pastor tacos',
+  'regular burritos',
+  'Cubana torta',
+  'chimichangas',
+  'fajitas',
+  'horchata',
+];
+
 function buildReply(message: string): string {
   const text = message.toLowerCase();
-  const { brand, about, menuPage } = content;
+  const { brand, about } = content;
 
-  if (text.includes('hour') || text.includes('open')) {
-    return about.hours.times
-      .map((time) => `${time.day}: ${time.time}.`)
-      .join(' ');
+  if (text.includes('allerg') || text.includes('gluten') || text.includes('vegan') || text.includes('vegetarian')) {
+    return `For allergy or ingredient questions, please call ${brand.phone} before ordering. I can point you to menu favorites, but the restaurant should confirm ingredients directly.`;
   }
 
-  if (text.includes('where') || text.includes('address') || text.includes('located')) {
-    return `${brand.name} is at ${brand.address}. You can also call ${brand.phone} for directions or pickup questions.`;
+  if (text.includes('hour') || text.includes('open') || text.includes('close')) {
+    return `${about.hours.times.map((time) => `${time.day}: ${time.time}`).join('; ')}. Hours can change, so call ${brand.phone} if timing is tight.`;
   }
 
-  if (text.includes('order') || text.includes('pickup') || text.includes('delivery')) {
-    return `The online order path is ${content.links.order}. Calling ${brand.phone} is also a strong option for pickup questions.`;
+  if (text.includes('menu') || text.includes('what should i order') || text.includes('what to order') || text.includes('recommend') || text.includes('popular')) {
+    return `Popular starting points include ${menuHighlights.slice(0, 6).join(', ')}. The full menu is here: ${content.links.menu}.`;
   }
 
-  if (text.includes('menu') || text.includes('what should i order') || text.includes('what to order')) {
-    const highlights = menuPage.categories
-      .flatMap((category) => category.items.slice(0, 1).map((item) => item.name))
-      .slice(0, 4)
-      .join(', ');
-    return `Popular menu highlights include ${highlights}. The full menu is also available at ${content.links.menu}.`;
+  if (text.includes('where') || text.includes('address') || text.includes('located') || text.includes('direction') || text.includes('map')) {
+    return `${brand.name} is at ${brand.address}. Use directions here: ${content.links.directions}.`;
   }
 
-  return `${brand.name} is at ${brand.address}, phone ${brand.phone}. Source-backed menu highlights include tacos, burritos, tortas, chimichangas, fajitas, salsa, and horchata.`;
+  if (text.includes('order') || text.includes('pickup') || text.includes('takeout') || text.includes('delivery')) {
+    return `For pickup, you can call ${brand.phone} or start from the online order link: ${content.links.order}. Call the restaurant for timing, substitutions, or price-sensitive questions.`;
+  }
+
+  if (text.includes('phone') || text.includes('call')) {
+    return `You can call ${brand.name} at ${brand.phone}.`;
+  }
+
+  return `${brand.name} is at ${brand.address}. Popular picks include ${menuHighlights.slice(0, 5).join(', ')}. For pickup or current details, call ${brand.phone}.`;
 }
 
 export async function POST(req: Request) {
