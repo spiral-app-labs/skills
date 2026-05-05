@@ -4,7 +4,7 @@
   "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
   "siteSlug": "winestock",
   "templateSlug": "bramble-01",
-  "currentStage": "concierge",
+  "currentStage": "pitch",
   "evidencePaths": [
     "restaurant-website-system/sites/winestock/checklist.md",
     "restaurant-website-system/sites/winestock/checklist.json",
@@ -57,7 +57,24 @@
     "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-text.txt",
     "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/link-check.txt",
     "restaurant-website-system/sites/winestock/components/HeroSlideshow.tsx",
-    "restaurant-website-system/sites/winestock/components/VisitPlanner.tsx"
+    "restaurant-website-system/sites/winestock/components/VisitPlanner.tsx",
+    "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/link-check.txt",
+    "restaurant-website-system/sites/winestock/evidence-concierge-api-smoke-2026-05-04.jsonl",
+    "restaurant-website-system/sites/winestock/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/winestock/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/winestock/ai-concierge.md",
+    "restaurant-website-system/sites/winestock/ai-concierge-transcript.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -76,9 +93,9 @@
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Top 3 improvements advanced locally and PR evidence is prepared, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
-      "recordedAt": "2026-05-05T02:29:29Z",
-      "nextUnblockAction": "Retry the prepared top-3 writeback payload through the official agency API once auth is configured."
+      "reason": "Concierge gate advanced locally and PR evidence is prepared, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+      "recordedAt": "2026-05-05T02:35:20Z",
+      "nextUnblockAction": "Retry the prepared concierge writeback payload through the official agency API once auth is configured."
     }
   ],
   "requirements": [
@@ -201,6 +218,33 @@
       ]
     },
     {
+      "id": "concierge-added",
+      "title": "Truthful AI concierge added with restaurant-specific KB and safe handoffs",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Deterministic Winestock concierge uses only verified current-site/review/build facts, refuses unsafe unsupported requests, routes to email/phone/Facebook/directions, and passed API smoke/typecheck/build/browser QA.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/link-check.txt",
+        "restaurant-website-system/sites/winestock/evidence-concierge-api-smoke-2026-05-04.jsonl",
+        "restaurant-website-system/sites/winestock/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/winestock/app/api/concierge/route.ts",
+        "restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/ai-concierge.md",
+        "restaurant-website-system/sites/winestock/ai-concierge-transcript.md"
+      ]
+    },
+    {
       "id": "qa-round-1",
       "title": "QA round 1 completed with findings and fixes logged",
       "qaState": "pending",
@@ -232,7 +276,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T02:29:29Z",
-  "build_stage": "concierge",
+  "updatedAt": "2026-05-05T02:35:20Z",
+  "build_stage": "pitch",
   "template_slug": "bramble-01"
 }

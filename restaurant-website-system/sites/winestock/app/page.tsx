@@ -12,6 +12,7 @@ import { BrambleWordmarkFooter } from '../components/BrambleWordmarkFooter';
 import { ScrollRevealScrapbook } from '../components/ScrollReveal';
 import { LiveMapEmbed } from '../components/LiveMapEmbed';
 import { VisitPlanner } from '../components/VisitPlanner';
+import { TruthfulConcierge } from '../components/TruthfulConcierge';
 import { content } from '../content';
 
 // Aliveness retrofit (2026-04-20): below-hero sections wrapped in
@@ -109,6 +110,9 @@ export default function HomePage() {
         </ScrollRevealScrapbook>
         <ScrollRevealScrapbook>
           <InlineInfoSplit />
+        </ScrollRevealScrapbook>
+        <ScrollRevealScrapbook>
+          <TruthfulConcierge />
         </ScrollRevealScrapbook>
         <ScrollRevealScrapbook>
           <SocialStripInline />

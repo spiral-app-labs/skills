@@ -1,0 +1,31 @@
+{
+  "capturedAt": "2026-05-05T02:34:15.789Z",
+  "source": "OpenClaw browser CDP / local Next production server",
+  "baseUrl": "http://127.0.0.1:3095",
+  "files": [
+    {
+      "file": "home-desktop-full.png",
+      "width": 1440,
+      "height": 8055,
+      "bytes": 2383307
+    },
+    {
+      "file": "home-mobile-full.png",
+      "width": 390,
+      "height": 11638,
+      "bytes": 1138899
+    },
+    {
+      "file": "home-mobile-320-full.png",
+      "width": 320,
+      "height": 12767,
+      "bytes": 1079489
+    },
+    {
+      "file": "contact-mobile-full.png",
+      "width": 390,
+      "height": 1077,
+      "bytes": 72766
+    }
+  ]
+}

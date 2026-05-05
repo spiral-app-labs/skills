@@ -1,0 +1,88 @@
+{
+  "question": "When are you open?",
+  "status": 200,
+  "topic": "hours",
+  "answer": "The captured Google snapshot used for this preview listed Monday closed, Tuesday through Thursday 10am–9pm, Friday and Saturday 10am–10pm, and Sunday 12pm–6pm. Hours can change, so call or check Facebook before promising today’s timing.",
+  "actions": [
+    {
+      "label": "Call Winestock",
+      "href": "tel:+18153085610"
+    },
+    {
+      "label": "Check Facebook",
+      "href": "https://www.facebook.com/Winestockmarket/"
+    }
+  ]
+}
+{
+  "question": "Can they help pick wine?",
+  "status": 200,
+  "topic": "wine market",
+  "answer": "The official site says Winestock carries hand-selected artisanal wines and spirits from around the globe. Reviews also mention helpful pairing guidance, affordable bottle pricing, craft beer, and a broad wine selection.",
+  "actions": [
+    {
+      "label": "Ask for bottle picks",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20bottle%20picks"
+    },
+    {
+      "label": "Call Winestock",
+      "href": "tel:+18153085610"
+    }
+  ]
+}
+{
+  "question": "What food do they serve?",
+  "status": 200,
+  "topic": "small plates and boards",
+  "answer": "Verified public copy says Winestock serves small plates, flatbreads, sandwiches, charcuterie, and cheese boards. Review evidence also calls out charcuterie boards, cheese plates, Chicago-style beefs, hot dogs, and snacks. I do not have a verified full current menu or prices.",
+  "actions": [
+    {
+      "label": "Ask about boards",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20boards"
+    },
+    {
+      "label": "Call about today’s menu",
+      "href": "tel:+18153085610"
+    }
+  ]
+}
+{
+  "question": "Can I reserve a table for tonight?",
+  "status": 200,
+  "topic": "safe handoff",
+  "answer": "I cannot verify that safely from the Winestock evidence packet. I do not make reservations, hold tables, take orders, quote current prices, invent specials, confirm private events, or answer allergy/medical questions. Please use a direct Winestock handoff for a human-confirmed answer.",
+  "actions": [
+    {
+      "label": "Email Winestock",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20visit"
+    },
+    {
+      "label": "Call Winestock",
+      "href": "tel:+18153085610"
+    },
+    {
+      "label": "Open Facebook",
+      "href": "https://www.facebook.com/Winestockmarket/"
+    }
+  ]
+}
+{
+  "question": "Do you have gluten free options?",
+  "status": 200,
+  "topic": "safe handoff",
+  "answer": "I cannot verify that safely from the Winestock evidence packet. I do not make reservations, hold tables, take orders, quote current prices, invent specials, confirm private events, or answer allergy/medical questions. Please use a direct Winestock handoff for a human-confirmed answer.",
+  "actions": [
+    {
+      "label": "Email Winestock",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20visit"
+    },
+    {
+      "label": "Call Winestock",
+      "href": "tel:+18153085610"
+    },
+    {
+      "label": "Open Facebook",
+      "href": "https://www.facebook.com/Winestockmarket/"
+    }
+  ]
+}
