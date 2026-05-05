@@ -116,7 +116,7 @@ export const content = {
       '“Do not let the outside scare you away. The inside was extremely nice and the food and service was perfect.”',
     attribution: { role: 'Google review, Highest rating packet', name: 'Brian D' },
     chefImage: 'https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=900&q=80',
-    chefAlt: 'Restaurant hospitality portrait placeholder',
+    chefAlt: 'Warm restaurant hospitality portrait',
   },
 
   blog: {
@@ -246,7 +246,7 @@ export const content = {
     },
     reservation: {
       eyebrow: 'Order or visit',
-      title: 'Call Golden Rolls for takeout, delivery, or current dine-in timing.',
+      title: 'Call Golden Rolls for takeout, delivery, current prices, or dine-in timing.',
       image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80',
     },
   },

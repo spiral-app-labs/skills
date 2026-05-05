@@ -57,8 +57,8 @@ export default function MenuPage() {
         </section>
         <section className="px-5 pb-16">
           <div className="mx-auto max-w-6xl rounded-[2rem] bg-[#10251a] p-8 text-white">
-            <h2 className="font-display text-3xl">Need current specials or delivery availability?</h2>
-            <p className="mt-3 text-white/70">Call the restaurant directly; hours, specials, and delivery options can change.</p>
+            <h2 className="font-display text-3xl">Need current prices, specials, or delivery availability?</h2>
+            <p className="mt-3 text-white/70">Call the restaurant directly; menu prices, hours, specials, and delivery options can change.</p>
             <a href="tel:+18153085099" className="mt-6 inline-block rounded-full bg-[#f59f3a] px-6 py-3 font-semibold text-[#071510]">Call (815) 308-5099</a>
           </div>
         </section>

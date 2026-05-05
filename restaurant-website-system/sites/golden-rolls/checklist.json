@@ -4,7 +4,7 @@
   "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
   "siteSlug": "golden-rolls",
   "templateSlug": "bamzi-01",
-  "currentStage": "qa_round_2",
+  "currentStage": "qa_round_3",
   "evidencePaths": [
     "restaurant-website-system/sites/golden-rolls/checklist.md",
     "restaurant-website-system/sites/golden-rolls/checklist.json",
@@ -85,7 +85,23 @@
     "restaurant-website-system/sites/golden-rolls/screenshots/qa1-cdp-contact-narrow-mobile-2026-05-05.png",
     "restaurant-website-system/sites/golden-rolls/screenshots/qa1-cdp-contact-mobile-2026-05-05.png",
     "restaurant-website-system/sites/golden-rolls/screenshots/qa1-cdp-contact-desktop-2026-05-05.png",
-    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-qa-round-1-complete-2026-05-05.json"
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-qa-round-1-complete-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/qa-round-2-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/scrapes/capture-qa2-cdp.mjs",
+    "restaurant-website-system/sites/golden-rolls/scrapes/qa2-responsive-metrics-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-narrow-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-narrow-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-narrow-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-narrow-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-qa-round-2-complete-2026-05-05.json"
   ],
   "qaRounds": [
     {
@@ -115,6 +131,32 @@
         "restaurant-website-system/sites/golden-rolls/screenshots/qa1-cdp-contact-mobile-2026-05-05.png",
         "restaurant-website-system/sites/golden-rolls/screenshots/qa1-cdp-contact-desktop-2026-05-05.png"
       ]
+    },
+    {
+      "round": 2,
+      "verdict": "pass_after_minor_polish",
+      "completedAt": "2026-05-05T10:49:57.000Z",
+      "summary": "QA round 2 focused on factual safety, conversion clarity, second-pass mobile polish, and founder sellability. It added current-price handoff language, removed placeholder alt wording, tightened official-site typography, recaptured CDP evidence at 320px/390px/desktop, and verified 12/12 responsive checks had no horizontal overflow. No local sellability blocker remains for QA round 3.",
+      "evidencePaths": [
+        "restaurant-website-system/sites/golden-rolls/qa-round-2-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/app/contact/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/content.example.ts",
+        "restaurant-website-system/sites/golden-rolls/scrapes/capture-qa2-cdp.mjs",
+        "restaurant-website-system/sites/golden-rolls/scrapes/qa2-responsive-metrics-2026-05-05.json",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-desktop-2026-05-05.png"
+      ]
     }
   ],
   "deployUrl": null,
@@ -127,9 +169,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local QA round 1 artifacts and writeback payload are ready; submit mc-build-writeback-qa-round-1-complete-2026-05-05.json when MC API auth/base URL are configured.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the QA round 1 complete writeback payload before marking MC as qa_round_2.",
-      "recordedAt": "2026-05-05T10:38:40.000Z"
+      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local QA round 2 artifacts and writeback payload are ready; submit mc-build-writeback-qa-round-2-complete-2026-05-05.json when MC API auth/base URL are configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the QA round 2 complete writeback payload before marking MC as qa_round_3.",
+      "recordedAt": "2026-05-05T10:49:57.000Z"
     }
   ],
   "requirements": [
@@ -366,8 +408,29 @@
     {
       "id": "qa-round-2",
       "title": "QA round 2 completed with findings and fixes logged",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "QA round 2 focused on factual safety, conversion clarity, second-pass mobile polish, and founder sellability. It added current-price handoff language, removed placeholder alt wording, tightened official-site typography, recaptured CDP evidence at 320px/390px/desktop, and verified 12/12 responsive checks had no horizontal overflow. No local sellability blocker remains for QA round 3.",
+      "evidence": [
+        "restaurant-website-system/sites/golden-rolls/qa-round-2-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/app/contact/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/content.example.ts",
+        "restaurant-website-system/sites/golden-rolls/scrapes/capture-qa2-cdp.mjs",
+        "restaurant-website-system/sites/golden-rolls/scrapes/qa2-responsive-metrics-2026-05-05.json",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-about-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-narrow-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/qa2-cdp-contact-desktop-2026-05-05.png"
+      ]
     },
     {
       "id": "qa-round-3",
@@ -389,5 +452,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T10:38:40.000Z"
+  "updatedAt": "2026-05-05T10:49:57.000Z"
 }
