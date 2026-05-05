@@ -4,7 +4,7 @@
   "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
   "siteSlug": "winestock",
   "templateSlug": "bramble-01",
-  "currentStage": "top_3_improvements",
+  "currentStage": "concierge",
   "evidencePaths": [
     "restaurant-website-system/sites/winestock/checklist.md",
     "restaurant-website-system/sites/winestock/checklist.json",
@@ -43,21 +43,42 @@
     "restaurant-website-system/sites/winestock/components/TopTriptychHeader.tsx",
     "restaurant-website-system/sites/winestock/components/ScrollReveal.tsx",
     "restaurant-website-system/sites/winestock/components/OpeningTimesBlock.tsx",
-    "restaurant-website-system/sites/winestock/components/PolaroidStrip.tsx"
+    "restaurant-website-system/sites/winestock/components/PolaroidStrip.tsx",
+    "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/link-check.txt",
+    "restaurant-website-system/sites/winestock/components/HeroSlideshow.tsx",
+    "restaurant-website-system/sites/winestock/components/VisitPlanner.tsx"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": null,
     "outreachDraft": null,
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [
+      "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-full.png",
+      "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-full.png",
+      "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-full.png",
+      "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
+      "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png",
+      "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png"
+    ]
   },
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Improvement pass advanced locally and PR evidence is prepared, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
-      "recordedAt": "2026-05-05T02:22:47Z",
-      "nextUnblockAction": "Retry the prepared improvement writeback payload through the official agency API once auth is configured."
+      "reason": "Top 3 improvements advanced locally and PR evidence is prepared, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+      "recordedAt": "2026-05-05T02:29:29Z",
+      "nextUnblockAction": "Retry the prepared top-3 writeback payload through the official agency API once auth is configured."
     }
   ],
   "requirements": [
@@ -151,6 +172,35 @@
       ]
     },
     {
+      "id": "top-3-improvements",
+      "title": "Top 3 concrete improvements identified, implemented, and evidenced",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Implemented hero conversion clarity, practical visit handoffs, and mobile readability/CTA polish with before-after evidence, link check, typecheck/build, and browser screenshots.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/link-check.txt",
+        "restaurant-website-system/sites/winestock/content.ts",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/components/HeroSlideshow.tsx",
+        "restaurant-website-system/sites/winestock/components/VisitPlanner.tsx",
+        "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/InlineInfoSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/MailingListBlock.tsx",
+        "restaurant-website-system/sites/winestock/app/reserve/page.tsx"
+      ]
+    },
+    {
       "id": "qa-round-1",
       "title": "QA round 1 completed with findings and fixes logged",
       "qaState": "pending",
@@ -182,7 +232,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T02:22:47Z",
-  "build_stage": "top_3_improvements",
+  "updatedAt": "2026-05-05T02:29:29Z",
+  "build_stage": "concierge",
   "template_slug": "bramble-01"
 }

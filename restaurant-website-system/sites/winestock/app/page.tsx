@@ -11,6 +11,7 @@ import { MailingListBlock } from '../components/MailingListBlock';
 import { BrambleWordmarkFooter } from '../components/BrambleWordmarkFooter';
 import { ScrollRevealScrapbook } from '../components/ScrollReveal';
 import { LiveMapEmbed } from '../components/LiveMapEmbed';
+import { VisitPlanner } from '../components/VisitPlanner';
 import { content } from '../content';
 
 // Aliveness retrofit (2026-04-20): below-hero sections wrapped in
@@ -96,6 +97,9 @@ export default function HomePage() {
         <HorizontalMarquee text="Opening Times" variant="dark-on-cream" />
         <ScrollRevealScrapbook>
           <OpeningTimesBlock />
+        </ScrollRevealScrapbook>
+        <ScrollRevealScrapbook>
+          <VisitPlanner />
         </ScrollRevealScrapbook>
         <ScrollRevealScrapbook>
           <DualServiceMenusSplit />

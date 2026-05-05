@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { theme } from '../theme';
@@ -55,6 +56,30 @@ export function HeroSlideshow() {
             'linear-gradient(to top, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.2) 60%, rgba(23,23,23,0.0) 100%)',
         }}
       />
+
+      <div className="absolute inset-x-0 bottom-32 md:bottom-44 px-6">
+        <div className="max-w-3xl mx-auto text-center text-text-cream space-y-5">
+          <p className="text-address text-text-cream/80">{content.hero.kicker}</p>
+          <p className="font-display text-[clamp(28px,5vw,52px)] leading-[0.95]" style={{ fontWeight: 300 }}>
+            {content.hero.subhead}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            {content.hero.actions.map((action, idx) => (
+              <Link
+                key={action.href}
+                href={action.href}
+                className={`w-full sm:w-auto px-5 py-3 rounded-button border text-button transition-colors ${
+                  idx === 0
+                    ? 'bg-text-cream text-text-dark border-text-cream hover:bg-white'
+                    : 'border-text-cream/60 text-text-cream hover:bg-text-cream/10'
+                }`}
+              >
+                {action.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Static wordmark overlay */}
       <div className="absolute inset-x-0 bottom-0 pb-8 md:pb-10 px-6 flex items-end justify-center">

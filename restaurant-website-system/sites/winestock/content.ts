@@ -31,6 +31,12 @@ export const content = {
   },
 
   hero: {
+    kicker: 'Woodstock Square · wine market + lounge',
+    subhead: 'Come by for pairing help and a bottle to bring home, or settle in for wine, boards, craft beer, and live music energy.',
+    actions: [
+      { label: 'Plan a visit', href: 'mailto:info@shopwinestock.com?subject=Winestock%20visit' },
+      { label: 'Get directions', href: 'https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481' },
+    ],
     slides: [
       { src: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80', alt: 'Wine bottles arranged in a warm market setting' },
       { src: 'https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=2000&q=80', alt: 'Charcuterie board with wine glasses' },
@@ -90,6 +96,24 @@ export const content = {
     { day: 'Tuesday – Thursday', bar: '10am – 9pm', kitchen: 'Small plates all day' },
     { day: 'Friday – Saturday', bar: '10am – 10pm', kitchen: 'Small plates + lounge nights' },
     { day: 'Sunday', bar: '12pm – 6pm', kitchen: 'Market bottles + boards' },
+  ],
+
+  visitPlanner: [
+    {
+      moment: 'Need a bottle for dinner?',
+      answer: 'Email ahead or stop into the market for pairing help and hand-selected wines or spirits.',
+      action: { label: 'Ask for bottle picks', href: 'mailto:info@shopwinestock.com?subject=Winestock%20bottle%20picks' },
+    },
+    {
+      moment: 'Making it a night out?',
+      answer: 'Check Facebook for music updates, then come ready for wine, craft beer, boards, and the regular-room feel.',
+      action: { label: 'See Facebook updates', href: 'https://www.facebook.com/Winestockmarket/' },
+    },
+    {
+      moment: 'Bringing something home?',
+      answer: 'Charcuterie and cheese boards are positioned for the lounge or at-home plans, based on the current site copy.',
+      action: { label: 'Ask about boards', href: 'mailto:info@shopwinestock.com?subject=Winestock%20boards' },
+    },
   ],
 
   menus: {

@@ -33,7 +33,7 @@ export function MailingListBlock() {
                 {action.label}
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </span>
-              <span className="mt-2 block text-body-sm text-text-muted">{action.note}</span>
+              <span className="mt-2 block text-body text-text-muted">{action.note}</span>
             </Link>
           ))}
         </div>
