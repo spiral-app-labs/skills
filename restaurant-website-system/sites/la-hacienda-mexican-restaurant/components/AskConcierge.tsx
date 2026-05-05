@@ -121,7 +121,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
         type="button"
         aria-label={`Ask ${restaurantName} anything`}
         onClick={() => setOpen(true)}
-        className={`fixed bottom-[76px] right-4 z-40 flex items-center gap-2 rounded-pill bg-accent px-4 py-3 text-[12px] font-semibold uppercase text-text-white shadow-lg transition-all duration-500 hover:brightness-110 md:bottom-6 md:right-6 md:px-5 md:text-button ${
+        className={`fixed bottom-[88px] right-3 z-40 flex items-center gap-2 rounded-pill bg-accent px-3 py-2 text-[10px] font-semibold uppercase text-text-white shadow-lg transition-all duration-500 hover:brightness-110 md:bottom-6 md:right-6 md:px-5 md:py-3 md:text-button ${
           visible && !open
             ? 'translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-4 opacity-0'

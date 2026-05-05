@@ -13,8 +13,8 @@ export function MissionSplit() {
   return (
     <section className="bg-bg-cream pt-40 md:pt-48 pb-24 px-6">
       <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative aspect-[4/3] rounded-card overflow-hidden order-2 md:order-1">
-          <Image src={m.image} alt={m.imageAlt} fill sizes="(min-width: 768px) 500px, 100vw" className="object-cover" />
+        <div className="relative aspect-[4/3] rounded-card overflow-hidden bg-bg-dark order-2 md:order-1">
+          <Image src={m.image} alt={m.imageAlt} fill sizes="(min-width: 768px) 500px, 100vw" className="object-contain" />
         </div>
         <div className="order-1 md:order-2">
           <EyebrowDotLabel className="mb-4">{m.eyebrow}</EyebrowDotLabel>

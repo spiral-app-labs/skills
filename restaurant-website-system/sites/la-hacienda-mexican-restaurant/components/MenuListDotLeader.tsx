@@ -41,8 +41,8 @@ export function MenuListDotLeader({
     </div>
   );
   const img = image ? (
-    <div className="relative aspect-[4/5] rounded-card overflow-hidden">
-      <Image src={image} alt={imageAlt} fill sizes="(min-width: 768px) 500px, 100vw" className="object-cover" />
+    <div className="relative hidden aspect-[4/3] rounded-card overflow-hidden bg-bg-dark md:block md:aspect-[4/5]">
+      <Image src={image} alt={imageAlt} fill sizes="(min-width: 768px) 500px, 100vw" className="object-contain" />
     </div>
   ) : null;
 
