@@ -3,9 +3,9 @@
 - Lead ID: e5048ba5-21d5-4400-8673-f92e16954560
 - MC parent task ID: c98d74ad-1a44-4df4-b313-bd20d675ae71
 - Template slug: bamzi-01
-- Current stage: battle_cards (local; Mission Control writeback pending)
+- Current stage: qa_round_1 (local; Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-05T10:23:27.000Z
+- Updated: 2026-05-05T10:26:20.000Z
 
 ## Requirements
 
@@ -18,7 +18,7 @@
 - [x] top-3-improvements: Top 3 sellability improvements identified, implemented, and evidenced - Top three sellability improvements completed: customer-facing About story replaced agency/internal language, homepage service strip clarified hours/phone/directions, and menu proof became guest-facing recommendations while sanitizing concierge KB copy. Production build, screenshot capture, and mobile visual QA passed.
 - [x] concierge: AI concierge added/verified with truthful Golden Rolls KB and safe handoffs - AI concierge verified with a truthful Golden Rolls KB, safe phone handoffs for reservations/current availability/allergies, no fake online reservation/provider claims, and deterministic fallback responses when Anthropic API key is unavailable. API transcript captured and reviewed.
 - [x] pitch: Sellable pitch doc created for Golden Rolls outreach/demo - Sellable pitch doc and outreach draft created. Pitch ties current-site gaps to review-backed strengths, shows Ethan demo path, owner-facing talking points, proof files, risks/caveats, and next action without inventing preview URL or claims.
-- [ ] battle-cards: Battle cards created for objections, proof, risks, and demo path
+- [x] battle-cards: Battle cards created for objections, proof, risks, and demo path - Battle cards created with demo path, core sales frame, objection responses, proof locker, founder cautions, and close. Covers existing website, review proof, delivery/calls, AI concerns, over-fancy positioning, order impact, and menu/pricing updates.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -86,6 +86,8 @@
 - restaurant-website-system/sites/golden-rolls/pitch-doc.md
 - restaurant-website-system/sites/golden-rolls/outreach-draft.md
 - restaurant-website-system/sites/golden-rolls/mc-build-writeback-pitch-complete-2026-05-05.json
+- restaurant-website-system/sites/golden-rolls/battle-cards.md
+- restaurant-website-system/sites/golden-rolls/mc-build-writeback-battle-cards-complete-2026-05-05.json
 
 ## QA Rounds
 
@@ -97,10 +99,11 @@
 
 - Pitch doc: restaurant-website-system/sites/golden-rolls/pitch-doc.md
 - Outreach draft: restaurant-website-system/sites/golden-rolls/outreach-draft.md
+- Battle cards: restaurant-website-system/sites/golden-rolls/battle-cards.md
 
 ## Blockers
 
-- stage_writeback: Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local pitch artifacts and writeback payload are ready; submit mc-build-writeback-pitch-complete-2026-05-05.json when MC API auth/base URL are configured. Next: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the pitch-complete writeback payload before marking MC as battle_cards.
+- stage_writeback: Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local battle-card artifacts and writeback payload are ready; submit mc-build-writeback-battle-cards-complete-2026-05-05.json when MC API auth/base URL are configured. Next: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the battle-cards-complete writeback payload before marking MC as qa_round_1.
 
 ## Done Criteria
 
