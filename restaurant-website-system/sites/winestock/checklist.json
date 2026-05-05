@@ -4,7 +4,7 @@
   "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
   "siteSlug": "winestock",
   "templateSlug": "bramble-01",
-  "currentStage": "routing",
+  "currentStage": "building",
   "evidencePaths": [
     "restaurant-website-system/sites/winestock/checklist.md",
     "restaurant-website-system/sites/winestock/checklist.json",
@@ -13,7 +13,19 @@
     "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
     "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
     "restaurant-website-system/sites/winestock/scrapes/google-highest-sort-visible-2026-05-04.png",
-    "restaurant-website-system/sites/winestock/routing.md"
+    "restaurant-website-system/sites/winestock/routing.md",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/content.ts",
+    "restaurant-website-system/sites/winestock/app/page.tsx",
+    "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+    "restaurant-website-system/sites/winestock/components/HorizontalMarquee.tsx",
+    "restaurant-website-system/sites/winestock/components/BrambleWordmarkFooter.tsx",
+    "restaurant-website-system/sites/winestock/app/globals.css",
+    "restaurant-website-system/sites/winestock/build-evidence-2026-05-04.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -25,8 +37,8 @@
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Reviews and routing advanced locally, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
-      "recordedAt": "2026-05-05T01:55:00Z",
+      "reason": "First fork/build advanced locally, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+      "recordedAt": "2026-05-05T02:05:00Z",
       "nextUnblockAction": "Retry the prepared build writeback payload through the official agency API once auth is configured."
     }
   ],
@@ -72,8 +84,23 @@
     {
       "id": "fork-built",
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "evidence": [
+        "restaurant-website-system/sites/winestock/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/content.ts",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/HorizontalMarquee.tsx",
+        "restaurant-website-system/sites/winestock/components/BrambleWordmarkFooter.tsx",
+        "restaurant-website-system/sites/winestock/app/globals.css"
+      ],
+      "notes": "First Bramble fork is built with Winestock-specific content, safe contact CTAs, review proof, and browser evidence; typecheck/build passed."
     },
     {
       "id": "qa-round-1",
@@ -107,7 +134,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T01:55:00Z",
-  "build_stage": "routing",
+  "updatedAt": "2026-05-05T02:05:00Z",
+  "build_stage": "building",
   "template_slug": "bramble-01"
 }
