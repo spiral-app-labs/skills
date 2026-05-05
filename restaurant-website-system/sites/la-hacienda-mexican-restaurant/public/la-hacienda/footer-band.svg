@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1b1712"/>
+  <circle cx="300" cy="300" r="220" fill="#7f2418" opacity="0.9"/>
+  <circle cx="1220" cy="620" r="260" fill="#d9b36b" opacity="0.8"/>
+  <text x="180" y="520" fill="#f6efe4" font-size="110" font-family="Georgia, serif">La Hacienda</text>
+  <text x="180" y="620" fill="#d7c7b3" font-size="42" font-family="Arial, sans-serif">East Dundee, Illinois</text>
+</svg>

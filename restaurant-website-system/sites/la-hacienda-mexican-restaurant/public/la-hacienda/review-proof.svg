@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100">
+  <rect width="900" height="1100" fill="#efe5d6"/>
+  <rect x="70" y="70" width="760" height="960" rx="30" fill="#1b1712"/>
+  <text x="120" y="200" fill="#f0cf9c" font-size="46" font-family="Arial, sans-serif">Google Highest packet</text>
+  <text x="120" y="310" fill="#f6efe4" font-size="100" font-family="Georgia, serif">30 written</text>
+  <text x="120" y="400" fill="#f6efe4" font-size="100" font-family="Georgia, serif">reviews</text>
+  <text x="120" y="520" fill="#d7c7b3" font-size="36" font-family="Arial, sans-serif">Fast pickup</text>
+  <text x="120" y="580" fill="#d7c7b3" font-size="36" font-family="Arial, sans-serif">Friendly service</text>
+  <text x="120" y="640" fill="#d7c7b3" font-size="36" font-family="Arial, sans-serif">Generous portions</text>
+  <text x="120" y="700" fill="#d7c7b3" font-size="36" font-family="Arial, sans-serif">Longtime regulars</text>
+  <rect x="120" y="780" width="240" height="56" rx="28" fill="#7f2418"/>
+  <text x="170" y="818" fill="#f6efe4" font-size="24" font-family="Arial, sans-serif">Evidence-led build</text>
+</svg>

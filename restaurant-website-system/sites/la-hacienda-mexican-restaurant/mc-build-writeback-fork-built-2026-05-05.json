@@ -1,0 +1,38 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "parentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "building",
+  "currentStage": "building",
+  "stageCompleted": "fork-built",
+  "templateSlug": "bamzi-01",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "json": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  },
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/build-notes-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md"
+  ],
+  "passedRequirementIds": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-highest-30",
+    "fork-built"
+  ],
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Local build gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.",
+      "recordedAt": "2026-05-05T11:26:17Z"
+    }
+  ],
+  "notes": "La Hacienda now has a real Bamzi-based multi-page preview with source-backed menu highlights, hours, call/directions/menu/order CTAs, and a successful local production build.",
+  "updatedAt": "2026-05-05T11:26:17Z"
+}
