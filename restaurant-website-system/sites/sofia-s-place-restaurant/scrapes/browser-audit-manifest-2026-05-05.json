@@ -1,0 +1,114 @@
+{
+  "capturedAt": "2026-05-05T08:44:06.294Z",
+  "captures": [
+    {
+      "url": "http://www.sofiasplacerestaurantil.com/",
+      "finalUrl": "http://www.sofiasplacerestaurantil.com/",
+      "title": "FromTheRestaurant | Find Restaurants Near You",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/official-order-domain-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-domain-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-domain-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "http://www.sofiasplacerestaurantil.com/",
+      "finalUrl": "http://www.sofiasplacerestaurantil.com/",
+      "title": "FromTheRestaurant | Find Restaurants Near You",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/official-order-domain-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-domain-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-domain-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+640+E+State+Rd+Island+Lake+IL",
+      "finalUrl": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+640+E+State+Rd+Island+Lake+IL",
+      "title": "Sofia's Place Restaurant 640 E State Rd Island Lake IL - Google Search",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/google-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/google-search-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+640+E+State+Rd+Island+Lake+IL",
+      "finalUrl": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+640+E+State+Rd+Island+Lake+IL#ebo=0",
+      "title": "Sofia's Place Restaurant 640 E State Rd Island Lake IL - Google Search",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/google-search-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/google-search-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/google-search-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/island-lake/sofias-mexican-restaurant-/",
+      "finalUrl": "https://www.restaurantji.com/il/island-lake/sofias-mexican-restaurant-/",
+      "title": "Sofia's Place Restaurant, Island Lake - Menu, Reviews (151), Photos (64) - Restaurantji",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/island-lake/sofias-mexican-restaurant-/",
+      "finalUrl": "https://www.restaurantji.com/il/island-lake/sofias-mexican-restaurant-/",
+      "title": "Sofia's Place Restaurant, Island Lake - Menu, Reviews (151), Photos (64) - Restaurantji",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/restaurantji-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantji-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantji-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://restaurantguru.com/Sofias-Place-Island-Lake",
+      "finalUrl": "https://restaurantguru.com/Sofias-Place-Island-Lake",
+      "title": "502 Bad Gateway",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/restaurantguru-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantguru-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantguru-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+Island+Lake+online+order+DoorDash+Grubhub",
+      "finalUrl": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+Island+Lake+online+order+DoorDash+Grubhub",
+      "title": "Sofia's Place Restaurant Island Lake online order DoorDash Grubhub - Google Search",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/doordash-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/doordash-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/doordash-search-desktop-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "official-order-domain",
+      "url": "http://www.sofiasplacerestaurantil.com/",
+      "status": 200,
+      "finalUrl": "http://www.sofiasplacerestaurantil.com/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "google-search",
+      "url": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+640+E+State+Rd+Island+Lake+IL",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+640+E+State+Rd+Island+Lake+IL",
+      "contentType": "text/html; charset=ISO-8859-1"
+    },
+    {
+      "label": "restaurantji",
+      "url": "https://www.restaurantji.com/il/island-lake/sofias-mexican-restaurant-/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/island-lake/sofias-mexican-restaurant-/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "restaurantguru",
+      "url": "https://restaurantguru.com/Sofias-Place-Island-Lake",
+      "status": 200,
+      "finalUrl": "https://restaurantguru.com/Sofias-Place-Island-Lake",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "doordash-search",
+      "url": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+Island+Lake+online+order+DoorDash+Grubhub",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Sofia%27s+Place+Restaurant+Island+Lake+online+order+DoorDash+Grubhub",
+      "contentType": "text/html; charset=ISO-8859-1"
+    }
+  ]
+}
