@@ -4,7 +4,7 @@
   "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
   "siteSlug": "golden-rolls",
   "templateSlug": "bamzi-01",
-  "currentStage": "battle_cards",
+  "currentStage": "qa_round_1",
   "evidencePaths": [
     "restaurant-website-system/sites/golden-rolls/checklist.md",
     "restaurant-website-system/sites/golden-rolls/checklist.json",
@@ -65,21 +65,24 @@
     "restaurant-website-system/sites/golden-rolls/mc-build-writeback-concierge-complete-2026-05-05.json",
     "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
     "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
-    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-pitch-complete-2026-05-05.json"
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-pitch-complete-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/battle-cards.md",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-battle-cards-complete-2026-05-05.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
     "outreachDraft": "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [],
+    "battleCards": "restaurant-website-system/sites/golden-rolls/battle-cards.md"
   },
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local pitch artifacts and writeback payload are ready; submit mc-build-writeback-pitch-complete-2026-05-05.json when MC API auth/base URL are configured.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the pitch-complete writeback payload before marking MC as battle_cards.",
-      "recordedAt": "2026-05-05T10:23:27.000Z"
+      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local battle-card artifacts and writeback payload are ready; submit mc-build-writeback-battle-cards-complete-2026-05-05.json when MC API auth/base URL are configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the battle-cards-complete writeback payload before marking MC as qa_round_1.",
+      "recordedAt": "2026-05-05T10:26:20.000Z"
     }
   ],
   "requirements": [
@@ -269,8 +272,20 @@
     {
       "id": "battle-cards",
       "title": "Battle cards created for objections, proof, risks, and demo path",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "Battle cards created with demo path, core sales frame, objection responses, proof locker, founder cautions, and close. Covers existing website, review proof, delivery/calls, AI concerns, over-fancy positioning, order impact, and menu/pricing updates.",
+      "evidence": [
+        "restaurant-website-system/sites/golden-rolls/battle-cards.md",
+        "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
+        "restaurant-website-system/sites/golden-rolls/audit.md",
+        "restaurant-website-system/sites/golden-rolls/browser-evidence-audit-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/google-reviews-themes.md",
+        "restaurant-website-system/sites/golden-rolls/concierge-qa-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -304,5 +319,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T10:23:27.000Z"
+  "updatedAt": "2026-05-05T10:26:20.000Z"
 }
