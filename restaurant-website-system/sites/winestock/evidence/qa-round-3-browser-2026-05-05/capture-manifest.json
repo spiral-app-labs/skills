@@ -1,0 +1,327 @@
+{
+  "capturedAt": "2026-05-05T04:44:38.796Z",
+  "baseUrl": "http://127.0.0.1:3094",
+  "round": 3,
+  "focus": "final sell-readiness: identity, conversion, accuracy, design quality, mobile polish",
+  "routes": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": "home-desktop-full.png",
+      "text": "home-desktop-text.txt",
+      "title": "Winestock Market & Lounge — Wine market by day, Woodstock lounge by night",
+      "bodyTextLength": 5520,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false,
+      "placeholderHits": [],
+      "requiredBusinessText": {
+        "name": true,
+        "address": true,
+        "phone": true,
+        "email": true,
+        "facebook": true,
+        "googleProof": true
+      },
+      "criticalHandoffs": {
+        "callEarly": true,
+        "contact": true,
+        "email": true,
+        "phone": true,
+        "directions": true,
+        "facebook": true
+      }
+    },
+    {
+      "route": "/reserve",
+      "viewport": "desktop",
+      "status": 200,
+      "screenshot": "reserve-desktop-full.png",
+      "text": "reserve-desktop-text.txt",
+      "title": "Winestock Market & Lounge — Wine market by day, Woodstock lounge by night",
+      "bodyTextLength": 773,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "overflowX": false,
+      "placeholderHits": [],
+      "requiredBusinessText": {
+        "name": true,
+        "address": true,
+        "phone": true,
+        "email": true,
+        "facebook": true,
+        "googleProof": false
+      },
+      "criticalHandoffs": {
+        "callEarly": false,
+        "contact": true,
+        "email": true,
+        "phone": true,
+        "directions": true,
+        "facebook": true
+      }
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": "home-mobile-full.png",
+      "text": "home-mobile-text.txt",
+      "title": "Winestock Market & Lounge — Wine market by day, Woodstock lounge by night",
+      "bodyTextLength": 5099,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false,
+      "placeholderHits": [],
+      "requiredBusinessText": {
+        "name": true,
+        "address": true,
+        "phone": true,
+        "email": true,
+        "facebook": true,
+        "googleProof": true
+      },
+      "criticalHandoffs": {
+        "callEarly": true,
+        "contact": true,
+        "email": true,
+        "phone": true,
+        "directions": true,
+        "facebook": true
+      }
+    },
+    {
+      "route": "/reserve",
+      "viewport": "mobile",
+      "status": 200,
+      "screenshot": "reserve-mobile-full.png",
+      "text": "reserve-mobile-text.txt",
+      "title": "Winestock Market & Lounge — Wine market by day, Woodstock lounge by night",
+      "bodyTextLength": 712,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "overflowX": false,
+      "placeholderHits": [],
+      "requiredBusinessText": {
+        "name": true,
+        "address": true,
+        "phone": true,
+        "email": true,
+        "facebook": true,
+        "googleProof": false
+      },
+      "criticalHandoffs": {
+        "callEarly": false,
+        "contact": true,
+        "email": true,
+        "phone": true,
+        "directions": true,
+        "facebook": true
+      }
+    },
+    {
+      "route": "/",
+      "viewport": "mobile-320",
+      "status": 200,
+      "screenshot": "home-mobile-320-full.png",
+      "text": "home-mobile-320-text.txt",
+      "title": "Winestock Market & Lounge — Wine market by day, Woodstock lounge by night",
+      "bodyTextLength": 5099,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "overflowX": false,
+      "placeholderHits": [],
+      "requiredBusinessText": {
+        "name": true,
+        "address": true,
+        "phone": true,
+        "email": true,
+        "facebook": true,
+        "googleProof": true
+      },
+      "criticalHandoffs": {
+        "callEarly": true,
+        "contact": true,
+        "email": true,
+        "phone": true,
+        "directions": true,
+        "facebook": true
+      }
+    },
+    {
+      "route": "/reserve",
+      "viewport": "mobile-320",
+      "status": 200,
+      "screenshot": "reserve-mobile-320-full.png",
+      "text": "reserve-mobile-320-text.txt",
+      "title": "Winestock Market & Lounge — Wine market by day, Woodstock lounge by night",
+      "bodyTextLength": 712,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "overflowX": false,
+      "placeholderHits": [],
+      "requiredBusinessText": {
+        "name": true,
+        "address": true,
+        "phone": true,
+        "email": true,
+        "facebook": true,
+        "googleProof": false
+      },
+      "criticalHandoffs": {
+        "callEarly": false,
+        "contact": true,
+        "email": true,
+        "phone": true,
+        "directions": true,
+        "facebook": true
+      }
+    }
+  ],
+  "linkChecks": [
+    {
+      "text": "Contact",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Menu",
+      "href": "http://127.0.0.1:3094/#menus",
+      "kind": "anchor",
+      "status": "in-page"
+    },
+    {
+      "text": "Get directions",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Email Winestock",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Call now",
+      "href": "tel:+18153085610",
+      "kind": "tel",
+      "status": "handoff"
+    },
+    {
+      "text": "Directions",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Ask for bottle picks",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20bottle%20picks",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "See Facebook updates",
+      "href": "https://www.facebook.com/Winestockmarket/",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Ask about boards",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20boards",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Start with food →",
+      "href": "http://127.0.0.1:3094/#small-plates",
+      "kind": "anchor",
+      "status": "in-page"
+    },
+    {
+      "text": "Start with drinks →",
+      "href": "http://127.0.0.1:3094/#wine-spirits",
+      "kind": "anchor",
+      "status": "in-page"
+    },
+    {
+      "text": "Contact Winestock",
+      "href": "mailto:info@shopwinestock.com",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Ask About Gifts",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20gift%20question",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "See Live Updates",
+      "href": "https://www.facebook.com/Winestockmarket/",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Email Winestock",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Get directions",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Facebook / Winestockmarket",
+      "href": "https://www.facebook.com/Winestockmarket/",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "info@shopwinestock.com",
+      "href": "mailto:info@shopwinestock.com",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Get directions →",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Email Winestock→Bottle picks, boards, gifts, event questions, and visit planning.",
+      "href": "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+      "kind": "mailto",
+      "status": "handoff"
+    },
+    {
+      "text": "Call (815) 308-5610→Best for today’s hours, quick questions, and same-day details.",
+      "href": "tel:+18153085610",
+      "kind": "tel",
+      "status": "handoff"
+    },
+    {
+      "text": "Facebook updates→Live music, market updates, and the latest room energy.",
+      "href": "https://www.facebook.com/Winestockmarket/",
+      "kind": "external",
+      "status": "not-fetched"
+    },
+    {
+      "text": "Get directions→Navigate to 136 Cass St on Woodstock Square.",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481",
+      "kind": "external",
+      "status": "not-fetched"
+    }
+  ],
+  "consoleErrors": [],
+  "httpErrors": [],
+  "notes": [
+    "Captured after QA3 final sell-readiness polish: tighter mobile hero, early mobile call/directions actions, mobile proof quote reduction, branded rhythm break, mobile polaroid grid, visible address/contact copy, public Google proof labeling, directions contact action, and local favicon metadata."
+  ]
+}

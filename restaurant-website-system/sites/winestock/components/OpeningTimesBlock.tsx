@@ -12,9 +12,9 @@ import { content } from '../content';
  */
 export function OpeningTimesBlock() {
   return (
-    <section className="bg-bg-cream py-16 md:py-20 px-6">
+    <section className="bg-bg-cream px-6 py-12 md:py-16">
       <motion.div
-        className="max-w-xl mx-auto text-center space-y-4"
+        className="max-w-2xl mx-auto text-center space-y-4"
         initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -23,18 +23,18 @@ export function OpeningTimesBlock() {
         <h2 className="font-display text-body-h3 text-text-dark" style={{ fontWeight: 300 }}>
           Good food + Good drinks + Good music = GREAT vibes.
         </h2>
-        <div className="mt-8 space-y-4">
+        <div className="mt-8 grid gap-3 sm:grid-cols-2">
           {content.hours.map((h) => {
             const row = h as { day: string; time?: string; bar?: string; kitchen?: string };
             return (
-              <div key={row.day} className="space-y-0.5">
+              <div key={row.day} className="rounded-card border border-text-dark/12 bg-white/55 p-4 space-y-1">
                 <p className="text-address text-text-dark">{row.day}</p>
                 {row.time ? (
-                  <p className="text-body text-text-muted">{row.time}</p>
+                  <p className="text-[18px] leading-relaxed text-text-muted">{row.time}</p>
                 ) : (
                   <>
-                    <p className="text-body text-text-muted">Bar: {row.bar}</p>
-                    <p className="text-body text-text-muted">Kitchen: {row.kitchen}</p>
+                    <p className="text-[18px] leading-relaxed text-text-muted">Bar: {row.bar}</p>
+                    <p className="text-[18px] leading-relaxed text-text-muted">Kitchen: {row.kitchen}</p>
                   </>
                 )}
               </div>

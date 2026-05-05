@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { TopTriptychHeader } from '../components/TopTriptychHeader';
 import { HeroSlideshow } from '../components/HeroSlideshow';
 import { PolaroidStrip } from '../components/PolaroidStrip';
@@ -27,6 +28,22 @@ export default function HomePage() {
       <TopTriptychHeader />
       <main>
         <HeroSlideshow />
+        <section className="md:hidden bg-bg-dark px-5 pb-8 text-text-cream">
+          <div className="grid grid-cols-2 gap-3">
+            <Link
+              href="tel:+18153085610"
+              className="rounded-button bg-text-cream px-4 py-4 text-center text-button text-text-dark"
+            >
+              Call now
+            </Link>
+            <Link
+              href="https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481"
+              className="rounded-button border border-text-cream/50 px-4 py-4 text-center text-button text-text-cream"
+            >
+              Directions
+            </Link>
+          </div>
+        </section>
         {/* Tagline paragraph — sits on bg-dark strip between hero and polaroids */}
         <ScrollRevealScrapbook>
           <section className="bg-bg-dark py-14 px-6">
@@ -62,6 +79,9 @@ export default function HomePage() {
         </ScrollRevealScrapbook>
         <ScrollRevealScrapbook>
           <section className="bg-bg-dark px-6 py-16 md:py-20 text-text-cream">
+            <p className="mx-auto mb-6 max-w-3xl text-center text-address text-text-muted-cream">
+              Public Google review snapshot for Winestock Market & Lounge
+            </p>
             <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-3 text-center">
               <div className="border border-text-cream/20 rounded-card p-6">
                 <p className="font-display text-section-h1" style={{ fontWeight: 300 }}>4.9</p>
@@ -69,16 +89,16 @@ export default function HomePage() {
               </div>
               <div className="border border-text-cream/20 rounded-card p-6">
                 <p className="font-display text-section-h1" style={{ fontWeight: 300 }}>52</p>
-                <p className="text-address mt-2 text-text-muted-cream">Google reviews captured</p>
+                <p className="text-address mt-2 text-text-muted-cream">Google reviews</p>
               </div>
               <div className="border border-text-cream/20 rounded-card p-6">
                 <p className="font-display text-section-h1" style={{ fontWeight: 300 }}>30</p>
-                <p className="text-address mt-2 text-text-muted-cream">Highest-sort written reviews</p>
+                <p className="text-address mt-2 text-text-muted-cream">Highest-rated written reviews checked</p>
               </div>
             </div>
             <div className="max-w-6xl mx-auto mt-10 grid gap-4 md:grid-cols-3">
-              {content.proofQuotes.map((item) => (
-                <figure key={item.by} className="rounded-card bg-text-cream/[0.06] border border-text-cream/15 p-5">
+                {content.proofQuotes.map((item, i) => (
+                <figure key={item.by} className={`rounded-card bg-text-cream/[0.06] border border-text-cream/15 p-5 ${i > 0 ? 'hidden md:block' : ''}`}>
                   <blockquote className="font-display text-[24px] leading-tight" style={{ fontWeight: 300 }}>
                     “{item.quote}”
                   </blockquote>

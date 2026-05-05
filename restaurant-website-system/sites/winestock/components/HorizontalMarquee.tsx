@@ -20,24 +20,11 @@ export function HorizontalMarquee({
   const bg    = variant === 'cream-on-dark' ? 'bg-bg-dark' : 'bg-bg-cream';
   const color = variant === 'cream-on-dark' ? 'text-text-cream' : 'text-text-dark';
 
-  // Doubled so the loop is seamless (translateX(-50%) lands on the duplicate's start)
-  const segment = (
-    <span className={`flex items-center gap-14 px-7 ${color} font-display text-marquee-item`} style={{ fontWeight: 300 }}>
-      {Array.from({ length: repeat }).map((_, i) => (
-        <span key={i}>{text}</span>
-      ))}
-    </span>
-  );
-
   return (
-    <div className={`overflow-hidden py-6 ${bg} ${className}`}>
-      <p className={`md:hidden px-6 text-center ${color} font-display text-3xl uppercase tracking-[0.12em]`} style={{ fontWeight: 300 }}>
+    <div className={`py-7 ${bg} ${className}`}>
+      <p className={`px-6 text-center ${color} font-display text-[clamp(34px,7vw,82px)] uppercase tracking-[0.12em]`} style={{ fontWeight: 300 }}>
         {text}
       </p>
-      <div className="hidden md:flex w-max animate-marquee">
-        {segment}
-        {segment}
-      </div>
     </div>
   );
 }

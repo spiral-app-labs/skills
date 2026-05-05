@@ -32,10 +32,10 @@ export const content = {
 
   hero: {
     kicker: 'Woodstock Square · wine market + lounge',
-    subhead: 'Come by for pairing help and a bottle to bring home, or settle in for wine, boards, craft beer, and live music energy.',
+    subhead: 'Wine, boards, music, and bottle help on Cass Street.',
     actions: [
-      { label: 'Plan a visit', href: 'mailto:info@shopwinestock.com?subject=Winestock%20visit' },
       { label: 'Get directions', href: 'https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481' },
+      { label: 'Email Winestock', href: 'mailto:info@shopwinestock.com?subject=Winestock%20visit' },
     ],
     slides: [
       { src: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80', alt: 'Wine bottles arranged in a warm market setting' },
@@ -157,7 +157,7 @@ export const content = {
 
   mailingList: {
     title: 'Plan your next Woodstock Square stop',
-    subtitle: 'Choose the handoff that matches your visit — no fake booking flow, just the real public contact paths Winestock uses today.',
+    subtitle: 'Choose the handoff that matches your visit — bottle help, boards, directions, phone, and live Facebook updates.',
     placeholder: 'email@example.com',
     cta: 'Contact Us',
   },
@@ -177,6 +177,11 @@ export const content = {
       label: 'Facebook updates',
       href: 'https://www.facebook.com/Winestockmarket/',
       note: 'Live music, market updates, and the latest room energy.',
+    },
+    {
+      label: 'Get directions',
+      href: 'https://www.google.com/maps/dir/?api=1&destination=42.31538,-88.4484481',
+      note: 'Navigate to 136 Cass St on Woodstock Square.',
     },
   ],
 
