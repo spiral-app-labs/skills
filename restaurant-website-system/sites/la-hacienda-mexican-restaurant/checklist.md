@@ -3,9 +3,9 @@
 - Lead ID: 7cba3fe2-8f65-4516-b46b-05c2c07ab235
 - MC parent task ID: fd7f4976-daac-42aa-8c9a-1ddb09a9d12f
 - Template slug: bamzi-01
-- Current stage: building (local; Mission Control writeback pending)
+- Current stage: building (local build gate passed; Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-05T11:15:00.000Z
+- Updated: 2026-05-05T11:26:17Z
 
 ## Requirements
 
@@ -13,7 +13,7 @@
 - [x] current-site-audit: Current site audit captured desktop, mobile, menu, reviews, and asset evidence - Browser evidence captured on 2026-05-05: Canva current-site desktop/mobile screenshots and DOM/text, plus Google local proof, Restaurantji, and Roost screenshots/text. The previous No supported browser found blocker is cleared locally.
 - [x] template-route-locked: Template route and modifiers are locked from the restaurant site router - Routed to bamzi-01 hue-swap per qualification, with Cuisine as the truthful warm-casual Mexican core archetype if photos reject Bamzi energy.
 - [x] google-reviews-highest-30: 30 written Google reviews captured using the Highest sort/filter - Captured browser evidence from Google Search local reviews panel on 2026-05-05. Highest sort selected; 30 written reviews summarized into a build-safe evidence packet. Observed 4.3 rating from 530 Google reviews.
-- [ ] fork-built: Template fork is built with real content, preserved links, and no placeholder copy
+- [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Bamzi scaffold copied into the existing La Hacienda site folder, placeholder content replaced with audit/review/menu proof, and `npm run build` passed locally on 2026-05-05 after switching to offline-safe font stacks.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -42,6 +42,8 @@
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/build-notes-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-fork-built-2026-05-05.json
 
 ## QA Rounds
 
@@ -56,7 +58,7 @@
 
 ## Blockers
 
-- stage_writeback: Local audit and Google reviews evidence are complete, and local stage has advanced to building. Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime. Next unblock action: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.
+- stage_writeback: Local build gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime. Next unblock action: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.
 
 ## Done Criteria
 

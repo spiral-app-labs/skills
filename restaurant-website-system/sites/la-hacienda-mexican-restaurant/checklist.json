@@ -26,7 +26,9 @@
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json",
-    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png"
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/build-notes-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-fork-built-2026-05-05.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -38,9 +40,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Local audit and Google reviews evidence are complete, and local stage has advanced to building. Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "reason": "Local build gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
       "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.",
-      "recordedAt": "2026-05-05T11:15:00.000Z"
+      "recordedAt": "2026-05-05T11:26:17Z"
     }
   ],
   "requirements": [
@@ -105,8 +107,14 @@
     {
       "id": "fork-built",
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "Bamzi scaffold copied into the existing La Hacienda site folder, placeholder content replaced with audit/review/menu proof, and npm run build passed locally on 2026-05-05 after switching to offline-safe font stacks.",
+      "evidence": [
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/build-notes-2026-05-05.md",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/package.json",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/content.example.ts"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -140,5 +148,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T11:15:00.000Z"
+  "updatedAt": "2026-05-05T11:26:17Z"
 }
