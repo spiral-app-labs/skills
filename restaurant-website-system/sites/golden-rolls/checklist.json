@@ -4,7 +4,7 @@
   "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
   "siteSlug": "golden-rolls",
   "templateSlug": "bamzi-01",
-  "currentStage": "routing",
+  "currentStage": "improving",
   "evidencePaths": [
     "restaurant-website-system/sites/golden-rolls/checklist.md",
     "restaurant-website-system/sites/golden-rolls/checklist.json",
@@ -33,7 +33,26 @@
     "restaurant-website-system/sites/golden-rolls/scrapes/google-reviews-highest-30-2026-05-05.json",
     "restaurant-website-system/sites/golden-rolls/scrapes/google-reviews-highest-30-2026-05-05.md",
     "restaurant-website-system/sites/golden-rolls/google-reviews-themes.md",
-    "restaurant-website-system/sites/golden-rolls/scrapes/capture-google-reviews-cdp.mjs"
+    "restaurant-website-system/sites/golden-rolls/scrapes/capture-google-reviews-cdp.mjs",
+    "restaurant-website-system/sites/golden-rolls/app/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/app/about/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/app/contact/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/content.example.ts",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-capture-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-building-complete-2026-05-05.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -45,9 +64,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Local audit and Google Reviews evidence are complete and the next canonical gate is routing/building, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-reviews-complete-2026-05-05.json through the agency build writeback route before starting build work.",
-      "recordedAt": "2026-05-05T09:18:30.000Z"
+      "reason": "Mission Control agency API writeback is still pending because AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this runtime. Local build artifacts and writeback payload are ready; submit mc-build-writeback-building-complete-2026-05-05.json when MC API auth is configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the building-complete writeback payload before marking MC as improving.",
+      "recordedAt": "2026-05-05T09:45:00.000Z"
     }
   ],
   "requirements": [
@@ -124,8 +143,29 @@
     {
       "id": "fork-built",
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "notes": "Bamzi-01 fork/build pass completed for Golden Rolls with restaurant-specific homepage, menu, about, and contact pages; phone, address, official domain, maps, dine-in/takeout/delivery context, Google rating/review proof, and captured menu/review themes are preserved. Production build and screenshot capture passed after a clean .next rebuild.",
+      "evidence": [
+        "restaurant-website-system/sites/golden-rolls/app/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/about/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/contact/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/content.example.ts",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-capture-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -159,5 +199,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T09:18:30.000Z"
+  "updatedAt": "2026-05-05T09:45:00.000Z"
 }
