@@ -1,0 +1,1034 @@
+{
+  "capturedAt": "2026-05-05T06:01:09.464Z",
+  "baseUrl": "http://127.0.0.1:3076",
+  "results": [
+    {
+      "page": "home",
+      "viewport": "desktop",
+      "screenshotPath": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+      "audit": {
+        "url": "http://127.0.0.1:3076/?qa2=1777960860328",
+        "title": "Dino's Pizza & Pasta — Lake in the Hills pizza, pasta, slices, and beer",
+        "h1": "Thin crust first. Deep dish when the table wants more.",
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "overflowX": 0,
+        "anchors": [
+          {
+            "text": "Dino's\nClosed · opens tomorrow at 4pm",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Call (847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "See Full Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open official menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Dino’s\n↗",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "View Official Menu\n↗",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Get Directions\n↗",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Visit Official Site\n↗",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "(847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "dinospizza64@gmail.com",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Official Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Official Site",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Family owned and operated",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Thin crust made from scratch",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Beer and wine at the bar",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Restaurantji favorites",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          }
+        ],
+        "smallTargets": [],
+        "metaDescription": "Neighborhood pizza and pasta in Lake in the Hills with made-from-scratch thin crust, stuffed deep dish, pasta dinners, garlic bread sandwiches, and direct call-first ordering. Visit at 6 Miller Rd, Lake in the Hills, IL 60156. Google proof captured: 4.5 rating from 252 visible reviews.",
+        "ogTitle": "Dino's Pizza & Pasta — Thin crust, pasta, and beer in Lake in the Hills",
+        "ogDescription": "A call-first preview for Dino’s Pizza & Pasta with verified Miller Rd address, 4.5 Google rating proof, 252 visible reviews, and source-backed menu paths.",
+        "ogImage": "https://www.dinospizzalith.com/opengraph-image?52caf4ad7ed2df1a",
+        "twitterCard": "summary_large_image",
+        "hasAddress": true,
+        "hasPhone": true,
+        "hasMenu": true,
+        "hasGoogleProof": true,
+        "placeholderHits": [],
+        "textSnippet": "Dino's\nClosed · opens tomorrow at 4pm\nHome\nMenu Highlights\nHours & Location\nContact\nCall Now\n🍕\n🍺\n🍝\n🌶️\n🧄\n🍄\n🫒\n🍟\n\nLAKE IN THE HILLS NEIGHBORHOOD PIZZA\n\nThin crust first. Deep dish when the table wants more.\n\nDino's Pizza & Pasta keeps the order simple: made-from-scratch crispy thin crust, stuffed Chicago-style deep dish, pasta dinners with a garlic stick, and a bar side with local craft beer.\n\nFamily owned and operated\nServing Lake in the Hills since 1997\nSlices, sandwiches, pasta, beer\nCall (847) 658-3300\nSee Full Menu\n\nTONIGHT'S CASE FOR DINO'S\n\nMade-from-scratch thin crust is the official signature.\nStuffed deep dish, pan pizza, and double dough cover the rest of the table.\nPasta dinners, slices, and garlic bread sandwiches keep the menu from feeling narrow.\n\nHOURS\n\nWednesday\n4 PM - 9 PM\nThursday\n4 PM - 9 PM\nFriday\n4 PM - 10 PM\nSaturday\n4 PM - 10 PM\nSunday\n4 PM - 9 PM\nClosed Monday and Tuesday.\nWhat Regulars Order\n\nOfficial menu items and Restaurantji favorites that give the first call some direction.\n\nRestaurantji favorite\nWise Guy Sandwich\n\nMortadella, salami, ham, Canadian bacon, provolone, lettuce, tomato, black olive, onion, pickle, and hot giardiniera with house Italian dressing.\n\n$12\nMenu\nPasta dinner\nLasagna Dinner\n\nOne of the repeat favorites from review snippets. Dino's pasta dinners include a garlic stick and your choice of meat or marinara sauce.\n\n$13\nMenu\nS"
+      }
+    },
+    {
+      "page": "home",
+      "viewport": "mobile",
+      "screenshotPath": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+      "audit": {
+        "url": "http://127.0.0.1:3076/?qa2=1777960861845",
+        "title": "Dino's Pizza & Pasta — Lake in the Hills pizza, pasta, slices, and beer",
+        "h1": "Thin crust first. Deep dish when the table wants more.",
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "overflowX": 0,
+        "anchors": [
+          {
+            "text": "Dino's",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Call (847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "See Full Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Open official menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Dino’s\n↗",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "View Official Menu\n↗",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Get Directions\n↗",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Visit Official Site\n↗",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "(847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "dinospizza64@gmail.com",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Official Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Official Site",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Family owned and operated",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Thin crust made from scratch",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Beer and wine at the bar",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Restaurantji favorites",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          }
+        ],
+        "smallTargets": [],
+        "metaDescription": "Neighborhood pizza and pasta in Lake in the Hills with made-from-scratch thin crust, stuffed deep dish, pasta dinners, garlic bread sandwiches, and direct call-first ordering. Visit at 6 Miller Rd, Lake in the Hills, IL 60156. Google proof captured: 4.5 rating from 252 visible reviews.",
+        "ogTitle": "Dino's Pizza & Pasta — Thin crust, pasta, and beer in Lake in the Hills",
+        "ogDescription": "A call-first preview for Dino’s Pizza & Pasta with verified Miller Rd address, 4.5 Google rating proof, 252 visible reviews, and source-backed menu paths.",
+        "ogImage": "https://www.dinospizzalith.com/opengraph-image?52caf4ad7ed2df1a",
+        "twitterCard": "summary_large_image",
+        "hasAddress": true,
+        "hasPhone": true,
+        "hasMenu": true,
+        "hasGoogleProof": true,
+        "placeholderHits": [],
+        "textSnippet": "Dino's\nMenu\nCall Now\n\nLAKE IN THE HILLS NEIGHBORHOOD PIZZA\n\nThin crust first. Deep dish when the table wants more.\n\nDino's Pizza & Pasta keeps the order simple: made-from-scratch crispy thin crust, stuffed Chicago-style deep dish, pasta dinners with a garlic stick, and a bar side with local craft beer.\n\nFamily owned and operated\nServing Lake in the Hills since 1997\nSlices, sandwiches, pasta, beer\nCall (847) 658-3300\nSee Full Menu\n\nTONIGHT'S CASE FOR DINO'S\n\nMade-from-scratch thin crust is the official signature.\nStuffed deep dish, pan pizza, and double dough cover the rest of the table.\nPasta dinners, slices, and garlic bread sandwiches keep the menu from feeling narrow.\n\nHOURS\n\nWednesday\n4 PM - 9 PM\nThursday\n4 PM - 9 PM\nFriday\n4 PM - 10 PM\nSaturday\n4 PM - 10 PM\nSunday\n4 PM - 9 PM\nClosed Monday and Tuesday.\nWhat Regulars Order\n\nOfficial menu items and Restaurantji favorites that give the first call some direction.\n\nRestaurantji favorite\nWise Guy Sandwich\n\nMortadella, salami, ham, Canadian bacon, provolone, lettuce, tomato, black olive, onion, pickle, and hot giardiniera with house Italian dressing.\n\n$12\nMenu\nPasta dinner\nLasagna Dinner\n\nOne of the repeat favorites from review snippets. Dino's pasta dinners include a garlic stick and your choice of meat or marinara sauce.\n\n$13\nMenu\nShareable starter\nBeer Nuggets\n\nGolden beer nuggets served with Dino's pizza sauce. Also available"
+      }
+    },
+    {
+      "page": "about",
+      "viewport": "desktop",
+      "screenshotPath": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-desktop-2026-05-05.png",
+      "audit": {
+        "url": "http://127.0.0.1:3076/about?qa2=1777960863395",
+        "title": "Dino's Pizza & Pasta — Lake in the Hills pizza, pasta, slices, and beer",
+        "h1": "About Dino's",
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "overflowX": 0,
+        "anchors": [
+          {
+            "text": "Dino's\nClosed · opens tomorrow at 4pm",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "(847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "dinospizza64@gmail.com",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Official Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Official Site",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Family owned and operated",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Thin crust made from scratch",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Beer and wine at the bar",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Restaurantji favorites",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          }
+        ],
+        "smallTargets": [],
+        "metaDescription": "Neighborhood pizza and pasta in Lake in the Hills with made-from-scratch thin crust, stuffed deep dish, pasta dinners, garlic bread sandwiches, and direct call-first ordering. Visit at 6 Miller Rd, Lake in the Hills, IL 60156. Google proof captured: 4.5 rating from 252 visible reviews.",
+        "ogTitle": "Dino's Pizza & Pasta — Thin crust, pasta, and beer in Lake in the Hills",
+        "ogDescription": "A call-first preview for Dino’s Pizza & Pasta with verified Miller Rd address, 4.5 Google rating proof, 252 visible reviews, and source-backed menu paths.",
+        "ogImage": "https://www.dinospizzalith.com/opengraph-image?52caf4ad7ed2df1a",
+        "twitterCard": "summary_large_image",
+        "hasAddress": true,
+        "hasPhone": true,
+        "hasMenu": true,
+        "hasGoogleProof": true,
+        "placeholderHits": [],
+        "textSnippet": "Dino's\nClosed · opens tomorrow at 4pm\nHome\nMenu Highlights\nHours & Location\nContact\nCall Now\nAbout Dino's\n\nA family-run neighborhood pizza and pasta shop with takeout, delivery, dine-in beer, and enough menu depth to keep regulars rotating back.\n\n1997\nSnippet-sourced start year\n4.5\nVisible Google rating at capture\n252\nVisible Google reviews at capture\n4 PM\nTypical opening time\n\nDino's official about page says the shop is a small family owned and operated restaurant in old town Lake in the Hills. Search and snippet evidence also frames the business as family owned and operated since 1997.\n\nThe official menu is the real sales asset: crispy thin crust made from scratch daily, double dough, old fashioned in-the-pan pizza, stuffed Chicago-style deep dish, gluten-free crust, pasta dinners, sandwiches on garlic bread, and a bar setup built around beer and game-on-TV energy.\n\nThe current official homepage does not package any of that clearly. This preview fixes the first impression by leading with the pizza formats, the call-first path, the hours, and the menu proof people actually need.\n\nDino's\n6 Miller Rd\nLake in the Hills, IL 60156\n(847) 658-3300\ndinospizza64@gmail.com\nMonday: Closed\nTuesday: Closed\nWednesday: 4 PM - 9 PM\nThursday: 4 PM - 9 PM\nFriday: 4 PM - 10 PM\nSaturday: 4 PM - 10 PM\nSunday: 4 PM - 9 PM\nVisit\nMenu Highlights\nHours & Location\nAbout\nContact\nConversion\nCall Now\nOffi"
+      }
+    },
+    {
+      "page": "about",
+      "viewport": "mobile",
+      "screenshotPath": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-mobile-2026-05-05.png",
+      "audit": {
+        "url": "http://127.0.0.1:3076/about?qa2=1777960864890",
+        "title": "Dino's Pizza & Pasta — Lake in the Hills pizza, pasta, slices, and beer",
+        "h1": "About Dino's",
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "overflowX": 0,
+        "anchors": [
+          {
+            "text": "Dino's",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "(847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "dinospizza64@gmail.com",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Official Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Official Site",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Family owned and operated",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Thin crust made from scratch",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Beer and wine at the bar",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Restaurantji favorites",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          }
+        ],
+        "smallTargets": [],
+        "metaDescription": "Neighborhood pizza and pasta in Lake in the Hills with made-from-scratch thin crust, stuffed deep dish, pasta dinners, garlic bread sandwiches, and direct call-first ordering. Visit at 6 Miller Rd, Lake in the Hills, IL 60156. Google proof captured: 4.5 rating from 252 visible reviews.",
+        "ogTitle": "Dino's Pizza & Pasta — Thin crust, pasta, and beer in Lake in the Hills",
+        "ogDescription": "A call-first preview for Dino’s Pizza & Pasta with verified Miller Rd address, 4.5 Google rating proof, 252 visible reviews, and source-backed menu paths.",
+        "ogImage": "https://www.dinospizzalith.com/opengraph-image?52caf4ad7ed2df1a",
+        "twitterCard": "summary_large_image",
+        "hasAddress": true,
+        "hasPhone": true,
+        "hasMenu": true,
+        "hasGoogleProof": true,
+        "placeholderHits": [],
+        "textSnippet": "Dino's\nMenu\nCall Now\nAbout Dino's\n\nA family-run neighborhood pizza and pasta shop with takeout, delivery, dine-in beer, and enough menu depth to keep regulars rotating back.\n\n1997\nSnippet-sourced start year\n4.5\nVisible Google rating at capture\n252\nVisible Google reviews at capture\n4 PM\nTypical opening time\n\nDino's official about page says the shop is a small family owned and operated restaurant in old town Lake in the Hills. Search and snippet evidence also frames the business as family owned and operated since 1997.\n\nThe official menu is the real sales asset: crispy thin crust made from scratch daily, double dough, old fashioned in-the-pan pizza, stuffed Chicago-style deep dish, gluten-free crust, pasta dinners, sandwiches on garlic bread, and a bar setup built around beer and game-on-TV energy.\n\nThe current official homepage does not package any of that clearly. This preview fixes the first impression by leading with the pizza formats, the call-first path, the hours, and the menu proof people actually need.\n\nDino's\n6 Miller Rd\nLake in the Hills, IL 60156\n(847) 658-3300\ndinospizza64@gmail.com\nMonday: Closed\nTuesday: Closed\nWednesday: 4 PM - 9 PM\nThursday: 4 PM - 9 PM\nFriday: 4 PM - 10 PM\nSaturday: 4 PM - 10 PM\nSunday: 4 PM - 9 PM\nVisit\nMenu Highlights\nHours & Location\nAbout\nContact\nConversion\nCall Now\nOfficial Menu\nDirections\nOfficial Site\nProof\nFamily owned and operated\nThin "
+      }
+    },
+    {
+      "page": "contact",
+      "viewport": "desktop",
+      "screenshotPath": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-desktop-2026-05-05.png",
+      "audit": {
+        "url": "http://127.0.0.1:3076/contact?qa2=1777960866412",
+        "title": "Dino's Pizza & Pasta — Lake in the Hills pizza, pasta, slices, and beer",
+        "h1": "Contact Dino’s",
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440,
+        "overflowX": 0,
+        "anchors": [
+          {
+            "text": "Dino's\nClosed · opens tomorrow at 4pm",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Get directions →",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": "_blank"
+          },
+          {
+            "text": "Call (847) 658-3300\n↗",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Open the official menu\n↗",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Get directions to 6 Miller Rd\n↗",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Visit the current official site\n↗",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Email dinospizza64@gmail.com\n↗",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "(847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "dinospizza64@gmail.com",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Official Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Official Site",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Family owned and operated",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Thin crust made from scratch",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Beer and wine at the bar",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Restaurantji favorites",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          }
+        ],
+        "smallTargets": [],
+        "metaDescription": "Neighborhood pizza and pasta in Lake in the Hills with made-from-scratch thin crust, stuffed deep dish, pasta dinners, garlic bread sandwiches, and direct call-first ordering. Visit at 6 Miller Rd, Lake in the Hills, IL 60156. Google proof captured: 4.5 rating from 252 visible reviews.",
+        "ogTitle": "Dino's Pizza & Pasta — Thin crust, pasta, and beer in Lake in the Hills",
+        "ogDescription": "A call-first preview for Dino’s Pizza & Pasta with verified Miller Rd address, 4.5 Google rating proof, 252 visible reviews, and source-backed menu paths.",
+        "ogImage": "https://www.dinospizzalith.com/opengraph-image?52caf4ad7ed2df1a",
+        "twitterCard": "summary_large_image",
+        "hasAddress": true,
+        "hasPhone": true,
+        "hasMenu": true,
+        "hasGoogleProof": false,
+        "placeholderHits": [],
+        "textSnippet": "Dino's\nClosed · opens tomorrow at 4pm\nHome\nMenu Highlights\nHours & Location\nContact\nCall Now\nContact Dino’s\n\nDirect call, official menu, and directions matter more here than a generic restaurant contact form.\n\nClosed · opens tomorrow at 4pm\nGet directions →\nDirect Contact\nAddress\n6 Miller Rd, Lake in the Hills, IL 60156\nPhone\n(847) 658-3300\nHours\nWed/Thu/Sun 4 PM - 9 PM, Fri/Sat 4 PM - 10 PM, Mon/Tue closed\nOfficial note\nFollow Facebook and Instagram for daily updates.\nUse The Real Conversion Paths\nCall (847) 658-3300\n↗\nOpen the official menu\n↗\nGet directions to 6 Miller Rd\n↗\nVisit the current official site\n↗\nEmail dinospizza64@gmail.com\n↗\nVisit Notes\n1.\nHours\nMonday closed. Tuesday closed. Wednesday, Thursday, and Sunday 4 PM to 9 PM. Friday and Saturday 4 PM to 10 PM.\n2.\nDelivery & Pickup\n3.\nOrder Paths We Kept\nDino's\n6 Miller Rd\nLake in the Hills, IL 60156\n(847) 658-3300\ndinospizza64@gmail.com\nMonday: Closed\nTuesday: Closed\nWednesday: 4 PM - 9 PM\nThursday: 4 PM - 9 PM\nFriday: 4 PM - 10 PM\nSaturday: 4 PM - 10 PM\nSunday: 4 PM - 9 PM\nVisit\nMenu Highlights\nHours & Location\nAbout\nContact\nConversion\nCall Now\nOfficial Menu\nDirections\nOfficial Site\nProof\nFamily owned and operated\nThin crust made from scratch\nBeer and wine at the bar\nRestaurantji favorites\nPreview build for Dino's Pizza & Pasta using the pepper-01 route."
+      }
+    },
+    {
+      "page": "contact",
+      "viewport": "mobile",
+      "screenshotPath": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png",
+      "audit": {
+        "url": "http://127.0.0.1:3076/contact?qa2=1777960867922",
+        "title": "Dino's Pizza & Pasta — Lake in the Hills pizza, pasta, slices, and beer",
+        "h1": "Contact Dino’s",
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "overflowX": 0,
+        "anchors": [
+          {
+            "text": "Dino's",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3076/",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Get directions →",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": "_blank"
+          },
+          {
+            "text": "Call (847) 658-3300\n↗",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Open the official menu\n↗",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Get directions to 6 Miller Rd\n↗",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Visit the current official site\n↗",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Email dinospizza64@gmail.com\n↗",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "(847) 658-3300",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "dinospizza64@gmail.com",
+            "href": "mailto:dinospizza64@gmail.com",
+            "target": null
+          },
+          {
+            "text": "Menu Highlights",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Hours & Location",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3076/contact",
+            "target": null
+          },
+          {
+            "text": "Call Now",
+            "href": "tel:+18476583300",
+            "target": null
+          },
+          {
+            "text": "Official Menu",
+            "href": "https://www.dinospizzalith.com/menu/",
+            "target": null
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=6+Miller+Rd+Lake+in+the+Hills+IL+60156",
+            "target": null
+          },
+          {
+            "text": "Official Site",
+            "href": "https://www.dinospizzalith.com/",
+            "target": null
+          },
+          {
+            "text": "Family owned and operated",
+            "href": "http://127.0.0.1:3076/about",
+            "target": null
+          },
+          {
+            "text": "Thin crust made from scratch",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          },
+          {
+            "text": "Beer and wine at the bar",
+            "href": "http://127.0.0.1:3076/#visit",
+            "target": null
+          },
+          {
+            "text": "Restaurantji favorites",
+            "href": "http://127.0.0.1:3076/#menu",
+            "target": null
+          }
+        ],
+        "smallTargets": [],
+        "metaDescription": "Neighborhood pizza and pasta in Lake in the Hills with made-from-scratch thin crust, stuffed deep dish, pasta dinners, garlic bread sandwiches, and direct call-first ordering. Visit at 6 Miller Rd, Lake in the Hills, IL 60156. Google proof captured: 4.5 rating from 252 visible reviews.",
+        "ogTitle": "Dino's Pizza & Pasta — Thin crust, pasta, and beer in Lake in the Hills",
+        "ogDescription": "A call-first preview for Dino’s Pizza & Pasta with verified Miller Rd address, 4.5 Google rating proof, 252 visible reviews, and source-backed menu paths.",
+        "ogImage": "https://www.dinospizzalith.com/opengraph-image?52caf4ad7ed2df1a",
+        "twitterCard": "summary_large_image",
+        "hasAddress": true,
+        "hasPhone": true,
+        "hasMenu": true,
+        "hasGoogleProof": false,
+        "placeholderHits": [],
+        "textSnippet": "Dino's\nMenu\nCall Now\nContact Dino’s\n\nDirect call, official menu, and directions matter more here than a generic restaurant contact form.\n\nClosed · opens tomorrow at 4pm\nGet directions →\nDirect Contact\nAddress\n6 Miller Rd, Lake in the Hills, IL 60156\nPhone\n(847) 658-3300\nHours\nWed/Thu/Sun 4 PM - 9 PM, Fri/Sat 4 PM - 10 PM, Mon/Tue closed\nOfficial note\nFollow Facebook and Instagram for daily updates.\nUse The Real Conversion Paths\nCall (847) 658-3300\n↗\nOpen the official menu\n↗\nGet directions to 6 Miller Rd\n↗\nVisit the current official site\n↗\nEmail dinospizza64@gmail.com\n↗\nVisit Notes\n1.\nHours\nMonday closed. Tuesday closed. Wednesday, Thursday, and Sunday 4 PM to 9 PM. Friday and Saturday 4 PM to 10 PM.\n2.\nDelivery & Pickup\n3.\nOrder Paths We Kept\nDino's\n6 Miller Rd\nLake in the Hills, IL 60156\n(847) 658-3300\ndinospizza64@gmail.com\nMonday: Closed\nTuesday: Closed\nWednesday: 4 PM - 9 PM\nThursday: 4 PM - 9 PM\nFriday: 4 PM - 10 PM\nSaturday: 4 PM - 10 PM\nSunday: 4 PM - 9 PM\nVisit\nMenu Highlights\nHours & Location\nAbout\nContact\nConversion\nCall Now\nOfficial Menu\nDirections\nOfficial Site\nProof\nFamily owned and operated\nThin crust made from scratch\nBeer and wine at the bar\nRestaurantji favorites\nPreview build for Dino's Pizza & Pasta using the pepper-01 route."
+      }
+    }
+  ]
+}

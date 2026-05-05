@@ -275,8 +275,8 @@ function mergeRequirements(existing) {
       if (!base) continue
       byId.set(row.id, {
         ...base,
-        qaState: row.qaState === 'passed' || row.qaState === 'failed' ? row.qaState : base.qaState,
-        status: row.status === 'passed' || row.status === 'failed' || row.status === 'pending' ? row.status : row.qaState,
+        qaState: row.qaState === 'passed' || row.qaState === 'failed' || row.qaState === 'blocked' ? row.qaState : base.qaState,
+        status: row.status === 'passed' || row.status === 'failed' || row.status === 'blocked' || row.status === 'pending' ? row.status : row.qaState,
         notes: typeof row.notes === 'string' ? row.notes : base.notes,
         evidence: Array.isArray(row.evidence) ? row.evidence.filter((item) => typeof item === 'string') : base.evidence,
       })
@@ -298,7 +298,7 @@ function mergeWorkflowSteps(existing) {
     return {
       ...step,
       order: index + 1,
-      status: prior.status === 'passed' || prior.status === 'failed' || prior.status === 'in_progress' ? prior.status : 'pending',
+      status: prior.status === 'passed' || prior.status === 'failed' || prior.status === 'blocked' || prior.status === 'in_progress' ? prior.status : 'pending',
       evidence: Array.isArray(prior.evidence) ? prior.evidence.filter((item) => typeof item === 'string') : [],
       blocker: prior.blocker ?? null,
     }
