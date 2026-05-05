@@ -4,12 +4,16 @@
   "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
   "siteSlug": "winestock",
   "templateSlug": "bramble-01",
-  "currentStage": "blocked",
+  "currentStage": "routing",
   "evidencePaths": [
     "restaurant-website-system/sites/winestock/checklist.md",
     "restaurant-website-system/sites/winestock/checklist.json",
     "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
-    "restaurant-website-system/sites/winestock/scrapes/current-site-links.json"
+    "restaurant-website-system/sites/winestock/scrapes/current-site-links.json",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-sort-visible-2026-05-04.png",
+    "restaurant-website-system/sites/winestock/routing.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -20,15 +24,10 @@
   },
   "blockers": [
     {
-      "gate": "reviews",
-      "reason": "OpenClaw host browser cannot start: browser.start returned “No supported browser found (Chrome/Brave/Edge/Chromium on macOS, Linux, or Windows)”. Cannot truthfully open Google Reviews, click Highest, and capture 30 written Google reviews in this environment.",
-      "tried": [
-        "browser.status showed OpenClaw browser enabled but not running",
-        "browser.start on host failed with no supported browser found",
-        "Existing scrape scripts produced empty google-reviews-extracted*.json files"
-      ],
-      "next_unblock_action": "Install/launch a supported Chromium browser for OpenClaw or run the Google Reviews Highest capture from an environment with browser access.",
-      "at": "2026-05-04T04:02:17.467201Z"
+      "gate": "mission_control_sync",
+      "reason": "Reviews and routing advanced locally, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+      "recordedAt": "2026-05-05T01:55:00Z",
+      "nextUnblockAction": "Retry the prepared build writeback payload through the official agency API once auth is configured."
     }
   ],
   "requirements": [
@@ -47,19 +46,28 @@
       "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
       "qaState": "passed",
       "required": true,
-      "notes": "Current-site scrape exists with under-construction homepage copy, address, contact link, Facebook link, and small plates/flatbreads/sandwiches/wine positioning.",
+      "notes": "Current-site and Google Reviews evidence are captured, including Highest-sort 30 written Google reviews.",
       "evidence": [
         "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
         "restaurant-website-system/sites/winestock/scrapes/current-site-links.json",
         "restaurant-website-system/sites/winestock/scrapes/current-site-desktop.html",
-        "restaurant-website-system/sites/winestock/scrapes/current-site-mobile.html"
+        "restaurant-website-system/sites/winestock/scrapes/current-site-mobile.html",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-sort-visible-2026-05-04.png"
       ]
     },
     {
       "id": "template-route-locked",
       "title": "Template route and modifiers are locked from the restaurant site router",
-      "qaState": "pending",
-      "required": true
+      "qaState": "passed",
+      "required": true,
+      "evidence": [
+        "restaurant-website-system/sites/winestock/routing.md",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md"
+      ],
+      "notes": "Routed to bramble-01 / Bramble because Winestock is a wine bar/market/lounge with live music, bottle/gift selection, charcuterie, and neighborhood regular energy."
     },
     {
       "id": "fork-built",
@@ -99,5 +107,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T04:02:17.509Z"
+  "updatedAt": "2026-05-05T01:55:00Z",
+  "build_stage": "routing",
+  "template_slug": "bramble-01"
 }
