@@ -4,7 +4,7 @@
   "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
   "siteSlug": "winestock",
   "templateSlug": "bramble-01",
-  "currentStage": "battle_cards",
+  "currentStage": "qa_round_1",
   "evidencePaths": [
     "restaurant-website-system/sites/winestock/checklist.md",
     "restaurant-website-system/sites/winestock/checklist.json",
@@ -75,7 +75,8 @@
     "restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx",
     "restaurant-website-system/sites/winestock/ai-concierge.md",
     "restaurant-website-system/sites/winestock/ai-concierge-transcript.md",
-    "restaurant-website-system/sites/winestock/pitch-doc.md"
+    "restaurant-website-system/sites/winestock/pitch-doc.md",
+    "restaurant-website-system/sites/winestock/battle-cards.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -89,14 +90,21 @@
       "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
       "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png",
       "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png"
-    ]
+    ],
+    "battleCards": "restaurant-website-system/sites/winestock/battle-cards.md"
   },
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "Pitch gate advanced locally and PR evidence is prepared, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
-      "recordedAt": "2026-05-05T02:38:57Z",
-      "nextUnblockAction": "Retry the prepared pitch writeback payload through the official agency API once auth is configured."
+      "reason": "Battle cards gate advanced locally and PR evidence is prepared, but authenticated Mission Control build/task writeback is blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+      "recordedAt": "2026-05-05T02:43:37Z",
+      "nextUnblockAction": "Retry the prepared battle-cards writeback payload through the official agency API once auth is configured."
+    },
+    {
+      "gate": "packaging_preview_url",
+      "reason": "Preview URL remains TBD in local checklist; packaging/delivery cannot pass until a real preview URL is attached after QA.",
+      "recordedAt": "2026-05-05T02:43:37Z",
+      "nextUnblockAction": "Attach the Vercel preview URL during QA/packaging once available."
     }
   ],
   "requirements": [
@@ -264,6 +272,23 @@
       ]
     },
     {
+      "id": "battle-cards",
+      "title": "Sales battle cards created for owner objections and demo path",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Battle cards package the one-sentence close, owner talking points, likely objections, proof references, demo path, risks, and what-not-to-claim guardrails for Winestock without inventing provider, pricing, ordering, reservation, or private-event claims.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/battle-cards.md",
+        "restaurant-website-system/sites/winestock/pitch-doc.md",
+        "restaurant-website-system/sites/winestock/checklist.md",
+        "restaurant-website-system/sites/winestock/routing.md",
+        "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md"
+      ]
+    },
+    {
       "id": "qa-round-1",
       "title": "QA round 1 completed with findings and fixes logged",
       "qaState": "pending",
@@ -295,7 +320,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T02:38:57Z",
-  "build_stage": "battle_cards",
+  "updatedAt": "2026-05-05T02:43:37Z",
+  "build_stage": "qa_round_1",
   "template_slug": "bramble-01"
 }
