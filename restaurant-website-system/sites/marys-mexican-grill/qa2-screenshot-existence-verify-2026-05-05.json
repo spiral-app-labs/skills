@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-05-05T15:05:00Z",
+  "site_slug": "marys-mexican-grill",
+  "mc_parent_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "result": "all_referenced_qa2_screenshots_present_locally",
+  "files": [
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+      "exists": true,
+      "bytes": 119708,
+      "sha256": "8052a47bc00e806e7ec34de0f3821e624768bcaa9864af8b7e6d9a4326e1cb43",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+      "exists": true,
+      "bytes": 124980,
+      "sha256": "f2afeadce8c5f11c3af002e4d686e63ec2ed9559243c97ac7a42a85e25fdfad6",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+      "exists": true,
+      "bytes": 129087,
+      "sha256": "1f6c1fb88e5586cdebfb02567c12370f5c2e5b49304c14a562260708bab2ba6e",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+      "exists": true,
+      "bytes": 108884,
+      "sha256": "fb26ed75fe558558a527ce22383d5010eea3bfc140882c4aa2c12970e8740520",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+      "exists": true,
+      "bytes": 62025,
+      "sha256": "de738c5e24929098b59ec045298ec3b94223d58d99061e8f0e8df2e1acf97f91",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+      "exists": true,
+      "bytes": 60560,
+      "sha256": "8448e6793696e4532974dc7e4997db14a7493f3ef2b2a0a398f3c2465cb7f95b",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+      "exists": true,
+      "bytes": 56210,
+      "sha256": "17ed3f8202b53c0e14b11cc21f9d3e3e3933716c8a45cfa1c2e97cc00bcf1a84",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
+      "exists": true,
+      "bytes": 48157,
+      "sha256": "970ea38fbcf53ad33bd558645cd70e81f28b78f99a36139e60c9730d43f3b43f",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "remaining_sync_blocker": "Mission Control still has the older blocker until the 2026-05-05 QA2 screenshot refresh can be posted through the agency API; this runtime has no AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET."
+}

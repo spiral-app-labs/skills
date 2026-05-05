@@ -1,6 +1,6 @@
 # Mary's Mexican Grill QA Round 3
 
-- Date: 2026-05-04, refreshed 2026-05-05T03:18:39Z
+- Date: 2026-05-04, refreshed 2026-05-05T03:18:39Z, packaging blocker rechecked 2026-05-05T15:05Z
 - Site: `marys-mexican-grill`
 - Template/archetype: `bamzi-01`
 - MC root task ID: `0ee079ce-2e26-4d44-8fdf-96e0db2e4047`
@@ -16,7 +16,7 @@ Needs work before final client handoff.
 
 The site itself passes the local sell-readiness review: it feels specific to Mary's Mexican Grill on Woodstock Square, keeps the real DoorDash/call/directions paths, and avoids fake claims. Fresh QA3 screenshots were captured for desktop and mobile across home, menu, about, and contact.
 
-The handoff still cannot be marked final because the PR #19 Vercel preview URL is behind Vercel login/401 for unauthenticated checks, QA2 screenshot files referenced by earlier evidence are still missing from this worktree, Mission Control API sync is unavailable in this runtime, and Ethan-only gates remain open: site-specific Anthropic key plus Ethan human review.
+The handoff still cannot be marked final because the PR #19 Vercel preview URL is behind Vercel login/401 for unauthenticated checks, Mission Control API sync for the 2026-05-05 QA2 refresh is unavailable in this runtime, and Ethan-only gates remain open: site-specific Anthropic key plus Ethan human review. The previously missing QA2 screenshot packet is now present locally and verified in `qa2-screenshot-existence-verify-2026-05-05.json`.
 
 ## What is world-class already
 
@@ -31,14 +31,14 @@ The handoff still cannot be marked final because the PR #19 Vercel preview URL i
 1. The Vercel preview URL exists but could not be verified past Vercel protection from this runtime.
 2. Ethan has not yet configured the site-specific Anthropic key.
 3. Ethan has not yet completed human review.
-4. QA2 screenshot files referenced in existing QA2 docs/writebacks are still missing from the current worktree.
-5. Mission Control QA3 writeback is now synced via the patched local agency API from PR #328; final handoff still waits on the packaging blockers above.
+4. The QA2 screenshot files referenced in existing QA2 docs/writebacks are now present locally; MC still needs the 2026-05-05 refresh writeback when agency API credentials are available.
+5. Mission Control QA3 writeback is synced via the patched local agency API from PR #328; final handoff still waits on the packaging blockers above.
 
 ## Critical fixes before Ethan sees it
 
 1. Verify the PR #19 preview URL in an authenticated Vercel/GitHub browser session, or disable preview protection for the client-safe handoff URL.
-2. Mirror or recapture the missing QA2 screenshot evidence, or explicitly supersede it with the QA3 screenshot packet in Mission Control.
-3. Keep the MC packaging blocker current until preview access, QA2 screenshot evidence, Anthropic key, and human review are resolved.
+2. Mirror the local QA2 screenshot verification packet to Mission Control when agency API credentials are available.
+3. Keep the MC packaging blocker current until preview access, MC sync of the QA2 refresh, Anthropic key, and human review are resolved.
 4. Ethan must create/configure the site-specific Anthropic key.
 5. Ethan must complete human review before `ready_to_pitch` can become `true`.
 
@@ -56,6 +56,11 @@ The handoff still cannot be marked final because the PR #19 Vercel preview URL i
 - Prior QA:
   - `restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md`
   - `restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md`
+  - `restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md`
+  - `restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json`
+- Preview access evidence:
+  - `restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md`
+  - `restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png`
 - Current route/build/browser evidence:
   - `restaurant-website-system/sites/marys-mexican-grill/content.example.ts`
   - `restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx`
@@ -74,7 +79,7 @@ The handoff still cannot be marked final because the PR #19 Vercel preview URL i
    - Footer phone links to the verified call path.
    - Contact info cards expose tappable address and phone actions.
 4. Social links intentionally remain absent because no verified URLs were available in the local source pack.
-5. PR #19 Vercel preview URL was found, but unauthenticated checks hit Vercel login/401.
+5. PR #19 Vercel preview URL was found, but unauthenticated checks hit Vercel login/401; the 2026-05-05 browser recheck captured the auth wall in `screenshots/preview-auth-wall-2026-05-05.png`.
 
 ## Screenshots captured
 
