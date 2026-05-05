@@ -62,6 +62,15 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 
 - `restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png`
 - `restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png`
+- `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png`
 
 ## QA summary
 
@@ -105,3 +114,10 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 - No `AGENCY_AUTONOMY_API_KEY` or `OPENCLAW_WEBHOOK_SECRET` is available in this OpenClaw runtime, so no authenticated MC writeback was attempted.
 - Added `mc-writeback-payload-2026-05-04.json` and `mc-writeback-blocker.md`; MC heartbeat writeback succeeded as `37972128-9264-435e-96de-284380246c0c`.
 - Delivery remains blocked on preview protection bypass/public preview, authenticated MC writeback, and deployed preview smoke test.
+
+## 2026-05-04 heartbeat addendum — QA3 browser screenshots restored
+
+- Browser/Chrome access recovered and full-page local production screenshots are now attached for home, menu, about, and contact at desktop and mobile sizes.
+- Evidence directory: `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/`.
+- `npm run typecheck` and `npm run build` were re-run and passed.
+- Delivery remains blocked on owner-shareable/public preview access, deployed preview smoke test, and authenticated Mission Control writeback.

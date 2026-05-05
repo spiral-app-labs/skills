@@ -1,0 +1,55 @@
+{
+  "capturedAt": "2026-05-05T01:43:24.211Z",
+  "source": "OpenClaw browser CDP / local Next production server",
+  "baseUrl": "http://127.0.0.1:3091",
+  "files": [
+    {
+      "file": "home-desktop-full.png",
+      "width": 1440,
+      "height": 11650,
+      "bytes": 1900394
+    },
+    {
+      "file": "home-mobile-full.png",
+      "width": 390,
+      "height": 15812,
+      "bytes": 855592
+    },
+    {
+      "file": "menu-desktop-full.png",
+      "width": 1440,
+      "height": 4948,
+      "bytes": 750415
+    },
+    {
+      "file": "menu-mobile-full.png",
+      "width": 390,
+      "height": 6371,
+      "bytes": 420846
+    },
+    {
+      "file": "about-desktop-full.png",
+      "width": 1440,
+      "height": 4891,
+      "bytes": 800977
+    },
+    {
+      "file": "about-mobile-full.png",
+      "width": 390,
+      "height": 6095,
+      "bytes": 339219
+    },
+    {
+      "file": "contact-desktop-full.png",
+      "width": 1440,
+      "height": 2967,
+      "bytes": 596766
+    },
+    {
+      "file": "contact-mobile-full.png",
+      "width": 390,
+      "height": 3701,
+      "bytes": 244265
+    }
+  ]
+}

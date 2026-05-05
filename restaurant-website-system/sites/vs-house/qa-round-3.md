@@ -88,3 +88,13 @@ Updated blocker state: the unpriced-item cleanup is resolved for the sales demo.
 - Updated `components/AskConcierge.tsx` so streamed error frames surface to the guest instead of being swallowed as malformed SSE.
 - Verified `npm run typecheck`, `npm run build`, and local production `/api/chat` fallback via curl.
 - Evidence: `restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md`.
+
+## 2026-05-04 heartbeat addendum — browser screenshots restored
+
+- Browser/Chrome access recovered enough to complete the missing visual evidence gate.
+- Captured full-page local production screenshots for home, menu, about, and contact at desktop and mobile sizes.
+- Evidence directory: `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/`.
+- Manifest: `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json`.
+- Verification re-run: `npm run typecheck` passed and `npm run build` passed.
+
+Updated blocker state: the browser screenshot blocker is resolved locally. Final delivery remains blocked only by packaging-level constraints: Vercel preview protection / owner-shareable URL, deployed `/api/chat` smoke test after preview access is available, and authenticated Mission Control evidence mirror/writeback.

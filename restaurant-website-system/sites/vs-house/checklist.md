@@ -5,7 +5,7 @@
 - Template slug: bamzi-01
 - Current stage: packaging
 - Deploy URL: https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app (Vercel protected, not owner-shareable yet)
-- Updated: 2026-05-04T15:20:00Z
+- Updated: 2026-05-05T01:44:00Z
 
 ## Requirements
 
@@ -13,9 +13,9 @@
 - [x] current-site-audit: Current site audit captured desktop, mobile, menu, reviews, and asset evidence - Pre-fork audit exists at restaurant-website-system/sites/vs-house/audit.md with screenshots/scrapes and review/proof inventory.
 - [x] template-route-locked: Template route and modifiers are locked from the restaurant site router - Route locked to bamzi-01 in audit/source.md for accessible-casual modern Asian restaurant with menu depth and saturated accent potential.
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Local Next.js fork exists at restaurant-website-system/sites/vs-house with bamzi-01 source, real content.ts, preserved contact/reservation/order flows.
-- [ ] qa-round-1: QA round 1 completed with findings and fixes logged
-- [ ] qa-round-2: QA round 2 completed with findings and fixes logged
-- [ ] qa-round-3: QA round 3 completed with findings and fixes logged
+- [x] qa-round-1: QA round 1 completed with findings and fixes logged
+- [x] qa-round-2: QA round 2 completed with findings and fixes logged
+- [x] qa-round-3: QA round 3 completed with findings and fixes logged
 - [ ] delivery-package: Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached
 
 ## Evidence Paths
@@ -37,7 +37,7 @@
 
 ## Blockers
 
-- Fresh QA screenshots cannot be captured because the OpenClaw managed browser cannot start on this host (No supported browser found). Source/build QA advanced; next unblock action is enabling browser/Chromium capture for desktop + mobile screenshots.
+- Browser screenshot blocker resolved locally: full-page desktop/mobile screenshots are attached under `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/`. Delivery remains blocked on Vercel preview protection (`401`) and authenticated Mission Control evidence mirror/writeback.
 
 ## Done Criteria
 
@@ -116,3 +116,10 @@
 - No `AGENCY_AUTONOMY_API_KEY` or `OPENCLAW_WEBHOOK_SECRET` is available in this OpenClaw runtime, so no authenticated MC writeback was attempted.
 - Added `mc-writeback-payload-2026-05-04.json` and `mc-writeback-blocker.md`; MC heartbeat writeback succeeded as `37972128-9264-435e-96de-284380246c0c`.
 - Delivery remains blocked on preview protection bypass/public preview, authenticated MC writeback, and deployed preview smoke test.
+
+## 2026-05-04 heartbeat addendum — browser screenshots restored for QA3
+
+- Browser/Chrome access is now available; captured full-page local production screenshots for `/`, `/menu`, `/about`, and `/contact` at desktop and mobile sizes.
+- Evidence added under `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/` with `capture-manifest.json`.
+- Re-ran `npm run typecheck` and `npm run build`; both passed.
+- QA rounds 1-3 are locally evidence-backed. Delivery remains packaging-blocked on Vercel preview protection (`401`) and authenticated MC lead/build/QA writeback.
