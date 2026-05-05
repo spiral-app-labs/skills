@@ -17,7 +17,7 @@ export function ConfettiHero() {
     <section className="relative overflow-hidden bg-canvas">
       <div className="max-w-content mx-auto px-5 md:px-10 pt-16 md:pt-24 pb-10 md:pb-16">
         {/* Confetti ingredients — absolute-positioned */}
-        <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div aria-hidden className="pointer-events-none absolute inset-0 hidden sm:block opacity-70">
           {content.confetti.map((c, i) => (
             <motion.span
               key={i}
@@ -113,7 +113,7 @@ export function ConfettiHero() {
               <div className="rounded-[28px] md:rounded-[36px] bg-ink p-5 md:p-8 text-text-on-dark">
                 <p className="text-eyebrow font-bold uppercase text-accent">{content.hero.proofPanel.sideEyebrow}</p>
                 <div className="mt-4 space-y-2 text-body-sm">
-                  {content.brand.hours.slice(0, 4).map((row) => (
+                  {content.brand.hours.map((row) => (
                     <div key={row.days} className="flex items-center justify-between gap-4 border-b border-white/10 pb-2 last:border-b-0">
                       <span>{row.days}</span>
                       <span className="font-bold">{row.time}</span>

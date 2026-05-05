@@ -1,10 +1,10 @@
 import { content } from '../content';
 
 const items = [
-  { value: '4.5★', label: 'Google rating captured 2026-05-04' },
-  { value: '148', label: 'Google reviews captured 2026-05-04' },
-  { value: '30', label: 'highest-rated written reviews reviewed' },
-  { value: 'Add website', label: 'Google profile gap captured 2026-05-04' },
+  { value: '4.5★', label: 'Google rating' },
+  { value: '148', label: 'Google reviews' },
+  { value: '30', label: 'review-loved dishes & details' },
+  { value: 'Call', label: 'fastest path for takeout' },
 ];
 
 export function ProofStrip() {
@@ -13,12 +13,12 @@ export function ProofStrip() {
       <div className="max-w-content mx-auto px-5 md:px-10 py-8 md:py-10">
         <div className="grid gap-4 md:grid-cols-[1.2fr_2fr] md:items-center">
           <div>
-            <p className="text-eyebrow font-bold uppercase text-accent">Verified public proof</p>
+            <p className="text-eyebrow font-bold uppercase text-accent">Local favorite</p>
             <h2 className="mt-2 text-[28px] leading-[34px] font-extrabold md:text-[36px] md:leading-[42px]">
-              Real demand. Website not verified.
+              Veracruz flavor with an easy way to call.
             </h2>
             <p className="mt-3 text-body-sm opacity-80">
-              {content.brand.fullName} already wins trust on Google and local directories; this preview turns the captured public proof into a direct call-and-directions path.
+              {content.brand.fullName} already earns trust on Google and local directories; call or open directions before pickup or a visit.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">

@@ -65,7 +65,7 @@ export function DealCardStack({ heading, subhead, items, id }: Props) {
                       href={content.brand.phoneHref}
                       className="inline-flex items-center justify-center h-10 px-5 rounded-pill bg-ink text-text-on-dark text-button hover:bg-black transition-colors"
                     >
-                      Call to Verify
+                      Call Today
                     </a>
                     {d.note ? (
                       <div className="text-right text-body-sm font-semibold opacity-90">{d.note}</div>

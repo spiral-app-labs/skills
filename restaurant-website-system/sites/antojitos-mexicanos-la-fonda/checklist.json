@@ -6,7 +6,7 @@
   "mcParentTaskId": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
   "siteSlug": "antojitos-mexicanos-la-fonda",
   "templateSlug": "pepper-01",
-  "currentStage": "qa_round_3",
+  "currentStage": "packaging",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
     "json": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json"
@@ -635,9 +635,23 @@
         "build/typecheck result"
       ],
       "order": 12,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-3-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshot-inventory-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/home-mobile-viewport-1-0.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/home-mobile-viewport-6-11384.png",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)",
+        "image QA: final mobile viewport visual review passed with no hard blockers"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-05T01:23:55Z"
     },
     {
       "id": "delivery",
@@ -679,9 +693,15 @@
         "MC delivery writeback"
       ],
       "order": 13,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "blocked",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/delivery-package.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-3-complete-2026-05-04.json",
+        "https://github.com/spiral-app-labs/skills/pull/29",
+        "https://skills-git-chore-antojitos-qa3-ethan-ethantalrejas-projects.vercel.app",
+        "preview check: Vercel PR preview returned 401 Authentication Required without Vercel login"
+      ],
+      "blocker": "Packaging/delivery blocked until official Mission Control sync auth is configured and a client-shareable public preview URL exists; current Vercel PR preview is authentication-gated."
     }
   ],
   "evidencePaths": [
@@ -741,7 +761,22 @@
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-2-2026-05-04/home-mobile-full.png",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-2-2026-05-04/about-mobile-full.png",
     "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-2-2026-05-04/contact-mobile-full.png",
-    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-2-complete-2026-05-04.json"
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-2-complete-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-3-2026-05-04.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshot-inventory-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/home-mobile-viewport-1-0.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/home-mobile-viewport-6-11384.png",
+    "image QA: final mobile viewport visual review passed with no hard blockers",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-3-complete-2026-05-04.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/delivery-package.md",
+    "https://github.com/spiral-app-labs/skills/pull/29",
+    "https://skills-git-chore-antojitos-qa3-ethan-ethantalrejas-projects.vercel.app",
+    "preview check: Vercel PR preview returned 401 Authentication Required without Vercel login"
   ],
   "qaRounds": [
     {
@@ -794,9 +829,41 @@
         "Owner must verify current menu, prices, seating, specials, holiday hours, and provider links before launch",
         "MC writeback still blocked by missing agency auth"
       ]
+    },
+    {
+      "round": 3,
+      "stage": "qa_round_3",
+      "status": "passed_after_fixes",
+      "completedAt": "2026-05-05T01:23:55Z",
+      "evidence": [
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa-round-3-2026-05-04.md",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshot-inventory-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/home-mobile-viewport-1-0.png",
+        "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/evidence/qa3-visual-review/viewports/home-mobile-viewport-6-11384.png",
+        "local command: npm run typecheck (passed)",
+        "local command: npm run build (passed)",
+        "image QA: final mobile viewport visual review passed with no hard blockers"
+      ],
+      "findingsFixed": [
+        "Removed internal/audit/meta language from public pages and concierge copy",
+        "Changed mobile sticky CTA from fixed overlay to in-flow sticky behavior",
+        "Hid decorative hero confetti on mobile to prevent text interference",
+        "Expanded full-week hours in the hero proof card",
+        "Fixed QA capture phone/address regex checks"
+      ],
+      "remainingCaveats": [
+        "Owner must verify current menu, prices, seating, specials, holiday hours, and provider links before launch",
+        "Client-shareable public preview URL is still required for packaging/delivery",
+        "Mission Control writeback still blocked by missing agency auth"
+      ]
     }
   ],
-  "deployUrl": null,
+  "deployUrl": "https://skills-git-chore-antojitos-qa3-ethan-ethantalrejas-projects.vercel.app",
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/pitch-doc.md",
     "outreachDraft": null,
@@ -805,9 +872,15 @@
   "blockers": [
     {
       "gate": "mission_control_sync",
-      "reason": "QA round 2 is complete locally, but Mission Control build writeback still cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; prior /api/agency/leads/92b49f80-4193-4c76-ba72-7a03493fd707/build attempt returned 401 Unauthorized.",
-      "nextUnblockAction": "Retry the prepared QA round 2 writeback with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json.",
-      "recordedAt": "2026-05-04T19:08:00Z"
+      "reason": "QA round 3 is complete locally and the next canonical stage is packaging, but Mission Control build writeback cannot be mirrored from this runtime because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured; official agency API writes require those headers.",
+      "nextUnblockAction": "Retry restaurant-website-system/sites/antojitos-mexicanos-la-fonda/mc-build-writeback-qa-round-3-complete-2026-05-04.json through the official agency API with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY, x-agency-runtime: openclaw, and Content-Type: application/json, then continue packaging with a client-shareable preview URL.",
+      "recordedAt": "2026-05-05T01:23:55Z"
+    },
+    {
+      "gate": "packaging_public_preview",
+      "reason": "The Vercel PR preview exists but returned 401 Authentication Required without a Vercel login, so it is not client-shareable; packaging/delivery still requires a public preview URL.",
+      "nextUnblockAction": "Create or attach a client-shareable public preview URL, then include it in the packaging/delivery Mission Control writeback.",
+      "recordedAt": "2026-05-05T01:23:55Z"
     }
   ],
   "requirements": [
@@ -1222,7 +1295,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T19:08:00Z",
+  "updatedAt": "2026-05-05T01:23:55Z",
   "passedRequirementIds": [
     "checklist-md",
     "checklist-json",
@@ -1252,6 +1325,9 @@
     "battle-cards-demo-path",
     "battle-cards-risks",
     "qa-round-1",
-    "qa-round-2"
-  ]
+    "qa-round-2",
+    "qa-round-3"
+  ],
+  "previewUrlStatus": "vercel_protected_not_client_shareable",
+  "prUrl": "https://github.com/spiral-app-labs/skills/pull/29"
 }
