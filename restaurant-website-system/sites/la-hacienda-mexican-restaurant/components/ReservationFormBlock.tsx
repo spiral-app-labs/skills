@@ -16,8 +16,7 @@ export function ReservationFormBlock() {
           <h2 className="font-display text-section-h3 text-text-dark mb-8">{r.title}</h2>
           <div className="space-y-4">
             <p className="text-body text-text-muted max-w-lg">
-              The captured sources support four strong actions right now: call the restaurant,
-              open directions, view the current menu deck, or use the source-backed order-online path.
+              Use the fastest path for tonight: call the restaurant, open directions, view the full menu, or start an online pickup order.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               <a href={links.call} className="rounded-card border border-border-light px-5 py-4 hover:border-accent transition">
@@ -30,11 +29,11 @@ export function ReservationFormBlock() {
               </a>
               <a href={links.menu} className="rounded-card border border-border-light px-5 py-4 hover:border-accent transition">
                 <div className="text-eyebrow text-accent mb-1">Current Menu</div>
-                <div className="font-display text-[22px] text-text-dark">Open Canva menu</div>
+                <div className="font-display text-[22px] text-text-dark">View full menu</div>
               </a>
               <a href={links.order} className="rounded-card border border-border-light px-5 py-4 hover:border-accent transition">
                 <div className="text-eyebrow text-accent mb-1">Order Online</div>
-                <div className="font-display text-[22px] text-text-dark">Restaurantji order link</div>
+                <div className="font-display text-[22px] text-text-dark">Order pickup online</div>
               </a>
             </div>
           </div>

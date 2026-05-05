@@ -18,7 +18,7 @@ function buildReply(message: string): string {
   }
 
   if (text.includes('order') || text.includes('pickup') || text.includes('delivery')) {
-    return `The source-backed order path we captured is ${content.links.order}. Calling ${brand.phone} is also a strong option for pickup questions.`;
+    return `The online order path is ${content.links.order}. Calling ${brand.phone} is also a strong option for pickup questions.`;
   }
 
   if (text.includes('menu') || text.includes('what should i order') || text.includes('what to order')) {
@@ -26,7 +26,7 @@ function buildReply(message: string): string {
       .flatMap((category) => category.items.slice(0, 1).map((item) => item.name))
       .slice(0, 4)
       .join(', ');
-    return `Review-backed menu highlights include ${highlights}. The captured current menu is also available at ${content.links.menu}.`;
+    return `Popular menu highlights include ${highlights}. The full menu is also available at ${content.links.menu}.`;
   }
 
   return `${brand.name} is at ${brand.address}, phone ${brand.phone}. Source-backed menu highlights include tacos, burritos, tortas, chimichangas, fajitas, salsa, and horchata.`;

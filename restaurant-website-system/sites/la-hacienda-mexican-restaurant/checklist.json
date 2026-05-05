@@ -4,7 +4,7 @@
   "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
   "siteSlug": "la-hacienda-mexican-restaurant",
   "templateSlug": "bamzi-01",
-  "currentStage": "top_3_improvements",
+  "currentStage": "concierge",
   "evidencePaths": [
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
@@ -33,7 +33,21 @@
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-desktop-improving-2026-05-05.png",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improving-2026-05-05.png",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-desktop-improved-2026-05-05.png",
-    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improved-2026-05-05.png"
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improved-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/top-3-improvements-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/responsive-overflow-check-top3-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-desktop-2026-05-05.png"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -45,9 +59,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Local improving gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda improving writeback payload through the agency build writeback route.",
-      "recordedAt": "2026-05-05T11:38:00Z"
+      "reason": "Local top_3_improvements gate is complete, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda top_3_improvements writeback payload through the agency build writeback route.",
+      "recordedAt": "2026-05-05T12:04:00Z"
     }
   ],
   "requirements": [
@@ -138,6 +152,23 @@
     {
       "id": "top-3-improvements",
       "title": "Top 3 improvements selected, implemented, and evidenced",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Implemented visitor-facing copy cleanup, mobile conversion action strip/card cleanup, and mobile/asset reliability fixes. Build passed; 390px CDP overflow check found no offenders on home/menu/contact.",
+      "evidence": [
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/top-3-improvements-2026-05-05.md",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/responsive-overflow-check-top3-2026-05-05.json",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-mobile-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "concierge",
+      "title": "AI concierge added with truthful restaurant-specific KB and safe handoffs",
       "qaState": "pending",
       "required": true
     },
@@ -173,5 +204,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T11:38:00Z"
+  "updatedAt": "2026-05-05T12:04:00Z"
 }
