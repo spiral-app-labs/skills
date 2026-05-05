@@ -36,7 +36,7 @@ export function DarkLeafHero({
 
       <div className="relative max-w-[900px] mx-auto text-center px-6">
         {eyebrow && <EyebrowDotLabel tone="light" className="mb-5">{eyebrow}</EyebrowDotLabel>}
-        <h1 className="font-display text-hero-h1 text-text-white">
+        <h1 className="font-display text-[38px] leading-[1.12] sm:text-hero-h1 text-text-white break-words">
           {title}
         </h1>
         {subtitle && (
@@ -55,7 +55,7 @@ export function DarkLeafHero({
       </div>
 
       {!compact && plateImage && (
-        <div className="relative mt-10 max-w-[1000px] mx-auto px-6">
+        <div className="relative mt-10 max-w-[1000px] mx-auto px-4 sm:px-6">
           <div className="relative aspect-[16/9] -mb-24 md:-mb-36 rounded-[50%/25%] overflow-hidden">
             <Image
               src={plateImage}

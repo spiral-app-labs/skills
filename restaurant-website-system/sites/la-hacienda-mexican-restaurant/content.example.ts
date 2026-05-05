@@ -55,19 +55,19 @@ export const content = {
 
   hero: {
     eyebrow: 'East Dundee Mexican Restaurant',
-    title: 'A real hometown landing page for La Hacienda, not just a Canva menu.',
+    title: 'Authentic Mexican favorites in East Dundee.',
     subtitle:
-      'Built from public proof around 411 E Main St: 4.3 from 530 Google reviews, source-backed hours, and menu favorites locals keep calling out.',
-    cta: { label: 'See Menu Highlights', href: '/menu' },
+      'Tacos, burritos, tortas, fajitas, horchata, and fast pickup at 411 E Main St — with clear calls, directions, menu, and order links.',
+    cta: { label: 'View Menu', href: '/menu' },
     plateImage: '/la-hacienda/hero-review-board.svg',
     plateAlt: 'La Hacienda review-backed preview panel',
   },
 
   mission: {
     eyebrow: 'Why This Works',
-    title: 'Warm, fast, familiar, and easy to act on.',
+    title: 'Fast pickup, familiar favorites, and one-tap next steps.',
     body:
-      'Public reviews repeat the same story: burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas keep people coming back. This preview turns that proof into a proper call, directions, menu, and order flow.',
+      'Public reviews repeat the same story: burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas keep people coming back. This preview makes those choices easier to find and easier to act on.',
     cta: { label: 'Call La Hacienda', href: 'tel:+18474260506' },
     phone: '(847) 426-0506',
     image: '/la-hacienda/current-site-gap.svg',
@@ -84,7 +84,7 @@ export const content = {
     ],
   },
 
-  bigHeadline: 'Give East Dundee one clean place to call, get directions, browse the menu, and order.',
+  bigHeadline: 'One clean place to browse the menu, call, get directions, and order La Hacienda favorites.',
 
   featured: [
     {

@@ -1,0 +1,27 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "top_3_improvements",
+  "completedStage": "improving",
+  "status": "in_progress",
+  "templateSlug": "bamzi-01",
+  "passedRequirementIds": [
+    "improvement-pass"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/improvement-pass-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-desktop-improving-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improving-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-desktop-improved-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improved-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  ],
+  "verification": [
+    "npm run build passed",
+    "390px CDP overflow check reported no horizontal overflow offenders"
+  ],
+  "blocker": "Mission Control writeback still pending because agency API auth/base URL is unavailable in this runtime; local writeback payload prepared instead.",
+  "createdAt": "2026-05-05T11:38:00Z"
+}

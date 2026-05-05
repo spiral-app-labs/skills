@@ -8,6 +8,8 @@
 }
 
 html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: theme('colors.bg-white');
   color: theme('colors.text-dark');
   font-family: theme('fontFamily.body');
@@ -16,6 +18,7 @@ html, body {
 }
 
 h1, h2, h3, h4 {
+  overflow-wrap: anywhere;
   font-family: theme('fontFamily.display');
   font-weight: 400;
   margin: 0;

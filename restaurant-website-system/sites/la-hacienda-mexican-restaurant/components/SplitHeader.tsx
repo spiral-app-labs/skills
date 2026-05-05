@@ -33,12 +33,12 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
 
   return (
     <header className={`fixed top-0 inset-x-0 z-40 transition-colors duration-300 ${bgClass}`}>
-      <div className="max-w-[1200px] mx-auto px-6 md:px-10 h-[72px] flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-text-white">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-10 h-[72px] flex items-center justify-between gap-3 min-w-0">
+        <Link href="/" className="flex items-center gap-2 text-text-white min-w-0">
           <span className="inline-block h-[28px] w-[28px] rounded-full bg-accent flex items-center justify-center">
             <span className="font-display text-[14px] leading-none text-text-white">{brandMark}</span>
           </span>
-          <span className="font-display text-[22px] leading-none">{content.brand.name}</span>
+          <span className="font-display text-[18px] sm:text-[22px] leading-none truncate max-w-[160px] sm:max-w-none">{content.brand.name}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -62,7 +62,7 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
           </div>
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4 shrink-0">
           {/* Aliveness retrofit (2026-04-20): LiveOpenStatus dot variant — dark
               canvas with orange accent matches bamzi's register per
               aliveness-patterns.md §1.1. */}
@@ -74,7 +74,7 @@ export function SplitHeader({ variant = 'over-dark' }: { variant?: 'over-dark' |
 
           <Link
             href={content.nav.cta.href}
-            className="inline-flex items-center gap-2 bg-accent text-text-white px-5 py-2.5 rounded-pill text-button font-semibold hover:brightness-110 transition"
+            className="inline-flex items-center gap-1.5 bg-accent text-text-white px-3 sm:px-5 py-2.5 rounded-pill text-[12px] sm:text-button font-semibold hover:brightness-110 transition whitespace-nowrap"
           >
             <span aria-hidden>☰</span>
             {content.nav.cta.label}
