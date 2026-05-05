@@ -1,0 +1,1427 @@
+{
+  "capturedAt": "2026-05-05T15:24:55.904Z",
+  "baseUrl": "http://127.0.0.1:3097",
+  "captureMode": "headless Chrome with prefers-reduced-motion=reduce for full-page evidence",
+  "results": [
+    {
+      "route": "home",
+      "path": "/",
+      "device": "desktop",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-desktop-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 7400
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Authentic Mexican favorites in East Dundee."
+        },
+        {
+          "tag": "H2",
+          "text": "Fast pickup, familiar favorites, and one-tap next steps."
+        },
+        {
+          "tag": "H2",
+          "text": "Tacos, burritos, tortas, and specials are easy to find before you go."
+        },
+        {
+          "tag": "H3",
+          "text": "Burritos & Chimichangas"
+        },
+        {
+          "tag": "H3",
+          "text": "Tacos & Salsa"
+        },
+        {
+          "tag": "H3",
+          "text": "Tortas & Specials"
+        },
+        {
+          "tag": "H2",
+          "text": "Browse tacos, burritos, tortas, hours, and next steps before you head over."
+        },
+        {
+          "tag": "H2",
+          "text": "Everything guests need before they head over"
+        },
+        {
+          "tag": "H3",
+          "text": "Open the full menu when you want more than the highlights."
+        },
+        {
+          "tag": "H3",
+          "text": "Local reviewers keep pointing to tacos, burritos, salsa, and quick service."
+        },
+        {
+          "tag": "H3",
+          "text": "Call, get directions, check hours, or use the online order link."
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "VIEW MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL LA HACIENDA",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "MENU Open the full menu when you want more than the highlights.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "VISIT Call, get directions, check hours, or use the online order link.",
+          "href": "http://127.0.0.1:3097/contact"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗Order",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍Map",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda Mexican Restaurant ABOUT MENU CONTACT MORE ▾ Home About Menu News Contact OPEN NOW · CLOSES IN 10H 37M ☰ View Menu Authentic Mexican favorites in East Dundee. Tacos, burritos, tortas, fajitas, horchata, and fast pickup at 411 E Main St — with clear calls, directions, menu, and order links. VIEW MENU LOCAL FAVORITES Fast pickup, familiar favorites, and one-tap next steps. Locals keep coming back for burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas. Favorites, phone number, directions, and online ordering are easy to find before you head over. CALL LA HACIENDA ☎ (847) 426-0506 GUEST FAVORITES Tacos, burritos, tortas, and specials are easy to find before you go. Burritos & Chimichangas → Tacos & Salsa → Tortas & Specials → Browse tacos, burritos, tortas, hours, and next steps before you head over. TOP TACO PICKS Carne Asada Taco $3.95 Broiled skirt steak and one of the clearest taco favorites. Carnitas Taco $3.95 A regular favorite guests keep coming back for. Al Pastor Taco $3.95 A classic pick alongside carne asada, carnitas, and chorizo. Chile Relleno Taco $4.00 Stuffed pepper with beans, rice, lettuce, and tomatoes. BURRITOS, TORTAS, SPECIALS Regular Burrito $8.99 Giant flour tortilla with rice, beans, lettuce, cheese, and choice of protein. Burrito Combination $9.99 Two-meat burrito for guests who want a bigger order. Cubana Torta $12.00 Breaded steak, ham, chorizo, eggs, and no lettuce. Everyday Special $11.75 Two regular tacos or one regular burrito with fries and a canned drink. WHAT REGULARS SAY “La Hacienda already has what neighborhood restaurants are built on: generous portions, fast takeout, friendly service, and regulars who have been coming back for years.” LOCAL REVIEW THEMES Regulars, takeout, tacos, and salsa PLAN YOUR VISIT Everything guests need before they head over MENU Open the full menu when you want more than the highlights. FAVORITES Local reviewers keep pointing to tacos, burritos, salsa, and quick service. VISIT Call, get directions, check hours, or use the online order link. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call ASK US LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I or"
+    },
+    {
+      "route": "about",
+      "path": "/about",
+      "device": "desktop",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-about-desktop-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/about",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 4338
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "What locals already love about La Hacienda"
+        },
+        {
+          "tag": "H2",
+          "text": "Locals point to the same dishes and service strengths over and over."
+        },
+        {
+          "tag": "H2",
+          "text": "The repeat-customer story is already visible in public reviews."
+        },
+        {
+          "tag": "H2",
+          "text": "A simple daily schedule makes planning pickup or dinner easy."
+        },
+        {
+          "tag": "H2",
+          "text": "Fast pickup, friendly service, and regular Mexican favorites"
+        },
+        {
+          "tag": "H2",
+          "text": "Find tacos, tortas, directions, and pickup details without digging."
+        },
+        {
+          "tag": "H3",
+          "text": "Menu in easy reach"
+        },
+        {
+          "tag": "H3",
+          "text": "Simple action flow"
+        },
+        {
+          "tag": "H3",
+          "text": "Grounded trust"
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "GET DIRECTIONS",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗Order",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍Map",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda Mexican Restaurant ABOUT MENU CONTACT MORE ▾ Home About Menu News Contact OPEN NOW · CLOSES IN 10H 37M ☰ View Menu What locals already love about La Hacienda A warm, simple guide to the favorites, hours, address, and next steps guests actually need. 530 GOOGLE REVIEWS FROM LOCAL GUESTS EAST DUNDEE REGULARS Locals point to the same dishes and service strengths over and over. Local guest notes are consistent: burritos, tortas, steak tacos, carnitas tacos, al pastor, chimichangas, pico, green salsa, chips and salsa, fajitas, flautas, and horchata show up alongside quick phone orders, kind service, and regulars who have stayed loyal for years. TACOS, BURRITOS, SALSA, PICKUP Local favorite themes WHY IT MATTERS The repeat-customer story is already visible in public reviews. Instead of making guests hunt, the page organizes the strongest repeat patterns people mention: loyalty, speed, portions, and salsa-forward flavor. 25+ Longtime regulars keep coming back Guests describe years of repeat visits, quick pickup, and familiar favorites that make La Hacienda feel like a local standby. FAST Takeout speed keeps getting called out Phone orders, fast carryout, and neat packaging appear across local guest comments. BIG Portion value is part of the reputation Reviewers repeatedly describe burritos, chimichangas, and combo dinners as generous and satisfying. GREEN Salsa, pico, and green sauce are part of the identity Green salsa, pico de gallo, chips and salsa, and flavor-forward taco toppings show up again and again in local guest comments. HOURS FOR YOUR VISIT A simple daily schedule makes planning pickup or dinner easy. OPENING HOURS Sunday 10:00 am – 9:00 pm Monday – Thursday 10:00 am – 9:00 pm Friday – Saturday 10:00 am – 10:00 pm GET DIRECTIONS WHY GUESTS RETURN Fast pickup, friendly service, and regular Mexican favorites Fast Takeout Phone orders and pickup praised in reviews Friendly Service Kind, attentive, longtime local hospitality Regular Favorites Tacos, burritos, tortas, salsa, and fajitas PLAN YOUR MEAL Find tacos, tortas, directions, and pickup details without digging. 🌮 Menu in easy reach Put menu highlights, the full menu, and favorite categories where guests can find them fast. 📍 Simple action flow Keep call, directions, menu, and order online available from every important page. ☎ Grounded trust Talk about what guests actually praise: portions, speed, friendly service, and familiar favorites. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426"
+    },
+    {
+      "route": "menu",
+      "path": "/menu",
+      "device": "desktop",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-desktop-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/menu",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 3168
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Menu highlights and popular favorites"
+        },
+        {
+          "tag": "H3",
+          "text": "Street taco standouts"
+        },
+        {
+          "tag": "H3",
+          "text": "Large-format favorites"
+        },
+        {
+          "tag": "H3",
+          "text": "Mexican-style sandwiches"
+        },
+        {
+          "tag": "H3",
+          "text": "Specials and bigger plates"
+        },
+        {
+          "tag": "H2",
+          "text": "Why people come back"
+        },
+        {
+          "tag": "H2",
+          "text": "Call, map, menu, or order in one tap"
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL (847) 426-0506",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "DIRECTIONS 411 E Main St",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "CURRENT MENU View full menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "ORDER ONLINE Order pickup online",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗Order",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍Map",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda Mexican Restaurant ABOUT MENU CONTACT MORE ▾ Home About Menu News Contact OPEN NOW · CLOSES IN 10H 37M ☰ View Menu Menu highlights and popular favorites Start with tacos, burritos, tortas, specials, and the favorites local guests mention most. Prices can change, so call to confirm tonight’s menu. TACOS Street taco standouts Carne Asada $3.95 Broiled skirt steak. Carnitas $3.95 Fried pork. Chorizo $3.95 Mexican sausage. Al Pastor $3.95 Roasted pork. BURRITOS Large-format favorites Regular Burrito $8.99 Rice, beans, lettuce, cheese, and your choice of protein. Burrito Combination $9.99 Two-meat combination burrito. Huevos con Carne Asada $8.99 Eggs and steak burrito variation. Burrito con Papas $8.25 Potato burrito. TORTAS Mexican-style sandwiches Chorizo con Huevo $9.50 Mexican sausage with eggs. Carne Asada con Huevo $9.50 Steak with eggs. Pechuga a la Plancha $9.99 Chicken breast on the griddle. Cubana $12.00 Breaded steak, ham, chorizo, eggs, and no lettuce. SPECIALS Specials and bigger plates Everyday Special $11.75 Two regular tacos or one regular burrito with fries and a canned drink. Monday Special $12.50 Two gorditas with rice, beans, and a regular drink. Thursday Special $19.99 Three regular tortas. Parrillada See menu Shrimp, chicken, and steak platter for two or three with quesadillas and guacamole. LOCAL GUEST NOTES Why people come back ★★★★★ “Rey Cardenas calls burritos and tortas a favorite pick-me-up and specifically points to the green salsa.” Rey Cardenas GOOGLE REVIEW, 4-YEAR REGULAR ★★★★★ “Tiffany V says service was great and quick, and the asada and carnitas tacos were delicious.” Tiffany V GOOGLE REVIEW, DINNER VISIT ★★★★★ “Kick describes 25 years of visits and calls out chips and salsa, al pastor, pico de gallo, and consistency.” Kick GOOGLE REVIEW, 25-YEAR REGULAR TAKE ACTION Call, map, menu, or order in one tap Use the fastest path for tonight: call the restaurant, open directions, view the full menu, or start an online pickup order. CALL (847) 426-0506 DIRECTIONS 411 E Main St CURRENT MENU View full menu ORDER ONLINE Order pickup online Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call ASK US LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pick"
+    },
+    {
+      "route": "contact",
+      "path": "/contact",
+      "device": "desktop",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-desktop-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/contact",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 2808
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Call, order, or head straight to East Dundee"
+        },
+        {
+          "tag": "H2",
+          "text": "Need the fastest next step? Call for pickup questions, open the menu, map the drive, or start an online order."
+        },
+        {
+          "tag": "H2",
+          "text": "Choose the fastest path for your visit"
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL THE RESTAURANT (847) 426-0506 Best for pickup questions and confirming tonight's plan.",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "GET DIRECTIONS East Dundee 411 E Main St, East Dundee, IL 60118.",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "OPEN CURRENT MENU See the full menu Open the full La Hacienda menu before you head over.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "ORDER ONLINE Start a pickup order Use the online order option, or call if you want to confirm detail",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗Order",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍Map",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": false,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda Mexican Restaurant ABOUT MENU CONTACT MORE ▾ Home About Menu News Contact OPEN NOW · CLOSES IN 10H 36M ☰ View Menu Call, order, or head straight to East Dundee Call, check the menu, get directions, or order online without hunting around. ☎ CALL, MENU, MAP, ORDER Need the fastest next step? Call for pickup questions, open the menu, map the drive, or start an online order. 📍 Visit La Hacienda 411 E Main St East Dundee, IL 60118 Sun–Thu 10 am–9 pm Fri–Sat 10 am–10 pm ☎ Call or Order (847) 426-0506 Order online option available START HERE Choose the fastest path for your visit CALL THE RESTAURANT (847) 426-0506 Best for pickup questions and confirming tonight's plan. GET DIRECTIONS East Dundee 411 E Main St, East Dundee, IL 60118. OPEN CURRENT MENU See the full menu Open the full La Hacienda menu before you head over. ORDER ONLINE Start a pickup order Use the online order option, or call if you want to confirm details. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call ASK US LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaurant for allergies, prices, or time-sensitive pickup details."
+    },
+    {
+      "route": "news",
+      "path": "/news",
+      "device": "desktop",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-news-desktop-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/news",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 1763
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Menu notes, local favorites, and easy next steps"
+        },
+        {
+          "tag": "H2",
+          "text": "Everything guests need before they head over"
+        },
+        {
+          "tag": "H3",
+          "text": "Open the full menu when you want more than the highlights."
+        },
+        {
+          "tag": "H3",
+          "text": "Local reviewers keep pointing to tacos, burritos, salsa, and quick service."
+        },
+        {
+          "tag": "H3",
+          "text": "Call, get directions, check hours, or use the online order link."
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "MENU Open the full menu when you want more than the highlights.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "VISIT Call, get directions, check hours, or use the online order link.",
+          "href": "http://127.0.0.1:3097/contact"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗Order",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍Map",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": false,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda Mexican Restaurant ABOUT MENU CONTACT MORE ▾ Home About Menu News Contact OPEN NOW · CLOSES IN 10H 36M ☰ View Menu Menu notes, local favorites, and easy next steps A quick guide to what people order, how to get there, and the easiest ways to plan pickup. PLAN YOUR VISIT Everything guests need before they head over MENU Open the full menu when you want more than the highlights. FAVORITES Local reviewers keep pointing to tacos, burritos, salsa, and quick service. VISIT Call, get directions, check hours, or use the online order link. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call ASK US LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaurant for allergies, prices, or time-sensitive pickup details."
+    },
+    {
+      "route": "home",
+      "path": "/",
+      "device": "mobile",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-mobile-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 7850
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Authentic Mexican favorites in East Dundee."
+        },
+        {
+          "tag": "H2",
+          "text": "Fast pickup, familiar favorites, and one-tap next steps."
+        },
+        {
+          "tag": "H2",
+          "text": "Tacos, burritos, tortas, and specials are easy to find before you go."
+        },
+        {
+          "tag": "H3",
+          "text": "Burritos & Chimichangas"
+        },
+        {
+          "tag": "H3",
+          "text": "Tacos & Salsa"
+        },
+        {
+          "tag": "H3",
+          "text": "Tortas & Specials"
+        },
+        {
+          "tag": "H2",
+          "text": "Browse tacos, burritos, tortas, hours, and next steps before you head over."
+        },
+        {
+          "tag": "H2",
+          "text": "Everything guests need before they head over"
+        },
+        {
+          "tag": "H3",
+          "text": "Open the full menu when you want more than the highlights."
+        },
+        {
+          "tag": "H3",
+          "text": "Local reviewers keep pointing to tacos, burritos, salsa, and quick service."
+        },
+        {
+          "tag": "H3",
+          "text": "Call, get directions, check hours, or use the online order link."
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "VIEW MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL LA HACIENDA",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "MENU Open the full menu when you want more than the highlights.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "VISIT Call, get directions, check hours, or use the online order link.",
+          "href": "http://127.0.0.1:3097/contact"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎ CALL",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰ MENU",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗ ORDER",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍 MAP",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda ☰ View Menu Authentic Mexican favorites in East Dundee. Tacos, burritos, tortas, fajitas, horchata, and fast pickup at 411 E Main St — with clear calls, directions, menu, and order links. VIEW MENU LOCAL FAVORITES Fast pickup, familiar favorites, and one-tap next steps. Locals keep coming back for burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas. Favorites, phone number, directions, and online ordering are easy to find before you head over. CALL LA HACIENDA ☎ (847) 426-0506 GUEST FAVORITES Tacos, burritos, tortas, and specials are easy to find before you go. Burritos & Chimichangas → Tacos & Salsa → Tortas & Specials → Browse tacos, burritos, tortas, hours, and next steps before you head over. TOP TACO PICKS Carne Asada Taco $3.95 Broiled skirt steak and one of the clearest taco favorites. Carnitas Taco $3.95 A regular favorite guests keep coming back for. Al Pastor Taco $3.95 A classic pick alongside carne asada, carnitas, and chorizo. Chile Relleno Taco $4.00 Stuffed pepper with beans, rice, lettuce, and tomatoes. BURRITOS, TORTAS, SPECIALS Regular Burrito $8.99 Giant flour tortilla with rice, beans, lettuce, cheese, and choice of protein. Burrito Combination $9.99 Two-meat burrito for guests who want a bigger order. Cubana Torta $12.00 Breaded steak, ham, chorizo, eggs, and no lettuce. Everyday Special $11.75 Two regular tacos or one regular burrito with fries and a canned drink. WHAT REGULARS SAY “La Hacienda already has what neighborhood restaurants are built on: generous portions, fast takeout, friendly service, and regulars who have been coming back for years.” LOCAL REVIEW THEMES Regulars, takeout, tacos, and salsa PLAN YOUR VISIT Everything guests need before they head over MENU Open the full menu when you want more than the highlights. FAVORITES Local reviewers keep pointing to tacos, burritos, salsa, and quick service. VISIT Call, get directions, check hours, or use the online order link. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call QUESTIONS BEFORE YOU GO? Ask La Hacienda Concierge OPEN LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaur"
+    },
+    {
+      "route": "about",
+      "path": "/about",
+      "device": "mobile",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-about-mobile-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/about",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 6115
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "What locals already love about La Hacienda"
+        },
+        {
+          "tag": "H2",
+          "text": "Locals point to the same dishes and service strengths over and over."
+        },
+        {
+          "tag": "H2",
+          "text": "The repeat-customer story is already visible in public reviews."
+        },
+        {
+          "tag": "H2",
+          "text": "A simple daily schedule makes planning pickup or dinner easy."
+        },
+        {
+          "tag": "H2",
+          "text": "Fast pickup, friendly service, and regular Mexican favorites"
+        },
+        {
+          "tag": "H2",
+          "text": "Find tacos, tortas, directions, and pickup details without digging."
+        },
+        {
+          "tag": "H3",
+          "text": "Menu in easy reach"
+        },
+        {
+          "tag": "H3",
+          "text": "Simple action flow"
+        },
+        {
+          "tag": "H3",
+          "text": "Grounded trust"
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "GET DIRECTIONS",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎ CALL",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰ MENU",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗ ORDER",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍 MAP",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda ☰ View Menu What locals already love about La Hacienda A warm, simple guide to the favorites, hours, address, and next steps guests actually need. 530 GOOGLE REVIEWS FROM LOCAL GUESTS EAST DUNDEE REGULARS Locals point to the same dishes and service strengths over and over. Local guest notes are consistent: burritos, tortas, steak tacos, carnitas tacos, al pastor, chimichangas, pico, green salsa, chips and salsa, fajitas, flautas, and horchata show up alongside quick phone orders, kind service, and regulars who have stayed loyal for years. TACOS, BURRITOS, SALSA, PICKUP Local favorite themes WHY IT MATTERS The repeat-customer story is already visible in public reviews. Instead of making guests hunt, the page organizes the strongest repeat patterns people mention: loyalty, speed, portions, and salsa-forward flavor. 25+ Longtime regulars keep coming back Guests describe years of repeat visits, quick pickup, and familiar favorites that make La Hacienda feel like a local standby. FAST Takeout speed keeps getting called out Phone orders, fast carryout, and neat packaging appear across local guest comments. BIG Portion value is part of the reputation Reviewers repeatedly describe burritos, chimichangas, and combo dinners as generous and satisfying. GREEN Salsa, pico, and green sauce are part of the identity Green salsa, pico de gallo, chips and salsa, and flavor-forward taco toppings show up again and again in local guest comments. HOURS FOR YOUR VISIT A simple daily schedule makes planning pickup or dinner easy. OPENING HOURS Sunday 10:00 am – 9:00 pm Monday – Thursday 10:00 am – 9:00 pm Friday – Saturday 10:00 am – 10:00 pm GET DIRECTIONS WHY GUESTS RETURN Fast pickup, friendly service, and regular Mexican favorites Fast Takeout Phone orders and pickup praised in reviews Friendly Service Kind, attentive, longtime local hospitality Regular Favorites Tacos, burritos, tortas, salsa, and fajitas PLAN YOUR MEAL Find tacos, tortas, directions, and pickup details without digging. 🌮 Menu in easy reach Put menu highlights, the full menu, and favorite categories where guests can find them fast. 📍 Simple action flow Keep call, directions, menu, and order online available from every important page. ☎ Grounded trust Talk about what guests actually praise: portions, speed, friendly service, and familiar favorites. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La"
+    },
+    {
+      "route": "menu",
+      "path": "/menu",
+      "device": "mobile",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-mobile-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/menu",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 5745
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Menu highlights and popular favorites"
+        },
+        {
+          "tag": "H3",
+          "text": "Street taco standouts"
+        },
+        {
+          "tag": "H3",
+          "text": "Large-format favorites"
+        },
+        {
+          "tag": "H3",
+          "text": "Mexican-style sandwiches"
+        },
+        {
+          "tag": "H3",
+          "text": "Specials and bigger plates"
+        },
+        {
+          "tag": "H2",
+          "text": "Why people come back"
+        },
+        {
+          "tag": "H2",
+          "text": "Call, map, menu, or order in one tap"
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL (847) 426-0506",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "DIRECTIONS 411 E Main St",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "CURRENT MENU View full menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "ORDER ONLINE Order pickup online",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎ CALL",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰ MENU",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗ ORDER",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍 MAP",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda ☰ View Menu Menu highlights and popular favorites Start with tacos, burritos, tortas, specials, and the favorites local guests mention most. Prices can change, so call to confirm tonight’s menu. TACOS Street taco standouts Carne Asada $3.95 Broiled skirt steak. Carnitas $3.95 Fried pork. Chorizo $3.95 Mexican sausage. Al Pastor $3.95 Roasted pork. BURRITOS Large-format favorites Regular Burrito $8.99 Rice, beans, lettuce, cheese, and your choice of protein. Burrito Combination $9.99 Two-meat combination burrito. Huevos con Carne Asada $8.99 Eggs and steak burrito variation. Burrito con Papas $8.25 Potato burrito. TORTAS Mexican-style sandwiches Chorizo con Huevo $9.50 Mexican sausage with eggs. Carne Asada con Huevo $9.50 Steak with eggs. Pechuga a la Plancha $9.99 Chicken breast on the griddle. Cubana $12.00 Breaded steak, ham, chorizo, eggs, and no lettuce. SPECIALS Specials and bigger plates Everyday Special $11.75 Two regular tacos or one regular burrito with fries and a canned drink. Monday Special $12.50 Two gorditas with rice, beans, and a regular drink. Thursday Special $19.99 Three regular tortas. Parrillada See menu Shrimp, chicken, and steak platter for two or three with quesadillas and guacamole. LOCAL GUEST NOTES Why people come back ★★★★★ “Rey Cardenas calls burritos and tortas a favorite pick-me-up and specifically points to the green salsa.” Rey Cardenas GOOGLE REVIEW, 4-YEAR REGULAR ★★★★★ “Tiffany V says service was great and quick, and the asada and carnitas tacos were delicious.” Tiffany V GOOGLE REVIEW, DINNER VISIT ★★★★★ “Kick describes 25 years of visits and calls out chips and salsa, al pastor, pico de gallo, and consistency.” Kick GOOGLE REVIEW, 25-YEAR REGULAR TAKE ACTION Call, map, menu, or order in one tap Use the fastest path for tonight: call the restaurant, open directions, view the full menu, or start an online pickup order. CALL (847) 426-0506 DIRECTIONS 411 E Main St CURRENT MENU View full menu ORDER ONLINE Order pickup online Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call QUESTIONS BEFORE YOU GO? Ask La Hacienda Concierge OPEN LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaurant for "
+    },
+    {
+      "route": "contact",
+      "path": "/contact",
+      "device": "mobile",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-mobile-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/contact",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 3445
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Call, order, or head straight to East Dundee"
+        },
+        {
+          "tag": "H2",
+          "text": "Need the fastest next step? Call for pickup questions, open the menu, map the drive, or start an online order."
+        },
+        {
+          "tag": "H2",
+          "text": "Choose the fastest path for your visit"
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL THE RESTAURANT (847) 426-0506 Best for pickup questions and confirming tonight's plan.",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "GET DIRECTIONS East Dundee 411 E Main St, East Dundee, IL 60118.",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "OPEN CURRENT MENU See the full menu Open the full La Hacienda menu before you head over.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "ORDER ONLINE Start a pickup order Use the online order option, or call if you want to confirm detail",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎ CALL",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰ MENU",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗ ORDER",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍 MAP",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": false,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda ☰ View Menu Call, order, or head straight to East Dundee Call, check the menu, get directions, or order online without hunting around. ☎ CALL, MENU, MAP, ORDER Need the fastest next step? Call for pickup questions, open the menu, map the drive, or start an online order. 📍 Visit La Hacienda 411 E Main St East Dundee, IL 60118 Sun–Thu 10 am–9 pm Fri–Sat 10 am–10 pm ☎ Call or Order (847) 426-0506 Order online option available START HERE Choose the fastest path for your visit CALL THE RESTAURANT (847) 426-0506 Best for pickup questions and confirming tonight's plan. GET DIRECTIONS East Dundee 411 E Main St, East Dundee, IL 60118. OPEN CURRENT MENU See the full menu Open the full La Hacienda menu before you head over. ORDER ONLINE Start a pickup order Use the online order option, or call if you want to confirm details. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call QUESTIONS BEFORE YOU GO? Ask La Hacienda Concierge OPEN LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaurant for allergies, prices, or time-sensitive pickup details. ☎ CALL ☰ MENU ↗ ORDER 📍 MAP"
+    },
+    {
+      "route": "news",
+      "path": "/news",
+      "device": "mobile",
+      "openConcierge": false,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-news-mobile-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/news",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 2310
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Menu notes, local favorites, and easy next steps"
+        },
+        {
+          "tag": "H2",
+          "text": "Everything guests need before they head over"
+        },
+        {
+          "tag": "H3",
+          "text": "Open the full menu when you want more than the highlights."
+        },
+        {
+          "tag": "H3",
+          "text": "Local reviewers keep pointing to tacos, burritos, salsa, and quick service."
+        },
+        {
+          "tag": "H3",
+          "text": "Call, get directions, check hours, or use the online order link."
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "MENU Open the full menu when you want more than the highlights.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "VISIT Call, get directions, check hours, or use the online order link.",
+          "href": "http://127.0.0.1:3097/contact"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎ CALL",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰ MENU",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗ ORDER",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍 MAP",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": false,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda ☰ View Menu Menu notes, local favorites, and easy next steps A quick guide to what people order, how to get there, and the easiest ways to plan pickup. PLAN YOUR VISIT Everything guests need before they head over MENU Open the full menu when you want more than the highlights. FAVORITES Local reviewers keep pointing to tacos, burritos, salsa, and quick service. VISIT Call, get directions, check hours, or use the online order link. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call QUESTIONS BEFORE YOU GO? Ask La Hacienda Concierge OPEN LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaurant for allergies, prices, or time-sensitive pickup details. ☎ CALL ☰ MENU ↗ ORDER 📍 MAP"
+    },
+    {
+      "route": "home",
+      "path": "/",
+      "device": "desktop",
+      "openConcierge": true,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-concierge-open-desktop-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 7400
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Authentic Mexican favorites in East Dundee."
+        },
+        {
+          "tag": "H2",
+          "text": "Fast pickup, familiar favorites, and one-tap next steps."
+        },
+        {
+          "tag": "H2",
+          "text": "Tacos, burritos, tortas, and specials are easy to find before you go."
+        },
+        {
+          "tag": "H3",
+          "text": "Burritos & Chimichangas"
+        },
+        {
+          "tag": "H3",
+          "text": "Tacos & Salsa"
+        },
+        {
+          "tag": "H3",
+          "text": "Tortas & Specials"
+        },
+        {
+          "tag": "H2",
+          "text": "Browse tacos, burritos, tortas, hours, and next steps before you head over."
+        },
+        {
+          "tag": "H2",
+          "text": "Everything guests need before they head over"
+        },
+        {
+          "tag": "H3",
+          "text": "Open the full menu when you want more than the highlights."
+        },
+        {
+          "tag": "H3",
+          "text": "Local reviewers keep pointing to tacos, burritos, salsa, and quick service."
+        },
+        {
+          "tag": "H3",
+          "text": "Call, get directions, check hours, or use the online order link."
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "VIEW MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL LA HACIENDA",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "MENU Open the full menu when you want more than the highlights.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "VISIT Call, get directions, check hours, or use the online order link.",
+          "href": "http://127.0.0.1:3097/contact"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗Order",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍Map",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda Mexican Restaurant ABOUT MENU CONTACT MORE ▾ Home About Menu News Contact OPEN NOW · CLOSES IN 10H 36M ☰ View Menu Authentic Mexican favorites in East Dundee. Tacos, burritos, tortas, fajitas, horchata, and fast pickup at 411 E Main St — with clear calls, directions, menu, and order links. VIEW MENU LOCAL FAVORITES Fast pickup, familiar favorites, and one-tap next steps. Locals keep coming back for burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas. Favorites, phone number, directions, and online ordering are easy to find before you head over. CALL LA HACIENDA ☎ (847) 426-0506 GUEST FAVORITES Tacos, burritos, tortas, and specials are easy to find before you go. Burritos & Chimichangas → Tacos & Salsa → Tortas & Specials → Browse tacos, burritos, tortas, hours, and next steps before you head over. TOP TACO PICKS Carne Asada Taco $3.95 Broiled skirt steak and one of the clearest taco favorites. Carnitas Taco $3.95 A regular favorite guests keep coming back for. Al Pastor Taco $3.95 A classic pick alongside carne asada, carnitas, and chorizo. Chile Relleno Taco $4.00 Stuffed pepper with beans, rice, lettuce, and tomatoes. BURRITOS, TORTAS, SPECIALS Regular Burrito $8.99 Giant flour tortilla with rice, beans, lettuce, cheese, and choice of protein. Burrito Combination $9.99 Two-meat burrito for guests who want a bigger order. Cubana Torta $12.00 Breaded steak, ham, chorizo, eggs, and no lettuce. Everyday Special $11.75 Two regular tacos or one regular burrito with fries and a canned drink. WHAT REGULARS SAY “La Hacienda already has what neighborhood restaurants are built on: generous portions, fast takeout, friendly service, and regulars who have been coming back for years.” LOCAL REVIEW THEMES Regulars, takeout, tacos, and salsa PLAN YOUR VISIT Everything guests need before they head over MENU Open the full menu when you want more than the highlights. FAVORITES Local reviewers keep pointing to tacos, burritos, salsa, and quick service. VISIT Call, get directions, check hours, or use the online order link. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call ASK US LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I or"
+    },
+    {
+      "route": "home",
+      "path": "/",
+      "device": "mobile",
+      "openConcierge": true,
+      "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-concierge-open-mobile-2026-05-05.png",
+      "url": "http://127.0.0.1:3097/",
+      "title": "La Hacienda Mexican Restaurant — Neighborhood Mexican favorites with fast pickup and longtime regulars",
+      "viewport": {
+        "innerWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 7850
+      },
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "Authentic Mexican favorites in East Dundee."
+        },
+        {
+          "tag": "H2",
+          "text": "Fast pickup, familiar favorites, and one-tap next steps."
+        },
+        {
+          "tag": "H2",
+          "text": "Tacos, burritos, tortas, and specials are easy to find before you go."
+        },
+        {
+          "tag": "H3",
+          "text": "Burritos & Chimichangas"
+        },
+        {
+          "tag": "H3",
+          "text": "Tacos & Salsa"
+        },
+        {
+          "tag": "H3",
+          "text": "Tortas & Specials"
+        },
+        {
+          "tag": "H2",
+          "text": "Browse tacos, burritos, tortas, hours, and next steps before you head over."
+        },
+        {
+          "tag": "H2",
+          "text": "Everything guests need before they head over"
+        },
+        {
+          "tag": "H3",
+          "text": "Open the full menu when you want more than the highlights."
+        },
+        {
+          "tag": "H3",
+          "text": "Local reviewers keep pointing to tacos, burritos, salsa, and quick service."
+        },
+        {
+          "tag": "H3",
+          "text": "Call, get directions, check hours, or use the online order link."
+        },
+        {
+          "tag": "H3",
+          "text": "Call La Hacienda, get directions, browse the menu, or start an online order."
+        }
+      ],
+      "overflowOffenders": [],
+      "brokenImages": [],
+      "ctas": [
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "☰ View Menu",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "VIEW MENU",
+          "href": "http://127.0.0.1:3097/menu"
+        },
+        {
+          "text": "CALL LA HACIENDA",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "MENU Open the full menu when you want more than the highlights.",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "VISIT Call, get directions, check hours, or use the online order link.",
+          "href": "http://127.0.0.1:3097/contact"
+        },
+        {
+          "text": "Menu",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        },
+        {
+          "text": "Call",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☎ CALL",
+          "href": "tel:+18474260506"
+        },
+        {
+          "text": "☰ MENU",
+          "href": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view"
+        },
+        {
+          "text": "↗ ORDER",
+          "href": "https://www.restaurantji.com/order.php?id=3429883"
+        },
+        {
+          "text": "📍 MAP",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118"
+        }
+      ],
+      "checks": {
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasHours": true,
+        "hasMenu": true,
+        "hasOrder": true,
+        "internalPhrases": []
+      },
+      "textSample": "LH La Hacienda ☰ View Menu Authentic Mexican favorites in East Dundee. Tacos, burritos, tortas, fajitas, horchata, and fast pickup at 411 E Main St — with clear calls, directions, menu, and order links. VIEW MENU LOCAL FAVORITES Fast pickup, familiar favorites, and one-tap next steps. Locals keep coming back for burritos, tacos, tortas, chimichangas, fajitas, pico, green salsa, chips and salsa, horchata, tamales, and enchiladas. Favorites, phone number, directions, and online ordering are easy to find before you head over. CALL LA HACIENDA ☎ (847) 426-0506 GUEST FAVORITES Tacos, burritos, tortas, and specials are easy to find before you go. Burritos & Chimichangas → Tacos & Salsa → Tortas & Specials → Browse tacos, burritos, tortas, hours, and next steps before you head over. TOP TACO PICKS Carne Asada Taco $3.95 Broiled skirt steak and one of the clearest taco favorites. Carnitas Taco $3.95 A regular favorite guests keep coming back for. Al Pastor Taco $3.95 A classic pick alongside carne asada, carnitas, and chorizo. Chile Relleno Taco $4.00 Stuffed pepper with beans, rice, lettuce, and tomatoes. BURRITOS, TORTAS, SPECIALS Regular Burrito $8.99 Giant flour tortilla with rice, beans, lettuce, cheese, and choice of protein. Burrito Combination $9.99 Two-meat burrito for guests who want a bigger order. Cubana Torta $12.00 Breaded steak, ham, chorizo, eggs, and no lettuce. Everyday Special $11.75 Two regular tacos or one regular burrito with fries and a canned drink. WHAT REGULARS SAY “La Hacienda already has what neighborhood restaurants are built on: generous portions, fast takeout, friendly service, and regulars who have been coming back for years.” LOCAL REVIEW THEMES Regulars, takeout, tacos, and salsa PLAN YOUR VISIT Everything guests need before they head over MENU Open the full menu when you want more than the highlights. FAVORITES Local reviewers keep pointing to tacos, burritos, salsa, and quick service. VISIT Call, get directions, check hours, or use the online order link. Call La Hacienda, get directions, browse the menu, or start an online order. 📍 LOCATION 411 E Main St, East Dundee, IL 60118 ☎ PHONE (847) 426-0506 Quick calls, directions, menu browsing, and pickup planning for La Hacienda Mexican Restaurant La Hacienda Mexican Restaurant Menu Directions Call QUESTIONS BEFORE YOU GO? Ask La Hacienda Concierge OPEN LA HACIENDA CONCIERGE Hello, how can I help? Menu favorites, hours, pickup, directions, or quick planning. Ask anything. What should I order tonight? When are you open? Can I order pickup? SEND AI concierge, please call the restaur"
+    }
+  ]
+}

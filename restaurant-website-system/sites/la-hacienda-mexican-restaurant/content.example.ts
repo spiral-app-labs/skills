@@ -41,7 +41,7 @@ export const content = {
       { label: 'Contact', href: '/contact' },
     ],
     dropdown: {
-      label: 'Pages',
+      label: 'More',
       items: [
         { label: 'Home', href: '/' },
         { label: 'About', href: '/about' },
@@ -94,8 +94,8 @@ export const content = {
       imageAlt: 'Taco favorites poster',
       items: [
         { name: 'Carne Asada Taco', desc: 'Broiled skirt steak and one of the clearest taco favorites.', price: '$3.95' },
-        { name: 'Carnitas Taco', desc: 'A regular favorite in the highest-sort Google packet.', price: '$3.95' },
-        { name: 'Al Pastor Taco', desc: 'Corroborated in review packets and directory menu coverage.', price: '$3.95' },
+        { name: 'Carnitas Taco', desc: 'A regular favorite guests keep coming back for.', price: '$3.95' },
+        { name: 'Al Pastor Taco', desc: 'A classic pick alongside carne asada, carnitas, and chorizo.', price: '$3.95' },
         { name: 'Chile Relleno Taco', desc: 'Stuffed pepper with beans, rice, lettuce, and tomatoes.', price: '$4.00' },
       ],
     },
@@ -131,21 +131,21 @@ export const content = {
     posts: [
       {
         id: 'canva-menu',
-        date: 'May 5, 2026',
+        date: 'Menu',
         title: 'Open the full menu when you want more than the highlights.',
         image: '/la-hacienda/post-canva.svg',
         href: 'https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view',
       },
       {
         id: 'google-reviews',
-        date: 'May 5, 2026',
+        date: 'Favorites',
         title: 'Local reviewers keep pointing to tacos, burritos, salsa, and quick service.',
         image: '/la-hacienda/post-reviews.svg',
         href: '/about',
       },
       {
         id: 'hours-order',
-        date: 'May 5, 2026',
+        date: 'Visit',
         title: 'Call, get directions, check hours, or use the online order link.',
         image: '/la-hacienda/post-hours.svg',
         href: '/contact',
@@ -164,12 +164,12 @@ export const content = {
       subtitle: 'A warm, simple guide to the favorites, hours, address, and next steps guests actually need.',
     },
     immerse: {
-      eyebrow: 'Review Signal',
-      title: 'Locals point to the same dishes and the same service strengths over and over.',
+      eyebrow: 'East Dundee regulars',
+      title: 'Locals point to the same dishes and service strengths over and over.',
       body:
-        'The highest-sort review packet is consistent: burritos, tortas, steak tacos, carnitas tacos, al pastor, chimichangas, pico, green salsa, chips and salsa, fajitas, flautas, and horchata show up alongside quick phone orders, kind service, and regulars who have stayed loyal for years.',
+        'Local guest notes are consistent: burritos, tortas, steak tacos, carnitas tacos, al pastor, chimichangas, pico, green salsa, chips and salsa, fajitas, flautas, and horchata show up alongside quick phone orders, kind service, and regulars who have stayed loyal for years.',
       statBig: '530',
-      statLabel: 'Google reviews observed on May 5, 2026',
+      statLabel: 'Google reviews from local guests',
       chefImage: '/la-hacienda/about-proof.svg',
       chefName: 'Local favorite themes',
       chefRole: 'Tacos, burritos, salsa, pickup',
@@ -181,13 +181,13 @@ export const content = {
         'Instead of making guests hunt, the page organizes the strongest repeat patterns people mention: loyalty, speed, portions, and salsa-forward flavor.',
       milestones: [
         { year: '25+', title: 'Longtime regulars keep coming back', body: 'Guests describe years of repeat visits, quick pickup, and familiar favorites that make La Hacienda feel like a local standby.' },
-        { year: 'FAST', title: 'Takeout speed keeps getting called out', body: 'Phone orders, fast carryout, and neat packaging appear across the Google evidence packet.' },
+        { year: 'FAST', title: 'Takeout speed keeps getting called out', body: 'Phone orders, fast carryout, and neat packaging appear across local guest comments.' },
         { year: 'BIG', title: 'Portion value is part of the reputation', body: 'Reviewers repeatedly describe burritos, chimichangas, and combo dinners as generous and satisfying.' },
         { year: 'GREEN', title: 'Salsa, pico, and green sauce are part of the identity', body: 'Green salsa, pico de gallo, chips and salsa, and flavor-forward taco toppings show up again and again in local guest comments.' },
       ],
     },
     hours: {
-      eyebrow: 'Source-Backed Hours',
+      eyebrow: 'Hours for your visit',
       title: 'A simple daily schedule makes planning pickup or dinner easy.',
       times: [
         { day: 'Sunday', time: '10:00 am – 9:00 pm' },
@@ -198,8 +198,8 @@ export const content = {
       image: '/la-hacienda/hours-board.svg',
     },
     chefs: {
-      eyebrow: 'What Guests Remember',
-      title: 'Three strengths this homepage can sell clearly',
+      eyebrow: 'Why guests return',
+      title: 'Fast pickup, friendly service, and regular Mexican favorites',
       team: [
         { name: 'Fast Takeout', role: 'Phone orders and pickup praised in reviews', image: '/la-hacienda/card-fast.svg' },
         { name: 'Friendly Service', role: 'Kind, attentive, longtime local hospitality', image: '/la-hacienda/card-service.svg' },
@@ -207,10 +207,10 @@ export const content = {
       ],
     },
     values: {
-      eyebrow: 'Guest Priorities',
-      title: 'The site keeps the experience focused on the simple things that help guests choose La Hacienda quickly.',
+      eyebrow: 'Plan your meal',
+      title: 'Find tacos, tortas, directions, and pickup details without digging.',
       items: [
-        { title: 'Menu in easy reach', body: 'Put menu highlights, the full menu link, and favorite categories where guests can find them fast.' },
+        { title: 'Menu in easy reach', body: 'Put menu highlights, the full menu, and favorite categories where guests can find them fast.' },
         { title: 'Simple action flow', body: 'Keep call, directions, menu, and order online available from every important page.' },
         { title: 'Grounded trust', body: 'Talk about what guests actually praise: portions, speed, friendly service, and familiar favorites.' },
       ],
@@ -266,7 +266,7 @@ export const content = {
     ],
     testimonials: {
       eyebrow: 'Local Guest Notes',
-      title: 'What locals say',
+      title: 'Why people come back',
       entries: [
         {
           stars: 5,
@@ -316,14 +316,14 @@ export const content = {
       '/la-hacienda/contact-call.svg',
     ],
     headline: {
-      eyebrow: 'Easy Next Step',
+      eyebrow: 'Call, menu, map, order',
       title: 'Need the fastest next step? Call for pickup questions, open the menu, map the drive, or start an online order.',
     },
     infoCards: [
       {
         icon: 'map',
         label: 'Visit La Hacienda',
-        lines: ['411 E Main St', 'East Dundee, IL 60118', 'Open daily at 10:00 am'],
+        lines: ['411 E Main St', 'East Dundee, IL 60118', 'Sun–Thu 10 am–9 pm', 'Fri–Sat 10 am–10 pm'],
       },
       {
         icon: 'phone',

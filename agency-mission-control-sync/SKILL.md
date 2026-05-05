@@ -48,6 +48,30 @@ Use this shape for build progress:
   "vercel_preview_url": "https://restaurant-slug.vercel.app",
   "evidence_urls": ["restaurant-website-system/sites/restaurant-slug/screenshots/mobile.png"],
   "artifact_urls": ["https://restaurant-slug.vercel.app"],
+  "ready_to_pitch": false,
+  "lead_metadata": {
+    "owner_name": null,
+    "owner_email": null,
+    "contact_email": null,
+    "phone": "(555) 555-5555",
+    "hours": ["Mon-Thu 11am-9pm"],
+    "address_location": "123 Main St, City, ST 12345",
+    "website_url": "https://restaurant.example",
+    "order_url": null,
+    "reservation_url": null,
+    "catering_events_url": null,
+    "google_rating": 4.6,
+    "google_review_count": 312,
+    "outreach_email_draft_path": null,
+    "outreach_email_draft_status": "not_created",
+    "metadata_source_notes": [
+      "Checked audit.md, current-site scrape, Google profile evidence, and public directory captures."
+    ],
+    "field_sources": {
+      "phone": ["restaurant-website-system/sites/restaurant-slug/audit.md"],
+      "google_rating": ["https://www.google.com/maps/place/..."]
+    }
+  },
   "passed_requirement_ids": ["fork-built"],
   "heartbeat_summary": "Built the first full fork and captured mobile evidence."
 }
@@ -62,6 +86,36 @@ If Mission Control temporarily accepts only coarser values, keep the closest coa
 Allowed sales statuses:
 
 `lead`, `pitched`, `in_progress`, `delivered`, `closed_won`, `closed_lost`.
+
+## Audit-to-metadata sync is mandatory
+
+When the current gate is `auditing` or later, Mission Control and the local checklist must both carry the structured lead metadata extracted from `audit.md` and public evidence.
+
+Minimum mirrored metadata fields:
+
+- `owner_name`
+- `owner_email`
+- `contact_email`
+- `phone`
+- `hours`
+- `address_location`
+- `website_url`
+- `order_url`
+- `reservation_url`
+- `catering_events_url`
+- `google_rating`
+- `google_review_count`
+- `outreach_email_draft_path`
+- `outreach_email_draft_status`
+- `metadata_source_notes`
+- per-field evidence/source URLs
+
+Rules:
+
+- Unknown fields must stay `null`; do not backfill guesses from weak signals.
+- If owner confirmation is still pending, keep the public value plus a blocker/note that confirmation is outstanding.
+- `ready_to_pitch` must remain `false` unless the founder human review requirement and any required site-specific runtime prerequisites are explicitly satisfied or founder-overridden.
+- Do not mark the audit gate complete, or advance later gates from local evidence alone, until this metadata mirror is present in the checklist and included in the prepared MC writeback payload. If the API call itself is blocked, record that blocker separately, but still prepare the mirrored payload locally.
 
 ## QA Round Payload
 

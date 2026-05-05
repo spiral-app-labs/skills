@@ -1,0 +1,47 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "qa_round_3",
+  "completedStage": "qa_round_2",
+  "status": "in_progress",
+  "templateSlug": "bamzi-01",
+  "passedRequirementIds": [
+    "qa-round-2"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-2-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-2-dom-check-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-about-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-news-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-about-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-news-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-concierge-open-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-concierge-open-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  ],
+  "findings": [
+    "Initial QA2 capture hit browser error pages after the dev server exited; recaptured against production next start on 127.0.0.1:3097.",
+    "Final DOM check found 0 horizontal overflow offenders and 0 visible broken images across checked desktop/mobile routes.",
+    "Visual QA found the open mobile concierge panel is large, but acceptable because it is user-triggered and remains collapsed by default."
+  ],
+  "fixes": [
+    "Switched QA2 capture to a stable built Next preview via next start.",
+    "Re-ran desktop/mobile route screenshots and DOM checks for home, about, menu, contact, news, and concierge-open states."
+  ],
+  "verification": [
+    "npm run build passed",
+    "npm run typecheck passed",
+    "Final DOM check found 0 overflow offenders and 0 visible broken images",
+    "Rendered text evidence contains no internal/template phrase leaks"
+  ],
+  "blocker": "Mission Control writeback still pending because agency API auth/base URL is unavailable in this runtime; local writeback payload prepared instead.",
+  "createdAt": "2026-05-05T14:33:00Z"
+}

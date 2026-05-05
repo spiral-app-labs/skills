@@ -1,0 +1,35 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "delivery_package",
+  "completedStage": "qa_round_3",
+  "status": "in_progress",
+  "templateSlug": "bamzi-01",
+  "passedRequirementIds": [
+    "qa-round-3"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-3-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-3-final-audit-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-home-top-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-menu-top-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-contact-top-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-mobile-2026-05-05.png"
+  ],
+  "summary": "QA Round 3 passed after making the mobile quick-action bar truly fixed/sticky, adding body bottom padding, rebuilding, restarting the production preview, and recapturing DOM plus mobile viewport evidence. DOM audit reports 0 overflow offenders, 0 visible broken images, and 0 internal/template phrase leaks.",
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Local QA Round 3 is complete and the next canonical gate is delivery_package, but Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit this payload through the agency build writeback route.",
+      "recordedAt": "2026-05-05T14:59:00Z"
+    }
+  ],
+  "updatedAt": "2026-05-05T14:59:00Z"
+}

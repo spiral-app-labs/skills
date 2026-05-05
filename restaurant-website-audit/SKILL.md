@@ -120,6 +120,41 @@ Outcome: for review packets, **Google Reviews in a browser is the required sourc
 
 Drop the artifact at `restaurant-website-system/sites/<restaurant-slug>/audit.md`.
 
+## Mandatory structured lead metadata extraction + sync
+
+Before the audit gate can be called complete, extract a structured lead-metadata packet from the audit and public evidence, then mirror it into:
+
+- `restaurant-website-system/sites/<slug>/checklist.json`
+- `restaurant-website-system/sites/<slug>/checklist.md`
+- the prepared Mission Control writeback payload/runbook for that site
+
+Required fields:
+
+- `owner_name` if publicly verified, else `null`
+- `owner_email` if publicly verified, else `null`
+- `contact_email` if publicly verified, else `null`
+- `phone`
+- `hours`
+- `address_location`
+- `website_url`
+- `order_url`
+- `reservation_url`
+- `catering_events_url` if applicable
+- `google_rating` if verified
+- `google_review_count` if verified
+- `outreach_email_draft_path`
+- `outreach_email_draft_status`
+
+Rules:
+
+- Use `null` for unknown URLs/emails/names and `unknown` only for explanatory status strings; never guess.
+- Every field must carry source evidence: local evidence paths and/or public source URLs.
+- Add `metadata_source_notes` describing exactly what was checked and what remained unavailable.
+- If a field is only partially verified or still needs owner confirmation, say that explicitly in the notes/blockers instead of promoting it to settled truth.
+- If no outreach/email draft exists yet, store `outreach_email_draft_path: null` and a truthful status such as `not_created`.
+
+Audit completion is blocked until this metadata packet has been mirrored to the local checklist and prepared for MC sync, or a truthful blocker is recorded explaining why that mirror could not be completed.
+
 ### Block 1 — Verbatim findings
 
 A table of what the site actually does, quoted, with no interpretation yet. Capture the standard fields (platform, hero, CTAs, address, phone, reservation flow, menu format, hours, photography count, owner/chef story, heritage signal, reviews displayed, aliveness elements, social, copyright string).

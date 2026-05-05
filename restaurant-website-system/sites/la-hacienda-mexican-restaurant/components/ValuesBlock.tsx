@@ -6,7 +6,7 @@ import { content } from '../content.example';
  */
 export function ValuesBlock() {
   const v = content.about.values;
-  const icons = ['🍣', '🔥', '⚡'];
+  const icons = ['🌮', '📍', '☎'];
   return (
     <section className="bg-bg-cream py-24 px-6">
       <div className="max-w-[1000px] mx-auto text-center mb-12">
