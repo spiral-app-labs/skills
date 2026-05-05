@@ -6,7 +6,7 @@
   "mcParentTaskId": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
   "siteSlug": "marys-mexican-grill",
   "templateSlug": "bamzi-01",
-  "currentStage": "packaging",
+  "currentStage": "qa_round_3",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
     "json": "restaurant-website-system/sites/marys-mexican-grill/checklist.json"
@@ -646,17 +646,25 @@
         "build/typecheck result"
       ],
       "order": 12,
-      "status": "pending",
+      "status": "passed_local_evidence_pending_mc_sync",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
         "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json",
         "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
-        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json"
+        "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
       ],
       "blocker": {
-        "reason": "Founder-only gates still block ready_to_pitch: site-specific Anthropic key is pending, Ethan human review is pending, and agents cannot close those gates. Fresh QA3 screenshot recapture is also blocked in this sandbox because localhost preview binds and headless browser launch both fail.",
-        "nextUnblockAction": "Recapture QA3 desktop/mobile screenshots in an environment that allows local preview rendering, then wait for Ethan to configure the Anthropic key and complete human review before setting ready_to_pitch true.",
-        "updatedAt": "2026-05-04T23:10:00Z"
+        "reason": "Local QA3 build/typecheck and desktop/mobile screenshots are complete, but Mission Control writeback is unavailable and the PR #19 preview URL is auth-protected for unauthenticated checks.",
+        "nextUnblockAction": "Sync the QA3 payload to Mission Control with agency API auth and have Ethan/authenticated Vercel verify the preview URL opens before client handoff.",
+        "updatedAt": "2026-05-05T03:18:39Z"
       }
     },
     {
@@ -699,7 +707,7 @@
         "MC delivery writeback"
       ],
       "order": 13,
-      "status": "pending",
+      "status": "pending_founder_and_sync",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
         "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
@@ -710,12 +718,20 @@
         "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
         "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
         "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-packaging-2026-05-04.json",
-        "restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json"
+        "restaurant-website-system/sites/marys-mexican-grill/mc-delivery-package-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
       ],
       "blocker": {
-        "reason": "Packaging is prepared locally, but ready_to_pitch must remain false: preview URL is still missing, founder-only Anthropic key and human review gates are still pending, QA2 screenshot assets referenced by prior QA are missing from this worktree, QA3 fresh screenshots are blocked in this sandbox, and Mission Control API auth is unavailable.",
-        "nextUnblockAction": "Mirror a real preview URL and missing QA screenshot assets, recapture QA3 screenshots in an environment that can render the local preview, then wait for Ethan to configure the site-specific Anthropic key and complete human review before setting ready_to_pitch true.",
-        "updatedAt": "2026-05-04T23:55:00Z"
+        "reason": "Delivery package is prepared and QA3 screenshots are captured, but final delivery is still blocked by auth-protected preview verification, missing QA2 screenshot assets, Mission Control API auth, founder Anthropic key, and Ethan human review.",
+        "nextUnblockAction": "Verify preview access in an authenticated Vercel/GitHub session, mirror QA2 screenshot evidence if available, sync local payloads to Mission Control, then wait for Ethan to complete the founder-only gates.",
+        "updatedAt": "2026-05-05T03:18:39Z"
       }
     }
   ],
@@ -1356,9 +1372,11 @@
     "ready_to_pitch remains false until founder Anthropic key setup and founder human review are complete.",
     "Preview URL and missing QA screenshot evidence remain explicit blockers instead of invented claims."
   ],
-  "updatedAt": "2026-05-04T23:55:00Z",
+  "updatedAt": "2026-05-05T03:18:39Z",
   "childTaskId": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
   "founderGateTaskId": "03d5cec6-db38-46de-92d6-47d8c06c787e",
   "deliveryPackagePath": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
-  "readyToPitch": false
+  "readyToPitch": false,
+  "previewUrl": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "previewAccessStatus": "auth_protected_pending_ethan_verification"
 }

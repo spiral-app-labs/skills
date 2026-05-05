@@ -10,7 +10,7 @@
   "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
   "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
   "delivery_package_path": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
-  "preview_url": null,
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
   "ready_to_pitch": false,
   "anthropic_key_status": "pending_founder",
   "human_review_status": "pending_founder",
@@ -18,7 +18,7 @@
     "delivery-package"
   ],
   "pending_requirement_ids": [
-    "qa-round-3",
+    "delivery-final-url-access",
     "delivery-no-missing-evidence"
   ],
   "evidence_urls": [
@@ -31,16 +31,24 @@
     "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
     "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
     "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json",
-    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json"
+    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
   ],
   "blockers": [
-    "Preview URL is still pending and is not stored in this worktree.",
+    "Preview URL exists from GitHub PR #19 but is protected by Vercel login/401 for unauthenticated checks; Ethan/authenticated Vercel verification is still required.",
     "Founder must create/configure the site-specific Anthropic key.",
     "Founder must personally complete human review.",
     "QA2 screenshot files referenced by existing QA2 docs/writebacks are missing from this worktree.",
-    "Fresh QA3 screenshots still need recapture in an environment that allows local preview rendering.",
     "Mission Control API auth is unavailable; local payload recorded instead of remote sync."
   ],
-  "blocker": "Packaging is prepared locally, but ready_to_pitch must remain false until Ethan completes human review and the site-specific Anthropic key is configured. Preview URL and screenshot evidence are also still incomplete.",
-  "heartbeat_summary": "Mary's Mexican Grill packaging handoff is prepared locally for founder review only. Delivery-package.md, checklist.md/json, pitch doc, battle cards, and QA docs are mirrored in the worktree, and fresh npm ci, npm run typecheck, and npm run build passed on 2026-05-04. ready_to_pitch remains false because the site-specific Anthropic key and Ethan human review are founder-only gates, no preview URL is stored locally, QA2 screenshot assets are missing from this worktree, QA3 screenshots remain sandbox-blocked, and Mission Control auth is unavailable for remote sync."
+  "blocker": "Packaging is prepared locally and QA3 screenshots are captured, but ready_to_pitch must remain false until Ethan verifies preview access, completes human review, and configures the site-specific Anthropic key; QA2 screenshot evidence and Mission Control sync are also still incomplete.",
+  "heartbeat_summary": "Mary's Mexican Grill packaging handoff was refreshed locally: PR #19 preview URL is recorded, fresh QA3 local screenshots are captured, and npm ci/build/typecheck pass. ready_to_pitch remains false because preview access is auth-protected, QA2 screenshots are missing, Mission Control auth is unavailable, and founder-only Anthropic/human-review gates remain open.",
+  "preview_access_status": "auth_protected_pending_ethan_verification"
 }
