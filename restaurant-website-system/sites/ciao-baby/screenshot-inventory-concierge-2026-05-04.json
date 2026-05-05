@@ -1,0 +1,48 @@
+{
+  "site_slug": "ciao-baby",
+  "captured_at": "2026-05-05T00:25:00Z",
+  "capture_label": "concierge",
+  "note": "PNG screenshot files are local evidence and ignored by repo; this tracked manifest records path, size, and hash.",
+  "screenshots": [
+    {
+      "path": "screenshots/concierge-about-desktop-2026-05-04.png",
+      "bytes": 1187218,
+      "sha256": "ed3c023abdd49ddf84b55d56a2335f5fd318c0044b07af7b546f919e176f77e6"
+    },
+    {
+      "path": "screenshots/concierge-about-mobile-2026-05-04.png",
+      "bytes": 1121578,
+      "sha256": "351cedb8721c135021c4cbb16b30184ce4268a6519dea735434d9e096d0b2437"
+    },
+    {
+      "path": "screenshots/concierge-contact-desktop-2026-05-04.png",
+      "bytes": 683424,
+      "sha256": "acafa0186b14eafe021d3fff2200e90080f16217e137c78f19c382147591b48e"
+    },
+    {
+      "path": "screenshots/concierge-contact-mobile-2026-05-04.png",
+      "bytes": 739503,
+      "sha256": "866944bc3555680f33a46a4cde82611ea2ac263f41807e70bbbb12a545c189aa"
+    },
+    {
+      "path": "screenshots/concierge-home-desktop-2026-05-04.png",
+      "bytes": 980663,
+      "sha256": "c0f81e08688fcc0148c814956d5e8a5048debf1a311e5832288f31d42b4f02dd"
+    },
+    {
+      "path": "screenshots/concierge-home-mobile-2026-05-04.png",
+      "bytes": 1132417,
+      "sha256": "e230f46025a23fa18411add4f8d7cb89d67da4af5c09209a358da4acd3739959"
+    },
+    {
+      "path": "screenshots/concierge-menu-desktop-2026-05-04.png",
+      "bytes": 677564,
+      "sha256": "761ee9fb35b1f6a4627b6140bd8e9146f653b96923b17765e0a63cf7787669b1"
+    },
+    {
+      "path": "screenshots/concierge-menu-mobile-2026-05-04.png",
+      "bytes": 1039042,
+      "sha256": "37b225cfe5823b22c33564e53b8925af3f108746f2f760552b1e9a9474e24027"
+    }
+  ]
+}

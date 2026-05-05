@@ -1,0 +1,50 @@
+{
+  "build_stage": "qa_round_3",
+  "completed_stage": "qa_round_2",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "qa_round_path": "restaurant-website-system/sites/ciao-baby/qa-round-2.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/qa-round-2.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-2-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-contact-mobile-2026-05-04.png"
+  ],
+  "passed_requirement_ids": [
+    "qa-round-2"
+  ],
+  "fixes_applied": [
+    "Simplified customer-facing concierge/helper labels",
+    "Removed extra contact/source CTA grid and focused contact right card on private parties",
+    "Swapped private-party teaser image away from awkward exterior/logo crop",
+    "Condensed footer spacing and labels"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "build": "passed with dynamic /api/concierge route",
+    "browser_preview_capture": "passed",
+    "horizontal_overflow_offenders": 0,
+    "visual_mobile_qa": "passed_with_caveats"
+  },
+  "caveats": [
+    "Owner must verify preferred domain, exact current hours, and any changed menu prices before final delivery",
+    "Confirm phone/address/directions on a real device before final packaging",
+    "If apparent post-footer dark space appears in manual mobile browser, trim before delivery"
+  ],
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Completed Ciao Baby QA round 2 locally. Visual/sellability QA found internal-sounding labels and contact clutter; fixes were applied, typecheck/build passed, four routes recaptured with zero overflow, and QA2 now passes with owner-verification caveats."
+}

@@ -1,0 +1,48 @@
+{
+  "build_stage": "pitch",
+  "completed_stage": "concierge",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "concierge_evidence_path": "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+  "concierge_transcript_path": "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/ciao-baby/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/ciao-baby/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/ContactPage.tsx",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/concierge-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-concierge-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshots/concierge-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/concierge-contact-mobile-2026-05-04.png"
+  ],
+  "passed_requirement_ids": [
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe"
+  ],
+  "concierge_guardrails": [
+    "Deterministic local resolver; no external AI key required",
+    "Only answers from source-backed Ciao Baby audit/scrape/review evidence",
+    "Refuses reservations, table holds, current availability, fake ordering, prices/specials, allergy/medical advice, and private-event contract claims",
+    "Unsupported/current-state requests hand off to phone and directions"
+  ],
+  "verification": {
+    "resolver_smoke_test": "passed",
+    "api_route_smoke_test": "passed",
+    "typecheck": "passed",
+    "build": "passed with dynamic /api/concierge route",
+    "browser_preview_capture": "passed",
+    "horizontal_overflow_offenders": 0
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Completed Ciao Baby concierge gate locally with deterministic truth-safe KB, /api/concierge route, contact-page UI, smoke-test transcript, build/typecheck, and browser evidence. Local stage advanced to pitch; remote MC sync remains pending auth."
+}

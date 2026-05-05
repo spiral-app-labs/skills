@@ -1,0 +1,40 @@
+{
+  "build_stage": "battle_cards",
+  "completed_stage": "pitch",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+    "restaurant-website-system/sites/ciao-baby/audit.md",
+    "restaurant-website-system/sites/ciao-baby/google-reviews-themes.md",
+    "restaurant-website-system/sites/ciao-baby/routing-rationale.md",
+    "restaurant-website-system/sites/ciao-baby/first-preview-build-notes.md",
+    "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/ciao-baby/scrapes/concierge-browser-checks-2026-05-04.json"
+  ],
+  "passed_requirement_ids": [
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence"
+  ],
+  "pitch_posture": "clarify-and-convert",
+  "verification": {
+    "pitch_specific": "passed",
+    "before_after_delta": "passed",
+    "evidence_links": "passed"
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Completed Ciao Baby pitch doc locally. The pitch frames the site as a warm heritage-Italian trust/conversion upgrade for a loved Barrington restaurant with fragmented public-source identity, using audit, review, build, improvement, and concierge evidence."
+}

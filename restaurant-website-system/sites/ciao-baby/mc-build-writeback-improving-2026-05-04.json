@@ -1,0 +1,53 @@
+{
+  "build_stage": "top_3_improvements",
+  "completed_stage": "improving",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "local_preview_url": "http://127.0.0.1:3084",
+  "improvement_notes_path": "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/improvement-pass-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-improvement-pass-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-contact-mobile-2026-05-04.png"
+  ],
+  "artifact_urls": [
+    "restaurant-website-system/sites/ciao-baby/components/TopNavBar.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/BookATableButton.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/StarRating.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/HeroTestimonialCard.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/HeroHoursSidebar.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/ContactPage.tsx",
+    "restaurant-website-system/sites/ciao-baby/components/FooterMinimalRich.tsx",
+    "restaurant-website-system/sites/ciao-baby/content.ts",
+    "restaurant-website-system/sites/ciao-baby/app/globals.css"
+  ],
+  "passed_requirement_ids": [
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "build": "passed",
+    "browser_preview_capture": "passed",
+    "horizontal_overflow_offenders": 0,
+    "visual_mobile_qa": "passed_no_blocker"
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Completed Ciao Baby improvement pass: phone-first CTAs, mobile quick actions, factual-safety cleanup, safer review proof labels, calmer hours caveats, stronger contact hero readability, and fresh browser evidence with zero overflow offenders."
+}

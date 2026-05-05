@@ -1,0 +1,48 @@
+{
+  "site_slug": "ciao-baby",
+  "captured_at": "2026-05-05T00:42:00Z",
+  "capture_label": "qa-round-1",
+  "note": "PNG screenshot files are local evidence and ignored by repo; this tracked manifest records path, size, and hash after the QA1 CTA fix.",
+  "screenshots": [
+    {
+      "path": "screenshots/qa-round-1-about-desktop-2026-05-04.png",
+      "bytes": 1187347,
+      "sha256": "50ba0f079610901a5b314ebc57e777117189e50d68df4026cc9fe28af148564d"
+    },
+    {
+      "path": "screenshots/qa-round-1-about-mobile-2026-05-04.png",
+      "bytes": 1121144,
+      "sha256": "945aaf56a9665694d0b94035db9ce2bccfdaef2b167c445e5c8985cce7253a49"
+    },
+    {
+      "path": "screenshots/qa-round-1-contact-desktop-2026-05-04.png",
+      "bytes": 683424,
+      "sha256": "acafa0186b14eafe021d3fff2200e90080f16217e137c78f19c382147591b48e"
+    },
+    {
+      "path": "screenshots/qa-round-1-contact-mobile-2026-05-04.png",
+      "bytes": 739503,
+      "sha256": "866944bc3555680f33a46a4cde82611ea2ac263f41807e70bbbb12a545c189aa"
+    },
+    {
+      "path": "screenshots/qa-round-1-home-desktop-2026-05-04.png",
+      "bytes": 980393,
+      "sha256": "d806e26476c6fd8a6a3d7495cdbecbb9cda13e99e67d84044a42c3257684cb33"
+    },
+    {
+      "path": "screenshots/qa-round-1-home-mobile-2026-05-04.png",
+      "bytes": 1132417,
+      "sha256": "e230f46025a23fa18411add4f8d7cb89d67da4af5c09209a358da4acd3739959"
+    },
+    {
+      "path": "screenshots/qa-round-1-menu-desktop-2026-05-04.png",
+      "bytes": 677564,
+      "sha256": "761ee9fb35b1f6a4627b6140bd8e9146f653b96923b17765e0a63cf7787669b1"
+    },
+    {
+      "path": "screenshots/qa-round-1-menu-mobile-2026-05-04.png",
+      "bytes": 1039042,
+      "sha256": "37b225cfe5823b22c33564e53b8925af3f108746f2f760552b1e9a9474e24027"
+    }
+  ]
+}
