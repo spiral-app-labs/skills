@@ -1,0 +1,92 @@
+{
+  "capturedAt": "2026-05-05T08:24:50.343Z",
+  "captures": [
+    {
+      "url": "https://www.google.com/search?q=Main+Street+Tacos+327+N+Main+St+Wauconda+IL",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/google-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Main+Street+Tacos+327+N+Main+St+Wauconda+IL",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/google-search-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/wauconda/main-street-tacos-/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/wauconda/main-street-tacos-/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://restaurantguru.com/Main-Street-Tacos-Lake-Barrington",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantguru-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantguru-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantguru-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/wauconda/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-city-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-city-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-city-desktop-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "google-search",
+      "url": "https://www.google.com/search?q=Main+Street+Tacos+327+N+Main+St+Wauconda+IL",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Main+Street+Tacos+327+N+Main+St+Wauconda+IL",
+      "contentType": "text/html; charset=ISO-8859-1"
+    },
+    {
+      "label": "restaurantji",
+      "url": "https://www.restaurantji.com/il/wauconda/main-street-tacos-/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/wauconda/main-street-tacos-/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "restaurantguru",
+      "url": "https://restaurantguru.com/Main-Street-Tacos-Lake-Barrington",
+      "status": 200,
+      "finalUrl": "https://restaurantguru.com/Main-Street-Tacos-Lake-Barrington",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "restaurantji-city",
+      "url": "https://www.restaurantji.com/il/wauconda/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/wauconda/",
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "extraCaptures": [
+    {
+      "url": "https://main-street-tacos.menu-world.com",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/menu-world-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/menu-world-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/menu-world-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://MainStreetTacos.food96.com",
+      "screenshot": "restaurant-website-system/sites/main-street-tacos/screenshots/food96-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/main-street-tacos/scrapes/food96-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/main-street-tacos/scrapes/food96-desktop-2026-05-05.txt"
+    }
+  ],
+  "extraCapturedAt": "2026-05-05T08:25:27.037Z"
+}
