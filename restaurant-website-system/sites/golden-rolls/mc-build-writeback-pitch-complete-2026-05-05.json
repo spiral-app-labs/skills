@@ -1,0 +1,53 @@
+{
+  "leadId": "e5048ba5-21d5-4400-8673-f92e16954560",
+  "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
+  "siteSlug": "golden-rolls",
+  "templateSlug": "bamzi-01",
+  "build_stage": "battle_cards",
+  "currentStage": "battle_cards",
+  "completedGate": "pitch",
+  "checklistPaths": {
+    "markdown": "restaurant-website-system/sites/golden-rolls/checklist.md",
+    "json": "restaurant-website-system/sites/golden-rolls/checklist.json"
+  },
+  "pitch_doc_path": "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
+  "outreach_draft_path": "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
+  "passedRequirementIds": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-captured",
+    "fork-built",
+    "improvement-pass-completed",
+    "top-3-improvements",
+    "concierge",
+    "pitch"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/golden-rolls/pitch-doc.md",
+    "restaurant-website-system/sites/golden-rolls/outreach-draft.md",
+    "restaurant-website-system/sites/golden-rolls/audit.md",
+    "restaurant-website-system/sites/golden-rolls/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/google-reviews-themes.md",
+    "restaurant-website-system/sites/golden-rolls/concierge-qa-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-pitch-complete-2026-05-05.json"
+  ],
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local pitch artifacts and writeback payload are ready; submit mc-build-writeback-pitch-complete-2026-05-05.json when MC API auth/base URL are configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the pitch-complete writeback payload before marking MC as battle_cards.",
+      "recordedAt": "2026-05-05T10:23:27.000Z"
+    }
+  ],
+  "validation": {
+    "pitchDoc": "created",
+    "outreachDraft": "created",
+    "artifactInspection": "passed"
+  },
+  "heartbeat_summary": "Completed Golden Rolls pitch gate with sellable pitch doc, outreach draft, demo path, owner talking points, proof files, and caveats.",
+  "updatedAt": "2026-05-05T10:23:27.000Z"
+}
