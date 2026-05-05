@@ -15,7 +15,7 @@ export function OpeningTimesBlock() {
     <section className="bg-bg-cream py-16 md:py-20 px-6">
       <motion.div
         className="max-w-xl mx-auto text-center space-y-4"
-        initial={{ opacity: 0, y: 12 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, ease: theme.motion.easing }}

@@ -17,8 +17,9 @@ export function InlineInfoSplit() {
         {items.map((item, i) => (
           <motion.div
             key={item.title}
+            id={i === 0 ? 'gift-cards' : 'lounge-nights'}
             className={`text-center space-y-5 ${i === 1 ? 'md:pl-12' : ''}`}
-            initial={{ opacity: 0, y: 16 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: theme.motion.easing, delay: i * 0.1 }}

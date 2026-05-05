@@ -29,7 +29,7 @@ export function PolaroidStrip() {
               transform: `rotate(${p.rotation}deg)`,
               boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
             }}
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: theme.motion.easing, delay: i * 0.08 }}

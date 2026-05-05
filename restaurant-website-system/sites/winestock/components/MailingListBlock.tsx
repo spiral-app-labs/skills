@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { theme } from '../theme';
 import { content } from '../content';
@@ -10,7 +11,7 @@ export function MailingListBlock() {
     <section className="bg-bg-cream py-20 px-6">
       <motion.div
         className="max-w-xl mx-auto text-center space-y-6"
-        initial={{ opacity: 0, y: 16 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, ease: theme.motion.easing }}
@@ -21,22 +22,21 @@ export function MailingListBlock() {
           </h2>
           <p className="text-body text-text-muted">{m.subtitle}</p>
         </div>
-        <form
-          className="flex gap-2 max-w-md mx-auto"
-          onSubmit={(e) => e.preventDefault()}
-        >
-          <input
-            type="email"
-            placeholder={m.placeholder}
-            className="flex-1 px-4 py-3 rounded-button bg-white border border-text-dark/20 text-body text-text-dark placeholder:text-text-muted focus:outline-none focus:border-text-dark/60 transition-colors"
-          />
-          <button
-            type="submit"
-            className="px-6 py-3 rounded-button bg-text-dark text-text-cream hover:bg-black text-button transition-colors"
-          >
-            {m.cta}
-          </button>
-        </form>
+        <div className="grid gap-3 text-left">
+          {content.contactActions.map((action) => (
+            <Link
+              key={action.href}
+              href={action.href}
+              className="group rounded-card border border-text-dark/15 bg-white/70 p-4 transition-colors hover:bg-white"
+            >
+              <span className="flex items-center justify-between gap-4 text-button text-text-dark">
+                {action.label}
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
+              <span className="mt-2 block text-body-sm text-text-muted">{action.note}</span>
+            </Link>
+          ))}
+        </div>
       </motion.div>
     </section>
   );

@@ -3,9 +3,9 @@
 - Lead ID: 7f1432ae-2553-442c-80ff-df58acb162ef
 - MC parent task ID: 35f58383-0074-4a64-85cc-46ea2cfcd6bb
 - Template slug: bramble-01
-- Current stage: building
+- Current stage: top_3_improvements
 - Deploy URL: TBD
-- Updated: 2026-05-05T02:05:00Z
+- Updated: 2026-05-05T02:22:47Z
 
 ## Requirements
 
@@ -13,6 +13,7 @@
 - [x] current-site-audit: Current site audit captured desktop, mobile, menu, reviews, and asset evidence - Current-site scrape exists with under-construction homepage copy, address, contact link, Facebook link, and small plates/flatbreads/sandwiches/wine positioning.
 - [x] template-route-locked: Template route and modifiers are locked from the restaurant site router - Routed to `bramble-01` / Bramble for a wine bar, market, and lounge with live music, charcuterie, bottle/gift selection, and Woodstock Square regulars.
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - First Bramble fork uses Winestock-specific content, safe contact CTAs, review proof, browser evidence, and passed typecheck/build.
+- [x] improvement-pass: Website improvement pass completed after first fork - Added specific Winestock story cards, exact review proof, menu/offer clarity, real contact handoffs, screenshot-safe reveal behavior, and passed typecheck/build/browser QA.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -34,6 +35,17 @@
 - restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-mobile-full.png
 - restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-desktop-full.png
 - restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-mobile-full.png
+- restaurant-website-system/sites/winestock/improvement-pass-2026-05-04.md
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/capture-manifest.json
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-full.png
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-full.png
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-full.png
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-text.txt
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-text.txt
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-text.txt
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-text.txt
+- restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/link-check.txt
 
 ## QA Rounds
 
