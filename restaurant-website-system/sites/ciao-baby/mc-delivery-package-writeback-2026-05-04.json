@@ -34,7 +34,7 @@
     "delivery-no-missing-evidence"
   ],
   "blockers": [
-    "Public preview URL is not created yet",
+    "PR #28 is open and Vercel preview deployed, but the preview is auth-gated and not client-shareable yet",
     "Mission Control remote sync is unavailable because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime",
     "Owner/founder verification is still required for preferred domain, exact current hours, and any changed menu pricing"
   ],
@@ -48,5 +48,8 @@
     "attempted": false,
     "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
   },
-  "heartbeat_summary": "Created Ciao Baby local delivery package and outreach draft. Local QA3 has passed, but ready_to_pitch/delivered remain false until public preview URL, Mission Control remote sync, and owner/founder verification are complete."
+  "heartbeat_summary": "Created Ciao Baby local delivery package and outreach draft. Local QA3 has passed, but ready_to_pitch/delivered remain false until public preview URL, Mission Control remote sync, and owner/founder verification are complete.",
+  "pull_request_url": "https://github.com/spiral-app-labs/skills/pull/28",
+  "vercel_pr_preview_url": "https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app",
+  "public_preview_blocker": "Vercel PR preview deployed but currently returns authentication required, so it is not client-shareable yet."
 }

@@ -753,9 +753,11 @@
         "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-3-2026-05-04.json",
         "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
         "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
-        "restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json"
+        "restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json",
+        "https://github.com/spiral-app-labs/skills/pull/28",
+        "https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app"
       ],
-      "blocker": "Local delivery package is complete, but final delivery is blocked until public preview URL, Mission Control remote sync auth, and owner/founder verification are complete."
+      "blocker": "Local delivery package is complete and PR #28 is open, but final delivery is blocked until a client-shareable public preview URL, Mission Control remote sync auth, and owner/founder verification are complete."
     }
   ],
   "evidencePaths": [
@@ -1068,5 +1070,9 @@
     "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-3-2026-05-04.json",
     "restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json"
   ],
-  "lastUpdated": "2026-05-05T01:25:00Z"
+  "lastUpdated": "2026-05-05T01:30:00Z",
+  "pullRequestUrl": "https://github.com/spiral-app-labs/skills/pull/28",
+  "vercelPrPreviewUrl": "https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app",
+  "publicPreviewUrl": null,
+  "publicPreviewBlocker": "Vercel PR preview deployed but currently returns authentication required, so it is not client-shareable yet."
 }

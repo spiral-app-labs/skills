@@ -8,7 +8,9 @@ Status: local package complete; final delivery blocked on public preview + MC re
 ## Preview
 
 - Local preview used for QA: `http://127.0.0.1:3084`
-- Public preview URL: TBD
+- PR: `https://github.com/spiral-app-labs/skills/pull/28`
+- Vercel PR preview URL: `https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app`
+- Public client preview URL: blocked — Vercel preview currently returns authentication required, so it is not client-shareable yet.
 
 ## Sales posture
 
@@ -73,7 +75,7 @@ Passed locally:
 
 Pending/blocked:
 
-- public preview URL
+- public client-shareable preview URL
 - Mission Control remote evidence sync through official agency API
 - owner/founder verification of preferred domain, exact current hours, and any changed menu pricing
 - final delivery state
@@ -87,4 +89,4 @@ Pending/blocked:
 
 ## Final delivery blocker
 
-This package is ready for PR/public-preview creation and Mission Control sync when auth is available. It is not final-delivered until the public preview URL and MC evidence mirror exist, and Ethan/founder verification clears the remaining factual/domain caveats.
+This package is ready for Mission Control sync when auth is available. PR #28 is open, but it is not final-delivered until a client-shareable public preview URL and MC evidence mirror exist, and Ethan/founder verification clears the remaining factual/domain caveats.

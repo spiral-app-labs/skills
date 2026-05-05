@@ -10,7 +10,10 @@
 - Checklist JSON: restaurant-website-system/sites/ciao-baby/checklist.json
 - Deploy URL: TBD
 - Local preview URL: http://127.0.0.1:3084
-- Updated: 2026-05-05T01:25:00Z
+- PR URL: https://github.com/spiral-app-labs/skills/pull/28
+- Vercel PR preview URL: https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app
+- Public preview blocker: Vercel PR preview deployed but currently returns authentication required, so it is not client-shareable yet.
+- Updated: 2026-05-05T01:30:00Z
 
 ## Mission Control Sync Contract
 
@@ -293,7 +296,9 @@
   - restaurant-website-system/sites/ciao-baby/ai-concierge.md
   - restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md
   - restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json
-- Blocker: Local delivery package is complete, but final delivery is blocked until public preview URL, Mission Control remote sync auth, and owner/founder verification are complete.
+  - https://github.com/spiral-app-labs/skills/pull/28
+  - https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app
+- Blocker: Local delivery package is complete and PR #28 is open, but final delivery is blocked until a client-shareable public preview URL, Mission Control remote sync auth, and owner/founder verification are complete.
 
 ## Requirement Status
 
@@ -327,8 +332,8 @@
 - [x] qa-round-1: QA round 1 completed with screenshots, findings, fixes, and MC writeback — QA1 completed with build/typecheck, screenshots, concierge safety check, and About CTA fix.
 - [x] qa-round-2: QA round 2 completed with screenshots, findings, fixes, and MC writeback — QA2 completed with sellability/mobile polish fixes and caveats.
 - [x] qa-round-3: QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback — QA3 final sell-readiness passed locally with delivery caveats.
-- [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC — Local delivery package exists; public preview and MC sync are still blocked.
-- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence — Not passed until public preview URL and MC evidence mirror exist.
+- [ ] delivery-package: Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC — Local delivery package exists and PR #28 is open; client-shareable public preview and MC sync are still blocked.
+- [ ] delivery-no-missing-evidence: No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence — Not passed until client-shareable public preview URL and MC evidence mirror exist.
 
 ## Evidence Paths
 
@@ -446,6 +451,8 @@
 - restaurant-website-system/sites/ciao-baby/delivery-package.md
 - restaurant-website-system/sites/ciao-baby/outreach-draft.md
 - restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json
+- https://github.com/spiral-app-labs/skills/pull/28
+- https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app
 
 ## Mission Control Payloads
 
@@ -475,7 +482,7 @@
 
 ## Blockers
 
-- Public preview URL not created yet; current evidence uses local preview `http://127.0.0.1:3084`.
+- PR #28 is open and Vercel preview deployed, but the preview is auth-gated and not client-shareable yet.
 - Mission Control remote sync pending official API auth (`AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` unset in this runtime). Local writeback payloads are prepared through packaging.
 - Owner/founder verification still needed for preferred domain, exact current hours, and any changed menu prices before final delivery.
 
