@@ -98,3 +98,19 @@ Captured supporting public proof:
 Updated audit interpretation: the official site is more than a one-page scrape in real browser context. It has a large WordPress menu system and a crawlable full-menu page with detailed menu/pricing content. The sellable gaps remain real: dated visual presentation, weak homepage conversion, dense mobile navigation, and an unhelpful Location & Hours page capture with little crawlable address/hour content.
 
 Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
+
+
+## 2026-05-05 Google Reviews evidence update
+
+Golden Rolls Google Reviews were opened in OpenClaw-managed Chrome, sorted by **Highest rating**, and captured as a 30-written-review packet. Evidence:
+
+- Screenshot: `screenshots/google-reviews-highest-2026-05-05.png`
+- Review packet: `scrapes/google-reviews-highest-30-2026-05-05.json` and `scrapes/google-reviews-highest-30-2026-05-05.md`
+- Themes: `google-reviews-themes.md`
+- Capture script: `scrapes/capture-google-reviews-cdp.mjs`
+
+Visible Google proof at capture: **4.6 from 348 reviews**.
+
+Review themes strengthen the build case: guests describe Golden Rolls as a hidden gem whose interior is much better than the outside suggests, with fresh and generous sushi, big rolls / more fish than rice, creative roll and Japanese-menu depth, attentive service, and reliable takeout/delivery. Named dishes and proof points include Godzilla Roll, crab rangoon roll, crab cakes, tempura shrimp and vegetables, Maguru salad, peppercorn tuna, miso soup, calamari, golden shrimp, gyoza beef, salmon nigiri, oysters/clams, mochi, and non-raw options. Pricing should be handled honestly: some reviewers call it pricier, but worth it for the portions and quality.
+
+Local canonical status: reviews gate passed. Next canonical gate: routing/building, pending Mission Control writeback.
