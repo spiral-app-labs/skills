@@ -4,7 +4,7 @@
   "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
   "siteSlug": "la-hacienda-mexican-restaurant",
   "templateSlug": "bamzi-01",
-  "currentStage": "reviews",
+  "currentStage": "building",
   "evidencePaths": [
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
@@ -23,7 +23,10 @@
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-search-desktop-2026-05-05.png",
     "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
-    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md"
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -35,9 +38,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Local browser audit evidence is complete and the next canonical gate is reviews, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-auditing-complete-2026-05-05.json through the agency build writeback route before starting the reviews gate.",
-      "recordedAt": "2026-05-05T08:22:00.000Z"
+      "reason": "Local audit and Google reviews evidence are complete, and local stage has advanced to building. Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.",
+      "recordedAt": "2026-05-05T11:15:00.000Z"
     }
   ],
   "requirements": [
@@ -88,6 +91,18 @@
       ]
     },
     {
+      "id": "google-reviews-highest-30",
+      "title": "30 written Google reviews captured using the Highest sort/filter",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Captured browser evidence from Google Search local reviews panel on 2026-05-05. Highest sort selected; 30 written reviews summarized into a build-safe evidence packet. Observed 4.3 rating from 530 Google reviews.",
+      "evidence": [
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png"
+      ]
+    },
+    {
       "id": "fork-built",
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
       "qaState": "pending",
@@ -125,5 +140,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T08:22:00.000Z"
+  "updatedAt": "2026-05-05T11:15:00.000Z"
 }
