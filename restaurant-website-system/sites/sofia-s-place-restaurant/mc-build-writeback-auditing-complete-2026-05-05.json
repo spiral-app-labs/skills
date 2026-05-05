@@ -1,0 +1,60 @@
+{
+  "lead_id": "ad091f40-f7c7-48bb-bd00-7c6b9c7b7dec",
+  "root_task_id": "e6c4701f-c3f6-49f6-aab3-e3ce56ece6cc",
+  "site_slug": "sofia-s-place-restaurant",
+  "build_stage": "reviews",
+  "currentStage": "reviews",
+  "stage_completed": "auditing",
+  "ready_to_pitch": false,
+  "template_slug": "bamzi-01",
+  "checklist_markdown_path": "restaurant-website-system/sites/sofia-s-place-restaurant/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/sofia-s-place-restaurant/checklist.json",
+  "current_site_audit_path": "restaurant-website-system/sites/sofia-s-place-restaurant/audit.md",
+  "evidence_paths": [
+    "restaurant-website-system/sites/sofia-s-place-restaurant/checklist.md",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/checklist.json",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/official-order-domain-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/official-order-domain-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-domain-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-domain-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/official-order-location-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/official-order-location-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/google-search-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/google-search-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/restaurantji-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantji-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/restaurantguru-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/screenshots/doordash-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/scrapes/doordash-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/sofia-s-place-restaurant/browser-evidence-audit-2026-05-05.md"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked"
+  ],
+  "blockers": [
+    {
+      "gate": "reviews",
+      "reason": "Next gate requires Google Reviews Highest-filter packet: 30 written reviews plus screenshots; target profile must be the confirmed current location."
+    },
+    {
+      "gate": "address_confirmation",
+      "reason": "Browser evidence shows conflicting Sofia's Place location signals: Google/current marketplace profile points to 398 W Liberty St, Wauconda, while Restaurantji/Yelp/web snippets still show 640 E State Rd, Island Lake."
+    },
+    {
+      "gate": "stage_writeback",
+      "reason": "AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this OpenClaw runtime, so this payload was committed for later agency API submission instead of raw Supabase task mutation."
+    }
+  ],
+  "heartbeat_summary": "Sofia's Place browser audit evidence captured; stale No supported browser found blocker cleared locally; official/order-domain setup failure and address/current-location conflict documented; ready for MC sync and cautious reviews gate.",
+  "updated_at": "2026-05-05T09:05:00.000Z"
+}

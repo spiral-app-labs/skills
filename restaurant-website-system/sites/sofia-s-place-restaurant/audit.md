@@ -77,3 +77,27 @@ OpenClaw managed browser is unavailable/cooling down after repeated failures (`N
 ## Current recommendation
 
 Proceed as a strong bad-owned-path lead after browser verification. The sell story is concrete: Sofia's should not have an official domain that asks the restaurant to finish setup. A first-party site should lead with verified address, hours, phone, Mexican menu highlights, delivery/takeout/order handoff, and trust proof without relying on a broken ordering setup page.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured official/order-domain evidence:
+
+- Base domain `http://www.sofiasplacerestaurantil.com/` desktop/mobile screenshots and DOM/text snapshots. It still shows the FromTheRestaurant setup page: `Online ordering setup in progress`, `Finish setting up your online ordering`, and a provider setup phone number.
+- Google-result path `https://sofiasplacerestaurantil.com/sofias-place-restaurant` failed in managed Chrome with `ERR_SSL_PROTOCOL_ERROR`; a non-browser check also failed SSL for HTTPS and returned 404 for the equivalent www HTTP path.
+
+Captured Google/address evidence:
+
+- Google desktop/mobile screenshots and text. Google shows a Sofia's Place Restaurant profile at 4.5 from 333 Google reviews, phone `(847) 526-8478`, menu path `sofiasplaceislandlake.com`, and address `398 W Liberty St, Wauconda, IL 60084`.
+- Web results still show Island Lake pages/snippets for `640 E State Rd, Island Lake, IL 60042`, including Yelp/Restaurantji and the FromTheRestaurant location result. Marketplace search shows DoorDash/Grubhub Wauconda listings plus a Facebook result saying Sofia's Place moved to Wauconda.
+
+Captured public proof:
+
+- Restaurantji desktop/mobile screenshot/text showing 4.4 from 151 ratings, Mexican category, `640 E State Rd, Island Lake`, phone `(847) 526-8478`, Tue–Sat 11AM–9PM, Sunday/Monday closed, delivery/take-out, outdoor seating, great cocktails, kids' menu, and favorites like fajitas, steak burrito, enchiladas, guacamole/pico, chiles rellenos, homemade flan, and flautas.
+- Restaurant Guru browser capture returned `502 Bad Gateway`, so treat it as unavailable fresh evidence during this pass.
+
+Updated audit interpretation: the owned/order path failure is confirmed, but the address/current-location conflict is now stronger than the initial audit suggested. Do not build around the Island Lake address until Mission Control/founder confirms whether Sofia's moved to Wauconda and which order/menu path is current. The sell story remains strong if confirmed: the visible official/order domain is broken or incomplete while search and marketplaces carry the guest-facing truth.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback and address/current-location confirmation before build/fork copy.
