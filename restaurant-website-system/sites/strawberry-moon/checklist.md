@@ -329,3 +329,11 @@
 - Screenshot PNGs are present locally in the packaging worktree but ignored by repo policy, so they still need Mission Control/upload mirroring before final delivery.
 - `ready_to_pitch` stays `false`; `anthropic_key_status` and `human_review_status` both remain `pending_founder`.
 - Mission Control API auth is still unavailable in this runtime, so packaging sync is recorded in local writeback payloads only.
+
+## Preview smoke evidence — 2026-05-05
+
+- Tested preview candidate: `https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app`.
+- Result: HTTP `401` / `Authentication Required`.
+- Evidence: `restaurant-website-system/sites/strawberry-moon/preview-smoke-evidence-2026-05-05.md`.
+- Packaging remains assembled but delivery stays blocked until a public owner-shareable preview URL or Vercel protection bypass is available.
+- Mission Control heartbeat writeback: `d5b257ed-39f3-4118-b771-47d425138214`.
