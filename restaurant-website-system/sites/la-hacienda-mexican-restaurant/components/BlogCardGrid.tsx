@@ -30,8 +30,8 @@ export function BlogCardGrid({
         <div className="grid md:grid-cols-3 gap-6">
           {posts.map((p) => (
             <Link key={p.id} href={p.href} className="group bg-bg-white rounded-card overflow-hidden border border-border-light hover:shadow-md transition">
-              <div className="relative aspect-[4/3]">
-                <Image src={p.image} alt={p.title} fill sizes="(min-width: 768px) 380px, 100vw" className="object-cover group-hover:scale-105 transition" />
+              <div className="relative hidden aspect-[4/3] bg-bg-dark md:block">
+                <Image src={p.image} alt={p.title} fill sizes="(min-width: 768px) 380px, 100vw" className="object-contain transition group-hover:scale-[1.02]" />
               </div>
               <div className="p-5">
                 <div className="text-eyebrow text-accent mb-2">{p.date}</div>

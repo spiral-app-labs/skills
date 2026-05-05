@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
   <rect width="1200" height="900" fill="#efe5d6"/>
   <rect x="90" y="90" width="360" height="720" rx="24" fill="#f6efe4" stroke="#cbb79b" stroke-width="3"/>
-  <text x="140" y="170" fill="#7f2418" font-size="42" font-family="Georgia, serif">Current path</text>
+  <text x="140" y="170" fill="#7f2418" font-size="42" font-family="Georgia, serif">Plan your visit</text>
   <text x="140" y="240" fill="#1b1712" font-size="62" font-family="Georgia, serif">Menu highlights</text>
-  <text x="140" y="320" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Menu deck</text>
-  <text x="140" y="366" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Scattered CTAs</text>
-  <text x="140" y="412" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Weak homepage story</text>
+  <text x="140" y="320" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Tacos and burritos</text>
+  <text x="140" y="366" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Call or order pickup</text>
+  <text x="140" y="412" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Map the drive fast</text>
   <rect x="525" y="160" width="590" height="560" rx="34" fill="#1b1712"/>
   <text x="585" y="250" fill="#f0cf9c" font-size="38" font-family="Arial, sans-serif">Easy next steps</text>
   <text x="585" y="330" fill="#f6efe4" font-size="74" font-family="Georgia, serif">Call. Directions.</text>
   <text x="585" y="410" fill="#f6efe4" font-size="74" font-family="Georgia, serif">Menu. Order.</text>
   <text x="585" y="500" fill="#d7c7b3" font-size="30" font-family="Arial, sans-serif">Warm Mexican neighborhood energy</text>
-  <text x="585" y="548" fill="#d7c7b3" font-size="30" font-family="Arial, sans-serif">Tacos, burritos, salsa & pickup</text>
+  <text x="585" y="548" fill="#d7c7b3" font-size="30" font-family="Arial, sans-serif">Tacos, burritos, salsa &amp; pickup</text>
   <rect x="585" y="600" width="220" height="56" rx="28" fill="#7f2418"/>
-  <text x="632" y="638" fill="#f6efe4" font-size="24" font-family="Arial, sans-serif">Source-backed</text>
+  <text x="632" y="638" fill="#f6efe4" font-size="24" font-family="Arial, sans-serif">La Hacienda</text>
 </svg>

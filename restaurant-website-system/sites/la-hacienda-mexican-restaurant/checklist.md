@@ -3,9 +3,9 @@
 - Lead ID: 7cba3fe2-8f65-4516-b46b-05c2c07ab235
 - MC parent task ID: fd7f4976-daac-42aa-8c9a-1ddb09a9d12f
 - Template slug: bamzi-01
-- Current stage: qa_round_1 (local build gate passed; Mission Control writeback pending)
+- Current stage: qa_round_2 (local build gate passed; Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-05T13:02:00Z
+- Updated: 2026-05-05T13:39:00Z
 
 ## Requirements
 
@@ -18,7 +18,8 @@
 - [x] concierge: AI concierge added with truthful restaurant-specific KB and safe handoffs - Mounted globally, deterministic KB router added, allergy/price/time-sensitive handoffs route to phone, screenshots/API transcript captured.
 - [x] pitch: Sellable pitch doc created or updated - Owner-facing pitch doc created with demo path, proof locker, caveats, and next-step battle-card recommendation.
 - [x] battle-cards: Battle cards doc created or updated - Core sales frame, demo path, objections, proof locker, founder cautions, and close created.
-- [ ] qa_round_1: QA round 1 completed with findings and fixes logged - Pending next gate.
+- [x] qa_round_1: QA round 1 completed with findings and fixes logged - Fixed cropped/internal decorative cards, SVG parse issues, guest-facing copy labels, and concierge trigger prominence; build, DOM, and vision checks passed.
+- [ ] qa_round_2: QA round 2 completed with findings and fixes logged - Pending next gate.
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Bamzi scaffold copied into the existing La Hacienda site folder, placeholder content replaced with audit/review/menu proof, and `npm run build` passed locally on 2026-05-05 after switching to offline-safe font stacks.
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
@@ -112,3 +113,14 @@
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-pitch-complete-2026-05-05.json
 - restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-battle-cards-complete-2026-05-05.json
+
+
+## QA Round 1 evidence
+
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-1-2026-05-05.md
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-1-dom-check-2026-05-05.json
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-home-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-menu-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-contact-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-concierge-open-mobile-2026-05-05.png
+- restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-qa-round-1-complete-2026-05-05.json

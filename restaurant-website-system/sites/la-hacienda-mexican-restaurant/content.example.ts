@@ -84,7 +84,7 @@ export const content = {
     ],
   },
 
-  bigHeadline: 'One clean place to browse the menu, call, get directions, and order La Hacienda favorites.',
+  bigHeadline: 'Browse tacos, burritos, tortas, hours, and next steps before you head over.',
 
   featured: [
     {
@@ -106,7 +106,7 @@ export const content = {
       imageAlt: 'Burritos and tortas poster',
       items: [
         { name: 'Regular Burrito', desc: 'Giant flour tortilla with rice, beans, lettuce, cheese, and choice of protein.', price: '$8.99' },
-        { name: 'Burrito Combination', desc: 'Two-meat combination burrito from the Roost menu corpus.', price: '$9.99' },
+        { name: 'Burrito Combination', desc: 'Two-meat burrito for guests who want a bigger order.', price: '$9.99' },
         { name: 'Cubana Torta', desc: 'Breaded steak, ham, chorizo, eggs, and no lettuce.', price: '$12.00' },
         { name: 'Everyday Special', desc: 'Two regular tacos or one regular burrito with fries and a canned drink.', price: '$11.75' },
       ],
@@ -155,7 +155,7 @@ export const content = {
 
   timelessFooter: {
     image: '/la-hacienda/footer-band.svg',
-    title: 'Call, get directions, browse the menu, and order with less friction.',
+    title: 'Call La Hacienda, get directions, browse the menu, or start an online order.',
   },
 
   about: {
@@ -188,7 +188,7 @@ export const content = {
     },
     hours: {
       eyebrow: 'Source-Backed Hours',
-      title: 'Restaurantji and Roost both corroborate a simple weekly schedule.',
+      title: 'A simple daily schedule makes planning pickup or dinner easy.',
       times: [
         { day: 'Sunday', time: '10:00 am – 9:00 pm' },
         { day: 'Monday – Thursday', time: '10:00 am – 9:00 pm' },
@@ -265,7 +265,7 @@ export const content = {
       },
     ],
     testimonials: {
-      eyebrow: 'Google Review Packet',
+      eyebrow: 'Local Guest Notes',
       title: 'What locals say',
       entries: [
         {
@@ -293,7 +293,7 @@ export const content = {
     },
     reservation: {
       eyebrow: 'Take Action',
-      title: 'Use the links guests actually need',
+      title: 'Call, map, menu, or order in one tap',
       image: '/la-hacienda/action-board.svg',
     },
   },

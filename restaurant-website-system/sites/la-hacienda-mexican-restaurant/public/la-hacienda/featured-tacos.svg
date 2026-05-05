@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
   <rect width="1200" height="900" fill="#efe5d6"/>
   <rect x="80" y="80" width="1040" height="740" rx="30" fill="#d9b36b"/>
-  <text x="140" y="220" fill="#1b1712" font-size="92" font-family="Georgia, serif">Taco Proof</text>
+  <text x="140" y="220" fill="#1b1712" font-size="92" font-family="Georgia, serif">Taco Favorites</text>
   <text x="140" y="320" fill="#7f2418" font-size="38" font-family="Arial, sans-serif">Carne asada, carnitas, al pastor, pico, salsa</text>
   <text x="140" y="430" fill="#1b1712" font-size="50" font-family="Georgia, serif">Quick service</text>
   <text x="140" y="500" fill="#1b1712" font-size="50" font-family="Georgia, serif">Tender tacos</text>
