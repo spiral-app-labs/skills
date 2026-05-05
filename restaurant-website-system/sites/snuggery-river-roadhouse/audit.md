@@ -75,3 +75,26 @@ OpenClaw managed browser is unavailable/cooling down after repeated failures (`N
 ## Current recommendation
 
 Treat Snuggery as a conditional roadhouse/waterfront lead, not yet a confirmed bad-site build. If browser verification shows the official site is weak, outdated, or inaccessible to normal guests, the sell story is excellent: a family-owned Fox River roadhouse with patio/dock/private-party energy should have a site that immediately sells the waterfront experience, Moretti’s pizza, broasted chicken, drinks, hours, pickup/delivery, and private events.
+
+
+## 2026-05-05 browser evidence update
+
+OpenClaw managed Chrome is now available on this host, so the previous browser-capture blocker is cleared locally. New browser evidence is saved in `browser-evidence-audit-2026-05-05.md` and `scrapes/browser-audit-manifest-2026-05-05.json`.
+
+Captured official-site evidence:
+
+- Official homepage desktop/mobile screenshots and DOM/text snapshots.
+- Non-www redirect proof showing `https://snuggerymchenry.com/` redirects to the www homepage in browser.
+- Browser page title: `Home - Snuggery River Roadhouse`.
+- Homepage proof: family-owned year-round roadhouse on the Fox River / Chain O' Lakes, comfort food/cold drinks/good times by the water, graduation-party CTA, pressure-fried crispy chicken, Wisconsin cheese curds, wings, burgers, Moretti's award-winning Chicago-style pizza, indoor/outdoor seating, and riverside patio.
+- Crawler/status checks still returned HTTP 403 for the official domain, so the technical-access issue remains real for non-browser clients even though managed-browser access works.
+
+Captured public proof:
+
+- Google desktop/mobile screenshots and text showing the official website/menu result and Google business profile proof: 4.2 from 1.1K reviews, American restaurant, `801 N River Rd, McHenry, IL 60051`, phone `(815) 578-9600`, owner-confirmed hours, happy hour food, private dining room, and great cocktails.
+- Restaurantji desktop/mobile screenshot/text showing 4.0 from 283 ratings, Pizza/American/Sports Bars categories, address, phone, hours, delivery/take-out, happy-hour food, private dining room, great cocktails, and signature/favorite dishes.
+- Roost screenshot/text corroborating the family-owned waterfront patio/private-party identity, delivery through major apps, 4.1 from 939 reviews, and broader menu/private-event proof.
+
+Updated audit interpretation: Snuggery is not a no-site lead. The official site is reachable and reasonably on-brand in a real browser. The opportunity is narrower and should be framed truthfully: improve everyday conversion, menu/order/hours visibility, private-event routing, and waterfront roadhouse personality while resolving crawler-hostile 403 behavior. Do not pitch it as having no website.
+
+Local canonical audit gate status: passed. Next canonical gate: `reviews`, pending Mission Control stage/requirement writeback.
