@@ -46,6 +46,13 @@ export default function HomePage() {
         </section>
 
         <section className="bg-[#10251a] px-5 py-16 text-white">
+          <div className="mx-auto mb-10 grid max-w-6xl gap-5 md:grid-cols-3">
+            {[
+              ['Open Tue–Sun', 'Lunch starts 11 AM Tuesday through Friday; weekend service begins at 2 PM.'],
+              ['Call first', 'Use the phone CTA for current specials, takeout timing, delivery availability, or dine-in questions.'],
+              ['Find us fast', '790 S Eastwood Dr in Woodstock, with directions available from every page.'],
+            ].map(([title, body]) => <div key={title} className="rounded-3xl bg-white/[0.06] p-6 ring-1 ring-white/10"><h3 className="font-display text-2xl">{title}</h3><p className="mt-3 leading-7 text-white/70">{body}</p></div>)}
+          </div>
           <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
             {c.featured.map((section) => (
               <div key={section.eyebrow} className="rounded-[2rem] bg-white/[0.06] p-7 ring-1 ring-white/10">

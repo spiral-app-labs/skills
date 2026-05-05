@@ -138,10 +138,10 @@ export const content = {
   about: {
     hero: { title: 'Woodstock’s hidden sushi room', subtitle: 'Golden Rolls at 790 S Eastwood Dr.' },
     immerse: {
-      eyebrow: 'Why it works',
-      title: 'A local Japanese bistro with a stronger story than its current homepage tells.',
+      eyebrow: 'Why guests come back',
+      title: 'A local Japanese bistro with fresh sushi and a quieter room than the outside suggests.',
       body:
-        'The current site has real menu depth, but the experience is dated and easy to miss. Reviews reveal the sharper story: generous fresh sushi, a surprisingly nice interior, and service that makes people return.',
+        'Golden Rolls is known for generous fresh sushi, creative rolls, hot Japanese entrées, attentive service, and a surprisingly calm dining room in Woodstock.',
       statBig: '4.6',
       statLabel: 'Google rating at review capture',
       chefImage: 'https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=600&q=80',
@@ -150,8 +150,8 @@ export const content = {
     },
     journey: {
       eyebrow: 'Proof points',
-      title: 'The build should fix the first impression without over-luxury claims.',
-      body: 'Golden Rolls is not formal omakase. It is a polished local sushi bistro with real menu breadth and review-backed generosity.',
+      title: 'Fresh rolls, hot entrées, and easy ordering for dine-in or takeout.',
+      body: 'Golden Rolls is a polished local sushi bistro with real menu breadth, review-backed generosity, and practical dine-in, takeout, and delivery handoffs.',
       milestones: [
         { year: '4.6', title: '348 Google reviews', body: 'Highest-filter packet captured 30 written reviews in Chrome.', tag: null },
         { year: '4.7', title: 'Restaurantji proof', body: 'Restaurantji showed 4.7 from 187 ratings with sushi and Japanese categories.', tag: null },
@@ -182,12 +182,12 @@ export const content = {
       ],
     },
     values: {
-      eyebrow: 'Build values',
-      title: 'Freshness, generosity, and easy conversion should carry the site.',
+      eyebrow: 'What to expect',
+      title: 'Freshness, generosity, and easy ordering carry the experience.',
       items: [
-        { title: 'No omakase inflation', body: 'Keep the copy truthful: local Japanese bistro, not luxury tasting-counter language.' },
-        { title: 'Menu clarity', body: 'Turn the dense WordPress menu into a readable, mobile-friendly structure.' },
-        { title: 'One-tap actions', body: 'Phone, directions, hours, takeout, and delivery should be obvious above the fold.' },
+        { title: 'Fresh sushi', body: 'Creative rolls, nigiri, sashimi, and cooked options for mixed groups.' },
+        { title: 'Menu clarity', body: 'Special rolls, hot appetizers, entrées, noodles, fried rice, and sushi are easy to scan.' },
+        { title: 'One-tap actions', body: 'Phone, directions, hours, takeout, and delivery information stay close at hand.' },
       ],
     },
   },
@@ -197,7 +197,7 @@ export const content = {
     categories: [
       {
         eyebrow: 'Special rolls',
-        title: 'Creative rolls guests remember',
+        title: 'Creative rolls and house favorites',
         items: [
           { name: 'Godzilla', desc: 'Tempura shrimp, avocado, cucumber, cream cheese, masago, crunch, spicy mayo, sriracha, wasabi sauce.', price: '$22' },
           { name: 'Mini Godzilla', desc: 'A smaller version of the review-backed favorite.', price: '$15' },
@@ -207,7 +207,7 @@ export const content = {
       },
       {
         eyebrow: 'Hot appetizers',
-        title: 'Start with the plates that show up in reviews',
+        title: 'Hot starters and table snacks',
         items: [
           { name: 'Gyoza Beef', desc: 'Fried beef dumplings.', price: '$14' },
           { name: 'Golden Shrimp', desc: 'Shrimp on rice topped with golden sauce.', price: '$14' },

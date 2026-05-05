@@ -3,9 +3,9 @@
 - Lead ID: e5048ba5-21d5-4400-8673-f92e16954560
 - MC parent task ID: c98d74ad-1a44-4df4-b313-bd20d675ae71
 - Template slug: bamzi-01
-- Current stage: top_3_improvements (local; Mission Control writeback pending)
+- Current stage: concierge (local; Mission Control writeback pending)
 - Deploy URL: TBD
-- Updated: 2026-05-05T10:06:15.000Z
+- Updated: 2026-05-05T10:14:41.000Z
 
 ## Requirements
 
@@ -15,7 +15,8 @@
 - [x] google-reviews-captured: Google Reviews Highest-filter packet captured with 30 written reviews - Google Maps reviews were opened in browser, sorted by Highest rating, and 30 written reviews were captured on 2026-05-05. Themes are ready for copy/pitch: hidden-gem interior, fresh/generous sushi, creative roll depth, friendly service, and takeout/delivery reliability.
 - [x] fork-built: Template fork is built with real content, preserved links, and no placeholder copy - Bamzi-01 fork/build pass completed for Golden Rolls with restaurant-specific homepage, menu, about, and contact pages; phone, address, official domain, maps, dine-in/takeout/delivery context, Google rating/review proof, and captured menu/review themes are preserved. Production build and screenshot capture passed after a clean .next rebuild.
 - [x] improvement-pass-completed: Post-fork improvement pass completed with fixes and evidence - Improvement pass added persistent mobile navigation, wrapped menu category shortcuts, larger mobile menu descriptions, and replaced the fragile embedded map with a reliable location/details card. Production build, screenshot capture, and mobile visual QA passed.
-- [ ] top-3-improvements: Top 3 sellability improvements identified, implemented, and evidenced - Next canonical gate after the improvement pass.
+- [x] top-3-improvements: Top 3 sellability improvements identified, implemented, and evidenced - Top three sellability improvements completed: customer-facing About story replaced agency/internal language, homepage service strip clarified hours/phone/directions, and menu proof became guest-facing recommendations while sanitizing concierge KB copy. Production build, screenshot capture, and mobile visual QA passed.
+- [ ] concierge: AI concierge added/verified with truthful Golden Rolls KB and safe handoffs
 - [ ] qa-round-1: QA round 1 completed with findings and fixes logged
 - [ ] qa-round-2: QA round 2 completed with findings and fixes logged
 - [ ] qa-round-3: QA round 3 completed with findings and fixes logged
@@ -73,6 +74,8 @@
 - restaurant-website-system/sites/golden-rolls/improvement-pass-2026-05-05.md
 - restaurant-website-system/sites/golden-rolls/components/SiteChrome.tsx
 - restaurant-website-system/sites/golden-rolls/mc-build-writeback-improving-complete-2026-05-05.json
+- restaurant-website-system/sites/golden-rolls/top-3-improvements-2026-05-05.md
+- restaurant-website-system/sites/golden-rolls/mc-build-writeback-top-3-improvements-complete-2026-05-05.json
 
 ## QA Rounds
 
@@ -87,7 +90,7 @@
 
 ## Blockers
 
-- stage_writeback: Mission Control agency API writeback is still pending because AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this runtime. Local improvement-pass artifacts and writeback payload are ready; submit mc-build-writeback-improving-complete-2026-05-05.json when MC API auth is configured. Next: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the improving-complete writeback payload before marking MC as top_3_improvements.
+- stage_writeback: Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local top-three-improvements artifacts and writeback payload are ready; submit mc-build-writeback-top-3-improvements-complete-2026-05-05.json when MC API auth/base URL are configured. Next: Configure Mission Control agency API auth/base URL for OpenClaw, then submit the top-three-improvements-complete writeback payload before marking MC as concierge.
 
 ## Done Criteria
 

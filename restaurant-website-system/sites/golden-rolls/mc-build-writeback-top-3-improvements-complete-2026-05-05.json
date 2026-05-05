@@ -1,0 +1,59 @@
+{
+  "leadId": "e5048ba5-21d5-4400-8673-f92e16954560",
+  "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
+  "siteSlug": "golden-rolls",
+  "templateSlug": "bamzi-01",
+  "build_stage": "concierge",
+  "currentStage": "concierge",
+  "completedGate": "top_3_improvements",
+  "checklistPaths": {
+    "markdown": "restaurant-website-system/sites/golden-rolls/checklist.md",
+    "json": "restaurant-website-system/sites/golden-rolls/checklist.json"
+  },
+  "passedRequirementIds": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-captured",
+    "fork-built",
+    "improvement-pass-completed",
+    "top-3-improvements"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/golden-rolls/top-3-improvements-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/app/about/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/app/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+    "restaurant-website-system/sites/golden-rolls/content.example.ts",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-capture-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-top-3-improvements-complete-2026-05-05.json"
+  ],
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local top-three-improvements artifacts and writeback payload are ready; submit mc-build-writeback-top-3-improvements-complete-2026-05-05.json when MC API auth/base URL are configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the top-three-improvements-complete writeback payload before marking MC as concierge.",
+      "recordedAt": "2026-05-05T10:14:41.000Z"
+    }
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "build": "passed",
+    "productionScreenshotCapture": "passed",
+    "mobileVisualQa": "passed"
+  },
+  "heartbeat_summary": "Completed Golden Rolls top 3 improvements: removed internal/agency copy, added homepage service conversion proof, and made menu proof guest-facing with refreshed evidence.",
+  "updatedAt": "2026-05-05T10:14:41.000Z"
+}

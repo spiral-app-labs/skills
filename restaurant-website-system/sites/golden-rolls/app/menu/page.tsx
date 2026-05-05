@@ -15,7 +15,7 @@ export default function MenuPage() {
           <div className="mx-auto max-w-6xl">
             <p className="text-sm uppercase tracking-[0.24em] text-[#f59f3a]">Fresh sushi · special rolls · entrées</p>
             <h1 className="mt-3 font-display text-5xl md:text-7xl">Golden Rolls menu</h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">A clearer mobile version of the real menu: creative rolls, hot appetizers, teriyaki, tempura, steak, seafood, noodles, fried rice, nigiri, and sashimi.</p>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">Explore creative rolls, hot appetizers, teriyaki, tempura, steak, seafood, noodles, fried rice, nigiri, and sashimi.</p>
           </div>
         </section>
         <section className="border-b border-[#e7d8bd] bg-white/70 px-5 py-4">
@@ -25,6 +25,18 @@ export default function MenuPage() {
                 {cat.title}
               </a>
             ))}
+          </div>
+        </section>
+        <section className="px-5 pt-12">
+          <div className="mx-auto max-w-6xl rounded-[2rem] bg-white p-7 shadow-sm">
+            <p className="text-sm uppercase tracking-[0.24em] text-[#b56a19]">Review-backed picks</p>
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+              {[
+                ['Godzilla / Mini Godzilla', 'A house-favorite roll family with tempura shrimp, avocado, crunch, spicy mayo, and sauces.'],
+                ['Gyoza, crab cakes, tempura', 'Hot starters and non-raw options for the whole table.'],
+                ['Nigiri and sashimi cuts', 'Fresh fish, generous cuts, and simple classics for sushi nights.'],
+              ].map(([title, body]) => <div key={title} className="rounded-2xl bg-[#fbf5ea] p-5"><h2 className="font-display text-2xl">{title}</h2><p className="mt-2 leading-7 text-[#536054]">{body}</p></div>)}
+            </div>
           </div>
         </section>
         <section className="mx-auto grid max-w-6xl gap-6 px-5 py-14 md:grid-cols-2">
