@@ -7,7 +7,7 @@ type ChatMessage = { role: 'user' | 'assistant'; content: string };
 const SUGGESTED_CHIPS = [
   'What should I order tonight?',
   'When are you open?',
-  'Where are you located?',
+  'Do you offer takeout or delivery?',
 ];
 
 export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: string }) {
@@ -185,7 +185,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
                   Hello, how can I help?
                 </p>
                 <p className="text-body-sm text-text-muted">
-                  Menu, hours, directions, or a table tonight. Ask anything.
+                  Menu ideas, hours, directions, takeout, or delivery basics. For current timing, call the restaurant.
                 </p>
               </div>
             )}
@@ -262,7 +262,7 @@ export function AskConcierge({ restaurantName = 'Bamzi' }: { restaurantName?: st
               </button>
             </div>
             <p className="mt-2 text-[11px] leading-tight text-text-muted">
-              AI concierge, confirm with the restaurant for allergy or time-sensitive
+              AI concierge, call Golden Rolls for allergies, reservations, or time-sensitive
               questions.
             </p>
           </form>
