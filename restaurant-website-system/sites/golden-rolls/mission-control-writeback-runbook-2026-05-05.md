@@ -28,3 +28,8 @@ Expected effect:
 - Current-site audit requirement is marked passed with the evidence paths in the payload.
 - Previous browser blocker about `No supported browser found` is cleared/replaced by the next reviews-gate requirement.
 - Do not mark ready_to_pitch; founder review and site-specific Anthropic key remain later blockers.
+
+
+## Reviews-complete payload
+
+Google Reviews Highest evidence is now captured locally. Submit `restaurant-website-system/sites/golden-rolls/mc-build-writeback-reviews-complete-2026-05-05.json` to the Mission Control agency build writeback route once auth/base URL are configured. Expected effect: mark `reviews` passed, attach the review packet/screenshot/themes evidence, and move root `metadata.build_stage` / `metadata.currentStage` to `routing` (or the next build gate after routing if MC treats the existing template route as already satisfied).
