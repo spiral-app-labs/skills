@@ -26,20 +26,36 @@
         "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
         "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
         "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
-        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png"
       ],
       "blockers": [
         {
           "gate": "packaging",
           "reason": "Vercel preview URL exists, but Vercel deployment protection returns 401 for / and /api/chat. Need bypass/public preview before deployed smoke test and owner delivery. MC build-writeback auth is also unavailable in this OpenClaw environment.",
           "recordedAt": "2026-05-04T15:30:00Z"
+        },
+        {
+          "gate": "packaging",
+          "reason": "Browser screenshot blocker resolved locally with full-page desktop/mobile captures; remaining blockers are Vercel preview protection/public URL and authenticated Mission Control writeback.",
+          "recordedAt": "2026-05-05T01:44:00Z"
         }
-      ]
+      ],
+      "preview_visual_evidence_status": "qa3_full_page_local_browser_screenshots_captured",
+      "last_browser_screenshot_evidence_at": "2026-05-05T01:44:00Z"
     }
   },
   "heartbeat_post": {
     "status": "work_done",
-    "summary": "Agency: V's House packaging found a Vercel preview URL, verified it is protected by 401 auth, prepared MC writeback payload, and kept delivery blocked until owner-shareable preview plus MC writeback are available.",
+    "summary": "Agency: V's House browser screenshot blocker is resolved locally with full-page desktop/mobile QA3 captures; delivery remains blocked on public preview and authenticated MC writeback.",
     "mode": "agency",
     "source": "openclaw_website_agency",
     "taskIds": [
@@ -52,7 +68,8 @@
       "template_slug": "bamzi-01",
       "preview_url": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
       "skills_pr_url": "https://github.com/spiral-app-labs/skills/pull/1",
-      "blocker": "preview_protection_401_and_agency_api_auth_missing"
+      "blocker": "preview_protection_401_and_agency_api_auth_missing",
+      "browser_screenshot_evidence": "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04"
     }
   },
   "api_probe": {

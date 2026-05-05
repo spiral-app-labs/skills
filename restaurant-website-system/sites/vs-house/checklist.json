@@ -73,8 +73,9 @@
   "blockers": [
     {
       "gate": "packaging",
-      "reason": "Vercel preview URL exists, but it returns Vercel Authentication Required (401) for both / and /api/chat. MC heartbeat writeback succeeded, but full lead/QA writeback remains blocked because OpenClaw lacks AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET and the documented /build route returned 404. Need preview protection bypass/public owner-shareable URL plus authenticated MC lead/QA writeback before delivery.",
-      "recordedAt": "2026-05-04T15:30:00Z"
+      "reason": "Browser screenshot blocker is resolved locally with full-page desktop/mobile captures. Delivery remains blocked because the Vercel preview is protected by Authentication Required (401) and this OpenClaw runtime lacks AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET for authenticated Mission Control lead/build/QA writeback.",
+      "recordedAt": "2026-05-05T01:44:00Z",
+      "nextUnblockAction": "Provide an owner-shareable/public preview or Vercel bypass token, and configure agency API auth so the prepared payload can be mirrored to Mission Control."
     }
   ],
   "requirements": [
@@ -155,7 +156,7 @@
       "title": "QA round 3 completed with findings and fixes logged",
       "qaState": "passed",
       "required": true,
-      "notes": "Round 3 sell-readiness QA logged; menu price cleanup, review proof packet, desktop/mobile screenshot evidence, and local concierge fallback runtime verification are attached. Deployed preview smoke test remains a delivery-package blocker.",
+      "notes": "Final sell-readiness QA is evidence-backed with full-page desktop/mobile screenshots for home, menu, about, and contact, source-confirmed menu prices, and local concierge fallback verification. Delivery remains packaging-blocked on public preview/MC sync.",
       "evidence": [
         "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
         "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
@@ -167,7 +168,16 @@
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
         "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
-        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png"
       ]
     },
     {
@@ -175,7 +185,7 @@
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
       "required": true,
-      "notes": "Packaging is partially assembled: pitch doc, battle cards, outreach draft, review packet, QA docs, screenshot evidence, local concierge fallback verification, Vercel preview URL, protected-preview evidence, and prepared MC writeback payload exist. Final delivery still needs preview protection bypass/public owner-shareable URL, authenticated MC mirror/writeback, and deployed preview smoke test.",
+      "notes": "Local delivery package is assembled with restored browser screenshots; final delivery still requires owner-shareable preview and authenticated Mission Control evidence mirror.",
       "evidence": [
         "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
         "restaurant-website-system/sites/vs-house/battle-cards.md",
@@ -190,7 +200,16 @@
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
         "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
         "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
-        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png"
       ]
     }
   ],
@@ -201,10 +220,11 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-04T15:31:00Z",
+  "updatedAt": "2026-05-05T01:44:00Z",
   "artifactUrls": [
     "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app"
   ],
   "lastMissionControlHeartbeatId": "37972128-9264-435e-96de-284380246c0c",
-  "lastMissionControlActivityId": "c3138254-7216-4c66-89da-4ded7d593401"
+  "lastMissionControlActivityId": "c3138254-7216-4c66-89da-4ded7d593401",
+  "build_stage": "packaging"
 }
