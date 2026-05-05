@@ -4,7 +4,7 @@
   "mcParentTaskId": "c98d74ad-1a44-4df4-b313-bd20d675ae71",
   "siteSlug": "golden-rolls",
   "templateSlug": "bamzi-01",
-  "currentStage": "top_3_improvements",
+  "currentStage": "concierge",
   "evidencePaths": [
     "restaurant-website-system/sites/golden-rolls/checklist.md",
     "restaurant-website-system/sites/golden-rolls/checklist.json",
@@ -55,7 +55,9 @@
     "restaurant-website-system/sites/golden-rolls/mc-build-writeback-building-complete-2026-05-05.json",
     "restaurant-website-system/sites/golden-rolls/improvement-pass-2026-05-05.md",
     "restaurant-website-system/sites/golden-rolls/components/SiteChrome.tsx",
-    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-improving-complete-2026-05-05.json"
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-improving-complete-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/top-3-improvements-2026-05-05.md",
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-top-3-improvements-complete-2026-05-05.json"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -67,9 +69,9 @@
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Mission Control agency API writeback is still pending because AGENCY_AUTONOMY_API_KEY and trusted Mission Control base URL are unavailable in this runtime. Local improvement-pass artifacts and writeback payload are ready; submit mc-build-writeback-improving-complete-2026-05-05.json when MC API auth is configured.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the improving-complete writeback payload before marking MC as top_3_improvements.",
-      "recordedAt": "2026-05-05T10:06:15.000Z"
+      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local top-three-improvements artifacts and writeback payload are ready; submit mc-build-writeback-top-3-improvements-complete-2026-05-05.json when MC API auth/base URL are configured.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the top-three-improvements-complete writeback payload before marking MC as concierge.",
+      "recordedAt": "2026-05-05T10:14:41.000Z"
     }
   ],
   "requirements": [
@@ -201,10 +203,35 @@
     {
       "id": "top-3-improvements",
       "title": "Top 3 sellability improvements identified, implemented, and evidenced",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
-      "notes": "Next canonical gate after the improvement pass.",
-      "evidence": []
+      "notes": "Top three sellability improvements completed: customer-facing About story replaced agency/internal language, homepage service strip clarified hours/phone/directions, and menu proof became guest-facing recommendations while sanitizing concierge KB copy. Production build, screenshot capture, and mobile visual QA passed.",
+      "evidence": [
+        "restaurant-website-system/sites/golden-rolls/top-3-improvements-2026-05-05.md",
+        "restaurant-website-system/sites/golden-rolls/app/about/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/app/menu/page.tsx",
+        "restaurant-website-system/sites/golden-rolls/content.example.ts",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-capture-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt"
+      ]
+    },
+    {
+      "id": "concierge",
+      "title": "AI concierge added/verified with truthful Golden Rolls KB and safe handoffs",
+      "qaState": "pending",
+      "required": true
     },
     {
       "id": "qa-round-1",
@@ -238,5 +265,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T10:06:15.000Z"
+  "updatedAt": "2026-05-05T10:14:41.000Z"
 }
