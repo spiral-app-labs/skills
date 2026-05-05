@@ -10,9 +10,10 @@
   "anthropic_key_status": "pending_founder",
   "human_review_status": "pending_founder",
   "findings": [
-    "The site remains truthful and sellable, but founder-only gates still block pitch readiness.",
-    "Fresh QA3 screenshots could not be captured in this sandbox because local preview server binding and headless browser launch are both blocked.",
-    "Contact/footer conversion surfaces still had plain-text address and phone treatment before this pass."
+    "The site remains truthful, restaurant-specific, and sellable for founder review; no fake owner story, fake awards, fake menu items, fake prices, fake review counts, or invented direct-order path were found.",
+    "Fresh QA3 desktop and mobile screenshots were captured from a local Next.js preview for home, menu, about, and contact.",
+    "The final Vercel preview URL was located from GitHub PR #19, but unauthenticated access returns Vercel login/401, so preview access still needs Ethan/authenticated verification before client handoff.",
+    "Contact/footer conversion surfaces had plain-text address and phone treatment before this pass."
   ],
   "fixes_applied": [
     "Added tappable map and phone actions to the contact info cards.",
@@ -35,35 +36,35 @@
   "screenshots": [
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     },
     {
       "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png",
-      "status": "blocked_not_captured_in_sandbox"
+      "status": "captured_local_preview"
     }
   ],
   "browser_checks": [
@@ -72,7 +73,9 @@
   "pending_non_agent_gates": [
     "Founder must configure the site-specific Anthropic key.",
     "Founder must complete personal human review.",
-    "Fresh QA3 route screenshots must be recaptured in an environment that allows local preview rendering."
+    "Ethan or an authenticated Vercel/GitHub session must verify the PR #19 preview URL opens beyond the Vercel login/401 protection wall before client handoff."
   ],
-  "blocker": "Mission Control QA writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable; payload recorded locally only."
+  "blocker": "Mission Control QA writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable; ready_to_pitch also remains blocked by founder Anthropic key, founder human review, and authenticated preview-access verification.",
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "preview_access_status": "auth_protected_pending_ethan_verification"
 }

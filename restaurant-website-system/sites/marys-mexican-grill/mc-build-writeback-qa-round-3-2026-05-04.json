@@ -11,12 +11,27 @@
   "qa_evidence_paths": [
     "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
     "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json",
-    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json"
+    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
   ],
-  "passed_requirement_ids": [],
+  "passed_requirement_ids": [
+    "qa3-sell-ready"
+  ],
   "ready_to_pitch": false,
   "anthropic_key_status": "pending_founder",
   "human_review_status": "pending_founder",
-  "blocker": "Mission Control build-stage writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable; founder-only Anthropic key and human review gates are still pending; fresh QA3 screenshots also remain blocked by sandbox restrictions.",
-  "heartbeat_summary": "QA round 3 was executed locally for Mary's Mexican Grill on bamzi-01. The site remains truthful and sellable, and this pass improved direct conversion by making verified address and phone paths clickable in the contact/footer surfaces. npm run build and npm run typecheck both passed. However, ready_to_pitch remains false because Ethan must configure the site-specific Anthropic key and complete human review personally, agents cannot mark those gates complete, Mission Control auth is unavailable, and fresh QA3 screenshots could not be recaptured in this sandbox."
+  "blocker": "Mission Control build-stage writeback is blocked because agency API auth is unavailable. QA3 local screenshots are now captured, but preview access is auth-protected, Ethan human review is pending, and the site-specific Anthropic key is pending, so ready_to_pitch remains false.",
+  "heartbeat_summary": "QA round 3 local evidence was refreshed for Mary's Mexican Grill: npm ci, npm run build, and npm run typecheck passed; desktop/mobile screenshots for home/menu/about/contact were captured from local next start; and PR #19 provided a Vercel preview URL. The preview is auth-protected for unauthenticated checks, Mission Control API auth is unavailable, and founder Anthropic/human-review gates remain pending, so ready_to_pitch stays false.",
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "preview_access_status": "auth_protected_pending_ethan_verification",
+  "pending_requirement_ids": [
+    "qa3-assets-ready"
+  ]
 }
