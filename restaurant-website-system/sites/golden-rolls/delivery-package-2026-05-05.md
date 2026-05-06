@@ -7,7 +7,7 @@
 - Template / archetype: `bamzi-01` — Bamzi adapted for a casual hidden-gem sushi/Japanese bistro
 - Current local stage: `packaging`
 - PR preview URL: `https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app`
-- Preview access status: **auth-gated by Vercel** from unauthenticated fetch; not owner-deliverable until public access is configured or a shareable preview URL is generated.
+- Preview access status: **auth-gated by Vercel** from unauthenticated fetch; not owner-deliverable until public access is configured or a shareable preview URL is generated. Latest check: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-05.md` (`HTTP/2 401`, checked 2026-05-06T04:43:57Z).
 
 ## Delivery verdict
 
@@ -20,6 +20,7 @@ The website itself has passed all three QA rounds and is sell-ready for demo/pre
 ### Website preview
 
 - Auth-gated Vercel preview from PR #62: `https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app`
+- Public preview access check: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-05.md`
 - GitHub PR: `https://github.com/spiral-app-labs/skills/pull/62`
 - Merged QA3 commit: `7ac631977bd3febe176eb8239b83c96e1b24cb75`
 
@@ -80,5 +81,5 @@ The website itself has passed all three QA rounds and is sell-ready for demo/pre
 ## Blockers before delivery
 
 1. **Public preview URL:** Current Vercel preview is auth-gated for unauthenticated access. Generate a public/shareable preview or configure Vercel preview access before owner delivery.
-2. **Mission Control writeback:** MC agency API base URL/auth is unavailable in this runtime, so local package/writeback artifacts are ready but not mirrored to MC.
+2. **Mission Control writeback:** Trusted MC base URL is reachable at `https://hq.ethantalreja.com`, but this runtime has no usable agency bearer token; `GET /api/agency/leads/e5048ba5-21d5-4400-8673-f92e16954560` returns `HTTP/2 401` with `x-agency-runtime: openclaw`. See `restaurant-website-system/sites/golden-rolls/mc-api-access-check-2026-05-05.md`. Raw Supabase writes were not used; local package/writeback artifacts are ready but not mirrored to MC.
 3. **Launch data verification:** Owner should confirm current prices, hours, rating/review count usage, and delivery availability before launch.
