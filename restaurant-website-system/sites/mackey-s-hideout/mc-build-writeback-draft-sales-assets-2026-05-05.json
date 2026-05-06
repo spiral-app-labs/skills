@@ -1,0 +1,57 @@
+{
+  "lead_id": "742a8ab1-4205-49e0-9206-b97700045a79",
+  "root_task_id": "503320f6-a3e2-4286-887b-a7900ffaaed8",
+  "site_slug": "mackey-s-hideout",
+  "build_stage": "reviews",
+  "currentStage": "reviews",
+  "stage_completed": null,
+  "ready_to_pitch": false,
+  "template_slug": "bramble-01",
+  "artifact_type": "natural_pause_local_sales_assets",
+  "canonical_gate_status": "noncanonical_draft_only",
+  "checklist_markdown_path": "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+  "pitch_draft_path": "restaurant-website-system/sites/mackey-s-hideout/pitch-draft-2026-05-05.md",
+  "battle_cards_draft_path": "restaurant-website-system/sites/mackey-s-hideout/battle-cards-2026-05-05.md",
+  "evidence_paths": [
+    "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
+    "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+    "restaurant-website-system/sites/mackey-s-hideout/audit.md",
+    "restaurant-website-system/sites/mackey-s-hideout/build-scaffold-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/scaffold-browser-smoke-qa-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/pitch-draft-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/battle-cards-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/scaffold-home-desktop-fixed-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/scaffold-home-mobile-fixed-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-reviews-highest-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.md"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-captured"
+  ],
+  "blocked_or_pending_requirement_ids": [
+    "fork-built",
+    "qa-round-1",
+    "qa-round-2",
+    "qa-round-3",
+    "delivery-package"
+  ],
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Authenticated Mission Control writeback is still blocked because agency auth/base URL are unavailable in this runtime. Draft pitch and battle-card artifacts were created locally but must not advance canonical pitch or battle_cards gates until MC is caught up through audit, reviews, routing, build, improvement, top-3 improvements, and concierge gates.",
+      "next_unblock_action": "Replay mc-build-writeback-auditing-complete-2026-05-05.json first, then mc-build-writeback-reviews-complete-2026-05-05.json. Keep these draft sales assets as supplemental evidence only until the canonical pitch and battle_cards stages are reached."
+    },
+    {
+      "gate": "owner_fact_confirmation",
+      "reason": "Owner-confirmed hours and final food wording are still missing; draft sales talk tracks intentionally keep hours provisional and food claims conservative.",
+      "next_unblock_action": "Confirm hours, food/bar-bites scope, ticket/show cadence, and any age/cover policies with the owner before delivery."
+    }
+  ],
+  "heartbeat_summary": "Created noncanonical Mackey's Hideout pitch and battle-card drafts grounded in public audit/review evidence, Bramble routing, live music, craft beer, roadhouse identity, and cautious food/hour handling. MC stage remains reviews.",
+  "updated_at": "2026-05-05T19:10:00.000Z"
+}

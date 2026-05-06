@@ -8,6 +8,7 @@
   "evidencePaths": [
     "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
     "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+    "restaurant-website-system/sites/mackey-s-hideout/build-scaffold-2026-05-05.md",
     "restaurant-website-system/sites/mackey-s-hideout/audit.md",
     "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
     "restaurant-website-system/sites/mackey-s-hideout/scrapes/browser-audit-manifest-2026-05-05.json",
@@ -23,21 +24,65 @@
     "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantguru-desktop-2026-05-05.txt",
     "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-search-desktop-2026-05-05.png",
     "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-search-desktop-2026-05-05.txt",
-    "restaurant-website-system/sites/mackey-s-hideout/browser-evidence-audit-2026-05-05.md"
+    "restaurant-website-system/sites/mackey-s-hideout/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-reviews-highest-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/scaffold-home-desktop-fixed-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/scaffold-home-mobile-fixed-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scaffold-browser-smoke-qa-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-reviews-complete-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/pitch-draft-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/battle-cards-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-draft-sales-assets-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/routing-template-decision-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-routing-prepared-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/owner-confirmation-questions-2026-05-05.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
   "pitchArtifacts": {
-    "pitchDoc": null,
+    "pitchDoc": "restaurant-website-system/sites/mackey-s-hideout/pitch-draft-2026-05-05.md",
     "outreachDraft": null,
-    "beforeAfterScreenshots": []
+    "beforeAfterScreenshots": [],
+    "battleCardsDoc": "restaurant-website-system/sites/mackey-s-hideout/battle-cards-2026-05-05.md"
   },
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Local browser audit evidence is complete and the next canonical gate is reviews, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-auditing-complete-2026-05-05.json through the agency build writeback route before starting the reviews gate.",
-      "recordedAt": "2026-05-05T08:35:00.000Z"
+      "reason": "Local audit evidence and the Highest-rating Google Reviews packet are complete, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime. Replay order still matters: the audit-complete payload must land before the reviews-complete payload.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-auditing-complete-2026-05-05.json first and mc-build-writeback-reviews-complete-2026-05-05.json second through the agency build writeback route.",
+      "recordedAt": "2026-05-05T18:25:00.000Z"
+    },
+    {
+      "gate": "local_scaffold_noncanonical",
+      "reason": "A local bramble-01 scaffold now exists and passes build/typecheck, but it is still a first-pass local fork only. Canonical fork/build completion cannot be claimed while Mission Control replay is blocked, owner-confirmed hours are still pending, and no QA rounds or preview evidence exist.",
+      "nextUnblockAction": "Replay Mission Control audit-first then reviews payloads, confirm owner facts/hours, run browser QA rounds, capture preview evidence, and only then advance the fork/build requirement truthfully.",
+      "recordedAt": "2026-05-05T18:33:35Z"
+    },
+    {
+      "gate": "official_qa_pending",
+      "reason": "Local smoke QA identified and fixed the mobile hero clipping risk and added non-canonical browser evidence, but this does not satisfy the required canonical QA rounds or preview evidence.",
+      "nextUnblockAction": "Capture official scaffold browser screenshots, complete canonical QA rounds 1-3 with findings logged, confirm owner facts/hours, and attach public preview evidence before advancing any QA or delivery requirement.",
+      "recordedAt": "2026-05-05T19:05:00Z"
+    },
+    {
+      "gate": "draft_sales_assets_noncanonical",
+      "reason": "Pitch and battle-card drafts were created locally to preserve momentum while MC writeback is blocked, but they must not be treated as canonical pitch/battle_cards completion before the ordered MC gate replay and owner fact confirmation.",
+      "nextUnblockAction": "Replay MC audit then reviews payloads, continue canonical gates in order, confirm owner hours/food facts, then promote/refine these drafts at the pitch and battle_cards stages.",
+      "recordedAt": "2026-05-05T19:10:00Z"
+    },
+    {
+      "gate": "routing_prepared_noncanonical",
+      "reason": "A standalone bramble-01 routing decision and prepared routing payload now exist locally, but they must not be treated as canonical routing completion until MC has accepted the audit-complete payload followed by the reviews-complete payload.",
+      "nextUnblockAction": "Replay MC audit and reviews payloads in order, verify MC reaches routing, then attach/submit the routing-prepared payload and proceed through canonical build gates.",
+      "recordedAt": "2026-05-05T19:20:00Z"
+    },
+    {
+      "gate": "owner_fact_confirmation",
+      "reason": "Owner-confirmed hours, food scope, event/ticket cadence, and public links are still needed before final QA/delivery claims can be locked.",
+      "nextUnblockAction": "Use owner-confirmation-questions-2026-05-05.md to confirm hours, food, open mic/karaoke, TicketWeb usage, cover/age policy, drink claims, phone, and social links.",
+      "recordedAt": "2026-05-05T19:20:00Z"
     }
   ],
   "requirements": [
@@ -81,17 +126,37 @@
       "title": "Template route and modifiers are locked from the restaurant site router",
       "qaState": "passed",
       "required": true,
-      "notes": "Routed to bramble-01 as a truthful live-music roadhouse/bar variant; not a conventional restaurant/menu build.",
+      "notes": "Routed to bramble-01 as a truthful live-music roadhouse/bar variant; not a conventional restaurant/menu build. A standalone routing decision artifact and prepared routing payload now exist locally, but canonical MC routing completion is still blocked by ordered MC replay.",
       "evidence": [
         "restaurant-website-system/sites/mackey-s-hideout/audit.md",
-        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/mackey-s-hideout/routing-template-decision-2026-05-05.md",
+        "restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-routing-prepared-2026-05-05.json"
+      ]
+    },
+    {
+      "id": "google-reviews-captured",
+      "title": "Google Reviews Highest-filter packet captured with 30 written reviews",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Google Maps reviews were captured in browser on 2026-05-05 with Highest rating sort. The local packet contains exactly 30 non-empty written reviews plus screenshot evidence. Themes are ready for routing/build copy: live music, dive/roadhouse identity, craft beer and drinks, karaoke/open mic, friendly staff and regulars, outdoor/patio/parking support, and cautious food positioning.",
+      "evidence": [
+        "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-reviews-highest-2026-05-05.png",
+        "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.json",
+        "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.md"
       ]
     },
     {
       "id": "fork-built",
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "notes": "Local-only scaffold exists on the locked bramble-01 route with Mackey-specific content, truthful CTA changes, official/public image URLs from the captured official site, and successful local build/typecheck/smoke screenshots. This requirement remains pending because canonical stage is still reviews, MC replay is blocked, owner hours/food facts still need confirmation, and QA/preview evidence are not complete.",
+      "evidence": [
+        "restaurant-website-system/sites/mackey-s-hideout/build-scaffold-2026-05-05.md",
+        "restaurant-website-system/sites/mackey-s-hideout/scaffold-browser-smoke-qa-2026-05-05.md",
+        "restaurant-website-system/sites/mackey-s-hideout/owner-confirmation-questions-2026-05-05.md"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -115,7 +180,12 @@
       "id": "delivery-package",
       "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "notes": "Noncanonical pitch and battle-card drafts now exist as local sales-support artifacts grounded in audit/review evidence, but canonical pitch/battle_cards gates remain pending until MC is caught up through the earlier stages.",
+      "evidence": [
+        "restaurant-website-system/sites/mackey-s-hideout/pitch-draft-2026-05-05.md",
+        "restaurant-website-system/sites/mackey-s-hideout/battle-cards-2026-05-05.md"
+      ]
     }
   ],
   "doneCriteria": [
@@ -125,5 +195,5 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T08:35:00.000Z"
+  "updatedAt": "2026-05-05T19:20:00Z"
 }
