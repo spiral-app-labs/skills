@@ -260,6 +260,6 @@
 
 ## 2026-05-05 blocker recheck
 
-- Public preview candidate rechecked at `2026-05-05T22:32:52Z`: still `HTTP/2 401` / Vercel Authentication Required.
-- Mission Control lead API rechecked at `2026-05-05T22:32:53Z` with `x-agency-runtime: openclaw` and no bearer: still `HTTP/2 401`.
+- Public preview candidate rechecked at `2026-05-06T04:41:40Z`: still `HTTP/2 401` / Vercel Authentication Required.
+- Mission Control lead API rechecked at `2026-05-06T04:41:40Z` with `x-agency-runtime: openclaw` and no bearer: still `HTTP/2 401`.
 - Delivery remains blocked; local package/runbooks stay ready for public preview + agency API auth.

@@ -1,9 +1,9 @@
 # Dino's Pizza & Pasta — Mission Control API Access Check
 
-- Checked at: 2026-05-05T22:32:53Z
+- Checked at: 2026-05-06T04:41:40Z
 - Base URL checked: `https://hq.ethantalreja.com`
 - Lead endpoint: `GET /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30`
-- Result: `HTTP/2 401` without a bearer token again at 2026-05-05T22:32:53Z, using `x-agency-runtime: openclaw`
+- Result: `HTTP/2 401` without a bearer token again at 2026-05-06T04:41:40Z, using `x-agency-runtime: openclaw`
 - Build endpoint checked: `GET /api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/build`
 - Result: `HTTP/2 405` for GET, confirming the build route exists but requires POST/PATCH and agency auth.
 
