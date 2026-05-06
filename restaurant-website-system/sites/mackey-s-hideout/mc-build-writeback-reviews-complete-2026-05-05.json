@@ -1,0 +1,53 @@
+{
+  "lead_id": "742a8ab1-4205-49e0-9206-b97700045a79",
+  "root_task_id": "503320f6-a3e2-4286-887b-a7900ffaaed8",
+  "site_slug": "mackey-s-hideout",
+  "build_stage": "routing",
+  "currentStage": "routing",
+  "stage_completed": "reviews",
+  "ready_to_pitch": false,
+  "template_slug": "bramble-01",
+  "checklist_markdown_path": "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+  "review_packet_json_path": "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.json",
+  "review_packet_markdown_path": "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.md",
+  "review_screenshot_path": "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-reviews-highest-2026-05-05.png",
+  "evidence_paths": [
+    "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
+    "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+    "restaurant-website-system/sites/mackey-s-hideout/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/official-live-music-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/official-live-music-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-desktop-2026-05-05.html",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-mobile-2026-05-05.html",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/restaurantguru-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-reviews-highest-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.md"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-captured"
+  ],
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Authenticated Mission Control writeback is still blocked because agency auth/base URL are unavailable in this runtime. This replay payload is prepared locally only and must not be submitted before the prerequisite audit-complete payload is accepted.",
+      "next_unblock_action": "Submit mc-build-writeback-auditing-complete-2026-05-05.json first. After Mission Control reflects reviews, submit this reviews-complete payload to advance the lead to routing."
+    }
+  ],
+  "heartbeat_summary": "Mackey's Hideout Highest-rating Google Reviews packet is complete locally: 30 non-empty written reviews, screenshot proof, and Mackey-specific themes covering live music, dive/roadhouse identity, drinks, community, and cautious food positioning. Prepared replay should move Mission Control from reviews to routing after the audit payload has been accepted.",
+  "updated_at": "2026-05-05T18:25:00.000Z"
+}
