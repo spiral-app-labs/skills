@@ -19,7 +19,7 @@ export function QuoteOnPhotoOverlay({
   attribution?: string;
 } = {}) {
   return (
-    <section className="relative h-[48vh] min-h-[320px] w-full overflow-hidden md:h-[55vh] md:min-h-[420px]">
+    <section className="relative h-[38vh] min-h-[260px] w-full overflow-hidden md:h-[52vh] md:min-h-[400px]">
       <Image src={image} alt="" fill sizes="100vw" className="object-cover" />
       <div className="absolute inset-0 bg-canvas/65 md:bg-canvas/55" />
       <motion.div

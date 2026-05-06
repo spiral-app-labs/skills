@@ -46,10 +46,10 @@ export function DisplayHeading({
   className?: string;
 }) {
   const sizeClass = {
-    'page':       'text-[58px] leading-[54px] tracking-[1.5px] sm:text-page-title',
-    'page-md':    'text-[52px] leading-[50px] tracking-[1.5px] sm:text-page-title-md',
-    'section-h1': 'text-[42px] leading-[46px] tracking-[1px] sm:text-section-h1',
-    'section-h2': 'text-[34px] leading-[38px] tracking-[0.8px] sm:text-section-h2',
+    'page':       'text-[52px] leading-[48px] tracking-[1.2px] sm:text-page-title',
+    'page-md':    'text-[48px] leading-[46px] tracking-[1.2px] sm:text-page-title-md',
+    'section-h1': 'text-[36px] leading-[40px] tracking-[0.8px] sm:text-section-h1',
+    'section-h2': 'text-[30px] leading-[34px] tracking-[0.7px] sm:text-section-h2',
   }[size];
 
   const alignClass = align === 'center' ? 'text-center' : 'text-left';
