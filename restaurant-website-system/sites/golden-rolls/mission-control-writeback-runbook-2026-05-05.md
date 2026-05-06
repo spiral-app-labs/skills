@@ -33,3 +33,14 @@ Expected effect:
 ## Reviews-complete payload
 
 Google Reviews Highest evidence is now captured locally. Submit `restaurant-website-system/sites/golden-rolls/mc-build-writeback-reviews-complete-2026-05-05.json` to `https://hq.ethantalreja.com/api/agency/leads/e5048ba5-21d5-4400-8673-f92e16954560/build` once agency auth is configured. Expected effect: mark `reviews` passed, attach the review packet/screenshot/themes evidence, and move root `metadata.build_stage` / `metadata.currentStage` to `routing` (or the next build gate after routing if MC treats the existing template route as already satisfied).
+
+## Packaging-progress payload
+
+Golden Rolls has locally advanced through QA3 and packaging. Submit `restaurant-website-system/sites/golden-rolls/mc-build-writeback-packaging-progress-2026-05-05.json` to `POST https://hq.ethantalreja.com/api/agency/leads/e5048ba5-21d5-4400-8673-f92e16954560/build` once agency bearer auth is configured.
+
+Fresh access evidence:
+
+- Public preview check: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-06.md`
+- MC API check: `restaurant-website-system/sites/golden-rolls/mc-api-access-check-2026-05-06.md`
+
+Delivery must stay blocked until the Vercel preview is public/shareable or a bypass token exists, MC evidence is mirrored, and owner-changing facts are confirmed.

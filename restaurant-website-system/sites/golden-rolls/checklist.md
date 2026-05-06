@@ -6,7 +6,7 @@
 - Current stage: packaging (local; Mission Control writeback pending)
 - Deploy URL: https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app
 - Preview access: auth_gated_vercel_preview_not_owner_deliverable
-- Updated: 2026-05-05T10:58:49.000Z
+- Updated: 2026-05-06T05:39:42Z
 
 ## Requirements
 
@@ -173,3 +173,9 @@
 - All required checklist rows are passed.
 - Three QA rounds are logged with screenshot evidence.
 - Preview URL, pitch doc, outreach draft, and delivery evidence are attached.
+
+## 2026-05-06 blocker recheck
+
+- Public preview candidate rechecked at `2026-05-06T05:39:34Z`: still `HTTP/2 401` / Vercel Authentication Required. Evidence: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-06.md`.
+- Mission Control lead API rechecked at `2026-05-06T05:39:42Z` with `x-agency-runtime: openclaw` and no bearer: still `HTTP/2 401`. Evidence: `restaurant-website-system/sites/golden-rolls/mc-api-access-check-2026-05-06.md`.
+- Delivery remains blocked; local package/writeback payload stays ready for public preview + agency API bearer auth + owner data verification.
