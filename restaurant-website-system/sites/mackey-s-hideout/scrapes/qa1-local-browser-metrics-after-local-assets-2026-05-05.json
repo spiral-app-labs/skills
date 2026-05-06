@@ -1,0 +1,21 @@
+{
+  "captured_at": "2026-05-06T05:00:37.477Z",
+  "results": [
+    {
+      "viewport": "desktop",
+      "hasHorizontalOverflow": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "banned": [],
+      "brokenImages": []
+    },
+    {
+      "viewport": "mobile",
+      "hasHorizontalOverflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "banned": [],
+      "brokenImages": []
+    }
+  ]
+}
