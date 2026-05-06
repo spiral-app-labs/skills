@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { content } from '../content';
 import { theme } from '../theme';
 
@@ -35,6 +36,16 @@ export function LatestUpdatesGrid() {
             </h3>
             <div className="mt-2 text-body-sm text-ink-muted">{card.detail}</div>
             <p className="mt-4 text-body text-ink-muted">{card.body}</p>
+            <div className="mt-5 rounded-[24px] bg-white/80 px-4 py-4">
+              <div className="text-[11px] uppercase tracking-[0.16em] text-ink-muted">How it helps conversion</div>
+              <p className="mt-2 text-body text-ink-muted">{card.bridge}</p>
+              <Link
+                href={card.ctaHref}
+                className="mt-4 inline-flex text-button font-medium text-accent hover:text-accent-dark"
+              >
+                {card.ctaLabel}
+              </Link>
+            </div>
           </motion.div>
         ))}
       </div>

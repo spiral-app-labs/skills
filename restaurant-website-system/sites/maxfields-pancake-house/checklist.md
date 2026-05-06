@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `improving`
+- Current stage: `top_3_improvements`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -95,6 +95,28 @@
     - `restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx`
     - `restaurant-website-system/sites/maxfields-pancake-house/components/WordmarkFooter.tsx`
     - `restaurant-website-system/sites/maxfields-pancake-house/app/globals.css`
+- `top-three-named` — Top 3 concrete improvements are named from audit/preview/QA
+  - Notes: Chosen improvements are broken-domain sales story above the fold, review proof bridged to real CTAs, and a clearer visit-confidence treatment for conflicting hours and unverified ordering.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md`
+- `top-three-implemented` — All three improvements are implemented
+  - Notes: Homepage and contact experience were updated to add the above-the-fold recovery panel, CTA-linked review proof cards, and a dedicated visit-confidence module reused across pages.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/content.ts`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx`
+- `top-three-evidence` — Each improvement has before/after evidence
+  - Notes: Before state is anchored to the audit, build notes, and prior improvement pass; after state is documented with changed-file evidence and the new stage artifact.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/audit.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json`
 
 ## Verification
 
@@ -126,9 +148,6 @@
 
 ## Pending later gates
 
-- `top-three-named` — Top 3 concrete improvements are named from audit/preview/QA
-- `top-three-implemented` — All three improvements are implemented
-- `top-three-evidence` — Each improvement has before/after evidence
 - `concierge-kb-truthful` — Concierge KB only uses verified restaurant facts
 - `concierge-tested` — Short transcript proves useful behavior
 - `concierge-safe` — Fallbacks prevent fake reservations, unsupported promises, or invented facts

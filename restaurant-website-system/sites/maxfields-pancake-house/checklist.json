@@ -6,7 +6,7 @@
   "mcParentTaskId": "pending-mc-auth",
   "siteSlug": "maxfields-pancake-house",
   "templateSlug": "plate-01",
-  "currentStage": "improving",
+  "currentStage": "top_3_improvements",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
     "json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
@@ -337,9 +337,19 @@
         "before/after screenshots or diff evidence"
       ],
       "order": 6,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ],
+      "blocker": null,
+      "notes": "Top three improvement stage completed with an above-the-fold broken-domain recovery story, CTA-linked review proof, and a dedicated visit-confidence module for hours/order uncertainty."
     },
     {
       "id": "ai_concierge_added",
@@ -917,29 +927,51 @@
     {
       "id": "top-three-named",
       "title": "Top 3 concrete improvements are named from audit/preview/QA",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
       "stage": "top_3_improvements",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The selected improvements are broken-domain sales story above the fold, review proof bridged into real CTAs, and a visit-confidence treatment for conflicting hours and unverified ordering.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md"
+      ]
     },
     {
       "id": "top-three-implemented",
       "title": "All three improvements are implemented",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
       "stage": "top_3_improvements",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Shared content, hero, proof cards, and a new visit-confidence component were implemented on the homepage and contact page without adding fake menu, reservation, or order flows.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ]
     },
     {
       "id": "top-three-evidence",
       "title": "Each improvement has before/after evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "top_three_improvements",
       "stage": "top_3_improvements",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The stage artifact documents before state from audit/prior artifacts and after state from changed files plus verification output.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json"
+      ]
     },
     {
       "id": "concierge-kb-truthful",
@@ -1075,7 +1107,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-06T12:10:00.000Z",
+  "updatedAt": "2026-05-06T13:05:00.000Z",
   "leadMetadata": {
     "owner_name": null,
     "owner_email": null,
