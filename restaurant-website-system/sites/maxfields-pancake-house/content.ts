@@ -312,6 +312,22 @@ export const content = {
       'No fake reservation widget, no fake online order link, and no invented live-hours promise.',
   },
 
+  concierge: {
+    eyebrow: 'Preview concierge',
+    heading: 'A safe Maxfield concierge demo built from fixed restaurant facts',
+    intro:
+      "This is a deterministic concierge preview, not a live AI assistant. Each answer is limited to a verified Maxfield-specific knowledge base and a clear handoff when something is not confirmed.",
+    promptLabel: 'Quick questions',
+    handoffs: [
+      { label: 'Call (847) 781-0300', href: 'tel:+18477810300' },
+      { label: 'Get directions', href: directionsHref },
+      { label: 'See menu highlights', href: '/#menu' },
+    ],
+    note: 'Best for hours, takeout questions, menu highlights, reservations policy, and where to go next.',
+    fallback:
+      "If you don't see your question here, I don't have that confirmed yet. Call (847) 781-0300 for the current answer.",
+  },
+
   faq: {
     eyebrow: 'Visit info',
     heading: "What visitors should know before heading to Maxfield's",

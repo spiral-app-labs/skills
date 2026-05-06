@@ -3,6 +3,7 @@ import { ContactCtaClosing } from '../../components/ContactCtaClosing';
 import { WordmarkFooter } from '../../components/WordmarkFooter';
 import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 import { VisitConfidencePanel } from '../../components/VisitConfidencePanel';
+import { ConciergePanel } from '../../components/ConciergePanel';
 import { content } from '../../content';
 import Link from 'next/link';
 
@@ -90,6 +91,7 @@ export default function ContactPage() {
         </section>
 
         <VisitConfidencePanel />
+        <ConciergePanel />
         <ContactCtaClosing />
       </main>
       <WordmarkFooter />

@@ -4,6 +4,7 @@ import { InlineMenuHomepage } from '../components/InlineMenuHomepage';
 import { TaglineBanner } from '../components/TaglineBanner';
 import { LatestUpdatesGrid } from '../components/LatestUpdatesGrid';
 import { VisitConfidencePanel } from '../components/VisitConfidencePanel';
+import { ConciergePanel } from '../components/ConciergePanel';
 import { FAQAccordion } from '../components/FAQAccordion';
 import { ContactCtaClosing } from '../components/ContactCtaClosing';
 import { WordmarkFooter } from '../components/WordmarkFooter';
@@ -26,6 +27,9 @@ export default function HomePage() {
         </ScrollRevealStandard>
         <ScrollRevealStandard>
           <VisitConfidencePanel />
+        </ScrollRevealStandard>
+        <ScrollRevealStandard>
+          <ConciergePanel />
         </ScrollRevealStandard>
         <ScrollRevealStandard>
           <FAQAccordion />
