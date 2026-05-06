@@ -1,0 +1,123 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T10:50:18.846025Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "blocker": {
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing; authenticated MC endpoints returned 401 Unauthorized with x-agency-runtime: openclaw. No raw Supabase agency writes were performed.",
+    "source": "openclaw_maxfields_audit_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to OpenClaw runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST the prepared build payload."
+  },
+  "read_only_mc_check": {
+    "agency_leads_name_ilike_Maxfield": "0 matching rows found via read-only Supabase check",
+    "note": "Read-only check only; no raw Supabase writes performed for agency work."
+  },
+  "lead_create_or_provision_payload": {
+    "name": "Maxfield's Pancake House",
+    "status": "in_progress",
+    "website_url": "https://www.maxfieldschaumburg.com/",
+    "contact_phone": "(847) 781-0300",
+    "address": "700 E Schaumburg Rd",
+    "city": "Schaumburg",
+    "state": "IL",
+    "notes": "Net-new Schaumburg agency lead. Official domain currently returns Wix ConnectYourDomain/404. Start canonical website workflow at auditing with local evidence paths."
+  },
+  "post_provision_workflow_request": {
+    "method": "POST",
+    "path": "/api/agency/leads/<lead_id>/website-workflow",
+    "body": {
+      "trigger": "openclaw_maxfields_pancake_house_audit_2026-05-06"
+    }
+  },
+  "build_update_payload": {
+    "build_stage": "auditing",
+    "status": "in_progress",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": null,
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "current_site_scrape_path": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+    "evidence_urls": [
+      "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-restaurantji-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-chicago-northwest-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/public-sources-evidence-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-fetch-evidence-2026-05-06.txt",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/mc-api-probe-2026-05-06.txt",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-google-maps-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-yelp-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/blockers/mc-auth-blocker-2026-05-06.md"
+    ],
+    "artifact_urls": [
+      "https://www.maxfieldschaumburg.com/",
+      "https://www.restaurantji.com/il/schaumburg/maxfields-pancake-house-/",
+      "https://www.chicagonorthwest.com/listing/maxfields-pancake-house-%26-restaurant/1613/"
+    ],
+    "ready_to_pitch": false,
+    "lead_metadata": {
+      "owner_name": null,
+      "owner_email": null,
+      "contact_email": null,
+      "phone": "(847) 781-0300",
+      "hours": [
+        "Conflicting public hours; verify via Google/owner before launch. Restaurantji: Mon/Tue/Sun 7AM-2PM; Wed-Sat 7AM-2PM and 3:30-8PM. Chicago Northwest: Sun-Wed 7AM-3PM; Thu-Sat 7AM-9PM."
+      ],
+      "address_location": "700 E Schaumburg Rd, Schaumburg, IL 60194",
+      "website_url": "https://www.maxfieldschaumburg.com/ (currently Wix ConnectYourDomain/HTTP 404)",
+      "order_url": null,
+      "reservation_url": null,
+      "catering_events_url": null,
+      "google_rating": 4.5,
+      "google_review_count": 983,
+      "outreach_email_draft_path": null,
+      "outreach_email_draft_status": "not_created",
+      "metadata_source_notes": [
+        "Google Maps overview captured 4.5 rating with 983 reviews, breakfast restaurant category, address/phone/menu/website links, and order online action. Full Highest-sort 30-review packet remains pending.",
+        "Official domain and non-www domain captured as HTTP 404 Wix ConnectYourDomain.",
+        "Restaurantji and Chicago Northwest provided address/phone/category/hour evidence.",
+        "Yelp/browser/search snippets provide review/photo/family-owned/history signals that need owner verification before owner-facing copy."
+      ],
+      "field_sources": {
+        "phone": [
+          "https://www.restaurantji.com/il/schaumburg/maxfields-pancake-house-/",
+          "https://www.chicagonorthwest.com/listing/maxfields-pancake-house-%26-restaurant/1613/"
+        ],
+        "address_location": [
+          "https://www.restaurantji.com/il/schaumburg/maxfields-pancake-house-/",
+          "https://www.chicagonorthwest.com/listing/maxfields-pancake-house-%26-restaurant/1613/"
+        ],
+        "website_url": [
+          "https://www.maxfieldschaumburg.com/",
+          "https://maxfieldschaumburg.com/"
+        ],
+        "hours": [
+          "https://www.restaurantji.com/il/schaumburg/maxfields-pancake-house-/",
+          "https://www.chicagonorthwest.com/listing/maxfields-pancake-house-%26-restaurant/1613/"
+        ],
+        "google_rating": [
+          "https://www.google.com/maps/search/?api=1&query=Maxfield%27s%20Pancake%20House%20700%20E%20Schaumburg%20Rd%20Schaumburg%20IL"
+        ],
+        "google_review_count": [
+          "https://www.google.com/maps/search/?api=1&query=Maxfield%27s%20Pancake%20House%20700%20E%20Schaumburg%20Rd%20Schaumburg%20IL"
+        ]
+      }
+    },
+    "passed_requirement_ids": [
+      "checklist-md",
+      "checklist-json",
+      "current-site-screenshots",
+      "current-site-scrape",
+      "current-site-opportunities"
+    ],
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; local audit artifacts are complete and prepared for sync.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-auditing-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield audit artifacts created; official domain broken with Wix ConnectYourDomain/404; MC writeback prepared but blocked on agency API auth."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "siteSlug": "maxfields-pancake-house",
+  "date": "2026-05-06",
+  "stage": "building",
+  "status": "ready_for_mc_writeback",
+  "templateRoute": {
+    "archetype": "Cuisine",
+    "template_slug": "plate-01",
+    "decision_path": "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md"
+  },
+  "artifacts": {
+    "build_notes": "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+    "source_notes": "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+    "checklist_json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "checklist_md": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md"
+  },
+  "evidence": [
+    "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/public-sources-evidence-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+    "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/source.md"
+  ],
+  "verification": {
+    "npm_install": "passed",
+    "typecheck": "passed",
+    "build": "passed",
+    "forbidden_placeholder_grep": "passed"
+  },
+  "requirementsPassed": [
+    "template-route-locked",
+    "fork-built",
+    "specificity"
+  ],
+  "blockers": [
+    {
+      "id": "mission_control_auth",
+      "message": "MC auth is unavailable in the runtime, so the prepared building-stage payload could not be synced."
+    }
+  ]
+}

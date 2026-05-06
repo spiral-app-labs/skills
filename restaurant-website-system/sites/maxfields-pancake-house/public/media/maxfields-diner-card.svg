@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Maxfield diner preview card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9e7f9"/>
+      <stop offset="100%" stop-color="#9da7dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <path d="M180 255c86-76 185-114 296-114 159 0 304 78 434 234" fill="none" stroke="#2a211b" stroke-opacity="0.12" stroke-width="18" stroke-linecap="round"/>
+  <path d="M280 654c100-58 206-87 319-87 114 0 227 31 340 94" fill="none" stroke="#2a211b" stroke-opacity="0.12" stroke-width="16" stroke-linecap="round"/>
+  <text x="90" y="120" fill="#2a211b" fill-opacity="0.66" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif" font-size="28" letter-spacing="4">MAXFIELD'S PREVIEW</text>
+  <text x="90" y="500" fill="#2a211b" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif" font-size="86" font-weight="700">Schaumburg</text>
+  <text x="90" y="574" fill="#2a211b" fill-opacity="0.82" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif" font-size="34">Call, directions, and breakfast-house clarity</text>
+</svg>
