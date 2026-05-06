@@ -51,6 +51,10 @@
 - restaurant-website-system/sites/mackey-s-hideout/screenshots/scaffold-home-desktop-fixed-2026-05-05.png
 - restaurant-website-system/sites/mackey-s-hideout/screenshots/scaffold-home-mobile-fixed-2026-05-05.png
 - restaurant-website-system/sites/mackey-s-hideout/scaffold-browser-smoke-qa-2026-05-05.md
+- restaurant-website-system/sites/mackey-s-hideout/qa-round-1-local-2026-05-05.md
+- restaurant-website-system/sites/mackey-s-hideout/screenshots/qa1-home-desktop-2026-05-05.png
+- restaurant-website-system/sites/mackey-s-hideout/screenshots/qa1-home-mobile-2026-05-05.png
+- restaurant-website-system/sites/mackey-s-hideout/scrapes/qa1-local-browser-metrics-2026-05-05.json
 - restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-reviews-complete-2026-05-05.json
 
 - restaurant-website-system/sites/mackey-s-hideout/pitch-draft-2026-05-05.md
@@ -67,7 +71,7 @@
 
 ## QA Rounds
 
-- Round 1: pending
+- Round 1: pending canonically; local QA candidate captured in `qa-round-1-local-2026-05-05.md`
 - Round 2: pending
 - Round 3: pending
 - Local smoke QA only: `scaffold-browser-smoke-qa-2026-05-05.md` records a mobile hero fix and non-canonical browser checks; it does not satisfy canonical QA rounds.
@@ -82,7 +86,7 @@
 
 - Mission Control writeback pending: local audit evidence and the Highest-rating Google Reviews packet are complete, but this runtime is missing `AGENCY_AUTONOMY_API_KEY` and a trusted Mission Control base URL. Replay order remains `mc-build-writeback-auditing-complete-2026-05-05.json` first, then `mc-build-writeback-reviews-complete-2026-05-05.json`.
 - Local scaffold is non-canonical: `build-scaffold-2026-05-05.md` records a successful first-pass fork/build scaffold, but the requirement stays pending until Mission Control replay, owner fact confirmation, QA rounds, and preview evidence are complete.
-- Official QA still blocked: `scaffold-browser-smoke-qa-2026-05-05.md` captures only a local smoke pass plus layout fixes; Mission Control replay, owner-confirmed hours, canonical QA rounds, and preview evidence remain outstanding.
+- Official QA still blocked: local smoke + QA1 candidate evidence now exist, but Mission Control replay, owner-confirmed hours, canonical QA rounds/writeback, and preview evidence remain outstanding.
 
 ## Done Criteria
 
