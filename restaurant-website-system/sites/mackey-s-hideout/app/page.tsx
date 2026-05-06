@@ -2,6 +2,7 @@ import { TopTriptychHeader } from '../components/TopTriptychHeader';
 import { HeroSlideshow } from '../components/HeroSlideshow';
 import { PolaroidStrip } from '../components/PolaroidStrip';
 import { HorizontalMarquee } from '../components/HorizontalMarquee';
+import { ProofRibbon } from '../components/ProofRibbon';
 import { OpeningTimesBlock } from '../components/OpeningTimesBlock';
 import { DualServiceMenusSplit } from '../components/DualServiceMenusSplit';
 import { FloralBreak } from '../components/FloralBreak';
@@ -42,6 +43,9 @@ export default function HomePage() {
               {content.tagline.body}
             </p>
           </section>
+        <ScrollRevealScrapbook>
+          <ProofRibbon />
+        </ScrollRevealScrapbook>
         <ScrollRevealScrapbook>
           <PolaroidStrip />
         </ScrollRevealScrapbook>
