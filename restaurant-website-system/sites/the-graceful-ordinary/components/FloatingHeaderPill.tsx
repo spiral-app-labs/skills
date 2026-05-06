@@ -21,7 +21,7 @@ export function FloatingHeaderPill() {
   return (
     <>
     <motion.header
-      className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 flex max-w-[calc(100vw-24px)] items-center gap-1 overflow-hidden rounded-pill bg-surface/95 backdrop-blur-sm border border-border/50 pl-2 md:pl-3 pr-1 py-1.5"
+      className="fixed top-3 md:top-6 left-1/2 -translate-x-1/2 z-50 flex w-[calc(100vw-20px)] max-w-[calc(100vw-20px)] items-center justify-between gap-2 overflow-hidden rounded-pill border border-border/50 bg-surface/95 px-2 py-1.5 backdrop-blur-sm md:w-auto md:max-w-[calc(100vw-24px)] md:justify-start md:gap-1 md:pl-3 md:pr-1"
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -29,17 +29,17 @@ export function FloatingHeaderPill() {
         ease: theme.motion.easing,
       }}
     >
-      <button
-        aria-label="Open menu"
-        className="grid place-items-center w-8 h-8 rounded-md hover:bg-surface-hover transition-colors"
+      <Link
+        href="/menu"
+        className="inline-flex h-9 items-center rounded-pill border border-border/70 px-3 text-[11px] font-semibold uppercase tracking-[1.6px] text-text transition-colors hover:border-accent/60 hover:text-accent md:hidden"
       >
-        <span className="block w-3.5 h-px bg-text relative before:content-[''] before:absolute before:top-[-4px] before:left-0 before:w-3.5 before:h-px before:bg-text after:content-[''] after:absolute after:top-[4px] after:left-0 after:w-3.5 after:h-px after:bg-text" />
-      </button>
+        Menu
+      </Link>
 
       <Link
         href="/"
-        className="truncate px-2 md:px-3 font-display text-text whitespace-nowrap"
-        style={{ fontSize: '16px', letterSpacing: '0.08em' }}
+        className="min-w-0 flex-1 truncate px-1 text-center font-display text-text whitespace-nowrap md:flex-none md:px-3 md:text-left"
+        style={{ fontSize: 'clamp(14px, 3.8vw, 16px)', letterSpacing: '0.08em' }}
       >
         {content.brand.logo}
       </Link>
@@ -67,7 +67,7 @@ export function FloatingHeaderPill() {
 
       <Link
         href={content.nav.cta.href}
-        className="ml-1 md:ml-2 px-3 md:px-4 py-2 rounded-pill border border-accent/60 hover:border-accent text-button text-accent hover:bg-accent/10 transition-colors whitespace-nowrap"
+        className="ml-0 rounded-pill border border-accent/60 px-3 py-2 text-[11px] font-semibold uppercase tracking-[1.6px] whitespace-nowrap text-accent transition-colors hover:border-accent hover:bg-accent/10 md:ml-2 md:px-4 md:text-button"
       >
         {content.nav.cta.label}
       </Link>

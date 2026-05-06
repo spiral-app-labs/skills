@@ -17,9 +17,9 @@ export function MultiChannelReservationStrip() {
   const r = content.reservationStrip;
   const h = content.brand.hours;
   return (
-    <section className="px-5 py-14 md:px-12 md:py-24 max-w-[1280px] mx-auto">
+    <section className="mx-auto max-w-[1280px] px-5 py-14 md:px-12 md:py-20">
       <motion.div
-        className="text-center space-y-6"
+        className="rounded-[28px] border border-border/40 bg-surface px-5 py-10 text-center shadow-[0_28px_80px_rgba(0,0,0,0.18)] space-y-6 md:px-10"
         initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

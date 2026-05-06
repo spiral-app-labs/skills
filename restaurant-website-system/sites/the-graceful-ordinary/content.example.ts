@@ -100,6 +100,12 @@ export const content = {
         description: 'A named original from the bar program; repeatedly called out by guests.',
         image: img.cocktails,
       },
+      {
+        tag: 'Hearth Special',
+        name: 'Venison',
+        description: 'A wood-fired main that guests specifically remember for precise preparation and depth.',
+        image: img.foodWideTwo,
+      },
     ],
   },
 
