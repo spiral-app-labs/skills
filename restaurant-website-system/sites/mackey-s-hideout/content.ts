@@ -32,19 +32,19 @@ export const content = {
     secondaryCta: { label: 'Open beer menu', href: 'http://www.mackeyshideout.com/beer-menu.html' },
     slides: [
       {
-        src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/b2a2b788-70f5-4ca6-8f69-414d359b4b02_orig.jpeg',
+        src: '/official-assets/b2a2b788-70f5-4ca6-8f69-414d359b4b02_orig.jpeg',
         alt: "Mackey's Hideout event flyer from the official site",
       },
       {
-        src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/comedy-open-mic_orig.jpg',
+        src: '/official-assets/comedy-open-mic_orig.jpg',
         alt: "Comedy open mic poster from Mackey's Hideout",
       },
       {
-        src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/pink-and-purple-modern-fun-bar-karaoke-night-instagram-post_orig.png',
+        src: '/official-assets/pink-and-purple-modern-fun-bar-karaoke-night-instagram-post_orig.png',
         alt: "Wednesday karaoke poster from Mackey's Hideout",
       },
       {
-        src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/mackeys-1-01-pdf-20240802-150607-0000_orig.png',
+        src: '/official-assets/mackeys-1-01-pdf-20240802-150607-0000_orig.png',
         alt: "Official Mackey's Hideout schedule graphic",
       },
     ],
@@ -57,32 +57,32 @@ export const content = {
 
   polaroids: [
     {
-      src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/comedy-open-mic_orig.jpg',
+      src: '/official-assets/comedy-open-mic_orig.jpg',
       alt: 'Comedy and open mic art from the official Mackey site',
       rotation: -4,
     },
     {
-      src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/pink-and-purple-modern-fun-bar-karaoke-night-instagram-post_orig.png',
+      src: '/official-assets/pink-and-purple-modern-fun-bar-karaoke-night-instagram-post_orig.png',
       alt: "Karaoke poster from Mackey's Hideout",
       rotation: 2,
     },
     {
-      src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/mackey-s-poster-1-0_orig.jpg',
+      src: '/official-assets/mackey-s-poster-1-0_orig.jpg',
       alt: "Official show poster from Mackey's Hideout",
       rotation: -2,
     },
     {
-      src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/mackey-s-4-11_orig.png',
+      src: '/official-assets/mackey-s-4-11_orig.png',
       alt: "Official Mackey's event poster",
       rotation: 5,
     },
     {
-      src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/25-26-residency_orig.png',
+      src: '/official-assets/25-26-residency_orig.png',
       alt: "Official residency poster from Mackey's Hideout",
       rotation: -3,
     },
     {
-      src: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/dose5-30-2_orig.png',
+      src: '/official-assets/dose5-30-2_orig.png',
       alt: "Official outdoor show poster from Mackey's Hideout",
       rotation: 3,
     },
@@ -103,7 +103,7 @@ export const content = {
   menus: {
     title: 'Music, Beer, and the Roadhouse Pitch',
     centerpieceImage:
-      'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/mackeys-1-01-pdf-20240802-150607-0000_orig.png',
+      '/official-assets/mackeys-1-01-pdf-20240802-150607-0000_orig.png',
     centerEyebrow: "MACKEY'S",
     centerTitle: 'ON DECK',
     food: {
@@ -120,7 +120,7 @@ export const content = {
   },
 
   floralBreak: {
-    image: 'http://www.mackeyshideout.com/uploads/1/7/5/6/17561563/image0-2_orig.png',
+    image: '/official-assets/image0-2_orig.png',
     alt: "Official Mackey's Hideout poster art",
   },
 

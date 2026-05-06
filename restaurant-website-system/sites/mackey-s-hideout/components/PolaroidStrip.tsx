@@ -44,6 +44,7 @@ export function PolaroidStrip() {
                 alt={p.alt}
                 fill
                 sizes="260px"
+                loading="eager"
                 className="object-cover"
               />
             </div>
