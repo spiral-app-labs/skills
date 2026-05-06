@@ -1,5 +1,4 @@
 import { SiteHeader } from '../../components/SiteHeader';
-import { ContactCtaClosing } from '../../components/ContactCtaClosing';
 import { WordmarkFooter } from '../../components/WordmarkFooter';
 import { LiveMapEmbed } from '../../components/LiveMapEmbed';
 import { VisitConfidencePanel } from '../../components/VisitConfidencePanel';
@@ -41,15 +40,21 @@ export default function ContactPage() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href={info.phoneHref}
-                  className="bg-accent hover:bg-accent-dark text-white text-button font-medium px-6 py-3 rounded-button transition-colors"
+                  className="w-full sm:w-auto text-center bg-accent hover:bg-accent-dark text-white text-button font-medium px-6 py-3 rounded-button transition-colors"
                 >
                   Call (847) 781-0300
                 </Link>
                 <Link
                   href={info.directionsHref}
-                  className="text-button font-medium text-ink border border-ink/80 hover:border-accent hover:text-accent px-6 py-3 rounded-button transition-colors"
+                  className="w-full sm:w-auto text-center text-button font-medium text-ink border border-ink/80 hover:border-accent hover:text-accent px-6 py-3 rounded-button transition-colors"
                 >
                   Get directions
+                </Link>
+                <Link
+                  href="/#menu"
+                  className="w-full sm:w-auto text-center text-button font-medium text-accent hover:text-accent-dark px-2 py-3"
+                >
+                  See menu highlights
                 </Link>
               </div>
               <div className="mt-8">
@@ -92,7 +97,6 @@ export default function ContactPage() {
 
         <VisitConfidencePanel />
         <ConciergePanel />
-        <ContactCtaClosing />
       </main>
       <WordmarkFooter />
     </>
