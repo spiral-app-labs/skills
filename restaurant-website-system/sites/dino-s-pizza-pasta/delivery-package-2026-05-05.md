@@ -11,7 +11,7 @@
 - Local QA preview: `http://127.0.0.1:3076`
 - Vercel PR preview: `https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app`
 - Public owner-shareable preview URL: **blocked / Vercel SSO-protected**
-- Latest access check: `restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md` (`HTTP/2 401`, Authentication Required, rechecked 2026-05-05T22:32:52Z)
+- Latest access check: `restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md` (`HTTP/2 401`, Authentication Required, rechecked 2026-05-06T04:41:40Z)
 
 ## Local package artifact
 
@@ -64,7 +64,7 @@
 ## Final delivery blockers
 
 1. Public owner-shareable preview is blocked: the Vercel PR preview exists, but unauthenticated access returns `HTTP/2 401` / Authentication Required.
-2. Mission Control writeback is blocked because the trusted Mission Control base URL is now identified (`https://hq.ethantalreja.com`), but this runtime has no usable `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` bearer token; the API returns 401 with `x-agency-runtime: openclaw` (rechecked 2026-05-05T22:32:53Z). Raw Supabase writes were not used. Writeback payload/runbook are prepared locally.
+2. Mission Control writeback is blocked because the trusted Mission Control base URL is now identified (`https://hq.ethantalreja.com`), but this runtime has no usable `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` bearer token; the API returns 401 with `x-agency-runtime: openclaw` (rechecked 2026-05-06T04:41:40Z). Raw Supabase writes were not used. Writeback payload/runbook are prepared locally.
 3. Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Confirmation packet prepared at `restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md`.
 
 ## Delivery status
