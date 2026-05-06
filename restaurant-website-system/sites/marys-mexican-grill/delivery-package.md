@@ -1,6 +1,6 @@
 # Mary's Mexican Grill Delivery Package
 
-- Date: 2026-05-04, refreshed 2026-05-05T12:49:00Z, preview/QA2 evidence rechecked 2026-05-05T15:05Z
+- Date: 2026-05-04, refreshed 2026-05-05T12:49:00Z, preview/QA2 evidence rechecked 2026-05-05T15:05Z, preview/MC blockers rechecked 2026-05-06T05:52Z
 - Site path: `restaurant-website-system/sites/marys-mexican-grill`
 - MC root task: `0ee079ce-2e26-4d44-8fdf-96e0db2e4047`
 - MC QA3 child task: `bbb46016-3e2e-43e7-b3d7-e0995e34252e`
@@ -10,6 +10,13 @@
 - Archetype: `bamzi-01`
 - Package status: `prepared / MC synced / QA2 screenshot gap locally resolved / waiting on founder + preview verification`
 - `ready_to_pitch`: `false`
+
+
+## Fresh blocker recheck — 2026-05-06
+
+- Public preview recheck: `https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app` still returns `HTTP/2 401` / Vercel Authentication Required without cookies. Evidence: `restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-06.md`.
+- Mission Control agency API recheck: `GET https://hq.ethantalreja.com/api/agency/leads/4416524d-0894-4e47-a4e7-880ba6579aa3` with `x-agency-runtime: openclaw` and no bearer returns `HTTP/2 401`. Evidence: `restaurant-website-system/sites/marys-mexican-grill/mc-api-access-check-2026-05-06.md`.
+- Delivery remains blocked on public/client-safe preview access, site-specific Anthropic key, Ethan human review, and MC bearer auth for the latest local evidence refresh.
 
 ## Founder Status
 

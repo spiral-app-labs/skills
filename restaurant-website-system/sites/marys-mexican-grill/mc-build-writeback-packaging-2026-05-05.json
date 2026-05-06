@@ -32,13 +32,8 @@
     "qa-round-2",
     "delivery-package"
   ],
-  "blocker": {
-    "reason": "QA2 screenshot evidence gap is locally resolved, with all 8 referenced files verified present/non-empty in qa2-screenshot-existence-verify-2026-05-05.json. Final delivery remains blocked by auth-protected preview verification, founder Anthropic key, and Ethan human review. The 2026-05-05 QA2/preview evidence refresh has not been posted through the MC agency API because this runtime does not expose AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET.",
-    "source": "openclaw_heartbeat_2026-05-05",
-    "last_checked_at": "2026-05-05T15:05:00Z",
-    "preview_access_evidence_path": "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md",
-    "qa2_existence_manifest_path": "restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json"
-  },
-  "heartbeat_summary": "Mary\u2019s packaging evidence advanced again: verified all QA2 referenced screenshots are present/non-empty, recaptured the Vercel auth-wall preview evidence, and updated local checklist/delivery/QA3 artifacts. Final delivery remains blocked only by authenticated/public preview verification, founder Anthropic key, Ethan human review, and MC API credentials for this refresh.",
-  "mc_api_base_url": "https://hq.ethantalreja.com"
+  "blocker": "Delivery blocked: PR #19 preview rechecked 2026-05-06 and still returns HTTP/2 401 Authentication Required; Mission Control agency route is reachable at https://hq.ethantalreja.com but no bearer auth is configured (lead read HTTP/2 401); founder Anthropic key and Ethan human review remain pending.",
+  "heartbeat_summary": "Mary’s packaging evidence advanced again: verified all QA2 referenced screenshots are present/non-empty, recaptured the Vercel auth-wall preview evidence, and updated local checklist/delivery/QA3 artifacts. Final delivery remains blocked only by authenticated/public preview verification, founder Anthropic key, Ethan human review, and MC API credentials for this refresh.",
+  "mc_api_base_url": "https://hq.ethantalreja.com",
+  "updatedAt": "2026-05-06T05:52:19Z"
 }
