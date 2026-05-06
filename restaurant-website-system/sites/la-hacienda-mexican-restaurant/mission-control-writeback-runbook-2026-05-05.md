@@ -9,13 +9,13 @@
 
 ## Blocker
 
-This OpenClaw runtime does not expose `AGENCY_AUTONOMY_API_KEY`, `OPENCLAW_WEBHOOK_SECRET`, or a trusted Mission Control base URL as environment variables, so the agency API writeback was not submitted. Raw Supabase workflow-state mutation was intentionally skipped.
+The trusted Mission Control base URL is reachable at `https://hq.ethantalreja.com`, but this OpenClaw runtime does not expose a usable `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` bearer token. A no-bearer request with `x-agency-runtime: openclaw` returns `HTTP/2 401`, so the agency API writeback was not submitted. Raw Supabase workflow-state mutation was intentionally skipped. Latest check: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-api-access-check-2026-05-05.md`.
 
 Final delivery is also blocked until an owner-shareable public preview URL exists and owner-sensitive facts are confirmed.
 
 ## Prepared payload
 
-Submit `restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-payload-2026-05-05.json` through the Mission Control agency website/build writeback route once auth/base URL are configured.
+Submit `restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-payload-2026-05-05.json` to `https://hq.ethantalreja.com/api/agency/leads/7cba3fe2-8f65-4516-b46b-05c2c07ab235/build` once agency auth is configured.
 
 Expected headers:
 
