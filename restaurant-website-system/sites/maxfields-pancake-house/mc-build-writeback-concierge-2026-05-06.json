@@ -1,0 +1,87 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T14:15:00Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "auth_check": {
+    "AGENCY_AUTONOMY_API_KEY": "missing",
+    "OPENCLAW_WEBHOOK_SECRET": "missing",
+    "api_write_attempted": false,
+    "reason": "Mission Control agency API auth is unavailable in this runtime; no MC write was attempted for the concierge gate and no raw Supabase agency writes were performed."
+  },
+  "blocker": {
+    "id": "mission_control_auth",
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing. Concierge evidence is complete locally and ready to sync once auth is restored.",
+    "source": "openclaw_maxfields_concierge_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to the runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST/PATCH this prepared concierge payload."
+  },
+  "build_update_payload": {
+    "build_stage": "concierge",
+    "status": "in_progress",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": "plate-01",
+    "archetype": "Cuisine",
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "concierge_kb_path": "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+    "concierge_transcript_path": "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+    "evidence_urls": [
+      "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+    ],
+    "artifact_paths": {
+      "concierge_kb": "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+      "concierge_transcript": "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+      "concierge_logic": "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+      "concierge_ui": "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+      "checklist_md": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "checklist_json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
+    },
+    "requirementsPassed": [
+      "concierge-kb-truthful",
+      "concierge-tested",
+      "concierge-safe"
+    ],
+    "remaining_blockers": [
+      {
+        "id": "mission_control_auth",
+        "message": "MC auth is unavailable in the runtime, so the prepared concierge payload could not be synced."
+      },
+      {
+        "id": "hours_confirmation",
+        "message": "Public sources still conflict on hours; the concierge discloses that conflict and hands visitors to the phone number."
+      },
+      {
+        "id": "order_link_confirmation",
+        "message": "Public ordering signals exist, but a direct owner-controlled provider was not verified; the concierge hands takeout questions to the phone number."
+      }
+    ],
+    "verification": {
+      "typecheck": "passed_after_build",
+      "build": "passed",
+      "forbidden_placeholder_grep": "passed"
+    },
+    "notes": [
+      "The concierge is deterministic and prompt-driven rather than a live LLM integration.",
+      "All visitor answers are restricted to the fixed Maxfield KB plus explicit fallback language.",
+      "Homepage and contact page now both expose the concierge panel with call, directions, and menu handoffs."
+    ],
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; concierge payload is prepared locally.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield concierge completed locally with a fixed knowledge base, deterministic visitor prompts, safe fallback behavior, and transcript evidence. MC writeback remains blocked on agency API auth."
+  }
+}

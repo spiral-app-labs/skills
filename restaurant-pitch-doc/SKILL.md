@@ -35,11 +35,13 @@ The pitch is not "your site is bad." The pitch is "your current site already has
    - Include that in the pitch so the owner feels seen, not judged.
    - Explain how the prototype makes that strength more visible on the new site.
 
-4. Write the doc using `references/pitch-doc-template.md`.
+4. Write the pitch doc using `references/pitch-doc-template.md`.
 
-5. Keep every claim traceable to either the local audit/prototype or clearly mark it as a hypothesis. Do not invent awards, press, review counts, provider details, menu items, or credentials.
+5. Create or update the battle cards doc (`battle-cards.md` or `pitch-battle-card.md`, matching the site convention). It must include: owner talking points, likely objections, proof/evidence to cite, known risks/caveats, demo path, and the strongest one-sentence close.
 
-6. End with a tight demo path: what to show first, what to scroll to, and which provider handoff proves revenue preservation.
+6. Keep every claim traceable to either the local audit/prototype or clearly mark it as a hypothesis. Do not invent awards, press, review counts, provider details, menu items, or credentials.
+
+7. End with a tight demo path: what to show first, what to scroll to, and which provider handoff proves revenue preservation.
 
 ## Quality Bar
 
@@ -61,4 +63,4 @@ For folders under `restaurant-website-system/sites/{slug}/`, prefer these source
 - `app/layout.tsx` for schema/metadata improvements.
 - route files under `app/` for demo path and crawlable pages.
 
-If a pitch doc already exists, update it instead of creating a parallel artifact unless the user asks for a different format.
+If a pitch doc already exists, update it instead of creating a parallel artifact unless the user asks for a different format. Do the same for the battle cards doc; one current battle-card artifact per site is the gate.

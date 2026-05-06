@@ -1,0 +1,57 @@
+{
+  "lead_id": "742a8ab1-4205-49e0-9206-b97700045a79",
+  "root_task_id": "503320f6-a3e2-4286-887b-a7900ffaaed8",
+  "site_slug": "mackey-s-hideout",
+  "build_stage": "routing",
+  "currentStage": "routing",
+  "stage_completed": "routing",
+  "ready_to_pitch": false,
+  "template_slug": "bramble-01",
+  "archetype": "Bramble roadhouse / live-music bar variant",
+  "canonical_gate_status": "prepared_local_only_until_mc_reviews_stage_exists",
+  "checklist_markdown_path": "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+  "routing_decision_path": "restaurant-website-system/sites/mackey-s-hideout/routing-template-decision-2026-05-05.md",
+  "evidence_paths": [
+    "restaurant-website-system/sites/mackey-s-hideout/checklist.md",
+    "restaurant-website-system/sites/mackey-s-hideout/checklist.json",
+    "restaurant-website-system/sites/mackey-s-hideout/routing-template-decision-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/audit.md",
+    "restaurant-website-system/sites/mackey-s-hideout/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/official-live-music-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/official-live-music-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/official-live-music-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/google-reviews-highest-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/google-reviews-highest-30-2026-05-05.md"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-captured"
+  ],
+  "routing_summary": "Route Mackey's Hideout to bramble-01 as a roadhouse/live-music bar variant. The business is bar/venue-led, with public proof for live music, open mic, karaoke, craft beer, whiskey, friendly staff, regular crowd, and hidden-gem roadhouse identity. Avoid conventional restaurant-menu, reservation-led, and full-kitchen claims.",
+  "blocked_or_pending_requirement_ids": [
+    "fork-built",
+    "qa-round-1",
+    "qa-round-2",
+    "qa-round-3",
+    "delivery-package"
+  ],
+  "blockers": [
+    {
+      "gate": "ordered_mc_replay",
+      "reason": "This routing decision is ready locally, but it must not be submitted or treated as canonical until Mission Control has accepted the audit-complete payload and then the reviews-complete payload. MC currently cannot be updated from this runtime because agency auth/base URL are unavailable.",
+      "next_unblock_action": "Submit mc-build-writeback-auditing-complete-2026-05-05.json, verify MC reaches reviews, submit mc-build-writeback-reviews-complete-2026-05-05.json, verify MC reaches routing, then submit/attach this routing-prepared payload."
+    },
+    {
+      "gate": "owner_fact_confirmation",
+      "reason": "Owner-confirmed hours, food scope, ticket/show cadence, and any age/cover policies are still missing; route copy must keep those claims provisional or conservative.",
+      "next_unblock_action": "Ask owner confirmation questions before delivery and before any live-status or food-depth claims."
+    }
+  ],
+  "updated_at": "2026-05-05T19:20:00.000Z"
+}

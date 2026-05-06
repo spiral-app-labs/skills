@@ -1,0 +1,7 @@
+{
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "created_at": "2026-05-04T23:45:00Z",
+  "source": "restaurant-website-system/templates/gusto-01",
+  "fork_method": "merged template files into existing audit/checklist folder to preserve canonical Ciao Baby evidence artifacts"
+}

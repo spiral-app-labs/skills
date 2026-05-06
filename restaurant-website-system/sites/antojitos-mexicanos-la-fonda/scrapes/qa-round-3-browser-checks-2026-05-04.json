@@ -1,0 +1,455 @@
+{
+  "capturedAt": "2026-05-05T01:21:44.169Z",
+  "base": "http://127.0.0.1:3085",
+  "label": "qa-round-3",
+  "captures": [
+    {
+      "route": "/",
+      "viewportName": "desktop",
+      "url": "http://127.0.0.1:3085/",
+      "screenshotPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png",
+      "textPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-home-desktop-text-2026-05-04.txt",
+      "domPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-home-desktop-dom-2026-05-04.html",
+      "metrics": {
+        "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+        "route": "/",
+        "viewport": {
+          "width": 1440,
+          "height": 1000,
+          "devicePixelRatio": 1
+        },
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "horizontalOverflow": false,
+        "offenders": [],
+        "h1": [
+          "Veracruz flavor, tacos, and antojitos worth the trip."
+        ],
+        "ctas": [
+          "La Fonda\nClosed · opens tomorrow at 10am",
+          "Home",
+          "Menu Highlights",
+          "Hours & Location",
+          "Contact",
+          "Call Now",
+          "Call (815) 526-3633",
+          "Get Directions",
+          "Call",
+          "Call",
+          "Call",
+          "Call Today",
+          "Call Today",
+          "Call Today",
+          "Call Today",
+          "Call",
+          "Call",
+          "Call",
+          "1.\nListed hours",
+          "2.\nBest way to order",
+          "3.\nBefore dining in",
+          "What should I try first?",
+          "Are you open today?",
+          "Can I order online?",
+          "Do they have dine-in seating?",
+          "Ask",
+          "Call La Fonda",
+          "Get directions",
+          "Call La Fonda\n↗",
+          "Get Directions\n↗",
+          "Open Google Profile\n↗",
+          "View Local Menu Listing\n↗",
+          "(815) 526-3633",
+          "Tacos",
+          "Empanadas",
+          "Sope Veracruzano",
+          "Huarache De Asado",
+          "Hours & location",
+          "Directions",
+          "Call now",
+          "Google profile",
+          "Local menu listing",
+          "Local photo listing",
+          "Call La Fonda",
+          "Directions"
+        ],
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasTruthCaveat": true
+      }
+    },
+    {
+      "route": "/",
+      "viewportName": "mobile",
+      "url": "http://127.0.0.1:3085/",
+      "screenshotPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png",
+      "textPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-home-mobile-text-2026-05-04.txt",
+      "domPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-home-mobile-dom-2026-05-04.html",
+      "metrics": {
+        "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+        "route": "/",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "devicePixelRatio": 3
+        },
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "offenders": [],
+        "h1": [
+          "Veracruz flavor, tacos, and antojitos worth the trip."
+        ],
+        "ctas": [
+          "La Fonda",
+          "Home",
+          "Menu Highlights",
+          "Hours & Location",
+          "Contact",
+          "Call Now",
+          "Call (815) 526-3633",
+          "Get Directions",
+          "Call",
+          "Call",
+          "Call",
+          "Call Today",
+          "Call Today",
+          "Call Today",
+          "Call Today",
+          "Call",
+          "Call",
+          "Call",
+          "1.\nListed hours",
+          "2.\nBest way to order",
+          "3.\nBefore dining in",
+          "What should I try first?",
+          "Are you open today?",
+          "Can I order online?",
+          "Do they have dine-in seating?",
+          "Ask",
+          "Call La Fonda",
+          "Get directions",
+          "Call La Fonda\n↗",
+          "Get Directions\n↗",
+          "Open Google Profile\n↗",
+          "View Local Menu Listing\n↗",
+          "(815) 526-3633",
+          "Tacos",
+          "Empanadas",
+          "Sope Veracruzano",
+          "Huarache De Asado",
+          "Hours & location",
+          "Directions",
+          "Call now",
+          "Google profile",
+          "Local menu listing",
+          "Local photo listing",
+          "Call La Fonda",
+          "Directions"
+        ],
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasTruthCaveat": true
+      }
+    },
+    {
+      "route": "/about",
+      "viewportName": "desktop",
+      "url": "http://127.0.0.1:3085/about",
+      "screenshotPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-desktop-full.png",
+      "textPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-about-desktop-text-2026-05-04.txt",
+      "domPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-about-desktop-dom-2026-05-04.html",
+      "metrics": {
+        "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+        "route": "/about",
+        "viewport": {
+          "width": 1440,
+          "height": 1000,
+          "devicePixelRatio": 1
+        },
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "horizontalOverflow": false,
+        "offenders": [],
+        "h1": [
+          "About La Fonda"
+        ],
+        "ctas": [
+          "La Fonda\nClosed · opens tomorrow at 10am",
+          "Home",
+          "Menu Highlights",
+          "Hours & Location",
+          "Contact",
+          "Call Now",
+          "(815) 526-3633",
+          "Tacos",
+          "Empanadas",
+          "Sope Veracruzano",
+          "Huarache De Asado",
+          "Hours & location",
+          "Directions",
+          "Call now",
+          "Google profile",
+          "Local menu listing",
+          "Local photo listing"
+        ],
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasTruthCaveat": true
+      }
+    },
+    {
+      "route": "/about",
+      "viewportName": "mobile",
+      "url": "http://127.0.0.1:3085/about",
+      "screenshotPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png",
+      "textPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-about-mobile-text-2026-05-04.txt",
+      "domPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-about-mobile-dom-2026-05-04.html",
+      "metrics": {
+        "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+        "route": "/about",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "devicePixelRatio": 3
+        },
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "offenders": [],
+        "h1": [
+          "About La Fonda"
+        ],
+        "ctas": [
+          "La Fonda",
+          "Home",
+          "Menu Highlights",
+          "Hours & Location",
+          "Contact",
+          "Call Now",
+          "(815) 526-3633",
+          "Tacos",
+          "Empanadas",
+          "Sope Veracruzano",
+          "Huarache De Asado",
+          "Hours & location",
+          "Directions",
+          "Call now",
+          "Google profile",
+          "Local menu listing",
+          "Local photo listing"
+        ],
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasTruthCaveat": true
+      }
+    },
+    {
+      "route": "/contact",
+      "viewportName": "desktop",
+      "url": "http://127.0.0.1:3085/contact",
+      "screenshotPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-desktop-full.png",
+      "textPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-contact-desktop-text-2026-05-04.txt",
+      "domPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-contact-desktop-dom-2026-05-04.html",
+      "metrics": {
+        "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+        "route": "/contact",
+        "viewport": {
+          "width": 1440,
+          "height": 1000,
+          "devicePixelRatio": 1
+        },
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "horizontalOverflow": false,
+        "offenders": [],
+        "h1": [
+          "Contact La Fonda"
+        ],
+        "ctas": [
+          "La Fonda\nClosed · opens tomorrow at 10am",
+          "Home",
+          "Menu Highlights",
+          "Hours & Location",
+          "Contact",
+          "Call Now",
+          "Get directions →",
+          "Call (815) 526-3633\n↗",
+          "Get directions to Coventry Plaza\n↗",
+          "Open Google profile\n↗",
+          "View local menu listing\n↗",
+          "1.\nListed hours",
+          "2.\nBest way to order",
+          "3.\nBefore dining in",
+          "(815) 526-3633",
+          "Tacos",
+          "Empanadas",
+          "Sope Veracruzano",
+          "Huarache De Asado",
+          "Hours & location",
+          "Directions",
+          "Call now",
+          "Google profile",
+          "Local menu listing",
+          "Local photo listing"
+        ],
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasTruthCaveat": true
+      }
+    },
+    {
+      "route": "/contact",
+      "viewportName": "mobile",
+      "url": "http://127.0.0.1:3085/contact",
+      "screenshotPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png",
+      "textPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-contact-mobile-text-2026-05-04.txt",
+      "domPath": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/qa-round-3-contact-mobile-dom-2026-05-04.html",
+      "metrics": {
+        "title": "Antojitos Mexicanos La Fonda — Veracruz-style antojitos in Crystal Lake",
+        "route": "/contact",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "devicePixelRatio": 3
+        },
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "horizontalOverflow": false,
+        "offenders": [],
+        "h1": [
+          "Contact La Fonda"
+        ],
+        "ctas": [
+          "La Fonda",
+          "Home",
+          "Menu Highlights",
+          "Hours & Location",
+          "Contact",
+          "Call Now",
+          "Get directions →",
+          "Call (815) 526-3633\n↗",
+          "Get directions to Coventry Plaza\n↗",
+          "Open Google profile\n↗",
+          "View local menu listing\n↗",
+          "1.\nListed hours",
+          "2.\nBest way to order",
+          "3.\nBefore dining in",
+          "(815) 526-3633",
+          "Tacos",
+          "Empanadas",
+          "Sope Veracruzano",
+          "Huarache De Asado",
+          "Hours & location",
+          "Directions",
+          "Call now",
+          "Google profile",
+          "Local menu listing",
+          "Local photo listing"
+        ],
+        "hasPhone": true,
+        "hasAddress": true,
+        "hasTruthCaveat": true
+      }
+    }
+  ],
+  "summary": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "overflow": false,
+      "offenders": 0,
+      "h1": [
+        "Veracruz flavor, tacos, and antojitos worth the trip."
+      ],
+      "hasPhone": true,
+      "hasAddress": true
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "overflow": false,
+      "offenders": 0,
+      "h1": [
+        "Veracruz flavor, tacos, and antojitos worth the trip."
+      ],
+      "hasPhone": true,
+      "hasAddress": true
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "overflow": false,
+      "offenders": 0,
+      "h1": [
+        "About La Fonda"
+      ],
+      "hasPhone": true,
+      "hasAddress": true
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "overflow": false,
+      "offenders": 0,
+      "h1": [
+        "About La Fonda"
+      ],
+      "hasPhone": true,
+      "hasAddress": true
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "overflow": false,
+      "offenders": 0,
+      "h1": [
+        "Contact La Fonda"
+      ],
+      "hasPhone": true,
+      "hasAddress": true
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "overflow": false,
+      "offenders": 0,
+      "h1": [
+        "Contact La Fonda"
+      ],
+      "hasPhone": true,
+      "hasAddress": true
+    }
+  ],
+  "screenshotInventory": [
+    {
+      "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-desktop-full.png",
+      "bytes": 128905,
+      "sha256": "a3e77673a546ef4f6de191fff87ed9eaedbb777be0a447a8666e451ba68465c4"
+    },
+    {
+      "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png",
+      "bytes": 417847,
+      "sha256": "48e14490ae3627b032f64a8ef331273194798ec19dd83ccc1f4ac68c85d8e528"
+    },
+    {
+      "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-desktop-full.png",
+      "bytes": 487039,
+      "sha256": "6adb55a3976763480aa807186e169bc612afa05f0bf621cc3ca555d2fbe564a7"
+    },
+    {
+      "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png",
+      "bytes": 766978,
+      "sha256": "c41344d49e6a125c8e766b0c5b60dd899525dc9fe9c89a8cdaf251669fd1e7e8"
+    },
+    {
+      "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png",
+      "bytes": 849552,
+      "sha256": "5fae7f69b8cb59eaf47bce697b855898f36aef84b64759f15b97f2912a043b14"
+    },
+    {
+      "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png",
+      "bytes": 2989290,
+      "sha256": "f298bb21af2a15590d016d5daf58e06374e947512e06c452ad8be69d3d6cafed"
+    }
+  ]
+}

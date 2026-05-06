@@ -1,0 +1,82 @@
+{
+  "round_number": 3,
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "mc_child_task_id": "bbb46016-3e2e-43e7-b3d7-e0995e34252e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "ready_to_pitch": false,
+  "qa_verdict": "hold",
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "findings": [
+    "The site remains truthful, restaurant-specific, and sellable for founder review; no fake owner story, fake awards, fake menu items, fake prices, fake review counts, or invented direct-order path were found.",
+    "Fresh QA3 desktop and mobile screenshots were captured from a local Next.js preview for home, menu, about, and contact.",
+    "The final Vercel preview URL was located from GitHub PR #19, but unauthenticated access returns Vercel login/401, so preview access still needs Ethan/authenticated verification before client handoff.",
+    "Contact/footer conversion surfaces had plain-text address and phone treatment before this pass."
+  ],
+  "fixes_applied": [
+    "Added tappable map and phone actions to the contact info cards.",
+    "Made the footer address link directly to directions.",
+    "Made the footer phone link directly to the verified call path."
+  ],
+  "evidence_checked": [
+    "restaurant-website-system/sites/marys-mexican-grill/source.md",
+    "restaurant-website-system/sites/marys-mexican-grill/audit.md",
+    "restaurant-website-system/sites/marys-mexican-grill/google-reviews-themes.md",
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+    "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json"
+  ],
+  "screenshots": [
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+      "status": "captured_local_preview"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png",
+      "status": "captured_local_preview"
+    }
+  ],
+  "browser_checks": [
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json"
+  ],
+  "pending_non_agent_gates": [
+    "Founder must configure the site-specific Anthropic key.",
+    "Founder must complete personal human review.",
+    "Ethan or an authenticated Vercel/GitHub session must verify the PR #19 preview URL opens beyond the Vercel login/401 protection wall before client handoff."
+  ],
+  "blocker": "QA3 writeback is synced to Mission Control. ready_to_pitch remains blocked by founder Anthropic key, founder human review, authenticated preview-access verification, and missing QA2 screenshot evidence.",
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "preview_access_status": "auth_protected_pending_ethan_verification",
+  "sync_status": "synced_via_patched_local_mc_api_pr_328"
+}

@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-05-05T16:48:00Z",
+  "lead_id": "da8188e5-7830-43ec-b908-661cf2e56b30",
+  "endpoints": {
+    "build_update": "POST or PATCH https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/build",
+    "qa_rounds": "POST https://hq.ethantalreja.com/api/agency/leads/da8188e5-7830-43ec-b908-661cf2e56b30/qa-rounds",
+    "heartbeat": "POST https://hq.ethantalreja.com/api/heartbeat"
+  },
+  "build_payload": {
+    "build_stage": "packaging",
+    "site_slug": "dino-s-pizza-pasta",
+    "template_slug": "pepper-01",
+    "mc_task_id": "0d4123df-83b0-4d81-bc75-88263ebb402b",
+    "checklist_markdown_path": "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
+    "current_site_scrape_path": "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-dom-2026-05-05.html",
+    "current_site_text_path": "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-text-2026-05-05.txt",
+    "google_reviews_packet_path": "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.json",
+    "google_reviews_markdown_path": "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md",
+    "pitch_doc_path": "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+    "battle_cards_path": "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+    "qa_rounds": [
+      {
+        "round_number": 1,
+        "evidence_path": "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md"
+      },
+      {
+        "round_number": 2,
+        "evidence_path": "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md"
+      },
+      {
+        "round_number": 3,
+        "evidence_path": "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md"
+      }
+    ],
+    "local_package_archive_path": "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
+    "local_package_manifest_path": "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+    "owner_confirmation_packet_path": "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
+    "public_preview_runbook_path": "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+    "vercel_preview_url": null,
+    "preview_url": null,
+    "evidence_urls": [
+      "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/checklist.json",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/audit.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/source.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/content.ts",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/app/page.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConfettiHero.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/components/ContactPageLayout.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/package.json",
+      "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/current-site-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-dom-2026-05-05.html",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-home-text-2026-05-05.txt",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-dom-2026-05-05.html",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/current-site-menu-text-2026-05-05.txt",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/google-reviews-highest-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.json",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/google-reviews-highest-30-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/build-evidence-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/improvement-pass-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/top-3-improvements-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-cachebust-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-before-nav-menu-fix-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-after-nav-menu-fix-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/components/TopNavSimple.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-kb.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/concierge-test-transcript-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/components/ConciergePanel.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-concierge-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/pitch-doc.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/battle-cards.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-2-page-audit-2026-05-05.json",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-about-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/app/layout.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/app/opengraph-image.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/components/LiveOpenStatus.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/components/SaturatedFooter.tsx",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/scrapes/qa-round-3-final-audit-2026-05-05.json",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/dino-s-pizza-pasta-local-package-2026-05-05.tar.gz",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/owner-confirmation-questions-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-runbook-2026-05-05.md",
+      "https://github.com/spiral-app-labs/skills/pull/42",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md"
+    ],
+    "artifact_urls": [
+      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-package-2026-05-05.md",
+      "restaurant-website-system/sites/dino-s-pizza-pasta/delivery-artifacts/package-manifest-2026-05-05.md",
+      "https://github.com/spiral-app-labs/skills/pull/42"
+    ],
+    "passed_requirement_ids": [
+      "checklist-md",
+      "checklist-json",
+      "current-site-screenshots",
+      "current-site-scrape",
+      "current-site-opportunities",
+      "reviews-highest-filter",
+      "reviews-thirty-written",
+      "reviews-themes",
+      "template-route-locked",
+      "fork-built",
+      "specificity",
+      "identity-specific",
+      "conversion-paths",
+      "mobile-check",
+      "top-three-named",
+      "top-three-implemented",
+      "top-three-evidence",
+      "concierge-kb-truthful",
+      "concierge-tested",
+      "concierge-safe",
+      "pitch-specific",
+      "pitch-before-after",
+      "pitch-evidence",
+      "battle-cards-objections",
+      "battle-cards-demo-path",
+      "battle-cards-risks",
+      "qa-round-1",
+      "qa-round-2",
+      "qa-round-3"
+    ],
+    "blocked_requirement_ids": [
+      "delivery-package",
+      "delivery-no-missing-evidence"
+    ],
+    "blocker": "Public owner-shareable preview is still blocked: Vercel PR preview https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app exists, but unauthenticated access returns HTTP/2 401 / Authentication Required. Do not owner-deliver until public/shareable access is configured.\nMission Control API writeback pending: trusted base URL is now identified as https://hq.ethantalreja.com, but this OpenClaw runtime has no usable AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET bearer token. The API returns 401 with x-agency-runtime: openclaw. Raw Supabase writes are forbidden for agency work. Local evidence is ready to mirror.\nOwner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims such as rating/review count/family-owned/menu phrasing. Owner confirmation packet is prepared locally.",
+    "heartbeat_summary": "Dino’s is packaged locally and PR #42 has a Vercel preview, but unauthenticated preview access returns 401; final delivery remains blocked on public preview access, agency API bearer token for MC writeback, and owner fact confirmation.",
+    "github_pr_url": "https://github.com/spiral-app-labs/skills/pull/42",
+    "github_pr_state": "merged",
+    "github_pr_merged_at": "2026-05-05T08:00:37Z",
+    "mc_api_base_url": "https://hq.ethantalreja.com",
+    "mc_api_access_check_path": "restaurant-website-system/sites/dino-s-pizza-pasta/mc-api-access-check-2026-05-05.md",
+    "protected_preview_url": "https://skills-git-feature-dino-piz-720266-ethan-ethantalrejas-projects.vercel.app",
+    "public_preview_access_check_path": "restaurant-website-system/sites/dino-s-pizza-pasta/public-preview-access-check-2026-05-05.md"
+  },
+  "qa_round_payloads": [
+    {
+      "round_number": 1,
+      "findings": [
+        "Round 1 completed with screenshots, findings/fixes, build/typecheck result, and remaining blockers documented."
+      ],
+      "fixes_applied": [
+        "See qa-round-1.md for detailed fixes and evidence."
+      ],
+      "screenshots": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/preview-home-mobile-2026-05-05.png"
+      ],
+      "evidence_path": "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-1.md",
+      "mc_task_id": "0d4123df-83b0-4d81-bc75-88263ebb402b"
+    },
+    {
+      "round_number": 2,
+      "findings": [
+        "Mobile hero CTA height, map CTA placement, status contrast, tap targets, and metadata/OG issues were identified."
+      ],
+      "fixes_applied": [
+        "Hero spacing tightened, mobile Menu/Call kept visible, map CTA moved below map, status contrast improved, nav/footer tap targets fixed, OG route added."
+      ],
+      "screenshots": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-2-contact-mobile-2026-05-05.png"
+      ],
+      "evidence_path": "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-2.md",
+      "mc_task_id": "0d4123df-83b0-4d81-bc75-88263ebb402b"
+    },
+    {
+      "round_number": 3,
+      "findings": [
+        "Final sell-readiness QA found public-copy/internal-wording, hero badge, mobile map, and claim-softening issues."
+      ],
+      "fixes_applied": [
+        "Cleaned public copy, removed accidental-looking decorative badges, replaced mobile embedded map with Miller Road card, softened review count to 250+, and reran build/typecheck/CDP audit."
+      ],
+      "screenshots": [
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-about-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/dino-s-pizza-pasta/screenshots/qa-round-3-contact-mobile-2026-05-05.png"
+      ],
+      "evidence_path": "restaurant-website-system/sites/dino-s-pizza-pasta/qa-round-3.md",
+      "mc_task_id": "0d4123df-83b0-4d81-bc75-88263ebb402b"
+    }
+  ],
+  "heartbeat_payload": {
+    "status": "work_done",
+    "summary": "Dino’s is packaged locally and PR #42 has a Vercel preview, but unauthenticated preview access returns 401; final delivery remains blocked on public preview access, agency API bearer token for MC writeback, and owner fact confirmation.",
+    "mode": "agency",
+    "source": "openclaw_website_agency",
+    "taskIds": [
+      "0d4123df-83b0-4d81-bc75-88263ebb402b"
+    ],
+    "metadata": {
+      "lead_id": "da8188e5-7830-43ec-b908-661cf2e56b30",
+      "site_slug": "dino-s-pizza-pasta",
+      "build_stage": "packaging",
+      "delivery_status": "blocked",
+      "blockers": [
+        "Public owner-shareable preview is blocked: Vercel PR preview exists but unauthenticated access returns HTTP/2 401 / Authentication Required.",
+        "Mission Control API writeback pending: trusted base URL is https://hq.ethantalreja.com, but no agency API bearer token is available in this runtime (401 with x-agency-runtime: openclaw).",
+        "Owner-sensitive facts still need confirmation before final handoff: hours/specials, delivery/provider flow, and current public claims."
+      ],
+      "mc_api_base_url": "https://hq.ethantalreja.com",
+      "github_pr_url": "https://github.com/spiral-app-labs/skills/pull/42"
+    }
+  },
+  "blocked_from_delivery": true,
+  "note": "Do not set delivered until public preview URL exists, owner-sensitive facts are confirmed, and Mission Control writeback succeeds via agency API."
+}

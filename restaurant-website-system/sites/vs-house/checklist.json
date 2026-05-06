@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "leadId": "1006c1ea-5a06-4703-9994-117bc90d9dba",
+  "mcParentTaskId": "41da188d-4629-4cb2-91f3-6be31d6b9b6d",
+  "siteSlug": "vs-house",
+  "templateSlug": "bamzi-01",
+  "currentStage": "packaging",
+  "evidencePaths": [
+    "restaurant-website-system/sites/vs-house/pitch-doc.md",
+    "restaurant-website-system/sites/vs-house/audit.md",
+    "restaurant-website-system/sites/vs-house/scrapes/google.json",
+    "restaurant-website-system/sites/vs-house/battle-cards.md",
+    "restaurant-website-system/sites/vs-house/qa-round-1.md",
+    "restaurant-website-system/sites/vs-house/qa-round-2.md",
+    "restaurant-website-system/sites/vs-house/qa-round-3.md",
+    "restaurant-website-system/sites/vs-house/content.ts",
+    "restaurant-website-system/sites/vs-house/components/MenuSection.tsx",
+    "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
+    "restaurant-website-system/sites/vs-house/menu-price-evidence.md",
+    "restaurant-website-system/sites/vs-house/scrapes/menu-live.html",
+    "restaurant-website-system/sites/vs-house/scrapes/menu-images/",
+    "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+    "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+    "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/vs-house/outreach-draft.md",
+    "restaurant-website-system/sites/vs-house/delivery-package.md",
+    "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
+    "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
+    "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
+    "restaurant-website-system/sites/vs-house/mc-writeback-payload-2026-05-04.json",
+    "restaurant-website-system/sites/vs-house/mc-writeback-blocker.md",
+    "restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md",
+    "restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md"
+  ],
+  "qaRounds": [
+    {
+      "roundNumber": 1,
+      "summary": "Factual/source QA fixed unsupported past-midnight bar claim; build/typecheck passed; live Google Highest review packet and preview screenshot evidence are now attached.",
+      "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-1.md",
+      "status": "passed_with_evidence",
+      "screenshots": [
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "roundNumber": 2,
+      "summary": "Mobile/conversion QA added homepage text-menu and contact/CTA sections; build/typecheck passed; mobile/desktop preview screenshots attached.",
+      "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-2.md",
+      "status": "passed_with_evidence",
+      "screenshots": [
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "roundNumber": 3,
+      "summary": "Final sell-readiness QA removed/confirmed menu prices, removed unpriced demo rows, validated Google proof packet, captured preview screenshots, and passed build/typecheck. Delivery still needs deployed preview/runtime verification.",
+      "artifactPath": "restaurant-website-system/sites/vs-house/qa-round-3.md",
+      "status": "passed_pending_deployed_runtime_and_preview_url",
+      "screenshots": [
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+      ]
+    }
+  ],
+  "deployUrl": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/vs-house/pitch-doc.md",
+    "outreachDraft": "restaurant-website-system/sites/vs-house/outreach-draft.md",
+    "beforeAfterScreenshots": [],
+    "battleCards": "restaurant-website-system/sites/vs-house/battle-cards.md"
+  },
+  "blockers": [
+    {
+      "gate": "packaging",
+      "reason": "Browser screenshot blocker is resolved locally with full-page desktop/mobile captures. Delivery remains blocked because the Vercel preview is protected by Authentication Required (401) and this OpenClaw runtime lacks AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET for authenticated Mission Control lead/build/QA writeback.",
+      "recordedAt": "2026-05-05T01:44:00Z",
+      "nextUnblockAction": "Provide an owner-shareable/public preview or Vercel bypass token, and configure agency API auth so the prepared payload can be mirrored to Mission Control."
+    },
+    {
+      "gate": "preview_access_recheck",
+      "reason": "PR #1 preview rechecked 2026-05-06: GET / still returned HTTP/2 401 and POST /api/chat returned 401 from Vercel deployment protection; not owner-shareable or smoke-testable.",
+      "nextUnblockAction": "Provide public/client-safe preview URL or Vercel protection bypass, then rerun no-cookie GET / and POST /api/chat smoke tests.",
+      "recordedAt": "2026-05-06T09:39:40Z",
+      "evidence": "restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md"
+    },
+    {
+      "gate": "mc_api_bearer_auth",
+      "reason": "Mission Control lead route is reachable at https://hq.ethantalreja.com but returned HTTP/2 401 without bearer auth; build route now returns HTTP/2 405 for GET, confirming route exists but requires method/auth.",
+      "nextUnblockAction": "Configure agency bearer auth for OpenClaw, then submit mc-writeback-payload-2026-05-04.json through the official agency API.",
+      "recordedAt": "2026-05-06T09:39:41Z",
+      "evidence": "restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Audit identifies V's House as a high-fit restaurant with strong review volume, press, family heritage, and existing conversion flows.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Pre-fork audit exists at restaurant-website-system/sites/vs-house/audit.md with screenshots/scrapes and review/proof inventory.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/audit.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google.json"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Route locked to bamzi-01 in audit/source.md for accessible-casual modern Asian restaurant with menu depth and saturated accent potential.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/audit.md",
+        "restaurant-website-system/sites/vs-house/source.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Local Next.js fork exists at restaurant-website-system/sites/vs-house with bamzi-01 source, real content.ts, preserved contact/reservation/order flows.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/content.ts",
+        "restaurant-website-system/sites/vs-house/source.md"
+      ]
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Round 1 factual/source QA logged and evidence attached, including Google Highest review packet and preview screenshots.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/qa-round-1.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Round 2 mobile/conversion QA logged; homepage conversion fix and desktop/mobile screenshots attached.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/app/page.tsx",
+        "restaurant-website-system/sites/vs-house/qa-round-2.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Final sell-readiness QA is evidence-backed with full-page desktop/mobile screenshots for home, menu, about, and contact, source-confirmed menu prices, and local concierge fallback verification. Delivery remains packaging-blocked on public preview/MC sync.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
+        "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/vs-house/components/MenuSection.tsx",
+        "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
+        "restaurant-website-system/sites/vs-house/content.ts",
+        "restaurant-website-system/sites/vs-house/menu-price-evidence.md",
+        "restaurant-website-system/sites/vs-house/qa-round-3.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png"
+      ]
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true,
+      "notes": "Local delivery package is assembled with restored browser screenshots; final delivery still requires owner-shareable preview and authenticated Mission Control evidence mirror.",
+      "evidence": [
+        "restaurant-website-system/sites/vs-house/app/api/chat/route.ts",
+        "restaurant-website-system/sites/vs-house/battle-cards.md",
+        "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
+        "restaurant-website-system/sites/vs-house/delivery-package.md",
+        "restaurant-website-system/sites/vs-house/mc-writeback-blocker.md",
+        "restaurant-website-system/sites/vs-house/mc-writeback-payload-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/outreach-draft.md",
+        "restaurant-website-system/sites/vs-house/pitch-doc.md",
+        "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png"
+      ]
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-06T09:39:41Z",
+  "artifactUrls": [
+    "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app"
+  ],
+  "lastMissionControlHeartbeatId": "37972128-9264-435e-96de-284380246c0c",
+  "lastMissionControlActivityId": "c3138254-7216-4c66-89da-4ded7d593401",
+  "build_stage": "packaging"
+}

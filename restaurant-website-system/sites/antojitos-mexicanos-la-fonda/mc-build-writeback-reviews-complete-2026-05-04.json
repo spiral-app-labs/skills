@@ -1,0 +1,39 @@
+{
+  "build_stage": "routing",
+  "site_slug": "antojitos-mexicanos-la-fonda",
+  "template_slug": "pepper-01",
+  "mc_task_id": "c2dc290b-4a51-4d61-96ff-ec0a4ccc52dc",
+  "checklist_markdown_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+  "google_reviews_packet_path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/audit.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/google-reviews-themes.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.md",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/checklist.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-google-listing-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/current-site-mobile-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantji-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/restaurantguru-desktop-full.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/google-reviews-highest-2026-05-04.png",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-text-2026-05-04.txt",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/scrapes/google-reviews-highest-30.md"
+  ],
+  "passed_requirement_ids": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked"
+  ],
+  "heartbeat_summary": "Antojitos audit/reviews gates completed with browser proof: Google Maps shows Add website/no owned website, public source screenshots captured, Highest-filtered Google reviews packet includes 30 written reviews. Ready for routing/build from pepper-01."
+}

@@ -1,0 +1,55 @@
+{
+  "build_stage": "packaging",
+  "completed_stage": "packaging_local_package",
+  "delivered": false,
+  "ready_to_pitch": false,
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "delivery_package_path": "restaurant-website-system/sites/ciao-baby/delivery-package.md",
+  "outreach_draft_path": "restaurant-website-system/sites/ciao-baby/outreach-draft.md",
+  "local_preview_url": "http://127.0.0.1:3084",
+  "public_preview_url": null,
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/delivery-package.md",
+    "restaurant-website-system/sites/ciao-baby/outreach-draft.md",
+    "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+    "restaurant-website-system/sites/ciao-baby/battle-cards.md",
+    "restaurant-website-system/sites/ciao-baby/checklist.md",
+    "restaurant-website-system/sites/ciao-baby/checklist.json",
+    "restaurant-website-system/sites/ciao-baby/qa-round-1.md",
+    "restaurant-website-system/sites/ciao-baby/qa-round-2.md",
+    "restaurant-website-system/sites/ciao-baby/qa-round-3.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md"
+  ],
+  "passed_requirement_ids": [],
+  "blocked_requirement_ids": [
+    "delivery-package",
+    "delivery-no-missing-evidence"
+  ],
+  "blockers": [
+    "PR #28 is open and Vercel preview deployed, but the preview is auth-gated and not client-shareable yet",
+    "Mission Control remote sync is unavailable because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime",
+    "Owner/founder verification is still required for preferred domain, exact current hours, and any changed menu pricing"
+  ],
+  "verification": {
+    "local_package_created": "passed",
+    "typecheck": "passed after QA3 final fixes",
+    "build": "passed after QA3 final fixes",
+    "qa_round_3": "passed final sell-readiness with delivery caveats"
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Created Ciao Baby local delivery package and outreach draft. Local QA3 has passed, but ready_to_pitch/delivered remain false until public preview URL, Mission Control remote sync, and owner/founder verification are complete.",
+  "pull_request_url": "https://github.com/spiral-app-labs/skills/pull/28",
+  "vercel_pr_preview_url": "https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app",
+  "public_preview_blocker": "Vercel PR preview deployed but currently returns authentication required, so it is not client-shareable yet."
+}

@@ -1,0 +1,101 @@
+{
+  "lead_patch": {
+    "status": "in_progress",
+    "vercel_preview_url": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
+    "metadata": {
+      "site_slug": "vs-house",
+      "template_slug": "bamzi-01",
+      "build_stage": "packaging",
+      "mc_parent_task_id": "41da188d-4629-4cb2-91f3-6be31d6b9b6d",
+      "skills_pr_url": "https://github.com/spiral-app-labs/skills/pull/1",
+      "preview_protection_status": "blocked_401_vercel_authentication_required",
+      "preview_owner_shareable": false,
+      "last_openclaw_evidence_paths": [
+        "restaurant-website-system/sites/vs-house/checklist.md",
+        "restaurant-website-system/sites/vs-house/checklist.json",
+        "restaurant-website-system/sites/vs-house/audit.md",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/vs-house/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/vs-house/pitch-doc.md",
+        "restaurant-website-system/sites/vs-house/battle-cards.md",
+        "restaurant-website-system/sites/vs-house/qa-round-1.md",
+        "restaurant-website-system/sites/vs-house/qa-round-2.md",
+        "restaurant-website-system/sites/vs-house/qa-round-3.md",
+        "restaurant-website-system/sites/vs-house/delivery-package.md",
+        "restaurant-website-system/sites/vs-house/outreach-draft.md",
+        "restaurant-website-system/sites/vs-house/concierge-runtime-evidence.md",
+        "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/menu-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/about-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md",
+        "restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md"
+      ],
+      "blockers": [
+        {
+          "gate": "packaging",
+          "reason": "Vercel preview URL exists, but Vercel deployment protection returns 401 for / and /api/chat. Need bypass/public preview before deployed smoke test and owner delivery. MC build-writeback auth is also unavailable in this OpenClaw environment.",
+          "recordedAt": "2026-05-04T15:30:00Z"
+        },
+        {
+          "gate": "packaging",
+          "reason": "Browser screenshot blocker resolved locally with full-page desktop/mobile captures; remaining blockers are Vercel preview protection/public URL and authenticated Mission Control writeback.",
+          "recordedAt": "2026-05-05T01:44:00Z"
+        },
+        {
+          "gate": "packaging",
+          "reason": "2026-05-06 recheck: preview GET / returns HTTP/2 401 and POST /api/chat returns 401; MC lead read returns HTTP/2 401 without bearer; MC build route returns HTTP/2 405 for GET and appears present but requires method/auth.",
+          "recordedAt": "2026-05-06T09:39:41Z"
+        }
+      ],
+      "preview_visual_evidence_status": "qa3_full_page_local_browser_screenshots_captured",
+      "last_browser_screenshot_evidence_at": "2026-05-05T01:44:00Z",
+      "last_blocker_recheck_at": "2026-05-06T09:39:41Z",
+      "mc_build_route_status": "route_exists_get_405_requires_method_and_auth"
+    }
+  },
+  "heartbeat_post": {
+    "status": "work_done",
+    "summary": "Agency: V's House browser screenshot blocker is resolved locally with full-page desktop/mobile QA3 captures; delivery remains blocked on public preview and authenticated MC writeback.",
+    "mode": "agency",
+    "source": "openclaw_website_agency",
+    "taskIds": [
+      "41da188d-4629-4cb2-91f3-6be31d6b9b6d"
+    ],
+    "metadata": {
+      "lead_id": "1006c1ea-5a06-4703-9994-117bc90d9dba",
+      "build_stage": "packaging",
+      "site_slug": "vs-house",
+      "template_slug": "bamzi-01",
+      "preview_url": "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app",
+      "skills_pr_url": "https://github.com/spiral-app-labs/skills/pull/1",
+      "blocker": "preview_protection_401_home_and_chat_plus_agency_api_bearer_missing",
+      "browser_screenshot_evidence": "restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04",
+      "last_blocker_recheck_at": "2026-05-06T09:39:41Z"
+    }
+  },
+  "api_probe": {
+    "base_url": "https://hq.ethantalreja.com",
+    "observed_without_token": {
+      "/api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba": "401 Unauthorized, route exists (rechecked 2026-05-06)",
+      "/api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/build": "405 for GET, route exists but requires proper method/auth (rechecked 2026-05-06)",
+      "/api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/qa-rounds": "401 Unauthorized, route exists",
+      "/api/heartbeat": "200 on GET; POST can record heartbeat rows"
+    }
+  },
+  "heartbeat_result": {
+    "status": "success",
+    "heartbeatId": "37972128-9264-435e-96de-284380246c0c",
+    "activityId": "c3138254-7216-4c66-89da-4ded7d593401",
+    "recordedAt": "2026-05-04T15:31:00Z"
+  },
+  "updatedAt": "2026-05-06T09:39:41Z"
+}

@@ -1,0 +1,114 @@
+{
+  "capturedAt": "2026-05-05T08:38:07.607Z",
+  "captures": [
+    {
+      "url": "https://www.snuggerymchenry.com/",
+      "finalUrl": "https://www.snuggerymchenry.com/",
+      "title": "Home - Snuggery River Roadhouse",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.snuggerymchenry.com/",
+      "finalUrl": "https://www.snuggerymchenry.com/",
+      "title": "Home - Snuggery River Roadhouse",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://snuggerymchenry.com/",
+      "finalUrl": "https://www.snuggerymchenry.com/",
+      "title": "Home - Snuggery River Roadhouse",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-nonwww-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-nonwww-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-nonwww-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/mchenry/the-snuggery-in-mchenry-/",
+      "finalUrl": "https://www.restaurantji.com/il/mchenry/the-snuggery-in-mchenry-/",
+      "title": "Snuggery River Roadhouse McHenry, McHenry - Menu, Reviews (283), Photos (113) - Restaurantji",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/mchenry/the-snuggery-in-mchenry-/",
+      "finalUrl": "https://www.restaurantji.com/il/mchenry/the-snuggery-in-mchenry-/",
+      "title": "Snuggery River Roadhouse McHenry, McHenry - Menu, Reviews (283), Photos (113) - Restaurantji",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.roostcafeandbistro.com/snuggery-river-roadhouse-mchenry-60051/",
+      "finalUrl": "https://www.roostcafeandbistro.com/snuggery-river-roadhouse-mchenry-60051/",
+      "title": "Snuggery River Roadhouse McHenry Menu - McHenry, IL",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/roost-proof-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/roost-proof-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/roost-proof-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Snuggery+River+Roadhouse+801+N+River+Rd+McHenry+IL",
+      "finalUrl": "https://www.google.com/search?q=Snuggery+River+Roadhouse+801+N+River+Rd+McHenry+IL",
+      "title": "Snuggery River Roadhouse 801 N River Rd McHenry IL - Google Search",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Snuggery+River+Roadhouse+801+N+River+Rd+McHenry+IL",
+      "finalUrl": "https://www.google.com/search?q=Snuggery+River+Roadhouse+801+N+River+Rd+McHenry+IL#ebo=0",
+      "title": "Snuggery River Roadhouse 801 N River Rd McHenry IL - Google Search",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-mobile-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "official-home",
+      "url": "https://www.snuggerymchenry.com/",
+      "status": 403,
+      "finalUrl": "https://www.snuggerymchenry.com/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "official-home-nonwww",
+      "url": "https://snuggerymchenry.com/",
+      "status": 403,
+      "finalUrl": "https://snuggerymchenry.com/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "restaurantji",
+      "url": "https://www.restaurantji.com/il/mchenry/the-snuggery-in-mchenry-/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/mchenry/the-snuggery-in-mchenry-/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "roost-proof",
+      "url": "https://www.roostcafeandbistro.com/snuggery-river-roadhouse-mchenry-60051/",
+      "status": 200,
+      "finalUrl": "https://www.roostcafeandbistro.com/snuggery-river-roadhouse-mchenry-60051/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "google-search",
+      "url": "https://www.google.com/search?q=Snuggery+River+Roadhouse+801+N+River+Rd+McHenry+IL",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Snuggery+River+Roadhouse+801+N+River+Rd+McHenry+IL",
+      "contentType": "text/html; charset=ISO-8859-1"
+    }
+  ]
+}

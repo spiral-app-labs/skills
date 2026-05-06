@@ -1,0 +1,37 @@
+{
+  "build_stage": "qa_round_1",
+  "completed_stage": "battle_cards",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "battle_cards_path": "restaurant-website-system/sites/ciao-baby/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/battle-cards.md",
+    "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+    "restaurant-website-system/sites/ciao-baby/audit.md",
+    "restaurant-website-system/sites/ciao-baby/google-reviews-themes.md",
+    "restaurant-website-system/sites/ciao-baby/content.ts",
+    "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+    "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md"
+  ],
+  "passed_requirement_ids": [
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks"
+  ],
+  "verification": {
+    "objections": "passed",
+    "demo_path": "passed",
+    "risks_and_what_not_to_claim": "passed"
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Completed Ciao Baby battle cards locally with owner talking points, likely objections, demo path, proof references, risks, and no-claim guardrails. Local stage advanced to QA round 1."
+}

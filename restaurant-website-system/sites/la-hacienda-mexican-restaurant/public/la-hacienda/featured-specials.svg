@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#1b1712"/>
+  <rect x="84" y="84" width="1032" height="732" rx="30" fill="#7f2418"/>
+  <text x="144" y="220" fill="#f6efe4" font-size="92" font-family="Georgia, serif">Bigger Plates</text>
+  <text x="144" y="320" fill="#f0cf9c" font-size="38" font-family="Arial, sans-serif">Regular burritos, tortas, specials, parrillada</text>
+  <text x="144" y="440" fill="#f6efe4" font-size="50" font-family="Georgia, serif">Weekday specials &amp; bigger plates</text>
+  <text x="144" y="510" fill="#f6efe4" font-size="50" font-family="Georgia, serif">Tortas, combos, and specials</text>
+  <text x="144" y="580" fill="#f6efe4" font-size="50" font-family="Georgia, serif">Now guests can browse faster</text>
+</svg>

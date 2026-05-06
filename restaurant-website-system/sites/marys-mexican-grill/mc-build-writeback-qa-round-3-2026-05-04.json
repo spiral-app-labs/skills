@@ -1,0 +1,38 @@
+{
+  "build_stage": "qa_round_3",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "mc_child_task_id": "bbb46016-3e2e-43e7-b3d7-e0995e34252e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "qa_doc_path": "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+  "qa_evidence_paths": [
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
+  ],
+  "passed_requirement_ids": [
+    "qa3-sell-ready"
+  ],
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "blocker": "QA3 is synced to Mission Control and the QA3 child task is done. Final handoff remains blocked by auth-protected preview access, missing QA2 screenshots, Ethan human review, and the site-specific Anthropic key.",
+  "heartbeat_summary": "QA round 3 evidence was refreshed and synced for Mary's Mexican Grill: npm ci, npm run build, and npm run typecheck passed; desktop/mobile screenshots for home/menu/about/contact were captured from local next start; PR #19 provided the Vercel preview URL; and MC now marks QA3 done. The preview is auth-protected for unauthenticated checks, QA2 screenshots are missing, and founder Anthropic/human-review gates remain pending, so ready_to_pitch stays false.",
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "preview_access_status": "auth_protected_pending_ethan_verification",
+  "pending_requirement_ids": [
+    "qa3-assets-ready"
+  ],
+  "sync_status": "synced_via_patched_local_mc_api_pr_328"
+}

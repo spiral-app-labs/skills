@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-05-05T12:12:00Z",
+  "endpoint": "/api/chat",
+  "transcript": [
+    {
+      "question": "What should I order tonight?",
+      "answer": "Popular starting points include carne asada tacos, carnitas tacos, al pastor tacos, regular burritos, Cubana torta, chimichangas. The full menu is here: https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view."
+    },
+    {
+      "question": "When are you open?",
+      "answer": "Sunday: 10:00 am \u2013 9:00 pm; Monday \u2013 Thursday: 10:00 am \u2013 9:00 pm; Friday \u2013 Saturday: 10:00 am \u2013 10:00 pm. Hours can change, so call (847) 426-0506 if timing is tight."
+    },
+    {
+      "question": "Can I order pickup?",
+      "answer": "For pickup, you can call (847) 426-0506 or start from the online order link: https://www.restaurantji.com/order.php?id=3429883. Call the restaurant for timing, substitutions, or price-sensitive questions."
+    },
+    {
+      "question": "Do you have gluten free?",
+      "answer": "For allergy or ingredient questions, please call (847) 426-0506 before ordering. I can point you to menu favorites, but the restaurant should confirm ingredients directly."
+    },
+    {
+      "question": "Where are you located?",
+      "answer": "La Hacienda Mexican Restaurant is at 411 E Main St, East Dundee, IL 60118. Use directions here: https://www.google.com/maps/dir/?api=1&destination=411+E+Main+St,+East+Dundee,+IL+60118."
+    }
+  ]
+}

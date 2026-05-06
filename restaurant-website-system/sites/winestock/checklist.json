@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "leadId": "7f1432ae-2553-442c-80ff-df58acb162ef",
+  "mcParentTaskId": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
+  "siteSlug": "winestock",
+  "templateSlug": "bramble-01",
+  "currentStage": "packaging",
+  "evidencePaths": [
+    "restaurant-website-system/sites/winestock/checklist.md",
+    "restaurant-website-system/sites/winestock/checklist.json",
+    "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+    "restaurant-website-system/sites/winestock/scrapes/current-site-links.json",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-sort-visible-2026-05-04.png",
+    "restaurant-website-system/sites/winestock/routing.md",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/content.ts",
+    "restaurant-website-system/sites/winestock/app/page.tsx",
+    "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+    "restaurant-website-system/sites/winestock/components/HorizontalMarquee.tsx",
+    "restaurant-website-system/sites/winestock/components/BrambleWordmarkFooter.tsx",
+    "restaurant-website-system/sites/winestock/app/globals.css",
+    "restaurant-website-system/sites/winestock/build-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/link-check.txt",
+    "restaurant-website-system/sites/winestock/app/reserve/page.tsx",
+    "restaurant-website-system/sites/winestock/components/MailingListBlock.tsx",
+    "restaurant-website-system/sites/winestock/components/InlineInfoSplit.tsx",
+    "restaurant-website-system/sites/winestock/components/TopTriptychHeader.tsx",
+    "restaurant-website-system/sites/winestock/components/ScrollReveal.tsx",
+    "restaurant-website-system/sites/winestock/components/OpeningTimesBlock.tsx",
+    "restaurant-website-system/sites/winestock/components/PolaroidStrip.tsx",
+    "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/link-check.txt",
+    "restaurant-website-system/sites/winestock/components/HeroSlideshow.tsx",
+    "restaurant-website-system/sites/winestock/components/VisitPlanner.tsx",
+    "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/link-check.txt",
+    "restaurant-website-system/sites/winestock/evidence-concierge-api-smoke-2026-05-04.jsonl",
+    "restaurant-website-system/sites/winestock/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/winestock/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/winestock/ai-concierge.md",
+    "restaurant-website-system/sites/winestock/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/winestock/pitch-doc.md",
+    "restaurant-website-system/sites/winestock/battle-cards.md",
+    "restaurant-website-system/sites/winestock/qa-round-1.md",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/reserve-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/reserve-mobile-full.png",
+    "restaurant-website-system/sites/winestock/mc-qa-round-1-writeback-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-1-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-1-clear-blocker-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/qa-round-2.md",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/mc-qa-round-2-writeback-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-2-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/qa-round-3.md",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-mobile-320-full.png",
+    "restaurant-website-system/sites/winestock/mc-qa-round-3-writeback-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-3-packaging-blocker-2026-05-05.json",
+    "restaurant-website-system/sites/winestock/packaging.md",
+    "restaurant-website-system/sites/winestock/app/layout.tsx",
+    "restaurant-website-system/sites/winestock/components/FloralBreak.tsx",
+    "restaurant-website-system/sites/winestock/components/SocialStripInline.tsx",
+    "restaurant-website-system/sites/winestock/public/favicon.svg",
+    "restaurant-website-system/sites/winestock/mc-build-writeback-packaging-packet-2026-05-05.json"
+  ],
+  "qaRounds": [
+    {
+      "round": 1,
+      "status": "passed",
+      "completedAt": "2026-05-05T04:23:52Z",
+      "summary": "QA1 passed after fixes to opening strip, hero contrast, scrapbook card treatment, and guest-facing concierge/contact language.",
+      "findings": [
+        {
+          "severity": "medium",
+          "items": [
+            "Opening marquee clipped/repeated visually",
+            "Hero contrast needed strengthening",
+            "Polaroids looked placeholder-like in evidence",
+            "Contact/concierge copy sounded internal"
+          ]
+        }
+      ],
+      "fixesApplied": [
+        "Static opening title",
+        "Hero scrim/content-card contrast",
+        "Intentional Winestock moment cards",
+        "Guest-facing contact/concierge wording"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/winestock/qa-round-1.md",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/reserve-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/reserve-mobile-full.png",
+        "restaurant-website-system/sites/winestock/mc-qa-round-1-writeback-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-1-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-1-clear-blocker-2026-05-05.json"
+      ]
+    },
+    {
+      "round": 2,
+      "status": "passed",
+      "completedAt": "2026-05-05T04:35:00Z",
+      "summary": "QA2 passed after mobile readability and spacing fixes; MC advanced to qa_round_3.",
+      "findings": [
+        {
+          "severity": "low",
+          "items": [
+            "Mobile hours/body text needed readability lift",
+            "Cream scrapbook/hours rhythm had mild spacer risk",
+            "Conversion handoffs needed recheck after copy changes"
+          ]
+        }
+      ],
+      "fixesApplied": [
+        "Opening Times card grid with larger time text",
+        "Tighter scrapbook strip padding",
+        "Fresh desktop/mobile/320px evidence"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/winestock/qa-round-2.md",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/mc-qa-round-2-writeback-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-2-2026-05-05.json"
+      ]
+    },
+    {
+      "round": 3,
+      "status": "passed",
+      "completedAt": "2026-05-05T04:46:30Z",
+      "summary": "QA3 final sell-readiness passed after mobile/conversion polish; no severe blockers remain in screenshot review.",
+      "findings": [
+        {
+          "severity": "medium",
+          "items": [
+            "Initial final QA flagged mobile hero/CTA hierarchy, proof density, photo-card pacing, explicit directions handoff, and favicon console 404."
+          ]
+        }
+      ],
+      "fixesApplied": [
+        "Shorter mobile hero copy and reduced mobile wordmark dominance",
+        "Early mobile Call now/Directions actions",
+        "Mobile proof quote reduction and public Google proof labeling",
+        "Mobile polaroid grid and branded rhythm break",
+        "Visible address/contact copy, directions contact action, and favicon metadata"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/winestock/qa-round-3.md",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/mc-qa-round-3-writeback-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-3-packaging-blocker-2026-05-05.json"
+      ]
+    }
+  ],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/winestock/pitch-doc.md",
+    "outreachDraft": null,
+    "beforeAfterScreenshots": [
+      "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-full.png",
+      "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-full.png",
+      "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-full.png",
+      "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
+      "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png",
+      "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png"
+    ],
+    "battleCards": "restaurant-website-system/sites/winestock/battle-cards.md"
+  },
+  "blockers": [
+    {
+      "gate": "packaging_preview_url",
+      "reason": "Packaging packet is assembled and QA1/QA2/QA3 passed, but final packaging/delivery cannot pass until a real public preview/deploy URL is attached plus site-specific Anthropic key and Ethan human review are complete.",
+      "recordedAt": "2026-05-05T04:47:39Z",
+      "nextUnblockAction": "Attach the real Vercel/public preview URL in Mission Control, complete site-specific Anthropic key setup, and record Ethan human review before delivery."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Mission Control inventory marks Winestock Market & Lounge as an in-progress agency website lead; official site confirms live business at 136 Cass St, Woodstock, IL.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Current-site and Google Reviews evidence are captured, including Highest-sort 30 written Google reviews.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-links.json",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-desktop.html",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-mobile.html",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-sort-visible-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "evidence": [
+        "restaurant-website-system/sites/winestock/routing.md",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.json",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md"
+      ],
+      "notes": "Routed to bramble-01 / Bramble because Winestock is a wine bar/market/lounge with live music, bottle/gift selection, charcuterie, and neighborhood regular energy."
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "passed",
+      "required": true,
+      "evidence": [
+        "restaurant-website-system/sites/winestock/build-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/first-fork-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/content.ts",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/HorizontalMarquee.tsx",
+        "restaurant-website-system/sites/winestock/components/BrambleWordmarkFooter.tsx",
+        "restaurant-website-system/sites/winestock/app/globals.css"
+      ],
+      "notes": "First Bramble fork is built with Winestock-specific content, safe contact CTAs, review proof, and browser evidence; typecheck/build passed."
+    },
+    {
+      "id": "improvement-pass",
+      "title": "Website improvement pass completed after first fork",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Improvement pass made the Winestock story more specific, surfaced Google-review proof, replaced fake forms with real handoffs, added menu clarity, fixed reveal wrappers for full-page screenshots, and passed typecheck/build/browser QA.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/link-check.txt",
+        "restaurant-website-system/sites/winestock/content.ts",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/app/reserve/page.tsx",
+        "restaurant-website-system/sites/winestock/components/MailingListBlock.tsx",
+        "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/InlineInfoSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/TopTriptychHeader.tsx",
+        "restaurant-website-system/sites/winestock/components/ScrollReveal.tsx",
+        "restaurant-website-system/sites/winestock/components/OpeningTimesBlock.tsx",
+        "restaurant-website-system/sites/winestock/components/PolaroidStrip.tsx"
+      ]
+    },
+    {
+      "id": "top-3-improvements",
+      "title": "Top 3 concrete improvements identified, implemented, and evidenced",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Implemented hero conversion clarity, practical visit handoffs, and mobile readability/CTA polish with before-after evidence, link check, typecheck/build, and browser screenshots.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/home-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/contact-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/top-3-improvements-browser-2026-05-04/link-check.txt",
+        "restaurant-website-system/sites/winestock/content.ts",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/components/HeroSlideshow.tsx",
+        "restaurant-website-system/sites/winestock/components/VisitPlanner.tsx",
+        "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/InlineInfoSplit.tsx",
+        "restaurant-website-system/sites/winestock/components/MailingListBlock.tsx",
+        "restaurant-website-system/sites/winestock/app/reserve/page.tsx"
+      ]
+    },
+    {
+      "id": "concierge-added",
+      "title": "Truthful AI concierge added with restaurant-specific KB and safe handoffs",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Deterministic Winestock concierge uses only verified current-site/review/build facts, refuses unsafe unsupported requests, routes to email/phone/Facebook/directions, and passed API smoke/typecheck/build/browser QA.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-320-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/contact-mobile-text.txt",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/link-check.txt",
+        "restaurant-website-system/sites/winestock/evidence-concierge-api-smoke-2026-05-04.jsonl",
+        "restaurant-website-system/sites/winestock/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/winestock/app/api/concierge/route.ts",
+        "restaurant-website-system/sites/winestock/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/winestock/app/page.tsx",
+        "restaurant-website-system/sites/winestock/ai-concierge.md",
+        "restaurant-website-system/sites/winestock/ai-concierge-transcript.md"
+      ]
+    },
+    {
+      "id": "pitch-doc",
+      "title": "Sellable owner-facing pitch doc created",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Pitch doc frames the current under-construction site gap, Bramble routing, Google review proof, visit handoffs, truthful concierge, preserve-stack promise, and owner asks without inventing providers or claims.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/pitch-doc.md",
+        "restaurant-website-system/sites/winestock/checklist.md",
+        "restaurant-website-system/sites/winestock/routing.md",
+        "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/concierge-browser-2026-05-04/home-mobile-full.png"
+      ]
+    },
+    {
+      "id": "battle-cards",
+      "title": "Sales battle cards created for owner objections and demo path",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Battle cards package the one-sentence close, owner talking points, likely objections, proof references, demo path, risks, and what-not-to-claim guardrails for Winestock without inventing provider, pricing, ordering, reservation, or private-event claims.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/battle-cards.md",
+        "restaurant-website-system/sites/winestock/pitch-doc.md",
+        "restaurant-website-system/sites/winestock/checklist.md",
+        "restaurant-website-system/sites/winestock/routing.md",
+        "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+        "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+        "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md"
+      ]
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "passed",
+      "required": true,
+      "status": "passed",
+      "notes": "QA round 1 passed after findings/fixes, desktop/mobile screenshots, typecheck/build, screenshot QA review, Mission Control QA writeback, and stale blocker cleanup.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/qa-round-1.md",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/reserve-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-1-browser-2026-05-05/reserve-mobile-full.png",
+        "restaurant-website-system/sites/winestock/mc-qa-round-1-writeback-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-1-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-1-clear-blocker-2026-05-05.json"
+      ]
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "passed",
+      "required": true,
+      "status": "passed",
+      "notes": "QA round 2 passed after mobile readability/spacing fixes, 1440px/390px/320px screenshot evidence, typecheck/build, screenshot QA review, and MC writeback.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/qa-round-2.md",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-2-browser-2026-05-05/reserve-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/mc-qa-round-2-writeback-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-2-2026-05-05.json"
+      ]
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "passed",
+      "required": true,
+      "status": "passed",
+      "notes": "QA round 3 final sell-readiness passed after mobile/conversion polish, fresh desktop/mobile/320px evidence, no console/HTTP errors, and MC writeback.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/qa-round-3.md",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/capture-manifest.json",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/home-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-desktop-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-mobile-full.png",
+        "restaurant-website-system/sites/winestock/evidence/qa-round-3-browser-2026-05-05/reserve-mobile-320-full.png",
+        "restaurant-website-system/sites/winestock/mc-qa-round-3-writeback-2026-05-05.json",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-qa-round-3-packaging-blocker-2026-05-05.json"
+      ]
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "packaging",
+      "title": "Packaging packet and preview URL",
+      "qaState": "pending",
+      "status": "in_progress",
+      "notes": "Local packaging packet assembled; delivery remains blocked until a real public preview URL plus founder/operator gates are attached.",
+      "evidence": [
+        "restaurant-website-system/sites/winestock/packaging.md",
+        "restaurant-website-system/sites/winestock/mc-build-writeback-packaging-packet-2026-05-05.json"
+      ]
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-05T04:51:00Z",
+  "build_stage": "packaging",
+  "template_slug": "bramble-01",
+  "packagingArtifacts": {
+    "packagingPacket": "restaurant-website-system/sites/winestock/packaging.md",
+    "status": "blocked_preview_url_founder_gates",
+    "mcBuildWriteback": "restaurant-website-system/sites/winestock/mc-build-writeback-packaging-packet-2026-05-05.json"
+  }
+}

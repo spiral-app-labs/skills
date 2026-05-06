@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1b1712"/>
+  <rect x="40" y="40" width="1520" height="820" rx="36" fill="#2b231b" stroke="#7f2418" stroke-width="4"/>
+  <circle cx="240" cy="190" r="120" fill="#8d2618"/>
+  <circle cx="240" cy="190" r="78" fill="#f2d3a2"/>
+  <rect x="420" y="120" width="700" height="84" rx="42" fill="#f2d3a2"/>
+  <text x="470" y="176" fill="#7f2418" font-size="40" font-family="Georgia, serif">La Hacienda Mexican Restaurant</text>
+  <text x="420" y="280" fill="#f6efe4" font-size="92" font-family="Georgia, serif">4.3 stars, 530 reviews</text>
+  <text x="420" y="344" fill="#d7c7b3" font-size="34" font-family="Arial, sans-serif">East Dundee, Illinois · 411 E Main St</text>
+  <rect x="120" y="420" width="400" height="250" rx="28" fill="#f6efe4"/>
+  <text x="160" y="500" fill="#1b1712" font-size="44" font-family="Georgia, serif">Call</text>
+  <text x="160" y="560" fill="#7f2418" font-size="54" font-family="Arial, sans-serif">(847) 426-0506</text>
+  <text x="160" y="620" fill="#594d40" font-size="28" font-family="Arial, sans-serif">Real phone, clean first action</text>
+  <rect x="600" y="420" width="400" height="250" rx="28" fill="#d9b36b"/>
+  <text x="640" y="500" fill="#1b1712" font-size="44" font-family="Georgia, serif">Menu</text>
+  <text x="640" y="560" fill="#7f2418" font-size="54" font-family="Georgia, serif">Tacos, Burritos, Tortas</text>
+  <text x="640" y="620" fill="#3d2f22" font-size="28" font-family="Arial, sans-serif">Local favorites, fast pickup, easy links</text>
+  <rect x="1080" y="420" width="360" height="250" rx="28" fill="#7f2418"/>
+  <text x="1120" y="500" fill="#f6efe4" font-size="44" font-family="Georgia, serif">Directions</text>
+  <text x="1120" y="560" fill="#f6efe4" font-size="34" font-family="Arial, sans-serif">411 E Main St</text>
+  <text x="1120" y="605" fill="#f0cf9c" font-size="34" font-family="Arial, sans-serif">East Dundee, IL 60118</text>
+  <text x="1120" y="652" fill="#d7c7b3" font-size="26" font-family="Arial, sans-serif">One tap away</text>
+</svg>

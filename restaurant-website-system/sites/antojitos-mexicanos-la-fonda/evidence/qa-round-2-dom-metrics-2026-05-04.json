@@ -1,0 +1,98 @@
+[
+  {
+    "url": "http://localhost:3106/",
+    "vw": 1440,
+    "sw": 1440,
+    "bodyH": 7663,
+    "footerBottom": 7663,
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasHours": true,
+    "hasConcierge": true,
+    "hasCallNow": true,
+    "hasDirections": true,
+    "badAnchors": [],
+    "offenders": [],
+    "forbidden": {
+      "fake": false,
+      "ownedSite": false,
+      "visitMobile": false,
+      "doordash": false,
+      "toast": false,
+      "ubereats": false,
+      "reservation": false
+    }
+  },
+  {
+    "url": "http://localhost:3106/",
+    "vw": 390,
+    "sw": 390,
+    "bodyH": 12460,
+    "footerBottom": 12460,
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasHours": true,
+    "hasConcierge": true,
+    "hasCallNow": true,
+    "hasDirections": true,
+    "badAnchors": [],
+    "offenders": [],
+    "forbidden": {
+      "fake": false,
+      "ownedSite": false,
+      "visitMobile": false,
+      "doordash": false,
+      "toast": false,
+      "ubereats": false,
+      "reservation": false
+    }
+  },
+  {
+    "url": "http://localhost:3106/about",
+    "vw": 390,
+    "sw": 390,
+    "bodyH": 2056,
+    "footerBottom": 2056,
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasHours": true,
+    "hasConcierge": false,
+    "hasCallNow": true,
+    "hasDirections": true,
+    "badAnchors": [],
+    "offenders": [],
+    "forbidden": {
+      "fake": false,
+      "ownedSite": false,
+      "visitMobile": false,
+      "doordash": false,
+      "toast": false,
+      "ubereats": false,
+      "reservation": false
+    }
+  },
+  {
+    "url": "http://localhost:3106/contact",
+    "vw": 390,
+    "sw": 390,
+    "bodyH": 2962,
+    "footerBottom": 2962,
+    "hasPhone": true,
+    "hasAddress": true,
+    "hasHours": true,
+    "hasConcierge": false,
+    "hasCallNow": true,
+    "hasDirections": true,
+    "badAnchors": [],
+    "offenders": [],
+    "forbidden": {
+      "fake": false,
+      "ownedSite": false,
+      "visitMobile": false,
+      "doordash": false,
+      "toast": false,
+      "ubereats": false,
+      "reservation": false
+    }
+  }
+]

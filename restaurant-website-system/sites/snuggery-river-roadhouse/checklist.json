@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "leadId": "713dec87-03c2-4782-ad16-93d72368d130",
+  "mcParentTaskId": "28641d8b-ed9c-4fc3-9326-9c3436bbdc31",
+  "siteSlug": "snuggery-river-roadhouse",
+  "templateSlug": "bramble-01",
+  "currentStage": "reviews",
+  "evidencePaths": [
+    "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.md",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/checklist.json",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+    "restaurant-website-system/reports/repo-mc-inventory-2026-05-03.md",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-nonwww-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-nonwww-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/roost-proof-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/roost-proof-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/snuggery-river-roadhouse/browser-evidence-audit-2026-05-05.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Local browser audit evidence is complete and the next canonical gate is reviews, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-auditing-complete-2026-05-05.json through the agency build writeback route before starting the reviews gate.",
+      "recordedAt": "2026-05-05T08:55:00.000Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Browser audit verified Snuggery is not a no-site lead but remains a qualified conditional roadhouse lead: real official site exists, yet non-browser fetches still hit 403 and the visible homepage has everyday conversion gaps despite strong waterfront/private-event identity.",
+      "evidence": [
+        "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+        "restaurant-website-system/reports/repo-mc-inventory-2026-05-03.md",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/browser-evidence-audit-2026-05-05.md",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-desktop-2026-05-05.png"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Browser evidence captured on 2026-05-05: official homepage desktop/mobile, non-www redirect, Google search/profile proof, Restaurantji desktop/mobile, and Roost directory proof. The previous No supported browser found blocker is cleared locally.",
+      "evidence": [
+        "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/browser-audit-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/official-home-nonwww-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/official-home-nonwww-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/google-search-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/google-search-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/restaurantji-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/restaurantji-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/screenshots/roost-proof-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/scrapes/roost-proof-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/snuggery-river-roadhouse/browser-evidence-audit-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to bramble-01 as a family waterfront roadhouse/sports-bar variant, not upscale cocktail lounge.",
+      "evidence": [
+        "restaurant-website-system/sites/snuggery-river-roadhouse/audit.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-05T08:55:00.000Z"
+}

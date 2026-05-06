@@ -1,0 +1,137 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T14:30:00Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "auth_check": {
+    "AGENCY_AUTONOMY_API_KEY": "missing",
+    "OPENCLAW_WEBHOOK_SECRET": "missing",
+    "api_write_attempted": false,
+    "reason": "Mission Control agency API auth is unavailable in this runtime; no MC write was attempted for the qa_round_1 gate and no raw Supabase agency writes were performed."
+  },
+  "blocker": {
+    "id": "mission_control_auth",
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing. QA round 1 evidence is complete locally and ready to sync once auth is restored.",
+    "source": "openclaw_maxfields_qa_round_1_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to the runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST/PATCH this prepared qa_round_1 payload."
+  },
+  "build_update_payload": {
+    "build_stage": "qa_round_1",
+    "currentStage": "qa_round_1",
+    "status": "in_progress",
+    "completedGate": "qa_round_1",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": "plate-01",
+    "archetype": "Cuisine",
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "qa_round_path": "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+    "preview_url": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+    "preview_reference": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+    "evidence_urls": [
+      "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+      "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx"
+    ],
+    "artifact_paths": {
+      "qa_round_doc": "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+      "browser_checks": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
+      "contact_page": "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+      "hours_table": "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+      "checklist_md": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "checklist_json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+      "preferred_home_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+      "preferred_home_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+      "preferred_contact_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+      "preferred_contact_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+      "preview_url": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+      "home_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+      "home_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+      "contact_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+      "contact_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+      "layout_viewport": "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx"
+    },
+    "requirementsPassed": [
+      "qa-round-1"
+    ],
+    "findings": [
+      {
+        "id": "contact-duplication",
+        "status": "fixed",
+        "summary": "Removed the repeated contact-page closing CTA block so call/directions/menu remain the main path without repeating the same hours pitch three times."
+      },
+      {
+        "id": "mobile-hours-wrapping",
+        "status": "fixed",
+        "summary": "Made the shared hours table stack on small screens to reduce cramped wrapping risk for long public-hours strings."
+      },
+      {
+        "id": "screenshot-capture",
+        "status": "captured",
+        "summary": "Fresh desktop/mobile homepage/contact screenshots were captured from the local Next build in the parent host environment after the worker sandbox capture path was blocked."
+      },
+      {
+        "id": "mobile-viewport",
+        "status": "fixed",
+        "summary": "Added an explicit Next viewport export so mobile devices render at device width and QA screenshots no longer use a desktop-width layout viewport."
+      }
+    ],
+    "fixes": [
+      "Removed `ContactCtaClosing` from the contact page to reduce duplication and confusion.",
+      "Made the contact-page CTAs stack cleanly on mobile and added a direct menu-highlights link.",
+      "Changed `HoursTable` to stack rows on small screens and right-align only on larger breakpoints.",
+      "Added `export const viewport` in `app/layout.tsx` with `width: device-width` and `initialScale: 1`."
+    ],
+    "verification": {
+      "typecheck": "passed_after_build",
+      "build": "passed",
+      "forbidden_placeholder_grep": "passed"
+    },
+    "screenshot_status": {
+      "captured": true,
+      "method": "Parent host Chrome headless against local Next server on 127.0.0.1:3026",
+      "paths": [
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png"
+      ]
+    },
+    "remaining_blockers": [
+      {
+        "id": "mission_control_auth",
+        "message": "MC auth is unavailable in the runtime, so the prepared qa_round_1 payload could not be synced."
+      },
+      {
+        "id": "hours_confirmation",
+        "message": "Public sources still conflict on hours, so QA keeps the call-to-confirm language in place."
+      },
+      {
+        "id": "order_link_confirmation",
+        "message": "Public ordering signals exist, but a direct owner-controlled ordering provider was not verified."
+      }
+    ],
+    "notes": [
+      "QA round 1 focused on practical sell-readiness: first-view clarity, mobile readability, CTA hierarchy, contact-page flow, truth safety, and concierge guardrails.",
+      "No unsupported claims were added during QA fixes.",
+      "Local stage is advanced to qa_round_1 with fresh screenshot evidence captured from the local Next build."
+    ],
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; qa_round_1 payload is prepared locally.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield QA round 1 completed with focused contact/mobile fixes, a missing viewport fix, passing build/typecheck/placeholder validation, and four fresh desktop/mobile screenshots."
+  }
+}

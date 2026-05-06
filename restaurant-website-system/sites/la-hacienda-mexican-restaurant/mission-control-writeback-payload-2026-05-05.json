@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-05-05T19:46:05Z",
+  "lead_id": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "endpoints": {
+    "build_update": "POST or PATCH <trusted Mission Control base URL>/api/agency/leads/7cba3fe2-8f65-4516-b46b-05c2c07ab235/build",
+    "qa_rounds": "POST <trusted Mission Control base URL>/api/agency/leads/7cba3fe2-8f65-4516-b46b-05c2c07ab235/qa-rounds",
+    "heartbeat": "POST <trusted Mission Control base URL>/api/heartbeat"
+  },
+  "build_payload": {
+    "build_stage": "delivery_package",
+    "delivery_status": "blocked",
+    "site_slug": "la-hacienda-mexican-restaurant",
+    "template_slug": "bamzi-01",
+    "mc_task_id": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+    "checklist_markdown_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
+    "audit_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md",
+    "browser_evidence_audit_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md",
+    "google_reviews_markdown_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
+    "google_reviews_json_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json",
+    "pitch_doc_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md",
+    "battle_cards_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md",
+    "qa_rounds": [
+      {
+        "round_number": 1,
+        "evidence_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-1-2026-05-05.md"
+      },
+      {
+        "round_number": 2,
+        "evidence_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-2-2026-05-05.md"
+      },
+      {
+        "round_number": 3,
+        "evidence_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-3-2026-05-05.md"
+      }
+    ],
+    "local_package_archive_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/la-hacienda-mexican-restaurant-local-package-2026-05-05.tar.gz",
+    "local_package_sha256": "3d28dae669cd75b557886a30c7cf2d756e4fff438b4135a77761705b5cbcfbed",
+    "local_package_manifest_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/package-manifest-2026-05-05.md",
+    "delivery_package_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-package-2026-05-05.md",
+    "owner_confirmation_packet_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/owner-confirmation-questions-2026-05-05.md",
+    "public_preview_runbook_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-runbook-2026-05-05.md",
+    "ready_to_pitch": false,
+    "lead_metadata": {
+      "owner_name": null,
+      "owner_email": null,
+      "contact_email": null,
+      "phone": "(847) 426-0506",
+      "hours": [
+        "Sunday 10:00 am - 9:00 pm",
+        "Monday-Thursday 10:00 am - 9:00 pm",
+        "Friday-Saturday 10:00 am - 10:00 pm"
+      ],
+      "address_location": "411 E Main St, East Dundee, IL 60118",
+      "website_url": "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view",
+      "order_url": "https://www.restaurantji.com/order.php?id=3429883",
+      "reservation_url": null,
+      "catering_events_url": null,
+      "google_rating": 4.3,
+      "google_review_count": 530,
+      "outreach_email_draft_path": null,
+      "outreach_email_draft_status": "not_created",
+      "metadata_source_notes": [
+        "Checked Canva current-site capture, Restaurantji, Google local pack evidence, Roost directory capture, and the Highest-filter Google review packet.",
+        "No publicly verified owner name, owner email, contact email, reservation URL, or catering/events URL was captured; those stay null instead of guessed.",
+        "Hours, order-path preference, and review-count language still require owner/founder confirmation before final handoff."
+      ],
+      "field_sources": {
+        "phone": [
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt"
+        ],
+        "hours": [
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt"
+        ],
+        "address_location": [
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt"
+        ],
+        "website_url": [
+          "https://www.canva.com/design/DAFiva54Na0/0FUdTRi1uYaiwKx25OqRew/view",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md"
+        ],
+        "order_url": [
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-3-final-audit-2026-05-05.json",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt"
+        ],
+        "google_rating": [
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json"
+        ],
+        "google_review_count": [
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+          "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json"
+        ]
+      }
+    },
+    "vercel_preview_url": null,
+    "preview_url": null,
+    "evidence_urls": [
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md",
+      "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/browser-audit-manifest-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.html",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.html",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.txt",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/roost-proof-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/build-notes-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-fork-built-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/improvement-pass-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-desktop-improving-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improving-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-desktop-improved-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/preview-home-mobile-improved-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/top-3-improvements-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/responsive-overflow-check-top3-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/concierge-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/concierge-api-transcript-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/concierge-open-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/concierge-open-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/app/api/chat/route.ts",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/components/AskConcierge.tsx",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/pitch-doc.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/battle-cards.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-1-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-1-dom-check-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-concierge-open-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-concierge-open-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-2-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-2-dom-check-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-about-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-news-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-about-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-news-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-concierge-open-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa2-concierge-open-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-qa-round-2-complete-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-3-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-3-final-audit-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-home-top-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-menu-top-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-contact-top-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-home-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-menu-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-desktop-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-contact-mobile-2026-05-05.png",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mc-build-writeback-qa-round-3-complete-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-package-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/la-hacienda-mexican-restaurant-local-package-2026-05-05.tar.gz",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/package-manifest-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/owner-confirmation-questions-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-runbook-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-payload-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-runbook-2026-05-05.md"
+    ],
+    "artifact_urls": [
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-package-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/la-hacienda-mexican-restaurant-local-package-2026-05-05.tar.gz",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/delivery-artifacts/package-manifest-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/owner-confirmation-questions-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-runbook-2026-05-05.md",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-payload-2026-05-05.json",
+      "restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-runbook-2026-05-05.md"
+    ],
+    "passed_requirement_ids": [
+      "lead-fit-qualified",
+      "current-site-audit",
+      "template-route-locked",
+      "google-reviews-highest-30",
+      "fork-built",
+      "improvement-pass",
+      "top-3-improvements",
+      "concierge",
+      "pitch",
+      "battle-cards",
+      "qa-round-1",
+      "qa-round-2",
+      "qa-round-3"
+    ],
+    "blocked_requirement_ids": [
+      "delivery-package"
+    ],
+    "blocker": "Public owner-shareable preview URL missing; delivery cannot pass without it. Public preview runbook is prepared locally. Mission Control API writeback pending: this OpenClaw runtime has no usable AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET bearer token or trusted MC base URL exposed as environment variables, and raw Supabase workflow-state mutation is forbidden for agency work. Owner-sensitive facts still need confirmation before final handoff: hours, ordering/provider flow, current menu/prices, review-count language, and public claims. Founder human review has not been recorded, so ready_to_pitch remains false.",
+    "heartbeat_summary": "La Hacienda passed QA Round 3 and is packaged locally; final delivery remains blocked on public preview URL, agency API auth/base URL for MC writeback, owner fact confirmation, and founder review."
+  },
+  "qa_round_payloads": [
+    {
+      "round_number": 1,
+      "findings": [
+        "Round 1 completed with screenshots, findings/fixes, build/typecheck result, and remaining blockers documented."
+      ],
+      "evidence_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-1-2026-05-05.md",
+      "mc_task_id": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f"
+    },
+    {
+      "round_number": 2,
+      "findings": [
+        "Round 2 production-preview DOM/vision QA passed after recapture and fixes."
+      ],
+      "evidence_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-2-2026-05-05.md",
+      "mc_task_id": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f"
+    },
+    {
+      "round_number": 3,
+      "findings": [
+        "Final sell-readiness QA found the mobile quick-action bar was not persistent enough; fixed it, rebuilt/typechecked, restarted preview, and recaptured evidence."
+      ],
+      "fixes_applied": [
+        "Made MobileQuickActions fixed bottom/inset-x-0 with high z-index and added mobile body bottom padding."
+      ],
+      "screenshots": [
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-home-top-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-menu-top-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa3-viewport-contact-top-mobile-2026-05-05.png"
+      ],
+      "evidence_path": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-3-2026-05-05.md",
+      "mc_task_id": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f"
+    }
+  ],
+  "heartbeat_payload": {
+    "status": "blocked_after_work_done",
+    "summary": "La Hacienda passed QA Round 3 and is packaged locally; final delivery remains blocked on public preview URL, agency API auth/base URL for MC writeback, and owner fact confirmation.",
+    "mode": "agency",
+    "source": "openclaw_website_agency",
+    "taskIds": [
+      "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f"
+    ],
+    "metadata": {
+      "lead_id": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+      "site_slug": "la-hacienda-mexican-restaurant",
+      "build_stage": "delivery_package",
+      "delivery_status": "blocked",
+      "ready_to_pitch": false,
+      "local_package_sha256": "3d28dae669cd75b557886a30c7cf2d756e4fff438b4135a77761705b5cbcfbed",
+      "blockers": [
+        "Public owner-shareable preview URL missing.",
+        "Mission Control API writeback auth/base URL unavailable in this runtime.",
+        "Owner confirmation still needed for hours, ordering/provider flow, menu/prices, review-count language, and public claims.",
+        "Founder human review has not been recorded, so ready_to_pitch remains false."
+      ]
+    }
+  }
+}

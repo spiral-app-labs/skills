@@ -1,0 +1,30 @@
+{
+  "build_stage": "top_3_improvements",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "lead_name": "Mary's Mexican Grill",
+  "root_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "305e2186-ed2d-4148-be9d-9439740cae9f",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "evidence_paths": [
+    "restaurant-website-system/sites/marys-mexican-grill/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/build-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/marys-mexican-grill/content.example.ts",
+    "restaurant-website-system/sites/marys-mexican-grill/app/page.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/DarkLeafHero.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ReviewCarousel.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/TestimonialStarRow.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ReservationFormBlock.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/ContactStripFooter.tsx",
+    "restaurant-website-system/sites/marys-mexican-grill/components/MobileStickyActions.tsx"
+  ],
+  "passed_requirement_ids": [
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence"
+  ],
+  "heartbeat_summary": "Top-three improvement gate completed for Mary's Mexican Grill on bamzi-01. The preview now makes first-screen conversion clearer, turns Google review proof into faster-scanning summary surfaces, and handles menu/order/phone friction more truthfully with visible guest-planning notes. Local verification passed with npm ci, npm run typecheck, and npm run build.",
+  "blocker": "Mission Control API writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable. This payload is stored locally for later sync.",
+  "auth_blocked": true
+}

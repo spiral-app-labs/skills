@@ -1,0 +1,1297 @@
+{
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "leadId": "a513755c-e7a3-438e-b8e9-78e8cd99e080",
+  "mcParentTaskId": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "siteSlug": "the-graceful-ordinary",
+  "templateSlug": "roma",
+  "currentStage": "qa_round_3",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+    "json": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null,
+      "notes": "Local improved fork implemented and verified; stage remains in progress until MC/public preview/deploy evidence is finalized."
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png"
+      ],
+      "blocker": null,
+      "notes": "Top 3 ranked and locally implemented/evidenced; public preview update is pending before marking fully passed."
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/the-graceful-ordinary/app/api/chat/route.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-concierge-cdp-2026-05-06.mjs",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-entry-point-desktop.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-test-transcript-desktop.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/battle-cards.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-1.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/mobile-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-1-cdp-2026-05-06.mjs"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-2.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/mobile-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-2-cdp-2026-05-06.mjs"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "blocked",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md"
+      ],
+      "blocker": "qa_round_3 blocked: public preview https://graceful-ordinary-redesign.vercel.app is stale. Live check still shows unsupported AAA Three-Diamond content and does not show local v2 evidence-critical changes such as Ask Graceful concierge or Maytag Bleu Cheese. Deploy path check also found no local Vercel CLI/project binding, the site folder is untracked, and current branch is unrelated feat/la-hacienda-qa2, so the safe unblock is a clean branch/PR preview or explicitly approved non-production Vercel preview deployment, then rerun QA round 3."
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    }
+  ],
+  "evidencePaths": {
+    "current_site_audit_path": "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+    "current_site_scrape_path": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+    "current_site_summary_json_path": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-summary.json",
+    "current_site_desktop_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+    "current_site_mobile_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png",
+    "current_site_mobile_fold_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-fold.png",
+    "google_reviews_highest_md": "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.md",
+    "google_reviews_highest_json": "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.json",
+    "google_reviews_highest_visible_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-visible.png",
+    "google_reviews_highest_scrolled_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-scrolled.png",
+    "template_routing_path": "restaurant-website-system/sites/the-graceful-ordinary/routing.md",
+    "improvement_pass_path": "restaurant-website-system/sites/the-graceful-ordinary/improvement-pass.md",
+    "current_preview_desktop_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+    "current_preview_mobile_fold_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+    "current_preview_dom_text": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-preview-dom-text.txt",
+    "local_template_metadata": "restaurant-website-system/sites/the-graceful-ordinary/.agency-template.json",
+    "local_build_source": "restaurant-website-system/sites/the-graceful-ordinary/app/page.tsx",
+    "improved_content_source": "restaurant-website-system/sites/the-graceful-ordinary/content.example.ts",
+    "review_carousel_source": "restaurant-website-system/sites/the-graceful-ordinary/components/TestimonialCardGrid.tsx",
+    "improved_desktop_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+    "improved_mobile_fold_screenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+    "build_verification": "npm run typecheck && npm run build; local routes / /menu /about /contact returned 200 on port 3025",
+    "top_three_improvements_path": "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+    "top_three_before_desktop": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+    "top_three_before_mobile": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+    "top_three_after_desktop_local": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+    "top_three_after_mobile_local": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+    "concierge": [
+      "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/lib/concierge-kb.ts",
+      "restaurant-website-system/sites/the-graceful-ordinary/components/AskConcierge.tsx",
+      "restaurant-website-system/sites/the-graceful-ordinary/app/api/chat/route.ts",
+      "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-concierge-cdp-2026-05-06.mjs",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-entry-point-desktop.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-test-transcript-desktop.png"
+    ],
+    "top3": [
+      "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png"
+    ],
+    "pitch": [
+      "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+    ],
+    "battleCards": [
+      "restaurant-website-system/sites/the-graceful-ordinary/battle-cards.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+    ],
+    "qaRound1": [
+      "restaurant-website-system/sites/the-graceful-ordinary/qa-round-1.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/desktop-full.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/mobile-full.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-1-cdp-2026-05-06.mjs"
+    ],
+    "qaRound2": [
+      "restaurant-website-system/sites/the-graceful-ordinary/qa-round-2.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/desktop-full.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/mobile-full.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-2-cdp-2026-05-06.mjs"
+    ],
+    "qaRound3Blocker": [
+      "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md"
+    ],
+    "publicPreviewUnblockRunbook": [
+      "restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md"
+    ]
+  },
+  "qaRounds": [
+    {
+      "round": 1,
+      "status": "passed",
+      "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-1.md",
+      "screenshots": [
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/mobile-full.png"
+      ]
+    },
+    {
+      "round": 2,
+      "status": "passed",
+      "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-2.md",
+      "screenshots": [
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/mobile-full.png"
+      ]
+    }
+  ],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+    "battleCards": "restaurant-website-system/sites/the-graceful-ordinary/battle-cards.md",
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "stage": "qa_round_3",
+      "reason": "qa_round_3 blocked: public preview https://graceful-ordinary-redesign.vercel.app is stale. Live check still shows unsupported AAA Three-Diamond content and does not show local v2 evidence-critical changes such as Ask Graceful concierge or Maytag Bleu Cheese. Deploy path check also found no local Vercel CLI/project binding, the site folder is untracked, and current branch is unrelated feat/la-hacienda-qa2, so the safe unblock is a clean branch/PR preview or explicitly approved non-production Vercel preview deployment, then rerun QA round 3.",
+      "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+      "runbook": "restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md",
+      "updatedAt": "2026-05-06T09:47:04.136Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png"
+      ],
+      "notes": "Passed by Evan during 2026-05-06 audit/checklist heartbeat."
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png"
+      ],
+      "notes": "Passed by Evan during 2026-05-06 audit/checklist heartbeat."
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png"
+      ],
+      "notes": "Passed by Evan during 2026-05-06 audit/checklist heartbeat."
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png"
+      ],
+      "notes": "Passed by Evan during 2026-05-06 audit/checklist heartbeat."
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png"
+      ],
+      "notes": "Passed by Evan during 2026-05-06 audit/checklist heartbeat."
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-site-mobile-full.png"
+      ],
+      "notes": "Passed by Evan during 2026-05-06 audit/checklist heartbeat."
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.json",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-visible.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-scrolled.png"
+      ],
+      "notes": "Passed by Evan on 2026-05-06: Google Maps Reviews tab sorted by Highest rating; 30+ written 5-star reviews captured and theme summary appended."
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.json",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-visible.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-scrolled.png"
+      ],
+      "notes": "Passed by Evan on 2026-05-06: Google Maps Reviews tab sorted by Highest rating; 30+ written 5-star reviews captured and theme summary appended."
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.json",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-visible.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/google-reviews-highest-filter-scrolled.png"
+      ],
+      "notes": "Passed by Evan on 2026-05-06: Google Maps Reviews tab sorted by Highest rating; 30+ written 5-star reviews captured and theme summary appended."
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Exactly one archetype/template route is chosen and justified",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/routing.md"
+      ],
+      "notes": "Selected Roma archetype from official source audit and Google review themes."
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "notes": "Local 1776/Roma-aligned template scaffold copied into site workspace, personalized with real Graceful Ordinary content, and verified with npm typecheck/build.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/.agency-template.json",
+        "restaurant-website-system/sites/the-graceful-ordinary/content.example.ts"
+      ]
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "notes": "Removed generic 1776 placeholder claims and used official-site/menu/review/press evidence only; unsupported AAA/TripAdvisor-style claims are not used in the local v2 fork.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/content.example.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/reviews/google-reviews-highest.md"
+      ]
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "notes": "Roma/1776 warm editorial structure personalized around refined rustic open-hearth cooking, Chris and Megan Curren, St. Charles, riverfront ambience, press proof, and review themes.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/routing.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/content.example.ts"
+      ]
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "notes": "Primary CTAs use the exact official Resy path plus tel link; contact/menu/about routes return 200 locally.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/content.example.ts"
+      ]
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "notes": "Mobile fold screenshot captured after responsive header/type fixes; no major rendering breakage found by image inspection.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png"
+      ]
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "notes": "Top 3 sellability improvements ranked and tied to owner-visible business value in top-3-improvements.md.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png"
+      ],
+      "status": "passed",
+      "passed": true
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "notes": "Implemented in local source and verified locally, but not marked passed until an updated public preview/deploy URL shows the changes.",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png"
+      ]
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "notes": "Before/current preview evidence and after/local v2 screenshots are attached; public preview redeploy remains pending.",
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png"
+      ],
+      "status": "passed",
+      "passed": true
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/the-graceful-ordinary/app/api/chat/route.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-concierge-cdp-2026-05-06.mjs",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-entry-point-desktop.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-test-transcript-desktop.png"
+      ]
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/the-graceful-ordinary/app/api/chat/route.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-concierge-cdp-2026-05-06.mjs",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-entry-point-desktop.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-test-transcript-desktop.png"
+      ]
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/components/AskConcierge.tsx",
+        "restaurant-website-system/sites/the-graceful-ordinary/app/api/chat/route.ts",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-concierge-cdp-2026-05-06.mjs",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-entry-point-desktop.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/concierge/concierge-test-transcript-desktop.png"
+      ]
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ]
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ]
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/current-preview-mobile-fold.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-desktop-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/improvement-pass/local-improved-home-mobile-fold-v2.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ]
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/battle-cards.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ]
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/battle-cards.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ]
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/battle-cards.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/pitch-doc.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/top-3-improvements.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/concierge-test-transcript.md"
+      ]
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-1.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-1/mobile-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-1-cdp-2026-05-06.mjs"
+      ]
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "passed",
+      "passed": true,
+      "evidence": [
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-2.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/desktop-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-2/mobile-full.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-2-cdp-2026-05-06.mjs"
+      ]
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3"
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging"
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging"
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control root task metadata.build_stage/currentStage matches this checklist currentStage.",
+    "Mission Control root + child tasks mirror this checklist requirements, evidence_required, required_skills, and checklist paths.",
+    "Every canonical workflow step has either passed evidence in MC or a fresh blocker recorded in MC.",
+    "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
+    "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
+  ],
+  "updatedAt": "2026-05-06T09:47:04.136Z",
+  "currentSiteAuditPath": "restaurant-website-system/sites/the-graceful-ordinary/audit.md",
+  "leadMetadata": {
+    "owner_name": "Chris Curren and Megan Curren",
+    "owner_email": null,
+    "contact_email": "yourfriends@thegracefulordinary.com",
+    "phone": "(331) 235-5803",
+    "hours": [
+      "Tue-Wed 4pm-10pm",
+      "Thu 4pm-11pm",
+      "Fri 4pm-12am",
+      "Sat brunch/lunch/dinner wording requires reconciliation on official contact page",
+      "Sun brunch 10am-3pm and dinner 4pm-9pm",
+      "Mon closed"
+    ],
+    "address_location": "3 East Main Street, St. Charles, Illinois",
+    "website_url": "https://www.thegracefulordinary.com/",
+    "order_url": null,
+    "reservation_url": "https://resy.com/cities/stc/the-graceful-ordinary",
+    "catering_events_url": "https://www.thegracefulordinary.com/events",
+    "google_rating": 4.6,
+    "google_review_count": 280,
+    "outreach_email_draft_path": null,
+    "outreach_email_draft_status": "existing_pitch_email_in_mc_lead",
+    "metadata_source_notes": [
+      "Official homepage/contact/menu/press pages checked 2026-05-06.",
+      "Browser screenshots and DOM scrape captured under sites/the-graceful-ordinary.",
+      "Google Reviews packet pending next canonical gate.",
+      "Official address is St. Charles, IL even though MC lead city field currently says Elgin, IL."
+    ],
+    "field_sources": {
+      "owner_name": [
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/current-site-dom-snapshot.txt"
+      ],
+      "contact_email": [
+        "Mission Control agency_leads row"
+      ],
+      "phone": [
+        "https://www.thegracefulordinary.com/contact"
+      ],
+      "hours": [
+        "https://www.thegracefulordinary.com/contact"
+      ],
+      "address_location": [
+        "https://www.thegracefulordinary.com/contact"
+      ],
+      "reservation_url": [
+        "https://www.thegracefulordinary.com/contact"
+      ],
+      "google_rating": [
+        "Mission Control agency_leads row"
+      ],
+      "google_review_count": [
+        "Mission Control agency_leads row"
+      ]
+    }
+  }
+}

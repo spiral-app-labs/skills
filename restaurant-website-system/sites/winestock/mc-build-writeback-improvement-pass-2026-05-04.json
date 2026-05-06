@@ -1,0 +1,51 @@
+{
+  "build_stage": "top_3_improvements",
+  "site_slug": "winestock",
+  "template_slug": "bramble-01",
+  "lead_id": "7f1432ae-2553-442c-80ff-df58acb162ef",
+  "mc_task_id": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
+  "checklist_markdown_path": "restaurant-website-system/sites/winestock/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/winestock/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/winestock/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/capture-manifest.json",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-full.png",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/home-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-desktop-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/contact-mobile-text.txt",
+    "restaurant-website-system/sites/winestock/evidence/improvement-pass-browser-2026-05-04/link-check.txt"
+  ],
+  "artifact_urls": [
+    "restaurant-website-system/sites/winestock/content.ts",
+    "restaurant-website-system/sites/winestock/app/page.tsx",
+    "restaurant-website-system/sites/winestock/app/reserve/page.tsx",
+    "restaurant-website-system/sites/winestock/components/MailingListBlock.tsx",
+    "restaurant-website-system/sites/winestock/components/DualServiceMenusSplit.tsx",
+    "restaurant-website-system/sites/winestock/components/InlineInfoSplit.tsx",
+    "restaurant-website-system/sites/winestock/components/TopTriptychHeader.tsx",
+    "restaurant-website-system/sites/winestock/components/ScrollReveal.tsx",
+    "restaurant-website-system/sites/winestock/components/OpeningTimesBlock.tsx",
+    "restaurant-website-system/sites/winestock/components/PolaroidStrip.tsx"
+  ],
+  "passed_requirement_ids": [
+    "fork-built",
+    "improvement-pass"
+  ],
+  "verification": {
+    "typecheck": "npm run typecheck passed",
+    "build": "npm run build passed",
+    "browser_evidence": "desktop/mobile screenshots captured from local production server",
+    "mobile_visual_qa": "acceptable with caveats; no fatal blockers",
+    "link_check": "no bad anchors on / or /reserve; real public handoffs present"
+  },
+  "heartbeat_summary": "Winestock improvement pass completed locally; next canonical stage is top_3_improvements. MC sync remains blocked by missing agency auth.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+    "next_unblock_action": "Retry this payload against the official agency Mission Control build API with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}

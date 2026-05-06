@@ -1,0 +1,66 @@
+{
+  "package_stage": "packaging",
+  "package_status": "packaged_waiting_on_founder",
+  "site_slug": "marys-mexican-grill",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
+  "founder_gate_task_id": "03d5cec6-db38-46de-92d6-47d8c06c787e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "delivery_package_path": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+  "qa_round_paths": [
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md"
+  ],
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "screenshot_inventory": {
+    "qa_round_1_present": [
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png"
+    ],
+    "qa_round_2_referenced_missing": [
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png"
+    ],
+    "qa_round_3_present": [
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+      "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
+    ]
+  },
+  "passed_requirement_ids": [
+    "delivery-package"
+  ],
+  "pending_requirement_ids": [
+    "delivery-final-url-access",
+    "delivery-no-missing-evidence"
+  ],
+  "blockers": [
+    "Preview URL exists from GitHub PR #19 but is protected by Vercel login/401 for unauthenticated checks; Ethan/authenticated Vercel verification is still required.",
+    "Founder Anthropic key pending.",
+    "Founder human review pending.",
+    "QA2 screenshot files referenced by existing evidence are missing from this worktree."
+  ],
+  "sync_status": "synced_via_patched_local_mc_api_pr_328",
+  "blocker": "Delivery package is assembled and synced to Mission Control, but final delivery still cannot be marked complete because preview access is auth-protected, QA2 screenshot evidence is incomplete, and founder-only gates remain open.",
+  "heartbeat_summary": "Founder delivery package is synced to Mission Control with ready_to_pitch=false. PR #19 preview URL is recorded, QA3 desktop/mobile screenshots are captured, and checklist/pitch/battle-card/QA artifacts are assembled. Final handoff remains blocked by Vercel preview access verification, missing QA2 screenshots, and Ethan-only Anthropic/human-review gates.",
+  "preview_access_status": "auth_protected_pending_ethan_verification"
+}

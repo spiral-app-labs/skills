@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#8d2618"/>
+  <rect x="54" y="54" width="692" height="492" rx="28" fill="#f6efe4"/>
+  <text x="100" y="170" fill="#8d2618" font-size="70" font-family="Georgia, serif">Burritos</text>
+  <text x="100" y="250" fill="#1b1712" font-size="34" font-family="Arial, sans-serif">Regular burritos, chile relleno</text>
+  <text x="100" y="296" fill="#1b1712" font-size="34" font-family="Arial, sans-serif">chimichangas, and combo dinners</text>
+  <text x="100" y="410" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">Generous portions show up</text>
+  <text x="100" y="450" fill="#6f6254" font-size="28" font-family="Arial, sans-serif">again and again in guest comments.</text>
+</svg>

@@ -103,11 +103,13 @@ Use the [restaurant-template-animations](../.claude/skills/restaurant-template-a
 
 1. Read the audit at `sites/<name>/audit.md` to confirm the v1 covered everything.
 2. Diff the current `components/` against the catalog of improvement patterns above.
-3. Build the ReviewCarousel first. It's the highest-leverage move and it changes how the rest of the page reads.
-4. Tighten copy in `content.ts` only — never inline copy in components.
-5. Add animation upgrades last (parallax, stagger fix, hover lifts).
-6. Run typecheck + dev server + verify all routes return 200 in the preview tool.
-7. Commit with a single squashed message: `vs-house: v2 polish — ReviewCarousel + tightened copy + parallax hero`.
+3. Identify the top 3 concrete improvements for this specific fork, record them in the checklist/MC evidence, then implement them before delivery.
+4. Build the ReviewCarousel first unless the top-three analysis proves another move is higher leverage. It's usually the highest-leverage move and changes how the rest of the page reads.
+5. Tighten copy in `content.ts` only — never inline copy in components.
+6. Add animation upgrades last (parallax, stagger fix, hover lifts).
+7. Run typecheck + dev server + verify all routes return 200 in the preview tool.
+8. Attach before/after screenshots or notes for the top 3 improvements to MC before the QA gates.
+9. Commit with a single squashed message: `vs-house: v2 polish — ReviewCarousel + tightened copy + parallax hero`.
 
 ## What this skill is NOT
 

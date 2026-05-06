@@ -1,0 +1,74 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T12:12:00Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "auth_check": {
+    "AGENCY_AUTONOMY_API_KEY": "missing",
+    "OPENCLAW_WEBHOOK_SECRET": "missing",
+    "api_write_attempted": false,
+    "reason": "Mission Control agency API auth is unavailable in this runtime; no MC write was attempted for the improving gate and no raw Supabase agency writes were performed."
+  },
+  "blocker": {
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing. Improving-stage evidence is complete locally and ready to sync once auth is restored.",
+    "source": "openclaw_maxfields_improving_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to the runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST/PATCH this prepared improving payload."
+  },
+  "build_update_payload": {
+    "build_stage": "improving",
+    "status": "in_progress",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": "plate-01",
+    "archetype": "Cuisine",
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "improvement_notes_path": "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+    "evidence_urls": [
+      "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-improving-2026-05-06.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/WordmarkFooter.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/globals.css",
+      "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+    ],
+    "artifact_paths": {
+      "review_themes_packet": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "build_notes": "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+      "routing_decision": "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md",
+      "source_notes": "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+      "checklist_md": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "checklist_json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
+    },
+    "requirementsPassed": [
+      "identity-specific",
+      "conversion-paths",
+      "mobile-check"
+    ],
+    "verification": {
+      "typecheck": "passed",
+      "build": "passed",
+      "forbidden_placeholder_grep": "passed"
+    },
+    "notes": [
+      "Homepage proof now summarizes repeated Google Highest-review themes instead of generic directory cards.",
+      "Call, directions, and menu-highlight CTAs were strengthened while unsupported reservation and order flows remain omitted.",
+      "Mobile pass was completed at code level; screenshot evidence is pending because browser capture was unavailable in this runtime."
+    ],
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; improving-stage payload is prepared locally.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-improving-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield improving pass completed locally with review-proof integration, stronger conversion clarity, and documented mobile polish. MC writeback remains blocked on agency API auth."
+  }
+}

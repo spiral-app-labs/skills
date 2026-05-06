@@ -1,0 +1,37 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "concierge",
+  "completedStage": "top_3_improvements",
+  "status": "in_progress",
+  "templateSlug": "bamzi-01",
+  "passedRequirementIds": [
+    "top-3-improvements"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/top-3-improvements-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/responsive-overflow-check-top3-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-before-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/top3-after-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  ],
+  "verification": [
+    "npm run build passed",
+    "390px CDP overflow check: no offenders on home/menu/contact",
+    "visitor-facing agency/proof copy grep cleanup passed except asset filenames"
+  ],
+  "blocker": "Mission Control writeback still pending because agency API auth/base URL is unavailable in this runtime; local writeback payload prepared instead.",
+  "createdAt": "2026-05-05T12:04:00Z"
+}

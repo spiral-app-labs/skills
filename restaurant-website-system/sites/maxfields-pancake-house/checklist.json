@@ -1,0 +1,1328 @@
+{
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "leadId": "pending-mc-auth",
+  "mcParentTaskId": "pending-mc-auth",
+  "siteSlug": "maxfields-pancake-house",
+  "templateSlug": "plate-01",
+  "currentStage": "qa_round_1",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "blocked",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
+      ],
+      "blocker": {
+        "reason": "MC checklist sync pending on agency API auth."
+      }
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-overview.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-filter.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-selected.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json"
+      ],
+      "blocker": null,
+      "notes": "Cuisine archetype locked to plate-01 and fork build verified locally."
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-improving-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/globals.css"
+      ],
+      "blocker": null,
+      "notes": "Improvement pass completed with review-theme proof integration, call/directions/menu CTA tightening, and documented code-level mobile polish."
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ],
+      "blocker": null,
+      "notes": "Top three improvement stage completed with an above-the-fold broken-domain recovery story, CTA-linked review proof, and a dedicated visit-confidence module for hours/order uncertainty."
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ],
+      "blocker": null,
+      "notes": "Concierge stage completed with a deterministic prompt-driven panel, a fixed Maxfield KB, explicit unknown handling, and a transcript covering the required visitor questions."
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ],
+      "blocker": null,
+      "notes": "Battle cards completed with a live demo path, objection handling, proof cards, risks, owner-language talk tracks, and a do-not-say list."
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx"
+      ],
+      "blocker": "Fresh homepage/contact screenshots are still blocked in this runtime: Browser plugin unavailable, localhost listen denied with EPERM, and no installed Playwright/Puppeteer/system browser path. See scrapes/qa-round-1-browser-checks-2026-05-06.json."
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "pending",
+      "evidence": [],
+      "blocker": null
+    }
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-restaurantji-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-chicago-northwest-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-auditing-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/blockers/mc-auth-blocker-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/public-sources-evidence-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-fetch-evidence-2026-05-06.txt",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/mc-api-probe-2026-05-06.txt",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-google-maps-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-yelp-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-overview.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-filter.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-selected.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-reviews-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
+    "npm install: passed 2026-05-06",
+    "npm run typecheck: passed 2026-05-06",
+    "npm run build: passed 2026-05-06",
+    "forbidden placeholder grep: passed 2026-05-06",
+    "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+    "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+    "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx"
+  ],
+  "qaRounds": [
+    {
+      "round": 1,
+      "status": "passed",
+      "summary": "Canonical QA1 completed locally with contact-path simplification, mobile hours-table wrapping fix, passing build/typecheck/placeholder validation, and a documented screenshot blocker.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json"
+      ]
+    }
+  ],
+  "deployUrl": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+    "battleCards": "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+    "outreachDraft": null,
+    "beforeAfterScreenshots": [
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png"
+    ],
+    "previewUrl": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app"
+  },
+  "blockers": [
+    {
+      "reason": "Mission Control writeback blocked: agency API auth unavailable in runtime; prepared payload saved locally.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/blockers/mc-auth-blocker-2026-05-06.md"
+    },
+    {
+      "reason": "Mission Control reviews writeback prepared but blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are missing; no API write or raw Supabase agency write was performed.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-reviews-2026-05-06.json"
+    },
+    {
+      "reason": "Mission Control battle-cards writeback is prepared locally but blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are missing; no API write or raw Supabase agency write was performed.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json"
+    },
+    {
+      "id": "mission_control_auth",
+      "status": "blocked",
+      "notes": "MC auth unavailable in runtime; reviews/build/pitch/battle-cards payloads prepared locally only.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-reviews-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed",
+      "notes": "Local evidence completed 2026-05-06.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/checklist.md"
+      ]
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed",
+      "notes": "Local evidence completed 2026-05-06.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
+      ]
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "blocked",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "blocked",
+      "notes": "MC API auth unavailable; prepared writeback payload saved locally.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-auditing-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "notes": "Local evidence completed 2026-05-06.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-google-maps-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-restaurantji-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/public-source-yelp-desktop.png"
+      ]
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "notes": "Local evidence completed 2026-05-06.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-fetch-evidence-2026-05-06.txt",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/public-sources-evidence-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "notes": "Local evidence completed 2026-05-06.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/audit.md"
+      ]
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "notes": "Google Reviews opened in browser; Sort reviews menu used and Highest rating selected before capture.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-overview.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-filter.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-selected.png"
+      ]
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "notes": "Captured 30 written Google reviews from the Highest rating flow; star-only/empty reviews were skipped.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-overview.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-filter.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-selected.png"
+      ]
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "notes": "Markdown packet includes grounded themes for service, breakfast/brunch items, cleanliness, value, family/groups, speed, coffee, and lunch/diner breadth.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-overview.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-filter.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-selected.png"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Exactly one archetype/template route is chosen and justified",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Cuisine archetype with plate-01 template route locked and documented.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/routing-template-decision-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Maxfield-specific plate-01 fork builds successfully; npm install/typecheck/build passed.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json"
+      ]
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Forbidden placeholder grep passed; fake reservations/order paths and generic template content removed.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts"
+      ]
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "notes": "Homepage and footer copy were tightened around Schaumburg breakfast-house identity, breakfast staples, family visits, and review-backed diner trust instead of generic bistro tone.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/TaglineBanner.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx"
+      ]
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "notes": "Primary conversion actions are now call, directions, and menu highlights; reservation and unsupported ordering paths remain omitted while hours uncertainty is clearly explained.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx"
+      ]
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "notes": "Code-level mobile polish completed: hero spacing reduced, CTA stacking improved, sticky header gained mobile nav pills and shorter CTA labels, footer density reduced, and menu/footer typography spacing tightened. Browser screenshot evidence is still pending because no browser capture tool was available in this runtime.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/WordmarkFooter.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/globals.css"
+      ]
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "The selected improvements are broken-domain sales story above the fold, review proof bridged into real CTAs, and a visit-confidence treatment for conflicting hours and unverified ordering.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Shared content, hero, proof cards, and a new visit-confidence component were implemented on the homepage and contact page without adding fake menu, reservation, or order flows.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ]
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "The stage artifact documents before state from audit/prior artifacts and after state from changed files plus verification output.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json"
+      ]
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "The concierge KB is limited to verified address, phone, menu/review themes, reservation caution, takeout uncertainty, and the documented hours conflict.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ]
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "The transcript demonstrates useful responses for the six required visitor questions and one unsupported-question fallback.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ]
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "The panel explicitly says it is not live AI, uses fixed prompts instead of open generation, and routes unsupported questions to the verified phone number.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json"
+      ]
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch is grounded in Maxfield's broken Wix domain, Schaumburg breakfast-house identity, public review proof, and the scattered conversion-confidence problem.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ]
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "The doc contrasts broken domain, scattered proof, and unclear ordering/hours expectations against one warm, phone-first, directions-first owner-controlled preview.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "Pitch links the audit, Google review packet, broken-domain screenshots, concierge artifacts, deployed preview URL, and local artifact paths.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app"
+      ]
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards answer the required owner objections around Google, current demand, hours conflict, ordering, reservations, concierge truth-safety, design fit, rebuild timing, and keeping the current domain/provider.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards provide a step-by-step preview walkthrough covering broken-domain recovery, menu highlights, review proof, visit confidence, concierge, and contact/directions close.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+        "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app"
+      ]
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "Battle cards call out the MC auth blocker, hours conflict, unverified direct ordering provider, required owner/GBP confirmation before final publish, and possible preview access gating.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+      ]
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "passed",
+      "notes": "QA round 1 passed locally after removing repetitive contact-page CTA/hours duplication, fixing shared mobile hours-table wrapping risk, and documenting the browser screenshot blocker explicitly.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx"
+      ]
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "pending"
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "pending"
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "pending"
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "pending"
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control root task metadata.build_stage/currentStage matches this checklist currentStage.",
+    "Mission Control root + child tasks mirror this checklist requirements, evidence_required, required_skills, and checklist paths.",
+    "Every canonical workflow step has either passed evidence in MC or a fresh blocker recorded in MC.",
+    "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
+    "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
+  ],
+  "updatedAt": "2026-05-06T14:30:00.000Z",
+  "leadMetadata": {
+    "owner_name": null,
+    "owner_email": null,
+    "contact_email": null,
+    "phone": "(847) 781-0300",
+    "hours": [
+      "Restaurantji/Yelp observed: Mon/Tue/Sun 7AM-2PM; Wed-Sat 7AM-2PM and 3:30PM-8PM",
+      "Chicago Northwest conflicting listing: Sun-Wed 7AM-3PM; Thu-Sat 7AM-9PM",
+      "Owner/Google confirmation required before final copy"
+    ],
+    "address_location": "700 E Schaumburg Rd, Schaumburg, IL 60194",
+    "website_url": "https://www.maxfieldschaumburg.com/ (currently Wix ConnectYourDomain HTTP 404; non-www also broken)",
+    "order_url": "https://www.restaurantji.com/order.php?id=3430021 (third-party; direct provider not resolved)",
+    "reservation_url": null,
+    "catering_events_url": null,
+    "google_rating": 4.5,
+    "google_review_count": 983,
+    "outreach_email_draft_path": null,
+    "outreach_email_draft_status": "not_created",
+    "metadata_source_notes": [
+      "Google Maps browser snapshot showed 4.5 stars / 983 reviews, address, phone, website/menu links, takeout/delivery, and order online action.",
+      "Yelp browser snapshot showed claimed listing, 3.7 / 268, 230 photos, and menu links pointing to the broken official /menu path.",
+      "Restaurantji showed 4.7 / 259, favorites, hours table, delivery/takeout, kids menu, vegetarian options, and no reservations.",
+      "Chicago Northwest confirmed address/phone/amenities but conflicts on hours.",
+      "Google Reviews Highest rating gate captured 30 written reviews with themes usable for future copy/pitch; see scrapes/google-reviews-highest-30.json and .md."
+    ],
+    "field_sources": {
+      "phone": [
+        "Google Maps screenshot/snapshot",
+        "Yelp",
+        "Restaurantji",
+        "Chicago Northwest"
+      ],
+      "address_location": [
+        "Google Maps screenshot/snapshot",
+        "Restaurantji",
+        "Chicago Northwest"
+      ],
+      "website_url": [
+        "scrapes/current-site-dom-snapshot.txt",
+        "scrapes/current-site-fetch-evidence-2026-05-06.txt",
+        "Google Maps",
+        "Yelp"
+      ],
+      "order_url": [
+        "Restaurantji order link",
+        "Google Maps order action visible"
+      ],
+      "google_rating": [
+        "screenshots/public-source-google-maps-desktop.png",
+        "browser snapshot 2026-05-06"
+      ],
+      "google_review_count": [
+        "screenshots/public-source-google-maps-desktop.png",
+        "browser snapshot 2026-05-06"
+      ],
+      "hours": [
+        "Restaurantji",
+        "Yelp",
+        "Chicago Northwest (conflict)"
+      ],
+      "reservation_url": [
+        "Restaurantji says does not accept reservations"
+      ],
+      "google_reviews_highest_30": [
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ]
+    }
+  },
+  "readyToPitch": true,
+  "archetype": "Cuisine",
+  "verification": {
+    "npmInstall": "passed 2026-05-06",
+    "typecheck": "passed 2026-05-06 after npm run build regenerated .next/types",
+    "build": "passed 2026-05-06",
+    "forbiddenPlaceholderGrep": "passed 2026-05-06"
+  }
+}

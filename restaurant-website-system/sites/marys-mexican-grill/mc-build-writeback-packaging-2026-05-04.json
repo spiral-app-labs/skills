@@ -1,0 +1,54 @@
+{
+  "build_stage": "packaging",
+  "package_status": "packaged_waiting_on_founder",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "child_task_id": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
+  "founder_gate_task_id": "03d5cec6-db38-46de-92d6-47d8c06c787e",
+  "lead_id": "4416524d-0894-4e47-a4e7-880ba6579aa3",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "delivery_package_path": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+  "preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "passed_requirement_ids": [
+    "delivery-package"
+  ],
+  "pending_requirement_ids": [
+    "delivery-final-url-access",
+    "delivery-no-missing-evidence"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+    "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+    "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+    "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-1.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-3.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-build-writeback-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
+  ],
+  "blockers": [
+    "Preview URL exists from GitHub PR #19 but is protected by Vercel login/401 for unauthenticated checks; Ethan/authenticated Vercel verification is still required.",
+    "Founder must create/configure the site-specific Anthropic key.",
+    "Founder must personally complete human review.",
+    "QA2 screenshot files referenced by existing QA2 docs/writebacks are missing from this worktree."
+  ],
+  "blocker": "Packaging is synced to Mission Control, but ready_to_pitch must remain false until Ethan verifies preview access, completes human review, and configures the site-specific Anthropic key; QA2 screenshot evidence is also still incomplete.",
+  "heartbeat_summary": "Mary's Mexican Grill packaging handoff is synced to Mission Control via PR #328's patched agency API: root is packaging with evidence/blocker, QA3 child is done with screenshots, and delivery child is in_progress with evidence/blocker. ready_to_pitch remains false because preview access is auth-protected, QA2 screenshots are missing, and founder-only Anthropic/human-review gates remain open.",
+  "preview_access_status": "auth_protected_pending_ethan_verification",
+  "sync_status": "synced_via_patched_local_mc_api_pr_328"
+}

@@ -1,0 +1,198 @@
+# Maxfield's Pancake House current-site domain evidence
+Captured: 2026-05-06
+
+## https://www.maxfieldschaumburg.com/
+### curl headers/status
+HTTP/2 404 
+content-type: text/html; charset=utf-8
+x-wix-request-id: 1778063367.632116209616013493387
+x-cache-status: MISS
+cache-control: public,max-age=0,must-revalidate
+server: Pepyaka
+x-content-type-options: nosniff
+accept-ranges: bytes
+age: 0
+date: Wed, 06 May 2026 10:29:27 GMT
+x-served-by: cache-den-kden1300047-DEN
+x-cache: MISS
+vary: Accept-Encoding
+server-timing: cache;desc=miss, varnish;desc=miss_miss, dc;desc=fastly_sea1_g
+strict-transport-security: max-age=31556952
+x-seen-by: yvSunuo/8ld62ehjr5B7kA==,T7xPrjRFKDMHVv938PYVfx9slopJdhD+WySraMrpIY8=,dwc60INy8NFddnU/0WdlOB9slopJdhD+WySraMrpIY8=,m0j2EEknGIVUW/liY8BLLqPXpcX6IEGf7sG3D7kVVb4hUPrc0LfzYa7nrBfmSXG0,2d58ifebGbosy5xc+FRalpl8tjfzGf0QsywWz+AUk9RuuRjeLoJ8SyVvSjBeoQ0xG2+PAUnjltQLnjC56EMEfA==,2UNV7KOq4oGjA5+PKsX47EzpsDHuH75rNqOhkG1qhKU=,2UNV7KOq4oGjA5+PKsX47G9tHIFRFgqngjSWmAXGcLU=,R8nVwPJv9QJL1m78OROO+OHNi6GmAaPOQ24lEc9caRg=,kO0u+7q+TL0DeeE//9W7MM51+eMXL8lXkQnW+hzt0IoSO5XmrrCSQNDehIjmfew36QR8a1C7Iml9rgIUQ+ferA==
+content-length: 3060
+via: 1.1 google
+glb-x-seen-by: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=
+alt-svc: h3=":443"; ma=2592000
+
+### body excerpt
+
+  <!--  -->
+
+<!doctype html>
+<!--
+    -->
+<html ng-app="wixErrorPagesApp">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind="'page_title' | translate"></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="noindex, nofollow">
+  <!--  -->
+    <link type="image/png" href="//www.wix.com/favicon.ico" rel="shortcut icon">
+  <!--  -->
+  <link href="//static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css" rel="stylesheet" type="text/css" />
+  <!--  -->
+  <link rel="stylesheet" href="//static.parastorage.com/services/wix-public/1.719.0/styles/error-pages/styles.css">
+  <!--  -->
+</head>
+<body lang="en" ng-controller="ErrorPageController as errorPageCtrl" class="error-page-app" ng-class="{'secondary-background': isSecondaryBackground}">
+<!--[if lt IE 9]>
+<script src="//static.parastorage.com/services/third-party/es5-shim/2.1.0/es5-shim.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="//static.parastorage.com/services/third-party/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+
+<script src="//static.parastorage.com/services/third-party/angularjs/1.2.28/angular.min.js"></script>
+  <!--  -->
+<script src="//static.parastorage.com/services/third-party/angularjs/1.2.28/i18n/angular-locale_en.js"></script>
+<script src="//static.parastorage.com/services/third-party/angular-translate/1.1.1/angular-translate.min.js"></script>
+
+<script src="//static.parastorage.com/services/wix-public/1.719.0/scripts/error-pages/locale/messages_en.js"></script>
+  <!--  -->
+<script src="//static.parastorage.com/services/wix-public/1.719.0/scripts/error-pages/app.js"></script>
+  <!--  -->
+
+<script>
+  angular.module('wixErrorPagesApp').constant('staticsUrl', '//static.parastorage.com/services/wix-public/1.719.0/');
+  angular.module('wixErrorPagesApp').constant('baseDomain', 'wix.com');
+  angular.module('wixErrorPagesApp').constant('language', 'en');
+  angular.module('wixErrorPagesApp').constant('errorCode', {code: 'ConnectYourDomain'});
+  angular.module('wixErrorPagesApp').constant('data', {});
+  angular.module('wixErrorPagesApp').constant('exceptionName', '');
+  angular.module('wixErrorPagesApp').constant('serverErrorCode', '404');
+  angular.module('wixErrorPagesApp').constant('requestId', '1778063367.632116209616013493387');
+</script>
+<div ng-cloak ng-include="errorPageCtrl.errorPageUrl">
+  <div class="non-angular-supported-browser-wrapper">
+    <h1 class="non-angular-supported-browser-header">Error ConnectYourDomain occurred</h1>
+    <div class="non-angular-supported-browser-link">
+      <span>Regardless, we recommend you to <a href="http://browsehappy.com/">update your browser.</a></span>
+    </div>
+  </div>
+</div>
+<!-- verification -->
+<!-- end verification -->
+</body>
+</html>
+
+
+## https://maxfieldschaumburg.com/
+### curl headers/status
+HTTP/2 404 
+date: Wed, 06 May 2026 10:29:27 GMT
+content-type: text/html; charset=utf-8
+content-length: 3054
+x-wix-cache-control: public, max-age=30
+age: 38
+x-cache-status: HIT
+server-timing: cache;desc=hit, varnish;desc=hit, dc;desc=virginia-phy
+x-seen-by: oDbbMvfdXCdtsgjD2KgaM8iHE4dbw+wewoJ5nvKoyjE=,Ua1iSBCTq7qSXjmRCGE1Nz1cAcifKtn+a36k4A3RyAic3+I0Enx+uryBKsKyljcDEpzrUii78VdYxnNKzUeyUYhIydfYCelFDfkrvUteY3g+39vVmdVgyo7u27qJidUJ,2d58ifebGbosy5xc+FRalps/ID6/XpGIlqvYXzou9aPdSSJl7CDDwVyOjPwbHe9Am32TqV+ZdKD2/X6bKCmgxuTI1rykvJatSX1+c2nQ8dw=,2UNV7KOq4oGjA5+PKsX47G86grxW7YVbTxNaQeYTCEMFVd1lR1L8/yRoc88kq/ej
+vary: Accept-Encoding
+x-wix-request-id: 1778063367.886188219011295
+set-cookie: _wixAB3=4996967#1; Max-Age=15724800; Expires=Wed, 04 Nov 2026 10:29:27 GMT; Path=/; Domain=.wix.com
+server: Pepyaka
+x-content-type-options: nosniff
+
+### body excerpt
+
+  <!--  -->
+
+<!doctype html>
+<!--
+    -->
+<html ng-app="wixErrorPagesApp">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind="'page_title' | translate"></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="noindex, nofollow">
+  <!--  -->
+    <link type="image/png" href="//www.wix.com/favicon.ico" rel="shortcut icon">
+  <!--  -->
+  <link href="//static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css" rel="stylesheet" type="text/css" />
+  <!--  -->
+  <link rel="stylesheet" href="//static.parastorage.com/services/wix-public/1.719.0/styles/error-pages/styles.css">
+  <!--  -->
+</head>
+<body lang="en" ng-controller="ErrorPageController as errorPageCtrl" class="error-page-app" ng-class="{'secondary-background': isSecondaryBackground}">
+<!--[if lt IE 9]>
+<script src="//static.parastorage.com/services/third-party/es5-shim/2.1.0/es5-shim.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="//static.parastorage.com/services/third-party/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+
+<script src="//static.parastorage.com/services/third-party/angularjs/1.2.28/angular.min.js"></script>
+  <!--  -->
+<script src="//static.parastorage.com/services/third-party/angularjs/1.2.28/i18n/angular-locale_en.js"></script>
+<script src="//static.parastorage.com/services/third-party/angular-translate/1.1.1/angular-translate.min.js"></script>
+
+<script src="//static.parastorage.com/services/wix-public/1.719.0/scripts/error-pages/locale/messages_en.js"></script>
+  <!--  -->
+<script src="//static.parastorage.com/services/wix-public/1.719.0/scripts/error-pages/app.js"></script>
+  <!--  -->
+
+<script>
+  angular.module('wixErrorPagesApp').constant('staticsUrl', '//static.parastorage.com/services/wix-public/1.719.0/');
+  angular.module('wixErrorPagesApp').constant('baseDomain', 'wix.com');
+  angular.module('wixErrorPagesApp').constant('language', 'en');
+  angular.module('wixErrorPagesApp').constant('errorCode', {code: 'ConnectYourDomain'});
+  angular.module('wixErrorPagesApp').constant('data', {});
+  angular.module('wixErrorPagesApp').constant('exceptionName', '');
+  angular.module('wixErrorPagesApp').constant('serverErrorCode', '404');
+  angular.module('wixErrorPagesApp').constant('requestId', '1778063329.278229610211291');
+</script>
+<div ng-cloak ng-include="errorPageCtrl.errorPageUrl">
+  <div class="non-angular-supported-browser-wrapper">
+    <h1 class="non-angular-supported-browser-header">Error ConnectYourDomain occurred</h1>
+    <div class="non-angular-supported-browser-link">
+      <span>Regardless, we recommend you to <a href="http://browsehappy.com/">update your browser.</a></span>
+    </div>
+  </div>
+</div>
+<!-- verification -->
+<!-- end verification -->
+</body>
+</html>
+
+
+## Browser accessibility snapshot (www + non-www)
+Both browser snapshots showed the Wix domain connection error with heading: "Looks like this domain isn't connected to a website yet" and Wix instructions, not restaurant content.
+
+## Public source evidence summary
+Captured/verified: 2026-05-06
+
+### Restaurantji
+URL: https://www.restaurantji.com/il/schaumburg/maxfields-pancake-house-/
+Observed via web_fetch/browser snapshot: category Breakfast/American/Vegetarian; address 700 E Schaumburg Rd, Schaumburg; phone (847) 781-0300; rating shown as 4.7 with 259 ratings; favorites listed include 2 Eggs Breakfast with Pancakes, Skillet with Side of Pancakes, Banana Bread French Toast, Chocolate Chip Pancakes, Original Eggs Benedict, Skirt Steak and Eggs, Mickey Mouse Pancakes. Hours shown: Mon/Tue/Sun 7AM-2PM; Wed-Sat 7AM-2PM and 3:30-8PM. Restaurantji menu section says "Add a Menu".
+
+### Yelp
+URL: https://www.yelp.com/biz/maxfields-pancake-house-schaumburg-2
+Observed via browser/search snippets: Yelp page title Maxfields Pancake House; categories Breakfast & Brunch, American, Sandwiches; Yelp snapshot showed 3.7 with 268 reviews, claimed, hours 7:00 AM-2:00 PM and 3:30 PM-8:00 PM on the checked day, and 230 photos. Search snippet says established in 1998 and describes the restaurant as family-owned serving breakfast and lunch; this should be verified against owner/official copy before being used as a hard claim.
+
+### Chicago Northwest listing
+URL: https://www.chicagonorthwest.com/listing/maxfields-pancake-house-%26-restaurant/1613/
+Observed via browser snapshot: Maxfield's Pancake House & Restaurant; address 700 E. Schaumburg Rd., Schaumburg, IL 60194; phone (847) 781-0300; amenities indicate Breakfast, Lunch, Dinner, Take Out; hours listed Sunday-Wednesday 7:00AM-3:00PM and Thursday-Saturday 7:00AM-9:00PM. Listing includes food/exterior imagery and a Visit Website link through a tracking redirect.
+
+### Search result snippets
+Search result for https://www.maxfieldschaumburg.com/ says: "Maxfields Restaurant is an American family restaurant in Schaumburg specializing in breakfast and lunch..." but the linked live domain currently returns the Wix ConnectYourDomain error above.
+

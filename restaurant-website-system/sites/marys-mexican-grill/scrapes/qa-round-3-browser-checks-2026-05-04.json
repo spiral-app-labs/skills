@@ -1,0 +1,162 @@
+{
+  "date": "2026-05-04",
+  "site_slug": "marys-mexican-grill",
+  "method": "local_next_start_headless_chrome_screenshots_and_built_html_inspection",
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "framework": "Next.js 14.2.35"
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "status": "passed",
+    "note": "Succeeded after rerunning against completed .next output."
+  },
+  "screenshot_capture": {
+    "status": "passed_local_preview",
+    "captured_at": "2026-05-05T03:18:39Z",
+    "tooling": "Google Chrome headless against local next start preview",
+    "viewports": [
+      {
+        "device": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "device": "mobile",
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-home-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-menu-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-about-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-desktop-contact-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
+        "status": "captured"
+      },
+      {
+        "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png",
+        "status": "captured"
+      }
+    ],
+    "mobile_layout_checks": {
+      "contact_doc_scroll_width": 390,
+      "contact_inner_width": 390,
+      "contact_horizontal_overflow": "none detected by CDP overflow audit",
+      "home_doc_scroll_width": 390,
+      "home_inner_width": 390,
+      "home_note": "Review carousel has intentional off-viewport cards but does not increase document scroll width."
+    }
+  },
+  "routes": [
+    {
+      "path": "/",
+      "title": "Mary's Mexican Grill \u2014 Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/index.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "cta_menu": true,
+        "cta_order_doordash": true,
+        "cta_call": true,
+        "cta_directions": true,
+        "mobile_sticky_menu_order_call_map": true,
+        "placeholder_or_vendor_copy_found": false
+      }
+    },
+    {
+      "path": "/menu",
+      "title": "Mary's Mexican Grill \u2014 Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/menu.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "cta_order_doordash": true,
+        "cta_call": true,
+        "cta_directions": true,
+        "menu_items_truth_grounded": true,
+        "fake_prices_found": false
+      }
+    },
+    {
+      "path": "/about",
+      "title": "Mary's Mexican Grill \u2014 Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/about.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "hours_present": true,
+        "directions_link_present": true,
+        "fake_owner_story_found": false
+      }
+    },
+    {
+      "path": "/contact",
+      "title": "Mary's Mexican Grill \u2014 Mexican grill on Woodstock Square",
+      "source": "restaurant-website-system/sites/marys-mexican-grill/.next/server/app/contact.html",
+      "checks": {
+        "nav_home": true,
+        "nav_menu": true,
+        "nav_about": true,
+        "nav_contact": true,
+        "address_present": true,
+        "phone_present": true,
+        "hours_present": true,
+        "directions_link_present": true,
+        "footer_phone_clickable": true,
+        "footer_address_clickable": true
+      }
+    }
+  ],
+  "external_link_review": {
+    "phone_href": "tel:+18153372303",
+    "order_href": "https://www.doordash.com/en/store/marys-mexican-grill-woodstock-28404782/",
+    "directions_href": "https://www.google.com/maps/dir/?api=1&destination=108%20Cass%20St%2C%20Woodstock%2C%20IL%2060098",
+    "social_links_present": false,
+    "social_links_note": "No verified production-safe social URLs were captured in the local source pack, so none are rendered."
+  },
+  "local_preview": {
+    "url": "http://127.0.0.1:3120",
+    "server": "next start -H 127.0.0.1 -p 3120",
+    "status": "passed"
+  },
+  "vercel_preview": {
+    "url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+    "source": "GitHub PR #19 Vercel preview comment",
+    "access_check": "auth_protected",
+    "access_notes": [
+      "Unauthenticated Python/curl request returned HTTP 401 Unauthorized.",
+      "Managed OpenClaw browser reached the Vercel login wall instead of the site.",
+      "Treat this as a preview-access blocker for client handoff until Ethan verifies access in an authenticated Vercel/GitHub session or disables preview protection."
+    ]
+  }
+}

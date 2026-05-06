@@ -1,0 +1,115 @@
+{
+  "date": "2026-05-04",
+  "site_slug": "strawberry-moon",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_root_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "mc_qa1_child_task_id": "2aa1bf26-d71f-4f72-b591-2f01456e87fc",
+  "commands": [
+    "npm ci",
+    "npm run build",
+    "npm run typecheck",
+    "npm run start -- --hostname 127.0.0.1 --port 3078"
+  ],
+  "build_verification": {
+    "npm_ci": "passed",
+    "build": "passed",
+    "typecheck": "passed",
+    "typecheck_parallel_attempt_note": "One parallel typecheck attempt failed while next build was regenerating .next/types. Sequential rerun passed and is the canonical QA1 result."
+  },
+  "localhost_check": {
+    "status": "blocked",
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3078",
+    "error": "listen EPERM: operation not permitted 127.0.0.1:3078"
+  },
+  "browser_tooling": {
+    "playwright_in_path": false,
+    "chrome_in_path": false,
+    "cached_ms_playwright_binaries_present": true
+  },
+  "screenshots": {
+    "fresh_capture_status": "blocked",
+    "desktop_target": "1440x900",
+    "mobile_target": "390x844",
+    "reason": "Sandbox prevented binding a local preview server, so browser capture could not be executed against localhost.",
+    "existing_referenced_paths_checked": [],
+    "valid_reusable_paths": []
+  },
+  "routes": [
+    {
+      "route": "/",
+      "built_html_source": ".next/server/app/index.html",
+      "title": "Strawberry Moon — Martinis, wine, live music, and cozy nights behind the red door in Wauconda.",
+      "description": "Strawberry Moon is a cozy Wauconda martini bar with wine, nibbles, decadent desserts, live music, and first-come seating behind the red door on Main Street.",
+      "links_verified": [
+        "/",
+        "/about",
+        "/menu",
+        "/contact",
+        "https://strawberrymoonmartinisandmore.weebly.com/",
+        "https://strawberrymoonmartinisandmore.weebly.com/events.html",
+        "https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html",
+        "https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084",
+        "tel:+18478655151",
+        "mailto:thomasmalik830@gmail.com"
+      ]
+    },
+    {
+      "route": "/menu",
+      "built_html_source": ".next/server/app/menu.html",
+      "title": "Strawberry Moon — Martinis, wine, live music, and cozy nights behind the red door in Wauconda.",
+      "description": "Strawberry Moon is a cozy Wauconda martini bar with wine, nibbles, decadent desserts, live music, and first-come seating behind the red door on Main Street.",
+      "links_verified": [
+        "/",
+        "/about",
+        "/menu",
+        "/contact",
+        "https://strawberrymoonmartinisandmore.weebly.com/",
+        "https://strawberrymoonmartinisandmore.weebly.com/events.html",
+        "https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html",
+        "https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084",
+        "tel:+18478655151",
+        "mailto:thomasmalik830@gmail.com"
+      ]
+    },
+    {
+      "route": "/about",
+      "built_html_source": ".next/server/app/about.html",
+      "title": "Strawberry Moon — Martinis, wine, live music, and cozy nights behind the red door in Wauconda.",
+      "description": "Strawberry Moon is a cozy Wauconda martini bar with wine, nibbles, decadent desserts, live music, and first-come seating behind the red door on Main Street.",
+      "links_verified": [
+        "/",
+        "/about",
+        "/menu",
+        "/contact",
+        "https://strawberrymoonmartinisandmore.weebly.com/",
+        "https://strawberrymoonmartinisandmore.weebly.com/events.html",
+        "https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html",
+        "https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084",
+        "tel:+18478655151",
+        "mailto:thomasmalik830@gmail.com"
+      ]
+    },
+    {
+      "route": "/contact",
+      "built_html_source": ".next/server/app/contact.html",
+      "title": "Strawberry Moon — Martinis, wine, live music, and cozy nights behind the red door in Wauconda.",
+      "description": "Strawberry Moon is a cozy Wauconda martini bar with wine, nibbles, decadent desserts, live music, and first-come seating behind the red door on Main Street.",
+      "links_verified": [
+        "/",
+        "/about",
+        "/menu",
+        "/contact",
+        "https://strawberrymoonmartinisandmore.weebly.com/",
+        "https://strawberrymoonmartinisandmore.weebly.com/events.html",
+        "https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html",
+        "https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084",
+        "tel:+18478655151",
+        "mailto:thomasmalik830@gmail.com"
+      ]
+    }
+  ],
+  "factual_fixes_applied": [
+    "Added verified public email handoff to content, contact page, and footer.",
+    "Added verified external Book an Event handoff using the official current-site path only."
+  ]
+}

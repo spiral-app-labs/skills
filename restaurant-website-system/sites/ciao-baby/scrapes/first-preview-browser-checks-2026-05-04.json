@@ -1,0 +1,969 @@
+{
+  "capturedAt": "2026-05-04T23:54:31.157Z",
+  "previewUrl": "http://127.0.0.1:3084",
+  "cdpBase": "http://127.0.0.1:18800",
+  "templateSlug": "gusto-01",
+  "siteSlug": "ciao-baby",
+  "captures": [
+    {
+      "route": "/",
+      "routeName": "home",
+      "viewport": "desktop",
+      "screenshot": "screenshots/preview-home-desktop-2026-05-04.png",
+      "bytes": 970490,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/?capture=1777938859329",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 1100,
+          "dpr": 1
+        },
+        "scroll": {
+          "docClientWidth": 1440,
+          "docScrollWidth": 1440,
+          "bodyClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "docScrollHeight": 1385,
+          "bodyScrollHeight": 1385
+        },
+        "h1": [
+          "Ciao Baby! family-run Italian restaurant in Barrington"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Call Ciao Baby",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "View real menu proof",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "FAMILY TABLE",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "PRIVATE PARTIES",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call for a table",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Menu Private Parties About Visit Call Ciao Baby! family-run Italian restaurant in Barrington “Made you feel at home” Guests come back for warm bread, generous plates, lamb chops Vesuvio, burnt pasta, carrot cake, and service that feels like a regulars table. 4.5 (324 Reviews) Call Ciao Baby View real menu proof FAMILY TABLE PRIVATE PARTIES Call for a table Closed · opens tomorrow at 11am Posted Hours Monday Closed Tuesday–Thursday 11am – 9pm Friday 11am – 10pm Saturday 12pm – 10pm Sunday Closed Note Call to confirm current hours © FAMILY-RUN ITALIAN·BARRINGTON 232 E MAIN STREET·(847) 381-3555 Ciao Baby! Italian and Americana dining, warm bread at the table, generous portions, and a private party room at 232 E Main Street in Barrington. Legacy site Modern site candidate Visit 232 E Main Street Barrington, IL 60010 United States (847) 381-3555 Menu Home Menu About Restaurant Call Plan Contact Directions Current site © FAMILY-RUN ITALIAN·BARRINGTON © CIAO BABY! · ALL RIGHTS RESERVED",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/",
+      "routeName": "home",
+      "viewport": "mobile",
+      "screenshot": "screenshots/preview-home-mobile-2026-05-04.png",
+      "bytes": 1133854,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/?capture=1777938860752",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 900,
+          "dpr": 2
+        },
+        "scroll": {
+          "docClientWidth": 390,
+          "docScrollWidth": 390,
+          "bodyClientWidth": 390,
+          "bodyScrollWidth": 390,
+          "docScrollHeight": 2603,
+          "bodyScrollHeight": 2603
+        },
+        "h1": [
+          "Ciao Baby! family-run Italian restaurant in Barrington"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Call Ciao Baby",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "View real menu proof",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "FAMILY TABLE",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "PRIVATE PARTIES",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call for a table",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Call Ciao Baby! family-run Italian restaurant in Barrington “Made you feel at home” Guests come back for warm bread, generous plates, lamb chops Vesuvio, burnt pasta, carrot cake, and service that feels like a regulars table. 4.5 (324 Reviews) Call Ciao Baby View real menu proof FAMILY TABLE PRIVATE PARTIES Call for a table Closed · opens tomorrow at 11am Posted Hours Monday Closed Tuesday–Thursday 11am – 9pm Friday 11am – 10pm Saturday 12pm – 10pm Sunday Closed Note Call to confirm current hours © FAMILY-RUN ITALIAN·BARRINGTON 232 E MAIN STREET·(847) 381-3555 Ciao Baby! Italian and Americana dining, warm bread at the table, generous portions, and a private party room at 232 E Main Street in Barrington. Legacy site Modern site candidate Visit 232 E Main Street Barrington, IL 60010 United States (847) 381-3555 Menu Home Menu About Restaurant Call Plan Contact Directions Current site © FAMILY-RUN ITALIAN·BARRINGTON © CIAO BABY! · ALL RIGHTS RESERVED",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/menu",
+      "routeName": "menu",
+      "viewport": "desktop",
+      "screenshot": "screenshots/preview-menu-desktop-2026-05-04.png",
+      "bytes": 669635,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/menu?capture=1777938862206",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 1100,
+          "dpr": 1
+        },
+        "scroll": {
+          "docClientWidth": 1440,
+          "docScrollWidth": 1440,
+          "bodyClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "docScrollHeight": 2049,
+          "bodyScrollHeight": 2049
+        },
+        "h1": [
+          "Menu"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Menu Private Parties About Visit Call “Burnt pasta. Their specialty.” The menu has real Barrington favorites: stuffed artichoke, Aunt Dodie’s eggplant, lamb chops Vesuvio, CiaoBaby! Burnt Pasta, chicken parmesan, gnocchi, and carrot cake. 4.5 (324 Reviews) Menu CIAOBABY! STARTERS Ciao Baby! Sticks Two generous breadsticks stuffed with mozzarella, dipped in garlic butter and herbs, served with marinara. $10 Stuffed Artichoke A family favorite with garlic breadcrumbs, parmesan, fragrant herbs, and a light broth. $16 Aunt Dodie’s Rolled Stuffed Eggplant Eggplant rolled around ricotta and mozzarella, topped with marinara and herbs. $18 Lamb Chops Vesuvio Four lollipop lamb chops sautéed in Vesuvio sauce and herbs, served over risotto. $24 CiaoBaby! Burnt Pasta Fried angel hair pasta sautéed in butter and marinara until crispy and burnt. $15 SALADS & FAMILY FAVORITES Very Chopped Meatless Salad Finely chopped greens, vegetables, gorgonzola, pasta, toffee nuts, and mango chardonnay dressing. $15 / $26 Umbriago Salad Chopped romaine with egg whites, tomato, cucumber, grilled asparagus, chicken, croutons, parmesan, and black pepper. $15 / $26 Stuffed Melrose Peppers Melrose pepp",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/menu",
+      "routeName": "menu",
+      "viewport": "mobile",
+      "screenshot": "screenshots/preview-menu-mobile-2026-05-04.png",
+      "bytes": 1041485,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/menu?capture=1777938863598",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 900,
+          "dpr": 2
+        },
+        "scroll": {
+          "docClientWidth": 390,
+          "docScrollWidth": 390,
+          "bodyClientWidth": 390,
+          "bodyScrollWidth": 390,
+          "docScrollHeight": 3095,
+          "bodyScrollHeight": 3095
+        },
+        "h1": [
+          "Menu"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Call “Burnt pasta. Their specialty.” The menu has real Barrington favorites: stuffed artichoke, Aunt Dodie’s eggplant, lamb chops Vesuvio, CiaoBaby! Burnt Pasta, chicken parmesan, gnocchi, and carrot cake. 4.5 (324 Reviews) Menu CIAOBABY! STARTERS Ciao Baby! Sticks Two generous breadsticks stuffed with mozzarella, dipped in garlic butter and herbs, served with marinara. $10 Stuffed Artichoke A family favorite with garlic breadcrumbs, parmesan, fragrant herbs, and a light broth. $16 Aunt Dodie’s Rolled Stuffed Eggplant Eggplant rolled around ricotta and mozzarella, topped with marinara and herbs. $18 Lamb Chops Vesuvio Four lollipop lamb chops sautéed in Vesuvio sauce and herbs, served over risotto. $24 CiaoBaby! Burnt Pasta Fried angel hair pasta sautéed in butter and marinara until crispy and burnt. $15 SALADS & FAMILY FAVORITES Very Chopped Meatless Salad Finely chopped greens, vegetables, gorgonzola, pasta, toffee nuts, and mango chardonnay dressing. $15 / $26 Umbriago Salad Chopped romaine with egg whites, tomato, cucumber, grilled asparagus, chicken, croutons, parmesan, and black pepper. $15 / $26 Stuffed Melrose Peppers Melrose peppers stuffed with seasoned sausage",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/about",
+      "routeName": "about",
+      "viewport": "desktop",
+      "screenshot": "screenshots/preview-about-desktop-2026-05-04.png",
+      "bytes": 1186614,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/about?capture=1777938865007",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 1100,
+          "dpr": 1
+        },
+        "scroll": {
+          "docClientWidth": 1440,
+          "docScrollWidth": 1440,
+          "bodyClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "docScrollHeight": 1638,
+          "bodyScrollHeight": 1638
+        },
+        "h1": [
+          "About"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Book a Table",
+            "href": "http://127.0.0.1:3084/about?capture=1777938865007#book"
+          },
+          {
+            "text": "View Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Plan a visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Menu Private Parties About Visit Call Family recipes, downtown Barrington pace The strongest guest signal is simple: people describe Ciao Baby as the kind of Italian restaurant that makes them feel at home, with warm bread, attentive servers, and food generous enough to share. Book a Table View Menu About Ciao Baby is a downtown Barrington Italian table with family-recipe language, old-school warmth, generous portions, and a private-room rhythm for birthdays, showers, holidays, and business meals. Family-run hospitality The review packet repeatedly names personal care: Kira, Kelley, Nancy, Bill, and the chef all appear in guest stories. That is the proof this site should surface before generic Italian claims. The owner-safe angle is not “new concept.” It is the best version of what guests already say: cozy, welcoming, old-school Italian, generous, and ready for family celebrations. Plan a visit Ciao Baby! Italian and Americana dining, warm bread at the table, generous portions, and a private party room at 232 E Main Street in Barrington. Legacy site Modern site candidate Visit 232 E Main Street Barrington, IL 60010 United States (847) 381-3555 Menu Home Menu About Restau",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/about",
+      "routeName": "about",
+      "viewport": "mobile",
+      "screenshot": "screenshots/preview-about-mobile-2026-05-04.png",
+      "bytes": 1112394,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/about?capture=1777938866422",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 900,
+          "dpr": 2
+        },
+        "scroll": {
+          "docClientWidth": 390,
+          "docScrollWidth": 390,
+          "bodyClientWidth": 390,
+          "bodyScrollWidth": 390,
+          "docScrollHeight": 2313,
+          "bodyScrollHeight": 2313
+        },
+        "h1": [
+          "About"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Book a Table",
+            "href": "http://127.0.0.1:3084/about?capture=1777938866422#book"
+          },
+          {
+            "text": "View Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Plan a visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Call Family recipes, downtown Barrington pace The strongest guest signal is simple: people describe Ciao Baby as the kind of Italian restaurant that makes them feel at home, with warm bread, attentive servers, and food generous enough to share. Book a Table View Menu About Ciao Baby is a downtown Barrington Italian table with family-recipe language, old-school warmth, generous portions, and a private-room rhythm for birthdays, showers, holidays, and business meals. Family-run hospitality The review packet repeatedly names personal care: Kira, Kelley, Nancy, Bill, and the chef all appear in guest stories. That is the proof this site should surface before generic Italian claims. The owner-safe angle is not “new concept.” It is the best version of what guests already say: cozy, welcoming, old-school Italian, generous, and ready for family celebrations. Plan a visit Ciao Baby! Italian and Americana dining, warm bread at the table, generous portions, and a private party room at 232 E Main Street in Barrington. Legacy site Modern site candidate Visit 232 E Main Street Barrington, IL 60010 United States (847) 381-3555 Menu Home Menu About Restaurant Call Plan Contact Directions",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/contact",
+      "routeName": "contact",
+      "viewport": "desktop",
+      "screenshot": "screenshots/preview-contact-desktop-2026-05-04.png",
+      "bytes": 578308,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/contact?capture=1777938867845",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 1100,
+          "dpr": 1
+        },
+        "scroll": {
+          "docClientWidth": 1440,
+          "docScrollWidth": 1440,
+          "bodyClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "docScrollHeight": 2479,
+          "bodyScrollHeight": 2479
+        },
+        "h1": [
+          "Visit Ciao Baby"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Call Ciao Baby",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Get directions →",
+            "href": "https://www.google.com/maps/dir/?api=1&destination=42.1539,-88.1343"
+          },
+          {
+            "text": "Open in Maps",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Call (847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Open directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Legacy current site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern domain candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Menu Private Parties About Visit Call Visit Ciao Baby Call for today’s table, ask about carryout, or plan a private party in downtown Barrington. Public hours conflict across sources, so confirm current timing by phone. 232 E Main Street 232 E Main Street Barrington, IL 60010 United States (847) 381-3555 Hours conflict across public sources. Call before a special trip. Call Ciao Baby Opening Hours Monday Closed Tuesday–Thursday 11am – 9pm Friday 11am – 10pm Saturday 12pm – 10pm Sunday Closed Note Call to confirm current hours Get directions → Downtown Barrington. Public sources list conflicting hours; call before making a special trip. Open in Maps Direct handoffs only This preview does not fake reservations or online inquiries. It sends guests to phone, directions, and the current public source links until ownership is verified. Call (847) 381-3555 Open directions Legacy current site Modern domain candidate PRIVATE-PARTY PROOF Private party room mentioned on the legacy current site. A Google review praises an 80th birthday in the private party room and names Nancy and Keira as accommodating. Reviews repeatedly support family meals, birthdays, generous portions, and warm",
+        "offenders": []
+      }
+    },
+    {
+      "route": "/contact",
+      "routeName": "contact",
+      "viewport": "mobile",
+      "screenshot": "screenshots/preview-contact-mobile-2026-05-04.png",
+      "bytes": 505365,
+      "metrics": {
+        "url": "http://127.0.0.1:3084/contact?capture=1777938869516",
+        "title": "Ciao Baby! — Family-run Italian in downtown Barrington",
+        "ready": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 900,
+          "dpr": 2
+        },
+        "scroll": {
+          "docClientWidth": 390,
+          "docScrollWidth": 390,
+          "bodyClientWidth": 390,
+          "bodyScrollWidth": 390,
+          "docScrollHeight": 3080,
+          "bodyScrollHeight": 3080
+        },
+        "h1": [
+          "Visit Ciao Baby"
+        ],
+        "links": [
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "Private Parties",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Visit",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Call Ciao Baby",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Get directions →",
+            "href": "https://www.google.com/maps/dir/?api=1&destination=42.1539,-88.1343"
+          },
+          {
+            "text": "Open in Maps",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Call (847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Open directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Legacy current site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern domain candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "Ciao Baby!",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Legacy site",
+            "href": "https://www.ciaobabyonline.com/"
+          },
+          {
+            "text": "Modern site candidate",
+            "href": "https://ciaobaby.net/"
+          },
+          {
+            "text": "(847) 381-3555",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Home",
+            "href": "http://127.0.0.1:3084/"
+          },
+          {
+            "text": "Menu",
+            "href": "http://127.0.0.1:3084/menu"
+          },
+          {
+            "text": "About",
+            "href": "http://127.0.0.1:3084/about"
+          },
+          {
+            "text": "Restaurant",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Call",
+            "href": "tel:+18473813555"
+          },
+          {
+            "text": "Contact",
+            "href": "http://127.0.0.1:3084/contact"
+          },
+          {
+            "text": "Directions",
+            "href": "https://www.google.com/maps/search/?api=1&query=232+E+Main+St+Barrington+IL+60010"
+          },
+          {
+            "text": "Current site",
+            "href": "https://www.ciaobabyonline.com/"
+          }
+        ],
+        "textSample": "Ciao Baby! Call Visit Ciao Baby Call for today’s table, ask about carryout, or plan a private party in downtown Barrington. Public hours conflict across sources, so confirm current timing by phone. 232 E Main Street 232 E Main Street Barrington, IL 60010 United States (847) 381-3555 Hours conflict across public sources. Call before a special trip. Call Ciao Baby Opening Hours Monday Closed Tuesday–Thursday 11am – 9pm Friday 11am – 10pm Saturday 12pm – 10pm Sunday Closed Note Call to confirm current hours Get directions → Downtown Barrington. Public sources list conflicting hours; call before making a special trip. Open in Maps Direct handoffs only This preview does not fake reservations or online inquiries. It sends guests to phone, directions, and the current public source links until ownership is verified. Call (847) 381-3555 Open directions Legacy current site Modern domain candidate PRIVATE-PARTY PROOF Private party room mentioned on the legacy current site. A Google review praises an 80th birthday in the private party room and names Nancy and Keira as accommodating. Reviews repeatedly support family meals, birthdays, generous portions, and warm service. © FAMILY-RUN ITALIAN·BA",
+        "offenders": []
+      }
+    }
+  ]
+}

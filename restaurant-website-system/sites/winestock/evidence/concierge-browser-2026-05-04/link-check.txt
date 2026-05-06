@@ -1,0 +1,31 @@
+/ {
+  "badAnchors": [],
+  "handoffs": [
+    "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+    "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+    "https://www.google.com/maps/dir/?api=1&amp;destination=42.31538,-88.4484481",
+    "mailto:info@shopwinestock.com?subject=Winestock%20bottle%20picks",
+    "https://www.facebook.com/Winestockmarket/",
+    "mailto:info@shopwinestock.com?subject=Winestock%20boards",
+    "mailto:info@shopwinestock.com",
+    "mailto:info@shopwinestock.com?subject=Winestock%20gift%20question",
+    "https://www.facebook.com/Winestockmarket/",
+    "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+    "https://www.google.com/maps/dir/?api=1&amp;destination=42.31538,-88.4484481",
+    "https://www.facebook.com/Winestockmarket/",
+    "mailto:info@shopwinestock.com",
+    "https://www.google.com/maps/dir/?api=1&amp;destination=42.31538,-88.4484481",
+    "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+    "tel:+18153085610",
+    "https://www.facebook.com/Winestockmarket/"
+  ]
+}
+/reserve {
+  "badAnchors": [],
+  "handoffs": [
+    "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+    "mailto:info@shopwinestock.com?subject=Winestock%20visit",
+    "tel:+18153085610",
+    "https://www.facebook.com/Winestockmarket/"
+  ]
+}

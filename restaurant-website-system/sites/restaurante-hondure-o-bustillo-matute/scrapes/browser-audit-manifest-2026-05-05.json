@@ -1,0 +1,91 @@
+{
+  "capturedAt": "2026-05-05T08:30:22.842Z",
+  "captures": [
+    {
+      "url": "https://www.google.com/search?q=Restaurante+Hondureno+Bustillo+Matute+4113+W+Shamrock+Ln+McHenry+IL",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/google-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/google-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/google-search-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Restaurante+Hondureno+Bustillo+Matute+4113+W+Shamrock+Ln+McHenry+IL",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/google-search-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/google-search-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/google-search-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/mchenry/restaurante-hondure-o-bustillo-matute-/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/restaurantji-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/restaurantji-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/restaurantji-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.restaurantji.com/il/mchenry/restaurante-hondure-o-bustillo-matute-/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/restaurantji-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/restaurantji-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/restaurantji-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://restaurantguru.com/Restaurante-Hondureno-Bustillo-Matute-McHenry",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/restaurantguru-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/restaurantguru-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/restaurantguru-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://usarestaurants.info/explore/united-states/illinois/mchenry-county/nunda-township/mchenry/restaurante-hondureno-bustillo-matute-779-244-5791.htm",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/usa-restaurants-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/usa-restaurants-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/usa-restaurants-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://www.google.com/search?q=Restaurante+Hondure%C3%B1o+Bustillo+Matute+DoorDash+Grubhub",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/screenshots/doordash-search-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/doordash-search-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/restaurante-hondure-o-bustillo-matute/scrapes/doordash-search-desktop-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "google-search",
+      "url": "https://www.google.com/search?q=Restaurante+Hondureno+Bustillo+Matute+4113+W+Shamrock+Ln+McHenry+IL",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Restaurante+Hondureno+Bustillo+Matute+4113+W+Shamrock+Ln+McHenry+IL",
+      "contentType": "text/html; charset=ISO-8859-1"
+    },
+    {
+      "label": "restaurantji",
+      "url": "https://www.restaurantji.com/il/mchenry/restaurante-hondure-o-bustillo-matute-/",
+      "status": 200,
+      "finalUrl": "https://www.restaurantji.com/il/mchenry/restaurante-hondure-o-bustillo-matute-/",
+      "contentType": "text/html"
+    },
+    {
+      "label": "restaurantguru",
+      "url": "https://restaurantguru.com/Restaurante-Hondureno-Bustillo-Matute-McHenry",
+      "status": 200,
+      "finalUrl": "https://restaurantguru.com/RESTAURANTE-HONDURENO-BUSTILLO-MATUTE-McHenry",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "usa-restaurants",
+      "url": "https://usarestaurants.info/explore/united-states/illinois/mchenry-county/nunda-township/mchenry/restaurante-hondureno-bustillo-matute-779-244-5791.htm",
+      "status": 200,
+      "finalUrl": "https://usarestaurants.info/explore/united-states/illinois/mchenry-county/nunda-township/mchenry/restaurante-hondureno-bustillo-matute-779-244-5791.htm",
+      "contentType": "text/html; charset=utf8"
+    },
+    {
+      "label": "doordash-search",
+      "url": "https://www.google.com/search?q=Restaurante+Hondure%C3%B1o+Bustillo+Matute+DoorDash+Grubhub",
+      "status": 200,
+      "finalUrl": "https://www.google.com/search?q=Restaurante+Hondure%C3%B1o+Bustillo+Matute+DoorDash+Grubhub",
+      "contentType": "text/html; charset=ISO-8859-1"
+    }
+  ]
+}

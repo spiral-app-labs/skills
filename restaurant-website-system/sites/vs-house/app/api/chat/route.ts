@@ -4,8 +4,6 @@ import { content } from '../../../content';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const client = new Anthropic();
-
 function buildSystemPrompt(): string {
   const { brand, contact, hours, heritage, menu, ratings, links } = content;
 
@@ -17,7 +15,7 @@ function buildSystemPrompt(): string {
   const menuLines = menu
     .map((section) => {
       const items = section.items
-        .map((it) => `  - ${it.name} (${it.price}), ${it.desc}`)
+        .map((it) => `  - ${it.name}${it.price ? ` (${it.price})` : ''}, ${it.desc}`)
         .join('\n');
       return `${section.heading}\n${items}`;
     })
@@ -69,6 +67,56 @@ Designed by Hatsumi Kuzuu, a recognized Dallas restaurant designer. Snug half-bo
 
 const SYSTEM_PROMPT = buildSystemPrompt();
 
+function buildFallbackReply(userMessage: string): string {
+  const lower = userMessage.toLowerCase();
+  const { brand, contact, hours, links, menu } = content;
+  const today = hours.weekly[new Date().getDay()];
+
+  if (lower.includes('hour') || lower.includes('open') || lower.includes('close')) {
+    return `${brand.name} is open today from ${today.open} to ${today.close}. For holiday or last seating questions, please call ${contact.phone}.`;
+  }
+
+  if (lower.includes('where') || lower.includes('address') || lower.includes('location') || lower.includes('directions')) {
+    return `${brand.name} is at ${contact.addressFull}. You can call ${contact.phone} or use the directions link on this page before you head over.`;
+  }
+
+  if (lower.includes('reserve') || lower.includes('reservation') || lower.includes('book') || lower.includes('table')) {
+    return `You can reserve a table for ${brand.name} here: ${links.reserve}. If you need help with a larger party, please call ${contact.phone}.`;
+  }
+
+  if (lower.includes('order') || lower.includes('takeout') || lower.includes('delivery') || lower.includes('pickup')) {
+    return `You can order online from ${brand.name} here: ${links.order}. If you need to confirm an item or modifier, please call ${contact.phone}.`;
+  }
+
+  const featured = menu
+    .flatMap((section) => section.items.slice(0, 2).map((item) => item.name))
+    .slice(0, 5)
+    .join(', ');
+  return `A few V's House favorites to start with are ${featured}. For allergies or current availability, please call ${contact.phone} and the team will walk you through it.`;
+}
+
+function sseFrame(payload: Record<string, unknown>): Uint8Array {
+  return new TextEncoder().encode(`data: ${JSON.stringify(payload)}\n\n`);
+}
+
+function streamStaticReply(reply: string): Response {
+  const stream = new ReadableStream({
+    start(controller) {
+      controller.enqueue(sseFrame({ text: reply }));
+      controller.enqueue(sseFrame({ done: true }));
+      controller.close();
+    },
+  });
+
+  return new Response(stream, {
+    headers: {
+      'content-type': 'text/event-stream',
+      'cache-control': 'no-cache, no-transform',
+      connection: 'keep-alive',
+    },
+  });
+}
+
 export async function POST(req: Request) {
   try {
     const body = (await req.json()) as {
@@ -82,6 +130,13 @@ export async function POST(req: Request) {
       });
     }
 
+    const latestUserMessage = [...body.messages].reverse().find((message) => message.role === 'user')?.content ?? '';
+
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return streamStaticReply(buildFallbackReply(latestUserMessage));
+    }
+
+    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
       async start(controller) {

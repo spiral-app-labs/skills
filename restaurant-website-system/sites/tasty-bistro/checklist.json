@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "leadId": "4a61843f-7ce4-42d1-9971-1452aa311c47",
+  "mcParentTaskId": "b19181d6-a00f-4d82-9c38-707c9dcb5372",
+  "siteSlug": "tasty-bistro",
+  "templateSlug": "bamzi-01",
+  "currentStage": "blocked",
+  "evidencePaths": [
+    "restaurant-website-system/sites/tasty-bistro/checklist.md",
+    "restaurant-website-system/sites/tasty-bistro/checklist.json",
+    "restaurant-website-system/sites/tasty-bistro/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/official-domain-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/official-domain-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/official-domain-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/official-domain-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/orderonlinehub-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/orderonlinehub-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/orderonlinehub-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/orderonlinehub-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/google-search-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/google-search-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/restaurantji-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/restaurantji-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/restaurantguru-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/screenshots/doordash-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/tasty-bistro/scrapes/doordash-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tasty-bistro/browser-evidence-audit-2026-05-05.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser evidence shows the original Crystal Lake Tasty Bistro lead is not currently executable: Google marks it temporarily closed, closure coverage says it consolidated into Tasty Sushi/Cary, and the official/order app now points to 630 Northwest Hwy, Cary IL 60013.",
+      "nextUnblockAction": "Mission Control/founder should decide whether to retire the Crystal Lake website workflow, replace it with a Tasty Sushi/Cary workflow, or explicitly confirm a reopening plan before reviews/build work proceeds.",
+      "recordedAt": "2026-05-05T09:35:00.000Z"
+    },
+    {
+      "gate": "stage_writeback",
+      "reason": "Local browser audit evidence and blocked status are ready, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-blocked-2026-05-05.json through the agency build writeback route.",
+      "recordedAt": "2026-05-05T09:35:00.000Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "blocked",
+      "required": true,
+      "notes": "Browser/Google evidence shows the original Crystal Lake location is temporarily closed/consolidated into Tasty Sushi/Cary; lead fit is blocked until Mission Control decides whether to retire this lead or create a Cary-scoped workflow.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/tasty-bistro/audit.md",
+        "restaurant-website-system/sites/tasty-bistro/browser-evidence-audit-2026-05-05.md",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/google-search-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/google-search-mobile-2026-05-05.txt"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Browser evidence captured on 2026-05-05: official-domain/order-app redirect, Google operating-status proof, Restaurantji desktop/mobile, Restaurant Guru, and marketplace/search evidence. Audit concludes the Crystal Lake workflow is blocked by closed/consolidated status.",
+      "evidence": [
+        "restaurant-website-system/sites/tasty-bistro/audit.md",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/browser-audit-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/official-domain-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/official-domain-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/official-domain-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/official-domain-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/orderonlinehub-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/orderonlinehub-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/orderonlinehub-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/orderonlinehub-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/google-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/google-search-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/google-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/google-search-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/restaurantji-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/restaurantji-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/restaurantji-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/restaurantji-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/restaurantguru-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/restaurantguru-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/screenshots/doordash-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/tasty-bistro/scrapes/doordash-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tasty-bistro/browser-evidence-audit-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to bamzi-01 for broad casual Asian/sushi energy; avoid over-premium omakase posture and verify room/photos.",
+      "evidence": [
+        "restaurant-website-system/sites/tasty-bistro/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-05T09:35:00.000Z"
+}

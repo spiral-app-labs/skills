@@ -1,0 +1,139 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T11:06:24Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "auth_check": {
+    "AGENCY_AUTONOMY_API_KEY": "missing",
+    "OPENCLAW_WEBHOOK_SECRET": "missing",
+    "api_write_attempted": false,
+    "reason": "Mission Control agency API auth is unavailable in this runtime; no MC write was attempted for the reviews gate and no raw Supabase agency writes were performed."
+  },
+  "blocker": {
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing. Reviews evidence is complete locally and ready to sync once auth is restored.",
+    "source": "openclaw_maxfields_reviews_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to OpenClaw runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST/PATCH this prepared build payload."
+  },
+  "build_update_payload": {
+    "build_stage": "reviews",
+    "status": "in_progress",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": "cuisine",
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "current_site_scrape_path": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+    "google_reviews_packet_path": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+    "evidence_urls": [
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-overview.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-filter.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/google-reviews-highest-selected.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/current-site-dom-snapshot.txt",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+    ],
+    "artifact_urls": [
+      "https://www.google.com/maps/place/Maxfield's+Pancake+House/@42.0291098,-88.0623499,17z/data=!4m8!3m7!1s0x880faf1b69664259:0x240cbc260f618148!8m2!3d42.0291098!4d-88.0623499!9m1!1b1!16s%2Fg%2F1ts3g644?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
+      "https://www.maxfieldschaumburg.com/"
+    ],
+    "ready_to_pitch": false,
+    "lead_metadata": {
+      "owner_name": null,
+      "owner_email": null,
+      "contact_email": null,
+      "phone": "(847) 781-0300",
+      "hours": [
+        "Restaurantji/Yelp observed: Mon/Tue/Sun 7AM-2PM; Wed-Sat 7AM-2PM and 3:30PM-8PM",
+        "Chicago Northwest conflicting listing: Sun-Wed 7AM-3PM; Thu-Sat 7AM-9PM",
+        "Owner/Google confirmation required before final copy"
+      ],
+      "address_location": "700 E Schaumburg Rd, Schaumburg, IL 60194",
+      "website_url": "https://www.maxfieldschaumburg.com/ (currently Wix ConnectYourDomain HTTP 404; non-www also broken)",
+      "order_url": "https://www.restaurantji.com/order.php?id=3430021 (third-party; direct provider not resolved)",
+      "reservation_url": null,
+      "catering_events_url": null,
+      "google_rating": 4.5,
+      "google_review_count": 983,
+      "outreach_email_draft_path": null,
+      "outreach_email_draft_status": "not_created",
+      "metadata_source_notes": [
+        "Google Maps browser snapshot showed 4.5 stars / 983 reviews, address, phone, website/menu links, takeout/delivery, and order online action.",
+        "Yelp browser snapshot showed claimed listing, 3.7 / 268, 230 photos, and menu links pointing to the broken official /menu path.",
+        "Restaurantji showed 4.7 / 259, favorites, hours table, delivery/takeout, kids menu, vegetarian options, and no reservations.",
+        "Chicago Northwest confirmed address/phone/amenities but conflicts on hours.",
+        "Google Reviews Highest rating gate captured 30 written reviews with themes usable for future copy/pitch; see scrapes/google-reviews-highest-30.json and .md."
+      ],
+      "field_sources": {
+        "phone": [
+          "Google Maps screenshot/snapshot",
+          "Yelp",
+          "Restaurantji",
+          "Chicago Northwest"
+        ],
+        "address_location": [
+          "Google Maps screenshot/snapshot",
+          "Restaurantji",
+          "Chicago Northwest"
+        ],
+        "website_url": [
+          "scrapes/current-site-dom-snapshot.txt",
+          "scrapes/current-site-fetch-evidence-2026-05-06.txt",
+          "Google Maps",
+          "Yelp"
+        ],
+        "order_url": [
+          "Restaurantji order link",
+          "Google Maps order action visible"
+        ],
+        "google_rating": [
+          "screenshots/public-source-google-maps-desktop.png",
+          "browser snapshot 2026-05-06"
+        ],
+        "google_review_count": [
+          "screenshots/public-source-google-maps-desktop.png",
+          "browser snapshot 2026-05-06"
+        ],
+        "hours": [
+          "Restaurantji",
+          "Yelp",
+          "Chicago Northwest (conflict)"
+        ],
+        "reservation_url": [
+          "Restaurantji says does not accept reservations"
+        ],
+        "google_reviews_highest_30": [
+          "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+          "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+        ]
+      }
+    },
+    "passed_requirement_ids": [
+      "checklist-md",
+      "checklist-json",
+      "current-site-screenshots",
+      "current-site-scrape",
+      "current-site-opportunities",
+      "reviews-highest-filter",
+      "reviews-thirty-written",
+      "reviews-themes"
+    ],
+    "reviews_gate": {
+      "requested_sort": "Highest rating",
+      "written_reviews_captured": 30,
+      "written_only": true,
+      "review_packet_json_path": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.json",
+      "review_packet_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "theme_summary": "Reviews repeatedly support friendly/attentive service, breakfast/brunch staples, pancakes/waffles/French toast/crepes/skillets, clean/cozy diner atmosphere, value/portions, family/groups/kids, fast service, coffee, and lunch/diner breadth."
+    },
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; local Google Reviews Highest 30-written-review gate passed and payload is prepared for sync.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-reviews-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield Google Reviews gate passed locally: browser opened Reviews, Highest rating was selected, 30 written reviews were captured, and review themes were summarized. MC writeback remains blocked on agency API auth."
+  }
+}

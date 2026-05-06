@@ -1,0 +1,48 @@
+{
+  "site_slug": "ciao-baby",
+  "captured_at": "2026-05-05T01:20:00Z",
+  "capture_label": "qa-round-3",
+  "note": "PNG screenshot files are local evidence and ignored by repo; this tracked manifest records path, size, and hash after final QA3 copy polish.",
+  "screenshots": [
+    {
+      "path": "screenshots/qa-round-3-about-desktop-2026-05-04.png",
+      "bytes": 1185241,
+      "sha256": "136a22407751bbcf6d897b5ab53065da00afb5b845e627e10f55b098d59531c4"
+    },
+    {
+      "path": "screenshots/qa-round-3-about-mobile-2026-05-04.png",
+      "bytes": 1113731,
+      "sha256": "3146e4492073130ef0692f1546abea13a8969493ef2c013816145f695d5e0c10"
+    },
+    {
+      "path": "screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+      "bytes": 1203253,
+      "sha256": "6c66ce92b24a194526aeba4834d94385ed7666fadd93dd406616bcb284a90df5"
+    },
+    {
+      "path": "screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+      "bytes": 1176438,
+      "sha256": "30163cc0b6de7cc62d9d8e7e3753a25edb635fb364c54a39591d460a8487f2ba"
+    },
+    {
+      "path": "screenshots/qa-round-3-home-desktop-2026-05-04.png",
+      "bytes": 1049599,
+      "sha256": "9db65ad3e4d6a22a416aa4e081ea280102c3bd6ff035ab22811a9a0d932daa57"
+    },
+    {
+      "path": "screenshots/qa-round-3-home-mobile-2026-05-04.png",
+      "bytes": 1483509,
+      "sha256": "e064fcf5b8a00af256ee98bdbab6f3843356ea7f25298c9de100daacc2998699"
+    },
+    {
+      "path": "screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+      "bytes": 674779,
+      "sha256": "6a8ce9ea90aa3fa27f6cc985c17c11046cdbf9f121dcd49adb033ab8f3cd7c47"
+    },
+    {
+      "path": "screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+      "bytes": 1030883,
+      "sha256": "174f9470f104b00a288541d01bdd904dcdaf8d923f1fe0d19d338d11c5067fb5"
+    }
+  ]
+}

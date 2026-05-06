@@ -1,0 +1,355 @@
+{
+  "restaurant": "La Hacienda Mexican Restaurant",
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "capturedAt": "2026-05-05T11:11:17Z",
+  "source": "Google Search local reviews panel",
+  "sourceUrl": "https://www.google.com/search?q=La+Hacienda+Mexican+Restaurant+Reviews",
+  "sort": "Highest",
+  "ratingSummary": "4.3 from 530 Google reviews observed in browser evidence",
+  "screenshot": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png",
+  "reviewCountWritten": 30,
+  "reviews": [
+    {
+      "reviewer": "dasha gallardo",
+      "when": "2 months ago",
+      "context": "Dine in",
+      "excerpt": "Amazing experience after seeing the restaurant on TikTok; praised fajitas, tacos, gordita, horchata, flavorful steak/chicken, and kind service.",
+      "signals": [
+        "fajitas",
+        "tacos",
+        "gordita",
+        "horchata",
+        "kind service"
+      ]
+    },
+    {
+      "reviewer": "Rey Cardenas",
+      "when": "3 months ago",
+      "context": "$10–20",
+      "excerpt": "Has gone for four years; calls burritos and tortas a great pick-me-up, says staff are nice and greeting, recommends torta or burritos and loves the green salsa.",
+      "signals": [
+        "burritos",
+        "tortas",
+        "green salsa",
+        "longtime regular"
+      ]
+    },
+    {
+      "reviewer": "Benjamin Schadrac",
+      "when": "a year ago",
+      "context": "Take out | Lunch | $10–20",
+      "excerpt": "Trucker stop with amazing customer service, great price, fair portions, and thoughtful to-go packaging.",
+      "signals": [
+        "takeout",
+        "portions",
+        "customer service"
+      ]
+    },
+    {
+      "reviewer": "dedelaflare",
+      "when": "2 years ago",
+      "context": "Take out | Lunch | $10–20",
+      "excerpt": "Tacos were flavorful, authentic, and presented well; praised taco dinner toppings, salsa, guacamole, and seating space.",
+      "signals": [
+        "tacos",
+        "salsa",
+        "guacamole",
+        "dine-in space"
+      ]
+    },
+    {
+      "reviewer": "Silverok 68",
+      "when": "6 years ago",
+      "context": "Local Guide",
+      "excerpt": "Loves the chile relleno burrito option; visits at lunch at least twice a week for friendly staff, amazing food, and reasonable prices.",
+      "signals": [
+        "chile relleno burrito",
+        "lunch regular",
+        "reasonable prices"
+      ]
+    },
+    {
+      "reviewer": "David Luna",
+      "when": "7 months ago",
+      "context": "$10–20",
+      "excerpt": "Gisselle was attentive and knowledgeable, packaged the to-go order neatly, and asked preferred salsa flavor.",
+      "signals": [
+        "attentive service",
+        "to-go packaging",
+        "salsa choice"
+      ]
+    },
+    {
+      "reviewer": "gis v",
+      "when": "edited 11 months ago",
+      "context": "9 reviews",
+      "excerpt": "Favorite spot for takeout or quick dine-in; chicken burritos stand out, owners are sweet and all other food items are tasty.",
+      "signals": [
+        "chicken burritos",
+        "takeout",
+        "owners"
+      ]
+    },
+    {
+      "reviewer": "Tiffany V",
+      "when": "a year ago",
+      "context": "Dine in | Dinner | $10–20",
+      "excerpt": "Service was great and quick; asada and carnitas tacos were delicious.",
+      "signals": [
+        "quick service",
+        "asada tacos",
+        "carnitas tacos"
+      ]
+    },
+    {
+      "reviewer": "Tom G",
+      "when": "6 years ago",
+      "context": "Local Guide",
+      "excerpt": "Fantastic pico, just-right spicy salsa, great food, friendly service, and reasonable prices.",
+      "signals": [
+        "pico",
+        "spicy salsa",
+        "friendly service"
+      ]
+    },
+    {
+      "reviewer": "Damian Garcia",
+      "when": "6 months ago",
+      "context": "Dine in | Dinner",
+      "excerpt": "Torta cubana was delicious with nice staff and remarkable service.",
+      "signals": [
+        "torta cubana",
+        "service"
+      ]
+    },
+    {
+      "reviewer": "R F",
+      "when": "7 years ago",
+      "context": "Local Guide",
+      "excerpt": "Been coming for years; always great food and service.",
+      "signals": [
+        "longtime regular",
+        "food",
+        "service"
+      ]
+    },
+    {
+      "reviewer": "Michael Svast",
+      "when": "4 years ago",
+      "context": "Dine in | Lunch | $10–20",
+      "excerpt": "Burrito was excellent, fast, and staff were super friendly.",
+      "signals": [
+        "burrito",
+        "fast service",
+        "friendly staff"
+      ]
+    },
+    {
+      "reviewer": "Kick",
+      "when": "11 months ago",
+      "context": "$10–20",
+      "excerpt": "Has been coming for 25 years; quality is great and consistent; recommends chips and salsa, al pastor, pico de gallo and salsa.",
+      "signals": [
+        "25-year regular",
+        "consistent quality",
+        "al pastor"
+      ]
+    },
+    {
+      "reviewer": "Kevin Bradley",
+      "when": "9 months ago",
+      "context": "$1–10",
+      "excerpt": "Stopped in for tacos plus chips and pico de gallo and empanadas; praised food, service, atmosphere, no wait, and parking.",
+      "signals": [
+        "tacos",
+        "chips and pico",
+        "empanadas",
+        "no wait"
+      ]
+    },
+    {
+      "reviewer": "Theo Paulus",
+      "when": "a year ago",
+      "context": "1 review",
+      "excerpt": "Comes every week, usually twice; owner greets their son with a smile and the food is amazing.",
+      "signals": [
+        "weekly regular",
+        "owner warmth",
+        "family-friendly"
+      ]
+    },
+    {
+      "reviewer": "Manuel Barajas",
+      "when": "6 years ago",
+      "context": "Local Guide",
+      "excerpt": "Family still drives from Crystal Lake for the food; wife likes carnitas tacos; calls many items delicious, authentic, and high value.",
+      "signals": [
+        "carnitas tacos",
+        "authentic taste",
+        "destination regular"
+      ]
+    },
+    {
+      "reviewer": "Carla Olvera",
+      "when": "edited 5 years ago",
+      "context": "7 reviews",
+      "excerpt": "Staff are always kind, phone orders are quick and painless, never an issue with food quality in 10+ years.",
+      "signals": [
+        "phone orders",
+        "kind staff",
+        "10+ year customer"
+      ]
+    },
+    {
+      "reviewer": "Terry Nigro",
+      "when": "3 years ago",
+      "context": "Local Guide",
+      "excerpt": "Delicious food and great service; pico, guacamole, and chicken tacos were very good.",
+      "signals": [
+        "pico",
+        "guacamole",
+        "chicken tacos"
+      ]
+    },
+    {
+      "reviewer": "jerry wills",
+      "when": "2 years ago",
+      "context": "Take out | Dinner | $10–20",
+      "excerpt": "Older place but food is great; excellent burritos served fast at average cost; authentic Mexican food and worth the parking awkwardness.",
+      "signals": [
+        "burritos",
+        "fast service",
+        "authentic food"
+      ]
+    },
+    {
+      "reviewer": "Evelyn Tudela",
+      "when": "9 months ago",
+      "context": "$30–50",
+      "excerpt": "Chicken taco salad and chimichanga were great; listed broad favorites including steak burrito, torta, al pastor, chimichanga, chile relleno chimichanga and more.",
+      "signals": [
+        "taco salad",
+        "chimichanga",
+        "broad menu depth"
+      ]
+    },
+    {
+      "reviewer": "Michael Dedina",
+      "when": "7 years ago",
+      "context": "4 reviews",
+      "excerpt": "Pleasantly surprised by food quantity; steak and chicken chimichangas were huge and better than expected; relaxing atmosphere and no-rush service.",
+      "signals": [
+        "chimichangas",
+        "large portions",
+        "relaxed service"
+      ]
+    },
+    {
+      "reviewer": "jerry hrycyniak",
+      "when": "7 years ago",
+      "context": "6 reviews",
+      "excerpt": "Chimichangas are very good, chicken burrito is a favorite, dinner size can be two meals; has been satisfied for over 25 years.",
+      "signals": [
+        "chimichangas",
+        "chicken burrito",
+        "large portions"
+      ]
+    },
+    {
+      "reviewer": "Aly",
+      "when": "8 years ago",
+      "context": "Local Guide",
+      "excerpt": "Called it a gem after golf league; praised tamales, tacos, chips and salsa, combo platters, and consistent food.",
+      "signals": [
+        "tamales",
+        "tacos",
+        "chips and salsa",
+        "combo platters"
+      ]
+    },
+    {
+      "reviewer": "Ryan Christopher",
+      "when": "4 years ago",
+      "context": "Local Guide",
+      "excerpt": "Great carryout taco dinner and exceptional service after staff ran out to return forgotten card and drink.",
+      "signals": [
+        "carryout taco dinner",
+        "above-and-beyond service"
+      ]
+    },
+    {
+      "reviewer": "T-Ward Landscape LLC",
+      "when": "7 years ago",
+      "context": "Local Guide",
+      "excerpt": "Years of visits with no disappointment; always gets steak burrito with green sauce and pickled carrots/onions/jalapenos; great for family outing.",
+      "signals": [
+        "steak burrito",
+        "green sauce",
+        "family outing"
+      ]
+    },
+    {
+      "reviewer": "Benjamin Schadrac",
+      "when": "2 years ago",
+      "context": "Take out | Dinner",
+      "excerpt": "Serving sizes are generous; fajita with three proteins and corn tortillas were standout.",
+      "signals": [
+        "fajitas",
+        "corn tortillas",
+        "generous servings"
+      ]
+    },
+    {
+      "reviewer": "gianfranco sassofarina",
+      "when": "7 years ago",
+      "context": "Local Guide",
+      "excerpt": "Says Faros should not be overlooked; likes burritos with potatoes/chorizo/eggs and the cozy small-bar feel.",
+      "signals": [
+        "potato burritos",
+        "chorizo",
+        "cozy"
+      ]
+    },
+    {
+      "reviewer": "Damian Terrazas",
+      "when": "2 years ago",
+      "context": "Dinner | $20–30",
+      "excerpt": "Amazing vibes and great food; flautas are bomb, tacos are tender and flavorful, waitresses are kind and respectful.",
+      "signals": [
+        "flautas",
+        "tacos",
+        "vibes"
+      ]
+    },
+    {
+      "reviewer": "Dylan Brauer",
+      "when": "edited 6 years ago",
+      "context": "Local Guide",
+      "excerpt": "Huge fan of authentic steak tacos with onion, cilantro and green sauce; praises Taco Tuesday, generous chips and pico, and friendly staff.",
+      "signals": [
+        "steak tacos",
+        "Taco Tuesday",
+        "chips and pico"
+      ]
+    },
+    {
+      "reviewer": "Peggy Johnson",
+      "when": "3 years ago",
+      "context": "Take out | Dinner | $10–20",
+      "excerpt": "Loves enchiladas; all food is great, longtime favorite, notes meatless options and kid-friendliness.",
+      "signals": [
+        "enchiladas",
+        "vegetarian options",
+        "kid-friendly"
+      ]
+    }
+  ],
+  "themeNotes": [
+    "Regulars repeatedly describe La Hacienda/El Faro as a years-long or weekly habit, not a one-time novelty.",
+    "Strongest menu proof: burritos, steak tacos, carnitas/asada tacos, tortas, chimichangas, fajitas, pico, green salsa, chips/salsa, horchata, tamales, enchiladas, al pastor, flautas.",
+    "Conversion copy should emphasize fast takeout, friendly family service, generous portions, authentic neighborhood Mexican food, and long-running local trust.",
+    "Factual caution: older reviews use the El Faro name; copy can reference continuity only if sourced elsewhere, but the evidence supports longtime neighborhood favorite positioning."
+  ]
+}

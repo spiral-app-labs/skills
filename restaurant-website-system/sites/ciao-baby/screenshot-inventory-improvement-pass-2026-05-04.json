@@ -1,0 +1,48 @@
+{
+  "site_slug": "ciao-baby",
+  "captured_at": "2026-05-04T23:59:00Z",
+  "capture_label": "improvement-pass",
+  "note": "PNG screenshot files are local evidence and ignored by repo; this tracked manifest records path, size, and hash.",
+  "screenshots": [
+    {
+      "path": "screenshots/improvement-pass-about-desktop-2026-05-04.png",
+      "bytes": 1187218,
+      "sha256": "ed3c023abdd49ddf84b55d56a2335f5fd318c0044b07af7b546f919e176f77e6"
+    },
+    {
+      "path": "screenshots/improvement-pass-about-mobile-2026-05-04.png",
+      "bytes": 1121578,
+      "sha256": "351cedb8721c135021c4cbb16b30184ce4268a6519dea735434d9e096d0b2437"
+    },
+    {
+      "path": "screenshots/improvement-pass-contact-desktop-2026-05-04.png",
+      "bytes": 572861,
+      "sha256": "b819d02fe74acb59ec551289bbb085c90e2adcc061bdbd78e47e50661a456b9a"
+    },
+    {
+      "path": "screenshots/improvement-pass-contact-mobile-2026-05-04.png",
+      "bytes": 474058,
+      "sha256": "1de260efdd300d07176e24434fe111a0b786fb9f3d0d249364da6f60c084ff69"
+    },
+    {
+      "path": "screenshots/improvement-pass-home-desktop-2026-05-04.png",
+      "bytes": 979511,
+      "sha256": "01c7f409f04a5cb0bef5aa70d245b096c2dff15820a2bf6ef9e5d7ca88ae1ec9"
+    },
+    {
+      "path": "screenshots/improvement-pass-home-mobile-2026-05-04.png",
+      "bytes": 1132417,
+      "sha256": "e230f46025a23fa18411add4f8d7cb89d67da4af5c09209a358da4acd3739959"
+    },
+    {
+      "path": "screenshots/improvement-pass-menu-desktop-2026-05-04.png",
+      "bytes": 677564,
+      "sha256": "761ee9fb35b1f6a4627b6140bd8e9146f653b96923b17765e0a63cf7787669b1"
+    },
+    {
+      "path": "screenshots/improvement-pass-menu-mobile-2026-05-04.png",
+      "bytes": 1039042,
+      "sha256": "37b225cfe5823b22c33564e53b8925af3f108746f2f760552b1e9a9474e24027"
+    }
+  ]
+}

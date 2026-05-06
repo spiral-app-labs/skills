@@ -1,0 +1,42 @@
+{
+  "capturedAt": "2026-05-05T10:14:10.787Z",
+  "url": "http://127.0.0.1:3072",
+  "captures": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-desktop-2026-05-05.png",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-desktop-2026-05-05.txt"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/preview-home-mobile-2026-05-05.png",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/preview-home-mobile-2026-05-05.txt"
+    },
+    {
+      "route": "/menu",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-desktop-2026-05-05.png",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-desktop-2026-05-05.txt"
+    },
+    {
+      "route": "/menu",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/preview-menu-mobile-2026-05-05.png",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/preview-menu-mobile-2026-05-05.txt"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-desktop-2026-05-05.png",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-desktop-2026-05-05.txt"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/preview-contact-mobile-2026-05-05.png",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/preview-contact-mobile-2026-05-05.txt"
+    }
+  ]
+}

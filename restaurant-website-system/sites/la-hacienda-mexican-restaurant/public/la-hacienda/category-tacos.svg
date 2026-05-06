@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#d9b36b"/>
+  <rect x="54" y="54" width="692" height="492" rx="28" fill="#1b1712"/>
+  <text x="100" y="170" fill="#f0cf9c" font-size="70" font-family="Georgia, serif">Tacos</text>
+  <text x="100" y="250" fill="#f6efe4" font-size="34" font-family="Arial, sans-serif">Steak tacos, carnitas, al pastor,</text>
+  <text x="100" y="296" fill="#f6efe4" font-size="34" font-family="Arial, sans-serif">chips, pico, and green salsa</text>
+  <text x="100" y="410" fill="#d7c7b3" font-size="28" font-family="Arial, sans-serif">The menu can sell flavor faster</text>
+  <text x="100" y="450" fill="#d7c7b3" font-size="28" font-family="Arial, sans-serif">when favorites are easy to find.</text>
+</svg>

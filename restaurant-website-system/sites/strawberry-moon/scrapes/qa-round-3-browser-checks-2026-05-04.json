@@ -1,0 +1,152 @@
+{
+  "date": "2026-05-04",
+  "site_slug": "strawberry-moon",
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mc_parent_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "mc_qa3_child_task_id": "f2c92b69-6485-415e-b2c3-8c765f8b193b",
+  "local_preview_url": "http://127.0.0.1:3083",
+  "capture_method": "Headless Chrome via local CDP device metrics; OpenClaw browser direct navigation to localhost was blocked by browser policy, so host Chrome CDP was used for screenshot evidence.",
+  "commands": [
+    {
+      "command": "npm ci",
+      "status": "passed",
+      "notes": "111 packages installed; npm audit reported 1 moderate and 1 critical advisory inherited from the current Next.js stack."
+    },
+    {
+      "command": "npm run build",
+      "status": "passed"
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "passed"
+    },
+    {
+      "command": "npm run start -- --hostname 127.0.0.1 --port 3083",
+      "status": "passed"
+    },
+    {
+      "command": "Headless Chrome CDP screenshots at 1440x900 and 390x844",
+      "status": "passed"
+    }
+  ],
+  "route_checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "desktopScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+      "mobileScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+      "desktopMetrics": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "mobileMetrics": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "route": "/menu",
+      "status": 200,
+      "desktopScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+      "mobileScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+      "desktopMetrics": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "mobileMetrics": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "desktopScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+      "mobileScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+      "desktopMetrics": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "mobileMetrics": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "desktopScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+      "mobileScreenshot": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+      "desktopMetrics": {
+        "viewportWidth": 1440,
+        "documentScrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "mobileMetrics": {
+        "viewportWidth": 390,
+        "documentScrollWidth": 390,
+        "bodyScrollWidth": 390
+      }
+    }
+  ],
+  "api_checks": [
+    {
+      "route": "/api/concierge",
+      "method": "POST",
+      "payload": {
+        "question": "Can I reserve a table tonight?"
+      },
+      "status": 200,
+      "result": "truth-safe unsupported-intent response with call/official-site handoff; no reservation promise."
+    }
+  ],
+  "link_checks": {
+    "internal_routes": [
+      "/",
+      "/menu",
+      "/about",
+      "/contact"
+    ],
+    "phone": "tel:+18478655151",
+    "email": "mailto:thomasmalik830@gmail.com",
+    "directions": "https://www.google.com/maps/search/?api=1&query=204+S+Main+St+Wauconda+IL+60084",
+    "official_site": "https://strawberrymoonmartinisandmore.weebly.com/",
+    "events": "https://strawberrymoonmartinisandmore.weebly.com/events.html",
+    "book_an_event": "https://strawberrymoonmartinisandmore.weebly.com/bookanevent.html"
+  },
+  "visual_qa": {
+    "status": "passed",
+    "blocking_findings": [],
+    "fixes_applied_before_pass": [
+      "Regenerated mobile screenshots through CDP device metrics instead of UA-only screenshots, eliminating the false horizontal-overflow artifact.",
+      "Limited the fixed mobile Call/Directions rail to the homepage so it no longer covers menu/about/contact first-screen content.",
+      "Tightened the sticky rail height and truncated the factual status line on mobile.",
+      "Replaced contact eyebrow placeholder copy with customer-facing language.",
+      "Renamed awkward contact CTAs to Visit current site, See events page, and Book an event.",
+      "Changed the menu page display heading to Martinis & more to avoid duplicate Martini/Martinis headings."
+    ],
+    "non_blocking_notes": [
+      "Mobile nav wraps events onto a second line, which is acceptable at 390px. Some compact fact cards wrap across lines but remain legible."
+    ]
+  },
+  "screenshot_paths": [
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+  ],
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "mission_control_sync": "local-payload-only; remote API auth unavailable in this runtime"
+}

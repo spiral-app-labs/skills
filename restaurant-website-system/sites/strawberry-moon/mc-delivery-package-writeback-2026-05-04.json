@@ -1,0 +1,209 @@
+{
+  "package_stage": "packaging",
+  "package_status": "packaged_waiting_on_founder_and_mc_sync",
+  "site_slug": "strawberry-moon",
+  "mc_task_id": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "child_task_id": "b629a4f6-c8ff-40dc-a544-31456d20c630",
+  "qa_round_3_task_id": "f2c92b69-6485-415e-b2c3-8c765f8b193b",
+  "founder_gate_task_id": null,
+  "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "delivery_package_path": "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+  "checklist_markdown_path": "restaurant-website-system/sites/strawberry-moon/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/strawberry-moon/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+  "outreach_draft_path": "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+  "qa_round_paths": [
+    "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md"
+  ],
+  "preview_url": null,
+  "local_preview_url": "http://127.0.0.1:3083",
+  "vercel_check_url": "https://vercel.com/ethan-ethantalrejas-projects/skills/6YT3DtFeyx3S3hREGLuSEg7z81GW",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "screenshot_inventory": {
+    "date": "2026-05-04",
+    "site_slug": "strawberry-moon",
+    "lead_id": "af98b880-9351-4f00-b35b-253ad35570d9",
+    "note": "Screenshot PNGs are present in this packaging worktree under screenshots/ but ignored by repository policy (**/screenshots/). This manifest preserves exact paths, sizes, and hashes for MC/upload reconciliation.",
+    "screenshots": [
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-desktop.png",
+        "bytes": 776208,
+        "sha256": "650c4e980efb64e997c06a678155602a932bba1435aad40f97af066cb7ef98c9",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-mobile.png",
+        "bytes": 211100,
+        "sha256": "e913011b1d40b956666723a7dbe240540efff4181ddbc02b3dcc662cd8a03db1",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-desktop.png",
+        "bytes": 1819516,
+        "sha256": "9d12140e2a08c6b060a42fbb0e307bc7c01faf3372f36414cb5cb2115babb3dc",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-mobile.png",
+        "bytes": 279463,
+        "sha256": "96bda35b64b46da24e481a6e465fb9eb5d03502e27ececcfd5ace27824432c85",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png",
+        "bytes": 904406,
+        "sha256": "839b17dd1358edef606f4961a6eb336da6173f7b058352821d01f862d5a74744",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png",
+        "bytes": 765352,
+        "sha256": "266a0455df78cd01d4e2f64d36f9dbb17df41c394deda4ae7d9b27541cd9a422",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png",
+        "bytes": 1564482,
+        "sha256": "45cb33cc99aadb080ce3e2035e0bbd22b16d98a8dadde6b768ccaf4d0c9847a0",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png",
+        "bytes": 1200858,
+        "sha256": "a89b2b0319ae5eafdd135ffa83a6f0e30fafc7d13326a84f24e87b39e359e885",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-desktop-2026-05-04.png",
+        "bytes": 2371244,
+        "sha256": "c391d6ce81e7ed5abcabeda11217885e73a4fc7f677bc6ba693df33b1eb7e460",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-mobile-2026-05-04.png",
+        "bytes": 2376573,
+        "sha256": "636dcb19dee1c1c8845a9c665dbc8f8dfca8f5e504aaa7472b879f1802158dfa",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+        "bytes": 1418667,
+        "sha256": "ecb92cc7f35375e339fce926a871b24b5833ac997a82dd5785cb721803f43dd6",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "bytes": 2108646,
+        "sha256": "7b8da3a91627beeea801811030ae1122eaac28bafd621747d9fc6d1191b0cdf3",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+        "bytes": 1113502,
+        "sha256": "cd857798c42793282ef9c6c380ec1e6de66ae6f3460bdeca8ba588630b0dafe3",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "bytes": 1452491,
+        "sha256": "cf9d65ccceb9d2aa53f6ba262af5cbdea519635480383c55b7a937cb3945e091",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "bytes": 2623500,
+        "sha256": "be4883871695e256c6503bdafa7d1b656b46eb2468762c7b228d92bd8c68683c",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "bytes": 2790969,
+        "sha256": "12b52d442038e4b222db5570cae0d3cf7e4e6da8d791013dea9600e64768285f",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+        "bytes": 1373773,
+        "sha256": "ce5347bfb8187c9533f9cddaf9e07e79ba0b41474f8a51c19150f9c401f0ded5",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      },
+      {
+        "path": "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+        "bytes": 1803634,
+        "sha256": "77ebcfc147a26e79ae4e7bef347d0469c9ed12a39a59a9e29002b8aca143e2c6",
+        "present_in_packaging_worktree": true,
+        "git_tracking": "ignored_by_repo_gitignore_local_artifact"
+      }
+    ],
+    "counts": {
+      "total": 18,
+      "qa_round_3": 8,
+      "current_site": 4,
+      "google": 2,
+      "preview_or_qa2": 4
+    },
+    "created_at": "2026-05-04T23:35:52Z"
+  },
+  "passed_requirement_ids": [
+    "delivery-package"
+  ],
+  "pending_requirement_ids": [
+    "delivery-no-missing-evidence"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+    "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.json",
+    "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+    "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+    "restaurant-website-system/sites/strawberry-moon/source.md",
+    "restaurant-website-system/sites/strawberry-moon/audit.md",
+    "restaurant-website-system/sites/strawberry-moon/improvements.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-packaging-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json"
+  ],
+  "sync_status": "local_payload_only_pending_agency_api_auth",
+  "blockers": [
+    "Public preview URL is pending; Vercel check URL is not a client preview URL.",
+    "Screenshot PNGs are present locally but ignored by git and still need MC upload/mirroring.",
+    "Mission Control agency API auth unavailable; local payload recorded instead of remote sync.",
+    "Founder must create/configure the site-specific Anthropic key.",
+    "Founder must personally complete human review before ready_to_pitch can become true."
+  ],
+  "blocker": "Delivery package is assembled locally but cannot be treated as final delivery because public preview URL, MC evidence/screenshot mirroring, and founder-only gates remain incomplete.",
+  "heartbeat_summary": "Founder delivery package assembled locally with ready_to_pitch=false. Package includes checklist, pitch, battle cards, QA docs, screenshot inventory, outreach draft, and local Mission Control payloads. Public preview URL, MC sync, Anthropic key, and Ethan human review remain pending.",
+  "created_at": "2026-05-04T23:35:52Z"
+}

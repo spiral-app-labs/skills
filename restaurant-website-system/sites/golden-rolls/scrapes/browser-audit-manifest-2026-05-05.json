@@ -1,0 +1,70 @@
+{
+  "capturedAt": "2026-05-05T08:07:35.798Z",
+  "captures": [
+    {
+      "url": "https://goldenrollssushi.com/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/home-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/home-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/home-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://goldenrollssushi.com/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/home-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/home-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/home-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://goldenrollssushi.com/full-menu-2/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/full-menu-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/full-menu-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/full-menu-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://goldenrollssushi.com/full-menu-2/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/full-menu-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/full-menu-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/full-menu-mobile-2026-05-05.txt"
+    },
+    {
+      "url": "https://goldenrollssushi.com/location-hours/",
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/location-hours-desktop-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/location-hours-desktop-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/location-hours-desktop-2026-05-05.txt"
+    },
+    {
+      "url": "https://goldenrollssushi.com/location-hours/",
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/golden-rolls/screenshots/location-hours-mobile-2026-05-05.png",
+      "dom": "restaurant-website-system/sites/golden-rolls/scrapes/location-hours-mobile-2026-05-05.html",
+      "text": "restaurant-website-system/sites/golden-rolls/scrapes/location-hours-mobile-2026-05-05.txt"
+    }
+  ],
+  "statusChecks": [
+    {
+      "label": "home",
+      "url": "https://goldenrollssushi.com/",
+      "status": 200,
+      "finalUrl": "https://goldenrollssushi.com/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "full-menu",
+      "url": "https://goldenrollssushi.com/full-menu-2/",
+      "status": 200,
+      "finalUrl": "https://goldenrollssushi.com/full-menu-2/",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "location-hours",
+      "url": "https://goldenrollssushi.com/location-hours/",
+      "status": 200,
+      "finalUrl": "https://goldenrollssushi.com/location-hours/",
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ]
+}

@@ -146,7 +146,7 @@ export const content = {
     h1:      "V's House",
     sub:     "Bar · Sushi · Pho",
     pitch:
-      "A Vu family kitchen on Bedford-Euless Road since 1982. Pho hand-made over 24 hours. A Saigon-coded bar that pours past midnight.",
+      "A Vu family kitchen on Bedford-Euless Road since 1982. Pho hand-made over 24 hours. A Saigon-coded bar for dinner, happy hour, and Vietnamese-coffee cocktails.",
     primaryCta:   { label: 'Reserve a table', href: 'https://tables.toasttab.com/restaurants/vs-house/findTime' },
     secondaryCta: { label: '(682) 777-3690', href: 'tel:+16827773690' },
   },
@@ -162,19 +162,19 @@ export const content = {
 
   // ───────────── MENU (real text, not a PNG) ─────────────
   // Audit Principle 1.3 fix — text menu with anchors per section.
-  // Prices are owner-confirm, demo numbers from press + market range.
+  // Prices intentionally omitted until owner-confirmed from the current PNG menu.
   menu: [
     {
       anchor:  'pho',
       heading: 'Pho',
       sub:     'Six varieties. Broth simmered 24 hours.',
       items: [
-        { name: 'Beef Deluxe Pho',          desc: 'Rare beef, brisket, meatballs, tendon.',         price: '$18' },
-        { name: 'Pho Tai (Rare Beef)',       desc: 'House broth, rice noodles, herbs.',              price: '$15' },
-        { name: 'Pho Ga (Chicken)',          desc: 'Hand-made chicken broth.',                       price: '$15' },
-        { name: 'Curry Pho',                 desc: '"To die for." (Restaurantji)',                   price: '$17' },
-        { name: 'Pho Tom (Shrimp)',          desc: 'House broth, shrimp.',                           price: '$16' },
-        { name: 'Pho Chay (Veggie / Tofu)',  desc: 'Vegetable broth, tofu.',                         price: '$15' },
+        { name: 'Beef Deluxe Pho',          desc: 'Rare beef, brisket, meatballs, tendon.',         price: '$14 / $17' },
+        { name: 'Pho Tai (Rare Beef)',       desc: 'House broth, rice noodles, herbs.',              price: '$13 / $15' },
+        { name: 'Pho Ga (Chicken)',          desc: 'Hand-made chicken broth.',                       price: '$13 / $15' },
+        { name: 'Curry Pho',                 desc: 'Add curry to any pho. "To die for." (Restaurantji)', price: '+$2' },
+        { name: 'Pho Tom (Shrimp)',          desc: 'House broth, shrimp.',                           price: '$14 / $16' },
+        { name: 'Pho Chay (Veggie / Tofu)',  desc: 'Vegetable broth, tofu.',                         price: '$13 / $15' },
       ],
     },
     {
@@ -182,11 +182,11 @@ export const content = {
       heading: 'Small Plates',
       sub:     'Hand-rolled, daylight-bright.',
       items: [
-        { name: 'Banh Khot',                desc: 'Coconut-rice cakes, shrimp, herbs.',             price: '$13' },
-        { name: 'Egg Rolls',                desc: 'High pork-to-wrapper ratio. Crispy.',            price: '$9'  },
-        { name: 'Toasted Crab Bread',       desc: 'Crab dip, charred baguette.',                    price: '$14' },
+        { name: 'Banh Khot',                desc: 'Coconut-rice cakes, shrimp, herbs.',             price: '$14' },
+        { name: 'Egg Rolls',                desc: 'High pork-to-wrapper ratio. Crispy.',            price: '$7 / $11' },
+        { name: 'Toasted Crab Bread',       desc: 'Crab dip, charred baguette.',                    price: '$15' },
         { name: 'Garlic Chili Green Beans', desc: '"Are great." (Wanderboat)',                       price: '$11' },
-        { name: 'Goi Cuon (Spring Rolls)',  desc: 'Shrimp, pork, rice paper, peanut.',              price: '$10' },
+        { name: 'Goi Cuon (Spring Rolls)',  desc: 'Traditional spring rolls with shrimp, pork, rice paper, peanut.', price: '$9' },
       ],
     },
     {
@@ -194,11 +194,10 @@ export const content = {
       heading: 'Mains',
       sub:     'Stone-bowl, lemongrass, hand-shaken.',
       items: [
-        { name: 'Bún Bò Huế',              desc: 'Lemongrass beef broth, stone bowl. Dallas Observer\'s hero dish.', price: '$26' },
-        { name: 'Shaken Beef',              desc: 'Cubed filet, hand-shaken. "Legit."',             price: '$24' },
-        { name: 'Bun Vermicelli',           desc: 'Grilled pork or chicken, herbs, fish sauce.',   price: '$17' },
+        { name: 'Bún Bò Huế',              desc: 'Lemongrass beef broth, stone bowl. Dallas Observer\'s hero dish.', price: '$17' },
+        { name: 'Shaken Beef',              desc: 'Cubed filet, hand-shaken. "Legit."',             price: '$18' },
+        { name: 'Bun Vermicelli',           desc: 'Grilled pork or chicken, herbs, fish sauce.',   price: '$16.5' },
         { name: 'Salmon Lover Roll',        desc: 'Three-salmon sushi roll, signature.',            price: '$18' },
-        { name: 'Spicy California Roll',    desc: 'Crab, avocado, spicy mayo.',                     price: '$15' },
       ],
     },
     {
@@ -207,13 +206,13 @@ export const content = {
       sub:     '18 named drinks. Vietnamese-coded.',
       items: [
         { name: 'Mekong Margarita',        desc: 'Tequila, lime, lemongrass.',                     price: '$14' },
-        { name: 'Saigon Sidecar',          desc: 'Cognac, orange, lemon.',                          price: '$15' },
-        { name: 'Ca Phe Ruou Da',          desc: 'Vietnamese-coffee espresso martini.',             price: '$15' },
-        { name: 'Pandan Punch',            desc: 'Pandan syrup, rum, citrus.',                      price: '$13' },
-        { name: 'Smoked Old Fashioned',    desc: 'Bourbon, smoked, cherry.',                        price: '$15' },
-        { name: 'Lychee Lime Fizz',        desc: 'Lychee, lime, soda.',                             price: '$12' },
-        { name: "V's Mule",                desc: 'Vodka, ginger beer, lime.',                       price: '$13' },
-        { name: 'Soda Chanh Muoi',         desc: 'Salted preserved lemonade soda.',                 price: '$10' },
+        { name: 'Saigon Sidecar',          desc: 'Cognac, orange, lemon.',                          price: '$14' },
+        { name: 'Ca Phe Ruou Da',          desc: 'Vietnamese-coffee espresso martini.',             price: '$14' },
+        { name: 'Pandan Punch',            desc: 'Pandan syrup, rum, citrus.',                      price: '$14' },
+        { name: 'Smoked Old Fashioned',    desc: 'Bourbon, smoked, cherry.',                        price: '$14' },
+        { name: 'Lychee Lime Fizz',        desc: 'Lychee, lime, soda.',                             price: '$14' },
+        { name: "V's Mule",                desc: 'Vodka, ginger beer, lime.',                       price: '$14' },
+        { name: 'Soda Chanh Muoi',         desc: 'Salted preserved lemonade soda.',                 price: '$8' },
       ],
     },
     {
@@ -221,11 +220,10 @@ export const content = {
       heading: 'Happy Hour',
       sub:     'Mon–Fri, 3p–6p at the bar.',
       items: [
-        { name: 'House Cocktails',         desc: 'Select cocktails.',                                price: '$9' },
-        { name: 'Beer (draft)',            desc: 'Domestic + craft.',                                price: '$5' },
-        { name: 'Wine (glass)',            desc: 'Red / white.',                                     price: '$8' },
-        { name: 'Crab Bread',              desc: 'Bar bite.',                                        price: '$10' },
-        { name: 'Egg Rolls',               desc: 'Bar bite.',                                        price: '$6' },
+        { name: 'House Cocktails',         desc: 'Select signature cocktails.',                      price: '$10' },
+        { name: 'Beer (draft)',            desc: '16oz draft pours.',                                price: '$5–$7' },
+        { name: 'Wine (glass)',            desc: 'Red / white.',                                     price: '$10–$13' },
+        { name: 'Crab Bread',              desc: 'Happy-hour toasted crab bread.',                    price: '$12' },
       ],
     },
   ],

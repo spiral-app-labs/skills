@@ -1,0 +1,66 @@
+{
+  "round_number": 2,
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "findings": [
+    "The mobile sticky CTA rail took too much vertical space near the fold and its labels felt too small.",
+    "The hero/header stack stayed too tall on mobile, pushing conversion context below the fold.",
+    "The homepage DoorDash CTA read as lower priority than it should for a truthful online-order path.",
+    "The homepage proof pills looked tappable even though they were only supporting signals.",
+    "Menu rows felt cramped on mobile because the proof label and dotted leader competed with the item name.",
+    "About-page supporting copy near the fold needed more breathing room below the sticky header.",
+    "Contact-page imagery appeared before key visit details, and the hero copy still said \"Visit Marys.\"",
+    "Contact needed address, phone, hours, and directions surfaced earlier without inventing new claims.",
+    "Desktop sell-readiness still failed because several public pages used internal QA-style wording instead of customer-facing restaurant marketing."
+  ],
+  "fixes_applied": [
+    "Shortened the mobile sticky action rail, raised label contrast, and added simple icon cues while preserving truthful Menu, Order, Call, and Map actions.",
+    "Reduced mobile hero top/bottom padding, tightened plate overflow, and shortened compact hero spacing on subpages.",
+    "Promoted the truthful DoorDash CTA with a stronger accent treatment on the homepage only.",
+    "Restyled the homepage proof pills into quieter supporting badges so they no longer read like buttons.",
+    "Simplified mobile menu rows by stacking the proof label into a compact badge and hiding the dotted leader until desktop widths.",
+    "Reduced early about-page spacing so proof copy lands sooner below the sticky header.",
+    "Changed the contact hero copy to \"Visit Mary's on Cass Street\" and moved visit info cards ahead of decorative photos.",
+    "Added a third contact info card for public hours plus a directions CTA so practical details surface sooner on mobile.",
+    "Rewrote homepage, menu, about, contact, and footer copy to remove internal evidence-note phrasing, keep the main call path centered on (815) 337-2303, and preserve only verified restaurant facts."
+  ],
+  "screenshots": [
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_desktop_1440x900"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_desktop_1440x900"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_desktop_1440x900"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_desktop_1440x900"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_mobile_390x844"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_mobile_390x844"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_mobile_390x844"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
+      "status": "post_fix_recaptured_passed_visual_qa_mobile_390x844"
+    }
+  ],
+  "browser_checks": [
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-2-browser-checks-2026-05-04.json"
+  ],
+  "blocker": "Mission Control QA writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable; payload recorded locally only."
+}

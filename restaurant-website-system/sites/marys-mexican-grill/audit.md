@@ -9,20 +9,21 @@
 
 ## Inputs Collected
 
-- Current-site HTTP scrape stored at `scrapes/current-site-http.html`.
+- Current-site HTTP scrape stored at `scrapes/current-site-http.html`; OpenClaw browser DOM/text refresh stored at `scrapes/current-site-browser-dom-snapshot-2026-05-04.html` and `scrapes/current-site-browser-text-2026-05-04.txt`.
 - Current-site HTTP headers stored at `scrapes/current-site-http-headers.txt`.
 - Current-site HTTPS failure stored at `scrapes/current-site-https-error.txt`.
 - Mobile and desktop screenshots of the successfully fetched current HTTP page stored in `screenshots/`.
 - Restaurantji scrape stored at `scrapes/restaurantji.html`; visible public profile lists menu, hours, social links, photos, and reviews.
 - Restaurantji public photo/menu assets downloaded for audit-only inventory into `screenshots/restaurantji-photo-wide.jpg`, `screenshots/restaurantji-photo-menu-grid.jpg`, and `screenshots/restaurantji-menu-wide.jpg`.
 - External review/trust references checked: Restaurantji, Restaurant Guru, DoorDash, Roost scraped review snippets, and public search/crawler snippets for the official domain.
-- Direct Google Maps review packet was not available in this pass. Google-derived reputation was observed indirectly through Restaurant Guru and public snippets; no owner replies were visible.
+- Direct Google Maps reviews were captured in the OpenClaw browser on 2026-05-04 after clicking the **Highest rating** filter: `scrapes/google-reviews-highest-30.json`, `scrapes/google-reviews-highest-30.md`, `google-reviews-themes.md`, and `screenshots/google-reviews-highest-2026-05-04.png`.
+- The captured Google packet contains 30 written 5-star reviews; no owner replies were visible in the captured set.
 
 ## TL;DR
 
 Mary's is a strong lead because the restaurant has a healthy public reputation and enough visual/menu proof to make a good pitch, but the owned website path is in a broken operational state.
 
-The best pitch is: **your public profiles say Mary's has 4.8-star taco, tamale, ceviche, guacamole, and service love on the Woodstock Square; your own domain currently says "finish setting up your online ordering," sends people to a vendor phone number, and fails over HTTPS.**
+The best pitch is: **your public profiles say Mary's has 4.8-star taco, tamale, ceviche, guacamole, and service love on the Woodstock Square; your own domain currently says "Download the app to find restaurants near you" / "finish setting up your online ordering," sends people to a vendor setup phone number, and fails over HTTPS.**
 
 This should not be treated like a premium destination-dining fork. It wants a **casual Latin / Mexican, menu-first, order-ready site** with the restaurant name, hours, Cass Street location, menu, order path, and review proof in the first screen. Current catalog fit is `bamzi-01` hue-swap with some `pepper-01` conversion discipline; the better long-term answer is the dedicated Mexican / Latin casual template gap already noted in `template-inventory.md`.
 
@@ -35,13 +36,13 @@ This should not be treated like a premium destination-dining fork. It wants a **
 | Current platform / server | Static Apache page. HTTP headers show `Server: Apache/2.4.41 (Ubuntu)`, `HTTP/1.1 200 OK`, `Last-Modified: Sun, 29 Mar 2026 03:41:02 GMT`. |
 | HTTPS state | Broken from local test: `wrong version number`. A normal guest entering `https://` can fail before seeing anything useful. |
 | Live reliability | Curl succeeded after retry; one Playwright live screenshot attempt hit `net::ERR_CONNECTION_REFUSED`. Treat this as a reliability smell, not just a design problem. |
-| Current page title | `Finish Setting Up Your Online Ordering`. |
-| Visible brand on current site | `Fox Ordering`, not Mary's Mexican Grill. |
+| Current page title | `FromTheRestaurant | Find Restaurants Near You`. |
+| Visible brand on current site | `FROMTHERESTAURANT`, not Mary's Mexican Grill. |
 | Status pill | `Online ordering setup in progress`. |
 | Hero / heading | `Call to finish setting up your online ordering`. |
 | Hero subcopy | *"Your restaurant is almost ready to start taking direct online orders. Speak with our team to complete the final setup and go live."* |
 | Primary CTA | `Call 866-883-6967`, linking to `tel:8668836967`. This is a vendor setup phone number, not a restaurant guest CTA. |
-| Hours shown on current site | `Monday-Friday - Business hours`, apparently Fox Ordering support hours, not restaurant hours. |
+| Hours shown on current site | `Monday-Friday - Business hours`, apparently FromTheRestaurant support hours, not restaurant hours. |
 | Setup steps shown | `Quick call`, `Final setup`, `Start taking orders`. |
 | Restaurant address on current live HTTP page | Not present. |
 | Restaurant phone on current live HTTP page | Not present. |
@@ -65,7 +66,7 @@ This should not be treated like a premium destination-dining fork. It wants a **
 
 ### Mobile / Narrow-Viewport Failures
 
-1. **The first viewport belongs to Fox Ordering, not Mary's.** On a 390 x 844 viewport, the guest sees `Fox Ordering`, an orange setup status pill, and a setup-support call button. There is no restaurant name, food, address, rating, menu, or open-state confidence.
+1. **The first viewport belongs to FromTheRestaurant, not Mary's.** On a 390 x 844 viewport, the guest sees `FROMTHERESTAURANT`, an orange setup status pill, and a setup-support call button. There is no restaurant name, food, address, rating, menu, or open-state confidence.
 2. **The only prominent tap target calls the wrong party.** The CTA is `Call 866-883-6967`, which is not the restaurant guest phone path.
 3. **No high-intent restaurant actions exist.** A mobile guest cannot view a menu, order, call Mary's, get directions, check hours, or see the Woodstock Square location from the current page.
 4. **HTTPS fails before the page loads.** If the guest or browser upgrades to HTTPS, the site can fail at connection time.
@@ -177,7 +178,7 @@ Owner-response signal: no Google owner replies were observed. If replies exist, 
 
 **Principle 4.2 - BROKEN hours signal.** The current site shows `Monday-Friday - Business hours`, apparently vendor support hours. Restaurantji shows Mary's daily restaurant hours, but the owned site does not.
 
-**Principle 4.3 - BROKEN phone vs. widget routing.** The most prominent phone CTA calls Fox Ordering at 866-883-6967. Public restaurant profiles show `(815) 337-2303`, while indexed official copy shows `(815) 923-5240`. This is a conversion and NAP trust problem.
+**Principle 4.3 - BROKEN phone vs. widget routing.** The most prominent phone CTA calls FromTheRestaurant at 866-883-6967. Public restaurant profiles show `(815) 337-2303`, while indexed official copy shows `(815) 923-5240`. This is a conversion and NAP trust problem.
 
 **Principle 5.1 - BROKEN first-viewport floor.** The first viewport does not establish name, cuisine, neighborhood, open state, rating, menu, order, phone, or directions. It establishes only vendor setup status.
 
@@ -200,7 +201,7 @@ Owner-response signal: no Google owner replies were observed. If replies exist, 
 1. **The current owned path actively misroutes guests.** A guest looking for Mary's gets a vendor setup page and a vendor phone number. The rebuild turns the first screen into a real guest path: menu, order, call, directions, hours.
 2. **The public proof is strong but not owned.** Restaurantji and Restaurant Guru show 4.8-level reputation; DoorDash shows active order demand. The site should surface that trust before the customer leaves.
 3. **The dishes already have hooks.** Tacos, ceviche, tamales, guacamole, sauces, steak, shrimp, and chimichangas give the page concrete content. The rebuild can stop sounding generic immediately.
-4. **The mobile failure is pitch-visible.** The screenshot is simple for an owner to understand: the phone currently says Fox Ordering, not Mary's.
+4. **The mobile failure is pitch-visible.** The screenshot is simple for an owner to understand: the phone currently says FromTheRestaurant / setup flow, not Mary's.
 5. **The technical fix and design fix are the same business fix.** Fix HTTPS, fix NAP, restore canonical ordering, and lead with the restaurant's actual food and location.
 
 Pitch sentence: **Mary's already has the tacos, tamales, ceviche, guacamole, Martha-level service praise, and 4.8-star public proof; the rebuild makes the first tap say "Mary's Mexican Grill on Cass Street" instead of "finish setting up your online ordering."**
@@ -219,7 +220,7 @@ Pitch sentence: **Mary's already has the tacos, tamales, ceviche, guacamole, Mar
   },
   "cta_secondary": {
     "label": "Order Online",
-    "action": "open direct online ordering once Fox Ordering is live and verified"
+    "action": "open direct online ordering once FromTheRestaurant is live and verified"
   },
   "rationale": "Drawn from Restaurantji's dish praise, Restaurant Guru's 4.8 Google proof, DoorDash's active order demand, and the current mobile screenshot showing the wrong first tap."
 }
@@ -275,14 +276,14 @@ This pitch should be framed as rescue, not critique: "your reputation is strong;
 ### Data Unknowns
 
 - Confirm canonical phone: `(815) 337-2303` vs `(815) 923-5240`.
-- Confirm final ordering platform and whether Fox Ordering is intended to be used.
+- Confirm final ordering platform and whether FromTheRestaurant is intended to be used.
 - Confirm current hours; Restaurantji and indexed official copy differ on Sunday closing time.
 - Confirm owner name, Mary story, chef name, and whether Orfanel is still relevant.
 - Confirm whether they want DoorDash linked, direct ordering linked, or both.
 
 ### Reservation / Ordering Decision
 
-No reservation platform is needed unless the owner says dine-in reservations matter. Primary conversion should be **View Menu -> Order Online / Call / Directions**. Direct ordering should be preferred over marketplace ordering if Fox Ordering can be completed and SSL/NAP are fixed.
+No reservation platform is needed unless the owner says dine-in reservations matter. Primary conversion should be **View Menu -> Order Online / Call / Directions**. Direct ordering should be preferred over marketplace ordering if FromTheRestaurant can be completed and SSL/NAP are fixed.
 
 ### Status Footer
 

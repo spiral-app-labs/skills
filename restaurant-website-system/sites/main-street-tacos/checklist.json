@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "leadId": "51459758-7f1c-4137-a2c8-bb95386e2582",
+  "mcParentTaskId": "6eb6cf29-eaf5-4751-8aab-3dc5f827e40e",
+  "siteSlug": "main-street-tacos",
+  "templateSlug": "pepper-01",
+  "currentStage": "reviews",
+  "evidencePaths": [
+    "restaurant-website-system/sites/main-street-tacos/checklist.md",
+    "restaurant-website-system/sites/main-street-tacos/checklist.json",
+    "restaurant-website-system/sites/main-street-tacos/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/google-search-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantguru-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-city-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-city-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/menu-world-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/menu-world-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/screenshots/food96-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/main-street-tacos/scrapes/food96-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/main-street-tacos/browser-evidence-audit-2026-05-05.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Local browser audit evidence is complete and the next canonical gate is reviews, but Mission Control stage/requirement writeback could not be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit mc-build-writeback-auditing-complete-2026-05-05.json through the agency build writeback route before starting the reviews gate.",
+      "recordedAt": "2026-05-05T08:28:00.000Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead passed the restaurant lead-fit qualification gate",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Qualification list flags Main Street Tacos as a no-clear-owned-site prospect; source audit verified directory-led discovery with strong taco/order proof.",
+      "evidence": [
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+        "restaurant-website-system/sites/main-street-tacos/audit.md"
+      ]
+    },
+    {
+      "id": "current-site-audit",
+      "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Browser evidence captured on 2026-05-05: Google/local verification, generated/candidate-site captures, Restaurantji desktop/mobile, Restaurant Guru, and city-listing screenshots/text. The previous No supported browser found blocker is cleared locally.",
+      "evidence": [
+        "restaurant-website-system/sites/main-street-tacos/audit.md",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/browser-audit-manifest-2026-05-05.json",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/google-search-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/google-search-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/google-search-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-mobile-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-mobile-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantguru-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantguru-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/restaurantji-city-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/restaurantji-city-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/menu-world-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/menu-world-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/screenshots/food96-desktop-2026-05-05.png",
+        "restaurant-website-system/sites/main-street-tacos/scrapes/food96-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/main-street-tacos/browser-evidence-audit-2026-05-05.md"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route and modifiers are locked from the restaurant site router",
+      "qaState": "passed",
+      "required": true,
+      "notes": "Routed to pepper-01 for fast taco/order motion; core archetype: Cuisine-style warm casual neighborhood clarity.",
+      "evidence": [
+        "restaurant-website-system/sites/main-street-tacos/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with findings and fixes logged",
+      "qaState": "pending",
+      "required": true
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+      "qaState": "pending",
+      "required": true
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-05T08:28:00.000Z"
+}

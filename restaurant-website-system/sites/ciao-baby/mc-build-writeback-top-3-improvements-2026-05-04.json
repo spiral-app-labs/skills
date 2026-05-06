@@ -1,0 +1,49 @@
+{
+  "build_stage": "concierge",
+  "completed_stage": "top_3_improvements",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "top_three_improvements_path": "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+  "before_evidence": [
+    "restaurant-website-system/sites/ciao-baby/scrapes/first-preview-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-first-preview-2026-05-04.json"
+  ],
+  "after_evidence": [
+    "restaurant-website-system/sites/ciao-baby/scrapes/improvement-pass-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-improvement-pass-2026-05-04.json"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/first-preview-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/scrapes/improvement-pass-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-first-preview-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-improvement-pass-2026-05-04.json"
+  ],
+  "passed_requirement_ids": [
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence"
+  ],
+  "top_three": [
+    "Phone-first conversion instead of fake reservation expectation",
+    "Sourced review/menu proof instead of unsupported aggregate claims",
+    "Mobile trust polish around hours, footer, and contact hero readability"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "build": "passed",
+    "browser_preview_capture": "passed",
+    "horizontal_overflow_offenders": 0,
+    "visual_mobile_qa": "passed_no_blocker"
+  },
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Documented and completed Ciao Baby top-three improvements with before/after evidence: phone-first conversion, sourced review/menu proof, and mobile trust/readability polish."
+}

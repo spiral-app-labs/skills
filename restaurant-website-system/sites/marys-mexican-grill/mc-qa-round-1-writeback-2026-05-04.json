@@ -1,0 +1,46 @@
+{
+  "round_number": 1,
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "findings": [
+    "Mobile header CTA and nav treatment overflowed the right edge.",
+    "Hero eyebrow and headline clipped on narrow screens instead of wrapping safely.",
+    "Hero CTA row, meta badges, and quick-action cards were too wide for mobile gutters.",
+    "Bottom sticky action rail labels were too crowded and partially clipped on mobile.",
+    "The page needed an explicit no-horizontal-scroll guard and a more intentional first-screen hero height."
+  ],
+  "fixes_applied": [
+    "Compressed the mobile header to a compact brand-plus-menu CTA treatment.",
+    "Constrained hero typography and enabled safer wrapping for the eyebrow and headline.",
+    "Stacked hero CTAs and meta badges on small screens and tightened quick-action card spacing.",
+    "Reduced sticky action spacing and shortened the Directions label to Map for fit.",
+    "Locked root horizontal overflow and added mobile bottom padding for the sticky rail."
+  ],
+  "screenshots": [
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-desktop-2026-05-04.png",
+      "status": "post_fix_captured_playwright_desktop_1440x1200"
+    },
+    {
+      "path": "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-1-mobile-2026-05-04.png",
+      "status": "post_fix_captured_playwright_mobile_390x1200"
+    }
+  ],
+  "scrapes": [
+    "restaurant-website-system/sites/marys-mexican-grill/scrapes/qa-round-1-homepage-html-2026-05-04.html"
+  ],
+  "blocker": "Mission Control QA writeback is blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable; payload recorded locally only.",
+  "browser_checks": {
+    "desktop": {
+      "innerWidth": 1440,
+      "scrollWidth": 1440,
+      "bodyScrollWidth": 1440
+    },
+    "mobile": {
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "bodyScrollWidth": 390
+    }
+  }
+}

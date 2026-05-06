@@ -1,0 +1,39 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "mcParentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "qa_round_2",
+  "completedStage": "qa_round_1",
+  "status": "in_progress",
+  "templateSlug": "bamzi-01",
+  "passedRequirementIds": [
+    "qa-round-1"
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/qa-round-1-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/qa-round-1-dom-check-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-contact-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-contact-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-concierge-open-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/qa1-concierge-open-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  ],
+  "fixes": [
+    "Escaped broken SVG ampersands",
+    "Hid decorative menu/blog SVG cards on mobile and rendered visible decorative cards with object-contain",
+    "Rewrote internal/template labels into guest-facing copy",
+    "Reduced mobile concierge trigger prominence and position"
+  ],
+  "verification": [
+    "npm run build passed",
+    "Final DOM check found 0 overflow offenders and 0 visible broken images",
+    "Vision QA re-check found no true remaining mobile sellability blockers"
+  ],
+  "blocker": "Mission Control writeback still pending because agency API auth/base URL is unavailable in this runtime; local writeback payload prepared instead.",
+  "createdAt": "2026-05-05T13:39:00Z"
+}

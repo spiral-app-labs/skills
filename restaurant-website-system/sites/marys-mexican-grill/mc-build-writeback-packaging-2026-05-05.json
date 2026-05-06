@@ -1,0 +1,39 @@
+{
+  "build_stage": "packaging",
+  "site_slug": "marys-mexican-grill",
+  "template_slug": "bamzi-01",
+  "mc_task_id": "0ee079ce-2e26-4d44-8fdf-96e0db2e4047",
+  "checklist_markdown_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/marys-mexican-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/current-site-browser-dom-snapshot-2026-05-04.html",
+  "google_reviews_packet_path": "restaurant-website-system/sites/marys-mexican-grill/scrapes/google-reviews-highest-30.json",
+  "pitch_doc_path": "restaurant-website-system/sites/marys-mexican-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/marys-mexican-grill/battle-cards.md",
+  "vercel_preview_url": "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app",
+  "evidence_urls": [
+    "restaurant-website-system/sites/marys-mexican-grill/qa-round-2-screenshot-recapture-2026-05-05.md",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-desktop-contact-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-home-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-menu-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-about-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
+    "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
+    "restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json",
+    "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md",
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png"
+  ],
+  "artifact_urls": [
+    "https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app"
+  ],
+  "passed_requirement_ids": [
+    "qa-round-2",
+    "delivery-package"
+  ],
+  "blocker": "Delivery blocked: PR #19 preview rechecked 2026-05-06 and still returns HTTP/2 401 Authentication Required; Mission Control agency route is reachable at https://hq.ethantalreja.com but no bearer auth is configured (lead read HTTP/2 401); founder Anthropic key and Ethan human review remain pending.",
+  "heartbeat_summary": "Mary’s packaging evidence advanced again: verified all QA2 referenced screenshots are present/non-empty, recaptured the Vercel auth-wall preview evidence, and updated local checklist/delivery/QA3 artifacts. Final delivery remains blocked only by authenticated/public preview verification, founder Anthropic key, Ethan human review, and MC API credentials for this refresh.",
+  "mc_api_base_url": "https://hq.ethantalreja.com",
+  "updatedAt": "2026-05-06T05:52:19Z"
+}

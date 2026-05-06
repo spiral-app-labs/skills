@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1A0F0B"/>
+  <circle cx="280" cy="170" r="120" fill="#C84A1B" opacity=".18"/>
+  <circle cx="1340" cy="720" r="160" fill="#F6EBDD" opacity=".08"/>
+  <rect x="200" y="140" width="1200" height="620" rx="80" fill="#2D1B15" stroke="#E9D9C8" stroke-width="4"/>
+  <ellipse cx="800" cy="470" rx="420" ry="180" fill="#F6EBDD"/>
+  <path d="M470 450c90-90 210-130 330-130 100 0 200 28 288 92 36 26 80 92 80 148H470c0-46 2-72 0-110z" fill="#F0C16A"/>
+  <path d="M580 460c38-28 92-42 154-42 84 0 156 18 220 64 28 20 46 42 56 78H580c10-42 0-70 0-100z" fill="#7E4021"/>
+  <circle cx="640" cy="440" r="24" fill="#6F9B52"/>
+  <circle cx="710" cy="418" r="18" fill="#C84A1B"/>
+  <circle cx="785" cy="450" r="20" fill="#6F9B52"/>
+  <circle cx="865" cy="420" r="22" fill="#C84A1B"/>
+  <circle cx="938" cy="452" r="20" fill="#6F9B52"/>
+  <circle cx="1010" cy="432" r="17" fill="#C84A1B"/>
+  <rect x="1040" y="320" width="170" height="170" rx="30" fill="#F6EBDD"/>
+  <circle cx="1125" cy="405" r="54" fill="#C84A1B"/>
+  <circle cx="1125" cy="405" r="24" fill="#F0C16A"/>
+  <text x="800" y="745" fill="#F6EBDD" font-family="Georgia, serif" font-size="54" text-anchor="middle">Mary's Mexican Grill</text>
+  <text x="800" y="800" fill="#D5C3B7" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" letter-spacing="6">WOODSTOCK SQUARE PREVIEW</text>
+</svg>

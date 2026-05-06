@@ -10,9 +10,11 @@ Use after the route is locked.
 ## Command
 
 ```bash
-cd /Users/ethantalreja/skills/restaurant-website-system
+cd /Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system
 ./scripts/fork-template.sh --template gusto-01 --slug restaurant-slug
 ```
+
+Historical docs may reference `/Users/ethantalreja/skills/restaurant-website-system`; prefer the checked-out workspace path above unless that legacy path exists.
 
 Use `--force` only when Mission Control explicitly says to overwrite an existing local fork.
 

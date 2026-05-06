@@ -1,0 +1,1078 @@
+{
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "leadId": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mcParentTaskId": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "siteSlug": "ciao-baby",
+  "templateSlug": "gusto-01",
+  "currentStage": "packaging",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/ciao-baby/checklist.md",
+    "json": "restaurant-website-system/sites/ciao-baby/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/checklist.md",
+        "restaurant-website-system/sites/ciao-baby/checklist.json",
+        "Mission Control website workflow refresh returned ok for lead 8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/audit.md",
+        "restaurant-website-system/sites/ciao-baby/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/current-site-mobile-fold.png",
+        "restaurant-website-system/sites/ciao-baby/scrapes/current-site-browser-dom-snapshot.html",
+        "restaurant-website-system/sites/ciao-baby/scrapes/current-site-browser-text.txt",
+        "restaurant-website-system/sites/ciao-baby/screenshots/ciaobaby-net-shell-desktop-full.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/ciaobaby-net-shell-mobile-full.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/ciaobaby-net-shell-mobile-fold.png",
+        "restaurant-website-system/sites/ciao-baby/scrapes/ciaobaby-net-shell-browser-dom-snapshot.html",
+        "restaurant-website-system/sites/ciao-baby/scrapes/ciaobaby-net-shell-browser-text.txt"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/screenshots/google-reviews-highest.png",
+        "restaurant-website-system/sites/ciao-baby/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/ciao-baby/google-reviews-themes.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/routing-rationale.md",
+        "restaurant-website-system/sites/ciao-baby/.agency-template.json",
+        "restaurant-website-system/sites/ciao-baby/content.ts",
+        "restaurant-website-system/sites/ciao-baby/first-preview-build-notes.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/capture-preview-evidence.mjs",
+        "restaurant-website-system/sites/ciao-baby/scrapes/first-preview-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-first-preview-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/preview-contact-mobile-2026-05-04.png",
+        "npm ci; npm run typecheck; npm run build passed on 2026-05-04",
+        "Local preview URL during capture: http://127.0.0.1:3084",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-first-preview-2026-05-04.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/improvement-pass-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-improvement-pass-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/improvement-pass-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-improving-2026-05-04.json",
+        "npm run typecheck; npm run build passed on 2026-05-04 after improvement pass",
+        "Visual mobile QA found no blocker after second improvement capture"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/first-preview-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/scrapes/improvement-pass-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-first-preview-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-improvement-pass-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-top-3-improvements-2026-05-04.json",
+        "npm run typecheck; npm run build passed on 2026-05-04 after top-three implementation",
+        "Visual mobile QA found no blocker after second improvement capture"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/ciao-baby/app/api/concierge/route.ts",
+        "restaurant-website-system/sites/ciao-baby/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/ciao-baby/components/ContactPage.tsx",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/concierge-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-concierge-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshots/concierge-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/concierge-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-concierge-2026-05-04.json",
+        "node --experimental-strip-types smoke test against lib/concierge-kb.ts passed",
+        "POST /api/concierge reservation-refusal smoke test passed",
+        "npm run typecheck; npm run build passed on 2026-05-04 with dynamic /api/concierge route"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+        "restaurant-website-system/sites/ciao-baby/audit.md",
+        "restaurant-website-system/sites/ciao-baby/google-reviews-themes.md",
+        "restaurant-website-system/sites/ciao-baby/routing-rationale.md",
+        "restaurant-website-system/sites/ciao-baby/first-preview-build-notes.md",
+        "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/ciao-baby/scrapes/concierge-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/mc-pitch-writeback-2026-05-04.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/battle-cards.md",
+        "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+        "restaurant-website-system/sites/ciao-baby/audit.md",
+        "restaurant-website-system/sites/ciao-baby/google-reviews-themes.md",
+        "restaurant-website-system/sites/ciao-baby/content.ts",
+        "restaurant-website-system/sites/ciao-baby/improvement-pass-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/top-3-improvements-2026-05-04.md",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/ciao-baby/mc-battle-cards-writeback-2026-05-04.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/qa-round-1.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-1-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-1-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/components/AboutHeritageSplit.tsx",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-1-2026-05-04.json",
+        "npm run typecheck; npm run build passed on 2026-05-04 for QA round 1",
+        "POST /api/concierge reservation-refusal smoke test passed"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/qa-round-2.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-2-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-2-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-2-2026-05-04.json",
+        "npm run typecheck; npm run build passed on 2026-05-04 for QA round 2"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/qa-round-3.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-3-2026-05-04.json",
+        "npm run typecheck; npm run build passed on 2026-05-04 for QA round 3",
+        "Final visual sell-readiness QA passed with delivery caveats"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "pending",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/delivery-package.md",
+        "restaurant-website-system/sites/ciao-baby/outreach-draft.md",
+        "restaurant-website-system/sites/ciao-baby/pitch-doc.md",
+        "restaurant-website-system/sites/ciao-baby/battle-cards.md",
+        "restaurant-website-system/sites/ciao-baby/checklist.md",
+        "restaurant-website-system/sites/ciao-baby/checklist.json",
+        "restaurant-website-system/sites/ciao-baby/qa-round-1.md",
+        "restaurant-website-system/sites/ciao-baby/qa-round-2.md",
+        "restaurant-website-system/sites/ciao-baby/qa-round-3.md",
+        "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge.md",
+        "restaurant-website-system/sites/ciao-baby/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json",
+        "https://github.com/spiral-app-labs/skills/pull/28",
+        "https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app"
+      ],
+      "blocker": "Local delivery package is complete and PR #28 is open, but final delivery is blocked until a client-shareable public preview URL, Mission Control remote sync auth, and owner/founder verification are complete."
+    }
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/ciao-baby/checklist.md",
+    "restaurant-website-system/sites/ciao-baby/checklist.json",
+    "restaurant-website-system/sites/ciao-baby/audit.md",
+    "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md"
+  ],
+  "qaRounds": [],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": []
+  },
+  "blockers": [
+    {
+      "gate": "auditing",
+      "reason": "Browser screenshots/DOM snapshot still required for the canonical audit gate; OpenClaw browser cannot start on this host (No supported browser found).",
+      "nextUnblockAction": "Enable browser/Chromium capture for desktop and mobile official-site screenshots.",
+      "recordedAt": "2026-05-04T04:37:11.768256Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Exactly one archetype/template route is chosen and justified",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Routed to gusto-01, softened toward neighborhood Italian rather than upscale trattoria.",
+      "evidence": [
+        "restaurant-website-system/sites/ciao-baby/audit.md",
+        "restaurant-website-system/research/lead-qualification/woodstock-barrington-elgin-area-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "pending"
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building"
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving"
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving"
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving"
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements"
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements"
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements"
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge"
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge"
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge"
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "pending"
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "pending"
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "pending"
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "pending"
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging"
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T17:32:27.604Z",
+  "missionControlWritebacks": [
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-first-preview-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-improving-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-top-3-improvements-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-concierge-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-pitch-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-battle-cards-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-1-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-2-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-build-writeback-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/mc-delivery-package-writeback-2026-05-04.json"
+  ],
+  "lastUpdated": "2026-05-05T01:30:00Z",
+  "pullRequestUrl": "https://github.com/spiral-app-labs/skills/pull/28",
+  "vercelPrPreviewUrl": "https://skills-git-chore-ciao-baby-c92606-ethan-ethantalrejas-projects.vercel.app",
+  "publicPreviewUrl": null,
+  "publicPreviewBlocker": "Vercel PR preview deployed but currently returns authentication required, so it is not client-shareable yet."
+}

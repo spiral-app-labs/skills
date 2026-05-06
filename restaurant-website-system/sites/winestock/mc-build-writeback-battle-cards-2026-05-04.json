@@ -1,0 +1,33 @@
+{
+  "build_stage": "qa_round_1",
+  "site_slug": "winestock",
+  "template_slug": "bramble-01",
+  "lead_id": "7f1432ae-2553-442c-80ff-df58acb162ef",
+  "mc_task_id": "35f58383-0074-4a64-85cc-46ea2cfcd6bb",
+  "checklist_markdown_path": "restaurant-website-system/sites/winestock/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/winestock/checklist.json",
+  "battle_cards_path": "restaurant-website-system/sites/winestock/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/winestock/battle-cards.md",
+    "restaurant-website-system/sites/winestock/pitch-doc.md",
+    "restaurant-website-system/sites/winestock/checklist.md",
+    "restaurant-website-system/sites/winestock/routing.md",
+    "restaurant-website-system/sites/winestock/top-3-improvements-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/concierge-evidence-2026-05-04.md",
+    "restaurant-website-system/sites/winestock/scrapes/current-site-text.txt",
+    "restaurant-website-system/sites/winestock/scrapes/google-highest-30-2026-05-04.md"
+  ],
+  "passed_requirement_ids": [
+    "battle-cards"
+  ],
+  "verification": {
+    "json": "checklist and writeback payload valid JSON",
+    "truth_safety": "battle cards avoid fake reservations/order/pricing/provider/private-event/live-availability claims and list owner confirmations before launch"
+  },
+  "heartbeat_summary": "Winestock battle cards completed locally; next canonical stage is qa_round_1. MC sync remains blocked by missing agency auth.",
+  "blocker": {
+    "gate": "mission_control_sync",
+    "reason": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are not configured in this runtime.",
+    "next_unblock_action": "Retry this payload against the official agency Mission Control build API with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw."
+  }
+}

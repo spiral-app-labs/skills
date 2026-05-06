@@ -1,0 +1,52 @@
+{
+  "leadId": "7cba3fe2-8f65-4516-b46b-05c2c07ab235",
+  "parentTaskId": "fd7f4976-daac-42aa-8c9a-1ddb09a9d12f",
+  "siteSlug": "la-hacienda-mexican-restaurant",
+  "buildStage": "building",
+  "currentStage": "building",
+  "stageCompleted": "reviews",
+  "templateSlug": "bamzi-01",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "json": "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json"
+  },
+  "evidencePaths": [
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/audit.md",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/browser-audit-manifest-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/canva-menu-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.html",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.html",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/canva-menu-mobile-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/restaurantji-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/roost-proof-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/roost-proof-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-search-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/google-reviews-highest-30-written-2026-05-05.md",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/scrapes/google-reviews-highest-30-written-2026-05-05.json",
+    "restaurant-website-system/sites/la-hacienda-mexican-restaurant/screenshots/google-reviews-highest-2026-05-05.png"
+  ],
+  "passedRequirementIds": [
+    "lead-fit-qualified",
+    "current-site-audit",
+    "template-route-locked",
+    "google-reviews-highest-30"
+  ],
+  "blockers": [
+    {
+      "gate": "stage_writeback",
+      "reason": "Local audit and Google reviews evidence are complete, and local stage has advanced to building. Mission Control writeback still cannot be submitted because AGENCY_AUTONOMY_API_KEY and a trusted Mission Control base URL are unavailable in this runtime.",
+      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the latest La Hacienda build writeback payload through the agency build writeback route.",
+      "recordedAt": "2026-05-05T11:15:00.000Z"
+    }
+  ],
+  "notes": "Local browser evidence for the reviews gate is complete: Highest sort selected and 30 written Google reviews captured/summarized with screenshot evidence. Local workflow is ready for building/forking; MC writeback pending API auth/base URL.",
+  "updatedAt": "2026-05-05T11:15:00.000Z"
+}

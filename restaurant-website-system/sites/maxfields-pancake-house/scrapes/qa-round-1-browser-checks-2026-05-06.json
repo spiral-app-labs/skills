@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-06",
+  "siteSlug": "maxfields-pancake-house",
+  "stage": "qa_round_1",
+  "browserAvailability": "openclaw_parent_host_chrome_headless",
+  "status": "captured_after_worker_blocker",
+  "requestedScreenshotPaths": [
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png"
+  ],
+  "attempts": [
+    {
+      "step": "Browser plugin check",
+      "result": "blocked",
+      "details": "Browser plugin/skill is not available in this session, so Browser-path QA could not be used."
+    },
+    {
+      "step": "Local preview server",
+      "command": "npm run start -- --hostname 127.0.0.1 --port 3005",
+      "result": "blocked",
+      "details": "Sandbox denied localhost listen with `Error: listen EPERM: operation not permitted 127.0.0.1:3005`."
+    },
+    {
+      "step": "Playwright availability",
+      "command": "node -e \"require('playwright')\"",
+      "result": "blocked",
+      "details": "The `playwright` package is not installed in this site sandbox."
+    },
+    {
+      "step": "Puppeteer availability",
+      "command": "node -e \"require('puppeteer')\"",
+      "result": "blocked",
+      "details": "The `puppeteer` package is not installed in this site sandbox."
+    },
+    {
+      "step": "System browser binaries",
+      "command": "which chromium || which google-chrome",
+      "result": "blocked",
+      "details": "No system browser binary is available in the sandbox."
+    },
+    {
+      "step": "Parent host Chrome headless capture",
+      "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --headless=new --screenshot=<path> http://127.0.0.1:3026[/contact]",
+      "result": "passed",
+      "details": "After the Codex worker sandbox reported browser/localhost restrictions, the parent heartbeat started the local Next server on 127.0.0.1:3026 and captured desktop/mobile homepage/contact screenshots with the installed host Chrome binary."
+    }
+  ],
+  "fallbackEvidence": [
+    "restaurant-website-system/sites/maxfields-pancake-house/.next/server/app/index.html",
+    "restaurant-website-system/sites/maxfields-pancake-house/.next/server/app/contact.html",
+    "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+    "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+    "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png"
+  ],
+  "nextUnblockAction": "None for QA round 1 screenshots; all four requested screenshots were captured from the local Next build in the parent host environment. Preview access can still be Vercel-auth gated for external viewers.",
+  "capturedScreenshotPaths": [
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+    "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png"
+  ]
+}

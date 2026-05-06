@@ -1,0 +1,50 @@
+{
+  "build_stage": "packaging",
+  "completed_stage": "qa_round_3",
+  "site_slug": "ciao-baby",
+  "template_slug": "gusto-01",
+  "lead_id": "8a8ca9fc-9c6d-49a6-aaa4-f532feaf533a",
+  "mc_task_id": "2d9738de-cfb4-4528-a017-b49ec7119785",
+  "checklist_markdown_path": "restaurant-website-system/sites/ciao-baby/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/ciao-baby/checklist.json",
+  "qa_round_path": "restaurant-website-system/sites/ciao-baby/qa-round-3.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/ciao-baby/qa-round-3.md",
+    "restaurant-website-system/sites/ciao-baby/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshot-inventory-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/ciao-baby/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+  ],
+  "passed_requirement_ids": [
+    "qa-round-3"
+  ],
+  "fixes_applied": [
+    "Replaced contact iframe map embed with compact directions card to remove mobile dead space",
+    "Swapped contact hero image from awkward exterior/logo crop to dining-room image",
+    "Adjusted hours table row spacing/wrapping so Note and time text do not fuse",
+    "Changed `Italian and Americana dining` to `Italian-American dining`"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "build": "passed with dynamic /api/concierge route",
+    "browser_preview_capture": "passed",
+    "horizontal_overflow_offenders": 0,
+    "final_visual_sell_readiness": "passed_with_delivery_caveats"
+  },
+  "delivery_caveats": [
+    "Public preview URL still required",
+    "Mission Control remote sync pending official API auth",
+    "Owner/founder verification still required for preferred domain, exact current hours, and any changed menu pricing"
+  ],
+  "mission_control_remote_sync": {
+    "attempted": false,
+    "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unset in this runtime, so this payload is local-only until official Mission Control API auth is available. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Completed Ciao Baby QA round 3 locally. Final sell-readiness passed after fixing contact mobile spacing, contact hero crop, hours row copy spacing, and final copy polish. Local stage advanced to packaging; final delivery remains blocked on public preview URL, MC remote sync auth, and owner/founder verification."
+}

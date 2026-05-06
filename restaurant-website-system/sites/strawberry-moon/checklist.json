@@ -1,0 +1,1396 @@
+{
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "leadId": "af98b880-9351-4f00-b35b-253ad35570d9",
+  "mcParentTaskId": "216314e9-4af6-4f99-92ab-54e7912b9173",
+  "siteSlug": "strawberry-moon",
+  "templateSlug": "velvet-shaker-01",
+  "currentStage": "packaging",
+  "buildStage": "packaging",
+  "ready_to_pitch": false,
+  "anthropic_key_status": "pending_founder",
+  "human_review_status": "pending_founder",
+  "passedRequirementIds": [
+    "checklist-md",
+    "checklist-json",
+    "checklist-mc-sync",
+    "current-site-screenshots",
+    "current-site-scrape",
+    "current-site-opportunities",
+    "reviews-highest-filter",
+    "reviews-thirty-written",
+    "reviews-themes",
+    "template-route-locked",
+    "fork-built",
+    "specificity",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe",
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence",
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks",
+    "qa-round-1",
+    "qa-round-2",
+    "qa-round-3",
+    "delivery-package"
+  ],
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "json": "restaurant-website-system/sites/strawberry-moon/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "passed",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts",
+        "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-1-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-1-2026-05-04.json"
+      ],
+      "blocker": "Fresh localhost screenshots were blocked by sandbox listen EPERM on 127.0.0.1:3078; blocker documented in the QA1 browser checks payload."
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-2-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-2-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx"
+      ],
+      "blocker": "Fresh localhost screenshots were blocked by sandbox listen EPERM on 127.0.0.1:3078; blocker documented in the QA2 browser checks payload."
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "pending",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+        "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/checklist.md",
+        "restaurant-website-system/sites/strawberry-moon/checklist.json",
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-packaging-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/preview-smoke-evidence-2026-05-05.md"
+      ],
+      "blocker": {
+        "reason": "Delivery package is assembled locally, but the preview candidate returned HTTP 401 Authentication Required on 2026-05-05 and is not owner-shareable. MC API auth, site-specific Anthropic key, and Ethan human review are also still pending.",
+        "nextUnblockAction": "Provide a public preview URL or Vercel protection bypass, then mirror screenshot/package evidence to Mission Control and complete founder review.",
+        "updatedAt": "2026-05-05T07:35:00Z"
+      }
+    }
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/strawberry-moon/checklist.md",
+    "restaurant-website-system/sites/strawberry-moon/checklist.json",
+    "restaurant-website-system/sites/strawberry-moon/audit.md",
+    "restaurant-website-system/sites/strawberry-moon/source.md",
+    "restaurant-website-system/sites/strawberry-moon/content.ts",
+    "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-dom-snapshot.txt",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-dom.html",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-home-text.txt",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-dom.html",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-text.txt",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-desktop.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-home-mobile.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-desktop.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/current-events-mobile.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/google-profile-overview.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/google-reviews-highest.png",
+    "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-qa-round-1-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-1-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/preview-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+    "restaurant-website-system/sites/strawberry-moon/components/MinimalTextNav.tsx",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-2-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/components/CurtainImage.tsx",
+    "restaurant-website-system/sites/strawberry-moon/improvements.md",
+    "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+    "restaurant-website-system/sites/strawberry-moon/components/ScrollReveal.tsx",
+    "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+    "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts",
+    "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+    "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-concierge-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-pitch-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+    "restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-qa-round-2-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-2-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+    "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx",
+    "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+    "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+    "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+    "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-packaging-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json",
+    "restaurant-website-system/sites/strawberry-moon/preview-smoke-evidence-2026-05-05.md"
+  ],
+  "qaRounds": [
+    {
+      "round": 1,
+      "status": "passed",
+      "summary": "Canonical QA1 completed locally with build, sequential typecheck, route/link verification, and a documented localhost screenshot blocker.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-1-writeback-2026-05-04.json"
+      ]
+    },
+    {
+      "round": 2,
+      "status": "passed",
+      "summary": "Canonical QA2 completed locally with build/typecheck, mobile sticky CTA fix, built HTML route/link checks, and a documented localhost screenshot blocker.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-2-writeback-2026-05-04.json"
+      ]
+    },
+    {
+      "round": 3,
+      "status": "passed",
+      "summary": "Canonical QA3 completed locally with build/typecheck, local preview, desktop/mobile screenshots, final visual QA fixes, concierge safety check, and local MC payloads.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+      ]
+    }
+  ],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+    "battleCards": "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+    "outreachDraft": null,
+    "beforeAfterScreenshots": [],
+    "beforeAfterEvidence": [
+      "restaurant-website-system/sites/strawberry-moon/audit.md",
+      "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+      "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+      "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+      "restaurant-website-system/sites/strawberry-moon/content.ts",
+      "restaurant-website-system/sites/strawberry-moon/app/layout.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/about/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+      "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+      "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx"
+    ]
+  },
+  "blockers": [
+    {
+      "id": "founder-anthropic-key",
+      "stage": "packaging",
+      "status": "pending",
+      "reason": "Anthropic key status is founder-controlled and remains pending_founder.",
+      "updatedAt": "2026-05-04T23:35:52Z"
+    },
+    {
+      "id": "founder-human-review",
+      "stage": "packaging",
+      "status": "pending",
+      "reason": "Human review status is founder-controlled and remains pending_founder.",
+      "updatedAt": "2026-05-04T23:35:52Z"
+    },
+    {
+      "id": "mission-control-auth",
+      "stage": "packaging",
+      "status": "pending",
+      "reason": "Mission Control agency API auth is unavailable in this runtime, so sync is recorded through local writeback payloads only.",
+      "updatedAt": "2026-05-04T23:35:52Z"
+    },
+    {
+      "id": "qa2-browser-screenshots",
+      "stage": "qa_round_2",
+      "status": "documented",
+      "reason": "Sandbox policy blocks localhost binding, so fresh QA2 browser screenshots could not be captured in this runtime."
+    },
+    {
+      "id": "public-preview-url",
+      "stage": "packaging",
+      "status": "pending",
+      "reason": "Preview candidate returned HTTP 401 Authentication Required on 2026-05-05; not owner-shareable yet.",
+      "updatedAt": "2026-05-04T23:35:52Z",
+      "evidence": "restaurant-website-system/sites/strawberry-moon/preview-smoke-evidence-2026-05-05.md"
+    },
+    {
+      "id": "screenshot-mc-sync",
+      "stage": "packaging",
+      "status": "pending",
+      "reason": "Screenshot PNGs are present locally but ignored by git and still need Mission Control upload/mirroring.",
+      "updatedAt": "2026-05-04T23:35:52Z"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed"
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed"
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "status": "passed"
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed"
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed"
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed"
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed"
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed"
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed"
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Exactly one archetype/template route is chosen and justified",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Routed to velvet-shaker-01 warmed down; core archetype is Bramble for cozy martini lounge/date-night personality, not tavern/fine-dining.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "notes": "Velvet-shaker-01 fork now exists in the Strawberry Moon site folder with official-site imagery, factual martini/lounge/live-music content, honest handoff links, and no fake booking or price claims. Canonical QA1 reran npm ci, npm run build, and npm run typecheck successfully in this worktree on 2026-05-04.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/app/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/about/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx"
+      ]
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed"
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed"
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed"
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Top 3 improvements are named in improvements.md, implemented in the site/content/components, and backed by QA/screenshot before-after evidence.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Top 3 improvements are named in improvements.md, implemented in the site/content/components, and backed by QA/screenshot before-after evidence.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "notes": "Top 3 improvements are named in improvements.md, implemented in the site/content/components, and backed by QA/screenshot before-after evidence.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "The concierge knowledge base is deterministic and limited to verified facts from source.md, audit.md, the current events scrape, and the Google review packet.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/current-site-events-text.txt",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ]
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "The deterministic concierge resolver used by the route was smoke-tested with factual and refusal prompts, and the transcript is recorded under the site folder.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/app/api/concierge/route.ts"
+      ]
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "notes": "Unsupported asks are routed to a refusal-plus-handoff response instead of speculative answers, and the UI can render safely without any external model key.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/lib/concierge-kb.ts",
+        "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md"
+      ]
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "The pitch brief is specific to Strawberry Moon's Wauconda martini-lounge identity, current Weebly conversion leaks, live-music cadence, and review-backed reasons guests already love the venue.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ]
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "The pitch brief frames the current site as a thin brochure and the redesign as a preserve-stack upgrade that sells the night before guests arrive.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md"
+      ]
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "notes": "The pitch brief links the audit, review packet, source/content basis, core demo pages, QA passes, and concierge proof.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/app/layout.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/about/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/contact/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/MassiveWordmarkHero.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/TruthfulConcierge.tsx",
+        "restaurant-website-system/sites/strawberry-moon/mc-pitch-writeback-2026-05-04.json"
+      ]
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "battle-cards.md includes seven Strawberry Moon-specific owner objections with calm responses and traceable proof references.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json"
+      ]
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "battle-cards.md includes a step-by-step demo path plus owner-safe language and proof points for home, about, events, and contact/concierge.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md"
+      ]
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "notes": "battle-cards.md calls out soft-redesign posture, pending founder gates, MC auth limits, and operational claims the demo must not make.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/mc-battle-cards-writeback-2026-05-04.json"
+      ]
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "passed",
+      "notes": "Canonical QA1 completed locally on 2026-05-04. Build and sequential typecheck passed, route metadata and link handoffs were verified from built HTML, and the sandbox localhost screenshot blocker was recorded truthfully in the QA1 browser checks payload.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-1-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-1-2026-05-04.json"
+      ]
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "passed",
+      "notes": "Canonical QA2 completed locally on 2026-05-04. Build and typecheck passed; mobile conversion was improved with a sticky mobile CTA; route/link handoffs were verified from built HTML; sandbox blocked fresh localhost screenshots and that blocker is recorded in the QA2 browser checks payload.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-2-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-2-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx"
+      ]
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "passed",
+      "notes": "Canonical QA3 completed locally on 2026-05-04. Build/typecheck passed; local production preview served; desktop/mobile screenshots captured via Chrome CDP; final visual QA passed after sticky CTA/contact/menu polish fixes; MC remote sync remains pending auth but local payloads are present.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-qa-round-3-writeback-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-qa-round-3-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/components/MobileStickyCta.tsx",
+        "restaurant-website-system/sites/strawberry-moon/components/WordmarkBookendLayout.tsx",
+        "restaurant-website-system/sites/strawberry-moon/app/menu/page.tsx",
+        "restaurant-website-system/sites/strawberry-moon/content.ts",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-home-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-menu-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-about-mobile-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-desktop-2026-05-04.png",
+        "restaurant-website-system/sites/strawberry-moon/screenshots/qa-round-3-contact-mobile-2026-05-04.png"
+      ]
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "passed",
+      "notes": "Delivery package, outreach draft, screenshot inventory, checklist paths, pitch doc, battle cards, QA docs, and local MC payloads are assembled locally. Public preview URL and remote MC sync remain pending.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+        "restaurant-website-system/sites/strawberry-moon/outreach-draft.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/checklist.md",
+        "restaurant-website-system/sites/strawberry-moon/checklist.json",
+        "restaurant-website-system/sites/strawberry-moon/pitch-doc.md",
+        "restaurant-website-system/sites/strawberry-moon/battle-cards.md",
+        "restaurant-website-system/sites/strawberry-moon/source.md",
+        "restaurant-website-system/sites/strawberry-moon/audit.md",
+        "restaurant-website-system/sites/strawberry-moon/improvements.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge.md",
+        "restaurant-website-system/sites/strawberry-moon/ai-concierge-transcript.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-1.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-2.md",
+        "restaurant-website-system/sites/strawberry-moon/qa-round-3.md",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-1-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-2-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/scrapes/qa-round-3-browser-checks-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-build-writeback-packaging-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json"
+      ]
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "pending",
+      "notes": "Still blocked because public preview URL is pending, screenshots must be uploaded/mirrored to MC, MC agency API auth is unavailable in this runtime, and founder-only Anthropic/human-review gates remain pending.",
+      "evidence": [
+        "restaurant-website-system/sites/strawberry-moon/delivery-package.md",
+        "restaurant-website-system/sites/strawberry-moon/screenshot-inventory-2026-05-04.json",
+        "restaurant-website-system/sites/strawberry-moon/mc-delivery-package-writeback-2026-05-04.json"
+      ]
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control lead has a simple sales status and current metadata.build_stage.",
+    "Mission Control parent task metadata.requirements mirrors this checklist.",
+    "All required checklist rows are passed.",
+    "Three QA rounds are logged with screenshot evidence.",
+    "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
+  ],
+  "updatedAt": "2026-05-04T23:35:52Z",
+  "lastMissionControlHeartbeatId": "d5b257ed-39f3-4118-b771-47d425138214",
+  "lastMissionControlActivityId": "df85ea2f-ccb0-424d-a9e3-2c584c1ddd17",
+  "nextStep": "packaging_waiting_on_founder_and_mc_sync"
+}

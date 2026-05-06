@@ -1,0 +1,207 @@
+<html lang="en"><head>
+<title>Sushi U | Online Ordering Menu</title>
+<meta name="keywords" content="Sushi U, Restaurnat, Japanese Restaurant, Japanese, Menu">
+<meta name="description" content="Sushi U, 5899 North West Highway Unit A, Crystal Lake, IL 60014, We serve food for Take Out, Eat in">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link type="text/css" rel="stylesheet" href="css/cm-overlay.css">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/font-awesome.css" rel="stylesheet">
+<script src="js/jquery-2.2.3.min.js"></script>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+</head>
+
+<body>
+	<!-- banner -->
+	<div id="home" class="banner">
+		<div class="banner-agileinfo">
+			<!-- header -->
+			<div class="header">
+				<div class="container nav_order">
+					<div class="menu">
+						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+						<nav>
+							<a href="#home" class="active scroll">Home</a>
+							<a href="#about" class="scroll">About Us</a>
+							<a href="https://order.sushiucrystallake.com/">Order Online</a>
+<!--							<a href="##">Menu</a>-->
+							<a href="#services" class="scroll">Gallery</a>
+							<a href="#contact" class="scroll">Contact</a>
+						</nav>
+						<script>
+							(function ($) {
+								// Menu Functions
+								$(document).ready(function () {
+									$('#menuToggle').click(function (e) {
+										var $parent = $(this).parent('.menu');
+										$parent.toggleClass("open");
+										var navState = $parent.hasClass('open') ? "hide" : "show";
+										$(this).attr("title", navState + " navigation");
+										// Set the timeout to the animation length in the CSS.
+										setTimeout(function () {
+											console.log("timeout set");
+											$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+										}, 200);
+										e.preventDefault();
+									});
+								});
+							})(jQuery);
+						</script>
+
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //header -->
+			<div class="banner-text menu_a">
+				<div class="container">
+					<div><img src="images/logo.png" style="width: 100%; max-width: 480px;"></div>
+					<div style="margin: 0em auto 1em; font-size: 1.6em; color: #cdcdcd;">
+						<p style="font-size: 1.2em; line-height: 1.2em; color: #fff;"><strong>Tel: <a style="color: #fff;" href="tel:+1 815-893-6338">815-893-6338</a></strong></p>				
+						Dine In &amp; Pick Up
+					</div>				
+					<div style="margin: 1em auto 0;"><a href="images/menu26.3.11.pdf" class="buy btn-wayra" style="font-size: 1.4em;margin: 1em auto 0;">Our Menu</a></div>
+					<div style="margin: 1em auto 0;"><a href="https://order.sushiucrystallake.com/" class="buy btn-wayra" style="font-size: 1.4em;margin: 1em auto 0;">Order Online</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- about -->
+	<div class="agile-about w3ls-section text-center" id="about">
+		<div class="container">
+			<h3 class="agileits-title">About Us</h3>
+			<div class="agileits-about-grid">
+				<img src="images/news.jpg" alt="" style="width: 100%; max-width: 480px;"><br><br>
+				<p style="font-size: 1.6em; line-height: 1.3em;"><strong>Welcome to our Restaurant!</strong></p>
+				<p style="font-size: 1.3em; line-height: 1.3em;">We pick ingredients carefully and use only the freshest and natural ones to prepare every dish, and have been trying to cook them in a healthier way to provide the most nutritious food.
+				</p><br>		
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- services -->
+	<div class="w3ls-section services" id="services">
+		<div class="container">
+			<h3 class="agileits-title text-center">Gallery</h3>
+		</div>
+		<div class="container">
+			<img style="margin-bottom: 20px;" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contact-icon-wthree" src="images/Gallery/g01.jpg">
+			<img style="margin-bottom: 20px;" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contact-icon-wthree" src="images/Gallery/g02.jpg">
+			<img style="margin-bottom: 20px;" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contact-icon-wthree" src="images/Gallery/g03.jpg">
+			<img style="margin-bottom: 20px;" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contact-icon-wthree" src="images/Gallery/g04.jpg">
+			<img style="margin-bottom: 20px;" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contact-icon-wthree" src="images/Gallery/g05.jpg">
+			<img style="margin-bottom: 20px;" class="col-xs-12 col-sm-6 col-md-6 col-lg-4 contact-icon-wthree" src="images/Gallery/g06.jpg">											
+		</div>
+
+	</div>
+	<!-- //services -->
+	<!-- contact -->
+	<div class="contact-w3-agileits w3ls-section" id="contact">
+		<div class="container">
+			<h3 class="agileits-title cont-w3l">contact</h3>
+			<div class="contact-main-w3ls">
+				<div class="col-md-6  contact-left-w3ls">
+					<div class="call contact-grid-agileinfo">
+						<div class="col-md-12 col-sm-12 col-xs-12 contact-icon-wthree">
+						<h4>Japanese Restaurant<br>
+							Dine In &amp; Take Out<br><br>
+							<a href="tel:+1 815-893-6338">815-893-6338</a><br>
+						</h4>							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				
+					<div class="mail contact-grid-agileinfo ">
+					
+						<div class="col-md-12 col-sm-12 col-xs-12 contact-text-agileinfo">
+						
+							<span style="color: #f9c14b;font-size: 18px;font-weight: 800;">Monday Closed</span><a></a><br>
+
+							<span style="color: #f9c14b;font-size: 18px;font-weight: 800;">Tues..-Thur.</span><a> 11:00am-9:30pm</a><br>
+							<span style="color: #f9c14b;font-size: 18px;font-weight: 800;">Fri.-Sat.</span><a> 11:00am-10:00pm</a><br>
+							<span style="color: #f9c14b;font-size: 18px;font-weight: 800;">Sunday</span><a> 12:00noon-9:00pm</a><br>
+<!--							<a style="color: red;font-size: 18px;font-weight: 800;"> Tuesday Closed</a><br>-->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					<div class="visit wthree-social-icons contact-grid-agileinfo">
+						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
+							<h4>Address</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
+							<p>5899 North West Highway Unit A, Crystal Lake, IL 60014
+							</p>
+						</div>
+						<div class="clearfix"></div>
+					
+					</div>
+				</div>
+				<div class="contact-main">
+					<div class="col-md-6 agileits-main-right">					
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d738.6184214442804!2d-88.31427872100424!3d42.22569219363417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f72b29d384d13%3A0x8bd792051020b609!2s5899%20Northwest%20Hwy%20a%2C%20Crystal%20Lake%2C%20IL%2060014%E7%BE%8E%E5%9B%BD!5e0!3m2!1szh-CN!2shk!4v1640225070626!5m2!1szh-CN!2shk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>					
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+	<div class="agileits_w3layouts-footer">
+		<p>Copyright Sushi U All Right Reserved. Powered by <a href="http://www.honorpos.com/" target="_blank">Honorpos</a>.</p>
+	</div>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
+
+<a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a></body></html>

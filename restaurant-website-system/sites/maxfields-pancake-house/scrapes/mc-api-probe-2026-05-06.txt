@@ -1,0 +1,11 @@
+=== env presence ===
+AGENCY_AUTONOMY_API_KEY=missing
+OPENCLAW_WEBHOOK_SECRET=missing
+NEXT_PUBLIC_APP_URL=missing
+=== MC API probes ===
+http://localhost:3010 => 401
+{"ok":false,"error":"Unauthorized."}
+http://localhost:3000 => 000
+{"ok":false,"error":"Unauthorized."}
+https://hq.ethantalreja.com => 401
+{"ok":false,"error":"Unauthorized."}

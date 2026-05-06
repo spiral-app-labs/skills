@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-05-05T12:03:00Z",
+  "viewport": "390x1400 mobile emulation",
+  "results": [
+    {
+      "route": "/",
+      "viewportWidth": 390,
+      "bodyScrollWidth": 390,
+      "documentScrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "route": "/menu",
+      "viewportWidth": 390,
+      "bodyScrollWidth": 390,
+      "documentScrollWidth": 390,
+      "offenders": []
+    },
+    {
+      "route": "/contact",
+      "viewportWidth": 390,
+      "bodyScrollWidth": 390,
+      "documentScrollWidth": 390,
+      "offenders": []
+    }
+  ]
+}

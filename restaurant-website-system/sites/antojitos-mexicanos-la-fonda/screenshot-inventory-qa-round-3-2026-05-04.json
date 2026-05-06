@@ -1,0 +1,32 @@
+[
+  {
+    "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-desktop-full.png",
+    "bytes": 128905,
+    "sha256": "a3e77673a546ef4f6de191fff87ed9eaedbb777be0a447a8666e451ba68465c4"
+  },
+  {
+    "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/about-mobile-full.png",
+    "bytes": 417847,
+    "sha256": "48e14490ae3627b032f64a8ef331273194798ec19dd83ccc1f4ac68c85d8e528"
+  },
+  {
+    "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-desktop-full.png",
+    "bytes": 487039,
+    "sha256": "6adb55a3976763480aa807186e169bc612afa05f0bf621cc3ca555d2fbe564a7"
+  },
+  {
+    "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/contact-mobile-full.png",
+    "bytes": 766978,
+    "sha256": "c41344d49e6a125c8e766b0c5b60dd899525dc9fe9c89a8cdaf251669fd1e7e8"
+  },
+  {
+    "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-desktop-full.png",
+    "bytes": 849552,
+    "sha256": "5fae7f69b8cb59eaf47bce697b855898f36aef84b64759f15b97f2912a043b14"
+  },
+  {
+    "path": "restaurant-website-system/sites/antojitos-mexicanos-la-fonda/screenshots/qa-round-3-2026-05-04/home-mobile-full.png",
+    "bytes": 2989290,
+    "sha256": "f298bb21af2a15590d016d5daf58e06374e947512e06c452ad8be69d3d6cafed"
+  }
+]

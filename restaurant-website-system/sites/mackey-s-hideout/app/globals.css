@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: theme('colors.bg-cream');
+  color: theme('colors.text-dark');
+  font-family: theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+h1, h2, h3, h4 {
+  font-family: theme('fontFamily.display');
+  font-weight: 300;
+  margin: 0;
+}
+
+.text-address,
+.text-hero-wordmark,
+.text-page-title,
+.text-section-h1,
+.text-tagline-h2,
+.text-body-h3,
+.text-marquee-item {
+  text-transform: uppercase;
+}
+
+* { box-sizing: border-box; }
+
+.mackeys-tagline-copy {
+  width: calc(100vw - 48px);
+  max-width: 342px;
+  margin-left: 24px;
+  margin-right: 24px;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .mackeys-tagline-copy {
+    width: auto;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
