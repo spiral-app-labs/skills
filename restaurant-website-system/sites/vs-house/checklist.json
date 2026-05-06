@@ -29,7 +29,9 @@
     "restaurant-website-system/sites/vs-house/components/AskConcierge.tsx",
     "restaurant-website-system/sites/vs-house/preview-smoke-evidence.md",
     "restaurant-website-system/sites/vs-house/mc-writeback-payload-2026-05-04.json",
-    "restaurant-website-system/sites/vs-house/mc-writeback-blocker.md"
+    "restaurant-website-system/sites/vs-house/mc-writeback-blocker.md",
+    "restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md",
+    "restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md"
   ],
   "qaRounds": [
     {
@@ -76,6 +78,20 @@
       "reason": "Browser screenshot blocker is resolved locally with full-page desktop/mobile captures. Delivery remains blocked because the Vercel preview is protected by Authentication Required (401) and this OpenClaw runtime lacks AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET for authenticated Mission Control lead/build/QA writeback.",
       "recordedAt": "2026-05-05T01:44:00Z",
       "nextUnblockAction": "Provide an owner-shareable/public preview or Vercel bypass token, and configure agency API auth so the prepared payload can be mirrored to Mission Control."
+    },
+    {
+      "gate": "preview_access_recheck",
+      "reason": "PR #1 preview rechecked 2026-05-06: GET / still returned HTTP/2 401 and POST /api/chat returned 401 from Vercel deployment protection; not owner-shareable or smoke-testable.",
+      "nextUnblockAction": "Provide public/client-safe preview URL or Vercel protection bypass, then rerun no-cookie GET / and POST /api/chat smoke tests.",
+      "recordedAt": "2026-05-06T09:39:40Z",
+      "evidence": "restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md"
+    },
+    {
+      "gate": "mc_api_bearer_auth",
+      "reason": "Mission Control lead route is reachable at https://hq.ethantalreja.com but returned HTTP/2 401 without bearer auth; build route now returns HTTP/2 405 for GET, confirming route exists but requires method/auth.",
+      "nextUnblockAction": "Configure agency bearer auth for OpenClaw, then submit mc-writeback-payload-2026-05-04.json through the official agency API.",
+      "recordedAt": "2026-05-06T09:39:41Z",
+      "evidence": "restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md"
     }
   ],
   "requirements": [
@@ -220,7 +236,7 @@
     "Three QA rounds are logged with screenshot evidence.",
     "Preview URL, pitch doc, outreach draft, and delivery evidence are attached."
   ],
-  "updatedAt": "2026-05-05T01:44:00Z",
+  "updatedAt": "2026-05-06T09:39:41Z",
   "artifactUrls": [
     "https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app"
   ],

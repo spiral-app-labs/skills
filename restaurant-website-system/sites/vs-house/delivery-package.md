@@ -121,3 +121,9 @@ V's House already has the hard-to-fake assets: a third-generation Vu family stor
 - Evidence directory: `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/`.
 - `npm run typecheck` and `npm run build` were re-run and passed.
 - Delivery remains blocked on owner-shareable/public preview access, deployed preview smoke test, and authenticated Mission Control writeback.
+
+## 2026-05-06 heartbeat addendum — blocker recheck
+
+- Preview recheck: `GET /` still returned `HTTP/2 401` / Vercel Authentication Required, and `POST /api/chat` still returned `401`. Evidence: `restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md`.
+- Mission Control recheck: lead read returned `HTTP/2 401` without bearer auth; build route returned `HTTP/2 405`, confirming the deployed build route now exists but requires proper method/auth. Evidence: `restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md`.
+- Delivery remains blocked on public preview/bypass, deployed `/` + `/api/chat` smoke test, and agency API bearer auth for Mission Control evidence mirroring.

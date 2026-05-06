@@ -34,3 +34,13 @@ Use one of:
 1. Provide/enable a Vercel deployment-protection bypass token for this preview URL.
 2. Disable Vercel preview deployment protection for this project/branch.
 3. Create a public owner-shareable preview deployment for `vs-house` and smoke-test `/` plus `/api/chat` there.
+
+## 2026-05-06 recheck
+
+Unauthenticated recheck of the same Vercel URL still returns Vercel deployment protection:
+
+- `GET /`: `HTTP/2 401` / Authentication Required.
+- `POST /api/chat`: `401`.
+- Evidence: `restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md`.
+
+The local concierge fallback remains verified, but deployed concierge smoke testing still cannot pass until preview protection is bypassed or disabled.
