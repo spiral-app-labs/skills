@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `battle_cards`
+- Current stage: `qa_round_1`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -178,6 +178,19 @@
     - `restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md`
     - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json`
     - `restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md`
+- `qa-round-1` — QA round 1 completed with screenshots, findings, fixes, and MC writeback
+  - Notes: QA round 1 passed locally after removing repetitive contact-page CTA/hours duplication, fixing the shared mobile hours-table wrapping risk, adding the missing mobile viewport export, and capturing fresh desktop/mobile homepage/contact screenshots from the local Next build.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json`
+    - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png`
 
 ## Verification
 
@@ -229,7 +242,6 @@
 
 ## Pending later gates
 
-- `qa-round-1` — QA round 1 completed with screenshots, findings, fixes, and MC writeback
 - `qa-round-2` — QA round 2 completed with screenshots, findings, fixes, and MC writeback
 - `qa-round-3` — QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
 - `delivery-package` — Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC
