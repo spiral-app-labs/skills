@@ -22,7 +22,7 @@ export function TaglineBanner() {
           <h2 className="font-display text-section-h2 font-medium text-ink whitespace-pre-line">
             {heading}
           </h2>
-          <div className="mt-5 flex items-center gap-4 text-body-sm text-ink-muted">
+          <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-3 text-body-sm text-ink-muted">
             {trustIcons.map((label) => (
               <span key={label} className="inline-flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />

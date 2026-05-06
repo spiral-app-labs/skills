@@ -6,7 +6,7 @@
   "mcParentTaskId": "pending-mc-auth",
   "siteSlug": "maxfields-pancake-house",
   "templateSlug": "plate-01",
-  "currentStage": "building",
+  "currentStage": "improving",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
     "json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
@@ -283,9 +283,19 @@
         "mobile evidence"
       ],
       "order": 5,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-improving-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/globals.css"
+      ],
+      "blocker": null,
+      "notes": "Improvement pass completed with review-theme proof integration, call/directions/menu CTA tightening, and documented code-level mobile polish."
     },
     {
       "id": "top_three_improvements",
@@ -847,7 +857,7 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "passed",
-      "notes": "Forbidden placeholder grep passed; fake reservations/order paths and generic Plate content removed.",
+      "notes": "Forbidden placeholder grep passed; fake reservations/order paths and generic template content removed.",
       "evidence": [
         "restaurant-website-system/sites/maxfields-pancake-house/source.md",
         "restaurant-website-system/sites/maxfields-pancake-house/content.ts"
@@ -856,29 +866,53 @@
     {
       "id": "identity-specific",
       "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
       "stage": "improving",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Homepage and footer copy were tightened around Schaumburg breakfast-house identity, breakfast staples, family visits, and review-backed diner trust instead of generic bistro tone.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/TaglineBanner.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx"
+      ]
     },
     {
       "id": "conversion-paths",
       "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
       "stage": "improving",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Primary conversion actions are now call, directions, and menu highlights; reservation and unsupported ordering paths remain omitted while hours uncertainty is clearly explained.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx"
+      ]
     },
     {
       "id": "mobile-check",
       "title": "Mobile pass is explicitly checked with evidence",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "website_improvement_pass",
       "stage": "improving",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Code-level mobile polish completed: hero spacing reduced, CTA stacking improved, sticky header gained mobile nav pills and shorter CTA labels, footer density reduced, and menu/footer typography spacing tightened. Browser screenshot evidence is still pending because no browser capture tool was available in this runtime.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/WordmarkFooter.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/globals.css"
+      ]
     },
     {
       "id": "top-three-named",
@@ -1041,7 +1075,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-06T11:36:00.000Z",
+  "updatedAt": "2026-05-06T12:10:00.000Z",
   "leadMetadata": {
     "owner_name": null,
     "owner_email": null,

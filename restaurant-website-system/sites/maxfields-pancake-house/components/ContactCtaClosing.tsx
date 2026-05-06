@@ -7,7 +7,7 @@ import { theme } from '../theme';
 import { HoursTable } from './HoursTable';
 
 export function ContactCtaClosing() {
-  const { heading, subcopy, cta, secondaryCta, photo, hours } = content.closing;
+  const { heading, subcopy, cta, secondaryCta, tertiaryCta, photo, hours } = content.closing;
   return (
     <section className="max-w-plate mx-auto px-5 md:px-10 py-20 md:py-28">
       <motion.div
@@ -17,12 +17,12 @@ export function ContactCtaClosing() {
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing }}
       >
-        <div className="aspect-[4/5] overflow-hidden rounded-card bg-canvas-alt">
+        <div className="order-2 md:order-1 aspect-[4/3] md:aspect-[4/5] overflow-hidden rounded-card bg-canvas-alt">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={photo.src} alt={photo.alt} className="w-full h-full object-cover" />
         </div>
 
-        <div>
+        <div className="order-1 md:order-2">
           <h2 className="font-display text-section-h2 font-medium text-ink whitespace-pre-line">
             {heading}
           </h2>
@@ -30,18 +30,27 @@ export function ContactCtaClosing() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href={cta.href}
-              className="bg-accent hover:bg-accent-dark text-white text-button font-medium px-6 py-3 rounded-button transition-colors"
+              className="w-full sm:w-auto text-center bg-accent hover:bg-accent-dark text-white text-button font-medium px-6 py-3 rounded-button transition-colors"
             >
               {cta.label}
             </Link>
             <Link
               href={secondaryCta.href}
-              className="text-button font-medium text-ink border border-ink/80 hover:border-accent hover:text-accent px-6 py-3 rounded-button transition-colors"
+              className="w-full sm:w-auto text-center text-button font-medium text-ink border border-ink/80 hover:border-accent hover:text-accent px-6 py-3 rounded-button transition-colors"
             >
               {secondaryCta.label}
             </Link>
+            <Link
+              href={tertiaryCta.href}
+              className="w-full sm:w-auto text-center text-button font-medium text-accent hover:text-accent-dark"
+            >
+              {tertiaryCta.label}
+            </Link>
           </div>
-          <div className="mt-10 max-w-[360px]">
+          <div className="mt-4 text-body-sm text-ink-muted">
+            Hours still conflict across public sources. This preview makes that easy to understand without guessing.
+          </div>
+          <div className="mt-8 max-w-[360px]">
             <h3 className="text-eyebrow text-ink-muted mb-2">Hours vary by source</h3>
             <HoursTable hours={hours} />
           </div>

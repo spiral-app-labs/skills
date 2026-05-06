@@ -53,9 +53,9 @@ export const content = {
 
   hero: {
     eyebrow: 'Schaumburg breakfast favorite',
-    headline: 'Pancakes, skillets, and comfort classics\nback online for Schaumburg.',
+    headline: "Schaumburg pancakes,\nskillets, coffee,\nand breakfast-house basics in one place.",
     subcopy:
-      'The official Maxfield site was broken. This preview brings the breakfast-house basics back in one place: phone-first visit info, menu highlights, directions, and public review proof.',
+      "This Maxfield's preview keeps the chosen Cuisine / plate-01 route but rewrites it around what local diners actually need: a clear call path, directions, breakfast highlights, and review-backed reasons to stop in before the day gets moving.",
     cta: { label: 'Call (847) 781-0300', href: 'tel:+18477810300' },
     secondaryCta: { label: 'Get directions', href: directionsHref },
     tertiaryCta: { label: 'See menu highlights', href: '/#menu' },
@@ -69,14 +69,14 @@ export const content = {
         alt: 'Illustrated diner-style visit card for Maxfield preview',
       },
     ],
-    badges: ['Breakfast restaurant', '700 E Schaumburg Rd', 'Phone-first visit info'],
+    badges: ['Breakfast restaurant', '700 E Schaumburg Rd', 'Hours vary by source'],
   },
 
   menuIntro: {
     eyebrow: 'Menu highlights',
-    heading: 'Public-source favorites, not a fabricated full menu.',
+    heading: 'Breakfast-house favorites, not generic diner filler.',
     body:
-      'These sections are built from Restaurantji, Yelp, Google Maps, and public listing snippets captured on May 6, 2026. Prices are omitted unless explicitly source-backed in a public listing.',
+      'These highlights stay close to what public diners repeatedly mention: pancakes, waffles, eggs, skillets, coffee, benedicts, omelettes, and lunch staples. Prices are omitted unless explicitly source-backed in a public listing.',
   },
 
   menu: [
@@ -217,37 +217,39 @@ export const content = {
   ] satisfies MenuSection[],
 
   tagline: {
-    heading: 'Warm breakfast energy,\ntruth-safe details,\nand a cleaner local first impression.',
+    heading: 'Built to feel like a Schaumburg pancake house,\nnot a generic bistro fork.',
     collage: [
       { src: '/media/maxfields-coffee-card.svg', alt: 'Abstract coffee card for Maxfield preview' },
       { src: '/media/maxfields-skillet-card.svg', alt: 'Abstract skillet card for Maxfield preview' },
     ],
-    trustIcons: ['Google 4.5 / 983 reviews', 'Restaurantji 4.7 / 259 ratings', 'Yelp 3.7 / 268 reviews'],
+    trustIcons: ['Google 4.5 / 983 reviews', 'Call before you go for hours', 'Directions to 700 E Schaumburg Rd'],
   },
 
   proof: {
-    heading: 'Review proof from public sources',
+    heading: 'What repeated Google reviews point to',
+    intro:
+      'The Highest-rated 30 written Google reviews captured on May 6, 2026 repeatedly support these themes. The copy below summarizes those patterns instead of inventing testimonial language.',
     cards: [
       {
-        source: 'Google Maps',
-        score: '4.5 stars',
-        detail: '983 reviews',
+        source: 'Breakfast staples',
+        score: 'Pancakes, waffles, eggs, and coffee show up again and again.',
+        detail: 'Summarized from the Highest-rated 30 written Google reviews',
         body:
-          'Google Maps lists Maxfield as a breakfast restaurant at 700 E Schaumburg Rd with review themes around pancakes, waffles, eggs, coffee, service, and value.',
+          'Reviewers repeatedly call out fluffy pancakes, French toast, waffles, skillets, crepes, biscuits and gravy, and strong coffee. The homepage now leans into that breakfast-first identity instead of broad restaurant-template language.',
       },
       {
-        source: 'Restaurantji',
-        score: '4.7 rating',
-        detail: '259 ratings',
+        source: 'Service and pace',
+        score: 'Friendly, attentive, fast enough for real breakfast traffic.',
+        detail: 'Themes repeated across family visits, brunch stops, and weekday breakfasts',
         body:
-          'Restaurantji highlights customer favorites including Chocolate Chip Pancakes, Banana Bread French Toast, Skillet with Side of Pancakes, and Mickey Mouse Pancakes.',
+          'The review packet repeatedly mentions warm greetings, attentive staff, quick food, and no-wait or speedy visits. That supports a stronger call-to-visit conversion path on both desktop and mobile.',
       },
       {
-        source: 'Yelp',
-        score: '3.7 stars',
-        detail: '268 reviews and 230 photos',
+        source: 'Value and local trust',
+        score: 'Clean, family-friendly, worth coming back for.',
+        detail: 'Google Maps showed 4.5 stars from 983 reviews at capture time',
         body:
-          'Yelp surfaces Original Eggs Benedict, Greek Skillet, Egg White Omelette, The Ole Omelet, and Chicken Noodle Soup as visible dish signals.',
+          "The captured reviews repeatedly describe reasonable prices, generous portions, a clean diner feel, and repeat family visits. That makes Maxfield's feel like a dependable Schaumburg breakfast stop rather than a one-off trend play.",
       },
     ],
   },
@@ -282,9 +284,10 @@ export const content = {
   closing: {
     heading: "Plan breakfast at Maxfield's\nwith the basics that matter.",
     subcopy:
-      'Call before you go, use directions to the Schaumburg location, and browse a source-safe set of breakfast and lunch highlights instead of placeholder bistro filler.',
+      'Call before you go for today’s hours, use directions for the Schaumburg location, and browse source-safe breakfast and lunch highlights without fake reservations, fake online ordering, or made-up certainty.',
     cta: { label: 'Call (847) 781-0300', href: 'tel:+18477810300' },
     secondaryCta: { label: 'Get directions', href: directionsHref },
+    tertiaryCta: { label: 'See menu highlights', href: '/#menu' },
     photo: {
       src: '/media/maxfields-diner-card.svg',
       alt: 'Abstract local diner illustration for Maxfield preview',
@@ -299,7 +302,7 @@ export const content = {
   wordmark: "maxfield's",
 
   footer: {
-    tagline: 'Breakfast-house basics for Schaumburg, restored with public-source proof and clear visit info.',
+    tagline: "Breakfast-house basics for Schaumburg, rebuilt around pancakes, skillets, coffee, family visits, and clear call-first planning.",
     columns: [
       {
         heading: 'Visit',

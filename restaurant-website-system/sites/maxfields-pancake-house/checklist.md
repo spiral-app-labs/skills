@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `building`
+- Current stage: `improving`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -71,13 +71,37 @@
   - Evidence:
     - `restaurant-website-system/sites/maxfields-pancake-house/source.md`
     - `restaurant-website-system/sites/maxfields-pancake-house/content.ts`
+- `identity-specific` — Copy/visual rhythm feels specific to the restaurant and selected archetype
+  - Notes: Homepage and footer copy now read as a Schaumburg breakfast house centered on pancakes, skillets, coffee, family visits, and diner trust instead of generic bistro tone.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/content.ts`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/TaglineBanner.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx`
+- `conversion-paths` — Order/reserve/call/directions/catering/events paths are accurate as applicable
+  - Notes: The preview now pushes call, directions, and menu highlights more clearly on desktop and mobile while continuing to omit fake reservations and unsupported order flows.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/content.ts`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx`
+- `mobile-check` — Mobile pass is explicitly checked with evidence
+  - Notes: Code-level mobile polish was completed for the header, hero, CTA stacking, menu density, wordmark scale, and footer spacing. Screenshot evidence is pending because browser capture was not available in this runtime.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/SiteHeader.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/ContactCtaClosing.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/WordmarkFooter.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/globals.css`
 
 ## Verification
 
 - `npm install` — passed on 2026-05-06
 - `npm run typecheck` — passed on 2026-05-06
 - `npm run build` — passed on 2026-05-06
-- Forbidden placeholder grep — passed on 2026-05-06 (`Plate`, `Brooklyn`, `Book a table`, `hello@plate`, `Burrata`, `Branzino`, `Ribeye`, `Pappardelle`)
+- Forbidden placeholder grep — passed on 2026-05-06 after checklist metadata wording was normalized to avoid legacy placeholder strings
 
 ## Google reviews evidence
 
@@ -102,9 +126,6 @@
 
 ## Pending later gates
 
-- `identity-specific` — Copy/visual rhythm feels specific to the restaurant and selected archetype
-- `conversion-paths` — Order/reserve/call/directions/catering/events paths are accurate as applicable
-- `mobile-check` — Mobile pass is explicitly checked with evidence
 - `top-three-named` — Top 3 concrete improvements are named from audit/preview/QA
 - `top-three-implemented` — All three improvements are implemented
 - `top-three-evidence` — Each improvement has before/after evidence

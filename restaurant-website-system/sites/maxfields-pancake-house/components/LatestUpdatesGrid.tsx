@@ -6,11 +6,12 @@ import { theme } from '../theme';
 
 // Repurposed from the template's blog strip into a review-proof block.
 export function LatestUpdatesGrid() {
-  const { heading, cards } = content.proof;
+  const { heading, intro, cards } = content.proof;
   return (
     <section className="max-w-plate mx-auto px-5 md:px-10 py-16 md:py-24">
       <div className="mb-8 md:mb-10">
         <h2 className="font-display text-section-h2 font-medium text-ink">{heading}</h2>
+        <p className="mt-4 max-w-[64ch] text-body text-ink-muted">{intro}</p>
       </div>
       <div className="grid md:grid-cols-3 gap-6 md:gap-8">
         {cards.map((card, i) => (
@@ -29,7 +30,7 @@ export function LatestUpdatesGrid() {
             <div className="text-eyebrow text-accent">
               {card.source}
             </div>
-            <h3 className="mt-3 text-[22px] font-medium text-ink">
+            <h3 className="mt-3 text-[22px] leading-tight font-medium text-ink">
               {card.score}
             </h3>
             <div className="mt-2 text-body-sm text-ink-muted">{card.detail}</div>
