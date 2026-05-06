@@ -37,7 +37,17 @@
     "restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-draft-sales-assets-2026-05-05.json",
     "restaurant-website-system/sites/mackey-s-hideout/routing-template-decision-2026-05-05.md",
     "restaurant-website-system/sites/mackey-s-hideout/mc-build-writeback-routing-prepared-2026-05-05.json",
-    "restaurant-website-system/sites/mackey-s-hideout/owner-confirmation-questions-2026-05-05.md"
+    "restaurant-website-system/sites/mackey-s-hideout/owner-confirmation-questions-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/qa-round-1-local-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/qa1-home-desktop-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/qa1-home-mobile-2026-05-05.png",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/qa1-local-browser-metrics-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/local-image-assets-fix-2026-05-05.md",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/qa1-local-browser-metrics-after-local-assets-2026-05-05.json",
+    "restaurant-website-system/sites/mackey-s-hideout/proof-ribbon-improvement-2026-05-06.md",
+    "restaurant-website-system/sites/mackey-s-hideout/scrapes/proof-ribbon-browser-metrics-2026-05-06.json",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/proof-ribbon-home-desktop-2026-05-06.png",
+    "restaurant-website-system/sites/mackey-s-hideout/screenshots/proof-ribbon-home-mobile-2026-05-06.png"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -91,7 +101,7 @@
       "title": "Lead passed the restaurant lead-fit qualification gate",
       "qaState": "passed",
       "required": true,
-      "notes": "Qualification list flags Mackey’s as a conditional bar/live-music lead; source audit verified official site is schedule-heavy while bar identity and proof live off-site.",
+      "notes": "Qualification list flags Mackey\u2019s as a conditional bar/live-music lead; source audit verified official site is schedule-heavy while bar identity and proof live off-site.",
       "evidence": [
         "restaurant-website-system/research/lead-qualification/next-15-bad-no-site-leads-2026-05-01.md",
         "restaurant-website-system/sites/mackey-s-hideout/audit.md"
@@ -151,7 +161,7 @@
       "title": "Template fork is built with real content, preserved links, and no placeholder copy",
       "qaState": "pending",
       "required": true,
-      "notes": "Local-only scaffold exists on the locked bramble-01 route with Mackey-specific content, truthful CTA changes, official/public image URLs from the captured official site, and successful local build/typecheck/smoke screenshots. This requirement remains pending because canonical stage is still reviews, MC replay is blocked, owner hours/food facts still need confirmation, and QA/preview evidence are not complete.",
+      "notes": "Local-only scaffold exists on the locked bramble-01 route with Mackey-specific content, truthful CTA changes, local copies of official/public image assets, a public-proof ribbon, and successful local build/typecheck/browser evidence. This requirement remains pending because canonical stage is still reviews, MC replay is blocked, owner hours/food facts still need confirmation, and QA/preview evidence are not complete.",
       "evidence": [
         "restaurant-website-system/sites/mackey-s-hideout/build-scaffold-2026-05-05.md",
         "restaurant-website-system/sites/mackey-s-hideout/scaffold-browser-smoke-qa-2026-05-05.md",
@@ -162,7 +172,8 @@
       "id": "qa-round-1",
       "title": "QA round 1 completed with findings and fixes logged",
       "qaState": "pending",
-      "required": true
+      "required": true,
+      "notes": "Local QA1 candidate evidence exists, including post-local-asset and proof-ribbon browser metrics/screenshots with zero broken images and zero horizontal overflow. Canonical QA round 1 remains pending until Mission Control replay/writeback catches up in order."
     },
     {
       "id": "qa-round-2",

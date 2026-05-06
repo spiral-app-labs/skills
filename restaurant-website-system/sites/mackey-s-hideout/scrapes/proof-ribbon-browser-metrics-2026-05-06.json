@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-05-06T05:09:17.151Z",
+  "results": [
+    {
+      "viewport": "desktop",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/proof-ribbon-home-desktop-2026-05-06.png",
+      "hasHorizontalOverflow": false,
+      "title": "Mackey's Hideout — Live music hideout, deep pours, and a roadhouse crowd worth following",
+      "hasProofRibbon": true,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "banned": [],
+      "brokenImages": []
+    },
+    {
+      "viewport": "mobile",
+      "screenshot": "restaurant-website-system/sites/mackey-s-hideout/screenshots/proof-ribbon-home-mobile-2026-05-06.png",
+      "hasHorizontalOverflow": false,
+      "title": "Mackey's Hideout — Live music hideout, deep pours, and a roadhouse crowd worth following",
+      "hasProofRibbon": true,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "banned": [],
+      "brokenImages": []
+    }
+  ]
+}

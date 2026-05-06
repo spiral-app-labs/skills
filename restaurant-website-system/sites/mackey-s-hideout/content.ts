@@ -88,6 +88,31 @@ export const content = {
     },
   ],
 
+
+  proofRibbon: {
+    eyebrow: 'Public proof snapshot',
+    title: 'The receipts already sound like a hideout people choose on purpose.',
+    body:
+      "The redesign now surfaces the strongest public proof earlier, without pretending Mackey's is a full-menu restaurant or owner-confirmed hours source.",
+    metrics: [
+      {
+        value: '4.6',
+        label: 'Google rating',
+        detail: '408 visible reviews in the audit snapshot',
+      },
+      {
+        value: '4.7',
+        label: 'Restaurantji rating',
+        detail: '155 ratings; bars category and live-music mentions',
+      },
+      {
+        value: '30',
+        label: 'Written highest-rating reviews',
+        detail: 'Themes: live music, craft beer, friendly regulars, karaoke, open mic',
+      },
+    ],
+  },
+
   hoursHeading: 'Reported hours and weekly rhythm',
   hoursSourceNote: 'Reported by Restaurantji and Restaurant Guru on 2026-05-05. Owner confirmation still pending.',
   hours: [
