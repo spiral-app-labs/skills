@@ -95,8 +95,8 @@
 
 ## Blockers
 
-- public_preview_url: Public owner-shareable preview URL is missing; final delivery cannot pass without it. Next unblock action: deploy a preview/staging build using `public-preview-runbook-2026-05-05.md`, attach URL to delivery package/checklist, and rerun remote smoke checks.
-- stage_writeback: Local packaging artifacts are assembled, but Mission Control writeback still cannot be submitted because agency API auth/base URL are unavailable in this runtime. Next unblock action: configure Mission Control agency API auth/base URL for OpenClaw, then submit `mission-control-writeback-payload-2026-05-05.json`.
+- public_preview_url: Vercel deployment URLs exist for PR #70, but latest no-cookie checks on 2026-05-06T04:47:10Z returned `HTTP/2 401` / Vercel Authentication Required, so they are not owner-deliverable. Next unblock action: configure public/shareable preview access for La Hacienda, attach the URL to delivery package/checklist, and rerun remote smoke checks.
+- stage_writeback: Local packaging artifacts are assembled, but Mission Control writeback still cannot be submitted. Trusted base URL `https://hq.ethantalreja.com` is reachable, but this runtime has no usable agency bearer token; the lead API returns `HTTP/2 401` with `x-agency-runtime: openclaw`. Next unblock action: configure Mission Control agency API auth for OpenClaw, then submit `mission-control-writeback-payload-2026-05-05.json`.
 - owner_confirmation: Owner-sensitive facts still need confirmation before final handoff: hours, ordering/provider flow, current menu/prices, review-count language, and public claims. Next unblock action: use `owner-confirmation-questions-2026-05-05.md` or get Ethan approval for conservative wording before production/final delivery.
 - founder_review: Founder human review has not been recorded, so `ready_to_pitch` remains false. Next unblock action: have Ethan/Evan review the package and explicitly clear or override the remaining owner-sensitive claims before any pitch or delivery status change.
 

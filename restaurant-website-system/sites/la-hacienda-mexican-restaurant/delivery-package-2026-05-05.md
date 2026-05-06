@@ -4,13 +4,16 @@
 - Lead: `7cba3fe2-8f65-4516-b46b-05c2c07ab235`
 - Mission Control parent task: `fd7f4976-daac-42aa-8c9a-1ddb09a9d12f`
 - Template route: `bamzi-01`
-- Current package state: blocked from final delivery; local evidence package is assembled, public preview URL is not attached, and Mission Control writeback auth/base URL are unavailable in this runtime.
+- Current package state: blocked from final delivery; local evidence package is assembled, Vercel deployment URLs exist but are auth-gated, and Mission Control writeback auth is unavailable in this runtime.
 - Ready to pitch: `false` (founder human review not yet recorded; owner-sensitive facts still pending confirmation)
 
 ## Preview
 
 - Local QA preview: `http://127.0.0.1:3097`
-- Public owner-shareable preview URL: **blocked / not attached yet**
+- Vercel production deployment from merged PR #70: `https://skills-bkk9u6eev-ethan-ethantalrejas-projects.vercel.app`
+- Vercel PR preview deployment: `https://skills-1mjciawmz-ethan-ethantalrejas-projects.vercel.app`
+- Public owner-shareable preview URL: **blocked / Vercel auth-gated**
+- Latest access check: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-access-check-2026-05-05.md` (`HTTP/2 401`, checked 2026-05-06T04:47:10Z)
 
 ## Local package artifact
 
@@ -23,6 +26,7 @@
 
 - Owner confirmation packet: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/owner-confirmation-questions-2026-05-05.md`
 - Public preview runbook: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-runbook-2026-05-05.md`
+- Public preview access check: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/public-preview-access-check-2026-05-05.md`
 - Mission Control writeback payload: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-payload-2026-05-05.json`
 - Mission Control writeback runbook: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/mission-control-writeback-runbook-2026-05-05.md`
 - Checklist JSON: `restaurant-website-system/sites/la-hacienda-mexican-restaurant/checklist.json`
@@ -86,8 +90,8 @@
 
 ## Final delivery blockers
 
-1. Public owner-shareable preview URL is missing.
-2. Mission Control writeback is blocked because this runtime has no usable `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` bearer token or trusted MC base URL exposed as environment variables. Raw Supabase workflow-state mutation was not used. Writeback payload/runbook are prepared locally.
+1. Public owner-shareable preview is blocked: Vercel deployment URLs exist, but unauthenticated access returns `HTTP/2 401` / Authentication Required.
+2. Mission Control writeback is blocked because the trusted Mission Control base URL is reachable at `https://hq.ethantalreja.com`, but this runtime has no usable `AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET` bearer token; the lead API returns `HTTP/2 401` with `x-agency-runtime: openclaw` (checked 2026-05-06T04:47:10Z). Raw Supabase workflow-state mutation was not used. Writeback payload/runbook are prepared locally.
 3. Owner-sensitive facts still need confirmation before final handoff: hours, ordering/provider flow, current menu/prices, review-count language, and public claims. Confirmation packet prepared at `restaurant-website-system/sites/la-hacienda-mexican-restaurant/owner-confirmation-questions-2026-05-05.md`.
 4. Founder human review has not been recorded, so `ready_to_pitch` remains `false` even though the local package is assembled.
 
