@@ -16,7 +16,8 @@ Unauthenticated route probe against `https://hq.ethantalreja.com` showed:
 
 - `GET /api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba` returns `401 Unauthorized`, route exists.
 - `GET /api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/qa-rounds` returns `401 Unauthorized`, route exists.
-- `GET /api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/build` returns `404`, so the `/build` route described in the sync contract is not present on the deployed MC app at probe time.
+- 2026-05-04: `GET /api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/build` returned `404` at probe time.
+- 2026-05-06 recheck: `GET /api/agency/leads/1006c1ea-5a06-4703-9994-117bc90d9dba/build` returned `405`, confirming the `/build` route now exists but requires proper method/auth.
 - `POST /api/heartbeat` succeeded and recorded heartbeat row `37972128-9264-435e-96de-284380246c0c` plus activity row `c3138254-7216-4c66-89da-4ded7d593401`.
 
 ## Blocker
@@ -30,3 +31,9 @@ See `restaurant-website-system/sites/vs-house/mc-writeback-payload-2026-05-04.js
 ## Next unblock action
 
 Provide `AGENCY_AUTONOMY_API_KEY` to this OpenClaw runtime, or add/restore the documented `/api/agency/leads/:leadId/build` route and expose the key through the approved runtime secret path. Then send the prepared payload and mirror QA rounds/evidence to MC before delivery.
+
+## 2026-05-06 MC API recheck
+
+- Lead read still returns `HTTP/2 401` without bearer auth.
+- Build route now returns `HTTP/2 405` for GET, so the route exists and should be submitted with the official method once agency bearer auth is configured.
+- Evidence: `restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md`.

@@ -5,7 +5,7 @@
 - Template slug: bamzi-01
 - Current stage: packaging
 - Deploy URL: https://skills-git-feat-agency-hear-42992d-ethan-ethantalrejas-projects.vercel.app (Vercel protected, not owner-shareable yet)
-- Updated: 2026-05-05T01:44:00Z
+- Updated: 2026-05-06T09:39:41Z
 
 ## Requirements
 
@@ -123,3 +123,9 @@
 - Evidence added under `restaurant-website-system/sites/vs-house/evidence/qa-round-3-browser-restored-2026-05-04/` with `capture-manifest.json`.
 - Re-ran `npm run typecheck` and `npm run build`; both passed.
 - QA rounds 1-3 are locally evidence-backed. Delivery remains packaging-blocked on Vercel preview protection (`401`) and authenticated MC lead/build/QA writeback.
+
+## 2026-05-06 blocker recheck
+
+- Public preview candidate rechecked at `2026-05-06T09:39:40Z`: `GET /` still `HTTP/2 401`; `POST /api/chat` still `401`. Evidence: `restaurant-website-system/sites/vs-house/preview-access-check-2026-05-06.md`.
+- Mission Control lead API rechecked at `2026-05-06T09:39:41Z`: lead read still `HTTP/2 401` without bearer; build route now returns `HTTP/2 405` for GET, confirming route exists but requires method/auth. Evidence: `restaurant-website-system/sites/vs-house/mc-api-access-check-2026-05-06.md`.
+- Packaging remains prepared, but final delivery stays blocked until public preview/bypass, deployed homepage/chat smoke test, and MC agency bearer auth are available.
