@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `pitch`
+- Current stage: `battle_cards`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -156,6 +156,28 @@
     - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json`
     - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png`
     - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png`
+- `battle-cards-objections` — Likely owner objections have concise answers
+  - Notes: Battle cards cover the required owner objections around Google info, existing demand, hours conflict, online ordering, reservations, concierge safety, design fit, rebuild timing, and keeping the current domain/provider.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md`
+- `battle-cards-demo-path` — Demo path and proof points are clear
+  - Notes: Battle cards include a six-step live demo path anchored to the preview URL, broken-domain recovery, menu highlights, review proof, visit confidence, concierge, and contact/directions close.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md`
+    - `https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app`
+- `battle-cards-risks` — Risks/unknowns are called out truthfully
+  - Notes: Battle cards explicitly call out MC auth/writeback blockage, public-hours conflict, unverified direct ordering provider, owner/GBP confirmation requirements, and possible preview access gating.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json`
+    - `restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md`
 
 ## Verification
 
@@ -188,17 +210,25 @@
 - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png`
 - `restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md`
 
+## Battle cards evidence
+
+- Preview URL: https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app
+- `restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md`
+- `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json`
+- `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+- `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png`
+- `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png`
+- `restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md`
+
 ## Open blockers
 
 - `mission_control_auth` — Mission Control auth is unavailable in this runtime, so reviews/build writeback payloads are prepared locally only. No raw Supabase agency writes were performed.
 - `hours_confirmation` — public sources conflict on hours; final publish should confirm with owner/Google Business Profile.
 - `order_link_confirmation` — order actions exist in public sources, but the direct/first-party provider was not resolved.
+- `preview_access` — preview URL may be Vercel-auth gated for some viewers depending on deployment settings.
 
 ## Pending later gates
 
-- `battle-cards-objections` — Likely owner objections have concise answers
-- `battle-cards-demo-path` — Demo path and proof points are clear
-- `battle-cards-risks` — Risks/unknowns are called out truthfully
 - `qa-round-1` — QA round 1 completed with screenshots, findings, fixes, and MC writeback
 - `qa-round-2` — QA round 2 completed with screenshots, findings, fixes, and MC writeback
 - `qa-round-3` — QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback

@@ -6,7 +6,7 @@
   "mcParentTaskId": "pending-mc-auth",
   "siteSlug": "maxfields-pancake-house",
   "templateSlug": "plate-01",
-  "currentStage": "pitch",
+  "currentStage": "battle_cards",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
     "json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
@@ -485,9 +485,17 @@
         "battle-cards.md"
       ],
       "order": 9,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ],
+      "blocker": null,
+      "notes": "Battle cards completed with a live demo path, objection handling, proof cards, risks, owner-language talk tracks, and a do-not-say list."
     },
     {
       "id": "qa_round_1",
@@ -680,6 +688,8 @@
     "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json",
     "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
     "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
     "npm install: passed 2026-05-06",
     "npm run typecheck: passed 2026-05-06",
     "npm run build: passed 2026-05-06",
@@ -690,7 +700,7 @@
   "deployUrl": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
   "pitchArtifacts": {
     "pitchDoc": "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
-    "battleCards": null,
+    "battleCards": "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
     "outreachDraft": null,
     "beforeAfterScreenshots": [
       "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
@@ -708,12 +718,18 @@
       "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-reviews-2026-05-06.json"
     },
     {
+      "reason": "Mission Control battle-cards writeback is prepared locally but blocked because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are missing; no API write or raw Supabase agency write was performed.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json"
+    },
+    {
       "id": "mission_control_auth",
       "status": "blocked",
-      "notes": "MC auth unavailable in runtime; reviews/build payloads prepared locally only.",
+      "notes": "MC auth unavailable in runtime; reviews/build/pitch/battle-cards payloads prepared locally only.",
       "evidence": [
         "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-reviews-2026-05-06.json",
         "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
         "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
       ]
     }
@@ -1093,29 +1109,51 @@
     {
       "id": "battle-cards-objections",
       "title": "Likely owner objections have concise answers",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Battle cards answer the required owner objections around Google, current demand, hours conflict, ordering, reservations, concierge truth-safety, design fit, rebuild timing, and keeping the current domain/provider.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md"
+      ]
     },
     {
       "id": "battle-cards-demo-path",
       "title": "Demo path and proof points are clear",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Battle cards provide a step-by-step preview walkthrough covering broken-domain recovery, menu highlights, review proof, visit confidence, concierge, and contact/directions close.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+        "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app"
+      ]
     },
     {
       "id": "battle-cards-risks",
       "title": "Risks/unknowns are called out truthfully",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "battle_cards_doc",
       "stage": "battle_cards",
-      "status": "pending"
+      "status": "passed",
+      "notes": "Battle cards call out the MC auth blocker, hours conflict, unverified direct ordering provider, required owner/GBP confirmation before final publish, and possible preview access gating.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/battle-cards-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-battle-cards-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+      ]
     },
     {
       "id": "qa-round-1",
@@ -1170,7 +1208,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-06T20:36:00.000Z",
+  "updatedAt": "2026-05-06T13:01:08.000Z",
   "leadMetadata": {
     "owner_name": null,
     "owner_email": null,
