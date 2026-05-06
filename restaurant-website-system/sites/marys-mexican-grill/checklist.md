@@ -15,7 +15,7 @@
 - Delivery package: restaurant-website-system/sites/marys-mexican-grill/delivery-package.md
 - Preview URL: https://skills-git-chore-marys-qa-round-3-ethan-ethantalrejas-projects.vercel.app
 - Preview access: auth-protected pending Ethan/authenticated verification
-- Updated: 2026-05-05T12:49:00Z
+- Updated: 2026-05-06T05:52:19Z
 
 ## Current Gate
 
@@ -147,3 +147,9 @@
 - The PR #19 preview URL is recorded, but unauthenticated checks hit Vercel login/401 and require Ethan/authenticated verification; latest managed-browser evidence is `preview-access-check-2026-05-05.md` plus `screenshots/preview-auth-wall-2026-05-05.png`.
 - QA2 screenshot files referenced by the existing QA2 docs/writebacks are now present locally; the refresh still needs MC agency API writeback when credentials are available.
 - Mission Control QA3 + packaging sync succeeded via the patched local MC agency API from PR #328; remaining blockers are preview access, Anthropic key, Ethan human review, and MC sync of the 2026-05-05 QA2 screenshot refresh.
+
+## 2026-05-06 blocker recheck
+
+- Public preview candidate rechecked at `2026-05-06T05:52:18Z`: still `HTTP/2 401` / Vercel Authentication Required. Evidence: `restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-06.md`.
+- Mission Control lead API rechecked at `2026-05-06T05:52:19Z` with `x-agency-runtime: openclaw` and no bearer: still `HTTP/2 401`. Evidence: `restaurant-website-system/sites/marys-mexican-grill/mc-api-access-check-2026-05-06.md`.
+- Packaging remains prepared, but final delivery stays blocked until public preview/bypass, site-specific Anthropic key, Ethan human review, and MC bearer auth are available.

@@ -111,3 +111,7 @@ npm run typecheck
 ## Confidence to sell
 
 Ethan can use this as a founder review package, but not yet as a clean client handoff. The site quality is strong; the remaining issues are delivery infrastructure and founder-only approval gates, not core restaurant identity or build quality.
+
+## 2026-05-06 blocker recheck
+
+Final QA verdict remains pass-for-founder-review, but delivery remains blocked. The PR #19 preview URL returned `HTTP/2 401` / Vercel Authentication Required on unauthenticated recheck; MC lead API also returned `HTTP/2 401` without agency bearer auth. Evidence: `preview-access-check-2026-05-06.md` and `mc-api-access-check-2026-05-06.md`.

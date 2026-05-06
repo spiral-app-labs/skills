@@ -34,7 +34,7 @@
     "lastSyncedAt": "2026-05-05T03:45:30Z",
     "lastSyncedVia": "Mission Control agency API after PR #328 patch",
     "lastLocalEvidenceRefreshAt": "2026-05-05T15:05:00Z",
-    "pendingSyncReason": "QA2 screenshot refresh and preview-auth recheck need MC agency API writeback; AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    "pendingSyncReason": "Latest preview-auth and QA2 screenshot refresh evidence still need MC agency API writeback; no usable agency bearer token is available in this runtime. No-bearer MC lead read returned HTTP/2 401 on 2026-05-06.",
     "trustedBaseUrl": "https://hq.ethantalreja.com"
   },
   "workflowSteps": [
@@ -708,7 +708,7 @@
         "MC delivery writeback"
       ],
       "order": 13,
-      "status": "in_progress_blocked_founder_review",
+      "status": "blocked",
       "evidence": [
         "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
         "restaurant-website-system/sites/marys-mexican-grill/checklist.md",
@@ -727,13 +727,11 @@
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-home-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-menu-2026-05-04.png",
         "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-about-2026-05-04.png",
-        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png"
+        "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-3-mobile-contact-2026-05-04.png",
+        "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-06.md",
+        "restaurant-website-system/sites/marys-mexican-grill/mc-api-access-check-2026-05-06.md"
       ],
-      "blocker": {
-        "reason": "Delivery package and QA3 evidence are synced to Mission Control, but final handoff is still blocked by auth-protected preview verification, missing QA2 screenshot assets, founder Anthropic key, and Ethan human review.",
-        "nextUnblockAction": "Verify preview access in an authenticated Vercel/GitHub session, mirror QA2 screenshot evidence if available or explicitly supersede it, then wait for Ethan to complete the founder-only Anthropic key and human review gates.",
-        "updatedAt": "2026-05-05T03:45:30Z"
-      }
+      "blocker": "Delivery blocked: PR #19 preview rechecked 2026-05-06 and still returns HTTP/2 401 Authentication Required; MC agency API requires bearer auth and lead read returned HTTP/2 401 without it; founder Anthropic key and Ethan human review remain pending."
     }
   ],
   "evidencePaths": [
@@ -791,7 +789,9 @@
     "restaurant-website-system/sites/marys-mexican-grill/screenshots/qa-round-2-mobile-contact-2026-05-04.png",
     "restaurant-website-system/sites/marys-mexican-grill/qa2-screenshot-existence-verify-2026-05-05.json",
     "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-05.md",
-    "restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png"
+    "restaurant-website-system/sites/marys-mexican-grill/screenshots/preview-auth-wall-2026-05-05.png",
+    "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-06.md",
+    "restaurant-website-system/sites/marys-mexican-grill/mc-api-access-check-2026-05-06.md"
   ],
   "qaRounds": [
     {
@@ -878,7 +878,21 @@
     "Mission Control API sync remains local-only because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
     "PR #19 preview URL is recorded but auth-protected for unauthenticated checks; 2026-05-05 managed-browser recheck captured the Vercel login wall, and Ethan/authenticated Vercel verification is required.",
     "Mission Control API sync for the 2026-05-05 QA2 screenshot refresh remains pending because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
-    "Mission Control API sync for the 2026-05-05 preview-auth recheck remains pending because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+    "Mission Control API sync for the 2026-05-05 preview-auth recheck remains pending because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime.",
+    {
+      "gate": "preview_access_recheck",
+      "reason": "PR #19 preview URL rechecked 2026-05-06 and still returned HTTP/2 401 Authentication Required without cookies; not owner-shareable.",
+      "nextUnblockAction": "Provide public/client-safe preview URL or Vercel protection bypass, then rerun no-cookie access check.",
+      "recordedAt": "2026-05-06T05:52:18Z",
+      "evidence": "restaurant-website-system/sites/marys-mexican-grill/preview-access-check-2026-05-06.md"
+    },
+    {
+      "gate": "mc_api_bearer_auth",
+      "reason": "Mission Control agency lead route is reachable at https://hq.ethantalreja.com but returned HTTP/2 401 without bearer auth using x-agency-runtime: openclaw.",
+      "nextUnblockAction": "Configure agency bearer auth for OpenClaw, then submit mc-build-writeback-packaging-2026-05-05.json through the official agency API.",
+      "recordedAt": "2026-05-06T05:52:19Z",
+      "evidence": "restaurant-website-system/sites/marys-mexican-grill/mc-api-access-check-2026-05-06.md"
+    }
   ],
   "requirements": [
     {
@@ -1402,7 +1416,7 @@
     "ready_to_pitch remains false until founder Anthropic key setup and founder human review are complete.",
     "Preview URL and missing QA screenshot evidence remain explicit blockers instead of invented claims."
   ],
-  "updatedAt": "2026-05-05T15:05:00Z",
+  "updatedAt": "2026-05-06T05:52:19Z",
   "childTaskId": "81fa73c9-696d-4dd1-a33b-9f58c44e957f",
   "founderGateTaskId": "03d5cec6-db38-46de-92d6-47d8c06c787e",
   "deliveryPackagePath": "restaurant-website-system/sites/marys-mexican-grill/delivery-package.md",
