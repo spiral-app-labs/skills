@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `concierge`
+- Current stage: `pitch`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -138,6 +138,24 @@
     - `restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts`
     - `restaurant-website-system/sites/maxfields-pancake-house/content.ts`
     - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json`
+- `pitch-specific` — Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
+  - Notes: The pitch is framed around Maxfield's broken Wix domain, Schaumburg breakfast-house positioning, public review proof, menu-confidence gaps, and a truth-safe visit path.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/audit.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md`
+- `pitch-before-after` — Pitch explains before/after delta in owner language
+  - Notes: The doc uses owner-facing before/after language focused on broken domain, scattered proof, unclear hours/order/reservation expectations, and the new phone-first, directions-first preview flow.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md`
+- `pitch-evidence` — Evidence and preview links are embedded or linked
+  - Notes: The pitch links the audit, screenshots, review packet, concierge artifacts, deployed preview URL, and local artifact paths.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png`
 
 ## Verification
 
@@ -161,6 +179,15 @@
 - `restaurant-website-system/sites/maxfields-pancake-house/source.md`
 - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-building-2026-05-06.json`
 
+## Pitch evidence
+
+- Preview URL: https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app
+- `restaurant-website-system/sites/maxfields-pancake-house/pitch-2026-05-06.md`
+- `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-pitch-2026-05-06.json`
+- `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-desktop-wix-error.png`
+- `restaurant-website-system/sites/maxfields-pancake-house/screenshots/current-site-mobile-wix-error.png`
+- `restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md`
+
 ## Open blockers
 
 - `mission_control_auth` — Mission Control auth is unavailable in this runtime, so reviews/build writeback payloads are prepared locally only. No raw Supabase agency writes were performed.
@@ -169,9 +196,6 @@
 
 ## Pending later gates
 
-- `pitch-specific` — Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
-- `pitch-before-after` — Pitch explains before/after delta in owner language
-- `pitch-evidence` — Evidence and preview links are embedded or linked
 - `battle-cards-objections` — Likely owner objections have concise answers
 - `battle-cards-demo-path` — Demo path and proof points are clear
 - `battle-cards-risks` — Risks/unknowns are called out truthfully
