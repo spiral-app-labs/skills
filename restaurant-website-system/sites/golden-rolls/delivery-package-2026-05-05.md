@@ -7,7 +7,14 @@
 - Template / archetype: `bamzi-01` — Bamzi adapted for a casual hidden-gem sushi/Japanese bistro
 - Current local stage: `packaging`
 - PR preview URL: `https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app`
-- Preview access status: **auth-gated by Vercel** from unauthenticated fetch; not owner-deliverable until public access is configured or a shareable preview URL is generated. Latest check: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-05.md` (`HTTP/2 401`, checked 2026-05-06T04:43:57Z).
+- Preview access status: **auth-gated by Vercel** from unauthenticated fetch; rechecked 2026-05-06T05:39:34Z as `HTTP/2 401`; not owner-deliverable until public access is configured or a shareable preview URL is generated. Latest check: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-05.md` (`HTTP/2 401`, checked 2026-05-06T04:43:57Z).
+
+
+## Fresh blocker recheck — 2026-05-06
+
+- Public preview recheck: `https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app` still returns `HTTP/2 401` / Vercel Authentication Required without cookies. Evidence: `restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-06.md`.
+- Mission Control agency API recheck: `GET https://hq.ethantalreja.com/api/agency/leads/e5048ba5-21d5-4400-8673-f92e16954560` with `x-agency-runtime: openclaw` and no bearer returns `HTTP/2 401`. Evidence: `restaurant-website-system/sites/golden-rolls/mc-api-access-check-2026-05-06.md`.
+- Updated blocker interpretation: the MC base URL is now known/reachable, but the runtime still lacks agency bearer auth. Delivery remains blocked on public preview/bypass, MC bearer auth, and owner data verification.
 
 ## Delivery verdict
 

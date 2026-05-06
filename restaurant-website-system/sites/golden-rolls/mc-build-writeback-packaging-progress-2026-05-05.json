@@ -132,20 +132,24 @@
     "restaurant-website-system/sites/golden-rolls/audit.md",
     "restaurant-website-system/sites/golden-rolls/google-reviews-themes.md",
     "restaurant-website-system/sites/golden-rolls/concierge-qa-2026-05-05.md",
-    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-packaging-progress-2026-05-05.json"
+    "restaurant-website-system/sites/golden-rolls/mc-build-writeback-packaging-progress-2026-05-05.json",
+    "restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-06.md",
+    "restaurant-website-system/sites/golden-rolls/mc-api-access-check-2026-05-06.md"
   ],
   "blockers": [
     {
       "gate": "stage_writeback",
-      "reason": "Mission Control agency API writeback is still pending because a trusted Mission Control base URL is unavailable in this runtime. Local packaging artifact and writeback payload are ready; submit mc-build-writeback-packaging-progress-2026-05-05.json when MC API auth/base URL are configured.",
-      "nextUnblockAction": "Configure Mission Control agency API auth/base URL for OpenClaw, then submit the packaging-progress writeback payload before marking MC packaging/delivery state.",
-      "recordedAt": "2026-05-05T10:58:49.000Z"
+      "reason": "Mission Control agency API base URL is now known/reachable at https://hq.ethantalreja.com, but this runtime lacks a usable agency bearer token; no-bearer lead read returned HTTP/2 401 with x-agency-runtime: openclaw. Local packaging artifact and writeback payload are ready.",
+      "nextUnblockAction": "Configure Mission Control agency bearer auth for OpenClaw, then submit this packaging-progress payload through the official agency build route.",
+      "recordedAt": "2026-05-06T05:39:42Z",
+      "evidence": "restaurant-website-system/sites/golden-rolls/mc-api-access-check-2026-05-06.md"
     },
     {
       "gate": "public_preview_url",
-      "reason": "Vercel preview URL is auth-gated for unauthenticated access: https://skills-git-feat-golden-roll-b90ee8-ethan-ethantalrejas-projects.vercel.app. It is not owner-deliverable until public/shareable preview access is configured.",
-      "nextUnblockAction": "Create or configure a public/shareable preview URL for Golden Rolls, then recapture/verify it and update delivery-package evidence.",
-      "recordedAt": "2026-05-05T10:58:49.000Z"
+      "reason": "Vercel preview URL is auth-gated for unauthenticated access; rechecked 2026-05-06T05:39:34Z and still returned HTTP/2 401 Authentication Required. It is not owner-deliverable until public/shareable preview access is configured.",
+      "nextUnblockAction": "Create/configure a public/shareable preview URL or Vercel bypass, then recapture/verify it and update delivery-package evidence.",
+      "recordedAt": "2026-05-06T05:39:34Z",
+      "evidence": "restaurant-website-system/sites/golden-rolls/public-preview-access-check-2026-05-06.md"
     },
     {
       "gate": "owner_data_verification",
@@ -160,6 +164,6 @@
     "previewAccess": "auth_gated_401_from_unauthenticated_fetch",
     "ownerDeliverable": false
   },
-  "heartbeat_summary": "Assembled Golden Rolls delivery package, found PR preview URL, and recorded blocker that preview is Vercel-auth-gated until public/shareable access is configured.",
-  "updatedAt": "2026-05-05T10:58:49.000Z"
+  "heartbeat_summary": "Golden Rolls is packaged locally, but fresh checks confirm delivery remains blocked: Vercel preview returns HTTP/2 401 Authentication Required, MC agency API base URL is reachable but needs bearer auth, and owner-changing data still needs confirmation.",
+  "updatedAt": "2026-05-06T05:39:42Z"
 }
