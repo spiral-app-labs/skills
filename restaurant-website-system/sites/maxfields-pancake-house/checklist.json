@@ -6,7 +6,7 @@
   "mcParentTaskId": "pending-mc-auth",
   "siteSlug": "maxfields-pancake-house",
   "templateSlug": "plate-01",
-  "currentStage": "top_3_improvements",
+  "currentStage": "concierge",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
     "json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
@@ -392,9 +392,19 @@
         "blocker if concierge cannot be safely added"
       ],
       "order": 7,
-      "status": "pending",
-      "evidence": [],
-      "blocker": null
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ],
+      "blocker": null,
+      "notes": "Concierge stage completed with a deterministic prompt-driven panel, a fixed Maxfield KB, explicit unknown handling, and a transcript covering the required visitor questions."
     },
     {
       "id": "pitch_doc",
@@ -976,29 +986,50 @@
     {
       "id": "concierge-kb-truthful",
       "title": "Concierge KB only uses verified restaurant facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The concierge KB is limited to verified address, phone, menu/review themes, reservation caution, takeout uncertainty, and the documented hours conflict.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/source.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md"
+      ]
     },
     {
       "id": "concierge-tested",
       "title": "Short transcript proves useful behavior",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The transcript demonstrates useful responses for the six required visitor questions and one unsupported-question fallback.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+      ]
     },
     {
       "id": "concierge-safe",
       "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "ai_concierge_added",
       "stage": "concierge",
-      "status": "pending"
+      "status": "passed",
+      "notes": "The panel explicitly says it is not live AI, uses fixed prompts instead of open generation, and routes unsupported questions to the verified phone number.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json"
+      ]
     },
     {
       "id": "pitch-specific",
@@ -1107,7 +1138,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-06T13:05:00.000Z",
+  "updatedAt": "2026-05-06T14:15:00.000Z",
   "leadMetadata": {
     "owner_name": null,
     "owner_email": null,

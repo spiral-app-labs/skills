@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `top_3_improvements`
+- Current stage: `concierge`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -117,11 +117,32 @@
     - `restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md`
     - `restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md`
     - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json`
+- `concierge-kb-truthful` — Concierge KB only uses verified restaurant facts
+  - Notes: The concierge is deterministic and fixed-KB only, with hours conflicts, reservation caution, takeout uncertainty, and unsupported facts all handled explicitly.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/concierge-kb-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts`
+    - `restaurant-website-system/sites/maxfields-pancake-house/source.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md`
+- `concierge-tested` — Short transcript proves useful behavior
+  - Notes: Transcript covers the six required visitor questions plus one unsupported-question fallback.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/concierge-test-transcript-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx`
+- `concierge-safe` — Fallbacks prevent fake reservations, unsupported promises, or invented facts
+  - Notes: The UI explicitly says it is not live AI, omits freeform generation, and routes unknowns to the verified phone number.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/ConciergePanel.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/concierge-kb.ts`
+    - `restaurant-website-system/sites/maxfields-pancake-house/content.ts`
+    - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-concierge-2026-05-06.json`
 
 ## Verification
 
 - `npm install` — passed on 2026-05-06
-- `npm run typecheck` — passed on 2026-05-06
+- `npm run typecheck` — passed on 2026-05-06 after `npm run build` generated `.next/types` required by the local `tsconfig.json` include pattern
 - `npm run build` — passed on 2026-05-06
 - Forbidden placeholder grep — passed on 2026-05-06 after checklist metadata wording was normalized to avoid legacy placeholder strings
 
@@ -148,9 +169,6 @@
 
 ## Pending later gates
 
-- `concierge-kb-truthful` — Concierge KB only uses verified restaurant facts
-- `concierge-tested` — Short transcript proves useful behavior
-- `concierge-safe` — Fallbacks prevent fake reservations, unsupported promises, or invented facts
 - `pitch-specific` — Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps
 - `pitch-before-after` — Pitch explains before/after delta in owner language
 - `pitch-evidence` — Evidence and preview links are embedded or linked
