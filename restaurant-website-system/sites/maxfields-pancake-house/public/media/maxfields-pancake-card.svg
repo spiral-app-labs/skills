@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Maxfield pancake preview card">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7e5c4"/>
+      <stop offset="100%" stop-color="#d28745"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="960" cy="160" r="140" fill="#2a211b" fill-opacity="0.08"/>
+  <circle cx="250" cy="710" r="170" fill="#fff7ec" fill-opacity="0.45"/>
+  <text x="90" y="120" fill="#2a211b" fill-opacity="0.66" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif" font-size="28" letter-spacing="4">MAXFIELD'S PREVIEW</text>
+  <text x="90" y="500" fill="#2a211b" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif" font-size="92" font-weight="700">Pancakes</text>
+  <text x="90" y="574" fill="#2a211b" fill-opacity="0.82" font-family="Avenir Next, Trebuchet MS, Segoe UI, sans-serif" font-size="34">Warm breakfast-house menu highlights</text>
+</svg>
