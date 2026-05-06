@@ -1,0 +1,112 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T13:05:00Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "auth_check": {
+    "AGENCY_AUTONOMY_API_KEY": "missing",
+    "OPENCLAW_WEBHOOK_SECRET": "missing",
+    "api_write_attempted": false,
+    "reason": "Mission Control agency API auth is unavailable in this runtime; no MC write was attempted for the top_3_improvements gate and no raw Supabase agency writes were performed."
+  },
+  "blocker": {
+    "id": "mission_control_auth",
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing. Top-3-improvements evidence is complete locally and ready to sync once auth is restored.",
+    "source": "openclaw_maxfields_top_3_improvements_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to the runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST/PATCH this prepared top_3_improvements payload."
+  },
+  "build_update_payload": {
+    "build_stage": "top_3_improvements",
+    "status": "in_progress",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": "plate-01",
+    "archetype": "Cuisine",
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "top_3_improvements_path": "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+    "evidence_urls": [
+      "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/build-notes-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/blockers/mission-control-auth-blocked-2026-05-06.md"
+    ],
+    "artifact_paths": {
+      "top_3_improvements_doc": "restaurant-website-system/sites/maxfields-pancake-house/top-3-improvements-2026-05-06.md",
+      "review_themes_packet": "restaurant-website-system/sites/maxfields-pancake-house/scrapes/google-reviews-highest-30.md",
+      "audit": "restaurant-website-system/sites/maxfields-pancake-house/audit.md",
+      "improvement_notes": "restaurant-website-system/sites/maxfields-pancake-house/improvement-pass-2026-05-06.md",
+      "checklist_md": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "checklist_json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
+    },
+    "requirementsPassed": [
+      "top-three-named",
+      "top-three-implemented",
+      "top-three-evidence"
+    ],
+    "verification": {
+      "typecheck": "passed",
+      "build": "passed",
+      "forbidden_placeholder_grep": "passed"
+    },
+    "topThreeImprovements": [
+      {
+        "name": "Broken-domain sales story above the fold",
+        "implemented_in": [
+          "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+          "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx"
+        ]
+      },
+      {
+        "name": "Review proof bridged directly to conversion",
+        "implemented_in": [
+          "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+          "restaurant-website-system/sites/maxfields-pancake-house/components/LatestUpdatesGrid.tsx"
+        ]
+      },
+      {
+        "name": "Hours/order uncertainty handled with a visit-confidence module",
+        "implemented_in": [
+          "restaurant-website-system/sites/maxfields-pancake-house/content.ts",
+          "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+          "restaurant-website-system/sites/maxfields-pancake-house/app/page.tsx",
+          "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx"
+        ]
+      }
+    ],
+    "remaining_blockers": [
+      {
+        "id": "mission_control_auth",
+        "message": "MC auth is unavailable in the runtime, so the prepared top_3_improvements payload could not be synced."
+      },
+      {
+        "id": "hours_confirmation",
+        "message": "Public sources still conflict on hours; final publish should confirm with Google Business Profile and/or owner confirmation."
+      },
+      {
+        "id": "order_link_confirmation",
+        "message": "Public ordering actions exist, but a direct owner-controlled provider was not verified."
+      }
+    ],
+    "notes": [
+      "The homepage hero now sells the broken-site before/after problem positively instead of assuming the owner already sees the value.",
+      "Review themes now connect directly to menu, call, and directions CTAs without inventing review quotes.",
+      "Hours and ordering uncertainty are surfaced in a more polished verify-before-you-go module reused on home and contact."
+    ],
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; top_3_improvements payload is prepared locally.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-top-3-improvements-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield top_3_improvements completed locally with a stronger broken-domain sales story, CTA-linked review proof, and a reusable visit-confidence module. MC writeback remains blocked on agency API auth."
+  }
+}

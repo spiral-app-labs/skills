@@ -3,6 +3,7 @@ import { HeroSplit } from '../components/HeroSplit';
 import { InlineMenuHomepage } from '../components/InlineMenuHomepage';
 import { TaglineBanner } from '../components/TaglineBanner';
 import { LatestUpdatesGrid } from '../components/LatestUpdatesGrid';
+import { VisitConfidencePanel } from '../components/VisitConfidencePanel';
 import { FAQAccordion } from '../components/FAQAccordion';
 import { ContactCtaClosing } from '../components/ContactCtaClosing';
 import { WordmarkFooter } from '../components/WordmarkFooter';
@@ -22,6 +23,9 @@ export default function HomePage() {
         </ScrollRevealStandard>
         <ScrollRevealStandard>
           <LatestUpdatesGrid />
+        </ScrollRevealStandard>
+        <ScrollRevealStandard>
+          <VisitConfidencePanel />
         </ScrollRevealStandard>
         <ScrollRevealStandard>
           <FAQAccordion />

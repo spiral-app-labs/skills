@@ -55,7 +55,7 @@ export const content = {
     eyebrow: 'Schaumburg breakfast favorite',
     headline: "Schaumburg pancakes,\nskillets, coffee,\nand breakfast-house basics in one place.",
     subcopy:
-      "This Maxfield's preview keeps the chosen Cuisine / plate-01 route but rewrites it around what local diners actually need: a clear call path, directions, breakfast highlights, and review-backed reasons to stop in before the day gets moving.",
+      "This Maxfield's preview keeps the chosen Cuisine / plate-01 route, but fixes the owner-facing problem first: the official domain was returning a Wix 404 while diners still needed a phone number, directions, breakfast highlights, and review-backed reasons to visit.",
     cta: { label: 'Call (847) 781-0300', href: 'tel:+18477810300' },
     secondaryCta: { label: 'Get directions', href: directionsHref },
     tertiaryCta: { label: 'See menu highlights', href: '/#menu' },
@@ -70,6 +70,21 @@ export const content = {
       },
     ],
     badges: ['Breakfast restaurant', '700 E Schaumburg Rd', 'Hours vary by source'],
+    recovery: {
+      eyebrow: 'What this preview fixes',
+      title: 'The official site was down. This preview restores the visit basics.',
+      items: [
+        {
+          label: 'Before',
+          body: 'The live Maxfield domain returned a Wix ConnectYourDomain 404 instead of a usable restaurant homepage.',
+        },
+        {
+          label: 'Now',
+          body: 'Phone, directions, breakfast highlights, and review-backed trust are back in one clear owner-controlled flow.',
+        },
+      ],
+      note: 'Positive sales angle: this is not a reinvention pitch. It is a cleaner, more trustworthy way to turn existing local demand into visits.',
+    },
   },
 
   menuIntro: {
@@ -226,9 +241,9 @@ export const content = {
   },
 
   proof: {
-    heading: 'What repeated Google reviews point to',
+    heading: 'What repeated Google reviews support visitors doing next',
     intro:
-      'The Highest-rated 30 written Google reviews captured on May 6, 2026 repeatedly support these themes. The copy below summarizes those patterns instead of inventing testimonial language.',
+      'The Highest-rated 30 written Google reviews captured on May 6, 2026 repeatedly support these themes. Each theme now leads to a real next step instead of sitting as passive proof.',
     cards: [
       {
         source: 'Breakfast staples',
@@ -236,6 +251,9 @@ export const content = {
         detail: 'Summarized from the Highest-rated 30 written Google reviews',
         body:
           'Reviewers repeatedly call out fluffy pancakes, French toast, waffles, skillets, crepes, biscuits and gravy, and strong coffee. The homepage now leans into that breakfast-first identity instead of broad restaurant-template language.',
+        bridge: 'Use the menu highlights to set expectations before the drive over.',
+        ctaLabel: 'Browse menu highlights',
+        ctaHref: '/#menu',
       },
       {
         source: 'Service and pace',
@@ -243,6 +261,9 @@ export const content = {
         detail: 'Themes repeated across family visits, brunch stops, and weekday breakfasts',
         body:
           'The review packet repeatedly mentions warm greetings, attentive staff, quick food, and no-wait or speedy visits. That supports a stronger call-to-visit conversion path on both desktop and mobile.',
+        bridge: 'If timing matters, call first and confirm the best window before heading over.',
+        ctaLabel: 'Call to confirm timing',
+        ctaHref: 'tel:+18477810300',
       },
       {
         source: 'Value and local trust',
@@ -250,8 +271,45 @@ export const content = {
         detail: 'Google Maps showed 4.5 stars from 983 reviews at capture time',
         body:
           "The captured reviews repeatedly describe reasonable prices, generous portions, a clean diner feel, and repeat family visits. That makes Maxfield's feel like a dependable Schaumburg breakfast stop rather than a one-off trend play.",
+        bridge: 'Open directions and head to the Schaumburg location with the verified address already loaded.',
+        ctaLabel: 'Get directions',
+        ctaHref: directionsHref,
       },
     ],
+  },
+
+  visitConfidence: {
+    eyebrow: 'Verify before you go',
+    heading: 'Visit confidence without fake certainty',
+    intro:
+      "Public sources agree on Maxfield's location and phone, but not on today's hours or a direct order provider. This preview makes the unknowns easy to handle instead of hiding them.",
+    cards: [
+      {
+        title: 'Address and phone are consistent',
+        body: 'Google Maps, Restaurantji, and Chicago Northwest all point to 700 E Schaumburg Rd and (847) 781-0300.',
+        ctaLabel: 'Open directions',
+        ctaHref: directionsHref,
+      },
+      {
+        title: 'Hours still need a quick check',
+        body: 'Restaurantji and Chicago Northwest show different schedules, so the safest current path is a short call before you leave.',
+        ctaLabel: 'Call before you go',
+        ctaHref: 'tel:+18477810300',
+      },
+      {
+        title: 'Ordering is not verified here',
+        body: 'Public listings expose order actions, but a direct owner-controlled order provider was not confirmed. This preview keeps that truthful.',
+        ctaLabel: 'Ask about takeout',
+        ctaHref: 'tel:+18477810300',
+      },
+    ],
+    hours: [
+      { day: 'Restaurantji', time: 'Mon/Tue/Sun 7AM–2PM; Wed–Sat 7AM–2PM + 3:30–8PM' },
+      { day: 'Chicago Northwest', time: 'Sun–Wed 7AM–3PM; Thu–Sat 7AM–9PM' },
+      { day: 'Best current step', time: 'Call (847) 781-0300 to confirm today' },
+    ],
+    footnote:
+      'No fake reservation widget, no fake online order link, and no invented live-hours promise.',
   },
 
   faq: {
@@ -399,5 +457,7 @@ export const content = {
         'Yelp shows 3.7 stars with 268 reviews and 230 photos.',
       ],
     },
+    confidenceNote:
+      'If you are deciding between stopping in, calling ahead, or checking for takeout, the truthful answer is simple: directions are verified, the phone is verified, and hours/order details should be confirmed directly.',
   },
 };

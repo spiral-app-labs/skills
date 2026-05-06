@@ -6,7 +6,7 @@ import { content } from '../content';
 import { theme } from '../theme';
 
 export function HeroSplit() {
-  const { eyebrow, headline, subcopy, cta, secondaryCta, tertiaryCta, photos, badges } = content.hero;
+  const { eyebrow, headline, subcopy, cta, secondaryCta, tertiaryCta, photos, badges, recovery } = content.hero;
 
   return (
     <section className="max-w-plate mx-auto px-5 md:px-10 pt-10 md:pt-24 pb-14 md:pb-24">
@@ -52,20 +52,35 @@ export function HeroSplit() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 gap-3 md:gap-4 max-w-[30rem] mx-auto w-full"
+          className="w-full max-w-[34rem] mx-auto"
           initial={{ opacity: 0, y: theme.motion.revealLift }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: theme.motion.revealDuration, delay: 0.12, ease: theme.motion.easing }}
         >
-          {photos.map((p, i) => (
-            <div
-              key={i}
-              className={`aspect-[3/4] overflow-hidden rounded-card bg-canvas-alt ${i === 0 ? 'md:translate-y-8' : ''}`}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.src} alt={p.alt} className="w-full h-full object-cover" />
+          <div className="grid grid-cols-2 gap-3 md:gap-4">
+            {photos.map((p, i) => (
+              <div
+                key={i}
+                className={`aspect-[3/4] overflow-hidden rounded-card bg-canvas-alt ${i === 0 ? 'md:translate-y-8' : ''}`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={p.src} alt={p.alt} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 rounded-card border border-divider bg-white/80 p-5 md:p-6">
+            <div className="text-eyebrow text-accent">{recovery.eyebrow}</div>
+            <h2 className="mt-3 text-[24px] leading-tight font-medium text-ink">{recovery.title}</h2>
+            <div className="mt-5 grid gap-3">
+              {recovery.items.map((item) => (
+                <div key={item.label} className="rounded-[24px] bg-canvas-alt px-4 py-4">
+                  <div className="text-[11px] uppercase tracking-[0.16em] text-ink-muted">{item.label}</div>
+                  <p className="mt-2 text-body text-ink-muted">{item.body}</p>
+                </div>
+              ))}
             </div>
-          ))}
+            <p className="mt-4 text-body-sm text-ink-muted">{recovery.note}</p>
+          </div>
         </motion.div>
       </div>
     </section>

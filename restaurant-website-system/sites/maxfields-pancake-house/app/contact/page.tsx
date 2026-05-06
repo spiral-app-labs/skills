@@ -2,11 +2,12 @@ import { SiteHeader } from '../../components/SiteHeader';
 import { ContactCtaClosing } from '../../components/ContactCtaClosing';
 import { WordmarkFooter } from '../../components/WordmarkFooter';
 import { LiveMapEmbed } from '../../components/LiveMapEmbed';
+import { VisitConfidencePanel } from '../../components/VisitConfidencePanel';
 import { content } from '../../content';
 import Link from 'next/link';
 
 export default function ContactPage() {
-  const { eyebrow, heading, subcopy, info } = content.contact;
+  const { eyebrow, heading, subcopy, info, confidenceNote } = content.contact;
   const b = content.brand;
   return (
     <>
@@ -60,6 +61,7 @@ export default function ContactPage() {
                   ))}
                 </ul>
               </div>
+              <p className="mt-8 text-body-sm text-ink-muted">{confidenceNote}</p>
             </section>
 
             <aside className="space-y-8 rounded-card border border-divider p-6 md:p-8">
@@ -87,6 +89,7 @@ export default function ContactPage() {
           </div>
         </section>
 
+        <VisitConfidencePanel />
         <ContactCtaClosing />
       </main>
       <WordmarkFooter />
