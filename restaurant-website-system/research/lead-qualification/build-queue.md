@@ -242,3 +242,17 @@ New user-added bottom-of-pile lead:
   candidates.
 - **Status:** unaudited. Run the standard lead-qualification and template-routing
   pass before building or pitching.
+
+## 2026-05-06 addendum - Mission Control build handoff
+
+The current build queue is now represented in
+`mission-control-build-handoff-2026-05-06.md`.
+
+Use that handoff for the OpenClaw Mission Control sync pass. It records:
+
+- local built-site backfills that exist under `restaurant-website-system/sites/`
+  but were missing or stale in Mission Control
+- the two current active research/build slots: Mary's Mexican Grill and
+  Winestock Market & Lounge
+- the next 15 fresh builds after those slots, using the wide-net A-tier list as
+  the priority source and demoting leads that need more verification

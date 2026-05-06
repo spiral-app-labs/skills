@@ -24,6 +24,8 @@ Do not use `agency-overnight` for new work. It is only a compatibility pointer.
    - Prefer agency leads linked to MC tasks.
    - Sales status stays simple: `lead`, `pitched`, `in_progress`, `delivered`, `closed_won`, `closed_lost`.
    - Build progress lives in `agency_leads.metadata.build_stage`, not in sales status.
+   - Restaurant outreach progress lives in `agency_leads.metadata.outreach_stage`: `not_contacted`, `sent`, `replied`, `demo_booked`, `demo_held`, `closed_won`, `closed_lost`.
+   - Use `GET /api/agency/queue/next` when you need the single best next move.
 2. Pick exactly one build unless Mission Control explicitly assigns a batch.
 3. Create or refresh `restaurant-website-system/sites/<slug>/checklist.json` and `checklist.md`.
 4. Mirror checklist requirements into the MC parent task `metadata.requirements`.
@@ -38,6 +40,16 @@ Do not use `agency-overnight` for new work. It is only a compatibility pointer.
    - `delivered` or `blocked`
 6. Log heartbeat progress at natural pauses and at the end of each work block.
 7. Escalate only real blockers. Create/update Mission Control blocker state first, then Donna/Ethan can supervise from there.
+
+## Golden Otter CRM Loop
+
+Mission Control now has an agency cockpit. Keep it alive:
+
+- Log every meaningful sales/proof event with `POST /api/agency/events` or the more specific outreach/build/QA/close routes.
+- For cold email, use `POST /api/agency/leads/:leadId/outreach` with `outreach_stage=sent`, `specific_problem`, `owner_name` if known, and `next_action`.
+- When a reply books a demo, move to `demo_booked`; after the call, move to `demo_held`.
+- Use `POST /api/agency/leads/:leadId/close` for `won` or `lost`. A won close requires `demo_held_at` unless a recorded override explains why.
+- Do not mark delivery complete from local files. MC must have three QA rounds, preview URL, delivery evidence, and passed requirements.
 
 ## Blocker Policy
 
@@ -76,3 +88,4 @@ A build is not deliverable until all are true:
 - Do not use hardcoded target lists as the queue.
 - Do not bury progress in local notes without MC writeback.
 - Do not mark a task done if requirement rows or evidence are missing.
+- Do not build from `routing` onward before `lead-fit-qualified` is passed or a qualification skip reason is recorded.
