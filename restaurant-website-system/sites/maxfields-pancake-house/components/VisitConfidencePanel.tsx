@@ -49,13 +49,13 @@ export function VisitConfidencePanel() {
         </motion.div>
 
         <motion.aside
-          className="rounded-card border border-divider bg-white/80 p-6 md:p-7"
+          className="rounded-card border border-divider bg-canvas-alt p-6 md:p-7 shadow-[0_18px_50px_rgba(156,90,45,0.06)]"
           initial={{ opacity: 0, y: theme.motion.revealLift }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: theme.motion.revealDuration, delay: 0.1, ease: theme.motion.easing }}
         >
-          <div className="text-eyebrow text-ink-muted">Source comparison</div>
+          <div className="text-eyebrow text-accent">Source comparison</div>
           <h3 className="mt-3 text-[24px] leading-tight font-medium text-ink">Hours are handled transparently</h3>
           <p className="mt-3 text-body text-ink-muted">
             Instead of picking one unverified schedule, the preview keeps both public versions visible and points visitors to the fastest truth-safe next step.
