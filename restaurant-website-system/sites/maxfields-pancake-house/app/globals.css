@@ -36,8 +36,8 @@ a {
 .menu-row {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
-  padding: 20px 0;
+  gap: 14px;
+  padding: 16px 0;
   border-bottom: 1px solid theme('colors.divider');
   align-items: baseline;
 }
@@ -46,6 +46,8 @@ a {
 @media (min-width: 768px) {
   .menu-row {
     grid-template-columns: 1fr auto;
+    gap: 24px;
+    padding: 20px 0;
   }
 }
 
@@ -60,7 +62,7 @@ a {
 .wordmark-footer {
   font-family: theme('fontFamily.display');
   font-weight: 700;
-  font-size: clamp(120px, 28vw, 360px);
+  font-size: clamp(72px, 22vw, 320px);
   line-height: 0.85;
   letter-spacing: -0.04em;
   color: theme('colors.ink');
@@ -75,8 +77,15 @@ a {
   border-radius: 9999px;
   border: 1px solid theme('colors.divider');
   background: rgba(255,255,255,0.55);
-  padding: 10px 14px;
-  font-size: 14px;
+  padding: 8px 12px;
+  font-size: 13px;
   line-height: 1.2;
   color: theme('colors.ink');
+}
+
+@media (min-width: 768px) {
+  .info-chip {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
 }
