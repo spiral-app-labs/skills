@@ -1,0 +1,319 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "google_reviews_evidence",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "captured_at": "2026-05-07T14:58:00Z",
+  "source": "Google Maps reviews tab",
+  "source_url": "https://www.google.com/maps/place/The+Secret+Kitchen/@42.0250555,-88.1146087,17z/data=!4m8!3m7!1s0x880fa9a3e537d1f1:0x56b028becee33e9a!8m2!3d42.0250555!4d-88.1146087!9m1!1b1!16s%2Fg%2F11z1rmhntn?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
+  "requested_sort": "Highest rated",
+  "visible_rating_summary": {
+    "rating": "4.7",
+    "review_count": "161"
+  },
+  "capture_method": "OpenClaw browser host session; Google Maps reviews tab; sorted Highest; expanded visible More buttons; captured first 30 written reviews loaded in DOM.",
+  "canonical_gate": "reviews",
+  "count": 30,
+  "reviews": [
+    {
+      "index": 1,
+      "author": "Pratibha Salian - Beauty Channel",
+      "reviewer_stats": "12 reviews",
+      "rating": "5 stars",
+      "relative_time": "11 hours ago",
+      "review_text": "It was awesome food was delicious loved it! Will come again sure! Lamb chops and complimentary cake was hit!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25KV1MwTkdSM0ZXWW0xZlZtdE5SWEEyUzJGT2RFRRAB"
+    },
+    {
+      "index": 2,
+      "author": "Jasmin Patel",
+      "reviewer_stats": "2 reviews",
+      "rating": "5 stars",
+      "relative_time": "13 hours ago",
+      "review_text": "Beautiful restaurant with amazing food and service! Highly recommended! Avocado dahi puri is a must have!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2t4alZqVTVXWEk1YlVvMGRuZEtaVVJKU0haTE5WRRAB"
+    },
+    {
+      "index": 3,
+      "author": "Akash Patel",
+      "reviewer_stats": "Local Guide · 10 reviews · 2 photos",
+      "rating": "5 stars",
+      "relative_time": "21 hours ago",
+      "review_text": "Amazing experience at The Secret Kitchen! The North Indian food was absolutely delicious and full of authentic flavors. The avocado dahi puri was a standout dish and everything we tried was fresh and well presented. The ambiance and decor are beautiful, making it a perfect spot for dinner with family or friends. Friendly staff, great service, and a lovely atmosphere definitely one of the best places for Indian dinner in the area. Will be visiting again!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21sU05teE9NRmR1TUcxdE9EVlZhVWwyWXpoS1lXYxAB"
+    },
+    {
+      "index": 4,
+      "author": "Abha Anup",
+      "reviewer_stats": "Local Guide · 18 reviews · 2 photos",
+      "rating": "5 stars",
+      "relative_time": "a day ago",
+      "review_text": "Overall a great experience @ The Secret Kitchen.. Good food, good customer service and pleasant ambience…",
+      "owner_response": "Thank you so much for your wonderful review and for taking the time to share your experience with us.\n\nWe also truly appreciate your feedback regarding the reservation system. As a newly opened restaurant, we are continuously refining the experience to make reservations and table management smoother for all our guests. Your input genuinely helps us improve.\n\nWe look forward to welcoming you back again soon for another memorable dining experience at The Secret Kitchen.\n\nThe team at TSK Schaumburg",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25wTE9GSnpjVFZhVUZaQ2RXRmpjVnBETVcwd2FXYxAB"
+    },
+    {
+      "index": 5,
+      "author": "ruthie watson",
+      "reviewer_stats": "1 review · 3 photos",
+      "rating": "5 stars",
+      "relative_time": "a day ago",
+      "review_text": "Beautiful, setting delicious food and good service",
+      "owner_response": "Thank you so much, Ruthie! We’re delighted you enjoyed the beautiful ambiance, delicious food, and attentive service. It means a lot to our team that you appreciated the quiet atmosphere and smooth dining experience. We look forward to welcoming you back again soon for another memorable evening at The Secret Kitchen.\n\nThe team at TSK Schaumburg",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25kd1F6VXpNbVF4WkhGWmJDMHpkbVZrTnpaS1JVRRAB"
+    },
+    {
+      "index": 6,
+      "author": "Sonia Sami",
+      "reviewer_stats": "8 reviews · 3 photos",
+      "rating": "5 stars",
+      "relative_time": "a day ago",
+      "review_text": "Ishita was great",
+      "owner_response": "Thank you so much, Sonia, for your lovely review. We’re so happy to hear Ishita took great care of you and that you enjoyed the atmosphere and smooth dining experience. We truly appreciate your honest feedback on the food as well, as it helps us improve every day. Looking forward to serving you again soon with an even better culinary experience.\n\nThe team at TSK Schaumburg",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT205T1oyY3dlR3hxY2xoZmNFMXRkbTV4VjJKNFVYYxAB"
+    },
+    {
+      "index": 7,
+      "author": "Arnum Cohran",
+      "reviewer_stats": "8 reviews · 2 photos",
+      "rating": "5 stars",
+      "relative_time": "a day ago",
+      "review_text": "Don't walk. RUN to the Secret Kitchen! Top-tier cuisine. Excellent customer service. I'll be back again and again.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2s1TFJHVmlhR1Y1ZWs5MldqUmllRGxSVFRCUlNFRRAB"
+    },
+    {
+      "index": 8,
+      "author": "Anthony Martorina",
+      "reviewer_stats": "Local Guide · 395 reviews · 4,067 photos",
+      "rating": "5 stars",
+      "relative_time": "2 days ago",
+      "review_text": "We enjoyed the beautiful Indian cusine from acclaimed celebrity Chef Aanal Kotak. She brings her globally renowned restaurant serving modern high-end Indian cuisine to Chicagoland. This is the first location in the US with restaurants already in India, Canada & Australia. Diners will enjoy Royal Indian cooking which features aromatic spices, rich ingredients & slow cooking techniques. Every bite was an incredible culinary journey.\n\nWe started with Indian street food. The avocado dahi puri was a delicious bite of creamy avocado topped with sweet yogurt & chutney. I also loved the spicy crispy chilli paneer sambousek. I also recommend the hearty\nTuscan tomato soup with flavorful spices.\n\nNext, we enjoyed the juicy tandoori prawns were grilled to perfection. The tender lamb chop marinated in rich Nawabi spices comes grilled & glazed to the table over hot coals. It’s a great presentation. I liked the spicy tangy glaze of the chicken lollipops. The ruby peanut tikki was a nice fusion  of nutty & earthy flavors.\n\nWe also enjoyed the burrata cheese Makhania. It was a very unique experience with its creative Italy meets North Indian indulgence. The slow-cooked lamb shanks in a deeply spiced, aromatic stew from Mughal kitchens was the star of the show. The South Indian-style bone-in chicken curry spiced with roasted chettinad masala was bold & flavorful. We also enjoyed sides of onion garlic naan & dal makhani.\n\nWe ended with two desserts. The soft gulab jamun, which is flambéed tableside for a dramatic presentation. Chef’s signature dessert, which highlights her artistry & passion with an indulgent finish.\n\nCocktails are creative and served on a unique floral tray. The space is really beautiful. Some highlights include the crimson velvet seating, sage-green origami lotus ceiling & glowing backlit white onyx countertop bar. Guests will also see flamingos throughout the restaurant. This symbolizes Chef’s journey across the continents.",
+      "owner_response": "Thank you",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25aR1dDMU5jREJOYTNwcmRrVklhMWcxUVZNMlNVRRAB"
+    },
+    {
+      "index": 9,
+      "author": "Rekha Tripathi",
+      "reviewer_stats": "3 reviews",
+      "rating": "5 stars",
+      "relative_time": "2 days ago",
+      "review_text": "We had an absolutely wonderful experience at this restaurant. The ambience is beautifully done - warm, inviting, and thoughtfully designed, making it perfect for our special occasion.\n\nThe service truly stood out. Ishita was especially helpful in guiding us through the menu and suggesting the must-try dishes, all of which turned out to be excellent recommendations. She was attentive, courteous, and genuinely welcoming. She made sure everything was taken care of promptly and added a personal touch that made the experience even more enjoyable.\n\nAs for the food it was simply outstanding. Every dish was fresh, flavorful, and presented with great attention to detail. You can really tell that quality ingredients and care go into each item on the menu.\n\nOverall, a fantastic dining experience. I would definitely recommend this place and look forward to visiting again!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tFd2VXRnRTVU4yY2xWc0xVWlVSbTFYTVc5cmNsRRAB"
+    },
+    {
+      "index": 10,
+      "author": "Krupa Kushpatel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "2 days ago",
+      "review_text": "Absolutely loved the experience at The Secret Kitchen. The food is on another level. The avocado dahi puri was fresh and perfectly balanced, and the butter chicken had a rich, smoky flavor that stood out. The ambiance is elegant and feels like a true fine dining spot. Definitely coming back",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pWWk56Vm9ZUzE2UjNST00yVkRMVFZYYTJoZldIYxAB"
+    },
+    {
+      "index": 11,
+      "author": "Raj Jain",
+      "reviewer_stats": "5 reviews",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Great food and hospitality. Ishita was a great  host. Highly recommend the appetizers.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2trMVJsRnJjRXBLVkRoaFZIcGxNbVZIYWpaUVIwRRAB"
+    },
+    {
+      "index": 12,
+      "author": "unmana patel",
+      "reviewer_stats": "7 reviews",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Food was delicious as well as service",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2w5NlFUaHNTMVpvZFVORlRUbHJZbTlGY2kxb2JWRRAB"
+    },
+    {
+      "index": 13,
+      "author": "Nick Patel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Great food!!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2t0cWFETndWM2t0ZEhkM05rSnRjR1Z4UjNWQlJuYxAB"
+    },
+    {
+      "index": 14,
+      "author": "Medha Pathak",
+      "reviewer_stats": "2 reviews",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Presentation 100/10\nThe waiters are super kind and respectful.The food was too delicious. Very authentic Indian taste.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21ZelJXNTJVM2t4V1Roc1N6VkhiV3RrYXkxVlpuYxAB"
+    },
+    {
+      "index": 15,
+      "author": "Biju George",
+      "reviewer_stats": "7 reviews",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "The food was excellent, the service was good but the space was tight",
+      "owner_response": "Thank you",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25ObmRGSm9VekUxYTNBNVowbFRWMWhGT0VGaFEzYxAB"
+    },
+    {
+      "index": 16,
+      "author": "Jaclyn Kaspzyk",
+      "reviewer_stats": "2 reviews",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Great atmosphere! Delicious food! Definitely will come here again!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25WWVEwczVlbXBLWHpkM1VWbDFOa2d3TlZFNVVGRRAB"
+    },
+    {
+      "index": 17,
+      "author": "Gita Patel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "What impressed me most was the consistency—from the taste and presentation to the service and ambiance. It’s rare to find a place that delivers on all fronts, but this restaurant truly does. I would highly recommend it to anyone looking for a delicious meal and a great overall dining experience. I’m already looking forward to my next visit",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21kSWNVUmhTRjh0YjNad1dEZFJOR0UzY0doelZYYxAB"
+    },
+    {
+      "index": 18,
+      "author": "Himani Pate",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "I recently visited this restaurant and had a really pleasant experience. The atmosphere was warm and inviting, making it a great spot to relax and enjoy a meal. The staff were attentive and friendly.\nThe food was definitely the highlight—everything tasted fresh and well-prepared. The large variety of options available.\nOverall, it’s a solid choice. I’d happily return and recommend it to others looking for a reliable dining experience.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25CRlkxQmpZMHRyYVhKbE9YZzJTR1JEV2tGNFMwRRAB"
+    },
+    {
+      "index": 19,
+      "author": "Bhavana Patel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "I recently had the pleasure of dining at this restaurant, and it left a genuinely positive impression from start to finish. The atmosphere strikes a perfect balance between cozy and upscale—soft lighting, tasteful décor, and just enough background music to create a relaxed vibe without overpowering conversation.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21GRFVFdzRiREp3UWxSb1RWQlJjbDlJYkZaMVltYxAB"
+    },
+    {
+      "index": 20,
+      "author": "Anmol Patel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Super nice ambiance and amazing indian authentic food , we never tasted this amazing taste before, good service. Good place for family treats and meet. Place is very busy and lively.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21oTlZFd3RUMEZNWlhneldsaDJkVWxEWkRaS1dsRRAB"
+    },
+    {
+      "index": 21,
+      "author": "Prince Patel",
+      "reviewer_stats": "1 review · 3 photos",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "An amazing dining experience driven by the brilliance of celebrity chef Anal Kotak. The menu stands out with bold, rich flavors and a level of detail you don’t see everywhere. Every dish felt carefully crafted and memorable.\n\nThe ambiance is another highlight. The decor is elegant and modern, creating a very inviting and high-end atmosphere that enhances the entire meal.\n\nService may not be perfect yet and has some room to grow, but the incredible food and beautiful setup make up for it completely. For us, it’s an easy 5 stars based on the quality of food and the overall vibe alone. Definitely worth visiting.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pWelZqZDRjMk5SU0VoU1NrRlpOMTlTVG5WSVFXYxAB"
+    },
+    {
+      "index": 22,
+      "author": "Prince Patel",
+      "reviewer_stats": "5 reviews · 8 photos",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "This place is a true reflection of celebrity chef Anal Kotak’s vision. The food is exceptional, with every dish showcasing unique flavors and thoughtful presentation. You can really tell there’s a high level of creativity and expertise behind the menu.\n\nThe decor is stunning and adds so much to the experience. It feels upscale, stylish, and very well put together, making it perfect for a special night out or even a casual premium dining experience.\n\nService could definitely be improved in terms of attentiveness and timing, but honestly, the food and ambiance are so strong that it still deserves a full 5 star rating. We came for the food and overall experience, and it absolutely delivered.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tWbE5HVlFkRTF3YURBeVkwaEtiRXRSUzJ0MVIzYxAB"
+    },
+    {
+      "index": 23,
+      "author": "himanshu patel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "3 days ago",
+      "review_text": "Super amazing food.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2sxVFZqaEVXSHBSV1c5T2EyVmxTRTU0Y25aaE0xRRAB"
+    },
+    {
+      "index": 24,
+      "author": "Ayushi Patel",
+      "reviewer_stats": "3 reviews · 2 photos",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "The experience here is clearly driven by the vision of celebrity chef Anal Kotak. The food is the real star. Every dish we tried was packed with flavor, beautifully presented, and felt thoughtfully curated rather than routine. It’s not just good food, it’s memorable food.\n\nThe decor adds another layer to the experience. The ambiance is modern, elegant, and very well designed, making the entire place feel premium and inviting.\n\nService does have some room for improvement, especially during busy times, but the food and overall atmosphere easily make up for it. Because of that, this is still a solid 5 star experience for us.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xoS1preEhkbE4wTFRSU2VIQldXa3d4WVRKeVFsRRAB"
+    },
+    {
+      "index": 25,
+      "author": "Naiyaben Patel",
+      "reviewer_stats": "3 reviews · 1 photo",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "Dining here truly feels like experiencing the vision of celebrity chef Anal Kotak. The food reflects creativity, balance, and bold flavors that stand out with every dish. You can tell there is real thought and expertise behind the menu, and it elevates the entire experience.\n\nThe decor and ambiance are equally impressive. The space is beautifully designed, modern yet warm, and creates a premium dining atmosphere that makes you want to sit back and enjoy every moment. It feels curated, not just another restaurant setup.\n\nWhile the service does have room for improvement, the quality of food and the stunning decor more than make up for it. Because of that, this is still a 5 star experience for us. Definitely a place worth visiting for the food and overall vibe alone.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21WcGVIaHBSbFZNZFhnM1RWWlJVMk5IV0RNd2RYYxAB"
+    },
+    {
+      "index": 26,
+      "author": "Yash Patel",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "Service was great throughout. The staff was polite, attentive, and made sure everything moved at a good pace without ever making us feel rushed. You can tell there’s an effort to maintain consistency even during busy hours.\n\nFood was outstanding. Everything we tried was full of flavor and came out fresh. Also, there are plenty of vegetarian options on the menu. It’s not just repetitive dishes, there’s actually a good variety to choose from, which was a big plus for our group.\n\nOverall, a very satisfying experience. Good system, great food, and a team that handles high demand really well. Will definitely be coming back.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25vMGFGOXBNa3hMWDJsRFN6Sk5YeTEzZDFWaWJXYxAB"
+    },
+    {
+      "index": 27,
+      "author": "raja patel",
+      "reviewer_stats": "9 reviews",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "We had a fantastic experience from start to finish. The reservation system is very well organized, and we were seated on time without any issues. One thing people need to understand is that the 1.5 hour dining policy exists for a reason. When guests who are seated earlier don’t respect that time limit, it delays the entire flow and unfortunately affects those arriving later. That’s not the restaurant’s fault, but it often gets misunderstood.\n\nOnce seated, everything ran smoothly. The service was attentive, prompt, and welcoming. Staff made sure we were comfortable and checked in regularly without making us feel rushed at all.\n\nThe food was absolutely excellent. Every dish was flavorful, fresh, and well presented. What really stood out was the variety of vegetarian options available. There is a wide selection beyond just paneer dishes, making it a great spot for vegetarians with plenty of choices to explore.\n\nOverall, we left 100% satisfied. Great food, well managed system, and a team that genuinely cares about delivering a good experience. Definitely looking forward to coming back again.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT20wMFNFVkdkRjlTZDJGdlprRk9lRzFIWVZGWGJFRRAB"
+    },
+    {
+      "index": 28,
+      "author": "Hardik Thakkar",
+      "reviewer_stats": "4 reviews · 6 photos",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "This was truly elevated dining experience and The Secret Kitchen delivered on almost every level. The attention to detail in the décor and ambience immediately set the tone. It was elegant, intimate, and thoughtfully designed to create a nice atmosphere.\n\nThe staff was attentive without being overbearing, answered questions about the menu, gave good recommendations, and seemed genuinely committed even though the restaurant was pretty full.\n\nFood was definitely start of the show. Mocktails were great! Each dish was beautifully presented, with a level of care that made it feel like a work of art. The flavors also absolutely deliver! It was rich, balanced, and satisfying that you expect from a celebrity Chef. The desert at the end of the night was just as good! They put final touches at tableside and it was treat to watch.\n\nOverall, The Secret Kitchen was a refined dining experience. Elevated Indian restaurant was much needed in Schaumburg and it's a nice addition to the area. Ambience, service, presentation, and taste all came together in a balance. It was a perfect place for celebration dinner and date night!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25CdlFscElVR3BzTkhweVQzcEVaV000ZG5kWExVRRAB"
+    },
+    {
+      "index": 29,
+      "author": "Ameeta Ganatra",
+      "reviewer_stats": "1 review",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "I recently visited The Secret Kitchen in Schaumburg, and it truly feels like more than just dinner; it’s an experience. The restaurant leans into a modern “royal Indian” concept, and you can feel that intention not just in the ambiance but in how the menu is curated and presented.\n\nWe tried a wide variety of dishes, and overall, the meal felt thoughtful, creative, and indulgent.\n\nThe soups were a comforting start…warm, flavorful, and well-balanced without being too heavy. The standout appetizer for me was the Avocado Dahi Puri, which felt like a fresh, modern twist on classic chaat; creamy, tangy, and beautifully layered with textures.\n\nThe Ruby Peanut Tikki had a great crunch and depth of flavor, while the Tandoori Veg Momos brought a smoky kick that elevated what could’ve been a simple dish into something memorable.\n\nFor mains, the Bollywood Khoya Kaju Masala stood out with its rich, slightly sweet brown gravy; definitely on the indulgent side, but in a good way. The Matka Paneer felt hearty and comforting, with a nice homestyle touch. The TSK Dum Veg Biryani was aromatic and well-spiced, though a bit more subtle compared to the boldness of the other dishes.\n\nAnd you can’t go wrong with the breads: the chilli cheese naan and garlic naan were both fresh, soft, and the perfect vehicles for all the gravies.\n\nOverall, this is not your typical Indian restaurant. It’s more elevated, more experimental, and clearly designed to be an experience rather than just a quick meal. The creativity and effort are undeniable.\n\nAnd the decor deserves its own moment, which is absolutely stunning. Every detail feels intentional and elevated, which makes sense knowing it was curated by chef Aanal herself, who has a background in interior design. You can really feel that expertise in the space. It’s not just a restaurant, it’s an atmosphere.\n\nIf you’re looking for a modern, slightly upscale take on Indian cuisine with a fusion twist, this spot is definitely worth trying!",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT200MmQwcHZWMnR1WTJ4aWVtVm1VR3hNTjNoMllsRRAB"
+    },
+    {
+      "index": 30,
+      "author": "Mitesh Pednekar",
+      "reviewer_stats": "2 reviews",
+      "rating": "5 stars",
+      "relative_time": "4 days ago",
+      "review_text": "I been to the secret kitchen last night it was really memorable dining experience special thanks to rejoy and his team for made our dinner experience memorable.",
+      "owner_response": "",
+      "google_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tsMlFqSjFXblZMTkZsMmJsOWZWRVZZT0ZSclkwRRAB"
+    }
+  ]
+}
