@@ -228,6 +228,7 @@
         "restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md",
         "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
         "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md",
+        "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md",
         "restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md"
       ],
       "blocker": "Template route is locally selected as Bamzi and buildable source bamzi-01 exists, but fork/build is not authorized until MC/founder/owner gates clear."
@@ -484,7 +485,8 @@
       "order": 10,
       "status": "pending",
       "evidence": [
-        "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
+        "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md",
+        "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md"
       ],
       "blocker": null
     },
@@ -523,7 +525,9 @@
       ],
       "order": 11,
       "status": "pending",
-      "evidence": [],
+      "evidence": [
+        "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md"
+      ],
       "blocker": null
     },
     {
@@ -566,7 +570,9 @@
       ],
       "order": 12,
       "status": "pending",
-      "evidence": [],
+      "evidence": [
+        "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md"
+      ],
       "blocker": null
     },
     {
@@ -634,7 +640,8 @@
     "restaurant-website-system/sites/the-secret-kitchen-usa/battle-cards-2026-05-07.md",
     "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/owner-confirmation-request-2026-05-07.md",
     "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
-    "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
+    "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -780,7 +787,7 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "pending",
-      "notes": "Can be evaluated only after a preview exists.",
+      "notes": "Can be evaluated only after a preview exists; menu and claim-safety matrix is prepared for future QA.",
       "evidence": []
     },
     {
