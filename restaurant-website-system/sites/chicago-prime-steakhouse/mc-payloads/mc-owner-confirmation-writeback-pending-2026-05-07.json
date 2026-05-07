@@ -1,0 +1,41 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "owner_confirmation_writeback_pending",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "created_at": "2026-05-07T16:10:51Z",
+  "canonical_gates": ["claimed", "building", "qa_round_1"],
+  "status": "owner_confirmation_request_ready_internal_not_sent_pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Founder approval/contact authorization, MC lead + canonical workflow provisioning, and owner outreach approval are required before sending. No raw Supabase writes were performed.",
+  "owner_confirmation_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "owner_contacted": false,
+  "build_authorized": false,
+  "source_artifacts": [
+    "restaurant-website-system/sites/chicago-prime-steakhouse/preflight-handoff-package-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md"
+  ],
+  "confirmation_topics": [
+    "business name/address/phone/email",
+    "hours and reservation path",
+    "private dining rooms/capacities/packages/policies",
+    "menu currentness and item/price display permissions",
+    "order providers",
+    "live entertainment schedule",
+    "patio/lounge positioning",
+    "George Kalkounos legacy story tone/permissions",
+    "award/review proof permissions",
+    "photo/media rights",
+    "social and utility links",
+    "priority conversion path"
+  ],
+  "recommended_next_actions": [
+    "Attach owner confirmation request to canonical workflow once MC provisioning/auth is available.",
+    "Do not send owner confirmation request until Ethan/founder explicitly approves outreach.",
+    "Use confirmation answers to unlock build/QA claim-safety checks before any owner-facing preview."
+  ]
+}
