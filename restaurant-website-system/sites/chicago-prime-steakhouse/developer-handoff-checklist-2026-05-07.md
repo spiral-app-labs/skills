@@ -4,7 +4,7 @@
 - Status: **implementation readiness only / not build-authorized**
 - Intended gate: future `building` / `forking`
 - Required archetype: **Heaven Palate**
-- Current blockers: Mission Control protected agency API returns `401`; founder approval, MC root/child workflow provisioning, owner confirmations, owner-approved media, preview authorization, and Heaven Palate source/template mapping remain pending.
+- Current blockers: Mission Control protected agency API returns `401`; founder approval, MC root/child workflow provisioning, owner confirmations, owner-approved media, preview authorization, and MC approval of the local source mapping remain pending.
 
 ## Purpose
 
@@ -20,7 +20,7 @@ Do not start a fork/build until all of these are true:
 - The root stage/currentStage allows `building` or `forking`.
 - `checklist.md` and `checklist.json` exist with MC lead/root IDs.
 - Ethan/founder has approved speculative preview work or owner-authorized preview work.
-- Heaven Palate has a confirmed buildable source/template mapping.
+- Builder has read `heaven-palate-source-mapping-2026-05-07.md` and understands that Heaven Palate maps to buildable source `1776-redesign-01` once authorized.
 - Owner/founder confirmation status is recorded for:
   - current hours and reservation path
   - menu/PDF currentness

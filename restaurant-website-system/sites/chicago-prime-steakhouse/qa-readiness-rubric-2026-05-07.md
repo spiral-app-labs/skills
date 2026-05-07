@@ -5,7 +5,7 @@
 - Canonical gates covered: `qa_round_1`, `qa_round_2`, `qa_round_3`, future `packaging`
 - Required archetype: **Heaven Palate**
 - Build status: **not build-authorized yet**
-- Current blockers: Mission Control protected agency API returns `401`; founder approval, MC workflow provisioning, preview URL, owner confirmations, owner-approved media/menu/private-dining details, and Heaven Palate source mapping remain pending.
+- Current blockers: Mission Control protected agency API returns `401`; founder approval, MC workflow provisioning, preview URL, owner confirmations, owner-approved media/menu/private-dining details, and MC approval/attach of the local Heaven Palate source mapping remain pending.
 
 ## Purpose
 

@@ -65,8 +65,9 @@ Local checklist artifacts exist and Chicago Prime is routed to Heaven Palate, bu
 - Evidence required: routing rationale; source.md/content files; npm build/typecheck output; preview URL or local preview evidence
 - Current local evidence:
   - restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md
+- restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md
   - restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md
-- Blocker: Template route is locally selected as Heaven Palate, but fork/build is not authorized and Heaven Palate source mapping is unresolved.
+- Blocker: Local source mapping is prepared: canonical archetype Heaven Palate maps to buildable source template 1776-redesign-01. Fork/build remains blocked until founder/MC authorization, owner confirmations, and preview authorization.
 - Requirement: template-route-locked — Exactly one archetype/template route is chosen and justified
 - Requirement: fork-built — Template fork builds successfully with real content and preserved conversion links
 - Requirement: specificity — No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths
@@ -213,7 +214,7 @@ Local checklist artifacts exist and Chicago Prime is routed to Heaven Palate, bu
 ## Blockers
 
 - checklist: Mission Control protected agency API returns 401, so lead/root task IDs and checklist MC sync cannot be completed yet.
-- building: Build is not authorized until founder approval, MC workflow provisioning, owner confirmations, preview authorization, and Heaven Palate source/template mapping are available.
+- building: Build is not authorized until founder approval, MC workflow provisioning, owner confirmations/photo rights, and preview authorization are available. Local source mapping is prepared: Heaven Palate archetype maps to buildable 1776-redesign-01 source.
 - qa_round_1: QA cannot run until an authorized preview URL, screenshots, link audit, and owner-confirmation state exist.
 
 ## Done Criteria

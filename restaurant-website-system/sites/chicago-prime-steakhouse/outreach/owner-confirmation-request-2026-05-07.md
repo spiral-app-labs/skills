@@ -2,7 +2,7 @@
 
 - Date: 2026-05-07
 - Purpose: confirm facts before any sellable Heaven Palate-style website preview/audit
-- Lead state: seed-ready with local evidence; build pending MC provisioning, founder approval, owner confirmations, preview authorization, and Heaven Palate source/template mapping
+- Lead state: seed-ready with local evidence; build pending MC provisioning, founder approval, owner confirmations, preview authorization, and MC approval/attach of local source mapping
 - Status: internal draft / not sent
 
 ## Short outreach note

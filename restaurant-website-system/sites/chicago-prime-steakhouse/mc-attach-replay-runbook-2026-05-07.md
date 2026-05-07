@@ -88,7 +88,7 @@ Once the attach payload is accepted, verify that MC reflects this order/status:
 4. `routing`
    - `template_slug` / archetype locked to Heaven Palate
 5. `building`
-   - builder brief attached, but build remains blocked until authorization and Heaven Palate source mapping clear
+   - builder brief and source mapping attached, but build remains blocked until authorization and owner confirmations clear
 6. `pitch` / `battle_cards`
    - internal founder brief and battle cards attached as internal/not-owner-facing
 7. `qa_round_1` / `qa_round_2` / `qa_round_3`
@@ -117,7 +117,7 @@ Even after MC attach succeeds, these remain blockers until explicitly cleared:
 - Founder approval to provision/seed and proceed.
 - Owner confirmations for hours, reservations, private dining, menu currentness, live entertainment, photo rights, awards/reviews, and legacy story wording.
 - Preview/build authorization.
-- Heaven Palate source/template mapping.
+- MC approval/attach of the local Heaven Palate source mapping.
 - QA evidence: preview URL, desktop/mobile screenshots, link audit, claim-safety pass.
 
 ## Stop conditions
