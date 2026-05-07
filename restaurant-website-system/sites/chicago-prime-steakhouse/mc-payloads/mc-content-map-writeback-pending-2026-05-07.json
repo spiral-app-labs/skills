@@ -18,6 +18,8 @@
   "recommended_next_actions": [
     "Attach content map to the canonical building task once MC provisioning/auth is available.",
     "Use the map as the first content/content.example.ts translation brief after build authorization.",
-    "Do not publish menu details, awards, reviews, capacities, schedules, or images until owner-confirmed."
-  ]
+    "Do not publish menu details, awards, reviews, capacities, schedules, or images until owner-confirmed.",
+    "Attach the media rights and shot list to MC before implementation/QA; image rights remain unconfirmed."
+  ],
+  "media_plan_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/media-rights-and-shot-list-2026-05-07.md"
 }

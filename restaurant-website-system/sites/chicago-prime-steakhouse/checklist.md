@@ -67,6 +67,7 @@ Local checklist artifacts exist and Chicago Prime is routed to Heaven Palate, bu
   - restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md
 - restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md
 - restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md
+- restaurant-website-system/sites/chicago-prime-steakhouse/media-rights-and-shot-list-2026-05-07.md
   - restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md
 - Blocker: Local source mapping is prepared: canonical archetype Heaven Palate maps to buildable source template 1776-redesign-01. Fork/build remains blocked until founder/MC authorization, owner confirmations, and preview authorization.
 - Requirement: template-route-locked — Exactly one archetype/template route is chosen and justified
