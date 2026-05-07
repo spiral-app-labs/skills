@@ -1,0 +1,48 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "routing_writeback_pending",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "created_at": "2026-05-07T15:59:15Z",
+  "canonical_gate": "routing",
+  "status": "pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 without accepted agency auth, and this lead still requires founder approval / MC lead + canonical workflow provisioning before stage writeback. No raw Supabase writes were performed.",
+  "routing_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "rationale_summary": "Use Heaven Palate for a classic luxury, reservation-first Schaumburg steakhouse site built around Reserve, Private Dining, steak/seafood/wine proof, live lounge support, and George Kalkounos hospitality legacy.",
+  "source_artifacts": [
+    "restaurant-website-system/sites/chicago-prime-steakhouse/research/build-readiness-seed-brief-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-audit-evidence-writeback-pending-2026-05-07.json"
+  ],
+  "rejected_archetypes": [
+    {
+      "archetype": "Bamzi",
+      "reason": "Too trendy/cinematic; Chicago Prime needs classic steakhouse authority, reservation confidence, private-event polish, and restrained legacy storytelling."
+    },
+    {
+      "archetype": "Roma",
+      "reason": "Too quiet and chef-seasonal; the core problem is commercial steakhouse/private dining conversion, not restrained seasonal editorial storytelling."
+    },
+    {
+      "archetype": "Cuisine",
+      "reason": "Too casual/warm as the structural base for a fine-dining steakhouse with private rooms, high price point, and reservation-led conversion."
+    },
+    {
+      "archetype": "Bramble",
+      "reason": "Too bar/nightlife-led; live lounge supports the experience but does not define the primary brand or conversion path."
+    },
+    {
+      "archetype": "Qitchen",
+      "reason": "Too architectural/high-concept; Chicago Prime needs familiar classic luxury and readable conversion hierarchy."
+    }
+  ],
+  "recommended_next_actions": [
+    "Attach routing artifact to the canonical routing child task after founder approval and workflow provisioning.",
+    "Set root metadata.template_slug/archetype to Heaven Palate once protected MC writeback auth is available.",
+    "Do not start a public build until owner confirmations are available or Ethan explicitly approves a speculative internal preview lane.",
+    "If an internal builder brief is prepared before authorization, mark it as non-build-authorized and preserve all confirmation blockers."
+  ]
+}

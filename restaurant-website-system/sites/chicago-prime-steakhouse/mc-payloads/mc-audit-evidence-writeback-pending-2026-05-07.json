@@ -36,8 +36,12 @@
   "recommended_next_actions": [
     "Attach this audit and evidence to the future auditing child task once MC provisioning/auth is available.",
     "Attach the local Google Reviews packet and screenshots to the future reviews child task once MC provisioning/auth is available.",
-    "Lock routing to Heaven Palate unless later evidence contradicts the steakhouse/private-dining thesis.",
+    "Attach routing artifact to the future routing child task once MC provisioning/auth is available.",
     "Before build, confirm hours, reservation, order providers, private dining capacities/policies, live music schedule, awards/review usage, legacy-story tone, and photo rights."
   ],
-  "review_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md"
+  "review_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md",
+  "routing_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "rationale_summary": "Routing is now locally locked to Heaven Palate for a classic luxury, reservation-first Schaumburg steakhouse build."
 }
