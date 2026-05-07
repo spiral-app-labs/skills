@@ -25,9 +25,11 @@
     "Attach pitch and battle-card artifacts to canonical pitch/battle_cards child tasks once MC provisioning/auth is available.",
     "Do not use owner-facing until founder approval, owner confirmations, and preview QA exist.",
     "Resolve Heaven Palate build source mapping before any builder starts implementation.",
-    "Attach preflight handoff, developer checklist, and QA readiness rubric once MC provisioning/auth and preview authorization are available."
+    "Attach preflight handoff, developer checklist, and QA readiness rubric once MC provisioning/auth and preview authorization are available.",
+    "Use owner confirmation request only after Ethan/founder approves outreach; attach it to MC once provisioning/auth is available."
   ],
   "preflight_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/preflight-handoff-package-2026-05-07.md",
   "developer_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/developer-handoff-checklist-2026-05-07.md",
-  "qa_readiness_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md"
+  "qa_readiness_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md",
+  "owner_confirmation_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md"
 }
