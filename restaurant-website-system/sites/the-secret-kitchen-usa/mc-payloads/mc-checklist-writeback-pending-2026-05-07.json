@@ -27,8 +27,10 @@
     "Provision MC lead/root/child workflow when protected agency API auth works.",
     "Replay checklist writeback through MC agency API and replace pending IDs with canonical lead/root task IDs.",
     "Do not build or QA until founder approval, owner confirmations/photo rights, preview authorization, and Bamzi source usage are authorized.",
-    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API.",
+    "Attach the future preview content map to MC before builder implementation starts."
   ],
   "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
-  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md"
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md"
 }

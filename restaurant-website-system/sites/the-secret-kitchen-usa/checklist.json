@@ -225,8 +225,9 @@
       "order": 4,
       "status": "blocked",
       "evidence": [
-        "restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md",
-        "restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md"
+        "restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md",
+        "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
+        "restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md"
       ],
       "blocker": "Template route is locally selected as Bamzi and buildable source bamzi-01 exists, but fork/build is not authorized until MC/founder/owner gates clear."
     },
@@ -626,7 +627,8 @@
     "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/founder-seed-decision-brief-2026-05-07.md",
     "restaurant-website-system/sites/the-secret-kitchen-usa/pitch-doc-2026-05-07.md",
     "restaurant-website-system/sites/the-secret-kitchen-usa/battle-cards-2026-05-07.md",
-    "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/owner-confirmation-request-2026-05-07.md"
+    "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/owner-confirmation-request-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -761,7 +763,7 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "blocked",
-      "notes": "Build/fork not authorized yet.",
+      "notes": "Build/fork not authorized yet; Bamzi route and future preview content map are prepared for future implementation.",
       "evidence": []
     },
     {
