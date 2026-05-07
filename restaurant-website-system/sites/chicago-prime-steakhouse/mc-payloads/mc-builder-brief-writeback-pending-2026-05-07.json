@@ -1,0 +1,39 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "builder_brief_writeback_pending",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "created_at": "2026-05-07T16:02:46Z",
+  "canonical_gate": "building",
+  "status": "brief_ready_build_not_authorized_pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Founder approval, owner/currentness confirmations, MC lead + canonical workflow provisioning, and Heaven Palate implementation-source mapping are still required before any owner-facing build. No raw Supabase writes were performed.",
+  "builder_brief_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "build_authorized": false,
+  "rationale_summary": "Prepare a future Heaven Palate build brief for a classic luxury, reservation-first Schaumburg steakhouse site centered on Reserve, Private Dining, steak/seafood/wine proof, live lounge support, mobile conversion, and George Kalkounos hospitality legacy.",
+  "source_artifacts": [
+    "restaurant-website-system/sites/chicago-prime-steakhouse/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/research/build-readiness-seed-brief-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-routing-writeback-pending-2026-05-07.json"
+  ],
+  "required_confirmations_before_build": [
+    "founder approval and MC workflow provisioning",
+    "approval for any speculative internal preview while MC auth remains blocked",
+    "Heaven Palate implementation source/template mapping",
+    "owner-approved photo rights",
+    "hours/reservation/menu/provider currentness",
+    "private dining room/capacity/package/policy currentness",
+    "live entertainment schedule currentness",
+    "award/review claim permissions",
+    "legacy story tone/permissions"
+  ],
+  "recommended_next_actions": [
+    "Attach this builder brief to the canonical building child task once MC provisioning/auth is available.",
+    "Do not start implementation until Ethan/MC authorizes speculative preview work or canonical workflow is provisioned.",
+    "Resolve the Heaven Palate source/template mapping before assigning a builder.",
+    "If build is authorized, brief the builder to preserve all fact-safety blockers and run desktop/mobile screenshot QA before Ethan review."
+  ]
+}
