@@ -226,6 +226,7 @@
       "status": "blocked",
       "evidence": [
         "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+        "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md",
         "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
         "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md"
       ],
@@ -622,7 +623,8 @@
     "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
-    "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md"
+    "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -754,7 +756,7 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "blocked",
-      "notes": "Build/fork not authorized yet; source mapping is prepared for future build.",
+      "notes": "Build/fork not authorized yet; source mapping and future preview content map are prepared for future implementation.",
       "evidence": []
     },
     {

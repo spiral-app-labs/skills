@@ -61,7 +61,8 @@
     "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/mc-attach-replay-runbook-2026-05-07.md",
-    "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md"
+    "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md"
   ],
   "pending_payloads_to_attach_or_supersede": [
     "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/canonical-workflow-provisioning-request-2026-05-07.json",
@@ -72,7 +73,8 @@
     "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-sales-assets-writeback-pending-2026-05-07.json",
     "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-preflight-handoff-writeback-pending-2026-05-07.json",
     "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-owner-confirmation-writeback-pending-2026-05-07.json",
-    "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-source-mapping-writeback-pending-2026-05-07.json"
+    "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-source-mapping-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-content-map-writeback-pending-2026-05-07.json"
   ],
   "must_not_advance_without_confirmation": [
     "owner_contacted",
@@ -85,10 +87,12 @@
     "Replace pending lead/root IDs in checklist artifacts with canonical MC IDs.",
     "Confirm root currentStage/build_stage remains at the earliest incomplete gate, likely checklist until MC sync is verified.",
     "Resolve founder approval, owner confirmations, preview authorization, and Heaven Palate source/template mapping before build.",
-    "Attach source mapping to the building task; buildable source is 1776-redesign-01, while canonical archetype remains Heaven Palate."
+    "Attach source mapping to the building task; buildable source is 1776-redesign-01, while canonical archetype remains Heaven Palate.",
+    "Attach future preview content map to the building task before authorizing implementation."
   ],
   "source_mapping_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
   "buildable_template_slug": "1776-redesign-01",
   "buildable_template_path": "restaurant-website-system/templates/1776-redesign-01/",
-  "heaven_palate_reference_path": "restaurant-website-system/inputs/framer-templates/heaven-palate-01/"
+  "heaven_palate_reference_path": "restaurant-website-system/inputs/framer-templates/heaven-palate-01/",
+  "content_map_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md"
 }
