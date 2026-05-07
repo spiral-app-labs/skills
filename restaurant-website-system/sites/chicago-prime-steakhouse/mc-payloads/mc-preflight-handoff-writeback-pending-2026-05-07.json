@@ -32,7 +32,10 @@
     "Attach preflight handoff, developer checklist, and QA readiness rubric to canonical building/QA child tasks once MC provisioning/auth is available.",
     "Do not mark QA started until an authorized preview URL, screenshots, link audit, and owner-confirmation state exist.",
     "Resolve Heaven Palate source/template mapping before assigning implementation.",
-    "Use owner confirmation request only after Ethan/founder approves outreach; attach it to MC once provisioning/auth is available."
+    "Use owner confirmation request only after Ethan/founder approves outreach; attach it to MC once provisioning/auth is available.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
   ],
-  "owner_confirmation_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md"
+  "owner_confirmation_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
+  "attach_replay_payload": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-attach-replay-runbook-2026-05-07.md"
 }

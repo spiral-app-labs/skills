@@ -23,6 +23,9 @@
   "recommended_next_actions": [
     "Provision MC lead/root/child workflow when protected agency API auth works.",
     "Replay checklist writeback through MC agency API and replace pending IDs with canonical lead/root task IDs.",
-    "Do not build or QA until founder approval, owner confirmations, preview authorization, and Heaven Palate source mapping clear."
-  ]
+    "Do not build or QA until founder approval, owner confirmations, preview authorization, and Heaven Palate source mapping clear.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-attach-replay-runbook-2026-05-07.md"
 }
