@@ -41,12 +41,14 @@
     "Do not start public or owner-facing build work until owner confirmations are available or Ethan explicitly approves a speculative internal preview lane.",
     "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API.",
     "Attach the future preview content map to MC before builder implementation starts.",
-    "Attach the media rights and shot list to MC before implementation/QA; image rights remain unconfirmed."
+    "Attach the media rights and shot list to MC before implementation/QA; image rights remain unconfirmed.",
+    "Attach the menu and claim-safety matrix to MC before implementation/QA; risky claims remain unconfirmed."
   ],
   "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
   "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
   "buildable_template_slug": "bamzi-01",
   "buildable_template_path": "restaurant-website-system/templates/bamzi-01/",
   "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
-  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
+  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md",
+  "claim_safety_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md"
 }

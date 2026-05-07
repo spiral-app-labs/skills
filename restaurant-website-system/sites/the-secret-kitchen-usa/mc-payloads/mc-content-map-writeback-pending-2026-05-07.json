@@ -18,7 +18,9 @@
     "Attach content map to the canonical building task once MC provisioning/auth is available.",
     "Use the map as the first content/content.example.ts translation brief after build authorization.",
     "Do not publish awards, reviews, menu prices/currentness, private dining claims, Chef Aanal claims, or images until owner-confirmed.",
-    "Attach the media rights and shot list to MC before implementation/QA; image rights remain unconfirmed."
+    "Attach the media rights and shot list to MC before implementation/QA; image rights remain unconfirmed.",
+    "Attach the menu and claim-safety matrix to MC before implementation/QA; risky claims remain unconfirmed."
   ],
-  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
+  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md",
+  "claim_safety_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md"
 }

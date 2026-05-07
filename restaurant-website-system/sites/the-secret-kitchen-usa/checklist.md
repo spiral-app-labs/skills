@@ -69,6 +69,7 @@ Local checklist artifacts exist and The Secret Kitchen USA is routed to Bamzi wi
   - restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md
 - restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md
 - restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md
+- restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md
   - restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md
 - Blocker: Template route is locally selected as Bamzi and buildable source bamzi-01 exists, but fork/build is not authorized until MC/founder/owner gates clear.
 - Requirement: template-route-locked — Exactly one archetype/template route is chosen and justified

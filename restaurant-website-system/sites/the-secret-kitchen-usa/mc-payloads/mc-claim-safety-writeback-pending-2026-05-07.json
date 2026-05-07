@@ -1,0 +1,28 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "claim_safety_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T16:37:14Z",
+  "canonical_gates": ["building", "qa_round_1", "qa_round_2", "qa_round_3"],
+  "status": "menu_claim_safety_matrix_prepared_not_build_authorized_pending_mc_attach",
+  "template_slug": "Bamzi",
+  "archetype": "Bamzi",
+  "buildable_template_slug": "bamzi-01",
+  "claim_safety_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/menu-and-claim-safety-matrix-2026-05-07.md",
+  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
+  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md",
+  "build_authorized": false,
+  "owner_contacted": false,
+  "qa_run": false,
+  "menu_currentness_confirmed": false,
+  "awards_approved": false,
+  "review_claims_approved": false,
+  "private_dining_details_confirmed": false,
+  "blocker": "Menu and claim-safety matrix is prepared, but menu currentness/prices, awards/recognition claims, private dining details, Chef Aanal story permissions, review proof, and media rights remain unconfirmed. Build remains blocked by MC protected API auth/provisioning, founder approval, owner confirmations, and preview authorization. No raw Supabase writes were performed.",
+  "recommended_next_actions": [
+    "Attach claim-safety matrix to canonical building and QA tasks once MC provisioning/auth is available.",
+    "Use category-level menu storytelling until owner confirms exact items/prices/currentness.",
+    "Keep awards, review claims, private dining details, Chef Aanal claims, and media rights gated until explicitly approved."
+  ]
+}
