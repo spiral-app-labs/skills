@@ -37,11 +37,13 @@
     "Attach this audit and evidence to the future auditing child task once MC provisioning/auth is available.",
     "Attach the local Google Reviews packet and screenshots to the future reviews child task once MC provisioning/auth is available.",
     "Attach routing artifact to the future routing child task once MC provisioning/auth is available.",
-    "Before build, confirm hours, reservation, order providers, private dining capacities/policies, live music schedule, awards/review usage, legacy-story tone, and photo rights."
+    "Before build, confirm hours, reservation, order providers, private dining capacities/policies, live music schedule, awards/review usage, legacy-story tone, and photo rights.",
+    "Attach builder brief to the future building child task once MC provisioning/auth and build authorization are available."
   ],
   "review_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md",
   "routing_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
   "template_slug": "Heaven Palate",
   "archetype": "Heaven Palate",
-  "rationale_summary": "Routing is now locally locked to Heaven Palate for a classic luxury, reservation-first Schaumburg steakhouse build."
+  "rationale_summary": "Routing is now locally locked to Heaven Palate for a classic luxury, reservation-first Schaumburg steakhouse build.",
+  "builder_brief_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md"
 }
