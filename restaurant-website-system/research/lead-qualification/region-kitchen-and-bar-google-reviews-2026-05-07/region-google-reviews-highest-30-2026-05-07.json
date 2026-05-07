@@ -1,0 +1,733 @@
+{
+  "capturedAt": "2026-05-07T13:16:55.310Z",
+  "source": "Google Maps browser UI",
+  "restaurant": "Region Kitchen and Bar",
+  "googleMapsUrl": "https://www.google.com/maps/place/Region+Kitchen+and+Bar/@42.1669643,-88.1564159,17z/data=!3m1!5s0x880fa0972ea7859b:0xf006879868898790!4m8!3m7!1s0x880fa1bb67eea085:0xa1e1fa3d17eecd39!8m2!3d42.1669643!4d-88.1564159!9m1!1b1!16s%2Fg%2F11f7r63l_v?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
+  "sortEvidence": {
+    "selectedSort": "Highest rating",
+    "bodyNoticeObserved": true,
+    "reviewSummary": "4.8 stars / 699 reviews observed in browser UI before capture",
+    "starHistogramObserved": {
+      "fiveStarReviews": 613,
+      "fourStarReviews": 48,
+      "threeStarReviews": 16,
+      "twoStarReviews": 15,
+      "oneStarReviews": 7
+    }
+  },
+  "screenshots": [
+    "region-google-reviews-highest-start-2026-05-07.png",
+    "region-google-reviews-highest-mid-2026-05-07.png",
+    "region-google-reviews-highest-end-2026-05-07.png"
+  ],
+  "collectionTrace": [
+    {
+      "iteration": 0,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 0,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 1,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 571,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 2,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 1142,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 3,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 1713,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 4,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 2284,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 5,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 2855,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 6,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 3426,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 7,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 3997,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 8,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 4568,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 9,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 5139,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 10,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 5710,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 11,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 6281,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 12,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 6852,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 13,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 7423,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 14,
+      "collected": 10,
+      "visibleReviewCount": 10,
+      "panelScrollTop": 7994,
+      "panelScrollHeight": 8794
+    },
+    {
+      "iteration": 15,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 8159,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 16,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 8730,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 17,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 9301,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 18,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 9872,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 19,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 10443,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 20,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 11014,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 21,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 11585,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 22,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 12156,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 23,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 12727,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 24,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 13298,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 25,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 13869,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 26,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 14440,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 27,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 15011,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 28,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 15582,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 29,
+      "collected": 20,
+      "visibleReviewCount": 20,
+      "panelScrollTop": 16153,
+      "panelScrollHeight": 17012
+    },
+    {
+      "iteration": 30,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 16377,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 31,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 16948,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 32,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 17519,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 33,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 18090,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 34,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 18661,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 35,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 19232,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 36,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 19803,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 37,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 20374,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 38,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 20945,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 39,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 21516,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 40,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 22087,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 41,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 22658,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 42,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 23229,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 43,
+      "collected": 30,
+      "visibleReviewCount": 30,
+      "panelScrollTop": 23800,
+      "panelScrollHeight": 24946
+    },
+    {
+      "iteration": 44,
+      "collected": 40,
+      "visibleReviewCount": 40,
+      "panelScrollTop": 24311,
+      "panelScrollHeight": 32485
+    }
+  ],
+  "reviewCount": 30,
+  "reviews": [
+    {
+      "ordinal": 1,
+      "index": 0,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT214Wk1YZHBSSEpRTkhKV1RYQnFWWEl5U0hoRVNsRRAB",
+      "ariaLabel": "Ian Petersen",
+      "rawText": "Ian Petersen\nLocal Guide · 120 reviews · 130 photos\n\n\n\n\n\n\n7 months ago\nWe went here for the first time for my mother’s birthday and really enjoyed ourselves! Kevin was amazing and took great care of us…among many other tables, but still made us feel special. We started with complimentary bread, which was very soft, warm and tasty. Next, we had two appetizers: bang bang cauliflower and exotic mushrooms, which were very unique dishes, but also very delicious. The bang bang sauce was simply the best! Then we had our entrees and they had sooooo much flavor and great presentation. We were so full afterwards, but had to have dessert for the birthday girl. We tried the chocolate mousse which had decadent flavor that wasn’t too heavy. Overall, we really enjoyed our time and will go back. We would definitely want Kevin again as he made the night feel special!\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 5\nGroup size\nSuitable for all group sizes\nSeating type\nIndoor dining area, Bar area, Outdoor patio / terrace, Booth seating\nParking space\nPlenty of parking\nParking options\nFree parking lot\n\nLike\n\nShare",
+      "author": "Ian Petersen",
+      "reviewerMeta": "Local Guide · 120 reviews · 130 photos",
+      "rating": 5,
+      "relativeDate": "7 months ago",
+      "reviewText": "We went here for the first time for my mother’s birthday and really enjoyed ourselves! Kevin was amazing and took great care of us…among many other tables, but still made us feel special. We started with complimentary bread, which was very soft, warm and tasty. Next, we had two appetizers: bang bang cauliflower and exotic mushrooms, which were very unique dishes, but also very delicious. The bang bang sauce was simply the best! Then we had our entrees and they had sooooo much flavor and great presentation. We were so full afterwards, but had to have dessert for the birthday girl. We tried the chocolate mousse which had decadent flavor that wasn’t too heavy. Overall, we really enjoyed our time and will go back. We would definitely want Kevin again as he made the night feel special!",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 2,
+      "index": 1,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tWVkxXSndSMlV5YkRWRVpVTkxWbWhDWWpKVGVXYxAB",
+      "ariaLabel": "Plowhorse",
+      "rawText": "Plowhorse\nLocal Guide · 284 reviews · 2,339 photos\n\n\n\n\n\n\n4 months ago\nUpscale.  Lucky to have such a great spot in the suburbs for fine dining.   The menu is inventive and very tasty.  The service is friendly, knowledgeable, and prompt.   One small thing but not sure why they don't serve bread.  Not to worry, the food is great and they have an excellent wine and cocktail selection.   Enjoy.\nPrice per person\n$50–100\nFood: 5\nService: 5\nAtmosphere: 5\nGroup size\n3-4 people\nWait time\nUp to 10 min\n\nLike\n\nShare",
+      "author": "Plowhorse",
+      "reviewerMeta": "Local Guide · 284 reviews · 2,339 photos",
+      "rating": 5,
+      "relativeDate": "4 months ago",
+      "reviewText": "Upscale.  Lucky to have such a great spot in the suburbs for fine dining.   The menu is inventive and very tasty.  The service is friendly, knowledgeable, and prompt.   One small thing but not sure why they don't serve bread.  Not to worry, the food is great and they have an excellent wine and cocktail selection.   Enjoy.",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 3,
+      "index": 2,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xaQk9EUlhkamsyWTBOSkxUWnFNREF4TW5aQlgyYxAB",
+      "ariaLabel": "Rachel Pankow",
+      "rawText": "Rachel Pankow\nLocal Guide · 25 reviews · 30 photos\n\n\n\n\n\n\n8 months ago\nNever disappointed! We’ve visited Region many times over several years and we’re consistently blown away by the food, service and the atmosphere. Our server, Joselyn was friendly, attentive and well-informed on the menu.  If you want to try what we enjoyed, start with small plates Bellweather Ricotta, Chateaubriand crostini, and follow with Chicken Parmesan and Short Ribs - all amazingly delicious ! Save room for the Sticky English Toffee pudding! Out of this world. OMG- I’m still stuffed but so delighted with the entire experience.\nPrice per person\n$50–100\nFood: 5\nService: 5\nAtmosphere: 5\nNoise level\nQuiet, easy to talk\nGroup size\n2 people\nSeating type\nPrivate dining room\n\nLike\n\nShare",
+      "author": "Rachel Pankow",
+      "reviewerMeta": "Local Guide · 25 reviews · 30 photos",
+      "rating": 5,
+      "relativeDate": "8 months ago",
+      "reviewText": "Never disappointed! We’ve visited Region many times over several years and we’re consistently blown away by the food, service and the atmosphere. Our server, Joselyn was friendly, attentive and well-informed on the menu.  If you want to try what we enjoyed, start with small plates Bellweather Ricotta, Chateaubriand crostini, and follow with Chicken Parmesan and Short Ribs - all amazingly delicious ! Save room for the Sticky English Toffee pudding! Out of this world. OMG- I’m still stuffed but so delighted with the entire experience.",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 4,
+      "index": 3,
+      "reviewId": "ChdDSUhNMG9nS0VQbkg1NURVME5EbzNBRRAB",
+      "ariaLabel": "Gillian Teichman",
+      "rawText": "Gillian Teichman\nLocal Guide · 16 reviews · 6 photos\n\n\n\n\n\n\n11 months ago\nI had a fantastic meal there for the first time my parents are frequent flyers. I had the duck confit which was fantastic. The meatloaf was tender, the bacon was fantastic and the bread is great. We had the waiter Kevin he was amazing super on top of his stuff and knew everything about the menu. Highly recommend\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 4\nGroup size\n3-4 people\nWait time\nNo wait\nSeating type\nIndoor dining area, Bar area, Outdoor patio / terrace, Booth seating\nParking space\nPlenty of parking\n+3\n\nLike\n\nShare",
+      "author": "Gillian Teichman",
+      "reviewerMeta": "Local Guide · 16 reviews · 6 photos",
+      "rating": 5,
+      "relativeDate": "11 months ago",
+      "reviewText": "I had a fantastic meal there for the first time my parents are frequent flyers. I had the duck confit which was fantastic. The meatloaf was tender, the bacon was fantastic and the bread is great. We had the waiter Kevin he was amazing super on top of his stuff and knew everything about the menu. Highly recommend",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 5,
+      "index": 4,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2paUVMyOTZSa1Z4ZUdSelN6SmtNblpVY0RnemRVRRAB",
+      "ariaLabel": "Andrew & Cara Saliga",
+      "rawText": "Andrew & Cara Saliga\nLocal Guide · 26 reviews · 3 photos\n\n\n\n\n\n\n2 months ago\nLove this place! Staff super friendly and attentive and rock solid cuisine.  San Fran Cioppino always yummy.  Their burgers are amazing too.   I tried their Good Vibrations cocktail and would literally comeback just for that!  Been here many times and look forward to another meal there!\nPrice per person\n$40–50\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Andrew & Cara Saliga",
+      "reviewerMeta": "Local Guide · 26 reviews · 3 photos",
+      "rating": 5,
+      "relativeDate": "2 months ago",
+      "reviewText": "Love this place! Staff super friendly and attentive and rock solid cuisine.  San Fran Cioppino always yummy.  Their burgers are amazing too.   I tried their Good Vibrations cocktail and would literally comeback just for that!  Been here many times and look forward to another meal there!",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 6,
+      "index": 5,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT21odFpDMDVjalZhWlhoSFdVc3dURFpFVlV0MlVVRRAB",
+      "ariaLabel": "Nicholle Fenstermaker",
+      "rawText": "Nicholle Fenstermaker\nLocal Guide · 33 reviews · 55 photos\n\n\n\n\n\n\n2 months ago\nRegion has one of the best burgers I’ve ever had. Visited to celebrate my boyfriend’s birthday last month, and just had it again last night because we were both craving the burger. We had a very silent dinner as we were both eating as fast as we could. I swear they must cook the burgers with love. Would highly highly recommend.\nPrice per person\n$10–20\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Nicholle Fenstermaker",
+      "reviewerMeta": "Local Guide · 33 reviews · 55 photos",
+      "rating": 5,
+      "relativeDate": "2 months ago",
+      "reviewText": "Region has one of the best burgers I’ve ever had. Visited to celebrate my boyfriend’s birthday last month, and just had it again last night because we were both craving the burger. We had a very silent dinner as we were both eating as fast as we could. I swear they must cook the burgers with love. Would highly highly recommend.",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 7,
+      "index": 6,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVMFZGUjVTbVpQTmpCS2J6QkRMVjlHZDE5TE9VRRAB",
+      "ariaLabel": "Nicole Curcio",
+      "rawText": "Nicole Curcio\n1 review\n\n\n\n\n\n\n2 months ago\nThe food is always phenomenal. I have never been disappointed by anything here, but tonight we had an added bonus— Our server, Brandi was incredible. She was on top of everything and so very kind! I will be asking for her every time. Can't wait to come back!\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Nicole Curcio",
+      "reviewerMeta": "1 review",
+      "rating": 5,
+      "relativeDate": "2 months ago",
+      "reviewText": "The food is always phenomenal. I have never been disappointed by anything here, but tonight we had an added bonus— Our server, Brandi was incredible. She was on top of everything and so very kind! I will be asking for her every time. Can't wait to come back!",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 8,
+      "index": 7,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2xVMGRHMUtOV1pQZVUxeVJIQXlVVEZLYlRCUVpuYxAB",
+      "ariaLabel": "Barb O'Connor",
+      "rawText": "Barb O'Connor\nLocal Guide · 4 reviews\n\n\n\n\n\n\n5 months ago\nWent to this classy restraunt for Anniversary dinner with my husband. We had reservations and we were seated immediately after checking in. We had the best booth in the house which looked out on the patio. This lovely venue is conversation friendly. We had Kevin as our server and he was top notch. Knowledgeable and friendly. Kevin is a gem. He brought us a surprise dessert to celebrate our anniversary.Food was fantastic. Steak on a rock, Bang Bang Cauliflower etc. It's all 👍 good. Enjoy. We'll be back.\nFood: 5\nService: 5\nAtmosphere: 5\nNoise level\nQuiet, easy to talk\nSeating type\nIndoor dining area, Bar area, Outdoor patio / terrace, Booth seating, Counter seating\n\nLike\n\nShare",
+      "author": "Barb O'Connor",
+      "reviewerMeta": "Local Guide · 4 reviews",
+      "rating": 5,
+      "relativeDate": "5 months ago",
+      "reviewText": "Went to this classy restraunt for Anniversary dinner with my husband. We had reservations and we were seated immediately after checking in. We had the best booth in the house which looked out on the patio. This lovely venue is conversation friendly. We had Kevin as our server and he was top notch. Knowledgeable and friendly. Kevin is a gem. He brought us a surprise dessert to celebrate our anniversary.Food was fantastic. Steak on a rock, Bang Bang Cauliflower etc. It's all 👍 good. Enjoy. We'll be back.",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 9,
+      "index": 8,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNnbmNlUnpBRRAB",
+      "ariaLabel": "Austin Mleziva",
+      "rawText": "Austin Mleziva\nLocal Guide · 29 reviews · 77 photos\n\n\n\n\n\n\na year ago\nWednesday night it was pretty busy but they had reservations available for 7pm.\nRegarding libations, Mr Birdwatch was a good tangy gin cocktail. Through the looking glass old fashioned was nothing special.\n\nThere has been enough said about the bang bang cauliflower that I think I can leave it at that. The Walleye was excellent. Crispy, creamy, great flavor. The ribeye was juicy and came with a beefy, velvet sauce.\n\nOverall, a great experience and looking forward to trying their other menu options!\nPrice per person\n$50–100\nFood: 5\nService: 5\nAtmosphere: 5\nParking space\nPlenty of parking\nParking options\nFree parking lot\n\n1\n\nShare",
+      "author": "Austin Mleziva",
+      "reviewerMeta": "Local Guide · 29 reviews · 77 photos",
+      "rating": 5,
+      "relativeDate": "a year ago",
+      "reviewText": "Wednesday night it was pretty busy but they had reservations available for 7pm. Regarding libations, Mr Birdwatch was a good tangy gin cocktail. Through the looking glass old fashioned was nothing special. There has been enough said about the bang bang cauliflower that I think I can leave it at that. The Walleye was excellent. Crispy, creamy, great flavor. The ribeye was juicy and came with a beefy, velvet sauce. Overall, a great experience and looking forward to trying their other menu options!",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 10,
+      "index": 9,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkaWNWcHJlVWRPTlZaWFRUWm9iRXg0Tms0d2NGRRAB",
+      "ariaLabel": "Eileen Levy",
+      "rawText": "Eileen Levy\n9 reviews · 2 photos\n\n\n\n\n\n\n4 months ago\nGreat ambiance (holiday decor was fabulous)!  My husband can't wait to go back for the bang bang cauliflower app, but all 4 of our dinners were fabulous!   Our granddaughter really enjoyed the bacon appetizer. And our waitress, Kara, was an absolute delight!  We can't wait to go back there.\nOrder type\nDine in\nPrice per person\n$50–100\nFood: 5\nService: 5\nAtmosphere: 5\nGroup size\n3-4 people\nSeating type\nBooth seating\nParking space\nPlenty of parking\nParking options\nFree parking lot\nKid-friendliness\nThere were definitely menu items that were kid friendly. The mac'n cheese was outstanding! Child & adult appetites could savor it.\n\nLike\n\nShare",
+      "author": "Eileen Levy",
+      "reviewerMeta": "9 reviews · 2 photos",
+      "rating": 5,
+      "relativeDate": "4 months ago",
+      "reviewText": "Great ambiance (holiday decor was fabulous)!  My husband can't wait to go back for the bang bang cauliflower app, but all 4 of our dinners were fabulous!   Our granddaughter really enjoyed the bacon appetizer. And our waitress, Kara, was an absolute delight!  We can't wait to go back there.",
+      "firstSeenIteration": 0
+    },
+    {
+      "ordinal": 11,
+      "index": 10,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURCMC1faDN3RRAB",
+      "ariaLabel": "Eric Salinas",
+      "rawText": "Eric Salinas\nLocal Guide · 93 reviews · 94 photos\n\n\n\n\n\n\n3 years ago\nCame to celebrate my anniversary here. It was a bit of a rocky start but I've never been to a restaurant who strives to make the rest of our dinner pleasant as possible!\n\nAll the food was great, i didn't have a bad dish. The drinks were satisfying and well proportioned. The staff was friendly, and the manager was accommodating.\n\nI would definitely return here.\n+2\n\n1\n\nShare",
+      "author": "Eric Salinas",
+      "reviewerMeta": "Local Guide · 93 reviews · 94 photos",
+      "rating": 5,
+      "relativeDate": "3 years ago",
+      "reviewText": "Came to celebrate my anniversary here. It was a bit of a rocky start but I've never been to a restaurant who strives to make the rest of our dinner pleasant as possible! All the food was great, i didn't have a bad dish. The drinks were satisfying and well proportioned. The staff was friendly, and the manager was accommodating. I would definitely return here.",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 12,
+      "index": 11,
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnTUN3Z0pxdUR3EAE",
+      "ariaLabel": "Jose Tolentino",
+      "rawText": "Jose Tolentino\nLocal Guide · 74 reviews · 109 photos\n\n\n\n\n\n\na year ago\nWow - it's so great to be back here! Dined at Region heavily throughout 2018 and last month when a couple of friends treated me here for a belated birthday and new job celebration! My friend and I had originally asked to be seated in Kevin's section last night for our 8:30 reservation, but unfortunately, a gentleman had a medical emergency in Kevin's section (that customer was, fortunately, cared for quickly and efficiently by Region's staff and Barrington paramedics). But, my friend and I were instead, seated in Kara's section! She was GREAT-- VERY attentive, pleasant, good humored and efficient!!! Our dinner was awesome too! For appetizers, we had the Bang Bang Cauliflower and Sashimi Tuna Tartare; for entrees, my friend had the Cioppino, I had the 14 oz. Ribeye and a lobster tail; we shared sides of the corn crème brûlée and asparagus! All the food was incredibly, wonderfully fresh, hearty and flavorful! The ambiance was just as we remembered it when we first dined here 7 years ago: sexy, chic understated and elegant. There were also a lot of young, attractive and well dressed folks there last night -- definitely not the Old Country Buffet demographic! We would definitely come back and HOPEFULLY get seated in Kevin's section (he was our FAVORITE server at 2 Lake Zurich restaurants: D&J Bistro, where he worked for almost 15 years and then at Lago, where he worked prior to joining Region).\nOrder type\nDine in\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Jose Tolentino",
+      "reviewerMeta": "Local Guide · 74 reviews · 109 photos",
+      "rating": 5,
+      "relativeDate": "a year ago",
+      "reviewText": "Wow - it's so great to be back here! Dined at Region heavily throughout 2018 and last month when a couple of friends treated me here for a belated birthday and new job celebration! My friend and I had originally asked to be seated in Kevin's section last night for our 8:30 reservation, but unfortunately, a gentleman had a medical emergency in Kevin's section (that customer was, fortunately, cared for quickly and efficiently by Region's staff and Barrington paramedics). But, my friend and I were instead, seated in Kara's section! She was GREAT-- VERY attentive, pleasant, good humored and efficient!!! Our dinner was awesome too! For appetizers, we had the Bang Bang Cauliflower and Sashimi Tuna Tartare; for entrees, my friend had the Cioppino, I had the 14 oz. Ribeye and a lobster tail; we shared sides of the corn crème brûlée and asparagus! All the food was incredibly, wonderfully fresh, hearty and flavorful! The ambiance was just as we remembered it when we first dined here 7 years ago: sexy, chic understated and elegant. There were also a lot of young, attractive and well dressed folks there last night -- definitely not the Old Country Buffet demographic! We would definitely come back and HOPEFULLY get seated in Kevin's section (he was our FAVORITE server at 2 Lake Zurich restaurants: D&J Bistro, where he worked for almost 15 years and then at Lago, where he worked prior to joining Region).",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 13,
+      "index": 12,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KeU1WODRlVWQ2Ym0xMlZrRjRaVnAyUTBOcldsRRAB",
+      "ariaLabel": "Jaxxoxo",
+      "rawText": "Jaxxoxo\n6 reviews\n\n\n\n\n\n\n3 months ago\nWe celebrated my birthday here and everything was incredible—from the great atmosphere to the amazing food. Our waiter went above and beyond, and the birthday treat was such a thoughtful touch. Will definitely be back!\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Jaxxoxo",
+      "reviewerMeta": "6 reviews",
+      "rating": 5,
+      "relativeDate": "3 months ago",
+      "reviewText": "We celebrated my birthday here and everything was incredible—from the great atmosphere to the amazing food. Our waiter went above and beyond, and the birthday treat was such a thoughtful touch. Will definitely be back!",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 14,
+      "index": 13,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pkdWVtOTJNRWM0Y2taeVYyWlpPRlppYTNSTVZtYxAB",
+      "ariaLabel": "Tom Hanna",
+      "rawText": "Tom Hanna\nLocal Guide · 115 reviews\n\n\n\n\n\n\n3 months ago\nRegion is a dressy casual resaurant- excellent service, a quiet refined atmosphere along with a unique variety of foods and ingredients. It's the kind of place you go to with dear friends when you want to chat, catch up and have a leisurely meal. Our group tried a variety of foods- lamb chops, walleye, cod and paella- all very fresh, tasty and generous portions.\nPrice per person\n$30–40\nFood: 5\nService: 5\nAtmosphere: 5\nGroup size\n3-4 people, 5-8 people\n\nLike\n\nShare",
+      "author": "Tom Hanna",
+      "reviewerMeta": "Local Guide · 115 reviews",
+      "rating": 5,
+      "relativeDate": "3 months ago",
+      "reviewText": "Region is a dressy casual resaurant- excellent service, a quiet refined atmosphere along with a unique variety of foods and ingredients. It's the kind of place you go to with dear friends when you want to chat, catch up and have a leisurely meal. Our group tried a variety of foods- lamb chops, walleye, cod and paella- all very fresh, tasty and generous portions.",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 15,
+      "index": 14,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnTUNReE12Tnd3RRAB",
+      "ariaLabel": "food_from_the_usa",
+      "rawText": "food_from_the_usa\nLocal Guide · 232 reviews · 1,240 photos\n\n\n\n\n\n\na year ago\nWhat a great dinner!  Really cute restaurant. Staff all around were super. Bang bang cauliflower perfect!  Salmon with mashed cauliflower great!  Filet meatloaf, what a great and the date night pasta. So goood!\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 5\nReservation\nReservations recommended\nParking space\nPlenty of parking\nParking options\nFree parking lot\n+7\n\n1\n\nShare",
+      "author": "food_from_the_usa",
+      "reviewerMeta": "Local Guide · 232 reviews · 1,240 photos",
+      "rating": 5,
+      "relativeDate": "a year ago",
+      "reviewText": "What a great dinner!  Really cute restaurant. Staff all around were super. Bang bang cauliflower perfect!  Salmon with mashed cauliflower great!  Filet meatloaf, what a great and the date night pasta. So goood!",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 16,
+      "index": 15,
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURvcTVqZEFnEAE",
+      "ariaLabel": "Moises P",
+      "rawText": "Moises P\nLocal Guide · 62 reviews · 11 photos\n\n\n\n\n\n\na year ago\nWe're big fans of this place. We love their drink menu. We had the pleasure of meeting Chad, the bartender. The Espresso martini and the Cosmopolitan were perfect! The food was excellent as always. I just forgot to get the pics on the Duck Confit and Filet Mignon Meanloaf. Both were awesome!\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$100+\nFood: 5\nService: 5\nAtmosphere: 5\nRecommended dishes\nOaxacan Style Lamb Shank\n\nLike\n\nShare",
+      "author": "Moises P",
+      "reviewerMeta": "Local Guide · 62 reviews · 11 photos",
+      "rating": 5,
+      "relativeDate": "a year ago",
+      "reviewText": "We're big fans of this place. We love their drink menu. We had the pleasure of meeting Chad, the bartender. The Espresso martini and the Cosmopolitan were perfect! The food was excellent as always. I just forgot to get the pics on the Duck Confit and Filet Mignon Meanloaf. Both were awesome!",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 17,
+      "index": 16,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURKdDVHcjd3RRAB",
+      "ariaLabel": "Emily Wloch",
+      "rawText": "Emily Wloch\nLocal Guide · 135 reviews · 354 photos\n\n\n\n\n\n\n2 years ago\nRegion Restaurant is always a treat. Their seasonal menu offers an exciting take on what's fresh during a particular season.\nTheir bang bang cauliflower is a must-try! It's the best cauliflower appetizer in the northwest suburbs! Recently, we tried the crabcake appetizer, and it was very good. When it comes to entrees, the NY strip with truffle crust was excellent. The pan roasted duck confit was okay, I was expecting something more spicy and a duck breast. Instead, the entree consisted of 2 duck legs/thighs and was rather sweet. The server was kind enough to exchange my dinner for a butter crusted walleye. This dish was really good, and I am glad the server was so helpful. The kids loved their petite filet mignon, cheese pizza,and chicken fingers. Region also has great cocktails! Overall, Region offers great food, pleasant servers,and a great atmosphere - it is a must-try restaurant in the NW suburbs!\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 5\nRecommended dishes\nBang Bang Cauliflower\nParking space\nPlenty of parking\nParking options\nFree parking lot\nKid-friendliness\nSeveral kids' entrees to choose from\n+3\n\n2\n\nShare",
+      "author": "Emily Wloch",
+      "reviewerMeta": "Local Guide · 135 reviews · 354 photos",
+      "rating": 5,
+      "relativeDate": "2 years ago",
+      "reviewText": "Region Restaurant is always a treat. Their seasonal menu offers an exciting take on what's fresh during a particular season. Their bang bang cauliflower is a must-try! It's the best cauliflower appetizer in the northwest suburbs! Recently, we tried the crabcake appetizer, and it was very good. When it comes to entrees, the NY strip with truffle crust was excellent. The pan roasted duck confit was okay, I was expecting something more spicy and a duck breast. Instead, the entree consisted of 2 duck legs/thighs and was rather sweet. The server was kind enough to exchange my dinner for a butter crusted walleye. This dish was really good, and I am glad the server was so helpful. The kids loved their petite filet mignon, cheese pizza,and chicken fingers. Region also has great cocktails! Overall, Region offers great food, pleasant servers,and a great atmosphere - it is a must-try restaurant in the NW suburbs!",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 18,
+      "index": 17,
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURZeV8tSmFREAE",
+      "ariaLabel": "anita szeto",
+      "rawText": "anita szeto\nLocal Guide · 181 reviews · 1,394 photos\n\n\n\n\n\n\nEdited 3 years ago\nThe restaurant serves thoughtfully prepared New American food with seasonal ingredients with many steak and seafood items.  I've been there 6 times and have enjoyed the food and service each time.  They have both small and large plates that are great for intimate or larger gatherings.\n+6\n\n1\n\nShare\nResponse from the owner 6 years ago\nThank you Anita",
+      "author": "anita szeto",
+      "reviewerMeta": "Local Guide · 181 reviews · 1,394 photos",
+      "rating": 5,
+      "relativeDate": "Edited 3 years ago",
+      "reviewText": "The restaurant serves thoughtfully prepared New American food with seasonal ingredients with many steak and seafood items.  I've been there 6 times and have enjoyed the food and service each time.  They have both small and large plates that are great for intimate or larger gatherings.",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 19,
+      "index": 18,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUR1a19yY3hRRRAB",
+      "ariaLabel": "Estella C.",
+      "rawText": "Estella C.\nLocal Guide · 23 reviews · 111 photos\n\n\n\n\n\n\n3 years ago\nI wish I had tried this place sooner! The appetizer menu is amazing with plenty of options and was very hard to choose from. I eventually chose with our waitress suggestion the ricotta and prosciutto served with crusty bread and sliced almonds. Delicious! Could not get enough and the honey added to this dish just made all the ingredients taste even better! The bacon wrapped dates MELTED in our mouths. Our drinks were so refreshing, perfect for a warm summer night on their terrace or patio. A fabulous place for families, date night or girls night out.\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$30–50\n+2\n\nLike\n\nShare",
+      "author": "Estella C.",
+      "reviewerMeta": "Local Guide · 23 reviews · 111 photos",
+      "rating": 5,
+      "relativeDate": "3 years ago",
+      "reviewText": "I wish I had tried this place sooner! The appetizer menu is amazing with plenty of options and was very hard to choose from. I eventually chose with our waitress suggestion the ricotta and prosciutto served with crusty bread and sliced almonds. Delicious! Could not get enough and the honey added to this dish just made all the ingredients taste even better! The bacon wrapped dates MELTED in our mouths. Our drinks were so refreshing, perfect for a warm summer night on their terrace or patio. A fabulous place for families, date night or girls night out.",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 20,
+      "index": 19,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pKME9FMHpaekJ5TkVSdmVtaEZibEo2VDNSMFJXYxAB",
+      "ariaLabel": "Shane",
+      "rawText": "Shane\nLocal Guide · 16 reviews\n\n\n\n\n\n\n4 months ago\nWe just had our anniversary dinner here and everything was spectacular. The restaurant was busy but we were seated in about 5 minutes, friendly staff and excellent food. Our server Kevin K. Was excellent! Cannot recommend this place enough!\nPrice per person\n$100+\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Shane",
+      "reviewerMeta": "Local Guide · 16 reviews",
+      "rating": 5,
+      "relativeDate": "4 months ago",
+      "reviewText": "We just had our anniversary dinner here and everything was spectacular. The restaurant was busy but we were seated in about 5 minutes, friendly staff and excellent food. Our server Kevin K. Was excellent! Cannot recommend this place enough!",
+      "firstSeenIteration": 15
+    },
+    {
+      "ordinal": 21,
+      "index": 20,
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnTURRdnVmOGN3EAE",
+      "ariaLabel": "Deborah Rabine",
+      "rawText": "Deborah Rabine\nLocal Guide · 384 reviews · 874 photos\n\n\n\n\n\n\na year ago\nOur latest visit was for a friend's birthday. They accommodated our party of six on the enclosed patio which was very comfortable. As usual, the food was fantastic and the service was wonderful. We all had different dishes and each one was artfully prepared and served. Everything was great and we will be back.\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$20–30\nFood: 5\nService: 5\nAtmosphere: 5\nRecommended dishes\nBang Bang Cauliflower, Lava Cake, Sweet Corn Creme Brulee\nParking space\nPlenty of parking\nParking options\nFree parking lot\nParking\nAmple close parking in their lot.\n\nLike\n\nShare",
+      "author": "Deborah Rabine",
+      "reviewerMeta": "Local Guide · 384 reviews · 874 photos",
+      "rating": 5,
+      "relativeDate": "a year ago",
+      "reviewText": "Our latest visit was for a friend's birthday. They accommodated our party of six on the enclosed patio which was very comfortable. As usual, the food was fantastic and the service was wonderful. We all had different dishes and each one was artfully prepared and served. Everything was great and we will be back.",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 22,
+      "index": 21,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2s1RmJtRnRUR3d3WkZFMVRHRnNNRmhJUzFFNFYwRRAB",
+      "ariaLabel": "Rich",
+      "rawText": "Rich\nLocal Guide · 131 reviews · 83 photos\n\n\n\n\n\n\n4 months ago\nIt says alot if an upscale restaurant in the burbs is packed on a Wednesday night!\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Rich",
+      "reviewerMeta": "Local Guide · 131 reviews · 83 photos",
+      "rating": 5,
+      "relativeDate": "4 months ago",
+      "reviewText": "It says alot if an upscale restaurant in the burbs is packed on a Wednesday night!",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 23,
+      "index": 22,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNlMzllX3BBRRAB",
+      "ariaLabel": "Jake Glimco",
+      "rawText": "Jake Glimco\nLocal Guide · 96 reviews · 101 photos\n\n\n\n\n\n\n3 years ago\nCame here for my anniversary dinner with my wife and it didn't disappoint! Unique menu, amazing food, delicious drinks, and great atmosphere. The English sticky toffee pudding was absolutely amazing and perfect end to the meal.\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$50–100\n+2\n\n1\n\nShare",
+      "author": "Jake Glimco",
+      "reviewerMeta": "Local Guide · 96 reviews · 101 photos",
+      "rating": 5,
+      "relativeDate": "3 years ago",
+      "reviewText": "Came here for my anniversary dinner with my wife and it didn't disappoint! Unique menu, amazing food, delicious drinks, and great atmosphere. The English sticky toffee pudding was absolutely amazing and perfect end to the meal.",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 24,
+      "index": 23,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSUNpczV1VnV3RRAB",
+      "ariaLabel": "Victoria Cook",
+      "rawText": "Victoria Cook\nLocal Guide · 97 reviews · 44 photos\n\n\n\n\n\n\n5 years ago\nOutstanding meal and terrific service. The restaurant has a nice vibe and they are taking all the precautions needed to keep patrons and staff safe.\n\nWe loved the Bang Bang Cauliflower, Hot Rock Steak and Peacanwood Bacon Wrapped Dates (we had 2) for apps. Entrees enjoyed by our party\nincluded the scallops, salmon, beef short ribs (ah-mazing) and a special steak meatloaf. If course we had to have dessert and shared a pumpkin cake and a carmel bread pudding. Can't wait to go back!\n\n2\n\nShare",
+      "author": "Victoria Cook",
+      "reviewerMeta": "Local Guide · 97 reviews · 44 photos",
+      "rating": 5,
+      "relativeDate": "5 years ago",
+      "reviewText": "Outstanding meal and terrific service. The restaurant has a nice vibe and they are taking all the precautions needed to keep patrons and staff safe. We loved the Bang Bang Cauliflower, Hot Rock Steak and Peacanwood Bacon Wrapped Dates (we had 2) for apps. Entrees enjoyed by our party included the scallops, salmon, beef short ribs (ah-mazing) and a special steak meatloaf. If course we had to have dessert and shared a pumpkin cake and a carmel bread pudding. Can't wait to go back! 2",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 25,
+      "index": 24,
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSUMzaWRIYkNnEAE",
+      "ariaLabel": "Jeffrey Seidman",
+      "rawText": "Jeffrey Seidman\nLocal Guide · 294 reviews · 1,400 photos\n\n\n\n\n\n\nEdited a year ago\nI don't know why this resturants is a still a secret being passed from person to person. The food is marvelous and a perfect backdrop for a romatic dinner with your honey. Every seasonal soup warms the soul. I am not a pumpkin guy, but the pumpkin soup is a bowl full of fall tastes and smells. We get the spicy cauliflower and the steak tartare every time. They had a special bourbon drink with cabernet foam which is a must have for all Old Fashion fans. Oh! If you are a choclate fan if you don't get the chocolate mouse you are cheating yourself. The service is warm and inviting.  It's worth going waaaay out of your way for this one.\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 5\nRecommended dishes\nBang Bang Cauliflower\nParking space\nPlenty of parking\nParking options\nFree parking lot\n+6\n\n1\n\nShare\nResponse from the owner a year ago\nHi Jeffrey, thank you for the 5-star review! It’s great that you enjoyed our seasonal offerings like pumpkin soup, spicy cauliflower, and steak tartare, along with the delicious bourbon drink and chocolate mousse. We love creating memorable moments for our guests, and we can’t wait to have you back at Region Kitchen and Bar.",
+      "author": "Jeffrey Seidman",
+      "reviewerMeta": "Local Guide · 294 reviews · 1,400 photos",
+      "rating": 5,
+      "relativeDate": "Edited a year ago",
+      "reviewText": "I don't know why this resturants is a still a secret being passed from person to person. The food is marvelous and a perfect backdrop for a romatic dinner with your honey. Every seasonal soup warms the soul. I am not a pumpkin guy, but the pumpkin soup is a bowl full of fall tastes and smells. We get the spicy cauliflower and the steak tartare every time. They had a special bourbon drink with cabernet foam which is a must have for all Old Fashion fans. Oh! If you are a choclate fan if you don't get the chocolate mouse you are cheating yourself. The service is warm and inviting.  It's worth going waaaay out of your way for this one.",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 26,
+      "index": 25,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT25KU1FUVmtkVFp4ZW5wbVdVcG1RMEp2TVZoQ2VWRRAB",
+      "ariaLabel": "Jennifer Bradt",
+      "rawText": "Jennifer Bradt\n10 reviews · 2 photos\n\n\n\n\n\n\n10 months ago\nWonderful service from Brandi, our waitress. Delicious menu and yummy drinks! If you’re looking for something upscale ale yet comfortable and new well executed flavors, this is your place!\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare",
+      "author": "Jennifer Bradt",
+      "reviewerMeta": "10 reviews · 2 photos",
+      "rating": 5,
+      "relativeDate": "10 months ago",
+      "reviewText": "Wonderful service from Brandi, our waitress. Delicious menu and yummy drinks! If you’re looking for something upscale ale yet comfortable and new well executed flavors, this is your place!",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 27,
+      "index": 26,
+      "reviewId": "ChdDSUhNMG9nS0VJQ0FnSURpeXFDYzhnRRAB",
+      "ariaLabel": "Ted Wachholz",
+      "rawText": "Ted Wachholz\nLocal Guide · 322 reviews · 2,848 photos\n\n\n\n\n\n\n5 years ago\nThis has become our favorite local restaurant. We recently went for the first time, and enjoyed two apps with our meals. We later decided that we needed to conclude our dining experience with two desserts. Everything was delicious, expertly prepared. One looks at my photos should answer all of your questions about dining here.\n+5\n\n1\n\nShare",
+      "author": "Ted Wachholz",
+      "reviewerMeta": "Local Guide · 322 reviews · 2,848 photos",
+      "rating": 5,
+      "relativeDate": "5 years ago",
+      "reviewText": "This has become our favorite local restaurant. We recently went for the first time, and enjoyed two apps with our meals. We later decided that we needed to conclude our dining experience with two desserts. Everything was delicious, expertly prepared. One looks at my photos should answer all of your questions about dining here.",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 28,
+      "index": 27,
+      "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURSa3AyRk1BEAE",
+      "ariaLabel": "Jeffery Lawnicki",
+      "rawText": "Jeffery Lawnicki\nLocal Guide · 153 reviews · 185 photos\n\n\n\n\n\n\n3 years ago\nWOW! This place is awesome! First time here. Staff friendly. Drinks were good. Had the tuna on the 500° rock for appetizer. Seabass for the main course. Toffee pudding for dessert. Absolutely amazing. I'm definitely coming back. Highly recommend to anyone!\nOrder type\nDine in\nMeal type\nDinner\nPrice per person\n$30–50\nFood: 5\nService: 5\nAtmosphere: 5\nRecommended dishes\nLava Cake\n\nLike\n\nShare\nResponse from the owner 2 years ago\nGreat to have you dine with us Jeffery. Hope to serve you again soon.",
+      "author": "Jeffery Lawnicki",
+      "reviewerMeta": "Local Guide · 153 reviews · 185 photos",
+      "rating": 5,
+      "relativeDate": "3 years ago",
+      "reviewText": "WOW! This place is awesome! First time here. Staff friendly. Drinks were good. Had the tuna on the 500° rock for appetizer. Seabass for the main course. Toffee pudding for dessert. Absolutely amazing. I'm definitely coming back. Highly recommend to anyone!",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 29,
+      "index": 28,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2tkTmFWWlNiekl0Vm13M1lsQkJjMko2V0c4NVNtYxAB",
+      "ariaLabel": "Solomon Applebaum",
+      "rawText": "Solomon Applebaum\nLocal Guide · 108 reviews · 119 photos\n\n\n\n\n\n\n2 months ago\nThis is one of the best restaurants in Northwest suburbs. I thought I already reviewed it but apparently I did not. We go here a few times a year. I would eat there every day if I could afford it.\nPrice per person\n$70–80\nFood: 5\nService: 5\nAtmosphere: 5\nGroup size\n3-4 people\n\nLike\n\nShare",
+      "author": "Solomon Applebaum",
+      "reviewerMeta": "Local Guide · 108 reviews · 119 photos",
+      "rating": 5,
+      "relativeDate": "2 months ago",
+      "reviewText": "This is one of the best restaurants in Northwest suburbs. I thought I already reviewed it but apparently I did not. We go here a few times a year. I would eat there every day if I could afford it.",
+      "firstSeenIteration": 30
+    },
+    {
+      "ordinal": 30,
+      "index": 29,
+      "reviewId": "Ci9DQUlRQUNvZENodHljRjlvT2pOT2IxOWpOVUphWlRGYWRGSjNWMk50UjBaTk1FRRAB",
+      "ariaLabel": "Errin Pace",
+      "rawText": "Errin Pace\n5 reviews\n\n\n\n\n\n\n5 months ago\nWhen my husband and I are able to sneak away from the kids for a couple hours for dinner and drinks we love going to regional. What makes it even better is having Evelyn as our server! She’s so amazing and pays attention to every detail! She knows the menu inside and out and is so delightful!\n\nLike\n\nShare",
+      "author": "Errin Pace",
+      "reviewerMeta": "5 reviews",
+      "rating": 5,
+      "relativeDate": "5 months ago",
+      "reviewText": "When my husband and I are able to sneak away from the kids for a couple hours for dinner and drinks we love going to regional. What makes it even better is having Evelyn as our server! She’s so amazing and pays attention to every detail! She knows the menu inside and out and is so delightful!",
+      "firstSeenIteration": 30
+    }
+  ]
+}
