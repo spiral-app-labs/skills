@@ -1,0 +1,51 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "lead_seed_request",
+  "requested_at": "2026-05-07T15:38:00Z",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "pipeline_state": "seed_ready_pending_founder_approval_owner_confirmation_and_mc_provisioning",
+  "recommended_root_status": "todo",
+  "recommended_current_stage": "claimed",
+  "recommended_archetype": "Heaven Palate",
+  "primary_conversion_path": "reserve a table + private dining inquiry + menu + call/directions + order-online handoff",
+  "source_artifacts": [
+    "restaurant-website-system/research/lead-qualification/chicago-prime-steakhouse-seed-validation-2026-05-07.md",
+    "restaurant-website-system/research/lead-qualification/chicago-prime-steakhouse-evidence-2026-05-07/README.md"
+  ],
+  "known_public_facts": {
+    "official_site": "https://www.chicagoprimesteakhouse.com/",
+    "address_snapshot": "1444 E. Algonquin Road, Schaumburg, IL 60173",
+    "phone_snapshot": "847.969.9900",
+    "fax_snapshot": "847.969.9901",
+    "hours_snapshot": "Mon-Sat 3PM-10PM; Sunday 3PM-9PM",
+    "reservation_url_snapshot": "https://secure.opentable.com/chicago-prime-steakhouse-reservations-schaumburg?restref=36475",
+    "private_dining_email_snapshot": "events@chicagoprimesteakhouse.com",
+    "private_dining_capacities_snapshot": {
+      "Main Dining Room": "Maximum 130 people",
+      "Bar & Lounge": "Maximum 80 people",
+      "Walnut & State Room": "Maximum 85 people",
+      "Walnut Room": "Maximum 32 people",
+      "State Room": "Maximum 35 people"
+    },
+    "live_entertainment_snapshot": "Live music in the lounge Wednesday-Saturday 7PM-11PM",
+    "legacy_story_snapshot": "George A. Kalkounos family/hospitality legacy page frames fine dining, service, mentoring, and welcoming guests as friends."
+  },
+  "seed_rationale": [
+    "Premium reservation-led steakhouse with private dining/event revenue potential.",
+    "Official site shows visible template residue and placeholder copy in fetched text.",
+    "Private dining and legacy story are strong but under-integrated into a homepage conversion narrative.",
+    "Heaven Palate archetype fits classic steakhouse luxury better than Bamzi/Bramble/Cuisine."
+  ],
+  "must_confirm_before_build_ready": [
+    "Founder approval to seed/provision this lead in Mission Control and whether speculative preview work is allowed.",
+    "Exact approved brand language and whether award-winning claims may be used.",
+    "Hours, reservation URL, order-online providers, menu PDFs, and current menu details.",
+    "Private dining capacities, event policies, deposit/minimums, and inquiry path currentness.",
+    "Live music schedule currentness.",
+    "Tone and permissions for George A. Kalkounos legacy story.",
+    "Owner-approved image rights for dining room, steaks, wine, lounge, private rooms, exterior, and legacy imagery.",
+    "Whether review carousel snippets or third-party review proof may be used publicly."
+  ],
+  "blocked_reason": "Protected Mission Control agency API currently returns 401 without bearer auth, so this seed payload is local-only and pending MC attach. No raw Supabase writes were performed."
+}

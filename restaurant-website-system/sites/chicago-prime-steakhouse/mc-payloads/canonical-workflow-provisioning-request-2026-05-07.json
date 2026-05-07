@@ -1,0 +1,120 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "root_seed_request",
+  "requested_at": "2026-05-07T15:38:00Z",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "pipeline_state": "seed_ready_pending_founder_approval_owner_confirmation_and_mc_provisioning",
+  "recommended_root_status": "todo",
+  "recommended_current_stage": "claimed",
+  "recommended_archetype": "Heaven Palate",
+  "primary_conversion_path": "reserve a table + private dining inquiry + menu + call/directions + order-online handoff",
+  "source_artifacts": [
+    "restaurant-website-system/research/lead-qualification/chicago-prime-steakhouse-seed-validation-2026-05-07.md",
+    "restaurant-website-system/research/lead-qualification/chicago-prime-steakhouse-mc-seed-payload-2026-05-07.json",
+    "restaurant-website-system/research/lead-qualification/chicago-prime-steakhouse-evidence-2026-05-07/README.md"
+  ],
+  "known_public_facts": {
+    "official_site": "https://www.chicagoprimesteakhouse.com/",
+    "address_snapshot": "1444 E. Algonquin Road, Schaumburg, IL 60173",
+    "phone_snapshot": "847.969.9900",
+    "hours_snapshot": "Mon-Sat 3PM-10PM; Sunday 3PM-9PM",
+    "reservation_url_snapshot": "https://secure.opentable.com/chicago-prime-steakhouse-reservations-schaumburg?restref=36475",
+    "private_dining_email_snapshot": "events@chicagoprimesteakhouse.com",
+    "live_entertainment_snapshot": "Live music in the lounge Wednesday-Saturday 7PM-11PM",
+    "identity": "Classic Schaumburg steakhouse with fine-dining positioning, private dining/events, live lounge, OpenTable reservations, and George A. Kalkounos hospitality legacy story."
+  },
+  "must_confirm_before_build_ready": [
+    "founder approval to seed/provision this lead in MC and whether speculative preview work is allowed",
+    "approved brand language and award-winning claim safety",
+    "hours/reservation/order/menu currentness",
+    "private dining capacities and policies currentness",
+    "live music schedule currentness",
+    "legacy story tone and permissions",
+    "owner-approved photo rights",
+    "review proof permissions"
+  ],
+  "child_tasks": [
+    {
+      "stage": "claimed",
+      "title": "Chicago Prime Steakhouse — claim/checklist",
+      "metadata": {
+        "requirements": [
+          "Provision canonical root and child workflow tasks in Mission Control when protected agency APIs are available.",
+          "Generate checklist after MC lead_id/task_id exist.",
+          "Keep state seed-ready until founder approval and owner/currentness confirmations are resolved."
+        ],
+        "evidence_required": [
+          "restaurant-website-system/sites/chicago-prime-steakhouse/checklist.md",
+          "restaurant-website-system/sites/chicago-prime-steakhouse/checklist.json",
+          "restaurant-website-system/research/lead-qualification/chicago-prime-steakhouse-seed-validation-2026-05-07.md"
+        ],
+        "required_skills": ["website-agency-system"]
+      }
+    },
+    {
+      "stage": "auditing",
+      "title": "Chicago Prime Steakhouse — official site audit",
+      "metadata": {
+        "requirements": [
+          "Audit official site desktop/mobile with screenshots and DOM/text evidence.",
+          "Evaluate reservation hierarchy, private dining/event funnel, template residue, menu/PDF discoverability, live lounge treatment, legacy story integration, and mobile CTA clarity."
+        ],
+        "evidence_required": [
+          "desktop/mobile screenshots",
+          "DOM/text scrape of home/menu/contact/private-dining/live-entertainment/legacy pages",
+          "audit.md with source URLs and conversion gaps"
+        ],
+        "required_skills": ["website-agency-r1-audit", "website-agency-system", "browser-automation"]
+      }
+    },
+    {
+      "stage": "reviews",
+      "title": "Chicago Prime Steakhouse — Google Reviews packet",
+      "metadata": {
+        "requirements": [
+          "Use browser Google Reviews dialog sorted by Highest rating.",
+          "Collect 30 written reviews and screenshots if available.",
+          "Extract proof themes for Heaven Palate build brief without inventing ratings/review claims."
+        ],
+        "evidence_required": [
+          "restaurant-website-system/sites/chicago-prime-steakhouse/research/reviews/google-reviews-highest-30-written-2026-05-07.md",
+          "restaurant-website-system/sites/chicago-prime-steakhouse/research/reviews/google-reviews-highest-30-written-2026-05-07.json",
+          "restaurant-website-system/sites/chicago-prime-steakhouse/research/reviews/screenshots/google-reviews-highest-top-2026-05-07.png"
+        ],
+        "required_skills": ["website-agency-system", "browser-automation"]
+      }
+    },
+    {
+      "stage": "routing",
+      "title": "Chicago Prime Steakhouse — template routing",
+      "metadata": {
+        "requirements": [
+          "Use exactly one archetype.",
+          "Current seed recommendation is Heaven Palate due classic steakhouse, fine dining, private events, wine/lounge, and reservation-led conversion."
+        ],
+        "evidence_required": [
+          "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md"
+        ],
+        "required_skills": ["website-agency-system"]
+      }
+    },
+    {
+      "stage": "building",
+      "title": "Chicago Prime Steakhouse — Heaven Palate build brief / implementation",
+      "metadata": {
+        "requirements": [
+          "Do not build until MC workflow, founder approval, owner/currentness confirmations, and image rights are ready.",
+          "When authorized, build from Heaven Palate with classic luxury steakhouse pacing, reserve/private-dining CTAs, legacy story, live lounge support, menu fidelity, and no fake claims."
+        ],
+        "evidence_required": [
+          "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+          "preview URL once authorized",
+          "desktop/mobile screenshots once built"
+        ],
+        "required_skills": ["website-agency-r2-brief", "website-agency-system"]
+      }
+    }
+  ],
+  "blocked_reason": "Protected MC agency workflow API currently returns 401; this provisioning request is local-only until auth and founder approval are available. No raw Supabase writes were performed."
+}
