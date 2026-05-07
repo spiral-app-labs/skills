@@ -1,0 +1,38 @@
+{
+  "site_slug": "region-kitchen-and-bar",
+  "restaurant_name": "Region Kitchen and Bar",
+  "build_stage": "routing",
+  "currentStage": "routing",
+  "template_slug": "roma",
+  "status": "ready_for_mc_provisioning",
+  "created_at": "2026-05-07T13:21:00Z",
+  "mc_write_status": "not_mutated__agency_auth_unavailable",
+  "planner_blocker": "AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET missing in heartbeat shell; protected website-workflow planner returns Unauthorized without runtime auth.",
+  "artifact_paths": {
+    "lead_validation": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-seed-validation-2026-05-07.md",
+    "r1_current_site_audit": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-r1-current-site-audit-2026-05-07.md",
+    "r1_current_site_evidence_dir": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-r1-current-site-audit-2026-05-07/",
+    "google_reviews_packet_md": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-google-reviews-2026-05-07/region-google-reviews-highest-30-2026-05-07.md",
+    "google_reviews_packet_json": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-google-reviews-2026-05-07/region-google-reviews-highest-30-2026-05-07.json",
+    "google_reviews_insights": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-google-reviews-2026-05-07/region-google-reviews-insights-2026-05-07.md",
+    "r2_build_brief": "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-r2-build-brief-2026-05-07.md"
+  },
+  "requirements_to_mirror": [
+    "Use exactly one archetype: roma.",
+    "Preserve factual business data: address, phone, hours, emails, chef/owner Dave Perlick, private-event capacities, menu categories, Toast/GiftRocker links.",
+    "Verify OpenTable before making it primary; preserve phone fallback.",
+    "Use clean delivery links only; do not ship safelinks-wrapped DoorDash/Uber Eats URLs.",
+    "Do not publish direct review quotes or staff names without restaurant approval.",
+    "Mobile sticky CTA bar required: Reserve, Call, Menu, Directions.",
+    "Final QA must include desktop/mobile screenshots, reservation path, menu readability, private-event CTA, order/gift paths, factual accuracy, accessibility labels."
+  ],
+  "evidence_completed": {
+    "lead_fit_validation": true,
+    "current_site_desktop_mobile_audit": true,
+    "google_reviews_highest_30_written": true,
+    "routing_archetype_rationale": true,
+    "builder_brief": true,
+    "canonical_mc_workflow_provisioned": false
+  },
+  "recommended_next_action": "When agency auth is available, call the protected Mission Control website-workflow provisioning route for Region Kitchen and Bar and attach these artifact paths to the root/child workflow tasks before any build/fork work starts."
+}
