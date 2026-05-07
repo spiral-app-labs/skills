@@ -1,0 +1,111 @@
+{
+  "lead_id": "016b951a-6ed7-4687-ad56-3dd34d97a6ca",
+  "root_task_id": "173436b8-bcc1-4ebd-85ac-44b2541409dc",
+  "child_task_id": "1baad237-1729-4c70-921a-8c561982cda6",
+  "site_slug": "tin-man-s-pub",
+  "build_stage": "blocked",
+  "currentStage": "blocked",
+  "stage_completed": "reviews_fit_evidence_packet",
+  "ready_to_pitch": false,
+  "template_slug": "bramble-01",
+  "recommendation": "skip_or_nurture_default; proceed_only_with_explicit_founder_approval_for_stripped_down_bramble_pub_page",
+  "can_safely_advance": false,
+  "review_capture": {
+    "source": "Google Maps browser capture",
+    "sort_filter": "Highest rating",
+    "browser_blocker": null,
+    "target_written_reviews": 30,
+    "total_google_reviews_available": 6,
+    "written_reviews_captured": 4,
+    "owner_replies_visible": false,
+    "google_rating": 3.2,
+    "google_review_count": 6,
+    "google_distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 3
+    }
+  },
+  "evidence_paths": [
+    "restaurant-website-system/sites/tin-man-s-pub/reviews-fit-evidence-packet-2026-05-06.md",
+    "restaurant-website-system/sites/tin-man-s-pub/public-source-evidence-2026-05-06.md",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-2026-05-06.json",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-2026-05-06.md",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-bodytext-2026-05-06.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-reviews-highest-top-2026-05-06.png",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-reviews-highest-bottom-2026-05-06.png",
+    "restaurant-website-system/sites/tin-man-s-pub/browser-evidence-audit-2026-05-05.md",
+    "restaurant-website-system/sites/tin-man-s-pub/audit.md",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/wheree-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-search-desktop-2026-05-05.txt",
+    "restaurant-website-system/sites/tin-man-s-pub/scrapes/menu-search-desktop-2026-05-05.txt"
+  ],
+  "blockers": [
+    {
+      "gate": "reviews_fit_decision",
+      "reason": "Google Highest review capture succeeded but exposed only 6 Google reviews total / 4 written texts and strengthened the existing blocker: current Google rating is 3.2 from 6, reputation signals are inconsistent and politically/polarization-risky, and the business is a corner sports pub/pool hall that only partially fits Bramble.",
+      "nextUnblockAction": "Founder/MC decision: skip or nurture by default; only proceed if Ethan explicitly approves a stripped-down Bramble pub page and accepts the outreach/reputation risk.",
+      "recordedAt": "2026-05-06T14:50:15Z"
+    },
+    {
+      "gate": "stage_writeback",
+      "reason": "AGENCY_AUTONOMY_API_KEY / Mission Control API base URL unavailable in runtime; no direct Supabase writes performed.",
+      "nextUnblockAction": "Submit this JSON through the agency Mission Control API when credentials/base URL are configured.",
+      "recordedAt": "2026-05-06T14:50:15Z"
+    }
+  ],
+  "lead_metadata": {
+    "owner_name": null,
+    "owner_email": null,
+    "contact_email": null,
+    "phone": "(847) 516-1160",
+    "hours": [
+      "Restaurantji/Restaurant Guru: Mon-Sat 8AM-2AM",
+      "Sunday differs by source: Restaurantji 8AM-12PM; Restaurant Guru 8AM-12PM; SinglePlatform breakfast note says Sunday 8AM-1PM"
+    ],
+    "address_location": "926 W State Rte 22 / 926 IL-22, Fox River Grove, IL 60021",
+    "website_url": null,
+    "order_url": null,
+    "reservation_url": null,
+    "catering_events_url": null,
+    "google_rating": 3.2,
+    "google_review_count": 6,
+    "outreach_email_draft_path": null,
+    "outreach_email_draft_status": "not_created_blocked_pending_founder_decision",
+    "metadata_source_notes": [
+      "Google Maps browser capture sorted by Highest rating on 2026-05-06.",
+      "No owned website found in prior browser audit/search evidence; Google profile prompts to add website.",
+      "Menu/content proof comes from SinglePlatform/Restaurantji/Restaurant Guru aggregators, not first-party owned source; owner confirmation required before using menu copy.",
+      "Ratings conflict across sources; do not use aggregate review claims in marketing without owner-confirmed source of truth."
+    ],
+    "field_sources": {
+      "phone": [
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt"
+      ],
+      "hours": [
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantguru-desktop-2026-05-05.txt",
+        "restaurant-website-system/sites/tin-man-s-pub/public-source-evidence-2026-05-06.md"
+      ],
+      "address_location": [
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-2026-05-06.json",
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/restaurantji-desktop-2026-05-05.txt"
+      ],
+      "website_url": [
+        "restaurant-website-system/sites/tin-man-s-pub/browser-evidence-audit-2026-05-05.md"
+      ],
+      "google_rating": [
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-2026-05-06.json"
+      ],
+      "google_review_count": [
+        "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-2026-05-06.json"
+      ]
+    }
+  },
+  "heartbeat_summary": "Tin Man's Pub Google Highest reviews captured successfully; evidence packet recommends blocked/hold because fit and reputation risk are too weak for automatic Bramble build.",
+  "updated_at": "2026-05-06T14:50:15Z"
+}

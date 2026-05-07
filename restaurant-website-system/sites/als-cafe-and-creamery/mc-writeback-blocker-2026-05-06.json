@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-06T09:53:19-05:00",
+  "source": "local-subagent-audit-routing-decision",
+  "mcWritesPerformed": false,
+  "rootTaskId": "3ae4091c-c686-4270-8298-afd0cc5c913b",
+  "nextChildTaskId": "cd3f2c60-da4a-4c05-8e83-69eb33dfde54",
+  "siteSlug": "als-cafe-and-creamery",
+  "recommendation": "keep_blocked_skip_for_now",
+  "safeToAdvanceNextTask": false,
+  "templateRoute": {
+    "status": "failed_template_gap",
+    "selectedTemplateSlug": null,
+    "selectedArchetype": null,
+    "neededArchetype": "heritage-Americana diner/creamery / chef-owned historic cafe",
+    "reason": "Al's Cafe & Creamery is a heritage-Americana chef-owned cafe/diner/creamery in the 1892 Ranstead Building with Burns Malts and broad American/New American comfort food. Existing templates either flatten the heritage/creamery character (plate/cuisine), over-index on bar/cocktail atmosphere (bramble), over-luxury/editorial restraint (roma/1776), or are cuisine/register mismatches (gusto/varro/qitchen/alinea/labrisa/etc.)."
+  },
+  "requirementUpdatesSuggested": [
+    {
+      "id": "lead-fit-qualified",
+      "qaState": "failed",
+      "notes": "Public evidence confirms the prior blocker: the lead is real and has a concrete site-improvement opportunity, but its core sales identity is heritage-Americana diner/creamery and no current catalog route preserves that truthfully."
+    },
+    {
+      "id": "current-site-audit",
+      "qaState": "passed",
+      "notes": "Desktop/mobile screenshots plus official-page scrapes and public directory evidence captured locally on 2026-05-06."
+    },
+    {
+      "id": "template-route-locked",
+      "qaState": "failed",
+      "notes": "No safe existing template route. Keep template-gap blocker until a heritage-Americana diner/creamery archetype exists or founder explicitly approves a custom experimental fork."
+    },
+    {
+      "id": "fork-built",
+      "qaState": "blocked",
+      "notes": "Do not build from current catalog."
+    }
+  ],
+  "blocker": {
+    "gate": "template-route-locked",
+    "reason": "Template gap: heritage-Americana diner/creamery / chef-owned historic cafe. Current archetypes would strip the 1892-building heritage, Burns Malts/creamery identity, and approachable chef-diner register.",
+    "nextUnblockAction": "Founder/MC should either add/select a heritage-Americana diner/creamery archetype, explicitly approve a custom experimental fork, or retire/skip this lead.",
+    "recordedAt": "2026-05-06T09:53:19-05:00"
+  },
+  "evidencePaths": [
+    "restaurant-website-system/sites/als-cafe-and-creamery/audit-routing-decision-2026-05-06.md",
+    "restaurant-website-system/sites/als-cafe-and-creamery/public-evidence-2026-05-06.md",
+    "restaurant-website-system/sites/als-cafe-and-creamery/screenshots/current-site-desktop-full.png",
+    "restaurant-website-system/sites/als-cafe-and-creamery/screenshots/current-site-mobile-fold.png",
+    "restaurant-website-system/sites/als-cafe-and-creamery/screenshots/current-site-mobile-fullish.png",
+    "restaurant-website-system/sites/als-cafe-and-creamery/scrapes/current-site-text.txt",
+    "restaurant-website-system/sites/als-cafe-and-creamery/scrapes/menus-text.txt",
+    "restaurant-website-system/sites/als-cafe-and-creamery/scrapes/about-text.txt",
+    "restaurant-website-system/sites/als-cafe-and-creamery/scrapes/history-text.txt",
+    "restaurant-website-system/sites/als-cafe-and-creamery/scrapes/burns-malts-text.txt"
+  ],
+  "publicEvidenceUrls": [
+    "https://www.alscafe.com/",
+    "https://www.alscafe.com/about-al-s",
+    "https://www.alscafe.com/history-of-al-s-cafe",
+    "https://www.alscafe.com/menus",
+    "https://www.alscafe.com/famous-burns-malts",
+    "https://www.toasttab.com/als-cafe/v3/?mode=fulfillment",
+    "https://www.google.com/maps/place/Al's+Cafe+%26+Creamery/@42.0361725,-88.2827053,17z/",
+    "https://www.restaurantji.com/il/elgin/als-cafe-and-creamery-/",
+    "https://restaurantguru.com/Als-Cafe-and-Creamery-Elgin"
+  ],
+  "decisionSummary": "Keep Al's Cafe & Creamery blocked/skipped. The business is viable and has a dated/mobile-weak current site, but forcing it into Plate, Bramble, Roma/Cuisine, 1776, Gusto, or Varro would misrepresent the restaurant. Treat it as a catalog-gap signal for a future heritage-Americana diner/creamery template."
+}

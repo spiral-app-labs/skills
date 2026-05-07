@@ -1,0 +1,22 @@
+200 https://graceful-ordinary-redesign.vercel.app/ bytes=29070
+200 https://graceful-ordinary-redesign.vercel.app/menu bytes=22179
+200 https://graceful-ordinary-redesign.vercel.app/about bytes=21647
+200 https://graceful-ordinary-redesign.vercel.app/contact bytes=19964
+401 https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app/ bytes=14630
+401 https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app/menu bytes=14642
+
+Stable marker scan:
+FOUND AAA Three-Diamond
+FOUND TripAdvisor Guest
+FOUND 200+ Reviews
+FOUND 4.8
+ABSENT Chris and Megan Curren
+FOUND Fox River
+FOUND Reserve on Resy
+ABSENT Kane County Choice Awards
+
+PR root marker scan:
+FOUND Vercel Authentication
+FOUND Authentication Required
+ABSENT Chris and Megan Curren
+ABSENT AAA Three-Diamond

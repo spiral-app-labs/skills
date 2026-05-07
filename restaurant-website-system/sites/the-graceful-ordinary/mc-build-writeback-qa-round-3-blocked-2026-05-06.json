@@ -1,0 +1,35 @@
+{
+  "build_stage": "qa_round_3",
+  "site_slug": "the-graceful-ordinary",
+  "template_slug": "roma",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "vercel_preview_url": "https://graceful-ordinary-redesign.vercel.app",
+  "artifact_urls": [
+    "https://github.com/spiral-app-labs/skills/pull/83",
+    "https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app",
+    "https://graceful-ordinary-redesign.vercel.app"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/local-desktop-full.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/local-mobile-full.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-local-dom-text-2026-05-06.txt",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-local-links-2026-05-06.json",
+    "restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/pr-preview-blocker.md"
+  ],
+  "ready_to_pitch": false,
+  "passed_requirement_ids": [],
+  "blocked_requirement_ids": ["qa-round-3", "delivery-package", "delivery-no-missing-evidence"],
+  "blocker": {
+    "stage": "qa_round_3",
+    "reason": "QA round 3 is blocked: local v2 source passed typecheck/build/routes and has local final-QA screenshots, but no founder-shareable public preview reflects that source. Stable public preview is stale and still contains unsupported proof claims (AAA Three-Diamond, TripAdvisor Guest, 200+ Reviews, 4.8). PR preview returns HTTP 401 / Vercel Authentication Required. Mission Control API credentials are also unavailable in this runtime, so official MC writeback cannot be completed from here.",
+    "next_unblock_action": "Make the PR preview public/shareable or redeploy the stable public preview from local v2 source, then rerun QA round 3 against that public URL and retry this payload through /api/agency/leads/a513755c-e7a3-438e-b8e9-78e8cd99e080/build with Authorization: Bearer $AGENCY_AUTONOMY_API_KEY and x-agency-runtime: openclaw.",
+    "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+    "updated_at": "2026-05-06T11:14:00Z"
+  },
+  "heartbeat_summary": "The Graceful Ordinary QA round 3 was advanced as far as possible locally: final-QA screenshots, DOM/link evidence, typecheck/build, route checks, and concierge check are complete. Delivery remains blocked because the public preview is stale and the PR preview is Vercel-auth protected."
+}

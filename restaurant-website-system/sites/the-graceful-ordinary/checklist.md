@@ -9,7 +9,7 @@
 - Checklist MD: restaurant-website-system/sites/the-graceful-ordinary/checklist.md
 - Checklist JSON: restaurant-website-system/sites/the-graceful-ordinary/checklist.json
 - Deploy URL: TBD
-- Updated: 2026-05-06T09:47:04.154Z
+- Updated: 2026-05-06T09:57:36.702Z
 
 ## Mission Control Sync Contract
 
@@ -180,7 +180,7 @@
 
 - Round 1: `restaurant-website-system/sites/the-graceful-ordinary/qa-round-1.md` — passed
 - Round 2: `restaurant-website-system/sites/the-graceful-ordinary/qa-round-2.md` — passed
-- Round 3: blocked — `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md`
+- Round 3: blocked / attempted locally — `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3.md`, `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md`
 
 ## Pitch Artifacts
 
@@ -190,7 +190,7 @@
 
 ## Blockers
 
-- `qa_round_3`: Public preview `https://graceful-ordinary-redesign.vercel.app` is stale. Live check still shows unsupported `AAA Three-Diamond` content and does not show local v2 evidence-critical changes such as `Ask Graceful` concierge or `Maytag Bleu Cheese`. Redeploy/replace the preview from local v2 source, then rerun QA round 3 before packaging/delivery.
+- `qa_round_3`: No founder-shareable public preview currently reflects local v2. Local QA round 3 attempt passed technical checks and produced local screenshots, but public stable preview `https://graceful-ordinary-redesign.vercel.app` is stale and still shows unsupported claims (`AAA Three-Diamond`, `TripAdvisor Guest`, `200+ Reviews`, `4.8`), while the PR preview `https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app` returns HTTP 401 / Vercel Authentication Required. Redeploy/replace with a public local-v2 preview, then rerun QA round 3 before packaging/delivery.
 
 ## Done Criteria
 
@@ -330,3 +330,37 @@ Pitch posture: preserve-stack / soft-leak. The current official site is content-
 - Runbook artifact: `restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md`
 - Additional deploy-path findings: no local Vercel CLI binary on PATH, no `.vercel/` project binding found, Graceful Ordinary site folder is untracked in `skills`, and the current repo branch is unrelated (`feat/la-hacienda-qa2`).
 - Safe unblock: clean branch/PR preview or explicitly approved non-production Vercel preview deployment, then update MC preview URL if needed and rerun QA round 3.
+
+
+## PR Preview Blocker — 2026-05-06
+
+- PR: `https://github.com/spiral-app-labs/skills/pull/83`
+- Vercel PR preview: `https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app`
+- Blocker artifact: `restaurant-website-system/sites/the-graceful-ordinary/pr-preview-blocker.md`
+- Route checks for `/`, `/menu`, `/about`, and `/contact` returned HTTP 401 / Vercel authentication protection, so QA round 3 and founder-facing delivery remain blocked.
+- Required unblock: make the PR preview public/shareable or configure an approved preview bypass, then rerun QA round 3.
+
+## QA Round 3 Local Attempt — 2026-05-06
+
+- QA artifact: `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3.md`
+- Blocker artifact: `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md`
+- Local desktop screenshot: `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/local-desktop-full.png`
+- Local mobile screenshot: `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/local-mobile-full.png`
+- Local DOM text: `restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-local-dom-text-2026-05-06.txt`
+- Local links: `restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-local-links-2026-05-06.json`
+- Capture script: `restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-3-cdp-2026-05-06.mjs`
+- Prepared MC writeback payload: `restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-2026-05-06.json`
+- Verification: `npm run typecheck` passed; `npm run build` passed; local routes `/`, `/menu`, `/about`, `/contact` returned HTTP 200 on port `3037`; concierge birthday prompt returned reserve marker and safe reservation intent.
+- Result: local v2 remains the redeploy candidate, but QA round 3 stays blocked until a public/shareable preview reflects local v2 and Mission Control writeback can be retried with valid API credentials.
+
+## QA Round 3 Public Preview Recheck — 2026-05-06T14:39Z
+
+- Recheck artifact: `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-preview-recheck-2026-05-06-1439Z.md`
+- Prepared MC writeback payload: `restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-06-1439Z.json`
+- HTTP evidence dir: `restaurant-website-system/sites/the-graceful-ordinary/scrapes/public-preview-recheck-2026-05-06-1439Z/`
+- Stable public preview route checks: `/`, `/menu`, `/about`, and `/contact` returned HTTP 200 but still serve stale content.
+- Stable public preview stale markers still found: `AAA Three-Diamond`, `TripAdvisor Guest`, `200+ Reviews`, and `4.8`.
+- Stable public preview local-v2 indicators missing from homepage HTML: `Chris and Megan Curren`, `Kane County Choice Awards`.
+- PR preview route checks: `/` and `/menu` returned HTTP 401 / Vercel Authentication Required; browser snapshot showed `Log in to Vercel`.
+- MC API credentials unavailable in runtime: `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` unset.
+- Result: QA round 3 remains blocked; do not advance to packaging/delivery until a public founder-shareable preview reflects local v2 and final public desktop/mobile QA evidence is captured.
