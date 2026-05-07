@@ -4,7 +4,7 @@
 - Canonical gate: future `battle_cards`
 - Status: **internal draft / not owner-facing yet**
 - Archetype: **Heaven Palate**
-- Build status: **not build-authorized yet** — pending founder approval, owner confirmations, MC lead/root workflow provisioning, protected agency API auth, and Heaven Palate source/template mapping.
+- Build status: **not build-authorized yet** — pending founder approval, owner confirmations, MC lead/root workflow provisioning, protected agency API auth, and MC approval/attach of the local Heaven Palate source mapping.
 
 ## Core sales frame
 
@@ -245,7 +245,7 @@ Before Ethan uses these battle cards externally:
 
 1. Confirm MC lead/root workflow exists and artifacts are attached.
 2. Confirm whether speculative preview work is approved.
-3. Resolve Heaven Palate implementation source/template mapping.
+3. Attach/approve the local Heaven Palate source mapping in MC.
 4. Confirm owner-approved photo rights.
 5. Confirm current hours, menu, reservation, private dining, provider, and social links.
 6. Confirm live music schedule.

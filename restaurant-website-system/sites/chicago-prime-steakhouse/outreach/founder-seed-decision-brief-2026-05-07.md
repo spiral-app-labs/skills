@@ -55,7 +55,7 @@ Bamzi would make the site too trendy and cinematic for a restaurant whose sales 
 - The lead has not been officially provisioned in MC because protected MC agency auth remains unavailable in the heartbeat environment.
 - Canonical website workflow root/child tasks still need provisioning/attach.
 - Founder approval is still required before speculative or owner-facing preview work.
-- Heaven Palate is locked as the archetype, but the buildable source/template mapping still needs confirmation because no active `heaven-palate` template directory exists under `restaurant-website-system/templates`.
+- Heaven Palate is locked as the archetype. Local source mapping is now prepared: future authorized implementation should use `restaurant-website-system/templates/1776-redesign-01/` as the buildable source while preserving the Heaven Palate steakhouse register.
 - Owner photo rights are unconfirmed.
 - Menu/PDF/currentness and item-level display permissions need confirmation.
 - Private dining room capacities, packages, policies, and inquiry flow need confirmation before public claims.

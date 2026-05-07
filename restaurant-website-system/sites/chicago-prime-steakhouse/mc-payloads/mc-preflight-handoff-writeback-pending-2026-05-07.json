@@ -33,9 +33,14 @@
     "Do not mark QA started until an authorized preview URL, screenshots, link audit, and owner-confirmation state exist.",
     "Resolve Heaven Palate source/template mapping before assigning implementation.",
     "Use owner confirmation request only after Ethan/founder approves outreach; attach it to MC once provisioning/auth is available.",
-    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API.",
+    "Attach the Heaven Palate source mapping artifact to MC; buildable implementation source is 1776-redesign-01, but build remains unauthorized."
   ],
   "owner_confirmation_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
   "attach_replay_payload": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
-  "attach_replay_runbook": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-attach-replay-runbook-2026-05-07.md"
+  "attach_replay_runbook": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-attach-replay-runbook-2026-05-07.md",
+  "source_mapping_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
+  "buildable_template_slug": "1776-redesign-01",
+  "buildable_template_path": "restaurant-website-system/templates/1776-redesign-01/",
+  "heaven_palate_reference_path": "restaurant-website-system/inputs/framer-templates/heaven-palate-01/"
 }

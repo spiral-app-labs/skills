@@ -4,7 +4,7 @@
 - Status: **internal handoff / preflight only**
 - Canonical position: seed-ready with local evidence through internal `pitch` / `battle_cards`; **not build-authorized** and **not delivery/packaging-complete**
 - Required archetype: **Heaven Palate**
-- Current hard blockers: protected Mission Control agency API returns `401`; founder approval, MC root/child workflow provisioning, owner confirmations, owner-approved media, preview authorization, and Heaven Palate source/template mapping remain pending.
+- Current hard blockers: protected Mission Control agency API returns `401`; founder approval, MC root/child workflow provisioning, owner confirmations, owner-approved media, preview authorization, and MC approval/attach of the local source mapping remain pending.
 
 ## Purpose
 
@@ -48,7 +48,7 @@ Replay these only through approved MC agency APIs after auth/provisioning is res
 | auditing | Official-site audit and screenshot/text evidence exist locally. | Pending attach. | Attach evidence/writeback to auditing child task once MC exists. |
 | reviews | 30 written Google reviews and browser screenshot evidence exist locally. | Pending attach. | Attach review packet; keep direct ratings/quotes owner-approved only. |
 | routing | Heaven Palate routing decision exists locally. | Pending attach. | Write `template_slug: Heaven Palate` to MC routing child/root metadata. |
-| building | Builder brief exists locally. | Not authorized. | Do not fork/build until founder approval, MC workflow, owner confirmations, and Heaven Palate source mapping clear. |
+| building | Builder brief exists locally. | Not authorized. | Do not fork/build until founder approval, MC workflow, owner confirmations, preview authorization, and MC approval/attach of the local source mapping clear. |
 | improving/top_3/concierge | Not started. | Not authorized. | Requires preview/build first. |
 | pitch | Internal founder decision brief exists locally. | Pending attach. | Attach as future pitch child artifact; do not send owner-facing yet. |
 | battle_cards | Internal battle cards exist locally. | Pending attach. | Attach as future battle_cards child artifact; do not use externally yet. |
@@ -75,7 +75,7 @@ Replay these only through approved MC agency APIs after auth/provisioning is res
 These are blockers for public preview, build, and sales use:
 
 1. Founder approval to seed/provision this lead and whether speculative pre-MC preview work is allowed.
-2. Heaven Palate build source/template mapping.
+2. MC approval/attach of the local Heaven Palate source mapping.
 3. Owner-approved image rights for exterior, dining room, bar/lounge, patio, private rooms, food, wine/cocktails, and legacy imagery.
 4. Current hours and reservation URL.
 5. Current menu/full-menu/PDF paths and whether item-level content/prices may be shown.
@@ -104,7 +104,7 @@ Do not say or publish:
 2. Generate/refresh `checklist.md` and `checklist.json` after MC lead/task IDs exist.
 3. Attach local audit, reviews, routing, builder brief, pitch, battle cards, and this handoff package to the appropriate child tasks.
 4. Set root `metadata.build_stage` / `metadata.currentStage` to the first incomplete canonical gate that MC agrees is incomplete.
-5. Resolve Heaven Palate source mapping before assigning a builder.
+5. Attach/approve the local Heaven Palate source mapping before assigning a builder.
 6. Only then decide whether to authorize building/forking.
 
 ## Recommended next truth-safe local action if MC auth remains blocked
@@ -128,4 +128,4 @@ Stop and ask Ethan / wait for MC if the next action would require any of the fol
 
 ## Handoff verdict
 
-Chicago Prime Steakhouse is well-prepared for an MC-backed build decision, but it should remain internal until the operational gates clear. The local artifact stack is strong enough that the next authorized worker should be able to provision, attach evidence, resolve the Heaven Palate source mapping, and brief a builder without redoing research.
+Chicago Prime Steakhouse is well-prepared for an MC-backed build decision, but it should remain internal until the operational gates clear. The local artifact stack is strong enough that the next authorized worker should be able to provision, attach evidence, attach/approve the local Heaven Palate source mapping, and brief a builder without redoing research.

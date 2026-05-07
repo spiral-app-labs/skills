@@ -5,7 +5,7 @@
 - Build status: **not build-authorized yet**
 - Required route: **Heaven Palate**
 - `template_slug`: `Heaven Palate`
-- Current blocker: protected Mission Control agency API returns `401`; founder approval, owner confirmations, MC lead row, canonical root/child workflow provisioning, and Heaven Palate implementation-source mapping are still pending.
+- Current blocker: protected Mission Control agency API returns `401`; founder approval, owner confirmations, MC lead row, canonical root/child workflow provisioning, and preview/build authorization are still pending. Local Heaven Palate source mapping is prepared in `heaven-palate-source-mapping-2026-05-07.md`.
 
 This brief is designed so a builder can execute quickly once the MC/owner gates clear. It is **not** permission to publish, contact the restaurant, or start an owner-facing preview.
 
@@ -234,7 +234,7 @@ Mobile must be strong enough to sell from a phone.
 18. Run link checks for OpenTable, menu, phone, directions, event email, order providers, gift cards/club, socials, and contact paths.
 19. Run desktop/mobile screenshot QA before Ethan sees the preview.
 20. Confirm no fake award, rating, review count, menu item, room capacity, schedule, image-rights claim, or ordering path appears anywhere.
-21. If Heaven Palate does not exist as an active local template directory, stop before implementation and resolve the source/template mapping with Ethan/MC rather than improvising from a different archetype.
+21. Use `heaven-palate-source-mapping-2026-05-07.md`: canonical archetype remains Heaven Palate, but the buildable implementation source is `restaurant-website-system/templates/1776-redesign-01/`. Do not improvise from another archetype.
 22. Do not publish or share owner-facing until MC provisioning, founder approval, and owner/currentness confirmations are resolved.
 
 ## Required confirmations before public build / owner-facing preview
@@ -251,7 +251,7 @@ Mobile must be strong enough to sell from a phone.
 - Use of Google rating/review count or exact review snippets.
 - Preferred tone for George A. Kalkounos legacy story.
 - Current provider links for Uber Eats, Grubhub, Toast, gift cards, club, socials, and directions.
-- Heaven Palate implementation source/template mapping if no active local template directory exists.
+- Build authorization and owner/MC confirmations; source mapping is locally prepared but must be attached/approved in MC.
 
 ## Do not regress
 

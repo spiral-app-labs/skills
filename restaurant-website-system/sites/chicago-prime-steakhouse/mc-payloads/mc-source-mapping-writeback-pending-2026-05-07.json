@@ -1,0 +1,24 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "source_mapping_writeback_pending",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "created_at": "2026-05-07T16:20:14Z",
+  "canonical_gate": "building",
+  "status": "implementation_source_mapping_prepared_not_build_authorized_pending_mc_attach",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "buildable_template_slug": "1776-redesign-01",
+  "buildable_template_path": "restaurant-website-system/templates/1776-redesign-01/",
+  "heaven_palate_reference_path": "restaurant-website-system/inputs/framer-templates/heaven-palate-01/",
+  "source_mapping_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
+  "build_authorized": false,
+  "owner_contacted": false,
+  "qa_run": false,
+  "blocker": "Local implementation source mapping is prepared, but build remains blocked by MC protected API auth/provisioning, founder approval, owner confirmations/photo rights, preview authorization, and QA prerequisites. No raw Supabase writes were performed.",
+  "recommended_next_actions": [
+    "Attach source mapping artifact to the canonical building task once MC provisioning/auth is available.",
+    "Do not fork until founder/MC authorizes a preview build.",
+    "When authorized, fork from 1776-redesign-01 into an MC-approved preview slug and adapt it to the Heaven Palate steakhouse register."
+  ]
+}

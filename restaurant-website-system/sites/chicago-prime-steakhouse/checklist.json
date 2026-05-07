@@ -225,10 +225,11 @@
       "order": 4,
       "status": "blocked",
       "evidence": [
-        "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
-        "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md"
+        "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+        "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
+        "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md"
       ],
-      "blocker": "Template route is locally selected as Heaven Palate, but fork/build is not authorized and Heaven Palate source mapping is unresolved."
+      "blocker": "Local source mapping is prepared: canonical archetype Heaven Palate maps to buildable source template 1776-redesign-01. Fork/build remains blocked until founder/MC authorization, owner confirmations, and preview authorization."
     },
     {
       "id": "website_improvement_pass",
@@ -620,7 +621,8 @@
     "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
-    "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md"
+    "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -637,7 +639,7 @@
     },
     {
       "stage": "building",
-      "reason": "Build is not authorized until founder approval, MC workflow provisioning, owner confirmations, preview authorization, and Heaven Palate source/template mapping are available."
+      "reason": "Build is not authorized until founder approval, MC workflow provisioning, owner confirmations/photo rights, and preview authorization are available. Local source mapping is prepared: Heaven Palate archetype maps to buildable 1776-redesign-01 source."
     },
     {
       "stage": "qa_round_1",
@@ -738,9 +740,10 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "passed",
-      "notes": "Locally routed to Heaven Palate; MC mirror pending.",
+      "notes": "Locally routed to Heaven Palate with buildable source mapping to 1776-redesign-01; MC mirror pending.",
       "evidence": [
-        "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md"
+        "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+        "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md"
       ]
     },
     {
@@ -751,7 +754,7 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "blocked",
-      "notes": "Build/fork not authorized yet.",
+      "notes": "Build/fork not authorized yet; source mapping is prepared for future build.",
       "evidence": []
     },
     {
@@ -933,5 +936,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-07T16:13:55.754Z"
+  "updatedAt": "2026-05-07T16:13:55.754Z",
+  "buildableTemplateSlug": "1776-redesign-01",
+  "buildableTemplatePath": "restaurant-website-system/templates/1776-redesign-01/"
 }
