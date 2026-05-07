@@ -1,0 +1,249 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "root_seed_request",
+  "requested_at": "2026-05-07T14:38:00Z",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "pipeline_state": "seed_ready_pending_founder_approval_owner_confirmation_and_mc_provisioning",
+  "recommended_root_status": "todo",
+  "recommended_current_stage": "claimed",
+  "recommended_archetype": "Bamzi",
+  "primary_conversion_path": "reserve a table + explore menu + directions/contact + chef/story credibility",
+  "source_artifacts": [
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-seed-validation-2026-05-07.md",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-mc-seed-payload-2026-05-07.json",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/README.md",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/capture-manifest-2026-05-07.json",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-site-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-site-mobile-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-menu-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-menu-desktop-text-2026-05-07.txt",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-chef-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-chef-desktop-text-2026-05-07.txt",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-about-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-contact-desktop-full-2026-05-07.png",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/research/build-readiness-menu-conversion-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/founder-seed-decision-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/seed-provisioning-payload-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/canonical-workflow-provisioning-request-2026-05-07.json"
+  ],
+  "known_public_facts": {
+    "address": "1411 W Schaumburg Rd, Schaumburg, IL 60194",
+    "official_site": "https://thesecretkitchenusa.com/",
+    "official_phone_snapshot": "(630) 635-2854",
+    "official_email_snapshot": "info@thesecretkitchenusa.com",
+    "official_reservation_path_snapshot": "https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AG247",
+    "hours_snapshot": "5:30 PM-10:30 PM daily / all days",
+    "identity": "Chef Aanal Kotak-led modern Indian premium dining restaurant in Schaumburg with international The Secret Kitchen presence and a U.S.-debut story",
+    "menu_snapshot": "full official menu captured from official site on 2026-05-07; sections include Hot Bar, Indian Street Food, First Plate, Indo-Chinese, Main Plate, Comfort Plate, Dessert Bar, and Bread Bar"
+  },
+  "must_confirm_before_build_ready": [
+    "founder approval to seed/provision this lead in MC and whether speculative pre-MC preview work is allowed",
+    "owner-approved photo rights for dining room, exterior, bar, food, desserts, Chef Aanal, and interior/photo-moment imagery",
+    "exact preferred U.S. brand name",
+    "current menu/prices and whether captured official menu content is safe to publish",
+    "GetSeat reservation path currentness and exclusivity",
+    "private dining/banquet details and priority",
+    "awards/recognition claims and logo/name permissions",
+    "lunch planned/current status",
+    "vegetarian/vegan/non-vegetarian homepage positioning",
+    "owner/founder pitch priority"
+  ],
+  "child_tasks": [
+    {
+      "stage": "claimed",
+      "title": "The Secret Kitchen USA — claim/checklist",
+      "metadata": {
+        "requirements": [
+          "Provision canonical root and child workflow tasks in Mission Control when protected agency APIs are available.",
+          "Generate checklist after MC lead_id/task_id exist.",
+          "Keep state seed-ready until founder approval and owner confirmations are resolved, especially photo rights, menu currentness, reservation path, private dining details, and awards permissions."
+        ],
+        "evidence_required": [
+          "restaurant-website-system/sites/the-secret-kitchen-usa/checklist.md",
+          "restaurant-website-system/sites/the-secret-kitchen-usa/checklist.json",
+          "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/founder-seed-decision-brief-2026-05-07.md",
+          "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-seed-validation-2026-05-07.md"
+        ],
+        "required_skills": [
+          "website-agency-system"
+        ]
+      }
+    },
+    {
+      "stage": "auditing",
+      "title": "The Secret Kitchen USA — official site audit",
+      "metadata": {
+        "requirements": [
+          "Audit official site desktop/mobile with screenshots and DOM/text evidence.",
+          "Evaluate homepage story depth, reservation/visit flow, menu discoverability, chef story, awards safety, private dining ambiguity, mobile CTA hierarchy, and visual match to premium modern Indian U.S.-debut identity."
+        ],
+        "evidence_required": [
+          "desktop/mobile screenshots",
+          "DOM/text scrape of home/menu/chef/about/contact/reservations",
+          "audit.md with source URLs and conversion gaps"
+        ],
+        "required_skills": [
+          "website-agency-r1-audit",
+          "website-agency-system",
+          "browser-automation"
+        ],
+        "status_hint": "official-site evidence already captured locally; formal audit artifact still pending"
+      }
+    },
+    {
+      "stage": "reviews",
+      "title": "The Secret Kitchen USA — Google Reviews packet",
+      "metadata": {
+        "requirements": [
+          "Use browser Google Reviews dialog sorted by Highest rating.",
+          "Collect 30 written reviews and screenshots if available.",
+          "Extract proof themes for Bamzi build brief without inventing ratings/review claims."
+        ],
+        "evidence_required": [
+          "restaurant-website-system/sites/the-secret-kitchen-usa/research/reviews/google-reviews-highest-30-written-2026-05-07.md",
+          "restaurant-website-system/sites/the-secret-kitchen-usa/research/reviews/google-reviews-highest-30-written-2026-05-07.json",
+          "restaurant-website-system/sites/the-secret-kitchen-usa/research/reviews/screenshots/google-reviews-highest-top-2026-05-07.png"
+        ],
+        "required_skills": [
+          "website-agency-system",
+          "browser-automation"
+        ],
+        "status_hint": "pending; do not use unsourced Google rating/review claims until captured"
+      }
+    },
+    {
+      "stage": "routing",
+      "title": "The Secret Kitchen USA — template routing",
+      "metadata": {
+        "requirements": [
+          "Use exactly one archetype.",
+          "Recommended archetype is Bamzi because the concept is cinematic, high-drama, modern Indian, reservation-led, and story-rich.",
+          "Do not reroute to Roma, Heaven Palate, Cuisine, or Bramble without a written mismatch finding."
+        ],
+        "evidence_required": [
+          "routing.md with Bamzi rationale",
+          "MC metadata.template_slug=Bamzi"
+        ],
+        "required_skills": [
+          "website-agency-system"
+        ],
+        "status_hint": "route rationale already summarized in build-readiness and founder decision briefs"
+      }
+    },
+    {
+      "stage": "building",
+      "title": "The Secret Kitchen USA — internal preview build",
+      "metadata": {
+        "requirements": [
+          "Build only after founder approves seed and owner confirmations are available, or label as internal speculative preview with unconfirmed details omitted.",
+          "Preserve confirmed reservation/contact/menu/social paths; do not invent booking/order/private-dining links.",
+          "Use Bamzi structure and personalize around Chef Aanal, handmade spices, royal-kitchen inspiration, U.S. debut story, jewel-tone dining-room drama, and curated menu journey."
+        ],
+        "evidence_required": [
+          "preview URL",
+          "owner confirmations or explicit speculative-preview note",
+          "build screenshots",
+          "npm/build verification output"
+        ],
+        "required_skills": [
+          "website-agency-system",
+          "website-agency-r2-brief"
+        ]
+      }
+    },
+    {
+      "stage": "qa_round_1",
+      "title": "The Secret Kitchen USA — QA round 1",
+      "metadata": {
+        "requirements": [
+          "Check Bamzi identity, mobile polish, link correctness, no fake ratings/reviews/awards/private-dining claims, and stronger reservation/menu/chef-story conversion than current site."
+        ],
+        "evidence_required": [
+          "qa-round-1.md",
+          "desktop/mobile screenshots",
+          "link-check output"
+        ],
+        "required_skills": [
+          "website-agency-final-qa",
+          "browser-automation"
+        ]
+      }
+    },
+    {
+      "stage": "qa_round_2",
+      "title": "The Secret Kitchen USA — QA round 2",
+      "metadata": {
+        "requirements": [
+          "Repeat after fixes; focus on reservation clarity, factual safety, Bamzi pacing, menu journey, chef story, and mobile CTA hierarchy."
+        ],
+        "evidence_required": [
+          "qa-round-2.md",
+          "fresh screenshots"
+        ],
+        "required_skills": [
+          "website-agency-final-qa",
+          "browser-automation"
+        ]
+      }
+    },
+    {
+      "stage": "qa_round_3",
+      "title": "The Secret Kitchen USA — final QA",
+      "metadata": {
+        "requirements": [
+          "Final founder-shareability pass; fail if generic, factually risky, over-classic-luxury, under-cinematic, or unclear on reservations/menu/currentness."
+        ],
+        "evidence_required": [
+          "qa-round-3.md",
+          "fresh public preview screenshots",
+          "DOM/text scrape",
+          "requirement pass/fail list"
+        ],
+        "required_skills": [
+          "website-agency-final-qa",
+          "browser-automation"
+        ]
+      }
+    },
+    {
+      "stage": "packaging",
+      "title": "The Secret Kitchen USA — package evidence",
+      "metadata": {
+        "requirements": [
+          "Package preview URL, screenshots, checklist, reviews packet, pitch, battle cards, QA evidence, confirmation status, and requirement status."
+        ],
+        "evidence_required": [
+          "packaging.md",
+          "pitch.md",
+          "battle-cards.md",
+          "MC writeback payload"
+        ],
+        "required_skills": [
+          "website-agency-system"
+        ]
+      }
+    },
+    {
+      "stage": "delivery",
+      "title": "The Secret Kitchen USA — delivery prep",
+      "metadata": {
+        "requirements": [
+          "Prepare founder/owner-safe delivery only after QA passes and confirmations/preview state are explicit.",
+          "Do not mark delivered from seed packet alone."
+        ],
+        "evidence_required": [
+          "delivery-note.md",
+          "final preview URL",
+          "QA pass evidence",
+          "owner-safe factual confirmation list"
+        ],
+        "required_skills": [
+          "website-agency-system"
+        ]
+      }
+    }
+  ],
+  "write_status": "not_written_to_mission_control",
+  "write_blocker": "Protected agency APIs unavailable in this runtime; no raw Supabase writes performed. Local MC-compatible payload created only."
+}
