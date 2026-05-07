@@ -1,0 +1,88 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "lead_seed_payload",
+  "created_at": "2026-05-07T14:38:00Z",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "official_site": "https://thesecretkitchenusa.com/",
+  "address": "1411 W Schaumburg Rd, Schaumburg, IL 60194",
+  "phone": "(630) 635-2854",
+  "email": "info@thesecretkitchenusa.com",
+  "reservation_path_snapshot": "https://getseat.net?channel=merchant_web#/public/online/reservation/8G2AG247",
+  "hours_snapshot": "5:30 PM-10:30 PM daily / all days from official site captures on 2026-05-07",
+  "recommended_archetype": "Bamzi",
+  "fit_score": 4.4,
+  "pipeline_state": "seed_ready_pending_founder_approval_owner_confirmation_and_mc_provisioning",
+  "primary_conversion_path": "reserve a table + explore menu + directions/contact + chef/story credibility",
+  "seed_decision_recommendation": "approve_bamzi_modern_indian_us_debut_seed; pitch as premium cinematic reservation-first story and menu journey, not a broken-site rescue",
+  "source_paths": [
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-seed-validation-2026-05-07.md",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-mc-seed-payload-2026-05-07.json",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/README.md",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/capture-manifest-2026-05-07.json",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-site-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-site-mobile-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-menu-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-menu-desktop-text-2026-05-07.txt",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-chef-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-chef-desktop-text-2026-05-07.txt",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-about-desktop-full-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/official-contact-desktop-full-2026-05-07.png",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/research/build-readiness-menu-conversion-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/founder-seed-decision-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/seed-provisioning-payload-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/canonical-workflow-provisioning-request-2026-05-07.json"
+  ],
+  "known_public_facts": {
+    "identity": "modern Indian premium dining concept in Schaumburg; U.S. debut story for Chef Aanal Kotak / The Secret Kitchen international presence",
+    "official_positioning": [
+      "A fusion of Indian heritage and international flavors",
+      "Those who dine beyond ordinary",
+      "Flavors of the World / From India to America"
+    ],
+    "chef_owner_snapshot": "Chef Aanal Kotak, founder and owner, personally creates the spices for The Secret Kitchen per official chef page.",
+    "menu_sections_snapshot": [
+      "The Hot Bar",
+      "Indian Street Food",
+      "The First Plate - Veg",
+      "The First Plate - Non Veg",
+      "The Indo-Chinese Plate",
+      "The Main Plate - Veg",
+      "The Main Plate - Non Veg",
+      "Junior Plate",
+      "The Comfort Plate",
+      "The Dessert Bar",
+      "The Bread Bar"
+    ],
+    "signature_menu_snapshot": [
+      "Avocado Dahi Puri",
+      "Thecha Paneer Tikka",
+      "Tandoor Ke Phool",
+      "Nawabi Lamb Chop Tajdar",
+      "#TSKFIED Butter Chicken #Delhi Style",
+      "Nalli Gosht Ki Nihari",
+      "Awadhi Gosht Biryani",
+      "Gulab Jamun Flambé",
+      "Kesar Mango Rasmalai",
+      "Chef Aanal's Autograph Dessert"
+    ],
+    "official_socials_snapshot": [
+      "https://www.facebook.com/profile.php?id=61578469689809",
+      "https://www.instagram.com/thesecretkitchen.official.usa"
+    ]
+  },
+  "must_confirm_before_build_ready": [
+    "founder approval to seed/provision this lead in MC and whether speculative pre-MC preview work is allowed",
+    "owner-approved photo rights for dining room, exterior, bar, food, desserts, Chef Aanal, and interior/photo-moment imagery",
+    "exact preferred U.S. brand name: The Secret Kitchen USA, The Secret Kitchen, or The Secret Kitchen — the Indian saga",
+    "current menu items/prices and whether all captured 2026-05-07 menu content is safe to publish",
+    "whether GetSeat is the only approved reservation path",
+    "private dining/banquet availability, capacities, minimums, deposit/policy, group inquiry contact, and priority",
+    "which awards/recognition claims are safe to publish and whether exact logo/name usage is approved",
+    "whether lunch is planned or should be omitted until officially active",
+    "whether vegetarian/vegan/non-vegetarian positioning should be explicit on the homepage",
+    "owner/founder priority among U.S. debut story, reservations, menu storytelling, chef authority, private dining, and mobile conversion"
+  ],
+  "write_status": "not_written_to_mission_control",
+  "write_blocker": "Protected agency APIs unavailable in this runtime; no raw Supabase writes performed. Local MC-compatible payload created only."
+}
