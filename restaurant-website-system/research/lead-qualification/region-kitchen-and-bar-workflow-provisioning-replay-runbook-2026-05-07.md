@@ -45,7 +45,8 @@ node restaurant-website-system/scripts/agency-website-workflow-attach-replay.mjs
 Expected dry-run behavior:
 
 - No network write is sent.
-- Output includes the target endpoint, lead ID, payload path, site slug, template slug, checklist paths, and evidence path count.
+- Output includes the target endpoint, lead ID, payload path, site slug, template slug, checklist paths, evidence path count, and expected response checks.
+- For Region's checklist-stage packet, `expected_response` should include `attach_applied: true` and `checklist_replay_activated: true`.
 
 ## Apply
 
@@ -67,9 +68,12 @@ Expected successful MC response:
 - `ok: true`
 - `created_count` is `14` for first provisioning, or lower/zero on idempotent backfill
 - `attach_applied: true`
+- `checklist_replay_activated: true`
 - `workflow.root_task_id` is non-null
 - `workflow.child_count` equals the canonical workflow step count
 - `workflow.missing_steps` is empty
+
+The replay helper validates `attach_applied` and `checklist_replay_activated` after apply. If either field is missing or false, the script exits non-zero and prints the MC response for inspection.
 
 ## Post-apply verification
 
