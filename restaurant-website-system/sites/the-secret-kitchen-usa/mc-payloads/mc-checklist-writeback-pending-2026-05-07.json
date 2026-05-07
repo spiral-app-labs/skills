@@ -1,0 +1,31 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "checklist_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T16:27:13Z",
+  "canonical_gate": "checklist",
+  "status": "local_checklist_created_mc_sync_blocked",
+  "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Checklist.md and checklist.json exist locally, but MC lead/root IDs and checklist metadata sync remain pending. No raw Supabase writes were performed.",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-secret-kitchen-usa/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-secret-kitchen-usa/checklist.json",
+  "template_slug": "Bamzi",
+  "archetype": "Bamzi",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/",
+  "build_authorized": false,
+  "owner_contacted": false,
+  "mc_synced": false,
+  "local_requirement_state": {
+    "checklist-md": "passed_local_only",
+    "checklist-json": "passed_local_only",
+    "checklist-mc-sync": "blocked_401",
+    "template-route-locked": "passed_local_only",
+    "fork-built": "blocked_not_authorized"
+  },
+  "recommended_next_actions": [
+    "Provision MC lead/root/child workflow when protected agency API auth works.",
+    "Replay checklist writeback through MC agency API and replace pending IDs with canonical lead/root task IDs.",
+    "Do not build or QA until founder approval, owner confirmations/photo rights, preview authorization, and Bamzi source usage are authorized."
+  ]
+}
