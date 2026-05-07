@@ -22,7 +22,8 @@ That route provisions/backfills the canonical root + child tasks and mirrors loc
 
 ## Prerequisites
 
-1. Region Kitchen and Bar has an `agency_leads.id` in Mission Control.
+1. Region Kitchen and Bar has an `agency_leads.id` in Mission Control: `d26715da-e42d-4299-8f5c-c513112933e3`.
+   - Read-only lookup note: the old lead row currently says `status: delivered`, but a task scan found zero canonical `agency_website_workflow` task rows for this lead ID. Treat the old lead status as stale/legacy until the workflow replay provisions/backfills root + child tasks.
 2. The runtime has one of:
    - `AGENCY_AUTONOMY_API_KEY`
    - `OPENCLAW_WEBHOOK_SECRET`
@@ -34,11 +35,9 @@ That route provisions/backfills the canonical root + child tasks and mirrors loc
 
 ## Dry run
 
-Replace `<REGION_LEAD_ID>` with the real `agency_leads.id`.
-
 ```bash
 node restaurant-website-system/scripts/agency-website-workflow-attach-replay.mjs \
-  --lead-id <REGION_LEAD_ID> \
+  --lead-id d26715da-e42d-4299-8f5c-c513112933e3 \
   --payload restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-checklist-mc-attach-payload-2026-05-07.json \
   --trigger region-kitchen-and-bar-local-packet-replay
 ```
@@ -57,7 +56,7 @@ export MC_API_BASE_URL="https://hq.ethantalreja.com"
 export AGENCY_AUTONOMY_API_KEY="..."
 
 node restaurant-website-system/scripts/agency-website-workflow-attach-replay.mjs \
-  --lead-id <REGION_LEAD_ID> \
+  --lead-id d26715da-e42d-4299-8f5c-c513112933e3 \
   --payload restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-checklist-mc-attach-payload-2026-05-07.json \
   --trigger region-kitchen-and-bar-local-packet-replay \
   --apply
