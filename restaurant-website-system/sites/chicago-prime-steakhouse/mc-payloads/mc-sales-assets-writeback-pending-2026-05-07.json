@@ -4,7 +4,10 @@
   "site_slug": "chicago-prime-steakhouse",
   "business_name": "Chicago Prime Steakhouse",
   "created_at": "2026-05-07T16:05:32Z",
-  "canonical_gates": ["pitch", "battle_cards"],
+  "canonical_gates": [
+    "pitch",
+    "battle_cards"
+  ],
   "status": "sales_assets_ready_internal_not_owner_facing_pending_mc_attach",
   "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Founder approval, owner confirmations, MC lead + canonical workflow provisioning, and Heaven Palate implementation-source mapping are still required before owner-facing use. No raw Supabase writes were performed.",
   "pitch_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
@@ -21,6 +24,10 @@
   "recommended_next_actions": [
     "Attach pitch and battle-card artifacts to canonical pitch/battle_cards child tasks once MC provisioning/auth is available.",
     "Do not use owner-facing until founder approval, owner confirmations, and preview QA exist.",
-    "Resolve Heaven Palate build source mapping before any builder starts implementation."
-  ]
+    "Resolve Heaven Palate build source mapping before any builder starts implementation.",
+    "Attach preflight handoff, developer checklist, and QA readiness rubric once MC provisioning/auth and preview authorization are available."
+  ],
+  "preflight_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/preflight-handoff-package-2026-05-07.md",
+  "developer_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/developer-handoff-checklist-2026-05-07.md",
+  "qa_readiness_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md"
 }

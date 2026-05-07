@@ -35,8 +35,12 @@
     "Do not start implementation until Ethan/MC authorizes speculative preview work or canonical workflow is provisioned.",
     "Resolve the Heaven Palate source/template mapping before assigning a builder.",
     "If build is authorized, brief the builder to preserve all fact-safety blockers and run desktop/mobile screenshot QA before Ethan review.",
-    "Attach pitch and battle cards to future pitch/battle_cards child tasks once MC provisioning/auth is available."
+    "Attach pitch and battle cards to future pitch/battle_cards child tasks once MC provisioning/auth is available.",
+    "Attach preflight handoff, developer checklist, and QA readiness rubric once MC provisioning/auth and preview authorization are available."
   ],
   "pitch_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
-  "battle_cards_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md"
+  "battle_cards_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
+  "preflight_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/preflight-handoff-package-2026-05-07.md",
+  "developer_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/developer-handoff-checklist-2026-05-07.md",
+  "qa_readiness_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md"
 }
