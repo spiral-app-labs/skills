@@ -19,6 +19,8 @@
   "recommended_next_actions": [
     "Attach source mapping artifact to the canonical building task once MC provisioning/auth is available.",
     "Do not fork until founder/MC authorizes a preview build.",
-    "When authorized, fork from 1776-redesign-01 into an MC-approved preview slug and adapt it to the Heaven Palate steakhouse register."
-  ]
+    "When authorized, fork from 1776-redesign-01 into an MC-approved preview slug and adapt it to the Heaven Palate steakhouse register.",
+    "Attach the future preview content map to MC before builder implementation starts."
+  ],
+  "content_map_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md"
 }

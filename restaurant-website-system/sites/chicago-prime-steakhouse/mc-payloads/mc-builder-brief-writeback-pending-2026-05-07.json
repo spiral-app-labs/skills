@@ -39,7 +39,8 @@
     "Attach preflight handoff, developer checklist, and QA readiness rubric once MC provisioning/auth and preview authorization are available.",
     "Use owner confirmation request only after Ethan/founder approves outreach; attach it to MC once provisioning/auth is available.",
     "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API.",
-    "Attach the Heaven Palate source mapping artifact to MC; buildable implementation source is 1776-redesign-01, but build remains unauthorized."
+    "Attach the Heaven Palate source mapping artifact to MC; buildable implementation source is 1776-redesign-01, but build remains unauthorized.",
+    "Attach the future preview content map to MC before builder implementation starts."
   ],
   "pitch_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
   "battle_cards_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
@@ -52,5 +53,6 @@
   "source_mapping_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
   "buildable_template_slug": "1776-redesign-01",
   "buildable_template_path": "restaurant-website-system/templates/1776-redesign-01/",
-  "heaven_palate_reference_path": "restaurant-website-system/inputs/framer-templates/heaven-palate-01/"
+  "heaven_palate_reference_path": "restaurant-website-system/inputs/framer-templates/heaven-palate-01/",
+  "content_map_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md"
 }
