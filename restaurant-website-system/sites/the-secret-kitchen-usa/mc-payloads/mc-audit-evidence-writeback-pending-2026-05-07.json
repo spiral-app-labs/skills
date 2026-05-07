@@ -38,6 +38,11 @@
   "recommended_next_actions": [
     "Attach audit and evidence to canonical auditing task after founder approval and workflow provisioning.",
     "Generate checklist with new-build-checklist.mjs once MC lead_id/root task_id exist.",
-    "Proceed to formal routing writeback with template_slug=Bamzi after MC state can be updated."
-  ]
+    "Proceed to formal routing writeback with template_slug=Bamzi after MC state can be updated.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/"
 }

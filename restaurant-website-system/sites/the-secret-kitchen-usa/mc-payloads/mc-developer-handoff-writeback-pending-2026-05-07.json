@@ -40,5 +40,12 @@
     "Use the developer prompt block in the artifact when spawning a builder.",
     "Require builder output to include preview URL, desktop/mobile screenshots, link audit, and Bamzi personalization note.",
     "Then run QA round 1 using the QA readiness rubric."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/",
+  "recommended_next_actions": [
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
   ]
 }
