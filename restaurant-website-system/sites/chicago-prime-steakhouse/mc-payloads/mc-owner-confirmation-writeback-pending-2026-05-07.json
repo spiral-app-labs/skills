@@ -4,7 +4,11 @@
   "site_slug": "chicago-prime-steakhouse",
   "business_name": "Chicago Prime Steakhouse",
   "created_at": "2026-05-07T16:10:51Z",
-  "canonical_gates": ["claimed", "building", "qa_round_1"],
+  "canonical_gates": [
+    "claimed",
+    "building",
+    "qa_round_1"
+  ],
   "status": "owner_confirmation_request_ready_internal_not_sent_pending_mc_attach",
   "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Founder approval/contact authorization, MC lead + canonical workflow provisioning, and owner outreach approval are required before sending. No raw Supabase writes were performed.",
   "owner_confirmation_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
@@ -36,6 +40,9 @@
   "recommended_next_actions": [
     "Attach owner confirmation request to canonical workflow once MC provisioning/auth is available.",
     "Do not send owner confirmation request until Ethan/founder explicitly approves outreach.",
-    "Use confirmation answers to unlock build/QA claim-safety checks before any owner-facing preview."
-  ]
+    "Use confirmation answers to unlock build/QA claim-safety checks before any owner-facing preview.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/chicago-prime-steakhouse/mc-attach-replay-runbook-2026-05-07.md"
 }
