@@ -1,0 +1,37 @@
+{
+  "status": "blocked",
+  "created_at": "2026-05-07T13:32:00Z",
+  "source": "openclaw_heartbeat_read_only_recheck",
+  "planner": {
+    "endpoint": "GET /api/agency/website-workflow/next?limit=5",
+    "base": "https://hq.ethantalreja.com",
+    "runtime_header": "x-agency-runtime: openclaw",
+    "result": "HTTP 401 Unauthorized",
+    "missing_auth": ["AGENCY_AUTONOMY_API_KEY", "OPENCLAW_WEBHOOK_SECRET"]
+  },
+  "graceful_ordinary_public_stable_recheck": {
+    "root_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+    "url": "https://graceful-ordinary-redesign.vercel.app/?_ocache=20260507T1333",
+    "http_status": 200,
+    "x_vercel_cache": "HIT",
+    "age": "105073",
+    "etag": "\"8f2080097fe425b85be4d2db30022521\"",
+    "stale_markers_present": ["4.8", "200+", "AAA Three-Diamond", "TripAdvisor", "info@thegracefulordinary.com"],
+    "expected_markers_absent": ["yourfriends@thegracefulordinary.com", "Ask Graceful", "https://resy.com/cities/stc/the-graceful-ordinary"],
+    "conclusion": "Remain blocked; do not package or founder-share stable public URL."
+  },
+  "active_root_summary": [
+    {"id":"377dcee1-820a-4d94-a5b1-0740be57c92c","title":"Website: The Graceful Ordinary","status":"in_progress","stage":"qa_round_3","blocker":"public stable/stale deployment"},
+    {"id":"3ae4091c-c686-4270-8298-afd0cc5c913b","title":"Website: Als Cafe and Creamery","status":"in_progress","stage":"checklist","blocker":"qualification/template gap"},
+    {"id":"173436b8-bcc1-4ebd-85ac-44b2541409dc","title":"Website: Tin Man's Pub","status":"in_progress","stage":"auditing","blocker":"weak fit/reputation/menu proof"},
+    {"id":"b19181d6-a00f-4d82-9c38-707c9dcb5372","title":"Website: Tasty Bistro","status":"in_progress","stage":"auditing","blocker":"operating-status conflict"},
+    {"id":"e6c4701f-c3f6-49f6-aab3-e3ce56ece6cc","title":"Website: Sofia's Place Restaurant","status":"in_progress","stage":"reviews","blocker":"address/order-path confirmation"}
+  ],
+  "local_artifact": "restaurant-website-system/research/active-website-blockers-recheck-2026-05-07-1332Z.md",
+  "recommended_next_actions": [
+    "Provide scoped agency runtime auth to heartbeat shells.",
+    "Provision Region Kitchen and Bar through protected MC website-workflow route and attach local evidence/checklist packet.",
+    "Keep The Graceful Ordinary blocked until stable public URL serves corrected build.",
+    "Request founder/MC decisions for Al's Cafe, Tin Man's Pub, Tasty Bistro, and Sofia's Place."
+  ]
+}
