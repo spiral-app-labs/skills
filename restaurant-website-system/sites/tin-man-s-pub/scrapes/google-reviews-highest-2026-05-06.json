@@ -1,0 +1,149 @@
+{
+  "source": "Google Maps browser capture",
+  "place_name": "Tinman's Pub",
+  "place_url": "https://www.google.com/maps/place/Tinman's+Pub/@42.1946654,-88.2082636,17z/data=!4m8!3m7!1s0x880f0b0033440a61:0x81353e539b581edc!8m2!3d42.1946654!4d-88.2082636!9m1!1b1!16s%2Fg%2F11n3h12l44?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D",
+  "captured_at": "2026-05-06T14:48:21.569Z",
+  "requested_filter": "Highest rating",
+  "filter_confirmation_text_present": true,
+  "google_summary": {
+    "rating": 3.2,
+    "total_reviews": 6,
+    "distribution": {
+      "1": 2,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 3
+    },
+    "price_range": "$10–20",
+    "category": "Bar",
+    "address": "926 IL-22, Fox River Grove, IL 60021"
+  },
+  "capture_limits": {
+    "target_written_reviews": 30,
+    "total_google_reviews_available": 6,
+    "written_reviews_captured": 4,
+    "all_visible_review_cards_captured": 6
+  },
+  "reviews": [
+    {
+      "sort_index": 1,
+      "data_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tsU1MxY3dMVlF0T0RoUVRqZDZWWGxZZW5Od2RXYxAB",
+      "reviewer_name": "Kumar Javvaji",
+      "reviewer_stats": "Local Guide · 34 reviews · 55 photos",
+      "rating_label": "5 stars",
+      "rating": 5,
+      "recency": "4 weeks ago",
+      "is_new": false,
+      "text": "Good place to shoot pool, hear some tune or have a beverage. Open early and late",
+      "written": true,
+      "owner_reply": null,
+      "details": [
+        "Price per person$10–20",
+        "Service: 5",
+        "Atmosphere: 5"
+      ],
+      "raw_text": "Kumar Javvaji\nLocal Guide · 34 reviews · 55 photos\n\n\n\n\n\n\n4 weeks ago\nGood place to shoot pool, hear some tune or have a beverage.  Open early and late\nPrice per person\n$10–20\nService: 5\nAtmosphere: 5\n\nLike\n\nShare"
+    },
+    {
+      "sort_index": 2,
+      "data_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25ZeFVVZE1SVWxPTVVKWmExODBlRTA1UW1sTVJGRRAB",
+      "reviewer_name": "Eden Duke",
+      "reviewer_stats": "Local Guide · 46 reviews · 36 photos",
+      "rating_label": "5 stars",
+      "rating": 5,
+      "recency": "a month ago",
+      "is_new": false,
+      "text": "Love this place! Food is great! Staff is great! Patrons are all so nice!",
+      "written": true,
+      "owner_reply": null,
+      "details": [
+        "Price per person$10–20",
+        "Food: 5",
+        "Service: 5",
+        "Atmosphere: 5",
+        "Wait timeNo wait",
+        "Seating typeBar area, Counter seating"
+      ],
+      "raw_text": "Eden Duke\nLocal Guide · 46 reviews · 36 photos\n\n\n\n\n\n\na month ago\nLove this place! Food is great! Staff is great! Patrons are all so nice!\nPrice per person\n$10–20\nFood: 5\nService: 5\nAtmosphere: 5\nWait time\nNo wait\nSeating type\nBar area, Counter seating\n\nLike\n\nShare"
+    },
+    {
+      "sort_index": 3,
+      "data_review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xaSmMxTnNVV0V0U0RaVGRVTkxXbk0xZWxGVVQyYxAB",
+      "reviewer_name": "holly h",
+      "reviewer_stats": "9 reviews",
+      "rating_label": "5 stars",
+      "rating": 5,
+      "recency": "2 weeks ago",
+      "is_new": true,
+      "text": null,
+      "written": false,
+      "owner_reply": null,
+      "details": [
+        "Food: 5",
+        "Service: 5",
+        "Atmosphere: 5"
+      ],
+      "raw_text": "holly h\n9 reviews\n\n\n\n\n\n\n2 weeks ago\nNEW\nPrice per person\n$50–60\nFood: 5\nService: 5\nAtmosphere: 5\n\nLike\n\nShare"
+    },
+    {
+      "sort_index": 4,
+      "data_review_id": "Ci9DQUlRQUNvZENodHljRjlvT21KVGVVOTRibFJRYjFOVGRYRkZNWEZ2YlhsTVYwRRAB",
+      "reviewer_name": "Matt White",
+      "reviewer_stats": "Local Guide · 224 reviews · 197 photos",
+      "rating_label": "2 stars",
+      "rating": 2,
+      "recency": "3 days ago",
+      "is_new": true,
+      "text": "Food was subpar, service was negligent at best. Open displays of politics were amusingly stupid.",
+      "written": true,
+      "owner_reply": null,
+      "details": [
+        "Food: 3",
+        "Service: 1",
+        "Atmosphere: 1"
+      ],
+      "raw_text": "Matt White\nLocal Guide · 224 reviews · 197 photos\n\n\n\n\n\n\n3 days ago\nNEW\nFood was subpar, service was negligent at best. Open displays of politics were amusingly stupid.\nFood: 3\nService: 1\nAtmosphere: 1\n\nLike\n\nShare"
+    },
+    {
+      "sort_index": 5,
+      "data_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25WSmFGTjBTa0p6Tm5semRrazNlRXMxVDFKaWNrRRAB",
+      "reviewer_name": "Jim Strang",
+      "reviewer_stats": "Local Guide · 180 reviews · 7 photos",
+      "rating_label": "1 star",
+      "rating": 1,
+      "recency": "a month ago",
+      "is_new": false,
+      "text": "Fun place. Just be careful when opening a tab. my friend went up and paid my tab gave my name and what card it was on paid the tab. And then when I went up to claim my card because they would not give it to him, I had to pay the same tab again, so I made $66 twice. Just be cautious.",
+      "written": true,
+      "owner_reply": null,
+      "details": [
+        "Service: 3",
+        "Atmosphere: 4"
+      ],
+      "raw_text": "Jim Strang\nLocal Guide · 180 reviews · 7 photos\n\n\n\n\n\n\na month ago\nFun place.   Just be careful when opening a tab.  my friend went up and paid my tab  gave my name and what card it was on paid the tab. And then when I went up to claim my card because they would not give it to him, I had to pay the same tab again, so I made $66 twice.  Just be cautious.\nService: 3\nAtmosphere: 4\n\nLike\n\nShare"
+    },
+    {
+      "sort_index": 6,
+      "data_review_id": "Ci9DQUlRQUNvZENodHljRjlvT25ndFNYTjVZbVk1U1hGMFRXUjVhSGN4ZW1rd2VHYxAB",
+      "reviewer_name": "Kevin Haas",
+      "reviewer_stats": "4 reviews",
+      "rating_label": "1 star",
+      "rating": 1,
+      "recency": "4 weeks ago",
+      "is_new": false,
+      "text": null,
+      "written": false,
+      "owner_reply": null,
+      "details": [],
+      "raw_text": "Kevin Haas\n4 reviews\n\n\n\n\n\n\n4 weeks ago"
+    }
+  ],
+  "owner_replies_visible": false,
+  "browser_blocker": null,
+  "evidence_screenshots": [
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-reviews-highest-top-2026-05-06.png",
+    "restaurant-website-system/sites/tin-man-s-pub/screenshots/google-reviews-highest-bottom-2026-05-06.png"
+  ],
+  "evidence_text_path": "restaurant-website-system/sites/tin-man-s-pub/scrapes/google-reviews-highest-bodytext-2026-05-06.txt"
+}
