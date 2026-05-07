@@ -1,0 +1,44 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "developer_handoff_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T15:33:00Z",
+  "status": "pending_mc_attach_implementation_readiness_not_build_authorized",
+  "canonical_gate_supported": "building",
+  "template_slug": "Bamzi",
+  "blocker": "Mission Control protected agency API returned 401 without bearer auth; founder approval, MC workflow provisioning, owner confirmations, owner-approved media/menu details, and preview authorization remain pending. No raw Supabase writes were performed.",
+  "artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/developer-handoff-checklist-2026-05-07.md",
+  "source_artifacts": [
+    "restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/preflight-handoff-package-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/qa-readiness-rubric-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/google-reviews-highest-30-2026-05-07.md"
+  ],
+  "start_conditions_before_build": [
+    "Mission Control API auth works and canonical root/child workflow is provisioned",
+    "root build_stage/currentStage allows building or forking",
+    "checklist.md and checklist.json exist with MC lead/root IDs",
+    "founder or owner-approved preview authorization is recorded",
+    "owner confirmation status is recorded for brand name, menu/prices, reservation path, photo rights, private dining, awards/press, lunch, and public review usage"
+  ],
+  "developer_acceptance_checks": [
+    "Bamzi structure remains legible",
+    "hero/story/menu/experience/visit modules exist",
+    "Reserve/Menu/Directions are prominent on desktop and mobile",
+    "known business facts are preserved",
+    "unconfirmed claims are omitted",
+    "menu journey uses real captured dish names",
+    "images are owner-approved or clearly placeholders",
+    "lint/type/build checks pass",
+    "desktop/mobile screenshots and link audit are captured"
+  ],
+  "recommended_next_actions_when_unblocked": [
+    "Attach this artifact to the future building/forking child task.",
+    "Use the developer prompt block in the artifact when spawning a builder.",
+    "Require builder output to include preview URL, desktop/mobile screenshots, link audit, and Bamzi personalization note.",
+    "Then run QA round 1 using the QA readiness rubric."
+  ]
+}
