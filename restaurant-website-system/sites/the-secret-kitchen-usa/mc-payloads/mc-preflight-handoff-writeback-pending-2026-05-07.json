@@ -1,0 +1,47 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "preflight_handoff_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T15:26:00Z",
+  "status": "pending_mc_attach_internal_preflight_not_owner_facing",
+  "canonical_position": "seed_ready_with_local_evidence_through_battle_cards_not_build_authorized_not_packaging_complete",
+  "blocker": "Mission Control protected agency API returned 401 without a bearer token; founder approval, MC root/child workflow provisioning, and owner confirmations remain pending. No raw Supabase writes were performed.",
+  "artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/preflight-handoff-package-2026-05-07.md",
+  "template_slug": "Bamzi",
+  "local_artifacts_ready_for_attach": [
+    "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/founder-seed-decision-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/owner-confirmation-request-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/research/build-readiness-menu-conversion-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/google-reviews-highest-30-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/pitch-doc-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/battle-cards-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/preflight-handoff-package-2026-05-07.md"
+  ],
+  "pending_payload_replay_order": [
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/seed-provisioning-payload-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/canonical-workflow-provisioning-request-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-audit-evidence-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-reviews-evidence-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-routing-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-builder-brief-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-sales-assets-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-preflight-handoff-writeback-pending-2026-05-07.json"
+  ],
+  "blocked_public_actions": [
+    "contact restaurant or owner",
+    "publish or share owner-facing preview",
+    "begin Bamzi fork/build as authorized work",
+    "claim ratings/review counts/direct quotes publicly without approval",
+    "claim awards, photo rights, private dining details, lunch status, menu prices, or ordering paths without confirmation"
+  ],
+  "recommended_next_actions_when_unblocked": [
+    "Provision MC root and child workflow from the canonical request payload.",
+    "Generate or refresh checklist.md and checklist.json after MC lead/task IDs exist.",
+    "Attach local evidence and pending writebacks to canonical child tasks in gate order.",
+    "Resume from the first MC-incomplete gate before authorizing build work."
+  ]
+}
