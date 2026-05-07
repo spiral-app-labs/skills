@@ -1,0 +1,24 @@
+{
+  "url": "https://regionrestaurant.com/",
+  "capturedAt": "2026-05-07T13:01:59.878Z",
+  "desktop": {
+    "label": "desktop",
+    "contentSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 3388
+    },
+    "textLength": 1475
+  },
+  "mobile": {
+    "label": "mobile",
+    "contentSize": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 4813
+    },
+    "textLength": 1410
+  }
+}
