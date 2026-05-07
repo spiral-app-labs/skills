@@ -1,0 +1,30 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "preflight_handoff_writeback_pending",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "created_at": "2026-05-07T16:08:23Z",
+  "canonical_gates": ["building", "qa_round_1", "qa_round_2", "qa_round_3", "packaging"],
+  "status": "preflight_and_qa_readiness_internal_not_build_authorized_pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Founder approval, owner confirmations, MC lead + canonical workflow provisioning, preview authorization, and Heaven Palate implementation-source mapping are still required before build or QA. No raw Supabase writes were performed.",
+  "preflight_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/preflight-handoff-package-2026-05-07.md",
+  "developer_handoff_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/developer-handoff-checklist-2026-05-07.md",
+  "qa_readiness_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/qa-readiness-rubric-2026-05-07.md",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "build_authorized": false,
+  "qa_run": false,
+  "source_artifacts": [
+    "restaurant-website-system/sites/chicago-prime-steakhouse/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md"
+  ],
+  "recommended_next_actions": [
+    "Attach preflight handoff, developer checklist, and QA readiness rubric to canonical building/QA child tasks once MC provisioning/auth is available.",
+    "Do not mark QA started until an authorized preview URL, screenshots, link audit, and owner-confirmation state exist.",
+    "Resolve Heaven Palate source/template mapping before assigning implementation."
+  ]
+}
