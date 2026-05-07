@@ -1,0 +1,43 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "audit_evidence_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T15:07:00Z",
+  "canonical_gate": "auditing",
+  "status": "pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 without a bearer token, and this lead still requires founder approval / MC lead + canonical workflow provisioning before stage writeback. No raw Supabase writes were performed.",
+  "audit_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/audit-official-site-2026-05-07.md",
+  "evidence_paths": [
+    "restaurant-website-system/sites/the-secret-kitchen-usa/evidence/official-site-home-desktop-full-2026-05-07.png",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/evidence/official-site-home-mobile-full-2026-05-07.png",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/official-site-home-text-2026-05-07.txt",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/official-site-menu-text-2026-05-07.txt",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/official-site-chef-text-2026-05-07.txt",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/official-site-about-text-2026-05-07.txt",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/official-site-contact-text-2026-05-07.txt",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/official-site-reservations-text-2026-05-07.txt"
+  ],
+  "audit_summary": {
+    "recommended_archetype": "Bamzi",
+    "key_strengths": [
+      "Chef Aanal Kotak / international The Secret Kitchen identity",
+      "premium modern Indian positioning",
+      "large real menu with theatrical dishes",
+      "reservation-led dinner conversion path",
+      "strong review themes around decor, presentation, food, and service"
+    ],
+    "critical_gaps": [
+      "Hero lacks strong Reserve/Menu/Directions CTAs",
+      "mobile conversion hierarchy is weak",
+      "menu preview/category presentation hides real menu strength",
+      "chef story is underused on homepage",
+      "private dining, awards, photo rights, and menu currentness require owner confirmation"
+    ]
+  },
+  "recommended_next_actions": [
+    "Attach audit and evidence to canonical auditing task after founder approval and workflow provisioning.",
+    "Generate checklist with new-build-checklist.mjs once MC lead_id/root task_id exist.",
+    "Proceed to formal routing writeback with template_slug=Bamzi after MC state can be updated."
+  ]
+}
