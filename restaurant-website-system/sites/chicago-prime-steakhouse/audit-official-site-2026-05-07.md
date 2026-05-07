@@ -1,11 +1,11 @@
 # Chicago Prime Steakhouse — official site Round 1 audit
 
 - Date: 2026-05-07
-- Canonical gate: `auditing`
+- Canonical gates covered locally: `auditing`, `reviews`
 - Site audited: https://www.chicagoprimesteakhouse.com/
 - Preview audited: none yet — this is a current-site/source-of-truth audit to prepare an eventual authorized Heaven Palate build.
 - Recommended archetype lock: **Heaven Palate**
-- Mission Control status: protected MC agency API still returns `401`; this audit is local evidence only until founder approval, lead provisioning, and MC workflow attach are available.
+- Mission Control status: protected MC agency API still returns `401`; this audit/review packet is local evidence only until founder approval, lead provisioning, and MC workflow attach are available.
 
 ## Evidence captured
 
@@ -19,16 +19,21 @@
   - `restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-live-entertainment-text-2026-05-07.txt`
   - `restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-legacy-text-2026-05-07.txt`
   - `restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-special-events-text-2026-05-07.txt`
+- Google Reviews evidence, sorted Highest rating:
+  - `restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md`
+  - `restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.json`
+  - `restaurant-website-system/sites/chicago-prime-steakhouse/evidence/google-reviews-highest-header-2026-05-07.png`
+  - `restaurant-website-system/sites/chicago-prime-steakhouse/evidence/google-reviews-highest-bottom-2026-05-07.png`
 - Direct source fetches used for seed validation: homepage, menu, contact, private dining, live entertainment, special events, and George A. Kalkounos legacy page.
 
 ## Summary
 
-- Chicago Prime Steakhouse has a strong underlying business story: classic Schaumburg steakhouse, OpenTable reservations, private dining rooms, live lounge music, and a meaningful George A. Kalkounos hospitality legacy.
+- Chicago Prime Steakhouse has a strong underlying business story: classic Schaumburg steakhouse, OpenTable reservations, private dining rooms, live lounge music, high-volume Google review proof (`4.4` over `1,191` reviews at capture), and a meaningful George A. Kalkounos hospitality legacy.
 - The current homepage has real steakhouse photography and an immediate fine-dining mood, but it under-sells the highest-value conversion paths: reservations and private events.
 - The site visibly leaks template residue and unfinished content: bakery placeholders, `555-555-55-55`, slash placeholders, review carousel placeholders, and duplicated copyright years appear in fetched page text.
 - Menu/private dining/order/reservation links exist, which is valuable, but the hierarchy is cluttered and repetitive instead of premium.
 - Mobile is usable but not sell-optimized: the first screen shows identity, yet Reserve, Private Dining, Directions, and Call are not packaged into a high-confidence mobile action path.
-- No preview exists yet; an eventual build must preserve the real conversion assets while moving the restaurant into a Heaven Palate classic-luxury structure.
+- No preview exists yet; an eventual build must preserve the real conversion assets and selectively use sourced review themes while moving the restaurant into a Heaven Palate classic-luxury structure.
 
 ## What the old site / real business gets right
 
@@ -37,7 +42,7 @@
 - **Private dining is a real business line:** The private-dining page includes room names and maximums: Main Dining Room 130, Bar & Lounge 80, Walnut & State Room 85, Walnut Room 32, State Room 35.
 - **Event inquiry path exists:** `events@chicagoprimesteakhouse.com`, restaurant phone, and a private dining request CTA are present.
 - **Multiple revenue channels exist:** The site includes Reserve, Call, Uber Eats, Grubhub, Toast, gift cards, private events, live entertainment, and membership/club navigation.
-- **Live lounge programming creates differentiation:** The live entertainment page says live music in the lounge Wednesday–Saturday 7PM–11PM.
+- **Live lounge programming creates differentiation:** The live entertainment page says live music in the lounge Wednesday–Saturday 7PM–11PM, and highest-rated Google reviews repeatedly mention live entertainment, celebrations, attentive service, steaks/seafood, wine, and private/group dining occasions.
 - **Legacy story is strong:** The George A. Kalkounos page gives the restaurant an authentic hospitality/family story that can support a premium founder-led feel.
 - **Real business facts are easy to preserve:** Address, phone, hours, reservation URL, socials, menu PDFs, and event details are present across source pages.
 
@@ -60,7 +65,7 @@ No preview exists yet, so there is nothing to credit visually. For the future pr
 6. **Mobile lacks a high-converting action bar.** The mobile screenshot shows a hamburger and homepage content, but not a sticky Reserve / Private Dining / Call / Directions path.
 7. **Menu experience is PDF-forward and thin in extracted text.** PDF links are useful, but the homepage does not transform menu/wine/steakhouse craft into an appetite-building story.
 8. **Order-online providers need hierarchy discipline.** Uber Eats, Grubhub, and Toast exist, but for an upscale steakhouse the primary homepage action should remain reservations/private dining, not delivery clutter.
-9. **Award/review claims need verification.** The official title/homepage uses “Award Winning,” and private-dining text says “Award winning wine selections,” but a preview should verify exact approved wording and not invent awards or ratings.
+9. **Award/review claims need verification and careful sourcing.** The official title/homepage uses “Award Winning,” and private-dining text says “Award winning wine selections.” Google review evidence now supports real review themes, but a preview should only use exact sourced quotes/ratings where approved and should not invent awards or unsourced badges.
 10. **Private dining policy details are too operational for homepage use.** Deposit, count, tax, cake fee, and food/beverage-minimum details matter, but the homepage should sell the event opportunity and link to detail, not overload early conversion.
 11. **Live music schedule has source inconsistency.** Live entertainment page says Wednesday–Saturday 7PM–11PM; private dining policy text mentions Tuesday–Saturday live entertainment in the Lounge. Currentness must be confirmed before publishing.
 12. **Contact/email inconsistency needs cleanup.** The site surfaces `dine@chicagoprimesteakhouse.com` via mailto/social area and `events@chicagoprimesteakhouse.com` for private dining. The preview should use each in the correct context and confirm any general contact email.
@@ -75,7 +80,7 @@ No preview exists yet, so there is nothing to credit visually. For the future pr
 6. **Turn the menu into a steakhouse journey.** Instead of relying only on PDFs, create homepage chapters for steaks, seafood/classics, wine/cocktails, lounge/private dining support, and full menu links. Preserve PDFs for detail.
 7. **Clarify CTA hierarchy.** Desktop and mobile should prioritize Reserve, Private Dining, Menu, Directions/Call. Order Online can exist but should not compete visually with reservations on an upscale steakhouse homepage.
 8. **Create a sticky mobile action bar.** Include Reserve, Call, Directions, and maybe Private Dining/Menu depending on available width. Make it thumb-friendly and visible without blocking content.
-9. **Verify and safely handle awards/reviews.** Do not add award badges, rating numbers, or review counts unless approved and sourced. If review snippets are used, remove placeholders and use only approved, sourced quotes.
+9. **Verify and safely handle awards/reviews.** Do not add award badges, rating numbers, or review counts unless approved and sourced. If review snippets are used, remove placeholders and use only sourced quotes from the captured highest-rated review packet, with final owner/founder approval before publication.
 10. **Resolve live entertainment currentness.** Confirm whether live music is Wednesday–Saturday or Tuesday–Saturday before publishing. Then position it as “Live music in the lounge” as a supporting dinner/lounge cue.
 11. **Separate event details from event selling.** Homepage should sell “private dining for celebrations, corporate dinners, and gatherings”; detail page can carry deposit, cake fee, count deadline, sales tax, and policy specifics.
 12. **Audit all provider links before preview.** Confirm OpenTable, Uber Eats, Grubhub, Toast, menu PDFs, Google Maps, phone, `dine@...`, `events@...`, Facebook, Instagram, Twitter/X, and YouTube links.
@@ -103,4 +108,4 @@ The current site is not strong enough to represent a premium steakhouse confiden
 - Do not contact the restaurant from this audit.
 - Do not publish or share owner-facing until MC/founder/owner gates clear.
 - Do not use raw Supabase writes for agency state. No raw Supabase writes were performed.
-- Do not invent awards, ratings, review counts, menu details, private dining policies, image rights, or live music schedules.
+- Do not invent awards, ratings, review counts, menu details, private dining policies, image rights, or live music schedules; any review proof must trace back to the captured Google review packet or later approved owner assets.

@@ -4,8 +4,8 @@
   "site_slug": "chicago-prime-steakhouse",
   "business_name": "Chicago Prime Steakhouse",
   "created_at": "2026-05-07T15:45:00Z",
-  "canonical_gate": "auditing",
-  "status": "pending_mc_attach_local_audit_complete_no_preview_yet",
+  "canonical_gate": "auditing_reviews",
+  "status": "pending_mc_attach_local_audit_and_reviews_complete_no_preview_yet",
   "template_slug_recommendation": "Heaven Palate",
   "blocker": "Mission Control protected agency API returned 401 without bearer auth, so this audit is local-only until founder approval, MC root/child workflow provisioning, and agency API auth are available. No raw Supabase writes were performed.",
   "audit_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/audit-official-site-2026-05-07.md",
@@ -18,7 +18,11 @@
     "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-private-dining-text-2026-05-07.txt",
     "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-live-entertainment-text-2026-05-07.txt",
     "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-legacy-text-2026-05-07.txt",
-    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-special-events-text-2026-05-07.txt"
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/official-site-special-events-text-2026-05-07.txt",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.json",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/evidence/google-reviews-highest-header-2026-05-07.png",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/evidence/google-reviews-highest-bottom-2026-05-07.png"
   ],
   "critical_findings": [
     "Current site has visible template residue: bakery placeholders, 555-555-55-55, slash placeholders, review carousel placeholders, and duplicated copyright years.",
@@ -26,12 +30,14 @@
     "Private dining/event revenue path is strong but under-leveraged on homepage.",
     "George A. Kalkounos hospitality legacy is strong but isolated from main conversion story.",
     "Mobile lacks sticky Reserve/Private Dining/Call/Directions conversion spine.",
-    "Award, review, private dining capacity, live music, and menu/provider details need owner/currentness confirmation before public preview."
+    "Award, review, private dining capacity, live music, and menu/provider details need owner/currentness confirmation before public preview.",
+    "Google review packet sorted Highest shows strong proof themes around attentive service, live entertainment, birthday/special-occasion dining, steak/seafood/wine, private/group events, and owner/staff hospitality; use only sourced/approved quotes in any preview."
   ],
   "recommended_next_actions": [
     "Attach this audit and evidence to the future auditing child task once MC provisioning/auth is available.",
-    "Collect Google Reviews packet sorted Highest before routing/build brief if authorized.",
+    "Attach the local Google Reviews packet and screenshots to the future reviews child task once MC provisioning/auth is available.",
     "Lock routing to Heaven Palate unless later evidence contradicts the steakhouse/private-dining thesis.",
     "Before build, confirm hours, reservation, order providers, private dining capacities/policies, live music schedule, awards/review usage, legacy-story tone, and photo rights."
-  ]
+  ],
+  "review_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md"
 }
