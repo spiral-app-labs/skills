@@ -1,0 +1,153 @@
+{
+  "status": "prepared_only_mc_update_blocked",
+  "prepared_at": "2026-05-06T15:05:00Z",
+  "restaurant": "Maxfield's Pancake House",
+  "site_slug": "maxfields-pancake-house",
+  "mc_update_status": "blocked",
+  "auth_check": {
+    "AGENCY_AUTONOMY_API_KEY": "missing",
+    "OPENCLAW_WEBHOOK_SECRET": "missing",
+    "api_write_attempted": false,
+    "reason": "Mission Control agency API auth is unavailable in this runtime; no MC write was attempted for the qa_round_2 gate and no raw Supabase agency writes were performed."
+  },
+  "blocker": {
+    "id": "mission_control_auth",
+    "reason": "Mission Control agency API auth is unavailable in this runtime: AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing. QA round 2 evidence is complete locally and ready to sync once auth is restored.",
+    "source": "openclaw_maxfields_qa_round_2_2026-05-06",
+    "next_unblock_action": "Expose AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET to the runtime or have Donna/MC provision the Maxfield agency lead/workflow; then POST/PATCH this prepared qa_round_2 payload."
+  },
+  "build_update_payload": {
+    "build_stage": "qa_round_2",
+    "currentStage": "qa_round_2",
+    "status": "in_progress",
+    "completedGate": "qa_round_2",
+    "site_slug": "maxfields-pancake-house",
+    "template_slug": "plate-01",
+    "archetype": "Cuisine",
+    "mc_task_id": "<mc_root_task_id_after_workflow_provision>",
+    "checklist_markdown_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+    "checklist_json_path": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+    "qa_round_path": "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+    "preview_url": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+    "preview_reference": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+    "passed_requirement_ids": [
+      "qa-round-2"
+    ],
+    "evidence_urls": [
+      "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+      "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+      "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+      "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png"
+    ],
+    "artifact_paths": {
+      "qa_round_doc": "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+      "checklist_md": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
+      "checklist_json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json",
+      "hero_split": "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+      "visit_confidence_panel": "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+      "layout_viewport": "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx",
+      "hours_table": "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+      "prior_home_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+      "prior_home_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+      "prior_contact_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+      "prior_contact_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+      "preferred_home_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+      "preferred_home_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+      "preferred_contact_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+      "preferred_contact_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png",
+      "preview_url": "https://skills-git-feat-maxfields-p-46b25d-ethan-ethantalrejas-projects.vercel.app",
+      "home_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+      "home_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+      "contact_desktop_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+      "contact_mobile_screenshot": "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png"
+    },
+    "requirementsPassed": [
+      "qa-round-2"
+    ],
+    "findings": [
+      {
+        "id": "mobile-path-still-clear",
+        "status": "verified",
+        "summary": "The QA1 mobile homepage/contact screenshots still show the device-width viewport fix holding, with readable CTA stacking and no visible horizontal overflow."
+      },
+      {
+        "id": "desktop-hero-contrast",
+        "status": "fixed",
+        "summary": "The first-view desktop recovery/proof treatment read too pale relative to the hero headline, so the hero recovery card and visit-confidence hours card received a stronger contrast treatment."
+      },
+      {
+        "id": "truth-safety-holds",
+        "status": "verified",
+        "summary": "Hours, ordering, reservations, pricing, awards, and testimonial truth-safety remain intact with cautious source-based language."
+      },
+      {
+        "id": "fresh-round-2-screenshots",
+        "status": "captured",
+        "summary": "Fresh QA2 homepage/contact desktop/mobile screenshots were captured from the local Next build via parent host Chrome/CDP; DOM overflow checks reported no overflow."
+      }
+    ],
+    "fixes": [
+      "Strengthened the recovery card background, edge definition, and note contrast in `components/HeroSplit.tsx`.",
+      "Strengthened the source-comparison hours card contrast and eyebrow emphasis in `components/VisitConfidencePanel.tsx`."
+    ],
+    "verification": {
+      "typecheck_first_attempt": "failed_missing_.next_types",
+      "build": "passed",
+      "typecheck_after_build": "passed",
+      "forbidden_placeholder_grep": "passed"
+    },
+    "screenshot_status": {
+      "captured": true,
+      "method": "Parent host Chrome/CDP against local Next server on 127.0.0.1:3026",
+      "paths": [
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png"
+      ],
+      "dimensions": {
+        "desktop": "1440x1400",
+        "mobile": "390x1100"
+      },
+      "overflow_check": "passed: scrollWidth matched viewport width on homepage/contact desktop/mobile"
+    },
+    "remaining_blockers": [
+      {
+        "id": "mission_control_auth",
+        "message": "MC auth is unavailable in the runtime, so the prepared qa_round_2 payload could not be synced."
+      },
+      {
+        "id": "hours_confirmation",
+        "message": "Public sources still conflict on hours, so QA keeps the call-to-confirm language in place."
+      },
+      {
+        "id": "order_link_confirmation",
+        "message": "Public ordering signals exist, but a direct owner-controlled ordering provider was not verified."
+      }
+    ],
+    "notes": [
+      "QA round 2 focused on a stricter sell-readiness pass: mobile readability, first-view desktop contrast, CTA clarity, truth safety, and regression retention from QA1.",
+      "No unsupported claims were added during QA fixes.",
+      "Local stage is advanced to qa_round_2 with fresh desktop/mobile screenshot evidence captured."
+    ],
+    "blocker": {
+      "reason": "MC writeback pending because API auth is unavailable; qa_round_2 payload is prepared locally.",
+      "source": "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json"
+    },
+    "heartbeat_summary": "Maxfield QA round 2 completed with a focused desktop contrast pass, passing build/typecheck/placeholder validation, preserved truth safety, and fresh desktop/mobile screenshot evidence."
+  }
+}

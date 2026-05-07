@@ -6,7 +6,7 @@
   "mcParentTaskId": "pending-mc-auth",
   "siteSlug": "maxfields-pancake-house",
   "templateSlug": "plate-01",
-  "currentStage": "qa_round_1",
+  "currentStage": "qa_round_2",
   "checklistArtifacts": {
     "markdown": "restaurant-website-system/sites/maxfields-pancake-house/checklist.md",
     "json": "restaurant-website-system/sites/maxfields-pancake-house/checklist.json"
@@ -578,8 +578,23 @@
         "build/typecheck result"
       ],
       "order": 11,
-      "status": "pending",
-      "evidence": [],
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png"
+      ],
       "blocker": null
     },
     {
@@ -708,17 +723,36 @@
     "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
     "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json",
     "restaurant-website-system/sites/maxfields-pancake-house/app/contact/page.tsx",
-    "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx"
+    "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+    "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+    "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json",
+    "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+    "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx"
   ],
   "qaRounds": [
     {
       "round": 1,
       "status": "passed",
-      "summary": "Canonical QA1 completed locally with contact-path simplification, mobile hours-table wrapping fix, passing build/typecheck/placeholder validation, and a documented screenshot blocker.",
+      "summary": "Canonical QA1 completed locally with contact-path simplification, mobile hours-table wrapping fix, passing build/typecheck/placeholder validation, and committed desktop/mobile screenshot evidence.",
       "evidence": [
         "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
         "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
         "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-1-2026-05-06.json"
+      ]
+    },
+    {
+      "round": 2,
+      "status": "passed",
+      "summary": "QA2 completed locally with a focused desktop contrast polish pass, fresh desktop/mobile screenshot evidence, verification rerun, and QA1 regression retention checks.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png"
       ]
     }
   ],
@@ -1188,7 +1222,7 @@
       "workflowStepId": "qa_round_1",
       "stage": "qa_round_1",
       "status": "passed",
-      "notes": "QA round 1 passed locally after removing repetitive contact-page CTA/hours duplication, fixing shared mobile hours-table wrapping risk, and documenting the browser screenshot blocker explicitly.",
+      "notes": "QA round 1 passed locally after removing repetitive contact-page CTA/hours duplication, fixing shared mobile hours-table wrapping risk, and capturing committed desktop/mobile screenshot evidence.",
       "evidence": [
         "restaurant-website-system/sites/maxfields-pancake-house/qa-round-1-2026-05-06.md",
         "restaurant-website-system/sites/maxfields-pancake-house/scrapes/qa-round-1-browser-checks-2026-05-06.json",
@@ -1205,11 +1239,29 @@
     {
       "id": "qa-round-2",
       "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
-      "qaState": "pending",
+      "qaState": "passed",
       "required": true,
       "workflowStepId": "qa_round_2",
       "stage": "qa_round_2",
-      "status": "pending"
+      "status": "passed",
+      "notes": "QA round 2 passed locally after a stricter sell-readiness review confirmed the QA1 regressions still hold, strengthened the first-view hero/proof contrast, and captured fresh QA2 desktop/mobile screenshot evidence.",
+      "evidence": [
+        "restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md",
+        "restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png",
+        "restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png"
+      ],
+      "blocker": null
     },
     {
       "id": "qa-round-3",
@@ -1246,7 +1298,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-06T14:30:00.000Z",
+  "updatedAt": "2026-05-06T15:05:00.000Z",
   "leadMetadata": {
     "owner_name": null,
     "owner_email": null,

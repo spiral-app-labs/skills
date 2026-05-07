@@ -1,6 +1,6 @@
 # Maxfield's Pancake House Checklist
 
-- Current stage: `qa_round_1`
+- Current stage: `qa_round_2`
 - Archetype: `Cuisine`
 - Template: `plate-01`
 - Updated: 2026-05-06
@@ -191,6 +191,23 @@
     - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png`
     - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png`
     - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png`
+- `qa-round-2` — QA round 2 completed with screenshots, findings, fixes, and MC writeback
+  - Notes: QA round 2 passed locally after a stricter sell-readiness pass confirmed the QA1 regressions still hold, fixed a washed-out first-view contrast issue in the hero/proof treatment, and captured fresh QA2 desktop/mobile screenshot evidence.
+  - Evidence:
+    - `restaurant-website-system/sites/maxfields-pancake-house/qa-round-2-2026-05-06.md`
+    - `restaurant-website-system/sites/maxfields-pancake-house/mc-build-writeback-qa-round-2-2026-05-06.json`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/HeroSplit.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/VisitConfidencePanel.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/app/layout.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/components/HoursTable.tsx`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-desktop.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-home-mobile.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-desktop.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-1-contact-mobile.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-desktop.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-home-mobile.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-desktop.png`
+    - `restaurant-website-system/sites/maxfields-pancake-house/screenshots/qa-round-2-contact-mobile.png`
 
 ## Verification
 
@@ -198,6 +215,9 @@
 - `npm run typecheck` — passed on 2026-05-06 after `npm run build` generated `.next/types` required by the local `tsconfig.json` include pattern
 - `npm run build` — passed on 2026-05-06
 - Forbidden placeholder grep — passed on 2026-05-06 after checklist metadata wording was normalized to avoid legacy placeholder strings
+- `npm run build` — passed again on 2026-05-06 during QA round 2
+- `npm run typecheck` — passed again on 2026-05-06 after the QA round 2 build regenerated `.next/types`
+- Forbidden placeholder grep — passed again on 2026-05-06 during QA round 2
 
 ## Google reviews evidence
 
@@ -242,7 +262,6 @@
 
 ## Pending later gates
 
-- `qa-round-2` — QA round 2 completed with screenshots, findings, fixes, and MC writeback
 - `qa-round-3` — QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback
 - `delivery-package` — Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC
 - `delivery-no-missing-evidence` — No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence

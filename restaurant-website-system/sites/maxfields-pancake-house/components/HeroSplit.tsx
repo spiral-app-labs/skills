@@ -68,18 +68,18 @@ export function HeroSplit() {
               </div>
             ))}
           </div>
-          <div className="mt-4 rounded-card border border-divider bg-white/80 p-5 md:p-6">
+          <div className="mt-4 rounded-card border border-divider bg-canvas-alt p-5 md:p-6 shadow-[0_18px_50px_rgba(156,90,45,0.08)]">
             <div className="text-eyebrow text-accent">{recovery.eyebrow}</div>
             <h2 className="mt-3 text-[24px] leading-tight font-medium text-ink">{recovery.title}</h2>
             <div className="mt-5 grid gap-3">
               {recovery.items.map((item) => (
-                <div key={item.label} className="rounded-[24px] bg-canvas-alt px-4 py-4">
-                  <div className="text-[11px] uppercase tracking-[0.16em] text-ink-muted">{item.label}</div>
+                <div key={item.label} className="rounded-[24px] border border-divider/80 bg-white/82 px-4 py-4">
+                  <div className="text-[11px] uppercase tracking-[0.16em] text-accent">{item.label}</div>
                   <p className="mt-2 text-body text-ink-muted">{item.body}</p>
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-body-sm text-ink-muted">{recovery.note}</p>
+            <p className="mt-4 text-body-sm text-ink">{recovery.note}</p>
           </div>
         </motion.div>
       </div>
