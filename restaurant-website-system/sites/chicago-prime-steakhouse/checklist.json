@@ -228,6 +228,7 @@
         "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
         "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md",
         "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
+        "restaurant-website-system/sites/chicago-prime-steakhouse/media-rights-and-shot-list-2026-05-07.md",
         "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md"
       ],
       "blocker": "Local source mapping is prepared: canonical archetype Heaven Palate maps to buildable source template 1776-redesign-01. Fork/build remains blocked until founder/MC authorization, owner confirmations, and preview authorization."
@@ -482,7 +483,9 @@
       ],
       "order": 10,
       "status": "pending",
-      "evidence": [],
+      "evidence": [
+        "restaurant-website-system/sites/chicago-prime-steakhouse/media-rights-and-shot-list-2026-05-07.md"
+      ],
       "blocker": null
     },
     {
@@ -607,7 +610,9 @@
       ],
       "order": 13,
       "status": "pending",
-      "evidence": [],
+      "evidence": [
+        "restaurant-website-system/sites/chicago-prime-steakhouse/media-rights-and-shot-list-2026-05-07.md"
+      ],
       "blocker": null
     }
   ],
@@ -624,7 +629,8 @@
     "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/owner-confirmation-request-2026-05-07.md",
     "restaurant-website-system/sites/chicago-prime-steakhouse/heaven-palate-source-mapping-2026-05-07.md",
-    "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md"
+    "restaurant-website-system/sites/chicago-prime-steakhouse/future-preview-content-map-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/media-rights-and-shot-list-2026-05-07.md"
   ],
   "qaRounds": [],
   "deployUrl": null,
@@ -756,7 +762,7 @@
       "workflowStepId": "template_route_fork_build",
       "stage": "building",
       "status": "blocked",
-      "notes": "Build/fork not authorized yet; source mapping and future preview content map are prepared for future implementation.",
+      "notes": "Build/fork not authorized yet; source mapping, content map, and media-rights plan are prepared for future implementation.",
       "evidence": []
     },
     {
