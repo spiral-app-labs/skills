@@ -1,0 +1,145 @@
+{
+  "capturedAt": "2026-05-07T13:08:34.879Z",
+  "pages": [
+    {
+      "pageSlug": "home",
+      "url": "https://regionrestaurant.com/",
+      "viewportSlug": "desktop",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 3388
+      },
+      "capturedHeight": 3388,
+      "textLength": 1475,
+      "screenshot": "region-current-home-desktop-2026-05-07.png"
+    },
+    {
+      "pageSlug": "menus",
+      "url": "https://regionrestaurant.com/menus/",
+      "viewportSlug": "desktop",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 3924
+      },
+      "capturedHeight": 3924,
+      "textLength": 5360,
+      "screenshot": "region-current-menus-desktop-2026-05-07.png"
+    },
+    {
+      "pageSlug": "reservations",
+      "url": "https://regionrestaurant.com/reservations/",
+      "viewportSlug": "desktop",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 2517
+      },
+      "capturedHeight": 2517,
+      "textLength": 643,
+      "screenshot": "region-current-reservations-desktop-2026-05-07.png"
+    },
+    {
+      "pageSlug": "private-events",
+      "url": "https://regionrestaurant.com/private-events/",
+      "viewportSlug": "desktop",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1817
+      },
+      "capturedHeight": 1817,
+      "textLength": 1192,
+      "screenshot": "region-current-private-events-desktop-2026-05-07.png"
+    },
+    {
+      "pageSlug": "gift",
+      "url": "https://regionrestaurant.com/gift/",
+      "viewportSlug": "desktop",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1686
+      },
+      "capturedHeight": 1686,
+      "textLength": 497,
+      "screenshot": "region-current-gift-desktop-2026-05-07.png"
+    },
+    {
+      "pageSlug": "about",
+      "url": "https://regionrestaurant.com/about/",
+      "viewportSlug": "desktop",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 2702
+      },
+      "capturedHeight": 2702,
+      "textLength": 3599,
+      "screenshot": "region-current-about-desktop-2026-05-07.png"
+    },
+    {
+      "pageSlug": "home",
+      "url": "https://regionrestaurant.com/",
+      "viewportSlug": "mobile",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 4813
+      },
+      "capturedHeight": 4813,
+      "textLength": 1410,
+      "screenshot": "region-current-home-mobile-2026-05-07.png"
+    },
+    {
+      "pageSlug": "menus",
+      "url": "https://regionrestaurant.com/menus/",
+      "viewportSlug": "mobile",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 7113
+      },
+      "capturedHeight": 7113,
+      "textLength": 5295,
+      "screenshot": "region-current-menus-mobile-2026-05-07.png"
+    },
+    {
+      "pageSlug": "reservations",
+      "url": "https://regionrestaurant.com/reservations/",
+      "viewportSlug": "mobile",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 3382
+      },
+      "capturedHeight": 3382,
+      "textLength": 591,
+      "screenshot": "region-current-reservations-mobile-2026-05-07.png"
+    },
+    {
+      "pageSlug": "private-events",
+      "url": "https://regionrestaurant.com/private-events/",
+      "viewportSlug": "mobile",
+      "contentSize": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 2753
+      },
+      "capturedHeight": 2753,
+      "textLength": 1127,
+      "screenshot": "region-current-private-events-mobile-2026-05-07.png"
+    }
+  ]
+}
