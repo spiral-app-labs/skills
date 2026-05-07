@@ -1,0 +1,41 @@
+{
+  "captured_at": "2026-05-07T14:24:47.269Z",
+  "pages": [
+    {
+      "slug": "official-site-desktop",
+      "url": "https://thesecretkitchenusa.com/",
+      "title": "Home - The Secret Kitchen USA",
+      "textChars": 2181
+    },
+    {
+      "slug": "official-site-mobile",
+      "url": "https://thesecretkitchenusa.com/",
+      "title": "Home - The Secret Kitchen USA",
+      "textChars": 2091
+    },
+    {
+      "slug": "official-menu-desktop",
+      "url": "https://thesecretkitchenusa.com/menu/",
+      "title": "Menu - The Secret Kitchen USA",
+      "textChars": 7488
+    },
+    {
+      "slug": "official-chef-desktop",
+      "url": "https://thesecretkitchenusa.com/meet-the-chef/",
+      "title": "Meet The Chef - The Secret Kitchen USA",
+      "textChars": 1776
+    },
+    {
+      "slug": "official-about-desktop",
+      "url": "https://thesecretkitchenusa.com/about-us/",
+      "title": "About Us - The Secret Kitchen USA",
+      "textChars": 1982
+    },
+    {
+      "slug": "official-contact-desktop",
+      "url": "https://thesecretkitchenusa.com/contact-us/",
+      "title": "Contact Us - The Secret Kitchen USA",
+      "textChars": 448
+    }
+  ]
+}

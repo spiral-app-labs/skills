@@ -39,6 +39,33 @@ Public sources checked:
 - Press: Chicago Food Magazine, “The Secret Is Out. The Secret Kitchen Makes Its American Debut in Schaumburg”: https://www.chicagofoodmagazine.com/news/the-secret-is-out-the-secret-kitchen-makes-its-american-debut-in-schaumburg
 - Press search result: Daily Herald, “The Secret Kitchen brings royal Indian cuisine to Schaumburg”: https://www.dailyherald.com/20260415/dining/the-secret-kitchen-brings-royal-indian-cuisine-to-schaumburg/
 
+Local evidence folder:
+
+`restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/`
+
+Files captured from the official site:
+
+- `official-site-desktop-full-2026-05-07.png`
+- `official-site-mobile-full-2026-05-07.png`
+- `official-site-desktop-dom-2026-05-07.html`
+- `official-site-desktop-text-2026-05-07.txt`
+- `official-site-mobile-dom-2026-05-07.html`
+- `official-site-mobile-text-2026-05-07.txt`
+- `official-menu-desktop-full-2026-05-07.png`
+- `official-menu-desktop-dom-2026-05-07.html`
+- `official-menu-desktop-text-2026-05-07.txt`
+- `official-chef-desktop-full-2026-05-07.png`
+- `official-chef-desktop-dom-2026-05-07.html`
+- `official-chef-desktop-text-2026-05-07.txt`
+- `official-about-desktop-full-2026-05-07.png`
+- `official-about-desktop-dom-2026-05-07.html`
+- `official-about-desktop-text-2026-05-07.txt`
+- `official-contact-desktop-full-2026-05-07.png`
+- `official-contact-desktop-dom-2026-05-07.html`
+- `official-contact-desktop-text-2026-05-07.txt`
+- `capture-manifest-2026-05-07.json`
+- `README.md`
+
 ## Evidence notes
 
 ### Official site
@@ -58,9 +85,10 @@ Official pages confirm:
 
 Current-site weakness signals:
 
-- Homepage extract is only a single high-level paragraph despite a rich brand story.
-- Reservation/contact pages repeat navigation and footer content heavily.
-- Menu extraction surfaced only dessert items, including Gulab Jamun Flambé, Kesar Mango Rasmalai, Sizzling Brownie with Chocolate Sauce, and Chef Aanal’s Autograph Dessert; the rest of the menu story is not clearly represented in accessible text.
+- Homepage text is short relative to the depth of the restaurant's chef, international, menu, and interior story.
+- Contact/reservation surfaces are functional, but the conversion path relies on repeated footer/nav content instead of a polished reserve/visit flow.
+- Full browser capture confirms the official menu is accessible and substantial, including Hot Bar, Indian Street Food, First Plate veg/non-veg, Indo-Chinese, Main Plate veg/non-veg, World Cuisine, Traditional Platter, Comfort Plate, Bread Bar, Junior Plate, and Sweet Plate sections.
+- The menu is valuable but long and list-heavy; a preview should turn it into a cinematic, skimmable menu journey rather than a flat item dump.
 - The site has the raw ingredients for a high-converting preview, but the web narrative does not yet match the strength of the physical concept.
 
 ### Press / third-party corroboration
@@ -137,6 +165,7 @@ A sellable preview should emphasize:
     "proposed_by": "openclaw-heartbeat",
     "label": "proposed",
     "source_artifact": "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-seed-validation-2026-05-07.md",
+    "evidence_folder": "restaurant-website-system/research/lead-qualification/the-secret-kitchen-usa-evidence-2026-05-07/",
     "proposed_archetype": "Bamzi",
     "primary_conversion_path": "reserve a table + explore menu + directions/contact + chef/story credibility",
     "lead_fit_summary": "Premium modern Indian U.S. debut in Schaumburg by Chef Aanal Kotak with strong press/story/interior hooks; current official site contains the facts but undersells the cinematic restaurant experience and reservation journey.",
