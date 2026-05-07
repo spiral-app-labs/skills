@@ -23,6 +23,11 @@
   "recommended_next_actions": [
     "Obtain/restore Mission Control agency automation bearer token for OpenClaw runtime.",
     "After founder approval and lead/root provisioning, attach the review JSON, markdown packet, and screenshot to the canonical reviews child task.",
-    "Use the review takeaways in routing/build briefs while preserving the Secret Kitchen Bamzi archetype decision and avoiding fake or overbroad claims."
-  ]
+    "Use the review takeaways in routing/build briefs while preserving the Secret Kitchen Bamzi archetype decision and avoiding fake or overbroad claims.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/"
 }

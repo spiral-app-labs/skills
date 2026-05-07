@@ -4,7 +4,10 @@
   "site_slug": "the-secret-kitchen-usa",
   "business_name": "The Secret Kitchen USA",
   "created_at": "2026-05-07T15:23:00Z",
-  "canonical_gates": ["pitch", "battle_cards"],
+  "canonical_gates": [
+    "pitch",
+    "battle_cards"
+  ],
   "status": "pending_mc_attach_internal_draft_not_owner_facing",
   "blocker": "Mission Control protected agency API returned 401 without a bearer token, and this lead still requires founder approval / MC lead + canonical workflow provisioning before stage writeback or owner-facing sales use. No raw Supabase writes were performed.",
   "pitch_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/pitch-doc-2026-05-07.md",
@@ -17,10 +20,10 @@
     "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/google-reviews-highest-30-2026-05-07.md"
   ],
   "sales_summary": {
-    "one_line_pitch": "Turn The Secret Kitchen USA’s Schaumburg site into a cinematic, reservation-first showcase for Chef Aanal Kotak’s modern Indian dining experience.",
+    "one_line_pitch": "Turn The Secret Kitchen USA\u2019s Schaumburg site into a cinematic, reservation-first showcase for Chef Aanal Kotak\u2019s modern Indian dining experience.",
     "primary_owner_value": [
       "Make Reserve/Menu/Directions obvious on mobile",
-      "Bring Chef Aanal Kotak’s story onto the homepage",
+      "Bring Chef Aanal Kotak\u2019s story onto the homepage",
       "Turn the broad menu into a curated dinner journey",
       "Preserve real facts while avoiding unapproved claims"
     ],
@@ -40,6 +43,11 @@
   "recommended_next_actions": [
     "Attach these sales assets to pitch and battle_cards child tasks after founder approval and workflow provisioning.",
     "Keep assets internal until owner-facing preview gates clear.",
-    "Replay pending MC payloads in gate order once agency API auth is restored."
-  ]
+    "Replay pending MC payloads in gate order once agency API auth is restored.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/"
 }

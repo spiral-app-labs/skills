@@ -43,5 +43,12 @@
     "Generate or refresh checklist.md and checklist.json after MC lead/task IDs exist.",
     "Attach local evidence and pending writebacks to canonical child tasks in gate order.",
     "Resume from the first MC-incomplete gate before authorizing build work."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/",
+  "recommended_next_actions": [
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
   ]
 }

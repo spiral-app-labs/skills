@@ -41,6 +41,11 @@
   "recommended_next_actions": [
     "Attach routing artifact to the canonical routing child task after founder approval and workflow provisioning.",
     "Set root metadata.template_slug/archetype to Bamzi once protected MC writeback auth is available.",
-    "Do not start a public build until owner confirmations are available or Ethan explicitly approves a speculative internal preview lane."
-  ]
+    "Do not start a public build until owner confirmations are available or Ethan explicitly approves a speculative internal preview lane.",
+    "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API."
+  ],
+  "attach_replay_payload": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-attach-replay-payload-2026-05-07.json",
+  "attach_replay_runbook": "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
+  "buildable_template_slug": "bamzi-01",
+  "buildable_template_path": "restaurant-website-system/templates/bamzi-01/"
 }
