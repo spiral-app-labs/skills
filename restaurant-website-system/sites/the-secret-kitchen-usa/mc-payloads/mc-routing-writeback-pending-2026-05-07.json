@@ -1,0 +1,46 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "routing_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T15:11:00Z",
+  "canonical_gate": "routing",
+  "status": "pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 without a bearer token, and this lead still requires founder approval / MC lead + canonical workflow provisioning before stage writeback. No raw Supabase writes were performed.",
+  "routing_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md",
+  "template_slug": "Bamzi",
+  "archetype": "Bamzi",
+  "rationale_summary": "Use Bamzi for a cinematic, reservation-first modern Indian dining site built around Chef Aanal Kotak, royal-kitchen inspiration, global-spice menu theatre, jewel-toned interiors, and a Schaumburg U.S.-debut story.",
+  "source_artifacts": [
+    "restaurant-website-system/sites/the-secret-kitchen-usa/research/build-readiness-menu-conversion-brief-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/scrapes/google-reviews-highest-30-2026-05-07.md"
+  ],
+  "rejected_archetypes": [
+    {
+      "archetype": "Roma",
+      "reason": "Too restrained and quiet for the restaurant's maximalist interiors, theatrical menu moments, and U.S.-debut story."
+    },
+    {
+      "archetype": "Heaven Palate",
+      "reason": "Too classic-luxury/steakhouse; would flatten the modern Indian/global-spice identity."
+    },
+    {
+      "archetype": "Cuisine",
+      "reason": "Too warm/casual as the structural base; use only clarity patterns within menu/visit sections."
+    },
+    {
+      "archetype": "Qitchen",
+      "reason": "Too architectural/omakase-like for a broad, story-rich, reservation-led Indian dining site."
+    },
+    {
+      "archetype": "Bramble",
+      "reason": "Too bar/nightlife-led; The Secret Kitchen is chef/menu/reservation-led."
+    }
+  ],
+  "recommended_next_actions": [
+    "Attach routing artifact to the canonical routing child task after founder approval and workflow provisioning.",
+    "Set root metadata.template_slug/archetype to Bamzi once protected MC writeback auth is available.",
+    "Do not start a public build until owner confirmations are available or Ethan explicitly approves a speculative internal preview lane."
+  ]
+}
