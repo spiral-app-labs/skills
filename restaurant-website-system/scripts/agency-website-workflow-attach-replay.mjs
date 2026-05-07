@@ -104,6 +104,14 @@ function normalizePayloadForReplay(payload) {
   }
 }
 
+function currentStageFromPayload(payload) {
+  return stringValue(payload.currentStage || payload.current_stage || payload.build_stage)
+}
+
+function expectsChecklistReplayActivation(payload) {
+  return currentStageFromPayload(payload)?.toLowerCase() === 'checklist'
+}
+
 function summarizePayload(payload) {
   const checklist = asRecord(payload.checklist_artifacts || payload.checklistArtifacts)
   const evidence = evidencePathsFromPayload(payload)
@@ -112,7 +120,7 @@ function summarizePayload(payload) {
     site_slug: stringValue(payload.site_slug || payload.siteSlug),
     restaurant_name: stringValue(payload.restaurant_name || payload.restaurantName),
     template_slug: stringValue(payload.template_slug || payload.templateSlug || payload.selected_archetype || payload.selectedArchetype),
-    current_stage: stringValue(payload.currentStage || payload.current_stage || payload.build_stage),
+    current_stage: currentStageFromPayload(payload),
     checklist_markdown_path: stringValue(checklist.markdown || checklist.markdown_path || checklist.markdownPath),
     checklist_json_path: stringValue(checklist.json || checklist.json_path || checklist.jsonPath),
     evidence_path_count: evidence.length,
@@ -140,6 +148,32 @@ function buildRequest(baseUrl, leadId, trigger, payload) {
       attach_payload: payload,
     },
   }
+}
+
+function expectedResponseForPayload(payload) {
+  return {
+    attach_applied: true,
+    ...(expectsChecklistReplayActivation(payload) ? { checklist_replay_activated: true } : {}),
+  }
+}
+
+function validateMissionControlResponse(result, expectedResponse) {
+  const body = asRecord(result.body)
+  const failures = []
+
+  for (const [key, expectedValue] of Object.entries(expectedResponse)) {
+    if (body[key] !== expectedValue) {
+      failures.push(`${key} expected ${expectedValue} but received ${body[key]}`)
+    }
+  }
+
+  if (failures.length > 0) {
+    const error = new Error(`Mission Control replay response failed validation: ${failures.join('; ')}`)
+    error.response = body
+    throw error
+  }
+
+  return { ok: true, checked: Object.keys(expectedResponse) }
 }
 
 async function applyRequest(request) {
@@ -188,6 +222,7 @@ async function main() {
   const summary = summarizePayload(replayPayload)
 
   const dryRun = !flags.apply
+  const expected_response = expectedResponseForPayload(replayPayload)
   const output = {
     ok: true,
     mode: dryRun ? 'dry-run' : 'apply',
@@ -196,6 +231,7 @@ async function main() {
     payload_path: absolutePath,
     payload_summary: summary,
     request_body_keys: Object.keys(request.body),
+    expected_response,
   }
 
   if (dryRun) {
@@ -204,7 +240,8 @@ async function main() {
   }
 
   const result = await applyRequest(request)
-  console.log(JSON.stringify({ ...output, mission_control: result }, null, 2))
+  const response_validation = validateMissionControlResponse(result, expected_response)
+  console.log(JSON.stringify({ ...output, mission_control: result, response_validation }, null, 2))
 }
 
 main().catch((error) => {
