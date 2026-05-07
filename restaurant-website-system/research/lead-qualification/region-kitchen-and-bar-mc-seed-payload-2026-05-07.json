@@ -1,0 +1,50 @@
+{
+  "operation": "agency_website_workflow_seed_candidate",
+  "created_at_utc": "2026-05-07T13:02:00Z",
+  "write_status": "local_payload_only_protected_mc_api_unavailable",
+  "write_blocker": "AGENCY_AUTONOMY_API_KEY missing in OpenClaw runtime; local planner refused connection; production planner returned 403 Forbidden. No raw Supabase agency write performed.",
+  "candidate": {
+    "restaurant_name": "Region Kitchen and Bar",
+    "site_slug": "region-kitchen-and-bar",
+    "location": "Barrington, IL",
+    "official_website_url": "https://regionrestaurant.com/",
+    "google_maps_url": "https://www.google.com/maps/place/Region+Kitchen+and+Bar/@42.1669643,-88.1564159,17z/data=!3m1!4b1!4m6!3m5!1s0x880fa1bb67eea085:0xa1e1fa3d17eecd39!8m2!3d42.1669643!4d-88.1564159!16s%2Fg%2F11f7r63l_v?entry=ttu",
+    "opentable_url": "https://www.opentable.com/r/region-barrington",
+    "proposed_template_slug": "roma",
+    "recommended_initial_stage": "checklist",
+    "lead_priority": "high",
+    "why_sellable": "Premium chef-owned seasonal American restaurant with reservation, private-event, gift-card, and order channels already present; current website visibly under-sells the dining experience and has weak mobile/CTA hierarchy.",
+    "known_public_facts": {
+      "address": "718 W. NW Highway, Barrington, IL 60010",
+      "phone": "(224) 848-4005",
+      "emails": [
+        "dperlick@regionrestaurant.com",
+        "jperlick@regionrestaurant.com"
+      ],
+      "hours_from_current_site": "Tuesday-Thursday 4:30 pm-9 pm; Friday-Saturday 4:30 pm-10 pm; Sunday 4:30 pm-9 pm; Monday closed",
+      "chef_owner_story": "Dave Perlick's highly lauded flagship restaurant in Barrington with regionally and seasonally inspired flavors",
+      "review_signals_from_existing_research": {
+        "google": "4.8 / 698 reviews recorded in local browser research on 2026-05-06",
+        "opentable": "3,010 reviews surfaced by web search on 2026-05-07"
+      }
+    },
+    "current_site_gaps": [
+      "Hero leads with carryout limitations instead of dining/reservation/private-event story.",
+      "Reservation path is visually secondary and phone-call-led.",
+      "Private event path is only an email handoff, not a conversion funnel.",
+      "Gift-card and online-order CTAs compete without hierarchy.",
+      "Large blank bands and dated visual treatment reduce premium feel.",
+      "Mobile first screen is text-heavy and lacks sticky high-intent CTAs.",
+      "Browser accessibility snapshot exposed mismatched logo alt text mentioning veggii kitchen and bar."
+    ]
+  },
+  "evidence_paths": [
+    "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-seed-validation-2026-05-07.md",
+    "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-evidence-2026-05-07/capture-manifest-2026-05-07.json",
+    "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-evidence-2026-05-07/region-current-site-desktop-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-evidence-2026-05-07/region-current-site-mobile-2026-05-07.png",
+    "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-evidence-2026-05-07/region-current-site-desktop-dom-text-2026-05-07.txt",
+    "restaurant-website-system/research/lead-qualification/region-kitchen-and-bar-evidence-2026-05-07/region-current-site-mobile-dom-text-2026-05-07.txt"
+  ],
+  "required_next_mc_action": "Replay this payload through the protected Mission Control agency website-workflow provisioning route, then create the canonical root/child tasks before build work starts."
+}
