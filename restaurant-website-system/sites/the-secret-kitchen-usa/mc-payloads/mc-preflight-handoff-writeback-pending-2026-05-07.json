@@ -50,7 +50,9 @@
   "buildable_template_path": "restaurant-website-system/templates/bamzi-01/",
   "recommended_next_actions": [
     "When MC auth and the canonical lead ID are available, use the attach replay runbook/payload to mirror local evidence through the approved website-workflow API.",
-    "Attach the future preview content map to MC before builder implementation starts."
+    "Attach the future preview content map to MC before builder implementation starts.",
+    "Attach the media rights and shot list to MC before implementation/QA; image rights remain unconfirmed."
   ],
-  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md"
+  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
+  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
 }

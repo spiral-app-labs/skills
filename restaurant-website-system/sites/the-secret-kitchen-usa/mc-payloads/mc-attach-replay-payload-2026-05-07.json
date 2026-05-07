@@ -63,7 +63,8 @@
     "restaurant-website-system/sites/the-secret-kitchen-usa/battle-cards-2026-05-07.md",
     "restaurant-website-system/sites/the-secret-kitchen-usa/outreach/owner-confirmation-request-2026-05-07.md",
     "restaurant-website-system/sites/the-secret-kitchen-usa/mc-attach-replay-runbook-2026-05-07.md",
-    "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md"
+    "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
   ],
   "pending_payloads_to_attach_or_supersede": [
     "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/canonical-workflow-provisioning-request-2026-05-07.json",
@@ -76,7 +77,8 @@
     "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-preflight-handoff-writeback-pending-2026-05-07.json",
     "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-qa-readiness-writeback-pending-2026-05-07.json",
     "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-sales-assets-writeback-pending-2026-05-07.json",
-    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-content-map-writeback-pending-2026-05-07.json"
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-content-map-writeback-pending-2026-05-07.json",
+    "restaurant-website-system/sites/the-secret-kitchen-usa/mc-payloads/mc-media-plan-writeback-pending-2026-05-07.json"
   ],
   "must_not_advance_without_confirmation": [
     "owner_contacted",
@@ -89,7 +91,9 @@
     "Replace pending lead/root IDs in checklist artifacts with canonical MC IDs.",
     "Confirm root currentStage/build_stage remains at the earliest incomplete gate, likely checklist until MC sync is verified.",
     "Resolve founder approval, owner confirmations/photo rights, preview authorization, and claim-safety gates before build.",
-    "Attach future preview content map to the building task before authorizing implementation."
+    "Attach future preview content map to the building task before authorizing implementation.",
+    "Attach media rights and shot list before build/QA; media rights remain unconfirmed until owner/founder approval."
   ],
-  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md"
+  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
+  "media_plan_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md"
 }

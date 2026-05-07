@@ -68,6 +68,7 @@ Local checklist artifacts exist and The Secret Kitchen USA is routed to Bamzi wi
 - Current local evidence:
   - restaurant-website-system/sites/the-secret-kitchen-usa/routing-template-decision-2026-05-07.md
 - restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md
+- restaurant-website-system/sites/the-secret-kitchen-usa/media-rights-and-shot-list-2026-05-07.md
   - restaurant-website-system/sites/the-secret-kitchen-usa/builder-implementation-brief-2026-05-07.md
 - Blocker: Template route is locally selected as Bamzi and buildable source bamzi-01 exists, but fork/build is not authorized until MC/founder/owner gates clear.
 - Requirement: template-route-locked — Exactly one archetype/template route is chosen and justified
@@ -165,7 +166,7 @@ Local checklist artifacts exist and The Secret Kitchen USA is routed to Bamzi wi
 - [ ] reviews-thirty-written: 30 written reviews captured, or exact shortage/blocker documented (pending)
 - [ ] reviews-themes: Review themes summary is usable for copy and pitch docs (pending)
 - [x] template-route-locked: Exactly one archetype/template route is chosen and justified (passed) - Locally routed to Bamzi with buildable source bamzi-01; MC mirror pending.
-- [ ] fork-built: Template fork builds successfully with real content and preserved conversion links (blocked) - Build/fork not authorized yet; Bamzi route and future preview content map are prepared for future implementation.
+- [ ] fork-built: Template fork builds successfully with real content and preserved conversion links (blocked) - Build/fork not authorized yet; Bamzi route, future preview content map, and media-rights plan are prepared for future implementation.
 - [ ] specificity: No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths (pending) - Can be evaluated only after a preview exists.
 - [ ] identity-specific: Copy/visual rhythm feels specific to the restaurant and selected archetype (pending)
 - [ ] conversion-paths: Order/reserve/call/directions/catering/events paths are accurate as applicable (pending)
