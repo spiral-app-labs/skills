@@ -1,0 +1,26 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "sales_assets_writeback_pending",
+  "site_slug": "chicago-prime-steakhouse",
+  "business_name": "Chicago Prime Steakhouse",
+  "created_at": "2026-05-07T16:05:32Z",
+  "canonical_gates": ["pitch", "battle_cards"],
+  "status": "sales_assets_ready_internal_not_owner_facing_pending_mc_attach",
+  "blocker": "Mission Control protected agency API returned 401 with x-agency-runtime: openclaw. Founder approval, owner confirmations, MC lead + canonical workflow provisioning, and Heaven Palate implementation-source mapping are still required before owner-facing use. No raw Supabase writes were performed.",
+  "pitch_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/outreach/founder-seed-decision-brief-2026-05-07.md",
+  "battle_cards_artifact": "restaurant-website-system/sites/chicago-prime-steakhouse/battle-cards-2026-05-07.md",
+  "template_slug": "Heaven Palate",
+  "archetype": "Heaven Palate",
+  "owner_facing": false,
+  "source_artifacts": [
+    "restaurant-website-system/sites/chicago-prime-steakhouse/audit-official-site-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/routing-template-decision-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/builder-implementation-brief-2026-05-07.md",
+    "restaurant-website-system/sites/chicago-prime-steakhouse/scrapes/google-reviews-highest-30-2026-05-07.md"
+  ],
+  "recommended_next_actions": [
+    "Attach pitch and battle-card artifacts to canonical pitch/battle_cards child tasks once MC provisioning/auth is available.",
+    "Do not use owner-facing until founder approval, owner confirmations, and preview QA exist.",
+    "Resolve Heaven Palate build source mapping before any builder starts implementation."
+  ]
+}
