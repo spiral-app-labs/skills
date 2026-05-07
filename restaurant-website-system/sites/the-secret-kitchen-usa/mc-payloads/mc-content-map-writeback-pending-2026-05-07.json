@@ -1,0 +1,22 @@
+{
+  "namespace": "agency_website_workflow",
+  "workflow_role": "content_map_writeback_pending",
+  "site_slug": "the-secret-kitchen-usa",
+  "business_name": "The Secret Kitchen USA",
+  "created_at": "2026-05-07T16:31:49Z",
+  "canonical_gate": "building",
+  "status": "future_preview_content_map_prepared_not_build_authorized_pending_mc_attach",
+  "template_slug": "Bamzi",
+  "archetype": "Bamzi",
+  "buildable_template_slug": "bamzi-01",
+  "content_map_artifact": "restaurant-website-system/sites/the-secret-kitchen-usa/future-preview-content-map-2026-05-07.md",
+  "build_authorized": false,
+  "owner_contacted": false,
+  "qa_run": false,
+  "blocker": "Future preview content map is prepared, but implementation remains blocked by MC protected API auth/provisioning, founder approval, owner confirmations/photo rights, preview authorization, and QA prerequisites. No raw Supabase writes were performed.",
+  "recommended_next_actions": [
+    "Attach content map to the canonical building task once MC provisioning/auth is available.",
+    "Use the map as the first content/content.example.ts translation brief after build authorization.",
+    "Do not publish awards, reviews, menu prices/currentness, private dining claims, Chef Aanal claims, or images until owner-confirmed."
+  ]
+}
