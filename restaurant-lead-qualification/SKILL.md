@@ -5,7 +5,9 @@ description: Active 7-check lead-fit gate for restaurant website agency prospect
 
 # Restaurant Lead Qualification
 
-Run this before opening a code editor for a new restaurant lead. Time budget: 5-8 minutes. Output must be written to the local checklist and Mission Control.
+Run this before opening a code editor for a new speculative restaurant lead. Time budget: 5-8 minutes. Output must be written to the local checklist/artifact packet and Mission Control when API auth is available.
+
+Current MC workflow note: lead qualification is now the first canonical child task: `lead_qualification → qualifying`. For new/speculative leads, qualify before build work and write the Build/Re-route/Skip decision plus evidence to local artifacts and MC. If a lead was provisioned before this child existed, repair/backfill through the protected MC workflow endpoint instead of treating qualification as an implicit checklist substep.
 
 Reference: `restaurant-website-system/research/lead-fit-qualification.md`.
 
@@ -28,7 +30,9 @@ Reference: `restaurant-website-system/research/lead-fit-qualification.md`.
 
 ## Required Writeback
 
-Update the build stage to `qualifying` while running the gate. Then record:
+For new/speculative leads, update/write `build_stage: qualifying` only while the qualification gate is actually active. For already-provisioned website workflows, preserve the planner-selected root/child stage and attach qualification evidence to the checklist/build evidence instead of silently rewinding the workflow.
+
+Record:
 
 - `lead_fit_decision`
 - `lead_fit_checks`
@@ -36,4 +40,4 @@ Update the build stage to `qualifying` while running the gate. Then record:
 - `recommended_template_register`
 - screenshots or source paths used as evidence
 
-Pass `lead-fit-qualified` in MC task requirements only when the decision is `Build` or `Re-route`.
+Pass `lead-fit-qualified` / include it in `passed_requirement_ids` only when the decision is `Build` or `Re-route`. If MC API auth is unavailable, save a MC-compatible seed/writeback payload locally with the auth blocker and do not mutate agency state through raw Supabase.
