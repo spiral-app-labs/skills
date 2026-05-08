@@ -13,6 +13,9 @@
   "outreach_draft_path": "restaurant-website-system/sites/the-chef-grill/outreach-draft.md",
   "local_preview_url": "http://127.0.0.1:3057",
   "public_preview_url": null,
+  "pull_request_url": "https://github.com/spiral-app-labs/skills/pull/139",
+  "vercel_pr_preview_url": "https://skills-git-chore-the-chef-g-275cb2-ethan-ethantalrejas-projects.vercel.app",
+  "public_preview_blocker": "Vercel PR preview deployed but currently returns 401 Authentication Required, so it is not client-shareable yet.",
   "evidence_urls": [
     "restaurant-website-system/sites/the-chef-grill/delivery-package.md",
     "restaurant-website-system/sites/the-chef-grill/outreach-draft.md",
@@ -36,7 +39,7 @@
   ],
   "blockers": [
     "Mission Control protected QA/build writeback returned 401 Unauthorized with currently available runtime credentials; AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET is required.",
-    "Public/client-shareable preview URL has not yet been created and verified.",
+    "PR #139 has a Vercel preview, but unauthenticated requests return 401 Authentication Required, so it is not client-shareable yet.",
     "Owner confirmation remains needed for day-by-day/holiday hours, catering/private-event capacity, preferred ordering provider, and owner/founder story/spelling."
   ],
   "verification": {

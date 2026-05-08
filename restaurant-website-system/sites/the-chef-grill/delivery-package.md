@@ -10,8 +10,9 @@
 ## Preview
 
 - Local validated preview: `http://127.0.0.1:3057`
-- Public preview URL: **pending** — no client-shareable URL has been verified yet.
-- PR: **pending** — prepare from a clean branch so unrelated agency work is not mixed into this site.
+- Vercel PR preview: `https://skills-git-chore-the-chef-g-275cb2-ethan-ethantalrejas-projects.vercel.app`
+- Public preview check: **blocked** — unauthenticated request returned `401 Authentication Required`, so this Vercel preview is not client-shareable.
+- PR: `https://github.com/spiral-app-labs/skills/pull/139`
 
 ## Sell-ready assets
 
@@ -48,7 +49,7 @@ Pass locally after final fixes.
 ## Final blockers before delivery
 
 1. **Mission Control protected writeback** — QA3 payload is ready, but the protected route returned `401 Unauthorized` with the currently available fallback key. Required runtime auth (`AGENCY_AUTONOMY_API_KEY` or `OPENCLAW_WEBHOOK_SECRET` per Mission Control auth code) is not available in this OpenClaw runtime. Prepared payload: `restaurant-website-system/sites/the-chef-grill/mc-qa-round-3-payload-2026-05-08.json`.
-2. **Public preview URL** — a client-shareable preview URL still needs to be created and verified. Local preview is not enough for delivery.
+2. **Public preview URL** — PR #139 has a Vercel preview, but unauthenticated requests return `401 Authentication Required`, so a client-shareable preview URL still needs to be created or Vercel preview protection needs to be disabled for this handoff.
 3. **Owner/founder verification** — before public launch, confirm day-by-day/holiday hours, catering/private-event capacity, preferred ordering provider, and owner/founder story/spelling if the owner wants that included.
 
 ## Delivery rule
