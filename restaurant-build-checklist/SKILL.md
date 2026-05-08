@@ -47,11 +47,11 @@ Reference paths:
 - deploy/preview URL
 - blocker log
 - done criteria
-- requirement rows mirrored to MC task `metadata.requirements`
+- requirement rows tracked locally, with accepted evidence/path fields mirrored to MC through `/api/agency/leads/:leadId/build`
 
 ## Canonical Requirement Rows
 
-At minimum, mirror requirement rows for:
+At minimum, track local requirement rows for:
 
 1. checklist `.md` and `.json` created/updated
 2. current-site browser audit screenshots + scrape captured
@@ -67,6 +67,20 @@ At minimum, mirror requirement rows for:
 12. QA round 2 complete with evidence
 13. QA round 3 complete with evidence
 14. delivery package mirrored to MC
+
+Current MC source emits coarser default rows and canonical child requirements. The build writeback route accepts checklist paths, evidence URLs, artifact URLs, specialized evidence paths, blockers, and `passed_requirement_ids`; it does **not** currently accept arbitrary full local requirement arrays. Keep the full checklist rows in `checklist.md`/`checklist.json`, attach those paths/evidence to MC, and only claim full MC row mirroring after a supported API field exists.
+
+Map local evidence into accepted `/build` fields where possible:
+
+- checklist files → `checklist_markdown_path`, `checklist_json_path`
+- current-site scrape/DOM → `current_site_scrape_path`
+- Google review packet → `google_reviews_packet_path`
+- pitch doc → `pitch_doc_path`
+- battle cards → `battle_cards_path`
+- preview/deploy → `vercel_preview_url` and/or `artifact_urls`
+- screenshots, QA docs, before/after evidence, concierge transcript, package manifests → `evidence_urls`
+- passed rows → `passed_requirement_ids`
+- blockers → `blocker`
 
 ## Update Discipline
 
