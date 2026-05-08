@@ -1,0 +1,34 @@
+{
+  "build_stage": "pitch",
+  "status": "in_progress",
+  "idempotency_key": "the-chef-grill-pitch-doc-2026-05-08",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+  "pitch_doc_path": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+    "restaurant-website-system/sites/the-chef-grill/audit.md",
+    "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/the-chef-grill/build/improvement-pass-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/top-three/top-three-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/concierge/concierge-evidence-2026-05-08.md"
+  ],
+  "evidence_objects": [
+    {
+      "url": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+      "label": "60-second owner-facing pitch doc for The Chef Grill redesign",
+      "kind": "pitch_doc"
+    }
+  ],
+  "passed_requirement_ids": [
+    "pitch-before-after",
+    "pitch-evidence",
+    "pitch-specific"
+  ],
+  "heartbeat_summary": "Created The Chef Grill pitch doc with before/after revenue-leak framing, demo path, proof points, and do-not-overclaim caveats."
+}

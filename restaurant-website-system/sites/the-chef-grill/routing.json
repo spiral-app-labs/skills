@@ -1,0 +1,38 @@
+{
+  "site_slug": "the-chef-grill",
+  "restaurant_name": "The Chef Grill",
+  "generated_at": "2026-05-08T13:33:00Z",
+  "selected_archetype": "Cuisine",
+  "template_slug": "plate-01",
+  "route_locked": true,
+  "rejected_templates": [
+    {"template_slug": "bamzi-01", "reason": "Too dark/cinematic for a practical family halal Turkish grill; borrow only restrained warmth/food energy."},
+    {"template_slug": "labrisa-01", "reason": "Mediterranean but not coastal-European or multi-service enough for Labrisa."},
+    {"template_slug": "1776-redesign-01", "reason": "Too upscale/reservation-led and would bury order/menu clarity."},
+    {"template_slug": "pepper-01", "reason": "Too fast-casual/takeout-first for a full-service hospitality-led restaurant."},
+    {"template_slug": "gusto-01", "reason": "Useful review/heritage inspiration but too Italian trattoria/date-night coded."}
+  ],
+  "modifiers": {
+    "palette": ["warm cream", "charcoal", "olive", "toasted sesame", "copper/amber accent"],
+    "cta": ["Order Online", "View Menu", "Call / Directions"],
+    "menu_strategy": "menu-forward category stack with signature dish cards",
+    "proof_strategy": "4.7 stars / 807 Google reviews plus real review themes",
+    "motion": "subtle warm reveals, no heavy cinematic/nightlife motion",
+    "mobile": "sticky CTA bar for order/call/directions and menu category jump links"
+  },
+  "required_sections": [
+    "Hero with halal Turkish & Mediterranean grill positioning",
+    "Signature menu section",
+    "Why guests come back / proof section",
+    "Ordering path",
+    "Visit/contact",
+    "Review proof",
+    "Truthful footer"
+  ],
+  "evidence_inputs": [
+    "restaurant-website-system/sites/the-chef-grill/audit.md",
+    "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/the-chef-grill/scrapes/menu.txt",
+    "restaurant-website-system/sites/the-chef-grill/scrapes/contact.txt"
+  ]
+}

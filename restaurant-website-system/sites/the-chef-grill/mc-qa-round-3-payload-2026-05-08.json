@@ -1,0 +1,36 @@
+{
+  "round_number": 3,
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "findings": [
+    "Final sell-readiness QA checked identity, conversion, accuracy, design quality, and mobile polish for The Chef Grill.",
+    "Initial QA3 visual pass found mobile image treatment issues, an orphan mobile menu photo, and possible CTA safe-area concerns.",
+    "Customer-facing source scan found no remaining internal/source/placeholder language after copy cleanup.",
+    "Live Playwright checks passed for order/menu/call/directions links, contact field order, /menu to /#menu behavior, menu depth, no horizontal overflow, mobile quick-action visibility rules, and conservative concierge behavior.",
+    "Final visual review passed after the mobile image/CTA fixes."
+  ],
+  "fixes_applied": [
+    "Swapped low-resolution thumbnail image URLs to higher-resolution restaurant assets where available.",
+    "Changed the home visit image away from the blank-banded dining-room asset to a stronger food spread image.",
+    "Hid dense menu photo callouts on mobile so menu browsing stays readable and no orphan photo interrupts the list.",
+    "Hid the concierge trigger on mobile and lifted/rounded the mobile quick-action bar to avoid overlap and safe-area clipping.",
+    "Cleaned remaining customer-facing menu/about phrasing that sounded like internal evidence notes.",
+    "Rebuilt, typechecked, rescanned source, reran live Playwright checks, captured QA3 screenshots, and completed final visual QA with PASS."
+  ],
+  "skill_updates": [],
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-home-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-menu-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-about-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-home-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-menu-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-visit-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-contact-final-2026-05-08.png"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-report-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-live-checks-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-source-scan-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-vision-review-2026-05-08.txt",
+    "http://127.0.0.1:3057"
+  ]
+}

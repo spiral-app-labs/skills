@@ -1,0 +1,53 @@
+
+> the-chef-grill@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.15
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./content.example.ts
+Error: 
+  [31mx[0m Expected ',', got 'form'
+     ,-[[36;1;4m/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/content.example.ts[0m:397:1]
+ [2m397[0m |     heading: 'Order, call, or plan your visit',
+ [2m398[0m |     subcopy:
+ [2m399[0m |       'Find the official phone, address, email, menu, online ordering, delivery links, and directions path here. For reservations or group timing, call the restaurant directly.'
+ [2m400[0m |     form: {
+     : [31;1m    ^^^^[0m
+ [2m401[0m |       fields: [
+ [2m402[0m |         { name: 'name', label: 'Your name', type: 'text', placeholder: 'Your name' },
+ [2m403[0m |         { name: 'email', label: 'Email', type: 'email', placeholder: 'you@example.com' },
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./content.example.ts
+./components/AboutHero.tsx
+
+./content.example.ts
+Error: 
+  [31mx[0m Expected ',', got 'form'
+     ,-[[36;1;4m/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/content.example.ts[0m:397:1]
+ [2m397[0m |     heading: 'Order, call, or plan your visit',
+ [2m398[0m |     subcopy:
+ [2m399[0m |       'Find the official phone, address, email, menu, online ordering, delivery links, and directions path here. For reservations or group timing, call the restaurant directly.'
+ [2m400[0m |     form: {
+     : [31;1m    ^^^^[0m
+ [2m401[0m |       fields: [
+ [2m402[0m |         { name: 'name', label: 'Your name', type: 'text', placeholder: 'Your name' },
+ [2m403[0m |         { name: 'email', label: 'Email', type: 'email', placeholder: 'you@example.com' },
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./content.example.ts
+./app/layout.tsx
+
+
+> Build failed because of webpack errors

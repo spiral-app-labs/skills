@@ -1,0 +1,19 @@
+{
+  "build_stage": "qa_round_2",
+  "status": "in_progress",
+  "idempotency_key": "the-chef-grill-qa-round-2-start-2026-05-08",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+  "pitch_doc_path": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-checks-2026-05-08.json"
+  ],
+  "heartbeat_summary": "Started QA round 2 for The Chef Grill after QA round 1 fixes and evidence were synced."
+}

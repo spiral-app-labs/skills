@@ -1,0 +1,24 @@
+{
+  "build_stage": "improving",
+  "status": "in_progress",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/build/improvement-pass-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/build/improvement-preview-check-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/build/fork-build-evidence-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/build/fork-preview-check-2026-05-08.json"
+  ],
+  "artifact_urls": [],
+  "passed_requirement_ids": [
+    "improvement-pass-complete",
+    "conversion-paths",
+    "mobile-check"
+  ],
+  "heartbeat_summary": "Improvement pass complete with tighter anonymous proof, four-path mobile conversion, and static-build mobile verification."
+}

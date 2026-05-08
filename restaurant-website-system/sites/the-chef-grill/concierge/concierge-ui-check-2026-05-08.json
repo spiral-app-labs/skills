@@ -1,0 +1,29 @@
+{
+  "baseUrl": "http://127.0.0.1:3048",
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/concierge/screenshots/concierge-desktop-trigger-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/concierge/screenshots/concierge-desktop-dialog-answer-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/concierge/screenshots/concierge-mobile-trigger-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/concierge/screenshots/concierge-mobile-dialog-answer-2026-05-08.png"
+  ],
+  "checks": [
+    {
+      "viewport": "desktop",
+      "hasTrigger": true,
+      "hasDialog": true,
+      "hasMenuAnswer": true,
+      "hasSafetyCopy": true,
+      "hasNoReservationPromise": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "hasTrigger": true,
+      "hasDialog": true,
+      "hasMenuAnswer": true,
+      "hasSafetyCopy": true,
+      "hasNoReservationPromise": true,
+      "horizontalOverflow": false
+    }
+  ]
+}

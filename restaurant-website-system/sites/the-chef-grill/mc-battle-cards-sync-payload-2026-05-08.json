@@ -1,0 +1,34 @@
+{
+  "build_stage": "battle_cards",
+  "status": "in_progress",
+  "idempotency_key": "the-chef-grill-battle-cards-2026-05-08",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+  "pitch_doc_path": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+    "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+    "restaurant-website-system/sites/the-chef-grill/audit.md",
+    "restaurant-website-system/sites/the-chef-grill/top-three/top-three-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/concierge/concierge-evidence-2026-05-08.md"
+  ],
+  "evidence_objects": [
+    {
+      "url": "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+      "label": "Sales battle cards: objections, responses, demo path, proof points, risks",
+      "kind": "battle_cards"
+    }
+  ],
+  "passed_requirement_ids": [
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks"
+  ],
+  "heartbeat_summary": "Created The Chef Grill battle cards with objections/responses, demo path, proof points, and source-safe caveats."
+}

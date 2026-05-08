@@ -1,0 +1,21 @@
+{
+  "status": "blocked",
+  "summary": "Agency: QA round 3 passed locally for The Chef Grill, but Mission Control protected QA writeback returned 401 Unauthorized with the available SUPABASE_SECRET_KEY fallback. Local QA3 report/payload are prepared and ready to sync once agency auth is refreshed.",
+  "mode": "agency",
+  "source": "openclaw_website_agency",
+  "taskIds": ["d9024ee4-cc50-4247-8529-2cb8b30c5ab2", "956c9399-0c8c-45ef-bb2e-3af4bf4adf17"],
+  "metadata": {
+    "lead_id": "25633ae3-0c44-4d23-9996-da4440eeaa97",
+    "build_stage": "qa_round_3",
+    "endpoint": "/api/agency/leads/25633ae3-0c44-4d23-9996-da4440eeaa97/qa-rounds",
+    "auth_blocker": true,
+    "http_status": 401,
+    "available_env": {
+      "SUPABASE_SECRET_KEY": false,
+      "SUPABASE_SERVICE_ROLE_KEY": false,
+      "HEARTBEAT_fallback_key_present": true,
+      "mc_auth_cookie_present": false
+    },
+    "next_unblock_action": "Refresh Mission Control agency bearer auth for OpenClaw or provide a valid mc_auth session cookie, then POST mc-qa-round-3-payload-2026-05-08.json."
+  }
+}

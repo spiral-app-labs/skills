@@ -1,0 +1,8 @@
+# npm run lint
+# started 2026-05-08T14:27:36Z
+
+> the-chef-grill@0.1.0 lint
+> next lint
+
+✔ No ESLint warnings or errors
+# exit_status=0

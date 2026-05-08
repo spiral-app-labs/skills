@@ -1,0 +1,53 @@
+{
+  "build_stage": "packaging",
+  "completed_stage": "packaging_local_package",
+  "delivered": false,
+  "ready_to_pitch": false,
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "lead_id": "25633ae3-0c44-4d23-9996-da4440eeaa97",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "delivery_package_path": "restaurant-website-system/sites/the-chef-grill/delivery-package.md",
+  "outreach_draft_path": "restaurant-website-system/sites/the-chef-grill/outreach-draft.md",
+  "local_preview_url": "http://127.0.0.1:3057",
+  "public_preview_url": null,
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/delivery-package.md",
+    "restaurant-website-system/sites/the-chef-grill/outreach-draft.md",
+    "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+    "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+    "restaurant-website-system/sites/the-chef-grill/checklist.md",
+    "restaurant-website-system/sites/the-chef-grill/checklist.json",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-report-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/qa-round-2-report-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-report-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-live-checks-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-source-scan-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-vision-review-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/ai-concierge.md",
+    "restaurant-website-system/sites/the-chef-grill/ai-concierge-transcript.md"
+  ],
+  "blocked_requirement_ids": [
+    "delivery-public-preview-url",
+    "mission-control-protected-writeback",
+    "owner-factual-confirmation"
+  ],
+  "blockers": [
+    "Mission Control protected QA/build writeback returned 401 Unauthorized with currently available runtime credentials; AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET is required.",
+    "Public/client-shareable preview URL has not yet been created and verified.",
+    "Owner confirmation remains needed for day-by-day/holiday hours, catering/private-event capacity, preferred ordering provider, and owner/founder story/spelling."
+  ],
+  "verification": {
+    "local_package_created": "passed",
+    "typecheck": "passed after QA3 final fixes",
+    "build": "passed after QA3 final fixes",
+    "qa_round_3": "passed final sell-readiness with delivery caveats"
+  },
+  "mission_control_remote_sync": {
+    "attempted": true,
+    "blocker": "Protected route returned 401 Unauthorized with the available fallback key. No raw Supabase write was used."
+  },
+  "heartbeat_summary": "Created The Chef Grill local delivery package and outreach draft. Local QA3 passed, but ready_to_pitch/delivered remain false until Mission Control writeback auth and public preview URL are resolved."
+}

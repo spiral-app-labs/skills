@@ -1,0 +1,5 @@
+
+> the-chef-grill@0.1.0 typecheck
+> tsc --noEmit
+
+content.example.ts(400,5): error TS1005: ',' expected.

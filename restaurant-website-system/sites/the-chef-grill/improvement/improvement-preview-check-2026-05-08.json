@@ -1,0 +1,59 @@
+{
+  "baseUrl": "http://127.0.0.1:3043",
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/improvement/screenshots/improvement-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/improvement/screenshots/improvement-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/improvement/screenshots/improvement-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/improvement/screenshots/improvement-mobile-contact-2026-05-08.png"
+  ],
+  "checks": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "hasChefGrill": true,
+      "hasReviewCarousel": true,
+      "hasNamesInReviewCards": false,
+      "hasTemplateLeak": false,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "hasChefGrill": true,
+      "hasReviewCarousel": true,
+      "hasNamesInReviewCards": false,
+      "hasTemplateLeak": false,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "/contact",
+      "hasChefGrill": true,
+      "hasReviewCarousel": false,
+      "hasNamesInReviewCards": false,
+      "hasTemplateLeak": false,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/contact",
+      "hasChefGrill": true,
+      "hasReviewCarousel": false,
+      "hasNamesInReviewCards": false,
+      "hasTemplateLeak": false,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    }
+  ]
+}

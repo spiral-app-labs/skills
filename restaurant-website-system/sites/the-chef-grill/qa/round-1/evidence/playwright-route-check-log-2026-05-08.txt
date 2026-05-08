@@ -1,0 +1,37 @@
+{
+  "routeCoverage": [
+    "desktop / status 200 -> http://127.0.0.1:3051/",
+    "mobile / status 200 -> http://127.0.0.1:3051/",
+    "desktop /menu status 200 -> http://127.0.0.1:3051/#menu",
+    "mobile /menu status 200 -> http://127.0.0.1:3051/#menu",
+    "desktop /about status 200 -> http://127.0.0.1:3051/about",
+    "mobile /about status 200 -> http://127.0.0.1:3051/about",
+    "desktop /contact status 200 -> http://127.0.0.1:3051/contact",
+    "mobile /contact status 200 -> http://127.0.0.1:3051/contact"
+  ],
+  "telLinkPresent": true,
+  "expectedOrderLinksPresent": [
+    {
+      "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+      "present": true
+    },
+    {
+      "href": "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+      "present": true
+    },
+    {
+      "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+      "present": true
+    }
+  ],
+  "directionsLinkPresent": true,
+  "reviewProofPresent": true,
+  "anonymousReviewQuoteCheck": true,
+  "contentBans": {
+    "placeholder": false,
+    "fakeAwards": false,
+    "fakeReservations": false,
+    "unsupportedCateringPrivateEvents": false,
+    "unsupportedOwnerDetails": false
+  }
+}

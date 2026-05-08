@@ -1,0 +1,28 @@
+{
+  "build_stage": "qa_round_1",
+  "status": "in_progress",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "artifact_url": "http://127.0.0.1:3051",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-report-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-render-check-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-source-scan-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-about-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-about-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-contact-2026-05-08.png"
+  ],
+  "artifact_urls": ["http://127.0.0.1:3051"],
+  "passed_requirement_ids": ["qa1-findings", "qa1-fixes", "qa-round-1"],
+  "heartbeat_summary": "QA round 1 complete for The Chef Grill: content truth/build checks passed after fixing mobile contact overlay and customer-visible preview/source phrasing. Evidence and screenshots attached."
+}

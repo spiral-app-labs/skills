@@ -1,0 +1,9 @@
+# QA2 customer-facing source scan - 2026-05-08
+
+Scope: app, components, content.example.ts (customer-visible source only).
+
+Automated exact banned-language scan:
+- No exact banned/internal placeholder strings found.
+
+Reviewed benign matches separately: form placeholder attributes are customer-facing input hints, and component comments are not rendered to customers.
+Result: PASS - no customer-visible source-artifact, fake-review, lorem/dummy, or preview language found.
