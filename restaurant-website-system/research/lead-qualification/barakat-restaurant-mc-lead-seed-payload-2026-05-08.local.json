@@ -1,0 +1,53 @@
+{
+  "name": "Barakat Restaurant",
+  "address": "1090 Landmeier Road, Elk Grove Village, IL",
+  "city": "Elk Grove Village",
+  "state": "IL",
+  "website_url": "https://barakatplace.com/",
+  "status": "lead",
+  "notes": "Proposed by Evan heartbeat from 2026-05-08 NW suburbs net-new lead research. Recommendation: Build. Likely archetype: Bamzi. Opportunity: Official fetch exposed only title/badge; raw HTML contains Lovable/TODO metadata and no readable menu/reserve/order/location content.",
+  "metadata": {
+    "label": "proposed",
+    "proposed_by": "evan",
+    "source": "openclaw_net_new_lead_research",
+    "source_artifact": "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads.md",
+    "seed_priority": 1,
+    "recommendation": "Build",
+    "likely_archetype": "Bamzi",
+    "conversion_path": "Reserve table / walk in, plus Toast pickup ordering; site should explain signature dishes and route to reserve/order/directions.",
+    "why_sellable": "Distinctive Central Asian / European story with public reservation and order intent; official site appears to be a thin Lovable shell.",
+    "visible_website_gap_or_opportunity": "Official fetch exposed only title/badge; raw HTML contains Lovable/TODO metadata and no readable menu/reserve/order/location content.",
+    "evidence": [
+      "Official site fetch showed only 'Barakat' plus 'Edit with Lovable'.",
+      "Raw HTML includes placeholder TODO title comments and author=Lovable.",
+      "Search/OpenTable snippets described plov, manti, lagman, steaks, fresh pasta, and Central Asian/European positioning.",
+      "Toast search snippet showed pickup from 1090 Landmeier Road, Elk Grove Village, IL."
+    ],
+    "risks_unknowns": [
+      "May be a recently launched/in-progress official site.",
+      "Need verify hours, current menu, owner/contact name, preferred reservation/order providers, and photo permissions.",
+      "Cuisine labeling varies across public sources."
+    ],
+    "public_urls": [
+      "https://barakatplace.com/",
+      "https://www.opentable.com/r/barakat-restaurant-elk-grove-village",
+      "https://www.toasttab.com/local/order/barakat-restaurant",
+      "https://www.chicagonorthwest.com/listing/barakat-restaurant/6434/",
+      "https://www.yelp.com/biz/barakat-restaurant-elk-grove-village"
+    ],
+    "agency_website_workflow_intent": "seed_as_lead_then_promote_to_in_progress_when ready; or POST with status=in_progress/provision_workflow=true once protected API is deployed"
+  },
+  "scores": {
+    "opportunity": 90,
+    "website_quality": 25,
+    "contact_availability": 65,
+    "review_quality": null,
+    "composite": 86,
+    "signals": {
+      "independent": true,
+      "no_recent_redesign": true,
+      "likely_budget": true
+    }
+  },
+  "provision_workflow": false
+}

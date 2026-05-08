@@ -1,0 +1,162 @@
+{
+  "local_only": true,
+  "proposed": true,
+  "do_not_post": true,
+  "created_at": "2026-05-08",
+  "scope": "Safe, non-mutating public-source seed candidates for Spiral restaurant website agency around Schaumburg / northwest Chicago suburbs.",
+  "excluded_known_or_recent": [
+    "Tekka Sushi",
+    "The Graceful Ordinary",
+    "Sofia's Place",
+    "Tasty Bistro",
+    "Tin Man's Pub",
+    "Al's Cafe and Creamery",
+    "Bisi",
+    "BS Shrimp and Fish",
+    "Casa di Luigi",
+    "Joe's Pizza",
+    "Kai Mom's",
+    "Opolska",
+    "Phoday",
+    "Phoenix Flame",
+    "Pupuseria Cheros",
+    "QP Greek",
+    "The Hideout",
+    "Zbanok",
+    "Sorry Mommy",
+    "Maxfield's Pancake House",
+    "Noodle Deli",
+    "Bacowka Restaurant"
+  ],
+  "candidates": [
+    {
+      "name": "Barakat Restaurant",
+      "location": "Elk Grove Village, IL",
+      "official_urls": ["https://barakatplace.com/"],
+      "public_urls": [
+        "https://www.opentable.com/r/barakat-restaurant-elk-grove-village",
+        "https://www.toasttab.com/local/order/barakat-restaurant",
+        "https://www.chicagonorthwest.com/listing/barakat-restaurant/6434/",
+        "https://www.yelp.com/biz/barakat-restaurant-elk-grove-village"
+      ],
+      "why_sellable": "Distinctive Central Asian / European story with public reservation and order intent; official site appears to be a thin Lovable shell.",
+      "visible_website_gap_or_opportunity": "Official fetch exposed only title/badge; raw HTML contains Lovable/TODO metadata and no readable menu/reserve/order/location content.",
+      "likely_archetype": "Bamzi",
+      "conversion_path": "Reserve table / walk in, plus Toast pickup ordering; site should explain signature dishes and route to reserve/order/directions.",
+      "evidence": [
+        "Official site fetch showed only 'Barakat' plus 'Edit with Lovable'.",
+        "Raw HTML includes placeholder TODO title comments and author=Lovable.",
+        "Search/OpenTable snippets described plov, manti, lagman, steaks, fresh pasta, and Central Asian/European positioning.",
+        "Toast search snippet showed pickup from 1090 Landmeier Road, Elk Grove Village, IL."
+      ],
+      "risks_unknowns": [
+        "May be a recently launched/in-progress official site.",
+        "Need verify hours, current menu, owner/contact name, preferred reservation/order providers, and photo permissions.",
+        "Cuisine labeling varies across public sources."
+      ],
+      "recommendation": "Build",
+      "seed_priority": 1
+    },
+    {
+      "name": "The Chef Grill",
+      "location": "Elk Grove Village, IL",
+      "official_urls": ["https://www.thechefgrill.com/", "https://www.thechefgrill.com/menu/"],
+      "public_urls": [
+        "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+        "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+        "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ"
+      ],
+      "why_sellable": "Authentic halal Turkish/Mediterranean positioning with open kitchen, charcoal kebabs, manti, pide, stews, soups, breakfast/lunch, and order-platform demand.",
+      "visible_website_gap_or_opportunity": "Homepage has identity, but official menu extraction only exposed category headings and typos like Appettetiers/Cheff.",
+      "likely_archetype": "Cuisine",
+      "conversion_path": "Pickup/delivery through order.online/Grubhub/Uber Eats, plus dine-in directions/call; catering/group meals if verified.",
+      "evidence": [
+        "Official homepage fetch described halal meats, Turkish/Mediterranean dishes, open kitchen, manti, brick-oven pide, charcoal-grilled kebabs.",
+        "Official menu fetch exposed only categories such as Breakfast, Soups, SALADS, Cold Appettetiers, Entrees And Cheff Special, BRICK OVENS, Kebabs.",
+        "Search/order listings show 812 E Higgins Rd, Elk Grove Village."
+      ],
+      "risks_unknowns": [
+        "Need full current menu/prices and hours.",
+        "Need direct phone/contact and owner name.",
+        "Need verify catering truth and whether menu content is hidden behind scripts."
+      ],
+      "recommendation": "Build",
+      "seed_priority": 2
+    },
+    {
+      "name": "Big Ange's Eatery",
+      "location": "Arlington Heights, IL",
+      "official_urls": ["https://www.bigangeseatery.com/", "https://www.bigangeseatery.com/menu/"],
+      "public_urls": [
+        "https://business.arlingtonhcc.com/list/member/big-ange-s-eatery-4480",
+        "http://bigangeseaterybygrubhub.dine.online",
+        "https://www.doordash.com/en/store/Big-Ange-s-Eatery-Arlington-Heights-1467050/",
+        "https://www.yelp.com/biz/big-anges-eatery-arlington-heights"
+      ],
+      "why_sellable": "Family-owned BBQ/sandwich concept with in-house smoked meats, homemade sides, outdoor deck, and catering.",
+      "visible_website_gap_or_opportunity": "Current site has real content but duplicated footer/nav blocks, repeated catering PDFs, and awkward copy; strong chance to improve catering/order clarity.",
+      "likely_archetype": "Cuisine",
+      "conversion_path": "Order carryout/delivery through Grubhub/order link; secondary catering inquiry/PDF, call, directions, outdoor-deck dine-in.",
+      "evidence": [
+        "Official site lists address, hours, BBQ/sandwich menu, catering PDFs, and Grubhub order link.",
+        "Chamber listing says family-owned/operated, established June 2016, with brisket, tri-tip, pastrami, ribs, homemade sides, outdoor deck, catering."
+      ],
+      "risks_unknowns": [
+        "Existing web vendor/copyright means pitch should be a conversion upgrade, not broken-site rescue.",
+        "Need verify current catering PDF/prices and direct contact."
+      ],
+      "recommendation": "Build",
+      "seed_priority": 3
+    },
+    {
+      "name": "Palatine Inn Restaurant",
+      "location": "Palatine, IL",
+      "official_urls": ["https://thepalatineinn.com/", "https://thepalatineinn.com/menu/"],
+      "public_urls": [
+        "https://www.opachicago.com/greek-owned-business/palatine-inn-restaurant",
+        "https://www.doordash.com/business/308862/",
+        "https://www.facebook.com/PalatineInnRestaurant/",
+        "https://www.yelp.com/biz/palatine-inn-restaurant-palatine"
+      ],
+      "why_sellable": "Family-owned 20+ year Greek/American breakfast-lunch-dinner restaurant with broad menu, daily specials, homemade soups, and alcohol.",
+      "visible_website_gap_or_opportunity": "Older WordPress-heavy site; menu extraction showed all-caps descriptions and social embed/share noise; DoorDash badge does more conversion work than the page hierarchy.",
+      "likely_archetype": "Cuisine",
+      "conversion_path": "DoorDash/order, call, directions, and breakfast/lunch/dinner menu browsing; daily specials/social proof as secondary.",
+      "evidence": [
+        "Official site lists 95 W Northwest Hwy, Palatine, IL and DoorDash link.",
+        "OPA Chicago fetch says family-owned, breakfast/lunch/dinner seven days, over 20 years, homemade soups, daily specials, hours, phone."
+      ],
+      "risks_unknowns": [
+        "Website is functional, not broken.",
+        "Need verify current menu/prices, online ordering preference, owner/contact, and group-order/catering options."
+      ],
+      "recommendation": "Build",
+      "seed_priority": 4
+    },
+    {
+      "name": "Sweet Orange Pancake House & Cafe",
+      "location": "Schaumburg, IL",
+      "official_urls": ["https://sweetorangebreakfast.com/", "https://sweetorangebreakfast.com/menu/"],
+      "public_urls": [
+        "https://www.order.store/store/sweet-orange-pancake-house-%26-cafe/cJr0T5RPV72pY60SW_hbzQ",
+        "https://www.instagram.com/cafesweetorange",
+        "https://www.facebook.com/share/qd7nDa95wMA5Yyoq"
+      ],
+      "why_sellable": "Family-owned 20+ year Schaumburg brunch spot with deep breakfast/cafe menu and direct order link.",
+      "visible_website_gap_or_opportunity": "Functional but generic/duplicative homepage; /order-online/ returns 404 while real order link exists in nav/HTML; menu needs stronger mobile hierarchy.",
+      "likely_archetype": "Cuisine",
+      "conversion_path": "Order.store pickup/delivery, call, directions, menu browsing, and Instagram/social proof.",
+      "evidence": [
+        "Official homepage fetch captured address, phone, hours, delivery section, and family-owned 20+ years positioning.",
+        "Official menu fetch captured broad categories and sample items/prices.",
+        "Site HTML exposed order.store, Instagram, and Facebook URLs; /order-online/ fetch returned a 404 page."
+      ],
+      "risks_unknowns": [
+        "Existing site is functional and menu-rich; pitch is polish/conversion.",
+        "Need verify latest menu/prices, owner/contact, and whether 404 order path affects users."
+      ],
+      "recommendation": "Build",
+      "seed_priority": 5
+    }
+  ]
+}

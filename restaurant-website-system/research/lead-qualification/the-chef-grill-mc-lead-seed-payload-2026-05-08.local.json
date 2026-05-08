@@ -1,0 +1,52 @@
+{
+  "name": "The Chef Grill",
+  "address": "812 E Higgins Rd, Elk Grove Village, IL",
+  "city": "Elk Grove Village",
+  "state": "IL",
+  "website_url": "https://www.thechefgrill.com/",
+  "status": "lead",
+  "notes": "Proposed by Evan heartbeat from 2026-05-08 NW suburbs net-new lead research. Recommendation: Build. Likely archetype: Cuisine. Opportunity: Homepage has identity, but official menu extraction only exposed category headings and typos like Appettetiers/Cheff.",
+  "metadata": {
+    "label": "proposed",
+    "proposed_by": "evan",
+    "source": "openclaw_net_new_lead_research",
+    "source_artifact": "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads.md",
+    "seed_priority": 2,
+    "recommendation": "Build",
+    "likely_archetype": "Cuisine",
+    "conversion_path": "Pickup/delivery through order.online/Grubhub/Uber Eats, plus dine-in directions/call; catering/group meals if verified.",
+    "why_sellable": "Authentic halal Turkish/Mediterranean positioning with open kitchen, charcoal kebabs, manti, pide, stews, soups, breakfast/lunch, and order-platform demand.",
+    "visible_website_gap_or_opportunity": "Homepage has identity, but official menu extraction only exposed category headings and typos like Appettetiers/Cheff.",
+    "evidence": [
+      "Official homepage fetch described halal meats, Turkish/Mediterranean dishes, open kitchen, manti, brick-oven pide, charcoal-grilled kebabs.",
+      "Official menu fetch exposed only categories such as Breakfast, Soups, SALADS, Cold Appettetiers, Entrees And Cheff Special, BRICK OVENS, Kebabs.",
+      "Search/order listings show 812 E Higgins Rd, Elk Grove Village."
+    ],
+    "risks_unknowns": [
+      "Need full current menu/prices and hours.",
+      "Need direct phone/contact and owner name.",
+      "Need verify catering truth and whether menu content is hidden behind scripts."
+    ],
+    "public_urls": [
+      "https://www.thechefgrill.com/",
+      "https://www.thechefgrill.com/menu/",
+      "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+      "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+      "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ"
+    ],
+    "agency_website_workflow_intent": "seed_as_lead_then_promote_to_in_progress_when ready; or POST with status=in_progress/provision_workflow=true once protected API is deployed"
+  },
+  "scores": {
+    "opportunity": 84,
+    "website_quality": 45,
+    "contact_availability": 65,
+    "review_quality": null,
+    "composite": 80,
+    "signals": {
+      "independent": true,
+      "no_recent_redesign": false,
+      "likely_budget": true
+    }
+  },
+  "provision_workflow": false
+}

@@ -1,0 +1,34 @@
+{
+  "lead": "Barakat Restaurant",
+  "lead_id": "e90facac-3da9-4187-99df-500afac151cf",
+  "root_task_id": "ff7c934c-1fc1-419e-87d3-e2735bdd7194",
+  "decision": "Build",
+  "recommended_template_register": "Bamzi",
+  "why_switch_sentence": "If Barakat saw the redesign, the specific reason they would switch is that their current official site looks like an unfinished AI/Lovable shell while their real restaurant already has enough reserve/order demand and cuisine story to deserve a trust-building, conversion-oriented site.",
+  "checks": {
+    "visual_reality": "Directionally pass; public surfaces indicate real dine-in restaurant, but full photo audit remains required before final build.",
+    "menu_pricing_register": "Mid-to-upper local dinner register based on public snippets/research citing plov, manti, lagman, grilled steaks, and fresh pasta.",
+    "review_tone": "Enough to proceed; no invented review quotes. Full review packet remains later gate.",
+    "current_site_quality": "1/10. Official site fetch exposed only Barakat plus Edit with Lovable badge and no conversion basics.",
+    "why_switch": "Current official site appears unfinished while reserve/order demand and cuisine story exist elsewhere.",
+    "switching_cost": "Moderate: OpenTable/Toast links can be preserved rather than migrated.",
+    "would_i_eat_here": "Pass if positioned as atmospheric and approachable, not over-luxury fine dining."
+  },
+  "evidence_paths": [
+    "restaurant-website-system/sites/barakat-restaurant/qualification/lead-fit-qualification-2026-05-08.md",
+    "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads.md",
+    "restaurant-website-system/research/lead-qualification/barakat-restaurant-mc-lead-seed-payload-2026-05-08.local.json"
+  ],
+  "source_urls": [
+    "https://barakatplace.com/",
+    "https://www.opentable.com/r/barakat-restaurant-elk-grove-village",
+    "https://www.toasttab.com/local/order/barakat-restaurant",
+    "https://www.chicagonorthwest.com/listing/barakat-restaurant/6434/",
+    "https://www.yelp.com/biz/barakat-restaurant-elk-grove-village"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "lead-fit-seven-checks",
+    "lead-fit-evidence"
+  ]
+}
