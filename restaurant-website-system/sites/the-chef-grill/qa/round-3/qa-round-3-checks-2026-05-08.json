@@ -1,0 +1,123 @@
+{
+  "method": "offline-built-html-fallback",
+  "browserPlugin": "not available",
+  "fallbackReason": "Sandbox blocked localhost binding (next start -> listen EPERM on 127.0.0.1:3055) and blocked fresh headless Chrome execution, so QA3 used built-output inspection plus the preserved round-3 screenshot set already present in the repo.",
+  "serverAttempt": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3055",
+    "status": "blocked",
+    "error": "listen EPERM: operation not permitted 127.0.0.1:3055",
+    "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-3/evidence/server-start-attempt-2026-05-08.txt"
+  },
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-home-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-home-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-menu-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-menu-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-contact-final-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-contact-final-2026-05-08.png"
+  ],
+  "checks": {
+    "desktopHome": {
+      "pageTitle": true,
+      "identity": true,
+      "proof": true,
+      "orderOnline": true,
+      "telLink": true,
+      "directionsLink": true,
+      "googleAddressDirections": true,
+      "uberEatsPresent": true,
+      "noPlaceholder": true,
+      "noFakeAwards": true,
+      "noFakeReservations": true,
+      "noUnverifiedOwnerStory": true,
+      "noInventedHours": true,
+      "reviewNamesHidden": true,
+      "quickActionsPresent": true
+    },
+    "desktopMenu": {
+      "hasMenuDepth": true,
+      "shortcutIdsPresent": true,
+      "shortcutLinksPresent": true
+    },
+    "desktopAbout": {
+      "identity": true,
+      "noInventedClaims": true
+    },
+    "desktopContact": {
+      "fieldOrderPass": true,
+      "hasPhone": true,
+      "hasEmail": true,
+      "hasDirections": true,
+      "providerLinks": {
+        "officialMenu": true,
+        "orderOnline": true,
+        "grubhub": true,
+        "uberEats": true
+      },
+      "noMobileQuickActions": true,
+      "hoursSafe": true
+    },
+    "mobileHome": {
+      "heroClear": true,
+      "quickActionsPass": true
+    },
+    "mobileMenu": {
+      "chipsPass": true,
+      "menuReadable": true
+    },
+    "mobileContact": {
+      "fieldOrderPass": true,
+      "noMobileQuickActions": true,
+      "conciergeMounted": true
+    },
+    "menuRoute": {
+      "fallbackCopyPresent": true,
+      "homeMenuShortcutPresent": true,
+      "noBrokenServerRedirect": true
+    },
+    "docs": {
+      "pitchDocPresent": true,
+      "battleCardsPresent": true,
+      "caveatsAligned": true,
+      "evidencePathsExist": {
+        "audit.md": true,
+        "scrapes/google-reviews-highest-30.md": true,
+        "build/improvement-pass-2026-05-08.md": true,
+        "top-three/top-three-improvements-2026-05-08.md": true,
+        "concierge/concierge-evidence-2026-05-08.md": true
+      },
+      "noUnsafeClaims": true
+    },
+    "conciergeEvidence": {
+      "markdownPresent": true,
+      "apiTestPresent": true,
+      "uiCheckPresent": true,
+      "desktopTriggerShot": true,
+      "desktopDialogShot": true,
+      "mobileTriggerShot": true,
+      "mobileDialogShot": true
+    },
+    "topThreeEvidence": {
+      "markdownPresent": true,
+      "focusedCheckPresent": true,
+      "reviewProofShots": true,
+      "menuShortcutShots": true
+    },
+    "screenshotEvidence": {
+      "preservedRound3Set": {
+        "qa/round-3/screenshots/qa3-desktop-home-final-2026-05-08.png": true,
+        "qa/round-3/screenshots/qa3-mobile-home-final-2026-05-08.png": true,
+        "qa/round-3/screenshots/qa3-desktop-menu-final-2026-05-08.png": true,
+        "qa/round-3/screenshots/qa3-mobile-menu-final-2026-05-08.png": true,
+        "qa/round-3/screenshots/qa3-desktop-contact-final-2026-05-08.png": true,
+        "qa/round-3/screenshots/qa3-mobile-contact-final-2026-05-08.png": true
+      }
+    }
+  },
+  "summary": {
+    "allPass": true,
+    "previewUrl": null,
+    "packagingBlocker": "No public Vercel/deployed preview URL is attached yet.",
+    "cleanTypecheckRequiresBuild": true
+  }
+}

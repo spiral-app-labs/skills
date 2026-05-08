@@ -1,0 +1,25 @@
+{
+  "build_stage": "building",
+  "status": "in_progress",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "artifact_url": "http://127.0.0.1:3041",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/build/fork-build-evidence-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/build/fork-preview-check-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-contact-2026-05-08.png"
+  ],
+  "passed_requirement_ids": [
+    "route-one-archetype",
+    "fork-preview",
+    "specificity",
+    "fork-built"
+  ],
+  "heartbeat_summary": "Initial plate-01/Cuisine fork for The Chef Grill built locally, build/typecheck passed, screenshots captured, and preview QA found no major blocker. No production deploy triggered."
+}

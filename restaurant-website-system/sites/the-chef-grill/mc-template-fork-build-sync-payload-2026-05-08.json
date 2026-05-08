@@ -1,0 +1,44 @@
+{
+  "build_stage": "building",
+  "status": "in_progress",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/.agency-template.json",
+    "restaurant-website-system/sites/the-chef-grill/package.json",
+    "restaurant-website-system/sites/the-chef-grill/content.example.ts",
+    "restaurant-website-system/sites/the-chef-grill/evidence/typecheck-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/evidence/lint-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/evidence/build-2026-05-08.txt",
+    "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-mobile-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/fork-build-evidence-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/build/fork-preview-check-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/routing.md",
+    "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md"
+  ],
+  "artifact_urls": [
+    "http://127.0.0.1:3041",
+    "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-mobile-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/fork-preview-check-2026-05-08.json"
+  ],
+  "passed_requirement_ids": [
+    "fork-built",
+    "fork-preview",
+    "specificity"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Template fork/build gate complete for The Chef Grill: plate-01/Cuisine fork is working locally, package/source metadata are correct, personalized verified Chef Grill content is in place, typecheck/lint/build passed, and local preview screenshots are captured."
+}

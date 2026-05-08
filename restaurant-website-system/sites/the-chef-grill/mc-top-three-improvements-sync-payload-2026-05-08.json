@@ -1,0 +1,22 @@
+{
+  "build_stage": "top_3_improvements",
+  "status": "in_progress",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "artifact_url": "http://127.0.0.1:3046",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/top-three/top-three-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/top-three/top-three-focused-check-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-desktop-menu-shortcut-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-mobile-menu-shortcut-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-desktop-review-proof-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-mobile-review-proof-2026-05-08.png"
+  ],
+  "passed_requirement_ids": [
+    "top-three-ranked",
+    "top-three-implemented",
+    "top-three-evidence"
+  ],
+  "heartbeat_summary": "Top 3 sellability improvements complete for The Chef Grill: anonymous Google proof carousel, menu shortcut chips, and mobile conversion/reliability fixes. Build/typecheck and focused screenshot QA passed."
+}

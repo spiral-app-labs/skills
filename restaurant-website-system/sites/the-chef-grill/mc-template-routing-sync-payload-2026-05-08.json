@@ -1,0 +1,36 @@
+{
+  "build_stage": "routing",
+  "status": "in_progress",
+  "idempotency_key": "the-chef-grill-template-routing-plate-01-2026-05-08",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/routing.md",
+    "restaurant-website-system/sites/the-chef-grill/routing.json",
+    "restaurant-website-system/sites/the-chef-grill/audit.md",
+    "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md"
+  ],
+  "evidence_objects": [
+    {
+      "url": "restaurant-website-system/sites/the-chef-grill/routing.md",
+      "label": "Template route locked: Cuisine archetype using plate-01",
+      "kind": "template_routing"
+    },
+    {
+      "url": "restaurant-website-system/sites/the-chef-grill/routing.json",
+      "label": "Structured route modifiers, rejected templates, and required sections",
+      "kind": "template_routing_json"
+    }
+  ],
+  "passed_requirement_ids": [
+    "template-route-locked",
+    "template-route-alternatives",
+    "template-route-modifiers"
+  ],
+  "heartbeat_summary": "Locked The Chef Grill to the Cuisine archetype with concrete template slug plate-01, with rejected alternatives and build modifiers recorded."
+}

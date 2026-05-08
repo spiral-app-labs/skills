@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What are your hours?",
+    "status": 200,
+    "response": {
+      "text": "The verified hours note available here is the official contact-form window, 9:00 AM to 11:30 PM. Day-by-day or holiday hours are not verified here, so call (312) 313-8900 before a time-sensitive visit."
+    }
+  },
+  {
+    "question": "Can I reserve a table or book catering?",
+    "status": 200,
+    "response": {
+      "text": "For a table, group meal, celebration, or catering question, call (312) 313-8900. The available restaurant materials support calling and a celebration/contact form, but this guide does not promise availability, capacity, or event details."
+    }
+  },
+  {
+    "question": "Is the food halal?",
+    "status": 200,
+    "response": {
+      "text": "The Chef Grill is described in the source material as a halal Turkish and Mediterranean restaurant, and Google review themes repeatedly mention halal and zabiha-halal trust. For ingredient-specific questions, please call (312) 313-8900 so the restaurant can confirm in real time."
+    }
+  },
+  {
+    "question": "What should I order?",
+    "status": 200,
+    "response": {
+      "text": "Good first orders from the verified menu and review themes include King Chef mixed grill, Iskender kebab, Lamb Beyti kebab, Adana kebab, pide, lahmacun, manti, red lentil soup. For dessert or drinks, guests mention pistachio cheesecake, baklava, ayran, and Turkish tea."
+    }
+  }
+]

@@ -1,0 +1,1053 @@
+{
+  "baseUrl": "http://127.0.0.1:3051",
+  "generatedAt": "2026-05-08T14:19:00.196Z",
+  "expected": {
+    "phoneRaw": "3123138900",
+    "tel": "tel:+13123138900",
+    "addressParts": [
+      "812 E Higgins Rd",
+      "Elk Grove Village",
+      "IL"
+    ],
+    "reviewRating": "4.7",
+    "reviewCount": "807",
+    "orderLinks": [
+      "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+      "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+      "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 7286,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call (312) 313-8900",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Charcoal Kebabs",
+          "href": "http://127.0.0.1:3051/#kebabs",
+          "target": null
+        },
+        {
+          "text": "Brick Oven Pide & Lahmacun",
+          "href": "http://127.0.0.1:3051/#brick-oven",
+          "target": null
+        },
+        {
+          "text": "Breakfast",
+          "href": "http://127.0.0.1:3051/#breakfast-soups",
+          "target": null
+        },
+        {
+          "text": "Meze, Hot Sides & Chef Specials",
+          "href": "http://127.0.0.1:3051/#meze-specials",
+          "target": null
+        },
+        {
+          "text": "Seafood, Salads & Family Options",
+          "href": "http://127.0.0.1:3051/#seafood-salads-kids",
+          "target": null
+        },
+        {
+          "text": "Desserts",
+          "href": "http://127.0.0.1:3051/#desserts-drinks",
+          "target": null
+        },
+        {
+          "text": "Open Google directions →",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-desktop-home-2026-05-08.png"
+    },
+    {
+      "route": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 7283,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call (312) 313-8900",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Charcoal Kebabs",
+          "href": "http://127.0.0.1:3051/#kebabs",
+          "target": null
+        },
+        {
+          "text": "Brick Oven Pide & Lahmacun",
+          "href": "http://127.0.0.1:3051/#brick-oven",
+          "target": null
+        },
+        {
+          "text": "Breakfast",
+          "href": "http://127.0.0.1:3051/#breakfast-soups",
+          "target": null
+        },
+        {
+          "text": "Meze, Hot Sides & Chef Specials",
+          "href": "http://127.0.0.1:3051/#meze-specials",
+          "target": null
+        },
+        {
+          "text": "Seafood, Salads & Family Options",
+          "href": "http://127.0.0.1:3051/#seafood-salads-kids",
+          "target": null
+        },
+        {
+          "text": "Desserts",
+          "href": "http://127.0.0.1:3051/#desserts-drinks",
+          "target": null
+        },
+        {
+          "text": "Open Google directions →",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-mobile-home-2026-05-08.png"
+    },
+    {
+      "route": "/menu",
+      "viewport": "desktop",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/#menu",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 7286,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call (312) 313-8900",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Charcoal Kebabs",
+          "href": "http://127.0.0.1:3051/#kebabs",
+          "target": null
+        },
+        {
+          "text": "Brick Oven Pide & Lahmacun",
+          "href": "http://127.0.0.1:3051/#brick-oven",
+          "target": null
+        },
+        {
+          "text": "Breakfast",
+          "href": "http://127.0.0.1:3051/#breakfast-soups",
+          "target": null
+        },
+        {
+          "text": "Meze, Hot Sides & Chef Specials",
+          "href": "http://127.0.0.1:3051/#meze-specials",
+          "target": null
+        },
+        {
+          "text": "Seafood, Salads & Family Options",
+          "href": "http://127.0.0.1:3051/#seafood-salads-kids",
+          "target": null
+        },
+        {
+          "text": "Desserts",
+          "href": "http://127.0.0.1:3051/#desserts-drinks",
+          "target": null
+        },
+        {
+          "text": "Open Google directions →",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-desktop-menu-2026-05-08.png"
+    },
+    {
+      "route": "/menu",
+      "viewport": "mobile",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/#menu",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 7283,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call (312) 313-8900",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Charcoal Kebabs",
+          "href": "http://127.0.0.1:3051/#kebabs",
+          "target": null
+        },
+        {
+          "text": "Brick Oven Pide & Lahmacun",
+          "href": "http://127.0.0.1:3051/#brick-oven",
+          "target": null
+        },
+        {
+          "text": "Breakfast",
+          "href": "http://127.0.0.1:3051/#breakfast-soups",
+          "target": null
+        },
+        {
+          "text": "Meze, Hot Sides & Chef Specials",
+          "href": "http://127.0.0.1:3051/#meze-specials",
+          "target": null
+        },
+        {
+          "text": "Seafood, Salads & Family Options",
+          "href": "http://127.0.0.1:3051/#seafood-salads-kids",
+          "target": null
+        },
+        {
+          "text": "Desserts",
+          "href": "http://127.0.0.1:3051/#desserts-drinks",
+          "target": null
+        },
+        {
+          "text": "Open Google directions →",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-mobile-menu-2026-05-08.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "desktop",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/about",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 2333,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-desktop-about-2026-05-08.png"
+    },
+    {
+      "route": "/about",
+      "viewport": "mobile",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/about",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 2330,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-mobile-about-2026-05-08.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "desktop",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/contact",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 1708,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": true,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get directions →",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=42.0275064,-87.9753786",
+          "target": "_blank"
+        },
+        {
+          "text": "3123138900",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "info@thechefgrill.com",
+          "href": "mailto:info@thechefgrill.com",
+          "target": null
+        },
+        {
+          "text": "Official menu",
+          "href": "https://www.thechefgrill.com/menu/",
+          "target": null
+        },
+        {
+          "text": "Official online order",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Grubhub",
+          "href": "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-desktop-contact-2026-05-08.png"
+    },
+    {
+      "route": "/contact",
+      "viewport": "mobile",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:3051/contact",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "textLength": 1666,
+      "hasPlaceholderText": false,
+      "hasFakeReservationLanguage": false,
+      "hasUnsupportedCateringPromise": false,
+      "hasFakeAwards": false,
+      "includesPhone": true,
+      "includesAddress": true,
+      "includesReviewProof": false,
+      "anchors": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3051/",
+          "target": null
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3051/#menu",
+          "target": null
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3051/about",
+          "target": null
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3051/contact",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get directions →",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=42.0275064,-87.9753786",
+          "target": "_blank"
+        },
+        {
+          "text": "3123138900",
+          "href": "tel:+13123138900",
+          "target": null
+        },
+        {
+          "text": "info@thechefgrill.com",
+          "href": "mailto:info@thechefgrill.com",
+          "target": null
+        },
+        {
+          "text": "Official menu",
+          "href": "https://www.thechefgrill.com/menu/",
+          "target": null
+        },
+        {
+          "text": "Official online order",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Grubhub",
+          "href": "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Get Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "target": null
+        },
+        {
+          "text": "Official site",
+          "href": "https://www.thechefgrill.com/",
+          "target": null
+        },
+        {
+          "text": "Order online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "target": null
+        },
+        {
+          "text": "Uber Eats",
+          "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+          "target": null
+        }
+      ],
+      "screenshot": "qa/round-1/screenshots/qa1-mobile-contact-2026-05-08.png"
+    }
+  ],
+  "screenshots": [
+    "qa/round-1/screenshots/qa1-desktop-home-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-mobile-home-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-desktop-menu-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-mobile-menu-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-desktop-about-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-mobile-about-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-desktop-contact-2026-05-08.png",
+    "qa/round-1/screenshots/qa1-mobile-contact-2026-05-08.png"
+  ],
+  "sitewide": {
+    "routeCoverage": [
+      "desktop / status 200 -> http://127.0.0.1:3051/",
+      "mobile / status 200 -> http://127.0.0.1:3051/",
+      "desktop /menu status 200 -> http://127.0.0.1:3051/#menu",
+      "mobile /menu status 200 -> http://127.0.0.1:3051/#menu",
+      "desktop /about status 200 -> http://127.0.0.1:3051/about",
+      "mobile /about status 200 -> http://127.0.0.1:3051/about",
+      "desktop /contact status 200 -> http://127.0.0.1:3051/contact",
+      "mobile /contact status 200 -> http://127.0.0.1:3051/contact"
+    ],
+    "telLinkPresent": true,
+    "expectedOrderLinksPresent": [
+      {
+        "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+        "present": true
+      },
+      {
+        "href": "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+        "present": true
+      },
+      {
+        "href": "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ",
+        "present": true
+      }
+    ],
+    "directionsLinkPresent": true,
+    "reviewProofPresent": true,
+    "anonymousReviewQuoteCheck": true,
+    "contentBans": {
+      "placeholder": false,
+      "fakeAwards": false,
+      "fakeReservations": false,
+      "unsupportedCateringPrivateEvents": false,
+      "unsupportedOwnerDetails": false
+    }
+  }
+}

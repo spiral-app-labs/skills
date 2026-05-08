@@ -1,0 +1,74 @@
+{
+  "site_slug": "the-chef-grill",
+  "restaurant_name": "The Chef Grill",
+  "generated_at": "2026-05-08T13:17:23.401663Z",
+  "mc_lead_id": "25633ae3-0c44-4d23-9996-da4440eeaa97",
+  "mc_root_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "selected_archetype": "Cuisine",
+  "current_site_url": "https://www.thechefgrill.com/",
+  "audit_verdict": "Build / improve",
+  "verified_facts": {
+    "chef_founder": "\u0130brahim Kelesabd\u0131oglu",
+    "positioning": "Halal Turkish and Mediterranean restaurant in Elk Grove Village",
+    "address": "812 E Higgins Rd, Elk Grove Village, IL 60007, United States",
+    "email": "info@thechefgrill.com",
+    "phone": "3123138900",
+    "event_time_window_on_contact_page": "9:00 AM to 11:30 PM",
+    "rough_menu_price_occurrences": 87
+  },
+  "issues": [
+    "weak above-fold conversion",
+    "poor mobile hero readability",
+    "paragraph-heavy proof",
+    "menu scanability issues",
+    "typos/inconsistent category labels",
+    "confusing order/reservation paths",
+    "uneven visual polish",
+    "contact/hours not prominent enough"
+  ],
+  "opportunities": [
+    "Cuisine base with clear local CTAs",
+    "signature dish strip",
+    "halal/open-kitchen/charcoal-grill badges",
+    "sticky category menu",
+    "verify preferred order path",
+    "event/catering module if verified"
+  ],
+  "evidence_paths": {
+    "audit_markdown": "restaurant-website-system/sites/the-chef-grill/audit.md",
+    "screenshots": [
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-home-desktop-full.png",
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-home-mobile-full.png",
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-menu-desktop-long.png",
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-menu-mobile-long.png"
+    ],
+    "scrapes": [
+      "restaurant-website-system/sites/the-chef-grill/scrapes/breakfast.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/breakfast.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/breakfast.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/brick-ovens.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/brick-ovens.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/brick-ovens.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/contact.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/contact.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/contact.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/home.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/home.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/home.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/kebabs.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/kebabs.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/kebabs.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/menu.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/menu.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/menu.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/order-online.error.txt"
+    ]
+  },
+  "next_research": [
+    "Google Highest review packet",
+    "preferred order path",
+    "hours/contact/owner spelling",
+    "catering/group-meal truth"
+  ]
+}

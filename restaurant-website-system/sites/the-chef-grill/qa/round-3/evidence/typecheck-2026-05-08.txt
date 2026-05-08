@@ -1,0 +1,22 @@
+
+> the-chef-grill@0.1.0 typecheck
+> tsc --noEmit
+
+error TS6053: File '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/.next/types/app/about/page.ts' not found.
+  The file is in the program because:
+    Matched by include pattern '.next/types/**/*.ts' in '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/tsconfig.json'
+error TS6053: File '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/.next/types/app/api/chat/route.ts' not found.
+  The file is in the program because:
+    Matched by include pattern '.next/types/**/*.ts' in '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/tsconfig.json'
+error TS6053: File '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/.next/types/app/contact/page.ts' not found.
+  The file is in the program because:
+    Matched by include pattern '.next/types/**/*.ts' in '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/tsconfig.json'
+error TS6053: File '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/.next/types/app/layout.ts' not found.
+  The file is in the program because:
+    Matched by include pattern '.next/types/**/*.ts' in '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/tsconfig.json'
+error TS6053: File '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/.next/types/app/menu/page.ts' not found.
+  The file is in the program because:
+    Matched by include pattern '.next/types/**/*.ts' in '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/tsconfig.json'
+error TS6053: File '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/.next/types/app/page.ts' not found.
+  The file is in the program because:
+    Matched by include pattern '.next/types/**/*.ts' in '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/the-chef-grill/tsconfig.json'

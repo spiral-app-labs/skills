@@ -1,0 +1,163 @@
+{
+  "baseUrl": "http://127.0.0.1:3052",
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-hero-sticky-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-menu-shortcuts-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-review-proof-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-visit-ctas-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-contact-flow-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-desktop-home-polish-2026-05-08.png"
+  ],
+  "checks": {
+    "mobileHero": {
+      "hasHeroCuisine": true,
+      "hasProof": true,
+      "quickActions": [
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+          "width": 91,
+          "height": 44,
+          "bottom": 8,
+          "top": 792,
+          "visibleWithinViewport": true
+        },
+        {
+          "text": "View Menu",
+          "href": "http://127.0.0.1:3052/#menu",
+          "width": 91,
+          "height": 44,
+          "bottom": 8,
+          "top": 792,
+          "visibleWithinViewport": true
+        },
+        {
+          "text": "Call",
+          "href": "tel:+13123138900",
+          "width": 91,
+          "height": 44,
+          "bottom": 8,
+          "top": 792,
+          "visibleWithinViewport": true
+        },
+        {
+          "text": "Directions",
+          "href": "https://www.google.com/maps/dir/?api=1&destination=812%20E%20Higgins%20Rd%2C%20Elk%20Grove%20Village%2C%20IL%2060007",
+          "width": 91,
+          "height": 44,
+          "bottom": 8,
+          "top": 792,
+          "visibleWithinViewport": true
+        }
+      ],
+      "quickActionsPass": true,
+      "conciergeVisible": true,
+      "conciergeAboveSticky": true,
+      "horizontalOverflow": false
+    },
+    "mobileMenu": {
+      "chips": [
+        {
+          "text": "Charcoal Kebabs",
+          "href": "#kebabs",
+          "width": 139,
+          "height": 36
+        },
+        {
+          "text": "Brick Oven Pide & Lahmacun",
+          "href": "#brick-oven",
+          "width": 211,
+          "height": 36
+        },
+        {
+          "text": "Breakfast",
+          "href": "#breakfast-soups",
+          "width": 93,
+          "height": 36
+        },
+        {
+          "text": "Meze, Hot Sides & Chef Specials",
+          "href": "#meze-specials",
+          "width": 234,
+          "height": 36
+        },
+        {
+          "text": "Seafood, Salads & Family Options",
+          "href": "#seafood-salads-kids",
+          "width": 243,
+          "height": 36
+        },
+        {
+          "text": "Desserts",
+          "href": "#desserts-drinks",
+          "width": 87,
+          "height": 36
+        }
+      ],
+      "chipTapTargetsPass": true,
+      "menuReadable": true,
+      "horizontalOverflow": false
+    },
+    "mobileReview": {
+      "hasAnonymousProof": true,
+      "hasNoFakeNames": true,
+      "candidateText": "Elk Grove Village · halal Turkish grill\nHalal Turkish grill,\ncharcoal kebabs,\nfresh bread daily\n\nThe Chef Grill on Higgins Road serves mixed grills, Iskender, Beyti, Adana, pide, lahmacun, manti, kunefe, pistachio cheesecake, house ayran, and Turkish tea.\n\n4.7 ★ Google rating\n807 reviews\nHalal Turkish & Mediterranean\nOrder Online\nView Menu\nCall (312) 313-8900",
+      "horizontalOverflow": false
+    },
+    "mobileVisit": {
+      "hasOrder": true,
+      "hasMenu": true,
+      "hasDirections": true,
+      "hasCall": true,
+      "horizontalOverflow": false
+    },
+    "mobileContact": {
+      "labels": [
+        "Your name",
+        "Email",
+        "Subject",
+        "Message"
+      ],
+      "fieldOrderPass": true,
+      "fixedMobileQuickActionsAbsent": true,
+      "hasClickablePhone": true,
+      "hasClickableEmail": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    "desktop": {
+      "hasBrand": true,
+      "headerLinks": [
+        {
+          "text": "the chef grill",
+          "href": "http://127.0.0.1:3052/"
+        },
+        {
+          "text": "Home",
+          "href": "http://127.0.0.1:3052/"
+        },
+        {
+          "text": "Menu",
+          "href": "http://127.0.0.1:3052/#menu"
+        },
+        {
+          "text": "About",
+          "href": "http://127.0.0.1:3052/about"
+        },
+        {
+          "text": "Visit",
+          "href": "http://127.0.0.1:3052/contact"
+        },
+        {
+          "text": "Order Online",
+          "href": "https://order.online/store/the-chef-grill-elk-grove-village-33689647"
+        }
+      ],
+      "hasOrderHeader": true,
+      "noHorizontalOverflow": true
+    }
+  },
+  "summary": {
+    "allPass": true
+  }
+}

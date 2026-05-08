@@ -1,0 +1,417 @@
+{
+  "site_slug": "the-chef-grill",
+  "restaurant_name": "The Chef Grill",
+  "created_at": "2026-05-08T13:05:45.644864Z",
+  "mc_lead_id": "25633ae3-0c44-4d23-9996-da4440eeaa97",
+  "mc_root_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "workflow_child_task_ids": {
+    "lead_qualification": "a046a770-11b7-43e8-8a93-5a30f0c6ccdd",
+    "checklist": "30f78212-7708-437c-a502-d7a4f37a0cd1",
+    "current_site_audit": "fbd8a273-15fa-4c3e-b5d6-6af2972a690a",
+    "google_reviews_capture": "fa897316-4090-459b-a3cc-10f3b6bf9fd3",
+    "template_routing": "ca50ec2d-a166-48b0-9bf5-43c08094ac71",
+    "template_fork_build": "3dd3db84-c7c4-4c8f-b62e-d24e06f5b83d",
+    "improvement_pass": "36e1ff99-3fda-4415-bc02-83e76481048c",
+    "top_three_improvements": "8cdd9dd3-e155-457e-966f-851ea8efd217",
+    "ai_concierge": "74f777e8-0ad5-4189-9610-3a40fa31d958",
+    "pitch_doc": "d57e6987-f9f7-4b47-a287-0fa1f8efa04c",
+    "battle_cards": "3c6418df-961a-464c-9bb5-7bb96029db6b",
+    "qa_round_1": "5836237d-f18c-4a29-a65a-bb5020b13688",
+    "qa_round_2": "f2ffbb20-ce8a-4eff-a747-0bb248d2a6d3",
+    "qa_round_3": "956c9399-0c8c-45ef-bb2e-3af4bf4adf17",
+    "delivery": "51ea449c-9bd8-4bb9-8935-60b8723a8b16"
+  },
+  "workflow_stage": "qa_round_3",
+  "ready_to_build": true,
+  "chosen_archetype": "Cuisine",
+  "concrete_template_slug": "plate-01",
+  "official_site_url": "https://www.thechefgrill.com/",
+  "public_urls": [
+    "https://www.thechefgrill.com/",
+    "https://www.thechefgrill.com/menu/",
+    "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+    "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+    "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ"
+  ],
+  "lead_metadata": {
+    "address_location": "812 E Higgins Rd, Elk Grove Village, IL 60007",
+    "website_url": "https://www.thechefgrill.com/",
+    "order_urls": [
+      "https://order.online/store/the-chef-grill-elk-grove-village-33689647",
+      "https://www.grubhub.com/restaurant/the-chef-grill-812-e-higgins-rd-elk-grove-village/11219672",
+      "https://www.ubereats.com/store/the-chef-grill/JapASDZKWRigj7SSzDNElQ"
+    ],
+    "phone": "3123138900",
+    "owner_name": "Ibrahim Kelesabdığoğlu (official site states chef/founder)",
+    "contact_email": "info@thechefgrill.com",
+    "google_rating": 4.7,
+    "google_review_count": 807,
+    "metadata_source_notes": [
+      "Public-source seed evidence captured in 2026-05-08 NW suburbs lead qualification artifact.",
+      "Full menu/prices/hours, Google review packet, contact/owner, and catering truth remain open before build copy.",
+      "Build pass verified official menu items/prices, phone, email, address, online order, Grubhub, Uber Eats, and contact-form time window from local scrapes.",
+      "Day-by-day/holiday hours, catering/private-event capacity, and final public deploy URL remain unverified for later gates."
+    ],
+    "hours": "Official contact form lists 9:00 AM to 11:30 PM; day-by-day/holiday hours not verified."
+  },
+  "evidence_paths": {
+    "qualification_markdown": "restaurant-website-system/sites/the-chef-grill/qualification.md",
+    "routing_markdown": "restaurant-website-system/sites/the-chef-grill/routing.md",
+    "checklist_markdown": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+    "checklist_json": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+    "workflow_snapshot": "restaurant-website-system/sites/the-chef-grill/mc-workflow-snapshot-2026-05-08.json",
+    "source_research": "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads.md",
+    "seed_payload": "restaurant-website-system/research/lead-qualification/the-chef-grill-mc-lead-seed-payload-2026-05-08.local.json",
+    "mc_qualifying_sync": "restaurant-website-system/sites/the-chef-grill/mc-qualifying-sync-2026-05-08.json",
+    "mc_checklist_sync": "restaurant-website-system/sites/the-chef-grill/mc-checklist-sync-2026-05-08.json",
+    "mc_planner_after_checklist": "restaurant-website-system/sites/the-chef-grill/mc-planner-after-checklist-2026-05-08.json",
+    "audit_markdown": "restaurant-website-system/sites/the-chef-grill/audit.md",
+    "audit_json": "restaurant-website-system/sites/the-chef-grill/audit.json",
+    "current_site_capture_summary": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+    "current_site_screenshots": [
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-home-desktop-full.png",
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-home-mobile-full.png",
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-menu-desktop-long.png",
+      "restaurant-website-system/sites/the-chef-grill/screenshots/current-site-menu-mobile-long.png"
+    ],
+    "current_site_scrapes": [
+      "restaurant-website-system/sites/the-chef-grill/scrapes/breakfast.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/breakfast.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/breakfast.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/brick-ovens.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/brick-ovens.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/brick-ovens.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/contact.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/contact.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/contact.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/home.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/home.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/home.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/kebabs.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/kebabs.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/kebabs.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/menu.html",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/menu.status.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/menu.txt",
+      "restaurant-website-system/sites/the-chef-grill/scrapes/order-online.error.txt"
+    ],
+    "mc_current_site_audit_sync": "restaurant-website-system/sites/the-chef-grill/mc-current-site-audit-sync-2026-05-08.json",
+    "mc_planner_after_current_site_audit": "restaurant-website-system/sites/the-chef-grill/mc-planner-after-current-site-audit-2026-05-08.json",
+    "google_reviews_markdown": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+    "google_reviews_json": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.json",
+    "google_reviews_screenshot": "restaurant-website-system/sites/the-chef-grill/screenshots/google-reviews-highest-visible.png",
+    "routing_json": "restaurant-website-system/sites/the-chef-grill/routing.json",
+    "mc_google_reviews_sync": "restaurant-website-system/sites/the-chef-grill/mc-google-reviews-sync-2026-05-08.json",
+    "mc_planner_after_google_reviews": "restaurant-website-system/sites/the-chef-grill/mc-planner-after-google-reviews-2026-05-08.json",
+    "mc_template_routing_sync": "restaurant-website-system/sites/the-chef-grill/mc-template-routing-sync-2026-05-08.json",
+    "mc_forking_start_sync": "restaurant-website-system/sites/the-chef-grill/mc-forking-start-sync-2026-05-08.json",
+    "template_metadata": "restaurant-website-system/sites/the-chef-grill/.agency-template.json",
+    "package_json": "restaurant-website-system/sites/the-chef-grill/package.json",
+    "personalized_content": "restaurant-website-system/sites/the-chef-grill/content.example.ts",
+    "typecheck_evidence": "restaurant-website-system/sites/the-chef-grill/evidence/typecheck-2026-05-08.txt",
+    "lint_evidence": "restaurant-website-system/sites/the-chef-grill/evidence/lint-2026-05-08.txt",
+    "build_evidence": "restaurant-website-system/sites/the-chef-grill/evidence/build-2026-05-08.txt",
+    "local_preview_desktop": "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-home-2026-05-08.png",
+    "local_preview_mobile": "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-mobile-2026-05-08.png",
+    "mc_template_fork_build_payload": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-sync-payload-2026-05-08.json",
+    "mc_template_fork_build_sync": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-sync-2026-05-08.json",
+    "mc_template_fork_build_heartbeat_blocker_payload": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-heartbeat-blocker-payload-2026-05-08.json",
+    "mc_template_fork_build_heartbeat_blocker_sync": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-heartbeat-blocker-sync-2026-05-08.json",
+    "fork_build_evidence": "restaurant-website-system/sites/the-chef-grill/build/fork-build-evidence-2026-05-08.md",
+    "fork_preview_check": "restaurant-website-system/sites/the-chef-grill/build/fork-preview-check-2026-05-08.json",
+    "fork_preview_desktop_home": "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-home-2026-05-08.png",
+    "fork_preview_mobile_home": "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-home-2026-05-08.png",
+    "fork_preview_desktop_menu": "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-menu-2026-05-08.png",
+    "fork_preview_mobile_menu": "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-menu-2026-05-08.png",
+    "fork_preview_desktop_contact": "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-contact-2026-05-08.png",
+    "fork_preview_mobile_contact": "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-contact-2026-05-08.png",
+    "improvement_pass_markdown": "restaurant-website-system/sites/the-chef-grill/build/improvement-pass-2026-05-08.md",
+    "improvement_preview_check": "restaurant-website-system/sites/the-chef-grill/build/improvement-preview-check-2026-05-08.json",
+    "improvement_sync_blocker": "restaurant-website-system/sites/the-chef-grill/build/improvement-pass-sync-blocker-2026-05-08.md",
+    "mc_improvement_pass_payload": "restaurant-website-system/sites/the-chef-grill/mc-improvement-pass-sync-payload-2026-05-08.json",
+    "mc_improvement_pass_sync": "restaurant-website-system/sites/the-chef-grill/mc-improvement-pass-sync-2026-05-08.json",
+    "pitch_doc": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+    "battle_cards": "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+    "qa_round_1_markdown": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-2026-05-08.md",
+    "qa_round_1_checks_json": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-checks-2026-05-08.json",
+    "qa_round_1_playwright_results": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/playwright-route-results-2026-05-08.json",
+    "qa_round_1_concierge_safety": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/concierge-source-safety-check-2026-05-08.json",
+    "qa_round_1_build_evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/build-final-2026-05-08.txt",
+    "qa_round_1_typecheck_evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/typecheck-final-2026-05-08.txt",
+    "qa_round_1_lint_evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/lint-final-2026-05-08.txt",
+    "qa_round_1_screenshots": [
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-home-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-home-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-menu-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-menu-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-about-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-about-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-contact-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-contact-2026-05-08.png"
+    ],
+    "mc_qa_round_1_payload": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-1-sync-payload-2026-05-08.json",
+    "mc_qa_round_1_sync": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-1-sync-2026-05-08.json",
+    "qa_round_1_render_check": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-render-check-2026-05-08.json",
+    "qa_round_1_source_scan": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-source-scan-2026-05-08.txt",
+    "qa_round_2_markdown": "restaurant-website-system/sites/the-chef-grill/qa/round-2/qa-round-2-2026-05-08.md",
+    "qa_round_2_checks_json": "restaurant-website-system/sites/the-chef-grill/qa/round-2/qa-round-2-checks-2026-05-08.json",
+    "mc_qa_round_2_payload": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-2-sync-payload-2026-05-08.json",
+    "mc_qa_round_2_sync": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-2-sync-2026-05-08.json",
+    "qa_round_2_source_scan": "restaurant-website-system/sites/the-chef-grill/qa/round-2/qa-round-2-source-scan-2026-05-08.txt",
+    "qa_round_2_build_evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-2/evidence/build-after-concierge-offset-fix-2026-05-08.txt",
+    "qa_round_2_typecheck_evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-2/evidence/typecheck-after-concierge-offset-fix-2026-05-08.txt",
+    "qa_round_2_lint_evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-2/evidence/lint-after-concierge-offset-fix-2026-05-08.txt",
+    "qa_round_2_screenshots": [
+      "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-hero-sticky-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-menu-shortcuts-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-review-proof-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-visit-ctas-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-mobile-contact-flow-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-2/screenshots/qa2-desktop-home-polish-2026-05-08.png"
+    ]
+  },
+  "requirements_status": [
+    {
+      "requirement": "Lead-fit decision is Build or Re-route, or a qualification skip reason is recorded.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qualification.md"
+    },
+    {
+      "requirement": "Visual reality, price register, review tone, current-site quality, why-switch, switching cost, and would-I-eat-here checks are recorded.",
+      "status": "passed_with_known_gaps",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qualification.md"
+    },
+    {
+      "requirement": "Qualification evidence paths or source URLs are attached or linked.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads.md"
+    },
+    {
+      "requirement": "Local checklist.md exists for this restaurant.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/checklist.md"
+    },
+    {
+      "requirement": "Local checklist.json exists for this restaurant.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/checklist.json"
+    },
+    {
+      "requirement": "Mission Control root and child task metadata mirrors checklist paths, requirements, evidence, and current stage.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/mc-checklist-sync-2026-05-08.json"
+    },
+    {
+      "requirement": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence.",
+      "status": "passed_with_google_reviews_pending",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/audit.md"
+    },
+    {
+      "requirement": "Desktop and mobile screenshot evidence and scraped content are attached or linked.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json"
+    },
+    {
+      "requirement": "Audit identifies concrete conversion, credibility, mobile, and factual gaps.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/audit.md"
+    },
+    {
+      "requirement": "Google reviews are captured in the in-app browser with the Highest filter visible or documented.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/screenshots/google-reviews-highest-visible.png"
+    },
+    {
+      "requirement": "30 written reviews are captured, or the task documents why fewer were available.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md"
+    },
+    {
+      "requirement": "Evidence includes screenshots/links plus a review-themes summary usable in copy and pitch docs.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md"
+    },
+    {
+      "requirement": "Exactly one template route is selected and justified from restaurant type, vibe, register, and conversion path.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/routing.md"
+    },
+    {
+      "requirement": "2-3 rejected alternatives and the avoided patterns/register risks are recorded.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/routing.md"
+    },
+    {
+      "requirement": "Required modifiers, sections, proof, heritage, CTA, and menu strategy are recorded.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/routing.md"
+    },
+    {
+      "requirement": "Template fork/build complete: plate-01 app files safely merged into existing site directory while preserving scrapes/screenshots/checklist/audit/routing/MC artifacts.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/.agency-template.json"
+    },
+    {
+      "requirement": "Package name is the-chef-grill and .agency-template.json records source restaurant-website-system/templates/plate-01.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/package.json"
+    },
+    {
+      "requirement": "The fork is personalized with real The Chef Grill halal Turkish/Mediterranean content, verified menu/order/contact facts, review proof, and mobile Order/Call/Directions CTAs.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/content.example.ts"
+    },
+    {
+      "requirement": "Local install/build gate passed: npm install, npm run typecheck, npm run lint, and npm run build.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/evidence/build-2026-05-08.txt"
+    },
+    {
+      "requirement": "Local preview evidence captured for desktop and mobile.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-home-2026-05-08.png; restaurant-website-system/sites/the-chef-grill/screenshots/local-preview-mobile-2026-05-08.png"
+    },
+    {
+      "requirement": "Mission Control build payload prepared with passed_requirement_ids fork-built, fork-preview, and specificity.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-sync-2026-05-08.json"
+    },
+    {
+      "requirement": "Mission Control /build PATCH synced template_fork_build completion and accepted fork-built, fork-preview, and specificity.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-sync-2026-05-08.json"
+    },
+    {
+      "requirement": "Improvement pass maps the copy/CTA/proof changes back to the current-site audit findings.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/build/improvement-pass-2026-05-08.md"
+    },
+    {
+      "requirement": "Primary conversion paths are visible and accurate: order, menu, call, directions, and call-to-plan group/reserve language where applicable.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/build/improvement-preview-check-2026-05-08.json"
+    },
+    {
+      "requirement": "Mobile pass is explicitly checked and attached, even if live screenshot capture is blocked.",
+      "status": "passed_with_sandbox_capture_limit",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/build/improvement-preview-check-2026-05-08.json"
+    },
+    {
+      "requirement": "Pitch doc includes before/after narrative for current site and prototype.",
+      "status": "passed_pending_mc_sync",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md"
+    },
+    {
+      "requirement": "Pitch doc attaches or cites audit, review, build, and screenshot evidence.",
+      "status": "passed_pending_mc_sync",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md"
+    },
+    {
+      "requirement": "Pitch doc is specific to the restaurant and avoids unverified claims.",
+      "status": "passed_pending_mc_sync",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md"
+    },
+    {
+      "requirement": "Battle cards include likely objections and responses.",
+      "status": "passed_pending_mc_sync",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/battle-cards.md"
+    },
+    {
+      "requirement": "Battle cards include a concrete demo path.",
+      "status": "passed_pending_mc_sync",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/battle-cards.md"
+    },
+    {
+      "requirement": "Battle cards include proof points, risks, and caveats.",
+      "status": "passed_pending_mc_sync",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/battle-cards.md"
+    },
+    {
+      "requirement": "QA round 1 findings are recorded with source/evidence links.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-2026-05-08.md"
+    },
+    {
+      "requirement": "QA round 1 fixes are applied or explicitly deferred with reason.",
+      "status": "passed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-checks-2026-05-08.json"
+    }
+  ],
+  "blockers_before_build": [],
+  "updated_at": "2026-05-08T14:44:33Z",
+  "completed_workflow_steps": [
+    "lead_qualification",
+    "checklist",
+    "current_site_audit",
+    "google_reviews_capture",
+    "template_routing",
+    "template_fork_build",
+    "improvement_pass",
+    "top_three_improvements",
+    "ai_concierge",
+    "pitch_doc",
+    "battle_cards",
+    "qa_round_1",
+    "qa_round_2",
+    "qa_round_3"
+  ],
+  "next_workflow_step": "delivery",
+  "ready_for_improvement_pass": false,
+  "current_gate": "qa_round_3",
+  "current_gate_status": "completed_local_unsynced_dns_blocker",
+  "mc_build_patch_status": "template_fork_synced_improvement_resync_blocked_dns",
+  "remaining_blockers": [
+    "Day-by-day/holiday hours are not verified beyond the official contact-form 9:00 AM–11:30 PM time window.",
+    "Catering/private-event capacity and service details are not verified; current copy only tells guests to call/confirm group or celebration details.",
+    "Preferred ordering provider should be confirmed before public launch.",
+    "Owner/founder story and spelling should be verified before making it a sales claim.",
+    "No public Vercel/deployed preview URL yet; QA round 3 passed on local/build evidence only, so packaging/delivery remain blocked.",
+    "Mission Control QA round 3 sync is blocked in this sandbox because hq.ethantalreja.com could not be resolved."
+  ],
+  "build_stage": "qa_round_3",
+  "currentStage": "qa_round_3",
+  "pitch_doc_path": "restaurant-website-system/sites/the-chef-grill/pitch-doc.md",
+  "battle_cards_path": "restaurant-website-system/sites/the-chef-grill/battle-cards.md",
+  "mc_qa_round_1_status": "synced_200_ok",
+  "mc_qa_round_2_status": "synced_200_ok",
+  "requirements": [
+    {
+      "requirement": "QA round 3 findings/readiness verdict are recorded with evidence links.",
+      "status": "passed_locally",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-2026-05-08.md"
+    },
+    {
+      "requirement": "QA round 3 sell-ready/assets-ready checks are attached, including final screenshot references and pitch/battle-card cross-check.",
+      "status": "passed_locally",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-checks-2026-05-08.json"
+    },
+    {
+      "requirement": "Mission Control /qa-rounds POST synced QA round 3 completion.",
+      "status": "blocked_dns_resolution_failed",
+      "evidence": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-3-sync-2026-05-08.json"
+    }
+  ],
+  "mc_qa_round_3_status": "sync_blocked_dns_resolution_failed",
+  "qa_round_3": {
+    "status": "passed_locally",
+    "report": "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-2026-05-08.md",
+    "checks": "restaurant-website-system/sites/the-chef-grill/qa/round-3/qa-round-3-checks-2026-05-08.json",
+    "screenshots": [
+      "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-home-final-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-home-final-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-menu-final-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-menu-final-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-desktop-contact-final-2026-05-08.png",
+      "restaurant-website-system/sites/the-chef-grill/qa/round-3/screenshots/qa3-mobile-contact-final-2026-05-08.png"
+    ],
+    "command_evidence": {
+      "typecheck_prebuild": "restaurant-website-system/sites/the-chef-grill/qa/round-3/evidence/typecheck-2026-05-08.txt",
+      "lint": "restaurant-website-system/sites/the-chef-grill/qa/round-3/evidence/lint-2026-05-08.txt",
+      "build": "restaurant-website-system/sites/the-chef-grill/qa/round-3/evidence/build-2026-05-08.txt",
+      "typecheck_postbuild": "restaurant-website-system/sites/the-chef-grill/qa/round-3/evidence/typecheck-post-build-2026-05-08.txt"
+    },
+    "mc_payload": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-3-sync-payload-2026-05-08.json",
+    "mc_response": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-3-sync-2026-05-08.json"
+  }
+}

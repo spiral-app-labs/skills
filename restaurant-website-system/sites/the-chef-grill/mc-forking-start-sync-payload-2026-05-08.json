@@ -1,0 +1,17 @@
+{
+  "build_stage": "forking",
+  "status": "in_progress",
+  "idempotency_key": "the-chef-grill-forking-start-2026-05-08",
+  "site_slug": "the-chef-grill",
+  "template_slug": "plate-01",
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-chef-grill/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-chef-grill/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/the-chef-grill/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/the-chef-grill/scrapes/google-reviews-highest-30.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/routing.md",
+    "restaurant-website-system/sites/the-chef-grill/routing.json"
+  ],
+  "heartbeat_summary": "Started template fork/build gate for The Chef Grill after route lock to plate-01."
+}

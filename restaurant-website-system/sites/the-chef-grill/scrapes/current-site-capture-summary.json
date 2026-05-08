@@ -1,0 +1,65 @@
+{
+  "captured_at": "2026-05-08T13:15:55.707315Z",
+  "pages_saved": [
+    "breakfast.html",
+    "brick-ovens.html",
+    "contact.html",
+    "home.html",
+    "kebabs.html",
+    "menu.html"
+  ],
+  "fetch_status_files": [
+    "breakfast.status.txt",
+    "brick-ovens.status.txt",
+    "contact.status.txt",
+    "home.status.txt",
+    "kebabs.status.txt",
+    "menu.status.txt"
+  ],
+  "fetch_errors": [
+    "order-online.error.txt"
+  ],
+  "screenshots": [
+    "screenshots/current-site-home-desktop-full.png",
+    "screenshots/current-site-home-mobile-full.png",
+    "screenshots/current-site-menu-desktop-long.png",
+    "screenshots/current-site-menu-mobile-long.png"
+  ],
+  "sample_price_lines": [
+    "$ 10.00 Add to cart",
+    "$ 20.00 Add to cart",
+    "$ 89.00 Add to cart",
+    "$ 49.00 Add to cart",
+    "$ 12.00 Add to cart",
+    "$ 13.00 Add to cart",
+    "$ 14.00 Add to cart",
+    "$ 8.00 Add to cart",
+    "$ 9.00 Add to cart",
+    "$ 18.00 Add to cart",
+    "$ 16.00 Add to cart",
+    "$ 19.00 Add to cart",
+    "$ 44.00 Add to cart",
+    "$ 25.00 Add to cart",
+    "$ 35.00 Add to cart",
+    "$ 37.00 Add to cart",
+    "$ 21.00 Add to cart",
+    "$ 17.00 Add to cart",
+    "$ 69.00 Add to cart",
+    "$ 139.00 Add to cart",
+    "$ 199.00 Add to cart",
+    "$ 27.00 Add to cart",
+    "$ 30.00 Add to cart",
+    "$ 28.00 Add to cart",
+    "$ 24.00 Add to cart",
+    "$ 34.00 Add to cart",
+    "$ 11.00 Add to cart",
+    "$ 7.00 Add to cart",
+    "$ 3.95 Add to cart",
+    "$ 3.00 Add to cart",
+    "$ 7.95 Add to cart",
+    "$ 9.95 Add to cart",
+    "$ 1.95 Add to cart",
+    "$ 6.95 Add to cart",
+    "$ 2.00 Add to cart"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "baseUrl": "http://127.0.0.1:3041",
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/build/screenshots/fork-mobile-contact-2026-05-08.png"
+  ],
+  "checks": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "hasChefGrill": true,
+      "hasTemplateLeak": false,
+      "anchorCount": 21,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "hasChefGrill": true,
+      "hasTemplateLeak": false,
+      "anchorCount": 21,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "hasChefGrill": true,
+      "hasTemplateLeak": false,
+      "anchorCount": 21,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "hasChefGrill": true,
+      "hasTemplateLeak": false,
+      "anchorCount": 21,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "/contact",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "hasChefGrill": true,
+      "hasTemplateLeak": false,
+      "anchorCount": 20,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/contact",
+      "title": "The Chef Grill — Halal Turkish & Mediterranean grill",
+      "hasChefGrill": true,
+      "hasTemplateLeak": false,
+      "anchorCount": 20,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasMenu": true,
+      "horizontalOverflow": false
+    }
+  ]
+}

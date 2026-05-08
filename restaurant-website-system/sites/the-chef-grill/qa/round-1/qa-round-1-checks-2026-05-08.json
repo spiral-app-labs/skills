@@ -1,0 +1,220 @@
+{
+  "site_slug": "the-chef-grill",
+  "restaurant_name": "The Chef Grill",
+  "lead_id": "25633ae3-0c44-4d23-9996-da4440eeaa97",
+  "mc_root_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "mc_child_task_id": "5836237d-f18c-4a29-a65a-bb5020b13688",
+  "round_number": 1,
+  "generated_at": "2026-05-08T14:27:32.439981+00:00",
+  "gate": "passed_after_fixes",
+  "commands": {
+    "npm run build": {
+      "status": 0,
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/build-final-2026-05-08.txt"
+    },
+    "npm run typecheck": {
+      "status": 0,
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/typecheck-final-2026-05-08.txt"
+    },
+    "npm run lint": {
+      "status": 0,
+      "evidence": "restaurant-website-system/sites/the-chef-grill/qa/round-1/evidence/lint-final-2026-05-08.txt"
+    }
+  },
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/menu",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "render_checks": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "/about",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/about",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "/contact",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": true,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "/contact",
+      "title": "The Chef Grill \u2014 Halal Turkish & Mediterranean grill",
+      "hasBrand": true,
+      "hasHalal": true,
+      "hasAddress": true,
+      "hasPhone": true,
+      "hasGoogleProof": false,
+      "hasNoInternalVisible": true,
+      "hasOrder": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "horizontalOverflow": false
+    }
+  ],
+  "truth_checks": {
+    "business_identity": "The Chef Grill rendered as a halal Turkish & Mediterranean grill in Elk Grove Village.",
+    "phone": "(312) 313-8900 / 3123138900 visible; tel:+13123138900 link present.",
+    "address": "812 E Higgins Rd, Elk Grove Village, IL 60007 visible.",
+    "order_links": "Official order.online path plus Grubhub and Uber Eats paths preserved.",
+    "directions": "Google Maps directions link present.",
+    "reviews": "4.7 / 807 Google proof appears on checked routes where expected; anonymous Google Review snippets only.",
+    "hours": "Uses official contact-form window 9:00 AM\u201311:30 PM with call-before-time-sensitive-visit caveat; no day-by-day invented hours.",
+    "reservations_catering_events": "Call/confirm language only; no capacity, availability, package, or private-event promises.",
+    "concierge": "Concierge refuses to guess allergens/availability and routes guests to call for sensitive questions.",
+    "customer_visible_internal_language": "Rendered route scan passed for preview/source-artifact/template/internal language."
+  },
+  "findings": [
+    "Initial mobile contact QA showed the fixed mobile quick-action bar overlapping/interleaving with the contact form around the Email/Subject fields.",
+    "Customer-visible copy scan found preview/source-artifact phrasing in content and concierge responses that should not appear in a sellable restaurant preview."
+  ],
+  "fixes_applied": [
+    "Hid the fixed mobile quick-action bar on /contact, where equivalent order/menu/call/directions links already exist in the page content flow.",
+    "Made contact page phone and email clickable via tel:/mailto: links.",
+    "Replaced customer-visible preview/source-artifact phrasing with restaurant-safe digital-guide language.",
+    "Re-ran production build, typecheck, route/render checks, and vision QA; mobile contact form now stacks Name \u2192 Email \u2192 Subject \u2192 Message cleanly."
+  ],
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-about-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-about-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-contact-2026-05-08.png"
+  ],
+  "evidence": {
+    "render_check": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-render-check-2026-05-08.json",
+    "source_scan": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-source-scan-2026-05-08.txt",
+    "qa_report": "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-2026-05-08.md",
+    "mc_payload": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-1-sync-payload-2026-05-08.json",
+    "mc_response": "restaurant-website-system/sites/the-chef-grill/mc-qa-round-1-sync-2026-05-08.json"
+  },
+  "mc_sync": {
+    "status": "200 OK",
+    "round_id": "d4f16457-cf66-4304-87bd-62e3f53e9f78",
+    "child_task_status": "done"
+  },
+  "remaining_risks": [
+    "No public Vercel/deployed preview URL is attached yet; QA round 1 used local production server at http://127.0.0.1:3051.",
+    "Day-by-day/holiday hours remain unverified beyond the official contact-form 9:00 AM\u201311:30 PM window.",
+    "Catering/private-event capacity and service details remain unverified; keep call-to-confirm language.",
+    "Preferred ordering provider should be confirmed before public launch.",
+    "Owner/founder story and spelling should be verified before making it a sales claim."
+  ],
+  "next_gate": "qa_round_2"
+}

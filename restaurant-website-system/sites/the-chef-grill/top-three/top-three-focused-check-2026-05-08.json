@@ -1,0 +1,27 @@
+{
+  "baseUrl": "http://127.0.0.1:3046",
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-desktop-menu-shortcut-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-desktop-review-proof-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-mobile-menu-shortcut-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/top-three/screenshots/top-three-mobile-review-proof-2026-05-08.png"
+  ],
+  "checks": [
+    {
+      "viewport": "desktop",
+      "hasMenuShortcut": true,
+      "hasReviewProof": true,
+      "hasNamesInReviewCards": false,
+      "hasSaferVisitCopy": false,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "hasMenuShortcut": true,
+      "hasReviewProof": true,
+      "hasNamesInReviewCards": false,
+      "hasSaferVisitCopy": false,
+      "horizontalOverflow": false
+    }
+  ]
+}

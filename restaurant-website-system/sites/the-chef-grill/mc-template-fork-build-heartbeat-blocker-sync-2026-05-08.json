@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "status": 200,
+  "endpoint": "POST /api/heartbeat",
+  "response": {
+    "ok": true,
+    "status": "success",
+    "heartbeatId": "7d3cfbf0-fab1-4cab-9f66-21c8b020d01f",
+    "activityId": "149c2b16-6350-449c-a1f0-f850da622f80",
+    "watchdogRowId": null
+  }
+}

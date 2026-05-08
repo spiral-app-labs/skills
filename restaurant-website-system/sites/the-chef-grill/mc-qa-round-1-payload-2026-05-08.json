@@ -1,0 +1,30 @@
+{
+  "round_number": 1,
+  "mc_task_id": "d9024ee4-cc50-4247-8529-2cb8b30c5ab2",
+  "findings": [
+    "Initial mobile contact QA showed the fixed mobile quick-action bar overlapping/interleaving with the contact form around the Email/Subject fields.",
+    "Customer-visible copy scan found preview/source-artifact phrasing in content and concierge responses that should not appear in a sellable restaurant preview."
+  ],
+  "fixes_applied": [
+    "Hid the fixed mobile quick-action bar on /contact, where equivalent order/menu/call/directions links already exist in the page content flow.",
+    "Made contact page phone and email clickable via tel:/mailto: links.",
+    "Replaced customer-visible preview/source-artifact phrasing with restaurant-safe digital-guide language.",
+    "Re-ran production build, typecheck, route/render checks, and vision QA; mobile contact form now stacks Name → Email → Subject → Message cleanly."
+  ],
+  "skill_updates": [],
+  "screenshots": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-home-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-menu-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-about-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-about-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-desktop-contact-2026-05-08.png",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/screenshots/qa1-mobile-contact-2026-05-08.png"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-report-2026-05-08.md",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-render-check-2026-05-08.json",
+    "restaurant-website-system/sites/the-chef-grill/qa/round-1/qa-round-1-source-scan-2026-05-08.txt"
+  ]
+}

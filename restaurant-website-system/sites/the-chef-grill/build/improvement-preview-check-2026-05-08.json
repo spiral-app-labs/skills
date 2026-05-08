@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-05-08T13:58:44.004Z",
+  "previewMode": "static-build-artifacts",
+  "livePreviewAvailable": false,
+  "livePreviewBlocker": "Sandbox denied binding a local preview server; verification used prerendered build HTML instead.",
+  "routeUrlsChecked": [
+    {
+      "route": "/",
+      "source": "sites/the-chef-grill/.next/server/app/index.html",
+      "status": 200
+    },
+    {
+      "route": "/menu",
+      "source": "sites/the-chef-grill/.next/server/app/menu.html",
+      "status": 307,
+      "redirectTarget": "/#menu"
+    },
+    {
+      "route": "/contact",
+      "source": "sites/the-chef-grill/.next/server/app/contact.html",
+      "status": 200
+    }
+  ],
+  "commandResults": {
+    "typecheck": "passed after build generated .next/types",
+    "lint": "passed",
+    "build": "passed",
+    "preview": "live server blocked by sandbox; static build verification used instead"
+  },
+  "mobileCheck": {
+    "method": "Static HTML inspection of prerendered build output",
+    "stickyCtasPresent": true,
+    "homeHeroCopyPresent": true,
+    "contactQuickLinksPresent": true,
+    "screenshotsCaptured": [],
+    "screenshotBlocker": "Headless browser screenshot capture was unavailable in the sandbox environment."
+  },
+  "uiChecks": [
+    {
+      "route": "/",
+      "title": "The Chef Grill — Halal Turkish &amp; Mediterranean grill",
+      "hasChefGrill": true,
+      "hasOrderOnline": true,
+      "hasViewMenu": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasReviewCarousel": true,
+      "hasNamesInReviewCards": false,
+      "mobileQuickActions": [
+        "Order Online",
+        "View Menu",
+        "Call",
+        "Directions"
+      ]
+    },
+    {
+      "route": "/contact",
+      "title": "The Chef Grill — Halal Turkish &amp; Mediterranean grill",
+      "hasChefGrill": true,
+      "hasOrderOnline": true,
+      "hasViewMenu": true,
+      "hasCall": true,
+      "hasDirections": true,
+      "hasReviewCarousel": null,
+      "hasNamesInReviewCards": null,
+      "mobileQuickActions": [
+        "Order Online",
+        "View Menu",
+        "Call",
+        "Directions"
+      ]
+    }
+  ],
+  "menuRedirectCheck": {
+    "route": "/menu",
+    "redirectDigest": "/#menu",
+    "pointsToMenuAnchor": true
+  },
+  "screenshots": []
+}

@@ -1,0 +1,17 @@
+{
+  "status": "blocked",
+  "summary": "Agency: The Chef Grill template_fork_build completed locally, but protected /build PATCH could not run because SUPABASE_SECRET_KEY/SUPABASE_SERVICE_ROLE_KEY are missing in the OpenClaw environment.",
+  "mode": "agency",
+  "source": "openclaw_website_agency",
+  "taskIds": ["d9024ee4-cc50-4247-8529-2cb8b30c5ab2", "3dd3db84-c7c4-4c8f-b62e-d24e06f5b83d"],
+  "metadata": {
+    "lead_id": "25633ae3-0c44-4d23-9996-da4440eeaa97",
+    "site_slug": "the-chef-grill",
+    "build_stage": "building",
+    "endpoint": "/api/agency/leads/25633ae3-0c44-4d23-9996-da4440eeaa97/build",
+    "auth_blocker": true,
+    "missing_env": ["SUPABASE_SECRET_KEY", "SUPABASE_SERVICE_ROLE_KEY"],
+    "local_payload": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-sync-payload-2026-05-08.json",
+    "local_response": "restaurant-website-system/sites/the-chef-grill/mc-template-fork-build-sync-2026-05-08.json"
+  }
+}

@@ -1,0 +1,12 @@
+# QA1 source/render scan — 2026-05-08
+
+## Risk-string scan
+components/LatestUpdatesGrid.tsx:8:// 3-up blog/news preview strip. Audit §7 warns: don't ship this if there is
+components/ScrollReveal.tsx:3:// Framer Motion wrapper that fades + slides content into view on scroll.
+
+## Build gates
+npm run build: passed
+npm run typecheck: passed
+
+## Visual QA note
+Vision re-check passed after hiding the fixed mobile quick-action bar on /contact; mobile contact form now stacks Name → Email → Subject → Message cleanly.
