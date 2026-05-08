@@ -1,0 +1,50 @@
+{
+  "restaurant_name": "Tekka Sushi",
+  "lead_id": "07fb5758-b0e2-48b6-9c3c-ee8372b8a388",
+  "root_task_id": "58f50474-9827-4dc2-9b44-2d64bdab0bac",
+  "route_status": "locked_local_mc_writeback_pending",
+  "chosen_archetype": "Qitchen",
+  "template_slug": "qitchen-01",
+  "register_guardrail": "De-ceremonialized Qitchen: Tekka is $20-30 dine-in/takeout/delivery sushi, not omakase/ticketed fine dining. Use Qitchen precision and high-design menu presentation while preserving order/call/directions conversion.",
+  "rationale": "Tekka is a modern sushi/Japanese concept where the redesign must communicate precision, freshness, presentation, and visual trust. Google review evidence supports fresh sushi/sashimi, beautiful presentation, chic/modern atmosphere, and attentive service. The owned-site failure is menu credibility, so Qitchen's architectural menu and visual discipline are the best base.",
+  "rejected_alternatives": [
+    {"template":"plate-01", "reason":"Too cuisine-agnostic; would fix clarity but lose sushi-specific precision and presentation."},
+    {"template":"bamzi-01", "reason":"Too trendy/cinematic and saturated for Tekka's fresh, precise, modern sushi proof points."},
+    {"template":"Cuisine", "reason":"Too warm/generic; would underuse the modern/chic sushi opportunity."}
+  ],
+  "modifiers": {
+    "palette":"deep charcoal / warm white / rice-paper neutral with restrained wasabi/seaweed accent",
+    "typography":"modern editorial sans plus restrained display; avoid full ceremonial austerity",
+    "cta":"Order Online, View Menu, Call to Reserve, Directions",
+    "menu":"category-stack or tabbed real menu with signature rolls, sushi/sashimi, ramen, lunch specials, platters",
+    "proof":"Google 4.8 / 370 reviews with captured packet; themes not fabricated testimonials",
+    "gallery":"food-first and verified room imagery only",
+    "motion":"subtle precision transitions",
+    "mobile":"sticky action bar for Order / Call / Directions"
+  },
+  "required_sections": [
+    "Hero with modern sushi positioning and primary CTAs",
+    "Trust strip with Google rating, address, dine-in/takeout/delivery",
+    "Signature rolls/favorites",
+    "Real menu preview",
+    "Order + dine-in conversion block",
+    "Review-theme proof",
+    "Visit block with address, phone, hours caveat, directions",
+    "Clean footer without template residue"
+  ],
+  "avoid_patterns": [
+    "omakase/tasting-menu claims unless verified",
+    "fake menu items/prices/reviews",
+    "existing placeholder menu structure",
+    "generic family-restaurant copy",
+    "single reservation CTA",
+    "stock-driven sushi identity"
+  ],
+  "passed_requirement_ids": ["route-one-archetype", "template-route-locked"],
+  "evidence_paths": [
+    "restaurant-website-system/sites/tekka-sushi/routing/template-route-2026-05-08.md",
+    "restaurant-website-system/sites/tekka-sushi/routing/template-route-2026-05-08.json",
+    "restaurant-website-system/sites/tekka-sushi/google-reviews/google-reviews-highest-2026-05-08.json",
+    "restaurant-website-system/sites/tekka-sushi/current-site-audit/audit-2026-05-08.md"
+  ]
+}
