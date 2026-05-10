@@ -1,0 +1,42 @@
+{
+  "restaurant_name": "Tekka Sushi",
+  "lead_id": "07fb5758-b0e2-48b6-9c3c-ee8372b8a388",
+  "root_task_id": "58f50474-9827-4dc2-9b44-2d64bdab0bac",
+  "child_task_id": "856bf56e-376b-4ce5-8ffb-3a56b32688a7",
+  "workflow_step_id": "lead_qualification",
+  "decision": "Build",
+  "recommended_template_register": "Qitchen",
+  "why_switch_sentence": "If Tekka Sushi saw our redesign, the specific reason they would switch is that their owned website currently makes the menu look fake/template-filled, while a Qitchen-led site can make their real sushi, sashimi, ramen, and roll menu feel trustworthy and order-ready in seconds.",
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "lead-fit-seven-checks",
+    "lead-fit-evidence"
+  ],
+  "checks": {
+    "visual_reality": "Pass with caveat: public profiles confirm real Japanese/sushi category, 39 photos on Restaurantji, and sushi/sashimi/ramen favorites; still needs later browser/Google photo pass before using room language.",
+    "menu_pricing_register": "Pass: Beyond Menu exposes real sushi platter/menu depth including Platter C at $93 and named roll set; register fits modern sushi/order-forward Qitchen.",
+    "review_tone": "Pass: Restaurantji shows 4.8 / 170 ratings and sushi/ramen favorites; Google-specific claims still pending Google evidence capture.",
+    "current_site_quality": "Fail: official /menu exposes placeholder/template categories and Latin-style descriptions instead of real menu content.",
+    "why_switch": "Concrete owned-menu trust failure with fragmented real ordering/menu content offsite.",
+    "switching_cost": "Moderate: Beyond Menu and tekkasushiil.com should be preserved/clarified, not replaced blindly.",
+    "would_i_eat_here": "Pass if hero remains restrained: modern sushi, fresh rolls, order/directions clarity, real menu depth; avoid luxury/omakase claims without more evidence."
+  },
+  "evidence_paths": [
+    "restaurant-website-system/sites/tekka-sushi/qualification/lead-fit-qualification-2026-05-08.md",
+    "restaurant-website-system/sites/tekka-sushi/qualification/lead-fit-qualification-2026-05-08.json",
+    "restaurant-website-system/research/lead-qualification/tekka-sushi-seed-validation-2026-05-07.md",
+    "restaurant-website-system/research/lead-qualification/tekka-sushi-evidence-2026-05-07/screenshots/tekkasushi-menu-placeholder-fullpage.png"
+  ],
+  "source_urls": [
+    "https://tekkasushi.com/",
+    "https://tekkasushi.com/menu",
+    "https://www.restaurantji.com/il/elk-grove-village/tekka-sushi-/",
+    "https://www.beyondmenu.com/60518/elk-grove-village/tekka-sushi-elk-grove-village-60007.aspx"
+  ],
+  "risks": [
+    "Verify Google Business Profile rating/review count before using Google language.",
+    "Verify current hours.",
+    "Confirm preferred ordering path between Beyond Menu and tekkasushiil.com.",
+    "Verify /reservation path."
+  ]
+}

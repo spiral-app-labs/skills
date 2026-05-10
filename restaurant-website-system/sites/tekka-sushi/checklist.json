@@ -1,0 +1,1267 @@
+{
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "leadId": "07fb5758-b0e2-48b6-9c3c-ee8372b8a388",
+  "mcParentTaskId": "58f50474-9827-4dc2-9b44-2d64bdab0bac",
+  "siteSlug": "tekka-sushi",
+  "templateSlug": "qitchen",
+  "currentStage": "packaging",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/tekka-sushi/checklist.md",
+    "json": "restaurant-website-system/sites/tekka-sushi/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "in_progress",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/checklist.md",
+        "restaurant-website-system/sites/tekka-sushi/checklist.json"
+      ],
+      "blocker": "MC checklist-path writeback pending until build route missing tasks.blocked fallback deploys."
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "complete_local_mc_writeback_pending",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/current-site-audit/audit-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/current-site-audit/screenshots/menu-desktop-fullpage.png",
+        "restaurant-website-system/sites/tekka-sushi/current-site-audit/screenshots/menu-mobile-390x1400.png",
+        "restaurant-website-system/sites/tekka-sushi/current-site-audit/scrapes/menu.txt",
+        "restaurant-website-system/sites/tekka-sushi/current-site-audit/scrapes/home.txt",
+        "restaurant-website-system/sites/tekka-sushi/current-site-audit/scrapes/reservation.txt"
+      ],
+      "blocker": "MC audit writeback pending until build route missing tasks.blocked fallback deploys."
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "complete_local_mc_writeback_pending",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/google-reviews/google-reviews-highest-2026-05-08.json",
+        "restaurant-website-system/sites/tekka-sushi/google-reviews/google-reviews-highest-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/google-reviews/screenshots/google-reviews-highest-cdp.png"
+      ],
+      "blocker": "MC reviews writeback pending until build route missing tasks.blocked fallback deploys."
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "complete_local_mc_writeback_pending",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/routing/template-route-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/routing/template-route-2026-05-08.json",
+        "restaurant-website-system/sites/tekka-sushi/.agency-template.json",
+        "restaurant-website-system/sites/tekka-sushi/package.json",
+        "restaurant-website-system/sites/tekka-sushi/app/page.tsx",
+        "restaurant-website-system/sites/tekka-sushi/app/menu/page.tsx",
+        "restaurant-website-system/sites/tekka-sushi/components/MenuList.tsx"
+      ],
+      "blocker": "MC fork/build writeback pending until build route missing tasks.blocked fallback deploys."
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "complete_local_mc_writeback_pending",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/content.example.ts",
+        "restaurant-website-system/sites/tekka-sushi/build-pass/content-pass-2026-05-08.md"
+      ],
+      "blocker": "MC improvement-pass writeback pending until build route missing tasks.blocked fallback deploys."
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "complete_mc_writeback_ready",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/top-three-improvements/top-three-improvements-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/content.example.ts",
+        "restaurant-website-system/sites/tekka-sushi/components/HomeProofPanel.tsx",
+        "restaurant-website-system/sites/tekka-sushi/components/StickyMobileActions.tsx",
+        "restaurant-website-system/sites/tekka-sushi/components/ReservationFormPanel.tsx"
+      ]
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "complete_mc_writeback_ready",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/components/TekkaConcierge.tsx",
+        "restaurant-website-system/sites/tekka-sushi/app/reservation/page.tsx",
+        "restaurant-website-system/sites/tekka-sushi/ai-concierge/concierge-kb-and-test-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-concierge-entry-desktop-2026-05-08.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "complete_mc_writeback_ready",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/pitch/pitch-doc-2026-05-08.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "complete_mc_writeback_ready",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/battle-cards/battle-cards-2026-05-08.md"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "complete_mc_written",
+      "evidence": [],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "complete_mc_written",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/qa/qa-round-2-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa2-mobile-home-2026-05-08.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa2-mobile-menu-2026-05-08.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa2-mobile-visit-2026-05-08.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "complete_mc_written",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/qa/qa-round-3-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/public/photos/tekka/",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa3-assets-mobile-home-2026-05-08.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa3-assets-mobile-menu-2026-05-08.png"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "blocked_missing_public_preview_url",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/delivery/delivery-package-2026-05-08.md"
+      ],
+      "blocker": "Need public Vercel/preview URL before delivered."
+    }
+  ],
+  "evidencePaths": [],
+  "qaRounds": {
+    "round1": {
+      "status": "complete_mc_written",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/qa/qa-round-1-2026-05-08.md"
+      ]
+    },
+    "round2": {
+      "status": "complete_mc_writeback_ready",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/qa/qa-round-2-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa2-mobile-home-2026-05-08.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa2-mobile-menu-2026-05-08.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa2-mobile-visit-2026-05-08.png"
+      ],
+      "findings": [
+        "Mobile hero consumed too much early vertical space",
+        "Conversion path needed route-level verification"
+      ],
+      "fixes": [
+        "Reduced mobile PageHeroSplit from 60vh to 48vh",
+        "Captured 390px route screenshots and verified no horizontal overflow"
+      ]
+    },
+    "round3": {
+      "status": "complete_mc_writeback_ready",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/qa/qa-round-3-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/public/photos/tekka/",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa3-assets-mobile-home-2026-05-08.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/qa3-assets-mobile-menu-2026-05-08.png"
+      ],
+      "findings": [
+        "Placeholder imagery remained after earlier passes",
+        "Final asset proof needed Tekka-owned images"
+      ],
+      "fixes": [
+        "Downloaded official Tekka public site/gallery/menu images",
+        "Updated content image wiring and rebuilt",
+        "Captured asset screenshots"
+      ]
+    }
+  },
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": null,
+    "battleCards": null,
+    "outreachDraft": null,
+    "beforeAfterScreenshots": [],
+    "pitchDocPath": "restaurant-website-system/sites/tekka-sushi/pitch/pitch-doc-2026-05-08.md",
+    "status": "complete_mc_writeback_ready",
+    "passedRequirementIds": [
+      "pitch-before-after",
+      "pitch-evidence",
+      "pitch-specific"
+    ],
+    "battleCardsPath": "restaurant-website-system/sites/tekka-sushi/battle-cards/battle-cards-2026-05-08.md",
+    "battleCardsStatus": "complete_mc_writeback_ready"
+  },
+  "blockers": [],
+  "requirements": [
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist"
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing"
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews"
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Exactly one archetype/template route is chosen and justified",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building"
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/components/TekkaConcierge.tsx",
+        "restaurant-website-system/sites/tekka-sushi/app/reservation/page.tsx",
+        "restaurant-website-system/sites/tekka-sushi/ai-concierge/concierge-kb-and-test-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-concierge-entry-desktop-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/components/TekkaConcierge.tsx",
+        "restaurant-website-system/sites/tekka-sushi/app/reservation/page.tsx",
+        "restaurant-website-system/sites/tekka-sushi/ai-concierge/concierge-kb-and-test-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-concierge-entry-desktop-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/tekka-sushi/components/TekkaConcierge.tsx",
+        "restaurant-website-system/sites/tekka-sushi/app/reservation/page.tsx",
+        "restaurant-website-system/sites/tekka-sushi/ai-concierge/concierge-kb-and-test-2026-05-08.md",
+        "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-concierge-entry-desktop-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch"
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards"
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1"
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2"
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3"
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging"
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "pending",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging"
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control root task metadata.build_stage/currentStage matches this checklist currentStage.",
+    "Mission Control root + child tasks mirror this checklist requirements, evidence_required, required_skills, and checklist paths.",
+    "Every canonical workflow step has either passed evidence in MC or a fresh blocker recorded in MC.",
+    "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
+    "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
+  ],
+  "updatedAt": "2026-05-08T02:24:45.069Z",
+  "structuredLeadMetadata": {
+    "restaurant_name": "Tekka Sushi",
+    "address_location": "84 Biesterfield Rd, Elk Grove Village, IL 60007",
+    "phone": "(224) 875-7188",
+    "website_url": "https://tekkasushi.com/",
+    "official_menu_url": "https://tekkasushi.com/menu",
+    "order_urls": [
+      "https://www.beyondmenu.com/60518/elk-grove-village/tekka-sushi-elk-grove-village-60007.aspx",
+      "https://www.tekkasushiil.com/"
+    ],
+    "restaurantji_rating": "4.8 / 170 ratings",
+    "template_register": "Qitchen",
+    "metadata_source_notes": "Official menu exposes placeholder/template copy; Restaurantji and Beyond Menu confirm real sushi/Japanese menu depth. Google evidence pending browser capture."
+  },
+  "qualification": {
+    "status": "complete_local_mc_writeback_pending",
+    "decision": "Build",
+    "recommendedTemplateRegister": "Qitchen",
+    "whySwitchSentence": "If Tekka Sushi saw our redesign, the specific reason they would switch is that their owned website currently makes the menu look fake/template-filled, while a Qitchen-led site can make their real sushi, sashimi, ramen, and roll menu feel trustworthy and order-ready in seconds.",
+    "passedRequirementIds": [
+      "lead-fit-qualified",
+      "lead-fit-seven-checks",
+      "lead-fit-evidence"
+    ],
+    "artifactMarkdown": "restaurant-website-system/sites/tekka-sushi/qualification/lead-fit-qualification-2026-05-08.md",
+    "artifactJson": "restaurant-website-system/sites/tekka-sushi/qualification/lead-fit-qualification-2026-05-08.json",
+    "mcWritebackBlockedBy": "PATCH /api/agency/leads/:leadId/build returns column tasks.blocked does not exist until Mission Control build writeback fallback ships."
+  },
+  "currentSiteAudit": {
+    "status": "complete_local_mc_writeback_pending",
+    "auditPath": "restaurant-website-system/sites/tekka-sushi/current-site-audit/audit-2026-05-08.md",
+    "desktopScreenshot": "restaurant-website-system/sites/tekka-sushi/current-site-audit/screenshots/menu-desktop-fullpage.png",
+    "mobileScreenshot": "restaurant-website-system/sites/tekka-sushi/current-site-audit/screenshots/menu-mobile-390x1400.png",
+    "scrapePaths": [
+      "restaurant-website-system/sites/tekka-sushi/current-site-audit/scrapes/menu.txt",
+      "restaurant-website-system/sites/tekka-sushi/current-site-audit/scrapes/home.txt",
+      "restaurant-website-system/sites/tekka-sushi/current-site-audit/scrapes/reservation.txt"
+    ],
+    "passedRequirementIds": [
+      "current-site-screenshots",
+      "current-site-scrape",
+      "current-site-opportunities"
+    ],
+    "topFindings": [
+      "Official /menu exposes placeholder/template content.",
+      "Order/reservation paths are fragmented but salvageable.",
+      "Hours/contact are inconsistent across pages.",
+      "Colorlib/template residue weakens credibility."
+    ],
+    "mcWritebackBlockedBy": "PATCH /api/agency/leads/:leadId/build returns column tasks.blocked does not exist until Mission Control build writeback fallback ships."
+  },
+  "googleReviewsCapture": {
+    "status": "complete_local_mc_writeback_pending",
+    "rating": 4.8,
+    "reviewCount": 370,
+    "sortFilter": "Highest rating",
+    "packetJson": "restaurant-website-system/sites/tekka-sushi/google-reviews/google-reviews-highest-2026-05-08.json",
+    "packetMarkdown": "restaurant-website-system/sites/tekka-sushi/google-reviews/google-reviews-highest-2026-05-08.md",
+    "screenshot": "restaurant-website-system/sites/tekka-sushi/google-reviews/screenshots/google-reviews-highest-cdp.png",
+    "passedRequirementIds": [
+      "reviews-highest-filter",
+      "reviews-thirty-written",
+      "reviews-themes"
+    ],
+    "themes": [
+      "fresh sushi/sashimi",
+      "beautiful presentation",
+      "modern/chic atmosphere",
+      "friendly attentive service",
+      "online ordering/takeout matters"
+    ],
+    "mcWritebackBlockedBy": "PATCH /api/agency/leads/:leadId/build returns column tasks.blocked does not exist until Mission Control build writeback fallback ships."
+  },
+  "templateRouting": {
+    "status": "locked_local_mc_writeback_pending",
+    "chosenArchetype": "Qitchen",
+    "templateSlug": "qitchen-01",
+    "registerGuardrail": "De-ceremonialized Qitchen: preserve order/call/directions and avoid omakase/luxury claims.",
+    "passedRequirementIds": [
+      "route-one-archetype",
+      "template-route-locked"
+    ],
+    "evidence": [
+      "restaurant-website-system/sites/tekka-sushi/routing/template-route-2026-05-08.md",
+      "restaurant-website-system/sites/tekka-sushi/routing/template-route-2026-05-08.json"
+    ],
+    "mcWritebackBlockedBy": "PATCH /api/agency/leads/:leadId/build returns column tasks.blocked does not exist until Mission Control build writeback fallback ships."
+  },
+  "templateFork": {
+    "status": "complete_local_mc_writeback_pending",
+    "templateSlug": "qitchen-01",
+    "forkMethod": "rsync into existing artifact directory because checklist/evidence already existed and force overwrite was not authorized",
+    "metadataPath": "restaurant-website-system/sites/tekka-sushi/.agency-template.json",
+    "packagePath": "restaurant-website-system/sites/tekka-sushi/package.json",
+    "evidence": [
+      "restaurant-website-system/sites/tekka-sushi/.agency-template.json",
+      "restaurant-website-system/sites/tekka-sushi/package.json",
+      "restaurant-website-system/sites/tekka-sushi/app/page.tsx",
+      "restaurant-website-system/sites/tekka-sushi/app/menu/page.tsx",
+      "restaurant-website-system/sites/tekka-sushi/components/MenuList.tsx"
+    ],
+    "verification": {
+      "npmCi": "passed; 111 packages installed",
+      "typecheck": "passed: npm run typecheck",
+      "build": "passed: npm run build; 7 static pages generated",
+      "dependencyWarning": "npm audit reports 1 moderate and 1 critical inherited from qitchen template dependency set; do not run force audit fix without explicit approval because it may upgrade/break template behavior"
+    },
+    "passedRequirementIds": [
+      "template-fork-build-complete"
+    ],
+    "mcWritebackBlockedBy": "PATCH /api/agency/leads/:leadId/build returns column tasks.blocked does not exist until Mission Control build writeback fallback ships."
+  },
+  "websiteImprovementPass": {
+    "status": "complete_mc_written_ready_for_next_gate",
+    "summary": "Personalized qitchen-01 fork with Tekka-specific brand, CTAs, proof, address/phone/hours, and verified menu/review anchors; typecheck/build passed.",
+    "evidence": [
+      "restaurant-website-system/sites/tekka-sushi/content.example.ts",
+      "restaurant-website-system/sites/tekka-sushi/build-pass/content-pass-2026-05-08.md"
+    ],
+    "verification": {
+      "typecheck": "passed",
+      "build": "passed",
+      "mobileScreenshots": "captured and checked; document scroll width equals viewport width at 390px"
+    },
+    "remainingRisks": [
+      "placeholder images still need source/neutralization before final QA",
+      "npm audit reports inherited moderate/critical vulnerabilities from qitchen template dependency set"
+    ],
+    "passedRequirementIds": [
+      "build-run",
+      "conversion-paths",
+      "improvement-pass-complete",
+      "mobile-check",
+      "website-improvement-pass-complete"
+    ],
+    "mcWritebackBlockedBy": "PATCH /api/agency/leads/:leadId/build returns column tasks.blocked does not exist until Mission Control build writeback fallback ships.",
+    "mobileEvidence": [
+      "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-home-2026-05-08-v2.png",
+      "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-mobile-menu-2026-05-08-v4.png"
+    ],
+    "desktopEvidence": [
+      "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-desktop-home-2026-05-08.png"
+    ]
+  },
+  "topThreeImprovements": {
+    "status": "complete_mc_writeback_ready",
+    "items": [
+      {
+        "title": "Replace fake/placeholder menu with real Tekka anchors",
+        "status": "implemented",
+        "evidence": [
+          "restaurant-website-system/sites/tekka-sushi/content.example.ts"
+        ]
+      },
+      {
+        "title": "Turn the site into an order/call/directions conversion surface",
+        "status": "implemented",
+        "evidence": [
+          "restaurant-website-system/sites/tekka-sushi/components/HomeProofPanel.tsx",
+          "restaurant-website-system/sites/tekka-sushi/components/StickyMobileActions.tsx"
+        ]
+      },
+      {
+        "title": "Remove fake reservation form and use truthful handoffs",
+        "status": "implemented",
+        "evidence": [
+          "restaurant-website-system/sites/tekka-sushi/components/ReservationFormPanel.tsx"
+        ]
+      }
+    ],
+    "evidence": [
+      "restaurant-website-system/sites/tekka-sushi/top-three-improvements/top-three-improvements-2026-05-08.md",
+      "restaurant-website-system/sites/tekka-sushi/content.example.ts",
+      "restaurant-website-system/sites/tekka-sushi/components/HomeProofPanel.tsx",
+      "restaurant-website-system/sites/tekka-sushi/components/StickyMobileActions.tsx",
+      "restaurant-website-system/sites/tekka-sushi/components/ReservationFormPanel.tsx"
+    ],
+    "verification": {
+      "typecheck": "passed",
+      "build": "passed"
+    },
+    "passedRequirementIds": [
+      "top-3-improvements-identified",
+      "top-3-improvements-implemented",
+      "top-three-before-after-evidence"
+    ]
+  },
+  "aiConcierge": {
+    "status": "complete_mc_writeback_ready",
+    "type": "truth-safe rule-based preview concierge",
+    "skillGap": "Mission Control marked restaurant-ai-concierge as skill_gap; used website-agency-operator + restaurant-build-checklist contracts and recorded limits.",
+    "evidence": [
+      "restaurant-website-system/sites/tekka-sushi/components/TekkaConcierge.tsx",
+      "restaurant-website-system/sites/tekka-sushi/app/reservation/page.tsx",
+      "restaurant-website-system/sites/tekka-sushi/ai-concierge/concierge-kb-and-test-2026-05-08.md",
+      "restaurant-website-system/sites/tekka-sushi/screenshots/local-preview-concierge-entry-desktop-2026-05-08.png"
+    ],
+    "passedRequirementIds": [
+      "concierge-visible",
+      "concierge-tested",
+      "concierge-safe"
+    ],
+    "verification": {
+      "typecheck": "passed",
+      "build": "passed",
+      "playwrightInnerText": "Tekka Concierge entry point and answer text found in DOM"
+    }
+  },
+  "deliveryPackage": {
+    "status": "blocked_missing_public_preview_url",
+    "evidence": [
+      "restaurant-website-system/sites/tekka-sushi/delivery/delivery-package-2026-05-08.md"
+    ],
+    "passedRequirementIds": [
+      "delivery-three-qa-rounds",
+      "delivery-pack"
+    ],
+    "missingRequirementIds": [
+      "delivery-final-url"
+    ],
+    "blocker": "Need public Vercel/preview URL before MC can mark delivered."
+  }
+}

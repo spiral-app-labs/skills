@@ -1,0 +1,7 @@
+{
+  "site_slug": "tekka-sushi",
+  "template_slug": "qitchen-01",
+  "created_at": "2026-05-08T02:34:59.629Z",
+  "source": "restaurant-website-system/templates/qitchen-01",
+  "fork_method": "rsync_into_existing_artifact_directory_because_checklist_evidence_already_existed"
+}
