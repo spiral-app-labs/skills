@@ -21,25 +21,25 @@ export function FloatingHeaderPill() {
   return (
     <>
     <motion.header
-      className="fixed top-3 md:top-6 left-1/2 -translate-x-1/2 z-50 flex w-[calc(100vw-20px)] max-w-[calc(100vw-20px)] items-center justify-between gap-2 overflow-hidden rounded-pill border border-border/50 bg-surface/95 px-2 py-1.5 backdrop-blur-sm md:w-auto md:max-w-[calc(100vw-24px)] md:justify-start md:gap-1 md:pl-3 md:pr-1"
-      initial={{ opacity: 0, y: -8 }}
+      className="fixed left-3 right-3 top-3 z-50 flex min-w-0 items-center gap-1 overflow-hidden rounded-pill border border-border/60 bg-surface/98 py-1.5 pl-2 pr-2 shadow-[0_16px_44px_rgba(0,0,0,0.22)] backdrop-blur-md md:left-1/2 md:right-auto md:top-6 md:max-w-[calc(100vw-24px)] md:-translate-x-1/2 md:pl-3 md:pr-1"
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{
         duration: theme.motion.revealDuration * 0.6,
         ease: theme.motion.easing,
       }}
     >
-      <Link
-        href="/menu"
-        className="inline-flex h-9 items-center rounded-pill border border-border/70 px-3 text-[11px] font-semibold uppercase tracking-[1.6px] text-text transition-colors hover:border-accent/60 hover:text-accent md:hidden"
+      <button
+        aria-label="Open menu"
+        className="grid place-items-center w-8 h-8 rounded-md hover:bg-surface-hover transition-colors"
       >
-        Menu
-      </Link>
+        <span className="block w-3.5 h-px bg-text relative before:content-[''] before:absolute before:top-[-4px] before:left-0 before:w-3.5 before:h-px before:bg-text after:content-[''] after:absolute after:top-[4px] after:left-0 after:w-3.5 after:h-px after:bg-text" />
+      </button>
 
       <Link
         href="/"
-        className="min-w-0 flex-1 truncate px-1 text-center font-display text-text whitespace-nowrap md:flex-none md:px-3 md:text-left"
-        style={{ fontSize: 'clamp(14px, 3.8vw, 16px)', letterSpacing: '0.08em' }}
+        className="min-w-0 flex-1 truncate px-2 font-display text-text whitespace-nowrap md:flex-none md:px-3"
+        style={{ fontSize: '15px', letterSpacing: '0.07em' }}
       >
         {content.brand.logo}
       </Link>
@@ -67,28 +67,28 @@ export function FloatingHeaderPill() {
 
       <Link
         href={content.nav.cta.href}
-        className="ml-0 rounded-pill border border-accent/60 px-3 py-2 text-[11px] font-semibold uppercase tracking-[1.6px] whitespace-nowrap text-accent transition-colors hover:border-accent hover:bg-accent/10 md:ml-2 md:px-4 md:text-button"
+        className="ml-1 hidden rounded-pill border border-accent/60 px-3 py-2 text-button text-accent transition-colors hover:border-accent hover:bg-accent/10 whitespace-nowrap sm:inline-flex md:ml-2 md:px-4"
       >
         {content.nav.cta.label}
       </Link>
     </motion.header>
 
-    <div className="fixed inset-x-3 bottom-3 z-50 grid grid-cols-3 gap-2 rounded-card border border-border/50 bg-surface/95 p-2 shadow-2xl backdrop-blur md:hidden">
+    <div className="fixed bottom-3 left-3 right-3 z-50 flex min-w-0 gap-1.5 overflow-hidden rounded-card border border-border/60 bg-surface/98 p-2 shadow-2xl backdrop-blur-md md:hidden">
       <Link
         href={content.nav.cta.href}
-        className="rounded-pill bg-accent px-3 py-2.5 text-center text-[11px] font-semibold uppercase tracking-[1.6px] text-canvas"
+        className="min-w-0 flex-1 rounded-pill bg-accent px-2 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[1.2px] text-canvas"
       >
         Reserve
       </Link>
       <Link
         href="/menu"
-        className="rounded-pill border border-border/70 px-3 py-2.5 text-center text-[11px] font-semibold uppercase tracking-[1.6px] text-text"
+        className="min-w-0 flex-1 rounded-pill border border-border/70 px-2 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[1.2px] text-text"
       >
         Menu
       </Link>
       <Link
         href={`tel:+${content.brand.phone.replace(/[^0-9]/g, '')}`}
-        className="rounded-pill border border-border/70 px-3 py-2.5 text-center text-[11px] font-semibold uppercase tracking-[1.6px] text-text"
+        className="min-w-0 flex-1 rounded-pill border border-border/70 px-2 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[1.2px] text-text"
       >
         Call
       </Link>

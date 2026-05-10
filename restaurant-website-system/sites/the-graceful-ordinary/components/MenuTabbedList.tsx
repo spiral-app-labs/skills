@@ -17,14 +17,14 @@ export function MenuTabbedList() {
   const section = content.menu.sections[active as keyof typeof content.menu.sections];
 
   return (
-    <section className="px-6 md:px-12 py-16 md:py-20 max-w-[1100px] mx-auto">
+    <section className="px-6 md:px-12 pt-16 pb-28 md:py-20 max-w-[1100px] mx-auto">
       {/* Tab pills */}
-      <div className="flex flex-wrap justify-center gap-2 mb-12">
+      <div className="-mx-6 mb-12 flex gap-2 overflow-x-auto px-6 pb-2 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 sm:pb-0">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActive(tab)}
-            className={`px-5 py-2.5 rounded-pill text-button border transition-colors ${
+            className={`shrink-0 px-5 py-2.5 rounded-pill text-button border transition-colors ${
               active === tab
                 ? 'bg-accent text-surface border-accent'
                 : 'border-border/60 text-text-muted hover:text-text hover:border-text/40'
