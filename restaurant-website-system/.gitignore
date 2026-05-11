@@ -18,6 +18,11 @@ inputs/*/*/motion-frames/
 # Recreation sanity screenshots — regenerable by running the template's dev server + screenshot script
 templates/*/recreation-screenshots/
 
+# Hero personalization raw assets — large generated files, uploaded to Bunny.net
+# Production references the CDN URL in content.ts; local raw files are archive only
+sites/*/public/images/raw/
+sites/*/public/videos/raw/
+
 # Node / Next.js
 node_modules/
 .next/
