@@ -1,0 +1,49 @@
+{
+  "status": "work_done_with_blocker",
+  "summary": "Frato's local delivery package was hardened with a MC replay helper dry run and a local artifact bundle; full delivery still needs public preview URL and protected MC auth.",
+  "ranAt": "2026-05-08T17:31:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I tightened the Frato's handoff: added a safe replay helper for MC payloads, verified it in dry-run mode, and packaged a local delivery tarball with checksum/manifest. This does not change the remaining blocker: we still need a public preview URL and protected agency auth before marking MC delivered.",
+    "technical_summary": "Created scripts/replay-fratos-mc-payloads.mjs, ran node scripts/replay-fratos-mc-payloads.mjs dry-run to mc-replay-fratos-payloads-dry-run-2026-05-08.json, created delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz plus sha256 and manifest, and mirrored these paths into checklist.md/checklist.json/mc-delivery-package-2026-05-08-payload.json. AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET remain unset in runtime.",
+    "work_items": [
+      {
+        "title": "Create replay helper for prepared MC payloads",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs"
+      },
+      {
+        "title": "Dry-run replay helper",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json"
+      },
+      {
+        "title": "Create local delivery artifact bundle",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz"
+      },
+      {
+        "title": "Full Mission Control delivery",
+        "status": "blocked",
+        "blocker": "Needs public preview/deploy URL plus AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET for protected agency writebacks."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ]
+  }
+}

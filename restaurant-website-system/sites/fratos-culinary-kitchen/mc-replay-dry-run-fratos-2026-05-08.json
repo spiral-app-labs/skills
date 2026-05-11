@@ -1,0 +1,30 @@
+mode: dry-run
+mc_api_base_url: http://localhost:3010
+sites: fratos-culinary-kitchen
+
+[fratos-culinary-kitchen]
+lead: cec3f7af-ab8d-4785-af76-e57e743cdf25
+stages: top_3_improvements -> concierge -> pitch -> battle_cards
+final_mc_stage: packaging
+missing_evidence: 25
+  - restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json
+  - restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md
+  - restaurant-website-system/sites/fratos-culinary-kitchen/components/AnonReviewCarousel.tsx
+  - restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx
+  - restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx
+  - restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts
+  - restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md
+  - restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json
+  - ... 17 more
+api:
+  - top_3_improvements build: dry-run PATCH http://localhost:3010/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build
+  - top_3_improvements heartbeat: dry-run POST http://localhost:3010/api/heartbeat
+  - concierge build: dry-run PATCH http://localhost:3010/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build
+  - concierge heartbeat: dry-run POST http://localhost:3010/api/heartbeat
+  - pitch build: dry-run PATCH http://localhost:3010/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build
+  - pitch heartbeat: dry-run POST http://localhost:3010/api/heartbeat
+  - battle_cards build: dry-run PATCH http://localhost:3010/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build
+  - battle_cards heartbeat: dry-run POST http://localhost:3010/api/heartbeat
+
+replayed_sites: 1
+total_missing_evidence_paths: 25

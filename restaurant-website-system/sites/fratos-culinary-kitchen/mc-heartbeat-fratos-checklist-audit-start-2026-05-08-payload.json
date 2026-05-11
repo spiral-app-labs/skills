@@ -1,0 +1,29 @@
+{
+  "status": "work_done",
+  "summary": "Frato's lead qualification completed; checklist synced; current-site audit started.",
+  "ranAt": "2026-05-08T15:36:19Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "ee57d30d-9256-4a24-92fe-f697ed932b88", "000f9e60-4e92-4525-8c56-8ce994a53f1b", "aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's passed lead qualification as a Build candidate. I created and synced its local build checklist in Mission Control, then started the current-site audit worker so the agency workflow keeps moving in order.",
+    "technical_summary": "Qualification worker wrote qualification.md/json and MC returned 200 for lead_qualification. Ran scripts/new-build-checklist.mjs for slug fratos-culinary-kitchen with lead cec3f7af-ab8d-4785-af76-e57e743cdf25 and root task fdead14c-0079-4168-b6b7-c8b80218a681. PATCHed /api/agency/leads/:leadId/build with build_stage checklist, checklist paths, and passed ids checklist-md/checklist-json/checklist-mc-sync; MC marked checklist child 000f9e60-4e92-4525-8c56-8ce994a53f1b done. Planner selected current_site_audit, so I spawned a worker for child aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e with explicit instructions to do current-site audit only and defer Google Reviews to the next gate.",
+    "work_started_state": "Frato's lead qualification was complete; checklist was pending.",
+    "work_completed_state": "Checklist is synced and current-site audit is running.",
+    "work_items": [
+      {"type":"lead_qualification", "site":"fratos-culinary-kitchen", "status":"done_synced"},
+      {"type":"checklist", "site":"fratos-culinary-kitchen", "status":"done_synced"},
+      {"type":"current_site_audit", "site":"fratos-culinary-kitchen", "status":"worker_started"}
+    ],
+    "touched_entities": [
+      {"kind":"lead", "id":"cec3f7af-ab8d-4785-af76-e57e743cdf25", "name":"Frato's Culinary Kitchen"},
+      {"kind":"task", "id":"fdead14c-0079-4168-b6b7-c8b80218a681", "role":"root"},
+      {"kind":"task", "id":"000f9e60-4e92-4525-8c56-8ce994a53f1b", "role":"checklist"},
+      {"kind":"task", "id":"aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e", "role":"current_site_audit"}
+    ],
+    "process_improvement_candidates": [
+      "Checklist generator should output both legacy camelCase and current snake_case top-level keys, or downstream jq checks should standardize on one schema."
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "checked_at": "2026-05-11T11:34:23Z",
+  "site_slug": "fratos-culinary-kitchen",
+  "mc_root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "agency_lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "status": "delivery_package_integrity_passed_but_delivery_blocked",
+  "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/",
+  "zip": {
+    "exists": true,
+    "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+    "bytes": 105874311,
+    "sha256": "d638b881dd5ceedc01e0dc2a851c1bf79c1e0b8882a232cc597bd407edb0c567",
+    "entries": 202,
+    "required_files_present_in_zip": true
+  },
+  "file_count": 25,
+  "files": [
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/audit.json",
+      "bytes": 19275,
+      "sha256": "a31b8020ae882f865afe08d912625d27ddfa03880c1d7a56dbaee05ddbd7de16"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/audit.md",
+      "bytes": 10423,
+      "sha256": "584ce9a08b3852c714181cc85984e06b4877163c13e74941721114f6ee711e1e"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/battle-cards-2026-05-08.md",
+      "bytes": 4895,
+      "sha256": "0f39837afbd6920c9d7760bb1f1d41890445be9363d5e4282ccb438254bb4300"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/checklist.json",
+      "bytes": 90161,
+      "sha256": "3d17b4747e128e448d0a214c08633e7dfc0ec3aba47ad108974a35dedee4b2fd"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/checklist.md",
+      "bytes": 32759,
+      "sha256": "0f504d6482dae5465e06c71cdb56194d505d4597716fea809374850f7a9832cd"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge-kb-2026-05-08.md",
+      "bytes": 5487,
+      "sha256": "7dfd097805452ce4de14af794efd331dde066d2618108b5b8dc8f29e221ca6f5"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge-test-transcript-2026-05-08.md",
+      "bytes": 3263,
+      "sha256": "fec19a875553084d341c9592ddf7917f437ef24086ad5e72b1ab0e61121bfc31"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-2026-05-08.md",
+      "bytes": 5313,
+      "sha256": "139715ddfbe44819822312f62bbb49c177c77a094d6b7b10350d3d10ed71d424"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-manifest-2026-05-09.json",
+      "bytes": 71948,
+      "sha256": "c6c22c178031fe7ff85f666afd246d4c3e6b91c56f0164a1b1f83dccb4d487d6"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-readme-2026-05-09.md",
+      "bytes": 1551,
+      "sha256": "6c11f8ac0d440e440d29d25d0ec590b27d270c5b8966b15b81e3be6385aff04c"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/deploy-approval-request-2026-05-08.md",
+      "bytes": 3787,
+      "sha256": "69297620830d0ea6c46b83c09afba9f08ca6b4726782466b3731fc7750283efa"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-current-site-audit-sync-2026-05-08.json",
+      "bytes": 22218,
+      "sha256": "9c6da28a65f0c3b527514f5d782e1deea719dd266778c401ee8226828b88a4de"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-current-site-audit-sync-payload-2026-05-08.json",
+      "bytes": 2620,
+      "sha256": "0067d8a3d31e83bf0ef144357a5c5376780864bcc795302652d512076a3fee65"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-delivery-final-url-template-2026-05-08.json",
+      "bytes": 2561,
+      "sha256": "fb06c60e1e65e7ca6630e3ca82df1e947106c2ff47a7787acfb40aa1e69919c8"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-delivery-package-2026-05-08-payload.json",
+      "bytes": 4867,
+      "sha256": "7af20d8f93c3d62ac89fcd830ddd15251f42d75d899e0e511cfd2f821446e123"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+      "bytes": 7442,
+      "sha256": "497330bbbba23f525e602f8ed331da25b4b38d0a1952b52b5a8a14d68aa4f6ff"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-workflow-after-current-site-audit-2026-05-08.json",
+      "bytes": 7108,
+      "sha256": "55c75c3a8cd9ad6d1cc653fc9f27ad9b353fce461394cec71713a8789b6aec86"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/pitch-doc-2026-05-08.md",
+      "bytes": 5032,
+      "sha256": "4c2481820f29d73d0a7fdfe32414858db7fa2b424ff6edceb1c7b244572ec77f"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-1-2026-05-08.md",
+      "bytes": 3027,
+      "sha256": "8a57c145f2fe9484dfef635a68c42fbd239b252d6e35fcfbb3de43913767f213"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-2-2026-05-08.md",
+      "bytes": 1987,
+      "sha256": "6aa4335c6e29d3779bd5cc2340624ffa16d88eb2a55b673512a3e0a82418e40a"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-3-final-qa-2026-05-08.md",
+      "bytes": 3082,
+      "sha256": "beec965bcc205075fb6d74e7921fa5dc40d738f43f366e14751a83e9576e3cc7"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/routing.json",
+      "bytes": 8200,
+      "sha256": "8874a66b62508db76b3adfe182e627cc4f5fd1e746363705e4020746c66f3b72"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/routing.md",
+      "bytes": 9347,
+      "sha256": "3b32a19fe964a01df1c0254f648da248076a87bdd84036c5d8bfae8fb7ad8ba6"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/tooling-hardening-2026-05-08.md",
+      "bytes": 1871,
+      "sha256": "e676b899a301d1c35a8dd138c89665e7dabffd6ab65439ea964b8fe10e94d83f"
+    },
+    {
+      "path": "sites/fratos-culinary-kitchen/delivery-package-2026-05-09/top-3-improvements-2026-05-08.md",
+      "bytes": 5388,
+      "sha256": "a7bf8b0b52f74e86de6ad552210e26c699d293e0cd9869b22290dab2e48ed001"
+    }
+  ],
+  "required_files_missing": [],
+  "json_valid": [
+    "audit.json",
+    "mc-current-site-audit-sync-payload-2026-05-08.json",
+    "mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+    "mc-delivery-package-2026-05-08-payload.json",
+    "mc-delivery-final-url-template-2026-05-08.json",
+    "mc-current-site-audit-sync-2026-05-08.json",
+    "delivery-package-manifest-2026-05-09.json",
+    "routing.json",
+    "checklist.json",
+    "mc-workflow-after-current-site-audit-2026-05-08.json"
+  ],
+  "json_invalid": [],
+  "delivery_blockers": [
+    "Public preview/deploy URL is still missing; local QA is not client-deliverable without approved deploy/project link.",
+    "Protected MC agency writeback auth is missing in this runtime, so packaging cannot be mirrored/closed through protected agency APIs.",
+    "Same-day public-facing Google proof should be rechecked immediately before any client pitch."
+  ],
+  "next_unblock_actions": [
+    "Founder approves/links Vercel project or supplies public preview URL.",
+    "Configure AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET for protected MC writeback.",
+    "Then replay packaging payload and attach this integrity artifact as delivery evidence."
+  ]
+}

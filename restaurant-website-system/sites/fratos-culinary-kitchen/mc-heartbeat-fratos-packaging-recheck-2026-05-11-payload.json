@@ -1,0 +1,67 @@
+{
+  "status": "work_done",
+  "summary": "Agency: rechecked Frato's packaging readiness locally; typecheck/build passed, delivery artifacts exist, and Vercel remains npx-only without project linkage, so deploy still needs approval.",
+  "ranAt": "2026-05-11T02:57:22Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "mode": "agency",
+    "source": "openclaw_website_agency",
+    "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+    "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+    "site_slug": "fratos-culinary-kitchen",
+    "build_stage": "packaging",
+    "protected_planner_status": "blocked_missing_auth",
+    "human_summary": "Frato's is still locally packaging-ready. I reran typecheck and production build; both passed. The local delivery archives are present and hashed. Vercel is available through npx as ethan-7906, but the project is not linked and deploy still needs approval/project confirmation.",
+    "technical_summary": "Ran npm run typecheck and npm run build in sites/fratos-culinary-kitchen; both exited 0. Build generated static routes /, /about, /contact, /_not-found. Rechecked deploy state: global vercel absent, npx vercel 53.3.2 works, npx vercel whoami returns ethan-7906, VERCEL_TOKEN/ORG_ID/PROJECT_ID absent, .vercel/project.json missing. Verified delivery artifacts and sha256 for delivery-package-2026-05-09.zip.",
+    "work_items": [
+      {
+        "title": "Protected planner retry",
+        "status": "blocked_missing_auth"
+      },
+      {
+        "title": "Frato's packaging typecheck",
+        "status": "passed"
+      },
+      {
+        "title": "Frato's packaging production build",
+        "status": "passed"
+      },
+      {
+        "title": "Delivery artifact presence/hash recheck",
+        "status": "passed"
+      },
+      {
+        "title": "Preview deploy",
+        "status": "blocked_pending_approval_project_confirmation"
+      }
+    ],
+    "evidence_paths": [
+      "restaurant-website-system/sites/fratos-culinary-kitchen/packaging-recheck-2026-05-11.md",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-packaging-recheck-2026-05-11T025649Z.txt",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-packaging-recheck-2026-05-11T025649Z.txt",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-approval-request-2026-05-08.md",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz"
+    ],
+    "artifact_hashes": {
+      "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip": "d638b881dd5ceedc01e0dc2a851c1bf79c1e0b8882a232cc597bd407edb0c567"
+    },
+    "blockers": [
+      {
+        "type": "mc_auth",
+        "status": "open",
+        "detail": "Protected Mission Control agency auth is still missing in OpenClaw; planner and build writeback remain unavailable until AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET is configured."
+      },
+      {
+        "type": "deploy_approval",
+        "status": "open",
+        "detail": "Frato's preview deploy creates/updates an external public artifact and may create/link a Vercel project. npx vercel is available as ethan-7906, but .vercel/project.json is missing and deployment still requires founder/operator approval and confirmation of the correct Vercel project/org target."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "work_done",
+  "summary": "Frato's QA Round 2 completed locally: mobile conversion/nav fixes, explicit viewport, tap targets, post-fix screenshots, and QA payload prepared.",
+  "ranAt": "2026-05-08T17:08:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's passed QA Round 2 locally after fixes. I tightened the mobile quick-link rail, added Contact, made tap targets safer, made the viewport explicit, reduced decorative mobile clutter, and rechecked screenshots.",
+    "technical_summary": "Updated content.example.ts, app/layout.tsx, components/TopNavSimple.tsx, components/DishCardGrid.tsx, and components/ConfettiHero.tsx. Ran npm run typecheck and npm run build; build passed with the known missing-ESLint warning. Captured CDP post-fix screenshots with vw/docW/bodyW matching at 390 mobile and 1440 desktop. Wrote qa-round-2-2026-05-08.md and mc-qa-round-2-2026-05-08-payload.json. Protected agency QA writeback remains blocked by missing AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET.",
+    "work_started_state": "QA Round 2 initial vision pass found mobile Menu label precision, missing mobile Contact route, tight small Order/tap pills, viewport explicitness, and decorative confetti polish issues.",
+    "work_completed_state": "QA Round 2 is complete locally and checklist advanced to qa_round_3, pending protected MC sync.",
+    "work_items": [
+      {
+        "title": "Run QA Round 2 mobile conversion review",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md"
+      },
+      {
+        "title": "Apply mobile navigation/tap-target/viewport/confetti fixes",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-2-after-fixes-cdp-capture-2026-05-08.jsonl"
+      },
+      {
+        "title": "Mission Control QA Round 2 writeback",
+        "status": "blocked",
+        "blocker": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ]
+  }
+}

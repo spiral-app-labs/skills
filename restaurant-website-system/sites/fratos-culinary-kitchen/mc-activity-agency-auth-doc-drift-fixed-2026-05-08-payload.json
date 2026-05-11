@@ -1,0 +1,31 @@
+{
+  "action": "agency_process_doc_update",
+  "description": "Fixed stale agency auth docs to use AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET plus x-agency-runtime instead of Supabase service keys.",
+  "taskId": "1a97a775-1ff9-42c5-bd07-a804a1d13890",
+  "agentName": "Evan",
+  "actor": {
+    "type": "agent",
+    "key": "evan",
+    "agentId": "8d861f72-2193-4158-8ca1-b0415d2b8f96",
+    "displayName": "Evan"
+  },
+  "metadata": {
+    "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+    "site_slug": "fratos-culinary-kitchen",
+    "files_updated": [
+      "HEARTBEAT.md",
+      "GitHub/skills/agency-mission-control-sync/SKILL.md",
+      "GitHub/skills/website-agency-operator/SKILL.md"
+    ],
+    "auth_contract": {
+      "bearer_primary": "AGENCY_AUTONOMY_API_KEY",
+      "bearer_fallback": "OPENCLAW_WEBHOOK_SECRET",
+      "required_header": "x-agency-runtime: openclaw",
+      "not_bearer_tokens": ["SUPABASE_SECRET_KEY", "SUPABASE_SERVICE_ROLE_KEY"]
+    },
+    "runtime_retest": {
+      "status": "skipped_missing_agency_bearer",
+      "missing_env": ["AGENCY_AUTONOMY_API_KEY", "OPENCLAW_WEBHOOK_SECRET"]
+    }
+  }
+}

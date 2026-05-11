@@ -1,0 +1,6 @@
+{
+  "ok": true,
+  "status": 200,
+  "statusText": "OK",
+  "body": "{\"ok\":true,\"status\":\"success\",\"heartbeatId\":\"60d2eb35-3520-41ad-8c2a-968a9d44a9f1\",\"activityId\":\"e926db9f-1d23-48cc-a1e6-251f7f0e0e0d\",\"watchdogRowId\":null}"
+}

@@ -1,0 +1,39 @@
+{
+  "build_stage": "packaging",
+  "status": "in_progress",
+  "idempotency_key": "fratos-delivery-final-url-complete-2026-05-08-REPLACE_WITH_DEPLOY_ID",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "vercel_preview_url": "REPLACE_WITH_PUBLIC_PREVIEW_URL",
+  "artifact_urls": [
+    "REPLACE_WITH_PUBLIC_PREVIEW_URL"
+  ],
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "pitch_doc_path": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+  "battle_cards_path": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+  "passed_requirement_ids": [
+    "delivery-final-url",
+    "delivery-three-qa-rounds",
+    "delivery-pack"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-readiness-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-link-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-home-desktop-1440x1000-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-home-mobile-390x900-2026-05-08.png"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Frato's public preview URL passed route/link checks and delivery package evidence is attached."
+}

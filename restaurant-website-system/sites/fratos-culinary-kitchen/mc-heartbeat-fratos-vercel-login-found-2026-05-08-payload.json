@@ -1,0 +1,16 @@
+{
+  "status": "blocked",
+  "summary": "Frato's deploy blocker refined: Vercel is reachable via npx and logged in, but deploy still needs explicit approval/project linking.",
+  "ranAt": "2026-05-08T17:42:05Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "fc851579-ff30-460e-a2cc-1ef6bab9cf0f"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I rechecked the Frato's deploy blocker and corrected it: npx Vercel works and the machine is logged in as ethan-7906, but the site is not linked to a Vercel project. I prepared a guarded deploy script but did not run it because public deploy/linking is an external action that needs explicit approval.",
+    "technical_summary": "Ran npx --yes vercel --version (53.2.0), npx --yes vercel whoami (ethan-7906), confirmed no .vercel/project.json, and listed projects read-only. Wrote scripts/deploy-preview-2026-05-08.sh, updated deploy-readiness-2026-05-08.md and delivery-package-2026-05-08.md, then PATCHed MC packaging blocker to say npx vercel works/logged in but explicit approval/linking is required before deploy.",
+    "work_completed_state": "Frato's remains 14/15 at packaging; blocker is now precise and includes guarded deploy script evidence.",
+    "blocker": "Public preview/deploy URL required before delivery-final-url can pass. npx vercel works and is logged in as ethan-7906, but site is unlinked and deploy creates/updates an external public artifact, so explicit approval/linking is required.",
+    "next_unblock_action": "Approve running scripts/deploy-preview-2026-05-08.sh or link/deploy the Frato's site externally, then attach the public URL to MC."
+  }
+}

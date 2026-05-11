@@ -1,0 +1,49 @@
+{
+  "status": "work_done_with_blocker",
+  "summary": "Frato's delivery package was hardened: ESLint tooling added, Next upgraded within 14.x, lint/typecheck/build pass, post-upgrade screenshots pass, and the local bundle was regenerated.",
+  "ranAt": "2026-05-08T17:48:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I removed the last local tooling caveat on Frato's: lint now runs cleanly, build no longer prints the missing-ESLint warning, and the site still passes visual smoke after the Next upgrade. The delivery bundle was regenerated with the updated package files.",
+    "technical_summary": "Installed eslint@8.57.1, eslint-config-next@14.2.35, next@14.2.35, and postcss@8.4.49; updated package-lock.json. Ran npm run lint, npm run typecheck, npm run build, npm audit, and CDP desktop/mobile smoke captures. Wrote tooling-hardening-2026-05-08.md and regenerated delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz with sha256 c61ceec8c5ebf25658a34e259c5b3369872abb03eba170bb07c49b15282271cc. Remaining npm audit findings require semver-major Next 16 migration and were not applied in this delivery pass.",
+    "work_items": [
+      {
+        "title": "Resolve missing ESLint/build warning",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt"
+      },
+      {
+        "title": "Verify build/typecheck after framework patch upgrade",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt"
+      },
+      {
+        "title": "Regenerate local delivery bundle",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256"
+      },
+      {
+        "title": "Full Mission Control delivery",
+        "status": "blocked",
+        "blocker": "Needs public preview/deploy URL plus AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET for protected agency writebacks."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "build_stage": "qualifying",
+  "status": "in_progress",
+  "site_slug": "fratos-culinary-kitchen",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.json",
+    "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md"
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "lead-fit-seven-checks",
+    "lead-fit-evidence"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Frato's Culinary Kitchen lead-fit gate completed: Build decision, Cuisine archetype, seven checks and source evidence saved. Checklist not started."
+}

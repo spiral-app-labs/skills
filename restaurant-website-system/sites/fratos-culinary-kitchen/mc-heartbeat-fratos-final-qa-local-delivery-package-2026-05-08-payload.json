@@ -1,0 +1,46 @@
+{
+  "status": "work_done_with_blocker",
+  "summary": "Frato's QA Round 3/final sell-readiness passed locally and a local delivery package is ready; full delivery is blocked by missing public preview URL and protected MC writeback auth.",
+  "ranAt": "2026-05-08T17:12:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's passed final sell-readiness locally. I also packaged the pitch/QA/screenshots/check evidence for delivery. The site is owner-demo ready locally, but full Mission Control delivery still needs a public preview URL and protected agency auth for writebacks.",
+    "technical_summary": "Ran final QA with the website-agency-final-qa lens, link-checked core external CTAs, applied a final About stat copy polish, re-ran typecheck/build, re-captured final screenshots, wrote qa-round-3-final-qa-2026-05-08.md, mc-qa-round-3-final-qa-2026-05-08-payload.json, delivery-package-2026-05-08.md, and mc-delivery-package-2026-05-08-payload.json. Protected MC agency writeback remains blocked by missing AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET; public preview/deploy URL is still TBD.",
+    "work_started_state": "QA Round 2 was complete locally; QA Round 3/final sell-readiness and delivery package were pending.",
+    "work_completed_state": "QA Round 3 is complete locally with pass verdict, final screenshots, link check, typecheck/build evidence, QA payload, and local delivery package. Checklist advanced to delivery_package with blocker recorded for public preview + protected sync.",
+    "work_items": [
+      {
+        "title": "Run QA Round 3 final sell-readiness review",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md"
+      },
+      {
+        "title": "Prepare local delivery package",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md"
+      },
+      {
+        "title": "Full Mission Control delivery",
+        "status": "blocked",
+        "blocker": "Needs public preview/deploy URL plus AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET for protected agency writebacks."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ]
+  }
+}

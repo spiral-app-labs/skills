@@ -1,0 +1,111 @@
+{
+  "lead": "Frato's Culinary Kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mc_root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "improvement_child_task_id": "1a97a775-1ff9-42c5-bd07-a804a1d13890",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "checked_at": "2026-05-08T16:43:25Z",
+  "build_stage": "improving",
+  "requirements": {
+    "improvement-pass-complete": {
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/AnonReviewCarousel.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/app/globals.css"
+      ]
+    },
+    "conversion-paths": {
+      "status": "passed",
+      "notes": "Verified order, menu, catering, catering inquiry, call, and directions paths are surfaced in the homepage chrome and supporting sections. Hero proof pill copy now reads 'Online pickup + delivery' instead of cramped OrderStart copy.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md"
+      ]
+    },
+    "mobile-check": {
+      "status": "passed",
+      "notes": "Parent-runtime CDP screenshot capture at 390x1400 verified document/body width 390, hero headline right edge 370, and hero image right edge 366. Final image QA judged mobile styled, usable, and pitch-ready with no real blockers.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/AnonReviewCarousel.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/app/globals.css",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md"
+      ]
+    },
+    "desktop-check": {
+      "status": "passed",
+      "notes": "Parent-runtime CDP screenshot capture at 1440x1600 verified document/body width 1440. Final image QA judged desktop styled, usable, and pitch-ready with strong CTA hierarchy and improved hero image treatment.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png"
+      ]
+    }
+  },
+  "checks": {
+    "build": {
+      "status": "passed",
+      "command": "npm run build",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-improvement-2026-05-08-rerun.txt",
+      "notes": "Next build compiled and generated static pages. Build still prints the existing tooling warning that ESLint is not installed."
+    },
+    "typecheck": {
+      "status": "passed",
+      "command": "npm run typecheck",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-improvement-2026-05-08.txt"
+    },
+    "lint": {
+      "status": "blocked_tooling_gap",
+      "command": "npm run lint",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-improvement-2026-05-08.txt",
+      "blocker": "ESLint is not installed in this fork. next lint exits with 'ESLint must be installed: npm install --save-dev eslint'."
+    },
+    "local_preview": {
+      "status": "passed_parent_runtime",
+      "command": "npm run dev -- --port 3210 plus CDP screenshot capture",
+      "url": "http://127.0.0.1:3210/"
+    },
+    "image_qa": {
+      "status": "passed",
+      "notes": "Vision QA on refreshed desktop/mobile screenshots: pitch-ready overall; no real blockers. Minor non-blockers: mobile hero density, mobile quick-link rail is tight but acceptable, verify Google count/rating before client use if live accuracy is required."
+    }
+  },
+  "screenshots": {
+    "desktop": {
+      "path": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+      "viewport": "1440x1600",
+      "bytes": 717273,
+      "layout_metrics": {
+        "window_inner_width": 1440,
+        "document_scroll_width": 1440,
+        "body_scroll_width": 1440,
+        "hero_right": 1170,
+        "image_right": 1096
+      }
+    },
+    "mobile": {
+      "path": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png",
+      "viewport": "390x1400",
+      "bytes": 207593,
+      "layout_metrics": {
+        "window_inner_width": 390,
+        "document_scroll_width": 390,
+        "body_scroll_width": 390,
+        "hero_right": 370,
+        "image_right": 366
+      }
+    }
+  },
+  "mission_control_writeback": {
+    "status": "pending_auth",
+    "notes": "Protected agency planner/writeback auth is still unavailable in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are not set. Do not use raw Supabase mutation for agency state. Heartbeat/activity logging should carry this evidence until protected agency auth is restored."
+  },
+  "parent_can_mark_improvement_complete_when_mc_auth_available": true
+}

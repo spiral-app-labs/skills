@@ -1,0 +1,33 @@
+
+> fratos-culinary-kitchen@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.15
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+ ⨯ ESLint must be installed in order to run during builds: npm install --save-dev eslint
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6)
+
+> Build error occurred
+Error: ENOENT: no such file or directory, rename '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/.next/export/500.html' -> '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/pages/500.html'
+    at async Object.rename (node:internal/fs/promises:781:10)
+    at async /Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/build/index.js:1869:33
+    at async Span.traceAsyncFn (/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/trace/trace.js:154:20)
+    at async /Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/build/index.js:1920:25
+    at async Span.traceAsyncFn (/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/trace/trace.js:154:20)
+    at async /Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/build/index.js:1542:17
+    at async Span.traceAsyncFn (/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/trace/trace.js:154:20)
+    at async build (/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/node_modules/next/dist/build/index.js:364:9) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/.next/export/500.html',
+  dest: '/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/pages/500.html'
+}

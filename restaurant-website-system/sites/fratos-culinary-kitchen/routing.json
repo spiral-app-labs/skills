@@ -1,0 +1,137 @@
+{
+  "lead": "Frato's Culinary Kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mc_root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "template_routing_child_task_id": "bae10cc3-9ac5-409b-9757-a0cd5562fe73",
+  "site_slug": "fratos-culinary-kitchen",
+  "routed_at": "2026-05-08T16:00:00Z",
+  "build_stage": "routing",
+  "selected_archetype": "Cuisine / order-first casual comfort-food",
+  "selected_template_slug": "pepper-01",
+  "route_locked": true,
+  "decision": "Use exactly one concrete template route: pepper-01.",
+  "rationale": "Frato's is an order-first casual comfort-food and pizza kitchen with giant mozzarella stick proof, 1-pound slices, burgers, wings, gyros, halal options, direct OrderStart ordering, call/directions conversion, playful dine-in/gaming atmosphere, catering, and verified Google proof. Pepper-01 is the catalog route for pizza/wings/burger/takeout economics and lets the build foreground product cards, signature/deal stacks, saturated playful energy, and direct ordering instead of fake luxury or reservation-led framing.",
+  "business_reality": {
+    "cuisine": [
+      "pizza",
+      "1-pound slices",
+      "giant mozzarella sticks",
+      "burgers",
+      "wings",
+      "gyros",
+      "mac and cheese",
+      "halal wings/tenders",
+      "desserts/shakes"
+    ],
+    "service_type": [
+      "counter",
+      "takeout",
+      "delivery",
+      "casual dine-in",
+      "catering"
+    ],
+    "price_register": "$ / $$ casual; Google review capture commonly shows $10-20",
+    "atmosphere": [
+      "playful",
+      "casual",
+      "chill",
+      "family/group friendly",
+      "games/slots while waiting"
+    ],
+    "primary_conversion_path": "Order Online via OrderStart / call for pickup, delivery, curbside, dine-in, or catering",
+    "secondary_conversion_paths": [
+      "directions",
+      "catering quote/inquiry",
+      "menu discovery",
+      "phone call"
+    ],
+    "verified_google_proof": {
+      "rating": 4.2,
+      "review_count": 554,
+      "written_reviews_captured": 30,
+      "sort_filter": "Highest rating"
+    }
+  },
+  "rejected_alternatives": [
+    {
+      "template_slug": "plate-01",
+      "reason": "Too restrained and bistro/menu-forward for Frato's viral, oversized, order-first pizza/comfort-food energy. Risks generic neighborhood-bistro tone."
+    },
+    {
+      "template_slug": "bramble-01",
+      "reason": "Would over-index cocktail-bar/day-night hospitality. Frato's has games/chill atmosphere, but the revenue reality is pizza/comfort-food orders and catering, not nightlife."
+    },
+    {
+      "template_slug": "gusto-01",
+      "reason": "Too heritage Italian/date-night/trattoria. Frato's is broader creative comfort food with OrderStart conversion and oversized signature items, not reservation-led romance."
+    },
+    {
+      "template_slug": "bamzi-01",
+      "reason": "Saturated/chef-forward structure could carry some culinary-story elements, but the catalog route is pan-Asian/Latin/sit-down. It under-serves direct pizza/takeout conversion."
+    }
+  ],
+  "required_modifiers": {
+    "palette": "Keep Pepper's saturated order-first energy; bias red/yellow/orange with black/white contrast; optional small green cue for fresh/halal/wings only.",
+    "typography": "Keep playful Cherry Bomb-style wordmark discipline and heavy sans headlines; no serif/fine-dining type.",
+    "cta": "Primary Order Online; secondary Call, Get Directions, Catering. No reservation CTA.",
+    "menu": "Curated signature product-card grid before full menu/order handoff; include giant mozzarella stick, 1-pound pizza slice, burger of the month, wings/tenders, gyros, halal options, catering. No unverified prices.",
+    "proof": "Use anonymous aggregate Google proof: 4.2 stars / 554 reviews, 30 written Highest-filter reviews captured, and review-theme chips. Do not publish reviewer names/avatars/dates.",
+    "heritage_story": "Use Since 1975, made-from-scratch, culinary-student training, and captured media-feature proof as a concise trust band after order-first hero.",
+    "motion": "Playful lightweight product motion only; avoid heavy animation that hurts mobile speed.",
+    "mobile": "Sticky/repeated mobile actions for Order, Call, Directions, Catering; reduce decision time versus the current long mobile pages."
+  },
+  "required_sections": [
+    "Order-first hero with signature food proof and Order/Call/Directions CTAs",
+    "Fan favorites grid: Giant Mozzarella Stick, 1-Pound Pizza Slice, Burger of the Month, wings/tenders",
+    "Signature/deal stack for pizza, burgers, halal wings/tenders, gyros, monthly specials, desserts/shakes where verified",
+    "Google proof band using aggregate review themes and safe copy",
+    "Story/trust band: Since 1975, scratch kitchen, culinary-student training, official media-feature claims where captured",
+    "Catering / office lunch CTA to FratosCatering.com and inquiry path",
+    "Location/action footer with phone, address, hours note, OrderStart, directions, catering"
+  ],
+  "avoid_patterns": [
+    "reservation widgets or reservation-first language",
+    "fine-dining/luxury/Michelin/editorial restraint",
+    "generic authentic-Italian trattoria framing",
+    "fake awards, fake reviews, fake prices, fake owner names, or fake menu items",
+    "using reviewer names, initials, dates, or avatars in public copy",
+    "burying Order Online under long story/media/catering copy",
+    "generic pizza-chain sameness without Frato's signature proof"
+  ],
+  "register_risks": [
+    "Pepper-01 can become generic pizza-chain if the fork does not foreground Frato's giant mozzarella stick, 1-pound slices, culinary-student training, halal options, Schaumburg address, and Google proof.",
+    "Overplaying gaming/bar cues would misroute the site toward nightlife instead of order/catering conversion.",
+    "Overplaying heritage Italian would misrepresent the broader comfort-food menu and order-first service model."
+  ],
+  "handoff_notes": [
+    "Fork/build should start from templates/pepper-01 only.",
+    "Preserve verified links: https://orderstart.com/fratospizza, tel:8478952122, address/directions, https://fratoscatering.com/, and https://fratoscatering.com/catering-inquiry-form/ where used.",
+    "Use audit/review artifacts as factual source. Omit or generalize any menu item, price, image right, owner name, or claim that is not verified.",
+    "This routing gate does not run fork/build/typecheck/preview/deploy."
+  ],
+  "requirements_satisfied": [
+    "template-route-locked",
+    "template-route-alternatives",
+    "template-route-modifiers"
+  ],
+  "evidence_paths": {
+    "routing_markdown": "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+    "routing_json": "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json",
+    "prior_template_routing_note": "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+    "qualification": "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+    "audit_markdown": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+    "audit_json": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+    "current_site_capture_summary": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+    "google_reviews_markdown": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+    "google_reviews_json": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+    "template_readme": "restaurant-website-system/templates/pepper-01/README.md",
+    "site_router": "restaurant-website-system/research/site-router.md"
+  },
+  "next_gate": "template_fork_build",
+  "template_fork_build_can_start_next": true,
+  "caveats": [
+    "No public copy should use reviewer identities; use anonymous aggregate review proof only.",
+    "No fork/build validation was run in this routing gate.",
+    "If existing scaffold/template files are present in the site directory, they were not validated by this routing gate and should be checked by the fork/build worker."
+  ]
+}

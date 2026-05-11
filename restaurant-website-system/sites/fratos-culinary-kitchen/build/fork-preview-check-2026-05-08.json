@@ -1,0 +1,56 @@
+{
+  "lead": "Frato's Culinary Kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mc_root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "checked_at": "2026-05-08T16:17:00Z",
+  "build_stage": "building",
+  "checks": {
+    "typecheck": {
+      "status": "passed",
+      "command": "npm run typecheck",
+      "log_path": "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/typecheck-2026-05-08.txt",
+      "notes": "Passes after Next build generates .next route types."
+    },
+    "lint": {
+      "status": "blocked",
+      "command": "npm run lint",
+      "log_path": "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/lint-2026-05-08.txt",
+      "blocker": "ESLint is not installed in this fork. next lint exits with 'ESLint must be installed: npm install --save-dev eslint'."
+    },
+    "build": {
+      "status": "passed",
+      "command": "npm run build",
+      "log_path": "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/build-2026-05-08.txt",
+      "static_routes": [
+        "/",
+        "/about",
+        "/contact"
+      ],
+      "build_artifacts": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/app/index.html",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/app/about.html",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/app/contact.html"
+      ]
+    },
+    "local_preview": {
+      "status": "passed",
+      "command": "npm run start -- --hostname 127.0.0.1 --port 3005",
+      "url": "http://127.0.0.1:3005",
+      "process_log": "Next.js ready on http://127.0.0.1:3005 from parent runtime after Codex sandbox bind failed.",
+      "screenshots": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+      ],
+      "notes": "Codex sandbox could not bind to localhost, but parent runtime started Next successfully and Playwright captured desktop/mobile screenshots."
+    }
+  },
+  "fork_preview_requirement_passed": true,
+  "passed_requirement_ids": [
+    "fork-built",
+    "fork-preview",
+    "specificity"
+  ],
+  "blocked_requirement_ids": []
+}

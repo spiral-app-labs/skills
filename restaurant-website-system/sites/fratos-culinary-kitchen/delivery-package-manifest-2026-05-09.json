@@ -1,0 +1,1282 @@
+{
+  "site_slug": "fratos-culinary-kitchen",
+  "created_at": "2026-05-09T19:00:00.000Z",
+  "status": "local_package_refreshed_not_delivered_preview_and_protected_auth_blocked",
+  "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09",
+  "zip_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+  "copied_items": [
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/audit.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/audit.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-capture-summary.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-desktop-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-desktop-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-mobile-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-fold.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-mobile-fold.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-dom-snapshot.html",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-dom-snapshot.html",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-text-snapshot.txt",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-text-snapshot.txt",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-menu-desktop-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-menu-mobile-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-orderstart-desktop-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-mobile-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-orderstart-mobile-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-contact-desktop-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-contact-mobile-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-catering-desktop-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-catering-mobile-full.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-current-site-audit-sync-payload-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-current-site-audit-sync-payload-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-current-site-audit-sync-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-current-site-audit-sync-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-workflow-after-current-site-audit-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-workflow-after-current-site-audit-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/routing.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/routing.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/template-routing/routing-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/google-reviews-highest-30.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/google-reviews-highest-30.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/improvement-pass-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/improvement-pass-check-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/top-3-improvements-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge-kb-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge-test-transcript-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/pitch-doc-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/battle-cards-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-1-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-1-cdp-capture-2026-05-08.jsonl",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-1-cdp-capture-2026-05-08.jsonl",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-2-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-2-after-fixes-cdp-capture-2026-05-08.jsonl",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-2-after-fixes-cdp-capture-2026-05-08.jsonl",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-3-final-qa-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-final-after-polish-cdp-capture-2026-05-08.jsonl",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-3-final-after-polish-cdp-capture-2026-05-08.jsonl",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-link-check-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-3-link-check-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08-payload.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-delivery-package-2026-05-08-payload.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scripts/replay-fratos-mc-payloads.mjs",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/tooling-hardening-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-after-tooling-hardening-2026-05-08.txt",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/npm-audit-after-postcss-8-4-49-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/npm-audit-after-postcss-8-4-49-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/post-next-upgrade-cdp-capture-2026-05-08.jsonl",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/post-next-upgrade-cdp-capture-2026-05-08.jsonl",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-post-next-upgrade-home-mobile-390x844-2026-05-08.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-post-next-upgrade-home-mobile-390x844-2026-05-08.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-post-next-upgrade-home-desktop-1440x900-2026-05-08.png",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-post-next-upgrade-home-desktop-1440x900-2026-05-08.png",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-approval-request-2026-05-08.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/deploy-approval-request-2026-05-08.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-readme-2026-05-09.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-readme-2026-05-09.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/checklist.md",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/checklist.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-final-url-template-2026-05-08.json",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-delivery-final-url-template-2026-05-08.json",
+      "type": "file"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots",
+      "type": "dir"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/qa",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa",
+      "type": "dir"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence",
+      "type": "dir"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes",
+      "type": "dir"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements",
+      "type": "dir"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge",
+      "type": "dir"
+    },
+    {
+      "source": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts",
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts",
+      "type": "dir"
+    }
+  ],
+  "missing_sources": [],
+  "files": [
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/audit.json",
+      "bytes": 19275,
+      "sha256": "a31b8020ae882f865afe08d912625d27ddfa03880c1d7a56dbaee05ddbd7de16"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/audit.md",
+      "bytes": 10423,
+      "sha256": "584ce9a08b3852c714181cc85984e06b4877163c13e74941721114f6ee711e1e"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/battle-cards-2026-05-08.md",
+      "bytes": 4895,
+      "sha256": "0f39837afbd6920c9d7760bb1f1d41890445be9363d5e4282ccb438254bb4300"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/checklist.json",
+      "bytes": 90161,
+      "sha256": "3d17b4747e128e448d0a214c08633e7dfc0ec3aba47ad108974a35dedee4b2fd"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/checklist.md",
+      "bytes": 32759,
+      "sha256": "0f504d6482dae5465e06c71cdb56194d505d4597716fea809374850f7a9832cd"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge/concierge-check-2026-05-08.json",
+      "bytes": 3034,
+      "sha256": "5928c1abbb86149012db8711e6f11d1554f79d5a7484d12edafce52198949c11"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge/screenshots/fratos-concierge-desktop-2026-05-08.png",
+      "bytes": 137276,
+      "sha256": "770c0ac525d2de19297844ed5be5a90cd401cbbe09a16aa76f32c746bbc1f364"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge/screenshots/fratos-concierge-fullpage-desktop-2026-05-08.png",
+      "bytes": 795144,
+      "sha256": "c725667e1f304067f4a5f9c3f07c599702055eb00f6e847d9cec8c78fec278ad"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge/screenshots/fratos-concierge-fullpage-mobile-2026-05-08.png",
+      "bytes": 360258,
+      "sha256": "3c90ca1cee1951f67bce29dfcf71f6c29139c3e01097f60ff2ebb5af6c5b2f83"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge/screenshots/fratos-concierge-mobile-2026-05-08.png",
+      "bytes": 65994,
+      "sha256": "f8fe50e3cca061159ea85f32692099ce60ecbc0a84b74ed7478867fd8df2e297"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge-kb-2026-05-08.md",
+      "bytes": 5487,
+      "sha256": "7dfd097805452ce4de14af794efd331dde066d2618108b5b8dc8f29e221ca6f5"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/concierge-test-transcript-2026-05-08.md",
+      "bytes": 3263,
+      "sha256": "fec19a875553084d341c9592ddf7917f437ef24086ad5e72b1ab0e61121bfc31"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.sha256",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+      "bytes": 64357143,
+      "sha256": "c61ceec8c5ebf25658a34e259c5b3369872abb03eba170bb07c49b15282271cc"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+      "bytes": 123,
+      "sha256": "27f460a9c7137ce38426652b06cf9a78e6284a4c630d7863cf9d6cde73368bbb"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+      "bytes": 1423,
+      "sha256": "109ce88e3771ecd0389feff17b2ddac577839023e5a9e45df191292d77283aa8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-2026-05-08.md",
+      "bytes": 5313,
+      "sha256": "139715ddfbe44819822312f62bbb49c177c77a094d6b7b10350d3d10ed71d424"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/delivery-package-readme-2026-05-09.md",
+      "bytes": 1551,
+      "sha256": "6c11f8ac0d440e440d29d25d0ec590b27d270c5b8966b15b81e3be6385aff04c"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/deploy-approval-request-2026-05-08.md",
+      "bytes": 3787,
+      "sha256": "69297620830d0ea6c46b83c09afba9f08ca6b4726782466b3731fc7750283efa"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-after-eslint-install-2026-05-08.txt",
+      "bytes": 1054,
+      "sha256": "4176235d759e4f44d2ac6256916d65500f46b95da9894b9cf172d02253c5c011"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-after-next-14-2-35-2026-05-08.txt",
+      "bytes": 1054,
+      "sha256": "143fbc5da6517ab7be0eebe03de13fd62c1f79f6f84b4f4e716099b8e05f57fb"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-after-tooling-hardening-2026-05-08.txt",
+      "bytes": 1054,
+      "sha256": "143fbc5da6517ab7be0eebe03de13fd62c1f79f6f84b4f4e716099b8e05f57fb"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-concierge-2026-05-08.txt",
+      "bytes": 1145,
+      "sha256": "fea9fd31dff2f90ea560062d444aec355bc28b6401bf213b86f4dab238a67021"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-improvement-2026-05-08-rerun.txt",
+      "bytes": 1145,
+      "sha256": "baf24814fbcf1ec7f686f7b1d4f44dfa6501fc6fa9a30d6bd25641ad8725374b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-improvement-2026-05-08.txt",
+      "bytes": 2496,
+      "sha256": "4487fdfd14c73df3062873434937198a5e21b19b74fb1129344b799d92c65bc0"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-qa-round-1-2026-05-08.txt",
+      "bytes": 1145,
+      "sha256": "fea9fd31dff2f90ea560062d444aec355bc28b6401bf213b86f4dab238a67021"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-qa-round-2-2026-05-08.txt",
+      "bytes": 1145,
+      "sha256": "d99e29cf5a65568a8a2f5f6acd21b80f232bdaabb6c2f4ada8f27cc896254370"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/build-qa-round-3-2026-05-08.txt",
+      "bytes": 1145,
+      "sha256": "d99e29cf5a65568a8a2f5f6acd21b80f232bdaabb6c2f4ada8f27cc896254370"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/lint-after-eslint-install-2026-05-08.txt",
+      "bytes": 84,
+      "sha256": "ba9d341ad8f8181b9c246ef2bfafb33f9bd39db57b0be15fe6f079ba9e86e0f9"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/lint-after-next-14-2-35-2026-05-08.txt",
+      "bytes": 84,
+      "sha256": "ba9d341ad8f8181b9c246ef2bfafb33f9bd39db57b0be15fe6f079ba9e86e0f9"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+      "bytes": 84,
+      "sha256": "ba9d341ad8f8181b9c246ef2bfafb33f9bd39db57b0be15fe6f079ba9e86e0f9"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/lint-improvement-2026-05-08.txt",
+      "bytes": 112,
+      "sha256": "2ce526fd074204be6c0235152e4a194e799d8439e688dd9391d5a7f79fc72155"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/npm-audit-after-eslint-install-2026-05-08.json",
+      "bytes": 10918,
+      "sha256": "f11f4c38bf15dd75b604eae6d8c3d189946f63f6d501b2f3e8988f64f709b58c"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/npm-audit-after-next-14-2-35-2026-05-08.json",
+      "bytes": 6152,
+      "sha256": "317a2fe110d1761de4bd7877cec0900e3c2daccfe4936a962d935c8ff58bd319"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/npm-audit-after-postcss-8-4-49-2026-05-08.json",
+      "bytes": 6152,
+      "sha256": "317a2fe110d1761de4bd7877cec0900e3c2daccfe4936a962d935c8ff58bd319"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/npm-audit-fix-dry-run-2026-05-08.json",
+      "bytes": 13126,
+      "sha256": "72d116e9f4deb3faf83ace3766ec3a88ea5a2b489f646bfdcf2a4236e7ed737b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-after-eslint-install-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-after-next-14-2-35-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-concierge-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-improvement-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-qa-round-1-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-qa-round-2-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/evidence/typecheck-qa-round-3-2026-05-08.txt",
+      "bytes": 59,
+      "sha256": "ffbff5a18d643ec083e3c77d76c7991ecac69d1d03e6ce0cd80e009580079a98"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/improvement-pass-2026-05-08.md",
+      "bytes": 7604,
+      "sha256": "d9ef16ee13853b67270977459d8187a3b0c8036e3ca1cfcf5cbca8c46731029a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/improvement-pass-check-2026-05-08.json",
+      "bytes": 5929,
+      "sha256": "ed59b7666b4abfdbd6c265fb2c865f2b1826d2c6a4a829439cec2146ff21e38e"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+      "bytes": 717273,
+      "sha256": "64bd21bb37f4622a48254f1a019bb2f2e65174a76a5b8a7a3951475dfca914ff"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08-profile.png",
+      "bytes": 14237,
+      "sha256": "78be0f51adb2645ec1811a350483c895f4eb25bae4eb8ae4d49a3d5c21632090"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png",
+      "bytes": 207593,
+      "sha256": "821698e44aa831c3e4b192b10b778e11656fe916a018f6c77333779d71273d66"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-current-site-audit-sync-2026-05-08.json",
+      "bytes": 22218,
+      "sha256": "9c6da28a65f0c3b527514f5d782e1deea719dd266778c401ee8226828b88a4de"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-current-site-audit-sync-payload-2026-05-08.json",
+      "bytes": 2620,
+      "sha256": "0067d8a3d31e83bf0ef144357a5c5376780864bcc795302652d512076a3fee65"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-delivery-final-url-template-2026-05-08.json",
+      "bytes": 2561,
+      "sha256": "fb06c60e1e65e7ca6630e3ca82df1e947106c2ff47a7787acfb40aa1e69919c8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-delivery-package-2026-05-08-payload.json",
+      "bytes": 4867,
+      "sha256": "7af20d8f93c3d62ac89fcd830ddd15251f42d75d899e0e511cfd2f821446e123"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+      "bytes": 7442,
+      "sha256": "497330bbbba23f525e602f8ed331da25b4b38d0a1952b52b5a8a14d68aa4f6ff"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/mc-workflow-after-current-site-audit-2026-05-08.json",
+      "bytes": 7108,
+      "sha256": "55c75c3a8cd9ad6d1cc653fc9f27ad9b353fce461394cec71713a8789b6aec86"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/pitch-doc-2026-05-08.md",
+      "bytes": 5032,
+      "sha256": "4c2481820f29d73d0a7fdfe32414858db7fa2b424ff6edceb1c7b244572ec77f"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/post-next-upgrade-cdp-capture-2026-05-08.jsonl",
+      "bytes": 1601,
+      "sha256": "61f0d316b7f89e93ff399c014a2b78ad8bfdb51ac303ba8e621f52d5b6782bf7"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-1-cdp-capture-2026-05-08.jsonl",
+      "bytes": 19082,
+      "sha256": "7ba7641510dccc53d3dbdb99bd907fdae7f4b769861698d5e13ae0f0ce9f5427"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-2-after-fixes-cdp-capture-2026-05-08.jsonl",
+      "bytes": 3075,
+      "sha256": "074a14a6f296536ec02bb7d2b034650e2afa904f44f20a9052271c7a3da69ad1"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-2-cdp-capture-2026-05-08.jsonl",
+      "bytes": 1635,
+      "sha256": "3dc0f50d03c210362e159f832ab8a1d858a12511420af24bc5b65274bdc4b0e3"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-2-conversion-check-2026-05-08.json",
+      "bytes": 757,
+      "sha256": "ddc77943a0559fb1afd218ef6c66702a7b3cd72471e1743aea1b8738165c039e"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-3-final-after-polish-cdp-capture-2026-05-08.jsonl",
+      "bytes": 2402,
+      "sha256": "3038b87f70ee23c748066c88ae99d9688fb640395841ab7eef87ed347f699a8d"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-3-final-cdp-capture-2026-05-08.jsonl",
+      "bytes": 3847,
+      "sha256": "6559cc45544be738ea516e7027d3f5d678a2c7e983953dcc976dc71ea19cfae5"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/qa-round-3-link-check-2026-05-08.json",
+      "bytes": 1455,
+      "sha256": "dde9925de016102bcd2ef657b4b22a54c43cb4631ac5ff90d30d443913e317c9"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-post-next-upgrade-home-desktop-1440x900-2026-05-08.png",
+      "bytes": 327581,
+      "sha256": "9de015e55edde30ffc3b14b5d6dad74c487d33591fc44ac592f4a384ea2e54d4"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-post-next-upgrade-home-mobile-390x844-2026-05-08.png",
+      "bytes": 72743,
+      "sha256": "c422d28bbc8eacbbd0a09338bef8c5dde3b531d57c0599517b07dd05db552f04"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-about-desktop-1440x900-2026-05-08.png",
+      "bytes": 1022024,
+      "sha256": "21d2782825178793ac3ebf58373965db7fdaada137d3eebc5070731fa48f34b8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-about-mobile-390x844-2026-05-08.png",
+      "bytes": 162210,
+      "sha256": "64db2c7fc65569c4247a04f0f5193f68dbb9e8d5377a32735dc5d93e5a36d6c2"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-concierge-mobile-390x844-2026-05-08.png",
+      "bytes": 62645,
+      "sha256": "d08d53d3b2cc74398259da6da8bb7461f8fe966f7ce6e79eb95bbe073ba33eb2"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-concierge-mobile-after-nav-fix-390x844-2026-05-08.png",
+      "bytes": 62646,
+      "sha256": "35865534284dd351f6b356308d25e8a65229cda305334f20e6b1fc41c9cb5a22"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-contact-desktop-1440x900-2026-05-08.png",
+      "bytes": 312179,
+      "sha256": "716c74a01beabfedb8b679740e3776eaf045631511119422cdae27950b595cdf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-contact-mobile-390x844-2026-05-08.png",
+      "bytes": 78889,
+      "sha256": "9301b4ce3b773e6ffec83f838dd13deda088681565c5e5717f5ec58101067e1f"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-home-desktop-1440x900-2026-05-08.png",
+      "bytes": 329083,
+      "sha256": "d3a87ad25609d49dca2612fc46b7b0b59f152d457cb2138596f4e1832de8fa31"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-home-mobile-390x844-2026-05-08.png",
+      "bytes": 94220,
+      "sha256": "885d91212d12fc8b64cc3e950018ddd2d9a058e97e6d68dbf14ae7f7dbbe79c4"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa1-home-mobile-after-nav-fix-390x844-2026-05-08.png",
+      "bytes": 72650,
+      "sha256": "76779b21937aff40e37e684c07a007b4ac8fbc1e2c0db0209271c0546a74b565"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-after-contact-mobile-390x844-2026-05-08.png",
+      "bytes": 78945,
+      "sha256": "08d1f130f5627b23b463e484b186c4c18f3cce82dd566ee1280d34293ba946b2"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-after-home-desktop-1440x900-2026-05-08.png",
+      "bytes": 329284,
+      "sha256": "4d58dfe6d4417d387b7744af00346bdce0eed53d3a72cbb946dd816ff1e0cf76"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-after-home-mobile-390x844-2026-05-08.png",
+      "bytes": 94191,
+      "sha256": "3c3c55f1bfde4e2c0ff2d3698dc0098968aeeb42c02cf9942f4567ea633e57b8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-after-menu-mobile-390x844-2026-05-08.png",
+      "bytes": 107487,
+      "sha256": "3956216fc45f89081ab6ef3612195eb9808625b1514154e3296346f15f8c1627"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-concierge-mobile-390x844-2026-05-08.png",
+      "bytes": 62646,
+      "sha256": "35865534284dd351f6b356308d25e8a65229cda305334f20e6b1fc41c9cb5a22"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-contact-mobile-390x844-2026-05-08.png",
+      "bytes": 72438,
+      "sha256": "fe149a361eb68430253570a7af5dcc51b026902848afe112d75cfdf91acaf7aa"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-home-desktop-1440x900-2026-05-08.png",
+      "bytes": 327133,
+      "sha256": "15d691b852baafaf617b4fb36701137dda804f88684f2de34a8167ea3df1da5a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-home-mobile-320x844-2026-05-08.png",
+      "bytes": 52136,
+      "sha256": "826450186f6fec424190947848cc8096dde2b801d6f7252b783a77f206aef6fa"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-home-mobile-390x844-2026-05-08.png",
+      "bytes": 72650,
+      "sha256": "76779b21937aff40e37e684c07a007b4ac8fbc1e2c0db0209271c0546a74b565"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa2-menu-mobile-390x844-2026-05-08.png",
+      "bytes": 112860,
+      "sha256": "229b1b1c83a926b10c142eeff60abcc97b1986190c09edef74961f129c09a369"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-about-mobile-390x844-2026-05-08.png",
+      "bytes": 162477,
+      "sha256": "59f0e6ded47f2f321d46a021bc43f83d82d5236371d80993c5a2707d956c7458"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-after-polish-about-mobile-390x844-2026-05-08.png",
+      "bytes": 162166,
+      "sha256": "039875614918875fddcb7104c70359317f52dc4aa699b8a0ae370e0702b12f58"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-after-polish-home-desktop-1440x900-2026-05-08.png",
+      "bytes": 329175,
+      "sha256": "bd9eae93b7edce172454e8efd5a03778fc3420378cd70ac7c13ae841e0272bd8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-after-polish-home-mobile-390x844-2026-05-08.png",
+      "bytes": 94191,
+      "sha256": "3c3c55f1bfde4e2c0ff2d3698dc0098968aeeb42c02cf9942f4567ea633e57b8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-concierge-mobile-390x900-2026-05-08.png",
+      "bytes": 65995,
+      "sha256": "57e1f0391e2cf029a1923a27a253813dfe18af14cca425bf904f80a9a4dfe55d"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-contact-desktop-1440x900-2026-05-08.png",
+      "bytes": 312334,
+      "sha256": "ba4ce1db1333feee5bc35d71fa0e1aa7c85d31cd322c4cf980e8c7d84cb39298"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-contact-mobile-390x844-2026-05-08.png",
+      "bytes": 78963,
+      "sha256": "100c502f85d8df2dc31dbf6c7e8f9f3981f46358d0595d620643158937e544d1"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-contact-mobile-390x900-2026-05-08.png",
+      "bytes": 82382,
+      "sha256": "3647b68756ba1b592f49ee87a9b9352c79258e62630473fb5d949cf0d1f9b741"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-home-desktop-1440x1000-2026-05-08.png",
+      "bytes": 420930,
+      "sha256": "173b66a67bad595003c0015663f1716ba38572ec657b6e7145016e4873f15e21"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-home-desktop-1440x900-2026-05-08.png",
+      "bytes": 329356,
+      "sha256": "1b6db9bcf55d476c389ab6a881e0acff8527087da60dbb9ff5163d7253f2fe79"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-home-mobile-390x844-2026-05-08.png",
+      "bytes": 94191,
+      "sha256": "3c3c55f1bfde4e2c0ff2d3698dc0098968aeeb42c02cf9942f4567ea633e57b8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa/screenshots/fratos-qa3-final-home-mobile-390x900-2026-05-08.png",
+      "bytes": 98775,
+      "sha256": "f436200f3e95630de4f0ee673210bae78f8b907d04b7dcfd8270a55045f1b7cf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-1-2026-05-08.md",
+      "bytes": 3027,
+      "sha256": "8a57c145f2fe9484dfef635a68c42fbd239b252d6e35fcfbb3de43913767f213"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-2-2026-05-08.md",
+      "bytes": 1987,
+      "sha256": "6aa4335c6e29d3779bd5cc2340624ffa16d88eb2a55b673512a3e0a82418e40a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/qa-round-3-final-qa-2026-05-08.md",
+      "bytes": 3082,
+      "sha256": "beec965bcc205075fb6d74e7921fa5dc40d738f43f366e14751a83e9576e3cc7"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/routing.json",
+      "bytes": 8200,
+      "sha256": "8874a66b62508db76b3adfe182e627cc4f5fd1e746363705e4020746c66f3b72"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/routing.md",
+      "bytes": 9347,
+      "sha256": "3b32a19fe964a01df1c0254f648da248076a87bdd84036c5d8bfae8fb7ad8ba6"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/capture-current-site-run-2026-05-08.log",
+      "bytes": 31963,
+      "sha256": "4397a800ffc91e6025c0a24adfaedb96bc96b5fd66b615c61ccdc594c6ada118"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/capture-current-site.mjs",
+      "bytes": 10152,
+      "sha256": "076df9e7b78036a8de0931e2ca5df71381415cfaa83680d7232342101566106c"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/capture-google-reviews.mjs",
+      "bytes": 11500,
+      "sha256": "5e0d6106a9477b2926e369dad7ce7f710f07a410f4414b344d1377058869e1f9"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-about-desktop-images.json",
+      "bytes": 2338,
+      "sha256": "e3c1d2ed80637cee388ace76ce28d6fb293ec1b34d5c7d4cfecb927dbc2ef683"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-about-desktop-links.json",
+      "bytes": 11539,
+      "sha256": "84aa3b53cecc97b332a74a8b13bf90171b90db58f1bbb1308fbcb8a8916cc587"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-about-desktop.html",
+      "bytes": 644780,
+      "sha256": "9e268f995fba36638bd5954abc216a2fca4b3ac3641e17c8b7502c3f186b6823"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-about-desktop.txt",
+      "bytes": 6257,
+      "sha256": "201bb02e2a1e0766f91a177cbe5a99f4a660c2d3ea63b85b365b2eef282592cf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-capture-summary.json",
+      "bytes": 31962,
+      "sha256": "1024ebaaccfd907c3be2d27adb31cd2bde76286b41ce27f26fbd6053b9d255a2"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-desktop-images.json",
+      "bytes": 8626,
+      "sha256": "10adef4b9007602017d87f8e968c80da647cb2794c24fb66c3de84c3272e807b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-desktop-links.json",
+      "bytes": 37169,
+      "sha256": "ba2db52f4208668a855ec34ca909c1ff3aee559e53fdc19d0895d21535090ebf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-desktop.html",
+      "bytes": 248907,
+      "sha256": "fcb921fad58678dcfa33d550649259b0877a3c5356a918b9d1baa5795b5a3e79"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-desktop.txt",
+      "bytes": 15028,
+      "sha256": "bb6ba862d03fbe4550f7631b070b100d38c7c31aeb946a1ee83ff3930425ba50"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-mobile-images.json",
+      "bytes": 8639,
+      "sha256": "b0d42bf5ded8b0f3b28917a1694e0657f88e0af25dc2fd48e1120607e5d5be39"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-mobile-links.json",
+      "bytes": 37169,
+      "sha256": "4686b32852ab0b00d280ed654a05ea64ed698e56fcad15883c716f67ded7895a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-mobile.html",
+      "bytes": 249240,
+      "sha256": "abca03d7b6509bd19bb05734086189beba3396d8896369653b51c3430d303dfa"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-catering-mobile.txt",
+      "bytes": 13180,
+      "sha256": "e8851501d28d89455797e72116b2e980bc310bd77e6ef672e9fc5efbb0ec867b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-desktop-images.json",
+      "bytes": 746,
+      "sha256": "c7be5629548e67e6bbb91cdd946252031fca8132808512c80c1e644242f9dca8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-desktop-links.json",
+      "bytes": 9187,
+      "sha256": "69a084793de889ecae2f9dc12f96bf25bc52a7aff09130ce586d552d916b68a6"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-desktop.html",
+      "bytes": 607222,
+      "sha256": "0fe76df68fffeed3bf47290a34bb248b3f4267751b32825ec4447a4bf671b19b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-desktop.txt",
+      "bytes": 1620,
+      "sha256": "3a27314b5127db73ad5d6a96fe836278a3fd4728f0d49d853a8fb5fa58ca0582"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-mobile-images.json",
+      "bytes": 746,
+      "sha256": "39c53f75aeda80d3b3de7cbfa285b24bbecd6c325d922ea72fd329238c25a74b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-mobile-links.json",
+      "bytes": 9522,
+      "sha256": "68607238f76ebc7889fdaa436ca4db2b90e01c97b9e033e92c68246e860547b6"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-mobile.html",
+      "bytes": 607089,
+      "sha256": "6fc3f51ffba1b1ff6c19624cb5600b11248681addca51f0cf11c00412cd08e62"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-contact-mobile.txt",
+      "bytes": 1422,
+      "sha256": "21cdfcb96466d15f27e7b8e4888b49a6b904194efd069feacc33b932165fa85c"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-culinary-trainee-desktop-images.json",
+      "bytes": 3053,
+      "sha256": "75365751c32395a0468be3b6049d5413f7e0f84df20e5406ef69a024d6cd5472"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-culinary-trainee-desktop-links.json",
+      "bytes": 10014,
+      "sha256": "d298235d901e1c3d80ef8f3a59ce7f53b49a8a6f4d5a0f923658ed8fdb224409"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-culinary-trainee-desktop.html",
+      "bytes": 637154,
+      "sha256": "460ce3b15b33f1b309273ce1da2225d1d8a2bda73c147a67ab81e77691c9278c"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-culinary-trainee-desktop.txt",
+      "bytes": 4935,
+      "sha256": "7a52425def2f4ee0d82f5d134ab6a2d7f258ec8b65104d0ed74101bcf03c1cb8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-dom-snapshot.html",
+      "bytes": 732917,
+      "sha256": "876579aaa7ba66b6d9292c9b2dc6c6818a0839e77b1cda9e1b9ee518787fc0d5"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-desktop-images.json",
+      "bytes": 6250,
+      "sha256": "cbabdb500b34943afcbc21baeb86e6f12d4b2d6f2562f4bb41d68d862fba9764"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-desktop-links.json",
+      "bytes": 38389,
+      "sha256": "08bd28ea041fbce41c52d994e140cb14bc2cbbcdacec782673ae131f25ea6368"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-desktop.html",
+      "bytes": 732917,
+      "sha256": "876579aaa7ba66b6d9292c9b2dc6c6818a0839e77b1cda9e1b9ee518787fc0d5"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-desktop.txt",
+      "bytes": 6597,
+      "sha256": "1b5afc41f4b73b858d80be6018d2dd3f32f5dd1fa6fb26188416e7ad1e209e9a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-mobile-images.json",
+      "bytes": 6255,
+      "sha256": "ec7c7da73996798bf42a19e026f875a4d147aa17a12bb614fff4d1ca8d86d216"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-mobile-links.json",
+      "bytes": 38724,
+      "sha256": "cce77da6035324034be0edf86084a39bf8a947fdf134953c643b1edf4dfa9e8e"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-mobile.html",
+      "bytes": 733840,
+      "sha256": "c532297427fcccc43080182f2f6f0f8f5d93823f2f921ff7dfa87d749d701ff8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-home-mobile.txt",
+      "bytes": 6209,
+      "sha256": "12bf207e8623348911237c2fcd95ab3932ca11fccbeeb797205d7863373855f3"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-hours-desktop-images.json",
+      "bytes": 736,
+      "sha256": "8f59f4c95a226b0b1df513fc9e7340123bf7458e8c8a94b1d43a811610597f36"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-hours-desktop-links.json",
+      "bytes": 9207,
+      "sha256": "427b28d4453764faec2de1ab82394e2169fa42ee44e8075ece3bc175d0884e10"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-hours-desktop.html",
+      "bytes": 607917,
+      "sha256": "cc843c1078f540565b2da8fbbc7f4d8fa135c8b586cd93303c94234bac7f4696"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-hours-desktop.txt",
+      "bytes": 2021,
+      "sha256": "ced39786c03c59ee27373ee9314bab910b066c5707cc2b6f5e95b1b040ca4647"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-desktop-images.json",
+      "bytes": 679,
+      "sha256": "db547e93f2298bd6ed2d10e05be370137ea0317e176956453f758a84ce14fb64"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-desktop-links.json",
+      "bytes": 12306,
+      "sha256": "4a343fbd45b7bd47f0ed61d3a8a3a94b4c961eaee4c4be6dc45895ec80613c11"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-desktop.html",
+      "bytes": 644153,
+      "sha256": "84178ca72e55b656460533b2b51679228f9b3fd7f1fdd2eaca6782471da20fdf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-desktop.txt",
+      "bytes": 12790,
+      "sha256": "48623209f4bbc940e53f5e5cd94b0cca7eee9f432ef4b8fb08a1cb2a02ace8e9"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-mobile-images.json",
+      "bytes": 676,
+      "sha256": "230684112acedbe8edb0d6c7ef15a6b29c26a55c1609d474f71fdb174e07f5aa"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-mobile-links.json",
+      "bytes": 12641,
+      "sha256": "d153434ab8925f4555460607b80ea45edde9662602885cc13d90790d12f40d33"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-mobile.html",
+      "bytes": 644192,
+      "sha256": "be5ab53e7a0973020dfcafafcf73ac367be05d718bc2f02a0f201029b0e7b8fe"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-menu-mobile.txt",
+      "bytes": 12592,
+      "sha256": "7506414f7cd5cae5d65702479c72cf95e08ce537b4448d03340ce8c51dc7a6a6"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-desktop-images.json",
+      "bytes": 3297,
+      "sha256": "e32701042e3a28fb33bcc0841d0bdcc1cc89543e879bb1b4636d375e7836efbf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-desktop-links.json",
+      "bytes": 3847,
+      "sha256": "79d72ba7b34e116cae2f73c6fe166f212dca8e5836fc2e4e6d00162bba0d84ce"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-desktop.html",
+      "bytes": 243613,
+      "sha256": "f42b7a2ed38784d0a758a7d4eebf36376beb332b1cd0746598763bf256773949"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-desktop.txt",
+      "bytes": 1738,
+      "sha256": "ec53623c0b6abb9317a8ea82c54a5e901edb6b399bd563e1bf3f51cada10f2a3"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-mobile-images.json",
+      "bytes": 3308,
+      "sha256": "d5e9318f8f1259e17489370dfc3e76603fcfb7b72a7b347d036eb2412bf58ec4"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-mobile-links.json",
+      "bytes": 3847,
+      "sha256": "79d72ba7b34e116cae2f73c6fe166f212dca8e5836fc2e4e6d00162bba0d84ce"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-mobile.html",
+      "bytes": 243615,
+      "sha256": "f367eb31fe26bbcf6a67f283bd3031002100dca0566eaa499fd455e67287807c"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-online-ordering-mobile.txt",
+      "bytes": 1696,
+      "sha256": "c26a5edbb11f5c6b8c110f93eaba7117babf80e12bcc0cdadb8d30ac87e77fc8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-desktop-images.json",
+      "bytes": 3297,
+      "sha256": "e32701042e3a28fb33bcc0841d0bdcc1cc89543e879bb1b4636d375e7836efbf"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-desktop-links.json",
+      "bytes": 3847,
+      "sha256": "79d72ba7b34e116cae2f73c6fe166f212dca8e5836fc2e4e6d00162bba0d84ce"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-desktop.html",
+      "bytes": 243675,
+      "sha256": "09ee6420a587ac0319efbf58819cf60be182116fac0151e627461afab216397b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-desktop.txt",
+      "bytes": 1738,
+      "sha256": "ec53623c0b6abb9317a8ea82c54a5e901edb6b399bd563e1bf3f51cada10f2a3"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-mobile-images.json",
+      "bytes": 3308,
+      "sha256": "d5e9318f8f1259e17489370dfc3e76603fcfb7b72a7b347d036eb2412bf58ec4"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-mobile-links.json",
+      "bytes": 3847,
+      "sha256": "79d72ba7b34e116cae2f73c6fe166f212dca8e5836fc2e4e6d00162bba0d84ce"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-mobile.html",
+      "bytes": 243708,
+      "sha256": "1ba09d837671880466375046d060b4214f67e6f1653f4032f9c946b2c6dc06a7"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-orderstart-mobile.txt",
+      "bytes": 1696,
+      "sha256": "c26a5edbb11f5c6b8c110f93eaba7117babf80e12bcc0cdadb8d30ac87e77fc8"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-reviews-official-desktop-images.json",
+      "bytes": 496,
+      "sha256": "06f0010d7d36138a35e13f13f7ed5c95bb487c28fac480365fda732db779498e"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-reviews-official-desktop-links.json",
+      "bytes": 8856,
+      "sha256": "1e4784d48549c19804599b6d8f52bdd89f443f3dfd2abe18de3f1783c2fa790a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-reviews-official-desktop.html",
+      "bytes": 601600,
+      "sha256": "ad41e7fea902588cc404d6d8aea5ba00b571dba745a3fdf3994898173cbc71d4"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-reviews-official-desktop.txt",
+      "bytes": 2267,
+      "sha256": "36608f1d3ff5aaa169c1a7a3c2afa5696c9160faccaf208c8dc19d3c140d5bb5"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/current-site-text-snapshot.txt",
+      "bytes": 6597,
+      "sha256": "1b5afc41f4b73b858d80be6018d2dd3f32f5dd1fa6fb26188416e7ad1e209e9a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/google-reviews-highest-30.json",
+      "bytes": 64648,
+      "sha256": "5a1c3ada09b00103f3454e83829c05aa68886b3f734500a88dab4d7652927cfd"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scrapes/google-reviews-highest-30.md",
+      "bytes": 18442,
+      "sha256": "ab2a7a653665ae7f3fb7658c7eca91c714bce4ea3f2ad9f0a392e052423ed916"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-catering-desktop-full.png",
+      "bytes": 3842435,
+      "sha256": "3e83e44e9d0570412dc93f0a01aee5bee9534b24255b6318d3201951cc39380e"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-catering-mobile-full.png",
+      "bytes": 6270203,
+      "sha256": "11654c044d30ee0466ea08541d90c6e44a131dffeaf4bb329c35e9cfd3f32bf4"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-contact-desktop-full.png",
+      "bytes": 381865,
+      "sha256": "6a9ba9d6429881e91dfa99dc6a150a4a91743c26a58a5750b40fb379fe44c13a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-contact-mobile-full.png",
+      "bytes": 858410,
+      "sha256": "8540e41a48696fccf6ab2b7a12b8c62474855fed84297345f2121d0123db47f0"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-desktop-full.png",
+      "bytes": 2880176,
+      "sha256": "f40155c247aa7fb7e992b158fdb13b1db588c0208447b66bd248270d231b2e5b"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-menu-desktop-full.png",
+      "bytes": 1705770,
+      "sha256": "557701e4b037dbca6eaeedf73292f878c1ccff41db11b5835183791cf4162c57"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-menu-mobile-full.png",
+      "bytes": 5861925,
+      "sha256": "d5fb09958ec22cfa36e92854f7ea412ce743c384a825a71d7dba44baa1873802"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-mobile-fold.png",
+      "bytes": 767493,
+      "sha256": "cb73960b88bc348bb343e7995296036d91ac414824f8d1a7172ec75303179039"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-mobile-full.png",
+      "bytes": 8349311,
+      "sha256": "f21bafb04918a1baa6a76af410f204a49a879332b92f96f0f2c7a3084a0c792a"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-orderstart-desktop-full.png",
+      "bytes": 604575,
+      "sha256": "6efa9f0dd88af3ffeb78d6e94d46aac531318d3532be1cac8131db260ce88835"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/screenshots/current-site-orderstart-mobile-full.png",
+      "bytes": 1967207,
+      "sha256": "5000ed7cc65887384500d7f45b624d4fbdcd913e9db383db93bdd5e160f7e885"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/scripts/replay-fratos-mc-payloads.mjs",
+      "bytes": 3579,
+      "sha256": "dff5bc98f38a5b98302f8b9418a6f92b5bad89e6fd752a6956ef5a0ae4dde3ad"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/template-routing/routing-2026-05-08.md",
+      "bytes": 4908,
+      "sha256": "592e26f4fadf9b12e57e8c4b52c4ca77388eaa8e62ba7d9b537503119382cb08"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/tooling-hardening-2026-05-08.md",
+      "bytes": 1871,
+      "sha256": "e676b899a301d1c35a8dd138c89665e7dabffd6ab65439ea964b8fe10e94d83f"
+    },
+    {
+      "package_path": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09/top-3-improvements-2026-05-08.md",
+      "bytes": 5388,
+      "sha256": "a7bf8b0b52f74e86de6ad552210e26c699d293e0cd9869b22290dab2e48ed001"
+    }
+  ]
+}
