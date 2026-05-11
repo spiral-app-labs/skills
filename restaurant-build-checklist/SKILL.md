@@ -72,20 +72,23 @@ At minimum, track local requirement rows for:
 
 When `restaurant-hero-personalization` runs inside the fork/build stage, add these rows to the local checklist (they nest under row 5 — they're sub-evidence for "template fork/build complete"):
 
-5a. hero composition generated — both desktop 16:9 + mobile 9:16 reference images + clean plates approved (`public/images/raw/hero-{reference,plate}-{desktop,mobile}.jpg`)
-5b. custom imagery pass complete OR explicitly skipped per register/tier rule (`public/images/raw/food-*.jpg` and/or `space-*.jpg` exist OR a skip-reason note is recorded)
-5c. art bible extracted (`sites/<slug>/art-bible.md` exists with all 8 sections populated)
-5d. hero background video generated OR skipped per register rule (`public/videos/raw/hero-loop.mp4` exists OR skip-reason recorded; no humans/hands/faces in any frame)
-5e. hero video uploaded to Bunny.net + CDN URL responds 200 + URL wired into `content.ts` under `home.heroVideo`
-5f. art-bible-driven page personalization applied across non-hero sections (palette + typography + spacing + component register notes — verify dev server renders without errors and visual cohesion holds via Playwright capture pass)
-5g. conversion-floor verification passed — hero at `100dvh` on iPhone 13 viewport, sticky CTA visible without scroll, scroll affordance visible, restaurant name remains wordmark anchor
+5a. inspo image generated (16:9 center-balanced, no humans, with UX baked in) — `sites/<slug>/public/images/raw/inspo.jpg`
+5b. clean plate image generated (same 16:9 composition, UX stripped) — `sites/<slug>/public/images/raw/plate.jpg`
+5c. art bible extracted with all 8 sections populated (palette/type/spacing/motion/photography/component-register/IS-IS-NOT/inheritance) — `sites/<slug>/art-bible.md` AND `personalization_art_bible_markdown` POSTed to MC
+5d. hero loop video generated (8-sec 1080p, no humans/hands/faces, ambient motion only) — `sites/<slug>/public/videos/raw/hero.mp4`
+5e. all 3 assets uploaded to Supabase `agency-hero-assets` bucket as `<lead_id>/{inspo,plate,hero}.{jpg,mp4}`; public URLs respond HTTP 200 + correct Content-Type
+5f. `personalization_enabled = true` POSTed to MC; CRM Lead Detail panel displays all 3 assets inline
+5g. **operator manually flipped `personalization_ready_to_build = true` in the CRM** (this is the human gate — openclaw must wait for this before continuing)
+5h. art-bible-driven page personalization applied across non-hero sections (palette + typography + spacing + component register notes); dev server renders without errors; Playwright captures pass on desktop + iPhone 13
+5i. conversion-floor verification: hero at `100dvh` on iPhone 13 viewport, sticky CTA visible without scroll, restaurant name remains wordmark anchor, central subject readable after CSS center-crop on mobile
 
-Personalized fork evidence maps to MC `/build` accepted fields as:
-- `art_bible_path` → `evidence_urls` (the art bible MD)
-- raw image references + plates → `evidence_urls` (gallery of generated source images)
-- approved hero video Bunny CDN URL → `artifact_urls`
+Personalized fork evidence maps to MC fields as:
+- `personalization_assets.{inspo,clean_plate,hero_video}_image_url` (via the build API's `personalization` parser, NOT `evidence_urls` — they live in `agency_leads.metadata.personalization.assets`)
+- `personalization_art_bible_markdown` (via the build API's `personalization` parser)
 - Playwright personalization screenshots → `evidence_urls`
-- personalization narrative summary → `blocker` field if anything fell back, otherwise referenced from checklist.md
+- Personalization narrative summary → `blocker` if a fallback ran, otherwise checklist.md only
+
+The MC build API server-side gate (`checkPersonalizationGate`) blocks any attempt to advance past `building` while `personalization.enabled === true && (ready_to_build === false || any URL missing)` — so openclaw cannot accidentally skip the human verification step.
 
 Current MC source emits coarser default rows and canonical child requirements. The build writeback route accepts checklist paths, evidence URLs, artifact URLs, specialized evidence paths, blockers, and `passed_requirement_ids`; it does **not** currently accept arbitrary full local requirement arrays. Keep the full checklist rows in `checklist.md`/`checklist.json`, attach those paths/evidence to MC, and only claim full MC row mirroring after a supported API field exists.
 

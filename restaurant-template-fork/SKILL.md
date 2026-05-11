@@ -40,17 +40,14 @@ The fork script creates the workspace shell. What happens next depends on mode.
 - `restaurant-fork-improvement` runs next for v1 → v2 polish (ReviewCarousel, copy tightening, animations)
 
 ### Personalized fork (default for register-fit leads)
-- After fork script + checklist: invoke `restaurant-hero-personalization` which runs:
-  1. Image-first hero composition generation (`image-first-hero-generation`)
-  2. Custom imagery pass (`image-first-hero-generation`, register-dependent)
-  3. Art bible extraction (`art-bible-extraction`)
-  4. Hero background video generation (`restaurant-hero-video-generation`)
-  5. Bunny.net asset upload (`asset-pipeline-bunny`)
-  6. Art-bible-driven page personalization across all non-hero sections
+- After fork script + checklist: invoke `restaurant-hero-personalization`, which runs in three phases:
+  - **Phase 1 (autonomous)**: image-first hero generation (one 16:9 center-balanced inspo + clean plate), art bible extraction, hero loop video generation, upload all 3 to the Supabase `agency-hero-assets` bucket, POST URLs + art bible MD to MC via `/api/agency/leads/:leadId/build`, set `personalization.enabled = true`
+  - **Phase 2 (paused — human review)**: skill polls MC every 60s. Operator opens the lead in the CRM, reviews the 3 uploaded assets in the Personalization panel, flips `ready_to_build = true` manually.
+  - **Phase 3 (autonomous resume)**: skill detects the flag flip, codes hero UX on top of the clean plate (wordmark + eyebrow + sub + sticky CTA, `100dvh`, CSS center-crop on mobile), applies art bible to rest of fork.
 - Then audit content is pasted into the personalized fork's `content.ts`
 - Then `restaurant-fork-improvement` layers v1 → v2 polish on top
 
-The personalization skill manages its own quality gates (no humans in any generated asset, `100dvh` hero with sticky CTA, art bible cohesion test, etc.).
+The personalization skill manages its own quality gates (no humans in any generated asset, `100dvh` hero with sticky CTA, art bible cohesion test, etc.). The MC build API enforces the gate server-side — attempting to advance past `building` while personalization is enabled and not ready returns 400.
 
 ## Fork Output
 

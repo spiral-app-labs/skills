@@ -96,6 +96,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "restaurant-website-system/sites/maax-asian-bbq", "run", "dev", "--", "--port", "3130"],
       "port": 3130
+    },
+    {
+      "name": "mission-control",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/ethantalreja/mission-control", "run", "dev", "--", "--port", "3300"],
+      "port": 3300
     }
   ]
 }
