@@ -27,3 +27,8 @@ The stale production-style preview `https://graceful-ordinary-redesign.vercel.ap
 ## Required unblock
 
 Make the PR preview public/shareable or configure an approved preview bypass for QA/founder review, then rerun QA round 3 against the accessible public preview. Only after QA3 passes should packaging/delivery proceed.
+
+## Preview auth approval request
+
+- Preview auth approval request: `restaurant-website-system/sites/the-graceful-ordinary/preview-auth-approval-request-2026-05-08.md`
+- Status: prepared locally; no Vercel auth/project setting was changed. Public/shareable preview or approved bypass remains required before rerunning QA3.

@@ -1,0 +1,30 @@
+{
+  "build_stage": "qa_round_3",
+  "site_slug": "the-graceful-ordinary",
+  "template_slug": "roma",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "vercel_preview_url": "https://graceful-ordinary-redesign.vercel.app",
+  "artifact_urls": [
+    "https://github.com/spiral-app-labs/skills/pull/83",
+    "https://graceful-ordinary-redesign.vercel.app",
+    "https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-preview-recheck-2026-05-06-1211Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/pr-preview-blocker.md",
+    "https://github.com/spiral-app-labs/skills/pull/83"
+  ],
+  "ready_to_pitch": false,
+  "passed_requirement_ids": [],
+  "blocker": {
+    "at": "2026-05-06T12:11:00Z",
+    "source": "openclaw_website_agency_qa_round_3_public_preview_recheck",
+    "reason": "QA round 3 remains blocked after public recheck: browser access is healthy and PR #83 is merged, but the stable public preview at https://graceful-ordinary-redesign.vercel.app still serves the stale build with unsupported proof claims (AAA Three-Diamond, TripAdvisor Guest, 200+ Reviews, 4.8), while the clean PR preview at https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app returns HTTP 401/Vercel Authentication Required. Redeploy or alias the stable preview to the merged v2 source, or provide a preview bypass/shareable URL, then rerun QA round 3."
+  },
+  "heartbeat_summary": "Rechecked The Graceful Ordinary QA round 3 after PR #83 merged: browser is healthy, but stable public preview is still stale and PR preview is still Vercel-authenticated, so delivery remains blocked."
+}

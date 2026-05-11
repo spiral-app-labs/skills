@@ -595,9 +595,32 @@
         "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-2026-05-06.json",
         "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-preview-recheck-2026-05-06-1439Z.md",
         "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-06-1439Z.json",
-        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/public-preview-recheck-2026-05-06-1439Z/http-status.txt"
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/public-preview-recheck-2026-05-06-1439Z/http-status.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-07-2047Z.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-07-2047Z.json",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-warm-qa3-2026-05-07-2047Z.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-warm-qa3-2026-05-07-2047Z.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-warm-2026-05-07-2047Z.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-recheck-2026-05-10.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-10.json",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/desktop-home.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/mobile-home.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/desktop-menu.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/mobile-menu.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/menu.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/about.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/contact.txt",
+        "heartbeat-preview-url-checks-20260510-124152.jsonl",
+        "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-local-mobile-polish-2026-05-10.md",
+        "restaurant-website-system/sites/the-graceful-ordinary/evidence/typecheck-mobile-polish-v3-2026-05-10.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/evidence/build-mobile-polish-v3-2026-05-10.txt",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-local-mobile-polish-v3-2026-05-10/desktop-home.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-local-mobile-polish-v3-2026-05-10/desktop-menu.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-local-mobile-polish-v3-2026-05-10/mobile-home.png",
+        "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-local-mobile-polish-v3-2026-05-10/mobile-menu.png"
       ],
-      "blocker": "qa_round_3 blocked after 2026-05-06T14:39Z recheck: PR #83 is merged, but no founder-shareable public preview reflects local v2. Stable public preview is reachable (HTTP 200 on /, /menu, /about, /contact) but still contains unsupported stale proof claims (AAA Three-Diamond, TripAdvisor Guest, 200+ Reviews, 4.8) and lacks local-v2 markers (Chris and Megan Curren, Kane County Choice Awards). PR preview returns HTTP 401 / Vercel Authentication Required and shows a Vercel login page. Mission Control API credentials are unavailable in this runtime for official writeback."
+      "blocker": "QA round 3 remains blocked after 2026-05-10 local mobile polish: the local redeploy candidate now fixes the visible mobile nav/conversion, hero readability, and menu overflow issues and passes typecheck/build, but the corrected source has not been deployed to a public founder-shareable URL. The stable public preview is still stale, and the PR preview remains behind Vercel auth. Deploy/alias the corrected local candidate, then rerun public QA3 before packaging/delivery. Mission Control protected agency writeback auth is still unavailable in this runtime; no raw Supabase mutation was performed."
     },
     {
       "id": "delivery",
@@ -730,7 +753,10 @@
     "qa_round_3_local_dom_text": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-local-dom-text-2026-05-06.txt",
     "qa_round_3_local_links": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-local-links-2026-05-06.json",
     "qa_round_3_capture_script": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/capture-qa-round-3-cdp-2026-05-06.mjs",
-    "qa_round_3_mc_writeback_blocked": "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-2026-05-06.json"
+    "qa_round_3_mc_writeback_blocked": "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-2026-05-06.json",
+    "previewAuthApprovalRequest": "restaurant-website-system/sites/the-graceful-ordinary/preview-auth-approval-request-2026-05-08.md",
+    "agencyActiveDecisionIndexMarkdown": "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.md",
+    "agencyActiveDecisionIndexJson": "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.json"
   },
   "qaRounds": [
     {
@@ -784,6 +810,17 @@
       "latestRecheckArtifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-preview-recheck-2026-05-06-1439Z.md",
       "latestMcWritebackPayload": "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-06-1439Z.json",
       "httpEvidence": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/public-preview-recheck-2026-05-06-1439Z/http-status.txt"
+    },
+    {
+      "stage": "qa_round_3",
+      "reason": "QA round 3 remains blocked after 2026-05-07T20:47Z public recheck: the founder-shareable stable preview at https://graceful-ordinary-redesign.vercel.app/ is reachable, but still serves stale/factually unsafe proof claims (`AAA Three-Diamond`, `TripAdvisor`, `TripAdvisor Guest`, `200+ Reviews`, and unsupported `4.8`). Routes /, /menu, /about, and /contact return HTTP 200, so the blocker is deploy fidelity/truth-safety rather than site availability. Mission Control planner/writeback is also blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing; production planner returns 401. No raw Supabase mutation was performed.",
+      "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-07-2047Z.md",
+      "mcWritebackPayload": "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-07-2047Z.json",
+      "publicStablePreview": "https://graceful-ordinary-redesign.vercel.app/",
+      "updatedAt": "2026-05-07T20:47:00Z",
+      "desktopScreenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-warm-qa3-2026-05-07-2047Z.png",
+      "mobileScreenshot": "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-warm-qa3-2026-05-07-2047Z.png",
+      "domText": "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-warm-2026-05-07-2047Z.txt"
     }
   ],
   "requirements": [
@@ -1332,5 +1369,14 @@
     }
   },
   "prUrl": "https://github.com/spiral-app-labs/skills/pull/83",
-  "vercelPrPreviewUrl": "https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app"
+  "vercelPrPreviewUrl": "https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app",
+  "qaRound3": {
+    "previewAuthApprovalRequest": "restaurant-website-system/sites/the-graceful-ordinary/preview-auth-approval-request-2026-05-08.md",
+    "approvalStatus": "pending_public_preview_or_approved_vercel_bypass",
+    "blocker": "Clean PR preview returns Vercel Authentication Required / HTTP 401; approval request prepared locally for public/shareable URL, bypass, alias, or external preview before rerunning QA3."
+  },
+  "agencyDecisionIndex": {
+    "markdown": "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.md",
+    "json": "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.json"
+  }
 }

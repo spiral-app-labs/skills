@@ -1,0 +1,41 @@
+{
+  "build_stage": "qa_round_3",
+  "site_slug": "the-graceful-ordinary",
+  "template_slug": "roma",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "vercel_preview_url": "https://graceful-ordinary-redesign.vercel.app",
+  "artifact_urls": [
+    "https://github.com/spiral-app-labs/skills/pull/83",
+    "https://graceful-ordinary-redesign.vercel.app",
+    "https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-preview-recheck-2026-05-06-2236Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/desktop-full-public-preview-2026-05-06.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/mobile-full-public-preview-2026-05-06.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-preview-dom-text-2026-05-06.txt",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-route-smoke-2026-05-06.json",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa3-cdp-capture-2026-05-06.mjs",
+    "restaurant-website-system/sites/the-graceful-ordinary/public-preview-unblock-runbook.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/pr-preview-blocker.md"
+  ],
+  "ready_to_pitch": false,
+  "passed_requirement_ids": [],
+  "blocked_requirement_ids": [
+    "qa-round-3",
+    "delivery-package",
+    "delivery-no-missing-evidence"
+  ],
+  "blocker": {
+    "at": "2026-05-06T22:36:00Z",
+    "source": "openclaw_website_agency_qa_round_3_public_preview_recheck",
+    "reason": "QA round 3 remains blocked: the public stable preview at https://graceful-ordinary-redesign.vercel.app is reachable but still serves stale unsupported proof claims (AAA Three-Diamond, TripAdvisor Guest, 200+ Reviews, unsupported 4.8 rating claim), while the PR preview at https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app returns HTTP 401 / Vercel Authentication Required. No founder-shareable updated public URL is available.",
+    "next_unblock_action": "Redeploy or alias the stable preview to the merged v2 source, or provide a Vercel preview bypass/shareable URL. Then rerun QA round 3 public desktop/mobile capture, DOM/link scrape, final sell-readiness notes, and Mission Control writeback.",
+    "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-preview-recheck-2026-05-06-2236Z.md"
+  },
+  "heartbeat_summary": "Rechecked The Graceful Ordinary QA round 3: local build still passes, but stable public preview remains stale/factually unsafe and the PR preview remains Vercel-authenticated, so delivery remains blocked."
+}

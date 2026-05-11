@@ -1,0 +1,18 @@
+{
+  "build_stage": "qa_round_3",
+  "status": "blocked",
+  "site_slug": "the-graceful-ordinary",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "vercel_preview_url": "https://graceful-ordinary-redesign.vercel.app/",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-11T025754Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/graceful-public-recheck-2026-05-11T025754Z.txt",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-dom-marker-recheck-2026-05-11T025754Z.txt"
+  ],
+  "artifact_urls": [
+    "https://graceful-ordinary-redesign.vercel.app/",
+    "https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app/"
+  ],
+  "blocker": "QA round 3 remains blocked after 2026-05-11 public recheck: stable public preview returns HTTP 200 but still serves stale/factually unsafe proof claims (`AAA Three-Diamond`, `4.8★`) and is missing safe local-v2 markers (`Chris and Megan Curren`, `Kane County Choice Awards`, `Ask Graceful`, `Maytag Bleu Cheese`). PR preview remains HTTP 401 behind Vercel auth. Redeploy/alias safe local v2 or make the PR preview public/shareable, then rerun QA3.",
+  "heartbeat_summary": "Rechecked Graceful Ordinary public/PR previews. Public stable is reachable but stale; PR preview remains auth-protected, so QA3 is still blocked."
+}

@@ -6,6 +6,7 @@ html, body {
   background-color: theme('colors.canvas');
   color: theme('colors.text');
   font-family: theme('fontFamily.body');
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

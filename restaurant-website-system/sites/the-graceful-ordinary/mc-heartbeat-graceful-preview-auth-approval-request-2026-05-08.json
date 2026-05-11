@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "MC local planner/writeback unavailable in this runtime; ECONNREFUSED observed before payload creation",
+  "code": "ECONNREFUSED"
+}

@@ -1,0 +1,26 @@
+{
+  "leadId": "a513755c-e7a3-438e-b8e9-78e8cd99e080",
+  "rootTaskId": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "build_stage": "qa_round_3",
+  "currentStage": "qa_round_3",
+  "status": "blocked",
+  "blocker": "QA round 3 remains blocked after 2026-05-10 public recheck: stable URL https://graceful-ordinary-redesign.vercel.app is reachable and /, /menu, /about, /contact return HTTP 200, but the public site is not sell-ready/truth-safe. Fresh screenshots show weak mobile navigation/conversion, low-contrast hero/logo, clipped mobile menu announcement/tabs, and prior stale unsupported proof framing remains present/unsafe. PR preview https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app still returns HTTP 401. Redeploy/replace with corrected local candidate, then rerun QA3 before packaging/delivery.",
+  "passed_requirement_ids": [],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-recheck-2026-05-10.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/desktop-home.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/mobile-home.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/desktop-menu.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/mobile-menu.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/.txt",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/menu.txt",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/about.txt",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/contact.txt",
+    "heartbeat-preview-url-checks-20260510-124152.jsonl"
+  ],
+  "artifact_urls": [
+    "https://graceful-ordinary-redesign.vercel.app/"
+  ],
+  "source": "openclaw_heartbeat",
+  "created_at": "2026-05-10T12:44:00Z"
+}

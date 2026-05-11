@@ -20,7 +20,7 @@ import { content } from '../content.example';
 export function FullBleedHero() {
   const h = content.hero;
   return (
-    <section className="relative flex min-h-[640px] w-full items-end overflow-hidden pt-28 pb-20 sm:min-h-[720px] sm:pt-32 sm:pb-24 md:min-h-[700px] md:h-screen md:pt-36 md:pb-24">
+    <section className="relative min-h-[620px] h-[92vh] md:h-screen md:min-h-[700px] w-full overflow-hidden">
       <Image
         src={h.image}
         alt="Plated dish with wine glasses"
@@ -34,14 +34,14 @@ export function FullBleedHero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to top, rgba(5,12,22,0.96) 0%, rgba(5,12,22,0.78) 34%, rgba(13,27,42,0.36) 68%, rgba(13,27,42,0.12) 100%)',
+            'linear-gradient(to top, rgba(5,12,22,0.98) 0%, rgba(5,12,22,0.88) 38%, rgba(13,27,42,0.52) 70%, rgba(13,27,42,0.24) 100%)',
         }}
       />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1280px] flex-col justify-end px-5 md:px-12">
+      <div className="relative z-10 h-full flex flex-col justify-end pb-28 md:pb-24 px-6 md:px-12 max-w-[1280px] mx-auto">
         <motion.p
-          className="mb-3 max-w-[320px] text-eyebrow sm:mb-4 sm:max-w-none"
-          initial={{ opacity: 0, y: 12 }}
+          className="text-eyebrow mb-4"
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: theme.motion.easing, delay: 0.4 }}
         >
@@ -49,7 +49,7 @@ export function FullBleedHero() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: theme.motion.revealLift }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing, delay: 0.6 }}
         >
@@ -58,33 +58,33 @@ export function FullBleedHero() {
             as="h1"
             size="page"
             italicColor={theme.color.accent}
-            className="max-w-[10ch] !text-text sm:max-w-none"
+            className="!text-text drop-shadow-[0_8px_28px_rgba(0,0,0,0.55)]"
           />
         </motion.div>
 
         <motion.div
-          className="mt-6 flex max-w-md flex-col gap-3 sm:mt-8 sm:max-w-none sm:flex-row"
-          initial={{ opacity: 0, y: 16 }}
+          className="mt-8 flex flex-col sm:flex-row gap-3"
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing, delay: 0.9 }}
         >
           <Link
             href={h.primaryCta.href}
-            className="rounded-pill bg-accent px-6 py-3.5 text-center text-button text-surface transition-colors hover:bg-accent-hover"
+            className="px-7 py-3.5 rounded-pill bg-accent hover:bg-accent-hover text-button text-surface transition-colors"
           >
             {h.primaryCta.label}
           </Link>
           <Link
             href={h.secondaryCta.href}
-            className="rounded-pill border border-text/40 px-6 py-3.5 text-center text-button text-text transition-colors hover:border-text/80"
+            className="px-7 py-3.5 rounded-pill border border-text/40 hover:border-text/80 text-button text-text transition-colors"
           >
             {h.secondaryCta.label}
           </Link>
         </motion.div>
 
         <motion.p
-          className="mt-8 max-w-[340px] text-[11px] uppercase tracking-[1.4px] text-text/70 sm:mt-10 sm:max-w-none sm:text-micro"
-          initial={{ opacity: 0 }}
+          className="mt-10 text-micro text-text/60"
+          initial={false}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.1 }}
         >

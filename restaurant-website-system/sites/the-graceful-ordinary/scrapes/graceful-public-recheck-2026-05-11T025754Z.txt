@@ -1,0 +1,84 @@
+Checked: 2026-05-11T02:57:54Z
+
+## https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app
+-- HEAD / --
+HTTP/2 401 
+cache-control: no-store, max-age=0
+content-type: text/html; charset=utf-8
+date: Mon, 11 May 2026 02:57:54 GMT
+server: Vercel
+set-cookie: _vercel_sso_nonce=b468fb8c46e9825991945cfafd525bb4fe2b8e6a0112398f; Max-Age=3600; Path=/; Secure; HttpOnly; SameSite=Lax
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-frame-options: DENY
+x-robots-tag: noindex
+x-vercel-id: cle1::22c9c-1778468274247-7251e54b904a
+content-length: 14630
+
+-- HEAD /menu --
+HTTP/2 401 
+cache-control: no-store, max-age=0
+content-type: text/html; charset=utf-8
+date: Mon, 11 May 2026 02:57:54 GMT
+server: Vercel
+set-cookie: _vercel_sso_nonce=6b9ddfb5316394a000a5c540350e0f4b74e8ef0bd804dc0b; Max-Age=3600; Path=/; Secure; HttpOnly; SameSite=Lax
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-frame-options: DENY
+x-robots-tag: noindex
+x-vercel-id: cle1::n4gdh-1778468274377-2abd317622a1
+content-length: 14642
+
+-- body marker --
+<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Authentication Required</title><script type=text/llms.txt>
+## Note to agents accessing this page:
+
+This page requires Vercel authentication. Here are your options:
+
+Option 1: vercel curl (Recommended if Vercel CLI installed)
+If the Vercel CLI is installed and authenticated, use the `vercel curl` command. Docs at: https://vercel.com/docs/cli/curl
+
+Option 2: Vercel MCP Server (Recommended if Vercel CLI not installed)
+If the Vercel CLI is not installed, the easiest way to get a token is using the get_access_to_vercel_url or web_fetch_vercel_url functions of the Vercel MCP server at https://mcp.vercel.com (Docs at https://vercel.com/docs/mcp/vercel-mcp)
+  
+Option 3: Bypass token (Manual)
+This URL documents how to use the bypass token: https://vercel.com/docs/deployment-protection/methods-to-bypass-deployment-protection/protection-bypass-automation
+You need to prompt the 
+
+## https://graceful-ordinary-redesign.vercel.app
+-- HEAD / --
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 412637
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Mon, 11 May 2026 02:57:54 GMT
+etag: "8f2080097fe425b85be4d2db30022521"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+x-matched-path: /
+x-vercel-cache: HIT
+x-vercel-id: cle1::wmbqd-1778468274660-5dcc1efb3f39
+content-length: 29070
+
+-- HEAD /menu --
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 401568
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Mon, 11 May 2026 02:57:55 GMT
+etag: "36b21058b75f76566491893b50add286"
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+x-matched-path: /menu
+x-vercel-cache: HIT
+x-vercel-id: cle1::d2tct-1778468275007-cf03018e297a
+content-length: 22179
+
+-- body marker --
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&amp;q=85&amp;fit=crop"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&amp;q=80&amp;fit=crop"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900&amp;q=80&amp;fit=crop"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&amp;q=80&amp;fit=crop"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1561043433-aaf687c4cf04?w=900&amp;q=80&amp;fit=crop"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&amp;q=80&amp;fit=crop"/><link rel="preload" as="image" href="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=900&amp;q=80
