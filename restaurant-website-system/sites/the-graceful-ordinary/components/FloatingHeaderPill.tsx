@@ -62,7 +62,8 @@ export function FloatingHeaderPill() {
       <LiveOpenStatus
         hours={content.brand.hoursConfig as unknown as HoursConfig}
         variant="text"
-        className="hidden xl:inline-flex ml-2 px-2 text-nav-link text-text/70 whitespace-nowrap"
+        formatLabel={(status) => (status.state === 'open' ? 'Open now' : 'Closed now')}
+        className="hidden max-w-[7rem] truncate px-2 text-nav-link text-text/70 xl:inline-flex"
       />
 
       <Link
@@ -73,22 +74,22 @@ export function FloatingHeaderPill() {
       </Link>
     </motion.header>
 
-    <div className="fixed bottom-3 left-3 right-3 z-50 flex min-w-0 gap-1.5 overflow-hidden rounded-card border border-border/60 bg-surface/98 p-2 shadow-2xl backdrop-blur-md md:hidden">
+    <div className="fixed bottom-3 left-2 right-2 z-50 grid min-w-0 grid-cols-3 gap-1 overflow-hidden rounded-card border border-border/60 bg-surface/98 p-1.5 shadow-2xl backdrop-blur-md md:hidden">
       <Link
         href={content.nav.cta.href}
-        className="min-w-0 flex-1 rounded-pill bg-accent px-2 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[1.2px] text-canvas"
+        className="min-w-0 rounded-pill bg-accent px-1.5 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[0.9px] text-canvas"
       >
         Reserve
       </Link>
       <Link
         href="/menu"
-        className="min-w-0 flex-1 rounded-pill border border-border/70 px-2 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[1.2px] text-text"
+        className="min-w-0 rounded-pill border border-border/70 px-1.5 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[0.9px] text-text"
       >
         Menu
       </Link>
       <Link
         href={`tel:+${content.brand.phone.replace(/[^0-9]/g, '')}`}
-        className="min-w-0 flex-1 rounded-pill border border-border/70 px-2 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[1.2px] text-text"
+        className="min-w-0 rounded-pill border border-border/70 px-1.5 py-2.5 text-center text-[10px] font-semibold uppercase tracking-[0.9px] text-text"
       >
         Call
       </Link>

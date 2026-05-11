@@ -40,7 +40,7 @@ export function FullBleedHero() {
 
       <div className="relative z-10 h-full flex flex-col justify-end pb-28 md:pb-24 px-6 md:px-12 max-w-[1280px] mx-auto">
         <motion.p
-          className="text-eyebrow mb-4"
+          className="text-eyebrow mb-4 max-w-[19rem] leading-6 tracking-[0.18em] sm:max-w-none sm:leading-[15px] sm:tracking-[3px]"
           initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: theme.motion.easing, delay: 0.4 }}
@@ -63,20 +63,20 @@ export function FullBleedHero() {
         </motion.div>
 
         <motion.div
-          className="mt-8 flex flex-col sm:flex-row gap-3"
+          className="mt-8 flex w-full max-w-[22rem] flex-col gap-3 sm:max-w-none sm:flex-row"
           initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing, delay: 0.9 }}
         >
           <Link
             href={h.primaryCta.href}
-            className="px-7 py-3.5 rounded-pill bg-accent hover:bg-accent-hover text-button text-surface transition-colors"
+            className="w-full min-w-0 rounded-pill bg-accent px-6 py-3.5 text-center text-button text-surface transition-colors hover:bg-accent-hover sm:w-auto sm:px-7"
           >
             {h.primaryCta.label}
           </Link>
           <Link
             href={h.secondaryCta.href}
-            className="px-7 py-3.5 rounded-pill border border-text/40 hover:border-text/80 text-button text-text transition-colors"
+            className="w-full min-w-0 rounded-pill border border-text/40 px-6 py-3.5 text-center text-button text-text transition-colors hover:border-text/80 sm:w-auto sm:px-7"
           >
             {h.secondaryCta.label}
           </Link>
