@@ -23,9 +23,34 @@ Use `--force` only when Mission Control explicitly says to overwrite an existing
 1. Update MC build stage to `forking`.
 2. Run the fork script.
 3. Run `restaurant-build-checklist` immediately after the fork.
-4. Install dependencies inside the fork only if needed.
-5. Keep template code style and content boundaries intact.
-6. Do not copy `node_modules`, `.next`, screenshots, videos, or capture frames into the new fork.
+4. **Decide fork mode** — Standard vs Personalized. Default to Personalized for any lead that passed the register-fit visual-reality check (per `feedback_lead_fit_qualification.md`). Standard is for batched high-volume sweeps where personalization time would block shipping the batch. See "Two fork modes" below.
+5. If Personalized: invoke `restaurant-hero-personalization` skill to run the image-first hero pass + art bible extraction + Higgsfield video + Bunny upload + rest-of-fork styling.
+6. Install dependencies inside the fork only if needed.
+7. Keep template code style and content boundaries intact.
+8. Do not copy `node_modules`, `.next`, screenshots, videos, or capture frames into the new fork.
+
+## Two fork modes
+
+The fork script creates the workspace shell. What happens next depends on mode.
+
+### Standard fork (fast batched speculative outbound)
+- After fork script + checklist: audit content (Hero Lock 4-tuple, owner-voice phrases, photos) is pasted into the template's `content.ts`
+- Template's default hero pattern is used (no bespoke hero composition)
+- Aliveness mandatories (LiveOpenStatus, LiveMapEmbed, ScrollReveal) ship
+- `restaurant-fork-improvement` runs next for v1 → v2 polish (ReviewCarousel, copy tightening, animations)
+
+### Personalized fork (default for register-fit leads)
+- After fork script + checklist: invoke `restaurant-hero-personalization` which runs:
+  1. Image-first hero composition generation (`image-first-hero-generation`)
+  2. Custom imagery pass (`image-first-hero-generation`, register-dependent)
+  3. Art bible extraction (`art-bible-extraction`)
+  4. Hero background video generation (`restaurant-hero-video-generation`)
+  5. Bunny.net asset upload (`asset-pipeline-bunny`)
+  6. Art-bible-driven page personalization across all non-hero sections
+- Then audit content is pasted into the personalized fork's `content.ts`
+- Then `restaurant-fork-improvement` layers v1 → v2 polish on top
+
+The personalization skill manages its own quality gates (no humans in any generated asset, `100dvh` hero with sticky CTA, art bible cohesion test, etc.).
 
 ## Fork Output
 
@@ -35,3 +60,9 @@ The fork should create:
 - package name updated to `<slug>`
 - `.agency-template.json` describing template source and creation time
 - no generated dependencies or build output
+
+Personalized fork additionally creates:
+- `sites/<slug>/public/images/raw/` — raw generated images (`.gitignore`d from the deploy bundle but archived locally)
+- `sites/<slug>/public/videos/raw/` — raw generated videos (`.gitignore`d; archived only)
+- `sites/<slug>/art-bible.md` — design-system spec driving non-hero styling
+- `sites/<slug>/content.ts` — references Bunny CDN URLs for hero video, local paths for hero images

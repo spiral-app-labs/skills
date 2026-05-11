@@ -68,6 +68,25 @@ At minimum, track local requirement rows for:
 13. QA round 3 complete with evidence
 14. delivery package mirrored to MC
 
+### Personalized fork additional rows (when personalized mode is enabled)
+
+When `restaurant-hero-personalization` runs inside the fork/build stage, add these rows to the local checklist (they nest under row 5 — they're sub-evidence for "template fork/build complete"):
+
+5a. hero composition generated — both desktop 16:9 + mobile 9:16 reference images + clean plates approved (`public/images/raw/hero-{reference,plate}-{desktop,mobile}.jpg`)
+5b. custom imagery pass complete OR explicitly skipped per register/tier rule (`public/images/raw/food-*.jpg` and/or `space-*.jpg` exist OR a skip-reason note is recorded)
+5c. art bible extracted (`sites/<slug>/art-bible.md` exists with all 8 sections populated)
+5d. hero background video generated OR skipped per register rule (`public/videos/raw/hero-loop.mp4` exists OR skip-reason recorded; no humans/hands/faces in any frame)
+5e. hero video uploaded to Bunny.net + CDN URL responds 200 + URL wired into `content.ts` under `home.heroVideo`
+5f. art-bible-driven page personalization applied across non-hero sections (palette + typography + spacing + component register notes — verify dev server renders without errors and visual cohesion holds via Playwright capture pass)
+5g. conversion-floor verification passed — hero at `100dvh` on iPhone 13 viewport, sticky CTA visible without scroll, scroll affordance visible, restaurant name remains wordmark anchor
+
+Personalized fork evidence maps to MC `/build` accepted fields as:
+- `art_bible_path` → `evidence_urls` (the art bible MD)
+- raw image references + plates → `evidence_urls` (gallery of generated source images)
+- approved hero video Bunny CDN URL → `artifact_urls`
+- Playwright personalization screenshots → `evidence_urls`
+- personalization narrative summary → `blocker` field if anything fell back, otherwise referenced from checklist.md
+
 Current MC source emits coarser default rows and canonical child requirements. The build writeback route accepts checklist paths, evidence URLs, artifact URLs, specialized evidence paths, blockers, and `passed_requirement_ids`; it does **not** currently accept arbitrary full local requirement arrays. Keep the full checklist rows in `checklist.md`/`checklist.json`, attach those paths/evidence to MC, and only claim full MC row mirroring after a supported API field exists.
 
 Map local evidence into accepted `/build` fields where possible:

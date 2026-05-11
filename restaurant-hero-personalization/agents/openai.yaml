@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Hero Personalization"
+  short_description: "Image-first hero pass: bespoke hero + art bible + Higgsfield video + Bunny upload"
+  default_prompt: "Use $restaurant-hero-personalization inside MC stage template_fork_build, after the fork script runs, when the lead is in personalized-fork mode."

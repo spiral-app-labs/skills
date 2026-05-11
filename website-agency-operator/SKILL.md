@@ -13,7 +13,8 @@ This is the primary operating skill for the restaurant website employee. Mission
 2. `restaurant-lead-qualification` before speculative/new-lead build decisions.
 3. `restaurant-build-checklist` before any gate execution.
 4. Gate-specific skills from the current child task's `metadata.required_skills`.
-5. `restaurant-qa-delivery` and `restaurant-pitch-doc` before delivery.
+5. **Stage 6 (`template_fork_build`) additional skill — `restaurant-hero-personalization`** — load when the lead is in personalized-fork mode (default for any lead passing visual-reality register-fit check). Personalization runs INSIDE the fork stage, after `restaurant-template-fork`'s fork script. Stack: ChatGPT Pro (image gen) + Higgsfield Plus (Seedance 1.5 Pro video) + Bunny.net (CDN). Skip personalization for batched standard-fork sweeps where fork-time matters more than custom hero.
+6. `restaurant-qa-delivery` and `restaurant-pitch-doc` before delivery.
 
 Do not use `agency-overnight` for new work. It is only a compatibility pointer.
 
