@@ -1,0 +1,26 @@
+{
+  "agent": "evan",
+  "runtime": "openclaw",
+  "event": "website_agency_graceful_ordinary_preview_auth_approval_request_created",
+  "restaurant": "The Graceful Ordinary",
+  "slug": "the-graceful-ordinary",
+  "timestamp": "2026-05-08T22:50:00.000Z",
+  "status": "qa_round_3_blocked_preview_auth_approval_prepared",
+  "summary": [
+    "Read-only workflow root scan shows The Graceful Ordinary is active at qa_round_3 and blocked on Vercel preview auth (HTTP 401).",
+    "Created preview-auth-approval-request-2026-05-08.md with public/shareable URL, approved bypass, public alias, and external-preview options plus post-unblock QA3 checks.",
+    "Updated checklist, checklist.json, PR preview blocker, QA3 blocker, and latest public-stable recheck artifact."
+  ],
+  "evidence_paths": [
+    "restaurant-website-system/sites/the-graceful-ordinary/preview-auth-approval-request-2026-05-08.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/pr-preview-blocker.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-blocker.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-08T124411Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/checklist.json"
+  ],
+  "blockers": [
+    "Current Graceful Ordinary clean PR preview returns Vercel Authentication Required / HTTP 401; QA3 cannot pass until public/shareable URL, approved bypass, public alias, or external public preview is verified.",
+    "Mission Control local planner/writeback remains unreachable with ECONNREFUSED in this runtime."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "blocked",
+  "summary": "Agency: The Graceful Ordinary QA3 public recheck found the stable URL reachable but still not sell-ready; fresh evidence and MC-compatible blocker payload were prepared locally.",
+  "ranAt": "2026-05-10T12:44:00Z",
+  "taskIds": ["377dcee1-820a-4d94-a5b1-0740be57c92c"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I rechecked The Graceful Ordinary public preview. The stable URL now opens, which is good, but it is still not ready for Ethan to sell: mobile navigation and reserve flow are weak, the hero/logo are hard to read, the menu has mobile clipping, and the previously flagged proof/recognition language is still unsafe unless verified or removed.",
+    "technical_summary": "Planner protected auth is unavailable in this runtime, so I used read-only Supabase diagnosis and local artifacts only. I verified route status for the stable public URL and PR preview, captured fresh desktop/mobile screenshots with headless Chrome, scraped public route text, wrote QA3 recheck notes, updated checklist.md/checklist.json, and prepared a canonical MC build writeback payload. No raw Supabase mutation was performed.",
+    "work_started_state": "The Graceful Ordinary was in_progress at qa_round_3 with an older blocker around preview auth/stale public content.",
+    "work_completed_state": "Fresh QA3 evidence confirms the stable public URL is reachable but still blocked for sellability/truth-safety; local checklist and MC-compatible payload now reflect the current blocker.",
+    "work_items": [
+      {"title": "The Graceful Ordinary QA3 public recheck", "status": "blocked", "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-recheck-2026-05-10.md"}
+    ],
+    "touched_entities": [
+      {"type": "website", "name": "The Graceful Ordinary"},
+      {"type": "task", "name": "377dcee1-820a-4d94-a5b1-0740be57c92c"}
+    ],
+    "process_improvement_candidates": [
+      {"observation": "OpenClaw runtime lacks AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET, so protected agency planner/writeback cannot run.", "proposal": "Provision agency runtime auth so heartbeats can update MC directly instead of producing local replay payloads."},
+      {"observation": "Stable public previews can drift from corrected local candidates.", "proposal": "Add an automated public-preview freshness/truth-safety smoke check before QA3 can pass."}
+    ]
+  }
+}

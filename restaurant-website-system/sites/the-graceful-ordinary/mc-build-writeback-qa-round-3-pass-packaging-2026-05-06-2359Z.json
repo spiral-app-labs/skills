@@ -1,0 +1,31 @@
+{
+  "site_slug": "the-graceful-ordinary",
+  "build_stage": "packaging",
+  "previous_gate": "qa_round_3",
+  "qa_round_3_status": "passed",
+  "ready_to_pitch": true,
+  "ready_for_delivery_writeback": true,
+  "public_preview_url": "https://graceful-ordinary-redesign.vercel.app/",
+  "latest_fix_pr": "https://github.com/spiral-app-labs/skills/pull/92",
+  "latest_fix_merge_commit": "ec1b92cabfa02eb86b6cf401c57d6a5633a0fdaf",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-pass-2026-05-06-2359Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/packaging-2026-05-06-2359Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-warm-qa3-2026-05-06-2359Z.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-warm-qa3-2026-05-06-2359Z.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-warm-2026-05-06-2359Z.txt"
+  ],
+  "passed_requirement_ids": [
+    "identity",
+    "conversion",
+    "accuracy",
+    "design_quality",
+    "mobile_polish",
+    "qa_round_3_public_preview"
+  ],
+  "blocker": null,
+  "mission_control_write_status": "activity_logged_not_root_stage_mutated",
+  "mission_control_write_blocker": "AGENCY_AUTONOMY_API_KEY is not available in this OpenClaw runtime for protected agency build writeback. Evidence was logged through heartbeat/activity and saved as this MC-compatible payload."
+}

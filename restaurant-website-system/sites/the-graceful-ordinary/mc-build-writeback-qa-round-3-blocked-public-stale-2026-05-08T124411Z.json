@@ -1,0 +1,23 @@
+{
+  "site_slug": "the-graceful-ordinary",
+  "build_stage": "qa_round_3",
+  "qa_round_3_status": "blocked",
+  "ready_to_pitch": false,
+  "public_preview_url": "https://graceful-ordinary-redesign.vercel.app/",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "qa_task_id": "886ec18a-e365-490d-a1f9-a608f0186ce8",
+  "agency_lead_id": "a513755c-e7a3-438e-b8e9-78e8cd99e080",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-08T124411Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/graceful-public-recheck-2026-05-08T124229Z.html"
+  ],
+  "passed_requirement_ids": [],
+  "blocker": {
+    "source": "openclaw_website_agency_qa_round_3",
+    "reason": "QA round 3 remains blocked after 2026-05-08T12:44:11Z public stable recheck: https://graceful-ordinary-redesign.vercel.app/ is reachable but still serves stale/factually unsafe proof claims (AAA Three-Diamond, TripAdvisor, TripAdvisor Guest, 200+ Reviews, unsupported 4.8 rating), and is missing corrected Resy/contact/proof/concierge signals. Redeploy/re-alias corrected PR #92/source build and purge stale Vercel cache, then rerun QA3."
+  },
+  "mission_control_write_status": "activity_logged_not_root_stage_mutated",
+  "mission_control_write_blocker": "Protected agency build writeback requires AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET, which is not available in this OpenClaw runtime; no raw Supabase agency mutation was performed."
+}

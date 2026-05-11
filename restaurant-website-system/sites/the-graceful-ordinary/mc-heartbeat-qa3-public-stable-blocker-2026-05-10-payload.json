@@ -1,0 +1,57 @@
+{
+  "status": "alert",
+  "summary": "The Graceful Ordinary QA3 remains blocked: browser capture now works, but public stable preview is stale/factually unsafe and PR preview is Vercel-auth protected.",
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "mode": "agency",
+  "source": "openclaw_website_agency",
+  "taskIds": [
+    "377dcee1-820a-4d94-a5b1-0740be57c92c",
+    "886ec18a-e365-490d-a1f9-a608f0186ce8"
+  ],
+  "metadata": {
+    "human_summary": "I rechecked The Graceful Ordinary final QA with the browser working again. The public stable preview loads and I captured fresh desktop/mobile screenshots plus a DOM scrape, but the preview is still stale and includes unsafe proof claims like AAA Three-Diamond, TripAdvisor, 4.8, and 200+ reviews. The PR preview is still behind Vercel authentication, so there is no founder-shareable preview that can pass QA round 3 yet.",
+    "technical_summary": "Called the MC website planner and got 401 because AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET are not configured in this runtime. Used read-only diagnosis and browser/CDP evidence capture instead. Browser doctor passed. Captured public stable preview screenshots and DOM using scripts/capture-public-preview-cdp-warm-2026-05-06.mjs with stamp 2026-05-10-0341Z. DOM marker scan found stale unsupported claims: AAA, TripAdvisor, 200+ Reviews, 4.8; expected safer source markers Chris and Megan Curren and Kane County Choice were missing. PR preview HTTP check still returns 401 Unauthorized. Wrote fresh blocker artifact qa-round-3-public-stable-blocker-2026-05-10-0344Z.md. Protected agency build/QA writeback remains blocked by missing MC agency auth.",
+    "work_started_state": "The Graceful Ordinary root was in qa_round_3 with an older blocker blaming browser/preview access.",
+    "work_completed_state": "Fresh QA3 blocker evidence shows browser capture is now available, but the true blocker is stale public stable deployment plus auth-protected PR preview.",
+    "lead_id": "a513755c-e7a3-438e-b8e9-78e8cd99e080",
+    "site_slug": "the-graceful-ordinary",
+    "build_stage": "qa_round_3",
+    "current_stage": "qa_round_3",
+    "blocker": "Stable public preview is stale/factually unsafe and PR preview is Vercel-auth protected; redeploy safe source or provide approved preview bypass, then rerun QA3.",
+    "artifact_paths": [
+      "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-blocker-2026-05-10-0344Z.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-warm-qa3-2026-05-10-0341Z.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-warm-qa3-2026-05-10-0341Z.png",
+      "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-warm-2026-05-10-0341Z.txt"
+    ],
+    "work_items": [
+      {
+        "title": "Recheck The Graceful Ordinary QA3 public preview with browser evidence",
+        "status": "blocked",
+        "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-blocker-2026-05-10-0344Z.md"
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "The Graceful Ordinary"
+      },
+      {
+        "type": "task",
+        "name": "377dcee1-820a-4d94-a5b1-0740be57c92c"
+      }
+    ],
+    "process_improvement_candidates": [
+      {
+        "observation": "Runtime lacks protected MC agency API auth, so agency stage/writeback cannot be completed even when evidence is captured.",
+        "proposal": "Configure AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET for OpenClaw heartbeat runtime and expose a health check for agency writeback auth."
+      },
+      {
+        "observation": "Public stable preview can drift behind merged source and repeatedly waste QA cycles.",
+        "proposal": "Add a deployment freshness marker/version check to agency QA before final screenshots are accepted."
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "work_done",
+  "summary": "Agency: rechecked The Graceful Ordinary public previews for QA3; stable URL is reachable but stale/factually unsafe, PR preview remains Vercel-auth protected.",
+  "ranAt": "2026-05-11T02:59:38Z",
+  "taskIds": ["377dcee1-820a-4d94-a5b1-0740be57c92c"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "mode": "agency",
+    "source": "openclaw_website_agency",
+    "site_slug": "the-graceful-ordinary",
+    "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+    "build_stage": "qa_round_3",
+    "protected_planner_status": "blocked_missing_auth",
+    "human_summary": "I rechecked Graceful's public URLs. The stable URL still returns 200, but it is still stale/trust-risky: AAA Three-Diamond and 4.8★ are present, while the safer local-v2 markers are missing. The PR preview is still Vercel-auth protected with 401. QA3 remains blocked until safe local v2 is public/shareable.",
+    "technical_summary": "Fetched HEAD/body for PR preview and stable public URL. PR preview / and /menu returned HTTP 401. Stable / and /menu returned HTTP 200. Full stable DOM marker scan found AAA Three-Diamond=true, 4.8★=true, Chris and Megan Curren=false, Kane County Choice Awards=false, Ask Graceful=false, Maytag Bleu Cheese=false. Prepared qa-round-3-public-stable-recheck-2026-05-11T025754Z.md and MC-compatible blocked build payload. No protected MC writeback attempted because bearer auth is missing.",
+    "work_items": [
+      {"title": "Protected planner retry", "status": "blocked_missing_auth"},
+      {"title": "Graceful PR preview HTTP recheck", "status": "blocked_401_vercel_auth"},
+      {"title": "Graceful stable public HTTP recheck", "status": "reachable_200"},
+      {"title": "Graceful stable DOM truth-marker scan", "status": "failed_stale_public_content"},
+      {"title": "MC-compatible QA3 blocker payload", "status": "prepared_local"}
+    ],
+    "evidence_paths": [
+      "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-11T025754Z.md",
+      "restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-11T025754Z.json",
+      "restaurant-website-system/sites/the-graceful-ordinary/scrapes/graceful-public-recheck-2026-05-11T025754Z.txt",
+      "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-dom-marker-recheck-2026-05-11T025754Z.txt"
+    ],
+    "blockers": [
+      {"type": "mc_auth", "status": "open", "detail": "Protected Mission Control agency auth is still missing in OpenClaw; planner and build writeback remain unavailable until AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET is configured."},
+      {"type": "preview_auth", "status": "open", "detail": "Graceful PR preview remains HTTP 401 behind Vercel authentication."},
+      {"type": "stale_public_preview", "status": "open", "detail": "Graceful stable public preview is reachable but still contains unsupported AAA Three-Diamond / 4.8★ proof claims and lacks local-v2 markers, so QA3 cannot pass."}
+    ]
+  }
+}

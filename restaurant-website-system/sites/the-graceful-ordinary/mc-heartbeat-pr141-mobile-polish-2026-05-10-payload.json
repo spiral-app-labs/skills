@@ -1,0 +1,29 @@
+{
+  "status": "work_done",
+  "summary": "Agency: shipped PR #141 for The Graceful Ordinary mobile QA3 polish; Vercel preview is ready but still auth-gated, so public QA3 remains blocked.",
+  "ranAt": "2026-05-10T13:00:00Z",
+  "taskIds": ["377dcee1-820a-4d94-a5b1-0740be57c92c"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I turned the local Graceful Ordinary mobile fixes into a clean PR instead of leaving them as loose local changes. The PR is open and Vercel says the preview is built, but the preview is still behind Vercel authentication, so Ethan still cannot use it for public QA or delivery yet.",
+    "technical_summary": "Created a fresh worktree from origin/main, copied the Graceful Ordinary source/artifact changes, installed dependencies, ran npm run typecheck and npm run build successfully, committed and pushed branch fix/graceful-ordinary-mobile-polish-20260510, and opened PR #141. Vercel status completed successfully, but direct curl route checks for /, /menu, /about, and /contact returned HTTP 401 Authentication Required. Added a PR comment documenting the auth blocker. No production deploy was triggered and no raw Supabase mutation was performed.",
+    "work_started_state": "The Graceful Ordinary local redeploy candidate had mobile QA3 fixes in the working tree but no PR/public preview path for review.",
+    "work_completed_state": "PR #141 is open with passing local verification and a Ready Vercel deployment, but public QA3 remains blocked by Vercel auth protection on the preview URL.",
+    "work_items": [
+      {"title": "Open Graceful Ordinary mobile polish PR", "status": "completed", "url": "https://github.com/spiral-app-labs/skills/pull/141"},
+      {"title": "Public PR preview QA", "status": "blocked", "blocker": "PR preview returns HTTP 401 / Vercel Authentication Required."}
+    ],
+    "touched_entities": [
+      {"type": "website", "name": "The Graceful Ordinary"},
+      {"type": "task", "name": "377dcee1-820a-4d94-a5b1-0740be57c92c"},
+      {"type": "repo", "name": "skills"},
+      {"type": "pr", "name": "https://github.com/spiral-app-labs/skills/pull/141"}
+    ],
+    "process_improvement_candidates": [
+      {"observation": "Vercel PR previews for agency sites continue to be auth-gated even when Ready.", "proposal": "Create an approved preview bypass or public preview environment for restaurant QA3/delivery workflows."},
+      {"observation": "Current main worktree is dirty and on an unrelated branch, so clean agency PR work required a separate worktree.", "proposal": "Standardize website heartbeat changes into per-site worktrees from origin/main to avoid mixing artifacts."}
+    ]
+  }
+}

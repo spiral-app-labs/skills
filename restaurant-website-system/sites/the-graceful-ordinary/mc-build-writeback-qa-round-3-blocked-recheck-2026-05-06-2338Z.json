@@ -1,0 +1,28 @@
+{
+  "build_stage": "qa_round_3",
+  "site_slug": "the-graceful-ordinary",
+  "template_slug": "roma",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "vercel_preview_url": "https://graceful-ordinary-redesign.vercel.app/",
+  "artifact_urls": [
+    "https://github.com/spiral-app-labs/skills/pull/83",
+    "https://graceful-ordinary-redesign.vercel.app/"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-06-2338Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-2026-05-06-qa3-recheck.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-2026-05-06-qa3-recheck.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-2026-05-06-recheck.txt"
+  ],
+  "ready_to_pitch": false,
+  "passed_requirement_ids": [],
+  "blocker": {
+    "source": "openclaw_website_agency_qa_round_3_public_stable_recheck",
+    "at": "2026-05-06T23:38:00Z",
+    "reason": "QA round 3 remains blocked: public stable preview is reachable but not founder-shareable because desktop/mobile screenshots show massive blank vertical sections, incomplete-looking menu/testimonial areas, cramped mobile hero/nav/CTA, and tiny dense footer. PR preview still returns HTTP 401/Vercel Authentication Required. Next action: implement layout/content-density/mobile polish fixes, deploy a public preview, then rerun QA3 with fresh screenshots."
+  },
+  "mission_control_write_status": "not_written_by_agency_build_api_from_this_runtime",
+  "mission_control_write_blocker": "AGENCY_AUTONOMY_API_KEY is not available in this OpenClaw runtime for protected /api/agency/leads/:leadId/build writeback. Logged via heartbeat/activity and saved this MC-compatible payload locally."
+}

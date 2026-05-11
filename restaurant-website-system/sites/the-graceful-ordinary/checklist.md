@@ -364,3 +364,64 @@ Pitch posture: preserve-stack / soft-leak. The current official site is content-
 - PR preview route checks: `/` and `/menu` returned HTTP 401 / Vercel Authentication Required; browser snapshot showed `Log in to Vercel`.
 - MC API credentials unavailable in runtime: `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` unset.
 - Result: QA round 3 remains blocked; do not advance to packaging/delivery until a public founder-shareable preview reflects local v2 and final public desktop/mobile QA evidence is captured.
+
+## 2026-05-07T20:47Z QA Round 3 public recheck
+
+Status: **blocked**. Live scrape of `https://graceful-ordinary-redesign.vercel.app/` still found stale unsafe proof strings (`AAA Three-Diamond`, `TripAdvisor`, `TripAdvisor Guest`, `200+ Reviews`, unsupported `4.8`). Core routes return HTTP 200, but the public preview is not truth-safe to pitch or deliver until the corrected source is redeployed/aliased and QA round 3 is rerun.
+
+Fresh evidence:
+- `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-07-2047Z.md`
+- `restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-07-2047Z.json`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-warm-qa3-2026-05-07-2047Z.png`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-warm-qa3-2026-05-07-2047Z.png`
+- `restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-warm-2026-05-07-2047Z.txt`
+
+MC writeback blocker: protected agency API credentials are missing (`AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET`), and planner returns 401; no raw Supabase mutation was performed.
+
+
+## Preview auth approval request — 2026-05-08
+
+- Preview auth approval request: `restaurant-website-system/sites/the-graceful-ordinary/preview-auth-approval-request-2026-05-08.md`
+- Status: prepared locally; QA Round 3 remains blocked until the clean PR preview is public/shareable, bypass-approved, aliased, or replaced with another verified public URL.
+
+## Agency active decision index — 2026-05-08
+
+- Consolidated index: `restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.md`
+- JSON index: `restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.json`
+- Status: local cross-site decision/approval index prepared while MC planner/writeback is unreachable.
+
+## 2026-05-10T12:44Z QA Round 3 public recheck
+
+Status: **blocked**. The stable public preview at `https://graceful-ordinary-redesign.vercel.app/` is reachable and `/`, `/menu`, `/about`, and `/contact` return HTTP 200, but it still cannot pass QA Round 3. Fresh desktop/mobile evidence shows weak mobile navigation/conversion, low-contrast hero/logo treatment, clipped mobile menu announcement/tabs, and the prior stale unsupported proof framing remains unsafe for founder delivery. The PR preview still returns HTTP 401 / Vercel Authentication Required.
+
+Fresh evidence:
+- `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-recheck-2026-05-10.md`
+- `restaurant-website-system/sites/the-graceful-ordinary/mc-build-writeback-qa-round-3-blocked-recheck-2026-05-10.json`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/desktop-home.png`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/mobile-home.png`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/desktop-menu.png`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-public-recheck-2026-05-10/mobile-menu.png`
+- `restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-recheck-2026-05-10/`
+- `heartbeat-preview-url-checks-20260510-124152.jsonl`
+
+Required unblock: redeploy/replace the public preview with the corrected local candidate, verify unsupported proof claims are removed or sourced, fix mobile first-view navigation/Reserve CTA and menu wrapping, then rerun QA Round 3 before packaging/delivery.
+
+MC writeback blocker: protected agency API credentials are missing (`AGENCY_AUTONOMY_API_KEY` / `OPENCLAW_WEBHOOK_SECRET`), and planner returns 401; no raw Supabase mutation was performed.
+
+## 2026-05-10T12:53Z QA Round 3 local mobile polish
+
+Status: **local candidate improved; public QA3 still blocked**. I fixed the local redeploy candidate’s first-view/mobile blockers: the floating header now appears immediately, mobile brand/header sizing no longer clips awkwardly, the sticky bottom Reserve/Menu/Call bar fits cleanly in a mobile viewport, hero readability is stronger, and menu tabs use a deliberate horizontal-scroll pattern with bottom spacing above the sticky CTA.
+
+Changed source:
+- `restaurant-website-system/sites/the-graceful-ordinary/components/FloatingHeaderPill.tsx`
+- `restaurant-website-system/sites/the-graceful-ordinary/components/FullBleedHero.tsx`
+- `restaurant-website-system/sites/the-graceful-ordinary/components/MenuTabbedList.tsx`
+- `restaurant-website-system/sites/the-graceful-ordinary/app/globals.css`
+
+Verification:
+- `restaurant-website-system/sites/the-graceful-ordinary/evidence/typecheck-mobile-polish-v3-2026-05-10.txt`
+- `restaurant-website-system/sites/the-graceful-ordinary/evidence/build-mobile-polish-v3-2026-05-10.txt`
+- `restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3-local-mobile-polish-v3-2026-05-10/`
+- `restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-local-mobile-polish-2026-05-10.md`
+
+Remaining blocker: QA3 cannot pass until this corrected local candidate is deployed/aliased to a public founder-shareable URL and public QA3 is rerun. The stable public preview remains stale and the PR preview is still Vercel-auth gated.

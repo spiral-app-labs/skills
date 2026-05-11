@@ -1,0 +1,35 @@
+{
+  "site_slug": "the-graceful-ordinary",
+  "build_stage": "qa_round_3",
+  "currentStage": "qa_round_3",
+  "qa_round_3_status": "blocked",
+  "ready_to_pitch": false,
+  "ready_for_delivery_writeback": false,
+  "public_preview_url": "https://graceful-ordinary-redesign.vercel.app/",
+  "latest_fix_pr": "https://github.com/spiral-app-labs/skills/pull/92",
+  "expected_commit": "ec1b92cabfa02eb86b6cf401c57d6a5633a0fdaf",
+  "blocker": "Public stable preview is still serving a stale pre-PR #92 deployment with unsupported proof claims, generic Resy link, stale rating/review count, and no visible concierge entry point. The corrected origin/main code may be sell-ready after redeploy, but the live founder-shareable URL is not currently safe to pitch.",
+  "next_unblock_action": "Redeploy latest origin/main/PR #92 to the public stable Vercel URL, then rerun QA round 3 against the live public URL and verify exact Resy URL, 4.6/593 proof, no AAA/TripAdvisor/composite claims, visible concierge, and clean desktop/mobile screenshots.",
+  "passed_requirement_ids": [
+    "identity_repo_code",
+    "conversion_repo_code",
+    "accuracy_repo_code",
+    "design_quality_repo_code",
+    "mobile_polish_repo_code"
+  ],
+  "failed_requirement_ids": [
+    "qa_round_3_public_preview",
+    "public_preview_accuracy",
+    "public_preview_conversion_links",
+    "public_preview_concierge_visible"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-blocker-2026-05-07-1212Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-stale-blocker-desktop-2026-05-07-1212Z.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-stale-blocker-mobile-2026-05-07-1212Z.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-pass-2026-05-06-2359Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/packaging-2026-05-06-2359Z.md"
+  ],
+  "mission_control_write_status": "blocked_not_mutated",
+  "mission_control_write_blocker": "Protected agency website workflow/writeback route is unavailable from this runtime: local MC is connection-refused and production returns 401 without AGENCY_AUTONOMY_API_KEY. Nina task comment also returned 403 because the task is not assigned to remote Nina. No raw Supabase agency mutation was performed."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "work_done",
+  "summary": "Agency: improved The Graceful Ordinary local QA3 redeploy candidate for mobile navigation, hero readability, and menu overflow; public QA3 remains blocked until redeploy.",
+  "ranAt": "2026-05-10T12:53:00Z",
+  "taskIds": ["377dcee1-820a-4d94-a5b1-0740be57c92c"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I moved The Graceful Ordinary forward instead of only restating the blocker. The public preview is still stale, but the local version now fixes the main issues we found: mobile Reserve/Menu/Call fits cleanly, the header and brand are readable, the hero is easier to read, and the menu tabs behave like intentional mobile scrolling instead of broken clipping. It still needs a public redeploy before Ethan can sell or package it.",
+    "technical_summary": "Updated FloatingHeaderPill.tsx, FullBleedHero.tsx, MenuTabbedList.tsx, and app/globals.css. Removed first-paint opacity hiding from critical header/hero elements, strengthened hero scrim/shadow, hid redundant mobile top reserve CTA, constrained sticky mobile CTA layout, added overflow-x hidden, and made menu tabs horizontally scroll on mobile. Ran npm run typecheck and npm run build successfully, then captured fresh local desktop/mobile screenshots on port 3062. Updated checklist.md/checklist.json and wrote QA3 local mobile polish artifact. Protected agency writeback auth is still missing, so no raw Supabase mutation was performed.",
+    "work_started_state": "The Graceful Ordinary QA3 was blocked: stable public URL reachable but stale/not sell-ready, and local candidate still had mobile/header/hero/menu issues from QA screenshots.",
+    "work_completed_state": "Local redeploy candidate has source fixes, passing typecheck/build, fresh screenshots, and updated checklist evidence; QA3 remains blocked only on public redeploy/alias plus public QA rerun.",
+    "work_items": [
+      {"title": "The Graceful Ordinary local mobile polish", "status": "completed_local", "artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-local-mobile-polish-2026-05-10.md"},
+      {"title": "Public QA3/delivery", "status": "blocked", "blocker": "Corrected local source is not yet deployed to a public founder-shareable URL."}
+    ],
+    "touched_entities": [
+      {"type": "website", "name": "The Graceful Ordinary"},
+      {"type": "task", "name": "377dcee1-820a-4d94-a5b1-0740be57c92c"},
+      {"type": "repo", "name": "skills"}
+    ],
+    "process_improvement_candidates": [
+      {"observation": "Agency runtime still lacks protected MC writeback auth.", "proposal": "Provision AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET for OpenClaw heartbeat runs."},
+      {"observation": "Public preview drift hid corrected local work behind a stale stable URL.", "proposal": "Add an automated preview freshness check that compares public DOM markers to the local deploy candidate before QA3."}
+    ]
+  }
+}

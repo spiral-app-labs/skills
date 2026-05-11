@@ -1,0 +1,31 @@
+{
+  "site_slug": "the-graceful-ordinary",
+  "lead_id": "a513755c-e7a3-438e-b8e9-78e8cd99e080",
+  "mc_task_id": "377dcee1-820a-4d94-a5b1-0740be57c92c",
+  "build_stage": "qa_round_3",
+  "status": "blocked",
+  "ready_to_pitch": false,
+  "ready_for_delivery_writeback": false,
+  "public_preview_url": "https://graceful-ordinary-redesign.vercel.app/",
+  "checklist_markdown_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/the-graceful-ordinary/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-recheck-2026-05-07-2047Z.md",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-desktop-warm-qa3-2026-05-07-2047Z.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/screenshots/qa-round-3/public-stable-preview-mobile-warm-qa3-2026-05-07-2047Z.png",
+    "restaurant-website-system/sites/the-graceful-ordinary/scrapes/qa-round-3-public-stable-preview-dom-text-warm-2026-05-07-2047Z.txt"
+  ],
+  "passed_requirement_ids": [
+    "identity_partial",
+    "route_smoke_public"
+  ],
+  "failed_requirement_ids": [
+    "accuracy",
+    "qa_round_3_public_preview",
+    "delivery_truth_safety"
+  ],
+  "blocker": "QA round 3 remains blocked after 2026-05-07T20:47Z public recheck: the founder-shareable stable preview at https://graceful-ordinary-redesign.vercel.app/ is reachable, but still serves stale/factually unsafe proof claims (`AAA Three-Diamond`, `TripAdvisor`, `TripAdvisor Guest`, `200+ Reviews`, and unsupported `4.8`). Routes /, /menu, /about, and /contact return HTTP 200, so the blocker is deploy fidelity/truth-safety rather than site availability. Mission Control planner/writeback is also blocked in this runtime because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing; production planner returns 401. No raw Supabase mutation was performed.",
+  "mission_control_write_status": "not_written_missing_protected_api_credentials",
+  "mission_control_write_blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are missing in this OpenClaw runtime; GET /api/agency/website-workflow/next?limit=5 returns 401. No raw Supabase agency mutation was performed.",
+  "supersedes_local_artifact": "restaurant-website-system/sites/the-graceful-ordinary/qa-round-3-public-stable-pass-2026-05-06-2359Z.md"
+}

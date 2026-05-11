@@ -15,7 +15,7 @@ export function MoreThanAMealSplit() {
   const m = content.moreThanAMeal;
   const r = content.brand.rating;
   return (
-    <section className="mx-auto max-w-[1280px] px-5 py-14 md:px-12 md:py-20">
+    <section className="px-5 py-14 md:px-12 md:py-24 max-w-[1280px] mx-auto">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 items-center">
         {/* Left: text */}
         <motion.div
@@ -38,16 +38,11 @@ export function MoreThanAMealSplit() {
         </motion.div>
 
         <div className="grid gap-3 md:hidden">
-          <div className="grid grid-cols-[1.2fr_0.8fr] gap-3">
-            <div className="rounded-card border border-border/40 bg-surface p-5">
-              <p className="text-eyebrow text-accent">Fox River ordinary</p>
-              <p className="mt-3 font-display text-[22px] leading-[28px] tracking-[0.5px] text-text">
-                Comfortable enough to feel familiar, thoughtful enough to make an evening memorable.
-              </p>
-            </div>
-            <div className="relative min-h-[190px] overflow-hidden rounded-card border border-border/40">
-              <Image src={m.images[0]} alt="" fill sizes="40vw" className="object-cover" />
-            </div>
+          <div className="rounded-card border border-border/40 bg-surface p-5">
+            <p className="text-eyebrow text-accent">Fox River ordinary</p>
+            <p className="mt-3 font-display text-card-title text-text">
+              Comfortable enough to feel familiar, thoughtful enough to make an evening memorable.
+            </p>
           </div>
           <div className="rounded-card border border-border/40 bg-surface px-4 py-3 flex items-center justify-center gap-2.5">
             <span className="text-accent text-xl leading-none">★</span>
@@ -55,9 +50,6 @@ export function MoreThanAMealSplit() {
               <p className="font-display text-text" style={{ fontSize: '20px', lineHeight: '24px' }}>{r.stars}</p>
               <p className="text-micro text-text/75">{r.count.toLocaleString()} Reviews</p>
             </div>
-          </div>
-          <div className="relative aspect-[16/10] overflow-hidden rounded-card border border-border/40">
-            <Image src={m.images[1]} alt="" fill sizes="100vw" className="object-cover" />
           </div>
         </div>
 

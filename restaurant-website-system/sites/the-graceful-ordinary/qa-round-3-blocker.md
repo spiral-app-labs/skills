@@ -80,3 +80,8 @@ PR preview browser snapshot shows:
 Redeploy or alias `https://graceful-ordinary-redesign.vercel.app` to the merged v2 source, or provide a Vercel preview bypass/shareable URL for `https://skills-git-feat-graceful-or-b80ef9-ethan-ethantalrejas-projects.vercel.app`.
 
 Then rerun QA round 3 against that public URL, capture public desktop/mobile screenshots, scrape public DOM/text and links, write final sell-readiness notes, and mirror the QA/build writeback through Mission Control with valid API credentials.
+
+## Preview auth approval request
+
+- Preview auth approval request: `restaurant-website-system/sites/the-graceful-ordinary/preview-auth-approval-request-2026-05-08.md`
+- Status: prepared locally; no Vercel auth/project setting was changed. Public/shareable preview or approved bypass remains required before rerunning QA3.
