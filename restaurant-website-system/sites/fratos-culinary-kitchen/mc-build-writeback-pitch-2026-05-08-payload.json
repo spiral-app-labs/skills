@@ -1,0 +1,31 @@
+{
+  "status": "in_progress",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "artifact_urls": [],
+  "blocker": null,
+  "build_stage": "pitch",
+  "idempotency_key": "fratos-pitch-doc-complete-2026-05-08",
+  "pitch_doc_path": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+  "passed_requirement_ids": [
+    "pitch-before-after",
+    "pitch-evidence",
+    "pitch-specific"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-desktop-2026-05-08.png"
+  ],
+  "heartbeat_summary": "Frato's pitch doc completed with before/after narrative, evidence links, demo path, owner talking points, and safe helper caveats."
+}

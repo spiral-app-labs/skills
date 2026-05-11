@@ -1,0 +1,21 @@
+{
+  "status": "blocked",
+  "summary": "Frato's deploy readiness runbook prepared; public preview blocker updated with exact missing deploy prerequisites.",
+  "ranAt": "2026-05-08T17:33:50Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "fc851579-ff30-460e-a2cc-1ef6bab9cf0f"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "I checked the remaining Frato's blocker and confirmed the runtime cannot deploy directly: no Vercel CLI and no Vercel token/org/project env. I wrote a deploy-readiness runbook and attached it to the delivery package/MC blocker so the next action is explicit.",
+    "technical_summary": "Created deploy-readiness-2026-05-08.md with site path, predeploy checks, Vercel command path, post-deploy route/link checks, and MC completion payload fields. Updated delivery-package-2026-05-08.md and mc-delivery-package-2026-05-08-payload.json to include the deploy runbook and exact missing prerequisites. Re-PATCHed /build; MC packaging blocker now says public preview URL is required and this runtime has no vercel CLI or Vercel env configured.",
+    "work_started_state": "Frato's was at packaging 14/15, blocked on public preview URL.",
+    "work_completed_state": "Frato's remains at packaging 14/15, but deploy prerequisites and runbook are now attached to the blocker.",
+    "work_items": [
+      {"type":"deploy_readiness", "site":"fratos-culinary-kitchen", "status":"runbook_attached"},
+      {"type":"delivery", "site":"fratos-culinary-kitchen", "status":"blocked_public_preview_url"}
+    ],
+    "blocker": "Public preview/deploy URL required before delivery-final-url can pass; this runtime has no vercel CLI and no VERCEL_TOKEN/VERCEL_ORG_ID/VERCEL_PROJECT_ID.",
+    "next_unblock_action": "Provide/approve Vercel deployment access or externally deploy the site, then attach the public URL and rerun public route/link checks."
+  }
+}

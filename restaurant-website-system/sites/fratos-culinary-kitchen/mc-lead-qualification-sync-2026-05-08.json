@@ -1,0 +1,288 @@
+{
+  "ok": true,
+  "endpoint": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build",
+  "method": "PATCH",
+  "status": 200,
+  "response_json": {
+    "ok": true,
+    "lead": {
+      "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+      "name": "Frato's Culinary Kitchen",
+      "address": "628 S. Roselle Road",
+      "city": "Schaumburg",
+      "state": "IL",
+      "website_url": "https://fratospizza.com/",
+      "google_rating": null,
+      "review_count": null,
+      "scores": {
+        "lead_fit": 82,
+        "website_gap": 78,
+        "story_strength": 90,
+        "conversion_clarity_gap": 76
+      },
+      "status": "in_progress",
+      "contact_email": null,
+      "contact_phone": "847-895-2122",
+      "notion_page_id": null,
+      "vercel_preview_url": null,
+      "vercel_project_id": null,
+      "assigned_build_date": null,
+      "expected_delivery_date": null,
+      "pitch_doc_url": null,
+      "notes": "Seeded by Evan from public-source northwest suburbs agency lead research. Recommended as the next candidate because it has a distinctive made-from-scratch culinary kitchen story, sparse current web presence, and clear order/call conversion path. Google rating/review count not verified yet; lead-fit gate must verify business proof before build.",
+      "created_at": "2026-05-08T15:24:42.37817+00:00",
+      "updated_at": "2026-05-08T15:33:51.249708+00:00",
+      "pitch_email": null,
+      "metadata": {
+        "source": "openclaw_net_new_lead_research",
+        "site_slug": "fratos-culinary-kitchen",
+        "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+        "build_stage": "qualifying",
+        "public_urls": [
+          "https://fratospizza.com/",
+          "https://www.yelp.com/biz/fratos-culinary-kitchen-schaumburg-3",
+          "https://www.restaurantji.com/il/schaumburg/fratos-culinary-kitchen-pizza-and-catering-/"
+        ],
+        "currentStage": "qualifying",
+        "evidence_urls": [
+          "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+          "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.json",
+          "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md"
+        ],
+        "google_rating": null,
+        "known_caveats": [
+          "Google rating/review count not verified in research pass.",
+          "Order/menu pages returned limited readable content / 406 in one probe and need browser verification.",
+          "Need verify current menu, pricing, preferred ordering provider, catering truth, and photo permissions before build."
+        ],
+        "recommended_at": "2026-05-08",
+        "recommended_by": "evan",
+        "source_artifact": "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md",
+        "agency_site_slug": "fratos-culinary-kitchen",
+        "stage_timestamps": {
+          "qualifying": "2026-05-08T15:33:49.681Z"
+        },
+        "lead_fit_decision": "Build",
+        "google_review_count": null,
+        "suggested_archetype": "Cuisine",
+        "verification_status": "needs_full_lead_fit_gate",
+        "last_build_update_at": "2026-05-08T15:33:49.681Z",
+        "last_agency_update_at": "2026-05-08T15:24:42.234Z",
+        "passed_requirement_ids": [
+          "lead-fit-qualified",
+          "lead-fit-seven-checks",
+          "lead-fit-evidence"
+        ],
+        "primary_conversion_path": "order online / call for carryout"
+      }
+    },
+    "task": {
+      "id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+      "status": "in_progress",
+      "task_type": "epic",
+      "parent_task_id": null,
+      "metadata": {
+        "context": {
+          "location": "628 S. Roselle Road, Schaumburg, IL",
+          "website_url": "https://fratospizza.com/",
+          "currentStage": "qualifying",
+          "review_count": null,
+          "sales_status": "in_progress",
+          "contact_email": null,
+          "contact_phone": "847-895-2122",
+          "google_rating": null,
+          "agency_lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+          "notion_page_id": null,
+          "restaurant_name": "Frato's Culinary Kitchen",
+          "vercel_preview_url": null,
+          "checklist_sync_contract": {
+            "local_artifacts_must_exist": true,
+            "mirror_requirements_to_mc_parent": true,
+            "mirror_evidence_paths_to_mc_parent": true,
+            "build_stage_sync_required_before_advance": true,
+            "current_stage_sync_required_before_advance": true
+          },
+          "local_checklist_artifacts": {
+            "checklist_json_path": "restaurant-website-system/sites/<site-slug>/checklist.json",
+            "checklist_markdown_path": "restaurant-website-system/sites/<site-slug>/checklist.md"
+          }
+        },
+        "namespace": "agency_website_workflow",
+        "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+        "started_at": "2026-05-08T15:24:42.686Z",
+        "build_stage": "qualifying",
+        "currentStage": "qualifying",
+        "delivered_at": null,
+        "requirements": [
+          {
+            "id": "workflow-all-canonical-children-exist",
+            "title": "All canonical website workflow child tasks exist and remain attached to this root task in sequence.",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "workflow-child-metadata-contract",
+            "title": "Each canonical child task includes metadata.requirements and metadata.required_skills before work starts.",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "workflow-local-checklist-artifacts-exist",
+            "title": "Local checklist.md and checklist.json both exist and are linked through Mission Control metadata.",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "workflow-mc-checklist-mirrors-local",
+            "title": "MC parent metadata.requirements mirrors the local checklist requirements and evidence paths for the active build.",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "workflow-stage-sync-before-advance",
+            "title": "MC build_stage/currentStage matches the local checklist currentStage before any stage advance or delivery handoff.",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "workflow-delivery-complete",
+            "title": "Delivery task is completed only after checklist, audit, reviews, build, improvements, docs, concierge, and 3 QA rounds are synced.",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "lead-fit-qualified",
+            "notes": "Passed by agency build update.",
+            "title": "Lead passed the restaurant lead-fit qualification gate",
+            "qaState": "passed",
+            "evidence": [
+              "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+              "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.json",
+              "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md"
+            ],
+            "required": true
+          },
+          {
+            "id": "current-site-audit",
+            "title": "Current site audit captured desktop, mobile, menu, reviews, and asset evidence",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "template-route-locked",
+            "title": "Template route and modifiers are locked from the restaurant site router",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "fork-built",
+            "title": "Template fork is built with real content, preserved links, and no placeholder copy",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "qa-round-1",
+            "title": "QA round 1 completed with findings and fixes logged",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "qa-round-2",
+            "title": "QA round 2 completed with findings and fixes logged",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "qa-round-3",
+            "title": "QA round 3 completed with findings and fixes logged",
+            "qaState": "pending",
+            "required": true
+          },
+          {
+            "id": "delivery-package",
+            "title": "Preview URL, pitch doc, outreach draft, screenshots, and MC evidence are attached",
+            "qaState": "pending",
+            "required": true
+          }
+        ],
+        "sales_status": "in_progress",
+        "evidence_urls": [
+          "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+          "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.json",
+          "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md"
+        ],
+        "workflow_role": "root",
+        "workflow_root": true,
+        "agency_lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+        "child_sequence": [
+          "lead_qualification",
+          "checklist",
+          "current_site_audit",
+          "google_reviews_capture",
+          "template_routing",
+          "template_fork_build",
+          "improvement_pass",
+          "top_three_improvements",
+          "ai_concierge",
+          "pitch_doc",
+          "battle_cards",
+          "qa_round_1",
+          "qa_round_2",
+          "qa_round_3",
+          "delivery"
+        ],
+        "agency_lead_name": "Frato's Culinary Kitchen",
+        "agency_site_slug": "fratos-culinary-kitchen",
+        "stage_timestamps": {
+          "qualifying": "2026-05-08T15:33:49.681Z"
+        },
+        "workflow_version": "2026-05-07",
+        "operator_contract": "Before advancing the workflow, verify local checklist.md + checklist.json exist. Mirror the local checklist requirements and evidence paths onto this MC parent task metadata. Keep MC build_stage/currentStage in sync with the local checklist currentStage and only then advance to the next child task.",
+        "agency_build_stage": "qualifying",
+        "child_step_task_ids": {
+          "delivery": "fc851579-ff30-460e-a2cc-1ef6bab9cf0f",
+          "checklist": "000f9e60-4e92-4525-8c56-8ce994a53f1b",
+          "pitch_doc": "ddf98ecc-b8ef-49b6-950f-6740f29de924",
+          "qa_round_1": "8dfbc2fb-b4f4-4feb-a766-bb41ae7b2dc9",
+          "qa_round_2": "401a92ef-7b78-4036-86dd-74eea2f84414",
+          "qa_round_3": "4e2b29c2-f751-432e-80a6-0906031079f3",
+          "ai_concierge": "75643eb9-9c9a-457a-b566-1aadd0887eca",
+          "battle_cards": "62ac8cd0-2307-4530-ba74-242b50e0c87c",
+          "improvement_pass": "1a97a775-1ff9-42c5-bd07-a804a1d13890",
+          "template_routing": "bae10cc3-9ac5-409b-9757-a0cd5562fe73",
+          "current_site_audit": "aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e",
+          "lead_qualification": "ee57d30d-9256-4a24-92fe-f697ed932b88",
+          "template_fork_build": "e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3",
+          "google_reviews_capture": "35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611",
+          "top_three_improvements": "25b4b56d-b262-427d-9d85-d11a3a1019a5"
+        },
+        "workflow_template_id": "agency_website_workflow:2026-05-07",
+        "passed_requirement_ids": [
+          "lead-fit-qualified",
+          "lead-fit-seven-checks",
+          "lead-fit-evidence"
+        ],
+        "completion_evidence_urls": [
+          "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+          "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.json",
+          "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md"
+        ],
+        "local_checklist_artifacts": {
+          "checklist_json_path": "restaurant-website-system/sites/<site-slug>/checklist.json",
+          "checklist_markdown_path": "restaurant-website-system/sites/<site-slug>/checklist.md"
+        },
+        "last_agency_build_update_at": "2026-05-08T15:33:49.681Z"
+      }
+    },
+    "child_task_updates": [
+      {
+        "id": "ee57d30d-9256-4a24-92fe-f697ed932b88",
+        "status": "done",
+        "stepId": "lead_qualification"
+      }
+    ],
+    "warnings": []
+  },
+  "response_body": null,
+  "headers_subset": {}
+}

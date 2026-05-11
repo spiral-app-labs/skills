@@ -1,0 +1,31 @@
+{
+  "status": "blocked",
+  "summary": "Frato's completed through final QA and is packaged locally; delivery is blocked only on public preview URL.",
+  "ranAt": "2026-05-08T17:28:53Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "1a97a775-1ff9-42c5-bd07-a804a1d13890", "fc851579-ff30-460e-a2cc-1ef6bab9cf0f"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's is now through improvement, top-three, concierge, pitch, battle cards, and all three QA rounds in Mission Control. I added a visible safe site helper, fixed mobile nav clipping, softened risky claims, verified OrderStart/catering/directions links, created the delivery package, and recorded the only remaining blocker: a public preview/deploy URL.",
+    "technical_summary": "Synced improvement_pass and top_three_improvements, implemented components/FratosConcierge.tsx and updated content/nav, captured concierge screenshots, synced ai_concierge, updated/synced pitch_doc and battle_cards, reran build/typecheck, captured QA1/QA2/QA3 screenshots, posted all three /qa-rounds payloads, patched /build requirement IDs for QA gates, wrote delivery-package-2026-05-08.md, and patched /build packaging with delivery-three-qa-rounds and delivery-pack passed. MC planner now skips Frato's as blocked at packaging because delivery-final-url is missing.",
+    "work_started_state": "MC was at top_3_improvements/concierge range with local artifacts partly ahead of MC and final gates unsynced.",
+    "work_completed_state": "MC is at packaging, 14/15 complete, blocked only on delivery-final-url/public preview URL.",
+    "work_items": [
+      {"type":"improvement_to_qa_sync", "site":"fratos-culinary-kitchen", "status":"done_synced"},
+      {"type":"ai_concierge", "site":"fratos-culinary-kitchen", "status":"visible_safe_helper_added_and_synced"},
+      {"type":"pitch_battle_cards", "site":"fratos-culinary-kitchen", "status":"done_synced"},
+      {"type":"qa_rounds", "site":"fratos-culinary-kitchen", "status":"three_rounds_done_synced"},
+      {"type":"delivery", "site":"fratos-culinary-kitchen", "status":"blocked_public_preview_url"}
+    ],
+    "touched_entities": [
+      {"kind":"lead", "id":"cec3f7af-ab8d-4785-af76-e57e743cdf25", "name":"Frato's Culinary Kitchen"},
+      {"kind":"task", "id":"fc851579-ff30-460e-a2cc-1ef6bab9cf0f", "role":"delivery"}
+    ],
+    "blocker": "Public preview/deploy URL required before delivery-final-url can pass. Local preview QA is complete at http://127.0.0.1:3214, but final delivery should not be marked delivered without a public URL or founder override.",
+    "next_unblock_action": "Deploy/share a public preview URL for fratos-culinary-kitchen, then attach it to MC as delivery-final-url and mark delivered if the public URL passes route/link checks.",
+    "process_improvement_candidates": [
+      "Delivery gates need a standard deploy/preview path or preview bypass so completed local sites do not pile up at 14/15."
+    ]
+  }
+}

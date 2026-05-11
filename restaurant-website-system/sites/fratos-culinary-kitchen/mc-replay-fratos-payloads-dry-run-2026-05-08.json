@@ -1,0 +1,273 @@
+{
+  "site": "fratos-culinary-kitchen",
+  "leadId": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "baseUrl": "https://hq.ethantalreja.com",
+  "apply": false,
+  "authPresent": false,
+  "operations": [
+    {
+      "mode": "dry-run",
+      "method": "PATCH",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build",
+      "file": "mc-build-writeback-top-3-improvements-2026-05-08-payload.json",
+      "payloadKeys": [
+        "artifact_urls",
+        "blocker",
+        "build_stage",
+        "checklist_json_path",
+        "checklist_markdown_path",
+        "current_site_scrape_path",
+        "evidence_urls",
+        "google_reviews_packet_path",
+        "heartbeat_summary",
+        "idempotency_key",
+        "mc_task_id",
+        "passed_requirement_ids",
+        "site_slug",
+        "status",
+        "template_slug"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/heartbeat",
+      "file": "mc-heartbeat-fratos-top-3-improvements-complete-2026-05-08-payload.json",
+      "payloadKeys": [
+        "initiatedBy",
+        "metadata",
+        "ranAt",
+        "status",
+        "summary",
+        "taskIds",
+        "trigger",
+        "userActiveSkip"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "PATCH",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build",
+      "file": "mc-build-writeback-concierge-2026-05-08-payload.json",
+      "payloadKeys": [
+        "artifact_urls",
+        "blocker",
+        "build_stage",
+        "checklist_json_path",
+        "checklist_markdown_path",
+        "current_site_scrape_path",
+        "evidence_urls",
+        "google_reviews_packet_path",
+        "heartbeat_summary",
+        "idempotency_key",
+        "mc_task_id",
+        "passed_requirement_ids",
+        "site_slug",
+        "status",
+        "template_slug"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/heartbeat",
+      "file": "mc-heartbeat-fratos-concierge-complete-2026-05-08-payload.json",
+      "payloadKeys": [
+        "initiatedBy",
+        "metadata",
+        "ranAt",
+        "status",
+        "summary",
+        "taskIds",
+        "trigger",
+        "userActiveSkip"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "PATCH",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build",
+      "file": "mc-build-writeback-pitch-2026-05-08-payload.json",
+      "payloadKeys": [
+        "artifact_urls",
+        "blocker",
+        "build_stage",
+        "checklist_json_path",
+        "checklist_markdown_path",
+        "current_site_scrape_path",
+        "evidence_urls",
+        "google_reviews_packet_path",
+        "heartbeat_summary",
+        "idempotency_key",
+        "mc_task_id",
+        "passed_requirement_ids",
+        "pitch_doc_path",
+        "site_slug",
+        "status",
+        "template_slug"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "PATCH",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build",
+      "file": "mc-build-writeback-battle-cards-2026-05-08-payload.json",
+      "payloadKeys": [
+        "artifact_urls",
+        "battle_cards_path",
+        "blocker",
+        "build_stage",
+        "checklist_json_path",
+        "checklist_markdown_path",
+        "current_site_scrape_path",
+        "evidence_urls",
+        "google_reviews_packet_path",
+        "heartbeat_summary",
+        "idempotency_key",
+        "mc_task_id",
+        "passed_requirement_ids",
+        "pitch_doc_path",
+        "site_slug",
+        "status",
+        "template_slug"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/heartbeat",
+      "file": "mc-heartbeat-fratos-pitch-battle-cards-complete-2026-05-08-payload.json",
+      "payloadKeys": [
+        "initiatedBy",
+        "metadata",
+        "ranAt",
+        "status",
+        "summary",
+        "taskIds",
+        "trigger",
+        "userActiveSkip"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/qa-rounds",
+      "file": "mc-qa-round-1-2026-05-08-payload.json",
+      "payloadKeys": [
+        "findings",
+        "fixes_applied",
+        "mc_task_id",
+        "round_number",
+        "screenshots",
+        "skill_updates"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/heartbeat",
+      "file": "mc-heartbeat-fratos-qa-round-1-complete-2026-05-08-payload.json",
+      "payloadKeys": [
+        "initiatedBy",
+        "metadata",
+        "ranAt",
+        "status",
+        "summary",
+        "taskIds",
+        "trigger",
+        "userActiveSkip"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/qa-rounds",
+      "file": "mc-qa-round-2-2026-05-08-payload.json",
+      "payloadKeys": [
+        "findings",
+        "fixes_applied",
+        "mc_task_id",
+        "round_number",
+        "screenshots",
+        "skill_updates"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/heartbeat",
+      "file": "mc-heartbeat-fratos-qa-round-2-complete-2026-05-08-payload.json",
+      "payloadKeys": [
+        "initiatedBy",
+        "metadata",
+        "ranAt",
+        "status",
+        "summary",
+        "taskIds",
+        "trigger",
+        "userActiveSkip"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/qa-rounds",
+      "file": "mc-qa-round-3-final-qa-2026-05-08-payload.json",
+      "payloadKeys": [
+        "findings",
+        "fixes_applied",
+        "mc_task_id",
+        "round_number",
+        "screenshots",
+        "skill_updates"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "PATCH",
+      "url": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/build",
+      "file": "mc-delivery-package-2026-05-08-payload.json",
+      "payloadKeys": [
+        "artifact_urls",
+        "battle_cards_path",
+        "blocker",
+        "build_stage",
+        "checklist_json_path",
+        "checklist_markdown_path",
+        "checks",
+        "current_site_scrape_path",
+        "evidence_urls",
+        "framework_versions",
+        "google_reviews_packet_path",
+        "heartbeat_summary",
+        "idempotency_key",
+        "local_artifact_bundle",
+        "mc_task_id",
+        "passed_requirement_ids",
+        "pitch_artifacts",
+        "pitch_doc_path",
+        "replay_helper",
+        "site_slug",
+        "status",
+        "template_slug",
+        "tooling_hardening"
+      ]
+    },
+    {
+      "mode": "dry-run",
+      "method": "POST",
+      "url": "https://hq.ethantalreja.com/api/heartbeat",
+      "file": "mc-heartbeat-fratos-final-qa-local-delivery-package-2026-05-08-payload.json",
+      "payloadKeys": [
+        "initiatedBy",
+        "metadata",
+        "ranAt",
+        "status",
+        "summary",
+        "taskIds",
+        "trigger",
+        "userActiveSkip"
+      ]
+    }
+  ]
+}

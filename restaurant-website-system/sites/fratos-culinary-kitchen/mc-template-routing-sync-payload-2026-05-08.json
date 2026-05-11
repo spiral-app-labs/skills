@@ -1,0 +1,31 @@
+{
+  "build_stage": "routing",
+  "status": "in_progress",
+  "idempotency_key": "fratos-template-routing-lock-2026-05-08",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+  "passed_requirement_ids": [
+    "template-route-locked",
+    "template-route-alternatives",
+    "template-route-modifiers"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-profile-reviews-visible.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-visible.png"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Template routing locked Frato's Culinary Kitchen to pepper-01 with rejected alternatives and modifiers documented; fork/build not run in this gate."
+}

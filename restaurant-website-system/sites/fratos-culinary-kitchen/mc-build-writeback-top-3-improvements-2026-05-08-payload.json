@@ -1,0 +1,31 @@
+{
+  "build_stage": "top_3_improvements",
+  "status": "in_progress",
+  "idempotency_key": "fratos-top-three-improvements-complete-2026-05-08",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "passed_requirement_ids": [
+    "top-three-ranked",
+    "top-three-implemented",
+    "top-three-evidence"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/components/AnonReviewCarousel.tsx",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts"
+  ],
+  "artifact_urls": [],
+  "blocker": null,
+  "heartbeat_summary": "Frato's top three improvements completed and evidenced: anonymous Google proof carousel, stronger hero/CTA hierarchy, and mobile conversion quick links."
+}

@@ -1,0 +1,241 @@
+{
+  "lead": "Frato's Culinary Kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mc_root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "current_site_audit_child_task_id": "aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e",
+  "site_slug": "fratos-culinary-kitchen",
+  "audited_at": "2026-05-08",
+  "workflow_gate": "current_site_audit",
+  "build_stage": "auditing",
+  "official_website": "https://fratospizza.com/",
+  "template_slug": "cuisine-pending",
+  "google_reviews": {
+    "status": "deferred_to_google_reviews_capture_gate",
+    "rating": null,
+    "review_count": null,
+    "notes": "The live MC workflow splits current_site_audit and google_reviews_capture. This audit intentionally did not capture Google Reviews or mark reviews complete."
+  },
+  "capture_method": "Opened the official site in the OpenClaw browser, then captured live pages with Playwright Chromium desktop and iPhone 13 contexts.",
+  "evidence_paths": {
+    "audit_markdown": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+    "audit_json": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+    "capture_summary": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+    "desktop_home_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-desktop-full.png",
+    "mobile_home_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-full.png",
+    "mobile_fold_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-fold.png",
+    "home_dom_snapshot": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-dom-snapshot.html",
+    "home_text_snapshot": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-text-snapshot.txt",
+    "menu_desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+    "menu_mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+    "order_desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+    "order_mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-mobile-full.png",
+    "contact_desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+    "contact_mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+    "catering_desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+    "catering_mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png"
+  },
+  "pages_captured": [
+    {
+      "key": "home",
+      "source_url": "https://fratospizza.com/",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-home-desktop-full.png",
+      "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-home-mobile-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt",
+      "notes": "Homepage carries phone, address, media mentions, ordering, specials, hours, story links, and footer theme/login exposure."
+    },
+    {
+      "key": "menu",
+      "source_url": "https://fratospizza.com/menu/",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+      "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-menu-desktop.txt",
+      "notes": "Rich text menu with pizza, slices, burgers, wings, tenders, halal notes, prices, and multiple order prompts."
+    },
+    {
+      "key": "online_ordering_redirect",
+      "source_url": "https://fratospizza.com/online-ordering/",
+      "loaded_url": "https://orderstart.com/fratospizza",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-online-ordering-desktop-full.png",
+      "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-online-ordering-mobile-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-online-ordering-desktop.txt",
+      "notes": "Official order path redirects to OrderStart/Lavu storefront with pickup, curbside, dine-in, delivery choices."
+    },
+    {
+      "key": "contact",
+      "source_url": "https://fratospizza.com/contact-2/",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+      "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt",
+      "notes": "Contact page verifies phone, address, route planner, contact form, FratosPizza@gmail.com owner-directed mailto, and management footer email."
+    },
+    {
+      "key": "hours",
+      "source_url": "https://fratospizza.com/fratos-hours/",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-hours-desktop-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-hours-desktop.txt",
+      "notes": "Hours page verifies full kitchen, cafe/gaming, holiday caveats, and call-ahead note."
+    },
+    {
+      "key": "about_story",
+      "source_url": "https://fratospizza.com/about/",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-about-desktop-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-about-desktop.txt",
+      "notes": "About page verifies 1975 history, scratch cooking transformation, Chef Ed, Chef Andy/Joe, catering-company-that-owns-a-restaurant story, media mentions, and positioning."
+    },
+    {
+      "key": "catering_events",
+      "source_url": "https://fratoscatering.com/",
+      "status": 200,
+      "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+      "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png",
+      "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop.txt",
+      "notes": "Separate catering site verifies personal chef catering, catering hotline/email, inquiry form, menu, corporate/wedding/event catering, and on-time guarantee."
+    }
+  ],
+  "structured_lead_metadata": {
+    "owner_name": {
+      "value": null,
+      "status": "not_publicly_verified",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-about-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt"],
+      "notes": "About page names Frank/Tony as origin-story names and Chef Ed/Andy/Joe as chefs, but no current owner name is verified."
+    },
+    "owner_email": {
+      "value": "FratosPizza@gmail.com",
+      "status": "publicly_listed_as_owner_directed_mailbox",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt", "https://fratospizza.com/contact-2/"],
+      "notes": "Contact page shows 'FratosPizza (at) gmail.com' with note '*Mail Goes Directly to Owner'."
+    },
+    "contact_email": {
+      "value": "Management@FratosKitchen.com",
+      "alternate_values": ["FratosPizza@gmail.com", "catering@fratoskitchen.com"],
+      "status": "verified_from_site_footer_contact_about_and_catering_pages",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-about-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop.txt"]
+    },
+    "phone": {
+      "value": "(847) 895-2122",
+      "normalized": "847-895-2122",
+      "status": "verified",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-orderstart-desktop.txt"]
+    },
+    "address_location": {
+      "value": "628 S. Roselle Road, Schaumburg, IL 60193",
+      "status": "verified",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-orderstart-desktop.txt"]
+    },
+    "hours": {
+      "value": {
+        "full_kitchen": {
+          "mon_thu": "4:00pm - 9:00pm",
+          "fri_sat": "11:00am - 10:00pm",
+          "sun": "11:00am - 9:00pm"
+        },
+        "cafe_gaming_limited_deli_menu": {
+          "mon_thu": "12:00pm - 4:00pm"
+        },
+        "notes": "Hours may change based on caterings/events; site says call 847-895-2122 if needed."
+      },
+      "status": "verified_from_current_site_hours_page_and_footer",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-hours-desktop.txt", "https://fratospizza.com/fratos-hours/"]
+    },
+    "website_url": {
+      "value": "https://fratospizza.com/",
+      "status": "verified_live_200",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json"]
+    },
+    "order_url": {
+      "value": "https://orderstart.com/fratospizza",
+      "status": "verified_live_200_redirect_from_official_site",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-online-ordering-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png", "https://fratospizza.com/online-ordering/", "https://orderstart.com/fratospizza"]
+    },
+    "reservation_url": {
+      "value": null,
+      "status": "not_applicable_or_not_found",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop-links.json", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop-links.json"],
+      "notes": "Order-forward model supports dine-in, pickup, curbside, and delivery through OrderStart; no reservation platform was found."
+    },
+    "catering_events_url": {
+      "value": "https://fratoscatering.com/",
+      "alternate_values": ["https://fratoscatering.com/catering-inquiry-form/", "http://restaurantcateringsystems.com/fratospizza"],
+      "status": "verified_live_200",
+      "evidence": ["restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop.txt", "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop-links.json", "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png"]
+    },
+    "google_rating": {
+      "value": null,
+      "status": "deferred_to_google_reviews_capture_gate",
+      "evidence": [],
+      "notes": "Do not cite a Google rating until the next gate captures Google Business Profile evidence."
+    },
+    "google_review_count": {
+      "value": null,
+      "status": "deferred_to_google_reviews_capture_gate",
+      "evidence": [],
+      "notes": "Do not cite a Google review count until the next gate captures Google Business Profile evidence."
+    },
+    "outreach_email_draft_path": {
+      "value": null,
+      "status": "not_created"
+    },
+    "outreach_email_draft_status": "not_created",
+    "metadata_source_notes": "Checked the official homepage, menu, contact, hours, about/story, OrderStart storefront, official testimonials page, culinary trainee page, and separate FratosCatering.com site. Google rating/review count and Google review themes were intentionally not checked in this gate. Current owner name remains unavailable from captured public sources."
+  },
+  "current_site_findings": {
+    "platform_signals": ["WordPress/Nexus-style theme; footer exposes 'Pizzeria WordPress Theme | Login'.", "External ordering handled by OrderStart/Lavu storefront.", "Separate catering website at fratoscatering.com with separate ordering/inquiry flow."],
+    "hero_and_positioning": ["Hero says 'Frato's Made-From-Scratch Culinary Kitchen', 'Home of Illinois's Greatest Mozzarella Stick(s)', phone, address, and media mentions.", "Food/service descriptors include Chicago-style stone oven pizza, handmade bacon burgers, chicken wings/halal wings, buttermilk tenders, massive mozzarella sticks, and young culinary students in training.", "The hero has real specificity but competes with dense background imagery, small text, and many immediate promotional CTAs."],
+    "conversion_flows": ["Primary order path is OrderStart: https://orderstart.com/fratospizza.", "OrderStart supports pickup, curbside, dine-in, delivery, ASAP/in-advance, group orders, coupons, and menu categories.", "Phone/tel links and Google Maps directions are present.", "Catering is a separate path via https://fratoscatering.com/ and inquiry/order links."],
+    "menu_depth": ["Menu page is unusually rich and price-complete: stone oven pizza, 1-pound slices, specialty burgers, wings, tenders, gyros, rice bowls, shakes/desserts, and halal options.", "Menu copy is strong but very long on mobile and not shaped into fast browse/order modules."],
+    "trust_and_story": ["About page verifies 'EST. 1975', 50 years of history, scratch-cooking transformation, Chef Ed, Chef Andy/Joe, WGN/Windy City Live/Chicago's Best/Fox/CBS media claims, and the culinary-apprenticeship story.", "Official testimonials mention neighborhood pizza, hot/cheesy delivery, catering trays, eggplant parm, party pizza, and best pizza crust.", "These assets are buried across About, Reviews, Catering, and blog/special pages rather than packaged in a clean homepage trust band."],
+    "mobile_state": ["Homepage mobile capture is 12,942px tall with 242 links; key actions exist but are buried in a long, promotional stack.", "Menu mobile capture is 21,660px tall; full menu is accessible but very scroll-heavy for quick ordering.", "OrderStart mobile capture has horizontal overflow (scrollWidth 395 vs clientWidth 390) and account/login/header controls compete with Start Order and item selection.", "Catering mobile capture is 16,910px tall with 232 links; event/catering conversion exists but is overwhelming."],
+    "factual_or_polish_gaps": ["Footer exposes 'Pizzeria WordPress Theme | Login' and pagination-style blog artifacts such as '1 of page 80' / '1 of page 48'.", "Contact identities are split across FratosPizza@gmail.com, Management@FratosKitchen.com, and catering@fratoskitchen.com; a redesign should route each context clearly.", "Some visible links use http variants before redirecting; preserve final verified https where available.", "Google rating/review count unavailable in this gate and must remain null until Google Reviews capture."
+    ]
+  },
+  "opportunities": [
+    {
+      "id": "conversion-first-hero",
+      "category": "conversion",
+      "finding": "The homepage contains the right order/call/address proof, but the first screen competes with background imagery, stacked promos, and many CTAs.",
+      "opportunity": "Make a clean food-first hero with Order Online, Call, Directions, and Catering CTAs plus the strongest one-line story. Preserve OrderStart rather than replacing operations."
+    },
+    {
+      "id": "story-trust-band",
+      "category": "credibility",
+      "finding": "Frato's strongest assets — 1975 history, student-chef pipeline, scratch cooking, media mentions, and catering company model — are spread across deeper pages.",
+      "opportunity": "Surface a concise trust/story band near the top: 'Since 1975', media logos, scratch kitchen, culinary students into chefs, and catering proof."
+    },
+    {
+      "id": "mobile-ordering-friction",
+      "category": "mobile",
+      "finding": "Mobile home/menu/catering pages are extremely long; OrderStart mobile has small horizontal overflow and account/login controls before the cart/task feels obvious.",
+      "opportunity": "Use sticky mobile CTAs and shortened category modules that jump to order/menu/call/catering. Keep the external OrderStart path but make the pre-click decision simpler."
+    },
+    {
+      "id": "menu-curation",
+      "category": "menu",
+      "finding": "The menu is rich and specific but presented as a very long all-at-once document.",
+      "opportunity": "Curate signature cards for mozzarella sticks, 1-pound slices, specialty burgers, wings/halal, and monthly specials before the full menu/order handoff."
+    },
+    {
+      "id": "contact-and-catering-routing",
+      "category": "operations",
+      "finding": "Restaurant ordering, contact, catering inquiry, and catering ordering are split across multiple domains/emails/links.",
+      "opportunity": "Create clear routing: Order Food, Call Restaurant, Get Directions, Catering Quote, Catering Menu, and Contact Management, each with verified destination."
+    },
+    {
+      "id": "polish-and-brand-confidence",
+      "category": "credibility",
+      "finding": "Footer theme/login links and page-count artifacts make the current site feel dated despite active 2026 content.",
+      "opportunity": "Remove template artifacts, reduce duplicate nav/footer clutter, and turn active specials into a polished freshness signal rather than a blog archive wall."
+    }
+  ],
+  "passed_requirement_ids_for_mc": ["current-site-audit", "current-site-screenshots", "current-site-opportunities"],
+  "local_requirement_ids_passed": ["current-site-screenshots", "current-site-scrape", "current-site-opportunities"],
+  "blockers": [],
+  "next_gate": "google_reviews_capture",
+  "next_gate_can_start": true,
+  "next_gate_notes": "Start only after this MC sync is accepted. Google Reviews capture should collect the Google profile screenshot, Highest-filter screenshot, and 30 written reviews or exact shortage/blocker."
+}

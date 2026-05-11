@@ -1,0 +1,192 @@
+{
+  "ok": true,
+  "http_status": 200,
+  "endpoint": "https://hq.ethantalreja.com/api/agency/leads/cec3f7af-ab8d-4785-af76-e57e743cdf25/website-workflow",
+  "response": {
+    "ok": true,
+    "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+    "workflow": {
+      "root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+      "child_count": 15,
+      "missing_steps": [],
+      "tasks": [
+        {
+          "id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "title": "Website: Frato's Culinary Kitchen",
+          "status": "in_progress",
+          "parent_task_id": null,
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "root",
+          "workflow_step_id": null
+        },
+        {
+          "id": "ee57d30d-9256-4a24-92fe-f697ed932b88",
+          "title": "Qualify lead fit before build work",
+          "status": "done",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "lead_qualification"
+        },
+        {
+          "id": "000f9e60-4e92-4525-8c56-8ce994a53f1b",
+          "title": "Create and sync local + Mission Control checklist",
+          "status": "done",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "checklist"
+        },
+        {
+          "id": "aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e",
+          "title": "Audit current site in MC browser with screenshots + scrape",
+          "status": "done",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "current_site_audit"
+        },
+        {
+          "id": "35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611",
+          "title": "Capture Google reviews in MC browser: Highest filter + 30 written reviews",
+          "status": "todo",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "google_reviews_capture"
+        },
+        {
+          "id": "bae10cc3-9ac5-409b-9757-a0cd5562fe73",
+          "title": "Route to one template/archetype",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "template_routing"
+        },
+        {
+          "id": "e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3",
+          "title": "Fork template and build first preview",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "template_fork_build"
+        },
+        {
+          "id": "1a97a775-1ff9-42c5-bd07-a804a1d13890",
+          "title": "Run website improvement pass against audit findings",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "improvement_pass"
+        },
+        {
+          "id": "25b4b56d-b262-427d-9d85-d11a3a1019a5",
+          "title": "Implement top 3 highest-sellability improvements",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "top_three_improvements"
+        },
+        {
+          "id": "75643eb9-9c9a-457a-b566-1aadd0887eca",
+          "title": "Add AI concierge experience",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "ai_concierge"
+        },
+        {
+          "id": "ddf98ecc-b8ef-49b6-950f-6740f29de924",
+          "title": "Create pitch doc with before/after sell story",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "pitch_doc"
+        },
+        {
+          "id": "62ac8cd0-2307-4530-ba74-242b50e0c87c",
+          "title": "Create objection battle cards doc",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "battle_cards"
+        },
+        {
+          "id": "8dfbc2fb-b4f4-4feb-a766-bb41ae7b2dc9",
+          "title": "QA round 1: factual accuracy + source fidelity",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "qa_round_1"
+        },
+        {
+          "id": "401a92ef-7b78-4036-86dd-74eea2f84414",
+          "title": "QA round 2: mobile polish + conversion flow",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "qa_round_2"
+        },
+        {
+          "id": "4e2b29c2-f751-432e-80a6-0906031079f3",
+          "title": "QA round 3: final sell-readiness + founder delivery pack",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "qa_round_3"
+        },
+        {
+          "id": "fc851579-ff30-460e-a2cc-1ef6bab9cf0f",
+          "title": "Package delivery for Ethan/client handoff",
+          "status": "backlog",
+          "parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+          "blocked": false,
+          "blocked_reason": null,
+          "blocked_source": null,
+          "workflow_role": "child",
+          "workflow_step_id": "delivery"
+        }
+      ]
+    }
+  }
+}

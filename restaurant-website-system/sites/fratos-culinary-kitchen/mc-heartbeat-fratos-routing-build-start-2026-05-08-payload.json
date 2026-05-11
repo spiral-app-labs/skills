@@ -1,0 +1,25 @@
+{
+  "status": "work_done",
+  "summary": "Frato's routing completed; template fork/build worker started.",
+  "ranAt": "2026-05-08T16:04:36Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "bae10cc3-9ac5-409b-9757-a0cd5562fe73", "e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's template routing finished and selected pepper-01 for the Cuisine/order-first comfort-food build. I advanced Mission Control into the build stage and started a local Codex worker to validate/merge the pepper-01 scaffold, personalize it with real Frato's evidence, run build checks, capture preview evidence, and sync completion back to MC.",
+    "technical_summary": "Routing worker wrote routing.md/json and MC /build sync returned 200, marking template_routing done with template_slug pepper-01. Planner then showed template_fork_build todo. PATCHed /build with build_stage building and template_slug pepper-01, marking child e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3 in_progress. Wrote build/fork-build-brief-2026-05-08.md and started local Codex CLI from the site path with inherited environment. Brief instructs Codex to preserve evidence artifacts, avoid fork-template --force, personalize pepper-01 with audit/review/routing facts, run typecheck/lint/build, create build evidence/preview artifacts, update checklist, and PATCH /build with fork-built/fork-preview/specificity only if satisfied.",
+    "work_started_state": "Template routing was complete; template fork/build was todo.",
+    "work_completed_state": "Template fork/build is in progress via local Codex worker.",
+    "work_items": [
+      {"type":"template_routing", "site":"fratos-culinary-kitchen", "template":"pepper-01", "status":"done_synced"},
+      {"type":"template_fork_build", "site":"fratos-culinary-kitchen", "status":"codex_worker_started"}
+    ],
+    "touched_entities": [
+      {"kind":"lead", "id":"cec3f7af-ab8d-4785-af76-e57e743cdf25", "name":"Frato's Culinary Kitchen"},
+      {"kind":"task", "id":"bae10cc3-9ac5-409b-9757-a0cd5562fe73", "role":"template_routing"},
+      {"kind":"task", "id":"e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3", "role":"template_fork_build"}
+    ],
+    "process_improvement_candidates": []
+  }
+}

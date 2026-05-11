@@ -1,0 +1,51 @@
+{
+  "status": "work_done",
+  "summary": "Frato's top-three improvements gate completed locally; protected MC writeback payload prepared and blocked only on agency auth.",
+  "ranAt": "2026-05-08T16:55:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681",
+    "1a97a775-1ff9-42c5-bd07-a804a1d13890"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's Culinary Kitchen now has a clean top-three improvements package after the improvement pass. The three upgrades are easy to explain in a pitch: live anonymous Google-review proof, a stronger order-first hero, and mobile quick links for menu, catering, directions, and calling.",
+    "technical_summary": "Created top-3-improvements-2026-05-08.md and a Mission Control-compatible build writeback payload for the top_3_improvements stage. The artifact ties the three highest-leverage changes to source files, screenshots, and validation evidence. No raw Supabase mutation was performed. Protected agency writeback remains blocked because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are unavailable in the runtime.",
+    "work_started_state": "Frato's improvement pass was validated, but the follow-on top_three_improvements gate had not been packaged as a standalone MC evidence artifact.",
+    "work_completed_state": "Top-three improvements evidence is packaged locally and ready for MC /build writeback once protected agency auth is restored.",
+    "work_items": [
+      {
+        "title": "Package Frato's top-three improvements evidence",
+        "status": "completed",
+        "evidence": [
+          "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+          "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-top-3-improvements-2026-05-08-payload.json"
+        ]
+      },
+      {
+        "title": "Mission Control top_3_improvements writeback",
+        "status": "blocked",
+        "blocker": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ],
+    "process_improvement_candidates": [
+      {
+        "observation": "A gate can be complete locally but stuck outside MC if protected agency auth is unavailable.",
+        "proposal": "Once agency auth is restored, replay the prepared mc-build-writeback-top-3-improvements payload through /api/agency/leads/:leadId/build."
+      }
+    ]
+  }
+}

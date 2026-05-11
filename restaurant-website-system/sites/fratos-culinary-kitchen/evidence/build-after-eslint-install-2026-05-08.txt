@@ -1,0 +1,31 @@
+
+> fratos-culinary-kitchen@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.15
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    39 kB           140 kB
+├ ○ /_not-found                          875 B          88.1 kB
+├ ○ /about                               186 B           101 kB
+└ ○ /contact                             2.85 kB         104 kB
++ First Load JS shared by all            87.2 kB
+  ├ chunks/117-3227df3505a5bf35.js       31.6 kB
+  ├ chunks/fd9d1056-ac47f7b4a1759b90.js  53.7 kB
+  └ other shared chunks (total)          1.95 kB
+
+
+○  (Static)  prerendered as static content
+

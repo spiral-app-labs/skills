@@ -1,0 +1,76 @@
+{
+  "status": "work_done",
+  "summary": "Frato's improvement pass validated with refreshed desktop/mobile screenshots; MC protected writeback pending agency auth.",
+  "ranAt": "2026-05-08T16:43:25Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681",
+    "1a97a775-1ff9-42c5-bd07-a804a1d13890"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's Culinary Kitchen moved from an unvalidated improvement pass to a pitch-ready local preview. I refreshed the hero and CTA treatment, kept the Cuisine/pepper-01 template intact, fixed the earlier bad mobile screenshot path, and verified desktop and mobile screenshots as styled, readable, and usable.",
+    "technical_summary": "Implemented and validated the improvement pass in restaurant-website-system/sites/fratos-culinary-kitchen. Changes include anonymous review carousel integration, stronger hero CTA/image styling, mobile quick-link nav polish, global overflow guard, first-load hero animation safety for screenshot reliability, and proof-pill copy cleanup. Re-ran npm run typecheck and npm run build successfully; npm run lint remains blocked because ESLint is not installed in this fork. Restarted local dev server on port 3210 and captured CDP screenshots at 1440x1600 and 390x1400. Layout metrics show document/body width equals viewport on both desktop and mobile. Final visual QA says pitch-ready with no real blockers. Protected agency planner/writeback remains blocked because AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are not set in this runtime, so no raw Supabase mutation was used.",
+    "work_started_state": "Frato's improvement pass had code changes but mobile screenshot validation was stale/bad and MC protected planner/writeback auth was unavailable.",
+    "work_completed_state": "Improvement evidence artifact and JSON checklist are refreshed; desktop/mobile screenshots are captured and QA-passed; MC heartbeat log records that protected agency writeback is pending auth.",
+    "work_items": [
+      {
+        "title": "Validate Frato's improvement pass screenshots",
+        "status": "completed",
+        "evidence": [
+          "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+          "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png"
+        ]
+      },
+      {
+        "title": "Refresh improvement evidence artifacts",
+        "status": "completed",
+        "evidence": [
+          "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+          "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json"
+        ]
+      },
+      {
+        "title": "Protected Mission Control improvement writeback",
+        "status": "blocked",
+        "blocker": "AGENCY_AUTONOMY_API_KEY and OPENCLAW_WEBHOOK_SECRET are not set in this runtime."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      },
+      {
+        "type": "task",
+        "name": "Frato's improvement child task",
+        "id": "1a97a775-1ff9-42c5-bd07-a804a1d13890"
+      },
+      {
+        "type": "repo",
+        "name": "restaurant-website-system"
+      }
+    ],
+    "process_improvement_candidates": [
+      {
+        "observation": "Headless Chrome command-line screenshots on this Mac can lay out at a wider implicit viewport and crop to the requested width, creating false mobile clipping reports.",
+        "proposal": "Use CDP Emulation.setDeviceMetricsOverride plus Page.captureScreenshot for canonical mobile evidence captures."
+      },
+      {
+        "observation": "Protected agency writeback auth is missing from the OpenClaw runtime even though heartbeat logging works.",
+        "proposal": "Configure AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET for this runtime and update stale docs that still refer to Supabase service keys for protected agency routes."
+      },
+      {
+        "observation": "The fork build still lacks ESLint, so build and lint both surface the same tooling warning/blocker.",
+        "proposal": "Add ESLint to the base restaurant fork package or adjust the checklist gate to distinguish lint tooling absence from site regressions."
+      }
+    ]
+  }
+}

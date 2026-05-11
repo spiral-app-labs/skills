@@ -1,0 +1,52 @@
+{
+  "status": "work_done",
+  "summary": "Frato's concierge gate completed locally with truthful KB and safety transcript; protected MC writeback payload prepared.",
+  "ranAt": "2026-05-08T17:05:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's now has a safe concierge knowledge base and a short test transcript. The concierge can help guests order, find catering, get directions, check published hours, and contact the restaurant without making up reservations, refunds, prices, live wait times, or dietary guarantees.",
+    "technical_summary": "Prepared concierge-kb-2026-05-08.md and concierge-test-transcript-2026-05-08.md from verified site content and existing Frato's evidence. Also prepared a Mission Control-compatible /build payload for the concierge stage. No live widget was activated, and no raw Supabase workflow mutation was performed. Protected agency writeback remains blocked by missing AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET in this runtime.",
+    "work_started_state": "Top-three improvements were packaged locally; concierge evidence had not yet been created.",
+    "work_completed_state": "Concierge KB, safety transcript, and protected-route writeback payload are prepared locally and ready for MC sync once agency auth is restored.",
+    "work_items": [
+      {
+        "title": "Prepare truthful Frato's concierge KB",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md"
+      },
+      {
+        "title": "Test concierge safety behavior",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md"
+      },
+      {
+        "title": "Mission Control concierge writeback",
+        "status": "blocked",
+        "blocker": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ],
+    "process_improvement_candidates": [
+      {
+        "observation": "MC marks concierge as a skill gap, but the workflow still benefits from a standard truthful-KB and safety-transcript pattern.",
+        "proposal": "Promote this KB/transcript format into a dedicated restaurant concierge skill so future sites can produce consistent safe handoffs."
+      }
+    ]
+  }
+}

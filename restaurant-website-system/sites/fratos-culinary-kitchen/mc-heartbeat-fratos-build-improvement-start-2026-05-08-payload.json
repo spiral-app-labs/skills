@@ -1,0 +1,27 @@
+{
+  "status": "work_done",
+  "summary": "Frato's fork/build completed and improvement pass started.",
+  "ranAt": "2026-05-08T16:19:59Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3", "1a97a775-1ff9-42c5-bd07-a804a1d13890"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's template fork/build is now complete in Mission Control. I resolved the preview blocker by running the Next preview from the parent runtime, captured desktop/mobile Playwright screenshots, replayed the MC build sync, and MC marked template_fork_build done. Planner advanced Frato's to 6/15 with improvement_pass ready, so I advanced MC into improving and started the improvement worker.",
+    "technical_summary": "Codex build worker personalized pepper-01 and passed npm build/typecheck but reported local preview blocked in its sandbox and MC DNS failure. Parent runtime verified MC DNS, started npm run start on 127.0.0.1:3005 successfully, captured build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png and build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png with Playwright, updated fork-preview-check/evidence/checklist/payload to pass fork-built/fork-preview/specificity, PATCHed /build successfully, and planner now shows completed_steps 6/15. Then PATCHed /build to build_stage improving and started Codex improvement pass with brief build/improvement-pass-brief-2026-05-08.md focused on anonymous review carousel, hero/CTA hierarchy, and mobile exploration/conversion polish.",
+    "work_started_state": "Template fork/build had local build/typecheck evidence but fork-preview and MC sync were blocked.",
+    "work_completed_state": "Template fork/build is done in MC; improvement_pass is in progress via local Codex worker.",
+    "work_items": [
+      {"type":"template_fork_build", "site":"fratos-culinary-kitchen", "status":"done_synced", "completed_steps":"6/15"},
+      {"type":"improvement_pass", "site":"fratos-culinary-kitchen", "status":"codex_worker_started"}
+    ],
+    "touched_entities": [
+      {"kind":"lead", "id":"cec3f7af-ab8d-4785-af76-e57e743cdf25", "name":"Frato's Culinary Kitchen"},
+      {"kind":"task", "id":"e2f35c8a-3a78-4eb5-85a1-1f3a8f8503b3", "role":"template_fork_build"},
+      {"kind":"task", "id":"1a97a775-1ff9-42c5-bd07-a804a1d13890", "role":"improvement_pass"}
+    ],
+    "process_improvement_candidates": [
+      "Codex sandbox localhost bind failures should be treated as worker-only limitations; parent runtime can often validate previews and capture screenshots."
+    ]
+  }
+}

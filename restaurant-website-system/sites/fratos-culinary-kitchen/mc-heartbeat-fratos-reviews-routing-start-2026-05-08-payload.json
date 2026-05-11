@@ -1,0 +1,27 @@
+{
+  "status": "work_done",
+  "summary": "Frato's Google Reviews captured and synced; template routing started.",
+  "ranAt": "2026-05-08T15:56:46Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611", "bae10cc3-9ac5-409b-9757-a0cd5562fe73"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's Google Reviews capture completed with the Highest filter selected, 30 written reviews captured, and 4.2 stars / 554 reviews verified. I wrote the review packet summary, synced the reviews gate in Mission Control, then advanced Frato's into template routing and started the routing worker.",
+    "technical_summary": "Review worker produced google-reviews-highest-30.json and screenshots but did not write the markdown packet/MC completion, so I generated google-reviews-highest-30.md from the JSON, updated checklist.md/checklist.json with rating/review count and source-safe review notes, and PATCHed /build with build_stage reviews, google_reviews_packet_path, screenshots/json/md, and passed ids reviews-browser-highest, reviews-thirty-written, reviews-evidence. MC marked child 35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611 done. Planner then showed template_routing todo; I PATCHed /build to stage routing and spawned a routing worker for child bae10cc3-9ac5-409b-9757-a0cd5562fe73.",
+    "work_started_state": "Google Reviews result existed locally but MC still showed the reviews child in_progress.",
+    "work_completed_state": "Reviews are synced and template routing is running.",
+    "work_items": [
+      {"type":"google_reviews_capture", "site":"fratos-culinary-kitchen", "status":"done_synced", "rating":4.2, "review_count":554, "written_reviews":30},
+      {"type":"template_routing", "site":"fratos-culinary-kitchen", "status":"worker_started"}
+    ],
+    "touched_entities": [
+      {"kind":"lead", "id":"cec3f7af-ab8d-4785-af76-e57e743cdf25", "name":"Frato's Culinary Kitchen"},
+      {"kind":"task", "id":"35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611", "role":"google_reviews_capture"},
+      {"kind":"task", "id":"bae10cc3-9ac5-409b-9757-a0cd5562fe73", "role":"template_routing"}
+    ],
+    "process_improvement_candidates": [
+      "Reviews capture workers should always write both JSON and markdown packets plus verify MC completion before exiting."
+    ]
+  }
+}

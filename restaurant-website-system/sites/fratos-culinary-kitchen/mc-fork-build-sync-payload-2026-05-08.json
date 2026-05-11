@@ -1,0 +1,25 @@
+{
+  "build_stage": "building",
+  "status": "in_progress",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/google-reviews/google-reviews-highest-30-2026-05-08.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/.agency-template.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build-notes-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/build-preview/fratos-local-preview-home-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/build-preview/fratos-local-preview-mobile-2026-05-08.png"
+  ],
+  "passed_requirement_ids": [
+    "template-route-locked",
+    "fork-built",
+    "specificity"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Locked Frato's route to pepper-01, forked/merged the template into the evidence directory, replaced generic content with Frato-specific order/catering/review proof, passed npm typecheck/build, and captured local desktop/mobile preview screenshots. Public preview URL remains pending."
+}

@@ -1,0 +1,61 @@
+{
+  "build_stage": "packaging",
+  "status": "in_progress",
+  "idempotency_key": "fratos-delivery-package-preview-url-blocker-2026-05-08-v4",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "pitch_doc_path": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+  "battle_cards_path": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+  "passed_requirement_ids": [
+    "delivery-three-qa-rounds",
+    "delivery-pack"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-link-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-home-desktop-1440x1000-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-home-mobile-390x900-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-readiness-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/deploy-preview-2026-05-08.sh",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-final-url-template-2026-05-08.json"
+  ],
+  "artifact_urls": [],
+  "blocker": "Public preview/deploy URL required before delivery-final-url can pass. Local preview QA is complete at http://127.0.0.1:3214. npx vercel works and is logged in as ethan-7906, but this site is not linked to a Vercel project and deployment creates/updates an external public artifact, so explicit approval/linking is required before deploy.",
+  "heartbeat_summary": "Frato's delivery package is prepared locally after three QA rounds, with deploy runbook, guarded deploy script, and final URL completion template attached; delivery remains blocked on approval/linking for a public preview URL.",
+  "local_artifact_bundle": {
+    "bundle": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+    "sha256": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+    "manifest": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+    "size_mb": 61,
+    "bytes": 64357143,
+    "sha256_value": "c61ceec8c5ebf25658a34e259c5b3369872abb03eba170bb07c49b15282271cc"
+  },
+  "pitch_artifacts": [],
+  "checks": {
+    "replay_dry_run": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+    "lint_after_tooling_hardening": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+    "typecheck_after_tooling_hardening": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+    "build_after_tooling_hardening": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt",
+    "npm_audit_after_tooling_hardening": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/npm-audit-after-postcss-8-4-49-2026-05-08.json"
+  },
+  "replay_helper": "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+  "tooling_hardening": "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md",
+  "framework_versions": {
+    "next": "14.2.35",
+    "eslint": "8.57.1",
+    "eslint_config_next": "14.2.35",
+    "postcss": "8.4.49"
+  }
+}

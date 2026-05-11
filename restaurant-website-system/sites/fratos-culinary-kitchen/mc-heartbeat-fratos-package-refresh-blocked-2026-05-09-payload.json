@@ -1,0 +1,51 @@
+{
+  "agent": "evan",
+  "runtime": "openclaw",
+  "event": "website_agency_fratos_package_refresh_blocked_recorded",
+  "timestamp": "2026-05-09T19:00:00.000Z",
+  "status": "fratos_local_package_refreshed_not_delivered",
+  "restaurant": "Frato's Culinary Kitchen",
+  "site_slug": "fratos-culinary-kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mc_parent_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "selected_archetype": "Cuisine",
+  "template_slug": "pepper-01",
+  "build_stage": "packaging_blocked",
+  "delivered": false,
+  "summary": "Protected planner still returns missing AGENCY_AUTONOMY_API_KEY/OPENCLAW_WEBHOOK_SECRET, so I used read-only MC root diagnosis and selected Frato's, the most recent in-progress packaging root. Created refreshed local delivery package directory/zip/manifest/README, verified 189 packaged files with no missing sources and critical QA3/replay helper artifacts present, reconciled local checklist rows for top-three improvements, concierge, pitch, battle cards, QA rounds, and marked delivery blocked until public preview plus protected MC replay/writeback auth are available.",
+  "evidence_paths": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-manifest-2026-05-09.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-readme-2026-05-09.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json"
+  ],
+  "passed_requirements": [
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe",
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence",
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks",
+    "qa-round-1",
+    "qa-round-2",
+    "qa-round-3",
+    "delivery-no-missing-evidence"
+  ],
+  "blocked_requirements": [
+    "delivery-package"
+  ],
+  "blockers": [
+    "Public preview/deploy URL is missing.",
+    "Protected MC agency replay/writeback requires AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET.",
+    "Same-day Google rating/review count should be rechecked before client-facing pitch if exact currentness matters."
+  ],
+  "next_unblock_action": "Approve/create public preview, configure agency auth, replay Frato’s MC payloads, rerun public smoke/link checks, then mark delivered via MC only."
+}
