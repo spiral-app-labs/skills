@@ -956,6 +956,19 @@
       "reason": "Local Frato\u2019s package refreshed with 189 files and no missing sources, but final delivery cannot pass without a public preview/deploy URL and protected MC agency auth for replay/writeback. General MC heartbeat logging is reachable.",
       "recordedAt": "2026-05-09T19:00:00Z",
       "nextUnblockAction": "Approve/create public preview, configure AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET, replay Frato\u2019s MC payloads, rerun public smoke/link checks, then mark delivered via MC."
+    },
+    {
+      "stage": "packaging",
+      "id": "public-preview-auth-2026-05-15",
+      "status": "open",
+      "summary": "Frato's PR preview returns HTTP 401 / Vercel Authentication Required on /, /about, and /contact, so the package is not owner-shareable and cannot be delivered yet.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery/public-preview-access-check-2026-05-15.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery/public-preview-recheck-2026-05-15/http-status.txt"
+      ],
+      "previewUrl": "https://skills-git-feat-fratos-prev-cffc09-ethan-ethantalrejas-projects.vercel.app",
+      "recordedAt": "2026-05-15T20:40:00Z",
+      "nextUnblockAction": "Provide public/shareable preview URL or approved Vercel bypass, rerun packaging route checks, configure protected MC agency auth, then replay package/writeback payloads before delivery."
     }
   ],
   "requirements": [
@@ -1456,7 +1469,7 @@
     "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
     "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
   ],
-  "updatedAt": "2026-05-09T19:00:00Z",
+  "updatedAt": "2026-05-15T20:40:00Z",
   "suggestedArchetype": "Cuisine",
   "passedRequirementIds": [
     "checklist-json",

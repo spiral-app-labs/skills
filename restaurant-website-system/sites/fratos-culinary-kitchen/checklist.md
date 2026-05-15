@@ -481,3 +481,11 @@
 
 Next unblock action: approve/create public preview, configure `AGENCY_AUTONOMY_API_KEY` or `OPENCLAW_WEBHOOK_SECRET`, replay Frato’s MC payloads, rerun public smoke/link checks, and mark delivered only through MC.
 
+## Packaging Public Preview Recheck — 2026-05-15
+
+- Preview tested: `https://skills-git-feat-fratos-prev-cffc09-ethan-ethantalrejas-projects.vercel.app`
+- Result: blocked. `/`, `/about`, and `/contact` returned HTTP 401 / Vercel Authentication Required to unauthenticated checks.
+- Evidence: `restaurant-website-system/sites/fratos-culinary-kitchen/delivery/public-preview-access-check-2026-05-15.md` and `restaurant-website-system/sites/fratos-culinary-kitchen/delivery/public-preview-recheck-2026-05-15/http-status.txt`
+- MC writeback remains blocked because `AGENCY_AUTONOMY_API_KEY` and `OPENCLAW_WEBHOOK_SECRET` are unavailable in this runtime. No raw Supabase workflow mutation was performed.
+- Next unblock: provide public/shareable preview URL or approved Vercel bypass, rerun packaging checks, configure MC agency auth, then replay prepared package/writeback payloads before delivery.
+

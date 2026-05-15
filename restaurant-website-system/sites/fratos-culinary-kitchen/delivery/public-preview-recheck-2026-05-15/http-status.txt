@@ -1,0 +1,8 @@
+401 14630 https://skills-git-feat-fratos-prev-cffc09-ethan-ethantalrejas-projects.vercel.app/
+401 14645 https://skills-git-feat-fratos-prev-cffc09-ethan-ethantalrejas-projects.vercel.app/about
+401 14651 https://skills-git-feat-fratos-prev-cffc09-ethan-ethantalrejas-projects.vercel.app/contact
+
+Marker scan:
+- /: Authentication Required; Vercel Authentication
+- /about: Authentication Required; Vercel Authentication
+- /contact: Authentication Required; Vercel Authentication
