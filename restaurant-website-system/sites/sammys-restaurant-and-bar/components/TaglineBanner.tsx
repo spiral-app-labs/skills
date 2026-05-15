@@ -10,7 +10,7 @@ import { theme } from '../theme';
 export function TaglineBanner() {
   const { heading, collage, trustIcons } = content.tagline;
   return (
-    <section className="max-w-plate mx-auto px-5 md:px-10 py-20 md:py-28">
+    <section className="max-w-plate mx-auto px-5 md:px-10 py-20 md:py-28 border-y border-divider bg-canvas-alt/70">
       <motion.div
         initial={{ opacity: 0, y: theme.motion.revealLift }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,13 +19,13 @@ export function TaglineBanner() {
         className="grid md:grid-cols-[1fr_auto] gap-10 md:gap-16 items-center"
       >
         <div>
-          <h2 className="font-display text-section-h2 font-medium text-ink whitespace-pre-line">
+          <h2 className="font-display text-section-h2 font-bold uppercase text-ink whitespace-pre-line">
             {heading}
           </h2>
           <div className="mt-5 flex items-center gap-4 text-body-sm text-ink-muted">
             {trustIcons.map((label) => (
               <span key={label} className="inline-flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                <span className="w-1.5 h-1.5 rounded-full bg-accent shadow-[0_0_18px_rgba(217,162,58,0.5)]" />
                 {label}
               </span>
             ))}
@@ -35,7 +35,7 @@ export function TaglineBanner() {
           {collage.map((p, i) => (
             <motion.div
               key={i}
-              className={`group aspect-square overflow-hidden rounded-image bg-canvas-alt shadow-sm ${i === 1 ? 'translate-y-4' : ''}`}
+              className={`group aspect-square overflow-hidden rounded-image bg-canvas border border-divider shadow-[0_20px_70px_rgba(0,0,0,0.3)] ${i === 1 ? 'translate-y-4' : ''}`}
               initial={{ opacity: 0, scale: 0.95, rotate: i === 0 ? -2 : 2 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true, amount: 0.3 }}

@@ -17,10 +17,10 @@ The skill runs these steps without human intervention:
 
 1. Read lead state from MC: `GET /api/agency/leads/:leadId` to confirm audit complete, route locked, fork created
 2. Read `lead.metadata.personalization` — if `enabled === false` and the lead is in personalized-fork mode, set `enabled = true` via the build API
-3. Invoke `image-first-hero-generation` → produces `sites/<slug>/public/images/raw/inspo.jpg` and `plate.jpg` (16:9 center-balanced, no humans)
+3. Invoke `image-first-hero-generation` → produces `sites/<slug>/public/images/raw/inspo.{jpg,png}` and `plate.{jpg,png}` (16:9 center-balanced, no humans — either extension is valid, use whichever the generator returned)
 4. Invoke `art-bible-extraction` with the approved inspo image → produces `sites/<slug>/art-bible.md`
 5. Invoke `restaurant-hero-video-generation` with the approved clean plate → produces `sites/<slug>/public/videos/raw/hero.mp4` (no humans, ambient motion only)
-6. Invoke `asset-pipeline-supabase` to upload all 3 assets to the `agency-hero-assets` bucket as `<lead_id>/inspo.jpg`, `<lead_id>/plate.jpg`, `<lead_id>/hero.mp4`
+6. Invoke `asset-pipeline-supabase` to upload all 3 assets to the `agency-hero-assets` bucket as `<lead_id>/inspo.{jpg,png}`, `<lead_id>/plate.{jpg,png}`, `<lead_id>/hero.mp4` (image extensions preserved from source)
 7. POST the public URLs + art bible markdown to MC via `/api/agency/leads/:leadId/build` (all in one request — `personalization_enabled: true` + `personalization_assets: { inspo_image_url, clean_plate_image_url, hero_video_url }` + `personalization_art_bible_markdown`)
 
 ### Phase 2 — Human verification (skill pauses)
@@ -52,14 +52,24 @@ When satisfied, flip "Ready to build" to true. The skill will detect the flag fl
     - `<video>` element with `src` = `hero_video_url`, `autoPlay muted loop playsInline`
     - Background poster = `clean_plate_image_url`
     - CSS: `object-fit: cover; object-position: center; height: 100dvh;` (mobile-handles via center-crop)
-    - Overlays the wordmark + eyebrow + sub + CTAs in code per the audit's Hero Lock
-    - Sticky CTA pinned in the hero corner (`top-right` or `bottom-right`) so the conversion floor is protected at any scroll position
+    - Overlays the wordmark + eyebrow + sub in code per the audit's Hero Lock
+    - Conversion floor is protected by the **multi-anchor pattern** (see structural rules below): `FloatingHeaderPill` (top, always visible on desktop) + `MobileActionBar` (bottom-sticky on mobile). Hero-internal CTA pills are added ONLY when the brand has multi-destination routing (e.g. two locations needing separate entry points) — otherwise omit, the header pill is enough.
 13. Applies the art bible across the rest of the fork:
     - Palette → `tailwind.config.ts` theme.colors + `app/globals.css` CSS variables
     - Typography → font imports in `app/layout.tsx` + Tailwind font-family tokens + per-element type scale
     - Spacing rhythm → Tailwind spacing tokens + container max-width
     - Component register notes → direct edits in `components/Nav.tsx`, `MenuList.tsx`, `ReviewCarousel.tsx`, `Footer.tsx`, `AboutContent.tsx`
     - Cross-checks every non-hero section against the art bible's IS / IS NOT list before commit
+
+    **Decomposition guidance (prefer, not strict).** As register-specific styling and copy accumulate, prefer extracting each major non-hero region into its own component rather than expanding the existing page-experience container. The container's job is to orchestrate sections; its job is NOT to hold their markup. Standard split for a personalized fork:
+
+    - `LocationsPanel.tsx` — the locations grid + per-location card (drives links into `/locations/[slug]`)
+    - `MenuPreview.tsx` — the menu teaser block linking to `/menu`
+    - `ProofSection.tsx` — reviews / press carousel (per `restaurant-fork-improvement` Section 1.1)
+    - `AboutBlock.tsx` — story / heritage paragraph
+    - `MinimalFooter.tsx` — single-line address + hours + phone + wordmark anchor
+
+    Signal to extract: a single component is accumulating multiple sections of art-bible-driven copy AND its markup is no longer the kind of thing you can hold in your head while editing it. When that happens, extract — don't keep adding. The bistro-wasabi rebuild collapsed locations + menu + plan-your-visit into one ~550-line `HomeExperience.tsx`; that's the failure mode to avoid.
 14. Runs `npm run dev`, takes Playwright screenshots (desktop + iPhone 13), visual verification
 15. Updates the local checklist + mirrors evidence to MC via `/api/agency/leads/:leadId/build`
 16. Returns control to `restaurant-template-fork` for the standard fork-stage completion (commit, push, deploy preview)
@@ -110,19 +120,139 @@ If any prerequisite is missing, surface a single combined blocker and stop. Don'
 - Rest of the fork visually inherits the art bible register (dev server screenshot pass)
 - `100dvh` hero confirmed on iPhone 13 viewport with sticky CTA visible
 - Conversion-floor verification passes
-- No human bodies/hands/faces in any AI-generated asset
+- No human bodies/faces/arms in any AI-generated asset. Cropped hands are allowed only when the operator explicitly requests them; default to no hands.
 - Checklist + MC evidence updated
 
-## Conversion-floor structural rules
+## Conversion-floor structural rules (V2 — validated on bistro-wasabi)
 
 Apply to every personalized hero:
 
 - Hero height: `100dvh` (NOT `100vh`) — handles mobile browser chrome
 - Optional underclamp to `92–95dvh` for scroll affordance
-- Sticky CTA pinned in hero corner — conversion floor protected
+- **Multi-anchor conversion floor:**
+  - `FloatingHeaderPill` — top-floating, always-visible CTA pill (desktop primary entry, visible at every scroll position)
+  - `MobileActionBar` — bottom-sticky action bar (mobile primary entry)
+  - Hero-internal CTA pills — ADDED ONLY when the brand has multi-destination routing (e.g. two locations needing separate entry points). For single-destination brands omit the in-hero CTAs entirely — the header pill is sufficient and three corner CTAs is redundant.
 - Restaurant name remains wordmark anchor (per `feedback_hero_pattern_name_anchor.md`)
 - Aliveness mandatories (LiveOpenStatus, LiveMapEmbed, ScrollReveal) all still ship — `BackgroundVideoAliveness` is additive
 - ONE 16:9 source asset, CSS center-crops on mobile
+
+Earlier drafts of this skill prescribed "sticky CTA pinned in hero corner." That was replaced 2026-05-12 after the bistro-wasabi build proved a corner CTA was redundant with `FloatingHeaderPill` + `MobileActionBar`. The corner-CTA version is now considered a fallback for templates that don't ship a floating header pill.
+
+## Generation prompt contracts
+
+Use these prompt contracts when `image-first-hero-generation` or `restaurant-hero-video-generation` needs manual fallback prompts, or when the operator asks Codex to draft prompts for ChatGPT image gen / Higgsfield. The output must still satisfy the same asset contract: `inspo.{jpg,png}`, `plate.{jpg,png}`, and `hero.mp4`.
+
+### YouTube-style clean-plate prompt
+
+When working from a reference image, use this direct structure:
+
+```
+Create me an image like this in 8K. Remove any text, buttons, any logos, cards, rectangles, UI, signage, browser chrome, and readable labels. I just want the exact same background, same camera angle, same composition, same object positioning, and same lighting. No zoom in or zoom out. No redesign. No new objects. Just the clean production hero background.
+
+Business: [restaurant name, cuisine/register, location].
+
+Preserve: [the exact objects and positions to preserve].
+Remove: [all overlay text / logos / UI / unwanted objects].
+Leave: [negative space location for website copy overlay].
+
+Strict constraints:
+No readable text. No logos. No UI. No humans, faces, or arms. No hands unless explicitly requested. No synthetic glossy AI look. No unrelated food items unless they are part of the chosen hero concept.
+```
+
+Use this for clean backgrounds before adding website typography in code. Do not ask image gen to render final website copy unless the operator specifically wants a design reference rather than a production background.
+
+### Exact-first-frame image-to-video prompt
+
+When animating a still image, the first two paragraphs must be explicit. Higgsfield-style video prompts drift if the starting frame contract is soft.
+
+```
+Use the provided image as the exact first frame of the video. Do not redesign it, do not recreate it, do not change the composition, and do not replace any objects.
+
+This is an image-to-video animation task. Preserve the exact same background, camera angle, crop, lighting, object positions, reflections, and object placement from the starting image.
+
+Create a subtle [4/8]-second cinematic website hero loop by animating only [the natural motion source]:
+- [motion detail 1]
+- [motion detail 2]
+- [motion detail 3]
+
+Keep all solid objects physically locked in place. Nothing should slide, morph, resize, drift, or change shape.
+
+Camera should be locked. No zoom, no pan, no orbit, no reframing.
+
+Strict constraints:
+No new objects. No humans. No faces. No arms. No readable text. No logos. No signage. No UI. No surreal physics. No object drifting. No background changes.
+
+The result should look like the exact original still photograph quietly coming alive for a premium restaurant website hero.
+```
+
+For a beer-only Sammy's style loop, use beer motion only: tiny bubbles rise continuously, foam slowly swells over the rim, one or two slow foam trails roll down the outside of the glass, condensation and amber highlights shimmer, and the beer surface moves slightly with realistic liquid physics. Do not add a pouring stream unless the starter image already contains one. Do not mention fish or other food unless that food is the chosen hero subject.
+
+### Four-second menu motion prompt
+
+Use this for separate Higgsfield 4s hero cutdowns based on menu items. These should feel like premium restaurant product cinematography, not plates sliding into frame.
+
+```
+Create a 4-second cinematic restaurant hero video for [restaurant name].
+
+Subject: the menu item "[menu item]" - [brief ingredients from the real menu].
+
+Scene: [surface/environment], warm restaurant lighting, shallow depth of field, soft background bokeh.
+
+Action:
+[One clear physical action. Examples: pretzels fall and settle, burger ingredients fall into place, beer foam overflows, wok tosses food over flame, steak flares on grill, pasta gets twirled/plated.]
+
+Camera:
+Locked camera or very slight slow push-in. 16:9 horizontal. Close-up product cinematography.
+
+Physics:
+[Object-specific physics: heavy/soft pretzel bounce, burger ingredient weight, liquid viscosity, flame behavior, steam, salt scatter.]
+
+Strict constraints:
+No full humans, no faces, no arms. No hands unless explicitly requested. No readable text, logos, signage, or UI. No impossible floating objects. No messy chaotic splatter. No cartoon style. No object morphing. Keep it realistic, warm, and craveable.
+```
+
+Sammy's examples:
+
+```
+Create a 4-second cinematic restaurant hero video for Sammy's Restaurant & Bar.
+
+Subject: the menu item "Giant Pretzel" - oversized warm soft pretzels with coarse salt, served with beer cheese and mustard.
+
+Scene: dark glossy wooden bar counter, warm amber tavern lighting, shallow depth of field, soft bar bokeh in the background.
+
+Action:
+A few giant soft pretzels fall into frame in slow motion and land on the wooden bar counter or a wooden serving board. They hit with realistic weight, bounce slightly once, then settle naturally. Coarse salt crystals scatter and catch the warm light. A small ramekin of beer cheese and mustard sits nearby, already on the counter, and does not move.
+
+Camera:
+Locked camera or very slight slow push-in. 16:9 horizontal. Close-up product cinematography, like premium bar-food slow motion.
+
+Physics:
+Pretzels should feel heavy, soft, and real. No floating. No impossible bounce. Salt falls naturally. The final frame should be a clean appetizing hero shot.
+
+Strict constraints:
+No humans, no hands, no faces, no arms. No readable text, no logos, no signage, no UI. No cartoon style. No giant surreal pretzels. No food morphing. No camera shake. Keep it realistic, warm, and craveable.
+```
+
+```
+Create a 4-second cinematic restaurant hero video for Sammy's Restaurant & Bar.
+
+Subject: the menu item "Hickory Burger" - 1/2 lb Angus beef burger with bacon, cheddar cheese, and BBQ sauce.
+
+Scene: dark glossy wooden bar counter, warm amber tavern lighting, shallow depth of field, soft bar bokeh in the background.
+
+Action:
+Build the burger in slow motion from falling ingredients. Start with the bottom bun already on the counter or plate. A hot beef patty drops onto the bun and bounces subtly. A slice of cheddar lands on the patty and begins to soften. Crispy bacon strips fall on top with a small natural bounce. A glossy ribbon of BBQ sauce drizzles over the bacon. The top bun drops last and settles into the finished burger.
+
+Camera:
+Locked camera or very slight slow push-in. 16:9 horizontal. Macro restaurant product cinematography, warm and appetizing.
+
+Physics:
+Each ingredient must move with realistic gravity and weight. Small bounce only. The burger should assemble cleanly, not explode or float. Cheese softens slightly from heat. BBQ sauce should stretch and land naturally.
+
+Strict constraints:
+No humans, no hands, no faces, no arms. No readable text, no logos, no signage, no UI. No impossible floating ingredients. No messy splatter. No cartoon style. No object morphing. Keep it realistic, warm, and craveable.
+```
 
 ## Evidence to capture (mirror to MC build evidence)
 
@@ -154,6 +284,7 @@ If Codex/openclaw can't drive end-to-end yet, the skill emits stepwise prompts a
 - **Updates**: `restaurant-build-checklist` (personalization evidence rows), `sites/<slug>/content.ts` (Supabase URLs), `agency_leads.metadata.personalization` (via build API)
 - **Follows into**: `restaurant-fork-improvement` (v1 → v2 polish layers on top of the personalized base)
 - **Strategic backing**: `restaurant-website-system/research/restaurant-website-strategic-principles.md` (Part 5 first-viewport floor + Part 2 register signaling)
+- **Multi-location brand pattern**: when the lead has 2+ locations under one brand with separate ops, follow `restaurant-website-system/research/multi-location-brand-pattern.md` — that pattern dictates the `LocationsPanel.tsx` + dynamic `/locations/[slug]` split and the hero CTA Configuration A (in-hero location pills)
 
 ## Server-side enforcement
 

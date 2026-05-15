@@ -8,17 +8,43 @@ const premiumImages = {
   drinks: `${imageBase}/premium-sushi-martini.png`,
 } as const;
 
+// Bistro Wasabi operates as two sister restaurants under one brand, each with its
+// own website, phone, Tock account, and Toast account. Verified 2026-05-12 via:
+//   - thebistrowasabi.com (Lake in the Hills)
+//   - bistrowasabihoffman.com (Hoffman Estates)
+// Treat them as separate operations — never cross-wire their reservation/order
+// links or phones. The Reserve flow on this site routes to /locations so the
+// guest picks their location first.
 export const links = {
+  // Lake in the Hills (flagship)
+  lakeTock: 'https://www.exploretock.com/bistrowasabilakeinthehills',
+  lakeCarryOut: 'https://order.toasttab.com/online/bistro-wasabi-lith-4590-w-algonquin-rd',
+  lakeGiftCards: 'https://www.toasttab.com/bistro-wasabi-lith-4590-w-algonquin-rd/giftcards',
+  lakeDelivery: 'https://www.ubereats.com/store/bistro-wasabi/jnP8YukWRxiW3drzGHnnrg',
+  lakePhone: 'tel:+18475152700',
+  lakeDirections:
+    'https://www.google.com/maps/search/?api=1&query=4590%20W%20Algonquin%20Rd%2C%20Lake%20in%20the%20Hills%2C%20IL%2060156',
+
+  // Hoffman Estates (sister restaurant — separate ops)
+  hoffmanTock: 'https://www.exploretock.com/bistrowasabihoffmanestates',
+  hoffmanCarryOut:
+    'https://order.toasttab.com/online/bistro-wasabi-hoffman-estates-1578-w-algonquin-rd',
+  hoffmanGrubhub:
+    'https://www.grubhub.com/restaurant/bistro-wasabi-1578-w-algonquin-rd-hoffman-estates/614675',
+  hoffmanPhone: 'tel:+18472021577',
+  hoffmanDirections:
+    'https://www.google.com/maps/search/?api=1&query=1578%20W%20Algonquin%20Rd%2C%20Hoffman%20Estates%2C%20IL%2060192',
+
+  // Brand-shared
+  email: 'mailto:thebistrowasabi@gmail.com',
+
+  // Legacy aliases — kept so older components keep working. Always prefer the
+  // location-specific link above when wiring new components.
   tock: 'https://www.exploretock.com/bistrowasabilakeinthehills',
   carryOut: 'https://order.toasttab.com/online/bistro-wasabi-lith-4590-w-algonquin-rd',
   giftCards: 'https://www.toasttab.com/bistro-wasabi-lith-4590-w-algonquin-rd/giftcards',
   delivery: 'https://www.ubereats.com/store/bistro-wasabi/jnP8YukWRxiW3drzGHnnrg',
   phone: 'tel:+18475152700',
-  email: 'mailto:thebistrowasabi@gmail.com',
-  lakeDirections:
-    'https://www.google.com/maps/search/?api=1&query=4590%20W%20Algonquin%20Rd%2C%20Lake%20in%20the%20Hills%2C%20IL%2060156',
-  hoffmanDirections:
-    'https://www.google.com/maps/search/?api=1&query=1578%20W%20Algonquin%20Rd%2C%20Hoffman%20Estates%2C%20IL%2060192',
 };
 
 export const content = {
@@ -58,7 +84,10 @@ export const content = {
       { label: 'Locations', href: '/locations' },
       { label: 'Story', href: '/about' },
     ],
-    cta: { label: 'Reserve', href: links.tock },
+    // Reserve routes to /locations so the guest picks Lake in the Hills vs.
+    // Hoffman Estates before being handed off to that location's Tock account.
+    // Each location has its OWN Tock; do NOT hardcode either Tock URL here.
+    cta: { label: 'Reserve', href: '/locations' },
   },
 
   hero: {
@@ -70,6 +99,38 @@ export const content = {
       'Fresh sushi, hand-shaken martinis, weekly wine specials, steaks, seafood, and more for the whole table.',
     supportingLine:
       'Locally owned since 2000, with two Algonquin Road locations for dinner, drinks, carry-out, and gift cards.',
+  },
+
+  // Personalized homepage hero (2026-05-12). Source-of-truth URLs live in MC's
+  // agency_leads.metadata.personalization.assets for this lead; the hardcoded
+  // URLs here are the same Supabase Storage public CDN URLs. Generated via
+  // ChatGPT gpt-image-1 (inspo + plate) + Higgsfield Seedance 2.0 (chopsticks
+  // pickup loop). Art bible at sites/bistro-wasabi/art-bible.md.
+  personalizedHero: {
+    videoSrc:
+      'https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/1a10583e-7bf3-4604-b863-d88cddb21520/hero.mp4',
+    posterSrc:
+      'https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/1a10583e-7bf3-4604-b863-d88cddb21520/plate.png',
+    wordmark: 'BISTRO WASABI',
+    eyebrow: 'TWO LOCATIONS · ALGONQUIN ROAD · SINCE 2000',
+    sub: 'Fresh sushi, hand-shaken martinis, and steaks — two sister dining rooms on Algonquin Road.',
+    ctaLabel: 'RESERVE',
+    ctaHref: '/locations',
+    // Location-pick CTAs that sit below the sub on the hero. Each routes to
+    // the per-location detail page where the visitor reserves, orders carry-out,
+    // gets directions, etc. with that location's specific links.
+    locationCtas: [
+      {
+        label: 'Lake in the Hills',
+        sublabel: '4590 W Algonquin Rd',
+        href: '/locations/lake-in-the-hills',
+      },
+      {
+        label: 'Hoffman Estates',
+        sublabel: '1578 W Algonquin Rd',
+        href: '/locations/hoffman-estates',
+      },
+    ],
   },
 
   trustHighlights: [
@@ -88,16 +149,6 @@ export const content = {
       action: 'View menu',
       image: premiumImages.platter,
       alt: 'Nigiri, sashimi, and maki on a black ceramic plate',
-    },
-    {
-      label: 'Locations',
-      title: 'Lake in the Hills + Hoffman Estates',
-      body:
-        'Choose your location, reserve a table, order carry-out, call, or get directions.',
-      href: '/locations',
-      action: 'Choose a location',
-      image: premiumImages.hero,
-      alt: 'Warm sushi bar with nigiri in the foreground',
     },
   ],
 
@@ -130,24 +181,43 @@ export const content = {
 
   locations: [
     {
+      slug: 'lake-in-the-hills',
       name: 'Lake in the Hills',
-      role: 'Dine in, carry-out, gift cards, and delivery',
+      role: 'The flagship dining room — open since 2000',
       address: '4590 W Algonquin Rd, Lake in the Hills, IL 60156',
+      phone: '847-515-2700',
+      website: 'thebistrowasabi.com',
+      shortLine: 'The flagship room — full service dine-in, reservations, carry-out, delivery, and gift cards.',
+      longDescription:
+        "The Algonquin Road flagship has been open since 2000 and is the larger of the two dining rooms — a modern, low-lit space designed for special-occasion dinners, family gatherings, and martini-and-sushi nights. Reservations are recommended on Friday and Saturday and can be booked online; carry-out is available for pickup; and gift cards are available year-round.",
+      geo: { lat: 42.1859, lng: -88.3286 },
+      parking: 'Free parking in the strip-mall lot directly outside the entrance.',
+      services: ['Dine-in', 'Bar seating', 'Sushi bar seating', 'Carry-out', 'Delivery via Uber Eats', 'Gift cards', 'Group reservations (call for parties of 6+)'],
       actions: [
-        { label: 'Reserve a table', href: links.tock, primary: true },
-        { label: 'Order carry-out', href: links.carryOut, primary: true },
+        { label: 'Reserve a table', href: links.lakeTock, primary: true },
+        { label: 'Order carry-out', href: links.lakeCarryOut, primary: true },
         { label: 'Directions', href: links.lakeDirections },
-        { label: 'Call', href: links.phone },
+        { label: 'Call', href: links.lakePhone },
       ],
     },
     {
+      slug: 'hoffman-estates',
       name: 'Hoffman Estates',
-      role: 'Hoffman Estates dining room',
+      role: 'The sister dining room on Algonquin Road',
       address: '1578 W Algonquin Rd, Hoffman Estates, IL 60192',
+      phone: '847-202-1577',
+      website: 'bistrowasabihoffman.com',
+      shortLine: 'The sister restaurant on Algonquin Road — its own kitchen, with a quieter, neighborhood feel.',
+      longDescription:
+        "The Hoffman Estates dining room is a sister restaurant to the Lake in the Hills flagship — same brand, same chef-driven Asian-fusion register, but with its own kitchen and its own reservations and carry-out lines. It runs a quieter neighborhood feel and a slightly different operational model. Reservations are recommended; carry-out can also be ordered through Grubhub.",
+      geo: { lat: 42.0658, lng: -88.0816 },
+      parking: 'Free lot parking directly out front.',
+      services: ['Dine-in', 'Sushi bar seating', 'Reservations', 'Carry-out', 'Delivery via Uber Eats', 'Delivery via Grubhub', 'Group reservations (call ahead)'],
       actions: [
-        { label: 'Directions', href: links.hoffmanDirections, primary: true },
-        { label: 'Call', href: links.phone, primary: true },
-        { label: 'Email', href: links.email },
+        { label: 'Reserve a table', href: links.hoffmanTock, primary: true },
+        { label: 'Order carry-out', href: links.hoffmanCarryOut, primary: true },
+        { label: 'Directions', href: links.hoffmanDirections },
+        { label: 'Call', href: links.hoffmanPhone },
       ],
     },
   ],

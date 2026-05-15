@@ -59,7 +59,7 @@ function renderLabel(label: string) {
 export function TrustStrip() {
   const { items } = content.trustStrip;
   return (
-    <section className="bg-canvas-alt border-y border-divider">
+    <section className="bg-canvas-alt border-y border-divider shadow-[inset_0_1px_0_rgba(217,162,58,0.12)]">
       <div className="max-w-plate mx-auto px-5 md:px-10 py-7 md:py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 text-center">
           {items.map((it, i) => (
@@ -70,7 +70,7 @@ export function TrustStrip() {
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="font-display text-section-h3 font-medium text-ink">
+              <p className="font-display text-section-h3 font-bold uppercase text-ink">
                 {renderLabel(it.label)}
               </p>
               <p className="mt-1.5 text-body-sm text-ink-muted leading-snug">{it.sub}</p>

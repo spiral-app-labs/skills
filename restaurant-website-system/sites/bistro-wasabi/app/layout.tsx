@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Forum } from 'next/font/google';
+import { Forum, Cormorant_Garamond, Inter } from 'next/font/google';
 import { MobileActionBar } from '../components/MobileActionBar';
 import { content, links } from '../content';
 import './globals.css';
@@ -9,6 +9,24 @@ const forum = Forum({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-forum',
+  display: 'swap',
+});
+
+// Personalized hero display: Cormorant Garamond Italic (per art-bible.md).
+// Used by the HeroVideoBackground on the homepage; other pages still use Forum.
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['italic'],
+  variable: '--font-cormorant',
+  display: 'swap',
+});
+
+// Eyebrow + UI face for the personalized hero — tracked-caps in Inter.
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-inter',
   display: 'swap',
 });
 
@@ -91,7 +109,7 @@ const structuredData = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={forum.variable}>
+    <html lang="en" className={`${forum.variable} ${cormorant.variable} ${inter.variable}`}>
       <head>
         {/* Body font: Satoshi via Fontshare CDN.
             Forks may want to self-host these woff2 files — see README. */}

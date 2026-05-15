@@ -151,7 +151,7 @@ Track which restaurant archetypes have ≥1 strong template. Empty cells = gaps 
 | Brunch (full-service) | `plate-01` (with brunch content fork) | **weak** (no dedicated) |
 | Pizza / wings / fast-casual takeout | `pepper-01` | **solid** (1 strong) |
 | Fast-casual health / salad / juice | `saladify-01` | **solid** (1 strong, dual-archetype meal-kit OR storefront) |
-| Mexican / vibrant social | `bamzi-01` with hue-swap | **weak** (no dedicated Mexican template) |
+| Mexican / vibrant social | `bamzi-01` with hue-swap | **weak + deprioritized for speculative outbound** (no dedicated Mexican template; pursue only with unusually strong close reason) |
 | Seafood / coastal / raw-bar | `labrisa-01` (European coastal) | **weak** (no dedicated American seafood) |
 | French bistro / Parisian | `labrisa-01` (coastal), `alinea-01` (light-editorial) | **weak** (no classic-Parisian dedicated) |
 | Mediterranean / Greek / Levantine | `labrisa-01` (with content swap) | **weak** (no dedicated) |
@@ -167,15 +167,15 @@ Coverage strength: `gap` / `weak (no dedicated)` / `solid (1+ strong)` / `over-s
 
 ## 4. What to build next (priority-ordered)
 
-Based on catalog gaps + outbound demand signal (what cold-outbound prospects ask for):
+Based on catalog gaps + outbound demand signal (what cold-outbound prospects ask for) and the 2026-05-13 sales-priority update that Mexican / Latin leads are harder to sell in the current offer:
 
-1. **Dedicated Mexican / Latin saturated-vibrant** — high outbound demand; bamzi hue-swap is OK but not optimal. Hunt Framer/live templates with papel-picado energy + taqueria register.
-2. **American steakhouse** — clubby dark-wood, prime-aged-beef photography, date-night register. Large outbound vertical.
-3. **French classic bistro** — Parisian wine-bar / zinc-bar / terrine-and-wine register. Distinct from labrisa (coastal) and alinea (Michelin).
-4. **Dedicated seafood / oyster bar** — American coastal raw-bar register, distinct from labrisa's European framing.
-5. **Full-service brunch** — plate-01 covers this partially; dedicated brunch template would surface the all-day breakfast + mimosa + weekend-rush positioning.
+1. **American steakhouse** — clubby dark-wood, prime-aged-beef photography, date-night register. Large outbound vertical.
+2. **French classic bistro** — Parisian wine-bar / zinc-bar / terrine-and-wine register. Distinct from labrisa (coastal) and alinea (Michelin).
+3. **Dedicated seafood / oyster bar** — American coastal raw-bar register, distinct from labrisa's European framing.
+4. **Full-service brunch** — plate-01 covers this partially; dedicated brunch template would surface the all-day breakfast + mimosa + weekend-rush positioning.
+5. **Modern wine bar (food-secondary)** — velvet-shaker is cocktail-forward; wine-bar needs its own registration (sommelier-led, bottle list, food-as-accompaniment).
 6. **Food truck / pop-up / seasonal concept** — lightweight 1-page-only template for non-permanent concepts.
-7. **Modern wine bar (food-secondary)** — velvet-shaker is cocktail-forward; wine-bar needs its own registration (sommelier-led, bottle list, food-as-accompaniment).
+7. **Dedicated Mexican / Latin saturated-vibrant** — deferred. Build only after a warm lead, explicit operator request, or a repeated close-ready pattern proves this vertical is worth re-prioritizing.
 
 ---
 

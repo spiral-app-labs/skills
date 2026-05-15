@@ -4,7 +4,7 @@
 
 html, body {
   background-color: theme('colors.canvas');
-  color: theme('colors.ink');
+  color: theme('colors.accent');
   font-family: theme('fontFamily.body');
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,9 +12,9 @@ html, body {
 
 h1, h2, h3, h4 {
   font-family: theme('fontFamily.display');
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 * { box-sizing: border-box; }
@@ -40,11 +40,12 @@ h1, h2, h3, h4 {
    Rendered as live text; scales responsively with clamp().
    Urbanist 700 at this size has enough presence without a custom display cut. */
 .wordmark-footer {
-  font-family: theme('fontFamily.display');
+  font-family: theme('fontFamily.condensed');
   font-weight: 700;
-  font-size: clamp(120px, 28vw, 360px);
+  font-size: clamp(92px, 21vw, 310px);
   line-height: 0.85;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  text-transform: uppercase;
   color: theme('colors.ink');
   text-align: center;
   user-select: none;

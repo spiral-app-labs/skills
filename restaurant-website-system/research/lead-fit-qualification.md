@@ -17,6 +17,22 @@ This document is the pre-flight check that prevents both failure modes.
 
 ---
 
+## GTM priority overlay
+
+As of 2026-05-13, **Mexican / Latin restaurant leads are deprioritized for speculative outbound by default.** The working sales read is that they may be harder to close in this offer shape, especially when the pitch depends on a saturated cuisine template rather than a clear business pain.
+
+Do not treat this as a cuisine ban. Build Mexican / Latin leads only when the close reason is unusually strong:
+
+- warm referral, explicit owner interest, or an operator-requested demo
+- no owned website plus unusually strong Google proof
+- broken primary domain, missing menu, or another measurable conversion failure
+- distinctive non-template story that makes the redesign obviously useful
+- strategic template research explicitly approved by the operator
+
+When ranking net-new outbound, prefer clearer willingness-to-pay or conversion-pain categories first: reservation-driven bistros, Italian/trattoria, steakhouses, seafood/coastal, cafes with broken/no sites, cocktail/wine bars, and multi-service venues.
+
+---
+
 ## When to run this
 
 - Before opening a code editor for any new lead.

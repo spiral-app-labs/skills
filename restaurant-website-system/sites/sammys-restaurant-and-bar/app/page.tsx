@@ -19,7 +19,7 @@ import { ScrollRevealStandard } from '../components/ScrollReveal';
 export default function HomePage() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader variant="hero" />
       <main>
         <PlateHero />
         <TrustStrip />

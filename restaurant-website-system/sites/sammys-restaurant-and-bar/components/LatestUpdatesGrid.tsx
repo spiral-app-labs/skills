@@ -12,8 +12,8 @@ export function LatestUpdatesGrid() {
   return (
     <section className="max-w-plate mx-auto px-5 md:px-10 py-16 md:py-24">
       <div className="flex items-end justify-between mb-8 md:mb-10">
-        <h2 className="font-display text-section-h2 font-medium text-ink">{heading}</h2>
-        <Link href="#" className="text-button text-accent hover:text-accent-dark">
+        <h2 className="font-display text-section-h2 font-bold uppercase text-ink">{heading}</h2>
+        <Link href="#" className="text-button font-semibold text-accent hover:text-accent-dark">
           View all →
         </Link>
       </div>
@@ -37,13 +37,13 @@ export function LatestUpdatesGrid() {
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-[1000ms] ease-out"
-              />
+              className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-[1000ms] ease-out"
+            />
             </div>
             <div className="mt-4 text-eyebrow text-ink-muted">
               {post.category} · {post.date}
             </div>
-            <h3 className="mt-2 text-[20px] font-medium text-ink group-hover:text-accent transition-colors">
+            <h3 className="mt-2 text-[20px] font-semibold text-ink group-hover:text-accent transition-colors">
               {post.title}
             </h3>
           </motion.a>

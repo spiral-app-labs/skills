@@ -25,7 +25,7 @@ export function WhatsThisWeek() {
         <p className="text-eyebrow uppercase tracking-[0.16em] text-accent font-medium mb-4">
           {eyebrow}
         </p>
-        <h2 className="font-display text-section-h2 font-medium text-ink">{heading}</h2>
+        <h2 className="font-display text-section-h2 font-bold uppercase text-ink">{heading}</h2>
         <p className="mt-4 text-body text-ink-muted">{sub}</p>
       </motion.div>
 
@@ -37,12 +37,12 @@ export function WhatsThisWeek() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-card bg-canvas-alt p-6 border border-divider hover:-translate-y-1.5 hover:shadow-lg hover:border-accent/40 transition-all duration-300"
+            className="rounded-card bg-canvas-alt p-6 border border-divider hover:-translate-y-1.5 hover:shadow-[0_22px_70px_rgba(0,0,0,0.28)] hover:border-accent/50 transition-all duration-300"
           >
             <p className="text-eyebrow uppercase tracking-[0.16em] text-accent font-medium">
               {it.day}
             </p>
-            <h3 className="mt-3 font-display text-section-h3 font-medium text-ink">
+            <h3 className="mt-3 font-display text-section-h3 font-bold uppercase text-ink">
               {it.title}
             </h3>
             <p className="mt-2 text-body-sm text-ink-muted leading-snug">{it.body}</p>

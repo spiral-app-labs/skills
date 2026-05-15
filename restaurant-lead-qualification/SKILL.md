@@ -11,6 +11,12 @@ Current MC workflow note: lead qualification is now the first canonical child ta
 
 Reference: `restaurant-website-system/research/lead-fit-qualification.md`.
 
+## GTM Priority Overlay
+
+Treat Mexican / Latin restaurant leads as lower-priority for speculative outbound unless there is an unusually strong close reason: warm referral, owner request, no owned website plus unusually strong public proof, a broken primary domain, or an existing template-quality gap we explicitly want to study.
+
+Default ordering for net-new outbound should favor restaurants with clearer willingness-to-pay or conversion pain: reservation-driven bistros, Italian/trattoria, steakhouses, seafood/coastal, cafes with broken/no sites, cocktail/wine bars, and multi-service venues.
+
 ## The 7 Checks
 
 1. Visual reality: inspect real photos of exterior, interior, bar/counter, food, and staff.

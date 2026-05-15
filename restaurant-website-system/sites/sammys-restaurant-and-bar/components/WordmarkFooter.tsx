@@ -8,9 +8,9 @@ import { content } from '../content.example';
 export function WordmarkFooter() {
   const { wordmark, footer, brand } = content;
   return (
-    <footer className="bg-canvas pt-16 md:pt-24 pb-10">
+    <footer className="bg-canvas-alt border-t border-divider pt-16 md:pt-24 pb-10">
       <div className="overflow-hidden px-2 md:px-4">
-        <div className="wordmark-footer">{wordmark}</div>
+        <div className="wordmark-footer text-accent">{wordmark}</div>
       </div>
 
       <div className="max-w-plate mx-auto px-5 md:px-10 mt-10 md:mt-14 grid md:grid-cols-[1fr_auto] gap-8">
@@ -18,7 +18,7 @@ export function WordmarkFooter() {
         <div className="grid grid-cols-3 gap-8 md:gap-12">
           {footer.columns.map((col) => (
             <div key={col.heading}>
-              <h4 className="text-eyebrow text-ink mb-3">{col.heading}</h4>
+              <h4 className="text-eyebrow text-accent mb-3">{col.heading}</h4>
               <ul className="space-y-1">
                 {col.lines.map((line) => (
                   <li key={line} className="text-body-sm text-ink-muted">{line}</li>

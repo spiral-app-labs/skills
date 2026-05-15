@@ -18,7 +18,7 @@ export function FAQAccordion() {
       <div className="grid md:grid-cols-[340px_1fr] gap-10 md:gap-16">
         <div>
           <div className="text-eyebrow text-accent">{eyebrow}</div>
-          <h2 className="mt-3 font-display text-section-h2 font-medium text-ink">{heading}</h2>
+          <h2 className="mt-3 font-display text-section-h2 font-bold uppercase text-ink">{heading}</h2>
         </div>
 
         <div>
@@ -34,8 +34,8 @@ export function FAQAccordion() {
                 >
                   <span className="text-[18px] font-medium text-ink">{item.q}</span>
                   <span
-                    className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white transition-transform ${
-                      isOpen ? 'bg-accent rotate-45' : 'bg-ink'
+                    className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform ${
+                      isOpen ? 'bg-accent text-[#160D05] rotate-45' : 'bg-canvas-alt text-ink border border-divider'
                     }`}
                     aria-hidden="true"
                   >

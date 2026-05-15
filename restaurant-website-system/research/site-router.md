@@ -8,6 +8,12 @@ How a future agent picks the right template for a real restaurant brief.
 
 ---
 
+## 0. GTM priority overlay
+
+For speculative outbound, Mexican / Latin restaurants are lower-priority by default. Route them honestly when an operator explicitly asks, when a warm lead appears, or when the business pain is unusually concrete (no owned site, broken domain, missing menu, unusually strong public proof). Otherwise prioritize categories with clearer close mechanics: reservation-driven bistros, Italian/trattoria, steakhouses, seafood/coastal, cafes with broken/no sites, cocktail/wine bars, and multi-service venues.
+
+This overlay affects lead selection, not truthfulness. If a Mexican / Latin lead is already approved, still route it with the normal table below.
+
 ## 1. Brief intake — what you need to know before routing
 
 Capture these from the user / restaurant before picking a template. Missing answers = ask before routing.
@@ -124,6 +130,7 @@ For each route:
 - **And goals:** drive reservations + walk-ins + menu-browsing, signal strong brand-color identity
 - **And tone:** warm, approachable, chef-forward, accent-color-led, dark canvas with saturated accent
 - **Then use:** `bamzi-01` (hue-swap accent for other cuisines)
+- **GTM note:** pan-asian / Thai remain normal-priority. Mexican / Latin uses this route only after the GTM priority overlay passes.
 - **With modifiers:** accent-hue-swap within saturated-warm family (orange→red→yellow→green); botanical-decor asset-swap (olive/chili/lime/wheat); chef-count on /about
 - **Include sections:** dark-leaf hero, mission split, category strip, big-headline, featured menu × 2, chef testimonial on dark, blog grid, dark footer. About: stat + timeline + chef grid + values. Menu: 2×2 category grid + testimonial row + inline reservation.
 - **Avoid:** muted accent, minimalist editorial register, fine-dining ceremony, moody palette
@@ -189,6 +196,7 @@ For each route:
 ### Route 2.14 — Vibrant social / Mexican / Latin
 - **If:** Mexican / Latin / regional, color-and-energy as brand
 - **Then use:** `bamzi-01` with hue-swap (orange → red/magenta for Mexican) — no dedicated Mexican template yet.
+- **GTM note:** lower-priority for speculative outbound unless there is a strong close reason: warm lead, no owned website, broken domain, unusually strong public proof, or explicit operator approval.
 
 ### Route 2.15 — Modern minimal / Scandinavian
 - **If:** minimalist, restrained, chef-driven small plates

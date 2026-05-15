@@ -9,6 +9,7 @@ const ACTIVE_AGENCY_SKILLS = new Set([
   'agency-mission-control-sync',
   'restaurant-build-checklist',
   'restaurant-fork-improvement',
+  'restaurant-hero-personalization',
   'restaurant-lead-qualification',
   'restaurant-pitch-doc',
   'restaurant-qa-delivery',

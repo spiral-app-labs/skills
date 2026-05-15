@@ -4,7 +4,7 @@
 export function MenuPhotoCallout({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="my-2 group">
-      <div className="aspect-square overflow-hidden rounded-image bg-canvas-alt shadow-sm">
+      <div className="aspect-square overflow-hidden rounded-image bg-canvas-alt border border-divider shadow-[0_20px_70px_rgba(0,0,0,0.3)]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={src}

@@ -17,8 +17,8 @@ export function DenseMenuColumns({ section }: { section: MenuSection }) {
   });
 
   return (
-    <div id={section.id} className="max-w-plate mx-auto px-5 md:px-10 pt-8 md:pt-12 pb-8 md:pb-12">
-      <h2 className="font-display text-section-h2 font-medium text-ink mb-6 md:mb-8">
+    <div id={section.id} className="max-w-plate mx-auto px-5 md:px-10 pt-8 md:pt-12 pb-8 md:pb-12 border-t border-divider first:border-t-0">
+      <h2 className="font-display text-section-h2 font-bold uppercase text-ink mb-6 md:mb-8">
         {section.title}
       </h2>
       <div className="grid md:grid-cols-2 gap-x-10 md:gap-x-16">

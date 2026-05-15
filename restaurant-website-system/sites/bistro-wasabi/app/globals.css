@@ -20,11 +20,13 @@ html, body {
   }
 }
 
-/* Default headings to display font, weight 400, uppercase — qitchen's discipline. */
+/* Default headings get the qitchen display font + weight 400, but the uppercase
+   discipline now only fires when the explicit `text-section-*` / `text-page-title`
+   utility classes are applied. Personalized-fork components (HeroVideoBackground,
+   LocationsPanel rewrite, etc.) set their own font + casing via inline styles. */
 h1, h2, h3, h4 {
   font-family: theme('fontFamily.display');
   font-weight: 400;
-  text-transform: uppercase;
   margin: 0;
 }
 

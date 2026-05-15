@@ -10,14 +10,31 @@ import { LiveOpenStatus } from './LiveOpenStatus';
 //   - Wordmark uses content.wordmark ("Sammy's") on mobile / full brand name
 //     on md+. Single line at every breakpoint.
 //   - CTA shows phone icon + "Call" on mobile / full number on md+.
-export function SiteHeader() {
+export function SiteHeader({ variant = 'default' }: { variant?: 'default' | 'hero' }) {
+  const isHero = variant === 'hero';
+  const headerClass = isHero
+    ? 'fixed top-3 inset-x-0 z-40 px-3 md:px-6'
+    : 'sticky top-0 z-40 bg-canvas/90 backdrop-blur border-b border-divider/60';
+  const navClass = isHero
+    ? 'max-w-plate mx-auto flex items-center justify-between gap-3 px-4 md:px-6 py-3 rounded-pill border border-[#E1AD3F]/25 bg-[#080402]/55 backdrop-blur-md shadow-[0_14px_44px_rgba(0,0,0,0.22)]'
+    : 'max-w-plate mx-auto flex items-center justify-between gap-3 px-4 md:px-10 py-3 md:py-4';
+  const brandClass = isHero
+    ? 'font-display font-bold tracking-tight leading-none text-[#F7EEDF] hover:text-[#E1AD3F] transition-colors whitespace-nowrap'
+    : 'font-display font-bold tracking-tight leading-none text-ink whitespace-nowrap';
+  const navLinkClass = isHero
+    ? 'text-nav-label font-medium text-[#F7EEDF] opacity-80 hover:text-[#E1AD3F] hover:opacity-100 transition-colors'
+    : 'text-nav-label font-medium text-ink hover:text-accent transition-colors';
+  const ctaClass = isHero
+    ? 'inline-flex items-center gap-2 bg-[#D9A23A] hover:bg-[#E6B84D] text-[#160D05] text-button font-semibold px-4 md:px-5 py-2.5 rounded-button transition-colors whitespace-nowrap'
+    : 'inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-[#160D05] text-button font-semibold px-4 md:px-5 py-2.5 rounded-button transition-colors whitespace-nowrap';
+
   return (
-    <header className="sticky top-0 z-40 bg-canvas/90 backdrop-blur border-b border-divider/60">
-      <nav className="max-w-plate mx-auto flex items-center justify-between gap-3 px-4 md:px-10 py-3 md:py-4">
+    <header className={headerClass}>
+      <nav className={navClass}>
         <Link
           href="/"
           aria-label={content.brand.name}
-          className="font-display font-bold tracking-tight leading-none text-ink whitespace-nowrap"
+          className={brandClass}
         >
           <span className="md:hidden text-[22px]">{content.wordmark}</span>
           <span className="hidden md:inline text-[26px] lg:text-[28px]">
@@ -30,7 +47,7 @@ export function SiteHeader() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-nav-label font-medium text-ink hover:text-accent transition-colors"
+              className={navLinkClass}
             >
               {item.label}
             </Link>
@@ -45,7 +62,7 @@ export function SiteHeader() {
           />
           <Link
             href={content.nav.cta.href}
-            className="inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white text-button font-medium px-4 md:px-5 py-2.5 rounded-button transition-colors whitespace-nowrap"
+            className={ctaClass}
           >
             <svg
               aria-hidden="true"

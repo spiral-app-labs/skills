@@ -1,34 +1,34 @@
-// theme.ts — sammys-restaurant-and-bar (plate-01 fork, downshifted)
+// theme.ts — sammys-restaurant-and-bar (personalized tavern pass)
 //
-// Per audit.md Block 3 Principle 2.2: plate-01's default terracotta
-// accent (#B05927) reads bistro and would mis-encode a hometown bar.
-// Downshifted to a warm beer-bottle amber (#C77A2C) — same warmth,
-// less fashion. Cream canvas + warm-near-black text retained.
+// The hero moved Sammy's out of the light Plate template and into a warm
+// neighborhood-bar register: dark wood, amber beer light, cream type, and
+// condensed sign-painter headings. These tokens carry that language through
+// the rest of the fork so the hero does not feel pasted onto a cream bistro.
 
 export const theme = {
   name: 'sammys-01',
-  archetype: 'hometown-diner-bar-warm-light',
-  mode: 'light',
+  archetype: 'hometown-diner-bar-amber-tavern',
+  mode: 'dark',
 
   color: {
     // CANVAS
-    canvas:       '#FAF7F0', // warm cream — slightly more yellow than plate-01's neutral off-white, reads "diner counter"
-    canvasAlt:    '#F3EEE2', // subtle shadow surface for cards / forms
+    canvas:       '#090503', // near-black tavern room
+    canvasAlt:    '#160D08', // dark wood surface for cards / forms
     // TEXT
-    ink:          '#1E1E1C', // warm near-black — NOT pure #000
-    inkMuted:     '#5A5550', // warm mid-gray, slightly browner than plate-01
+    ink:          '#F7F0E4', // warm cream, not stark white
+    inkMuted:     '#BDAF9A', // beer-lit muted copy
     // ACCENT — beer-bottle amber, NOT terracotta
-    accent:       '#C77A2C', // amber — primary CTA
-    accentDark:   '#A0601C', // deeper amber for hover
-    accentSoft:   '#F4D7B4', // pale amber — highlight only
+    accent:       '#D9A23A', // hero gold — primary CTA / rules
+    accentDark:   '#E6B84D', // brighter amber for hover
+    accentSoft:   '#3A2510', // smoked amber surface
     // UTILITY
-    divider:      '#E5DFD2', // hairline divider — slightly warmer than plate-01
+    divider:      '#3B2A1C', // low-contrast bar-top hairline
     black:        '#000000', // pure black — sparing (icon strokes only)
   },
 
   font: {
-    // Urbanist only — single typeface discipline. Multi-weight.
-    display: 'var(--font-urbanist), ui-sans-serif, system-ui, sans-serif',
+    // Oswald for sign-painter headings; Urbanist for dense readable body.
+    display: 'var(--font-sammy-condensed), Impact, Arial Narrow, sans-serif',
     body:    'var(--font-urbanist), ui-sans-serif, system-ui, sans-serif',
   },
 
@@ -44,7 +44,7 @@ export const theme = {
     navLabel:    { size: 14,  lineHeight: 18,    tracking: 0,    weight: 500, transform: 'none' },
     button:      { size: 14,  lineHeight: 16,    tracking: 0,    weight: 500, transform: 'none' },
     eyebrow:     { size: 12,  lineHeight: 16,    tracking: 1.6,  weight: 500, transform: 'uppercase' },
-    wordmark:    { size: 240, lineHeight: 240,   tracking: -8,   weight: 700, transform: 'none' }, // massive footer wordmark
+    wordmark:    { size: 240, lineHeight: 240,   tracking: 0,    weight: 700, transform: 'uppercase' },
   },
 
   layout: {

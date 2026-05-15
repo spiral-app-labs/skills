@@ -103,11 +103,12 @@ export const content = {
   //   - sub = supporting line with owner-voice
   hero: {
     wordmark: "Sammy's Restaurant & Bar",
-    eyebrow: 'HUNTLEY · 8 AM – 2 AM · EVERY DAY · 4.5★ ON 500+ GOOGLE REVIEWS',
-    // Tightened from 38 → 24 words; one concrete proof noun + one sensory noun.
-    sub: "Hometown bar on Route 47. Breakfast from 8 AM, fish fry on Fridays, karaoke on Tuesdays. Sammy's still in the kitchen — and yes, the pretzel is HUGE.",
-    cta: { label: 'Call to order — (847) 669-9025', href: 'tel:+18476699025' },
+    eyebrow: 'HUNTLEY · 8 AM-2 AM · EVERY DAY',
+    sub: 'Breakfast, Friday fish fry, karaoke nights, cold beer, and a kitchen open until last call.',
+    cta: { label: 'Call to order', href: 'tel:+18476699025' },
     secondaryCta: { label: 'See the menu', href: '#menu' },
+    videoSrc: '/hero-media/sammys-hero-loop.mp4',
+    posterSrc: '/images/raw/plate.png',
     // Tier-3 placeholder Unsplash; swap with real Sammy's photos before launch.
     // PRIMARY hero subject is the HUGE pretzel + beer; FALLBACK is the fish fry.
     photos: [
@@ -657,12 +658,12 @@ export const content = {
         "But folks have been telling us for years it's worth pulling in. Sammy runs the kitchen. Mike and Diane keep the room going. Mickey and Lola work the bar. Jen, Kate, and Jessica run the floor. We're a hometown bar that serves breakfast, lunch, dinner, and last call — sometimes all in the same shift.",
       photos: [
         {
-          src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Warm-lit interior of a neighborhood bar at golden hour',
+          src: '/images/raw/empty-table.png',
+          alt: 'Dark wood bar top with warm amber light',
         },
         {
-          src: 'https://images.unsplash.com/photo-1574936145840-28808d77a0b6?auto=format&fit=crop&w=1200&q=80',
-          alt: 'Bar back with bottles and glassware',
+          src: '/images/raw/plate.png',
+          alt: "Pretzel, beer, and fish fry on Sammy's bar",
         },
       ],
     },

@@ -90,7 +90,7 @@ export function ReviewCarousel() {
         <p className="text-eyebrow uppercase tracking-[0.16em] text-accent font-medium mb-4">
           {eyebrow}
         </p>
-        <h2 className="font-display text-section-h2 font-medium text-ink">{heading}</h2>
+        <h2 className="font-display text-section-h2 font-bold uppercase text-ink">{heading}</h2>
         <p className="mt-4 text-body text-ink-muted">{sub}</p>
       </div>
 

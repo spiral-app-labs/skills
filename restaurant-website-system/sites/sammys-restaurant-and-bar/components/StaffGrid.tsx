@@ -8,7 +8,7 @@ export function StaffGrid() {
   const { heading, people } = content.about.staff;
   return (
     <section className="max-w-plate mx-auto px-5 md:px-10 py-16 md:py-20">
-      <h2 className="font-display text-section-h2 font-medium text-ink mb-10 md:mb-14">
+      <h2 className="font-display text-section-h2 font-bold uppercase text-ink mb-10 md:mb-14">
         {heading}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
@@ -21,7 +21,7 @@ export function StaffGrid() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="aspect-[4/5] overflow-hidden rounded-image bg-canvas-alt shadow-sm group-hover:shadow-md transition-shadow">
+            <div className="aspect-[4/5] overflow-hidden rounded-image bg-canvas-alt border border-divider shadow-[0_20px_70px_rgba(0,0,0,0.28)] group-hover:shadow-[0_24px_80px_rgba(0,0,0,0.34)] transition-shadow">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={p.photo}

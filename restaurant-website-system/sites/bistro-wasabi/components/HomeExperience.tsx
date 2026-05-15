@@ -13,7 +13,7 @@ const reveal = {
 
 export function HomeExperience() {
   return (
-    <main className="px-6 py-9 pb-28 md:px-10 md:py-14 md:pb-16 space-y-10 md:space-y-12">
+    <main className="px-6 py-16 pb-28 md:px-12 md:py-24 md:pb-24 space-y-20 md:space-y-28">
       <motion.section
         className="flex flex-col gap-7 md:min-h-[calc(100vh-18rem)] md:justify-end"
         initial={{ opacity: 0, y: theme.motion.revealLift }}
@@ -46,12 +46,101 @@ export function HomeExperience() {
       <RevealSection id="plan">
         <SectionHeader
           eyebrow="Plan your visit"
-          title="Menu and locations"
-          body="Browse the menu, choose a location, or reserve a table before you head over."
+          title="Preview the menu."
+          body="Browse maki, sashimi, starters, steaks, seafood, martinis, sake, and wine before you head over."
         />
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {content.homeEntryCards.map((item, index) => (
             <HomeEntryCard key={item.label} item={item} index={index} />
+          ))}
+        </div>
+      </RevealSection>
+
+      <RevealSection id="locations">
+        <SectionHeader
+          eyebrow="Two locations · Algonquin Road"
+          title="Where to find us."
+          body="Bistro Wasabi runs two sister dining rooms on Algonquin Road — each with its own kitchen, reservation book, and carry-out flow. Pick the one closest to you."
+        />
+        <div className="grid grid-cols-1 gap-0 md:grid-cols-2 md:gap-12 mt-12 md:mt-16">
+          {content.locations.map((location, index) => (
+            <motion.a
+              key={location.name}
+              href={`/locations/${location.slug}`}
+              className="group block border-t py-10 md:py-0 md:border-t-0 transition-colors"
+              style={{ borderColor: 'rgba(239,227,204,0.14)' }}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ ...reveal, delay: index * 0.08 }}
+            >
+              <div className="grid grid-cols-[64px_1fr] gap-5 items-start">
+                <p
+                  className="uppercase"
+                  style={{
+                    fontFamily: 'var(--font-cormorant), Georgia, serif',
+                    fontStyle: 'italic',
+                    fontSize: 'clamp(40px, 5vw, 64px)',
+                    lineHeight: 0.95,
+                    color: '#8C6A3A',
+                    fontWeight: 500,
+                  }}
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </p>
+                <div className="space-y-3 pt-2">
+                  <p
+                    className="uppercase"
+                    style={{
+                      fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+                      fontSize: '10px',
+                      letterSpacing: '0.32em',
+                      color: '#C9B894',
+                    }}
+                  >
+                    {location.role}
+                  </p>
+                  <h3
+                    className="transition-colors group-hover:text-[#8C6A3A]"
+                    style={{
+                      fontFamily: 'var(--font-cormorant), Georgia, serif',
+                      fontStyle: 'italic',
+                      fontSize: 'clamp(32px, 3.6vw, 48px)',
+                      lineHeight: 1.05,
+                      letterSpacing: '-0.005em',
+                      fontWeight: 500,
+                      color: '#EFE3CC',
+                    }}
+                  >
+                    {location.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-cormorant), Georgia, serif',
+                      fontStyle: 'italic',
+                      fontSize: '17px',
+                      lineHeight: 1.5,
+                      color: '#EFE3CC',
+                      opacity: 0.82,
+                    }}
+                  >
+                    {location.address}
+                  </p>
+                  <p
+                    className="pt-3 inline-flex items-center gap-2 uppercase transition-colors group-hover:text-[#8C6A3A]"
+                    style={{
+                      fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+                      fontSize: '11px',
+                      letterSpacing: '0.18em',
+                      color: '#EFE3CC',
+                    }}
+                  >
+                    <span>Visit this location</span>
+                    <span aria-hidden>→</span>
+                  </p>
+                </div>
+              </div>
+            </motion.a>
           ))}
         </div>
       </RevealSection>
@@ -62,75 +151,54 @@ export function HomeExperience() {
           title="Sushi, starters, steaks, and drinks"
           body="Preview a few menu favorites, then browse the full menu when you are ready to order."
         />
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-10">
           {content.menu.sections.slice(0, 4).map((section, index) => (
             <motion.a
               key={section.title}
               href="/menu"
-              className="group relative aspect-[4/5] overflow-hidden rounded-card border border-border/50 bg-surface"
+              className="group block space-y-4"
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ y: -3 }}
               transition={{ ...reveal, delay: index * 0.06 }}
             >
-              <Image
-                src={section.items[0].image}
-                alt={section.items[0].name}
-                fill
-                sizes="(max-width: 768px) 50vw, 20vw"
-                className="object-cover opacity-85 transition duration-700 group-hover:scale-105 group-hover:opacity-100"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-canvas via-canvas/20 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-4">
-                <p className="text-ui-label text-text-muted">0{index + 1}</p>
-                <h3 className="text-item-name text-text">{section.title}</h3>
+              <div className="relative aspect-[4/5] overflow-hidden bg-canvas">
+                <Image
+                  src={section.items[0].image}
+                  alt={section.items[0].name}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
+                  className="object-cover transition duration-700 group-hover:scale-[1.03]"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <p
+                  className="uppercase"
+                  style={{
+                    fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+                    fontSize: '10px',
+                    letterSpacing: '0.32em',
+                    color: '#C9B894',
+                  }}
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </p>
+                <h3
+                  className="transition-colors group-hover:text-[#8C6A3A]"
+                  style={{
+                    fontFamily: 'var(--font-cormorant), Georgia, serif',
+                    fontStyle: 'italic',
+                    fontSize: 'clamp(18px, 2vw, 24px)',
+                    lineHeight: 1.15,
+                    letterSpacing: '-0.005em',
+                    fontWeight: 500,
+                    color: '#EFE3CC',
+                  }}
+                >
+                  {section.title}
+                </h3>
               </div>
             </motion.a>
-          ))}
-        </div>
-      </RevealSection>
-
-      <RevealSection id="locations">
-        <SectionHeader
-          eyebrow="Visit"
-          title="Lake in the Hills + Hoffman Estates"
-          body="Reserve or order from Lake in the Hills, or call either dining room before you head over."
-        />
-        <div className="grid grid-cols-1 gap-3">
-          {content.locations.map((location, index) => (
-            <motion.article
-              key={location.name}
-              className="group rounded-card border border-border/60 bg-surface/45 p-5 space-y-5 transition-colors hover:border-text/35 hover:bg-surface/70"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ y: -2 }}
-              transition={{
-                ...reveal,
-                delay: index * 0.08,
-              }}
-            >
-              <div className="grid grid-cols-[38px_1fr] gap-4">
-                <p className="text-ui-label text-text-muted">{String(index + 1).padStart(2, '0')}</p>
-                <div className="space-y-2">
-                  <p className="text-ui-label text-text-muted">{location.role}</p>
-                  <h3 className="text-section-h2 text-text">{location.name}</h3>
-                  <p className="text-body text-text-muted leading-relaxed">{location.address}</p>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 min-[520px]:grid-cols-2 gap-2">
-                {location.actions.map((action) => (
-                  <ActionLink
-                    key={`${location.name}-${action.label}`}
-                    href={action.href}
-                    label={action.label}
-                    primary={'primary' in action ? action.primary : false}
-                    compact
-                  />
-                ))}
-              </div>
-            </motion.article>
           ))}
         </div>
       </RevealSection>
@@ -144,42 +212,74 @@ export function HomeExperience() {
         <ReviewCarousel />
       </RevealSection>
 
-      <RevealSection>
-        <div className="overflow-hidden rounded-card border border-border/60 bg-surface/40">
-          <div className="relative aspect-[4/3] bg-canvas">
-            <Image
-              src={content.menu.sections[0].items[0].image}
-              alt="Bistro Wasabi sushi and maki"
-              fill
-              sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-canvas/70 to-transparent" />
-          </div>
-          <div className="space-y-5 p-5">
-            <SectionHeader
-              eyebrow={content.secretSauce.eyebrow}
-              title={content.secretSauce.title}
-              body={content.secretSauce.body}
-            />
-            <div className="space-y-4">
-              {content.secretSauce.points.map((point, index) => (
-                <motion.div
-                  key={point.label}
-                  className="grid grid-cols-[34px_1fr] gap-3 border-t border-border/60 pt-4"
-                  initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.4 }}
-                  transition={{ ...reveal, delay: index * 0.05 }}
+      <RevealSection className="space-y-10">
+        <div className="relative aspect-[4/3] overflow-hidden bg-canvas">
+          <Image
+            src={content.menu.sections[0].items[0].image}
+            alt="Bistro Wasabi sushi and maki"
+            fill
+            sizes="(max-width: 768px) 100vw, 40vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="space-y-10">
+          <SectionHeader
+            eyebrow={content.secretSauce.eyebrow}
+            title={content.secretSauce.title}
+            body={content.secretSauce.body}
+          />
+          <div className="space-y-0">
+            {content.secretSauce.points.map((point, index) => (
+              <motion.div
+                key={point.label}
+                className="grid grid-cols-[44px_1fr] gap-5 border-t py-6"
+                style={{ borderColor: 'rgba(239,227,204,0.14)' }}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ ...reveal, delay: index * 0.05 }}
+              >
+                <p
+                  className="uppercase"
+                  style={{
+                    fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+                    fontSize: '11px',
+                    letterSpacing: '0.18em',
+                    color: '#C9B894',
+                    paddingTop: '4px',
+                  }}
                 >
-                  <p className="text-ui-label text-text-muted">{String(index + 1).padStart(2, '0')}</p>
-                  <div className="space-y-1.5">
-                    <h3 className="text-item-name text-text">{point.label}</h3>
-                    <p className="text-body text-text-muted leading-relaxed">{point.text}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                  {String(index + 1).padStart(2, '0')}
+                </p>
+                <div className="space-y-2">
+                  <h3
+                    style={{
+                      fontFamily: 'var(--font-cormorant), Georgia, serif',
+                      fontStyle: 'italic',
+                      fontSize: 'clamp(22px, 2.2vw, 28px)',
+                      lineHeight: 1.1,
+                      letterSpacing: '-0.005em',
+                      fontWeight: 500,
+                      color: '#EFE3CC',
+                    }}
+                  >
+                    {point.label}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: 'var(--font-cormorant), Georgia, serif',
+                      fontStyle: 'italic',
+                      fontSize: '16px',
+                      lineHeight: 1.5,
+                      color: '#EFE3CC',
+                      opacity: 0.78,
+                    }}
+                  >
+                    {point.text}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </RevealSection>
@@ -306,32 +406,71 @@ function HomeEntryCard({
   return (
     <motion.a
       href={item.href}
-      className="group overflow-hidden rounded-card border border-border/60 bg-surface/40 transition-colors hover:border-text/35"
+      className="group block space-y-5 transition-opacity hover:opacity-95"
       initial={{ opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
-      whileHover={{ y: -2 }}
       transition={{ ...reveal, delay: index * 0.06 }}
     >
-      <div className="relative aspect-[4/3] bg-canvas">
+      <div className="relative aspect-[4/3] overflow-hidden bg-canvas">
         <Image
           src={item.image}
           alt={item.alt}
           fill
           priority={index < 2}
           sizes="(max-width: 768px) 100vw, 20vw"
-          className="object-cover opacity-90 transition duration-700 group-hover:scale-105 group-hover:opacity-100"
+          className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-canvas/75 via-canvas/15 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 p-4">
-          <p className="text-ui-label text-text-muted">{item.label}</p>
-          <h3 className="mt-1 text-item-name text-text">{item.title}</h3>
-        </div>
       </div>
-      <div className="space-y-4 p-4">
-        <p className="text-body text-text-muted leading-relaxed">{item.body}</p>
-        <span className="inline-flex min-h-11 items-center justify-center rounded-pill border border-border/70 bg-canvas px-4 py-3 text-center text-ui-label text-text transition-colors group-hover:bg-surface-hover">
-          {item.action}
+      <div className="space-y-3">
+        <p
+          className="uppercase"
+          style={{
+            fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+            fontSize: '10px',
+            letterSpacing: '0.32em',
+            color: '#C9B894',
+          }}
+        >
+          {item.label}
+        </p>
+        <h3
+          style={{
+            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontStyle: 'italic',
+            fontSize: 'clamp(24px, 2.4vw, 32px)',
+            lineHeight: 1.1,
+            letterSpacing: '-0.005em',
+            fontWeight: 500,
+            color: '#EFE3CC',
+          }}
+        >
+          {item.title}
+        </h3>
+        <p
+          style={{
+            fontFamily: 'var(--font-cormorant), Georgia, serif',
+            fontStyle: 'italic',
+            fontSize: '16px',
+            lineHeight: 1.5,
+            color: '#EFE3CC',
+            opacity: 0.78,
+          }}
+        >
+          {item.body}
+        </p>
+        <span
+          className="inline-flex items-center gap-2 uppercase transition-colors group-hover:text-[#8C6A3A]"
+          style={{
+            fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+            fontSize: '11px',
+            letterSpacing: '0.18em',
+            color: '#EFE3CC',
+            paddingTop: '4px',
+          }}
+        >
+          <span>{item.action}</span>
+          <span aria-hidden>→</span>
         </span>
       </div>
     </motion.a>
@@ -420,26 +559,32 @@ function ReviewCarousel() {
 
   return (
     <div
-      className="space-y-4"
+      className="space-y-8"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
       <div className="flex items-center justify-between gap-3">
-        <div className="inline-flex min-h-11 items-center gap-3 rounded-pill border border-text/20 bg-surface px-4">
-          <StarRow />
-          <span className="text-ui-label text-text-muted">Guest review</span>
-        </div>
-        <p className="shrink-0 text-ui-label text-text-muted" aria-live="polite">
-          {String(active + 1).padStart(2, '0')} / {String(reviews.length).padStart(2, '0')}
+        <StarRow />
+        <p
+          className="shrink-0 uppercase"
+          style={{
+            fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+            fontSize: '11px',
+            letterSpacing: '0.32em',
+            color: '#C9B894',
+          }}
+          aria-live="polite"
+        >
+          {String(active + 1).padStart(2, '0')} · {String(reviews.length).padStart(2, '0')}
         </p>
       </div>
 
       <div className="-mx-6 overflow-hidden md:mx-0">
         <div
           ref={trackRef}
-          className="flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-6 pb-2 md:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex snap-x snap-mandatory gap-10 overflow-x-auto scroll-smooth px-6 pb-2 md:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           aria-label="Guest review carousel"
           onScroll={handleScroll}
           onPointerDown={() => setPaused(true)}
@@ -450,47 +595,72 @@ function ReviewCarousel() {
             <figure
               key={`${review.tag}-${review.quote}`}
               data-review-index={index}
-              className={`relative grid min-h-[172px] w-[88vw] max-w-[372px] shrink-0 snap-center grid-cols-[1fr_76px] overflow-hidden rounded-card border bg-[linear-gradient(90deg,rgba(239,231,210,0.055),rgba(239,231,210,0.015))] transition-all sm:w-[460px] sm:max-w-[460px] sm:grid-cols-[1fr_92px] md:min-h-[180px] md:w-[min(500px,92%)] ${
-                active === index
-                  ? 'border-text/42 bg-surface/85 shadow-[0_16px_34px_rgba(0,0,0,0.16)]'
-                  : 'border-text/18 bg-surface/55'
-              }`}
+              className="relative w-[88vw] max-w-[520px] shrink-0 snap-center space-y-4 sm:w-[520px] sm:max-w-[520px] md:w-[min(560px,92%)]"
               aria-label={`Guest review ${index + 1}, ${review.tag}`}
             >
-              <div className="absolute inset-x-0 top-0 h-px bg-text/25" aria-hidden="true" />
-              <span className="pointer-events-none absolute right-[88px] top-5 hidden text-[54px] leading-none text-text/[0.04] sm:block" aria-hidden="true">
-                "
+              <span
+                aria-hidden="true"
+                className="block"
+                style={{
+                  fontFamily: 'var(--font-cormorant), Georgia, serif',
+                  fontStyle: 'italic',
+                  fontSize: 'clamp(72px, 9vw, 120px)',
+                  lineHeight: 0.7,
+                  color: active === index ? '#8C6A3A' : 'rgba(239,227,204,0.18)',
+                  transition: 'color 600ms ease',
+                  marginBottom: '-12px',
+                }}
+              >
+                “
               </span>
-              <div className="relative z-10 flex flex-col justify-center gap-3 p-4 pr-3 sm:p-5 sm:pr-5">
-                <p className="text-ui-label text-text-muted">{review.tag}</p>
-                <blockquote className="text-[16.5px] italic leading-[1.32] text-text sm:text-[19px] sm:leading-[1.28] md:text-[20px]">
-                  "{review.quote}"
-                </blockquote>
-              </div>
-              <figcaption className="flex flex-col items-end justify-between gap-3 border-l border-border/60 bg-canvas/22 p-4 pl-3 sm:p-5 sm:pl-4">
-                <p className="text-ui-label text-text-muted">{String(index + 1).padStart(2, '0')}</p>
-                <div className="flex justify-end">
-                  <StarRow compact />
-                </div>
+              <blockquote
+                style={{
+                  fontFamily: 'var(--font-cormorant), Georgia, serif',
+                  fontStyle: 'italic',
+                  fontSize: 'clamp(20px, 2.2vw, 28px)',
+                  lineHeight: 1.35,
+                  color: '#EFE3CC',
+                  fontWeight: 400,
+                  opacity: active === index ? 1 : 0.6,
+                  transition: 'opacity 600ms ease',
+                }}
+              >
+                {review.quote}
+              </blockquote>
+              <figcaption
+                className="uppercase"
+                style={{
+                  fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+                  fontSize: '10px',
+                  letterSpacing: '0.32em',
+                  color: '#C9B894',
+                }}
+              >
+                {review.tag}
               </figcaption>
             </figure>
           ))}
         </div>
       </div>
 
-      <div className="grid grid-cols-[64px_1fr_64px] items-center gap-3">
-        <motion.button
+      <div className="flex items-center justify-between gap-6 pt-2">
+        <button
           type="button"
           aria-label="Show previous review"
           onClick={() => goToReview(active - 1)}
-          className="inline-flex min-h-11 items-center justify-center rounded-pill border border-border/70 bg-surface px-3 text-ui-label text-text transition-colors hover:bg-surface-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-text/45"
-          whileTap={{ scale: 0.98 }}
-          transition={{ duration: theme.motion.transitionDuration }}
+          className="group inline-flex items-center gap-2 uppercase transition-colors hover:text-[#8C6A3A]"
+          style={{
+            fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+            fontSize: '11px',
+            letterSpacing: '0.18em',
+            color: '#EFE3CC',
+          }}
         >
-          Prev
-        </motion.button>
+          <span aria-hidden>←</span>
+          <span>Prev</span>
+        </button>
 
-        <div className="flex items-center justify-center gap-2 overflow-x-auto px-1 py-2" aria-label="Choose review">
+        <div className="flex items-center justify-center gap-2" aria-label="Choose review">
           {reviews.map((item, index) => (
             <button
               key={`${item.tag}-${index}`}
@@ -498,23 +668,30 @@ function ReviewCarousel() {
               aria-label={`Show guest review ${index + 1}`}
               aria-pressed={active === index}
               onClick={() => goToReview(index)}
-              className={`h-2.5 rounded-pill transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-text/45 ${
-                active === index ? 'w-8 bg-text' : 'w-2.5 bg-border hover:bg-text-muted'
-              }`}
+              className="h-px transition-all duration-500 focus:outline-none focus-visible:outline-1"
+              style={{
+                width: active === index ? '32px' : '12px',
+                backgroundColor: active === index ? '#8C6A3A' : 'rgba(239,227,204,0.3)',
+              }}
             />
           ))}
         </div>
 
-        <motion.button
+        <button
           type="button"
           aria-label="Show next review"
           onClick={() => goToReview(active + 1)}
-          className="inline-flex min-h-11 items-center justify-center rounded-pill border border-border/70 bg-surface px-3 text-ui-label text-text transition-colors hover:bg-surface-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-text/45"
-          whileTap={{ scale: 0.98 }}
-          transition={{ duration: theme.motion.transitionDuration }}
+          className="group inline-flex items-center gap-2 uppercase transition-colors hover:text-[#8C6A3A]"
+          style={{
+            fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+            fontSize: '11px',
+            letterSpacing: '0.18em',
+            color: '#EFE3CC',
+          }}
         >
-          Next
-        </motion.button>
+          <span>Next</span>
+          <span aria-hidden>→</span>
+        </button>
       </div>
     </div>
   );
@@ -550,9 +727,43 @@ function SectionHeader({
 }) {
   return (
     <header className="space-y-3">
-      <p className="text-ui-label text-text-muted">{eyebrow}</p>
-      <h2 className="text-section-h2 text-text">{title}</h2>
-      <p className="text-body text-text-muted leading-relaxed">{body}</p>
+      <p
+        className="uppercase"
+        style={{
+          fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+          fontSize: '11px',
+          letterSpacing: '0.32em',
+          color: '#C9B894',
+        }}
+      >
+        {eyebrow}
+      </p>
+      <h2
+        style={{
+          fontFamily: 'var(--font-cormorant), Georgia, serif',
+          fontStyle: 'italic',
+          fontSize: 'clamp(36px, 5vw, 60px)',
+          lineHeight: 1.05,
+          letterSpacing: '-0.005em',
+          fontWeight: 500,
+          color: '#EFE3CC',
+        }}
+      >
+        {title}
+      </h2>
+      <p
+        className="leading-relaxed"
+        style={{
+          fontFamily: 'var(--font-cormorant), Georgia, serif',
+          fontStyle: 'italic',
+          fontSize: '17px',
+          color: '#EFE3CC',
+          opacity: 0.82,
+          maxWidth: '52ch',
+        }}
+      >
+        {body}
+      </p>
     </header>
   );
 }
@@ -586,6 +797,42 @@ function ActionLink({
       transition={{ duration: theme.motion.transitionDuration }}
     >
       {label}
+    </motion.a>
+  );
+}
+
+function LocationLink({ href, label }: { href: string; label: string }) {
+  const external = href.startsWith('http');
+  return (
+    <motion.a
+      href={href}
+      target={external ? '_blank' : undefined}
+      rel={external ? 'noopener noreferrer' : undefined}
+      className="group inline-flex items-center justify-between w-full py-3.5 transition-colors"
+      whileHover={{ x: 2 }}
+      transition={{ duration: theme.motion.transitionDuration }}
+    >
+      <span
+        className="uppercase transition-colors group-hover:text-[#8C6A3A]"
+        style={{
+          fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+          fontSize: '11px',
+          letterSpacing: '0.18em',
+          color: '#EFE3CC',
+        }}
+      >
+        {label}
+      </span>
+      <span
+        className="transition-colors group-hover:text-[#8C6A3A]"
+        style={{
+          fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif',
+          fontSize: '15px',
+          color: '#C9B894',
+        }}
+      >
+        →
+      </span>
     </motion.a>
   );
 }

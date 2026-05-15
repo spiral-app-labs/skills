@@ -15,7 +15,7 @@ export default function ContactPage() {
         <section className="max-w-plate mx-auto px-5 md:px-10 pt-16 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-plate-narrow mx-auto text-center">
             <div className="text-eyebrow text-accent">{eyebrow}</div>
-            <h1 className="mt-3 font-display text-hero-h1 font-medium text-ink">{heading}</h1>
+            <h1 className="mt-3 font-display text-hero-h1 font-bold uppercase text-ink">{heading}</h1>
             <p className="mt-5 text-body text-ink-muted max-w-[52ch] mx-auto">{subcopy}</p>
           </div>
 
@@ -35,9 +35,9 @@ export default function ContactPage() {
           <div className="mt-12 md:mt-16 grid md:grid-cols-[1fr_360px] gap-10 md:gap-16 max-w-plate-narrow mx-auto">
             <ContactForm />
 
-            <aside className="space-y-8">
+            <aside className="space-y-8 rounded-card border border-divider bg-canvas-alt p-6">
               <div>
-                <h3 className="text-eyebrow text-ink mb-2">{info.heading}</h3>
+                <h3 className="text-eyebrow text-accent mb-2">{info.heading}</h3>
                 <ul className="space-y-1">
                   {info.address.map((line) => (
                     <li key={line} className="text-body text-ink-muted">{line}</li>
@@ -45,12 +45,12 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-eyebrow text-ink mb-2">Phone · Email</h3>
+                <h3 className="text-eyebrow text-accent mb-2">Phone · Email</h3>
                 <div className="text-body text-ink-muted">{info.phone}</div>
                 <div className="text-body text-ink-muted">{info.email}</div>
               </div>
               <div>
-                <h3 className="text-eyebrow text-ink mb-2">Hours</h3>
+                <h3 className="text-eyebrow text-accent mb-2">Hours</h3>
                 <ul className="space-y-1">
                   {info.hours.map((line) => (
                     <li key={line} className="text-body text-ink-muted">{line}</li>

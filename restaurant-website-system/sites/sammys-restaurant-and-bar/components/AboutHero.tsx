@@ -14,7 +14,7 @@ export function AboutHero() {
         transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing }}
         className="max-w-plate-narrow"
       >
-        <h1 className="font-display text-hero-h1 font-medium text-ink whitespace-pre-line">
+        <h1 className="font-display text-hero-h1 font-bold uppercase text-ink whitespace-pre-line">
           {headline}
         </h1>
         <p className="mt-6 max-w-[58ch] text-body text-ink-muted">{subcopy}</p>
@@ -24,7 +24,7 @@ export function AboutHero() {
         {photos.map((p, i) => (
           <motion.div
             key={i}
-            className="group aspect-[5/4] overflow-hidden rounded-image bg-canvas-alt shadow-sm"
+            className="group aspect-[5/4] overflow-hidden rounded-image bg-canvas-alt border border-divider shadow-[0_20px_70px_rgba(0,0,0,0.28)]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}

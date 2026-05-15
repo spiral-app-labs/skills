@@ -13,13 +13,13 @@ export function ContactCtaClosing() {
   return (
     <section id="book" className="max-w-plate mx-auto px-5 md:px-10 py-20 md:py-28">
       <motion.div
-        className="grid md:grid-cols-2 gap-10 md:gap-16 items-center"
+        className="grid md:grid-cols-2 gap-10 md:gap-16 items-center rounded-image border border-divider bg-canvas-alt p-5 md:p-8 shadow-[0_30px_90px_rgba(0,0,0,0.24)]"
         initial={{ opacity: 0, y: theme.motion.revealLift }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing }}
       >
-        <div className="group aspect-[4/5] overflow-hidden rounded-image bg-canvas-alt shadow-sm">
+        <div className="group aspect-[4/5] overflow-hidden rounded-image bg-canvas shadow-[0_20px_70px_rgba(0,0,0,0.38)]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={photo.src}
@@ -29,20 +29,20 @@ export function ContactCtaClosing() {
         </div>
 
         <div>
-          <h2 className="font-display text-section-h2 font-medium text-ink whitespace-pre-line">
+          <h2 className="font-display text-section-h2 font-bold uppercase text-ink whitespace-pre-line">
             {heading}
           </h2>
           <p className="mt-4 max-w-[46ch] text-body text-ink-muted">{subcopy}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href={cta.href}
-              className="bg-accent hover:bg-accent-dark text-white text-button font-medium px-6 py-3 rounded-button transition-colors"
+              className="bg-accent hover:bg-accent-dark text-[#160D05] text-button font-semibold px-6 py-3 rounded-button transition-colors"
             >
               {cta.label}
             </Link>
             <Link
               href={secondaryCta.href}
-              className="text-button font-medium text-ink border border-ink/80 hover:border-accent hover:text-accent px-6 py-3 rounded-button transition-colors"
+              className="text-button font-semibold text-ink border border-ink/80 hover:border-accent hover:text-accent px-6 py-3 rounded-button transition-colors"
             >
               {secondaryCta.label}
             </Link>

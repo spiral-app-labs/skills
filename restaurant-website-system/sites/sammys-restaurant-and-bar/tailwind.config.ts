@@ -16,8 +16,9 @@ const config: Config = {
         'divider':     t.color.divider,
       },
       fontFamily: {
-        display: ['var(--font-urbanist)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['var(--font-sammy-condensed)', 'Impact', 'Arial Narrow', 'sans-serif'],
         body:    ['var(--font-urbanist)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        condensed: ['var(--font-sammy-condensed)', 'Impact', 'Arial Narrow', 'sans-serif'],
       },
       fontSize: {
         'hero-h1':    [`clamp(48px, 7.5vw, ${t.type.heroH1.size}px)`,      { lineHeight: '1.0' }],

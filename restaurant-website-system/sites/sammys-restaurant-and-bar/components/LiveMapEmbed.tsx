@@ -56,23 +56,24 @@ export function LiveMapEmbed({
 
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-lg ${className}`}
+      className={`relative w-full overflow-hidden rounded-image border border-divider bg-canvas-alt shadow-[0_20px_70px_rgba(0,0,0,0.28)] ${className}`}
       style={{ aspectRatio, ...style }}
     >
       <iframe
         src={src}
-        className="absolute inset-0 w-full h-full border-0"
+        className="absolute inset-0 w-full h-full border-0 opacity-80 saturate-[0.65] contrast-[1.08] brightness-[0.72] invert-[0.9] hue-rotate-180"
         loading="lazy"
         title={mapLabel || `Map of ${address}`}
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
       />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(9,5,3,0.18),rgba(9,5,3,0.04)_45%,rgba(9,5,3,0.32))]" />
       {!hideCta && (
         <a
           href={directionsHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bottom-4 right-4 bg-white/95 hover:bg-white px-4 py-2 rounded-full text-sm font-medium text-black shadow-md transition-shadow hover:shadow-lg"
+          className="absolute bottom-4 right-4 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-canvas shadow-[0_10px_30px_rgba(0,0,0,0.35)] transition hover:bg-accent-dark"
         >
           {ctaLabel}
         </a>

@@ -7,7 +7,7 @@ import { DenseMenuColumns } from './DenseMenuColumns';
 // route. Menu is the product. See audit §11 (promote-now structural).
 export function InlineMenuHomepage() {
   return (
-    <section id="menu" aria-labelledby="menu-heading" className="bg-canvas">
+    <section id="menu" aria-labelledby="menu-heading" className="scroll-mt-24 bg-canvas">
       <span id="menu-heading" className="sr-only">Menu</span>
       {content.menu.map((section) => (
         <DenseMenuColumns key={section.id} section={section} />

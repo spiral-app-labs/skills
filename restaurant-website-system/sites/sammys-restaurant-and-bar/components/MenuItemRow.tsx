@@ -13,10 +13,10 @@ export function MenuItemRow({
   return (
     <div className="menu-row">
       <div>
-        <h3 className="text-[18px] font-medium text-ink leading-snug">{name}</h3>
+        <h3 className="text-[18px] font-semibold text-ink leading-snug">{name}</h3>
         <p className="mt-1 text-body-sm text-ink-muted">{description}</p>
       </div>
-      <div className="text-body font-medium text-ink whitespace-nowrap">{price}</div>
+      <div className="text-body font-semibold text-accent whitespace-nowrap">{price}</div>
     </div>
   );
 }

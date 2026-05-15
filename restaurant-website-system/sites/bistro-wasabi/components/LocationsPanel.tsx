@@ -7,34 +7,68 @@ import { LiveMapEmbed } from './LiveMapEmbed';
 import { LiveOpenStatus } from './LiveOpenStatus';
 import type { HoursConfig } from '../lib/hours';
 
+const FONT_DISPLAY = 'var(--font-cormorant), Georgia, serif';
+const FONT_BODY = 'var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif';
+const INK = '#EFE3CC';
+const INK_MUTED = '#C9B894';
+const BRASS = '#8C6A3A';
+
 export function LocationsPanel() {
   return (
-    <main className="px-6 md:px-10 py-12 md:py-16 pb-28 md:pb-16 space-y-12">
+    <main className="px-6 md:px-10 py-16 md:py-24 pb-28 md:pb-24 space-y-16 md:space-y-20">
       <motion.header
-        className="space-y-4"
-        initial={{ opacity: 0, y: 18 }}
+        className="space-y-3 max-w-xl"
+        initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: theme.motion.revealDuration, ease: theme.motion.easing }}
       >
-        <div className="flex items-center justify-center gap-4">
-          <span className="block w-8 h-px bg-text-muted/40" />
-          <h2 className="text-section-h2 text-text">Choose a location</h2>
-          <span className="block w-8 h-px bg-text-muted/40" />
-        </div>
-        <p className="text-body text-text-muted leading-relaxed text-center">
-          Reserve or order carry-out from Lake in the Hills, or call either
-          dining room before you head over.
+        <p
+          className="uppercase"
+          style={{
+            fontFamily: FONT_BODY,
+            fontSize: '11px',
+            letterSpacing: '0.32em',
+            color: INK_MUTED,
+          }}
+        >
+          Two locations · Algonquin Road
+        </p>
+        <h2
+          style={{
+            fontFamily: FONT_DISPLAY,
+            fontStyle: 'italic',
+            fontSize: 'clamp(36px, 5vw, 56px)',
+            lineHeight: 1.05,
+            letterSpacing: '-0.005em',
+            fontWeight: 500,
+            color: INK,
+          }}
+        >
+          Choose where to dine.
+        </h2>
+        <p
+          style={{
+            fontFamily: FONT_DISPLAY,
+            fontStyle: 'italic',
+            fontSize: 'clamp(16px, 1.4vw, 19px)',
+            lineHeight: 1.5,
+            color: INK,
+            opacity: 0.85,
+            maxWidth: '52ch',
+          }}
+        >
+          Reserve or order carry-out from Lake in the Hills, or call either dining room before you head over.
         </p>
       </motion.header>
 
-      <section className="space-y-5">
+      <section className="space-y-16 md:space-y-20">
         {content.locations.map((location, index) => (
           <motion.article
             key={location.name}
-            className="overflow-hidden rounded-card border border-border/60 bg-surface/35 transition-colors hover:border-text/35"
+            className="grid gap-8 md:grid-cols-[1.1fr_1fr] md:gap-12 items-start"
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
               duration: theme.motion.revealDuration,
               ease: theme.motion.easing,
@@ -45,52 +79,122 @@ export function LocationsPanel() {
               address={location.address}
               zoom={15}
               mapLabel={`${content.brand.name} ${location.name}`}
-              aspectRatio="16/9"
+              aspectRatio="4/3"
               hideCta
-              className="rounded-none border-b border-border/60 bg-canvas"
+              className="border-0 bg-canvas"
             />
 
-            <div className="space-y-5 p-5">
-              <div className="grid grid-cols-[38px_1fr] gap-4">
-                <p className="text-ui-label text-text-muted">{String(index + 1).padStart(2, '0')}</p>
-                <div className="space-y-2">
-                  <p className="text-ui-label text-text-muted">{location.role}</p>
-                  <h3 className="text-section-h2 text-text">{location.name}</h3>
-                  <p className="text-body text-text-muted leading-relaxed">{location.address}</p>
-                </div>
+            <div className="space-y-8">
+              <div className="space-y-2">
+                <p
+                  className="uppercase"
+                  style={{
+                    fontFamily: FONT_BODY,
+                    fontSize: '10px',
+                    letterSpacing: '0.32em',
+                    color: INK_MUTED,
+                  }}
+                >
+                  {String(index + 1).padStart(2, '0')} · {location.role}
+                </p>
+                <h3
+                  style={{
+                    fontFamily: FONT_DISPLAY,
+                    fontStyle: 'italic',
+                    fontSize: 'clamp(32px, 4vw, 52px)',
+                    lineHeight: 1.05,
+                    letterSpacing: '-0.005em',
+                    fontWeight: 500,
+                    color: INK,
+                  }}
+                >
+                  {location.name}
+                </h3>
+                <p
+                  style={{
+                    fontFamily: FONT_DISPLAY,
+                    fontStyle: 'italic',
+                    fontSize: '17px',
+                    lineHeight: 1.5,
+                    color: INK,
+                    opacity: 0.82,
+                  }}
+                >
+                  {location.address}
+                </p>
               </div>
 
-              <div className="grid grid-cols-1 min-[520px]:grid-cols-2 gap-2">
+              <ul className="space-y-2">
                 {location.actions.map((action) => (
-                  <LocationLink
+                  <li
                     key={`${location.name}-${action.label}`}
-                    href={action.href}
-                    label={action.label}
-                    primary={'primary' in action ? action.primary : false}
-                  />
+                    className="border-t pt-3"
+                    style={{ borderColor: 'rgba(239,227,204,0.14)' }}
+                  >
+                    <LocationLink href={action.href} label={action.label} />
+                  </li>
                 ))}
-              </div>
+                <li
+                  className="border-t pt-3"
+                  style={{ borderColor: 'rgba(239,227,204,0.14)' }}
+                >
+                  <LocationLink
+                    href={`/locations/${location.slug}`}
+                    label="Location details"
+                  />
+                </li>
+              </ul>
             </div>
           </motion.article>
         ))}
       </section>
 
-      <section className="space-y-4">
-        <p className="text-ui-label text-text-muted">Shared hours</p>
-        <div className="rounded-card border border-border/60 bg-surface/45 p-5 space-y-4">
+      <section className="space-y-6">
+        <p
+          className="uppercase"
+          style={{
+            fontFamily: FONT_BODY,
+            fontSize: '10px',
+            letterSpacing: '0.32em',
+            color: INK_MUTED,
+          }}
+        >
+          Shared hours
+        </p>
+        <div className="space-y-5">
           <LiveOpenStatus
             hours={content.brand.hoursConfig as unknown as HoursConfig}
             variant="text"
-            className="text-body text-text"
+            className=""
           />
-          <div className="space-y-3">
+          <div className="space-y-0 max-w-md">
             {content.brand.hoursDisplay.map((row) => (
               <div
                 key={row.day}
-                className="grid grid-cols-[88px_1fr] gap-4 border-t border-border/60 pt-3"
+                className="grid grid-cols-[96px_1fr] gap-6 border-t py-3"
+                style={{ borderColor: 'rgba(239,227,204,0.14)' }}
               >
-                <p className="text-ui-label text-text-muted">{row.day}</p>
-                <p className="text-body text-text">{row.value}</p>
+                <p
+                  className="uppercase"
+                  style={{
+                    fontFamily: FONT_BODY,
+                    fontSize: '11px',
+                    letterSpacing: '0.18em',
+                    color: INK_MUTED,
+                  }}
+                >
+                  {row.day}
+                </p>
+                <p
+                  style={{
+                    fontFamily: FONT_DISPLAY,
+                    fontStyle: 'italic',
+                    fontSize: '17px',
+                    color: INK,
+                  }}
+                >
+                  {row.value}
+                </p>
               </div>
             ))}
           </div>
@@ -100,15 +204,7 @@ export function LocationsPanel() {
   );
 }
 
-function LocationLink({
-  href,
-  label,
-  primary = false,
-}: {
-  href: string;
-  label: string;
-  primary?: boolean;
-}) {
+function LocationLink({ href, label }: { href: string; label: string }) {
   const external = href.startsWith('http');
 
   return (
@@ -116,16 +212,33 @@ function LocationLink({
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener noreferrer' : undefined}
-      className={`inline-flex min-h-11 items-center justify-center rounded-pill border px-4 py-3 text-center text-ui-label transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-text/45 ${
-        primary
-          ? 'border-text/70 bg-text text-canvas hover:bg-text/90'
-          : 'border-border/70 bg-surface text-text hover:bg-surface-hover'
-      }`}
-      whileHover={{ y: -1 }}
-      whileTap={{ scale: 0.98 }}
+      className="group inline-flex items-center justify-between w-full transition-colors"
+      whileHover={{ x: 2 }}
       transition={{ duration: theme.motion.transitionDuration }}
     >
-      {label}
+      <span
+        className="uppercase transition-colors group-hover:text-[var(--brass)]"
+        style={{
+          fontFamily: FONT_BODY,
+          fontSize: '12px',
+          letterSpacing: '0.18em',
+          color: INK,
+          ['--brass' as never]: BRASS,
+        }}
+      >
+        {label}
+      </span>
+      <span
+        className="transition-colors group-hover:text-[var(--brass)]"
+        style={{
+          fontFamily: FONT_BODY,
+          fontSize: '16px',
+          color: INK_MUTED,
+          ['--brass' as never]: BRASS,
+        }}
+      >
+        →
+      </span>
     </motion.a>
   );
 }

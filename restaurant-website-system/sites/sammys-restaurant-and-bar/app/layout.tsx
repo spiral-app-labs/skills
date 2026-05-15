@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Urbanist } from 'next/font/google';
+import { Oswald, Urbanist } from 'next/font/google';
 import { content } from '../content.example';
 import { StickyMobileCallBar } from '../components/StickyMobileCallBar';
 import './globals.css';
@@ -12,6 +12,13 @@ const urbanist = Urbanist({
   weight: ['300', '400', '500', '600', '700', '800'],
   style: ['normal', 'italic'],
   variable: '--font-urbanist',
+  display: 'swap',
+});
+
+const sammyCondensed = Oswald({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-sammy-condensed',
   display: 'swap',
 });
 
@@ -29,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={urbanist.variable}>
+    <html lang="en" className={`${urbanist.variable} ${sammyCondensed.variable}`}>
       <body className="font-body bg-canvas text-ink antialiased pb-[68px] md:pb-0">
         {children}
         <StickyMobileCallBar />

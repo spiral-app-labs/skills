@@ -18,6 +18,7 @@ The restaurant website employee should load only this agency pack plus minimal o
 | `restaurant-website-audit` | Current-site audit with browser, review, mobile, and asset evidence. |
 | `restaurant-site-router` | Route qualified leads to the right catalog template and modifiers. |
 | `restaurant-template-fork` | Fork a selected catalog template into `restaurant-website-system/sites/<slug>/`. |
+| `restaurant-hero-personalization` | Image-first personalized hero pass inside the fork/build gate, including human review before build resumes. |
 | `restaurant-build-checklist` | Create and maintain `checklist.md` and `checklist.json` for every build. |
 | `restaurant-fork-improvement` | Polish a built fork from demo-shippable to pitch-ready. |
 | `restaurant-qa-delivery` | Three-round QA, screenshots, build checks, mobile checks, pitch evidence, and MC writeback. |

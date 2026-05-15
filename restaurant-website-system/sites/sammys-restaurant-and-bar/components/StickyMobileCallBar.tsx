@@ -30,7 +30,7 @@ export function StickyMobileCallBar() {
         <div className="flex items-center gap-3">
           <Link
             href="tel:+18476699025"
-            className="flex-1 inline-flex items-center justify-center gap-2 bg-accent text-white font-medium py-3 rounded-button"
+            className="flex-1 inline-flex items-center justify-center gap-2 bg-accent text-[#160D05] font-semibold py-3 rounded-button"
           >
             <svg
               aria-hidden="true"
@@ -51,7 +51,7 @@ export function StickyMobileCallBar() {
             href={content.brand.googlePlaceUrl}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center justify-center px-4 py-3 rounded-button border border-ink/60 text-ink font-medium"
+            className="inline-flex items-center justify-center px-4 py-3 rounded-button border border-ink/60 text-ink font-semibold"
           >
             Map
           </Link>
