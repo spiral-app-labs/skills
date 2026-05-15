@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-05-08T17:24:00Z",
+  "checks": [
+    {
+      "url": "http://127.0.0.1:3214/",
+      "status": "passed",
+      "http": 200,
+      "contains_orderstart": true,
+      "contains_call": true,
+      "contains_catering": true,
+      "contains_directions": true
+    },
+    {
+      "url": "http://127.0.0.1:3214/about",
+      "status": "passed",
+      "http": 200,
+      "contains_orderstart": true,
+      "contains_call": true,
+      "contains_catering": true,
+      "contains_directions": true
+    },
+    {
+      "url": "http://127.0.0.1:3214/contact",
+      "status": "passed",
+      "http": 200,
+      "contains_orderstart": true,
+      "contains_call": true,
+      "contains_catering": true,
+      "contains_directions": true
+    }
+  ]
+}

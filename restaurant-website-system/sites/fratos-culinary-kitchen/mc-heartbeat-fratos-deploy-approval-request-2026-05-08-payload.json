@@ -1,0 +1,25 @@
+{
+  "agent": "evan",
+  "runtime": "openclaw",
+  "event": "website_agency_fratos_deploy_approval_request_created",
+  "restaurant": "Frato's Culinary Kitchen",
+  "slug": "fratos-culinary-kitchen",
+  "timestamp": "2026-05-08T22:05:00.000Z",
+  "status": "packaging_blocked_public_preview_deploy_approval_prepared",
+  "summary": [
+    "Read-only workflow root scan shows Frato's is the most recently updated active packaging-stage site and blocked only on public preview URL approval.",
+    "Created deploy-approval-request-2026-05-08.md with exact approval ask, guarded command path, post-deploy checks, and MC completion instructions.",
+    "Updated checklist, checklist.json, delivery package, and deploy readiness notes."
+  ],
+  "evidence_paths": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-approval-request-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-readiness-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json"
+  ],
+  "blockers": [
+    "Public preview/deploy URL still requires explicit founder/operator approval before external Vercel artifact creation/linking.",
+    "Mission Control local planner/writeback remains unreachable with ECONNREFUSED in this runtime."
+  ]
+}

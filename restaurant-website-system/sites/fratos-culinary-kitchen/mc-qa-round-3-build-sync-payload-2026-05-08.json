@@ -1,0 +1,30 @@
+{
+  "build_stage": "qa_round_3",
+  "status": "in_progress",
+  "idempotency_key": "fratos-qa-round-3-requirements-2026-05-08",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+  "battle_cards_path": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+  "passed_requirement_ids": [
+    "qa3-sell-ready",
+    "qa3-assets-ready"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-link-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-home-desktop-1440x1000-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-home-mobile-390x900-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-concierge-mobile-390x900-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa3-final-contact-mobile-390x900-2026-05-08.png"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Frato's QA round 3 final sell-readiness passed locally with final screenshots, link checks, pitch/battle-card cross-check, and concierge evidence. Public preview URL is still needed for delivery packaging."
+}

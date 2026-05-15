@@ -1,0 +1,138 @@
+[
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/cart.svg",
+    "width": 16,
+    "height": 16,
+    "visibleWidth": 16,
+    "visibleHeight": 16
+  },
+  {
+    "alt": "",
+    "src": "https://res.cloudinary.com/menudrive/image/upload/v1616531711/design_setting/header_image/loc_695_AC2D8846-C194-03EA-F19E-63A03A84CD69.jpg",
+    "width": 988,
+    "height": 215,
+    "visibleWidth": 370,
+    "visibleHeight": 80.515625
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/green-arrow.svg",
+    "width": 30,
+    "height": 30,
+    "visibleWidth": 30,
+    "visibleHeight": 30
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/green-arrow.svg",
+    "width": 30,
+    "height": 30,
+    "visibleWidth": 30,
+    "visibleHeight": 30
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/green-arrow.svg",
+    "width": 30,
+    "height": 30,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/green-arrow.svg",
+    "width": 30,
+    "height": 30,
+    "visibleWidth": 30,
+    "visibleHeight": 30
+  },
+  {
+    "alt": "Quesabirria Burger - May",
+    "src": "https://res.cloudinary.com/menudrive/image/upload/v1777601667/MenuItems/loc_695/mg_12209_cat_77950_item_531359_1777601652095.jpg",
+    "width": 800,
+    "height": 1000,
+    "visibleWidth": 198,
+    "visibleHeight": 143
+  },
+  {
+    "alt": "Culinary Chicken Sandwich of the Month",
+    "src": "https://res.cloudinary.com/menudrive/image/upload/v1728060731/MenuItems/loc_695/mg_12209_cat_77950_item_4627301_1728060683692.jpg",
+    "width": 1296,
+    "height": 864,
+    "visibleWidth": 198,
+    "visibleHeight": 143
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/empty-cart.svg",
+    "width": 58,
+    "height": 58,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/icon-info-lightgrey.svg",
+    "width": 20,
+    "height": 20,
+    "visibleWidth": 20,
+    "visibleHeight": 20
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/src/img/ui_v3/icon-info-black.svg",
+    "width": 20,
+    "height": 20,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/coupon_ads/695.jpg",
+    "width": 200,
+    "height": 200,
+    "visibleWidth": 368,
+    "visibleHeight": 368
+  },
+  {
+    "alt": "",
+    "src": "https://d2bo1b9933aszv.cloudfront.net/images/Lavu_Logo_Lght.webp",
+    "width": 876,
+    "height": 306,
+    "visibleWidth": 80,
+    "visibleHeight": 27.9375
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/images/payments/Visa-light.svg",
+    "width": 40,
+    "height": 25,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/images/payments/Discover-light.svg",
+    "width": 40,
+    "height": 25,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/images/payments/AmericanExpress-light.svg",
+    "width": 40,
+    "height": 25,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  },
+  {
+    "alt": "",
+    "src": "https://orderstart.com/images/payments/MasterCard-light.svg",
+    "width": 40,
+    "height": 25,
+    "visibleWidth": 0,
+    "visibleHeight": 0
+  }
+]

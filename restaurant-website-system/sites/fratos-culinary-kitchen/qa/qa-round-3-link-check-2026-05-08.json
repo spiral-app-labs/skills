@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-05-08T17:28:00Z",
+  "checks": [
+    {
+      "label": "home",
+      "url": "http://127.0.0.1:3214/",
+      "status": "passed",
+      "http": 200,
+      "final_url": "http://127.0.0.1:3214/"
+    },
+    {
+      "label": "about",
+      "url": "http://127.0.0.1:3214/about",
+      "status": "passed",
+      "http": 200,
+      "final_url": "http://127.0.0.1:3214/about"
+    },
+    {
+      "label": "contact",
+      "url": "http://127.0.0.1:3214/contact",
+      "status": "passed",
+      "http": 200,
+      "final_url": "http://127.0.0.1:3214/contact"
+    },
+    {
+      "label": "orderstart",
+      "url": "https://orderstart.com/fratospizza",
+      "status": "passed",
+      "http": 200,
+      "final_url": "https://orderstart.com/fratospizza"
+    },
+    {
+      "label": "catering",
+      "url": "https://fratoscatering.com/",
+      "status": "passed",
+      "http": 200,
+      "final_url": "https://fratoscatering.com/"
+    },
+    {
+      "label": "catering_inquiry",
+      "url": "https://fratoscatering.com/catering-inquiry-form/",
+      "status": "passed",
+      "http": 200,
+      "final_url": "https://fratoscatering.com/catering-inquiry-form/"
+    },
+    {
+      "label": "directions",
+      "url": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177",
+      "status": "passed",
+      "http": 200,
+      "final_url": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+    }
+  ]
+}

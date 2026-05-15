@@ -1,0 +1,52 @@
+{
+  "status": "work_done",
+  "summary": "Frato's pitch doc and battle cards completed locally; protected MC writeback payloads prepared.",
+  "ranAt": "2026-05-08T17:15:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's now has the sales materials needed for a founder/owner conversation: a one-minute pitch doc and battle cards. They explain the current-site leaks in owner language, preserve OrderStart and catering, and show how the prototype makes ordering, proof, mobile actions, and catering easier to understand.",
+    "technical_summary": "Created pitch-doc-2026-05-08.md from audit, content, screenshots, and top-three improvements evidence. Created battle-cards-2026-05-08.md with owner talking points, objections, demo path, evidence links, risks, and close. Prepared Mission Control-compatible /build payloads for pitch and battle_cards stages. Protected agency writeback remains blocked by missing AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET; no raw Supabase workflow mutation was performed.",
+    "work_started_state": "Concierge evidence was prepared locally; pitch and battle-card artifacts were still pending.",
+    "work_completed_state": "Pitch doc, battle cards, and protected-route payloads are prepared locally and ready for MC sync once agency auth is restored.",
+    "work_items": [
+      {
+        "title": "Create Frato's pitch doc",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md"
+      },
+      {
+        "title": "Create Frato's battle cards",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md"
+      },
+      {
+        "title": "Mission Control pitch/battle-card writeback",
+        "status": "blocked",
+        "blocker": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ],
+    "process_improvement_candidates": [
+      {
+        "observation": "Sales artifacts can be generated safely from local evidence even while protected agency writeback is unavailable.",
+        "proposal": "Queue prepared /build payloads for replay when agency auth is restored so MC catches up without redoing local work."
+      }
+    ]
+  }
+}

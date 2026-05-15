@@ -1,0 +1,25 @@
+{
+  "status": "work_done",
+  "summary": "Frato's current-site audit completed; Google Reviews capture started.",
+  "ranAt": "2026-05-08T15:49:22Z",
+  "taskIds": ["fdead14c-0079-4168-b6b7-c8b80218a681", "aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e", "35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611"],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's current-site audit finished and synced cleanly in Mission Control. I then advanced the workflow to Google Reviews capture and started a dedicated worker for the required Highest-filter review packet.",
+    "technical_summary": "Current-site audit worker produced audit.md/json, current-site-capture-summary.json, homepage/menu/order/contact/catering/about screenshots and scrapes, updated checklist artifacts, and synced via /build 200 OK. Planner readback showed google_reviews_capture todo. PATCHed /build with build_stage reviews and current audit evidence, which marked child 35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611 in_progress. Spawned fratos-google-reviews-capture with restaurant-website-audit/browser-automation/agency-sync contracts and explicit requirement IDs reviews-browser-highest, reviews-thirty-written, reviews-evidence.",
+    "work_started_state": "Frato's current-site audit was complete; reviews gate not started.",
+    "work_completed_state": "Reviews gate is in progress with a worker running.",
+    "work_items": [
+      {"type":"current_site_audit", "site":"fratos-culinary-kitchen", "status":"done_synced"},
+      {"type":"google_reviews_capture", "site":"fratos-culinary-kitchen", "status":"worker_started"}
+    ],
+    "touched_entities": [
+      {"kind":"lead", "id":"cec3f7af-ab8d-4785-af76-e57e743cdf25", "name":"Frato's Culinary Kitchen"},
+      {"kind":"task", "id":"aa6f9c6b-7f6b-41d9-b19e-8a77740adf4e", "role":"current_site_audit"},
+      {"kind":"task", "id":"35d74f8f-6c6b-4d29-ba9b-7c51fe9f7611", "role":"google_reviews_capture"}
+    ],
+    "process_improvement_candidates": []
+  }
+}

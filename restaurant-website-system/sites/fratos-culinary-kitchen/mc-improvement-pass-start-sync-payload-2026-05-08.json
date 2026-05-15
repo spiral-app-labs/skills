@@ -1,0 +1,19 @@
+{
+  "build_stage": "improving",
+  "status": "in_progress",
+  "idempotency_key": "fratos-improvement-pass-start-2026-05-08",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-build-evidence-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+  ],
+  "heartbeat_summary": "Started Frato's improvement pass after fork/build completion."
+}

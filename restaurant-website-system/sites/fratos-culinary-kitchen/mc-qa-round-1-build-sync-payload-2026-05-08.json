@@ -1,0 +1,27 @@
+{
+  "build_stage": "qa_round_1",
+  "status": "in_progress",
+  "idempotency_key": "fratos-qa-round-1-requirements-2026-05-08",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "pitch_doc_path": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+  "battle_cards_path": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+  "passed_requirement_ids": [
+    "qa1-findings",
+    "qa1-fixes"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-1-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-qa-round-1-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-qa-round-1-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-home-mobile-after-nav-fix-390x844-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-concierge-mobile-after-nav-fix-390x844-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-contact-mobile-390x844-2026-05-08.png"
+  ],
+  "blocker": null,
+  "heartbeat_summary": "Frato's QA round 1 passed after fixes for mobile nav clipping, source-safe hero copy, and concierge visibility."
+}

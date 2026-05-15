@@ -1,0 +1,738 @@
+{
+  "label": "home-desktop",
+  "file": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-home-desktop-1440x900-2026-05-08.png",
+  "bytes": 331034,
+  "metrics": {
+    "ready": "complete",
+    "path": "/",
+    "title": "Frato's \u2014 Giant sticks. One-pound slices. Scratch-made comfort food.",
+    "vw": 1440,
+    "docW": 1440,
+    "bodyW": 1440,
+    "links": [
+      {
+        "text": "frato's\nOpen now \u00b7 closes in 10h 8m",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Home",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Menu",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "Call",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "View Menu",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Order",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Ask About Catering",
+        "href": "https://fratoscatering.com/catering-inquiry-form/"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "About Frato's",
+        "href": "http://127.0.0.1:3210/about"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "628 S. Roselle Road",
+        "href": "https://www.google.com/maps/place/Frato%27s+Kitchen+%26+Gaming/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/FratosPizza"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/FratosPizza"
+      }
+    ]
+  }
+}
+{
+  "label": "home-mobile",
+  "file": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-home-mobile-390x844-2026-05-08.png",
+  "bytes": 107887,
+  "metrics": {
+    "ready": "complete",
+    "path": "/",
+    "title": "Frato's \u2014 Giant sticks. One-pound slices. Scratch-made comfort food.",
+    "vw": 390,
+    "docW": 390,
+    "bodyW": 390,
+    "links": [
+      {
+        "text": "frato's",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Home",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "MENU",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "CATERING",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "DIRECTIONS",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "CALL",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "View Menu",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Order",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Order Now",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Ask About Catering",
+        "href": "https://fratoscatering.com/catering-inquiry-form/"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "About Frato's",
+        "href": "http://127.0.0.1:3210/about"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "628 S. Roselle Road",
+        "href": "https://www.google.com/maps/place/Frato%27s+Kitchen+%26+Gaming/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/FratosPizza"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/FratosPizza"
+      }
+    ]
+  }
+}
+{
+  "label": "about-desktop",
+  "file": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-about-desktop-1440x900-2026-05-08.png",
+  "bytes": 1021517,
+  "metrics": {
+    "ready": "complete",
+    "path": "/about",
+    "title": "Frato's \u2014 Giant sticks. One-pound slices. Scratch-made comfort food.",
+    "vw": 1440,
+    "docW": 1440,
+    "bodyW": 1440,
+    "links": [
+      {
+        "text": "frato's\nOpen now \u00b7 closes in 10h 8m",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Home",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Menu",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "Call",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "About Frato's",
+        "href": "http://127.0.0.1:3210/about"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "628 S. Roselle Road",
+        "href": "https://www.google.com/maps/place/Frato%27s+Kitchen+%26+Gaming/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/FratosPizza"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/FratosPizza"
+      }
+    ]
+  }
+}
+{
+  "label": "about-mobile",
+  "file": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-about-mobile-390x844-2026-05-08.png",
+  "bytes": 162231,
+  "metrics": {
+    "ready": "complete",
+    "path": "/about",
+    "title": "Frato's \u2014 Giant sticks. One-pound slices. Scratch-made comfort food.",
+    "vw": 390,
+    "docW": 390,
+    "bodyW": 390,
+    "links": [
+      {
+        "text": "frato's",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Home",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "MENU",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "CATERING",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "DIRECTIONS",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "CALL",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "About Frato's",
+        "href": "http://127.0.0.1:3210/about"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "628 S. Roselle Road",
+        "href": "https://www.google.com/maps/place/Frato%27s+Kitchen+%26+Gaming/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/FratosPizza"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/FratosPizza"
+      }
+    ]
+  }
+}
+{
+  "label": "contact-desktop",
+  "file": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-contact-desktop-1440x900-2026-05-08.png",
+  "bytes": 311652,
+  "metrics": {
+    "ready": "complete",
+    "path": "/contact",
+    "title": "Frato's \u2014 Giant sticks. One-pound slices. Scratch-made comfort food.",
+    "vw": 1440,
+    "docW": 1440,
+    "bodyW": 1440,
+    "links": [
+      {
+        "text": "frato's\nOpen now \u00b7 closes in 10h 8m",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Home",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Menu",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "Call",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Get directions \u2192",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "FratosPizza@gmail.com",
+        "href": "mailto:FratosPizza@gmail.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "Open OrderStart",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Open Catering Inquiry",
+        "href": "https://fratoscatering.com/catering-inquiry-form/"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "About Frato's",
+        "href": "http://127.0.0.1:3210/about"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "628 S. Roselle Road",
+        "href": "https://www.google.com/maps/place/Frato%27s+Kitchen+%26+Gaming/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/FratosPizza"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/FratosPizza"
+      }
+    ]
+  }
+}
+{
+  "label": "contact-mobile",
+  "file": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-qa1-contact-mobile-390x844-2026-05-08.png",
+  "bytes": 78423,
+  "metrics": {
+    "ready": "complete",
+    "path": "/contact",
+    "title": "Frato's \u2014 Giant sticks. One-pound slices. Scratch-made comfort food.",
+    "vw": 390,
+    "docW": 390,
+    "bodyW": 390,
+    "links": [
+      {
+        "text": "frato's",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Home",
+        "href": "http://127.0.0.1:3210/"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "MENU",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "CATERING",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "DIRECTIONS",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "CALL",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Get directions \u2192",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=42.0152588,-88.0810177"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "FratosPizza@gmail.com",
+        "href": "mailto:FratosPizza@gmail.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "Open OrderStart",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Open Catering Inquiry",
+        "href": "https://fratoscatering.com/catering-inquiry-form/"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Management@FratosKitchen.com",
+        "href": "mailto:Management@FratosKitchen.com"
+      },
+      {
+        "text": "catering@fratoskitchen.com",
+        "href": "mailto:catering@fratoskitchen.com"
+      },
+      {
+        "text": "About Frato's",
+        "href": "http://127.0.0.1:3210/about"
+      },
+      {
+        "text": "Favorites",
+        "href": "http://127.0.0.1:3210/#menu"
+      },
+      {
+        "text": "Contact",
+        "href": "http://127.0.0.1:3210/contact"
+      },
+      {
+        "text": "Order Online",
+        "href": "https://orderstart.com/fratospizza"
+      },
+      {
+        "text": "Call 847-895-2122",
+        "href": "tel:8478952122"
+      },
+      {
+        "text": "Catering",
+        "href": "https://fratoscatering.com/"
+      },
+      {
+        "text": "628 S. Roselle Road",
+        "href": "https://www.google.com/maps/place/Frato%27s+Kitchen+%26+Gaming/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/FratosPizza"
+      },
+      {
+        "text": "Facebook",
+        "href": "https://www.facebook.com/FratosPizza"
+      }
+    ]
+  }
+}

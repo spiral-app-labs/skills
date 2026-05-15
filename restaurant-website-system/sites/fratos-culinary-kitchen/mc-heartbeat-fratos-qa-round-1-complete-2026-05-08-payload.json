@@ -1,0 +1,52 @@
+{
+  "status": "work_done",
+  "summary": "Frato's QA Round 1 completed locally with build/typecheck, screenshots, vision QA, and one minor contact-copy fix.",
+  "ranAt": "2026-05-08T17:30:00Z",
+  "taskIds": [
+    "fdead14c-0079-4168-b6b7-c8b80218a681"
+  ],
+  "trigger": "openclaw_heartbeat",
+  "initiatedBy": "agent",
+  "userActiveSkip": false,
+  "metadata": {
+    "human_summary": "Frato's passed the first QA round locally. I checked build correctness, content truth, mobile/desktop screenshots, and conversion links, then fixed a small contact-page heading so the page reads more accurately.",
+    "technical_summary": "Ran npm run typecheck and npm run build, captured CDP screenshots for home/about/contact at desktop and mobile sizes, ran image QA, and wrote qa-round-1-2026-05-08.md plus mc-qa-round-1-2026-05-08-payload.json. Applied one minor code fix in components/ContactPageLayout.tsx changing Addresses to Contact paths. ESLint remains a known tooling gap; protected agency QA writeback remains blocked by missing AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET.",
+    "work_started_state": "Pitch and battle-card evidence existed locally; QA Round 1 evidence was pending.",
+    "work_completed_state": "QA Round 1 is complete locally with screenshots, checks, fix notes, and a prepared MC QA payload.",
+    "work_items": [
+      {
+        "title": "Run QA Round 1 checks",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md"
+      },
+      {
+        "title": "Fix contact-page heading polish issue",
+        "status": "completed",
+        "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/components/ContactPageLayout.tsx"
+      },
+      {
+        "title": "Mission Control QA Round 1 writeback",
+        "status": "blocked",
+        "blocker": "AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime."
+      }
+    ],
+    "touched_entities": [
+      {
+        "type": "website",
+        "name": "Frato's Culinary Kitchen",
+        "id": "cec3f7af-ab8d-4785-af76-e57e743cdf25"
+      },
+      {
+        "type": "task",
+        "name": "Frato's MC root website workflow",
+        "id": "fdead14c-0079-4168-b6b7-c8b80218a681"
+      }
+    ],
+    "process_improvement_candidates": [
+      {
+        "observation": "Local QA can prepare full /qa-rounds payloads even when MC protected auth is missing.",
+        "proposal": "Add a replay queue for mc-qa-round-* payloads once AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are restored."
+      }
+    ]
+  }
+}

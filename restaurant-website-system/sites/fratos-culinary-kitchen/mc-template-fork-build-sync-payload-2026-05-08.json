@@ -1,0 +1,35 @@
+{
+  "build_stage": "building",
+  "status": "in_progress",
+  "idempotency_key": "fratos-template-fork-build-complete-2026-05-08",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "mc_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "checklist_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+  "current_site_scrape_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "passed_requirement_ids": [
+    "fork-built",
+    "fork-preview",
+    "specificity"
+  ],
+  "evidence_urls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-build-evidence-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/typecheck-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/lint-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/build-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/.agency-template.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/package.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/app/index.html",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/app/about.html",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/.next/server/app/contact.html"
+  ],
+  "artifact_urls": [],
+  "blocker": null,
+  "heartbeat_summary": "Template fork/build personalized for Frato's with verified order/call/catering links. Production build and post-build typecheck passed; parent-runtime local preview ran and desktop/mobile screenshots were captured. Lint remains a non-blocking tooling gap because eslint is not installed."
+}

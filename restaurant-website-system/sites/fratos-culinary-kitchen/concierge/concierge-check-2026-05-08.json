@@ -1,0 +1,62 @@
+{
+  "lead": "Frato's Culinary Kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mc_root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "site_slug": "fratos-culinary-kitchen",
+  "template_slug": "pepper-01",
+  "checked_at": "2026-05-08T17:19:00Z",
+  "build_stage": "concierge",
+  "requirements": {
+    "concierge-visible": {
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/FratosConcierge.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/app/page.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-mobile-2026-05-08.png"
+      ]
+    },
+    "concierge-tested": {
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json"
+      ]
+    },
+    "concierge-safe": {
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/FratosConcierge.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json"
+      ]
+    }
+  },
+  "checks": {
+    "build": {
+      "status": "passed",
+      "command": "npm run build",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-concierge-2026-05-08.txt"
+    },
+    "typecheck": {
+      "status": "passed",
+      "command": "npm run typecheck",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-concierge-2026-05-08.txt"
+    },
+    "local_preview": {
+      "status": "passed",
+      "command": "npm run start -- --hostname 127.0.0.1 --port 3213",
+      "url": "http://127.0.0.1:3213/#concierge"
+    },
+    "image_qa": {
+      "status": "passed",
+      "notes": "Vision QA found no blockers: desktop and mobile helper entry visible, safe, and usable; safety copy and large CTAs present."
+    }
+  },
+  "screenshots": {
+    "desktop": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-desktop-2026-05-08.png",
+    "mobile": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-mobile-2026-05-08.png",
+    "mobile_full_page": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-fullpage-mobile-2026-05-08.png"
+  },
+  "notes": "A visible site helper was added with canned, truthful responses for ordering, catering, hours, directions, and dietary handoff. It does not place orders, quote live prices, promise delivery timing, issue refunds, or guarantee dietary/allergen facts."
+}

@@ -1,0 +1,1896 @@
+{
+  "version": 2,
+  "workflowVersion": "2026-05-04",
+  "sourceOfTruth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "leadId": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "mcParentTaskId": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "siteSlug": "fratos-culinary-kitchen",
+  "templateSlug": "pepper-01",
+  "currentStage": "packaging_blocked",
+  "checklistArtifacts": {
+    "markdown": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+    "json": "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json"
+  },
+  "missionControlSync": {
+    "required": true,
+    "rootMetadataMustMirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "passed_requirement_ids",
+      "blocker"
+    ],
+    "childTasksMustMirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ],
+    "lastChecklistSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-checklist-sync-2026-05-08.json",
+    "lastCurrentSiteAuditSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-current-site-audit-sync-2026-05-08.json",
+    "lastCurrentSiteAuditSyncPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-current-site-audit-sync-payload-2026-05-08.json",
+    "workflowReadbackAfterCurrentSiteAudit": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-workflow-after-current-site-audit-2026-05-08.json",
+    "lastGoogleReviewsCapture": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+    "lastGoogleReviewsPacket": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+    "lastGoogleReviewsSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-google-reviews-sync-2026-05-08.json",
+    "lastGoogleReviewsSyncPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-google-reviews-sync-payload-2026-05-08.json",
+    "lastTemplateRoutingSyncPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-template-routing-sync-payload-2026-05-08.json",
+    "lastTemplateRoutingSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-template-routing-sync-2026-05-08.json",
+    "lastTemplateRouting": "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+    "lastForkBuildNotes": "restaurant-website-system/sites/fratos-culinary-kitchen/build-notes-2026-05-08.md",
+    "lastTemplateForkBuildEvidence": "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-build-evidence-2026-05-08.md",
+    "lastTemplateForkPreviewCheck": "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json",
+    "lastTemplateForkPreviewScreenshots": [
+      "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+    ],
+    "lastImprovementPassNotes": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+    "lastImprovementPassCheck": "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json",
+    "lastTopThreeImprovements": "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "lastTopThreePayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-top-3-improvements-2026-05-08-payload.json",
+    "lastConciergeKb": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md",
+    "lastConciergeTranscript": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md",
+    "lastConciergePayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-concierge-2026-05-08-payload.json",
+    "lastPitchDoc": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "lastPitchPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-pitch-2026-05-08-payload.json",
+    "lastBattleCards": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+    "lastBattleCardsPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-battle-cards-2026-05-08-payload.json",
+    "lastQaRound1": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+    "lastQaRound1Payload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-1-2026-05-08-payload.json",
+    "lastQaRound2": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+    "lastQaRound2Payload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-2-2026-05-08-payload.json",
+    "lastQaRound3": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+    "lastQaRound3Payload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-3-final-qa-2026-05-08-payload.json",
+    "lastDeliveryPackage": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+    "lastDeliveryPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08-payload.json",
+    "lastConciergeCheck": "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json",
+    "lastConciergeScreenshots": [
+      "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-desktop-2026-05-08.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-mobile-2026-05-08.png"
+    ],
+    "lastImprovementSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-improvement-pass-sync-2026-05-08.json",
+    "lastTopThreeSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-top-3-improvements-2026-05-08.json",
+    "lastConciergeSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-concierge-2026-05-08.json",
+    "lastPitchSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-pitch-2026-05-08.json",
+    "lastBattleCardsSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-battle-cards-2026-05-08.json",
+    "lastQaRound1Sync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-1-build-sync-2026-05-08.json",
+    "lastQaRound2Sync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-2-build-sync-2026-05-08.json",
+    "lastQaRound3Sync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-3-build-sync-2026-05-08.json",
+    "lastDeliveryPackageSync": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08.json",
+    "lastReplayDryRun": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+    "lastReplayHelper": "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+    "lastLocalDeliveryBundle": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+    "lastToolingHardening": "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md"
+  },
+  "workflowSteps": [
+    {
+      "id": "checklist_created",
+      "stage": "checklist",
+      "title": "Create and sync local + Mission Control checklist",
+      "requiredSkills": [
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "checklist-md",
+          "Local checklist.md exists for this restaurant"
+        ],
+        [
+          "checklist-json",
+          "Local checklist.json exists for this restaurant"
+        ],
+        [
+          "checklist-mc-sync",
+          "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage"
+        ]
+      ],
+      "evidenceRequired": [
+        "checklist.md path",
+        "checklist.json path",
+        "MC root task metadata with checklist paths"
+      ],
+      "order": 1,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-checklist-sync-2026-05-08.json"
+      ],
+      "blocker": null
+    },
+    {
+      "id": "current_site_audit",
+      "stage": "auditing",
+      "title": "Audit current site with browser evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "current-site-screenshots",
+          "Desktop and mobile screenshots captured"
+        ],
+        [
+          "current-site-scrape",
+          "Live site DOM/text scrape captured"
+        ],
+        [
+          "current-site-opportunities",
+          "Audit names concrete conversion, credibility, mobile, and factual gaps"
+        ]
+      ],
+      "evidenceRequired": [
+        "audit.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "DOM/text scrape"
+      ],
+      "order": 2,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-fold.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-dom-snapshot.html",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-text-snapshot.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T15:45:11Z",
+      "notes": "Current-site audit completed with browser/Playwright screenshots, DOM/text scrapes, structured metadata, and opportunity notes. Google Reviews deferred to google_reviews_capture."
+    },
+    {
+      "id": "google_reviews_capture",
+      "stage": "reviews",
+      "title": "Capture Google Reviews evidence",
+      "requiredSkills": [
+        {
+          "name": "restaurant-website-audit",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-website-audit/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "reviews-highest-filter",
+          "Google Reviews opened in browser and sorted by Highest"
+        ],
+        [
+          "reviews-thirty-written",
+          "30 written reviews captured, or exact shortage/blocker documented"
+        ],
+        [
+          "reviews-themes",
+          "Review themes summary is usable for copy and pitch docs"
+        ]
+      ],
+      "evidenceRequired": [
+        "Google profile screenshot",
+        "Highest-filter screenshot",
+        "30-review packet JSON/MD"
+      ],
+      "order": 3,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-profile-reviews-visible.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-sort-menu-before-highest.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-visible.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-sort-menu.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md"
+      ],
+      "blocker": null,
+      "notes": "Google Reviews capture completed: Highest filter selected; 30 written reviews captured; verified 4.2 stars / 554 reviews.",
+      "completedAt": "2026-05-08T15:54:17.440Z"
+    },
+    {
+      "id": "template_route_fork_build",
+      "stage": "building",
+      "title": "Route to one archetype, fork template, and build first preview",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-site-router",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-site-router/SKILL.md"
+        },
+        {
+          "name": "restaurant-template-fork",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-template-fork/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "template-route-locked",
+          "Exactly one archetype/template route is chosen and justified"
+        ],
+        [
+          "fork-built",
+          "Template fork builds successfully with real content and preserved conversion links"
+        ],
+        [
+          "specificity",
+          "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths"
+        ]
+      ],
+      "evidenceRequired": [
+        "routing rationale",
+        "source.md/content files",
+        "npm build/typecheck output",
+        "preview URL or local preview evidence"
+      ],
+      "order": 4,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/.agency-template.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/package.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-build-evidence-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/typecheck-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/lint-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/build-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+      ],
+      "blocker": null,
+      "notes": "Route locked to pepper-01, Frato-specific content applied, production build passed, post-build typecheck passed, and parent-runtime local preview screenshots were captured. Lint remains an optional tooling gap because eslint is not installed in this fork.",
+      "routingStatus": "complete_mc_synced",
+      "completedAt": "2026-05-08T16:17:00Z"
+    },
+    {
+      "id": "website_improvement_pass",
+      "stage": "improving",
+      "title": "Run first full improvement pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "identity-specific",
+          "Copy/visual rhythm feels specific to the restaurant and selected archetype"
+        ],
+        [
+          "conversion-paths",
+          "Order/reserve/call/directions/catering/events paths are accurate as applicable"
+        ],
+        [
+          "mobile-check",
+          "Mobile pass is explicitly checked with evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "improvement notes",
+        "before/after screenshots or changed file list",
+        "mobile evidence"
+      ],
+      "order": 5,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png"
+      ],
+      "blocker": null,
+      "notes": "MC synced; improvement pass completed with anonymous carousel, hero/CTA polish, and mobile conversion links.",
+      "completedAt": "2026-05-08T17:30:00Z"
+    },
+    {
+      "id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "title": "Identify and implement top 3 improvements",
+      "requiredSkills": [
+        {
+          "name": "restaurant-fork-improvement",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-fork-improvement/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "top-three-named",
+          "Top 3 concrete improvements are named from audit/preview/QA"
+        ],
+        [
+          "top-three-implemented",
+          "All three improvements are implemented"
+        ],
+        [
+          "top-three-evidence",
+          "Each improvement has before/after evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "top-3 improvements doc",
+        "before/after screenshots or diff evidence"
+      ],
+      "order": 6,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-top-3-improvements-2026-05-08-payload.json"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:30:00Z",
+      "notes": "MC synced; top three improvements ranked, implemented, and evidenced."
+    },
+    {
+      "id": "ai_concierge_added",
+      "stage": "concierge",
+      "title": "Add truthful AI concierge or record blocker",
+      "requiredSkills": [
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "restaurant-build-checklist",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-build-checklist/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "concierge-kb-truthful",
+          "Concierge KB only uses verified restaurant facts"
+        ],
+        [
+          "concierge-tested",
+          "Short transcript proves useful behavior"
+        ],
+        [
+          "concierge-safe",
+          "Fallbacks prevent fake reservations, unsupported promises, or invented facts"
+        ]
+      ],
+      "evidenceRequired": [
+        "KB/source file",
+        "test transcript",
+        "blocker if concierge cannot be safely added"
+      ],
+      "order": 7,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-concierge-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/FratosConcierge.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/screenshots/fratos-concierge-mobile-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-concierge-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-concierge-2026-05-08.txt"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:19:00Z",
+      "notes": "Visible safe site helper activated with verified ordering, catering, hours, directions, and dietary handoff responses; build/typecheck passed; desktop/mobile concierge screenshots captured."
+    },
+    {
+      "id": "pitch_doc",
+      "stage": "pitch",
+      "title": "Create sellable pitch doc",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "pitch-specific",
+          "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps"
+        ],
+        [
+          "pitch-before-after",
+          "Pitch explains before/after delta in owner language"
+        ],
+        [
+          "pitch-evidence",
+          "Evidence and preview links are embedded or linked"
+        ]
+      ],
+      "evidenceRequired": [
+        "pitch-doc.md",
+        "before/after evidence links"
+      ],
+      "order": 8,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-pitch-2026-05-08-payload.json"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:30:00Z",
+      "notes": "MC synced; pitch doc completed."
+    },
+    {
+      "id": "battle_cards_doc",
+      "stage": "battle_cards",
+      "title": "Create owner battle cards",
+      "requiredSkills": [
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "battle-cards-objections",
+          "Likely owner objections have concise answers"
+        ],
+        [
+          "battle-cards-demo-path",
+          "Demo path and proof points are clear"
+        ],
+        [
+          "battle-cards-risks",
+          "Risks/unknowns are called out truthfully"
+        ]
+      ],
+      "evidenceRequired": [
+        "battle-cards.md"
+      ],
+      "order": 9,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-battle-cards-2026-05-08-payload.json"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:30:00Z",
+      "notes": "MC synced; battle cards completed."
+    },
+    {
+      "id": "qa_round_1",
+      "stage": "qa_round_1",
+      "title": "QA round 1",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-1",
+          "QA round 1 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-1.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 10,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-1-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-qa-round-1-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-qa-round-1-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-1-cdp-capture-2026-05-08.jsonl"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:30:00Z",
+      "notes": "MC synced; QA round 1 passed after nav/copy/helper fixes."
+    },
+    {
+      "id": "qa_round_2",
+      "stage": "qa_round_2",
+      "title": "QA round 2",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-2",
+          "QA round 2 completed with screenshots, findings, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-2.md",
+        "desktop screenshot",
+        "mobile screenshot",
+        "build/typecheck result"
+      ],
+      "order": 11,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-2-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-qa-round-2-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-qa-round-2-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-2-after-fixes-cdp-capture-2026-05-08.jsonl"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:08:00Z",
+      "notes": "MC synced; QA round 2 passed mobile/conversion checks."
+    },
+    {
+      "id": "qa_round_3",
+      "stage": "qa_round_3",
+      "title": "QA round 3 final sell-readiness QA",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "website-agency-system",
+          "operator": "evan",
+          "path": "../../skills/website-agency-system/SKILL.md"
+        },
+        {
+          "name": "browser-automation",
+          "operator": "browser_automation",
+          "path": "OpenClaw browser-automation skill"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "qa-round-3",
+          "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback"
+        ]
+      ],
+      "evidenceRequired": [
+        "qa-round-3.md",
+        "desktop screenshots",
+        "mobile screenshots",
+        "build/typecheck result"
+      ],
+      "order": 12,
+      "status": "done",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-3-final-qa-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-qa-round-3-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-qa-round-3-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-final-after-polish-cdp-capture-2026-05-08.jsonl",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-link-check-2026-05-08.json"
+      ],
+      "blocker": null,
+      "completedAt": "2026-05-08T17:10:00Z",
+      "notes": "MC synced; final sell-readiness QA passed locally."
+    },
+    {
+      "id": "delivery",
+      "stage": "packaging",
+      "title": "Package and deliver only after all gates pass",
+      "requiredSkills": [
+        {
+          "name": "restaurant-qa-delivery",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-qa-delivery/SKILL.md"
+        },
+        {
+          "name": "restaurant-pitch-doc",
+          "operator": "evan",
+          "path": "restaurant-website-system/../restaurant-pitch-doc/SKILL.md"
+        },
+        {
+          "name": "agency-mission-control-sync",
+          "operator": "donna",
+          "path": "restaurant-website-system/../agency-mission-control-sync/SKILL.md"
+        }
+      ],
+      "requirements": [
+        [
+          "delivery-package",
+          "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC"
+        ],
+        [
+          "delivery-no-missing-evidence",
+          "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence"
+        ]
+      ],
+      "evidenceRequired": [
+        "preview URL",
+        "pitch doc",
+        "battle cards",
+        "checklist.md/json",
+        "QA evidence",
+        "MC delivery writeback"
+      ],
+      "order": 13,
+      "status": "blocked",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/npm-audit-after-postcss-8-4-49-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/post-next-upgrade-cdp-capture-2026-05-08.jsonl",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-post-next-upgrade-home-mobile-390x844-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-post-next-upgrade-home-desktop-1440x900-2026-05-08.png"
+      ],
+      "blocker": "Public preview/deploy URL required before delivery-final-url can pass. Local preview QA is complete at http://127.0.0.1:3214, but final delivery should not be marked delivered without a public URL or founder override.",
+      "notes": "Delivery package prepared and MC packaging blocker recorded; delivery-three-qa-rounds and delivery-pack passed, delivery-final-url blocked."
+    }
+  ],
+  "evidencePaths": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-desktop-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-fold.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-dom-snapshot.html",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-text-snapshot.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-mobile-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-current-site-audit-sync-payload-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-current-site-audit-sync-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-workflow-after-current-site-audit-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-1-cdp-capture-2026-05-08.jsonl",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-2-after-fixes-cdp-capture-2026-05-08.jsonl",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-final-after-polish-cdp-capture-2026-05-08.jsonl",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/qa-round-3-link-check-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08-payload.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/npm-audit-after-postcss-8-4-49-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/post-next-upgrade-cdp-capture-2026-05-08.jsonl",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-post-next-upgrade-home-mobile-390x844-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots/fratos-post-next-upgrade-home-desktop-1440x900-2026-05-08.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-approval-request-2026-05-08.md",
+    "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.md",
+    "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-manifest-2026-05-09.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-readme-2026-05-09.md"
+  ],
+  "qaRounds": [
+    {
+      "round": 1,
+      "status": "done_local_pending_mc_sync",
+      "doc": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md",
+      "payload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-1-2026-05-08-payload.json"
+    },
+    {
+      "round": 2,
+      "status": "done_local_pending_mc_sync",
+      "doc": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md",
+      "payload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-2-2026-05-08-payload.json"
+    },
+    {
+      "round": 3,
+      "status": "done_local_pending_mc_sync",
+      "doc": "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+      "payload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-3-final-qa-2026-05-08-payload.json",
+      "verdict": "pass_owner_demo_ready_locally"
+    }
+  ],
+  "deployUrl": null,
+  "pitchArtifacts": {
+    "pitchDoc": "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+    "battleCards": "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md",
+    "outreachDraft": null,
+    "beforeAfterScreenshots": [
+      "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-desktop-2026-05-08.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/screenshots/fratos-improvement-home-mobile-2026-05-08.png"
+    ]
+  },
+  "blockers": [
+    {
+      "stage": "building",
+      "id": "fork-preview",
+      "status": "resolved_parent_runtime",
+      "summary": "Sandbox denies local listener bind, so localhost preview screenshots could not be captured.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json"
+      ],
+      "resolution": "Parent runtime/CDP screenshots captured successfully."
+    },
+    {
+      "stage": "building",
+      "id": "mc-build-sync",
+      "status": "open",
+      "summary": "Mission Control build sync replay is required because curl could not resolve hq.ethantalreja.com from this runtime.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-template-fork-build-sync-payload-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-template-fork-build-sync-2026-05-08.json"
+      ]
+    },
+    {
+      "stage": "improving",
+      "id": "improvement-preview-screenshots",
+      "status": "resolved_parent_runtime",
+      "summary": "Improvement-pass desktop/mobile after screenshots require parent runtime preview validation because Codex sandbox cannot bind localhost.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-check-2026-05-08.json"
+      ],
+      "resolution": "Parent runtime/CDP screenshots captured successfully."
+    },
+    {
+      "stage": "agency_sync",
+      "id": "protected-agency-auth",
+      "status": "open",
+      "summary": "Protected MC agency planner/build/QA writeback blocked because AGENCY_AUTONOMY_API_KEY / OPENCLAW_WEBHOOK_SECRET are unavailable in this runtime. Do not mutate agency workflow state through raw Supabase.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-top-3-improvements-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-concierge-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-pitch-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-battle-cards-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-1-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-2-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-qa-round-3-final-qa-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt"
+      ]
+    },
+    {
+      "stage": "delivery",
+      "id": "public-preview-url",
+      "status": "open",
+      "summary": "No public preview/deploy URL has been created yet; delivery can be packaged locally but cannot be fully delivered in MC until a preview/artifact URL exists.",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-delivery-package-2026-05-08-payload.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-culinary-kitchen-local-delivery-2026-05-08.tar.gz.sha256",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-artifacts/fratos-delivery-artifact-manifest-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scripts/replay-fratos-mc-payloads.mjs",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-replay-fratos-payloads-dry-run-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/tooling-hardening-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/lint-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/typecheck-after-tooling-hardening-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/evidence/build-after-tooling-hardening-2026-05-08.txt"
+      ]
+    },
+    {
+      "gate": "packaging",
+      "reason": "Local Frato\u2019s package refreshed with 189 files and no missing sources, but final delivery cannot pass without a public preview/deploy URL and protected MC agency auth for replay/writeback. General MC heartbeat logging is reachable.",
+      "recordedAt": "2026-05-09T19:00:00Z",
+      "nextUnblockAction": "Approve/create public preview, configure AGENCY_AUTONOMY_API_KEY or OPENCLAW_WEBHOOK_SECRET, replay Frato\u2019s MC payloads, rerun public smoke/link checks, then mark delivered via MC."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "passedAt": "2026-05-08T15:45:11Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.md"
+      ]
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "passedAt": "2026-05-08T15:45:11Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/checklist.json"
+      ]
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root + child task metadata mirrors checklist paths, requirements, evidence, and current stage",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "checklist_created",
+      "stage": "checklist",
+      "passedAt": "2026-05-08T15:45:11Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-checklist-sync-2026-05-08.json"
+      ]
+    },
+    {
+      "id": "current-site-screenshots",
+      "title": "Desktop and mobile screenshots captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "passedAt": "2026-05-08T15:45:11Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-fold.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png"
+      ]
+    },
+    {
+      "id": "current-site-scrape",
+      "title": "Live site DOM/text scrape captured",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "passedAt": "2026-05-08T15:45:11Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-dom-snapshot.html",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-text-snapshot.txt"
+      ]
+    },
+    {
+      "id": "current-site-opportunities",
+      "title": "Audit names concrete conversion, credibility, mobile, and factual gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "current_site_audit",
+      "stage": "auditing",
+      "passedAt": "2026-05-08T15:45:11Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json"
+      ]
+    },
+    {
+      "id": "reviews-highest-filter",
+      "title": "Google Reviews opened in browser and sorted by Highest",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-profile-reviews-visible.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-sort-menu-before-highest.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-visible.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-sort-menu.png"
+      ],
+      "passedAt": "2026-05-08T15:54:17.440Z"
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written reviews captured, or exact shortage/blocker documented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md"
+      ],
+      "passedAt": "2026-05-08T15:54:17.440Z"
+    },
+    {
+      "id": "reviews-themes",
+      "title": "Review themes summary is usable for copy and pitch docs",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md"
+      ],
+      "passedAt": "2026-05-08T15:54:17.440Z"
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Exactly one concrete archetype/template route is chosen and justified",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_routing",
+      "stage": "routing",
+      "status": "passed",
+      "passedAt": "2026-05-08T16:02:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "done",
+      "passedAt": "2026-05-08T17:35:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-build-evidence-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/typecheck-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/evidence/build-2026-05-08.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+      ],
+      "passed": true,
+      "blocker": null
+    },
+    {
+      "id": "specificity",
+      "title": "No generic restaurant copy, fake claims, fake menu items, fake reviews, or fake ordering paths",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "template_route_fork_build",
+      "stage": "building",
+      "status": "done",
+      "passedAt": "2026-05-08T17:35:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-build-evidence-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/fork-preview-check-2026-05-08.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-desktop-2026-05-08.png",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+      ],
+      "passed": true,
+      "blocker": null
+    },
+    {
+      "id": "identity-specific",
+      "title": "Copy/visual rhythm feels specific to the restaurant and selected archetype",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "passedAt": "2026-05-08T17:45:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/AnonReviewCarousel.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx"
+      ]
+    },
+    {
+      "id": "conversion-paths",
+      "title": "Order/reserve/call/directions/catering/events paths are accurate as applicable",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "passedAt": "2026-05-08T17:45:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/content.example.ts",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/ConfettiHero.tsx"
+      ]
+    },
+    {
+      "id": "mobile-check",
+      "title": "Mobile pass is explicitly checked with evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "website_improvement_pass",
+      "stage": "improving",
+      "passedAt": "2026-05-08T17:45:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/improvements/improvement-pass-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/TopNavSimple.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/components/AnonReviewCarousel.tsx",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/build/screenshots/fratos-local-preview-home-mobile-2026-05-08.png"
+      ]
+    },
+    {
+      "id": "top-three-named",
+      "title": "Top 3 concrete improvements are named from audit/preview/QA",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "top-three-implemented",
+      "title": "All three improvements are implemented",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/mc-build-writeback-top-3-improvements-2026-05-08-payload.json"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "top-three-evidence",
+      "title": "Each improvement has before/after evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/top-3-improvements-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "concierge-kb-truthful",
+      "title": "Concierge KB only uses verified restaurant facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "concierge-tested",
+      "title": "Short transcript proves useful behavior",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge/concierge-check-2026-05-08.json"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "concierge-safe",
+      "title": "Fallbacks prevent fake reservations, unsupported promises, or invented facts",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "ai_concierge_added",
+      "stage": "concierge",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-kb-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/concierge-test-transcript-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "pitch-specific",
+      "title": "Pitch is specific to restaurant, neighborhood/cuisine, reviews, and conversion gaps",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "pitch-before-after",
+      "title": "Pitch explains before/after delta in owner language",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa/screenshots"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "pitch-evidence",
+      "title": "Evidence and preview links are embedded or linked",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "pitch_doc",
+      "stage": "pitch",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/pitch-doc-2026-05-08.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "battle-cards-objections",
+      "title": "Likely owner objections have concise answers",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "battle-cards-demo-path",
+      "title": "Demo path and proof points are clear",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "battle-cards-risks",
+      "title": "Risks/unknowns are called out truthfully",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "battle_cards_doc",
+      "stage": "battle_cards",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/battle-cards-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "qa-round-1",
+      "title": "QA round 1 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-1-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "qa-round-2",
+      "title": "QA round 2 completed with screenshots, findings, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-2-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "qa-round-3",
+      "title": "QA round 3 completed with final sell-readiness screenshots, fixes, and MC writeback",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/qa-round-3-final-qa-2026-05-08.md"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "delivery-package",
+      "title": "Preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status are mirrored to MC",
+      "qaState": "blocked",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "blocked",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-manifest-2026-05-09.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-readme-2026-05-09.md"
+      ],
+      "notes": "Local package refreshed and verified on 2026-05-09, but final delivery remains blocked by missing public preview/deploy URL and missing protected MC agency auth for replay/writeback."
+    },
+    {
+      "id": "delivery-no-missing-evidence",
+      "title": "No delivery until MC has checklist paths, preview/artifact URL, and required gate evidence",
+      "qaState": "passed",
+      "required": true,
+      "workflowStepId": "delivery",
+      "stage": "packaging",
+      "status": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-manifest-2026-05-09.json"
+      ],
+      "notes": "Artifact exists and was included in the 2026-05-09 local delivery package refresh."
+    },
+    {
+      "id": "template-route-alternatives",
+      "title": "Rejected template alternatives are documented with rationale",
+      "qaState": "passed",
+      "status": "passed",
+      "required": true,
+      "workflowStepId": "template_routing",
+      "stage": "routing",
+      "passedAt": "2026-05-08T16:02:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json"
+      ]
+    },
+    {
+      "id": "template-route-modifiers",
+      "title": "Required modifiers/sections/proof/CTA/menu strategy are documented",
+      "qaState": "passed",
+      "status": "passed",
+      "required": true,
+      "workflowStepId": "template_routing",
+      "stage": "routing",
+      "passedAt": "2026-05-08T16:02:00Z",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json"
+      ]
+    }
+  ],
+  "doneCriteria": [
+    "Mission Control root task metadata.build_stage/currentStage matches this checklist currentStage.",
+    "Mission Control root + child tasks mirror this checklist requirements, evidence_required, required_skills, and checklist paths.",
+    "Every canonical workflow step has either passed evidence in MC or a fresh blocker recorded in MC.",
+    "Three QA rounds are logged with desktop/mobile screenshot evidence and MC writeback.",
+    "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
+  ],
+  "updatedAt": "2026-05-09T19:00:00Z",
+  "suggestedArchetype": "Cuisine",
+  "passedRequirementIds": [
+    "checklist-json",
+    "checklist-mc-sync",
+    "checklist-md",
+    "current-site-audit",
+    "current-site-opportunities",
+    "current-site-scrape",
+    "current-site-screenshots",
+    "reviews-browser-highest",
+    "reviews-evidence",
+    "reviews-highest-filter",
+    "reviews-themes",
+    "reviews-thirty-written",
+    "fork-built",
+    "specificity",
+    "template-route-alternatives",
+    "template-route-locked",
+    "template-route-modifiers",
+    "identity-specific",
+    "conversion-paths",
+    "mobile-check",
+    "top-three-named",
+    "top-three-implemented",
+    "top-three-evidence",
+    "concierge-kb-truthful",
+    "concierge-tested",
+    "concierge-safe",
+    "pitch-specific",
+    "pitch-before-after",
+    "pitch-evidence",
+    "battle-cards-objections",
+    "battle-cards-demo-path",
+    "battle-cards-risks",
+    "qa-round-1",
+    "qa-round-2",
+    "qa-round-3"
+  ],
+  "structuredLeadMetadata": {
+    "owner_name": {
+      "value": null,
+      "status": "not_publicly_verified",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-about-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt"
+      ],
+      "notes": "About page names Frank/Tony as origin-story names and Chef Ed/Andy/Joe as chefs, but no current owner name is verified."
+    },
+    "owner_email": {
+      "value": "FratosPizza@gmail.com",
+      "status": "publicly_listed_as_owner_directed_mailbox",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt",
+        "https://fratospizza.com/contact-2/"
+      ],
+      "notes": "Contact page shows 'FratosPizza (at) gmail.com' with note '*Mail Goes Directly to Owner'."
+    },
+    "contact_email": {
+      "value": "Management@FratosKitchen.com",
+      "alternate_values": [
+        "FratosPizza@gmail.com",
+        "catering@fratoskitchen.com"
+      ],
+      "status": "verified_from_site_footer_contact_about_and_catering_pages",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-about-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop.txt"
+      ]
+    },
+    "phone": {
+      "value": "(847) 895-2122",
+      "normalized": "847-895-2122",
+      "status": "verified",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-orderstart-desktop.txt"
+      ]
+    },
+    "address_location": {
+      "value": "628 S. Roselle Road, Schaumburg, IL 60193",
+      "status": "verified",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-orderstart-desktop.txt"
+      ]
+    },
+    "hours": {
+      "value": {
+        "full_kitchen": {
+          "mon_thu": "4:00pm - 9:00pm",
+          "fri_sat": "11:00am - 10:00pm",
+          "sun": "11:00am - 9:00pm"
+        },
+        "cafe_gaming_limited_deli_menu": {
+          "mon_thu": "12:00pm - 4:00pm"
+        },
+        "notes": "Hours may change based on caterings/events; site says call 847-895-2122 if needed."
+      },
+      "status": "verified_from_current_site_hours_page_and_footer",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-hours-desktop.txt",
+        "https://fratospizza.com/fratos-hours/"
+      ]
+    },
+    "website_url": {
+      "value": "https://fratospizza.com/",
+      "status": "verified_live_200",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json"
+      ]
+    },
+    "order_url": {
+      "value": "https://orderstart.com/fratospizza",
+      "status": "verified_live_200_redirect_from_official_site",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-online-ordering-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+        "https://fratospizza.com/online-ordering/",
+        "https://orderstart.com/fratospizza"
+      ]
+    },
+    "reservation_url": {
+      "value": null,
+      "status": "not_applicable_or_not_found",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop-links.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop-links.json"
+      ],
+      "notes": "Order-forward model supports dine-in, pickup, curbside, and delivery through OrderStart; no reservation platform was found."
+    },
+    "catering_events_url": {
+      "value": "https://fratoscatering.com/",
+      "alternate_values": [
+        "https://fratoscatering.com/catering-inquiry-form/",
+        "http://restaurantcateringsystems.com/fratospizza"
+      ],
+      "status": "verified_live_200",
+      "evidence": [
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop.txt",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop-links.json",
+        "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png"
+      ]
+    },
+    "google_rating": {
+      "value": null,
+      "status": "deferred_to_google_reviews_capture_gate",
+      "evidence": [],
+      "notes": "Do not cite a Google rating until the next gate captures Google Business Profile evidence."
+    },
+    "google_review_count": {
+      "value": null,
+      "status": "deferred_to_google_reviews_capture_gate",
+      "evidence": [],
+      "notes": "Do not cite a Google review count until the next gate captures Google Business Profile evidence."
+    },
+    "outreach_email_draft_path": {
+      "value": null,
+      "status": "not_created"
+    },
+    "outreach_email_draft_status": "not_created",
+    "metadata_source_notes": "Checked the official homepage, menu, contact, hours, about/story, OrderStart storefront, official testimonials page, culinary trainee page, and separate FratosCatering.com site. Google rating/review count and Google review themes were intentionally not checked in this gate. Current owner name remains unavailable from captured public sources."
+  },
+  "currentSiteAudit": {
+    "status": "done",
+    "completedAt": "2026-05-08T15:45:11Z",
+    "auditMarkdownPath": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+    "auditJsonPath": "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+    "captureSummaryPath": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+    "evidencePaths": [
+      "restaurant-website-system/sites/fratos-culinary-kitchen/audit.md",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/audit.json",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-capture-summary.json",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-desktop-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-mobile-fold.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-dom-snapshot.html",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-text-snapshot.txt",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-desktop-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-orderstart-mobile-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png"
+    ],
+    "pagesCaptured": [
+      {
+        "key": "home",
+        "source_url": "https://fratospizza.com/",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-home-desktop-full.png",
+        "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-home-mobile-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-home-desktop.txt",
+        "notes": "Homepage carries phone, address, media mentions, ordering, specials, hours, story links, and footer theme/login exposure."
+      },
+      {
+        "key": "menu",
+        "source_url": "https://fratospizza.com/menu/",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-desktop-full.png",
+        "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-menu-mobile-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-menu-desktop.txt",
+        "notes": "Rich text menu with pizza, slices, burgers, wings, tenders, halal notes, prices, and multiple order prompts."
+      },
+      {
+        "key": "online_ordering_redirect",
+        "source_url": "https://fratospizza.com/online-ordering/",
+        "loaded_url": "https://orderstart.com/fratospizza",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-online-ordering-desktop-full.png",
+        "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-online-ordering-mobile-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-online-ordering-desktop.txt",
+        "notes": "Official order path redirects to OrderStart/Lavu storefront with pickup, curbside, dine-in, delivery choices."
+      },
+      {
+        "key": "contact",
+        "source_url": "https://fratospizza.com/contact-2/",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-desktop-full.png",
+        "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-contact-mobile-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-contact-desktop.txt",
+        "notes": "Contact page verifies phone, address, route planner, contact form, FratosPizza@gmail.com owner-directed mailto, and management footer email."
+      },
+      {
+        "key": "hours",
+        "source_url": "https://fratospizza.com/fratos-hours/",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-hours-desktop-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-hours-desktop.txt",
+        "notes": "Hours page verifies full kitchen, cafe/gaming, holiday caveats, and call-ahead note."
+      },
+      {
+        "key": "about_story",
+        "source_url": "https://fratospizza.com/about/",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-about-desktop-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-about-desktop.txt",
+        "notes": "About page verifies 1975 history, scratch cooking transformation, Chef Ed, Chef Andy/Joe, catering-company-that-owns-a-restaurant story, media mentions, and positioning."
+      },
+      {
+        "key": "catering_events",
+        "source_url": "https://fratoscatering.com/",
+        "status": 200,
+        "desktop_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-desktop-full.png",
+        "mobile_screenshot": "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/current-site-catering-mobile-full.png",
+        "text_path": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/current-site-catering-desktop.txt",
+        "notes": "Separate catering site verifies personal chef catering, catering hotline/email, inquiry form, menu, corporate/wedding/event catering, and on-time guarantee."
+      }
+    ],
+    "opportunities": [
+      {
+        "id": "conversion-first-hero",
+        "category": "conversion",
+        "finding": "The homepage contains the right order/call/address proof, but the first screen competes with background imagery, stacked promos, and many CTAs.",
+        "opportunity": "Make a clean food-first hero with Order Online, Call, Directions, and Catering CTAs plus the strongest one-line story. Preserve OrderStart rather than replacing operations."
+      },
+      {
+        "id": "story-trust-band",
+        "category": "credibility",
+        "finding": "Frato's strongest assets \u2014 1975 history, student-chef pipeline, scratch cooking, media mentions, and catering company model \u2014 are spread across deeper pages.",
+        "opportunity": "Surface a concise trust/story band near the top: 'Since 1975', media logos, scratch kitchen, culinary students into chefs, and catering proof."
+      },
+      {
+        "id": "mobile-ordering-friction",
+        "category": "mobile",
+        "finding": "Mobile home/menu/catering pages are extremely long; OrderStart mobile has small horizontal overflow and account/login controls before the cart/task feels obvious.",
+        "opportunity": "Use sticky mobile CTAs and shortened category modules that jump to order/menu/call/catering. Keep the external OrderStart path but make the pre-click decision simpler."
+      },
+      {
+        "id": "menu-curation",
+        "category": "menu",
+        "finding": "The menu is rich and specific but presented as a very long all-at-once document.",
+        "opportunity": "Curate signature cards for mozzarella sticks, 1-pound slices, specialty burgers, wings/halal, and monthly specials before the full menu/order handoff."
+      },
+      {
+        "id": "contact-and-catering-routing",
+        "category": "operations",
+        "finding": "Restaurant ordering, contact, catering inquiry, and catering ordering are split across multiple domains/emails/links.",
+        "opportunity": "Create clear routing: Order Food, Call Restaurant, Get Directions, Catering Quote, Catering Menu, and Contact Management, each with verified destination."
+      },
+      {
+        "id": "polish-and-brand-confidence",
+        "category": "credibility",
+        "finding": "Footer theme/login links and page-count artifacts make the current site feel dated despite active 2026 content.",
+        "opportunity": "Remove template artifacts, reduce duplicate nav/footer clutter, and turn active specials into a polished freshness signal rather than a blog archive wall."
+      }
+    ],
+    "googleReviewsDeferred": true,
+    "nextGate": "google_reviews_capture"
+  },
+  "leadMetadata": {
+    "google_rating": {
+      "value": 4.2,
+      "status": "verified_google_maps_highest_packet",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json"
+    },
+    "google_review_count": {
+      "value": 554,
+      "status": "verified_google_maps_highest_packet",
+      "evidence": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json"
+    }
+  },
+  "googleRating": 4.2,
+  "googleReviewCount": 554,
+  "googleReviewsPacketPath": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+  "googleReviewsPacketJsonPath": "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+  "googleReviewsEvidenceUrls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-profile-reviews-visible.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-sort-menu-before-highest.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-visible.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-sort-menu.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md"
+  ],
+  "reviewThemes": [
+    {
+      "theme": "Giant mozzarella stick / cheese-pull novelty",
+      "summary": "The oversized mozzarella stick is the dominant viral hook and shows up repeatedly as the reason people tried Frato's."
+    },
+    {
+      "theme": "Oversized scratch comfort food",
+      "summary": "Guests praise large portions, handmade/fresh preparation, burgers, pizza slices, gyros, mac and cheese, wings, tenders, potato wedges, and shakes."
+    },
+    {
+      "theme": "Creative menu breadth beyond pizza",
+      "summary": "Reviews frame Frato's as a playful comfort-food kitchen with burgers of the month, gyro pizza, ghost pepper wings, grilled cheese builds, and custom pizzas."
+    },
+    {
+      "theme": "Friendly, welcoming team",
+      "summary": "Multiple reviews name staff/service as warm, helpful, quick, and welcoming, with named staff mentions in local evidence only."
+    },
+    {
+      "theme": "Chill, game-filled dine-in atmosphere",
+      "summary": "Customers mention checkerboard floors/tables, games while waiting, TVs/trivia/funny videos, retro/vintage feel, and slots/gaming for adults."
+    },
+    {
+      "theme": "Good value for families/groups",
+      "summary": "Reviews highlight reasonable prices, big portions, no/short waits, free refills, easy online ordering, parking, and kid-friendly table games."
+    }
+  ],
+  "reviewSourceSafetyNote": "Use anonymous aggregate review proof in public site copy; keep reviewer names, dates, avatars, and source details local only.",
+  "evidenceUrls": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-profile-reviews-visible.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-sort-menu-before-highest.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-visible.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/screenshots/google-reviews-highest-sort-menu.png",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md"
+  ],
+  "selectedTemplateSlug": "pepper-01",
+  "selectedArchetype": "Cuisine / order-first casual comfort-food",
+  "routingGateStatus": "building_in_progress_preview_blocked",
+  "templateRouting": {
+    "status": "complete_mc_synced",
+    "selected_archetype": "Cuisine / order-first casual comfort-food",
+    "selected_template_slug": "pepper-01",
+    "selected_template_source": "restaurant-website-system/templates/pepper-01",
+    "routing_markdown_path": "restaurant-website-system/sites/fratos-culinary-kitchen/routing.md",
+    "routing_json_path": "restaurant-website-system/sites/fratos-culinary-kitchen/routing.json",
+    "prior_template_routing_note_path": "restaurant-website-system/sites/fratos-culinary-kitchen/template-routing/routing-2026-05-08.md",
+    "rationale_summary": "Frato's is an order-first casual pizza/comfort-food kitchen with giant mozzarella stick proof, OrderStart conversion, catering, and verified Google proof; pepper-01 matches pizza/wings/burger/takeout economics and playful dish-forward conversion.",
+    "rejected_alternatives": [
+      "plate-01",
+      "bramble-01",
+      "gusto-01",
+      "bamzi-01"
+    ],
+    "required_modifiers": [
+      "saturated order-first palette",
+      "Order Online primary CTA",
+      "Call/Directions/Catering secondary CTAs",
+      "signature product-card menu stack",
+      "anonymous aggregate Google proof",
+      "concise story/trust band",
+      "sticky mobile actions"
+    ],
+    "requirements_satisfied": [
+      "template-route-locked",
+      "template-route-alternatives",
+      "template-route-modifiers"
+    ],
+    "next_gate": "template_fork_build",
+    "fork_build_can_start_next": true,
+    "fork_build_run_in_this_gate": false,
+    "completedAt": "2026-05-08T16:02:00Z",
+    "mc_sync_status": "http_200_ok",
+    "mc_sync_payload_path": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-template-routing-sync-payload-2026-05-08.json",
+    "mc_sync_response_path": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-template-routing-sync-2026-05-08.json",
+    "mc_child_task_status": "done",
+    "mc_child_task_id": "bae10cc3-9ac5-409b-9757-a0cd5562fe73",
+    "syncedAt": "2026-05-08T16:03:00Z"
+  },
+  "googleReviewsVerified": {
+    "rating": 4.2,
+    "review_count": 554,
+    "evidence": [
+      "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.md",
+      "restaurant-website-system/sites/fratos-culinary-kitchen/scrapes/google-reviews-highest-30.json"
+    ]
+  },
+  "delivery": {
+    "deployApprovalRequest": "restaurant-website-system/sites/fratos-culinary-kitchen/deploy-approval-request-2026-05-08.md",
+    "approvalStatus": "pending_founder_operator_approval_for_external_vercel_preview",
+    "blocker": "Public preview URL required; deploy approval request prepared locally but not executed because deploying creates/updates an external public artifact."
+  },
+  "agencyDecisionIndex": {
+    "markdown": "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.md",
+    "json": "restaurant-website-system/research/lead-qualification/agency-active-decision-index-2026-05-08.json"
+  },
+  "build_stage": "packaging_blocked",
+  "delivery_package_refresh": {
+    "createdAt": "2026-05-09T19:00:00Z",
+    "passedLocalPackaging": true,
+    "delivered": false,
+    "packagePath": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09",
+    "zipPath": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-2026-05-09.zip",
+    "manifestPath": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-manifest-2026-05-09.json",
+    "readmePath": "restaurant-website-system/sites/fratos-culinary-kitchen/delivery-package-readme-2026-05-09.md",
+    "blockers": [
+      "missing public preview/deploy URL",
+      "protected MC agency writeback/replay auth missing",
+      "same-day Google count recheck before client-facing pitch"
+    ],
+    "nextUnblockAction": "Get founder/operator approval and public preview URL, configure agency auth secret, replay MC payloads, rerun final public smoke/link checks, then mark delivered only in MC.",
+    "mcHeartbeatPayload": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-heartbeat-fratos-package-refresh-blocked-2026-05-09-payload.json",
+    "mcHeartbeatResponse": "restaurant-website-system/sites/fratos-culinary-kitchen/mc-heartbeat-fratos-package-refresh-blocked-2026-05-09.json",
+    "lastMissionControlHeartbeatId": "60d2eb35-3520-41ad-8c2a-968a9d44a9f1",
+    "lastMissionControlActivityId": "e926db9f-1d23-48cc-a1e6-251f7f0e0e0d"
+  },
+  "lastMissionControlHeartbeatId": "60d2eb35-3520-41ad-8c2a-968a9d44a9f1",
+  "lastMissionControlActivityId": "e926db9f-1d23-48cc-a1e6-251f7f0e0e0d"
+}

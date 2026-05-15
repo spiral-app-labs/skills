@@ -1,0 +1,129 @@
+{
+  "lead": "Frato's Culinary Kitchen",
+  "lead_id": "cec3f7af-ab8d-4785-af76-e57e743cdf25",
+  "root_task_id": "fdead14c-0079-4168-b6b7-c8b80218a681",
+  "lead_qualification_task_id": "ee57d30d-9256-4a24-92fe-f697ed932b88",
+  "site_slug": "fratos-culinary-kitchen",
+  "qualified_at": "2026-05-08",
+  "decision": "Build",
+  "planner_stage": "qualifying",
+  "recommended_template_register": "Cuisine",
+  "recommended_archetype": "Cuisine",
+  "template_register_rationale": "Cuisine is the right base because the public reality is a casual neighborhood pizza/burger/wing kitchen with a student-chef story, order/carryout conversion, craveable comfort food, and approachable pricing. Qitchen/Roma/Heaven Palate would over-luxury the actual room and menu; Bramble would overemphasize nightlife/gaming; Cuisine can make the food, story, menu, ordering, and catering clearer without misrepresenting the restaurant.",
+  "primary_conversion_path": "Order online through OrderStart / call for pickup, delivery, curbside, or dine-in.",
+  "secondary_conversion_paths": [
+    "Directions / call",
+    "Catering via Frato's Personal Chef Catering",
+    "Specials / loyalty offers",
+    "Halal menu discovery"
+  ],
+  "google_rating_review_count": "not directly verified; do not use Google rating/review count in sales copy until captured from Google Business Profile",
+  "why_switch_sentence": "If Frato's saw our redesign, the specific reason they would switch is that their current WordPress/Nexus site has the right proof—scratch-made menu, media mentions, student-chef story, specials, catering, and ordering—but it buries that proof in a cluttered, dated, mobile-cramped experience instead of making the order path and Frato's story obvious in the first few seconds.",
+  "seven_checks": [
+    {
+      "id": 1,
+      "name": "Visual reality",
+      "result": "Pass for Cuisine; do not over-register.",
+      "evidence": "Official/public images show pizzas, burgers, wings, gyros, massive mozzarella sticks, cheese-pull food, a chef/cook filmed at the grill, catering/buffet trays near windows, glass storefront/logo doors, red/black/white casual interior elements, and a Frato's wall/mural. The room and food read as playful casual comfort-food/pizza kitchen, not fine dining.",
+      "source_urls": [
+        "https://fratospizza.com/",
+        "https://cdn6.localdatacdn.com/images/3435741/d_frato_s_culinary_kitchen_photo.jpg?q=69ec4681e4039",
+        "https://cdn6.localdatacdn.com/images/3435741/d_frato_s_culinary_kitchen_menu.jpg?q=69ec4681e403c",
+        "https://fratospizza.com/wp-content/uploads/2020/01/ANDY-GRILL-WINDY-CITY-LIVE.jpeg",
+        "https://fratospizza.com/wp-content/uploads/2022/10/WHISKEY-BURGER-copy-scaled.jpeg",
+        "https://fratospizza.com/wp-content/uploads/2021/03/Gringo-scaled.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Menu pricing register",
+      "result": "Pass; casual $/$$ register aligns with Cuisine.",
+      "evidence": "Official menu lists 3-cheese pizzas at $15.00-$26.75, creative pizzas at $22-$38, 1-pound slices around $4.50-$4.99, specialty burgers around $13.50-$15.99, mozzarella logs at $7.25/$11.25, wings from $7.99 to party quantities, tenders at $9.99/$14.99, gyros at $8.99/$11.50, salads around $9.99-$11.99, and desserts/shakes around $5.99-$8.99. RestaurantGuru also reports a $10-$20 price range. This is strong casual/local value, not luxury.",
+      "source_urls": [
+        "https://fratospizza.com/menu/",
+        "https://restaurantguru.com/Fratos-Pizza-Schaumburg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Review tone",
+      "result": "Pass; tone matches casual neighborhood/craveable-food build.",
+      "evidence": "Restaurantji exposes a 4.0/208-ratings public profile with favorites including handmade parmesan mozzarella sticks, halal chicken tenders, gyro sandwich, 1-pound sausage slice, burger of the month, and chicken sandwich. RestaurantGuru public copy emphasizes mozzarella sticks, boneless wings, chicken gyro, brownies, cheesecakes, whiskey/beer, knowledgeable staff, service, reasonable prices, modern decor, and cozy atmosphere. Official testimonials say 'neighborhood pizza joint,' hot cheesy pizza, friendly staff, catering trays, and party pizza. Yelp search snippets reference clean/renovated lunch, a BBQ burger, and many photos/reviews. Google rating/review count was not directly verified.",
+      "source_urls": [
+        "https://www.restaurantji.com/il/schaumburg/fratos-culinary-kitchen-pizza-and-catering-/",
+        "https://restaurantguru.com/Fratos-Pizza-Schaumburg",
+        "https://fratospizza.com/reviews/",
+        "https://www.yelp.com/biz/fratos-culinary-kitchen-schaumburg-3"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Current-site quality",
+      "result": "Pass for build case; current site is functional but sellably weak (about 5/10).",
+      "evidence": "Desktop homepage has trust basics—phone, address, hours, order links, media mentions, menu, and active April 2026 posts—but the page is long, noisy, WordPress/Nexus-template driven, and scattered across many links. Mobile shows the core logo/name/phone/address/order CTA, but the cuisine descriptor is cramped/partly lost above the fold, an image alt says 'Image is not available', and many CTAs compete before menu/story clarity. The official menu page is rich and price-complete, which is good, but the main order link redirects to OrderStart and the homepage footer exposes a 'Pizzeria WordPress Theme' template link. This is not broken, but a redesign has a clear clarity/conversion pitch.",
+      "source_urls": [
+        "https://fratospizza.com/",
+        "https://fratospizza.com/menu/",
+        "https://fratospizza.com/online-ordering/",
+        "https://orderstart.com/fratospizza"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Why-switch sentence",
+      "result": "Pass; concrete switch reason written.",
+      "evidence": "If Frato's saw our redesign, the specific reason they would switch is that their current WordPress/Nexus site has the right proof—scratch-made menu, media mentions, student-chef story, specials, catering, and ordering—but it buries that proof in a cluttered, dated, mobile-cramped experience instead of making the order path and Frato's story obvious in the first few seconds."
+    },
+    {
+      "id": 6,
+      "name": "Switching cost / inertia",
+      "result": "Moderate; manageable if preserving integrations.",
+      "evidence": "The current stack appears to be WordPress/Nexus with an external OrderStart order/menu flow, active blog/specials pages, and a separate FratosCatering.com path. There is no reservation dependency visible for this order-forward concept. A preview should preserve OrderStart, phone, directions, and catering links instead of pitching a full operational migration.",
+      "source_urls": [
+        "https://fratospizza.com/",
+        "https://fratospizza.com/online-ordering/",
+        "https://fratoscatering.com/",
+        "https://orderstart.com/fratospizza"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Would-I-eat-here test",
+      "result": "Pass if the hero stays casual, direct, and food-first.",
+      "evidence": "A Cuisine hero around scratch-made Schaumburg pizza, giant mozzarella sticks, burgers/wings, student-chef training, and direct ordering matches the public photos and menu. A luxury reservation-led posture would fail; the site should feel approachable, craveable, slightly playful, and conversion-focused."
+    }
+  ],
+  "source_urls": [
+    "https://fratospizza.com/",
+    "https://fratospizza.com/menu/",
+    "https://fratospizza.com/online-ordering/",
+    "https://orderstart.com/fratospizza",
+    "https://fratospizza.com/reviews/",
+    "https://fratospizza.com/about/",
+    "https://fratospizza.com/fratos-culinary-trainee-program/",
+    "https://fratoscatering.com/",
+    "https://www.restaurantji.com/il/schaumburg/fratos-culinary-kitchen-pizza-and-catering-/",
+    "https://restaurantguru.com/Fratos-Pizza-Schaumburg",
+    "https://www.yelp.com/biz/fratos-culinary-kitchen-schaumburg-3",
+    "https://www.grubhub.com/restaurant/fratos-culinary-kitchen-628-s-roselle-rd-schaumburg/281290/reviews"
+  ],
+  "local_evidence_paths": [
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.md",
+    "restaurant-website-system/sites/fratos-culinary-kitchen/qualification.json",
+    "restaurant-website-system/research/lead-qualification/2026-05-08-nw-suburbs-net-new-leads-followup.md",
+    "research/fratos-lead-qualification-images/"
+  ],
+  "risks_caveats": [
+    "Google Business Profile rating/review count was not directly verified; do not cite it until captured.",
+    "Yelp is partially blocked by JS/anti-bot in direct fetch; use public search snippets only as directional proof until browser/photo capture at later gates.",
+    "Current site is not broken: it has menu, prices, hours, phone, address, order links, and active specials/posts. Pitch must be clarity/conversion/story packaging, not rescue-from-zero.",
+    "OrderStart and FratosCatering.com appear to be real conversion dependencies; preserve them in any build brief rather than inventing a new ordering/catering flow.",
+    "Public photo pass supports casual Cuisine register, but a later full Google/Yelp photo capture should still be done before final build copy mentions interior/ambience specifics."
+  ],
+  "passed_requirement_ids": [
+    "lead-fit-qualified",
+    "lead-fit-seven-checks",
+    "lead-fit-evidence"
+  ],
+  "next_gate_recommendation": "Lead passes qualification. Checklist can start next, but do not start it in this gate. First checklist items should verify Google Business Profile rating/review count, capture current desktop/mobile screenshots, confirm OrderStart menu behavior, and preserve the Cuisine archetype."
+}
