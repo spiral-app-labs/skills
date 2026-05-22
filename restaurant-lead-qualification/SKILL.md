@@ -9,7 +9,7 @@ Run this before opening a code editor for a new speculative restaurant lead. Tim
 
 Current MC workflow note: lead qualification is now the first canonical child task: `lead_qualification → qualifying`. For new/speculative leads, qualify before build work and write the Build/Re-route/Skip decision plus evidence to local artifacts and MC. If a lead was provisioned before this child existed, repair/backfill through the protected MC workflow endpoint instead of treating qualification as an implicit checklist substep.
 
-Reference: `restaurant-website-system/research/lead-fit-qualification.md`.
+Reference: `archive/restaurant-website-system/research/lead-fit-qualification.md`.
 
 ## GTM Priority Overlay
 

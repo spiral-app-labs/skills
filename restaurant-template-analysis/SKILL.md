@@ -1,17 +1,17 @@
 ---
 name: restaurant-template-analysis
-description: Deep-capture and audit a Framer restaurant template or live restaurant website before adding it to the restaurant-website-system catalog or using it as fork inspiration.
+description: Deep-capture and audit a Framer restaurant template or live restaurant website before adding it to the archived restaurant website catalog or using it as fork inspiration.
 ---
 
 # Restaurant Template Analysis
 
-**When to use:** any time a Framer restaurant template URL or live restaurant website URL needs to be analyzed before being added to the `restaurant-website-system` catalog as a recreation, OR before being used as inspiration for a fork.
+**When to use:** any time a Framer restaurant template URL or live restaurant website URL needs to be analyzed before being added to the `archive/restaurant-website-system` catalog as a recreation, OR before being used as inspiration for a fork.
 
 **Goal:** turn an opaque rendered website into a complete, ground-truthed audit with measurable design tokens, structural insights, and motion behavior — suitable for faithful code recreation.
 
 **Trigger words:** "analyze this template", "audit this restaurant site", "deep capture this URL", "before we recreate", "extract the design system from".
 
-> Do NOT use for: simple "what does this site look like" questions (use WebFetch directly), or for sites that are not going to feed the restaurant-website-system catalog.
+> Do NOT use for: simple "what does this site look like" questions (use WebFetch directly), or for sites that are not going to feed the archived restaurant website catalog.
 
 ---
 
@@ -30,7 +30,7 @@ This skill provides a deterministic capture pipeline that addresses all four.
 
 ## The four-pass capture pipeline
 
-The pipeline is implemented in [`restaurant-website-system/scripts/shoot-template.sh`](../restaurant-website-system/scripts/shoot-template.sh) (wrapper) and [`shoot-template.mjs`](../restaurant-website-system/scripts/shoot-template.mjs) (Playwright script). It produces six artifact types per template:
+The pipeline is implemented in [`archive/restaurant-website-system/scripts/shoot-template.sh`](../archive/restaurant-website-system/scripts/shoot-template.sh) (wrapper) and [`shoot-template.mjs`](../archive/restaurant-website-system/scripts/shoot-template.mjs) (Playwright script). It produces six artifact types per template:
 
 ### Pass 1: Full-page screenshots (desktop + mobile)
 - Viewport: 1440×900 desktop @ 2x DPR; 390×844 mobile @ 2x DPR
@@ -69,7 +69,7 @@ This is the highest-value pass — it's the only way to get **exact ground truth
 
 ```bash
 SLUG=editorial-luxury-02   # vibe-NN convention; vibe must match an archetype
-mkdir -p /Users/ethantalreja/skills/restaurant-website-system/inputs/framer-templates/$SLUG
+mkdir -p /Users/ethantalreja/skills/archive/restaurant-website-system/inputs/framer-templates/$SLUG
 ```
 
 Write `source.md` first (see existing examples). It captures URL, vibe first-impression, and likely archetype match — gives the auditor 30 seconds of orientation.
@@ -139,7 +139,7 @@ Keep claims honest:
 ### 2. Run the capture pipeline
 
 ```bash
-cd /Users/ethantalreja/skills/restaurant-website-system
+cd /Users/ethantalreja/skills/archive/restaurant-website-system
 ./scripts/shoot-template.sh $SLUG https://example.framer.website / /menu /about /contact
 ```
 
@@ -390,7 +390,7 @@ The script handles dependency installation transparently.
 
 If you're a fresh agent picking this up cold, here's the minimum you need to know:
 
-1. **Read `restaurant-website-system/README.md` first** — the catalog-and-fork mental model and the two-phase operating mode are the foundation. Without that, this skill makes less sense.
+1. **Read `archive/restaurant-website-system/README.md` first** — the catalog-and-fork mental model and the two-phase operating mode are the foundation. Without that, this skill makes less sense.
 2. **Read the existing audits in `research/template-audits/`** as worked examples. `qitchen-01.md` and `1776-redesign-01.md` are the canonical references for what a good audit looks like.
 3. **Run the pipeline on a new template before writing anything** — the captures change what you'd write.
 4. **Use the designer-eye lens (above) before the technical checklist.** The technical checklist tells you what's there; the designer-eye lens tells you what it MEANS.
@@ -401,7 +401,7 @@ When in doubt, the audits and the system README contain enough context to act in
 
 ## Lineage
 
-This skill was promoted from `restaurant-website-system/research/skill-seeds.md` after being executed once on `qitchen-01` and once on `1776-redesign-01`. The qitchen pass caught the sticky-left-image pattern and produced exact ground-truth values that an eyeball-audit would have gotten wrong (Forum vs Canela, `#0A0B0A` vs `#000`). The 1776 pass uncovered the italic-on-serif emphasis pattern as the highest-leverage cross-template insight — a designer-eye observation, not a technical one. Both proves the value of pairing the technical pipeline with deliberate designer-eye reading.
+This skill was promoted from `archive/restaurant-website-system/research/skill-seeds.md` after being executed once on `qitchen-01` and once on `1776-redesign-01`. The qitchen pass caught the sticky-left-image pattern and produced exact ground-truth values that an eyeball-audit would have gotten wrong (Forum vs Canela, `#0A0B0A` vs `#000`). The 1776 pass uncovered the italic-on-serif emphasis pattern as the highest-leverage cross-template insight — a designer-eye observation, not a technical one. Both proves the value of pairing the technical pipeline with deliberate designer-eye reading.
 
 Future improvements (track in skill-seeds, promote when earned):
 - `restaurant-template-fork` — once N templates exist, the parallel skill for forking one for a real restaurant

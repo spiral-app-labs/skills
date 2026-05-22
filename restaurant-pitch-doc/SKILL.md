@@ -55,7 +55,7 @@ The pitch is not "your site is bad." The pitch is "your current site already has
 
 ## Local Restaurant-Website-System Notes
 
-For folders under `restaurant-website-system/sites/{slug}/`, prefer these sources:
+For folders under `<slug>/`, prefer these sources:
 
 - `audit.md` for the core sales thesis.
 - `research/lead-qualification/*.md` for original live-site findings.

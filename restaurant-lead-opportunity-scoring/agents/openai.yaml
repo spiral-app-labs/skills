@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Lead Opportunity Scoring"
+  short_description: "Score restaurant website leads for CRM."
+  default_prompt: "Use $restaurant-lead-opportunity-scoring to score this restaurant lead and prepare a CRM-ready opportunity summary."

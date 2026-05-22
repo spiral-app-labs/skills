@@ -7,23 +7,23 @@ description: Generate and maintain the local per-site checklist contract for aut
 
 Every build must have both local checklist files:
 
-- `restaurant-website-system/sites/<slug>/checklist.json`
-- `restaurant-website-system/sites/<slug>/checklist.md`
+- `<slug>/checklist.json`
+- `<slug>/checklist.md`
 
 ## Command
 
 Use the checked-out workspace copy when present:
 
 ```bash
-cd /Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system
+cd /Users/ethantalreja/skills/archive/restaurant-website-system
 ./scripts/new-build-checklist.mjs --slug restaurant-slug --lead-id lead-id --task-id mc-task-id --template gusto-01 --stage queued
 ```
 
 Reference paths:
 
-- Legacy/root path seen in older docs: `/Users/ethantalreja/skills/restaurant-website-system`
-- Checklist generator within the repo: `/scripts/new-build-checklist.mjs`
-- Lead qualification reference: `/research/lead-fit-qualification.md`
+- Archived website tooling path: `/Users/ethantalreja/skills/archive/restaurant-website-system`
+- Checklist generator within the repo: `archive/restaurant-website-system/scripts/new-build-checklist.mjs`
+- Lead qualification reference: `archive/restaurant-website-system/research/lead-fit-qualification.md`
 
 ## Required Fields
 
@@ -72,23 +72,23 @@ At minimum, track local requirement rows for:
 
 When `restaurant-hero-personalization` runs inside the fork/build stage, add these rows to the local checklist (they nest under row 5 — they're sub-evidence for "template fork/build complete"):
 
-5a. inspo image generated (16:9 center-balanced, no humans, with UX baked in) — `sites/<slug>/public/images/raw/inspo.jpg`
-5b. clean plate image generated (same 16:9 composition, UX stripped) — `sites/<slug>/public/images/raw/plate.jpg`
-5c. art bible extracted with all 8 sections populated (palette/type/spacing/motion/photography/component-register/IS-IS-NOT/inheritance) — `sites/<slug>/art-bible.md` AND `personalization_art_bible_markdown` POSTed to MC
-5d. hero loop video generated (8-sec 1080p, no humans/hands/faces, ambient motion only) — `sites/<slug>/public/videos/raw/hero.mp4`
-5e. all 3 assets uploaded to Supabase `agency-hero-assets` bucket as `<lead_id>/{inspo,plate,hero}.{jpg,mp4}`; public URLs respond HTTP 200 + correct Content-Type
-5f. `personalization_enabled = true` POSTed to MC; CRM Lead Detail panel displays all 3 assets inline
-5g. **operator manually flipped `personalization_ready_to_build = true` in the CRM** (this is the human gate — openclaw must wait for this before continuing)
-5h. art-bible-driven page personalization applied across non-hero sections (palette + typography + spacing + component register notes); dev server renders without errors; Playwright captures pass on desktop + iPhone 13
-5i. conversion-floor verification: hero at `100dvh` on iPhone 13 viewport, sticky CTA visible without scroll, restaurant name remains wordmark anchor, central subject readable after CSS center-crop on mobile
+5a. inspo image generated (16:9 center-balanced, no humans, with UX baked in) — `<slug>/public/images/raw/inspo.jpg`
+5b. clean plate image generated (same 16:9 composition, UX stripped) — `<slug>/public/images/raw/plate.jpg`
+5c. art bible extracted with all 8 sections populated (palette/type/spacing/motion/photography/component-register/IS-IS-NOT/inheritance) — `<slug>/art-bible.md` AND `personalization_art_bible_markdown` POSTed to MC
+5d. both image assets uploaded to Supabase `agency-hero-assets` bucket as `<lead_id>/{inspo,plate}.{jpg,png}`; public URLs respond HTTP 200 + correct Content-Type
+5e. `personalization_enabled = true` POSTed to MC; CRM Lead Detail panel displays the hero reference, clean plate, and art bible inline
+5f. art-bible-driven page personalization applied across non-hero sections (palette + typography + spacing + component register notes); dev server renders without errors; Playwright captures pass on desktop + iPhone 13
+5g. conversion-floor verification: hero at `100dvh` on iPhone 13 viewport, sticky CTA visible without scroll, restaurant name remains wordmark anchor, central subject readable after CSS center-crop on mobile
+5h. final Higgsfield/manual hero video is deferred until `ready_for_higgsfield_video`; do not block the first preview on video
 
 Personalized fork evidence maps to MC fields as:
-- `personalization_assets.{inspo,clean_plate,hero_video}_image_url` (via the build API's `personalization` parser, NOT `evidence_urls` — they live in `agency_leads.metadata.personalization.assets`)
+- `personalization_assets.{inspo,clean_plate}_image_url` (via the build API's `personalization` parser, NOT `evidence_urls` — they live in `agency_leads.metadata.personalization.assets`)
+- `personalization_assets.hero_video_url` only at the later Higgsfield/manual video handoff
 - `personalization_art_bible_markdown` (via the build API's `personalization` parser)
 - Playwright personalization screenshots → `evidence_urls`
 - Personalization narrative summary → `blocker` if a fallback ran, otherwise checklist.md only
 
-The MC build API server-side gate (`checkPersonalizationGate`) blocks any attempt to advance past `building` while `personalization.enabled === true && (ready_to_build === false || any URL missing)` — so openclaw cannot accidentally skip the human verification step.
+The MC build API server-side gate (`checkPersonalizationGate`) blocks attempts to advance past `building` only while `personalization.enabled === true` and the early hero reference, clean plate, or art bible is missing. There is no human review pause after image generation; OpenClaw uploads the assets, writes the art bible, and keeps building.
 
 Current MC source emits coarser default rows and canonical child requirements. The build writeback route accepts checklist paths, evidence URLs, artifact URLs, specialized evidence paths, blockers, and `passed_requirement_ids`; it does **not** currently accept arbitrary full local requirement arrays. Keep the full checklist rows in `checklist.md`/`checklist.json`, attach those paths/evidence to MC, and only claim full MC row mirroring after a supported API field exists.
 

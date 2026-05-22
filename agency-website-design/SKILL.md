@@ -398,7 +398,7 @@ Every restaurant fork must include a dedicated **ReviewWall** section on the hom
 5. **Mobile = 1-column, tablet = 2-column, desktop = 4-column** stacked grid. Cards are uniform-height with the quote allowed to stretch — never truncate a verbatim quote with ellipsis.
 6. **Source attribution is small-caps eyebrow at the bottom.** Same typography token as section eyebrows. No avatars, no "verified" badges, no profile links.
 
-**Reference implementation:** `restaurant-website-system/sites/cafe-olympic/components/ReviewWall.tsx` (2026-04-30). Eight verbatim quotes from Google + Tripadvisor, anonymized, ochre quote-mark glyphs, aggregate banner, 4-up at lg.
+**Reference implementation:** `archive/restaurant-website-system/sites/cafe-olympic/components/ReviewWall.tsx` (2026-04-30). Eight verbatim quotes from Google + Tripadvisor, anonymized, ochre quote-mark glyphs, aggregate banner, 4-up at lg.
 
 **Google packet mode:** If the local site folder has `google-review-packet.md`, the homepage must include an anonymized Google proof section even when the packet only provides review themes. Use the packet's rating/count/date/topic chips, quote only recorded micro-excerpts, label cards as Google review themes, and omit all reviewer names. Multi-source quotes are preferred when available; never fabricate Yelp/Tripadvisor/Facebook proof to satisfy that preference.
 

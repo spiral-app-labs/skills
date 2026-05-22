@@ -1,14 +1,14 @@
 ---
 name: restaurant-site-router
-description: Active restaurant template selection skill for the catalog system. Use after lead qualification and audit to route a real restaurant to the correct `restaurant-website-system/templates/<template>` fork with modifiers, sections, and avoid-list.
+description: Active restaurant template selection skill for the catalog system. Use after lead qualification and audit to route a real restaurant to the correct `archive/restaurant-website-system/templates/<template>` fork with modifiers, sections, and avoid-list.
 ---
 
 # Restaurant Site Router
 
 Use this after lead qualification and current-site audit. The router prevents beautiful but wrong redesigns.
 
-Primary reference: `restaurant-website-system/research/site-router.md`.
-Strategic companion: `restaurant-website-system/research/restaurant-website-strategic-principles.md`.
+Primary reference: `archive/restaurant-website-system/research/site-router.md`.
+Strategic companion: `archive/restaurant-website-system/research/restaurant-website-strategic-principles.md`.
 
 ## Intake
 

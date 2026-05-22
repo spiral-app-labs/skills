@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips -g pixelWidth -g pixelHeight *.png)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(npm install *)",
+      "Bash(mkdir -p ~/agency-forks)",
+      "Bash(cp -R /Users/ethantalreja/skills/restaurant-website-system/templates/velvet-shaker-01 ~/agency-forks/walnut-speakeasy-01)",
+      "Read(//Users/ethantalreja/agency-forks/**)",
+      "Bash(rm -rf node_modules .next)",
+      "WebFetch(domain:www.dabaffone.com)",
+      "Bash(mkdir -p /Users/ethantalreja/.claude/skills/restaurant-template-animations)",
+      "Read(//Users/ethantalreja/.claude/**)",
+      "Bash(flutter --version)",
+      "Bash(xcodebuild -version)",
+      "Bash(supabase --version)"
+    ]
+  }
+}

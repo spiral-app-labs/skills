@@ -1,6 +1,6 @@
 ---
 name: restaurant-fork-improvement
-description: Use when polishing a freshly-built fork in `restaurant-website-system/sites/<name>/` from "demo-shippable" to "pitch-ready." Distinct from `restaurant-website-audit` (which tells you what to build) and `restaurant-template-animations` (which is the catalog of animation primitives). This skill is the post-fork-v1 improvement pass: copy tightening, animation upgrades, and the proof-pattern set (review carousel, press marquee, parallax hero). Loads when the user asks to "improve / polish / level up / make it better" an already-built fork.
+description: Use when polishing a freshly-built fork in `<name>/` from "demo-shippable" to "pitch-ready." Distinct from `restaurant-website-audit` (which tells you what to build) and `restaurant-template-animations` (which is the catalog of animation primitives). This skill is the post-fork-v1 improvement pass: copy tightening, animation upgrades, and the proof-pattern set (review carousel, press marquee, parallax hero). Loads when the user asks to "improve / polish / level up / make it better" an already-built fork.
 ---
 
 # Restaurant fork improvement — the post-v1 polish pass
@@ -50,9 +50,9 @@ If a quote *must* run longer to land its specific dish/moment, cap at 18 words a
 
 **Source priority:** Google Maps reviews are the strongest signal because they're the highest-volume review surface for any local restaurant. Scrape them via the Codex/Claude in-app browser per the audit skill (`scrapes/google.json`), strip to verbatim quotes only (drop `name`, `date`, `id`, `theme` fields entirely), and feed into the carousel's local `REVIEWS` array or into `content.ts` as `home.reviewsAnon = [{quote, source}, ...]`. Yelp / OpenTable / Tripadvisor / Restaurantji are good supplements; tag each card with its actual source platform.
 
-**Reference implementation:** `restaurant-website-system/sites/maax-asian-bbq/components/AnonReviewCarousel.tsx` is the canonical anonymous-marquee implementation. Same shape applies to every fork — only the `REVIEWS` array contents and theme tokens (canvas colour, accent colour) change.
+**Reference implementation:** `archive/restaurant-website-system/sites/maax-asian-bbq/components/AnonReviewCarousel.tsx` is the canonical anonymous-marquee implementation. Same shape applies to every fork — only the `REVIEWS` array contents and theme tokens (canvas colour, accent colour) change.
 
-**Older reference (DEPRECATED for new forks):** `sites/cucina-bella/components/ReviewCarousel.tsx` and `sites/dibenedetto-trattoria/components/ReviewCarousel.tsx` use the older auto-advance-with-prev/next + named-attribution pattern. Existing forks can keep the older pattern, but **all new forks ship the AnonReviewCarousel pattern**. When polishing one of those older forks for v2+, swap to AnonReviewCarousel.
+**Older reference (DEPRECATED for new forks):** `archive/restaurant-website-system/sites/cucina-bella/components/ReviewCarousel.tsx` and `archive/restaurant-website-system/sites/dibenedetto-trattoria/components/ReviewCarousel.tsx` use the older auto-advance-with-prev/next + named-attribution pattern. Existing forks can keep the older pattern, but **all new forks ship the AnonReviewCarousel pattern**. When polishing one of those older forks for v2+, swap to AnonReviewCarousel.
 
 **Why not the older auto-advance + named pattern:**
 - The auto-advance + IntersectionObserver "pause when out of view" was unreliable across preview tools and on iOS Safari (cards stuck at `opacity:0`). The pure-CSS marquee always works.
@@ -101,7 +101,7 @@ Use the [restaurant-template-animations](../.claude/skills/restaurant-template-a
 
 ## Workflow
 
-1. Read the audit at `sites/<name>/audit.md` to confirm the v1 covered everything.
+1. Read the audit at `<name>/audit.md` to confirm the v1 covered everything.
 2. Diff the current `components/` against the catalog of improvement patterns above.
 3. Identify the top 3 concrete improvements for this specific fork, record them in the checklist/MC evidence, then implement them before delivery.
 4. Build the ReviewCarousel first unless the top-three analysis proves another move is higher leverage. It's usually the highest-leverage move and changes how the rest of the page reads.
@@ -119,8 +119,8 @@ Use the [restaurant-template-animations](../.claude/skills/restaurant-template-a
 
 ## Reference forks
 
-- `sites/cucina-bella/components/ReviewCarousel.tsx` — canonical carousel implementation.
-- `sites/vs-house/components/` — first fork built with this skill in mind from day one.
+- `archive/restaurant-website-system/sites/cucina-bella/components/ReviewCarousel.tsx` — canonical carousel implementation.
+- `archive/restaurant-website-system/sites/vs-house/components/` — first fork built with this skill in mind from day one.
 
 ---
 

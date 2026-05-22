@@ -13,7 +13,7 @@ This is the primary operating skill for the restaurant website employee. Mission
 2. `restaurant-lead-qualification` before speculative/new-lead build decisions.
 3. `restaurant-build-checklist` before any gate execution.
 4. Gate-specific skills from the current child task's `metadata.required_skills`.
-5. **Stage 6 (`template_fork_build`) additional skill — `restaurant-hero-personalization`** — load when the lead is in personalized-fork mode (default for any lead passing visual-reality register-fit check). Personalization runs INSIDE the fork stage, after `restaurant-template-fork`'s fork script. Stack: ChatGPT Pro (image gen) + Higgsfield Plus (Seedance 1.5 Pro video) + Bunny.net (CDN). Skip personalization for batched standard-fork sweeps where fork-time matters more than custom hero.
+5. **Hero/art-bible skill — `restaurant-hero-personalization`** — load when MC selects `hero_art_bible` or when the current fork/build task explicitly requires personalized hero work. Personalization happens before the first preview so the ChatGPT hero image and art bible can shape the whole site. Stack: ChatGPT image generation + Supabase Storage for image assets. Higgsfield video happens later at `ready_for_higgsfield_video`; Ethan may do that part manually. Skip personalization only for batched standard-fork sweeps where fork-time matters more than custom hero.
 6. `restaurant-qa-delivery` and `restaurant-pitch-doc` before delivery.
 
 Do not use `agency-overnight` for new work. It is only a compatibility pointer.
@@ -27,7 +27,7 @@ Do not use `agency-overnight` for new work. It is only a compatibility pointer.
 5. If the selected lead lacks canonical root/children, use `PATCH /api/agency/leads/:leadId` for the normal lead transition into `in_progress` when applicable; MC auto-provisions only on that API transition from non-`in_progress` into `in_progress`. If direct Supabase drift already happened, repair with protected `POST /api/agency/leads/:leadId/website-workflow` using bearer/session auth plus `x-agency-runtime: openclaw` before build work.
 6. Verify the current child has `requirements`, `evidence_required`, and `required_skills`. If missing, refresh/provision the workflow instead of improvising.
 7. Resolve required skills: `../skills/...` paths are relative to the Mission Control repo; `browser-automation` is the global OpenClaw browser skill; `skill_gap: true` means use the named substitute and record the gap if it matters.
-8. Create/refresh local `restaurant-website-system/sites/<slug>/checklist.json` and `checklist.md`.
+8. Create/refresh local `<slug>/checklist.json` and `checklist.md`.
 9. Produce the current gate's evidence only, then write back through the relevant MC API.
 10. Before advancing, confirm MC root stage and local checklist stage agree. If they differ, repair through MC API or log a blocker.
 

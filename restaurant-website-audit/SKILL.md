@@ -1,6 +1,6 @@
 ---
 name: restaurant-website-audit
-description: Use this skill any time you are about to audit a qualified restaurant lead's existing website before forking a new template from the catalog. Runs the five-block pre-fork audit (verbatim findings → secret sauce → principle violations → why-rebuild → risks). REQUIRES opening the current website in a browser, scraping it, capturing desktop/mobile screenshots, opening the Google Reviews page in a browser, clicking the Highest filter, collecting 30 written Google reviews, plus visual asset inventory access. Produces five locked outputs the fork consumes directly: a Hero Lock 4-tuple, a Photography Tier verdict, an Owner-Voice phrase bank, External Trust signals, and a Mobile-failure screenshot set. Triggers when the user says any of "audit X's old site", "audit X's current website", "let's audit X", "run a pre-fork audit", or asks you to plan a redesign for a real restaurant lead. Drops output at restaurant-website-system/sites/<slug>/audit.md.
+description: Use this skill any time you are about to audit a qualified restaurant lead's existing website before forking a new template from the catalog. Runs the five-block pre-fork audit (verbatim findings → secret sauce → principle violations → why-rebuild → risks). REQUIRES opening the current website in a browser, scraping it, capturing desktop/mobile screenshots, opening the Google Reviews page in a browser, clicking the Highest filter, collecting 30 written Google reviews, plus visual asset inventory access. Produces five locked outputs the fork consumes directly: a Hero Lock 4-tuple, a Photography Tier verdict, an Owner-Voice phrase bank, External Trust signals, and a Mobile-failure screenshot set. Triggers when the user says any of "audit X's old site", "audit X's current website", "let's audit X", "run a pre-fork audit", or asks you to plan a redesign for a real restaurant lead. Drops output at <slug>/audit.md.
 ---
 
 # Restaurant Website Audit
@@ -9,14 +9,14 @@ The pre-fork strategic audit that converts "their site has problems" into a buil
 
 ## When to use
 
-- A real restaurant lead has cleared the 7-check qualification (see `restaurant-website-system/research/lead-fit-qualification.md`)
+- A real restaurant lead has cleared the 7-check qualification (see `archive/restaurant-website-system/research/lead-fit-qualification.md`)
 - You are about to fork a template for them
 - You need to plan the redesign — what to keep, what to fix, what to surface
 
 ## When not to use
 
 - The lead is still being qualified — use `lead-fit-qualification.md` instead
-- You are auditing a CATALOG template (not a real restaurant) — use `restaurant-website-system/research/template-audits/` instead
+- You are auditing a CATALOG template (not a real restaurant) — use `archive/restaurant-website-system/research/template-audits/` instead
 
 ---
 
@@ -34,7 +34,7 @@ If any of (1)(2)(3) are missing, **stop and get them** before opening Block 1. D
 Before writing Block 1, create the site folder and collect these files:
 
 1. Open the current website in a browser.
-2. Save a scrape/DOM snapshot of the live site to `restaurant-website-system/sites/<slug>/scrapes/current-site-dom-snapshot.txt` or `current-site.html`.
+2. Save a scrape/DOM snapshot of the live site to `<slug>/scrapes/current-site-dom-snapshot.txt` or `current-site.html`.
 3. Capture at least:
    - `screenshots/current-site-desktop-full.png`
    - `screenshots/current-site-mobile-full.png`
@@ -70,7 +70,7 @@ Priority order — **try every step**, but the browser-opened Google Reviews pac
 
 **Don't rely on headless Playwright for: Yelp, Google SERP, or Restaurantji direct** — these often return DataDome / reCAPTCHA / "verifying you are human" gates. Fall back to WebSearch snippets + WebFetch on aggregators for supporting sources only.
 
-Drop a Node ESM script in `restaurant-website-system/sites/<slug>/scrapes/`. Set `package.json` to `{"type":"module"}`. Reference snippet (live-site capture, iPhone 13 + desktop):
+Drop a Node ESM script in `<slug>/scrapes/`. Set `package.json` to `{"type":"module"}`. Reference snippet (live-site capture, iPhone 13 + desktop):
 
 ```js
 import { chromium, devices } from 'playwright';
@@ -118,14 +118,14 @@ Outcome: for review packets, **Google Reviews in a browser is the required sourc
 
 ## The five blocks
 
-Drop the artifact at `restaurant-website-system/sites/<restaurant-slug>/audit.md`.
+Drop the artifact at `<restaurant-slug>/audit.md`.
 
 ## Mandatory structured lead metadata extraction + sync
 
 Before the audit gate can be called complete, extract a structured lead-metadata packet from the audit and public evidence, then mirror it into:
 
-- `restaurant-website-system/sites/<slug>/checklist.json`
-- `restaurant-website-system/sites/<slug>/checklist.md`
+- `<slug>/checklist.json`
+- `<slug>/checklist.md`
 - the prepared Mission Control writeback payload/runbook for that site
 
 Required fields:
@@ -236,7 +236,7 @@ End Block 2 with a one-line note on owner-response signal (does the owner reply 
 
 ### Block 3 — Per-principle violations
 
-Bold the Principle reference + verdict (BROKEN / UNDERSELLS / HIDDEN / MISSED / WEAK / DEAD), one paragraph each. Cite specific sections of `restaurant-website-system/research/restaurant-website-strategic-principles.md`:
+Bold the Principle reference + verdict (BROKEN / UNDERSELLS / HIDDEN / MISSED / WEAK / DEAD), one paragraph each. Cite specific sections of `archive/restaurant-website-system/research/restaurant-website-strategic-principles.md`:
 
 - **Part 1** — business-model fit (1.1 conversion CTA, 1.2 aesthetic-to-bill, 1.3 menu-access friction)
 - **Part 2** — register signaling (2.1 typography, 2.2 palette restraint, 2.3 photography fidelity)
@@ -333,10 +333,10 @@ End with a one-line **status footer**: qualified pre-fork status + recommended t
 
 ## Reference docs to load
 
-1. `restaurant-website-system/research/restaurant-website-strategic-principles.md` — principles cited in Block 3
-2. `restaurant-website-system/research/template-inventory.md` — Block 5 template hypothesis
-3. `restaurant-website-system/research/aliveness-patterns.md` — Part 10 violations
-4. `restaurant-website-system/research/lead-qualification/review-secret-sauce-pass-2026-04-28.md` — origin of Secret Sauce pattern (background only)
+1. `archive/restaurant-website-system/research/restaurant-website-strategic-principles.md` — principles cited in Block 3
+2. `archive/restaurant-website-system/research/template-inventory.md` — Block 5 template hypothesis
+3. `archive/restaurant-website-system/research/aliveness-patterns.md` — Part 10 violations
+4. `archive/restaurant-website-system/research/lead-qualification/review-secret-sauce-pass-2026-04-28.md` — origin of Secret Sauce pattern (background only)
 5. `~/skills/agency-website-design/SKILL.md` Section 2.7 (mobile-quality bar) + Section 2.8 (ReviewWall mandate) — what the BUILD must do with the audit's outputs. The audit's review packet is the source for the build's ReviewWall component (verbatim, anonymized). The audit's mobile-failure screenshots feed the build's mobile-quality verification step.
 
 ---
@@ -352,6 +352,6 @@ End with a one-line **status footer**: qualified pre-fork status + recommended t
 
 ## Validated examples
 
-- **Da Baffone** (`sites/da-baffone/audit.md`, 2026-04-25) — original four-block validated.
-- **Bistro Wasabi** (`sites/bistro-wasabi/audit.md`, 2026-04-29) — first audit with Secret Sauce as a formal block.
-- **Addison's Steakhouse** (`sites/addisons-steakhouse/audit.md`, 2026-04-29) — first audit running the five-block standard from the start; surfaced the gap that prompted promoting this from memory to a real skill, AND prompted the five-improvement upgrade (Hero Lock + Photo Tier Gate + Owner Voice + Mobile Capture + External Trust) shipped 2026-04-29.
+- **Da Baffone** (`archive/restaurant-website-system/sites/da-baffone/audit.md`, 2026-04-25) — original four-block validated.
+- **Bistro Wasabi** (`archive/restaurant-website-system/sites/bistro-wasabi/audit.md`, 2026-04-29) — first audit with Secret Sauce as a formal block.
+- **Addison's Steakhouse** (`archive/restaurant-website-system/sites/addisons-steakhouse/audit.md`, 2026-04-29) — first audit running the five-block standard from the start; surfaced the gap that prompted promoting this from memory to a real skill, AND prompted the five-improvement upgrade (Hero Lock + Photo Tier Gate + Owner Voice + Mobile Capture + External Trust) shipped 2026-04-29.

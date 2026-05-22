@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image-First Hero Generation"
+  short_description: "Generate the ChatGPT hero image and clean plate that set a restaurant site's art direction"
+  default_prompt: "Use $image-first-hero-generation when a restaurant website needs its first personalized ChatGPT hero image before the first preview."

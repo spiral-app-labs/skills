@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node scripts/validate-skills.mjs",
-    "validate": "node scripts/validate-skills.mjs"
+    "test": "node archive/repo-support/scripts/validate-skills.mjs",
+    "validate": "node archive/repo-support/scripts/validate-skills.mjs"
   }
 }

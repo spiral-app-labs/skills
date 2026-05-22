@@ -1,27 +1,42 @@
-# Spiral Agent Skills Library
+# OpenClaw Skills Library
 
-Shared skills, workflows, and capabilities across all Spiral agents — Donna, Forge, and Evan.
+This repo should stay easy to scan. The root is reserved for the active restaurant website agency skills and the two active restaurant website workspaces.
 
-## What's in here
+## Root Layout
 
-Each skill is a directory with a `SKILL.md` file (the agent reads this to know how to do something). Some skills have supporting reference files.
+- Website agency skill folders: directories with a `SKILL.md` file.
+- Active websites: `bistro-wasabi/` and `sammys-restaurant-and-bar/`.
+- Archive: `archive/` contains older non-website skills, old websites, legacy website-system tooling, generated media, old agent files, and retired research.
 
-## Website Agency Pack
+Do not treat `archive/` as active working context unless a task explicitly asks for legacy material.
+
+## Active Websites
+
+| Website | Folder |
+|---------|--------|
+| Bistro Wasabi | `bistro-wasabi/` |
+| Sammy's Restaurant and Bar | `sammys-restaurant-and-bar/` |
+
+All other restaurant website folders were moved to `archive/restaurant-website-system/sites/`.
+
+## Website Agency Skills
 
 The restaurant website employee should load only this agency pack plus minimal ops skills (`heartbeat-execution` and `mission-control-task-ops`) unless Mission Control or Donna explicitly assigns broader work.
 
 | Skill | Purpose |
 |-------|---------|
-| `website-agency-operator` | Primary autonomous OpenClaw operating loop, queue selection, status updates, blocker escalation, and Donna handoff. |
+| `website-agency-operator` | Primary OpenClaw operating loop, queue selection, status updates, blocker escalation, and Donna handoff. |
 | `agency-mission-control-sync` | Mission Control API/writeback contract for leads, tasks, heartbeat, activity, QA rounds, evidence, and blockers. |
+| `restaurant-lead-opportunity-scoring` | Score and prioritize restaurant website agency leads before they enter the build flow. |
 | `restaurant-lead-qualification` | Active 7-check lead-fit gate before any speculative build. |
 | `restaurant-website-audit` | Current-site audit with browser, review, mobile, and asset evidence. |
 | `restaurant-site-router` | Route qualified leads to the right catalog template and modifiers. |
-| `restaurant-template-fork` | Fork a selected catalog template into `restaurant-website-system/sites/<slug>/`. |
-| `restaurant-hero-personalization` | Image-first personalized hero pass inside the fork/build gate, including human review before build resumes. |
+| `restaurant-template-fork` | Fork a selected catalog template into an active root website folder. |
+| `image-first-hero-generation` | Generate the first hero design reference and clean plate for a restaurant build. |
+| `restaurant-hero-personalization` | Personalized hero pass: reference, clean plate, art bible, Supabase upload, and continued build. |
 | `restaurant-build-checklist` | Create and maintain `checklist.md` and `checklist.json` for every build. |
 | `restaurant-fork-improvement` | Polish a built fork from demo-shippable to pitch-ready. |
-| `restaurant-qa-delivery` | Three-round QA, screenshots, build checks, mobile checks, pitch evidence, and MC writeback. |
+| `restaurant-qa-delivery` | Three-round QA, screenshots, build checks, mobile checks, pitch evidence, and Mission Control writeback. |
 | `restaurant-pitch-doc` | Create one-minute restaurant redesign pitch docs. |
 | `restaurant-template-analysis` | Deep-capture pipeline for catalog templates or inspiration sites. |
 
@@ -30,61 +45,51 @@ Reference/compatibility only:
 - `agency-website-design` is legacy design reference material, not the active workflow.
 - `agency-overnight` is a compatibility shim that points to `website-agency-operator`.
 
-## General Skills
+## Ops Helpers
 
 | Skill | Purpose | Who Uses It |
 |-------|---------|-------------|
-| `agent-foundation-files` | Build IDENTITY/SOUL/AGENTS files for new agents | Donna |
-| `amazon-narrative-memo` | Write Amazon-style 6-pagers and narrative memos | Donna |
-| `codex-subagent-recovery` | Recovery protocol when a coding sub-agent fails silently | Donna |
-| `delegation` | Multi-agent delegation protocol | Donna |
-| `donna-orchestration-core` | Donna's operating SOP | Donna |
-| `evolving-requirements-orchestration` | Handle changing requirements without task sprawl | Donna |
-| `heartbeat-execution` | Run heartbeat cycles (Donna: read-only observer mode) | Donna |
-| `mission-control-task-ops` | Task lifecycle in Supabase — create, update, close | All agents |
-| `nina-binky-*` | Nina's content writing skills | Nina |
-| `nina-mission-control-insight-ops` | Publish Nina's research into MC | Nina |
-| `nina-research-*` | Nina's research workflows | Nina |
-| `notion-spec-ops` | Create and maintain Notion specs | Donna |
-| `product-audit` | Deep product audit → MC execution | Donna |
-| `subagent-orchestration` | Delegate multi-step work to sub-agents | Donna |
-
-## Restaurant Website System
-
-`restaurant-website-system/` is a catalog-and-fork system that lives inside this skills folder but is structured as a self-contained system rather than a SKILL.md skill. It has its own README, research docs, scripts, and `templates/` recreations. Active skills promote the repeatable parts of that system into the top-level library.
-
-Read `restaurant-website-system/README.md` first.
-
-Helpful scripts:
-
-- `restaurant-website-system/scripts/fork-template.sh`
-- `restaurant-website-system/scripts/new-build-checklist.mjs`
-- `restaurant-website-system/scripts/shoot-template.sh`
+| `heartbeat-execution` | Run heartbeat cycles | OpenClaw / Donna |
+| `mission-control-task-ops` | Task lifecycle in Supabase: create, update, close | All agents |
 
 ## Archive
 
-Market research, old transcripts, and one-off research packets live under `archive/` so the website employee does not load them as active skill surface.
+The archive is intentionally not active surface area. It currently holds:
 
-## Agent Foundation Files
+- `archive/older-skills/`: older general-purpose skills that are not part of the restaurant website agency surface.
+- `archive/restaurant-website-system/`: legacy catalog, templates, research, scripts, and all archived restaurant sites.
+- `archive/generated-media/`: loose generated videos and Sammy's image drafts.
+- `archive/agent-foundation-files/`: old top-level agent identity folders.
+- `archive/tooling-config/`: old local tooling config.
+- `archive/repo-support/`: repo validation scripts and support files.
+- older market and restaurant research packets.
 
-| Agent | Directory |
-|-------|-----------|
-| Forge (Qwen 30B Coder) | `agents/forge/` |
-| Evan (GPT-5 PM/EM + QA) | `agents/evan/` |
+Archived older skills:
 
-## How to use a skill
+- `agent-foundation-files`
+- `amazon-narrative-memo`
+- `codex-subagent-recovery`
+- `delegation`
+- `donna-orchestration-core`
+- `evolving-requirements-orchestration`
+- `nina-binky-in-app-resource-writing`
+- `nina-binky-seo-article-writing`
+- `nina-mission-control-insight-ops`
+- `nina-research-decomposition`
+- `nina-research-to-copy-pipeline`
+- `notion-spec-ops`
+- `product-audit`
+- `subagent-orchestration`
 
-When your task matches a skill's description, read the `SKILL.md` with the read tool, then follow it exactly. Skills are the source of truth for repeatable workflows.
+## How To Use A Skill
 
-## Adding a new skill
+When your task matches a skill's description, read that skill's `SKILL.md` and follow it. Skills are the source of truth for repeatable workflows.
+
+## Adding A New Skill
 
 1. Create a directory: `skills/your-skill-name/`
-2. Add `SKILL.md` with: description, trigger conditions, step-by-step instructions, and any constraints
-3. Add any reference files (templates, code, lookup tables) in the same directory
-4. Update this README
-5. Run `npm test` from this repo to validate skill metadata and active agency scope
-6. Commit + push
-
-## Philosophy
-
-Skills are transferable. If something works really well for one agent, it goes in here so every agent gets it. No agent should have a workflow insight locked in their private memory that another agent could benefit from.
+2. Add `SKILL.md` with description, trigger conditions, step-by-step instructions, and constraints.
+3. Add any reference files in the same directory.
+4. Update this README.
+5. Run `npm test` from this repo to validate skill metadata and active agency scope.
+6. Commit and push.
