@@ -55,10 +55,11 @@ The audit's **Inputs Collected** section MUST name these files. If any file cann
 Priority order — **try every step**, but the browser-opened Google Reviews packet is the required target:
 
 1. **Use the browser for Google Reviews.** Open the Google Maps listing/reviews page, click **Highest**, expand long reviews when needed, and collect 30 written reviews into `scrapes/google-reviews-highest-30.json`. Include reviewer display name, rating, recency/date, text, owner reply text/date if visible, and any service/dine-in/takeout metadata visible.
-2. **If the browser cannot access Google Reviews, ask the user for help before proceeding.** Phrasing: *"Before I run the audit, I need the Google Reviews panel opened/scraped after selecting Highest, with 30 written reviews and any owner replies. Google is blocking my browser path; can you provide access or paste/export the review packet?"*
-3. **Use WebFetch/WebSearch only as support.** Try aggregator pages: Restaurantji → Wanderboat → res-discover → Wheree → Trip.com → Foursquare → Tripadvisor (auto-redirects). These can supplement Secret Sauce and External Trust, but they do not replace the 30-review Google packet unless the user waives the gate.
-4. **WebSearch for additional verbatim snippets.** Queries that surface review prose: *`"<name>" "<city>" review "the <signature dish>" OR "the broth"`*, *`"<name>" "<city>" Google review "5 stars" OR "loved" OR "recommend"`*, *`"<name>" "<city>" "we went" OR "had dinner" OR "happy hour"`*. Search snippets are supporting evidence only.
-5. **Last resort: proceed with explicit flag** — only if user waives. Audit will be much weaker, and the Inputs Collected section must say the 30 Highest-filtered Google reviews were not captured.
+2. **Do not accept a limited first view as a blocker.** If the first Google Maps route only shows the overview or no Reviews tab, keep working: click the rating/review count, open the listing from Google Search, try the Maps place URL, use the in-app/manual browser with the signed-in profile, inspect the reviews panel controls, and scroll/expand the panel. "Reviews were unavailable in my first browser path" is not enough to stop.
+3. **If every browser route cannot access Google Reviews, ask the user for help before proceeding.** Phrasing: *"Before I run the audit, I need the Google Reviews panel opened/scraped after selecting Highest, with 30 written reviews and any owner replies. Google is blocking my browser path; can you provide access or paste/export the review packet?"*
+4. **Use WebFetch/WebSearch only as support.** Try aggregator pages: Restaurantji → Wanderboat → res-discover → Wheree → Trip.com → Foursquare → Tripadvisor (auto-redirects). These can supplement Secret Sauce and External Trust, but they do not replace the 30-review Google packet unless the user waives the gate.
+5. **WebSearch for additional verbatim snippets.** Queries that surface review prose: *`"<name>" "<city>" review "the <signature dish>" OR "the broth"`*, *`"<name>" "<city>" Google review "5 stars" OR "loved" OR "recommend"`*, *`"<name>" "<city>" "we went" OR "had dinner" OR "happy hour"`*. Search snippets are supporting evidence only.
+6. **Last resort: proceed with explicit flag** — only if user waives. Audit will be much weaker, and the Inputs Collected section must say the 30 Highest-filtered Google reviews were not captured.
 
 ---
 
@@ -66,7 +67,7 @@ Priority order — **try every step**, but the browser-opened Google Reviews pac
 
 **Use it for: live-target-site browser opening, scraping, mobile/desktop screenshots, deep-link sub-page pulls, and any non-bot-walled aggregator (Wanderboat, res-menu, etc).**
 
-**Google Reviews exception:** the audit still requires opening Google Reviews in a browser and trying the **Highest** filter. If headless Playwright is blocked, use the in-app browser/manual browser path or ask the user for the review packet. Do not silently downgrade to snippets.
+**Google Reviews exception:** the audit still requires opening Google Reviews in a browser and trying the **Highest** filter. If headless Playwright is blocked, use the in-app browser/manual browser path. A limited overview page is a prompt to try a deeper browser route, not a blocker. Ask the user for the review packet only after the browser routes above fail. Do not silently downgrade to snippets.
 
 **Don't rely on headless Playwright for: Yelp, Google SERP, or Restaurantji direct** — these often return DataDome / reCAPTCHA / "verifying you are human" gates. Fall back to WebSearch snippets + WebFetch on aggregators for supporting sources only.
 
