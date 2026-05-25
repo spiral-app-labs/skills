@@ -30,7 +30,7 @@ Each round should cover:
 
 ## Mission Control Writeback
 
-For every round:
+For every round, use `POST /api/agency/leads/:leadId/qa-rounds`:
 
 ```json
 {
@@ -42,7 +42,9 @@ For every round:
 }
 ```
 
-After round 3, update the build stage to `packaging`, then `delivered` only when the pitch doc, battle cards doc, preview URL, screenshots, audit evidence, 30-review packet, top-three-improvement evidence, concierge evidence, and MC requirement evidence are attached.
+After round 3, use `POST`/`PATCH /api/agency/leads/:leadId/build` to update the build stage to `ready_for_higgsfield_video` with the QA-clean preview URL, motion notes, and founder handoff evidence. That is a human-review handoff, not a blocker. Packaging/delivery happens only after Ethan/Higgsfield final video work and Ethan final review are complete.
+
+The `/build` route rejects `delivered` when required delivery evidence is missing. Treat any returned missing-evidence list as the next QA/package checklist; do not mark local delivery complete or tell Ethan it is sell-ready until the MC delivered transition succeeds or a founder override is explicitly recorded.
 
 ## Skill Feedback
 

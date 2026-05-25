@@ -20,7 +20,7 @@ Generic non-agency task execution remains paused unless Ethan explicitly assigns
 
 Do not pick random board work, audit unrelated tasks, or spawn workers outside the selected website step.
 
-Continue one unblocked website until it is blocked or finished. Opportunity score ranks only the next new website lead after the current site is blocked/done; it must not cause mid-build hopping.
+Continue one autonomous website until it is blocked, handed to human review, or finished. Opportunity score ranks only the next new website lead after the current site is blocked, in human review, or done; it must not cause mid-build hopping.
 
 ---
 
@@ -40,11 +40,11 @@ Use this mode only when Ethan/Mission Control explicitly assigns restaurant webs
 
 1. Claim or resume exactly one website from MC unless MC explicitly assigns a batch.
 2. Read the lead/task and resume from `metadata.build_stage`.
-3. If MC reports no selected website because every active workflow is blocked/finished and returns `start_candidates[0]`, start only that highest-opportunity lead through the returned `/api/agency/leads/:leadId/start` contract, then re-query `/next`.
+3. If MC reports no selected website because every active workflow is blocked, waiting on human review, or finished and returns `start_candidates[0]`, start only that highest-opportunity lead through the returned `/api/agency/leads/:leadId/start` contract, then re-query `/next`.
 4. Create or refresh `checklist.md` and `checklist.json` under `restaurant-website-system/sites/<slug>/` using `/scripts/new-build-checklist.mjs` from the restaurant website system root.
 5. Use `/research/lead-fit-qualification.md` when the lead still needs explicit qualification evidence.
 6. Mirror checklist requirements and evidence paths into the MC parent task.
-7. Advance the first incomplete gate below and write progress/evidence back to MC at every stage transition.
+7. Advance the first incomplete gate below and write progress/evidence back to MC at every stage transition. If MC's continuation policy allows it, re-query `/next` after writeback and continue adjacent gates for the same website within the same heartbeat.
 
 ### Canonical agency gates
 
@@ -59,9 +59,11 @@ Use this mode only when Ethan/Mission Control explicitly assigns restaurant webs
 9. `pitch` — create/update the pitch doc.
 10. `battle_cards` — create/update the battle cards doc for objections, owner talking points, proof, risks, and demo path.
 11. `qa_round_1`, `qa_round_2`, `qa_round_3` — run exactly three QA rounds with screenshots/evidence and MC QA writeback each round.
-12. `packaging` — package preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status.
-13. `delivered` — deliver only after all evidence is mirrored to MC and requirements pass. No evidence in MC = not delivered.
-14. `blocked` — if a gate cannot truthfully advance, write the blocker to MC with what was tried and the next unblock action.
+12. `ready_for_higgsfield_video` — human review category. OpenClaw has handed off a QA-clean preview plus hero motion notes for Ethan/Higgsfield. This is not blocked.
+13. `final_review` — human review category. Ethan reviews and approves before the site enters Sales & Delivery. This is not blocked.
+14. `packaging` — package preview URL, screenshots, pitch doc, battle cards, checklist, QA evidence, and requirement status.
+15. `delivered` — deliver only after all evidence is mirrored to MC and requirements pass. No evidence in MC = not delivered.
+16. `blocked` — if an autonomous gate cannot truthfully advance, write the blocker to MC with what was tried and the next unblock action.
 
 ### Communication
 

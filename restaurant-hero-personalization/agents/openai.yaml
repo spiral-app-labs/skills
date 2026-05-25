@@ -1,0 +1,4 @@
+interface:
+  display_name: "Restaurant Hero Personalization"
+  short_description: "Image-first hero pass: ChatGPT hero, clean plate, art bible, Supabase upload, and Higgsfield handoff"
+  default_prompt: "Use $restaurant-hero-personalization inside MC stage hero_art_bible, before the first preview, when the lead is in personalized-fork mode."

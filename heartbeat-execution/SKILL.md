@@ -1,17 +1,17 @@
 ---
 name: heartbeat-execution
-description: Run heartbeat cycles with strict API budget, Mission Control state discipline, low-noise communication, and exactly one selected agency website step when the agency planner has work.
+description: Run heartbeat cycles with strict API budget, Mission Control state discipline, low-noise communication, and one selected agency website with MC-approved same-heartbeat continuation when the agency planner has work.
 ---
 
 # heartbeat-execution
 
 Use when handling a heartbeat poll or running autonomous work cycle.
 
-If restaurant website agency work is available, this generic heartbeat skill defers to `/Users/ethantalreja/.openclaw/workspace/HEARTBEAT.md`. Execute exactly the selected website/current gate from Mission Control. Do not pick multiple board tasks.
+If restaurant website agency work is available, this generic heartbeat skill defers to `/Users/ethantalreja/.openclaw/workspace/HEARTBEAT.md`. Execute the selected website/current gate from Mission Control. Continue to another gate in the same heartbeat only when `/next.policy.same_heartbeat_continuation` allows it and a fresh `/next` re-query confirms the same website is still current. Do not pick multiple board tasks.
 
 ## Workflow
 1. Check the agency website planner first. If it returns selected work, follow the canonical heartbeat contract and stop after that lane.
-2. If the agency planner returns no selected website because all active websites are blocked/finished, start only `start_candidates[0]`, then re-query and execute the returned current gate.
+2. If the agency planner returns no selected website because all active websites are blocked, waiting on human review, or finished, start only `start_candidates[0]`, then re-query and execute the returned current gate.
 3. For explicit non-agency heartbeat work only, fetch assigned `todo + in_progress` set.
 4. Pick one unblocked, high-priority task unless Mission Control explicitly assigns a batch.
 5. Fetch task comments before execution (source of truth overrides description).
@@ -25,8 +25,8 @@ If restaurant website agency work is available, this generic heartbeat skill def
 - Batch where possible
 
 ## Picking Logic
-1. Current unblocked agency website first.
-2. New agency website lead only after the current site is blocked or finished; use `/next.start_candidates[0]`, which is sorted by `scores.opportunity`.
+1. Current autonomous agency website first.
+2. New agency website lead only after the current site is blocked, in human review, or finished; use `/next.start_candidates[0]`, which is sorted by `scores.opportunity`.
 3. Explicit non-agency assigned task.
 4. Stale blockers >24h => refresh/escalate with evidence.
 5. No proactive idle work unless Ethan/Donna/MC explicitly asks.

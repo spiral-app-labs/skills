@@ -1,155 +1,146 @@
 ---
 name: agency-mission-control-sync
-description: Mission Control API/writeback contract for the autonomous restaurant website agency. Use whenever OpenClaw reads or updates agency leads, build stage, task requirements, heartbeat, activity, QA rounds, preview URLs, blockers, or delivery evidence.
+description: Mission Control API/writeback contract for the autonomous restaurant website agency. Use whenever OpenClaw reads planner state, provisions website workflows, updates build stage, writes QA rounds, records heartbeat/activity, attaches preview/evidence, or handles agency blockers.
 ---
 
 # Agency Mission Control Sync
 
-Mission Control is the source of truth. Skills may create local artifacts, but status, blockers, evidence, and done state must be mirrored back to MC.
+Mission Control is the source of truth. Local files prove work; MC records the operating state.
 
-## Authentication
+## Auth
 
-Use the Mission Control API with:
+Protected agency routes currently require Mission Control agency auth, not Supabase service credentials:
 
 ```http
-Authorization: Bearer $AGENCY_AUTONOMY_API_KEY
-x-agency-runtime: openclaw
+Authorization: Bearer <MC_SESSION_TOKEN>
 Content-Type: application/json
 ```
 
-Fallback secret name is `$OPENCLAW_WEBHOOK_SECRET` only if Mission Control is configured that way.
+Browser/server UI calls may also authenticate with the `mc_auth` Mission Control session cookie. Do not use `$SUPABASE_SECRET_KEY`, `$SUPABASE_SERVICE_ROLE_KEY`, `$AGENCY_AUTONOMY_API_KEY`, or `$OPENCLAW_WEBHOOK_SECRET` as Evan's protected agency-route bearer token; those are stale or reserved for other lanes. The manual workflow repair route `POST /api/agency/leads/:leadId/website-workflow` may also require `x-agency-runtime: openclaw`.
 
-## Core Routes
+If a protected route returns `401`/`403` or the secrets are missing:
 
-- `GET /api/agency/leads/:leadId` reads a lead plus QA rounds.
-- `PATCH /api/agency/leads/:leadId` updates lead sales status, notes, preview URL, dates, contact fields, and metadata.
-- `POST /api/agency/leads/:leadId/build` or `PATCH` updates build progress, checklist paths, evidence URLs, blockers, preview URL, and MC task requirements.
-- `GET /api/agency/leads/:leadId/qa-rounds` reads QA rounds.
-- `POST /api/agency/leads/:leadId/qa-rounds` inserts or updates QA rounds and marks the matching MC requirement passed.
-- `POST /api/heartbeat` records work-loop progress.
-- `POST /api/activity` records notable activity when a route does not already log it.
+1. Record the config blocker through `POST /api/heartbeat` or `POST /api/activity` when those routes are reachable.
+2. Do **not** mutate agency leads/tasks through raw Supabase.
+3. Continue only with read-only diagnosis and local MC-compatible evidence/payload preparation.
+4. Include endpoint, status, missing env names, and next unblock action in the blocker.
 
-## Build Update Payload
+If a protected route returns `500` or malformed data, save the response/error as evidence, log a blocker, and do not guess a stage transition.
 
-Use this shape for build progress:
+## Core routes
+
+Planner:
+
+- `GET /api/agency/website-workflow/next?limit=5` — protected. Returns one-website-at-a-time planner output: `policy`, `selected`, `selection_reason`, `next_items`, `skipped_blocked_websites`, `human_review_websites`, `queued_websites`, and `start_candidates`.
+
+Workflow provisioning/read:
+
+- `GET /api/agency/leads/:leadId/website-workflow` — reads the canonical root/children summary for a lead.
+- `POST /api/agency/leads/:leadId/website-workflow` — protected manual repair/provision route that backfills the canonical website workflow idempotently. Use it only with agency auth plus `x-agency-runtime: openclaw`, usually after direct data drift or missing-task reconciliation. Normal status transitions should go through `PATCH /api/agency/leads/:leadId`; direct Supabase edits do not auto-provision workflow tasks.
+
+Canonical workflow parity:
+
+- `PATCH /api/agency/leads/:leadId` auto-provisions only when `agency_leads.status` changes from a non-`in_progress` value into `in_progress` through the API.
+- Direct Supabase status edits do not run provisioning; repair drift with protected `POST /api/agency/leads/:leadId/website-workflow` using bearer/session auth plus `x-agency-runtime: openclaw`.
+- A complete workflow has exactly 17 child tasks, in order: `lead_qualification`, `checklist`, `current_site_audit`, `google_reviews_capture`, `template_routing`, `hero_art_bible`, `template_fork_build`, `improvement_pass`, `top_three_improvements`, `ai_concierge`, `pitch_doc`, `battle_cards`, `qa_round_1`, `qa_round_2`, `qa_round_3`, `higgsfield_video_handoff`, `delivery`.
+- Adjacent children are gated by `task_dependencies`, so a complete workflow has 16 dependency rows.
+- Workflow identity, stage, requirements, blockers, and evidence live on `tasks.metadata`; do not use `agency_leads.metadata` as canonical workflow state.
+
+Lead read/update:
+
+- `GET /api/agency/leads/:leadId` — protected. Reads lead plus QA rounds.
+- `PATCH /api/agency/leads/:leadId` — protected. Updates supported lead fields/status/notes/preview/contact metadata and auto-provisions the website workflow on transition into `in_progress`. Do not rely on `agency_leads.metadata` as workflow state; workflow state lives in root task metadata.
+
+Build/stage writeback:
+
+- `POST` or `PATCH /api/agency/leads/:leadId/build` — protected. Updates lead metadata, root task metadata/status, the current canonical child, evidence paths, blockers, preview/artifact URLs, and inserts `agent_activity` action `agency_build_update`.
+
+QA writeback:
+
+- `GET /api/agency/leads/:leadId/qa-rounds` — protected. Reads QA rounds.
+- `POST /api/agency/leads/:leadId/qa-rounds` — protected. Upserts one QA round, updates root + matching QA child metadata, marks the matching QA requirement passed, and inserts `agent_activity` action `agency_qa_round`.
+
+Work-loop logging:
+
+- `POST /api/heartbeat` — records work-loop progress/config blockers and mirrors to activity.
+- `POST /api/activity` — records notable activity when another route does not already log it.
+
+## Planner operating policy
+
+Use the planner before raw task scans. It selects active autonomous roots first, then `todo`, then `backlog`; most advanced first; then oldest. It reports blocked websites separately from `human_review_websites`. Human review is not blocked: `ready_for_higgsfield_video` and `final_review` mean OpenClaw handed the site to Ethan/Higgsfield/final review.
+
+Use `selected` + first actionable `next_items[]` as the work target. If `policy.same_heartbeat_continuation.allowed` is true, finish `next_items[0]`, write back, re-query, and continue the same website up to the returned max gate count. If the planner reports no actionable item, do not invent a mutable transition; start only `start_candidates[0]` when returned, work on safe local evidence for a documented blocker, or propose new qualified leads locally until MC auth/state is fixed.
+
+## Build update payload: accepted fields
+
+Current MC build parsing accepts these fields/aliases:
 
 ```json
 {
-  "build_stage": "building",
+  "build_stage": "auditing",
+  "status": "in_progress",
   "site_slug": "restaurant-slug",
-  "template_slug": "gusto-01",
-  "mc_task_id": "mission-control-task-id",
+  "template_slug": "qitchen",
+  "mc_task_id": "mission-control-root-task-id",
   "checklist_markdown_path": "restaurant-website-system/sites/restaurant-slug/checklist.md",
   "checklist_json_path": "restaurant-website-system/sites/restaurant-slug/checklist.json",
   "current_site_scrape_path": "restaurant-website-system/sites/restaurant-slug/scrapes/current-site-dom-snapshot.txt",
-  "google_reviews_packet_path": "restaurant-website-system/sites/restaurant-slug/scrapes/google-reviews-highest-30.json",
+  "google_reviews_packet_path": "restaurant-website-system/sites/restaurant-slug/reviews/google-reviews-highest.json",
   "pitch_doc_path": "restaurant-website-system/sites/restaurant-slug/pitch-doc.md",
   "battle_cards_path": "restaurant-website-system/sites/restaurant-slug/battle-cards.md",
   "vercel_preview_url": "https://restaurant-slug.vercel.app",
   "evidence_urls": ["restaurant-website-system/sites/restaurant-slug/screenshots/mobile.png"],
   "artifact_urls": ["https://restaurant-slug.vercel.app"],
-  "ready_to_pitch": false,
-  "lead_metadata": {
-    "owner_name": null,
-    "owner_email": null,
-    "contact_email": null,
-    "phone": "(555) 555-5555",
-    "hours": ["Mon-Thu 11am-9pm"],
-    "address_location": "123 Main St, City, ST 12345",
-    "website_url": "https://restaurant.example",
-    "order_url": null,
-    "reservation_url": null,
-    "catering_events_url": null,
-    "google_rating": 4.6,
-    "google_review_count": 312,
-    "outreach_email_draft_path": null,
-    "outreach_email_draft_status": "not_created",
-    "metadata_source_notes": [
-      "Checked audit.md, current-site scrape, Google profile evidence, and public directory captures."
-    ],
-    "field_sources": {
-      "phone": ["restaurant-website-system/sites/restaurant-slug/audit.md"],
-      "google_rating": ["https://www.google.com/maps/place/..."]
-    }
-  },
-  "passed_requirement_ids": ["fork-built"],
-  "heartbeat_summary": "Built the first full fork and captured mobile evidence."
+  "passed_requirement_ids": ["current-site-audit"],
+  "blocker": null,
+  "heartbeat_summary": "Captured current-site audit evidence."
 }
 ```
 
-Allowed `build_stage` values:
+CamelCase aliases like `buildStage`, `siteSlug`, `evidenceUrls`, `artifactUrls`, and `passedRequirementIds` are also accepted.
 
-`queued`, `qualifying`, `claimed`, `checklist`, `auditing`, `reviews`, `routing`, `forking`, `building`, `improving`, `top_3_improvements`, `concierge`, `pitch`, `battle_cards`, `qa_round_1`, `qa_round_2`, `qa_round_3`, `packaging`, `delivered`, `blocked`.
+Current accepted `build_stage` values:
 
-If Mission Control temporarily accepts only coarser values, keep the closest coarse value compatible and store the exact gate in metadata as a substage. Heartbeats should still resume from the exact gate when it is present.
+`queued`, `qualifying`, `claimed`, `checklist`, `auditing`, `reviews`, `routing`, `hero_art_bible`, `forking`, `building`, `improving`, `top_3_improvements`, `concierge`, `pitch`, `battle_cards`, `qa_round_1`, `qa_round_2`, `qa_round_3`, `ready_for_higgsfield_video`, `final_review`, `build_completed`, `packaging`, `delivered`, `blocked`.
 
-Allowed sales statuses:
+Important current limitation: the build route does **not** accept arbitrary full checklist `requirements` arrays. Keep full checklist rows in local artifacts and accepted evidence paths until MC adds a documented endpoint/field. Do not claim full row mirroring succeeded unless the API actually stores it.
 
-`lead`, `pitched`, `in_progress`, `delivered`, `closed_won`, `closed_lost`.
-
-## Audit-to-metadata sync is mandatory
-
-When the current gate is `auditing` or later, Mission Control and the local checklist must both carry the structured lead metadata extracted from `audit.md` and public evidence.
-
-Minimum mirrored metadata fields:
-
-- `owner_name`
-- `owner_email`
-- `contact_email`
-- `phone`
-- `hours`
-- `address_location`
-- `website_url`
-- `order_url`
-- `reservation_url`
-- `catering_events_url`
-- `google_rating`
-- `google_review_count`
-- `outreach_email_draft_path`
-- `outreach_email_draft_status`
-- `metadata_source_notes`
-- per-field evidence/source URLs
-
-Rules:
-
-- Unknown fields must stay `null`; do not backfill guesses from weak signals.
-- If owner confirmation is still pending, keep the public value plus a blocker/note that confirmation is outstanding.
-- `ready_to_pitch` must remain `false` unless the founder human review requirement and any required site-specific runtime prerequisites are explicitly satisfied or founder-overridden.
-- Do not mark the audit gate complete, or advance later gates from local evidence alone, until this metadata mirror is present in the checklist and included in the prepared MC writeback payload. If the API call itself is blocked, record that blocker separately, but still prepare the mirrored payload locally.
-
-## QA Round Payload
+## QA round payload
 
 ```json
 {
   "round_number": 1,
   "findings": ["Mobile hero CTA was below the fold."],
   "fixes_applied": ["Moved phone/order CTA into the sticky mobile bar."],
+  "skill_updates": [],
   "screenshots": ["restaurant-website-system/sites/restaurant-slug/screenshots/qa-round-1-mobile.png"],
-  "mc_task_id": "mission-control-task-id"
+  "mc_task_id": "mission-control-root-task-id"
 }
 ```
 
-Log exactly three rounds before delivery. The API mirrors `qa-round-1`, `qa-round-2`, and `qa-round-3` into the MC parent task.
+Log exactly three rounds before delivery. Use `/qa-rounds` for QA; use `/build` only for the surrounding stage/evidence transitions.
 
-## Heartbeat Payload
+## Heartbeat payload
 
-Use heartbeat for regular progress:
+Use heartbeat for regular progress and config blockers:
 
 ```json
 {
   "status": "work_done",
-  "summary": "Agency: routed Little Star to gusto-01 and started fork.",
+  "summary": "Agency: routed Tekka Sushi to Qitchen and saved the evidence packet.",
   "mode": "agency",
   "source": "openclaw_website_agency",
   "taskIds": ["mission-control-task-id"],
   "metadata": {
     "lead_id": "lead-id",
-    "build_stage": "routing"
+    "build_stage": "routing",
+    "endpoint": "/api/agency/website-workflow/next",
+    "auth_blocker": false
   }
 }
 ```
 
-## Delivery Evidence Mirror
+## Delivery evidence mirror
 
 Before setting `build_stage` to `delivered`, MC must contain or point to:
 
@@ -163,8 +154,10 @@ Before setting `build_stage` to `delivered`, MC must contain or point to:
 - pitch doc path
 - battle cards path
 - all three QA round payloads
-- passed requirement IDs
+- passed requirement IDs / delivery package evidence
 
-## Direct Supabase Writes
+The `/build` route rejects `delivered` when required delivery evidence is missing. Treat the returned missing list as the next checklist.
 
-Do not use direct Supabase `curl` snippets for agency writes. If an API is missing, create a blocker in Mission Control and continue with local evidence gathering that does not mutate status.
+## Direct Supabase writes
+
+Do not use direct Supabase writes for agency workflow state when MC APIs exist. If an API is missing or auth is broken, log a blocker through heartbeat/activity and continue only with read-only diagnosis or local evidence gathering.
