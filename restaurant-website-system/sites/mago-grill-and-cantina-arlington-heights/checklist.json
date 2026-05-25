@@ -1,0 +1,577 @@
+{
+  "version": 2,
+  "workflow_version": "2026-05-16",
+  "namespace": "agency_website_workflow",
+  "source_of_truth": "Mission Control tasks.metadata + this mirrored local checklist",
+  "lead": "Mago Grill & Cantina",
+  "lead_id": "9f51aee6-40da-4338-af67-56c7a02c7304",
+  "mc_parent_task_id": "66bad43e-c2f7-4bd5-a392-4dcc510afe09",
+  "current_child_task_id": "2fb05db8-25a5-4366-b427-f243e38079d5",
+  "site_slug": "mago-grill-and-cantina-arlington-heights",
+  "current_stage": "building",
+  "current_step": "template_fork_build",
+  "template_slug": "bramble-01",
+  "template_route_draft": "bramble-01",
+  "checklist_artifacts": {
+    "markdown": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.md",
+    "json": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.json"
+  },
+  "deploy_url": "local-preview-evidence",
+  "updated_at": "2026-05-25T18:39:03Z",
+  "lead_metadata": {
+    "owner_name": null,
+    "owner_email": null,
+    "contact_email": "info@fwhg.com from official page mailto markup; verify before outreach.",
+    "phone": "847.253.2222",
+    "hours": "Official Arlington Heights page lists Monday-Thursday 11AM-10PM, Friday-Saturday 11AM-11PM, Sunday 11AM-9PM, with holiday hours varying. Verify again during current_site_audit before final copy.",
+    "address_location": "115 W Campbell St, Arlington Heights, IL 60005",
+    "website_url": "https://www.magogrill.com/arlington-heights/",
+    "order_url": "https://order.toasttab.com/online/mago-grill-and-cantina-arlington-heights-115-w-campbell-street",
+    "reservation_url": "https://www.opentable.com/r/mago-grill-and-cantina-arlington-heights",
+    "catering_events_url": "https://www.magogrill.com/private-events/ and https://www.magogrill.com/catering/",
+    "google_rating": 4.4,
+    "google_review_count": 1627,
+    "metadata_source_notes": "Checked official Arlington Heights location page, About page, menus, group dining, order-online path, private events, catering, gift cards, Toast order flow, OpenTable, Restaurant Guru, Tripadvisor, and the Mission Control lead seed. Owner name/email beyond public contact routes was not verified in this gate.",
+    "outreach_draft_path": null,
+    "outreach_status": "not_started",
+    "field_evidence": [
+      "https://www.magogrill.com/arlington-heights/",
+      "https://www.magogrill.com/about/",
+      "https://www.magogrill.com/private-events/",
+      "https://www.magogrill.com/catering/",
+      "https://order.toasttab.com/online/mago-grill-and-cantina-arlington-heights-115-w-campbell-street",
+      "https://www.opentable.com/r/mago-grill-and-cantina-arlington-heights"
+    ]
+  },
+  "mission_control_sync": {
+    "writeback_endpoint": "/api/agency/leads/9f51aee6-40da-4338-af67-56c7a02c7304/build",
+    "root_metadata_must_mirror": [
+      "build_stage/currentStage",
+      "checklist_markdown_path",
+      "checklist_json_path",
+      "passed_requirement_ids",
+      "evidence_urls",
+      "blockers"
+    ],
+    "child_tasks_must_mirror": [
+      "workflow_step_id",
+      "requirements",
+      "evidence_required",
+      "required_skills",
+      "skill_contract",
+      "operator_contract"
+    ]
+  },
+  "workflow_steps": [
+    {
+      "order": 1,
+      "workflow_step_id": "lead_qualification",
+      "stage": "qualifying",
+      "status": "passed",
+      "requirements": [
+        "lead-fit-qualified",
+        "lead-fit-seven-checks",
+        "lead-fit-evidence"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.json"
+      ]
+    },
+    {
+      "order": 2,
+      "workflow_step_id": "checklist",
+      "stage": "checklist",
+      "status": "passed",
+      "requirements": [
+        "checklist-md",
+        "checklist-json",
+        "checklist-mc-sync"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.json"
+      ]
+    },
+    {
+      "order": 3,
+      "workflow_step_id": "current_site_audit",
+      "stage": "auditing",
+      "status": "passed",
+      "requirements": [
+        "current-site-audit",
+        "current-site-screenshots",
+        "current-site-opportunities"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/audit.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-home.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-about.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-menus.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-group-dining.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-order-online.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/current-site-home-desktop-full.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/current-site-mobile-full.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/current-site-mobile-fold.png"
+      ]
+    },
+    {
+      "order": 4,
+      "workflow_step_id": "google_reviews_capture",
+      "stage": "reviews",
+      "status": "passed",
+      "requirements": [
+        "reviews-browser-highest",
+        "reviews-thirty-written",
+        "reviews-evidence"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/review-themes-summary.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/google-reviews-highest-2026-05-25.png"
+      ]
+    },
+    {
+      "order": 5,
+      "workflow_step_id": "template_routing",
+      "stage": "routing",
+      "status": "passed",
+      "requirements": [
+        "template-route-locked",
+        "template-route-alternatives",
+        "template-route-modifiers"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.json"
+      ]
+    },
+    {
+      "order": 6,
+      "workflow_step_id": "hero_art_bible",
+      "stage": "hero_art_bible",
+      "status": "passed",
+      "requirements": [
+        "hero-image-generated",
+        "hero-clean-plate",
+        "hero-art-bible",
+        "hero-assets-mc-synced"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/art-bible.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/inspo.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/plate.png"
+      ]
+    },
+    {
+      "order": 7,
+      "workflow_step_id": "template_fork_build",
+      "stage": "building",
+      "status": "passed",
+      "requirements": [
+        "fork-built",
+        "fork-preview",
+        "specificity"
+      ],
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/build-notes-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.log",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.log",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-desktop-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-mobile-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/app/page.tsx",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/content.ts",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/template-fork-build-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-desktop-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-mobile-2026-05-25.png"
+      ]
+    },
+    {
+      "order": 8,
+      "workflow_step_id": "improvement_pass",
+      "stage": "improving",
+      "status": "pending",
+      "requirements": [
+        "improvement-pass-complete",
+        "conversion-paths",
+        "mobile-check"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 9,
+      "workflow_step_id": "top_three_improvements",
+      "stage": "top_3_improvements",
+      "status": "pending",
+      "requirements": [
+        "top-three-ranked",
+        "top-three-implemented",
+        "top-three-evidence"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 10,
+      "workflow_step_id": "ai_concierge",
+      "stage": "concierge",
+      "status": "pending",
+      "requirements": [
+        "concierge-visible",
+        "concierge-tested",
+        "concierge-safe"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 11,
+      "workflow_step_id": "pitch_doc",
+      "stage": "pitch",
+      "status": "pending",
+      "requirements": [
+        "pitch-before-after",
+        "pitch-evidence",
+        "pitch-specific"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 12,
+      "workflow_step_id": "battle_cards",
+      "stage": "battle_cards",
+      "status": "pending",
+      "requirements": [
+        "battle-cards-objections",
+        "battle-cards-demo-path",
+        "battle-cards-risks"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 13,
+      "workflow_step_id": "qa_round_1",
+      "stage": "qa_round_1",
+      "status": "pending",
+      "requirements": [
+        "qa1-findings",
+        "qa1-fixes"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 14,
+      "workflow_step_id": "qa_round_2",
+      "stage": "qa_round_2",
+      "status": "pending",
+      "requirements": [
+        "qa2-mobile",
+        "qa2-conversion"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 15,
+      "workflow_step_id": "qa_round_3",
+      "stage": "qa_round_3",
+      "status": "pending",
+      "requirements": [
+        "qa3-sell-ready",
+        "qa3-assets-ready"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 16,
+      "workflow_step_id": "higgsfield_video_handoff",
+      "stage": "ready_for_higgsfield_video",
+      "status": "pending",
+      "requirements": [
+        "higgsfield-ready-preview",
+        "higgsfield-motion-brief",
+        "higgsfield-founder-handoff"
+      ],
+      "evidence": []
+    },
+    {
+      "order": 17,
+      "workflow_step_id": "delivery",
+      "stage": "packaging",
+      "status": "pending",
+      "requirements": [
+        "delivery-final-url",
+        "higgsfield-video-linked",
+        "founder-final-review-approved",
+        "delivery-three-qa-rounds",
+        "delivery-pack"
+      ],
+      "evidence": []
+    }
+  ],
+  "evidence_paths": [
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.json",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.json",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/audit.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-home.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-about.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-menus.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-group-dining.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/scrapes/current-site-order-online.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/current-site-home-desktop-full.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/current-site-mobile-full.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/current-site-mobile-fold.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30.json",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30-2026-05-25.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/review-themes-summary.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/google-reviews-highest-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.json",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/art-bible.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/inspo.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/plate.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/template-fork-build-2026-05-25.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-desktop-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-mobile-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/build-notes-2026-05-25.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.log",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.log",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-desktop-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-mobile-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/app/page.tsx",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/content.ts"
+  ],
+  "requirements": [
+    {
+      "id": "lead-fit-qualified",
+      "title": "Lead-fit decision is Build or Re-route, or a qualification skip reason is recorded.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.md"
+      ]
+    },
+    {
+      "id": "lead-fit-seven-checks",
+      "title": "Visual reality, price register, review tone, current-site quality, why-switch, switching cost, and would-I-eat-here checks are recorded.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.json"
+      ]
+    },
+    {
+      "id": "lead-fit-evidence",
+      "title": "Qualification evidence paths or source URLs are attached or linked.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.json"
+      ]
+    },
+    {
+      "id": "checklist-md",
+      "title": "Local checklist.md exists for this restaurant.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.md"
+      ]
+    },
+    {
+      "id": "checklist-json",
+      "title": "Local checklist.json exists for this restaurant.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.json"
+      ]
+    },
+    {
+      "id": "checklist-mc-sync",
+      "title": "Mission Control root and child task metadata mirrors checklist paths, requirements, evidence, and current stage.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/checklist.json"
+      ]
+    },
+    {
+      "id": "reviews-browser-highest",
+      "title": "Google Reviews were opened in browser and sorted by Highest.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/google-reviews-highest-2026-05-25.png"
+      ]
+    },
+    {
+      "id": "reviews-thirty-written",
+      "title": "30 written Google reviews were captured.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30-2026-05-25.md"
+      ]
+    },
+    {
+      "id": "reviews-evidence",
+      "title": "Google review packet, screenshot, and theme summary are saved locally.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30.json",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/review-themes-summary.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/google-reviews-highest-2026-05-25.png"
+      ]
+    },
+    {
+      "id": "template-route-locked",
+      "title": "Template route is locked.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.md"
+      ]
+    },
+    {
+      "id": "template-route-alternatives",
+      "title": "Rejected alternatives are documented.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.md"
+      ]
+    },
+    {
+      "id": "template-route-modifiers",
+      "title": "Template modifiers and section implications are documented.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.json"
+      ]
+    },
+    {
+      "id": "hero-image-generated",
+      "title": "Hero design reference image exists locally and in MC storage.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/inspo.png",
+        "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/9f51aee6-40da-4338-af67-56c7a02c7304/inspo.png"
+      ]
+    },
+    {
+      "id": "hero-clean-plate",
+      "title": "Clean production hero plate exists locally and in MC storage.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/plate.png",
+        "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/9f51aee6-40da-4338-af67-56c7a02c7304/plate.png"
+      ]
+    },
+    {
+      "id": "hero-art-bible",
+      "title": "Hero art bible markdown exists with register, palette, crop, section, motion, and guardrail notes.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/art-bible.md"
+      ]
+    },
+    {
+      "id": "hero-assets-mc-synced",
+      "title": "Hero personalization asset URLs and art bible are ready for MC build writeback.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/art-bible.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/inspo.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/public/images/raw/plate.png"
+      ]
+    },
+    {
+      "id": "fork-built",
+      "title": "Template fork builds successfully with real content and preserved conversion links.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/build-notes-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.log",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.log",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/app/page.tsx",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/content.ts",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/template-fork-build-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-desktop-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-mobile-2026-05-25.png"
+      ]
+    },
+    {
+      "id": "fork-preview",
+      "title": "Template fork/build produces a working preview URL or local preview evidence.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-desktop-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-mobile-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.log",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/template-fork-build-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-desktop-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-mobile-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.txt"
+      ]
+    },
+    {
+      "id": "specificity",
+      "title": "First build uses real restaurant facts, menu/service cues, and conversion paths instead of generic restaurant copy.",
+      "qaState": "passed",
+      "evidence": [
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/build-notes-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/content.ts",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/art-bible.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/audit.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/review-themes-summary.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/template-fork-build-2026-05-25.md",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.txt",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-desktop-2026-05-25.png",
+        "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-mobile-2026-05-25.png"
+      ]
+    }
+  ],
+  "current_site_browser_screenshots": [],
+  "current_site_scrape_path": null,
+  "google_reviews_packet_path": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30.json",
+  "template_route_rationale": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/routing/template-routing-2026-05-25.md",
+  "fork_build_evidence": [
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/build-notes-2026-05-25.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.log",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.log",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-desktop-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/first-preview-home-mobile-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/app/page.tsx",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/content.ts",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/template-fork-build-2026-05-25.md",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/typecheck-2026-05-25.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/evidence/build-2026-05-25.txt",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-desktop-2026-05-25.png",
+    "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/screenshots/template-fork-build-mobile-2026-05-25.png"
+  ],
+  "website_improvement_pass_notes": null,
+  "top_three_improvements": [],
+  "ai_concierge": {
+    "status": "pending",
+    "evidence": []
+  },
+  "pitch_doc_path": null,
+  "battle_cards_path": null,
+  "qa_rounds": [],
+  "preview_url": "local preview captured at http://127.0.0.1:3107/ on 2026-05-25; dev server stopped",
+  "blockers": [],
+  "done_criteria": [
+    "Mission Control root task metadata.build_stage/currentStage matches the active current gate.",
+    "Mission Control root + current child task metadata include checklist_markdown_path and checklist_json_path.",
+    "Every canonical workflow step has either passed evidence in MC or a fresh blocker recorded in MC.",
+    "Exactly three QA rounds are logged with evidence before delivery.",
+    "Preview URL, pitch doc, battle cards, screenshots, checklist paths, QA evidence, and requirement status are attached before delivery."
+  ]
+}
