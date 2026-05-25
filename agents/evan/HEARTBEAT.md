@@ -40,10 +40,11 @@ Use this mode only when Ethan/Mission Control explicitly assigns restaurant webs
 
 1. Claim or resume exactly one website from MC unless MC explicitly assigns a batch.
 2. Read the lead/task and resume from `metadata.build_stage`.
-3. Create or refresh `checklist.md` and `checklist.json` under `restaurant-website-system/sites/<slug>/` using `/scripts/new-build-checklist.mjs` from the restaurant website system root.
-4. Use `/research/lead-fit-qualification.md` when the lead still needs explicit qualification evidence.
-5. Mirror checklist requirements and evidence paths into the MC parent task.
-6. Advance the first incomplete gate below and write progress/evidence back to MC at every stage transition.
+3. If MC reports no selected website because every active workflow is blocked/finished and returns `start_candidates[0]`, start only that highest-opportunity lead through the returned `/api/agency/leads/:leadId/start` contract, then re-query `/next`.
+4. Create or refresh `checklist.md` and `checklist.json` under `restaurant-website-system/sites/<slug>/` using `/scripts/new-build-checklist.mjs` from the restaurant website system root.
+5. Use `/research/lead-fit-qualification.md` when the lead still needs explicit qualification evidence.
+6. Mirror checklist requirements and evidence paths into the MC parent task.
+7. Advance the first incomplete gate below and write progress/evidence back to MC at every stage transition.
 
 ### Canonical agency gates
 

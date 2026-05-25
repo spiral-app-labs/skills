@@ -11,12 +11,13 @@ If restaurant website agency work is available, this generic heartbeat skill def
 
 ## Workflow
 1. Check the agency website planner first. If it returns selected work, follow the canonical heartbeat contract and stop after that lane.
-2. For explicit non-agency heartbeat work only, fetch assigned `todo + in_progress` set.
-3. Pick one unblocked, high-priority task unless Mission Control explicitly assigns a batch.
-4. Fetch task comments before execution (source of truth overrides description).
-5. Execute (spawn sub-agents for heavy build tasks).
-6. Update task status and log `agent_activity`.
-7. Post one human-readable result or one exact blocker only after work completes, cannot proceed, or Ethan explicitly asks for status.
+2. If the agency planner returns no selected website because all active websites are blocked/finished, start only `start_candidates[0]`, then re-query and execute the returned current gate.
+3. For explicit non-agency heartbeat work only, fetch assigned `todo + in_progress` set.
+4. Pick one unblocked, high-priority task unless Mission Control explicitly assigns a batch.
+5. Fetch task comments before execution (source of truth overrides description).
+6. Execute (spawn sub-agents for heavy build tasks).
+7. Update task status and log `agent_activity`.
+8. Post one human-readable result or one exact blocker only after work completes, cannot proceed, or Ethan explicitly asks for status.
 
 ## API Budget Guardrails
 - Target 6-10 calls per heartbeat
@@ -25,7 +26,7 @@ If restaurant website agency work is available, this generic heartbeat skill def
 
 ## Picking Logic
 1. Current unblocked agency website first.
-2. New agency website lead only after the current site is blocked or finished; use `scores.opportunity` to choose among unstarted leads.
+2. New agency website lead only after the current site is blocked or finished; use `/next.start_candidates[0]`, which is sorted by `scores.opportunity`.
 3. Explicit non-agency assigned task.
 4. Stale blockers >24h => refresh/escalate with evidence.
 5. No proactive idle work unless Ethan/Donna/MC explicitly asks.
