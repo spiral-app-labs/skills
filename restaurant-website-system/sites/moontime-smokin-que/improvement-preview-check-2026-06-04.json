@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-06-04T17:28:27.586Z",
+  "previewTarget": "restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+  "previewTargetAbsolute": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+  "staticPreviewUrl": "file:///Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+  "staticExport": {
+    "indexHtmlExists": true,
+    "indexHtmlBytes": 51024,
+    "cleanPlateExported": true,
+    "reviewCarouselRenderedInHtml": true
+  },
+  "textChecks": {
+    "Moontime Smokin' Que": true,
+    "What guests keep saying": true,
+    "Highest-rated review proof": true,
+    "Google Review": true,
+    "Primitive Pits": true,
+    "20-300 guests": true,
+    "20 to 300 people": true,
+    "The BBQ guests come back for": true,
+    "Catering / Events": true,
+    "Heather and Joe Cummings": true
+  },
+  "linkChecks": {
+    "orderUrl": true,
+    "menuUrl": true,
+    "cateringUrl": true,
+    "contactUrl": true,
+    "directionsUrl": true,
+    "phoneHref": true,
+    "emailHref": true,
+    "giftCardUrl": true,
+    "rewardsUrl": true,
+    "facebookUrl": true,
+    "instagramUrl": true,
+    "reservationUrlAbsent": true
+  },
+  "reviewCarousel": {
+    "quoteCount": 10,
+    "duplicatedInJsxForWrap": true,
+    "requestAnimationFrameAutoScroll": true,
+    "pauseOnHoverAndInteraction": true,
+    "reducedMotionHonored": true,
+    "anonymousCards": true,
+    "quoteWordCounts": [
+      {
+        "quote": "The food was delicious, the staff was friendly, a relaxed atmosphere.",
+        "words": 11
+      },
+      {
+        "quote": "Moontime Smokin Que is a hidden gem of a place.",
+        "words": 10
+      },
+      {
+        "quote": "Pulled pork was juicy, with the perfect amount of smoke flavor.",
+        "words": 11
+      },
+      {
+        "quote": "Sauce was just tangy enough. The blueberry salsa was heavenly.",
+        "words": 10
+      },
+      {
+        "quote": "We ordered the Smoked Turkey for Thanksgiving and it was absolutely delicious!",
+        "words": 12
+      },
+      {
+        "quote": "The pulled pork was superb, and the brisket was so good...",
+        "words": 11
+      },
+      {
+        "quote": "Very good brisket, almost everything is gluten free or can be.",
+        "words": 11
+      },
+      {
+        "quote": "Excellent grilled cheese & brisket, curds & Mac & cheese!",
+        "words": 10
+      },
+      {
+        "quote": "Creative drinks and sauces. The atmosphere is light and warm.",
+        "words": 10
+      },
+      {
+        "quote": "The Brisket was perfectly cooked and smokey. The Cubano was also excellent.",
+        "words": 12
+      }
+    ]
+  },
+  "mobileChecks": {
+    "mobileActionBarUsesTwoPrimaryButtons": true,
+    "mobileActionBarUsesThreeSecondaryButtons": true,
+    "mobileButtonsHaveStableHeights": true,
+    "carouselMobileCardWidth": true,
+    "carouselScrollbarHidden": true,
+    "carouselNoReviewerNames": true,
+    "carouselShortQuotes": true,
+    "carouselNoFramerWhileInView": true,
+    "footerNoteExists": true
+  },
+  "browserEvidence": {
+    "devServer": "Blocked: next dev failed with listen EPERM on 127.0.0.1:3000",
+    "browserPlugin": "Blocked: Browser runtime reported iab unavailable",
+    "screenshotsCaptured": false,
+    "fallback": "Used static export text/link/source-class checks because Browser was unavailable and localhost binding was denied."
+  },
+  "allRequiredStaticChecksPassed": true
+}

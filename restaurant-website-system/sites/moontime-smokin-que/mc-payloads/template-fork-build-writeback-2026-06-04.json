@@ -1,0 +1,89 @@
+{
+  "source": "openclaw",
+  "actor": "evan",
+  "mc_task_id": "ae265b4e-6262-4a57-9e02-176730a62260",
+  "child_task_id": "bba3f80a-3a6e-4839-a6f7-ac3fd42320b6",
+  "workflow_step_id": "template_fork_build",
+  "build_stage": "building",
+  "site_slug": "moontime-smokin-que",
+  "template_slug": "bramble-01",
+  "site_path": "restaurant-website-system/sites/moontime-smokin-que",
+  "fork_path": "restaurant-website-system/sites/moontime-smokin-que/.agency-template.json",
+  "local_preview_path": "restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+  "build_output_path": "restaurant-website-system/sites/moontime-smokin-que/build-check-output-2026-06-04.txt",
+  "preview_check_path": "restaurant-website-system/sites/moontime-smokin-que/preview-check-output-2026-06-04.json",
+  "build_notes_path": "restaurant-website-system/sites/moontime-smokin-que/build-first-preview-2026-06-04.md",
+  "checklist_markdown_path": "restaurant-website-system/sites/moontime-smokin-que/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/moontime-smokin-que/checklist.json",
+  "evidence_urls": [
+    "restaurant-website-system/sites/moontime-smokin-que/.agency-template.json",
+    "restaurant-website-system/sites/moontime-smokin-que/routing/template-routing-2026-06-04.md",
+    "restaurant-website-system/sites/moontime-smokin-que/content.example.ts",
+    "restaurant-website-system/sites/moontime-smokin-que/app/page.tsx",
+    "restaurant-website-system/sites/moontime-smokin-que/build-first-preview-2026-06-04.md",
+    "restaurant-website-system/sites/moontime-smokin-que/build-check-output-2026-06-04.txt",
+    "restaurant-website-system/sites/moontime-smokin-que/preview-check-output-2026-06-04.json",
+    "restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+    "restaurant-website-system/sites/moontime-smokin-que/public/images/raw/plate.png",
+    "restaurant-website-system/sites/moontime-smokin-que/checklist.md",
+    "restaurant-website-system/sites/moontime-smokin-que/checklist.json"
+  ],
+  "artifact_urls": [
+    "restaurant-website-system/sites/moontime-smokin-que/build-first-preview-2026-06-04.md",
+    "restaurant-website-system/sites/moontime-smokin-que/build-check-output-2026-06-04.txt",
+    "restaurant-website-system/sites/moontime-smokin-que/preview-check-output-2026-06-04.json",
+    "restaurant-website-system/sites/moontime-smokin-que/out/index.html"
+  ],
+  "evidence_objects": [
+    {
+      "kind": "template_fork_path",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/.agency-template.json",
+      "label": "Moontime bramble-01 fork metadata"
+    },
+    {
+      "kind": "build_notes",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/build-first-preview-2026-06-04.md",
+      "label": "Moontime first preview build notes"
+    },
+    {
+      "kind": "build_output",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/build-check-output-2026-06-04.txt",
+      "label": "Typecheck and production build output"
+    },
+    {
+      "kind": "local_preview",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+      "label": "Static export local preview"
+    },
+    {
+      "kind": "preview_check",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/preview-check-output-2026-06-04.json",
+      "label": "Static export text, asset, and conversion link checks"
+    }
+  ],
+  "passed_requirement_ids": [
+    "fork-built",
+    "fork-preview",
+    "specificity"
+  ],
+  "verification_summary": {
+    "typecheck": "passed",
+    "build": "passed",
+    "preview": "static export generated at restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+    "specificity": "Uses verified Moontime BBQ facts, Crystal Lake location, owner story, review themes, menu/service cues, clean plate hero asset, and verified conversion paths. No reservation path included."
+  },
+  "blocker": "Git branch/commit/PR blocked because the repository .git directory is outside the writable sandbox root. Rendered screenshots were also infeasible because localhost binding, Browser iab, Playwright Chromium, and qlmanage rendering were blocked by runtime permissions. Build gate requirements were satisfied with static export evidence.",
+  "blockers": [
+    {
+      "scope": "git_branch_commit_pr",
+      "reason": "Repository .git directory is outside the writable sandbox root at /Users/ethantalreja/.openclaw/workspace/GitHub/skills/.git, so branch creation, commit, push, PR creation, and squash auto-merge could not be performed.",
+      "unblock_action": "Make /Users/ethantalreja/.openclaw/workspace/GitHub/skills/.git writable for this task or run the git branch/commit/PR steps outside the restricted sandbox."
+    },
+    {
+      "scope": "rendered_screenshots",
+      "reason": "next dev failed with listen EPERM, Browser iab was unavailable, Playwright Chromium failed with a macOS MachPortRendezvousServer permission denial, and qlmanage failed sandbox initialization.",
+      "unblock_action": "Run the static export or dev server in an environment that permits browser launch or localhost binding."
+    }
+  ],
+  "idempotency_key": "moontime-smokin-que-template-fork-build-2026-06-04-v1"
+}
