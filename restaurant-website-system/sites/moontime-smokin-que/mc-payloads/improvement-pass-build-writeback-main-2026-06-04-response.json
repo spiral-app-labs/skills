@@ -1,0 +1,1 @@
+{"error":"Personalization is enabled for this lead but ready_to_build is false or early hero assets are missing. Generate and upload the inspo image, clean plate image, and art bible, then flip ready_to_build in the CRM.","missing":["personalization_ready_to_build"]}

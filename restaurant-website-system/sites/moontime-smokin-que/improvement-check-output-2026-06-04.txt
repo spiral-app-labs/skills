@@ -1,0 +1,48 @@
+## npm run typecheck
+
+> moontime-smokin-que-preview@0.1.0 typecheck
+> tsc --noEmit
+
+
+## npm run build
+
+> moontime-smokin-que-preview@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.15
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    51.3 kB         139 kB
+└ ○ /_not-found                          875 B          88.1 kB
++ First Load JS shared by all            87.2 kB
+  ├ chunks/117-a180840ef3cce72d.js       31.7 kB
+  ├ chunks/fd9d1056-8fef90fb5a0b2194.js  53.7 kB
+  └ other shared chunks (total)          1.88 kB
+
+
+○  (Static)  prerendered as static content
+
+
+## browser/dev-server check
+
+Browser runtime: blocked. The Browser path was attempted first and returned `Browser is not available: iab`.
+
+Dev server: blocked. `npm run dev -- --hostname 127.0.0.1 --port 3000` failed with `listen EPERM: operation not permitted 127.0.0.1:3000`.
+
+## static export fallback check
+
+Static export verification passed in `improvement-preview-check-2026-06-04.json`.
+
+Static preview URL: `file:///Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/moontime-smokin-que/out/index.html`

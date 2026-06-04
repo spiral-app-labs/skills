@@ -1,0 +1,68 @@
+{
+  "source": "openclaw",
+  "actor": "evan",
+  "mc_task_id": "ae265b4e-6262-4a57-9e02-176730a62260",
+  "child_task_id": "e1d2e314-59ae-4ec7-a283-a6f8227237e2",
+  "build_stage": "hero_art_bible",
+  "site_slug": "moontime-smokin-que",
+  "template_slug": "bramble-01",
+  "personalization_enabled": true,
+  "personalization_state": "ready_to_build",
+  "personalization_assets": {
+    "inspo_image_url": "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/inspo.png",
+    "clean_plate_image_url": "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/plate.png"
+  },
+  "personalization_art_bible_markdown": "# Moontime Smokin' Que Hero Art Bible\n\nDate: 2026-06-04\nLead ID: 788d0e2a-8fea-4a88-9d28-bbc0263959a6\nStage: hero_art_bible\nTemplate route: bramble-01\n\n## Asset Contract\n\n- Inspo/design reference: `restaurant-website-system/sites/moontime-smokin-que/public/images/raw/inspo.png`\n- Clean production plate: `restaurant-website-system/sites/moontime-smokin-que/public/images/raw/plate.png`\n- Hero subject: brisket, glossy ribs, smoked wings, cornbread, baked beans, pickled onions, sauce ramekins, butcher paper, dark wood, soft smoke, and amber downtown bar light.\n- Production use: use the clean plate as the first preview hero poster/background. Overlay real navigation, wordmark, local proof, and conversion controls in code.\n\n## 1. Mood\n\nWarm, smoky, neighborhood-proud, generous, tactile, and confident. The site should feel like downtown Crystal Lake finally has a serious local BBQ room, not a national chain, luxury steakhouse, or sports-bar template. Food craft comes first; the full bar and catering support the experience.\n\n## 2. Palette\n\n- Smokehouse cream: warm paper and UI surfaces.\n- Char black: text, grill marks, deep shadows, and high-contrast anchors.\n- Brass amber: warm highlights, small dividers, icons, and active states.\n- Deep sauce red: sparing CTA and proof accents.\n- Muted wood brown: background bands, borders, and photo frames.\n\nAvoid electric blue, neon, candy promo colors, glossy black luxury, or a monochrome brown page. Use cream and char for readability, then let amber and sauce red carry emphasis.\n\n## 3. Typography\n\nUse a sturdy, friendly display face for the wordmark and short section titles: slab, condensed poster, or handbill energy without turning novelty western. Pair it with a clean, practical sans for body, menus, hours, and controls.\n\nType rhythm should feel printed and tactile: compact labels, confident section heads, short proof phrases, and menu/category names that scan quickly. Avoid huge generic hero headline stacks, delicate fine-dining serifs, or playful carnival BBQ type.\n\n## 4. Texture And Materials\n\nCore textures: butcher paper, dark wood grain, smoked bark, glossy sauce, cornbread crumb, ceramic ramekins, brass/amber bar light, faint smoke haze, and scrapbook/card edges from bramble-01. These should appear as restrained section treatments, dividers, photo crops, and button states.\n\nKeep texture functional. It should help guests understand \"BBQ, ordering, catering, downtown location\" faster, not bury content under decorative ephemera.\n\n## 5. Layout Rhythm\n\nUse bramble-01 as the structure: warm scrapbook hospitality with strong conversion anchors. The first screen should be food-first and center-cropped, with a top floating action pill on desktop and a bottom mobile action bar. The hero does not need extra in-hero CTA pills because Moontime is single-location; the persistent order/catering anchors are the conversion floor.\n\nBelow the hero, move in dense but breathable bands:\n\n1. Signature smokehouse proof strip: brisket, ribs, wings, pulled pork, sauces, cornbread/beans.\n2. Fast decision routes: Order Online, Catering / Events, Menu, Directions.\n3. Catering band for 20-300 people, holiday smoked turkey, and group meals.\n4. Owner story: Heather and Joe Cummings, 2017 start, downtown growth.\n5. Review-backed proof using highest-filter themes.\n6. Hours, phone, address, Toast order, catering email/form, gift cards/rewards where verified.\n\n## 6. Motion Direction\n\nKeep motion subtle and physical: slow smoke drift, small sauce shine, restrained scrapbook/photo lift, and gentle section reveals. Future Higgsfield/video motion should preserve the plate exactly: locked camera, food fixed in place, only smoke and amber highlight shimmer moving.\n\nNo sliding plates, fake grill flames, fast parallax, bouncing cards, or overly cinematic steakhouse zooms.\n\n## 7. Copy Register\n\nWrite like a local BBQ owner would approve: direct, appetite-led, and concrete. Anchor claims to verified facts:\n\n- Downtown Crystal Lake / Railroad Street.\n- Wood-fired barbecue.\n- Heather and Joe Cummings.\n- Started in 2017 and grew from catering/carry-out to full-service.\n- Toast ordering.\n- Catering packages for 20-300 people.\n- Review-backed mentions: brisket, ribs, wings, pulled pork, turkey, blueberry chipotle sauce, baked beans, cheese curds, cornbread, friendly service, hidden gem.\n\nAvoid fake awards, exaggerated Texas claims, invented delivery promises, unsupported gluten-free claims, or generic \"best BBQ in town\" language unless directly framed as review language.\n\n## 8. IS / IS NOT\n\nIS:\n\n- Warm downtown BBQ with serious smoke and friendly local hospitality.\n- Food-forward, textured, order/catering-driven, review-backed.\n- Built for mobile guests choosing carryout, dine-in, catering, directions, or phone quickly.\n- Bramble scrapbook energy disciplined around real menu proof.\n\nIS NOT:\n\n- Luxury steakhouse darkness.\n- Promo-heavy fast-casual BBQ chain.\n- Generic pub/bar homepage.\n- Food-blog daylight stock photography.\n- Decorative scrapbook that hides order, catering, hours, or location.\n\n## Prompt And Selection Notes\n\nThe inspo prompt asked for a 16:9 warm editorial BBQ poster for Moontime Smokin' Que with brisket, ribs, smoked wings, cornbread, baked beans, pickled onions, sauce ramekins, butcher paper, dark wood, amber light, and minimal design-reference copy. The clean-plate prompt removed all readable text, stamps, UI, and logos while preserving the BBQ still-life, lighting, palette, smoke, and negative space.\n\nThe selected clean plate passed the gate because it is 16:9, center-balanced, contains no humans or readable text, preserves the verified BBQ/catering/menu identity, leaves strong negative space for coded hero copy, and fits the `bramble-01` warm smokehouse route.\n",
+  "art_bible_path": "restaurant-website-system/sites/moontime-smokin-que/art-bible.md",
+  "checklist_markdown_path": "restaurant-website-system/sites/moontime-smokin-que/checklist.md",
+  "checklist_json_path": "restaurant-website-system/sites/moontime-smokin-que/checklist.json",
+  "evidence_urls": [
+    "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/inspo.png",
+    "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/plate.png",
+    "restaurant-website-system/sites/moontime-smokin-que/art-bible.md",
+    "restaurant-website-system/sites/moontime-smokin-que/public/images/raw/inspo.png",
+    "restaurant-website-system/sites/moontime-smokin-que/public/images/raw/plate.png",
+    "restaurant-website-system/sites/moontime-smokin-que/checklist.md",
+    "restaurant-website-system/sites/moontime-smokin-que/checklist.json"
+  ],
+  "artifact_urls": [
+    "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/inspo.png",
+    "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/plate.png"
+  ],
+  "evidence_objects": [
+    {
+      "kind": "hero_inspo_image",
+      "url": "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/inspo.png",
+      "label": "Moontime generated hero/inspo image"
+    },
+    {
+      "kind": "clean_plate_image",
+      "url": "https://eayiazyiotnkggnsvhto.supabase.co/storage/v1/object/public/agency-hero-assets/788d0e2a-8fea-4a88-9d28-bbc0263959a6/plate.png",
+      "label": "Moontime clean production hero plate"
+    },
+    {
+      "kind": "hero_art_bible",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/art-bible.md",
+      "label": "Moontime hero art bible markdown"
+    },
+    {
+      "kind": "local_asset",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/public/images/raw/inspo.png",
+      "label": "Local inspo asset"
+    },
+    {
+      "kind": "local_asset",
+      "url": "restaurant-website-system/sites/moontime-smokin-que/public/images/raw/plate.png",
+      "label": "Local clean plate asset"
+    }
+  ],
+  "passed_requirement_ids": [
+    "hero-image-generated",
+    "hero-clean-plate",
+    "hero-art-bible",
+    "hero-assets-mc-synced"
+  ],
+  "blocker": null,
+  "idempotency_key": "moontime-smokin-que-hero-art-bible-2026-06-04-v1",
+  "heartbeat_summary": "Generated and uploaded Moontime hero inspo and clean plate assets, wrote the hero art bible, and synced the hero_art_bible requirement evidence."
+}

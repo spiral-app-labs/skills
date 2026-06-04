@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-06-04T17:14:40.422Z",
+  "previewTarget": "sites/moontime-smokin-que/out/index.html",
+  "previewTargetAbsolute": "/Users/ethantalreja/.openclaw/workspace/GitHub/skills/restaurant-website-system/sites/moontime-smokin-que/out/index.html",
+  "staticExport": {
+    "indexHtmlExists": true,
+    "indexTxtExists": true,
+    "cleanPlateExported": true,
+    "cleanPlateBytes": 2296384,
+    "heroImageReferencesCleanPlate": true
+  },
+  "textChecks": {
+    "Moontime Smokin' Que": true,
+    "downtown Crystal Lake": true,
+    "Wood-fired barbecue": true,
+    "Heather and Joe Cummings": true,
+    "Primitive Pits": true,
+    "blueberry chipotle": true,
+    "20-300 person packages": true,
+    "Smoked Meats, Sauces, Sides": true,
+    "Brisket grilled cheese": true,
+    "Catering / Events": true
+  },
+  "linkChecks": {
+    "orderUrl": true,
+    "menuUrl": true,
+    "contactUrl": true,
+    "cateringUrl": true,
+    "directionsUrl": true,
+    "phoneHref": true,
+    "emailHref": true,
+    "giftCardUrl": true,
+    "rewardsUrl": true,
+    "facebookUrl": true,
+    "instagramUrl": true
+  },
+  "browserEvidence": {
+    "devServer": "Blocked: next dev failed with listen EPERM on 127.0.0.1:3000",
+    "browserPlugin": "Blocked: Browser runtime reported iab unavailable",
+    "playwrightChromium": "Blocked: Chromium headless failed bootstrap_check_in MachPortRendezvousServer with Permission denied",
+    "quickLook": "Blocked: qlmanage sandbox initialization failed",
+    "screenshotsCaptured": false
+  }
+}
