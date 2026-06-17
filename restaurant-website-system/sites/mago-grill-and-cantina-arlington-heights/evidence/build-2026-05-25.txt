@@ -1,0 +1,30 @@
+
+> mago-grill-and-cantina-arlington-heights@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.15
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    9.53 kB         143 kB
+├ ○ /_not-found                          875 B            88 kB
+└ ○ /reserve                             175 B           134 kB
++ First Load JS shared by all            87.1 kB
+  ├ chunks/117-4140e3c601b33f38.js       31.6 kB
+  ├ chunks/fd9d1056-8fef90fb5a0b2194.js  53.7 kB
+  └ other shared chunks (total)          1.88 kB
+
+
+○  (Static)  prerendered as static content
+

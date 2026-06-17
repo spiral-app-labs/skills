@@ -1,0 +1,6 @@
+Mago Grill first preview typecheck
+Date: Mon May 25 18:36:29 UTC 2026
+
+> mago-grill-and-cantina-arlington-heights@0.1.0 typecheck
+> tsc --noEmit
+

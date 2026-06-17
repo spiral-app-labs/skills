@@ -1,0 +1,97 @@
+{
+  "restaurant": "Mago Grill & Cantina",
+  "lead_id": "9f51aee6-40da-4338-af67-56c7a02c7304",
+  "site_slug": "mago-grill-and-cantina-arlington-heights",
+  "workflow_step_id": "template_routing",
+  "build_stage": "routing",
+  "captured_at": "2026-05-25",
+  "selected_template_slug": "bramble-01",
+  "selected_route": "Route 2.4a warm hospitality cocktail-bar-with-food, adapted for vibrant Mexican cantina",
+  "routing_rationale": "Mago's strongest rebuild angle is social cantina hospitality with chef-driven Mexican food, tableside guacamole, moles, tequila and margaritas, downtown Arlington Heights energy, sidewalk seating, and group/private-event conversion. Bramble's warm light-mode rhythm, hero slideshow, scrapbook photo strip, opening-times band, and food/drinks split carry that story better than a cuisine-color-only route.",
+  "intake": {
+    "cuisine": "Mexican and Latin cantina",
+    "service_type": "full-service restaurant with reservations, ordering, catering, private events, and bar/cocktail program",
+    "price_point": "$$ to low $$$",
+    "atmosphere": "polished, lively, downtown, colorful, group-friendly, tequila/cocktail-led",
+    "visual_tone": "warm, festive, hospitality-led, photo-forward, restrained Mexican color accents",
+    "reservation_intensity": "mixed reservation, walk-in, online order",
+    "revenue_model": [
+      "reservations",
+      "online ordering",
+      "private events",
+      "catering",
+      "gift cards",
+      "walk-ins",
+      "tequila and cocktail discovery"
+    ],
+    "day_part": "lunch, dinner, cocktails, weekend/social occasions",
+    "destination_vs_neighborhood": "both",
+    "occasion": "date night, group dinners, celebrations, theatre-adjacent downtown visits, private events, catering",
+    "footprint": "multi-location brand with Arlington Heights location focus",
+    "photography_tier": "Tier-2 ready from current site and public food/drink/room evidence",
+    "conversion_priorities": [
+      "Reserve",
+      "Order Online",
+      "Call",
+      "Directions",
+      "Group Dining",
+      "Catering",
+      "Gift Cards"
+    ]
+  },
+  "rejected_alternatives": [
+    {
+      "template_slug": "bamzi-01",
+      "reason": "Plausible generic Mexican/Latin fallback, but its dark-canvas pan-Asian chef structure would need heavier rework and risks making Mago feel like a cuisine-color swap instead of a warm social cantina."
+    },
+    {
+      "template_slug": "plate-01",
+      "reason": "Good for a menu-forward neighborhood bistro, but underplays margaritas, tequila flights, tableside moments, group dining, and the social room."
+    },
+    {
+      "template_slug": "labrisa-01",
+      "reason": "Useful for multi-service coastal or European venues, but its paper-and-ink coastal register misreads Mago's Aztec-accented Mexican cantina energy."
+    }
+  ],
+  "modifiers": {
+    "palette": "warm cream/light-mode base with agave green, paprika red, marigold, and mole-brown accents",
+    "typography": "large restaurant-name wordmark with refined display serif plus readable sans UI",
+    "cta": "Reserve, Order Online, Group Dining, Call, Directions, Catering/Gift Cards",
+    "menu": "Food and Drinks/Tequila split with review-backed feature chips",
+    "gallery": "Bramble scrapbook/polaroid strip for guacamole, margaritas, moles, dining room, Fiesta Room, and sidewalk/patio energy",
+    "proof": "Google Highest review proof near top without turning the page into a review wall",
+    "heritage": "chef/family recipe story using verified Juan Luis Gonzalez, Ric Munoz, Grandma Paula, moles, and tequila depth",
+    "motion": "moderate slideshow, photo-strip drift, and warm section switching"
+  },
+  "required_sections": [
+    "Hero slideshow with Mago wordmark, Google proof, and Reserve/Order/Group Dining CTAs",
+    "Opening-times/location band with address, phone, hours, directions, reserve and order links",
+    "Food and Drinks/Tequila split",
+    "Tableside guacamole and mole tasting/story section",
+    "Downtown Arlington Heights room, sidewalk seating, and night-out/social block",
+    "Fiesta Room/private-events and catering inquiry block",
+    "Review proof strip from Google Highest themes",
+    "Chef/family recipe story block",
+    "Footer with official operational links"
+  ],
+  "avoided_patterns": [
+    "fast-casual taco-shop positioning",
+    "dark ceremonial fine dining",
+    "moody speakeasy exclusivity",
+    "generic stock Mexican copy",
+    "atmosphere-only site that hides ordering and group dining",
+    "unsupported owner or founding-year claims"
+  ],
+  "register_risk": "The route must stay polished and social without over-premiumizing. Bramble is selected over the generic Mexican/Latin Bamzi fallback because the selling gap is multi-stream cantina hospitality, not simply cuisine identity.",
+  "evidence": {
+    "audit": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/audit.md",
+    "reviews_packet": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/google-reviews-highest-30.json",
+    "review_themes": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/reviews/review-themes-summary.md",
+    "qualification": "restaurant-website-system/sites/mago-grill-and-cantina-arlington-heights/qualification.md"
+  },
+  "passed_requirement_ids": [
+    "template-route-locked",
+    "template-route-alternatives",
+    "template-route-modifiers"
+  ]
+}
